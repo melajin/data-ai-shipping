@@ -1,17 +1,17 @@
-# Test B 다음 감독 진입점
+# Test B 다음 감독 진입점 — Round003
 
-2026-11-05 Round002 활성화 확인: 현 단일 감독 codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef, Run run_a0639d5ac36a. round_002/ACTIVATION.md와 ROUND_PLAN.md를 먼저 확인한다. P/R 실제 Luna/xhigh 경량 준비가 실행 중이며 같은 작업을 중복 생성하지 않는다. 아래 Round001 인수 절차는 완료된 이력이다. 아직 Round003 인계가 아니다.
+인계 갱신: 새 실제 감독 codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7의 ACK msg_6cb4415e8803을 확인하고 STATUS 단일소유권을 전환했다. 새 감독은 명시적 활성화 메시지를 확인한 뒤 자기 Run과 running 상태를 기록한다. 이전 감독은 새 계산·worker를 시작하지 않는다. 아래 초기 ACK 절차는 완료된 이력이다.
 
-상태: Round 001 기술 준비·최종 변경 검산 완료. Round 002는 실제 다음 감독의 인수 ACK와 소유권 활성화 후 시작한다. 현재 단일 소유자는 STATUS.json의 active_supervisor_session이다.
+Round002 기술 준비·변경 검산 완료. 현재 단일 소유자는 STATUS.json의 active_supervisor_session이다. 다음 실제 Sol/high 감독은 최초에는 인수 ACK만 보내고 대기하며, 소유권 변경과 활성화 메시지를 모두 받은 뒤 Round003을 시작한다. 전환 중 worker·새 계산·공통문서 중복 수정 금지다.
 
-먼저 round_001/HANDOFF_INSTRUCTIONS.md를 전부 읽는다. 인계 토큰은 testb_r001_to_r002_20261105_0335이다. 다음 감독은 gpt-6.1-sol/high의 실제 Orca 새 세션이며 초기에는 대기한다. 이전 감독에게 자기 session ID·토큰과 문서 인수 ACK를 보내고, STATUS.json 소유권 갱신 및 활성화 메시지를 받은 뒤 실행한다. ACK 전 중복 worker 생성이나 공통 파일 수정 금지.
+먼저 round_002/HANDOFF_INSTRUCTIONS.md와 그 안의 필수 문서를 UTF-8로 전부 읽는다. 토큰은 testb_r002_to_r003_20261105_0504, 이전 감독은 codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef다. 실제 버전 orchestration/Orca CLI 안내와 AGENTS RAM 규칙을 먼저 확인한다. 자기 ORCA_AGENT_SESSION_ID와 토큰을 이전 감독에게 send하여 ACK하고 턴을 끝낸다. ACK 절차는 사용자 재승인 요청이 아니다.
 
-읽을 문서: AGENTS.md, USER_DIRECTIVE_20261105.md, ROUND_PROTOCOL.md, SUCCESS_CRITERIA.md, STATUS.json, LEDGER.md, round_001/ROUND_REPORT.md, EASY_EXPLANATION.md, NEXT_ROUND.md, HANDOFF_RECEIPT.json 및 최종감사/명부직접검산 보고서.
+확정: 새100척은 옛100척 및 옛점수와 교집합0이지만 source 항적에 모두 있다. 정확 문자열 명부100/순서와 2025년1~6월의46,705행을 추출했다. 별도 Luna가 source parquet4,212,389행을 다시 청크 스캔해46,705행 값·원행·ordinal 전수 일치와 누락/추가0을 확인했다. 대상요약100개 전필드 일치, valid/finite46,705·중복0이다. 대상당1~3,413행이며 시간대/CRS는 unknown이다.
 
-확정 결과: 구/신 Test B명부0/100·새명부/이전점수0/100·새100척 legacy항적관측100/100. 단일후보30건 직접신원0. CSV12쌍 전체SHA동일은 생산자 전수검사이며 독립감사는 저장증거·코드·작은XLSX직접비교와 train1/test1 시작4MiB씩을 확인했다. 최종감사pass10/fail0/unknown2·exit0. 사고성능·임계값·실제분할·provider내부모델은 미확인이다.
+실제 새100척점수/A·train참조는 미생성이다. 초기 독립감사7pass/1fail/2unknown·exit1은 stale 해시 구분 문제로 실패했고 보존했다. 생산자 metadata-only 정정 후 delta10pass/exit0, current56/56을 확인했다. 역사44digest의 최초의미/시점·옛코드/pyc 복원은 unknown이다. 독립26행합성은 점수성분 scalar/A/floor/충돌경계를 검증한 것이며 실제 사고성능이 아니다.
 
-다음 범위는 새100척의 입력계보·기존고정scorer·Test비적합·메모리계획을 확인하고 가능한 탐색점수/후보A를 준비하는 것이다. 실제 사고 여부·B/C·임계값·성능은 근거게이트 전 금지한다. 근접후보나 목록부재로 정답을 만들지 않는다.
+다음 범위는 round_002/NEXT_ROUND.md다. 원본 알고리즘·순서·dtype·제외집합을 유지하는 numeric 청크 loader와 단계 분리로 train참조 메모리계획을 확정하고, 안전관문 충족시 고정2026train참조로 새2025대상 탐색점수/후보A를 생성·별도검산한다. 기존 object frame 중첩의 peak는 미확정이며 초기2GiB를 보장값으로 사용하지 않는다. 메모리 작업 직전 RAM·예상peak·병행작업을 확인하고 부족시 다른 작업 후 재개 직전 재확인한다. polling/watch·사용자process종료 금지다.
 
-사용자 지시: 모든 Test B 조건 충족까지 라운드별 새Solhigh감독, 별도실제Lunaxhigh실행/검산, 결과→감독보고 체계를 계속한다. 완료세션은 식별·최신dispatch/활성후속 확인 후 창닫기 절차와 실제결과를 기록한다. RAM이 부족하면 다른가능작업을 먼저하고 실행직전 다시 확인한다. 매번 사용자에게 재승인을 요구하지 않는다.
+사고신원·정상근거·개발사용·임계값·실제분할·공식수식은 미확보다. B/C·사고여부·성능·제출을 만들지 않는다. 후보/합의/목록부재를 정답으로 부르지 않는다. 원자료/canonical/기존cache/선행라운드는 읽기전용이고 새작업은 round_003/ 소유권별이다. 외부수집/연락·공식제출·push 금지다.
 
-원자료·canonical·기존캐시/제출·선행라운드는 읽기전용. 새작업은 round_002/ 소유권별로 한다. 외부수집·메시지·공식제출·push는 제외한다. 사고신원/정상정답/규정 등 외부근거부족은 정확히 기록하며 유효한 다음작업이 없는 동일실험을 반복하지 않는다.
+사용자는 성공조건 충족까지 라운드별 새 실제Sol/high감독, 실제Luna/xhigh실행자·독립검산자, worker_done 보고, 완료창 정리를 승인했다. 유효한 로컬작업은 계속하며 외부근거 부족은 blocked_external_evidence로 구체화한다. 매라운드 재승인을 요구하거나 같은 계산을 의미없이 반복하지 않는다. 완료창은 정확handle의 최신dispatch/활성후속 확인 후 정리하고 실제released/closed와retained/unknown을 구분한다.

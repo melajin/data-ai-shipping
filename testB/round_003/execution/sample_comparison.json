@@ -1,0 +1,132 @@
+{
+  "sample_scope": {
+    "source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet",
+    "source_sha256": "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140",
+    "month": 1,
+    "selection": "first 16,384 row_index-ordered rows from ParquetFile.iter_batches(8192), columns projected exactly as listed",
+    "selected_input_rows": 16384,
+    "canonical_full_load_rows_called": false
+  },
+  "comparison": {
+    "columns_equal": true,
+    "row_count_equal": true,
+    "dtypes_original": {
+      "row_index": "int64",
+      "rfid_id": "int64",
+      "part_dt": "int32",
+      "rfid_time": "int16",
+      "key_valid": "bool",
+      "wkt_valid": "bool",
+      "len_m": "float64",
+      "bbox_m": "float64",
+      "cen_lon": "float64",
+      "cen_lat": "float64",
+      "month": "int8"
+    },
+    "dtypes_bounded": {
+      "row_index": "int64",
+      "rfid_id": "int64",
+      "part_dt": "int32",
+      "rfid_time": "int16",
+      "key_valid": "bool",
+      "wkt_valid": "bool",
+      "len_m": "float64",
+      "bbox_m": "float64",
+      "cen_lon": "float64",
+      "cen_lat": "float64",
+      "month": "int8"
+    },
+    "dtypes_equal": true,
+    "values_equal": true,
+    "nan_equal": true,
+    "first_mismatch": null
+  },
+  "boundary_fixture": {
+    "values": {
+      "rfid_id": [
+        "001",
+        "+2",
+        "9223372036854775808",
+        null,
+        "bad",
+        "3",
+        "9007199254740993",
+        "1.5"
+      ],
+      "part_dt": [
+        "20250101",
+        "20250102",
+        "20250103",
+        "20250104",
+        "20250105",
+        "2147483648",
+        "20250106",
+        "20250107"
+      ],
+      "key_valid": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    "original_whole": {
+      "rows": 6,
+      "dtypes": {
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "ids": [
+        "1",
+        "2",
+        "-9223372036854775808",
+        "3",
+        "9007199254740992",
+        "1"
+      ],
+      "dates": [
+        "20250101",
+        "20250102",
+        "20250103",
+        "-2147483648",
+        "20250106",
+        "20250107"
+      ]
+    },
+    "bounded_errors": [],
+    "batch_count": 4,
+    "interpretation": "boundary fixture highlights conversion/overflow and cross-batch inference behavior; it is not production equivalence proof",
+    "bounded_concat": {
+      "rows": 6,
+      "dtypes": {
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "ids": [
+        "1",
+        "2",
+        "-9223372036854775808",
+        "3",
+        "9007199254740992",
+        "1"
+      ],
+      "dates": [
+        "20250101",
+        "20250102",
+        "20250103",
+        "-2147483648",
+        "20250106",
+        "20250107"
+      ],
+      "equal": false
+    }
+  }
+}

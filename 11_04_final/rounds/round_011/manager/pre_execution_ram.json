@@ -1,0 +1,9 @@
+﻿{
+    "checked_utc":  "2026-11-04T20:19:13.0777888Z",
+    "available_gib":  4.1974372863769531,
+    "estimated_compute_peak_mib":  100,
+    "other_python":  [
+
+                     ],
+    "decision":  "Ready for one stdlib mock and one sequential saved-record audit after source approval"
+}

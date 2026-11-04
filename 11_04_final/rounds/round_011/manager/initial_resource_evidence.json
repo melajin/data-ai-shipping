@@ -1,0 +1,28 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T20:05:06.6755709Z",
+    "session":  "codex_224a9fbc_58cf_44d2_8dc9_d56b1d8641d0",
+    "thread":  "01a1a829-5b15-77c0-8af6-e429ff0eafb5",
+    "incoming_hash":  "42435C4779C85D4BCC447EC684304EF8DAE7D7BCFE82107EBEF32717B73C96DC",
+    "running_agents":  [
+                           {
+                               "paneKey":  "structured-agent-session-codex_224a9fbc_58cf_44d2_8dc9_d56b1d8641d0:7e8574f6-a324-472e-a9f0-1b19a2a2cf79",
+                               "state":  "working",
+                               "conversationName":  "선박 조업 분류 반복 관리자 세션"
+                           },
+                           {
+                               "paneKey":  "structured-agent-session-codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef:b9a3fb49-ec79-4247-aed5-2e988fe0b68e",
+                               "state":  "working",
+                               "conversationName":  "Test B Round 002 감독 인수 ACK 대기"
+                           }
+                       ],
+    "available_gib":  4.2700996398925781,
+    "total_gib":  13.809436798095703,
+    "python_processes":  [
+
+                         ],
+    "expected_new_compute_peak_mib":  100,
+    "parallel_source_workers":  2,
+    "worker_text_memory_assumption_mib":  200,
+    "large_computations":  0,
+    "duplicate_round_evidence":  false
+}

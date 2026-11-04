@@ -1,0 +1,12 @@
+﻿{
+    "received_utc":  "2026-11-04T20:19:12.5609200Z",
+    "author":  "/root/author",
+    "write_stop_acknowledged":  true,
+    "no_tests_run_by_author":  true,
+    "sha256":  {
+                   "rounds/round_011/code/test_verify_frozen_run.py":  "80493e3e0ded68db2aa0c1bee7594f5c400d28744c31c87fcbb03c7520d64995",
+                   "rounds/round_011/code/verify_frozen_run.py":  "e183e7e323ddc9bc0754fd0bd66489d7d6596bacad806756c54776686f1e3e45"
+               },
+    "manager_runner_sha256":  "713e8839aa50cc0bb464f4430d9ac7c6140c90835105f663ab14f881bbc54ae7",
+    "manager_runner_write_stop":  true
+}

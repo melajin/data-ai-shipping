@@ -1,0 +1,46 @@
+﻿{
+    "verified_local":  "2026-11-05T05:11:19.9750705+09:00",
+    "scope":  "supervisor document UTF8 and retained audit count verification; no data/scorer rerun",
+    "checks":  [
+                   {
+                       "path":  "testB/round_002/ROUND_REPORT.md",
+                       "utf8_valid":  true,
+                       "sha256":  "0fe0da3726c9c36a23705dd57ed2ee5abcfe8ce0aa2c6616dbf02c118b695397"
+                   },
+                   {
+                       "path":  "testB/round_002/EASY_EXPLANATION.md",
+                       "utf8_valid":  true,
+                       "sha256":  "bc4ae5b0b90214d93dff6d7ef19b3a8e6e2e9f2c5d644dbbbe71132854bf0de8"
+                   },
+                   {
+                       "path":  "testB/round_002/NEXT_ROUND.md",
+                       "utf8_valid":  true,
+                       "sha256":  "95832258bd5a38438b412edae42c3717f764975ca3193a036fb81285abac0e5c"
+                   },
+                   {
+                       "path":  "testB/round_002/HANDOFF_INSTRUCTIONS.md",
+                       "utf8_valid":  true,
+                       "sha256":  "187f2a483374c71bc5db1ee5f43cc97d53ab632dcc2428bf86c040c2247043da"
+                   },
+                   {
+                       "path":  "testB/round_002/contract/next_supervisor_prompt.md",
+                       "utf8_valid":  true,
+                       "sha256":  "f803524ade46c40e3e380c0ba00811953185106751c3f5c10e0d1d2cc290a61f"
+                   },
+                   {
+                       "path":  "testB/NEXT_SESSION.md",
+                       "utf8_valid":  true,
+                       "sha256":  "fafb07517ad90dde0094d68267c42cb047d40350eacbd7341bb7ace27364bcf6"
+                   },
+                   {
+                       "path":  "testB/STATUS.json",
+                       "utf8_valid":  true,
+                       "sha256":  "2d3a19e51d1556b8420bbfdcd0856b9a5d50675c7caf4f4760ff8aa94ef7ca6c"
+                   },
+                   {
+                       "path":  "testB/round_002/HANDOFF_RECEIPT.json",
+                       "utf8_valid":  true,
+                       "sha256":  "ad6d9f657de601db82e4e0ab2d2551b16e95a21d98e3ea52076fa35e71f453b9"
+                   }
+               ]
+}

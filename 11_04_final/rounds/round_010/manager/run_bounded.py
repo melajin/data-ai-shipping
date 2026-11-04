@@ -222,6 +222,8 @@ def main():
                                    root_identity_capture_method='Popen process handle fallback failed')
                     deadline=min(t0+limit,time.monotonic()+cleanup_seconds)
                     receipt['popen_handle_fallback']=terminate_popen_handle(proc,deadline)
+                    receipt['wrapper_unchanged']=(sha(__file__)==wrapper_expected
+                                                  and sha(source/'run_bounded.py')==wrapper_expected)
                     receipt.update(status='root_identity_capture_failed',
                                    owned_tree_status='unverified_after_root_identity_failure',
                                    owned_tree_remaining={'root_exit_confirmed':receipt['popen_handle_fallback']['root_exit_confirmed'],

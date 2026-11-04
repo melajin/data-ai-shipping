@@ -1,0 +1,13 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T19:56:30.4775902Z",
+    "available_ram_gib":  4.5950469970703125,
+    "other_python_processes":  [
+
+                               ],
+    "start_gate_gib":  4,
+    "stop_gate_gib":  1.5,
+    "estimated_full_path_peak":  "unknown; prior sampled stop ~2.96GiB is not demand bound; COL16+ROW8 changes allocation",
+    "expected_floor_embedding_mib":  486,
+    "time_cap_seconds":  480,
+    "decision":  "one pilot only if RAM gate and no duplicate Python pass"
+}

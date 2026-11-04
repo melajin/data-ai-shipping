@@ -1,0 +1,5 @@
+{
+  "audit_status": "fail",
+  "error_type": "KeyError",
+  "error": "'testB/round_002/execution/isolated_runner.py'"
+}

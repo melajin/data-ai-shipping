@@ -1,0 +1,390 @@
+{
+  "schema_version": 1,
+  "audit_status": "pass",
+  "scope": "Independent metadata/hash-map repair delta verification; no row scan, synthetic execution, reference rebuild or actual score rerun.",
+  "task_id": "task_42afebec8c97",
+  "dispatch_id": "ctx_069ff0f3f3bd",
+  "run_id": "run_a0639d5ac36a",
+  "requested_model": "gpt-6-luna",
+  "requested_effort": "xhigh",
+  "provider_internal_model_effort": "unknown",
+  "ram": {
+    "before_work": {
+      "local_time": "2026-11-05T04:57:48.240651+09:00",
+      "available_mib": 3399.7,
+      "available_kib": 3481292,
+      "total_mib": 14140.9,
+      "process_count": 319,
+      "relevant_process_count": 45,
+      "top_relevant_processes": [
+        {
+          "name": "python.exe",
+          "pid": 27220,
+          "rss_mib": 1194.8
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 19824,
+          "rss_mib": 550.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 17216,
+          "rss_mib": 387.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 18136,
+          "rss_mib": 300.0
+        },
+        {
+          "name": "codex.exe",
+          "pid": 5592,
+          "rss_mib": 249.2
+        },
+        {
+          "name": "codex.exe",
+          "pid": 23860,
+          "rss_mib": 208.8
+        },
+        {
+          "name": "codex.exe",
+          "pid": 5492,
+          "rss_mib": 187.8
+        },
+        {
+          "name": "codex.exe",
+          "pid": 28480,
+          "rss_mib": 171.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 27864,
+          "rss_mib": 103.1
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 22476,
+          "rss_mib": 93.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 1528,
+          "rss_mib": 92.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 27244,
+          "rss_mib": 80.6
+        }
+      ]
+    },
+    "expected_peak_increment_mib": 128,
+    "separate_session_reserve_mib": 512,
+    "rss_start_mib": 23.5,
+    "rss_sampled_peak_mib": 24.1,
+    "rss_sampled_delta_mib": 0.6,
+    "sampling_note": "process RSS sampled at start and after hash/review stages; small metadata task only, not system-wide exact peak"
+  },
+  "environment": {
+    "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "psutil": "7.0.0"
+  },
+  "metadata_repair_receipt": {
+    "path": "testB\\round_002\\execution\\logs\\manifest_hashmap_repair_receipt.json",
+    "sha256": "b54bbbfadad5d498a1ca76b2263436c5fa8f4da1eb298ddee160a076744a0fda",
+    "operation": "metadata-only reclassify stale artifacts_sha256 as historical; establish one current canonical artifact_sha256",
+    "applied_at_local": "2026-11-05T04:47:52.979174+09:00",
+    "actual_process_exit_code_recorded": 0,
+    "exit_sidecar_present": false
+  },
+  "previous_V_audit": {
+    "status": "fail",
+    "aggregate_exit_code": 1,
+    "preserved": true
+  },
+  "current_delta_audit_exit_code": 0,
+  "tests": {
+    "prechange_backup_and_postchange_manifest_hashes": {
+      "status": "pass",
+      "evidence": {
+        "expected_pre_change_sha256": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+        "actual_backup_sha256": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+        "pre_change_manifest_hash_in_receipt": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+        "prior_V_hash_manifest_before_repair": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+        "expected_post_change_sha256": "a8bb74a10936572ad152aabeacc5f741a036d922e3a86fdd2f0dbcb494117e42",
+        "actual_post_change_sha256": "a8bb74a10936572ad152aabeacc5f741a036d922e3a86fdd2f0dbcb494117e42",
+        "receipt_post_change_manifest_sha256": "a8bb74a10936572ad152aabeacc5f741a036d922e3a86fdd2f0dbcb494117e42"
+      }
+    },
+    "historical_44_values_preserved_and_limited": {
+      "status": "pass",
+      "evidence": {
+        "prechange_map_entries": 44,
+        "postchange_historical_entries": 44,
+        "exact_value_equality": true,
+        "metadata": {
+          "source": "unclassified artifacts_sha256 map preserved from the exact pre-change manifest snapshot",
+          "captured_at_local": "2026-11-05T04:47:52.954130+09:00",
+          "applied_scope": "classification only; 44 historical digest strings retained verbatim and not recomputed or overwritten",
+          "status": "legacy-only; not a current integrity target",
+          "audit_evidence": {
+            "audit_report": "testB/round_002/audit/preparation_001/audit_report.md",
+            "review_json": "testB/round_002/audit/preparation_001/review.json",
+            "audit_observed_mismatches": "4 of 44 against then-current files; see audit report for paths and values",
+            "prior_current_map": "artifact_sha256 verified 53/53 by independent audit"
+          },
+          "backup": {
+            "path": "logs/execution_manifest_before_hashmap_repair_20261105T044752909863p0900.json",
+            "sha256": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+            "byte_identical_to_pre_change_manifest": true
+          },
+          "related_existing_backup": {
+            "path": "logs/execution_manifest_mojibake_legacy.json",
+            "sha256": "b4857c22a9c38af0d946cb7c625b79ff93ce09f38626a05d636192aee056db03",
+            "description": "earlier damaged-UTF8 manifest copy, separate from this exact pre-reclassification snapshot"
+          },
+          "limitations": "Historical hashes are not source-code or byte backups. This repair does not establish that all 44 digests were correct when first recorded; older source/pyc bytes were not restored or independently recovered. The new exact manifest snapshot preserves only the pre-change manifest bytes."
+        },
+        "receipt_does_not_claim_restoration": true
+      }
+    },
+    "prior_current_53_subset_preserved": {
+      "status": "pass",
+      "evidence": {
+        "prior_count": 53,
+        "after_subset_count": 53,
+        "map_values_unchanged": true,
+        "prechange_map_actual_verification": {
+          "name": "pre-repair current artifact_sha256 (53)",
+          "entries": 53,
+          "matches": 53,
+          "missing": [],
+          "mismatches": [],
+          "pass": true
+        }
+      }
+    },
+    "single_current_canonical_map_56_of_56": {
+      "status": "pass",
+      "evidence": {
+        "canonical_field": "artifact_sha256",
+        "current_map_fields": [
+          "artifact_sha256"
+        ],
+        "historical_field": "historical_artifacts_sha256_before_runner_repair",
+        "current_map_verification": {
+          "name": "post-repair canonical artifact_sha256 (56)",
+          "entries": 56,
+          "matches": 56,
+          "missing": [],
+          "mismatches": [],
+          "pass": true
+        },
+        "receipt_counts": {
+          "before_manifest_hash": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+          "backup_hash": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+          "after_manifest_hash": "a8bb74a10936572ad152aabeacc5f741a036d922e3a86fdd2f0dbcb494117e42",
+          "legacy_count": 44,
+          "prior_current_count": 53,
+          "new_current_count": 56,
+          "new_current_map_all_match": true,
+          "prior_current_map_preserved": true,
+          "historical_values_match_pre_change_snapshot": true,
+          "repair_exit_code": 0
+        }
+      }
+    },
+    "backup_snapshot_and_self_hash_exclusion": {
+      "status": "pass",
+      "evidence": {
+        "snapshot_path": "logs/execution_manifest_before_hashmap_repair_20261105T044752909863p0900.json",
+        "snapshot_in_current_map": true,
+        "snapshot_hash_in_current_map": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+        "backup_snapshot_own_artifact_map_count": 53,
+        "snapshot_own_map_has_self_entry": false,
+        "manifest_self_entry_present": false,
+        "repair_receipt_entry_present": false,
+        "policy": {
+          "canonical_map_field": "artifact_sha256",
+          "only_current_hash_map": true,
+          "scope": "current execution/ files at repair time, excluding execution_manifest.json (self-reference) and logs/manifest_hashmap_repair_receipt.json (receipt records the final manifest hash)",
+          "manifest_snapshot_is_hashed_by_current_map": true,
+          "snapshot_contains_no_self_hash": true
+        }
+      }
+    },
+    "runner_report_scan_and_selected_unchanged": {
+      "status": "pass",
+      "evidence": [
+        {
+          "path": "testB/round_002/execution/isolated_runner.py",
+          "prior_independent_sha256": "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d",
+          "current_sha256": "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d",
+          "unchanged": true,
+          "size_bytes": 29373,
+          "mtime_ns": 1793820024244012800
+        },
+        {
+          "path": "testB/round_002/execution/preflight_report.md",
+          "prior_independent_sha256": "8c69bb155702260d0f2b797bc51c621a242c5030e30392ae72dd321a5c8ca58d",
+          "current_sha256": "8c69bb155702260d0f2b797bc51c621a242c5030e30392ae72dd321a5c8ca58d",
+          "unchanged": true,
+          "size_bytes": 11835,
+          "mtime_ns": 1793820293760745000
+        },
+        {
+          "path": "testB/round_002/execution/scan_result.json",
+          "prior_independent_sha256": "f72f210de4f0535c0f17377343bfcdb43a6e0e498da2914dd24e719856c4bc4c",
+          "current_sha256": "f72f210de4f0535c0f17377343bfcdb43a6e0e498da2914dd24e719856c4bc4c",
+          "unchanged": true,
+          "size_bytes": 5065,
+          "mtime_ns": 1793820327704710700
+        },
+        {
+          "path": "testB/round_002/execution/selected_rows/month_01.parquet",
+          "prior_independent_sha256": "9499b01d12bf408af02748a7cc8348dff3c572439bc29eca1232735d0a3a4dd4",
+          "current_sha256": "9499b01d12bf408af02748a7cc8348dff3c572439bc29eca1232735d0a3a4dd4",
+          "unchanged": true,
+          "size_bytes": 359901,
+          "mtime_ns": 1793819185921641800
+        },
+        {
+          "path": "testB/round_002/execution/selected_rows/month_02.parquet",
+          "prior_independent_sha256": "eb33e2fba674803182845dff7419f62abe5e97b3e1b34c440ebeb11d5d11b10e",
+          "current_sha256": "eb33e2fba674803182845dff7419f62abe5e97b3e1b34c440ebeb11d5d11b10e",
+          "unchanged": true,
+          "size_bytes": 290979,
+          "mtime_ns": 1793819186162034600
+        },
+        {
+          "path": "testB/round_002/execution/selected_rows/month_03.parquet",
+          "prior_independent_sha256": "e7fcc2659e22280614b90e54f3be344bf982c22bb9e62bda5f5b8c320e5ddecb",
+          "current_sha256": "e7fcc2659e22280614b90e54f3be344bf982c22bb9e62bda5f5b8c320e5ddecb",
+          "unchanged": true,
+          "size_bytes": 373962,
+          "mtime_ns": 1793819186509266500
+        },
+        {
+          "path": "testB/round_002/execution/selected_rows/month_04.parquet",
+          "prior_independent_sha256": "601dd19f2e088d24f24921e360b93a77edf10cbbedbc1671006fb53b07cbcf12",
+          "current_sha256": "601dd19f2e088d24f24921e360b93a77edf10cbbedbc1671006fb53b07cbcf12",
+          "unchanged": true,
+          "size_bytes": 454037,
+          "mtime_ns": 1793819186923602000
+        },
+        {
+          "path": "testB/round_002/execution/selected_rows/month_05.parquet",
+          "prior_independent_sha256": "62798147d55de451b9d2ee63ab2f9825b10ad8d5a291731f2874b6ceb41b1d31",
+          "current_sha256": "62798147d55de451b9d2ee63ab2f9825b10ad8d5a291731f2874b6ceb41b1d31",
+          "unchanged": true,
+          "size_bytes": 557706,
+          "mtime_ns": 1793819187354770400
+        },
+        {
+          "path": "testB/round_002/execution/selected_rows/month_06.parquet",
+          "prior_independent_sha256": "fd036e93829e95112d78e78298d9cdf4300ecb66f0072313270bf4ed452b277b",
+          "current_sha256": "fd036e93829e95112d78e78298d9cdf4300ecb66f0072313270bf4ed452b277b",
+          "unchanged": true,
+          "size_bytes": 583178,
+          "mtime_ns": 1793819187857106900
+        }
+      ]
+    },
+    "repair_utf8_and_actual_exit": {
+      "status": "pass",
+      "evidence": {
+        "utf8_files": [
+          {
+            "path": "testB\\round_002\\execution\\logs\\manifest_hashmap_repair_receipt.json",
+            "decodes": true,
+            "replacement_count": 0,
+            "size_bytes": 3061
+          },
+          {
+            "path": "testB\\round_002\\execution\\execution_manifest.json",
+            "decodes": true,
+            "replacement_count": 0,
+            "size_bytes": 28402
+          },
+          {
+            "path": "testB\\round_002\\execution\\preflight_report.md",
+            "decodes": true,
+            "replacement_count": 0,
+            "size_bytes": 11835
+          }
+        ],
+        "receipt_utf8": {
+          "new_manifest_utf8_json_parse": true,
+          "receipt_written_as_utf8": true
+        },
+        "receipt_exit_code": 0,
+        "stdout": "Pre-change manifest copied byte-for-byte; hash-map reclassification staged. Final hashes and exit status are in manifest_hashmap_repair_receipt.json.",
+        "stderr_empty": true,
+        "exit_code_sidecar_present": false
+      }
+    },
+    "original_V_fail_preserved": {
+      "status": "pass",
+      "evidence": {
+        "prior_overall_status": "fail",
+        "prior_aggregate_exit": 1,
+        "prior_review_exit_file": 1
+      }
+    },
+    "previous_row_scan_and_synthetic_evidence_linked_without_rerun": {
+      "status": "pass",
+      "evidence": {
+        "prior_independent_scan_exit": 0,
+        "prior_rows_scanned": 4212389,
+        "prior_selected_rows": 46705,
+        "prior_selected_match": true,
+        "prior_synthetic_exit": 0,
+        "prior_fixture_rows": 26,
+        "prior_fixture_status": "pass",
+        "unchanged_code_report_scan_selected": true,
+        "rerun_this_task": false
+      }
+    },
+    "metadata_only_change_scope": {
+      "status": "pass",
+      "evidence": {
+        "changed_top_level_fields": [
+          "artifact_sha256",
+          "artifacts_sha256",
+          "current_hash_map_policy",
+          "hash_map_repair",
+          "historical_artifacts_sha256_before_runner_repair",
+          "historical_artifacts_sha256_before_runner_repair_metadata"
+        ],
+        "allowed_metadata_fields": [
+          "artifact_sha256",
+          "artifacts_sha256",
+          "current_hash_map_policy",
+          "hash_map_repair",
+          "historical_artifacts_sha256_before_runner_repair",
+          "historical_artifacts_sha256_before_runner_repair_metadata"
+        ],
+        "only_metadata_changed": true,
+        "prior_audit_folder_unchanged": true
+      }
+    }
+  },
+  "unknowns": [
+    "The preserved historical 44 digests were not restored or validated as original source bytes; their original semantic label and initial recording time remain unknown.",
+    "Historical source/pyc bytes that once corresponded to the 44 digests are not available for restoration/verification.",
+    "Provider internal model and effort are unknown.",
+    "Accident truth, normal basis, development use, thresholds, splits, performance, and full production peak RAM remain unknown."
+  ],
+  "not_run": [
+    "full parquet scan",
+    "independent synthetic scorer fixture",
+    "reference rebuild",
+    "actual score"
+  ],
+  "audit_artifacts": {
+    "output_directory": "testB\\round_002\\audit\\manifest_delta_001",
+    "aggregate_exit_code": 0
+  }
+}

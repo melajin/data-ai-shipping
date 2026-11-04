@@ -1,0 +1,9 @@
+﻿python.exe : {"audit_status": "fail", "error_type": "KeyError", "error": "'testB/round_002/execution/isolated_runner.py
+'"}
+위치 줄:10 문자:401
++ ... )}}; $out = & python (Join-Path $a 'metadata_delta_validator.py') 2>& ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ({"audit_status"...ed_runner.py'"}:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+

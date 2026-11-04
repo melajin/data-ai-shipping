@@ -1,0 +1,1 @@
+{"audit_status": "pass", "producer_metadata_repair_exit": 0, "delta_validator_exit": 0, "prior_v_aggregate_exit": 1, "current_map": "56/56", "prior_map": "53/53 preserved", "historical_map": "44 values preserved; meaning/time/restoration unknown"}

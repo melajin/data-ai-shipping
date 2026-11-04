@@ -1,0 +1,30 @@
+﻿{
+    "host_total_slots":  4,
+    "assistants":  [
+                       {
+                           "owns":  "rounds/round_011/code/*",
+                           "fork_turns":  "none",
+                           "session":  "01a1a82a-8671-7e30-84e9-489449945dd0",
+                           "effort":  "xhigh",
+                           "role":  "author",
+                           "requested_model":  "gpt-6-luna"
+                       },
+                       {
+                           "owns":  "rounds/round_011/review/*",
+                           "fork_turns":  "none",
+                           "session":  "01a1a82a-aece-77b3-aff0-aa614c39eb0f",
+                           "effort":  "xhigh",
+                           "role":  "reviewer",
+                           "requested_model":  "gpt-6-luna"
+                       }
+                   ],
+    "host_evidence":  "rounds/round_011/manager/host_turn_evidence.json",
+    "user_max_assistants":  4,
+    "note":  "Host-reported turn_context configuration evidence only; not internal model verification",
+    "used_total_slots":  3,
+    "manager":  {
+                    "requested_model":  "gpt-6-astra",
+                    "effort":  "high",
+                    "orca_session":  "codex_224a9fbc_58cf_44d2_8dc9_d56b1d8641d0"
+                }
+}

@@ -1,0 +1,11 @@
+﻿{
+    "message_id":  "msg_6cb4415e8803",
+    "type":  "handoff",
+    "from":  "orca_session_id:codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7",
+    "subject":  "Round003 인수 ACK",
+    "token":  "testb_r002_to_r003_20261105_0504",
+    "document_acceptance_reported":  true,
+    "no_pre_activation_execution_reported":  true,
+    "received_by":  "codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef",
+    "recorded_local":  "2026-11-05T05:13:15.6088599+09:00"
+}

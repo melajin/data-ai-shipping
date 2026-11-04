@@ -1,0 +1,30 @@
+﻿python.exe : Traceback (most recent call last):
+위치 줄:8 문자:383
++ ... che'); $out=& python (Join-Path $a 'finalize_delta_report.py') 2>&1;  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\testB\round_002\audit\manifest_delta_001\finalize_delta_rep
+ort.py", line 60, in <module>
+    hm={'schema_version':1,'created_local':datetime.now().astimezone().isoformat(),'algorithm':'SHA-256','self_hash_exc
+luded':True,'scope':'metadata/hash review only; no source parquet content scan or hash, no scorer/reference execution',
+'audit_validator_actual_exit':r['current_delta_audit_exit_code'],'producer_metadata_repair_receipt_exit':receipt['exit_
+code'],'previous_v_aggregate_exit':old_review['audit_process_exit_codes']['aggregate_review'],'current_manifest_sha256'
+:sha(EXEC/'execution_manifest.json'),'pre_change_snapshot_sha256':sha(EXEC/receipt['backup_path']),'current_hash_map_ve
+rification':mapcheck['current_map_verification'],'prior_current_53_map_verification':prev['prechange_map_actual_verific
+ation'],'historical_44_exact_comparison':{'entry_count':hist['prechange_map_entries'],'same_values':hist['exact_value_e
+quality'],'source':'byte-identical pre-change manifest snapshot','original_semantics_time_restore':'unknown'},'unchange
+d_production_files':protected['runner_report_scan_selected'],'input_hashes_and_stats':inputs,'audit_artifact_hashes':al
+l_audit}
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+

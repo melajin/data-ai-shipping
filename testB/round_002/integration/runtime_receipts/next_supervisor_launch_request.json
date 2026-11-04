@@ -1,0 +1,10 @@
+﻿{
+    "agent":  "codex",
+    "worktree":  "current",
+    "model":  "gpt-6.1-sol",
+    "effort":  "high",
+    "prompt_path":  "testB/round_002/contract/next_supervisor_prompt.md",
+    "prompt_sha256":  "f803524ade46c40e3e380c0ba00811953185106751c3f5c10e0d1d2cc290a61f",
+    "provider_internal_model_effort":  "unknown",
+    "purpose":  "Round003 initial ACK-only supervisor handoff"
+}

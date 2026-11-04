@@ -1,0 +1,24 @@
+﻿{
+    "maxabs":  1.8446231598301388E-06,
+    "method":  "PowerShell independent arithmetic on saved two-query JSON only",
+    "new_f1":  null,
+    "exact_equal":  false,
+    "new_inference":  0,
+    "argmax_equal":  true,
+    "max_row_sum_error":  5.5413693189620972E-08,
+    "rows":  [
+                 {
+                     "query":  "36001915",
+                     "argmax":  0,
+                     "maxabs":  2.6026283017621665E-07,
+                     "reference_argmax":  0
+                 },
+                 {
+                     "query":  "31703435",
+                     "argmax":  1,
+                     "maxabs":  1.8446231598301388E-06,
+                     "reference_argmax":  1
+                 }
+             ],
+    "checked_at_utc":  "2026-11-04T20:11:41.3757494Z"
+}

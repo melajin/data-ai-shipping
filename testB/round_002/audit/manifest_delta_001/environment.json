@@ -1,0 +1,92 @@
+{
+  "requested_model": "gpt-6-luna",
+  "requested_effort": "xhigh",
+  "provider_internal_model_effort": "unknown",
+  "memory": {
+    "before_work": {
+      "local_time": "2026-11-05T04:57:48.240651+09:00",
+      "available_mib": 3399.7,
+      "available_kib": 3481292,
+      "total_mib": 14140.9,
+      "process_count": 319,
+      "relevant_process_count": 45,
+      "top_relevant_processes": [
+        {
+          "name": "python.exe",
+          "pid": 27220,
+          "rss_mib": 1194.8
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 19824,
+          "rss_mib": 550.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 17216,
+          "rss_mib": 387.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 18136,
+          "rss_mib": 300.0
+        },
+        {
+          "name": "codex.exe",
+          "pid": 5592,
+          "rss_mib": 249.2
+        },
+        {
+          "name": "codex.exe",
+          "pid": 23860,
+          "rss_mib": 208.8
+        },
+        {
+          "name": "codex.exe",
+          "pid": 5492,
+          "rss_mib": 187.8
+        },
+        {
+          "name": "codex.exe",
+          "pid": 28480,
+          "rss_mib": 171.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 27864,
+          "rss_mib": 103.1
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 22476,
+          "rss_mib": 93.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 1528,
+          "rss_mib": 92.4
+        },
+        {
+          "name": "Orca.exe",
+          "pid": 27244,
+          "rss_mib": 80.6
+        }
+      ]
+    },
+    "expected_peak_increment_mib": 128,
+    "separate_session_reserve_mib": 512,
+    "rss_start_mib": 23.5,
+    "rss_sampled_peak_mib": 24.1,
+    "rss_sampled_delta_mib": 0.6,
+    "sampling_note": "process RSS sampled at start and after hash/review stages; small metadata task only, not system-wide exact peak"
+  },
+  "python": {
+    "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "psutil": "7.0.0"
+  },
+  "orcacli_version": "1.4.246",
+  "metadata_repair_actual_exit_code": 0,
+  "prior_v_aggregate_exit_code": 1,
+  "delta_audit_exit_code": 0
+}

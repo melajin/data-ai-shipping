@@ -1,0 +1,116 @@
+﻿[
+    {
+        "source_log":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T05-04-05-01a1a829-5b15-77c0-8af6-e429ff0eafb5.jsonl",
+        "host_turn_context":  {
+                                  "timestamp":  "2026-11-04T20:04:06.134Z",
+                                  "ordinal":  9,
+                                  "type":  "turn_context",
+                                  "payload":  {
+                                                  "turn_id":  "01a1a829-5d01-76d3-ade3-7a9afdb22706",
+                                                  "root_turn_id":  "01a1a829-5d01-76d3-ade3-7a9afdb22706",
+                                                  "disabled_plugin_ids":  [
+
+                                                                          ],
+                                                  "cwd":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+                                                  "approval_policy":  "never",
+                                                  "approvals_reviewer":  "user",
+                                                  "sandbox_policy":  {
+                                                                         "type":  "danger-full-access"
+                                                                     },
+                                                  "permission_profile":  {
+                                                                             "type":  "disabled"
+                                                                         },
+                                                  "model":  "gpt-6-astra",
+                                                  "comp_hash":  "3000",
+                                                  "collaboration_mode":  {
+                                                                             "mode":  "default",
+                                                                             "settings":  {
+                                                                                              "model":  "gpt-6-astra",
+                                                                                              "reasoning_effort":  "high",
+                                                                                              "developer_instructions":  null
+                                                                                          }
+                                                                         },
+                                                  "multi_agent_version":  "v2",
+                                                  "realtime_active":  false,
+                                                  "effort":  "high",
+                                                  "summary":  "none"
+                                              }
+                              }
+    },
+    {
+        "source_log":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T05-05-21-01a1a82a-8671-7e30-84e9-489449945dd0.jsonl",
+        "host_turn_context":  {
+                                  "timestamp":  "2026-11-04T20:05:22.606Z",
+                                  "ordinal":  9,
+                                  "type":  "turn_context",
+                                  "payload":  {
+                                                  "turn_id":  "01a1a82a-8781-7550-a177-1ab525402d9e",
+                                                  "root_turn_id":  "01a1a829-5d01-76d3-ade3-7a9afdb22706",
+                                                  "disabled_plugin_ids":  [
+
+                                                                          ],
+                                                  "cwd":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+                                                  "approval_policy":  "never",
+                                                  "approvals_reviewer":  "user",
+                                                  "sandbox_policy":  {
+                                                                         "type":  "danger-full-access"
+                                                                     },
+                                                  "permission_profile":  {
+                                                                             "type":  "disabled"
+                                                                         },
+                                                  "model":  "gpt-6-luna",
+                                                  "comp_hash":  "3000",
+                                                  "collaboration_mode":  {
+                                                                             "mode":  "default",
+                                                                             "settings":  {
+                                                                                              "model":  "gpt-6-luna",
+                                                                                              "reasoning_effort":  "xhigh",
+                                                                                              "developer_instructions":  null
+                                                                                          }
+                                                                         },
+                                                  "multi_agent_version":  "v2",
+                                                  "realtime_active":  false,
+                                                  "effort":  "xhigh",
+                                                  "summary":  "none"
+                                              }
+                              }
+    },
+    {
+        "source_log":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T05-05-32-01a1a82a-aece-77b3-aff0-aa614c39eb0f.jsonl",
+        "host_turn_context":  {
+                                  "timestamp":  "2026-11-04T20:05:33.118Z",
+                                  "ordinal":  9,
+                                  "type":  "turn_context",
+                                  "payload":  {
+                                                  "turn_id":  "01a1a82a-afc9-76a3-b849-330ad1aa87a5",
+                                                  "root_turn_id":  "01a1a829-5d01-76d3-ade3-7a9afdb22706",
+                                                  "disabled_plugin_ids":  [
+
+                                                                          ],
+                                                  "cwd":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+                                                  "approval_policy":  "never",
+                                                  "approvals_reviewer":  "user",
+                                                  "sandbox_policy":  {
+                                                                         "type":  "danger-full-access"
+                                                                     },
+                                                  "permission_profile":  {
+                                                                             "type":  "disabled"
+                                                                         },
+                                                  "model":  "gpt-6-luna",
+                                                  "comp_hash":  "3000",
+                                                  "collaboration_mode":  {
+                                                                             "mode":  "default",
+                                                                             "settings":  {
+                                                                                              "model":  "gpt-6-luna",
+                                                                                              "reasoning_effort":  "xhigh",
+                                                                                              "developer_instructions":  null
+                                                                                          }
+                                                                         },
+                                                  "multi_agent_version":  "v2",
+                                                  "realtime_active":  false,
+                                                  "effort":  "xhigh",
+                                                  "summary":  "none"
+                                              }
+                              }
+    }
+]

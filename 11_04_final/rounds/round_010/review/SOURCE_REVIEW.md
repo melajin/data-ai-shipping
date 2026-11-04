@@ -1,0 +1,33 @@
+﻿# Round010 independent source review
+
+**Verdict: approved for the bounded source gate below.** This freezes the source set for one pure mock and, only after that mock succeeds against the identical SHA-256 map, one fixed actual-context pilot. It does not report a runtime result or authorize retries.
+
+## Requested reviewer session and method
+
+The requested reviewer setting was `gpt-6-luna` / `xhigh` / `fork_turns=none`. `rounds/round_010/manager/assistant_host_evidence.json` records those requested and host-reported turn-context settings for the reviewer. Host metadata is not internal model attestation.
+
+I reviewed source text, prior source reviews, the frozen plan/amendment, copied input metadata, and SHA-256 values. I did not import Python packages, run AST parsing, tests, the mock, or the model. I did not load the NPZ as an array, read the historical reference CSV, inspect project features/labels/OUTER/holdout, or compute F1. I read only the copied `query_freeze.json` metadata and the manager's `input_copy_evidence.json`; the NPZ was hash-checked as an opaque file only.
+
+## Frozen inputs and runtime contract
+
+The manager copy receipt records the context copy as 1,916,394 bytes, SHA-256 `9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5`, and query-freeze JSON as 748 bytes, SHA-256 `6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef`. The freeze metadata fixes ordered query IDs `36001915`, `31703435`, digest `7750db94f83f57a4e58b62f29b32ba2e737339108e0923a970f9a924bf9be969`, and says reference probability rows read at freeze time were zero. The context and freeze hashes are included in the approved map and guarded again by the pilot source.
+
+`rounds/round_004/runtime_author/replay_contract.json` is pinned at SHA-256 `819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5`. The pilot source also enforces checkpoint size 110,368,038 bytes and SHA-256 `bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0` before loading it. The reference path is fixed to the historical fold-0 INNER probability CSV; source review confirms the reader reads its header and first two rows only, verifies those IDs in frozen order, and uses the ID plus p0..p3 fields. It does not access `y_inner` or any INNER labels. The source can record that bytes in the selected rows may contain unparsed later columns; it does not parse those columns.
+
+## Code and runtime review
+
+The round010 COL and ROW adapters are byte-identical to the previously reviewed round008 column16 and round009 row8 adapters. The pinned package sources in the approved map include TabICL 2.2.0 metadata and the model, embedding, interaction, attention, encoder, layer, inference, inference-configuration, and learning modules. The prior round009 source review establishes that ROW input is `(B,T,H+C,E)`, with `T` an independent row batch axis and `H+C` the intact attention sequence; ICL uses full `T` with FIT labels and slices query rows only after its forward. The adapters therefore split only COL columns and ROW `T`; they retain sequence axes and order, reject unsupported tensors, pass through manager configuration, and reconstruct output in the original order. I found no ICL chunking.
+
+`replay_inner_pilot.py` configures the fitted original COL and ROW managers from their resolved configs before installing adapters. `icl_observer.py` wraps only the fitted estimator's existing ICL manager call, forwards the same arguments once, and returns the original output object. Its context guard infers train size from the observed `y_train` tensor shape and checks `R` has 3,146 rows (3,144 FIT plus two queries) while `y_train` has 3,144 rows. The instrumentation records shapes and stages inside the existing COL/ROW/ICL calls; it does not add a model forward or prediction. The pure mock statically covers COL+ROW co-installation, configuration, tail/order reconstruction, unknown tensor rejection, restoration, and transparent ICL call-through/context validation.
+
+The pilot source contains one `estimator.fit(fit_x, fit_y)` and one `estimator.predict_proba(query_x)` call. It checks model output is finite 2x4 within [0,1], canonical classes `[0,1,2,3]`, maximum row-sum error at most `1e-5`, frozen-reference maximum absolute probability difference at most `1e-4`, and both argmax matches. Exact numeric equality is recorded separately. It fingerprints inputs and ensemble shuffle state before/after. COL, ROW, and ICL wrappers are restored in a `finally` path before restoration diagnostics are persisted; restoration failures fail the pilot result.
+
+`run_bounded.py` pins the complete approved map before launch, snapshots the code and wrapper, verifies the wrapper's own map entry and copied SHA, permits only one `pilot_01` claim, and requires a completed mock with the exact same approved hash map. `mock_02` is refused if `mock_01` completed successfully. Pilot budget is 480 seconds total (470 compute + 10 cleanup); mock budget is 30 seconds. Pilot launch requires at least 4 GiB available RAM and monitoring stops the owned process if available RAM falls below 1.5 GiB. Threads are fixed at three. The wrapper uses an exact Popen-handle identity fallback; inaccessible descendants remain marked unverified and cannot produce a clean completion status. New run logs/cache paths are scoped to round010.
+
+## Approved source map and evidence
+
+`approved_sources.json` freezes six round010 code/wrapper files, the runtime contract, the copied context and query-freeze files, and all 17 package/source metadata entries from the round009 pin. Every current file hash was independently rechecked before writing the manifest. The round010 column adapter hash is `bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded`; ROW adapter `d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b`; ICL observer `73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b`; mock `460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6`; pilot source `488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0`; bounded wrapper `c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210`.
+
+## Limits
+
+This approval is based on static source and metadata only. It does not establish probability equivalence, runtime completion, resource safety at FIT3144×312, memory reduction, F1, independent performance, or hardware behavior. The full real-context pilot and the historical reference rows remain unread by this reviewer. The actual pilot result, peak memory, and child-process outcome are unknown until the manager executes and independently reviews the saved receipts and JSON.

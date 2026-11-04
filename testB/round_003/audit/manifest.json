@@ -1,0 +1,124 @@
+﻿{
+    "schema":  "round003_v_independent_static_review_v1",
+    "created_kst":  "2026-11-05 05:19 +09:00",
+    "task_id":  "task_a2f54ccabfc6",
+    "dispatch_id":  "ctx_d47af35c6d31",
+    "run_id":  "run_202dfeeb8d64",
+    "reviewer_session":  "orca_session_id:7c4d6a57-9e35-4eca-8f1f-5147562abf85",
+    "coordinator_session":  "orca_session_id:codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7",
+    "requested_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "launch_exit_code":  0,
+    "provider_internal_model_effort":  "unknown",
+    "orca_cli":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\orca\\resources\\bin\\orca.exe",
+    "orca_cli_version":  "1.4.246.0",
+    "memory":  {
+                   "start_time":  "2026-11-05 05:15:50 +09:00",
+                   "start_free_mib":  4283.1,
+                   "total_mib":  14140.9,
+                   "review_increment_peak_estimate_mib":  "\u003c=256, actual peak not measured",
+                   "required_session_free_mib":  512,
+                   "before_report_time":  "2026-11-05 05:17:38 +09:00",
+                   "before_report_free_mib":  4354.1,
+                   "process_count":  331,
+                   "python_process_observed":  false,
+                   "E_concurrent_dispatch":  true,
+                   "concurrent_agent_count":  "unknown"
+               },
+    "status":  {
+                   "static_review":  "completed",
+                   "dynamic_equivalence":  "not_run",
+                   "reference_build":  "not_run",
+                   "full_train_or_test_scan":  "not_run",
+                   "score_or_A":  "not_run",
+                   "tests_or_simulation":  "not_run",
+                   "actual_execution_exit_code":  null,
+                   "outcome":  "static review task succeeded; no dynamic pass claimed"
+               },
+    "preserved_history":  {
+                              "initial_independent_audit":  "FAIL, exit 1; preserved",
+                              "metadata_only_delta":  "PASS 10, exit 0; distinct later evidence",
+                              "historical_44_hash_first_meaning_time":  "unknown",
+                              "historical_44_hash_byte_restoration":  "unknown"
+                          },
+    "inputs":  [
+                   {
+                       "path":  "AGENTS.md",
+                       "sha256":  "e8a6fcc73d695b5ea8bbd3c6e8a8da1f62093c2c40d921a12d24d377d04ac356",
+                       "bytes":  5134
+                   },
+                   {
+                       "path":  "testB/round_003/ROUND_PLAN.md",
+                       "sha256":  "d5cbca19d0d132e471073da8695fca720fab3a3bc7ea54a7430296ec3a59d480",
+                       "bytes":  4250
+                   },
+                   {
+                       "path":  "testB/round_002/NEXT_ROUND.md",
+                       "sha256":  "95832258bd5a38438b412edae42c3717f764975ca3193a036fb81285abac0e5c",
+                       "bytes":  4844
+                   },
+                   {
+                       "path":  "testB/round_002/contract/EXPLORATORY_EXECUTION_CONTRACT.md",
+                       "sha256":  "344f260b86a172dccc091a64f4f9292528c5077dfa58a588c34c9354237c6975",
+                       "bytes":  4856
+                   },
+                   {
+                       "path":  "testB/round_002/execution/preflight_report.md",
+                       "sha256":  "8c69bb155702260d0f2b797bc51c621a242c5030e30392ae72dd321a5c8ca58d",
+                       "bytes":  11835
+                   },
+                   {
+                       "path":  "testB/round_002/execution/isolated_runner.py",
+                       "sha256":  "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d",
+                       "bytes":  29373
+                   },
+                   {
+                       "path":  "testB/round_002/scorer_review/scorer_review.md",
+                       "sha256":  "949a103238df331aae0d2284f1ab798838a52ae15be176b5d1d94e1027dd2bee",
+                       "bytes":  15294
+                   },
+                   {
+                       "path":  "testB/round_002/scorer_review/manifest.json",
+                       "sha256":  "2502648bb665c5249dc20c353c85b2f705aeaf35b55cc1d8fc18b2f8386eea44",
+                       "bytes":  8550
+                   },
+                   {
+                       "path":  "testB/round_003/integration/worker_launch_receipts.json",
+                       "sha256":  "cac4130f455014f01bdab337e4164d4d1a152ac94625d2133a9ef6ea41ef51f9",
+                       "bytes":  1587
+                   },
+                   {
+                       "path":  "D:/repos/fishing-track-classification/code/tools/run_remeasure_20261031.py",
+                       "sha256":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+                       "bytes":  76643
+                   },
+                   {
+                       "path":  "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py",
+                       "sha256":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+                       "bytes":  39306
+                   },
+                   {
+                       "path":  "D:/repos/fishing-track-classification/code/tools/run_005_F156_merge_20261101.py",
+                       "sha256":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+                       "bytes":  18718
+                   },
+                   {
+                       "path":  "D:/repos/fishing-track-classification/code/tools/run_cycle4_3_featAC_20261101.py",
+                       "sha256":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+                       "bytes":  22607
+                   }
+               ],
+    "deliverables":  [
+                         {
+                             "path":  "testB/round_003/audit/independent_static_review.md",
+                             "sha256":  "7b1917d284601acb0791499f8550035daef69b6d325a35358bc51a91a28bc815",
+                             "bytes":  14169
+                         }
+                     ],
+    "key_findings":  [
+                         "Original loader numeric conversion occurs after month concat; chunk numeric inference needs boundary equivalence proof.",
+                         "Builder overlap includes duplicate harbor load, retained _TRAIN_ARRAYS global, maps, closure-held KDTree and CDF sorted references; peak upper bound remains unmeasured.",
+                         "Round002 runner gate and side-effect constraints were reviewed statically only; Round003 runtime Testfit/write/pycache/progress behavior remains unverified."
+                     ],
+    "next_verification":  "Follow-up dispatch after E execution output exists: review exact changed files/hashes, bounded loader sample and synthetic edges, dynamic fit/write/side-effect gates, original algorithms/ties/labels, and stage-overlap RAM plan before any supervisor execution gate."
+}

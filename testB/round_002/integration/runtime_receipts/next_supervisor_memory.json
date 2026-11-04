@@ -1,0 +1,9 @@
+﻿{
+    "time_kst":  "2026-11-05T05:11:20.3234211+09:00",
+    "available_kib":  4894152,
+    "total_kib":  14480244,
+    "expected_new_supervisor_session_overhead_mib":  512,
+    "document_process_allowance_mib":  128,
+    "basis":  "new supervisor initially reads small documents and ACKs only; no new worker or heavy calculation before activation",
+    "known_round002_workers":  "all latest dispatches settled and released; unrelated processes not stopped"
+}

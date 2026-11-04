@@ -1,0 +1,99 @@
+﻿{
+    "run_id":  "mock_01",
+    "started_utc":  "2026-11-04T20:22:47.9672434Z",
+    "finished_utc":  "2026-11-04T20:22:48.5010835Z",
+    "completed":  false,
+    "exit_code":  null,
+    "timed_out":  false,
+    "elapsed_seconds":  0.48376549999999996,
+    "timeout_seconds":  30,
+    "pid":  25532,
+    "creation_utc":  "2026-11-04T20:22:47.9885056Z",
+    "owned_process_exited":  true,
+    "command":  [
+                    "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                    "-B",
+                    "-S",
+                    "\"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_011\\logs\\mock_01\\source\\test_verify_frozen_run.py\""
+                ],
+    "available_ram_gib_before":  4.3693618774414063,
+    "expected_peak_mib":  100,
+    "expected_peak_basis":  "stdlib small JSON and 1MiB streaming buffer; no model imports",
+    "other_python_processes_after":  [
+
+                                     ],
+    "approval_sha256":  "33F8878F2A37480812F733CBCFEDA21FFC89D3BC08D34E2F1BEEB8CF110F93A8",
+    "precheck":  [
+                     {
+                         "path":  "rounds/round_011/code/verify_frozen_run.py",
+                         "expected":  "e183e7e323ddc9bc0754fd0bd66489d7d6596bacad806756c54776686f1e3e45",
+                         "actual":  "e183e7e323ddc9bc0754fd0bd66489d7d6596bacad806756c54776686f1e3e45",
+                         "match":  true
+                     },
+                     {
+                         "path":  "rounds/round_011/code/test_verify_frozen_run.py",
+                         "expected":  "80493e3e0ded68db2aa0c1bee7594f5c400d28744c31c87fcbb03c7520d64995",
+                         "actual":  "80493e3e0ded68db2aa0c1bee7594f5c400d28744c31c87fcbb03c7520d64995",
+                         "match":  true
+                     },
+                     {
+                         "path":  "rounds/round_011/manager/run_audit.ps1",
+                         "expected":  "713e8839aa50cc0bb464f4430d9ac7c6140c90835105f663ab14f881bbc54ae7",
+                         "actual":  "713e8839aa50cc0bb464f4430d9ac7c6140c90835105f663ab14f881bbc54ae7",
+                         "match":  true
+                     }
+                 ],
+    "postcheck":  [
+                      {
+                          "path":  "rounds/round_011/code/verify_frozen_run.py",
+                          "expected":  "e183e7e323ddc9bc0754fd0bd66489d7d6596bacad806756c54776686f1e3e45",
+                          "actual":  "e183e7e323ddc9bc0754fd0bd66489d7d6596bacad806756c54776686f1e3e45",
+                          "match":  true
+                      },
+                      {
+                          "path":  "rounds/round_011/code/test_verify_frozen_run.py",
+                          "expected":  "80493e3e0ded68db2aa0c1bee7594f5c400d28744c31c87fcbb03c7520d64995",
+                          "actual":  "80493e3e0ded68db2aa0c1bee7594f5c400d28744c31c87fcbb03c7520d64995",
+                          "match":  true
+                      },
+                      {
+                          "path":  "rounds/round_011/manager/run_audit.ps1",
+                          "expected":  "713e8839aa50cc0bb464f4430d9ac7c6140c90835105f663ab14f881bbc54ae7",
+                          "actual":  "713e8839aa50cc0bb464f4430d9ac7c6140c90835105f663ab14f881bbc54ae7",
+                          "match":  true
+                      }
+                  ],
+    "snapshots":  [
+                      {
+                          "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_011\\logs\\mock_01\\source\\verify_frozen_run.py",
+                          "sha256":  "e183e7e323ddc9bc0754fd0bd66489d7d6596bacad806756c54776686f1e3e45"
+                      },
+                      {
+                          "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_011\\logs\\mock_01\\source\\test_verify_frozen_run.py",
+                          "sha256":  "80493e3e0ded68db2aa0c1bee7594f5c400d28744c31c87fcbb03c7520d64995"
+                      },
+                      {
+                          "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_011\\logs\\mock_01\\source\\run_audit.ps1",
+                          "sha256":  "713e8839aa50cc0bb464f4430d9ac7c6140c90835105f663ab14f881bbc54ae7"
+                      }
+                  ],
+    "snapshot_postcheck":  [
+                               {
+                                   "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_011\\logs\\mock_01\\source\\verify_frozen_run.py",
+                                   "sha256":  "e183e7e323ddc9bc0754fd0bd66489d7d6596bacad806756c54776686f1e3e45",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_011\\logs\\mock_01\\source\\test_verify_frozen_run.py",
+                                   "sha256":  "80493e3e0ded68db2aa0c1bee7594f5c400d28744c31c87fcbb03c7520d64995",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_011\\logs\\mock_01\\source\\run_audit.ps1",
+                                   "sha256":  "713e8839aa50cc0bb464f4430d9ac7c6140c90835105f663ab14f881bbc54ae7",
+                                   "match":  true
+                               }
+                           ],
+    "historical_round010_outcome_unchanged":  true,
+    "note":  "This is audit execution completion, not historical model gate success. No process tree created by approved audit code."
+}

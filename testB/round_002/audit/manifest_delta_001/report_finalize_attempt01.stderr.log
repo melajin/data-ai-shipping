@@ -1,0 +1,1 @@
+﻿Traceback captured in worker tool output: FileNotFoundError joining the receipt-relative logs/ backup path to workspace root; this is a report-generator path error, not a production-file or hash verification result.

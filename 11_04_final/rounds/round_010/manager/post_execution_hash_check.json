@@ -1,0 +1,162 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T20:00:37.8354739Z",
+    "checks":  [
+                   {
+                       "path":  "rounds/round_010/code/column_chunk.py",
+                       "expected":  "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+                       "actual":  "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_010/code/row_chunk.py",
+                       "expected":  "d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b",
+                       "actual":  "d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_010/code/icl_observer.py",
+                       "expected":  "73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b",
+                       "actual":  "73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_010/code/test_adapter_pair.py",
+                       "expected":  "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+                       "actual":  "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_010/code/replay_inner_pilot.py",
+                       "expected":  "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+                       "actual":  "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_010/manager/run_bounded.py",
+                       "expected":  "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+                       "actual":  "c1d595c94641e81c1e930a216a448013709fd58050cc32d5e31d84251df38867",
+                       "match":  false
+                   },
+                   {
+                       "path":  "rounds/round_004/runtime_author/replay_contract.json",
+                       "expected":  "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5",
+                       "actual":  "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_010/artifacts/context_export_attempt_001/fold0_seed42_context.npz",
+                       "expected":  "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+                       "actual":  "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_010/artifacts/context_export_attempt_001/query_freeze.json",
+                       "expected":  "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef",
+                       "actual":  "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/__init__.py",
+                       "expected":  "f40b23bee37298b180b86d3aed5444a0a9be154fd1e4b1cd02ee01b4bc112516",
+                       "actual":  "f40b23bee37298b180b86d3aed5444a0a9be154fd1e4b1cd02ee01b4bc112516",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/__init__.py",
+                       "expected":  "000e8247eb8c86e7dbda9f7091f0a341a390e41e6894f617488c034b1ebef11d",
+                       "actual":  "000e8247eb8c86e7dbda9f7091f0a341a390e41e6894f617488c034b1ebef11d",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py",
+                       "expected":  "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+                       "actual":  "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/base.py",
+                       "expected":  "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+                       "actual":  "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/__init__.py",
+                       "expected":  "c24eccee285dd1c5dea721708cd3e52501fe39f29a865fb6cd3d8b448a33ad4f",
+                       "actual":  "c24eccee285dd1c5dea721708cd3e52501fe39f29a865fb6cd3d8b448a33ad4f",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py",
+                       "expected":  "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+                       "actual":  "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/embedding.py",
+                       "expected":  "a0c562600fe22944f91b1b71b706198cb9a4c3d9d8aaba67a86f35a85493d322",
+                       "actual":  "a0c562600fe22944f91b1b71b706198cb9a4c3d9d8aaba67a86f35a85493d322",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/interaction.py",
+                       "expected":  "6f35b5a70cd7b7ea44286faa8921b64c2cc83aca8ed49a4ad8b287abe54cbf27",
+                       "actual":  "6f35b5a70cd7b7ea44286faa8921b64c2cc83aca8ed49a4ad8b287abe54cbf27",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/encoders.py",
+                       "expected":  "a3e0e9bde47e7f587c4a196d124ea631e25755d4f5ac5d6a8568618a4e299a4e",
+                       "actual":  "a3e0e9bde47e7f587c4a196d124ea631e25755d4f5ac5d6a8568618a4e299a4e",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/layers.py",
+                       "expected":  "96cce2e84db33e176d872c7bb7c0df8c305de3eb7a02fcad9f1128f33d319d95",
+                       "actual":  "96cce2e84db33e176d872c7bb7c0df8c305de3eb7a02fcad9f1128f33d319d95",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/attention.py",
+                       "expected":  "2406a52571ce33392b003aca185550bc33a8e55797de72bdbf8b4449b09e66f8",
+                       "actual":  "2406a52571ce33392b003aca185550bc33a8e55797de72bdbf8b4449b09e66f8",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py",
+                       "expected":  "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc",
+                       "actual":  "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/learning.py",
+                       "expected":  "7549dff09c3796a3cb0b55ea03e249342392fa601a681526f7b1efb6a6f1eef2",
+                       "actual":  "7549dff09c3796a3cb0b55ea03e249342392fa601a681526f7b1efb6a6f1eef2",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference_config.py",
+                       "expected":  "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37",
+                       "actual":  "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/rope.py",
+                       "expected":  "f59874106743b58330f35699df27ad8d45d4ae692b38c64626f58cdf2da12eab",
+                       "actual":  "f59874106743b58330f35699df27ad8d45d4ae692b38c64626f58cdf2da12eab",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/ssmax.py",
+                       "expected":  "29b3955e2597446cdcfe70f2084a70faa959f0ef510a27ac0668e58943d3d639",
+                       "actual":  "29b3955e2597446cdcfe70f2084a70faa959f0ef510a27ac0668e58943d3d639",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl-2.2.0.dist-info/METADATA",
+                       "expected":  "e429edbe64f243241e6425854643b0d4128de550121b9feb1598ef710b9941a2",
+                       "actual":  "e429edbe64f243241e6425854643b0d4128de550121b9feb1598ef710b9941a2",
+                       "match":  true
+                   }
+               ],
+    "note":  "Expected one known live-wrapper mismatch; immutable launch snapshots preserved"
+}

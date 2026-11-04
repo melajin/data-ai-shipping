@@ -1,0 +1,24 @@
+{
+  "evidence_source": "Exact concise Orca worker-start stdout, exit0 observed for each launch",
+  "supervisor_session": "codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7",
+  "run_id": "run_202dfeeb8d64",
+  "provider_internal_model_effort": "unknown",
+  "launches": [
+    {
+      "role": "E",
+      "spec_file": "testB/round_003/integration/E_TASK.md",
+      "requested_model": "gpt-6-luna",
+      "requested_effort": "xhigh",
+      "actual_cli_exit": 0,
+      "receipt": {"ok":true,"result":{"dispatchId":"ctx_b7f1523a9658","taskId":"task_d696ae691b0c","runId":"run_202dfeeb8d64","state":"ready","agent":"codex","model":"gpt-6-luna","effort":"xhigh","mode":"structured","terminal":"structworker_b267c5a1-bc89-4e37-92c1-774d02446293","workspace":"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING","next":"Orca wakes you when workers report; end your turn when you're done."}}
+    },
+    {
+      "role": "V",
+      "spec_file": "testB/round_003/integration/V_TASK.md",
+      "requested_model": "gpt-6-luna",
+      "requested_effort": "xhigh",
+      "actual_cli_exit": 0,
+      "receipt": {"ok":true,"result":{"dispatchId":"ctx_d47af35c6d31","taskId":"task_a2f54ccabfc6","runId":"run_202dfeeb8d64","state":"ready","agent":"codex","model":"gpt-6-luna","effort":"xhigh","mode":"structured","terminal":"structworker_0a6dbada-3c09-4302-8c27-1da52869007c","workspace":"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING","next":"Orca wakes you when workers report; end your turn when you're done."}}
+    }
+  ]
+}

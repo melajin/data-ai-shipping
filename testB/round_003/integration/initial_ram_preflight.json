@@ -1,0 +1,13 @@
+{
+    "time":  "2026-11-05T05:15:28.6031877+09:00",
+    "totalKiB":  14480244,
+    "availableKiB":  4800744,
+    "processCount":  311,
+    "python":  [
+
+               ],
+    "E_estimated_increment_MiB":  512,
+    "V_estimated_increment_MiB":  256,
+    "agent_headroom_each_MiB":  512,
+    "heavy_reference_execution_allowed":  false
+}

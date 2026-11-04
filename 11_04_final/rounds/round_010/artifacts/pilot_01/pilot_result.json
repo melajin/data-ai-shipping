@@ -1,0 +1,1062 @@
+{
+  "schema": "round010_inner_pilot_result.v1",
+  "status": "PILOT_COMPLETE",
+  "stage": "comparison_complete",
+  "started_utc": "2026-11-04T19:56:31.525759+00:00",
+  "pid": 27220,
+  "source": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\logs\\pilot_01\\source\\replay_inner_pilot.py",
+    "source_at_launch_sha256": "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+    "adapter_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\logs\\pilot_01\\source\\column_chunk.py",
+    "adapter_sha256": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+    "row_adapter_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\logs\\pilot_01\\source\\row_chunk.py",
+    "row_adapter_sha256": "d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b",
+    "icl_observer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\logs\\pilot_01\\source\\icl_observer.py",
+    "icl_observer_sha256": "73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b",
+    "settings_sha256": "028735f150c2f972ae944801b589bb05fa36f8df95b17f07399fbf4cf423b5c5",
+    "runtime_contract_sha256": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5"
+  },
+  "inputs": [
+    {
+      "keys": [
+        "R",
+        "y_train"
+      ],
+      "tensor_shapes": {
+        "R": [
+          1,
+          3146,
+          512
+        ],
+        "y_train": [
+          1,
+          3144
+        ]
+      },
+      "train_size": null
+    }
+  ],
+  "settings": {
+    "package": "tabicl==2.2.0",
+    "seed": 42,
+    "fold": 0,
+    "device": "cpu",
+    "n_estimators": 8,
+    "batch_size": 1,
+    "n_jobs": 3,
+    "fit_rows": 3144,
+    "query_rows": 2,
+    "feature_count": 312,
+    "checkpoint_fit_calls": 1,
+    "context_fit_calls": 1,
+    "threads_environment": {
+      "OMP_NUM_THREADS": "3",
+      "MKL_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3"
+    },
+    "use_amp": false,
+    "use_fa3": false,
+    "model_path": "explicit pinned local checkpoint",
+    "allow_auto_download": false,
+    "checkpoint_version": "tabicl-classifier-v2-20260212.ckpt",
+    "offload_mode": "auto",
+    "disk_offload_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\artifacts\\pilot_01\\offload",
+    "norm_methods": {
+      "value": null,
+      "origin": "TabICL 2.2.0 default; fit expands to none,power"
+    },
+    "feat_shuffle_method": {
+      "value": "latin",
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "class_shuffle_method": {
+      "value": "shift",
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "softmax_temperature": {
+      "value": 0.9,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "average_logits": {
+      "value": true,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "outlier_threshold": {
+      "value": 4.0,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "support_many_classes": {
+      "value": true,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "kv_cache": {
+      "value": false,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "verbose": {
+      "value": false,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "predict_proba_calls": 1,
+    "row_chunk_rows": 8,
+    "column_chunk_columns": 16,
+    "f1_computations": 0,
+    "inner_labels_used": false,
+    "outer_inference": false,
+    "weight_training": false,
+    "hyperparameter_search": false
+  },
+  "progress": [
+    {
+      "stage": "inputs_hashed_and_query_freeze_ready",
+      "elapsed_seconds": 0.12316110000028857,
+      "utc": "2026-11-04T19:56:31.676367+00:00"
+    },
+    {
+      "stage": "context_validated",
+      "elapsed_seconds": 0.2722393000003649,
+      "utc": "2026-11-04T19:56:31.823942+00:00"
+    },
+    {
+      "stage": "fixed_reference_rows_verified",
+      "elapsed_seconds": 0.27998310000111815,
+      "utc": "2026-11-04T19:56:31.832201+00:00"
+    },
+    {
+      "stage": "package_import_pending",
+      "elapsed_seconds": 0.2832602999988012,
+      "utc": "2026-11-04T19:56:31.835597+00:00"
+    },
+    {
+      "stage": "package_imported",
+      "elapsed_seconds": 10.01332679999905,
+      "utc": "2026-11-04T19:56:41.566753+00:00"
+    },
+    {
+      "stage": "checkpoint_fit_context_bind_start",
+      "elapsed_seconds": 10.01776880000034,
+      "utc": "2026-11-04T19:56:41.571232+00:00"
+    },
+    {
+      "stage": "fit_returned",
+      "elapsed_seconds": 12.685993200000667,
+      "utc": "2026-11-04T19:56:44.239817+00:00"
+    },
+    {
+      "stage": "configure_original_col_row_start",
+      "elapsed_seconds": 12.692083199999615,
+      "utc": "2026-11-04T19:56:44.246386+00:00"
+    },
+    {
+      "stage": "original_col_row_configured_before_adapter_install",
+      "elapsed_seconds": 12.696939499997825,
+      "utc": "2026-11-04T19:56:44.251064+00:00"
+    },
+    {
+      "stage": "checkpoint_fit_context_bind_complete",
+      "elapsed_seconds": 12.704473800000414,
+      "utc": "2026-11-04T19:56:44.257980+00:00"
+    },
+    {
+      "stage": "column_and_row_adapter_install_start",
+      "elapsed_seconds": 12.709600399997726,
+      "utc": "2026-11-04T19:56:44.262504+00:00"
+    },
+    {
+      "stage": "column_and_row_adapters_installed",
+      "elapsed_seconds": 12.71445440000025,
+      "utc": "2026-11-04T19:56:44.266526+00:00"
+    },
+    {
+      "stage": "predict_proba_start",
+      "elapsed_seconds": 12.721864099999948,
+      "utc": "2026-11-04T19:56:44.275756+00:00"
+    },
+    {
+      "stage": "column_forward_enter",
+      "elapsed_seconds": 12.765554099998553,
+      "utc": "2026-11-04T19:56:44.318958+00:00"
+    },
+    {
+      "stage": "column_forward_complete",
+      "elapsed_seconds": 24.622822299999825,
+      "utc": "2026-11-04T19:56:56.175829+00:00"
+    },
+    {
+      "stage": "row_forward_enter",
+      "elapsed_seconds": 24.62771369999973,
+      "utc": "2026-11-04T19:56:56.180085+00:00"
+    },
+    {
+      "stage": "row_forward_complete",
+      "elapsed_seconds": 35.24478470000031,
+      "utc": "2026-11-04T19:57:06.798513+00:00"
+    },
+    {
+      "stage": "icl_forward_enter",
+      "elapsed_seconds": 35.250681099998474,
+      "utc": "2026-11-04T19:57:06.798513+00:00"
+    },
+    {
+      "stage": "icl_forward_complete",
+      "elapsed_seconds": 38.18251389999932,
+      "utc": "2026-11-04T19:57:09.736237+00:00"
+    },
+    {
+      "stage": "column_forward_enter",
+      "elapsed_seconds": 38.194924999999785,
+      "utc": "2026-11-04T19:57:09.748339+00:00"
+    },
+    {
+      "stage": "column_forward_complete",
+      "elapsed_seconds": 50.29533509999965,
+      "utc": "2026-11-04T19:57:21.849538+00:00"
+    },
+    {
+      "stage": "row_forward_enter",
+      "elapsed_seconds": 50.300761700000294,
+      "utc": "2026-11-04T19:57:21.854544+00:00"
+    },
+    {
+      "stage": "row_forward_complete",
+      "elapsed_seconds": 60.76029539999945,
+      "utc": "2026-11-04T19:57:32.310013+00:00"
+    },
+    {
+      "stage": "icl_forward_enter",
+      "elapsed_seconds": 60.7662496999983,
+      "utc": "2026-11-04T19:57:32.310013+00:00"
+    },
+    {
+      "stage": "icl_forward_complete",
+      "elapsed_seconds": 63.69179059999806,
+      "utc": "2026-11-04T19:57:35.244943+00:00"
+    },
+    {
+      "stage": "column_forward_enter",
+      "elapsed_seconds": 63.70523949999915,
+      "utc": "2026-11-04T19:57:35.258230+00:00"
+    },
+    {
+      "stage": "column_forward_complete",
+      "elapsed_seconds": 75.62400939999861,
+      "utc": "2026-11-04T19:57:47.176958+00:00"
+    },
+    {
+      "stage": "row_forward_enter",
+      "elapsed_seconds": 75.63053189999846,
+      "utc": "2026-11-04T19:57:47.182982+00:00"
+    },
+    {
+      "stage": "row_forward_complete",
+      "elapsed_seconds": 86.03829050000058,
+      "utc": "2026-11-04T19:57:57.591297+00:00"
+    },
+    {
+      "stage": "icl_forward_enter",
+      "elapsed_seconds": 86.04317979999905,
+      "utc": "2026-11-04T19:57:57.597310+00:00"
+    },
+    {
+      "stage": "icl_forward_complete",
+      "elapsed_seconds": 88.94143559999793,
+      "utc": "2026-11-04T19:58:00.490173+00:00"
+    },
+    {
+      "stage": "column_forward_enter",
+      "elapsed_seconds": 88.95365680000032,
+      "utc": "2026-11-04T19:58:00.506431+00:00"
+    },
+    {
+      "stage": "column_forward_complete",
+      "elapsed_seconds": 100.73482439999862,
+      "utc": "2026-11-04T19:58:12.287632+00:00"
+    },
+    {
+      "stage": "row_forward_enter",
+      "elapsed_seconds": 100.74080959999992,
+      "utc": "2026-11-04T19:58:12.293397+00:00"
+    },
+    {
+      "stage": "row_forward_complete",
+      "elapsed_seconds": 111.19968850000078,
+      "utc": "2026-11-04T19:58:22.752155+00:00"
+    },
+    {
+      "stage": "icl_forward_enter",
+      "elapsed_seconds": 111.20837720000054,
+      "utc": "2026-11-04T19:58:22.761645+00:00"
+    },
+    {
+      "stage": "icl_forward_complete",
+      "elapsed_seconds": 114.0128939999995,
+      "utc": "2026-11-04T19:58:25.566618+00:00"
+    },
+    {
+      "stage": "column_forward_enter",
+      "elapsed_seconds": 114.02386850000039,
+      "utc": "2026-11-04T19:58:25.577395+00:00"
+    },
+    {
+      "stage": "column_forward_complete",
+      "elapsed_seconds": 125.7496343999992,
+      "utc": "2026-11-04T19:58:37.302569+00:00"
+    },
+    {
+      "stage": "row_forward_enter",
+      "elapsed_seconds": 125.75522569999885,
+      "utc": "2026-11-04T19:58:37.302569+00:00"
+    },
+    {
+      "stage": "row_forward_complete",
+      "elapsed_seconds": 135.94171920000008,
+      "utc": "2026-11-04T19:58:47.495247+00:00"
+    },
+    {
+      "stage": "icl_forward_enter",
+      "elapsed_seconds": 135.94639649999954,
+      "utc": "2026-11-04T19:58:47.500514+00:00"
+    },
+    {
+      "stage": "icl_forward_complete",
+      "elapsed_seconds": 138.91813959999854,
+      "utc": "2026-11-04T19:58:50.471723+00:00"
+    },
+    {
+      "stage": "column_forward_enter",
+      "elapsed_seconds": 138.92994039999758,
+      "utc": "2026-11-04T19:58:50.482819+00:00"
+    },
+    {
+      "stage": "column_forward_complete",
+      "elapsed_seconds": 150.83806859999822,
+      "utc": "2026-11-04T19:59:02.378145+00:00"
+    },
+    {
+      "stage": "row_forward_enter",
+      "elapsed_seconds": 150.84431159999804,
+      "utc": "2026-11-04T19:59:02.393168+00:00"
+    },
+    {
+      "stage": "row_forward_complete",
+      "elapsed_seconds": 161.1907859999992,
+      "utc": "2026-11-04T19:59:12.740937+00:00"
+    },
+    {
+      "stage": "icl_forward_enter",
+      "elapsed_seconds": 161.1979640999998,
+      "utc": "2026-11-04T19:59:12.740937+00:00"
+    },
+    {
+      "stage": "icl_forward_complete",
+      "elapsed_seconds": 164.05032819999906,
+      "utc": "2026-11-04T19:59:15.595734+00:00"
+    },
+    {
+      "stage": "column_forward_enter",
+      "elapsed_seconds": 164.06040289999873,
+      "utc": "2026-11-04T19:59:15.610757+00:00"
+    },
+    {
+      "stage": "column_forward_complete",
+      "elapsed_seconds": 175.71115709999867,
+      "utc": "2026-11-04T19:59:27.264134+00:00"
+    },
+    {
+      "stage": "row_forward_enter",
+      "elapsed_seconds": 175.7186445999978,
+      "utc": "2026-11-04T19:59:27.271591+00:00"
+    },
+    {
+      "stage": "row_forward_complete",
+      "elapsed_seconds": 185.8995391999997,
+      "utc": "2026-11-04T19:59:37.451921+00:00"
+    },
+    {
+      "stage": "icl_forward_enter",
+      "elapsed_seconds": 185.90723889999936,
+      "utc": "2026-11-04T19:59:37.458492+00:00"
+    },
+    {
+      "stage": "icl_forward_complete",
+      "elapsed_seconds": 188.7553349000009,
+      "utc": "2026-11-04T19:59:40.308688+00:00"
+    },
+    {
+      "stage": "column_forward_enter",
+      "elapsed_seconds": 188.76668159999826,
+      "utc": "2026-11-04T19:59:40.319725+00:00"
+    },
+    {
+      "stage": "column_forward_complete",
+      "elapsed_seconds": 200.58126249999987,
+      "utc": "2026-11-04T19:59:52.134012+00:00"
+    },
+    {
+      "stage": "row_forward_enter",
+      "elapsed_seconds": 200.58715559999837,
+      "utc": "2026-11-04T19:59:52.140032+00:00"
+    },
+    {
+      "stage": "row_forward_complete",
+      "elapsed_seconds": 210.9116499999982,
+      "utc": "2026-11-04T20:00:02.461761+00:00"
+    },
+    {
+      "stage": "icl_forward_enter",
+      "elapsed_seconds": 210.91780079999808,
+      "utc": "2026-11-04T20:00:02.461761+00:00"
+    },
+    {
+      "stage": "icl_forward_complete",
+      "elapsed_seconds": 213.87543949999963,
+      "utc": "2026-11-04T20:00:05.428817+00:00"
+    },
+    {
+      "stage": "predict_proba_complete",
+      "elapsed_seconds": 213.88839200000075,
+      "utc": "2026-11-04T20:00:05.441876+00:00"
+    },
+    {
+      "stage": "managers_restored",
+      "elapsed_seconds": 213.89310289999776,
+      "utc": "2026-11-04T20:00:05.445628+00:00"
+    }
+  ],
+  "progress_journal": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\artifacts\\pilot_01\\progress.jsonl",
+  "adapter_event_counts": {
+    "COL:column_chunk_call_started": 8,
+    "COL:column_chunk_started": 112,
+    "COL:column_chunk_completed": 112,
+    "COL:column_chunk_call_completed": 8,
+    "ROW:row_chunk_call_started": 8,
+    "ROW:row_chunk_started": 3152,
+    "ROW:row_chunk_completed": 3152,
+    "ROW:row_chunk_call_completed": 8
+  },
+  "latest_adapter_event": {
+    "event": "icl_forward_complete",
+    "call_id": 7,
+    "completed": true,
+    "output_shape": [
+      1,
+      3146,
+      10
+    ],
+    "adapter": "ICL_OBSERVER"
+  },
+  "latest_row_chunk": null,
+  "current_row_chunk": null,
+  "last_completed_row_chunk": {
+    "call_id": 7,
+    "chunk_index": 393,
+    "chunk_count": 394,
+    "row_start": 3144,
+    "row_stop_exclusive": 3146,
+    "input_shape": [
+      1,
+      2,
+      223,
+      128
+    ],
+    "output_shape": [
+      1,
+      2,
+      512
+    ]
+  },
+  "icl_forward_attempted_count": 8,
+  "icl_forward_completed_count": 8,
+  "adapter_installed": false,
+  "adapter_restored": true,
+  "row_adapter_installed": false,
+  "row_adapter_restored": true,
+  "icl_observer_installed": false,
+  "icl_observer_restored": true,
+  "current_chunk": null,
+  "last_completed_column_chunk": {
+    "call_id": 7,
+    "chunk_index": 13,
+    "chunk_count": 14,
+    "column_start": 208,
+    "column_stop_exclusive": 223,
+    "feature_shape": [
+      1,
+      15,
+      3146,
+      3
+    ],
+    "target_shape": [
+      1,
+      15,
+      3144
+    ],
+    "output_shape": [
+      1,
+      15,
+      3146,
+      128
+    ]
+  },
+  "probabilities": {
+    "query_ids": [
+      "36001915",
+      "31703435"
+    ],
+    "class_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "values": [
+      [
+        0.7054163813591003,
+        0.20406870543956757,
+        0.08913421630859375,
+        0.001380718662403524
+      ],
+      [
+        0.38217073678970337,
+        0.5288925766944885,
+        0.08566854149103165,
+        0.003268089611083269
+      ]
+    ],
+    "original_dtype": "float32",
+    "shape": [
+      2,
+      4
+    ],
+    "float64_c_order_sha256": "b3e1bb04f4d3ccc357ea1f87fde8495f993130b2c8726c1c2272c51080ce0dd3",
+    "finite": true,
+    "min": 0.001380718662403524,
+    "max": 0.7054163813591003,
+    "max_abs_row_sum_error": 5.960464477539063e-08
+  },
+  "comparison": {
+    "scope": "only two frozen original INNER rows; four original saved raw p0..p3 columns; no decision score/weighting/F1",
+    "reference_probability_sha256": "4c6040bfb435f0990655eb78be69b6b0a63327e5f41560f73f07c12409ae2a82",
+    "max_abs_probability_difference": 1.8446231598301388e-06,
+    "absolute_tolerance": 0.0001,
+    "per_query": [
+      {
+        "query_id": "36001915",
+        "max_abs_probability_difference": 2.6026283017621665e-07,
+        "model_argmax": 0,
+        "reference_argmax": 0,
+        "argmax_equal": true
+      },
+      {
+        "query_id": "31703435",
+        "max_abs_probability_difference": 1.8446231598301388e-06,
+        "model_argmax": 1,
+        "reference_argmax": 1,
+        "argmax_equal": true
+      }
+    ],
+    "exact_numeric_equal_after_float64_parse": false,
+    "within_1e_4_absolute_tolerance": true,
+    "argmax_equal": true,
+    "small_replay_gate_pass": true,
+    "all_managers_restored": true,
+    "full_icl_context_preserved": true,
+    "input_and_shuffle_state_unchanged": true,
+    "predict_proba_attempted_count": 1,
+    "predict_proba_completed_count": 1,
+    "checkpoint_fit_invocation_count": 1,
+    "context_fit_attempted_count": 1,
+    "context_fit_completed_count": 1,
+    "is_performance_or_F1_claim": false
+  },
+  "inner_labels_loaded_or_used": false,
+  "f1_computed": false,
+  "training_performed": false,
+  "checkpoint_fit_invocation_count": 1,
+  "checkpoint_fit_completed_count": 1,
+  "context_fit_attempted_count": 1,
+  "context_fit_completed_count": 1,
+  "predict_proba_attempted_count": 1,
+  "predict_proba_completed_count": 1,
+  "current_stage": "managers_restored",
+  "fit_rows": 3144,
+  "query_rows": 2,
+  "fit_shape": [
+    3144,
+    312
+  ],
+  "query_shape": [
+    2,
+    312
+  ],
+  "feature_count": 312,
+  "fit_label_values": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "query_ids": [
+    "36001915",
+    "31703435"
+  ],
+  "query_ids_digest_json_sha256": "7750db94f83f57a4e58b62f29b32ba2e737339108e0923a970f9a924bf9be969",
+  "reference_evidence": {
+    "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\inner_predictions.csv",
+    "source_row_order": "first two data rows only; must equal frozen query ID order",
+    "rows_read": 2,
+    "fields_used": [
+      "rfid_id",
+      "p0",
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "labels_used": false,
+    "label_fields_accessed": false,
+    "source_row_bytes_may_contain_unparsed_other_columns": true,
+    "selected_reference_probabilities_sha256": "4c6040bfb435f0990655eb78be69b6b0a63327e5f41560f73f07c12409ae2a82",
+    "selected_reference_probability_rows": [
+      {
+        "rfid_id": "36001915",
+        "p0_p3": [
+          0.7054161210962702,
+          0.20406881832956503,
+          0.0891343476588679,
+          0.0013807129152969416
+        ]
+      },
+      {
+        "rfid_id": "31703435",
+        "p0_p3": [
+          0.3821725814128632,
+          0.5288910410158137,
+          0.08566828824177695,
+          0.0032680893295460724
+        ]
+      }
+    ],
+    "finite": true,
+    "min_probability": 0.0013807129152969416,
+    "max_probability": 0.7054161210962702,
+    "max_abs_row_sum_error": 0.0
+  },
+  "selected_reference_probabilities_sha256": "4c6040bfb435f0990655eb78be69b6b0a63327e5f41560f73f07c12409ae2a82",
+  "package_versions": {
+    "tabicl": "2.2.0",
+    "torch": "2.6.0+cpu",
+    "numpy": "2.3.5"
+  },
+  "torch_threads": {
+    "intra_op": 3,
+    "interop": 1
+  },
+  "weight_training_performed": false,
+  "fit_returned": true,
+  "configure_targets": [
+    "estimator.model_.col_embedder.inference_mgr",
+    "estimator.model_.row_interactor.inference_mgr"
+  ],
+  "configure_source": {
+    "COL": "estimator.inference_config_.COL_CONFIG",
+    "ROW": "estimator.inference_config_.ROW_CONFIG"
+  },
+  "exact_config": {
+    "COL": {
+      "max_pinned_memory_mb": 32768.0,
+      "auto_offload_threshold": 0.5,
+      "disk_dtype": null,
+      "disk_flush_mb": 8192.0,
+      "disk_safety_factor": 0.95,
+      "disk_min_free_mb": 1024.0,
+      "cpu_safety_factor": 0.85,
+      "use_amp": false,
+      "use_fa3": false,
+      "verbose": false,
+      "disk_cleanup": true,
+      "async_depth": 4,
+      "disk_file_prefix": "",
+      "safety_factor": 0.8,
+      "offload": "auto",
+      "min_batch_size": 1,
+      "use_async": true,
+      "device": "cpu",
+      "disk_offload_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\artifacts\\pilot_01\\offload"
+    },
+    "ROW": {
+      "max_pinned_memory_mb": 32768.0,
+      "auto_offload_threshold": 0.5,
+      "disk_dtype": null,
+      "disk_flush_mb": 8192.0,
+      "disk_safety_factor": 0.95,
+      "disk_min_free_mb": 1024.0,
+      "cpu_safety_factor": 0.85,
+      "use_amp": false,
+      "use_fa3": false,
+      "verbose": false,
+      "disk_cleanup": true,
+      "async_depth": 4,
+      "disk_file_prefix": "",
+      "safety_factor": 0.8,
+      "offload": false,
+      "min_batch_size": 1,
+      "use_async": true,
+      "device": "cpu",
+      "disk_offload_dir": null
+    }
+  },
+  "adapters_installed": false,
+  "resolved_manager_states": {
+    "COL": {
+      "enc_name": "tf_col",
+      "configured": true,
+      "device_type": "cpu",
+      "use_amp": false,
+      "use_fa3": false,
+      "offload_mode": "AUTO"
+    },
+    "ROW": {
+      "enc_name": "tf_row",
+      "configured": true,
+      "device_type": "cpu",
+      "use_amp": false,
+      "use_fa3": false,
+      "offload_mode": "GPU"
+    }
+  },
+  "resolved_device": "cpu",
+  "checkpoint_model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\model_cache\\tabicl-classifier-v2-20260212.ckpt",
+  "model_input_shape": [
+    3144,
+    312
+  ],
+  "class_order": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "parameter_devices": [
+    "cpu"
+  ],
+  "parameter_dtypes": [
+    "torch.float32"
+  ],
+  "floating_parameter_dtypes": [
+    "torch.float32"
+  ],
+  "buffer_devices": [
+    "cpu"
+  ],
+  "buffer_dtypes": [
+    "torch.int64"
+  ],
+  "floating_buffer_dtypes": [],
+  "resolved_inference_settings": {
+    "COL_CONFIG": {
+      "device": "cpu",
+      "use_amp": false,
+      "use_fa3": false,
+      "offload": "auto",
+      "disk_offload_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\artifacts\\pilot_01\\offload",
+      "verbose": false
+    },
+    "ROW_CONFIG": {
+      "device": "cpu",
+      "use_amp": false,
+      "use_fa3": false,
+      "offload": false,
+      "disk_offload_dir": null,
+      "verbose": false
+    },
+    "ICL_CONFIG": {
+      "device": "cpu",
+      "use_amp": false,
+      "use_fa3": false,
+      "offload": false,
+      "disk_offload_dir": null,
+      "verbose": false
+    },
+    "estimator_scope": {
+      "offload_mode": "auto",
+      "kv_cache": false,
+      "model_kv_cache_present": true,
+      "model_kv_cache_is_none": true,
+      "cache_mode_present": false,
+      "cache_mode": null
+    }
+  },
+  "ensemble_shuffle_state": {
+    "norm_methods_fit": [
+      "none",
+      "power"
+    ],
+    "feature_shuffle_method": "latin",
+    "class_shuffle_method": "shift",
+    "feature_shuffle_keys": [
+      "none",
+      "power"
+    ],
+    "class_shuffle_keys": [
+      "none",
+      "power"
+    ],
+    "feature_shuffle_state_sha256": "1a34a2173ea1dc765c2ee10a0c464ff7c5588315d15b5b066a96e9359feb6731",
+    "class_shuffle_state_sha256": "7c1e52c834468b5995eed566bffbf84c802a1fac2731195d3f8ddbb51917a1b5",
+    "configured_random_state": 42
+  },
+  "chunk_columns": 16,
+  "chunk_rows": 8,
+  "original_col_row_already_configured": true,
+  "targets": [
+    "estimator.model_.col_embedder.inference_mgr",
+    "estimator.model_.row_interactor.inference_mgr"
+  ],
+  "column_adapter_type": "ColumnChunkManager",
+  "row_adapter_type": "RowChunkManager",
+  "icl_observer_type": "ICLCallObserver",
+  "icl_context_unchanged": true,
+  "input_fingerprints_before_call": {
+    "X_fit": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_c_order_bytes": "ac254509d62c1ee0093941fe462c9539b0184e8a50d762dc8e9ba69c140869dd",
+      "c_contiguous_before_hash": true
+    },
+    "y_fit": {
+      "shape": [
+        3144
+      ],
+      "dtype": "int64",
+      "sha256_c_order_bytes": "570a1bb50f4b3cdafbedebccec080e6ed68fa54d07b299aebd0bd1899ebc0e3f",
+      "c_contiguous_before_hash": true
+    },
+    "X_query": {
+      "shape": [
+        2,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_c_order_bytes": "dc3f2e83fd541d1be9a024da9a62e72bdbddbec9668a3b318ec360c27ac54447",
+      "c_contiguous_before_hash": true
+    }
+  },
+  "ensemble_shuffle_state_before_call": {
+    "norm_methods_fit": [
+      "none",
+      "power"
+    ],
+    "feature_shuffle_method": "latin",
+    "class_shuffle_method": "shift",
+    "feature_shuffle_keys": [
+      "none",
+      "power"
+    ],
+    "class_shuffle_keys": [
+      "none",
+      "power"
+    ],
+    "feature_shuffle_state_sha256": "1a34a2173ea1dc765c2ee10a0c464ff7c5588315d15b5b066a96e9359feb6731",
+    "class_shuffle_state_sha256": "7c1e52c834468b5995eed566bffbf84c802a1fac2731195d3f8ddbb51917a1b5",
+    "configured_random_state": 42
+  },
+  "column_adapter_installed": true,
+  "call_id": 7,
+  "input_shape": [
+    1,
+    3146,
+    223,
+    128
+  ],
+  "column_count": 223,
+  "output_shape": [
+    1,
+    3146,
+    10
+  ],
+  "chunk_count": 394,
+  "row_count": 3146,
+  "feature_class_sequence_preserved": 223,
+  "embedding_width_preserved": 128,
+  "full_icl_context_verified": true,
+  "icl_context_verified_call_count": 8,
+  "expected_total_rows": 3146,
+  "expected_train_size": 3144,
+  "full_context_preserved": true,
+  "context_truncated": false,
+  "completed": true,
+  "error_type": null,
+  "error": null,
+  "input_fingerprints_after_call": {
+    "X_fit": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_c_order_bytes": "ac254509d62c1ee0093941fe462c9539b0184e8a50d762dc8e9ba69c140869dd",
+      "c_contiguous_before_hash": true
+    },
+    "y_fit": {
+      "shape": [
+        3144
+      ],
+      "dtype": "int64",
+      "sha256_c_order_bytes": "570a1bb50f4b3cdafbedebccec080e6ed68fa54d07b299aebd0bd1899ebc0e3f",
+      "c_contiguous_before_hash": true
+    },
+    "X_query": {
+      "shape": [
+        2,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_c_order_bytes": "dc3f2e83fd541d1be9a024da9a62e72bdbddbec9668a3b318ec360c27ac54447",
+      "c_contiguous_before_hash": true
+    }
+  },
+  "ensemble_shuffle_state_after_call": {
+    "norm_methods_fit": [
+      "none",
+      "power"
+    ],
+    "feature_shuffle_method": "latin",
+    "class_shuffle_method": "shift",
+    "feature_shuffle_keys": [
+      "none",
+      "power"
+    ],
+    "class_shuffle_keys": [
+      "none",
+      "power"
+    ],
+    "feature_shuffle_state_sha256": "1a34a2173ea1dc765c2ee10a0c464ff7c5588315d15b5b066a96e9359feb6731",
+    "class_shuffle_state_sha256": "7c1e52c834468b5995eed566bffbf84c802a1fac2731195d3f8ddbb51917a1b5",
+    "configured_random_state": 42
+  },
+  "input_and_shuffle_state_unchanged": true,
+  "runtime_managers_after_prediction": {
+    "COL": {
+      "enc_name": "tf_col",
+      "configured": true,
+      "device_type": "cpu",
+      "use_amp": false,
+      "use_fa3": false,
+      "offload_mode": "AUTO"
+    },
+    "ROW": {
+      "enc_name": "tf_row",
+      "configured": true,
+      "device_type": "cpu",
+      "use_amp": false,
+      "use_fa3": false,
+      "offload_mode": "GPU"
+    },
+    "ICL": {
+      "enc_name": "tf_icl",
+      "configured": true,
+      "device_type": "cpu",
+      "use_amp": false,
+      "use_fa3": false,
+      "offload_mode": "GPU"
+    },
+    "column_adapter_identity_preserved": true,
+    "row_adapter_identity_preserved": true,
+    "icl_observer_identity_preserved": true
+  },
+  "chunk_progress_summary": {
+    "column_call_count": 8,
+    "column_chunk_started_count": 112,
+    "column_chunk_completed_count": 112,
+    "last_completed_column_chunk": {
+      "call_id": 7,
+      "chunk_index": 13,
+      "chunk_count": 14,
+      "column_start": 208,
+      "column_stop_exclusive": 223,
+      "feature_shape": [
+        1,
+        15,
+        3146,
+        3
+      ],
+      "target_shape": [
+        1,
+        15,
+        3144
+      ],
+      "output_shape": [
+        1,
+        15,
+        3146,
+        128
+      ]
+    },
+    "row_call_count": 8,
+    "row_chunk_started_count": 3152,
+    "row_chunk_completed_count": 3152,
+    "last_completed_row_chunk": {
+      "call_id": 7,
+      "chunk_index": 393,
+      "chunk_count": 394,
+      "row_start": 3144,
+      "row_stop_exclusive": 3146,
+      "input_shape": [
+        1,
+        2,
+        223,
+        128
+      ],
+      "output_shape": [
+        1,
+        2,
+        512
+      ]
+    },
+    "icl_forward_attempted_count": 8,
+    "icl_forward_completed_count": 8,
+    "full_context_preserved": true,
+    "runtime_manager_states": {
+      "COL": {
+        "enc_name": "tf_col",
+        "configured": true,
+        "device_type": "cpu",
+        "use_amp": false,
+        "use_fa3": false,
+        "offload_mode": "AUTO"
+      },
+      "ROW": {
+        "enc_name": "tf_row",
+        "configured": true,
+        "device_type": "cpu",
+        "use_amp": false,
+        "use_fa3": false,
+        "offload_mode": "GPU"
+      },
+      "ICL": {
+        "enc_name": "tf_icl",
+        "configured": true,
+        "device_type": "cpu",
+        "use_amp": false,
+        "use_fa3": false,
+        "offload_mode": "GPU"
+      },
+      "column_adapter_identity_preserved": true,
+      "row_adapter_identity_preserved": true,
+      "icl_observer_identity_preserved": true
+    }
+  },
+  "gradients_present": false,
+  "adapter_restoration_errors": [],
+  "all_managers_restored": true,
+  "original_col_manager_reinstated": true,
+  "original_row_manager_reinstated": true,
+  "original_icl_manager_reinstated": true,
+  "restoration_errors": [],
+  "finished_utc": "2026-11-04T20:00:05.451646+00:00",
+  "elapsed_seconds": 213.89788319999934
+}

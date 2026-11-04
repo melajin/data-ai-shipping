@@ -1,0 +1,21 @@
+{
+  "schema": "round011_approved_sources.v1",
+  "approved_at_utc": "2026-11-04T20:20:43Z",
+  "approval_scope": "One exact-map pure standard-library mock and one bounded saved round010 JSON provenance audit. No model, raw/NPZ/reference/holdout/checkpoint reads or F1.",
+  "review": {
+    "status": "approved_for_bounded_mock_and_saved_audit",
+    "reviewer_role": "independent reviewer",
+    "requested_model": "gpt-6-luna",
+    "requested_effort": "xhigh",
+    "fork_turns": "none",
+    "reviewer_session": "01a1a82a-aece-77b3-aff0-aa614c39eb0f",
+    "host_evidence": "rounds/round_011/manager/host_turn_evidence.json",
+    "host_evidence_limit": "Host-reported turn_context only; not internal model attestation.",
+    "author_acknowledged_freeze": true
+  },
+  "sha256": {
+    "rounds/round_011/code/verify_frozen_run.py": "e183e7e323ddc9bc0754fd0bd66489d7d6596bacad806756c54776686f1e3e45",
+    "rounds/round_011/code/test_verify_frozen_run.py": "80493e3e0ded68db2aa0c1bee7594f5c400d28744c31c87fcbb03c7520d64995",
+    "rounds/round_011/manager/run_audit.ps1": "713e8839aa50cc0bb464f4430d9ac7c6140c90835105f663ab14f881bbc54ae7"
+  }
+}

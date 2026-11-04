@@ -1,0 +1,10 @@
+﻿{
+    "recorded_at_utc":  "2026-11-04T19:58:26.6875401Z",
+    "mutation_at_utc":  "2026-11-04T19:57:09.1491992Z",
+    "approved_wrapper_sha":  "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+    "running_receipt_wrapper_sha":  "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+    "current_wrapper_sha":  "c1d595c94641e81c1e930a216a448013709fd58050cc32d5e31d84251df38867",
+    "action":  "No further changes; do not restore or overwrite manifest; allow already-running bounded execution to end; numeric evidence separate from failed source-freeze gate",
+    "source":  "Author acknowledgement and filesystem hash/time",
+    "new_execution_authorized":  false
+}

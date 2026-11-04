@@ -1,0 +1,56 @@
+﻿{
+    "scope":  "Source text and saved metadata only; no imports/checkpoint/data",
+    "checked_at_utc":  "2026-11-04T20:09:49.1607529Z",
+    "files":  [
+                  {
+                      "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/learning.py",
+                      "sha256":  "7549DFF09C3796A3CB0B55EA03E249342392FA601A681526F7B1EFB6A6F1EEF2",
+                      "bytes":  30384
+                  },
+                  {
+                      "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py",
+                      "sha256":  "583786E5FFD70B9EB425BCA8E52AED415DADCDF4254C908B3B6FA52026A56491",
+                      "bytes":  36988
+                  },
+                  {
+                      "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py",
+                      "sha256":  "F9E3CF0D83047E06DF7D6763BB8D8EE7A00FF1BA6708299A14635831F60BA4FC",
+                      "bytes":  62755
+                  },
+                  {
+                      "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py",
+                      "sha256":  "64F5EF7EF88A920A3F7A5F6E2D9D8DC08769EC343E931F910ACC2D9C4EAA5534",
+                      "bytes":  36789
+                  },
+                  {
+                      "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/preprocessing.py",
+                      "sha256":  "2163A3BF6754127365A7AEDAC854D99A6F565545CC1EA7E63C68A596081B2976",
+                      "bytes":  43233
+                  },
+                  {
+                      "path":  "rounds/round_004/artifacts/smoke.json",
+                      "sha256":  "E26DF55A2C9501FC6A46102D323CA18226C922BD98CEB9EBA9146A0CB0643AE2",
+                      "bytes":  61296
+                  },
+                  {
+                      "path":  "rounds/round_004/runtime_author/replay_contract.json",
+                      "sha256":  "819E60FD2F05A655A86DC1CDAA5E52F5A4FD0486E78FDD5DC5A4AB140AD7E2F5",
+                      "bytes":  8093
+                  },
+                  {
+                      "path":  "rounds/round_003/m4_readiness/READINESS.md",
+                      "sha256":  "C031B31B4F9B9B674BBF8CAB1B98971576AF95FB285F07B90697553B126A5E6F",
+                      "bytes":  3518
+                  },
+                  {
+                      "path":  "rounds/round_002/IDEA_REVIEW_AND_ROUND003.md",
+                      "sha256":  "C61AA4BB89F1F03B89A5AFC5CCA2A740552E7A122A12EB0853AC48C59BFCF538",
+                      "bytes":  4521
+                  },
+                  {
+                      "path":  "rounds/round_002/references/algorithm_variant_ideas.md",
+                      "sha256":  "75BE0FD2F451B9E4215EC2F02A8F200B8084F26145E4FE845A22C2CBA6BE91BC",
+                      "bytes":  60782
+                  }
+              ]
+}

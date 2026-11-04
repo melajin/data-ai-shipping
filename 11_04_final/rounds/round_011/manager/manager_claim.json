@@ -1,0 +1,9 @@
+﻿{
+    "note":  "Host turn_context is configuration evidence, not internal model attestation",
+    "started_at_utc":  "2026-11-04T20:04:05Z",
+    "requested_effort":  "high",
+    "session":  "codex_224a9fbc_58cf_44d2_8dc9_d56b1d8641d0",
+    "requested_model":  "gpt-6-astra",
+    "deadline_utc":  "2026-11-04T20:24:05Z",
+    "thread":  "01a1a829-5b15-77c0-8af6-e429ff0eafb5"
+}

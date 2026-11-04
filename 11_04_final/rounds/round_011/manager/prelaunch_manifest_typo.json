@@ -1,0 +1,10 @@
+﻿{
+    "source_changed":  false,
+    "action":  "Reviewer preserves erroneous approval then corrects before any execution",
+    "cause":  "Reviewer manifest test hash included extra b; source actual equals author ACK",
+    "claim_created":  false,
+    "recorded_utc":  "2026-11-04T20:22:19.1280584Z",
+    "launched":  false,
+    "attempt":  "mock_01 prelaunch only",
+    "error":  "Approval/live hash mismatch before launch"
+}

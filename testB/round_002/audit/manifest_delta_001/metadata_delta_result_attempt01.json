@@ -1,0 +1,5 @@
+{
+  "audit_status": "fail",
+  "error_type": "FileNotFoundError",
+  "error": "[Errno 2] No such file or directory: 'D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\testB\\\\round_002\\\\execution\\\\logs\\\\logs\\\\execution_manifest_before_hashmap_repair_20261105T044752909863p0900.json'"
+}

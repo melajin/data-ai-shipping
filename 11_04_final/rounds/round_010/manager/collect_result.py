@@ -11,14 +11,14 @@ def read(p):
     return json.loads(p.read_text(encoding='utf-8-sig')) if p.exists() else {}
 
 receipt = read(R / 'logs/pilot_01/receipt.json')
-child = read(R / 'artifacts/pilot_attempt_001/pilot_result.json')
+child = read(R / 'artifacts/pilot_01/pilot_result.json')
 mocks = [read(p) for p in sorted((R / 'logs').glob('mock_*/receipt.json'))]
 if receipt.get('status') in ('preparing', 'running'):
     raise RuntimeError('Pilot still active')
 events = Counter()
 last_events = {}
 journal_parse_errors = []
-journal = R / 'artifacts/pilot_attempt_001/progress.jsonl'
+journal = R / 'artifacts/pilot_01/progress.jsonl'
 if journal.exists():
     with journal.open(encoding='utf-8') as f:
         for line_number,line in enumerate(f,1):
@@ -50,7 +50,7 @@ gates = {
     'resource_complete': receipt.get('resource_sampling_complete') is True,
     'time_bound': receipt.get('postexit_within_timeout') is True and receipt.get('elapsed_seconds',float('inf'))<=480,
     'start_ram_gate': receipt.get('preflight_available_ram_gib',0)>=4,
-    'sources_unchanged': all(receipt.get(k) is True for k in ('source_unchanged','adapter_source_unchanged','source_snapshot_unchanged')),
+    'sources_unchanged': all(receipt.get(k) is True for k in ('source_unchanged','adapter_source_unchanged','source_snapshot_unchanged','wrapper_unchanged')),
     'child_complete': child.get('status')=='PILOT_COMPLETE',
     'fit_and_predict_counts': child.get('fit_returned') is True and child.get('predict_proba_attempted_count')==1 and child.get('predict_proba_completed_count')==1,
     'restored': all(child.get(k) is True for k in ('adapter_restored','row_adapter_restored','icl_observer_restored','all_managers_restored')),
@@ -68,6 +68,15 @@ gates = {
     'journal_complete': not journal_parse_errors,
 }
 passed = all(gates.values())
+numerical_keys = ('child_complete','fit_and_predict_counts','restored','full_icl_context',
+                  'input_shuffle_unchanged','canonical_class_order','fixed_query_ids',
+                  'fixed_reference_scope','finite_range_shape','row_sum',
+                  'reference_tolerance','argmax_equal','reported_gate','reported_values_agree')
+numerical_pass = all(gates[k] for k in numerical_keys)
+source_incident = (R/'manager/source_freeze_incident.json').exists()
+status = ('completed_fixed_actual_replay_pass' if passed else
+          'completed_numeric_replay_pass_source_freeze_violation' if numerical_pass and source_incident else
+          'completed_with_limitations_replay_not_passed')
 keys = ('status','exit_code','elapsed_seconds','stop_reason','launched',
         'owned_tree_remaining','owned_tree_status','termination_confirmed',
         'preflight_available_ram_gib','minimum_observed_available_ram_gib',
@@ -76,7 +85,10 @@ keys = ('status','exit_code','elapsed_seconds','stop_reason','launched',
 result = {
     'schema':'round010_manager_result.v1',
     'updated_at_utc':datetime.now(timezone.utc).isoformat(),
-    'status':'completed_fixed_actual_replay_pass' if passed else 'completed_with_limitations_replay_not_passed',
+    'status':status,
+    'all_execution_gates_passed':passed,
+    'saved_numeric_replay_gates_passed':numerical_pass,
+    'source_freeze_incident_recorded':source_incident,
     'independent_saved_json_checks':{'gates':gates,'max_abs_probability_difference':maxabs,
         'max_abs_row_sum_error_float64':max_row_error,'argmax_equal':argmax_equal,
         'exact_numeric_equal':bool(finite_range and reference_ok and values==refs),
