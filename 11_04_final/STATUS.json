@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at_utc": "2026-11-04T22:16:58.807728+00:00",
+  "updated_at_utc": "2026-11-04T22:51:46.795301+00:00",
   "objective": "vessel-level four-class micro-F1 >= 0.7 with development and independent evidence kept separate",
   "goal_status": "in_progress_not_achieved",
-  "current_round": "round_016",
-  "round_status": "round017_in_progress_source_repair",
-  "manager_session": "codex_c67ed013_278d_4668_bf10_4ecf9f3542dc",
+  "current_round": "round_018",
+  "round_status": "completed_smoke_timeout_indeterminate",
+  "manager_session": "codex_7d125970_3736_429c_8a2d_44c17f019da5",
   "manager_model_request": {
     "model": "gpt-6-astra",
     "reasoning_effort": "high",
@@ -23,7 +23,7 @@
     "raw_read_only": "F:/문제 데이터_수정_1027",
     "source_read_only": "D:/repos/fishing-track-classification",
     "prior_experiment": "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
-    "round": "rounds/round_016"
+    "round": "rounds/round_018"
   },
   "scores": {
     "evaluation_population": "repeatedly exposed development OUTER, 5897 vessels",
@@ -402,30 +402,50 @@
       "new_f1_evaluations": 0,
       "candidate_adopted": false,
       "historical_scores_unchanged": true
+    },
+    "round_017": {
+      "evaluation_kind": "model_zero_wrapper_runtime_failure_before_children",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "candidate_adopted": false,
+      "historical_scores_unchanged": true,
+      "smoke_wrapper_attempts": 1,
+      "probe_children": 0,
+      "auditor_calls": 0,
+      "model_calls": 0
+    },
+    "round_018": {
+      "evaluation_kind": "model_zero_process_control_smoke",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "new_f1_evaluations": 0,
+      "candidate_adopted": false,
+      "historical_scores_unchanged": true,
+      "result": "rounds/round_018/artifacts/result.json"
     }
   },
   "budget": {
-    "started_utc": "2026-11-04T21:50:03Z",
-    "manager_minutes_max": 25,
-    "experiment_cutoff_utc": "2026-11-04T22:12:03Z",
+    "started_utc": "2026-11-04T22:38:50Z",
+    "manager_minutes_max": 20,
+    "experiment_cutoff_utc": "2026-11-04T22:55:50Z",
     "smoke_max_runs": 1,
     "mock_max_runs": 1,
     "audit_max_runs": 1,
     "model_runs": 0
   },
   "decision_rules": {
-    "current_round": "Frozen source not approved; no dynamic gate or new numerical result",
+    "current_round": "Frozen boolean repair runtime-tested; smoke failed at timeout classifier; no retries, mock/audit/model unexecuted",
     "runtime_gate": "Model-zero only; RAM>=0.5GiB per launch; 1 sequential compute; all same-map gates required",
-    "next_gate": "Repair exact deadline and CIM identity defects, then smoke/mock/saved audit before estimator integration",
+    "next_gate": "Separate deadline liveness from last Wait; verify terminal evidence; same-map model-zero smoke/mock/audit before estimator integration",
     "holdout": "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan",
     "ram_policy": "When RAM insufficient do other feasible independent work first, then recheck and proceed under resource and finite-attempt gates"
   },
-  "current_task": "Round016 source repair and independent static review completed; dynamic modes not executed",
-  "next_task": "Round017 minimal deadline and CIM identity repair then model-zero smoke/mock/saved audit",
+  "current_task": "Round018 completed: boolean writer repaired; three expected normal probes passed; timeout remained indeterminate",
+  "next_task": "Round019 minimal explicit deadline-liveness and bounded terminal-evidence repair, then model-zero smoke/mock/saved audit",
   "blockers": [
-    "Frozen runner can mask late exit as normal completion",
-    "CIM CreationDate normalization must support DateTime and DMTF",
-    "Source not approved; dynamic model-zero gates unexecuted"
+    "Timeout classifier requires last short wait to reach deadline; monitor-overrun path is indeterminate",
+    "Killed probe ExitTime is 1601 sentinel; terminal evidence requires bounded wait and validity separation",
+    "Saved numeric/provenance audit unexecuted; no full-estimator integration yet"
   ],
   "unresolved": [
     "Actual-vessel CPU/CUDA probability equivalence remains unmeasured",
@@ -434,46 +454,43 @@
     "Holdout known_holdout_reused=true; exposure audit unresolved; individual values not opened",
     "No independent/official score and no actual F1>=0.7 evidence"
   ],
-  "active_workers": [
-    {
-      "task": "/root/author",
-      "model_request": "gpt-6-luna",
-      "effort_request": "xhigh",
-      "owns": "rounds/round_017/code"
-    },
-    {
-      "task": "/root/reviewer",
-      "model_request": "gpt-6-luna",
-      "effort_request": "xhigh",
-      "owns": "rounds/round_017/review"
-    }
-  ],
+  "active_workers": [],
   "handoff": {
-    "ready": false,
+    "ready": true,
     "next_session_launched": false,
-    "launch_receipt": "automation/receipts/round_016_launch.json",
+    "launch_receipt": "automation/receipts/round_018_launch.json",
     "launcher": "automation/Start-NextSession.ps1",
     "launcher_owner": "current manager",
-    "next_round": "round_017",
+    "next_round": "round_019",
     "pause_reason": null,
     "authorization": "User authorizes local experiments and fresh Astra high handoffs without repeated approval",
     "close_completed_session_requested": true,
-    "completed_session_id": "codex_c6e4625e_c472_4391_92a2_9d1b6c20769a",
+    "completed_session_id": "codex_7d125970_3736_429c_8a2d_44c17f019da5",
     "close_completed_session_status": "No supported structured-chat close command in current orca agent help; end this manager after accepted handoff; manually close only completed session tab if needed",
     "next_session_id": null,
     "accepted_at_utc": null,
-    "note": "Acceptance authority is round_016_launch.json. Outgoing manager stops without mutating shared state after prompt acceptance."
+    "note": "Acceptance authority is round_018_launch.json; stop after prompt acceptance and do not mutate shared state after recipient starts."
   },
   "learning_status": {
     "learner_understanding_assessed": false,
-    "technical_goal": "Code and static review recorded; control defects prevent dynamic approval",
+    "technical_goal": "Partial: first writer and 3 expected normal probes pass; timeout and saved-audit gates incomplete",
     "hardware_verified": false
   },
   "diagnostic_result": {
-    "status": "source_repair_unapproved_no_dynamic_runs",
-    "source_review_approved": false,
+    "status": "completed_smoke_timeout_indeterminate",
+    "source_review_approved": true,
     "candidate_frozen": true,
-    "smoke_runs": 0,
+    "first_writer_fixed": true,
+    "smoke_wrapper_attempts": 1,
+    "smoke_probe_children": 4,
+    "expected_normal_probe_passes": 3,
+    "timeout_classification": "indeterminate",
+    "timeout_os_code_recorded": -1,
+    "timeout_exit_timestamp_valid": false,
+    "timeout_wait_false_elapsed_seconds": 0.49596989999999996,
+    "timeout_deadline_observed_seconds": 0.9381056,
+    "timeout_exit_observed_seconds": 0.9397325,
+    "auditor_calls": 0,
     "mock_runs": 0,
     "saved_audit_runs": 0,
     "model_runs": 0,
@@ -482,7 +499,11 @@
     "saved_provenance_audit_pass": null,
     "historical_round015_wrapper_gate": false,
     "historical_round010_overall_gate": false,
-    "prior_selected_21_files_unchanged": true
+    "prior_selected_files_unchanged": true,
+    "prior_selected_files_count": 83,
+    "outer_exit_code": 1,
+    "outer_wall_seconds": 8.6628274,
+    "whole_mode_budget_pass": true
   },
   "next_round_budget": {
     "manager_minutes_max": 25,
@@ -498,16 +519,21 @@
     "checkpoint_access": 0,
     "actual_data_or_f1": 0,
     "start_available_ram_gib_min": 0.5,
-    "expected_peak_mib": 200
+    "expected_peak_mib": 200,
+    "retries": 0
   },
-  "latest_result_report": "rounds/round_016/ROUND_REPORT.md",
-  "round_completed_at_utc": "2026-11-04T22:13:50.655995+00:00",
+  "latest_result_report": "rounds/round_018/ROUND_REPORT.md",
+  "round_completed_at_utc": "2026-11-04T22:51:46.795301+00:00",
   "review": {
-    "source": "rounds/round_016/review/SOURCE_REVIEW.md",
-    "final": "rounds/round_016/review/FINAL_REVIEW.md"
+    "source": "rounds/round_018/review/SOURCE_REVIEW.md",
+    "final": "rounds/round_018/review/FINAL_REVIEW.md"
   },
   "execution_summary": {
-    "process_smoke_runs": 0,
+    "process_smoke_runs": 1,
+    "process_smoke_completed": false,
+    "smoke_probe_children": 4,
+    "normal_probe_passes": 3,
+    "auditor_calls": 0,
     "mock_runs": 0,
     "saved_audit_runs": 0,
     "model_runs": 0,
@@ -516,7 +542,9 @@
     "project_data_access": 0,
     "new_f1": null,
     "source_frozen": true,
-    "source_approved": false
+    "source_approved": true,
+    "outer_exit_code": 1,
+    "outer_wall_seconds": 8.6628274
   },
   "independent_evaluation_blockers": [
     "No exposure-verified independent evaluation roster approved or opened"
@@ -560,7 +588,7 @@
     "checkpoint_exact_sha256_found": true,
     "historical_cuda_runtime_reproduced": false,
     "ready_for_m4_training": false,
-    "next_step": "Round017 minimal deadline and CIM identity repair then model-zero smoke/mock/saved audit",
+    "next_step": "Round019 minimal explicit deadline-liveness and bounded terminal-evidence repair, then model-zero smoke/mock/saved audit",
     "ready_for_bounded_synthetic_head_gate": false,
     "actual_m4_training_executed": false,
     "synthetic_head_numerical_checks_recorded": true,

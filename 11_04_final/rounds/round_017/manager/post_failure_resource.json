@@ -1,0 +1,9 @@
+﻿{
+    "other_python":  [
+
+                     ],
+    "reason":  "Post-failure cleanup observation and handoff; no retry",
+    "utc":  "2026-11-04T22:35:41.0882232Z",
+    "available_gib":  5.5128364562988281,
+    "owned_model_or_probe_children_launched":  0
+}

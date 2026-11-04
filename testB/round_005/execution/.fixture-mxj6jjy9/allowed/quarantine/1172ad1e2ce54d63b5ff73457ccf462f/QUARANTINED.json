@@ -1,0 +1,14 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\.fixture-mxj6jjy9\\allowed\\write_failure",
+  "published": false,
+  "commit_point": "same-volume atomic directory rename",
+  "files": [],
+  "batches": 0,
+  "rows": 0,
+  "_range_index_reconstructable": true,
+  "error_type": "OSError",
+  "error": "fixture parquet write failure",
+  "quarantined": true
+}

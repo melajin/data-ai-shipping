@@ -1,0 +1,8 @@
+Process-control probe batch failed; receipt preserved
+위치 D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_018\code\run_saved_m4_audit.ps1:236 
+문자:23
++ ... $completed){throw 'Process-control probe batch failed; receipt preser ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Process-control...ceipt preserved:String) [], RuntimeException
+    + FullyQualifiedErrorId : Process-control probe batch failed; receipt preserved
+ 

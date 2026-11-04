@@ -1,0 +1,13 @@
+{
+    "schema":  "round017_approved_sources.v1",
+    "round":  "round_017",
+    "sha256":  {
+                   "rounds/round_017/code/saved_m4_audit.py":  "8ca9be725be25a6d4e80d43a17a82341ef78a94ea33115ff8d3bfef10ce4b227",
+                   "rounds/round_017/code/run_saved_m4_audit.ps1":  "fba54fd84873430039348f8d15a6660655126df7bc19ed2bdde8f4c71c7de720"
+               },
+    "candidate_manifest_sha256":  "aff522305a7a1d8b0215caa598eaecbe3fc4596060c7afa335ee8fb5c1a29449",
+    "candidate_freeze_ack_sha256":  "fbde4e6b3426ee3e399a82aa35e1108fc9ef388d73e4eab4c7c7f8ee4269652b",
+    "reviewed_at_utc":  "2026-11-04T22:33:57Z",
+    "scope":  "Independent static approval for Round017 MODEL-ZERO process-control smoke, standard-library mock, and saved-evidence audit only",
+    "reviewer_method":  "Direct Get-FileHash after author write-stop; exact two-path set; hashes compared with candidate manifest and write-stop ACK; no parser, AST, mode, process, model, checkpoint, data, F1, or hardware execution"
+}

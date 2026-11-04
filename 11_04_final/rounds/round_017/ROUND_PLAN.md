@@ -17,3 +17,5 @@ model0, torch/numpy/tabicl import0, checkpoint read/hash/load0, .pt 역직렬화
 기술 목표는 제어/저장감사 관문 완료이며 학습 목표는 종료관찰·시한·프로세스 소유·JSON소비·저장검산과 새 성능평가의 차이를 설명하는 것이다. 이해평가와 하드웨어검증은 미실시. 반복노출 OUTER5897, baseline micro0.5930133966423605/macro0.5252719738966167, 미채택탐색0.5933525521451586, 독립/공식null 유지.
 
 성공시에만 round018의 사전선택 M4-a 전체estimator 저장/재로드 검토로 진행한다. 이번 통합은 금지한다. 실패하면 구체적인 control/parser/schema/provenance/numeric 원인과 최소수정 가설을 인계한다. 완료시 REPORT/STATUS(current_round=round_017,handoff.ready=true)/LEDGER/NEXT를 저장하고 fresh Astra high 전달 수락 후 종료한다.
+
+실행 직전 부록 22:35UTC: 독립 승인map SHA256 9d20b92bf696b7d6d2003c9bd34bb4105f8fd6ebc4113e357f94f5595e100fe9. manager/Invoke-ApprovedMode.ps1이 동일한 승인 code/run_saved_m4_audit.ps1 -Mode smoke/mock/audit를 별도 PowerShell로 호출하며 전체 wrapper/receipt/OS exit를 함께 검사한다. 실제 호출과 RAM/argv/종료는 manager/*_launch.json 및 *_preflight.json에 저장한다. 기존25분/실행마감22:36:20UTC는 유지한다.

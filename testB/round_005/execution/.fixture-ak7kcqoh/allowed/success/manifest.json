@@ -1,0 +1,86 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\.fixture-ak7kcqoh\\allowed\\success",
+  "commit_point": "same-volume atomic directory rename",
+  "files": [
+    {
+      "name": "part-000000.parquet",
+      "sha256": "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 0,
+      "concat_offset_end": 1,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        0,
+        0
+      ],
+      "columns": [
+        "rfid_id",
+        "part_dt",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000001.parquet",
+      "sha256": "c37b9a84db9e334b5d29def048b58ca8c4467f8e3d0027872408a1ab21a869c6",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 1,
+      "concat_offset_end": 2,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        1,
+        1
+      ],
+      "columns": [
+        "rfid_id",
+        "part_dt",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    }
+  ],
+  "batches": 2,
+  "rows": 2,
+  "pandas_contract": {
+    "stream": "one DataFrame per non-None input RecordBatch; no cross-batch materialization",
+    "reconstruction": "read parts in manifest order, concatenate without ignore_index, set index from __canonical_index__",
+    "index_metadata": "per part: original pandas index class/dtype/name and first/last label; explicit labels persisted",
+    "combined_index_reconstruction": "RangeIndex(0, rows) iff index_range_reconstructable is true; otherwise pandas Index of the explicit labels",
+    "empty": "zero-row RecordBatch parts preserve schema; if the input yields no batches, materialization requires an explicit zero-row canonical empty_template; absent template fails closed"
+  },
+  "columns": [
+    "rfid_id",
+    "part_dt",
+    "key_valid",
+    "month"
+  ],
+  "dtypes": {
+    "rfid_id": "int64",
+    "part_dt": "int32",
+    "key_valid": "bool",
+    "month": "int8"
+  },
+  "index_range_reconstructable": true,
+  "manifest_version": 1,
+  "publication_semantics": "public only when this complete directory is visible at final_path after atomic rename"
+}

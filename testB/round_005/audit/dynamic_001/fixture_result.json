@@ -1,0 +1,727 @@
+{
+  "mode": "independent small fixtures and caller transaction checks",
+  "started_unix": 1793832774.330383,
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "pandas": "2.2.3",
+  "numpy": "2.2.5",
+  "pyarrow": "24.0.0",
+  "snapshot_before": {
+    "canonical_sources": {
+      "run_remeasure_20261031.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_remeasure_20261031.py",
+        "sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+        "expected": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+        "match": true
+      },
+      "run_008_testB_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+        "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+        "expected": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+        "match": true
+      },
+      "run_005_F156_merge_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_F156_merge_20261101.py",
+        "sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+        "expected": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+        "match": true
+      },
+      "run_cycle4_3_featAC_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_cycle4_3_featAC_20261101.py",
+        "sha256": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+        "expected": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+        "match": true
+      }
+    },
+    "e_snapshot": {
+      "bounded_loader.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\bounded_loader.py",
+        "sha256": "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+        "expected": "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+        "match": true
+      },
+      "isolated_stage.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\isolated_stage.py",
+        "sha256": "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+        "expected": "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+        "match": true
+      },
+      "verify_fixtures.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\verify_fixtures.py",
+        "sha256": "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+        "expected": "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+        "match": true
+      }
+    },
+    "all_match": true
+  },
+  "process_metrics_before": {
+    "working_set_rss_mib": 89.4,
+    "peak_working_set_rss_mib": 90.28,
+    "commit_pagefile_mib": 540.38,
+    "peak_commit_pagefile_mib": 540.53
+  },
+  "fixture_cases": [
+    {
+      "case": "both_keys_month_order_true_index_holes",
+      "pass": true,
+      "rows": 3,
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "rfid_time",
+        "wkt_valid",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "rfid_time": "int16",
+        "wkt_valid": "bool",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "Index",
+      "index_name": null,
+      "index_labels": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "case": "both_keys_key_valid_false",
+      "pass": true,
+      "rows": 5,
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "rfid_time",
+        "wkt_valid",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "rfid_time": "int16",
+        "wkt_valid": "bool",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "Index",
+      "index_name": null,
+      "index_labels": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "case": "id_only_skips_date_conversion",
+      "pass": true,
+      "rows": 4,
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "Index",
+      "index_name": null,
+      "index_labels": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "case": "date_only_skips_id_conversion",
+      "pass": true,
+      "rows": 2,
+      "columns": [
+        "part_dt",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "RangeIndex",
+      "index_name": null,
+      "index_labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "case": "no_numeric_keys_implicit_key_month",
+      "pass": true,
+      "rows": 5,
+      "columns": [
+        "wkt_valid",
+        "len_m",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "wkt_valid": "bool",
+        "len_m": "float64",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "RangeIndex",
+      "index_name": null,
+      "index_labels": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "case": "explicit_month_key_valid_and_output_order",
+      "pass": true,
+      "rows": 5,
+      "columns": [
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "RangeIndex",
+      "index_name": null,
+      "index_labels": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "case": "caller_order_and_reversed_months",
+      "pass": true,
+      "rows": 3,
+      "columns": [
+        "part_dt",
+        "rfid_id",
+        "row_index",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "part_dt": "int32",
+        "rfid_id": "int64",
+        "row_index": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "Index",
+      "index_name": null,
+      "index_labels": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "case": "all_rows_numeric_dropped",
+      "pass": true,
+      "rows": 0,
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "wkt_valid",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "wkt_valid": "bool",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "Index",
+      "index_dtype": "int64"
+    },
+    {
+      "case": "None_NaN_pdNA_text_drop_and_ID_before_date",
+      "pass": true,
+      "rows": 3,
+      "index_type": "Index",
+      "index_labels": [
+        0,
+        5,
+        6
+      ]
+    },
+    {
+      "case": "unsupported_tokens_fail_closed_before_first_yield",
+      "pass": true,
+      "count": 15,
+      "rejected": [
+        {
+          "field": "rfid_id",
+          "length": 16,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "rfid_id",
+          "length": 17,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "rfid_id",
+          "length": 3,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "rfid_id",
+          "length": 3,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "rfid_id",
+          "length": 2,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "rfid_id",
+          "length": 2,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "rfid_id",
+          "length": 129,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "rfid_id",
+          "length": 19,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "part_dt",
+          "length": 10,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "part_dt",
+          "length": 11,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "part_dt",
+          "length": 10,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "part_dt",
+          "length": 7,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "part_dt",
+          "length": 9,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "part_dt",
+          "length": 8,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        },
+        {
+          "field": "part_dt",
+          "length": 129,
+          "stopped_before_yield": true,
+          "error_type": "UnsupportedDomain"
+        }
+      ]
+    },
+    {
+      "case": "ID_drop_before_unsupported_date",
+      "pass": true,
+      "rows": 1,
+      "columns": [
+        "rfid_id",
+        "part_dt",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "Index",
+      "index_name": null,
+      "index_labels": [
+        1
+      ]
+    },
+    {
+      "case": "empty_month_list_value_error_preserved_and_quarantined",
+      "pass": true,
+      "error": [
+        "ValueError",
+        "No objects to concatenate"
+      ],
+      "final_absent": true
+    },
+    {
+      "case": "bounded_debug_and_no_trace",
+      "pass": true,
+      "trace_none_parts": 7,
+      "capped_records": 2,
+      "cap": 2,
+      "sink_events": 7,
+      "sink_retention_owned_by_test_callback": 7
+    }
+  ],
+  "atomic_cases": [
+    {
+      "case": "normal_commit_and_strict_reconstruction",
+      "pass": true,
+      "files": 2,
+      "published_receipt": true,
+      "manifest_has_publication_semantics": true,
+      "reconstructed_rows": 2
+    },
+    {
+      "case": "late_unsupported_after_one_yield",
+      "pass": true,
+      "exception": "UnsupportedDomain",
+      "final_absent": true,
+      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\late_unsupported_after_one_yield-1020-1793832775209044300\\allowed\\quarantine\\cd27c79e3b504401b82959580d02b6c9\\receipt.json",
+      "committed_batches_before_failure": 1
+    },
+    {
+      "case": "late_general_exception_after_one_yield",
+      "pass": true,
+      "exception": "RuntimeError",
+      "final_absent": true,
+      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\late_general_exception_after_one_yield-1020-1793832775231545700\\allowed\\quarantine\\c70c40e97b4245c1bfec0ded5ad3ffad\\receipt.json",
+      "committed_batches_before_failure": 1
+    },
+    {
+      "case": "scratch_write_failure",
+      "pass": true,
+      "exception": "OSError",
+      "final_absent": true,
+      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\scratch_write_failure-1020-1793832775253803400\\allowed\\quarantine\\ef11a7913d6a4955a65126084de3a3f4\\receipt.json",
+      "committed_batches_before_failure": 0
+    },
+    {
+      "case": "stage_creation_failure",
+      "pass": true,
+      "final_absent": true,
+      "quarantine_receipt": true
+    },
+    {
+      "case": "commit_failure",
+      "pass": true,
+      "final_absent": true,
+      "quarantine_receipt": true
+    },
+    {
+      "case": "commit_time_target_creation_race_no_clobber",
+      "pass": true,
+      "sentinel_sha256": "2668c1f2d6c55ee76cad1fd7a40e0db22bfe128191a624d6290232a6bc360813",
+      "sentinel_unchanged": true,
+      "final_contains_only_sentinel": [
+        "sentinel.bin"
+      ]
+    },
+    {
+      "case": "preexisting_final_preserved",
+      "pass": true,
+      "sentinel_sha256": "16f4332f2f382c2d35783949ad4b2f73333ba14fe6d232b565267fad8db5eeb6"
+    },
+    {
+      "case": "all_empty_with_exact_canonical_template",
+      "pass": true,
+      "rows": 0,
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "wkt_valid",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "wkt_valid": "bool",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "RangeIndex"
+    },
+    {
+      "case": "all_empty_without_template_fail_closed",
+      "pass": true,
+      "final_absent": true,
+      "quarantine_receipt": true
+    },
+    {
+      "case": "zero_row_batch_distinct_from_no_batch",
+      "pass": true,
+      "files": 2,
+      "first_part_rows": 0
+    },
+    {
+      "case": "empty_template_dtype_and_index_provenance_limit",
+      "pass": true,
+      "observations": [
+        {
+          "case": "wrong_feature_dtype_template",
+          "accepted_and_published": true,
+          "strictly_equal_to_canonical": false,
+          "expected_dtypes": {
+            "row_index": "int64",
+            "rfid_id": "int64",
+            "part_dt": "int32",
+            "wkt_valid": "bool",
+            "key_valid": "bool",
+            "month": "int8"
+          },
+          "actual_dtypes": {
+            "row_index": "int64",
+            "rfid_id": "int64",
+            "part_dt": "int32",
+            "wkt_valid": "object",
+            "key_valid": "bool",
+            "month": "int8"
+          },
+          "expected_index_type": "RangeIndex",
+          "actual_index_type": "RangeIndex",
+          "mismatch_excerpt": [
+            "wrong_feature_dtype_template: strict DataFrame mismatch: Attributes of DataFrame.iloc[:, 3] (column name=\"wkt_valid\") are different",
+            "",
+            "Attribute \"dtype\" are different"
+          ]
+        },
+        {
+          "case": "wrong_index_class_template",
+          "accepted_and_published": true,
+          "strictly_equal_to_canonical": false,
+          "expected_dtypes": {
+            "row_index": "int64",
+            "rfid_id": "int64",
+            "part_dt": "int32",
+            "wkt_valid": "bool",
+            "key_valid": "bool",
+            "month": "int8"
+          },
+          "actual_dtypes": {
+            "row_index": "int64",
+            "rfid_id": "int64",
+            "part_dt": "int32",
+            "wkt_valid": "bool",
+            "key_valid": "bool",
+            "month": "int8"
+          },
+          "expected_index_type": "RangeIndex",
+          "actual_index_type": "Index",
+          "mismatch_excerpt": [
+            "wrong_index_class_template: strict DataFrame mismatch: DataFrame.index are different",
+            "",
+            "DataFrame.index classes are different"
+          ]
+        }
+      ],
+      "gate_effect": "accepted wrong template is a caller precondition/production limitation, not canonical equivalence"
+    },
+    {
+      "case": "all_none_stream_no_template_fail_closed",
+      "pass": true,
+      "final_absent": true,
+      "quarantine_receipt": true
+    },
+    {
+      "case": "stage_dataset_columns_root_and_path_preflight_denials",
+      "pass": true,
+      "denials": [
+        {
+          "case": "non_testfit_stage",
+          "denied": true
+        },
+        {
+          "case": "non_testfit_dataset",
+          "denied": true
+        },
+        {
+          "case": "duplicate_requested_columns",
+          "denied": true
+        },
+        {
+          "case": "reserved_index_column",
+          "denied": true
+        },
+        {
+          "case": "root_as_final",
+          "denied": true
+        },
+        {
+          "case": "path_traversal_outside_root",
+          "denied": true
+        }
+      ]
+    },
+    {
+      "case": "link_and_junction_checks",
+      "pass": true,
+      "checks": [
+        {
+          "case": "final_link_escape",
+          "verified": true,
+          "link_kind": "junction_fallback",
+          "symlink_error": "[WinError 1314] 클라이언트가 필요한 권한을 가지고 있지 않습니다: 'D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\testB\\\\round_005\\\\audit\\\\dynamic_001\\\\scratch\\\\final-link-1020-1793832775537742600\\\\outside' -> 'D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\testB\\\\round_005\\\\audit\\\\dynamic_001\\\\scratch\\\\final-link-1020-1793832775537742600\\\\allowed\\\\link_out'"
+        },
+        {
+          "case": "quarantine_root_link",
+          "verified": true,
+          "link_kind": "junction_fallback",
+          "outside_writes": []
+        }
+      ],
+      "scope_note": "junction fallback is distinct from symbolic link coverage"
+    }
+  ],
+  "metadata_scaling": {
+    "pass": true,
+    "records": [
+      {
+        "batches": 1,
+        "receipt_files": 1,
+        "manifest_files": 1,
+        "receipt_recursive_bytes": 4691,
+        "manifest_file_entries_recursive_bytes": 2285
+      },
+      {
+        "batches": 8,
+        "receipt_files": 8,
+        "manifest_files": 8,
+        "receipt_recursive_bytes": 13375,
+        "manifest_file_entries_recursive_bytes": 12075
+      },
+      {
+        "batches": 32,
+        "receipt_files": 32,
+        "manifest_files": 32,
+        "receipt_recursive_bytes": 43232,
+        "manifest_file_entries_recursive_bytes": 45723
+      }
+    ],
+    "incremental_bytes": [
+      [
+        8,
+        8684,
+        9790
+      ],
+      [
+        32,
+        29857,
+        33648
+      ]
+    ],
+    "interpretation": "trace retention is bounded separately; caller receipt/files metadata is O(batch_count), has no configured cap, and remains a scale limitation"
+  },
+  "frame_case_count": 13,
+  "atomic_case_count": 15,
+  "all_fixture_assertions_passed": true,
+  "production_gate": "CONDITIONAL_FAIL if bad empty-template provenance accepted; see limitations",
+  "finished_unix": 1793832775.9136488,
+  "process_metrics_after": {
+    "working_set_rss_mib": 105.05,
+    "peak_working_set_rss_mib": 109.38,
+    "commit_pagefile_mib": 551.21,
+    "peak_commit_pagefile_mib": 555.12
+  },
+  "snapshot_after": {
+    "canonical_sources": {
+      "run_remeasure_20261031.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_remeasure_20261031.py",
+        "sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+        "expected": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+        "match": true
+      },
+      "run_008_testB_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+        "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+        "expected": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+        "match": true
+      },
+      "run_005_F156_merge_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_F156_merge_20261101.py",
+        "sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+        "expected": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+        "match": true
+      },
+      "run_cycle4_3_featAC_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_cycle4_3_featAC_20261101.py",
+        "sha256": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+        "expected": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+        "match": true
+      }
+    },
+    "e_snapshot": {
+      "bounded_loader.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\bounded_loader.py",
+        "sha256": "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+        "expected": "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+        "match": true
+      },
+      "isolated_stage.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\isolated_stage.py",
+        "sha256": "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+        "expected": "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+        "match": true
+      },
+      "verify_fixtures.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\verify_fixtures.py",
+        "sha256": "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+        "expected": "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+        "match": true
+      }
+    },
+    "all_match": true
+  }
+}

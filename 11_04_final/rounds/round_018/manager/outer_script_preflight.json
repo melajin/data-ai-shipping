@@ -1,0 +1,9 @@
+﻿{
+    "outer_script_sha256":  "09A482A6804D82F8ABD8E1F7DDAA5AAE5889906C1A86C1452C1D5D32EF07FEEE",
+    "utc":  "2026-11-04T22:43:11.5403352Z",
+    "outer_script_parse_errors":  [
+
+                                  ],
+    "changes":  "018 identifiers and start cutoff22:55:15Z only",
+    "copied_from":  "rounds/round_017/manager/Invoke-ApprovedMode.ps1"
+}

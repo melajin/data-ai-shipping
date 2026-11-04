@@ -1,0 +1,13 @@
+{
+    "schema":  "round018_approved_sources.v1",
+    "round":  "round_018",
+    "sha256":  {
+                   "rounds/round_018/code/saved_m4_audit.py":  "49cbf5785791d2c3b843ad095985162675d5a1b2dc3a5a324a9a4a2207048e7a",
+                   "rounds/round_018/code/run_saved_m4_audit.ps1":  "acf4865ce46b1d12f506853c03f1d4f78a13deb8cc19b45ccdfdc1bfb8eb862a"
+               },
+    "candidate_manifest_sha256":  "0364998b6194abb8f78c373d5bb33c456150423130c458181c2ec0288377b8ff",
+    "candidate_freeze_ack_sha256":  "45abf15ad745ab338cfaf3eba0ee8e3f5fc94caef92f641776aedece2afc2fbc",
+    "reviewed_at_utc":  "2026-11-04T22:44:02Z",
+    "scope":  "Independent static approval for Round018 MODEL-ZERO smoke, standard-library mock, and saved-evidence audit only; no model execution",
+    "reviewer_method":  "Direct SHA-256 after explicit author write-freeze; exact two-path set; compared candidate manifest and ACK; verified only declared round-identifier transformations plus claimed=true to claimed=$true; PowerShell Parser API and identifier-token scan; base-Python AST parse only; no mode, model, checkpoint, data, F1, or hardware execution"
+}

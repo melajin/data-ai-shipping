@@ -1,0 +1,1176 @@
+﻿{
+    "task":  "Round005 E followup; V static followthrough",
+    "recorded_at":  "2026-11-05T07:37:41.6525027+09:00",
+    "outcome":  "succeeded_for_small_synthetic_fixture_gate",
+    "scope":  "testfit only; no actual sample/full-domain scan",
+    "runtime":  {
+                    "orca_cli":  "1.4.246",
+                    "python":  "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+                    "pandas":  "2.2.3",
+                    "numpy":  "2.2.5",
+                    "pyarrow":  "24.0.0"
+                },
+    "pinned_sources":  {
+                           "value":  [
+                                         {
+                                             "Path":  "D:\\repos\\fishing-track-classification\\code\\tools\\run_remeasure_20261031.py",
+                                             "Hash":  "5579C35BA5CA204FF54281515E0907DB57EDB31EEAA5B45AAFACEC0FC75B0D0C"
+                                         },
+                                         {
+                                             "Path":  "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+                                             "Hash":  "CCA724154A4A479E445BBB3CFEAD6CB13B92849F364182D70ABEF91822F78FC8"
+                                         },
+                                         {
+                                             "Path":  "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_F156_merge_20261101.py",
+                                             "Hash":  "E14DDBAE01864E4AE7BCE0600E361AEE0FBABB69CFE6D4EA4679DB701D0C40A4"
+                                         },
+                                         {
+                                             "Path":  "D:\\repos\\fishing-track-classification\\code\\tools\\run_cycle4_3_featAC_20261101.py",
+                                             "Hash":  "8C454A8C1F87014007B85609D0667FF1126F68B8F23BBE30D05890032A7B04F3"
+                                         }
+                                     ],
+                           "Count":  4
+                       },
+    "final_result":  {
+                         "exit":  0,
+                         "frame_cases":  14,
+                         "atomic_cases":  17,
+                         "all_pass":  true,
+                         "peak_rss_mib":  107.49,
+                         "peak_commit_mib":  553.76
+                     },
+    "ram_preflight":  {
+                          "time":  "2026-11-05T07:36:14.7358723+09:00",
+                          "free_MiB":  5650.6,
+                          "total_MiB":  14140.9,
+                          "planned_process_peak_MiB":  512,
+                          "host_reserve_MiB":  512,
+                          "other_processes":  [
+                                                  {
+                                                      "ProcessName":  "Orca",
+                                                      "Id":  19824,
+                                                      "RSS_MiB":  462.4
+                                                  },
+                                                  {
+                                                      "ProcessName":  "Orca",
+                                                      "Id":  17216,
+                                                      "RSS_MiB":  380.6
+                                                  },
+                                                  {
+                                                      "ProcessName":  "explorer",
+                                                      "Id":  5828,
+                                                      "RSS_MiB":  292.3
+                                                  },
+                                                  {
+                                                      "ProcessName":  "codex",
+                                                      "Id":  24136,
+                                                      "RSS_MiB":  239.8
+                                                  },
+                                                  {
+                                                      "ProcessName":  "codex",
+                                                      "Id":  24012,
+                                                      "RSS_MiB":  207.5
+                                                  },
+                                                  {
+                                                      "ProcessName":  "CrossDeviceService",
+                                                      "Id":  11432,
+                                                      "RSS_MiB":  205
+                                                  },
+                                                  {
+                                                      "ProcessName":  "codex",
+                                                      "Id":  1080,
+                                                      "RSS_MiB":  198.8
+                                                  },
+                                                  {
+                                                      "ProcessName":  "codex",
+                                                      "Id":  19060,
+                                                      "RSS_MiB":  179.3
+                                                  },
+                                                  {
+                                                      "ProcessName":  "codex",
+                                                      "Id":  31192,
+                                                      "RSS_MiB":  171.9
+                                                  },
+                                                  {
+                                                      "ProcessName":  "explorer",
+                                                      "Id":  4476,
+                                                      "RSS_MiB":  164.8
+                                                  },
+                                                  {
+                                                      "ProcessName":  "PhoneExperienceHost",
+                                                      "Id":  26916,
+                                                      "RSS_MiB":  155.9
+                                                  },
+                                                  {
+                                                      "ProcessName":  "Orca",
+                                                      "Id":  18136,
+                                                      "RSS_MiB":  147.4
+                                                  }
+                                              ],
+                          "basis":  "small synthetic fixtures after quarantine root link revalidation"
+                      },
+    "attempts":  [
+                     {
+                         "name":  "attempt01_empty_stream_assumption",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  1,
+                         "stdout":  "fixture_stdout.log",
+                         "stderr":  "fixture_stderr.log"
+                     },
+                     {
+                         "name":  "attempt02_strict_index",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  1,
+                         "stdout":  "fixture_attempt02_stdout.log",
+                         "stderr":  "fixture_attempt02_stderr.log"
+                     },
+                     {
+                         "name":  "attempt03_strict_index_recheck",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  1,
+                         "stdout":  "fixture_attempt03_stdout.log",
+                         "stderr":  "fixture_attempt03_stderr.log"
+                     },
+                     {
+                         "name":  "attempt04_invalid_zero_rss_measurement",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  0,
+                         "stdout":  "fixture_attempt04_stdout.log",
+                         "stderr":  "fixture_attempt04_stderr.log"
+                     },
+                     {
+                         "name":  "attempt05_symlink_permission",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  1,
+                         "stdout":  "fixture_attempt05_stdout.log",
+                         "stderr":  "fixture_attempt05_stderr.log"
+                     },
+                     {
+                         "name":  "attempt06_junction_fallback",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  0,
+                         "stdout":  "fixture_attempt06_stdout.log",
+                         "stderr":  "fixture_attempt06_stderr.log"
+                     },
+                     {
+                         "name":  "final01",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  0,
+                         "stdout":  "final_stdout.log",
+                         "stderr":  "final_stderr.log"
+                     },
+                     {
+                         "name":  "final02",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  0,
+                         "stdout":  "final02_stdout.log",
+                         "stderr":  "final02_stderr.log"
+                     },
+                     {
+                         "name":  "domain_edges_after_path_guard",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  0,
+                         "stdout":  "domain_edges_stdout.log",
+                         "stderr":  "domain_edges_stderr.log"
+                     },
+                     {
+                         "name":  "final_na_edges",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  0,
+                         "stdout":  "na_edges_stdout.log",
+                         "stderr":  "na_edges_stderr.log"
+                     },
+                     {
+                         "name":  "final_quarantine_root_guard",
+                         "command":  "PYTHONDONTWRITEBYTECODE=1 python -B testB/round_005/execution/verify_fixtures.py",
+                         "exit":  0,
+                         "stdout":  "quarantine_guard_stdout.log",
+                         "stderr":  "quarantine_guard_stderr.log"
+                     }
+                 ],
+    "files":  [
+                  {
+                      "path":  "bounded_loader.py",
+                      "sha256":  "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+                      "bytes":  7768
+                  },
+                  {
+                      "path":  "domain_edges_exit_code.txt",
+                      "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "domain_edges_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "domain_edges_stdout.log",
+                      "sha256":  "cff5b8b341f5550ecfb4f13036e770fbe851cbc2f4928068ae74e0cc7180c4dd",
+                      "bytes":  168
+                  },
+                  {
+                      "path":  "execution_report.md",
+                      "sha256":  "9be796a47a8d92774973f3c4634bbac48cd417510311c9813f5d2a2490467a21",
+                      "bytes":  9338
+                  },
+                  {
+                      "path":  "final02_exit_code.txt",
+                      "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "final02_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "final02_stdout.log",
+                      "sha256":  "a3935494c842de0812132bb907d35e84d04e71b68ff37082238859c92dee0620",
+                      "bytes":  168
+                  },
+                  {
+                      "path":  "final_exit_code.txt",
+                      "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "final_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "final_stdout.log",
+                      "sha256":  "b863a33700baa83ebeba5de68a9017464cc026f3ca7da847af6a81bfad676d87",
+                      "bytes":  166
+                  },
+                  {
+                      "path":  "fixture_attempt02_exit_code.txt",
+                      "sha256":  "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "fixture_attempt02_stderr.log",
+                      "sha256":  "4912567882f86f797a6094a8a35c75e712b5869144e433082196df00f76f3db3",
+                      "bytes":  10770
+                  },
+                  {
+                      "path":  "fixture_attempt02_stdout.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "fixture_attempt03_exit_code.txt",
+                      "sha256":  "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "fixture_attempt03_stderr.log",
+                      "sha256":  "f6b77d4e30ea02faf78ef50e14b642e07db8ad48f0a8d6b19c6c4aaafe5ebac6",
+                      "bytes":  10770
+                  },
+                  {
+                      "path":  "fixture_attempt03_stdout.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "fixture_attempt04_exit_code.txt",
+                      "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "fixture_attempt04_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "fixture_attempt04_stdout.log",
+                      "sha256":  "101c04026a19be62fa7885c268945280e11799f5f9984e8d0d32a60689007261",
+                      "bytes":  162
+                  },
+                  {
+                      "path":  "fixture_attempt05_exit_code.txt",
+                      "sha256":  "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "fixture_attempt05_stderr.log",
+                      "sha256":  "b318c9c7e948e8f8cae14ab38e2370bafa2c27bf3c98ef4160d461fffd905c87",
+                      "bytes":  3102
+                  },
+                  {
+                      "path":  "fixture_attempt05_stdout.log",
+                      "sha256":  "f2a09fde93560caada5e29184478d6186426188722d93a3fe72512a768175741",
+                      "bytes":  170
+                  },
+                  {
+                      "path":  "fixture_attempt06_exit_code.txt",
+                      "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "fixture_attempt06_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "fixture_attempt06_stdout.log",
+                      "sha256":  "1892e639932952e31b2c6569ca5e621e9ab494e55f76ef5c137c3246e1fd1e5e",
+                      "bytes":  168
+                  },
+                  {
+                      "path":  "fixture_exit_code.txt",
+                      "sha256":  "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "fixture_result.json",
+                      "sha256":  "5892fb2b59151700ce305505aa15ea4c6fe1df3e04cd9e5ecbd1d74f48f595ed",
+                      "bytes":  10316
+                  },
+                  {
+                      "path":  "fixture_stderr.log",
+                      "sha256":  "8f2b83d1f5dd6f183acec8153a1ec9c960c00140873153269ac169a6a1ef3428",
+                      "bytes":  3418
+                  },
+                  {
+                      "path":  "fixture_stdout.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "isolated_stage.py",
+                      "sha256":  "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+                      "bytes":  11247
+                  },
+                  {
+                      "path":  "memory_preflight.json",
+                      "sha256":  "d599aab0bb3c7bc5f039a98c9bf5b19978d16f7d6f6d538a022ea9fe42735700",
+                      "bytes":  2974
+                  },
+                  {
+                      "path":  "memory_preflight_attempt02.json",
+                      "sha256":  "f494694e618d192f1a184fbe063547c86dc75435fbe9748c6d5fc9ede2e9bb3c",
+                      "bytes":  2997
+                  },
+                  {
+                      "path":  "memory_preflight_attempt03.json",
+                      "sha256":  "ee622cf1060cb5570daeca54684351208cae12083e9408c608c33b42859ee54d",
+                      "bytes":  2984
+                  },
+                  {
+                      "path":  "memory_preflight_attempt04.json",
+                      "sha256":  "5198a9d2aa55ede1b9e10115db7766481b4976b20b91635bf9bd214057480501",
+                      "bytes":  2967
+                  },
+                  {
+                      "path":  "memory_preflight_attempt05.json",
+                      "sha256":  "0b924328cd828c8cf59c25e4ddb973bc525b72fb946804cb661e1efc7153542a",
+                      "bytes":  3004
+                  },
+                  {
+                      "path":  "memory_preflight_attempt06.json",
+                      "sha256":  "3a3108dc5c58d6fab149817f6f28b18dccd9a2d583ec8d0c8eca1af2308cc271",
+                      "bytes":  2993
+                  },
+                  {
+                      "path":  "memory_preflight_domain_edges.json",
+                      "sha256":  "1f2c8c5af69b580184bbd900c5a7350164713667cf323522f9712081eacc8384",
+                      "bytes":  2991
+                  },
+                  {
+                      "path":  "memory_preflight_final.json",
+                      "sha256":  "1ffbeae7cfe40f98720159ca7cd4c9c3f2cbb0ec4e04161e06dc7281225feff0",
+                      "bytes":  2987
+                  },
+                  {
+                      "path":  "memory_preflight_final02.json",
+                      "sha256":  "0abc2a315147e2cdb94896be67e0876304f6be70d60e18c60ac37a2fcd1050c1",
+                      "bytes":  2981
+                  },
+                  {
+                      "path":  "memory_preflight_na_edges.json",
+                      "sha256":  "0256baeb96115d649b26f8efaa72c74279cf15bceeca8574e0556fea562525fc",
+                      "bytes":  2998
+                  },
+                  {
+                      "path":  "memory_preflight_quarantine_guard.json",
+                      "sha256":  "cf70f4358083750f71f2097f046f9e2a5dc0d64cedfaa8ffcb27ee5fdc717c12",
+                      "bytes":  2973
+                  },
+                  {
+                      "path":  "na_edges_exit_code.txt",
+                      "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "na_edges_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "na_edges_stdout.log",
+                      "sha256":  "5e52e94fc3b262ee49dd9691ce701412ce7d743d3943a07aa435c5be60eb97c2",
+                      "bytes":  168
+                  },
+                  {
+                      "path":  "pinned_source_hashes.json",
+                      "sha256":  "827d0dd1ef1fd3379fb6aa4d4654954a3875f10e04bb508e2b178b1a47f4e724",
+                      "bytes":  823
+                  },
+                  {
+                      "path":  "quarantine_guard_exit_code.txt",
+                      "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+                      "bytes":  3
+                  },
+                  {
+                      "path":  "quarantine_guard_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                      "bytes":  0
+                  },
+                  {
+                      "path":  "quarantine_guard_stdout.log",
+                      "sha256":  "9631edde1409e14f9bf195f90a807981d56280f84c87039711a4b9a5d8f31fea",
+                      "bytes":  168
+                  },
+                  {
+                      "path":  "verify_fixtures.py",
+                      "sha256":  "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+                      "bytes":  21948
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\all_empty_with_schema\\manifest.json",
+                      "sha256":  "4337d285a11bda8dbffc7f628fa0a296ac457c8210c8c0c290b335512ccc7027",
+                      "bytes":  2232
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\all_empty_with_schema\\part-000000.parquet",
+                      "sha256":  "d6c613847ca25c54a7758b807a75d0316ec004b8266c2da9875ef6340ab790ad",
+                      "bytes":  3754
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\already_exists\\sentinel.txt",
+                      "sha256":  "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3",
+                      "bytes":  8
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\commit_race\\sentinel.txt",
+                      "sha256":  "d59c2a5f721ce135ce54628b1ad8ad8b8eb26c8bbe2e2abe1cdca97e2d6ab446",
+                      "bytes":  9
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\261f2d9652314d0ea538e57dfa248395\\manifest.json",
+                      "sha256":  "2205dd25ed00ec37f14f4142b09f0a7e19f234cec79e5d1c5ad52f5b330aa3c1",
+                      "bytes":  2570
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\261f2d9652314d0ea538e57dfa248395\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\261f2d9652314d0ea538e57dfa248395\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\261f2d9652314d0ea538e57dfa248395\\QUARANTINED.json",
+                      "sha256":  "777d5ff0b96050bcb7260f0e08b29e24e458eb565270eb8c9c8067fbc9a3eaaa",
+                      "bytes":  2996
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\261f2d9652314d0ea538e57dfa248395\\receipt.json",
+                      "sha256":  "5602be814621c66f9109eeed078aa4dd916db09b09175beef43e5615a20fe8fa",
+                      "bytes":  3132
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\31dde03b4ae1407b90fb5df625ddc939\\QUARANTINED.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\31dde03b4ae1407b90fb5df625ddc939\\receipt.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\7abccb8073ce44689744cede1338c93e\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\7abccb8073ce44689744cede1338c93e\\QUARANTINED.json",
+                      "sha256":  "ab3b084985eb848d63640cb800db06c6471bce14274aceb27379818d64abaf49",
+                      "bytes":  1142
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\7abccb8073ce44689744cede1338c93e\\receipt.json",
+                      "sha256":  "b1db16715285d411b6fe21749f61b502af18e9cf3d0864b36db6aa2cdc66dc60",
+                      "bytes":  1326
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\867e327766794f8a82cd003373a6cadc\\QUARANTINED.json",
+                      "sha256":  "e8ea8625165687b1f652e6da2068bc99389d5b3727b909700700a491a20b75fa",
+                      "bytes":  1236
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\867e327766794f8a82cd003373a6cadc\\receipt.json",
+                      "sha256":  "5e6a3224a7b736c27a1fcd699a544c8068ef2a43c74b279711edd048064c8851",
+                      "bytes":  1420
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\a4cc67a353634fd9ac67847aff506ea6\\manifest.json",
+                      "sha256":  "c114fc1eb459c64c2964f270d6f45cda5f13210bf26948b9be2dcf52ba483bfd",
+                      "bytes":  2573
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\a4cc67a353634fd9ac67847aff506ea6\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\a4cc67a353634fd9ac67847aff506ea6\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\a4cc67a353634fd9ac67847aff506ea6\\QUARANTINED.json",
+                      "sha256":  "1a1907edd959cf0480c0046c4335127d1304e7d959977d2cac6635a19e19391a",
+                      "bytes":  2569
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\a4cc67a353634fd9ac67847aff506ea6\\receipt.json",
+                      "sha256":  "6f75a4af436832fd54de0cdb567205abc4216f58e45d60ad53102cc61a4d3e70",
+                      "bytes":  2753
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\e3daf76de81b4e0a98cc47a48e19e761\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\e3daf76de81b4e0a98cc47a48e19e761\\QUARANTINED.json",
+                      "sha256":  "a1a8a4171bd94a5dac0827bc60496a4ad2ff28713229e86e1f91d4fccbea7af7",
+                      "bytes":  1065
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\e3daf76de81b4e0a98cc47a48e19e761\\receipt.json",
+                      "sha256":  "30057b80a881f86c38e595c7fca460cf4bf6960e5b484449d83fb0a66e239725",
+                      "bytes":  1249
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\edaf9615e7de4f899300a072ef4d40ef\\QUARANTINED.json",
+                      "sha256":  "fe350c90c326f0c4d7e915ed3ad39287adf620f86044a0d182d2525d4fe77271",
+                      "bytes":  465
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\quarantine\\edaf9615e7de4f899300a072ef4d40ef\\receipt.json",
+                      "sha256":  "73a2e181f1ef2fa5f40255a8bb2da11aa96a9ddd1ee15fae971abe6535f38dca",
+                      "bytes":  649
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\success\\manifest.json",
+                      "sha256":  "e9c5e12f72224f667225f45ce0beb0e6f5d5b233cf96e6c51467938108872cf3",
+                      "bytes":  2705
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\success\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-a6fnopet\\allowed\\success\\part-000001.parquet",
+                      "sha256":  "c37b9a84db9e334b5d29def048b58ca8c4467f8e3d0027872408a1ab21a869c6",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\all_empty_with_schema\\manifest.json",
+                      "sha256":  "7a739294db478244d23d450e1f18a08e01077d6afa7c345f50455efa941c1ac3",
+                      "bytes":  2232
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\all_empty_with_schema\\part-000000.parquet",
+                      "sha256":  "d6c613847ca25c54a7758b807a75d0316ec004b8266c2da9875ef6340ab790ad",
+                      "bytes":  3754
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\already_exists\\sentinel.txt",
+                      "sha256":  "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3",
+                      "bytes":  8
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\commit_race\\sentinel.txt",
+                      "sha256":  "d59c2a5f721ce135ce54628b1ad8ad8b8eb26c8bbe2e2abe1cdca97e2d6ab446",
+                      "bytes":  9
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\131a45b6d1f842b08460619c54e742a7\\QUARANTINED.json",
+                      "sha256":  "a1a37798557546923fb204b8f79899bbbde63e9b778bf92ad7d78226f9c670ea",
+                      "bytes":  1236
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\131a45b6d1f842b08460619c54e742a7\\receipt.json",
+                      "sha256":  "6f953a2bfaa3eb6d24f009a046f6384791be121d26caaf5ab8fa3947e959e27e",
+                      "bytes":  1420
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\18dba190c29c425a87ed291b0cc0ac7a\\QUARANTINED.json",
+                      "sha256":  "add97d4662e44c9f7b54e27e0a00c9dd9e7a6ad6e6c5b7a3bc764b968e105f40",
+                      "bytes":  465
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\18dba190c29c425a87ed291b0cc0ac7a\\receipt.json",
+                      "sha256":  "506c329eecf673c3dd1b5060007e8e351b61c9b1b2cc8502e6c7bae69b87a2b3",
+                      "bytes":  649
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\3e64edfcd37240dca47b40dac7e8b253\\manifest.json",
+                      "sha256":  "03b56c88d55d17ed9b764b03cbaceb699a669a06f8f5c6e78bfe0b77a0918175",
+                      "bytes":  2573
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\3e64edfcd37240dca47b40dac7e8b253\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\3e64edfcd37240dca47b40dac7e8b253\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\3e64edfcd37240dca47b40dac7e8b253\\QUARANTINED.json",
+                      "sha256":  "31b140ee11c22bc5b233aefdf4a10b9e981d90bd007fbaac11a27327ba455e7a",
+                      "bytes":  2569
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\3e64edfcd37240dca47b40dac7e8b253\\receipt.json",
+                      "sha256":  "28a47f519dca88be84c9e28c87c53daa214a8cb335e2368e87fcdd474fecd277",
+                      "bytes":  2753
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\60182e48ada54104a514342da4dde231\\manifest.json",
+                      "sha256":  "a361da9695172c1d49b89ebf4e35c4d3e4996f7ae2d4110b9672493cc606759b",
+                      "bytes":  2570
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\60182e48ada54104a514342da4dde231\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\60182e48ada54104a514342da4dde231\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\60182e48ada54104a514342da4dde231\\QUARANTINED.json",
+                      "sha256":  "cfbdaaf318db1c375ca48ba50a9dad1d11abb2d6eec0bbfebb59cf67cab2a274",
+                      "bytes":  2996
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\60182e48ada54104a514342da4dde231\\receipt.json",
+                      "sha256":  "c840760e0f4636d60d31863f6ffadbbac95033703d6f3aff176cbecd5e222927",
+                      "bytes":  3132
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\9d287147e20b4a7e9cb9470859400834\\QUARANTINED.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\9d287147e20b4a7e9cb9470859400834\\receipt.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\f83cb4b93de943e697e4073ac9af48c3\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\f83cb4b93de943e697e4073ac9af48c3\\QUARANTINED.json",
+                      "sha256":  "28bd1cbc4ab6bfceae4eaf662032e233466701a7198c183a70c5d36a2ad545fc",
+                      "bytes":  1142
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\f83cb4b93de943e697e4073ac9af48c3\\receipt.json",
+                      "sha256":  "9c883f809b6241b46a8ad63af3b1d6e14b89444df3d2408589f3b0e4fe416920",
+                      "bytes":  1326
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\fb3ea17aa1184bc2ae8b0f4911f9d0aa\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\fb3ea17aa1184bc2ae8b0f4911f9d0aa\\QUARANTINED.json",
+                      "sha256":  "94af8f0f92f9d9e1ec34ab7bceef414162b419b1361f3e3b2bc1450e2fded010",
+                      "bytes":  1065
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\quarantine\\fb3ea17aa1184bc2ae8b0f4911f9d0aa\\receipt.json",
+                      "sha256":  "da5f0680bd3ca8b3e95ec9e88e9459ff953abc1b1932eb7386f6d628ec04f53e",
+                      "bytes":  1249
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\success\\manifest.json",
+                      "sha256":  "9b45b4b46e9340a2cf3da31827d9a790fa0a78efc29953f26922f6ccd7e26dc8",
+                      "bytes":  2705
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\success\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-ak7kcqoh\\allowed\\success\\part-000001.parquet",
+                      "sha256":  "c37b9a84db9e334b5d29def048b58ca8c4467f8e3d0027872408a1ab21a869c6",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\all_empty_with_schema\\manifest.json",
+                      "sha256":  "0632d0a66450de2d37853c8a1e4db5799141add1a0f7e7c3426a2a8ba789871e",
+                      "bytes":  2232
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\all_empty_with_schema\\part-000000.parquet",
+                      "sha256":  "d6c613847ca25c54a7758b807a75d0316ec004b8266c2da9875ef6340ab790ad",
+                      "bytes":  3754
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\already_exists\\sentinel.txt",
+                      "sha256":  "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3",
+                      "bytes":  8
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\commit_race\\sentinel.txt",
+                      "sha256":  "d59c2a5f721ce135ce54628b1ad8ad8b8eb26c8bbe2e2abe1cdca97e2d6ab446",
+                      "bytes":  9
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\00fe9a8e6e1e4590ba8c5a4a36a940ac\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\00fe9a8e6e1e4590ba8c5a4a36a940ac\\QUARANTINED.json",
+                      "sha256":  "3ef1b14fabf85198412ccdb1589b6327f27221259c984eef2155b354c2e71406",
+                      "bytes":  1065
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\00fe9a8e6e1e4590ba8c5a4a36a940ac\\receipt.json",
+                      "sha256":  "e4aafe8975578c465f4fff554da03f7f91487f1e94b48e686d57e1b2446dba03",
+                      "bytes":  1249
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\48762be5981f47e1a4dcb1c437916458\\QUARANTINED.json",
+                      "sha256":  "fdce1865dfddf163c4cd57318fc9bbe98eb518de568fad8796abead10199c807",
+                      "bytes":  1236
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\48762be5981f47e1a4dcb1c437916458\\receipt.json",
+                      "sha256":  "b2077696ec57f712b7e8ea7ef09e2ed51f1ea592a50d3c1ce7b8e524b136737b",
+                      "bytes":  1420
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\4e6e4ea5c7f54178b1c397a37b6e3cee\\QUARANTINED.json",
+                      "sha256":  "8b591cac8e259b6fd813d33110022650a454e00f11a8d49db017d434497d3e5e",
+                      "bytes":  465
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\4e6e4ea5c7f54178b1c397a37b6e3cee\\receipt.json",
+                      "sha256":  "b6b89483fc0bbc0003a32c8df097e517ac18c2bd70afb16303c60b6331e9146b",
+                      "bytes":  649
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\65ccaa4a27314b98bbed71a67aac86b6\\manifest.json",
+                      "sha256":  "fab2d450c5b31fafbc60085add4e09046baae886370b71278b8136537a93394c",
+                      "bytes":  2570
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\65ccaa4a27314b98bbed71a67aac86b6\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\65ccaa4a27314b98bbed71a67aac86b6\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\65ccaa4a27314b98bbed71a67aac86b6\\QUARANTINED.json",
+                      "sha256":  "5bb5ab112669d83bd9363a59c57a3fd69aa304052d84a1ea6cdb51dc0efbaa11",
+                      "bytes":  2996
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\65ccaa4a27314b98bbed71a67aac86b6\\receipt.json",
+                      "sha256":  "bc1a9aaa6a718b152702f32a77b810213f6b30d2d1a774f0962d66c980158a90",
+                      "bytes":  3132
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\7e16dbf99cde47aebc46f48595b167ca\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\7e16dbf99cde47aebc46f48595b167ca\\QUARANTINED.json",
+                      "sha256":  "ac87bd7d58c5e5279200fe3c8557bbbb1a7b43e86570ac4db32cb602626c071a",
+                      "bytes":  1142
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\7e16dbf99cde47aebc46f48595b167ca\\receipt.json",
+                      "sha256":  "061b53216785b7633449523306c2cb54133080902c77f44cc8428c9c21d6579a",
+                      "bytes":  1326
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\a9d147d7c66c4b4e8a46d0ad9a047c3e\\QUARANTINED.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\a9d147d7c66c4b4e8a46d0ad9a047c3e\\receipt.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\c1b8b0d2102946d5b9881f774a11e0a6\\manifest.json",
+                      "sha256":  "78fd0f4dcd0162b2ceaf545192af3f89ab7cb0add711383831787c0c27901773",
+                      "bytes":  2573
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\c1b8b0d2102946d5b9881f774a11e0a6\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\c1b8b0d2102946d5b9881f774a11e0a6\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\c1b8b0d2102946d5b9881f774a11e0a6\\QUARANTINED.json",
+                      "sha256":  "f17012b9b2c4dc6a70e3192e03b893f4f389ab47550547a36e3c346faa54d6c0",
+                      "bytes":  2569
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\quarantine\\c1b8b0d2102946d5b9881f774a11e0a6\\receipt.json",
+                      "sha256":  "2302d4ef7739352987983268b3a87d42b98169a759cece312b26c02add4d8049",
+                      "bytes":  2753
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\success\\manifest.json",
+                      "sha256":  "9193752bcb131cd8164d0e1ab251e42a6f8901990a39a0e5a1bf4b6344aac962",
+                      "bytes":  2705
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\success\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-huy256ho\\allowed\\success\\part-000001.parquet",
+                      "sha256":  "c37b9a84db9e334b5d29def048b58ca8c4467f8e3d0027872408a1ab21a869c6",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\all_empty_with_schema\\manifest.json",
+                      "sha256":  "80e9e19da00bb28ad793085f3ebcf0335a3ce05654823cd11a813ceb48d6886f",
+                      "bytes":  2232
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\all_empty_with_schema\\part-000000.parquet",
+                      "sha256":  "d6c613847ca25c54a7758b807a75d0316ec004b8266c2da9875ef6340ab790ad",
+                      "bytes":  3754
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\already_exists\\sentinel.txt",
+                      "sha256":  "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3",
+                      "bytes":  8
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\commit_race\\sentinel.txt",
+                      "sha256":  "d59c2a5f721ce135ce54628b1ad8ad8b8eb26c8bbe2e2abe1cdca97e2d6ab446",
+                      "bytes":  9
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\37ce0d7c8cc148cbbe008700e96ea8f3\\QUARANTINED.json",
+                      "sha256":  "89156f3efc6242d2c93f9f1b7cbadba5483a128fb7dc06c746acb32e27b667ad",
+                      "bytes":  1236
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\37ce0d7c8cc148cbbe008700e96ea8f3\\receipt.json",
+                      "sha256":  "746b16e5ac737c85e15fd7dd7deef8252588c6fa5cc805fe3445ab3927d6e427",
+                      "bytes":  1420
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\4693ba1263c74ddba0ea2cb18fa7d845\\manifest.json",
+                      "sha256":  "e000c258201537b55f34665703a3ce08aef12761805a11710c1b7a33683c9780",
+                      "bytes":  2570
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\4693ba1263c74ddba0ea2cb18fa7d845\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\4693ba1263c74ddba0ea2cb18fa7d845\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\4693ba1263c74ddba0ea2cb18fa7d845\\QUARANTINED.json",
+                      "sha256":  "7eb8e9ee0ca00f3db0c558fe4f578a0bfc95970103a41c0376831775a9d781e2",
+                      "bytes":  2996
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\4693ba1263c74ddba0ea2cb18fa7d845\\receipt.json",
+                      "sha256":  "6d5b4785dedaa1b91766bca59da51c364fd59d69510487482877f2976fa51861",
+                      "bytes":  3132
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\4e0a2edb8d0245c69865e448c4e472c3\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\4e0a2edb8d0245c69865e448c4e472c3\\QUARANTINED.json",
+                      "sha256":  "b3643ad8486a40917587a0cbb8015469db3492dc00d2aebdc1aaa4e00bfa7f24",
+                      "bytes":  1065
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\4e0a2edb8d0245c69865e448c4e472c3\\receipt.json",
+                      "sha256":  "2609686a72301271bbd87d187cb32ba09980731ab0bd18b00be98cc5eff51efb",
+                      "bytes":  1249
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\7c17307cf5824ae59b90b92af455be30\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\7c17307cf5824ae59b90b92af455be30\\QUARANTINED.json",
+                      "sha256":  "9c8952ab51d46a4c51c23a499d8922416ed3be045ca39ebe6cb22eee751248af",
+                      "bytes":  1142
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\7c17307cf5824ae59b90b92af455be30\\receipt.json",
+                      "sha256":  "81968d37364558a98a62f6d3d6c72f23bc45a896e319100afe46ce0613323742",
+                      "bytes":  1326
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\9336b1fd84ae498cb64753c4c0c0a362\\QUARANTINED.json",
+                      "sha256":  "e44ac578b3c73d7d447c733217904cfd880244c2b0164e3e289577cb44f6289e",
+                      "bytes":  465
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\9336b1fd84ae498cb64753c4c0c0a362\\receipt.json",
+                      "sha256":  "fce55c27acf12d88615f8e2cc663a080471110b11def8595e6a6148f6a203ccd",
+                      "bytes":  649
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\bb35623f5d6b4fc4a683aa85f5375e23\\manifest.json",
+                      "sha256":  "05f373fc2d2a4199caaf07706462e1d92991b1049250a104150b19cead994d3c",
+                      "bytes":  2573
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\bb35623f5d6b4fc4a683aa85f5375e23\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\bb35623f5d6b4fc4a683aa85f5375e23\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\bb35623f5d6b4fc4a683aa85f5375e23\\QUARANTINED.json",
+                      "sha256":  "dfb0bb253b9bb5e146cd39e92633559e41e2fb2c396ad5e3f4f64f9a7dfb501d",
+                      "bytes":  2569
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\bb35623f5d6b4fc4a683aa85f5375e23\\receipt.json",
+                      "sha256":  "cc14d310350756f38b9a761a24fba2b965a460da2594dcbdc7f9d8d6bd8678cb",
+                      "bytes":  2753
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\d6616a29f7fa46f096e6be488b036fe3\\QUARANTINED.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\quarantine\\d6616a29f7fa46f096e6be488b036fe3\\receipt.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\success\\manifest.json",
+                      "sha256":  "426215b8c327dd97b1a3bbe78ee41126dfc40c79834cbf1970fa8bfd535b5800",
+                      "bytes":  2705
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\success\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-mh8vcz_3\\allowed\\success\\part-000001.parquet",
+                      "sha256":  "c37b9a84db9e334b5d29def048b58ca8c4467f8e3d0027872408a1ab21a869c6",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\all_empty_with_schema\\manifest.json",
+                      "sha256":  "558907d22ff4f9b05b0909eb501e753d844ac13f1851ccbdf75a965bc40a7d89",
+                      "bytes":  2232
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\all_empty_with_schema\\part-000000.parquet",
+                      "sha256":  "d6c613847ca25c54a7758b807a75d0316ec004b8266c2da9875ef6340ab790ad",
+                      "bytes":  3754
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\already_exists\\sentinel.txt",
+                      "sha256":  "1daf82f62247f3a1d148c2d88b1828c9efa2d5f087d7059e98650aafe7afdea3",
+                      "bytes":  8
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\commit_race\\sentinel.txt",
+                      "sha256":  "d59c2a5f721ce135ce54628b1ad8ad8b8eb26c8bbe2e2abe1cdca97e2d6ab446",
+                      "bytes":  9
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\1172ad1e2ce54d63b5ff73457ccf462f\\QUARANTINED.json",
+                      "sha256":  "8ac028fd137d8278ac8eed2814680d275bb37be0d1bcecaaa95cad13142e85cd",
+                      "bytes":  465
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\1172ad1e2ce54d63b5ff73457ccf462f\\receipt.json",
+                      "sha256":  "11f0a169aea7e3362057e74ab7f89f30ae8f6ab7c4044008d6d3b2f7bbdd65f3",
+                      "bytes":  649
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\40230f4004cb434b9012625d28544100\\manifest.json",
+                      "sha256":  "d41549445a9dad37ce64b791a1cadb0e35c49b53a7947a687d11ae0f2ccdc7b1",
+                      "bytes":  2570
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\40230f4004cb434b9012625d28544100\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\40230f4004cb434b9012625d28544100\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\40230f4004cb434b9012625d28544100\\QUARANTINED.json",
+                      "sha256":  "b6e411ea5f4995938f007bbc0c3cfa751807c919854092f6cda8b29e6c6ebd7d",
+                      "bytes":  2996
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\40230f4004cb434b9012625d28544100\\receipt.json",
+                      "sha256":  "e99d57161ce6a86db54739adcfe005fee63b22c7e827773cf489248a6bf56477",
+                      "bytes":  3132
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\a997b847d1b5423f8ed2b0e7f009353c\\QUARANTINED.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\a997b847d1b5423f8ed2b0e7f009353c\\receipt.json",
+                      "sha256":  "0d6ff664eabe62d92a17f0c5a0260ac0249502e584665c4999b64a92cc695a2a",
+                      "bytes":  208
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\b6ae54f19adb41f1ae089b2ececb32fa\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\b6ae54f19adb41f1ae089b2ececb32fa\\QUARANTINED.json",
+                      "sha256":  "0abf3f5569dccb723d14cee8d2b6ff9e20f207c72c8598589c6bcd757d1478d2",
+                      "bytes":  1065
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\b6ae54f19adb41f1ae089b2ececb32fa\\receipt.json",
+                      "sha256":  "3dce14716699c718702b93f994473032fe58baff71f37deb3d284f3c681fb7c1",
+                      "bytes":  1249
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\e6b0a1588baa48c690e9fb07f9b20de1\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\e6b0a1588baa48c690e9fb07f9b20de1\\QUARANTINED.json",
+                      "sha256":  "e8349848cad47080aa0c9148b0488103c3789f6c40a1f003400bdd15cc099d93",
+                      "bytes":  1142
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\e6b0a1588baa48c690e9fb07f9b20de1\\receipt.json",
+                      "sha256":  "b407a7b6da9c55a488b20dfb667067039c81874e012459e2dd2c5bded011bfc1",
+                      "bytes":  1326
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\e71bf64d846a4607a8c8f1ba6a417ea7\\manifest.json",
+                      "sha256":  "a1efd957c53c4de5bee918a46c4124fadec8c3a6ca64b7224be068ba72d1d402",
+                      "bytes":  2573
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\e71bf64d846a4607a8c8f1ba6a417ea7\\part-000000.parquet",
+                      "sha256":  "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\e71bf64d846a4607a8c8f1ba6a417ea7\\part-000001.parquet",
+                      "sha256":  "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+                      "bytes":  3045
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\e71bf64d846a4607a8c8f1ba6a417ea7\\QUARANTINED.json",
+                      "sha256":  "47e7385e1423287f7f284604d2f5fe470a5588708bcb68980e52f5e91cc90c0b",
+                      "bytes":  2569
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\e71bf64d846a4607a8c8f1ba6a417ea7\\receipt.json",
+                      "sha256":  "416c71301e8619657d4ce3056dbd75c08cfd869e41e1888916793762c12f964c",
+                      "bytes":  2753
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\f61319cbdefa44d7918fda915b2f6849\\QUARANTINED.json",
+                      "sha256":  "9dc276bd74c4b5cca02d0e2ea26f359dc19a7f1bf38b9dddec2d58c7ba0cd459",
+                      "bytes":  1236
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\quarantine\\f61319cbdefa44d7918fda915b2f6849\\receipt.json",
+                      "sha256":  "84b475b4368ba10d527645faf90e4f0f812ec8577cb514a7f1b057f821b0eee1",
+                      "bytes":  1420
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\success\\manifest.json",
+                      "sha256":  "cf8ddeef4c5c24d46df308f9fb7b7ba9529e7f23e406211d4948ec25d02ae128",
+                      "bytes":  2705
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\success\\part-000000.parquet",
+                      "sha256":  "b9772b1b6c174a9902bf49e75ab8845059c5c64a72a4a77990c7789ff064436d",
+                      "bytes":  3569
+                  },
+                  {
+                      "path":  ".fixture-mxj6jjy9\\allowed\\success\\part-000001.parquet",
+                      "sha256":  "c37b9a84db9e334b5d29def048b58ca8c4467f8e3d0027872408a1ab21a869c6",
+                      "bytes":  3569
+                  }
+              ],
+    "known_limitations":  [
+                              "direct Windows symbolic-link creation denied with WinError 1314; directory-junction path escape and quarantine-root denial passed",
+                              "manifest per-batch metadata is retained in memory proportional to batch count; no maximum configured",
+                              "callback sink retention/backpressure/durability belongs to caller and is not enforced",
+                              "empty_template validates zero rows and columns but caller must establish canonical dtype provenance",
+                              "V independent dynamic verification remains pending",
+                              "three earlier task-created OS-temp paths and blocked-by-policy cleanup details are recorded in execution_report.md"
+                          ]
+}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-04T22:41:29.055283+00:00",
+  "thread": "01a1a8b7-042a-7290-9f82-b9b10d6e9bd6",
+  "session": "codex_7d125970_3736_429c_8a2d_44c17f019da5",
+  "incoming_session_matches": true,
+  "handoff_sha256": "02d157d691a1fa67ece0662710615aa94133d55889584d3a32b7b2132b742b3f",
+  "exclusive_claim": "manager_claim.json",
+  "existing_round018_before_start": false,
+  "process_check": "Only inspecting shell matched round018/runner search; no pre-existing experiment",
+  "model_metadata_source": "host turn_context, not internal authentication"
+}

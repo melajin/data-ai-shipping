@@ -1,0 +1,11 @@
+﻿{
+    "other_python":  [
+
+                     ],
+    "expected_peak_mib":  200,
+    "estimate_basis":  "Sequential small stdlib JSON and opaque streaming hashes; no model",
+    "mode":  "smoke",
+    "available_gib":  5.4866180419921875,
+    "approved_map_sha256":  "bc586a48880da1e7942db80e2f2b58b2d236bd62fce9580508abadc81328f587",
+    "utc":  "2026-11-04T22:46:03.1163168Z"
+}

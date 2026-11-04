@@ -1,0 +1,9 @@
+true : 'true' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한
+지 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
+위치 D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_017\code\run_saved_m4_audit.ps1:78 문
+자:103
++ ... eceipt.v1';mode=$Mode;run_id=$runId;state=$State;claimed=true;approve ...
++                                                              ~~~~
+    + CategoryInfo          : ObjectNotFound: (true:String) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 

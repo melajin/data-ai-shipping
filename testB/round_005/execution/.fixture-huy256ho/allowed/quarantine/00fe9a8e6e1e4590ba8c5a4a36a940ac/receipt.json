@@ -1,0 +1,41 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\.fixture-huy256ho\\allowed\\generic_error",
+  "published": false,
+  "commit_point": "same-volume atomic directory rename",
+  "files": [
+    {
+      "name": "part-000000.parquet",
+      "sha256": "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 0,
+      "concat_offset_end": 1,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        0,
+        0
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    }
+  ],
+  "batches": 1,
+  "rows": 1,
+  "_range_index_reconstructable": true,
+  "error_type": "RuntimeError",
+  "error": "fixture late error",
+  "quarantined": true,
+  "quarantine_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\.fixture-huy256ho\\allowed\\quarantine\\00fe9a8e6e1e4590ba8c5a4a36a940ac"
+}

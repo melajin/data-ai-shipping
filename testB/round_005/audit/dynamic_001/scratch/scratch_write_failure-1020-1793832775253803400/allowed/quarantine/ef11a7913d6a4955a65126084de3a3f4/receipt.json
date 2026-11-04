@@ -1,0 +1,15 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\scratch_write_failure-1020-1793832775253803400\\allowed\\final",
+  "published": false,
+  "commit_point": "same-volume atomic directory rename",
+  "files": [],
+  "batches": 0,
+  "rows": 0,
+  "_range_index_reconstructable": true,
+  "error_type": "OSError",
+  "error": "independent injected parquet write failure",
+  "quarantined": true,
+  "quarantine_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\scratch_write_failure-1020-1793832775253803400\\allowed\\quarantine\\ef11a7913d6a4955a65126084de3a3f4"
+}

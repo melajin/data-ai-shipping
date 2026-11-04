@@ -1,0 +1,21 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\.fixture-ak7kcqoh\\allowed\\all_none",
+  "published": false,
+  "commit_point": "same-volume atomic directory rename",
+  "files": [],
+  "batches": 0,
+  "rows": 0,
+  "_range_index_reconstructable": true,
+  "pandas_contract": {
+    "stream": "one DataFrame per non-None input RecordBatch; no cross-batch materialization",
+    "reconstruction": "read parts in manifest order, concatenate without ignore_index, set index from __canonical_index__",
+    "index_metadata": "per part: original pandas index class/dtype/name and first/last label; explicit labels persisted",
+    "combined_index_reconstruction": "RangeIndex(0, rows) iff index_range_reconstructable is true; otherwise pandas Index of the explicit labels",
+    "empty": "zero-row RecordBatch parts preserve schema; if the input yields no batches, materialization requires an explicit zero-row canonical empty_template; absent template fails closed"
+  },
+  "error_type": "EmptySchemaUnavailable",
+  "error": "no RecordBatch supplied; exact empty schema is unknown, refusing publication",
+  "quarantined": true
+}

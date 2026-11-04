@@ -1,0 +1,38 @@
+{
+    "schema":  "round018_candidate_sources.v1",
+    "round":  "round_018",
+    "source_files_sha256":  {
+                                "rounds/round_018/code/saved_m4_audit.py":  "49cbf5785791d2c3b843ad095985162675d5a1b2dc3a5a324a9a4a2207048e7a",
+                                "rounds/round_018/code/run_saved_m4_audit.ps1":  "acf4865ce46b1d12f506853c03f1d4f78a13deb8cc19b45ccdfdc1bfb8eb862a"
+                            },
+    "manifest_self_hash_excluded":  true,
+    "requested_execution_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "requested_fork_turns":  "none",
+    "execution_identity_attestation":  "not asserted; manager host turn evidence is separate",
+    "scope":  "Minimal round017 PowerShell claimed boolean repair for the existing model-zero saved-evidence audit; no model execution, checkpoint access, tensor replay, project-data access, F1, or hardware claim",
+    "source_changes":  {
+                           "python":  "round_017/round017 identifiers only changed to round_018/round018",
+                           "powershell":  "round_017/round017 identifiers changed to round_018/round018; exactly one claimed=true changed to claimed=$true",
+                           "historical_inputs":  "round_015 and round_010 paths/content were not modified",
+                           "diff_verification":  "both candidate files exactly match the declared transformations from frozen round017 source; no unexpected diff"
+                       },
+    "python":  {
+                   "executable":  "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                   "flags":  "-B -S -X utf8",
+                   "stdlib_only":  true
+               },
+    "author_static_checks":  {
+                                 "powershell_parser":  "passed; Parser API only; 0 errors",
+                                 "powershell_bareword_literal_scan":  "passed; no true/false/null bareword tokens remain",
+                                 "python_ast":  "passed; base Python -B -S -X utf8 ast.parse only",
+                                 "source_diff":  "passed; exact expected transformations only",
+                                 "module_imported":  false,
+                                 "smoke_mock_audit_run":  false,
+                                 "torch_numpy_tabicl_imported":  false,
+                                 "checkpoint_read_hashed_or_loaded":  false,
+                                 "project_data_read":  false
+                             },
+    "outputs_and_temp":  "rounds/round_018 only",
+    "write_freeze_requested_after_ack":  true
+}

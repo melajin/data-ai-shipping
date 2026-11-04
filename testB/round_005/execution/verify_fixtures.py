@@ -70,6 +70,11 @@ def stream_frame(months,tables,columns,key_only=True):
         combined.index=pd.RangeIndex(0,len(combined))
     return combined
 
+class FrameBatch:
+    def __init__(self,df): self.df=df; self.num_rows=len(df)
+    def select(self,columns): return FrameBatch(self.df.loc[:,columns])
+    def to_pandas(self): return self.df.copy()
+
 def cases():
     t1=table(rows(["001","+2","bad",None,"4"],["20250101","20250102","bad","1.5","20250105"],[True,True,True,True,False],0))
     t2=table(rows(["5","6","7"],["20250106","oops","20250108"],[True,True,False],5))
@@ -105,6 +110,41 @@ def cases():
     b=stream_frame((1,),{1:hole},["rfid_id","part_dt"])
     strict_compare(a,b); assert type(a.index) is pd.Index and a.index.tolist()==[0,2]
     result.extend([{"case":"no_drop_range_index","pass":True,"index_class":type(a.index).__name__ if False else "RangeIndex"},{"case":"numeric_drop_hole","pass":True,"index_class":type(b.index).__name__,"index_values":b.index.tolist()}])
+    # Restricted-domain endpoints and the 128-character token ceiling.
+    boundary=table(rows(["9007199254740992","-9007199254740992","0"*127+"1"],
+                        ["2147483647","-2147483648","20250101"],start=0))
+    ba=frame_for((1,),{1:boundary},["rfid_id","part_dt"])
+    bb=stream_frame((1,),{1:boundary},["rfid_id","part_dt"])
+    strict_compare(ba,bb)
+    assert ba.rfid_id.tolist()==[2**53,-(2**53),1] and ba.part_dt.tolist()==[2**31-1,-2**31,20250101]
+    result.append({"case":"domain_inclusive_endpoints_and_128_chars","pass":True,"ids":ba.rfid_id.tolist(),"dates":ba.part_dt.tolist()})
+    def reject_token(token,field):
+        ids=[token if field=="rfid_id" else "1"]
+        dates=[token if field=="part_dt" else "20250101"]
+        batch=table(rows(ids,dates)).to_batches(max_chunksize=1)
+        seen=False
+        try:
+            for _ in transform_batches(batch,month=1,columns=["rfid_id","part_dt"]): seen=True
+        except UnsupportedDomain as e:
+            return {"stopped_before_yield":not seen,"reason":str(e)}
+        return {"stopped_before_yield":False,"reason":None}
+    rejected=[]
+    for token,field in [("9007199254740993","rfid_id"),("1.5","rfid_id"),("1e3","rfid_id"),(" 2","rfid_id"),("１２","rfid_id"),("x"*129,"rfid_id"),("2147483648","part_dt"),("-2147483649","part_dt"),("20250101.5","part_dt")]:
+        case=reject_token(token,field)
+        assert case["stopped_before_yield"],(token,field,case)
+        rejected.append({"field":field,"token_length":len(token),**case})
+    result.append({"case":"unsupported_domain_stops_before_first_yield","pass":True,"rejected":rejected})
+    null_frame=pd.DataFrame({"rfid_id":pd.Series(["1",None,float("nan"),pd.NA],dtype=object),
+                             "part_dt":pd.Series(["20250101","1.5","bad",None],dtype=object),
+                             "key_valid":pd.Series([True,True,True,True],dtype=bool),
+                             "feature":pd.Series([1,2,3,4],dtype="int64")})
+    original=load_original()
+    original.__globals__["pq"].read_table=lambda _path,columns:FrameBatch(null_frame.loc[:,columns])
+    expected=original("testfit",["rfid_id","part_dt","feature"],months=(1,))
+    parts=list(transform_batches([FrameBatch(null_frame)],month=1,columns=["rfid_id","part_dt","feature"]))
+    actual=parts[0]
+    strict_compare(expected,actual)
+    result.append({"case":"None_nan_pdNA_coercion_drop","pass":True,"rows":len(actual),"index_class":type(actual.index).__name__,"index_values":actual.index.tolist()})
     # Empty months must preserve canonical pandas concat exception type/message.
     original=load_original()
     try: original("testfit",["rfid_id"],months=())
@@ -122,7 +162,7 @@ def cases():
     return result
 
 def atomic_cases():
-    base=Path(tempfile.mkdtemp(prefix="r005-fixture-"))
+    base=Path(tempfile.mkdtemp(prefix=".fixture-",dir=ROOT))
     root=base/"allowed"; root.mkdir()
     good=table(rows(["1","2"],["20250101","20250102"],start=0)).to_batches(max_chunksize=1)
     outputs=[]
@@ -161,13 +201,15 @@ def atomic_cases():
     try: run_testfit(batches=err_after_one(),month=1,columns=["rfid_id"],allowed_root=root,final_path=final,stage="testfit")
     except RuntimeError: pass
     else: raise AssertionError("generic exception not propagated")
-    assert not final.exists(); outputs.append({"case":"late_generic_error","pass":True,"final_absent":True})
+    assert not final.exists(); qrec=list((root/"quarantine").glob("*/receipt.json")); assert any(json.loads(x.read_text(encoding="utf-8")).get("error_type")=="RuntimeError" for x in qrec)
+    outputs.append({"case":"late_generic_error","pass":True,"final_absent":True,"quarantine_receipt":True})
     def fail_commit(src,dst): raise OSError("fixture commit failure")
     final=root/"commit_failure"
     try: run_testfit(batches=good,month=1,columns=["rfid_id"],allowed_root=root,final_path=final,stage="testfit",commit=fail_commit)
     except OSError: pass
     else: raise AssertionError("commit failure not propagated")
-    assert not final.exists(); outputs.append({"case":"commit_failure","pass":True,"final_absent":True,"quarantine_dirs":len(list((root/"quarantine").iterdir()))})
+    assert not final.exists(); qrec=list((root/"quarantine").glob("*/receipt.json")); assert any(json.loads(x.read_text(encoding="utf-8")).get("error_type")=="OSError" and "fixture commit failure" in json.loads(x.read_text(encoding="utf-8")).get("error","") for x in qrec)
+    outputs.append({"case":"commit_failure","pass":True,"final_absent":True,"quarantine_receipt":True,"quarantine_dirs":len(list((root/"quarantine").iterdir()))})
     def compete(src,dst):
         dst.mkdir(); (dst/"sentinel.txt").write_text("untouched",encoding="utf-8")
         _atomic_noreplace(src,dst)
@@ -175,8 +217,9 @@ def atomic_cases():
     try: run_testfit(batches=good,month=1,columns=["rfid_id"],allowed_root=root,final_path=final,stage="testfit",commit=compete)
     except OSError: pass
     else: raise AssertionError("commit race should fail without replacing target")
-    assert (final/"sentinel.txt").read_text(encoding="utf-8")=="untouched"
-    outputs.append({"case":"commit_target_race_no_clobber","pass":True,"sentinel":"untouched"})
+    sentinel_hash=sha(final/"sentinel.txt")
+    assert (final/"sentinel.txt").read_text(encoding="utf-8")=="untouched" and sha(final/"sentinel.txt")==sentinel_hash
+    outputs.append({"case":"commit_target_race_no_clobber","pass":True,"sentinel":"untouched","sentinel_sha256":sentinel_hash})
     try: run_testfit(batches=iter([None]),month=1,columns=["rfid_id"],allowed_root=root,final_path=root/"all_none",stage="testfit")
     except EmptySchemaUnavailable: pass
     else: raise AssertionError("schema-less all-None stream was published")
@@ -224,6 +267,32 @@ def atomic_cases():
     except StageDenied: pass
     else: raise AssertionError("root directory accepted as final")
     outputs.append({"case":"root_final_denied","pass":True})
+    qroot_test=base/"quarantine-link-root"; qroot_test.mkdir(); qroot_out=base/"quarantine-link-target"; qroot_out.mkdir()
+    qlink=qroot_test/"quarantine"
+    import subprocess
+    junction=subprocess.run(["cmd.exe","/c","mklink","/J",str(qlink),str(qroot_out)],capture_output=True,text=True)
+    if junction.returncode != 0: raise AssertionError("could not create quarantine junction fixture: "+junction.stderr)
+    try: run_testfit(batches=good,month=1,columns=["rfid_id"],allowed_root=qroot_test,final_path=qroot_test/"blocked",stage="testfit")
+    except StageDenied: pass
+    else: raise AssertionError("quarantine-root junction accepted")
+    assert not (qroot_out/"receipt.json").exists() and not (qroot_test/"blocked").exists()
+    outputs.append({"case":"quarantine_root_junction_denied_preflight","pass":True})
+    outside=base/"outside"; outside.mkdir(); link=root/"symlink_outside"
+    try:
+        os.symlink(outside,link,target_is_directory=True)
+    except OSError as exc:
+        import subprocess
+        junction=subprocess.run(["cmd.exe","/c","mklink","/J",str(link),str(outside)],capture_output=True,text=True)
+        if junction.returncode != 0:
+            outputs.append({"case":"symlink_denial","pass":False,"unavailable":type(exc).__name__,"detail":str(exc),"junction_fallback_exit":junction.returncode,"junction_stderr":junction.stderr})
+        else:
+            try: run_testfit(batches=good,month=1,columns=["rfid_id"],allowed_root=root,final_path=link/"escaped",stage="testfit")
+            except StageDenied: outputs.append({"case":"junction_path_escape_denied","pass":True,"symbolic_link_creation_unavailable":str(exc)})
+            else: raise AssertionError("junction path escape accepted")
+    else:
+        try: run_testfit(batches=good,month=1,columns=["rfid_id"],allowed_root=root,final_path=link/"escaped",stage="testfit")
+        except StageDenied: outputs.append({"case":"symlink_denial","pass":True})
+        else: raise AssertionError("symlink escape accepted")
     return outputs
 
 def main():
@@ -232,8 +301,10 @@ def main():
     result["atomic_cases"]=atomic_cases()
     result["rss_after"]=rss()
     result["process_peak_rss_mib"]=result["rss_after"]["peak_working_set_mib"]
+    result["all_pass"]=all(x.get("pass") is True for group in (result["frame_contract_cases"],result["atomic_cases"]) for x in group)
     out=ROOT/"fixture_result.json"; out.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
-    print(json.dumps({"frame_cases":len(result["frame_contract_cases"]),"atomic_cases":len(result["atomic_cases"]),"all_pass":True,"peak_rss_mib":result["process_peak_rss_mib"]},ensure_ascii=False))
+    print(json.dumps({"frame_cases":len(result["frame_contract_cases"]),"atomic_cases":len(result["atomic_cases"]),"all_pass":result["all_pass"],"peak_rss_mib":result["process_peak_rss_mib"]},ensure_ascii=False))
+    if not result["all_pass"]: raise AssertionError("one or more safety checks unavailable or failed")
 
 if __name__=="__main__":
     try: main()

@@ -1,0 +1,80 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\.fixture-huy256ho\\allowed\\commit_race",
+  "commit_point": "same-volume atomic directory rename",
+  "files": [
+    {
+      "name": "part-000000.parquet",
+      "sha256": "3c9e1d733681d4b0cd748c7e9db5878fc8abcf6f152e514edb7410dce5e98b98",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 0,
+      "concat_offset_end": 1,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        0,
+        0
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000001.parquet",
+      "sha256": "b04054454becd079e9566e720f53079105bf0d69767691e4c087b87b9c3b28f3",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 1,
+      "concat_offset_end": 2,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        1,
+        1
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    }
+  ],
+  "batches": 2,
+  "rows": 2,
+  "pandas_contract": {
+    "stream": "one DataFrame per non-None input RecordBatch; no cross-batch materialization",
+    "reconstruction": "read parts in manifest order, concatenate without ignore_index, set index from __canonical_index__",
+    "index_metadata": "per part: original pandas index class/dtype/name and first/last label; explicit labels persisted",
+    "combined_index_reconstruction": "RangeIndex(0, rows) iff index_range_reconstructable is true; otherwise pandas Index of the explicit labels",
+    "empty": "zero-row RecordBatch parts preserve schema; if the input yields no batches, materialization requires an explicit zero-row canonical empty_template; absent template fails closed"
+  },
+  "columns": [
+    "rfid_id",
+    "key_valid",
+    "month"
+  ],
+  "dtypes": {
+    "rfid_id": "int64",
+    "key_valid": "bool",
+    "month": "int8"
+  },
+  "index_range_reconstructable": true,
+  "manifest_version": 1,
+  "publication_semantics": "public only when this complete directory is visible at final_path after atomic rename"
+}

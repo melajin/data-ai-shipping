@@ -1,0 +1,70 @@
+﻿{
+    "time":  "2026-11-05T07:36:14.7358723+09:00",
+    "free_MiB":  5650.6,
+    "total_MiB":  14140.9,
+    "planned_process_peak_MiB":  512,
+    "host_reserve_MiB":  512,
+    "other_processes":  [
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  19824,
+                                "RSS_MiB":  462.4
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  17216,
+                                "RSS_MiB":  380.6
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  5828,
+                                "RSS_MiB":  292.3
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  24136,
+                                "RSS_MiB":  239.8
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  24012,
+                                "RSS_MiB":  207.5
+                            },
+                            {
+                                "ProcessName":  "CrossDeviceService",
+                                "Id":  11432,
+                                "RSS_MiB":  205
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  1080,
+                                "RSS_MiB":  198.8
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  19060,
+                                "RSS_MiB":  179.3
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  31192,
+                                "RSS_MiB":  171.9
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  4476,
+                                "RSS_MiB":  164.8
+                            },
+                            {
+                                "ProcessName":  "PhoneExperienceHost",
+                                "Id":  26916,
+                                "RSS_MiB":  155.9
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  18136,
+                                "RSS_MiB":  147.4
+                            }
+                        ],
+    "basis":  "small synthetic fixtures after quarantine root link revalidation"
+}

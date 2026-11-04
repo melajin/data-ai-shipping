@@ -1,0 +1,9 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "published": false,
+  "error_type": "OSError",
+  "error": "independent injected stage creation failure",
+  "quarantined": true,
+  "failure_phase": "scratch_create"
+}

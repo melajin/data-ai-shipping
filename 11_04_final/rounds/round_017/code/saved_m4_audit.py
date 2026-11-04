@@ -556,15 +556,27 @@ def process_smoke(root: Path) -> dict[str, object]:
         true(row, "exit_confirmed", f"probe[{index}]")
         true(row, "stdout_stderr_drained", f"probe[{index}]")
         true(row, "owned_tree_clear", f"probe[{index}]")
+        if req(row, "exit_observed", bool, f"probe[{index}]") is not True:
+            fail(f"process exit was not observed: {label}")
+        observed_at = finite_number(row.get("exit_observed_elapsed_seconds"), f"probe[{index}].exit_observed_elapsed_seconds")
+        deadline = finite_number(row.get("wait_deadline_seconds"), f"probe[{index}].wait_deadline_seconds")
         if index < 3:
             if req(row, "exit_code", int, f"probe[{index}]") != expected_codes[index]:
                 fail(f"normal probe exit mismatch: {label}")
+            if observed_at >= deadline or req(row, "classification", str, f"probe[{index}]") != ("nonzero_exit" if index == 1 else "completed"):
+                fail(f"normal exit lacks monotonic pre-deadline evidence: {label}")
             false(row, "actual_wait_deadline_reached", f"probe[{index}]")
             false(row, "timed_out", f"probe[{index}]")
             false(row, "memory_stop", f"probe[{index}]")
         else:
             true(row, "actual_wait_deadline_reached", f"probe[{index}]")
             true(row, "timed_out", f"probe[{index}]")
+            if req(row, "classification", str, f"probe[{index}]") != "deadline_timeout":
+                fail("timeout classification mismatch")
+            if req(row, "wait_returned", bool, f"probe[{index}]"):
+                fail("deadline probe unexpectedly returned before timeout")
+            if finite_number(row.get("wait_returned_elapsed_seconds"), f"probe[{index}].wait_returned_elapsed_seconds") < deadline:
+                fail("deadline probe lacks monotonic timeout-wait evidence")
             false(row, "memory_stop", f"probe[{index}]")
             true(row, "kill_attempted", f"probe[{index}]")
             req(row, "exit_code", int, f"probe[{index}]")

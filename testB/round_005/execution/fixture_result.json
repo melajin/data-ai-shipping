@@ -5,12 +5,12 @@
   "pandas": "2.2.3",
   "numpy": "2.2.5",
   "pyarrow": "24.0.0",
-  "started_unix": 1793830882.2174144,
+  "started_unix": 1793831776.0219934,
   "rss_before": {
-    "current_working_set_mib": 0.0,
-    "peak_working_set_mib": 0.0,
-    "pagefile_mib": 0.0,
-    "peak_pagefile_mib": 0.0
+    "current_working_set_mib": 81.33,
+    "peak_working_set_mib": 82.36,
+    "pagefile_mib": 537.25,
+    "peak_pagefile_mib": 538.37
   },
   "frame_contract_cases": [
     {
@@ -192,6 +192,89 @@
       ]
     },
     {
+      "case": "domain_inclusive_endpoints_and_128_chars",
+      "pass": true,
+      "ids": [
+        9007199254740992,
+        -9007199254740992,
+        1
+      ],
+      "dates": [
+        2147483647,
+        -2147483648,
+        20250101
+      ]
+    },
+    {
+      "case": "unsupported_domain_stops_before_first_yield",
+      "pass": true,
+      "rejected": [
+        {
+          "field": "rfid_id",
+          "token_length": 16,
+          "stopped_before_yield": true,
+          "reason": "rfid_id row 0: integer outside [-9007199254740992, 9007199254740992]"
+        },
+        {
+          "field": "rfid_id",
+          "token_length": 3,
+          "stopped_before_yield": true,
+          "reason": "rfid_id row 0: unsupported token '1.5'"
+        },
+        {
+          "field": "rfid_id",
+          "token_length": 3,
+          "stopped_before_yield": true,
+          "reason": "rfid_id row 0: unsupported token '1e3'"
+        },
+        {
+          "field": "rfid_id",
+          "token_length": 2,
+          "stopped_before_yield": true,
+          "reason": "rfid_id row 0: unsupported token ' 2'"
+        },
+        {
+          "field": "rfid_id",
+          "token_length": 2,
+          "stopped_before_yield": true,
+          "reason": "rfid_id row 0: unsupported token '１２'"
+        },
+        {
+          "field": "rfid_id",
+          "token_length": 129,
+          "stopped_before_yield": true,
+          "reason": "rfid_id row 0: token length 129 > 128"
+        },
+        {
+          "field": "part_dt",
+          "token_length": 10,
+          "stopped_before_yield": true,
+          "reason": "part_dt row 0: integer outside [-2147483648, 2147483647]"
+        },
+        {
+          "field": "part_dt",
+          "token_length": 11,
+          "stopped_before_yield": true,
+          "reason": "part_dt row 0: integer outside [-2147483648, 2147483647]"
+        },
+        {
+          "field": "part_dt",
+          "token_length": 10,
+          "stopped_before_yield": true,
+          "reason": "part_dt row 0: unsupported token '20250101.5'"
+        }
+      ]
+    },
+    {
+      "case": "None_nan_pdNA_coercion_drop",
+      "pass": true,
+      "rows": 1,
+      "index_class": "Index",
+      "index_values": [
+        0
+      ]
+    },
+    {
       "case": "empty_month_list_error",
       "pass": true,
       "error": [
@@ -224,31 +307,34 @@
       "pass": true,
       "published": true,
       "parts": 2,
-      "manifest_sha256": "d4ab584446a1aa6f161c67eaa98f2c733ad4b46938b2057696b964b894748b60",
+      "manifest_sha256": "426215b8c327dd97b1a3bbe78ee41126dfc40c79834cbf1970fa8bfd535b5800",
       "reconstruction_strict_equal": true
     },
     {
       "case": "late_unsupported",
       "pass": true,
       "final_absent": true,
-      "quarantine_receipt": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\r005-fixture-o8q6uevj\\allowed\\quarantine\\0c0962c8012a44638094abd2001d3c77\\receipt.json",
+      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\.fixture-mh8vcz_3\\allowed\\quarantine\\7c17307cf5824ae59b90b92af455be30\\receipt.json",
       "committed_batches_before_failure": 1
     },
     {
       "case": "late_generic_error",
       "pass": true,
-      "final_absent": true
+      "final_absent": true,
+      "quarantine_receipt": true
     },
     {
       "case": "commit_failure",
       "pass": true,
       "final_absent": true,
+      "quarantine_receipt": true,
       "quarantine_dirs": 3
     },
     {
       "case": "commit_target_race_no_clobber",
       "pass": true,
-      "sentinel": "untouched"
+      "sentinel": "untouched",
+      "sentinel_sha256": "d59c2a5f721ce135ce54628b1ad8ad8b8eb26c8bbe2e2abe1cdca97e2d6ab446"
     },
     {
       "case": "all_none_schema_denied",
@@ -311,13 +397,23 @@
     {
       "case": "root_final_denied",
       "pass": true
+    },
+    {
+      "case": "quarantine_root_junction_denied_preflight",
+      "pass": true
+    },
+    {
+      "case": "junction_path_escape_denied",
+      "pass": true,
+      "symbolic_link_creation_unavailable": "[WinError 1314] 클라이언트가 필요한 권한을 가지고 있지 않습니다: 'D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\testB\\\\round_005\\\\execution\\\\.fixture-mh8vcz_3\\\\outside' -> 'D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\testB\\\\round_005\\\\execution\\\\.fixture-mh8vcz_3\\\\allowed\\\\symlink_outside'"
     }
   ],
   "rss_after": {
-    "current_working_set_mib": 0.0,
-    "peak_working_set_mib": 0.0,
-    "pagefile_mib": 0.0,
-    "peak_pagefile_mib": 0.0
+    "current_working_set_mib": 103.59,
+    "peak_working_set_mib": 107.49,
+    "pagefile_mib": 550.85,
+    "peak_pagefile_mib": 553.76
   },
-  "process_peak_rss_mib": 0.0
+  "process_peak_rss_mib": 107.49,
+  "all_pass": true
 }

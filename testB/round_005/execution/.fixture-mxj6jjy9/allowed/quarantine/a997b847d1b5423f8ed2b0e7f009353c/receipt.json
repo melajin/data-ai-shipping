@@ -1,0 +1,9 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "published": false,
+  "error_type": "OSError",
+  "error": "fixture stage create failure",
+  "quarantined": true,
+  "failure_phase": "scratch_create"
+}

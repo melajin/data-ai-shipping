@@ -1,0 +1,21 @@
+﻿{
+    "at_kst":  "2026-11-05T07:39:31.6679874+09:00",
+    "E_latest_worker_done":  "msg_70525506a270",
+    "E_task":  "task_6ff53dda043c",
+    "E_dispatch":  "ctx_8f62e408a6cd",
+    "E_frame_cases":  14,
+    "E_atomic_cases":  17,
+    "E_final_exit":  0,
+    "E_hashes_match":  true,
+    "E_release":  "closed_agent_terminal_then_exited_released",
+    "V_dynamic_dispatch":  "ctx_623d6942d6ad",
+    "V_dynamic_task":  "task_9e71de622d73",
+    "V_send_delivery":  "reopened",
+    "V_requested_original_launch_model":  "gpt-6-luna",
+    "V_requested_original_launch_effort":  "xhigh",
+    "provider_internal_model_effort":  "unknown",
+    "dynamic_gate":  "in_progress_not_passed",
+    "full_train_domain":  "unknown",
+    "cleanup_rejected_action":  "Remove-Item -LiteralPath \u003cthree E-created OS-temp folders\u003e -Recurse -Force",
+    "cleanup_stated_reason":  "blocked by policy; detailed policy reason unavailable; no bypass"
+}

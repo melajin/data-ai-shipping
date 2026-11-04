@@ -1,0 +1,10 @@
+﻿{
+    "recorded_at":  "2026-11-05 07:51:15 +09:00",
+    "available_mib":  5806.2,
+    "total_mib":  14140.9,
+    "planned_process_peak_mib":  512,
+    "host_reserve_mib":  1024,
+    "minimum_start_mib":  1536,
+    "other_work":  "No E worker active per gate; host process attribution unknown",
+    "basis":  "small independent fixture retry after audit harness metrics correction; estimate not guarantee"
+}

@@ -1,0 +1,21 @@
+﻿{
+    "mode":  "smoke",
+    "approved_map_sha256":  "9d20b92bf696b7d6d2003c9bd34bb4105f8fd6ebc4113e357f94f5595e100fe9",
+    "outer_wall_budget_seconds":  15,
+    "started_utc":  "2026-11-04T22:35:08.8689192Z",
+    "finished_utc":  "2026-11-04T22:35:12.5241218Z",
+    "argv":  [
+                 "-NoProfile",
+                 "-ExecutionPolicy",
+                 "Bypass",
+                 "-File",
+                 "\"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_017\\code\\run_saved_m4_audit.ps1\"",
+                 "-Mode",
+                 "smoke"
+             ],
+    "map_stable":  true,
+    "outer_wall_seconds":  3.6515994,
+    "pid":  13392,
+    "exit_code":  1,
+    "within_outer_wall_budget":  true
+}

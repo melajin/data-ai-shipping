@@ -1,0 +1,339 @@
+{
+    "schema":  "round018_wrapper_receipt.v1",
+    "mode":  "smoke",
+    "run_id":  "smoke_01",
+    "state":  "failed",
+    "claimed":  true,
+    "approved_map_sha256":  "bc586a48880da1e7942db80e2f2b58b2d236bd62fce9580508abadc81328f587",
+    "source_hashes":  {
+                          "rounds/round_018/code/run_saved_m4_audit.ps1":  "acf4865ce46b1d12f506853c03f1d4f78a13deb8cc19b45ccdfdc1bfb8eb862a",
+                          "rounds/round_018/code/saved_m4_audit.py":  "49cbf5785791d2c3b843ad095985162675d5a1b2dc3a5a324a9a4a2207048e7a"
+                      },
+    "started_utc":  "2026-11-04T22:46:05.1579401Z",
+    "elapsed_seconds":  6.3332115,
+    "mode_budget_seconds":  15,
+    "probe_records":  [
+                          {
+                              "label":  "immediate_exit_0",
+                              "command":  [
+                                              "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                                              "-B",
+                                              "-S",
+                                              "-c",
+                                              "import sys; print(\u0027probe0-out\u0027); print(\u0027probe0-err\u0027, file=sys.stderr); raise SystemExit(0)"
+                                          ],
+                              "pid":  30736,
+                              "creation_utc":  "2026-11-04T22:46:06.203Z",
+                              "started_utc":  "2026-11-04T22:46:06.1914543Z",
+                              "finished_utc":  "2026-11-04T22:46:07.1256611Z",
+                              "expected_exit_code":  0,
+                              "exit_code":  0,
+                              "process_exit_utc":  "2026-11-04T22:46:06.2654750Z",
+                              "exit_confirmed":  true,
+                              "wait_returned":  true,
+                              "wait_returned_elapsed_seconds":  0.5192232,
+                              "exit_observed":  true,
+                              "exit_observed_elapsed_seconds":  0.5192232,
+                              "deadline_observed_elapsed_seconds":  null,
+                              "wait_deadline_seconds":  2.5,
+                              "has_exited_after_wait":  true,
+                              "actual_wait_deadline_reached":  false,
+                              "exit_observed_before_cleanup":  true,
+                              "timed_out":  false,
+                              "memory_stop":  false,
+                              "kill_attempted":  false,
+                              "classification":  "completed",
+                              "elapsed_seconds":  0.925827,
+                              "wait_timeout_seconds":  2.5,
+                              "cleanup_timeout_seconds":  1,
+                              "cleanup_elapsed_seconds":  0.4019911,
+                              "available_ram_gib_before":  5.3913116455078125,
+                              "minimum_available_ram_gib":  5.3913116455078125,
+                              "other_python_processes_before":  {
+
+                                                                },
+                              "resource_samples":  [
+                                                       {
+                                                           "elapsed_seconds":  0.512,
+                                                           "available_ram_gib":  5.4019,
+                                                           "owned_tree_working_set_bytes":  0,
+                                                           "owned_pids":  [
+
+                                                                          ]
+                                                       }
+                                                   ],
+                              "owned_tree_seen":  [
+                                                      {
+                                                          "pid":  30736,
+                                                          "parent_pid":  null,
+                                                          "name":  "python",
+                                                          "creation_utc":  "2026-11-04T22:46:06.203Z",
+                                                          "working_set_bytes":  2641920,
+                                                          "root":  true
+                                                      }
+                                                  ],
+                              "owned_tree_residuals":  [
+
+                                                       ],
+                              "owned_tree_clear":  true,
+                              "stdout":  "probe0-out\r\n",
+                              "stderr":  "probe0-err\r\n",
+                              "stdout_stderr_drained":  true,
+                              "stdout_marker_present":  true,
+                              "stderr_marker_present":  true,
+                              "completed":  true,
+                              "error":  null
+                          },
+                          {
+                              "label":  "immediate_exit_7",
+                              "command":  [
+                                              "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                                              "-B",
+                                              "-S",
+                                              "-c",
+                                              "import sys; print(\u0027probe7-out\u0027); print(\u0027probe7-err\u0027, file=sys.stderr); raise SystemExit(7)"
+                                          ],
+                              "pid":  2196,
+                              "creation_utc":  "2026-11-04T22:46:07.286Z",
+                              "started_utc":  "2026-11-04T22:46:07.2844503Z",
+                              "finished_utc":  "2026-11-04T22:46:08.0500990Z",
+                              "expected_exit_code":  7,
+                              "exit_code":  7,
+                              "process_exit_utc":  "2026-11-04T22:46:07.3461428Z",
+                              "exit_confirmed":  true,
+                              "wait_returned":  true,
+                              "wait_returned_elapsed_seconds":  0.4328853,
+                              "exit_observed":  true,
+                              "exit_observed_elapsed_seconds":  0.4328853,
+                              "deadline_observed_elapsed_seconds":  null,
+                              "wait_deadline_seconds":  2.5,
+                              "has_exited_after_wait":  true,
+                              "actual_wait_deadline_reached":  false,
+                              "exit_observed_before_cleanup":  true,
+                              "timed_out":  false,
+                              "memory_stop":  false,
+                              "kill_attempted":  false,
+                              "classification":  "nonzero_exit",
+                              "elapsed_seconds":  0.77107589999999993,
+                              "wait_timeout_seconds":  2.5,
+                              "cleanup_timeout_seconds":  1,
+                              "cleanup_elapsed_seconds":  0.33819299999999997,
+                              "available_ram_gib_before":  5.3891487121582031,
+                              "minimum_available_ram_gib":  5.3791046142578125,
+                              "other_python_processes_before":  {
+
+                                                                },
+                              "resource_samples":  [
+                                                       {
+                                                           "elapsed_seconds":  0.433,
+                                                           "available_ram_gib":  5.3791,
+                                                           "owned_tree_working_set_bytes":  0,
+                                                           "owned_pids":  [
+
+                                                                          ]
+                                                       }
+                                                   ],
+                              "owned_tree_seen":  [
+                                                      {
+                                                          "pid":  2196,
+                                                          "parent_pid":  null,
+                                                          "name":  "python",
+                                                          "creation_utc":  "2026-11-04T22:46:07.286Z",
+                                                          "working_set_bytes":  2637824,
+                                                          "root":  true
+                                                      }
+                                                  ],
+                              "owned_tree_residuals":  [
+
+                                                       ],
+                              "owned_tree_clear":  true,
+                              "stdout":  "probe7-out\r\n",
+                              "stderr":  "probe7-err\r\n",
+                              "stdout_stderr_drained":  true,
+                              "stdout_marker_present":  true,
+                              "stderr_marker_present":  true,
+                              "completed":  true,
+                              "error":  null
+                          },
+                          {
+                              "label":  "monitored_success",
+                              "command":  [
+                                              "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                                              "-B",
+                                              "-S",
+                                              "-c",
+                                              "import sys,time; time.sleep(1.2); print(\u0027probe-sleep-out\u0027); print(\u0027probe-sleep-err\u0027, file=sys.stderr); raise SystemExit(0)"
+                                          ],
+                              "pid":  12360,
+                              "creation_utc":  "2026-11-04T22:46:08.232Z",
+                              "started_utc":  "2026-11-04T22:46:08.2236024Z",
+                              "finished_utc":  "2026-11-04T22:46:09.9383969Z",
+                              "expected_exit_code":  0,
+                              "exit_code":  0,
+                              "process_exit_utc":  "2026-11-04T22:46:09.4957185Z",
+                              "exit_confirmed":  true,
+                              "wait_returned":  true,
+                              "wait_returned_elapsed_seconds":  1.2672804,
+                              "exit_observed":  true,
+                              "exit_observed_elapsed_seconds":  1.2672804,
+                              "deadline_observed_elapsed_seconds":  null,
+                              "wait_deadline_seconds":  5,
+                              "has_exited_after_wait":  true,
+                              "actual_wait_deadline_reached":  false,
+                              "exit_observed_before_cleanup":  true,
+                              "timed_out":  false,
+                              "memory_stop":  false,
+                              "kill_attempted":  false,
+                              "classification":  "completed",
+                              "elapsed_seconds":  1.713508,
+                              "wait_timeout_seconds":  5,
+                              "cleanup_timeout_seconds":  1,
+                              "cleanup_elapsed_seconds":  0.446225,
+                              "available_ram_gib_before":  5.3782463073730469,
+                              "minimum_available_ram_gib":  5.361572265625,
+                              "other_python_processes_before":  {
+
+                                                                },
+                              "resource_samples":  [
+                                                       {
+                                                           "elapsed_seconds":  0.449,
+                                                           "available_ram_gib":  5.3616,
+                                                           "owned_tree_working_set_bytes":  19300352,
+                                                           "owned_pids":  [
+                                                                              12360,
+                                                                              24812
+                                                                          ]
+                                                       },
+                                                       {
+                                                           "elapsed_seconds":  1.069,
+                                                           "available_ram_gib":  5.3663,
+                                                           "owned_tree_working_set_bytes":  19300352,
+                                                           "owned_pids":  [
+                                                                              12360,
+                                                                              24812
+                                                                          ]
+                                                       }
+                                                   ],
+                              "owned_tree_seen":  [
+                                                      {
+                                                          "pid":  24812,
+                                                          "parent_pid":  12360,
+                                                          "name":  "conhost.exe",
+                                                          "creation_utc":  "2026-11-04T22:46:08.242Z",
+                                                          "working_set_bytes":  7655424,
+                                                          "root":  false
+                                                      },
+                                                      {
+                                                          "pid":  12360,
+                                                          "parent_pid":  7468,
+                                                          "name":  "python.exe",
+                                                          "creation_utc":  "2026-11-04T22:46:08.232Z",
+                                                          "working_set_bytes":  11644928,
+                                                          "root":  true
+                                                      }
+                                                  ],
+                              "owned_tree_residuals":  [
+
+                                                       ],
+                              "owned_tree_clear":  true,
+                              "stdout":  "probe-sleep-out\r\n",
+                              "stderr":  "probe-sleep-err\r\n",
+                              "stdout_stderr_drained":  true,
+                              "stdout_marker_present":  true,
+                              "stderr_marker_present":  true,
+                              "completed":  true,
+                              "error":  null
+                          },
+                          {
+                              "label":  "deadline_timeout",
+                              "command":  [
+                                              "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                                              "-B",
+                                              "-S",
+                                              "-c",
+                                              "import time; time.sleep(5.0)"
+                                          ],
+                              "pid":  27828,
+                              "creation_utc":  "2026-11-04T22:46:10.101Z",
+                              "started_utc":  "2026-11-04T22:46:10.0985220Z",
+                              "finished_utc":  "2026-11-04T22:46:11.4733836Z",
+                              "expected_exit_code":  0,
+                              "exit_code":  -1,
+                              "process_exit_utc":  "1601-01-01T00:00:00.0000000Z",
+                              "exit_confirmed":  true,
+                              "wait_returned":  false,
+                              "wait_returned_elapsed_seconds":  0.49596989999999996,
+                              "exit_observed":  true,
+                              "exit_observed_elapsed_seconds":  0.9397325,
+                              "deadline_observed_elapsed_seconds":  0.9381056,
+                              "wait_deadline_seconds":  0.5,
+                              "has_exited_after_wait":  true,
+                              "actual_wait_deadline_reached":  true,
+                              "exit_observed_before_cleanup":  false,
+                              "timed_out":  false,
+                              "memory_stop":  false,
+                              "kill_attempted":  true,
+                              "classification":  "indeterminate",
+                              "elapsed_seconds":  1.3736685,
+                              "wait_timeout_seconds":  0.5,
+                              "cleanup_timeout_seconds":  1,
+                              "cleanup_elapsed_seconds":  0.43395449999999997,
+                              "available_ram_gib_before":  5.3732795715332031,
+                              "minimum_available_ram_gib":  5.3699073791503906,
+                              "other_python_processes_before":  {
+
+                                                                },
+                              "resource_samples":  [
+                                                       {
+                                                           "elapsed_seconds":  0.446,
+                                                           "available_ram_gib":  5.3699,
+                                                           "owned_tree_working_set_bytes":  19329024,
+                                                           "owned_pids":  [
+                                                                              11076,
+                                                                              27828
+                                                                          ]
+                                                       },
+                                                       {
+                                                           "elapsed_seconds":  0.938,
+                                                           "available_ram_gib":  5.372,
+                                                           "owned_tree_working_set_bytes":  19329024,
+                                                           "owned_pids":  [
+                                                                              11076,
+                                                                              27828
+                                                                          ]
+                                                       }
+                                                   ],
+                              "owned_tree_seen":  [
+                                                      {
+                                                          "pid":  27828,
+                                                          "parent_pid":  7468,
+                                                          "name":  "python.exe",
+                                                          "creation_utc":  "2026-11-04T22:46:10.101Z",
+                                                          "working_set_bytes":  11673600,
+                                                          "root":  true
+                                                      },
+                                                      {
+                                                          "pid":  11076,
+                                                          "parent_pid":  27828,
+                                                          "name":  "conhost.exe",
+                                                          "creation_utc":  "2026-11-04T22:46:10.112Z",
+                                                          "working_set_bytes":  7655424,
+                                                          "root":  false
+                                                      }
+                                                  ],
+                              "owned_tree_residuals":  [
+
+                                                       ],
+                              "owned_tree_clear":  true,
+                              "stdout":  "",
+                              "stderr":  "",
+                              "stdout_stderr_drained":  true,
+                              "stdout_marker_present":  null,
+                              "stderr_marker_present":  null,
+                              "completed":  false,
+                              "error":  null
+                          }
+                      ],
+    "auditor_process":  null,
+    "error":  "Process-control probe batch failed; receipt preserved"
+}

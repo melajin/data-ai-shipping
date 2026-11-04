@@ -1,0 +1,11 @@
+{
+    "schema":  "round018_execution_claim.v1",
+    "run_id":  "smoke_01",
+    "mode":  "smoke",
+    "claimed_utc":  "2026-11-04T22:46:05.8282209Z",
+    "approved_map_sha256":  "bc586a48880da1e7942db80e2f2b58b2d236bd62fce9580508abadc81328f587",
+    "source_hashes":  {
+                          "rounds/round_018/code/run_saved_m4_audit.ps1":  "acf4865ce46b1d12f506853c03f1d4f78a13deb8cc19b45ccdfdc1bfb8eb862a",
+                          "rounds/round_018/code/saved_m4_audit.py":  "49cbf5785791d2c3b843ad095985162675d5a1b2dc3a5a324a9a4a2207048e7a"
+                      }
+}

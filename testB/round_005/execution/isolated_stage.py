@@ -31,6 +31,18 @@ def _atomic_noreplace(source: Path, destination: Path) -> None:
     os.rename(source, destination)
 
 
+def _has_link_component(path: Path) -> bool:
+    """Reject symlink or Windows junction at any existing path component."""
+    probe = Path(os.path.abspath(path))
+    while True:
+        is_junction = getattr(probe, "is_junction", lambda: False)()
+        if probe.is_symlink() or is_junction:
+            return True
+        if probe == probe.parent:
+            return False
+        probe = probe.parent
+
+
 def _sha256(path: Path) -> str:
     h = hashlib.sha256()
     with path.open("rb") as f:
@@ -40,15 +52,17 @@ def _sha256(path: Path) -> str:
 
 
 def _paths(allowed_root: Path, final_path: Path) -> tuple[Path, Path]:
-    if allowed_root.is_symlink():
+    if _has_link_component(allowed_root):
         raise StageDenied("allowed root may not be a symlink")
     root = allowed_root.resolve(strict=True)
+    qroot = root / "quarantine"
+    if _has_link_component(qroot):
+        raise StageDenied("quarantine path may not contain a symlink or junction")
+    if qroot.exists() and not qroot.is_dir():
+        raise StageDenied("quarantine path exists but is not a directory")
     raw_final = Path(os.path.abspath(final_path))
-    probe = raw_final
-    while probe != root and probe != probe.parent:
-        if probe.is_symlink():
-            raise StageDenied("final path contains a symlink")
-        probe = probe.parent
+    if _has_link_component(raw_final):
+        raise StageDenied("final path contains a symlink or junction")
     final = raw_final.resolve(strict=False)
     if final == root or root not in final.parents:
         raise StageDenied("final path must be a new child of the explicitly allowed root")
@@ -61,11 +75,18 @@ def _paths(allowed_root: Path, final_path: Path) -> tuple[Path, Path]:
 
 def _quarantine(stage: Path, root: Path, receipt: dict) -> Path:
     qroot = root / "quarantine"
+    if _has_link_component(qroot):
+        raise StageDenied("refusing to write quarantine receipt through a symlink or junction")
     qroot.mkdir(exist_ok=True)
+    resolved_qroot = qroot.resolve(strict=True)
+    if resolved_qroot.parent != root.resolve(strict=True):
+        raise StageDenied("quarantine root resolved outside allowed root")
     target = qroot / stage.name.removeprefix(".stage-")
+    if target.exists() or _has_link_component(target):
+        raise StageDenied("quarantine receipt target already exists or traverses a link")
     if stage.exists():
         (stage / "QUARANTINED.json").write_text(json.dumps(receipt, indent=2), encoding="utf-8")
-        os.replace(stage, target)
+        os.rename(stage, target)
     else:
         target.mkdir(exist_ok=True)
         (target / "QUARANTINED.json").write_text(json.dumps(receipt, indent=2), encoding="utf-8")
@@ -104,10 +125,7 @@ def run_testfit(*, columns: list[str],
         failure = {"stage": stage, "dataset": dataset, "published": False,
                    "error_type": type(exc).__name__, "error": str(exc),
                    "quarantined": True, "failure_phase": "scratch_create"}
-        qroot = root / "quarantine"
-        qroot.mkdir(exist_ok=True)
-        qpath = qroot / stage_dir.name.removeprefix(".stage-")
-        qpath.mkdir(exist_ok=True)
+        qpath = _quarantine(stage_dir, root, failure)
         (qpath / "receipt.json").write_text(json.dumps(failure, ensure_ascii=False, indent=2), encoding="utf-8")
         (qpath / "QUARANTINED.json").write_text(json.dumps(failure, ensure_ascii=False, indent=2), encoding="utf-8")
         raise

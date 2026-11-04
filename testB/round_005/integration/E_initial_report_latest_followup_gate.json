@@ -1,0 +1,14 @@
+﻿{
+    "at_kst":  "2026-11-05T07:34:37.8968148+09:00",
+    "E_initial_done":  "msg_cbcb59256816",
+    "E_initial_exit":  0,
+    "E_latest_dispatch":  "ctx_8f62e408a6cd",
+    "E_latest_task":  "task_6ff53dda043c",
+    "E_latest_state":  "ready_in_progress",
+    "V_static_dispatch":  "ctx_360a9718c106",
+    "V_static_state":  "succeeded_exited_released",
+    "dynamic_gate":  "not started pending final latest E snapshot",
+    "actual_sample":  "not run",
+    "full_train_domain":  "unknown_not_scanned",
+    "cleanup":  "E reports automatic safety review rejected 3 OS-temp folders; exact reasons requested; no bypass"
+}

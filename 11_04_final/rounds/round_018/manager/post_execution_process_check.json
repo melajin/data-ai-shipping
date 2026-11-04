@@ -1,0 +1,20 @@
+﻿{
+    "other_python":  [
+
+                     ],
+    "current_rows_with_owned_pids":  [
+
+                                     ],
+    "owned_pids":  [
+                       30736,
+                       2196,
+                       24812,
+                       12360,
+                       27828,
+                       11076
+                   ],
+    "user_processes_terminated":  0,
+    "note":  "No residual matching recorded owned PIDs; not a global process-tree guarantee",
+    "owned_termination_only":  "timeout probe by approved wrapper",
+    "utc":  "2026-11-04T22:47:38.5786935Z"
+}

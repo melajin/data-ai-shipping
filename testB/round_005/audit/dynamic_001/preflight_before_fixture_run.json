@@ -1,0 +1,10 @@
+﻿{
+    "recorded_at":  "2026-11-05 07:50:44 +09:00",
+    "available_mib":  5793.8,
+    "total_mib":  14140.9,
+    "planned_process_peak_mib":  512,
+    "host_reserve_mib":  1024,
+    "minimum_start_mib":  1536,
+    "other_work":  "E latest task settled; host process attribution unknown",
+    "basis":  "small independent synthetic fixture and atomic caller checks; estimate not guarantee"
+}

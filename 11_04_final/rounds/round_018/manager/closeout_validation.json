@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-04T22:51:46.795301+00:00",
+  "required_reports_present": true,
+  "status_current_round": "round_018",
+  "handoff_ready": true,
+  "active_workers": [],
+  "ledger_round018_rows": 1,
+  "performance_unchanged": true,
+  "frozen_sources_match": true,
+  "prior_files_unchanged": true,
+  "new_f1": null
+}

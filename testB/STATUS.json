@@ -11,31 +11,38 @@
     "runtime_verification_note":  "Actual supervisor provider model/effort receipt not yet available; request is not execution proof.",
     "run_id":  "run_6df8333350eb",
     "previous_run_id":  "run_a4759578d2ef",
-    "state":  "running_round005_small_safety_implementation_and_independent_static_review",
+    "state":  "running_round005_independent_dynamic_gate",
     "workers":  [
                     {
                         "task":  "E",
                         "task_id":  "task_ea2dae3e6bf7",
                         "dispatch_id":  "ctx_3fd6b8929574",
                         "handle":  "structworker_1467b3f4-1dcc-44d2-902b-0392b9d09296",
-                        "state":  "ready",
+                        "state":  "latest_followup_settled_succeeded_small_fixture_exit0",
                         "orca_launch_model":  "gpt-6-luna",
                         "orca_launch_effort":  "xhigh",
                         "provider_internal_runtime":  "unknown",
-                        "owned_path":  "testB/round_005/execution"
+                        "owned_path":  "testB/round_005/execution",
+                        "worker_done_message_id":  "msg_cbcb59256816",
+                        "latest_followup_dispatch_id":  "ctx_8f62e408a6cd",
+                        "latest_followup_task_id":  "task_6ff53dda043c",
+                        "latest_worker_done_message_id":  "msg_70525506a270",
+                        "release_state":  "latest_followup_released_closed_agent_terminal_exited"
                     },
                     {
                         "task":  "V",
                         "task_id":  "task_090e7fc1387e",
                         "dispatch_id":  "ctx_360a9718c106",
                         "handle":  "structworker_cb3939f2-cc7f-43af-8cfd-9ff4aa9fddab",
-                        "state":  "settled_static_audit_succeeded_dynamic_production_gate_unknown",
+                        "state":  "independent_dynamic_followup_ready",
                         "orca_launch_model":  "gpt-6-luna",
                         "orca_launch_effort":  "xhigh",
                         "provider_internal_runtime":  "unknown",
                         "owned_path":  "testB/round_005/audit",
                         "worker_done_message_id":  "msg_ddea111651a6",
-                        "release_observation":  "reclaimable; liveness unverifiable; auto release scheduled, exit not proven"
+                        "release_observation":  "old static dispatch released/exited; latest dynamic dispatch active, do not close",
+                        "latest_followup_dispatch_id":  "ctx_623d6942d6ad",
+                        "latest_followup_task_id":  "task_9e71de622d73"
                     }
                 ],
     "round001_worker_history":  [
