@@ -1,0 +1,12 @@
+﻿{
+    "utc":  "2026-11-04T21:26:37.6560466Z",
+    "available_gib":  5.6695442199707031,
+    "expected_parallel_text_work_mib":  200,
+    "expected_synthetic_peak_gib":  1.5,
+    "estimate_basis":  "checkpoint 105MiB plus model load copies and Torch; target cache less than 1MiB; planning estimate only",
+    "other_python":  [
+
+                     ],
+    "synthetic_start_min_gib":  3,
+    "synthetic_stop_below_gib":  1.5
+}

@@ -1,0 +1,70 @@
+{
+  "request": {
+    "manager": {
+      "model": "gpt-6-astra",
+      "effort": "high"
+    },
+    "author": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "fork_turns": "none"
+    },
+    "reviewer": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "fork_turns": "none"
+    }
+  },
+  "orca_session_id": "codex_c6e4625e_c472_4391_92a2_9d1b6c20769a",
+  "thread_id": "01a1a88a-60b1-7382-9b63-a2e8a549e465",
+  "evidence": [
+    {
+      "source": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T06-51-43-01a1a88b-e5b5-76c3-b462-9618f25bb36c.jsonl",
+      "session_id": "01a1a88b-e5b5-76c3-b462-9618f25bb36c",
+      "parent": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a1a88a-60b1-7382-9b63-a2e8a549e465",
+            "depth": 1,
+            "agent_path": "/root/reviewer",
+            "agent_nickname": "Ohm",
+            "agent_role": "luna_worker"
+          }
+        }
+      },
+      "timestamp": "2026-11-04T21:51:44.062Z",
+      "host_model": "gpt-6-luna",
+      "host_effort": "xhigh",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    },
+    {
+      "source": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T06-51-32-01a1a88b-bab1-70d2-a381-4af5f151505f.jsonl",
+      "session_id": "01a1a88b-bab1-70d2-a381-4af5f151505f",
+      "parent": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a1a88a-60b1-7382-9b63-a2e8a549e465",
+            "depth": 1,
+            "agent_path": "/root/author",
+            "agent_nickname": "Hegel",
+            "agent_role": "luna_worker"
+          }
+        }
+      },
+      "timestamp": "2026-11-04T21:51:33.196Z",
+      "host_model": "gpt-6-luna",
+      "host_effort": "xhigh",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    },
+    {
+      "source": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T06-50-03-01a1a88a-60b1-7382-9b63-a2e8a549e465.jsonl",
+      "session_id": "01a1a88a-60b1-7382-9b63-a2e8a549e465",
+      "parent": "vscode",
+      "timestamp": "2026-11-04T21:50:04.752Z",
+      "host_model": "gpt-6-astra",
+      "host_effort": "high",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    }
+  ],
+  "internal_model_authentication": false
+}

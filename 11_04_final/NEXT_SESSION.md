@@ -1,34 +1,41 @@
-# 다음 Astra high 관리자 — Round015: 동결 M4 합성 실행의 조기 검증
+# 다음 Astra high 관리자 — Round016: 종료 판정·JSON 호환성과 저장 M4 결과 감사
 
-사용자가 승인한 후속 실행이다. Round014는 M4 tiny 합성 코드를 작성·검토했으나 30분 관리자 예산과 문서3분 확보 때문에 합성모델 실행을 시작하지 않았다. 실제 관문 결과는 ROUND_REPORT/review/FINAL_REVIEW 및 영수증을 먼저 확인한다. 목표 micro-F1 0.7미달, 기존 반복노출 개발 OUTER5897 baseline0.5930133966423605/macro0.5252719738966167, 미채택 탐색0.5933525521451586, 독립/공식null. 새 F1없음. round010 역사·현재 source gate false 영구보존.
+사용자가 승인한 후속이다. 먼저 AGENTS/CYCLE_PROTOCOL/STATUS/NEXT, round015 ROUND_PLAN/ROUND_REPORT, code/candidate_sources.json·author_freeze_ack.json, review/SOURCE_REVIEW·FINAL_REVIEW 및 저장 감사 결과, manager/saved_result_inspection.json·execution_closeout.json, logs/{smoke_01,mock_01,synthetic_01}/receipt.json을 읽는다. JSON 전체를 Windows PowerShell ConvertFrom-Json으로 읽으면 빈 문자열 key 때문에 실패할 수 있으므로 모델 결과는 base Python -B -S stdlib json으로 읽는다. 인계 SHA와 새 session 수신 일치, 중복관리자·이미실행 claim을 확인한다.
 
-AGENTS/CYCLE_PROTOCOL/STATUS/NEXT, round014 ROUND_PLAN/ROUND_REPORT, code/author_freeze_ack.json와 candidate_sources.json, review/SOURCE_REVIEW/FINAL_REVIEW/approved_sources.json 및 logs의 실제 영수증을 읽는다. 인계SHA/새세션 수신 일치와 다른 회차관리자 중복 여부 확인. 원자료 F:/문제 데이터_수정_1027, 이전repo D:/repos/fishing-track-classification, 과거회차/기존venv 읽기전용. 새출력/tmp/cache/logs는 round015 아래; 공유문서와 인계receipt만 루트 정해진 위치에 기록.
+Round015 실제: smoke1회 성공(exit0/7), mock1회/4시험 성공, 합성Python1회 exit0/status completed, checkpointload1/contextfit1/predict1/fullforward4/head평가12/backward4. 합성 wrapper completed=false: Python 결과 JSON의 upstream_model.module_training_before_after에 루트 모듈 키 ""가 있고 PowerShell 변환 계층에서 invalid name 예외. 기존 source/map/snapshot 불변, stream drain/owned tree clear. 추가 독립발견: process.wait_finished=false/timed_out=true인데 elapsed16.7639027초<170초, memory_stop=false/kill_attempted=false/exit_confirmed=true/exit0이다. 실제170초 제한 도달이라고 주장하지 않는다. runner의 while 뒤 WaitForExit(1) 거짓값만으로 timedOut을 설정하는 판정은 deadline을 별도로 확인하지 않는다. 정확한 동적발생경로는 미확정이며 manager/CONTROL_LAYER_FINDINGS.md를 읽는다. JSON만 해결해 전체gate를 통과시키지 않는다. 수치 저장값은 6비교 통과, raw최대차0/public확률차5.960464477539063e-08, gradient/inactive/bias/upstream/hooks 통과. 전체wrappergate=false를 사실대로 영구보존한다. round010 역사·현재gatefalse도 그대로다. 새 F1없음: 반복노출 개발OUTER5897 baseline0.5930133966423605/macro0.5252719738966167, 미채택탐색0.5933525521451586, 독립/공식null, 목표0.7미달.
 
-관리자 Astra/high, 작성자와 독립검토자 각각 Luna/xhigh/fork_turns=none을 명시. 보조는 추가 child를 생성하지 않으며 관리자가 의사결정 담당. 호스트총4/사용자보조최대4 준수. 요청과 실제turn_context 분리. Round014 reviewer의 역할명 요청 일탈과 실제 Luna상속은 manager/DELEGATION_DEVIATION.md 참고하며 반복하지 않는다.
+## 다음 회차의 단일 가설과 범위
 
-## 이번 변경과 조기 실행 전략
+가설: 모델·텐서 계산을 바꾸지 않고 실행 제어의 종료 판정과 JSON 판독을 고치면 저장 M4 증거를 일관되게 소비할 수 있다. **모델 재실행0, torch/numpy/tabicl import0, checkpoint read/hash/load0, .pt 역직렬화0, 학습0.** 원본 결과·receipt·source·map을 수정하지 않는다. 이번 wrapper 실패를 소급해서 completed=true로 고치지 않는다. 모델을 다시 돌려 파서 오류를 시험하지 않는다.
 
-새 설계나 합성 모델 수학을 다시 작성하지 않는다. 작성자는 round014 승인된 code/m4_synthetic.py, test_m4_mock.py, run_m4.ps1을 round015/code로 복사하고 회차경로·메시지·schema의 round_014/round014/Round014를 round_015/round015/Round015로 바꾸는 최소diff만 수행한다. round014 최종 검토에 실제 차단결함이 있으면 해당 결함만 고치고 이유를 기록한다. 정적승인만으로 동적성공을 주장하지 않는다. 작성자파일단독소유·ACK/쓰기중지, 검토자는 역치환diff/원본승인해시/최종직접해시 확인 후 새 승인map 작성. 코드 소유는code/*, 검토는review/*, 관리자는계획/실행/공유문서. 타인수정 되돌림0.
+작성자와 검토자를 각각 gpt-6-luna/xhigh/fork_turns=none으로 명시하고 추가child금지. 관리자gpt-6-astra/high. 요청과 실제host turn_context를 분리한다. host총4, 보조사용자최대4 준수. 작성자 round_016/code/*, 검토자 round_016/review/*, 관리자 계획/실행/상태/인계 소유. 다른 수정 되돌림금지. ACK/쓰기중지→독립직접해시map→관리자64자리hash대조를 유지한다.
 
-관리자30분, 문서3분 선확보. 후보복사·직접승인 첫5분 목표, 늦어도180초모델실행과문서시간을전부확보할수있는시각에만 시작. smoke1회≤10초(exit0/7순차,재시도0) → stdlib mock1회≤30초(성공뒤추가0; 결함수정후최대1추가이나 새map이소진된smoke를요구하면다음회차) → synthetic1회≤180초(170+10,재시도0). 같은 승인map을 유지하고 각 영수증 completed/int exit0/map·live·snapshot불변/stdoutstderr drain/owned tree clear 확인후 다음단계. 실행중소스수정0. 정확명령은 새독립승인뒤 실행전 ROUND_PLAN에 확정한다:
+추천 구현은 작은 stdlib Python 판독기/감사기가 full JSON을 그대로 파싱·검사하고 PowerShell 호환의 고정필드 summary를 별도 round016 artifacts에 쓰는 것이다. 기존 full JSON은 그대로 유지한다. JSON parser는 중복key와 NaN/Infinity 및 누락/잘못된type을 거부하며 파일크기·경로를 사전제한한다. 빈key는 루트모듈 의미를 보존한다. case변형 충돌도 summary에는 도입하지 않는다. 다른 방법을 쓰면 설치없는 로컬근거와 독립 검토를 먼저 남긴다. 과거 runner의 광범위 Read-Receipt를 임의로 다시 설계하기보다 bounded saved-audit에 집중한다. round015 code는 수정0.
+
+실행 전 ROUND_PLAN에 고정할 상한: 관리자25분(문서3분 확보), process probe batch1회≤15초(순차4 child: 즉시exit0, 즉시exit7, 감시경로정상exit0, 실제deadline초과), stdlib mock1회≤30초(재시도0), saved-audit1회≤30초(재시도0). 동시계산1, 새source/map의 성공smoke→mock→audit 순서. probe의 정상감시child는 stdlib sleep 약1.2초 후exit0/대기상한5초, timeoutchild는 sleep5초/대기상한0.5초/정리1초로 사전고정하고 자기소유PID만 종료한다. 실제대기상한도달·HasExited·WaitForExit 반환·memory_stop·exit관찰·streamdrain을 독립기록한다. 종료이벤트를 이미관찰했다면 보존하고 deadline전에 wait1ms가false인것만으로 timeout을 만들지 않는다. 진짜deadline은 반드시중단·기록해야 한다. timeoutchild의 killed exit값은 OS의 실제정수값을 기록하며 정상exit0을요구하지 않는다. probe마다RAM/다른작업 확인, batch1회만. mock은 종료분류의 정상/시간초과/메모리중단 반례와 빈 root key를 가진 fixture 수용, duplicate-key/nonfinite/missing-field/wrong-type/허위completed 검출, 역사false 보존을 확인한다. 새코드의 실행한도·반례를 먼저 고정하고 결과를 본 뒤 오차를 완화하지 않는다. 실행 경로 예시는 아래이고 실제 소스·argv는 독립승인 뒤 계획에 확정한다:
 
 ```powershell
-& './rounds/round_015/code/run_m4.ps1' -Mode smoke
-& './rounds/round_015/code/run_m4.ps1' -Mode mock
-& './rounds/round_015/code/run_m4.ps1' -Mode synthetic
+& './rounds/round_016/code/run_saved_m4_audit.ps1' -Mode smoke
+& './rounds/round_016/code/run_saved_m4_audit.ps1' -Mode mock
+& './rounds/round_016/code/run_saved_m4_audit.ps1' -Mode audit
 ```
 
-## 고정 합성 계약
+기존 base Python C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -B -S만 사용하고 stdlib 이외 import0. ProcessStartInfo의 정상exit/streamdrain/ownedtree 검증을 재사용하되 모델실행모드는 포함하지 않는다. 소스·map·실행snapshot 전후hash, PID/시각/정수exit/stdoutstderr/log/자원/실제command를 저장한다. 정상 종료 뒤 unexpected descendant가 남으면 실패로 남긴다.
 
-round011/m4_contract/M4_CONTRACT.md·source_evidence.json·review/M4_REVIEW.md, round012/review/M4_NEXT_CHECKLIST.md, round014 승인코드가 근거다. 오래된 회차명은 일정표기다. seed20261112 context16×8/target4×8 FP32정규난수, context[0,1,2,3]×4/target[0,1,2,3]. target라벨은predict완료후외부headloss에만생성, fit/predict입력0. TabICL2.2.0/Torch2.6cpu/NumPy2.3.5, 기존basePython3.12 -B -S + 명시venv site-packages/DLL경로, 설치본수정0. CPU FP32 threads3, estimator4/batch1/norm none/featshuffle none/class shift/temp0.9/logits평균, AMP/FA3/KV/download false. checkpoint model_cache/tabicl-classifier-v2-20260212.ckpt, 110368038bytes/SHA bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0 단일stream검증.
+## 고정 입력과 인수조건
 
-checkpoint load1/contextfit1/predict1/nativeforward4/head평가12/backward4. decoder[2]W[10,1024]/bias10, hook20행에서앞context16제외하고 targetH[4,4,1024]/logit[4,4,10]만캐시. 실제view순서/순열확인, canonical out[...,p]/loss p[y] 첫4출력. upstream eval/frozen/hash/grad/hooks불변, finally제거/inference모드밖clone. M4-a W만trainable/b고정, M4-b A[2,1024]std0.01(코드의고정seed20261113)/B[10,2]=0/W0,b고정; SGD0.001/momentum0/decay0 각2step. 첫Bgrad비영/첫A0/두번째A비영, inactive6/bias exact불변. CE는진단이며선택0. 원head/초기a,b/공식확률재구성/a학습직후vsreload/bunmergedvsmergevsreload raw전체view·10출력maxabs≤1e-5/prob≤1e-6/finite/range/행합≤1e-6/argmax일치/exact별도. 중복merge거부. 전체수정모델재추론/전체저장검증으로확대0.
+- round_015/artifacts/m4_synthetic_result.json 64851bytes SHA365535d9f117ae6d758909402413c3220eca4f0220a1b8b14d0ce6674dcc9105
+- round_015/artifacts/m4_a_head.pt 42422bytes SHAc33e0185a537bce0bfd0e583dcd1f9aaa0d2c0e141847a2e3ab0d9a3621ff0c0
+- round_015/artifacts/m4_b_merged_head.pt 42464bytes SHA8127123b4e8109c1456914ac9c4f59284509116469d726bc2e9ac1df3b430a36
+- round_015/review/approved_sources.json SHA2cede678cba53e4a92832c663bf4968b75ee63b5c1287ad25804aaf3dce59dd4
+- smoke receipt SHA4f9608e11d51bd70e5508ed82f746eb3c03e3319fc5e6f8da1782eff36dd9ad2; mock receipt SHA61595d02a9297711dc47ab16569247aea0558906b7c23c58964d0e722976b2bf; synthetic receipt SHAc6f9bc8861ffb14629cfa8ccdc84c8a0da55d3f224dc7a0ec430904b39c8affa.
 
-매병렬/계산전 RAM시각·가용·예상peak·다른작업 기록. 예상tiny peak≤1.5GiB는checkpoint105MiB/로딩사본/Torch여유/H320KiB-target64KiB에기반한가정이며 아직실측없음. synthetic시작≥3GiB/실행중<1.5GiB소유child만정리/동시큰계산1. 부족하면소스·문서먼저후직전재확인, 반복RAM대기loop·사용자process종료0. 실제자료/NPZ/reference/OUTER/holdout/F1/설치/네트워크/유료/공식제출0.
+경로의 공통prefix는 rounds/이다. manifest를 만들 때는 실제 경로와 직접해시로 확인한다. input lineage는 round015 manager/saved_result_inspection.json에 있다. head .pt는 크기/streaming hash만 확인하고 load하지 않는다. bytecode/tmp/cache/log/output은 round016 아래만. 원자료 F:/문제 데이터_수정_1027, 이전repo D:/repos/fishing-track-classification, 과거회차와 기존venv는 RO. 실제자료/NPZ/reference/OUTER/holdout/외부수집/F1/네트워크/설치/유료/공식제출0.
 
-산출은 source/ACK/map/review, logs/smoke_01/mock_01/synthetic_01의receipt/stdout/stderr/resources/progress/snapshots, artifacts/m4_synthetic_result.json와head-only상태, REPORT다. 실패는환경·shape/view·gradient·병합·자원·프로세스로분리하고소진된실행재시도0. 성공시 round014/review/NEXT_INTEGRATION_CHECKLIST.md의사전선택M4-a 전체estimator통합·저장재로드를 다음Round016으로검토한다(문서에Round015라쓴향후통합일정은이번모델실행지연으로한회차이동). 실제FIT학습자동확대0. 실패시구체원인과최소수정가설을다음fresh회차로이관.
+감사는 각 receipt의 map/live/snapshot과 실제 frozen source를 직접해시로 대조하고 smoke/mock historical completed=true, synthetic historical completed=false와 child exit0/statuscompleted를 동시에 요구한다. result6비교의 raw≤1e-5/prob≤1e-6, finite/[0,1]/행합≤1e-6/argmax, gradient/inactive/bias/reload/upstream/hooks, 정확call counts와 config/seed/shape/permutation을 검산한다. 저장JSON 기반 검산이므로 tensor 재계산과 구별한다. 결과 필드는 numeric_saved_checks_pass, saved_provenance_audit_pass, historical_round015_wrapper_gate=false, current_round015_source_matches, historical_round010_gate=false로 분리한다. 실제head역직렬화·전체모델저장검증·F1은 미확인으로 둔다.
 
-학습질문은p[y]/out[...,p],B=0첫Agrad0,context/target분리,합성성공과F1차이. 기술산출과학습자이해·장치검증분리. 완료시 REPORT/STATUS(current_round=round_015,handoff.ready=true,active_workers=[])/LEDGER/NEXT 갱신후 & './automation/Start-NextSession.ps1' -FromRound 'round_015'. 수락receipt의newsession/promptdelivery확인즉시현재관리자종료. 닫기지원없으면완료탭만수동닫는제한기록. 반복승인불필요.
+자원: round015 sampled peak558.75MiB/min가용5.2198GiB는 과거 합성실행값이며 이번시작값이 아니다. 새 stdlib 감사 예상peak≤200MiB(파일수백KiB+직렬작업+PS/Python) 가정, 시작가용≥0.5GiB, 현재시각·가용·다른작업 기록. 부족하면 코드/문서 먼저 후 직전재확인, RAMpollingloop·사용자process종료0. 큰계산0.
 
-Round014 확정: smoke/mock/synthetic 모두0회. 첫map runner해시63자리 전사오류를 manager가 실행전차단, 잘못된map은 review/invalid_approved_sources_attempt_01.json 보존. 직접해시수정map SHA256 872d5eba99b7d3a3bdc1dcfd89b857a1b781a527cde676652573d7c5e5455d24이며 manager/final_map_verification.json의3파일일치를확인. 다음회차map도각값길이64와직접파일일치를실행전확인한다. 정상exit후예외적잔존child는현재runner가완료실패로남기며자동종료하지않음; 단일Python경로정적검토한계와재시도0을보존한다.
+성공하면 next round017에서 round014/review/NEXT_INTEGRATION_CHECKLIST.md의 사전선택M4-a 전체estimator 통합·save_model_weights=True/save_training_data=True/save_kv_cache=False 저장재로드를 검토한다. 소스문서의 옛회차명은 일정보기이며 사용할 head는 round015의 해시고정 a artifact다. 이번round016에 모델통합을 추가하지 않는다. 실패하면 parser/schema/provenance/수치/실행계층을 특정하고 실패출력을보존, 새가설의 유한후속으로 넘긴다. 무정보모델재실행금지.
 
+학습목표: 유효JSON과 소비자호환성, 루트모듈 빈key의 의미, child성공/전체실행기실패/저장검산 분리, 합성수치와F1구별. 보고서에 이전→현재→다음변경, 조건/예상/계산/해석/미확인 남긴다. 완료시 REPORT/STATUS(current_round=round_016,handoff.ready=true,active_workers=[])/LEDGER/NEXT 갱신 후 Start-NextSession.ps1 -FromRound round_016 수락newsession+promptdelivery 확인즉시 현재관리자종료. structured chat닫기지원없으면 완료탭만 수동닫는제한기록. 반복승인불필요.

@@ -1,0 +1,19 @@
+﻿{
+    "preflight_file":  "preflight_before_run.json",
+    "command":  "PYTHONDONTWRITEBYTECODE=1 python -B \u003cabsolute independent_dynamic_check.py\u003e from audit/dynamic_001/isolated_cwd",
+    "actual_exit_code":  2,
+    "stderr":  "python_stderr.log",
+    "host_total_mib_after":  14140.9,
+    "script_sha256":  "887d1c639b75280293b51b4d26080d7c164e5da90adf2dd180570d0e489ede68",
+    "no_parquet_full_row_scan":  true,
+    "stdout":  "python_stdout.log",
+    "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "started_after_preflight_kst":  "2026-11-05 06:30:13 +09:00",
+    "finished_kst":  "2026-11-05 06:30:16 +09:00",
+    "host_free_mib_after":  5923.6,
+    "stdout_sha256":  "7ec534cd6f2cb27147929ddc0ac3e825a7bbde50046d0cd00eb82282ceb592a6",
+    "schema":  "round004_v_independent_dynamic_run_receipt_v1",
+    "selection_plan_file":  "selection_plan.json",
+    "stderr_bytes":  0,
+    "python_peak_rss_and_commit":  "dynamic_result.json if run reached completed record"
+}

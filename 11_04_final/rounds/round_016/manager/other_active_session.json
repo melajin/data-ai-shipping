@@ -1,0 +1,7 @@
+﻿{
+    "paneKey":  "structured-agent-session-8d65fc0f-b1e3-41eb-8761-e4c5f382ab0e:61d87072-0fdf-4d9a-a5bb-c4994cc6e020",
+    "state":  "working",
+    "agentType":  "codex",
+    "prompt":  "You are working inside Orca, a multi-agent IDE. Your task ID is: task_a0f4ea39b854 === TASK === # V 独립 동적 검산 — E 완료 snapshot",
+    "lastAssistantMessage":  "표본 실행은 fresh gate에서 가용 5,967.8 MiB로 시작했고, 실행 후 5,923.6 MiB였습니다. 독립 스크립트는 exit 2로 끝났으므로, 이제 저장된 결과에서 core fixture·실제 표본 비교와 별도로 발견된 streaming/API 결함을 구분해 확인하겠습니다."
+}

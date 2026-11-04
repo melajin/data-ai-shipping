@@ -1,0 +1,77 @@
+﻿[
+    {
+        "paneKey":  "structured-agent-session-a4776b68-4bfb-48fa-a0e9-f9dc518b6a2a:4633f87f-04a1-48e0-af7b-e0f34ce294c9",
+        "state":  "done",
+        "conversationName":  "Test B W3 W1·W2 독립검산"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_3f5d6e5d_c588_43a3_9279_40d5d4f4edd6:49606a52-699a-4b55-a35e-bc5bf3d9d2f4",
+        "state":  "done",
+        "conversationName":  "선박 조업 분류 반복 실험 관리"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_929b2772_00d4_46cf_a9de_9001a4331c75:5024c454-20ac-4817-a6ee-3232115c03bc",
+        "state":  "done",
+        "conversationName":  "Test B 선박 사고 검증 감독"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_e959665a_5b7a_4729_897c_f8de0d0a718d:0a9aa8d8-6908-470b-a401-6e86975a3a00",
+        "state":  "done",
+        "conversationName":  "선박 조업 분류 회차 관리자 실행"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_f8781e21_ce60_45bc_b218_028699479bf4:b4d2d424-6acd-4238-a26f-1a4d13b610ac",
+        "state":  "done",
+        "conversationName":  "선박 조업 분류 micro-F1 개선 회차 관리"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_4a9e4942_60c6_472c_8d6c_9cfe5f78c72d:53d0f61c-576e-4704-a80f-e96818d38e25",
+        "state":  "done",
+        "conversationName":  "선박 조업 분류 micro-F1 반복 실험 관리"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef:b9a3fb49-ec79-4247-aed5-2e988fe0b68e",
+        "state":  "done",
+        "conversationName":  "Test B Round 002 감독 인수 ACK 대기"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_224a9fbc_58cf_44d2_8dc9_d56b1d8641d0:7e8574f6-a324-472e-a9f0-1b19a2a2cf79",
+        "state":  "done",
+        "conversationName":  "선박 조업 분류 반복 관리자 세션"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_56b77d08_9abc_43b3_b97e_6fc1a3e7eea7:d4305711-4b04-4d85-a49a-8b9179ab0f5b",
+        "state":  "done",
+        "conversationName":  "선박 조업 분류 회차 관리자 세션"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7:3acfbcd9-9219-411a-ab8e-c9f62027b084",
+        "state":  "done",
+        "conversationName":  "Test B Round003 감독 인수 ACK 대기"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_cac3fd7d_98ec_4cd3_8b29_95e3f911a10c:d71d7e4f-b8ac-46a9-a535-91c7e1d9ecde",
+        "state":  "done",
+        "conversationName":  "선박 조업 분류 회차 관리자 세션"
+    },
+    {
+        "paneKey":  "structured-agent-session-8d65fc0f-b1e3-41eb-8761-e4c5f382ab0e:61d87072-0fdf-4d9a-a5bb-c4994cc6e020",
+        "state":  "working",
+        "conversationName":  "R004 V independent domain-index static review"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_8df5a67b_34a4_4a72_b561_d45861870f6f:55a8f9d1-a584-41d7-ac10-f2fdf297daee",
+        "state":  "done",
+        "conversationName":  "Test B Round004 새 감독 인수 ACK 대기"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_6face94e_8f00_46b6_baf5_f3eafa1faae2:a40a60bc-9da0-46f4-a2e0-b4ae24db22de",
+        "state":  "working",
+        "conversationName":  "조업 분류 micro-F1 회차 관리"
+    },
+    {
+        "paneKey":  "structured-agent-session-codex_a64a16a7_215f_4304_a93c_6c6b60b86467:fa182ac3-057f-4af1-a202-bd51a5ca5661",
+        "state":  "done",
+        "conversationName":  "선박 조업 분류 회차 관리"
+    }
+]

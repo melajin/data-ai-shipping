@@ -1,0 +1,50 @@
+﻿[
+    {
+        "source":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T06-26-49-01a1a875-1919-7d42-81df-3d85e6238095.jsonl",
+        "session_id":  "01a1a875-1919-7d42-81df-3d85e6238095",
+        "session_source":  {
+                               "subagent":  {
+                                                "thread_spawn":  {
+                                                                     "parent_thread_id":  "01a1a873-9d82-7963-ae4d-e094a04e568b",
+                                                                     "depth":  1,
+                                                                     "agent_path":  "/root/round015_author",
+                                                                     "agent_nickname":  "Descartes",
+                                                                     "agent_role":  "luna_worker"
+                                                                 }
+                                            }
+                           },
+        "timestamp":  "2026-11-04T21:26:49.887Z",
+        "host_model":  "gpt-6-luna",
+        "host_effort":  "xhigh",
+        "request":  {
+                        "effort":  "xhigh",
+                        "model":  "gpt-6-luna",
+                        "fork_turns":  "none"
+                    },
+        "internal_model_authentication":  false
+    },
+    {
+        "source":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T06-26-59-01a1a875-40db-73b1-81bb-d8ac5d9f4451.jsonl",
+        "session_id":  "01a1a875-40db-73b1-81bb-d8ac5d9f4451",
+        "session_source":  {
+                               "subagent":  {
+                                                "thread_spawn":  {
+                                                                     "parent_thread_id":  "01a1a873-9d82-7963-ae4d-e094a04e568b",
+                                                                     "depth":  1,
+                                                                     "agent_path":  "/root/round015_reviewer",
+                                                                     "agent_nickname":  "Avicenna",
+                                                                     "agent_role":  "luna_worker"
+                                                                 }
+                                            }
+                           },
+        "timestamp":  "2026-11-04T21:27:00.131Z",
+        "host_model":  "gpt-6-luna",
+        "host_effort":  "xhigh",
+        "request":  {
+                        "effort":  "xhigh",
+                        "model":  "gpt-6-luna",
+                        "fork_turns":  "none"
+                    },
+        "internal_model_authentication":  false
+    }
+]

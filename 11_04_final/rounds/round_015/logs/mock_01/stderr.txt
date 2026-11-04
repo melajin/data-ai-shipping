@@ -1,0 +1,9 @@
+test_call_budget_accepts_contract_and_rejects_overrun (__main__.Round015M4MockTests.test_call_budget_accepts_contract_and_rejects_overrun) ... ok
+test_context_rows_are_removed_before_a_detached_target_copy (__main__.Round015M4MockTests.test_context_rows_are_removed_before_a_detached_target_copy) ... ok
+test_low_rank_merge_is_permitted_once (__main__.Round015M4MockTests.test_low_rank_merge_is_permitted_once) ... ok
+test_stdlib_only_import_and_explicit_permutation_direction (__main__.Round015M4MockTests.test_stdlib_only_import_and_explicit_permutation_direction) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

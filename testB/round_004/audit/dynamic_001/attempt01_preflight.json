@@ -1,0 +1,120 @@
+﻿{
+    "required_free_mib":  1724,
+    "free_mib":  5967.8,
+    "expected_peak_rss_mib":  256,
+    "expected_peak_commit_mib":  700,
+    "gate_passed":  true,
+    "sample_plan_verified":  true,
+    "no_process_terminated":  true,
+    "other_work":  [
+                       {
+                           "ProcessName":  "Orca",
+                           "Id":  19824,
+                           "rss_mib":  459.6,
+                           "commit_mib":  509.2
+                       },
+                       {
+                           "ProcessName":  "Orca",
+                           "Id":  17216,
+                           "rss_mib":  376,
+                           "commit_mib":  326.2
+                       },
+                       {
+                           "ProcessName":  "explorer",
+                           "Id":  5828,
+                           "rss_mib":  271.3,
+                           "commit_mib":  508.4
+                       },
+                       {
+                           "ProcessName":  "codex",
+                           "Id":  5580,
+                           "rss_mib":  232.3,
+                           "commit_mib":  147.2
+                       },
+                       {
+                           "ProcessName":  "codex",
+                           "Id":  22296,
+                           "rss_mib":  204.6,
+                           "commit_mib":  115
+                       },
+                       {
+                           "ProcessName":  "CrossDeviceService",
+                           "Id":  11432,
+                           "rss_mib":  193.8,
+                           "commit_mib":  80.4
+                       },
+                       {
+                           "ProcessName":  "codex",
+                           "Id":  22228,
+                           "rss_mib":  176.5,
+                           "commit_mib":  102.1
+                       },
+                       {
+                           "ProcessName":  "explorer",
+                           "Id":  4476,
+                           "rss_mib":  164.7,
+                           "commit_mib":  182.4
+                       },
+                       {
+                           "ProcessName":  "codex",
+                           "Id":  13756,
+                           "rss_mib":  162.2,
+                           "commit_mib":  76.3
+                       },
+                       {
+                           "ProcessName":  "PhoneExperienceHost",
+                           "Id":  26916,
+                           "rss_mib":  155.5,
+                           "commit_mib":  79.3
+                       },
+                       {
+                           "ProcessName":  "StartMenuExperienceHost",
+                           "Id":  10992,
+                           "rss_mib":  140.8,
+                           "commit_mib":  159.4
+                       },
+                       {
+                           "ProcessName":  "SearchHost",
+                           "Id":  11000,
+                           "rss_mib":  137.9,
+                           "commit_mib":  66.9
+                       }
+                   ],
+    "E_artifact_hash_mismatches":  [
+
+                                   ],
+    "observed_kst":  "2026-11-05 06:30:13 +09:00",
+    "schema":  "round004_v_dynamic_preflight_v1",
+    "basis":  "limited 16,384 rows, projection 10 columns, \u003c=4096 batch, AST/oracle plus E adapter; prior E observed peak RSS 120.96 MiB and peak PagefileUsage/commit 611.21 MiB; forecast is not a guarantee",
+    "canonical_source_hashes":  [
+                                    {
+                                        "expected":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+                                        "path":  "D:/repos/fishing-track-classification/code/tools/run_remeasure_20261031.py",
+                                        "match":  true,
+                                        "actual":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c"
+                                    },
+                                    {
+                                        "expected":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+                                        "path":  "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py",
+                                        "match":  true,
+                                        "actual":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8"
+                                    },
+                                    {
+                                        "expected":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+                                        "path":  "D:/repos/fishing-track-classification/code/tools/run_005_F156_merge_20261101.py",
+                                        "match":  true,
+                                        "actual":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4"
+                                    },
+                                    {
+                                        "expected":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+                                        "path":  "D:/repos/fishing-track-classification/code/tools/run_cycle4_3_featAC_20261101.py",
+                                        "match":  true,
+                                        "actual":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3"
+                                    }
+                                ],
+    "row_sample_read_before_gate":  false,
+    "total_mib":  14140.9,
+    "reserve_mib":  1024,
+    "E_artifact_hashes_checked":  21,
+    "exact_process_attribution":  "unknown"
+}

@@ -1,0 +1,20 @@
+﻿{
+    "stderr":  "python_attempt02_stderr.log",
+    "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256":  "ec579c1cc79dd492e58c9a639fa8e6a669bb0c4ccb34af69c93fb3a7d8140330",
+    "script_sha256":  "9e754387a68e7fec6b6ca328373986bbbe6361bfd0006e169c6bca490bb85313",
+    "command":  "PYTHONDONTWRITEBYTECODE=1 python -B \u003cabsolute independent_dynamic_check.py\u003e from audit/dynamic_001/isolated_cwd",
+    "no_full_parquet_row_scan":  true,
+    "preserves_attempt01":  true,
+    "result_json":  "dynamic_result.json",
+    "host_free_after_mib":  5935.6,
+    "schema":  "round004_v_independent_dynamic_run_receipt_v1",
+    "attempt":  2,
+    "actual_exit_code":  2,
+    "finished_at_kst":  "2026-11-05 06:34:42 +09:00",
+    "host_total_mib":  14140.9,
+    "preflight_file":  "preflight_before_attempt02.json",
+    "stdout":  "python_attempt02_stdout.log",
+    "started_at_kst":  "2026-11-05 06:34:39 +09:00",
+    "stderr_bytes":  0
+}

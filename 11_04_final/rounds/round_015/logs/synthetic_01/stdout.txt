@@ -1,0 +1,1 @@
+{"call_counts": {"backward": 4, "checkpoint_load": 1, "context_fit": 1, "full_forward": 4, "head_evaluation": 12, "predict_proba": 1}, "result": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\artifacts\\m4_synthetic_result.json", "status": "completed"}

@@ -1,0 +1,164 @@
+﻿{
+    "schema":  "round004_v_E_artifact_freeze_recheck",
+    "checked_at_start_kst":  "2026-11-05 06:44:25 +09:00",
+    "checked_at_end_kst":  "2026-11-05 06:44:26 +09:00",
+    "manifest":  "testB/round_004/execution/artifact_hashes.json",
+    "manifest_sha256":  "f63147df8ddc29c9ba7a7443d429c1ca9687dc05da3a9a37f95c6a7e1d1dafb6",
+    "files_checked":  21,
+    "mismatches":  [
+
+                   ],
+    "bytes_rehashed":  854678,
+    "host_free_mib_before":  6017.9,
+    "host_free_mib_after":  5990.6,
+    "streaming_sequential_hashing":  true,
+    "hashes":  [
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt01_exit_code.txt",
+                       "expected_sha256":  "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+                       "actual_sha256":  "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+                       "bytes":  1,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt01_stderr.log",
+                       "expected_sha256":  "560dc1c800f89770f2d3c48330e37da685936298666a1352f6350c67abc04d9a",
+                       "actual_sha256":  "560dc1c800f89770f2d3c48330e37da685936298666a1352f6350c67abc04d9a",
+                       "bytes":  3036,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt01_stdout.log",
+                       "expected_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "actual_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "bytes":  0,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt02_exit_code.txt",
+                       "expected_sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                       "actual_sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                       "bytes":  1,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt02_stderr.log",
+                       "expected_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "actual_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "bytes":  0,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt02_stdout.log",
+                       "expected_sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173",
+                       "actual_sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173",
+                       "bytes":  370,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt03_exit_code.txt",
+                       "expected_sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                       "actual_sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                       "bytes":  1,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt03_stderr.log",
+                       "expected_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "actual_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "bytes":  0,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt03_stdout.log",
+                       "expected_sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173",
+                       "actual_sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173",
+                       "bytes":  370,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt04_exit_code.txt",
+                       "expected_sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                       "actual_sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                       "bytes":  1,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt04_stderr.log",
+                       "expected_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "actual_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "bytes":  0,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\attempt04_stdout.log",
+                       "expected_sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173",
+                       "actual_sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173",
+                       "bytes":  370,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\bounded_loader.py",
+                       "expected_sha256":  "da1c5b35561ea4d7478dc169e0cf4edaa6416c0aabb87e34d418dea9a9ab11c8",
+                       "actual_sha256":  "da1c5b35561ea4d7478dc169e0cf4edaa6416c0aabb87e34d418dea9a9ab11c8",
+                       "bytes":  6465,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\compare_loader_adapter.py",
+                       "expected_sha256":  "f1205517b8f3995677e2e678d116fe4fa1e5a04defed6541e90a4f945f4645fe",
+                       "actual_sha256":  "f1205517b8f3995677e2e678d116fe4fa1e5a04defed6541e90a4f945f4645fe",
+                       "bytes":  12040,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\comparison_result.json",
+                       "expected_sha256":  "123058ced61c1975399d037816ee535273ad2e9b9dfb7480618fb2be27471d84",
+                       "actual_sha256":  "123058ced61c1975399d037816ee535273ad2e9b9dfb7480618fb2be27471d84",
+                       "bytes":  807916,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\domain_and_equivalence.md",
+                       "expected_sha256":  "e35bab157f6dac9a6e9fcfb384653b7988683e4332c87344e760a067c531877a",
+                       "actual_sha256":  "e35bab157f6dac9a6e9fcfb384653b7988683e4332c87344e760a067c531877a",
+                       "bytes":  7910,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\execution_receipt.json",
+                       "expected_sha256":  "14590f0c56fd375cb7b53bd66d5bd4a218581835be33511b60bf96cd5b4ff111",
+                       "actual_sha256":  "14590f0c56fd375cb7b53bd66d5bd4a218581835be33511b60bf96cd5b4ff111",
+                       "bytes":  3744,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\exit_code.txt",
+                       "expected_sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                       "actual_sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                       "bytes":  1,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\preflight_report.md",
+                       "expected_sha256":  "be007ac94054d1f58c76a2179c5fab7833d60a19cec95b56fefda1195256605a",
+                       "actual_sha256":  "be007ac94054d1f58c76a2179c5fab7833d60a19cec95b56fefda1195256605a",
+                       "bytes":  12082,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\run_stderr.log",
+                       "expected_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "actual_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                       "bytes":  0,
+                       "match":  true
+                   },
+                   {
+                       "path":  "testB\\round_004\\execution\\run_stdout.log",
+                       "expected_sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173",
+                       "actual_sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173",
+                       "bytes":  370,
+                       "match":  true
+                   }
+               ]
+}

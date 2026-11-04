@@ -1,0 +1,11 @@
+﻿{
+    "utc":  "2026-11-04T21:51:19.3833330Z",
+    "available_gib":  5.6723785400390625,
+    "expected_peak_mib":  200,
+    "basis":  "stdlib small JSON/hash sequential audit; no tensor imports; two text workers",
+    "other_python":  [
+
+                     ],
+    "duplicate_round016_directory_preexisting":  false,
+    "receipt_matches_current_session":  true
+}

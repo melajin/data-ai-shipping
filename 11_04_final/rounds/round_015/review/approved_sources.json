@@ -1,0 +1,14 @@
+{
+    "schema":  "round015_approved_sources.v1",
+    "round":  "round_015",
+    "sha256":  {
+                   "rounds/round_015/code/m4_synthetic.py":  "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0",
+                   "rounds/round_015/code/test_m4_mock.py":  "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847",
+                   "rounds/round_015/code/run_m4.ps1":  "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4"
+               },
+    "candidate_manifest_sha256":  "0c580bc73781e50f778cfe95f8a41b092ebe55707f141b8127de5562cf2096dc",
+    "candidate_freeze_ack_sha256":  "2f8316ddd0d6d909bd01069bd931344020761971b3a86c6c24e43339e7686058",
+    "reviewed_at_utc":  "2026-11-04T21:34:20.8069867+00:00",
+    "scope":  "Independent static approval for Round015 process-control smoke, standard-library mock, and bounded synthetic M4 execution",
+    "reviewer_method":  "Direct Get-FileHash; exact three-path set; hashes compared with candidate manifest and write-stop ACK; Round014 source hashes matched its approval map; reverse round-name substitutions matched original bytes; no tests/imports/runner/checkpoint/model/data execution"
+}

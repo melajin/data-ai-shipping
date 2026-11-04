@@ -1,0 +1,93 @@
+﻿{
+    "total_mib":  14140.9,
+    "E_hash_mismatches":  [
+
+                          ],
+    "gate_passed":  true,
+    "separate_free_ram_reserve_mib":  1024,
+    "basis":  "16,384 selected rows, ten projected columns, \u003c=4096 batches, AST + independent oracle + E adapter; prior attempt measured peak RSS 124.04 MiB and commit 617.69 MiB; forecast not guarantee",
+    "frozen_E_artifacts_checked":  21,
+    "schema":  "round004_v_dynamic_preflight_v2",
+    "sample_plan_hash":  "6fdfec7fa2e33bf9771c4707dfd8894ad7362d25f6ae6b0e50c20cbd4d209a36",
+    "other_processes":  [
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  19824,
+                                "rss_mib":  417.6,
+                                "commit_mib":  467.3
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  17216,
+                                "rss_mib":  385.2,
+                                "commit_mib":  336.1
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  5828,
+                                "rss_mib":  271.9,
+                                "commit_mib":  508.5
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  5580,
+                                "rss_mib":  232.4,
+                                "commit_mib":  148.4
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  22296,
+                                "rss_mib":  207.2,
+                                "commit_mib":  117.4
+                            },
+                            {
+                                "ProcessName":  "CrossDeviceService",
+                                "Id":  11432,
+                                "rss_mib":  193.7,
+                                "commit_mib":  80.3
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  22228,
+                                "rss_mib":  176.5,
+                                "commit_mib":  99.2
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  13756,
+                                "rss_mib":  165.4,
+                                "commit_mib":  79.7
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  4476,
+                                "rss_mib":  164.7,
+                                "commit_mib":  182.4
+                            },
+                            {
+                                "ProcessName":  "PhoneExperienceHost",
+                                "Id":  26916,
+                                "rss_mib":  155.5,
+                                "commit_mib":  79.2
+                            },
+                            {
+                                "ProcessName":  "StartMenuExperienceHost",
+                                "Id":  10992,
+                                "rss_mib":  140.7,
+                                "commit_mib":  159.4
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  18136,
+                                "rss_mib":  138,
+                                "commit_mib":  330.8
+                            }
+                        ],
+    "observed_kst":  "2026-11-05 06:34:39 +09:00",
+    "free_mib":  5971.9,
+    "source_data_already_read_in_attempt01":  true,
+    "expected_process_peak_commit_mib":  700,
+    "expected_process_peak_rss_mib":  256,
+    "process_session_attribution":  "unknown",
+    "required_free_mib":  1724
+}

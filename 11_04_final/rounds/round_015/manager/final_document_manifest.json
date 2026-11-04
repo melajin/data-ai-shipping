@@ -1,0 +1,38 @@
+{
+  "utc": "2026-11-04T21:49:46.478061+00:00",
+  "completed_round": "round_015",
+  "no_worker_active": true,
+  "handoff_ready": true,
+  "files": [
+    {
+      "path": "rounds\\round_015\\ROUND_REPORT.md",
+      "bytes": 7626,
+      "sha256": "3914e2615ebdc1cc083bc18664891a977734f18e47902623eced74f0e1a01e24"
+    },
+    {
+      "path": "STATUS.json",
+      "bytes": 20220,
+      "sha256": "d309ca912f61efb1d16fccd36b6412bb77fbd643a0ab236f5ff0c6fb2b2b7011"
+    },
+    {
+      "path": "EXPERIMENT_LEDGER.csv",
+      "bytes": 6759,
+      "sha256": "2c37d032bdcdd900c37fa9367c7c52ee6ed9d303d411bab92b3166e571d4efa2"
+    },
+    {
+      "path": "NEXT_SESSION.md",
+      "bytes": 9461,
+      "sha256": "ac5e54a5aa64a88544df2a5fa4b313e449a86282acd554b474f3314d8cd56fb8"
+    },
+    {
+      "path": "rounds\\round_015\\review\\FINAL_REVIEW.md",
+      "bytes": 5456,
+      "sha256": "a707bfba2c65c9796195830bbe772009caa3f2b52bf176b277abcde181e5b1f9"
+    },
+    {
+      "path": "rounds\\round_015\\review\\EXECUTION_AUDIT.json",
+      "bytes": 8238,
+      "sha256": "5ede5be49cd385e2a14f1b87ecceb9a9f875114a5a54d1d1363341daa48db1bf"
+    }
+  ]
+}

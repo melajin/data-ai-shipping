@@ -1,0 +1,112 @@
+{
+  "utc": "2026-11-04T21:53:22.067540+00:00",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 5918,
+      "sha256": "08fa7dd4edf239910b8f000db2176589f87178aa9e911d31e1b627ab535a7dfc"
+    },
+    {
+      "path": "CYCLE_PROTOCOL.md",
+      "bytes": 10385,
+      "sha256": "beef29af4f77e46cdaeafa6b705889dcd2b3da51d49e5d3819190a2388ddb7ac"
+    },
+    {
+      "path": "rounds/round_014/review/NEXT_INTEGRATION_CHECKLIST.md",
+      "bytes": 7793,
+      "sha256": "7c47ad2da302871dbeae3a05d6ca0610125d46a07a1849813af87e63062aa093"
+    },
+    {
+      "path": "rounds/round_015/ROUND_PLAN.md",
+      "bytes": 3567,
+      "sha256": "7adad56f197b957a8bda3b6c0556d0fe5ce293db7511821d9767acc948e4c9d2"
+    },
+    {
+      "path": "rounds/round_015/ROUND_REPORT.md",
+      "bytes": 7626,
+      "sha256": "3914e2615ebdc1cc083bc18664891a977734f18e47902623eced74f0e1a01e24"
+    },
+    {
+      "path": "rounds/round_015/code/candidate_sources.json",
+      "bytes": 5082,
+      "sha256": "0c580bc73781e50f778cfe95f8a41b092ebe55707f141b8127de5562cf2096dc"
+    },
+    {
+      "path": "rounds/round_015/code/author_freeze_ack.json",
+      "bytes": 3159,
+      "sha256": "2f8316ddd0d6d909bd01069bd931344020761971b3a86c6c24e43339e7686058"
+    },
+    {
+      "path": "rounds/round_015/review/approved_sources.json",
+      "bytes": 1204,
+      "sha256": "2cede678cba53e4a92832c663bf4968b75ee63b5c1287ad25804aaf3dce59dd4"
+    },
+    {
+      "path": "rounds/round_015/review/SOURCE_REVIEW.md",
+      "bytes": 2992,
+      "sha256": "7193f41fb7ae1916bfcb9c5b4a9559b26f8c66709fc7bc89c7af2c9376283f6a"
+    },
+    {
+      "path": "rounds/round_015/review/FINAL_REVIEW.md",
+      "bytes": 5456,
+      "sha256": "a707bfba2c65c9796195830bbe772009caa3f2b52bf176b277abcde181e5b1f9"
+    },
+    {
+      "path": "rounds/round_015/review/EXECUTION_AUDIT.json",
+      "bytes": 8238,
+      "sha256": "5ede5be49cd385e2a14f1b87ecceb9a9f875114a5a54d1d1363341daa48db1bf"
+    },
+    {
+      "path": "rounds/round_015/manager/saved_result_inspection.json",
+      "bytes": 10302,
+      "sha256": "30655db9e531ac889334d09a1b2a8db708dccaf64fd057e7fabd748a9e7dc2f7"
+    },
+    {
+      "path": "rounds/round_015/manager/execution_closeout.json",
+      "bytes": 350,
+      "sha256": "d3d595bb2ba73b451546d6e7f35222b2ed9f20bce8ecc8cc89f850c5f13438b6"
+    },
+    {
+      "path": "rounds/round_015/manager/CONTROL_LAYER_FINDINGS.md",
+      "bytes": 2091,
+      "sha256": "2e7a2fe2982d0bc893ac23b02e17db32f6009203321bb455fb14376e865acbcd"
+    },
+    {
+      "path": "rounds/round_015/artifacts/m4_synthetic_result.json",
+      "bytes": 64851,
+      "sha256": "365535d9f117ae6d758909402413c3220eca4f0220a1b8b14d0ce6674dcc9105"
+    },
+    {
+      "path": "rounds/round_015/logs/smoke_01/receipt.json",
+      "bytes": 13360,
+      "sha256": "4f9608e11d51bd70e5508ed82f746eb3c03e3319fc5e6f8da1782eff36dd9ad2"
+    },
+    {
+      "path": "rounds/round_015/logs/mock_01/receipt.json",
+      "bytes": 11386,
+      "sha256": "61595d02a9297711dc47ab16569247aea0558906b7c23c58964d0e722976b2bf"
+    },
+    {
+      "path": "rounds/round_015/logs/synthetic_01/receipt.json",
+      "bytes": 24542,
+      "sha256": "c6f9bc8861ffb14629cfa8ccdc84c8a0da55d3f224dc7a0ec430904b39c8affa"
+    },
+    {
+      "path": "rounds/round_015/code/m4_synthetic.py",
+      "bytes": 49884,
+      "sha256": "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0"
+    },
+    {
+      "path": "rounds/round_015/code/run_m4.ps1",
+      "bytes": 32392,
+      "sha256": "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4"
+    },
+    {
+      "path": "rounds/round_015/code/test_m4_mock.py",
+      "bytes": 2614,
+      "sha256": "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847"
+    }
+  ],
+  "checkpoint_access": false,
+  "pt_deserialization": false
+}

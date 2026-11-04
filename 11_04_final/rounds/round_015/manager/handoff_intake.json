@@ -1,0 +1,18 @@
+﻿{
+    "utc":  "2026-11-04T21:28:47.7863196Z",
+    "incoming_round":  "round_014",
+    "current_round":  "round_015",
+    "launch_receipt":  "automation/receipts/round_014_launch.json",
+    "accepted":  true,
+    "prompt_outcome":  "journaled",
+    "delivered_session":  "codex_6face94e_8f00_46b6_baf5_f3eafa1faae2",
+    "current_session":  "codex_6face94e_8f00_46b6_baf5_f3eafa1faae2",
+    "session_match":  true,
+    "received_expected_sha256":  "C50148C876BAF83B9D1F124EC7A6DC21278584908F967F74475FC5AF7BB25FE2",
+    "live_sha256":  "C50148C876BAF83B9D1F124EC7A6DC21278584908F967F74475FC5AF7BB25FE2",
+    "snapshot_sha256":  "C50148C876BAF83B9D1F124EC7A6DC21278584908F967F74475FC5AF7BB25FE2",
+    "hashes_match":  true,
+    "previous_manager_state":  "done",
+    "same_round_duplicate_detected":  false,
+    "inventory":  "rounds/round_015/manager/session_inventory.json"
+}

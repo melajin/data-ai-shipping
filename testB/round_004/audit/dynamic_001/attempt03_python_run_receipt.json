@@ -1,0 +1,22 @@
+﻿{
+    "schema":  "round004_v_independent_dynamic_run_receipt_v1",
+    "attempt":  3,
+    "started_at_kst":  "2026-11-05 06:42:34 +09:00",
+    "finished_at_kst":  "2026-11-05 06:43:01 +09:00",
+    "command":  "PYTHONDONTWRITEBYTECODE=1 python -B \u003cabsolute independent_dynamic_check.py\u003e from audit/dynamic_001/isolated_cwd",
+    "script_sha256":  "528933edc86e4faff24a884ee65ddf262e81e3b1f1d22e129e96249a85f93703",
+    "actual_exit_code":  2,
+    "stdout":  "attempt03_python_stdout.log",
+    "stdout_sha256":  "b82b6922d7f75f69d70a94c1e99725bd0407ff4e06da165698027a5a23a92dd4",
+    "stderr":  "attempt03_python_stderr.log",
+    "stderr_bytes":  0,
+    "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preflight_file":  "preflight_before_attempt03.json",
+    "host_free_before_mib":  5906.4,
+    "host_free_after_mib":  5897.9,
+    "host_total_mib":  14140.9,
+    "process_peak_rss_mib":  125.46,
+    "process_peak_commit_mib":  618.65,
+    "no_full_parquet_row_scan":  true,
+    "result_json":  "dynamic_result.json"
+}

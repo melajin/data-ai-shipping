@@ -1,0 +1,115 @@
+﻿{
+    "utc":  "2026-11-04T21:37:13.8816663Z",
+    "count":  18,
+    "all_unchanged":  true,
+    "checks":  [
+                   {
+                       "path":  "AGENTS.md",
+                       "before":  "08FA7DD4EDF239910B8F000DB2176589F87178AA9E911D31E1B627AB535A7DFC",
+                       "after":  "08FA7DD4EDF239910B8F000DB2176589F87178AA9E911D31E1B627AB535A7DFC",
+                       "match":  true
+                   },
+                   {
+                       "path":  "CYCLE_PROTOCOL.md",
+                       "before":  "BEEF29AF4F77E46CDAEAFA6B705889DCD2B3DA51D49E5D3819190A2388DDB7AC",
+                       "after":  "BEEF29AF4F77E46CDAEAFA6B705889DCD2B3DA51D49E5D3819190A2388DDB7AC",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_014/ROUND_REPORT.md",
+                       "before":  "D73C7439A718598C63DA5AC967DFA622EFC5DDE1EDD5480BBEE1DD183685904C",
+                       "after":  "D73C7439A718598C63DA5AC967DFA622EFC5DDE1EDD5480BBEE1DD183685904C",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_014/ROUND_PLAN.md",
+                       "before":  "F97A56172BE0F0D444A5F5087C142F4BED7DA9C462FC80F5CA384F34197D2B21",
+                       "after":  "F97A56172BE0F0D444A5F5087C142F4BED7DA9C462FC80F5CA384F34197D2B21",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_014/code/m4_synthetic.py",
+                       "before":  "06319A56F3194C11EDB405695E0E87B331C555A04340C62CF5E9810DD099C199",
+                       "after":  "06319A56F3194C11EDB405695E0E87B331C555A04340C62CF5E9810DD099C199",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_014/code/test_m4_mock.py",
+                       "before":  "119F9431F7D562D379CA720FB815EFDE13EBA2FDD5A4DCA48E8D6C7C5DECE1EB",
+                       "after":  "119F9431F7D562D379CA720FB815EFDE13EBA2FDD5A4DCA48E8D6C7C5DECE1EB",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_014/code/run_m4.ps1",
+                       "before":  "330A6CCD14EB2B69C6ADF5D5CA2D4749A0BBE476CFF7961561A2771CE201E10E",
+                       "after":  "330A6CCD14EB2B69C6ADF5D5CA2D4749A0BBE476CFF7961561A2771CE201E10E",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_014/code/candidate_sources.json",
+                       "before":  "5239194656ECAD7758865B6B706593C1427ACA5A39FBDA91DD2202C979E1D813",
+                       "after":  "5239194656ECAD7758865B6B706593C1427ACA5A39FBDA91DD2202C979E1D813",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_014/code/author_freeze_ack.json",
+                       "before":  "DE124BC75D76328503B1ED0D66EEC08FFE421663A4131C182F218AF5D5358E63",
+                       "after":  "DE124BC75D76328503B1ED0D66EEC08FFE421663A4131C182F218AF5D5358E63",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_014/review/approved_sources.json",
+                       "before":  "872D5EBA99B7D3A3BDC1DCFD89B857A1B781A527CDE676652573D7C5E5455D24",
+                       "after":  "872D5EBA99B7D3A3BDC1DCFD89B857A1B781A527CDE676652573D7C5E5455D24",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_011/m4_contract/M4_CONTRACT.md",
+                       "before":  "DADBE1654C4BEBFB309E2C5DBD771983EFBCA3FFA83DA53298E9BC51303EDD63",
+                       "after":  "DADBE1654C4BEBFB309E2C5DBD771983EFBCA3FFA83DA53298E9BC51303EDD63",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_011/m4_contract/source_evidence.json",
+                       "before":  "D46F08EFB561E22A42584F2CF3CBB636B37D3AB0B75217274485D8472C280C41",
+                       "after":  "D46F08EFB561E22A42584F2CF3CBB636B37D3AB0B75217274485D8472C280C41",
+                       "match":  true
+                   },
+                   {
+                       "path":  "rounds/round_012/review/M4_NEXT_CHECKLIST.md",
+                       "before":  "21E386DCA1EF92EBAC1FB3F6B959C21147167FB9D343E0BF1003BD5771DB5BCB",
+                       "after":  "21E386DCA1EF92EBAC1FB3F6B959C21147167FB9D343E0BF1003BD5771DB5BCB",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/learning.py",
+                       "before":  "7549DFF09C3796A3CB0B55EA03E249342392FA601A681526F7B1EFB6A6F1EEF2",
+                       "after":  "7549DFF09C3796A3CB0B55EA03E249342392FA601A681526F7B1EFB6A6F1EEF2",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py",
+                       "before":  "583786E5FFD70B9EB425BCA8E52AED415DADCDF4254C908B3B6FA52026A56491",
+                       "after":  "583786E5FFD70B9EB425BCA8E52AED415DADCDF4254C908B3B6FA52026A56491",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py",
+                       "before":  "F9E3CF0D83047E06DF7D6763BB8D8EE7A00FF1BA6708299A14635831F60BA4FC",
+                       "after":  "F9E3CF0D83047E06DF7D6763BB8D8EE7A00FF1BA6708299A14635831F60BA4FC",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py",
+                       "before":  "64F5EF7EF88A920A3F7A5F6E2D9D8DC08769EC343E931F910ACC2D9C4EAA5534",
+                       "after":  "64F5EF7EF88A920A3F7A5F6E2D9D8DC08769EC343E931F910ACC2D9C4EAA5534",
+                       "match":  true
+                   },
+                   {
+                       "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/preprocessing.py",
+                       "before":  "2163A3BF6754127365A7AEDAC854D99A6F565545CC1EA7E63C68A596081B2976",
+                       "after":  "2163A3BF6754127365A7AEDAC854D99A6F565545CC1EA7E63C68A596081B2976",
+                       "match":  true
+                   }
+               ]
+}

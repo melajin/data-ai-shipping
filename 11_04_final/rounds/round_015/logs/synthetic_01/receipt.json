@@ -1,0 +1,388 @@
+{
+    "schema":  "round015_process_receipt.v1",
+    "mode":  "synthetic",
+    "run_id":  "synthetic_01",
+    "started_utc":  "2026-11-04T21:35:46.6342947+00:00",
+    "completed":  false,
+    "launched":  true,
+    "exit_code":  0,
+    "timeout_seconds":  180,
+    "compute_timeout_seconds":  170,
+    "cleanup_timeout_seconds":  10,
+    "available_ram_gib_before":  5.7635498046875,
+    "minimum_start_ram_gib":  3,
+    "stop_available_ram_gib_below":  1.5,
+    "expected_peak_mib":  1536,
+    "expected_peak_basis":  "planning assumption only: pinned ~105 MiB checkpoint, model load copies, Torch CPU, target cache \u003c1 MiB; not measured",
+    "other_python_processes_before":  [
+
+                                      ],
+    "approval_map_path":  "rounds/round_015/review/approved_sources.json",
+    "approval_map_sha256_before":  "2cede678cba53e4a92832c663bf4968b75ee63b5c1287ad25804aaf3dce59dd4",
+    "approval_map_sha256_after":  "2cede678cba53e4a92832c663bf4968b75ee63b5c1287ad25804aaf3dce59dd4",
+    "approval_map_unchanged":  true,
+    "live_precheck":  [
+                          {
+                              "path":  "rounds/round_015/code/m4_synthetic.py",
+                              "expected_sha256":  "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0",
+                              "actual_sha256":  "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0",
+                              "match":  true
+                          },
+                          {
+                              "path":  "rounds/round_015/code/test_m4_mock.py",
+                              "expected_sha256":  "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847",
+                              "actual_sha256":  "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847",
+                              "match":  true
+                          },
+                          {
+                              "path":  "rounds/round_015/code/run_m4.ps1",
+                              "expected_sha256":  "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4",
+                              "actual_sha256":  "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4",
+                              "match":  true
+                          }
+                      ],
+    "live_postcheck":  [
+                           {
+                               "path":  "rounds/round_015/code/m4_synthetic.py",
+                               "expected_sha256":  "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0",
+                               "actual_sha256":  "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0",
+                               "match":  true
+                           },
+                           {
+                               "path":  "rounds/round_015/code/test_m4_mock.py",
+                               "expected_sha256":  "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847",
+                               "actual_sha256":  "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847",
+                               "match":  true
+                           },
+                           {
+                               "path":  "rounds/round_015/code/run_m4.ps1",
+                               "expected_sha256":  "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4",
+                               "actual_sha256":  "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4",
+                               "match":  true
+                           }
+                       ],
+    "source_snapshot":  {
+                            "rounds/round_015/code/m4_synthetic.py":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\logs\\synthetic_01\\source\\m4_synthetic.py",
+                            "rounds/round_015/code/test_m4_mock.py":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\logs\\synthetic_01\\source\\test_m4_mock.py",
+                            "rounds/round_015/code/run_m4.ps1":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\logs\\synthetic_01\\source\\run_m4.ps1"
+                        },
+    "snapshots":  [
+                      {
+                          "path":  "rounds/round_015/code/m4_synthetic.py",
+                          "snapshot_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\logs\\synthetic_01\\source\\m4_synthetic.py",
+                          "expected_sha256":  "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0",
+                          "snapshot_sha256":  "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0",
+                          "match":  true
+                      },
+                      {
+                          "path":  "rounds/round_015/code/test_m4_mock.py",
+                          "snapshot_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\logs\\synthetic_01\\source\\test_m4_mock.py",
+                          "expected_sha256":  "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847",
+                          "snapshot_sha256":  "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847",
+                          "match":  true
+                      },
+                      {
+                          "path":  "rounds/round_015/code/run_m4.ps1",
+                          "snapshot_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\logs\\synthetic_01\\source\\run_m4.ps1",
+                          "expected_sha256":  "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4",
+                          "snapshot_sha256":  "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4",
+                          "match":  true
+                      }
+                  ],
+    "snapshot_postcheck":  [
+                               {
+                                   "path":  "rounds/round_015/code/m4_synthetic.py",
+                                   "snapshot_sha256":  "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "rounds/round_015/code/test_m4_mock.py",
+                                   "snapshot_sha256":  "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "rounds/round_015/code/run_m4.ps1",
+                                   "snapshot_sha256":  "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4",
+                                   "match":  true
+                               }
+                           ],
+    "children":  [
+
+                 ],
+    "process":  {
+                    "started":  true,
+                    "pid":  388,
+                    "creation_utc":  "2026-11-04T21:35:46.7889171Z",
+                    "wait_finished":  false,
+                    "timed_out":  true,
+                    "memory_stop":  false,
+                    "kill_attempted":  false,
+                    "exit_confirmed":  true,
+                    "exit_code":  0,
+                    "owned_process_exited":  true,
+                    "owned_tree_seen":  [
+                                            {
+                                                "pid":  388,
+                                                "name":  "python",
+                                                "creation_utc":  "2026-11-04T21:35:46.7889171Z",
+                                                "working_set_bytes":  283910144,
+                                                "root":  true
+                                            },
+                                            {
+                                                "pid":  24672,
+                                                "name":  "conhost",
+                                                "creation_utc":  "2026-11-04T21:35:46.7983702Z",
+                                                "working_set_bytes":  7917568,
+                                                "root":  false
+                                            }
+                                        ],
+                    "owned_tree_residuals":  [
+
+                                             ],
+                    "owned_tree_final_scan_error":  null,
+                    "owned_tree_clear":  true,
+                    "stdout":  "{\"call_counts\": {\"backward\": 4, \"checkpoint_load\": 1, \"context_fit\": 1, \"full_forward\": 4, \"head_evaluation\": 12, \"predict_proba\": 1}, \"result\": \"D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\11_04_final\\\\rounds\\\\round_015\\\\artifacts\\\\m4_synthetic_result.json\", \"status\": \"completed\"}\r\n",
+                    "stderr":  "",
+                    "stdout_stderr_drained":  true,
+                    "elapsed_seconds":  16.7639027,
+                    "wait_timeout_seconds":  170,
+                    "cleanup_timeout_seconds":  10,
+                    "minimum_available_ram_gib":  5.21978759765625,
+                    "peak_owned_tree_working_set_bytes":  585891840,
+                    "resource_samples":  [
+                                             {
+                                                 "elapsed_seconds":  1.019,
+                                                 "available_ram_gib":  5.7201,
+                                                 "owned_tree_working_set_bytes":  46178304,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  2.474,
+                                                 "available_ram_gib":  5.6223,
+                                                 "owned_tree_working_set_bytes":  153214976,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  3.942,
+                                                 "available_ram_gib":  5.5966,
+                                                 "owned_tree_working_set_bytes":  177491968,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  5.392,
+                                                 "available_ram_gib":  5.5495,
+                                                 "owned_tree_working_set_bytes":  201273344,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  7.282,
+                                                 "available_ram_gib":  5.5242,
+                                                 "owned_tree_working_set_bytes":  237056000,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  8.725,
+                                                 "available_ram_gib":  5.5097,
+                                                 "owned_tree_working_set_bytes":  260673536,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  10.654,
+                                                 "available_ram_gib":  5.4646,
+                                                 "owned_tree_working_set_bytes":  305049600,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  12.149,
+                                                 "available_ram_gib":  5.2489,
+                                                 "owned_tree_working_set_bytes":  553684992,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  13.561,
+                                                 "available_ram_gib":  5.2269,
+                                                 "owned_tree_working_set_bytes":  562720768,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  14.991,
+                                                 "available_ram_gib":  5.2198,
+                                                 "owned_tree_working_set_bytes":  585891840,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             },
+                                             {
+                                                 "elapsed_seconds":  16.43,
+                                                 "available_ram_gib":  5.3104,
+                                                 "owned_tree_working_set_bytes":  291827712,
+                                                 "owned_pids":  [
+                                                                    388,
+                                                                    24672
+                                                                ]
+                                             }
+                                         ],
+                    "command":  [
+                                    "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                                    "-B",
+                                    "-S",
+                                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\logs\\synthetic_01\\source\\m4_synthetic.py",
+                                    "--root",
+                                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+                                    "--result",
+                                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\artifacts\\m4_synthetic_result.json",
+                                    "--progress",
+                                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\logs\\synthetic_01\\progress.jsonl",
+                                    "--temp",
+                                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_015\\temp\\synthetic_01"
+                                ],
+                    "error":  null
+                },
+    "stdout":  "{\"call_counts\": {\"backward\": 4, \"checkpoint_load\": 1, \"context_fit\": 1, \"full_forward\": 4, \"head_evaluation\": 12, \"predict_proba\": 1}, \"result\": \"D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\11_04_final\\\\rounds\\\\round_015\\\\artifacts\\\\m4_synthetic_result.json\", \"status\": \"completed\"}\r\n",
+    "stderr":  "",
+    "owned_process_exited":  true,
+    "owned_tree_clear":  true,
+    "stdout_stderr_drained":  true,
+    "f1_computed":  false,
+    "project_data_opened":  false,
+    "network_used":  false,
+    "error":  "\"name\" 인수의 값이 잘못되었으므로 인수를 처리할 수 없습니다. \"name\" 인수의 값을 변경하고 작업을 다시 실행하십시오.",
+    "timed_out":  true,
+    "memory_stop":  false,
+    "elapsed_seconds":  16.7639027,
+    "minimum_available_ram_gib":  5.21978759765625,
+    "peak_owned_tree_working_set_bytes":  585891840,
+    "resource_samples":  [
+                             {
+                                 "elapsed_seconds":  1.019,
+                                 "available_ram_gib":  5.7201,
+                                 "owned_tree_working_set_bytes":  46178304,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  2.474,
+                                 "available_ram_gib":  5.6223,
+                                 "owned_tree_working_set_bytes":  153214976,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  3.942,
+                                 "available_ram_gib":  5.5966,
+                                 "owned_tree_working_set_bytes":  177491968,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  5.392,
+                                 "available_ram_gib":  5.5495,
+                                 "owned_tree_working_set_bytes":  201273344,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  7.282,
+                                 "available_ram_gib":  5.5242,
+                                 "owned_tree_working_set_bytes":  237056000,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  8.725,
+                                 "available_ram_gib":  5.5097,
+                                 "owned_tree_working_set_bytes":  260673536,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  10.654,
+                                 "available_ram_gib":  5.4646,
+                                 "owned_tree_working_set_bytes":  305049600,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  12.149,
+                                 "available_ram_gib":  5.2489,
+                                 "owned_tree_working_set_bytes":  553684992,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  13.561,
+                                 "available_ram_gib":  5.2269,
+                                 "owned_tree_working_set_bytes":  562720768,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  14.991,
+                                 "available_ram_gib":  5.2198,
+                                 "owned_tree_working_set_bytes":  585891840,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             },
+                             {
+                                 "elapsed_seconds":  16.43,
+                                 "available_ram_gib":  5.3104,
+                                 "owned_tree_working_set_bytes":  291827712,
+                                 "owned_pids":  [
+                                                    388,
+                                                    24672
+                                                ]
+                             }
+                         ],
+    "finished_utc":  "2026-11-04T21:36:03.9742507+00:00",
+    "other_python_processes_after":  [
+
+                                     ]
+}

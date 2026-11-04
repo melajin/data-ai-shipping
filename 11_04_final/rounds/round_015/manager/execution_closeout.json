@@ -1,0 +1,15 @@
+﻿{
+    "utc":  "2026-11-04T21:38:59.6845698Z",
+    "process_exited":  true,
+    "owned_tree_clear":  true,
+    "residuals":  [
+
+                  ],
+    "current_python":  [
+
+                       ],
+    "synthetic_attempts":  1,
+    "retries":  0,
+    "model_outputs_read_only":  true,
+    "historical_wrapper_completed":  false
+}

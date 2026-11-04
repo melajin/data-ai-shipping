@@ -13,5 +13,7 @@
     "model_latest_start_utc":  "2026-11-04T21:19:19Z",
     "experiment_cutoff_utc":  "2026-11-04T21:22:19Z",
     "manager_deadline_utc":  "2026-11-04T21:25:19Z",
-    "prior_metadata_28_files_unchanged":  true
+    "prior_metadata_28_files_unchanged":  true,
+    "corrected_approval_map_sha256":  "872d5eba99b7d3a3bdc1dcfd89b857a1b781a527cde676652573d7c5e5455d24",
+    "final_review":  "rounds/round_014/review/FINAL_REVIEW.md"
 }

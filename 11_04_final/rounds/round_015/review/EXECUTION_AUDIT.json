@@ -1,0 +1,124 @@
+{
+    "schema":  "round015_execution_audit.v1",
+    "approval_map_sha256":  "2cede678cba53e4a92832c663bf4968b75ee63b5c1287ad25804aaf3dce59dd4",
+    "live_source_and_snapshots_match_map":  true,
+    "source_sha256":  {
+                          "rounds/round_015/code/m4_synthetic.py":  "ac6a12e44bc82fa8a20f2be5a2fd404851e5fd7900d99c5c75a7269069e3dfa0",
+                          "rounds/round_015/code/test_m4_mock.py":  "5d65af83347d68db27525e15f0e94270d25b27f3e7efc8ed71a2d6618d161847",
+                          "rounds/round_015/code/run_m4.ps1":  "678fe8462575375c4bb36e3c474a66629eb46e23963e02e230c97dc90dc31aa4"
+                      },
+    "smoke":  {
+                  "receipt_completed":  true,
+                  "exit_code":  0,
+                  "elapsed_seconds":  1.0178889,
+                  "child_exits":  [
+                                      0,
+                                      7
+                                  ],
+                  "both_stream_markers_and_owned_tree_clear":  true
+              },
+    "mock":  {
+                 "receipt_completed":  true,
+                 "exit_code":  0,
+                 "elapsed_seconds":  0.6014277,
+                 "reported_tests_passed":  4
+             },
+    "synthetic":  {
+                      "child_result_status":  "completed",
+                      "child_exit_code":  0,
+                      "progress_stage":  "synthetic_completed",
+                      "wrapper_receipt_completed":  false,
+                      "wrapper_wait_finished":  false,
+                      "wrapper_timed_out":  true,
+                      "wrapper_exit_confirmed":  true,
+                      "wrapper_exit_code":  0,
+                      "wrapper_elapsed_seconds":  16.7639027,
+                      "configured_compute_wait_seconds":  170,
+                      "wrapper_memory_stop":  false,
+                      "wrapper_owned_tree_clear_and_streams_drained":  true,
+                      "wrapper_result_parse_failed":  true,
+                      "empty_json_key_path":  "$.upstream_model.module_training_before_after.\u003cempty-key\u003e",
+                      "call_counts":  {
+                                          "checkpoint_load":  1,
+                                          "context_fit":  1,
+                                          "predict_proba":  1,
+                                          "full_forward":  4,
+                                          "head_evaluation":  12,
+                                          "backward":  4
+                                      },
+                      "all_six_saved_comparison_checks_pass":  true,
+                      "max_probability_reconstruction_difference":  5.9604644775390625E-08,
+                      "max_probability_row_sum_error":  0.0,
+                      "m4_a_gradients_and_reload_checks_pass":  true,
+                      "m4_b_gradients_merge_and_reload_checks_pass":  true,
+                      "upstream_model_unchanged_recorded":  true,
+                      "sampled_min_available_ram_gib":  5.2198,
+                      "sampled_peak_owned_tree_working_set_bytes":  585891840,
+                      "expected_peak_mib_is_planning_assumption":  1536,
+                      "comparison_results":  [
+                                                 {
+                                                     "name":  "M4-a initial copy vs source",
+                                                     "max_abs_logit_difference":  0,
+                                                     "max_abs_probability_difference":  0,
+                                                     "argmax_equal":  true,
+                                                     "all_checks_pass":  true
+                                                 },
+                                                 {
+                                                     "name":  "M4-b B=0 initialization vs source",
+                                                     "max_abs_logit_difference":  0,
+                                                     "max_abs_probability_difference":  0,
+                                                     "argmax_equal":  true,
+                                                     "all_checks_pass":  true
+                                                 },
+                                                 {
+                                                     "name":  "native public probability reconstruction",
+                                                     "max_abs_logit_difference":  0,
+                                                     "max_abs_probability_difference":  5.9604644775390625E-08,
+                                                     "argmax_equal":  true,
+                                                     "all_checks_pass":  true
+                                                 },
+                                                 {
+                                                     "name":  "M4-a trained head vs head-only reload",
+                                                     "max_abs_logit_difference":  0,
+                                                     "max_abs_probability_difference":  0,
+                                                     "argmax_equal":  true,
+                                                     "all_checks_pass":  true
+                                                 },
+                                                 {
+                                                     "name":  "M4-b unmerged vs single merged head",
+                                                     "max_abs_logit_difference":  0,
+                                                     "max_abs_probability_difference":  0,
+                                                     "argmax_equal":  true,
+                                                     "all_checks_pass":  true
+                                                 },
+                                                 {
+                                                     "name":  "M4-b merged head vs head-only reload",
+                                                     "max_abs_logit_difference":  0,
+                                                     "max_abs_probability_difference":  0,
+                                                     "argmax_equal":  true,
+                                                     "all_checks_pass":  true
+                                                 }
+                                             ],
+                      "comparison_tolerances":  {
+                                                    "max_abs_logit_difference":  1E-05,
+                                                    "max_abs_probability_difference":  1E-06,
+                                                    "row_sum_error":  1E-06
+                                                }
+                  },
+    "artifact_bytes_sha256":  {
+                                  "m4_a_head.pt":  {
+                                                       "bytes":  42422,
+                                                       "sha256":  "c33e0185a537bce0bfd0e583dcd1f9aaa0d2c0e141847a2e3ab0d9a3621ff0c0"
+                                                   },
+                                  "m4_b_merged_head.pt":  {
+                                                              "bytes":  42464,
+                                                              "sha256":  "8127123b4e8109c1456914ac9c4f59284509116469d726bc2e9ac1df3b430a36"
+                                                          },
+                                  "m4_synthetic_result.json":  {
+                                                                   "bytes":  64851,
+                                                                   "sha256":  "365535d9f117ae6d758909402413c3220eca4f0220a1b8b14d0ce6674dcc9105"
+                                                               }
+                              },
+    "reviewer_loaded_or_deserialized_artifacts":  false,
+    "reviewer_replayed_model_or_recomputed_metrics":  false
+}

@@ -1,0 +1,58 @@
+﻿{
+    "schema":  "round004_v_dynamic_attempt03_preflight",
+    "checked_at_kst":  "2026-11-05 06:42:34 +09:00",
+    "host_free_mib_before":  5906.4,
+    "host_total_mib":  14140.9,
+    "other_processes_top_rss":  [
+                                    {
+                                        "pid":  19824,
+                                        "name":  "Orca",
+                                        "rss_mib":  409.7
+                                    },
+                                    {
+                                        "pid":  17216,
+                                        "name":  "Orca",
+                                        "rss_mib":  378.9
+                                    },
+                                    {
+                                        "pid":  5828,
+                                        "name":  "explorer",
+                                        "rss_mib":  272.4
+                                    },
+                                    {
+                                        "pid":  5580,
+                                        "name":  "codex",
+                                        "rss_mib":  233.1
+                                    },
+                                    {
+                                        "pid":  22296,
+                                        "name":  "codex",
+                                        "rss_mib":  232.1
+                                    },
+                                    {
+                                        "pid":  11432,
+                                        "name":  "CrossDeviceService",
+                                        "rss_mib":  193.8
+                                    },
+                                    {
+                                        "pid":  22228,
+                                        "name":  "codex",
+                                        "rss_mib":  168.5
+                                    },
+                                    {
+                                        "pid":  13756,
+                                        "name":  "codex",
+                                        "rss_mib":  165.5
+                                    }
+                                ],
+    "estimated_process_peak_mib":  512,
+    "host_reserve_mib":  1024,
+    "required_free_mib":  1536,
+    "expected_memory_basis":  "Attempt02 measured peak RSS 125.83 MiB and commit 623.1 MiB; retry adds fixture cases and oracle comparison but still reads only first 16,384 rows in \u003c=4,096-row projected batches plus source hashing and footer metadata; cap estimate at 512 MiB.",
+    "sample_bytes":  18817327,
+    "expected_sample_rows":  16384,
+    "script_sha256":  "528933edc86e4faff24a884ee65ddf262e81e3b1f1d22e129e96249a85f93703",
+    "prior_attempt02_result_sha256":  "3fa4280e0c860b5f47dc564ef3dc6faa80fc843ce05dce4d6d123c97322e2bbb",
+    "parallel_jobs_observed":  "Host/Orca activity and listed processes; ownership unknown",
+    "gate_passed":  true
+}
