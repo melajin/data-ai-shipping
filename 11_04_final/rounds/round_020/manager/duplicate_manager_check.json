@@ -1,0 +1,22 @@
+﻿{
+    "matching_round_directory_before_claim":  false,
+    "verdict":  "No competing Round020 manager found",
+    "utc":  "2026-11-04T23:23:38.1054865Z",
+    "other_working_sessions":  [
+                                   {
+                                       "paneKey":  "structured-agent-session-codex_912d93c5_8564_45a8_a96b_21f4ca932209:1fdd93da-fe45-41ab-a7be-21accd4a56e8",
+                                       "conversationName":  "testB 진행 현황 및 전체 과정"
+                                   },
+                                   {
+                                       "paneKey":  "structured-agent-session-codex_f1a96a7f_dd68_42ac_a9fd_6781cc48a6e3:0024fb15-512a-4ffe-a570-cf6af7973f3d",
+                                       "conversationName":  "선박 조업 분류 반복 실험 관리자 세션"
+                                   }
+                               ],
+    "other_working_task":  "Independent TestB user task; do not stop or modify",
+    "prior019_manager_not_in_active_list":  true,
+    "incoming_receipt_matches_current":  true,
+    "matching_round020_compute_before_claim":  [
+
+                                               ],
+    "current_session":  "codex_f1a96a7f_dd68_42ac_a9fd_6781cc48a6e3"
+}

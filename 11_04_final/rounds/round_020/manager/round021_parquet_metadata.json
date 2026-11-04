@@ -1,0 +1,22 @@
+{
+  "utc": "2026-11-04T23:25:24.302761+00:00",
+  "python": "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "pyarrow_version": "24.0.0",
+  "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s6_fingerprint_grid.parquet",
+  "bytes": 8353532,
+  "sha256": "b732e2d87f795885426abbc805381e29bcad466e8be7abf37fc4c361bd853131",
+  "schema": "id: int64\nyear: int64\nblock: string\nres: double\ncell: string\nweight: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 737",
+  "num_rows": 994421,
+  "num_row_groups": 1,
+  "row_groups": [
+    {
+      "rows": 994421,
+      "total_uncompressed_bytes": 17908504
+    }
+  ],
+  "row_values_read": false,
+  "available_bytes_before_import": 4957429760,
+  "expected_peak_bytes": 268435456,
+  "estimate_basis": "pyarrow import and footer metadata only; no table materialization",
+  "rss_bytes_after": 45584384
+}

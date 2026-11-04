@@ -23,3 +23,7 @@ FIT/ES/SELECT/OUTER·ID/year/label/클래스0..3을 확인한다. F304와 F156 �
 round019/manager/ROUND021_FIXED_BRANCH.md를 그대로 채택해 manager/ROUND021_FIXED_BRANCH.md에 보존한다. .7 이상이며 보호·계보 통과면seed2026확인(최대9fit). .7 미달이면 동일stacker12열 대12+현재Jan–Jun2026공간prototype8열 통제비교,basefit0/meta≤6(020모델 정확 재사용시3),grid0/retry0. 생성원본 읽기전용, s6_fingerprint_grid.parquet의2026/full/.01,.05/개발5897만 projection/predicate 후 읽는다. FIT 클래스별 동일선박가중 prototype, SELECT/OUTER query만, 자기기여없음. spatial_bhat_r001_c0..c3,r005_c0..c3, NaN→constant0 imputer(add_indicatorFalse), SELECT-onlyscaler. 원본전체2025/holdout행 로딩 금지. 원본 경로/생성source·정확 예산은 보존 분기문서가 권위다. 020 OUTER를 본 뒤 이 분기를 고르거나 바꾸지 않는다.
 
 작성자·검토자는 각각 Luna xhigh, 관리자 요청 Astra high. 호스트 turn_context는 별도 증거이며 내부 모델 인증과 구분한다. 파일 담당은 manager/delegation.json. 결과/STATUS/LEDGER/NEXT를 마감하고 새 Astra high 수락 영수증 확인 후 이 관리자는 종료한다.
+
+## 평가 전 사용자 우선 정정
+
+manager/USER_PROTECTION_AMENDMENT.md가 보호class0/3의 .03 recall 하락허용을 **0**으로 대체한다. 역사5seed와같은조건seed42를모두보호해정수TP class0≥2389,class3≥92를요구한다. class1/2TP·recall·precision/F1·FP전이,각보호class의기준별gain/loss/net를보고한다. 고정모델·3fit예산은바꾸지않으며점수확인후튜닝은없다. 021도이규칙을계승한다.

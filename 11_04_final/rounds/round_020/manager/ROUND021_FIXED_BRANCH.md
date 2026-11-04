@@ -1,5 +1,7 @@
 # Round021 최종 사전분기 — 019 말미 추가근거 반영
 
+020 평가 전 사용자 정정: USER_PROTECTION_AMENDMENT.md를 계승한다. 역사채택5seed와동일조건seed42양쪽대비보호class0/3 recall하락0, 합친TP하한2389/92. 자망·통발개선과FP전이를함께검사한다. .7이상이라도보호실패면seed확인확대하지않고아래공간8열통제비교에강화보호를적용한다. 020stacker가미채택이면021에서그것은표현효과분리용experimental baseline이며사용자보호reference는계속역사5seed및round002seed42다.
+
 이 문서는 PERFORMANCE_NEXT_PLAN 및 next_round_brief의021미확정/최대6basefit 표현후보 문단을 대체한다. 근거는 orchestration_message_07~10이며 파일 내용/개별특징은019에서읽지않았다. 전달근거와실제다음회차확인을구분한다.
 
 020이개발micro≥.7이고보호·계보통과면기존계획의seed2026확인으로간다. .7미달이면 **같은stacker12열 대 같은stacker12+현재기간 공간분포8열**의통제비교다. baseline메타3+후보메타3fit최대6, 새basefit0/TabICL추론0/S3재스캔0, grid0/재시도0. C1/lbfgs/maxiter1000/seed42/SELECT-onlyscaler와동일명부를유지한다. baseline저장모델을정확해시·입력동등성검증후재사용하면새fit3만한다.

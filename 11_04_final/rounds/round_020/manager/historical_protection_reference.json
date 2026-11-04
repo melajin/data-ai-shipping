@@ -1,0 +1,40 @@
+﻿{
+    "source":  "rounds/round_001/execution/supplemental_ensemble.json",
+    "prediction_path":  "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\outer_predictions.csv",
+    "tp":  [
+               2381,
+               908,
+               116,
+               92
+           ],
+    "method":  "integer derived from saved recall and known class supports; row-key historical prediction equivalence to be verified only after evaluation freeze",
+    "utc":  "2026-11-04T23:29:58.6323137Z",
+    "support":  [
+                    2920,
+                    2016,
+                    835,
+                    126
+                ],
+    "prediction_sha256":  "DFDF805F5C60CFF019400E3B16F57F5D03AA6D24277E31C3CDFB2C5B2F4992A4",
+    "prediction_header":  "rfid_id,fold,role,y_true,p0,p1,p2,p3,pred",
+    "score":  {
+                  "n":  5897,
+                  "correct":  3497,
+                  "micro_f1":  0.5930133966423605,
+                  "macro_f1":  0.5252719738966167,
+                  "class_recall":  [
+                                       0.8154109589041096,
+                                       0.4503968253968254,
+                                       0.13892215568862276,
+                                       0.7301587301587301
+                                   ],
+                  "class_f1":  [
+                                   0.695690284879474,
+                                   0.5050055617352615,
+                                   0.21382488479262673,
+                                   0.6865671641791045
+                               ]
+              },
+    "source_sha256":  "251FB8A00FD77CC9EE8AF04773C9EAE73BA61246D33E07F6CDD863200A93EEE7",
+    "reference":  "historical sqrt_macro5seed"
+}

@@ -30,6 +30,6 @@
               ],
     "s6_period_evidence":  "parse_s2_s3.py:200 train2026/test2025 months1..6; s6 groups id/year and normalizes each day equally",
     "year_caveat":  "probabilities lack year column; Train2026 provenance constant, not rowwise measured year",
-    "round021_needs":  "resolve existing pyarrow environment or isolated dependency before filtered parquet scan; never full-load mixed years/holdout",
+    "round021_needs":  "Existing system Python313 has pyarrow24.0.0: metadata verified in round021_parquet_metadata.json. Use this read-only environment for filtered extraction (no global install), then round002 sklearn env for stacker; exact loader/version contract frozen in021 before run.",
     "utc":  "2026-11-04T23:23:01.1751933Z"
 }
