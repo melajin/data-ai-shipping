@@ -7,16 +7,19 @@
   },
   "round_copy": {
     "path": "testB/round_001/timing/timing_interface.py",
-    "sha256": "167afb9c9e114f75edb07b7c8df02f8b718bea4f10e528e11adee9ce3c59788e",
-    "size_bytes": 9451,
-    "change": "A tie selects first maximum in original input order (idxmax semantics), with source order retained; time sorting is limited to B/C segment search. Persistence row minimum counts unique timestamps."
+    "sha256": "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d",
+    "size_bytes": 12677,
+    "change": "A selects first maximum in original input order; time sort only for B/C; hourly max_gap_hours constrained to (0,1]; duplicate score conflicts yield data_conflict with blank A/B/C; identical duplicates preserve source rows and persistence counts unique timestamps."
   },
   "verification": {
-    "command": "python testB/round_001/timing/run_tie_order_regression.py",
+    "command": "python -B testB/round_001/timing/timing_interface.py",
     "actual_exit_code": 0,
-    "checks": 8,
-    "process_record": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\round_001\\run_003\\process_result.json",
-    "runtime_model_receipt": "26_11_5/testb_next_experiment_20261105/integration/runtime_receipts/W2_start.json"
+    "checks": 14,
+    "process_record": "testB/round_001/timing/fix_20261105_w2f/process_result.json",
+    "scope": "synthetic only; no actual scores/events/performance; prior round_003 records preserved",
+    "runtime_model_receipt": "testB/round_001/integration/runtime_receipts/W2F_start.json",
+    "readiness_report_sha256": "d0a90fd702686d06c69c1620f684678e4cbb0df001de810c2afab2df7166636e",
+    "documentation_update_scope": "Removed duplicated corrupted W2F clarification; marked old parent intake status as historical and referenced the current roster recheck; no code or tests changed/rerun."
   },
   "scope": "The copy is an executable interface and synthetic-only check; it has not been run on actual 2026 scores or events."
 }

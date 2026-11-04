@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-11-04T18:13:27.811471+00:00",
+  "incoming_receipt_accepted": true,
+  "incoming_prompt_outcome": "journaled",
+  "incoming_session": "codex_3f5d6e5d_c588_43a3_9279_40d5d4f4edd6",
+  "current_session": "codex_3f5d6e5d_c588_43a3_9279_40d5d4f4edd6",
+  "session_match": true,
+  "handoff_sha_match": true,
+  "initial_status_current_round": "round_006",
+  "initial_status_completed": true,
+  "initial_process_query": "No round_007/run_bounded/synthetic_pair compute process was present; sole matching shell was this manager read-only inspection command",
+  "decision": "This is receipt-addressed fresh manager, not duplicate experiment execution"
+}

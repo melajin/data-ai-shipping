@@ -340,11 +340,13 @@
       }
     },
     {
-      "item": "W2 current tie contract, split pending, 95 overlap bounded",
+      "item": "W2 current tie contract, manifest generator, split pending, 95 overlap bounded",
       "status": "fail",
       "evidence": {
         "manifest_tie_text": "stable sort by timestamp then original ordinal; earliest maximum wins; preserve duplicate rows and IDs; duplicates do not imply elapsed duration",
-        "stale_earliest_maximum": true,
+        "stale_manifest_earliest_maximum": true,
+        "manifest_generator": "publish_legacy_preparation.py",
+        "generator_stale_earliest_maximum": true,
         "code_lineage_first_max": false,
         "split_assignment": "pending; train/dev/calibration/eval memberships not fabricated",
         "overlap_interpretation": "membership only; actual density/map contribution and score dilution unmeasured"
@@ -452,6 +454,23 @@
       ]
     },
     {
+      "item": "Duplicate-timestamp conflicting-score policy fully specified",
+      "status": "unknown",
+      "evidence": {
+        "implemented": "stable timestamp/input-ordinal ordering; duplicate rows retained; persistence counts unique timestamps; A ties use original input order",
+        "unresolved": "no explicit rule for reconciling conflicting scores/records at the same timestamp before segment and persistence checks"
+      }
+    },
+    {
+      "item": "Positive score-floor semantics resolved for future evaluation",
+      "status": "unknown",
+      "evidence": {
+        "contract": "nanmean(s_zone, s_change, s_gap); available components only; all-missing -> NaN; positive floor 1e-6",
+        "timing_test": "1e-6 is accepted as an ordinary finite score and can cross a lower synthetic threshold",
+        "unresolved": "no approved real threshold/source or explicit floor/missing-value semantics for future candidate evaluation"
+      }
+    },
+    {
       "item": "max_gap parameter can bridge unobserved time",
       "status": "fail",
       "evidence": {
@@ -511,6 +530,17 @@
       }
     },
     {
+      "item": "W2 round code lineage, output hashes and process logs are consistent",
+      "status": "pass",
+      "evidence": {
+        "current_timing_sha256": "167afb9c9e114f75edb07b7c8df02f8b718bea4f10e528e11adee9ce3c59788e",
+        "lineage_and_process_code_match": true,
+        "round_output_hash_mismatches": {},
+        "stdout_stderr_exist": true,
+        "actual_exit": 0
+      }
+    },
+    {
       "item": "W3 model/effort request receipt and dispatch identity",
       "status": "pass",
       "evidence": {
@@ -538,7 +568,7 @@
       "item": "Inspected W1/W2 target hashes unchanged during independent audit",
       "status": "pass",
       "evidence": {
-        "file_count": 75,
+        "file_count": 76,
         "changed_paths": []
       }
     }
@@ -551,6 +581,14 @@
       "reproduce": "Read current JSON field: says earliest maximum wins; code and lineage say first max in original input order.",
       "impact": "Contract contradicts current A tie implementation and can select a different row.",
       "suggested_fix": "Change to first maximum in original source order for A; stable timestamp+ordinal ordering is B/C only; retain duplicate rows and count unique timestamps for persistence."
+    },
+    {
+      "severity": "high",
+      "file": "testB/round_001/timing/publish_legacy_preparation.py",
+      "location": "line 94: method_states.ties_and_duplicates literal",
+      "reproduce": "Search this generator for 'earliest maximum wins'; it serializes the old rule into input_split_manifest.json.",
+      "impact": "Re-running the publisher can restore the contradictory earliest-maximum contract after a manifest-only correction.",
+      "suggested_fix": "Update the generator literal to first maximum in original input order for A; note timestamp sorting only affects B/C."
     },
     {
       "severity": "open_design_limit",

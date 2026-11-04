@@ -1,0 +1,139 @@
+{
+  "schema": "round006_final_independent_review.v1",
+  "review_status": "RAM_STOPPED_DURING_PREDICT_PROBA",
+  "reviewed_at_utc": "2026-11-04T18:00:53Z",
+  "reviewer": {
+    "role": "independent post-run reviewer",
+    "requested_model": "gpt-6-luna",
+    "requested_effort": "xhigh",
+    "host_model": "gpt-6-luna",
+    "host_effort": "xhigh",
+    "host_evidence_file": "rounds/round_006/manager/assistant_host_evidence.json",
+    "host_evidence_interpretation": "host configuration evidence, not internal model authentication"
+  },
+  "source_hashes": {
+    "round005_executed_source_sha256": "b57f6c764d4b833451714d4dfcfa328ed3facecaf6f9a93a0198da8b17c4b860",
+    "round006_approved_pilot_source_sha256": "a4d10bba93f3fe07ea7188aba216c1211e13eba24cec334fc19d7b985d681505",
+    "round006_executed_source_snapshot_sha256": "a4d10bba93f3fe07ea7188aba216c1211e13eba24cec334fc19d7b985d681505",
+    "round006_wrapper_sha256": "864440b76311f93b3e3236fa0e636381a7dad8fe1e98aefe402b2591ea039f81",
+    "round006_mock_test_sha256": "237edc8867af5e1684d8ba99bd3cfd7c8d8aa1404e3956ecabaa10ef32a010b5",
+    "mock_receipt_sha256": "c7939e2edded9035454a7c4189df8eeb2b8f1c6e3d4a9e8519f3894514b3f79c",
+    "pilot_receipt_sha256": "6e6d4174a396aa138d8e1914a42c4c3de4cd58637e55fbdfa79d8ed600c29ee1",
+    "pilot_result_sha256": "4bf080e71b426f9f6e8ab325056960b69ad56e1a876a94eb6108cad58c25d85a",
+    "resource_curve_sha256": "78c2ca2ec19de58c0300f7aa4ed8cd9a2664a470777ebce28c0a8da42e3f6591",
+    "pilot_stdout_sha256": "b2a065b467cb93fb2e8d4d71497c2d78cd6273371545718a06eaeeffb0b254f7c",
+    "pilot_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "postexit_verification_sha256": "c2c8f9798e7396366eea98846104fdd6d584e7dd300fa5866440be0c5f3c05ee",
+    "user_ram_recheck_01_sha256": "25a60e8522b8a3b645ef3bdca8a1a38371b9c6fea7657578265e700288482705",
+    "pinned_classifier_source_sha256": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+    "pinned_inference_source_sha256": "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc"
+  },
+  "mock": {
+    "status": "PASS",
+    "exit_code": 0,
+    "elapsed_seconds": 0.656,
+    "timeout_seconds": 30,
+    "tests_reported": 3,
+    "invalid_setting_subcases": 10,
+    "model_imports": false,
+    "checkpoint_loads": 0,
+    "scope": "fake objects exercise the exact reviewed diagnostic functions; this is not model inference"
+  },
+  "pilot_receipt": {
+    "run_id": "pilot_01",
+    "status": "failed_or_stopped",
+    "stop_reason": "available_ram_below_1_5_gib",
+    "exit_code": 1,
+    "started_utc": "2026-11-04T17:57:47.888212+00:00",
+    "finished_utc": "2026-11-04T17:58:15.502201+00:00",
+    "elapsed_seconds": 27.594,
+    "timeout_seconds": 600,
+    "timeout_hit": false,
+    "source_unchanged": true,
+    "source_sha256_matches_approved": true,
+    "wrapper_sha256_matches_reviewed": true
+  },
+  "resources": {
+    "preflight_available_ram_gib": 4.283466339111328,
+    "minimum_start_ram_gib": 3.0,
+    "minimum_observed_available_ram_gib": 1.3921089172363281,
+    "runtime_stop_threshold_gib": 1.5,
+    "peak_sampled_tree_working_set_bytes": 3160498176,
+    "immediate_receipt_remaining_pids": [16792, 2716],
+    "followup_same_identity_remaining_pids": [],
+    "followup_snapshot_recorded_pids_present": [],
+    "additional_termination_performed": false,
+    "interpretation": "The immediate receipt recorded processes during post-taskkill cleanup; a later same-identity/process-snapshot check found none.",
+    "user_requested_recheck_at_utc": "2026-11-04T18:00:31.279236+00:00",
+    "user_requested_recheck_available_ram_gib": 4.201679229736328,
+    "new_pilot_launched_after_recheck": false,
+    "recheck_limit": "RAM recovery does not establish full-context inference fits or reset the exhausted round006 pilot limit."
+  },
+  "observed_stages": {
+    "inputs_hashed_and_query_freeze_ready": true,
+    "context_validated": true,
+    "fixed_reference_rows_verified": true,
+    "package_imported": true,
+    "checkpoint_fit_context_bind_start": true,
+    "fit_returned": true,
+    "checkpoint_fit_context_bind_complete": true,
+    "resolved_cpu_fp32_contract_validated": true,
+    "resolved_cache_mode_present": false,
+    "resolved_cache_mode_value": null,
+    "resolved_model_kv_cache_present": true,
+    "resolved_model_kv_cache_is_none": true,
+    "predict_proba_start": true,
+    "predict_proba_complete": false
+  },
+  "actual_execution_scope": {
+    "context_sha256": "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+    "query_freeze_sha256": "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef",
+    "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "fit_rows": 3144,
+    "query_rows": 2,
+    "feature_count": 312,
+    "query_ids": ["36001915", "31703435"],
+    "reference_rows_read": 2,
+    "reference_fields_used": ["rfid_id", "p0", "p1", "p2", "p3"],
+    "inner_labels_loaded_or_used": false,
+    "predict_proba_attempted_count": 1,
+    "predict_proba_completed_count": 0,
+    "model_probabilities_produced": false,
+    "probability_comparison_performed": false,
+    "F1_or_accuracy_computed": false,
+    "outer_inference": false,
+    "protected_feature_or_label_rows_read": 0,
+    "stderr_empty": true
+  },
+  "interpretation": {
+    "diagnostic_defect_fixed_in_runtime": "The real estimator passed post-fit telemetry with cache_mode_ absent and model_kv_cache_ present-but-None, then reached predict_proba_start.",
+    "pilot_outcome": "The external resource guard stopped the owned process tree while predict_proba was in progress after available RAM fell below 1.5 GiB.",
+    "model_failure_or_oom_claim": "Not established. No model exception or completed probability result was observed; stderr is empty and the manager guard initiated termination.",
+    "performance_or_F1_claim": "None. The approved two-query replay gate is unresolved because no probabilities returned."
+  },
+  "source_only_followup_evidence": {
+    "source": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py",
+    "location": "InferenceManager.__call__, CPU branch at line 1297",
+    "verified_behavior": "When auto_batch is requested on CPU, the manager routes the prepared input through one _run_forward call instead of using accelerator auto-batch sizing/recovery.",
+    "evidence_limit": "This makes lack of CPU auto-batching a plausible contributor to memory growth, but does not locate which model stage allocated the observed memory or prove a model OOM."
+  },
+  "next_scope_recommendation": {
+    "status": "RECOMMENDATION_ONLY_NOT_EXECUTED_OR_APPROVED",
+    "first_step": "Fresh, bounded source-only feasibility audit of TabICL CPU prediction batching and candidate slice boundaries, preserving FIT rows, sequence axes, feature order, shuffles, and ensemble semantics.",
+    "conditional_second_step": "Only if source inspection establishes a safe independent batch boundary, separately plan one small synthetic unmodified-versus-adapted equivalence check (32 FIT rows, 2 queries, 312 features), bounded by the same start/stop RAM limits. If safe slicing cannot be proven, stop without adapting or replaying actual data.",
+    "actual_data_replay": "Do not repeat round006 or launch an actual-data replay until a separate review accepts the source audit and synthetic equivalence evidence.",
+    "seasonal_hypothesis": "rounds/round_006/SEASONAL_HYPOTHESIS.md is a separate future hypothesis based on previous code/config/aggregate evidence; it is not validated by this pilot and has no bearing on replay status."
+  },
+  "unknowns": [
+    "CPU probabilities for either frozen query",
+    "Maximum probability difference, row-sum validation, argmax agreement, and the two-query replay gate",
+    "Completed predict_proba latency and memory",
+    "The exact TabICL stage responsible for memory growth during prediction"
+  ],
+  "retry_policy": {
+    "round006_pilot_attempt_limit_exhausted": true,
+    "round006_retry_performed": false,
+    "identical_retry_recommended": false,
+    "reason": "The round plan forbids retries after a runtime RAM stop; the run also did not produce prediction evidence."
+  }
+}

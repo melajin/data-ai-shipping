@@ -1,275 +1,229 @@
 {
-  "run_started_utc": "2026-11-04T17:50:34.0045175Z",
-  "run_finished_utc": "2026-11-04T17:52:03.5621088Z",
-  "actual_exit_code": 0,
-  "status": "succeeded",
-  "runner_code_sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a",
-  "finalizer_code_sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee",
-  "inputs": {
-    "archive": "C:\\Users\\dlehs\\Downloads\\문제 데이터_수정_1103_v2.zip",
-    "archive_sha256_before": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
-    "archive_sha256_after": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
-    "archive_unchanged": true,
-    "intake_manifest_sha256": "3916151773a3ad402a020889553bb1fe85c4bf5462f2cc794d526e5e0999e860",
-    "old_inputs_posthash_all_match": true,
-    "old_inputs": [
-      {
-        "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
-        "comparison_sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
-        "post_sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
-        "comparison_bytes": 669416109,
-        "post_bytes": 669416109,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 669416109, 'mtime_ns': 1790557016000000000, 'mtime_utc': '2026-09-28T00:56:56+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 669416109, 'mtime_ns': 1790557016000000000, 'mtime_utc': '2026-09-28T00:56:56+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 669416109,
-          "mtime_ns": 1790557016000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 669416109,
-          "mtime_ns": 1790557016000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv",
-        "comparison_sha256": "8eb284e7b9c374c2b679376652535eecf898e9241a668cae1d61c63a2b41b422",
-        "post_sha256": "8eb284e7b9c374c2b679376652535eecf898e9241a668cae1d61c63a2b41b422",
-        "comparison_bytes": 635512252,
-        "post_bytes": 635512252,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 635512252, 'mtime_ns': 1789435710000000000, 'mtime_utc': '2026-09-15T01:28:30+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 635512252, 'mtime_ns': 1789435710000000000, 'mtime_utc': '2026-09-15T01:28:30+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 635512252,
-          "mtime_ns": 1789435710000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 635512252,
-          "mtime_ns": 1789435710000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv",
-        "comparison_sha256": "2765008e34544590c4692c125f92ba611c548a55f7816a866fb8df1f658550c0",
-        "post_sha256": "2765008e34544590c4692c125f92ba611c548a55f7816a866fb8df1f658550c0",
-        "comparison_bytes": 987693693,
-        "post_bytes": 987693693,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 987693693, 'mtime_ns': 1789435864000000000, 'mtime_utc': '2026-09-15T01:31:04+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 987693693, 'mtime_ns': 1789435864000000000, 'mtime_utc': '2026-09-15T01:31:04+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 987693693,
-          "mtime_ns": 1789435864000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 987693693,
-          "mtime_ns": 1789435864000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv",
-        "comparison_sha256": "013964713caf1cb9db2765e27f3205746748264236047f5a8cb14fc38fc9f3f1",
-        "post_sha256": "013964713caf1cb9db2765e27f3205746748264236047f5a8cb14fc38fc9f3f1",
-        "comparison_bytes": 1113299125,
-        "post_bytes": 1113299125,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1113299125, 'mtime_ns': 1790584040000000000, 'mtime_utc': '2026-09-28T08:27:20+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1113299125, 'mtime_ns': 1790584040000000000, 'mtime_utc': '2026-09-28T08:27:20+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 1113299125,
-          "mtime_ns": 1790584040000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 1113299125,
-          "mtime_ns": 1790584040000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv",
-        "comparison_sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
-        "post_sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
-        "comparison_bytes": 1201889964,
-        "post_bytes": 1201889964,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1201889964, 'mtime_ns': 1789436196000000000, 'mtime_utc': '2026-09-15T01:36:36+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1201889964, 'mtime_ns': 1789436196000000000, 'mtime_utc': '2026-09-15T01:36:36+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 1201889964,
-          "mtime_ns": 1789436196000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 1201889964,
-          "mtime_ns": 1789436196000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv",
-        "comparison_sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
-        "post_sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
-        "comparison_bytes": 1255966524,
-        "post_bytes": 1255966524,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1255966524, 'mtime_ns': 1789436342000000000, 'mtime_utc': '2026-09-15T01:39:02+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1255966524, 'mtime_ns': 1789436342000000000, 'mtime_utc': '2026-09-15T01:39:02+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 1255966524,
-          "mtime_ns": 1789436342000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 1255966524,
-          "mtime_ns": 1789436342000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
-        "comparison_sha256": "eccecabdf141ec6856f0abc04119a610e6415ed2e2bf481898ff426d1c890a8b",
-        "post_sha256": "eccecabdf141ec6856f0abc04119a610e6415ed2e2bf481898ff426d1c890a8b",
-        "comparison_bytes": 1032427516,
-        "post_bytes": 1032427516,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 1032427516, 'mtime_ns': 1793019126000000000, 'mtime_utc': '2026-10-26T12:52:06+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 1032427516, 'mtime_ns': 1793019126000000000, 'mtime_utc': '2026-10-26T12:52:06+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 1032427516,
-          "mtime_ns": 1793019126000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 1032427516,
-          "mtime_ns": 1793019126000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv",
-        "comparison_sha256": "7199c1925a080c132745d4b1960f27886d45720ed670f856bc34c4c4d0b92d8c",
-        "post_sha256": "7199c1925a080c132745d4b1960f27886d45720ed670f856bc34c4c4d0b92d8c",
-        "comparison_bytes": 795028305,
-        "post_bytes": 795028305,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 795028305, 'mtime_ns': 1793019136000000000, 'mtime_utc': '2026-10-26T12:52:16+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 795028305, 'mtime_ns': 1793019136000000000, 'mtime_utc': '2026-10-26T12:52:16+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 795028305,
-          "mtime_ns": 1793019136000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 795028305,
-          "mtime_ns": 1793019136000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv",
-        "comparison_sha256": "46cd53aed13db55f815730adf3b670681677b9491139410786ad1a58066c6762",
-        "post_sha256": "46cd53aed13db55f815730adf3b670681677b9491139410786ad1a58066c6762",
-        "comparison_bytes": 1115652054,
-        "post_bytes": 1115652054,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 1115652054, 'mtime_ns': 1793019154000000000, 'mtime_utc': '2026-10-26T12:52:34+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 1115652054, 'mtime_ns': 1793019154000000000, 'mtime_utc': '2026-10-26T12:52:34+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 1115652054,
-          "mtime_ns": 1793019154000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 1115652054,
-          "mtime_ns": 1793019154000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv",
-        "comparison_sha256": "6d4e191676a1b8b7d5bbee10677ccd1be5e69c88117d6f2296e2383d5dc525bc",
-        "post_sha256": "6d4e191676a1b8b7d5bbee10677ccd1be5e69c88117d6f2296e2383d5dc525bc",
-        "comparison_bytes": 1339299305,
-        "post_bytes": 1339299305,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1339299305, 'mtime_ns': 1793019172000000000, 'mtime_utc': '2026-10-26T12:52:52+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1339299305, 'mtime_ns': 1793019172000000000, 'mtime_utc': '2026-10-26T12:52:52+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 1339299305,
-          "mtime_ns": 1793019172000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 1339299305,
-          "mtime_ns": 1793019172000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv",
-        "comparison_sha256": "82c5c4222b5ebe0f551f6b717730d80590aaec7e41750b49a463597645eadd08",
-        "post_sha256": "82c5c4222b5ebe0f551f6b717730d80590aaec7e41750b49a463597645eadd08",
-        "comparison_bytes": 1581199983,
-        "post_bytes": 1581199983,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1581199983, 'mtime_ns': 1793019196000000000, 'mtime_utc': '2026-10-26T12:53:16+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1581199983, 'mtime_ns': 1793019196000000000, 'mtime_utc': '2026-10-26T12:53:16+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 1581199983,
-          "mtime_ns": 1793019196000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 1581199983,
-          "mtime_ns": 1793019196000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv",
-        "comparison_sha256": "009ac034a7acb8552fac6fe1d28b307d6df2339ea5a1845ec4314c306f97b88d",
-        "post_sha256": "009ac034a7acb8552fac6fe1d28b307d6df2339ea5a1845ec4314c306f97b88d",
-        "comparison_bytes": 1621873318,
-        "post_bytes": 1621873318,
-        "comparison_hash_matches_post": true,
-        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1621873318, 'mtime_ns': 1793019218000000000, 'mtime_utc': '2026-10-26T12:53:38+00:00'}",
-        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1621873318, 'mtime_ns': 1793019218000000000, 'mtime_utc': '2026-10-26T12:53:38+00:00'}",
-        "metadata_before_posthash": {
-          "bytes": 1621873318,
-          "mtime_ns": 1793019218000000000
-        },
-        "metadata_after_posthash": {
-          "bytes": 1621873318,
-          "mtime_ns": 1793019218000000000
-        },
-        "metadata_unchanged_through_posthash": false
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
-        "comparison_sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a",
-        "post_sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a",
-        "comparison_hash_matches_post": true,
-        "post_bytes": 28759,
-        "post_metadata": {
-          "bytes": 28759,
-          "mtime_ns": 1789133150000000000
-        }
-      },
-      {
-        "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx",
-        "comparison_sha256": "b698b87e15bed61436da318c9477c6ac7e5a58b6412aa3414e75ce50f1b6039f",
-        "post_sha256": "b698b87e15bed61436da318c9477c6ac7e5a58b6412aa3414e75ce50f1b6039f",
-        "comparison_hash_matches_post": true,
-        "post_bytes": 12829,
-        "post_metadata": {
-          "bytes": 12829,
-          "mtime_ns": 1793083378000000000
-        }
-      }
-    ]
+  "generated_utc": "2026-11-04T18:00:49.719073+00:00",
+  "task": "W0 metadata-verdict correction and legacy100 applicability note",
+  "status": "corrected",
+  "correction_execution": {
+    "started_utc": "2026-11-04T18:00:03.2597222Z",
+    "finished_utc": "2026-11-04T18:00:04.2438676Z",
+    "actual_exit_code": 0,
+    "code_sha256": "7ba77842f87b5c6abb5ff7253a27261fe934f629ae598e544daaab9351cf02ff",
+    "stdout_path": "testB/round_001/input_compatibility/correction_stdout.log",
+    "stderr_path": "testB/round_001/input_compatibility/correction_stderr.log",
+    "exit_path": "testB/round_001/input_compatibility/correction_exit_status.txt",
+    "runtime_receipt": {
+      "path": "testB\\round_001\\integration\\runtime_receipts\\W0_start.json",
+      "sha256": "064c6eeb8e44920ca5e47f6d53c919d90e8e09c5f77ca73aa4c4c668d90056aa",
+      "dispatchId": "ctx_39f0545dfa0b",
+      "taskId": "task_f483f7eb585c",
+      "runId": "run_131763108c81",
+      "state": "ready",
+      "agent": "codex",
+      "model_observed_at_launch": "gpt-6-luna",
+      "effort_observed_at_launch": "xhigh",
+      "receipt_model": "gpt-6-luna",
+      "receipt_effort": "xhigh",
+      "provider_internal_execution_details": "unknown; the Orca launch receipt records the requested/launch-observed model and effort, not a provider-internal attestation"
+    }
+  },
+  "correction_code_sha256": "7ba77842f87b5c6abb5ff7253a27261fe934f629ae598e544daaab9351cf02ff",
+  "sync_code_sha256": "9adeeea2a1a197d00fc4d2a6835d47fff1e77a196ae835c31eb24dece0e7a01f",
+  "preserved_pre_correction": {
+    "summary.json": {
+      "path": "testB\\round_001\\input_compatibility\\summary.json",
+      "sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507",
+      "bytes": 42834,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\summary.json",
+      "preserved_sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507"
+    },
+    "manifest.json": {
+      "path": "testB\\round_001\\input_compatibility\\manifest.json",
+      "sha256": "80b61b3e1aa4048ab97fa426f8168cc67503435c2c0a98f14c3b223b3f0dd04e",
+      "bytes": 20424,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\manifest.json",
+      "preserved_sha256": "80b61b3e1aa4048ab97fa426f8168cc67503435c2c0a98f14c3b223b3f0dd04e"
+    },
+    "comparison_report.md": {
+      "path": "testB\\round_001\\input_compatibility\\comparison_report.md",
+      "sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868",
+      "bytes": 6625,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\comparison_report.md",
+      "preserved_sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868"
+    },
+    "run_comparison.py": {
+      "path": "testB\\round_001\\input_compatibility\\run_comparison.py",
+      "sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a",
+      "bytes": 18791,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\run_comparison.py",
+      "preserved_sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a"
+    },
+    "finalize_outputs.py": {
+      "path": "testB\\round_001\\input_compatibility\\finalize_outputs.py",
+      "sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee",
+      "bytes": 10164,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\finalize_outputs.py",
+      "preserved_sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee"
+    },
+    "csv_identity.csv": {
+      "path": "testB\\round_001\\input_compatibility\\csv_identity.csv",
+      "sha256": "7f5e4ba8f502140fbcdd1f321e3368664582adffd05f25c201e9a1b849439714",
+      "bytes": 10988,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\csv_identity.csv",
+      "preserved_sha256": "7f5e4ba8f502140fbcdd1f321e3368664582adffd05f25c201e9a1b849439714"
+    },
+    "workbook_comparison.json": {
+      "path": "testB\\round_001\\input_compatibility\\workbook_comparison.json",
+      "sha256": "efdf4b33cc205b61b20dfc87b608c1dab95ac883d2d646fe89b52bf049ac5570",
+      "bytes": 35050422,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\workbook_comparison.json",
+      "preserved_sha256": "efdf4b33cc205b61b20dfc87b608c1dab95ac883d2d646fe89b52bf049ac5570"
+    }
+  },
+  "previous_manifest_sha256": "80b61b3e1aa4048ab97fa426f8168cc67503435c2c0a98f14c3b223b3f0dd04e",
+  "previous_summary_sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507",
+  "previous_report_sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868",
+  "archive_unchanged_evidence_reused_from_original_run": {
+    "sha256_before": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
+    "sha256_after": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
+    "unchanged": true
+  },
+  "large_input_rehash_performed": false,
+  "old_input_content_hash_match_count": 14,
+  "old_input_metadata_match_count": 14,
+  "id_set_intersections": {
+    "테스트A": {
+      "old_count": 100,
+      "new_count": 100,
+      "old_unique_count": 100,
+      "new_unique_count": 100,
+      "intersection_count": 2,
+      "intersection_denominator": 100,
+      "intersection_ids": [
+        "31701703",
+        "36313187"
+      ],
+      "old_only_count": 98,
+      "new_only_count": 98,
+      "old_sequence_first_10": [
+        "31004809",
+        "36103772",
+        "36305438",
+        "36016241",
+        "36315982",
+        "32300358",
+        "32000047",
+        "36007200",
+        "31704012",
+        "33300046"
+      ],
+      "new_sequence_first_10": [
+        "36111894",
+        "36112256",
+        "36001376",
+        "31011023",
+        "31004911",
+        "36306212",
+        "36004634",
+        "36102984",
+        "32400280",
+        "36303527"
+      ]
+    },
+    "테스트B": {
+      "old_count": 100,
+      "new_count": 100,
+      "old_unique_count": 100,
+      "new_unique_count": 100,
+      "intersection_count": 0,
+      "intersection_denominator": 100,
+      "intersection_ids": [],
+      "old_only_count": 100,
+      "new_only_count": 100,
+      "old_sequence_first_10": [
+        "36002735",
+        "36005492",
+        "32300334",
+        "31000819",
+        "36005589",
+        "36114163",
+        "31000235",
+        "36306238",
+        "34200080",
+        "31704145"
+      ],
+      "new_sequence_first_10": [
+        "34400012",
+        "36201616",
+        "36005234",
+        "36115656",
+        "32200379",
+        "36310482",
+        "31003008",
+        "36010195",
+        "31000380",
+        "36002764"
+      ]
+    }
+  },
+  "legacy100_new_target_use": {
+    "scores_usable_for_new_target": false,
+    "predictions_usable_for_new_target": false,
+    "new_actual_predictions_created": false,
+    "reason": "Legacy100 IDs differ from the new target; Test B set intersection is 0/100 and Test A set intersection is 2/100. Old-target scores/predictions are not valid new-target outputs."
+  },
+  "runtime_receipt": {
+    "path": "testB\\round_001\\integration\\runtime_receipts\\W0_start.json",
+    "sha256": "064c6eeb8e44920ca5e47f6d53c919d90e8e09c5f77ca73aa4c4c668d90056aa",
+    "dispatchId": "ctx_39f0545dfa0b",
+    "taskId": "task_f483f7eb585c",
+    "runId": "run_131763108c81",
+    "state": "ready",
+    "agent": "codex",
+    "model_observed_at_launch": "gpt-6-luna",
+    "effort_observed_at_launch": "xhigh",
+    "receipt_model": "gpt-6-luna",
+    "receipt_effort": "xhigh",
+    "provider_internal_execution_details": "unknown; the Orca launch receipt records the requested/launch-observed model and effort, not a provider-internal attestation"
   },
   "artifacts": [
     {
+      "path": "testB\\round_001\\input_compatibility\\__pycache__\\finalize_outputs.cpython-313.pyc",
+      "bytes": 16998,
+      "sha256": "35c1ce4353521a14e16590f3be4edd1cd7bd68626ba33b0272425863cf849bbe"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\__pycache__\\sync_metadata_correction.cpython-313.pyc",
+      "bytes": 8005,
+      "sha256": "a073bbbdf5b0940ac5331436ba0805ecf8bb5b9fa77b766b6bb70d8eeb831f1f"
+    },
+    {
       "path": "testB\\round_001\\input_compatibility\\comparison_report.md",
-      "bytes": 6625,
-      "sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868"
+      "bytes": 8299,
+      "sha256": "e166f08af057cb1337de5822b84684d8f824412301620bf7746549f248e4a5a5"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\correction_exit_status.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\correction_finished_utc.txt",
+      "bytes": 33,
+      "sha256": "6873fbc841e872945db975807b3230fd34affcf5a37d4f464ead7be2545e25c5"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\correction_started_utc.txt",
+      "bytes": 33,
+      "sha256": "355ff387ba8141b76f93cb3471517fd37b1ccc2e50f0684735ed1a5b56ce6184"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\correction_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\correction_stdout.log",
+      "bytes": 626,
+      "sha256": "6aefa69ad2747d8043782fb312b1ba6dd0c7eee1b40a2b7131e35b5943076d6e"
     },
     {
       "path": "testB\\round_001\\input_compatibility\\csv_identity.csv",
@@ -287,9 +241,69 @@
       "sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee"
     },
     {
+      "path": "testB\\round_001\\input_compatibility\\finalizer_exit_status.txt",
+      "bytes": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\finalizer_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\finalizer_stdout.log",
+      "bytes": 698,
+      "sha256": "98ae6121de855b527b6f1d12c4639db45e7a809a1f076c25a35fe4c557993b4b"
+    },
+    {
       "path": "testB\\round_001\\input_compatibility\\finished_utc.txt",
       "bytes": 33,
       "sha256": "a481b3bea71a099b25f74c1a147d7f803c663bffe198649e2e4f26ceaa109474"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\metadata_correction.py",
+      "bytes": 8660,
+      "sha256": "7ba77842f87b5c6abb5ff7253a27261fe934f629ae598e544daaab9351cf02ff"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\metadata_correction_log.json",
+      "bytes": 50841,
+      "sha256": "982aae7c039b3c32da43f32a19dc9b7fa33292b2c8baea719772a28f8cf6c170"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\comparison_report.md",
+      "bytes": 6625,
+      "sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\csv_identity.csv",
+      "bytes": 10988,
+      "sha256": "7f5e4ba8f502140fbcdd1f321e3368664582adffd05f25c201e9a1b849439714"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\finalize_outputs.py",
+      "bytes": 10164,
+      "sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\lineage.json",
+      "bytes": 2998,
+      "sha256": "525ac3de6a7ead8f485bb0206522e724c5fae41d9c4e097629c2bb566f6843ce"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\run_comparison.py",
+      "bytes": 18791,
+      "sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\summary.json",
+      "bytes": 42834,
+      "sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\workbook_comparison.json",
+      "bytes": 35050422,
+      "sha256": "efdf4b33cc205b61b20dfc87b608c1dab95ac883d2d646fe89b52bf049ac5570"
     },
     {
       "path": "testB\\round_001\\input_compatibility\\run_comparison.py",
@@ -313,8 +327,13 @@
     },
     {
       "path": "testB\\round_001\\input_compatibility\\summary.json",
-      "bytes": 42834,
-      "sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507"
+      "bytes": 53722,
+      "sha256": "282d09e78f26357ed23b5b2d96bcd92bac3bd5fc0dcc78ef11c7c6b3c21f7ff5"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\sync_metadata_correction.py",
+      "bytes": 4974,
+      "sha256": "9adeeea2a1a197d00fc4d2a6835d47fff1e77a196ae835c31eb24dece0e7a01f"
     },
     {
       "path": "testB\\round_001\\input_compatibility\\workbook_cell_differences.csv",

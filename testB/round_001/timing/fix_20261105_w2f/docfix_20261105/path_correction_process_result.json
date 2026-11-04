@@ -1,0 +1,10 @@
+﻿{
+    "actual_exit_code":  0,
+    "stdout":  "path_correction_stdout.log",
+    "stderr":  "path_correction_stderr.log",
+    "changed_path":  "testB/round_001/timing/readiness_report.md",
+    "updated_hash_paths":  [
+                               "testB/round_001/timing/summary.json",
+                               "testB/round_001/timing/code_lineage.json"
+                           ]
+}

@@ -1,0 +1,16 @@
+{
+  "started_at": "2026-11-05T03:05:58.7960778+09:00",
+  "ended_at": "2026-11-05T03:05:59.2784007+09:00",
+  "argv": [
+    "python",
+    "-B",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\timing_interface.py"
+  ],
+  "exit_code": 0,
+  "stdout": "stdout.log",
+  "stderr": "stderr.log",
+  "code_sha256_before": "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d",
+  "code_sha256_after": "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d",
+  "checks": 14,
+  "scope": "Synthetic timing interface cases only; no real scores, events, actual B/C, threshold fitting, or performance evaluation"
+}

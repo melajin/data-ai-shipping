@@ -6,7 +6,13 @@
     "role": "independent source reviewer",
     "requested_model": "gpt-6-luna",
     "requested_effort": "xhigh",
-    "host_turn_context": "not independently available in this child review; no host model/effort claim"
+    "host_turn_context": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+      "evidence_file": "rounds/round_006/manager/assistant_host_evidence.json",
+      "interpretation": "host configuration evidence, not internal model authentication"
+    }
   },
   "reviewed_scope": {
     "round_plan": "rounds/round_006/ROUND_PLAN.md",

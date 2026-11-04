@@ -294,8 +294,14 @@
       "comparison_bytes": 669416109,
       "post_bytes": 669416109,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 669416109, 'mtime_ns': 1790557016000000000, 'mtime_utc': '2026-09-28T00:56:56+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 669416109, 'mtime_ns': 1790557016000000000, 'mtime_utc': '2026-09-28T00:56:56+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 669416109,
+        "mtime_ns": 1790557016000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 669416109,
+        "mtime_ns": 1790557016000000000
+      },
       "metadata_before_posthash": {
         "bytes": 669416109,
         "mtime_ns": 1790557016000000000
@@ -304,7 +310,27 @@
         "bytes": 669416109,
         "mtime_ns": 1790557016000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 669416109, 'mtime_ns': 1790557016000000000, 'mtime_utc': '2026-09-28T00:56:56+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 669416109, 'mtime_ns': 1790557016000000000, 'mtime_utc': '2026-09-28T00:56:56+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 669416109,
+          "mtime_ns": 1790557016000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 669416109,
+          "mtime_ns": 1790557016000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv",
@@ -313,8 +339,14 @@
       "comparison_bytes": 635512252,
       "post_bytes": 635512252,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 635512252, 'mtime_ns': 1789435710000000000, 'mtime_utc': '2026-09-15T01:28:30+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 635512252, 'mtime_ns': 1789435710000000000, 'mtime_utc': '2026-09-15T01:28:30+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 635512252,
+        "mtime_ns": 1789435710000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 635512252,
+        "mtime_ns": 1789435710000000000
+      },
       "metadata_before_posthash": {
         "bytes": 635512252,
         "mtime_ns": 1789435710000000000
@@ -323,7 +355,27 @@
         "bytes": 635512252,
         "mtime_ns": 1789435710000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 635512252, 'mtime_ns': 1789435710000000000, 'mtime_utc': '2026-09-15T01:28:30+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 635512252, 'mtime_ns': 1789435710000000000, 'mtime_utc': '2026-09-15T01:28:30+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 635512252,
+          "mtime_ns": 1789435710000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 635512252,
+          "mtime_ns": 1789435710000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv",
@@ -332,8 +384,14 @@
       "comparison_bytes": 987693693,
       "post_bytes": 987693693,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 987693693, 'mtime_ns': 1789435864000000000, 'mtime_utc': '2026-09-15T01:31:04+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 987693693, 'mtime_ns': 1789435864000000000, 'mtime_utc': '2026-09-15T01:31:04+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 987693693,
+        "mtime_ns": 1789435864000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 987693693,
+        "mtime_ns": 1789435864000000000
+      },
       "metadata_before_posthash": {
         "bytes": 987693693,
         "mtime_ns": 1789435864000000000
@@ -342,7 +400,27 @@
         "bytes": 987693693,
         "mtime_ns": 1789435864000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 987693693, 'mtime_ns': 1789435864000000000, 'mtime_utc': '2026-09-15T01:31:04+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 987693693, 'mtime_ns': 1789435864000000000, 'mtime_utc': '2026-09-15T01:31:04+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 987693693,
+          "mtime_ns": 1789435864000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 987693693,
+          "mtime_ns": 1789435864000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv",
@@ -351,8 +429,14 @@
       "comparison_bytes": 1113299125,
       "post_bytes": 1113299125,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1113299125, 'mtime_ns': 1790584040000000000, 'mtime_utc': '2026-09-28T08:27:20+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1113299125, 'mtime_ns': 1790584040000000000, 'mtime_utc': '2026-09-28T08:27:20+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 1113299125,
+        "mtime_ns": 1790584040000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 1113299125,
+        "mtime_ns": 1790584040000000000
+      },
       "metadata_before_posthash": {
         "bytes": 1113299125,
         "mtime_ns": 1790584040000000000
@@ -361,7 +445,27 @@
         "bytes": 1113299125,
         "mtime_ns": 1790584040000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1113299125, 'mtime_ns': 1790584040000000000, 'mtime_utc': '2026-09-28T08:27:20+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1113299125, 'mtime_ns': 1790584040000000000, 'mtime_utc': '2026-09-28T08:27:20+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 1113299125,
+          "mtime_ns": 1790584040000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 1113299125,
+          "mtime_ns": 1790584040000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv",
@@ -370,8 +474,14 @@
       "comparison_bytes": 1201889964,
       "post_bytes": 1201889964,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1201889964, 'mtime_ns': 1789436196000000000, 'mtime_utc': '2026-09-15T01:36:36+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1201889964, 'mtime_ns': 1789436196000000000, 'mtime_utc': '2026-09-15T01:36:36+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 1201889964,
+        "mtime_ns": 1789436196000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 1201889964,
+        "mtime_ns": 1789436196000000000
+      },
       "metadata_before_posthash": {
         "bytes": 1201889964,
         "mtime_ns": 1789436196000000000
@@ -380,7 +490,27 @@
         "bytes": 1201889964,
         "mtime_ns": 1789436196000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1201889964, 'mtime_ns': 1789436196000000000, 'mtime_utc': '2026-09-15T01:36:36+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1201889964, 'mtime_ns': 1789436196000000000, 'mtime_utc': '2026-09-15T01:36:36+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 1201889964,
+          "mtime_ns": 1789436196000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 1201889964,
+          "mtime_ns": 1789436196000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv",
@@ -389,8 +519,14 @@
       "comparison_bytes": 1255966524,
       "post_bytes": 1255966524,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1255966524, 'mtime_ns': 1789436342000000000, 'mtime_utc': '2026-09-15T01:39:02+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1255966524, 'mtime_ns': 1789436342000000000, 'mtime_utc': '2026-09-15T01:39:02+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 1255966524,
+        "mtime_ns": 1789436342000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 1255966524,
+        "mtime_ns": 1789436342000000000
+      },
       "metadata_before_posthash": {
         "bytes": 1255966524,
         "mtime_ns": 1789436342000000000
@@ -399,7 +535,27 @@
         "bytes": 1255966524,
         "mtime_ns": 1789436342000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1255966524, 'mtime_ns': 1789436342000000000, 'mtime_utc': '2026-09-15T01:39:02+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\vpass_26년(1월_6월) 데이터\\\\vpass_1월_6월 데이터\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1255966524, 'mtime_ns': 1789436342000000000, 'mtime_utc': '2026-09-15T01:39:02+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 1255966524,
+          "mtime_ns": 1789436342000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 1255966524,
+          "mtime_ns": 1789436342000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
@@ -408,8 +564,14 @@
       "comparison_bytes": 1032427516,
       "post_bytes": 1032427516,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 1032427516, 'mtime_ns': 1793019126000000000, 'mtime_utc': '2026-10-26T12:52:06+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 1032427516, 'mtime_ns': 1793019126000000000, 'mtime_utc': '2026-10-26T12:52:06+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 1032427516,
+        "mtime_ns": 1793019126000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 1032427516,
+        "mtime_ns": 1793019126000000000
+      },
       "metadata_before_posthash": {
         "bytes": 1032427516,
         "mtime_ns": 1793019126000000000
@@ -418,7 +580,27 @@
         "bytes": 1032427516,
         "mtime_ns": 1793019126000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 1032427516, 'mtime_ns': 1793019126000000000, 'mtime_utc': '2026-10-26T12:52:06+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_1월 데이터.csv', 'exists': True, 'bytes': 1032427516, 'mtime_ns': 1793019126000000000, 'mtime_utc': '2026-10-26T12:52:06+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 1032427516,
+          "mtime_ns": 1793019126000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 1032427516,
+          "mtime_ns": 1793019126000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv",
@@ -427,8 +609,14 @@
       "comparison_bytes": 795028305,
       "post_bytes": 795028305,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 795028305, 'mtime_ns': 1793019136000000000, 'mtime_utc': '2026-10-26T12:52:16+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 795028305, 'mtime_ns': 1793019136000000000, 'mtime_utc': '2026-10-26T12:52:16+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 795028305,
+        "mtime_ns": 1793019136000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 795028305,
+        "mtime_ns": 1793019136000000000
+      },
       "metadata_before_posthash": {
         "bytes": 795028305,
         "mtime_ns": 1793019136000000000
@@ -437,7 +625,27 @@
         "bytes": 795028305,
         "mtime_ns": 1793019136000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 795028305, 'mtime_ns': 1793019136000000000, 'mtime_utc': '2026-10-26T12:52:16+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_2월 데이터.csv', 'exists': True, 'bytes': 795028305, 'mtime_ns': 1793019136000000000, 'mtime_utc': '2026-10-26T12:52:16+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 795028305,
+          "mtime_ns": 1793019136000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 795028305,
+          "mtime_ns": 1793019136000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv",
@@ -446,8 +654,14 @@
       "comparison_bytes": 1115652054,
       "post_bytes": 1115652054,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 1115652054, 'mtime_ns': 1793019154000000000, 'mtime_utc': '2026-10-26T12:52:34+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 1115652054, 'mtime_ns': 1793019154000000000, 'mtime_utc': '2026-10-26T12:52:34+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 1115652054,
+        "mtime_ns": 1793019154000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 1115652054,
+        "mtime_ns": 1793019154000000000
+      },
       "metadata_before_posthash": {
         "bytes": 1115652054,
         "mtime_ns": 1793019154000000000
@@ -456,7 +670,27 @@
         "bytes": 1115652054,
         "mtime_ns": 1793019154000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 1115652054, 'mtime_ns': 1793019154000000000, 'mtime_utc': '2026-10-26T12:52:34+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_3월 데이터.csv', 'exists': True, 'bytes': 1115652054, 'mtime_ns': 1793019154000000000, 'mtime_utc': '2026-10-26T12:52:34+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 1115652054,
+          "mtime_ns": 1793019154000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 1115652054,
+          "mtime_ns": 1793019154000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv",
@@ -465,8 +699,14 @@
       "comparison_bytes": 1339299305,
       "post_bytes": 1339299305,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1339299305, 'mtime_ns': 1793019172000000000, 'mtime_utc': '2026-10-26T12:52:52+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1339299305, 'mtime_ns': 1793019172000000000, 'mtime_utc': '2026-10-26T12:52:52+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 1339299305,
+        "mtime_ns": 1793019172000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 1339299305,
+        "mtime_ns": 1793019172000000000
+      },
       "metadata_before_posthash": {
         "bytes": 1339299305,
         "mtime_ns": 1793019172000000000
@@ -475,7 +715,27 @@
         "bytes": 1339299305,
         "mtime_ns": 1793019172000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1339299305, 'mtime_ns': 1793019172000000000, 'mtime_utc': '2026-10-26T12:52:52+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_4월 데이터.csv', 'exists': True, 'bytes': 1339299305, 'mtime_ns': 1793019172000000000, 'mtime_utc': '2026-10-26T12:52:52+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 1339299305,
+          "mtime_ns": 1793019172000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 1339299305,
+          "mtime_ns": 1793019172000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv",
@@ -484,8 +744,14 @@
       "comparison_bytes": 1581199983,
       "post_bytes": 1581199983,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1581199983, 'mtime_ns': 1793019196000000000, 'mtime_utc': '2026-10-26T12:53:16+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1581199983, 'mtime_ns': 1793019196000000000, 'mtime_utc': '2026-10-26T12:53:16+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 1581199983,
+        "mtime_ns": 1793019196000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 1581199983,
+        "mtime_ns": 1793019196000000000
+      },
       "metadata_before_posthash": {
         "bytes": 1581199983,
         "mtime_ns": 1793019196000000000
@@ -494,7 +760,27 @@
         "bytes": 1581199983,
         "mtime_ns": 1793019196000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1581199983, 'mtime_ns': 1793019196000000000, 'mtime_utc': '2026-10-26T12:53:16+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_5월 데이터.csv', 'exists': True, 'bytes': 1581199983, 'mtime_ns': 1793019196000000000, 'mtime_utc': '2026-10-26T12:53:16+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 1581199983,
+          "mtime_ns": 1793019196000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 1581199983,
+          "mtime_ns": 1793019196000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv",
@@ -503,8 +789,14 @@
       "comparison_bytes": 1621873318,
       "post_bytes": 1621873318,
       "comparison_hash_matches_post": true,
-      "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1621873318, 'mtime_ns': 1793019218000000000, 'mtime_utc': '2026-10-26T12:53:38+00:00'}",
-      "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1621873318, 'mtime_ns': 1793019218000000000, 'mtime_utc': '2026-10-26T12:53:38+00:00'}",
+      "metadata_before_comparison": {
+        "bytes": 1621873318,
+        "mtime_ns": 1793019218000000000
+      },
+      "metadata_after_comparison": {
+        "bytes": 1621873318,
+        "mtime_ns": 1793019218000000000
+      },
       "metadata_before_posthash": {
         "bytes": 1621873318,
         "mtime_ns": 1793019218000000000
@@ -513,29 +805,111 @@
         "bytes": 1621873318,
         "mtime_ns": 1793019218000000000
       },
-      "metadata_unchanged_through_posthash": false
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1621873318, 'mtime_ns': 1793019218000000000, 'mtime_utc': '2026-10-26T12:53:38+00:00'}",
+        "metadata_after_comparison": "{'path': 'F:\\\\문제 데이터_수정_1027\\\\테스트셋 및 결과제출 샘플\\\\테스트셋\\\\vpass_6월 데이터.csv', 'exists': True, 'bytes': 1621873318, 'mtime_ns': 1793019218000000000, 'mtime_utc': '2026-10-26T12:53:38+00:00'}",
+        "metadata_before_posthash": {
+          "bytes": 1621873318,
+          "mtime_ns": 1793019218000000000
+        },
+        "metadata_after_posthash": {
+          "bytes": 1621873318,
+          "mtime_ns": 1793019218000000000
+        },
+        "post_metadata": "<absent>",
+        "metadata_unchanged_through_posthash": false
+      },
+      "legacy_false_was_type_mismatch": true
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
       "comparison_sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a",
       "post_sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a",
-      "comparison_hash_matches_post": true,
+      "comparison_bytes": null,
       "post_bytes": 28759,
-      "post_metadata": {
+      "comparison_hash_matches_post": true,
+      "metadata_before_comparison": {
         "bytes": 28759,
         "mtime_ns": 1789133150000000000
-      }
+      },
+      "metadata_after_comparison": {
+        "bytes": 28759,
+        "mtime_ns": 1789133150000000000
+      },
+      "metadata_before_posthash": {
+        "bytes": 28759,
+        "mtime_ns": 1789133150000000000
+      },
+      "metadata_after_posthash": {
+        "bytes": 28759,
+        "mtime_ns": 1789133150000000000
+      },
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "<absent>",
+        "metadata_after_comparison": "<absent>",
+        "metadata_before_posthash": "<absent>",
+        "metadata_after_posthash": "<absent>",
+        "post_metadata": {
+          "bytes": 28759,
+          "mtime_ns": 1789133150000000000
+        },
+        "metadata_unchanged_through_posthash": "<absent>"
+      },
+      "legacy_false_was_type_mismatch": false
     },
     {
       "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx",
       "comparison_sha256": "b698b87e15bed61436da318c9477c6ac7e5a58b6412aa3414e75ce50f1b6039f",
       "post_sha256": "b698b87e15bed61436da318c9477c6ac7e5a58b6412aa3414e75ce50f1b6039f",
-      "comparison_hash_matches_post": true,
+      "comparison_bytes": null,
       "post_bytes": 12829,
-      "post_metadata": {
+      "comparison_hash_matches_post": true,
+      "metadata_before_comparison": {
         "bytes": 12829,
         "mtime_ns": 1793083378000000000
-      }
+      },
+      "metadata_after_comparison": {
+        "bytes": 12829,
+        "mtime_ns": 1793083378000000000
+      },
+      "metadata_before_posthash": {
+        "bytes": 12829,
+        "mtime_ns": 1793083378000000000
+      },
+      "metadata_after_posthash": {
+        "bytes": 12829,
+        "mtime_ns": 1793083378000000000
+      },
+      "metadata_fields_compared": [
+        "bytes",
+        "mtime_ns"
+      ],
+      "metadata_unchanged_through_posthash": true,
+      "posthash_metadata_basis": "recorded before/after fields when available; otherwise structured comparison metadata plus legacy post_metadata",
+      "legacy_raw_fields": {
+        "metadata_before_comparison": "<absent>",
+        "metadata_after_comparison": "<absent>",
+        "metadata_before_posthash": "<absent>",
+        "metadata_after_posthash": "<absent>",
+        "post_metadata": {
+          "bytes": 12829,
+          "mtime_ns": 1793083378000000000
+        },
+        "metadata_unchanged_through_posthash": "<absent>"
+      },
+      "legacy_false_was_type_mismatch": false
     }
   ],
   "old_inputs_posthash_all_match": true,
@@ -544,211 +918,17 @@
     "테스트A": {
       "old_count": 100,
       "new_count": 100,
-      "sequence_equal": false,
-      "common_unique_count": 2,
       "old_unique_count": 100,
       "new_unique_count": 100,
-      "old_unique_not_new": [
-        "31000097",
-        "31003409",
-        "31003433",
-        "31003931",
-        "31004138",
-        "31004809",
-        "31005675",
-        "31006342",
-        "31006629",
-        "31006634",
-        "31007743",
-        "31008702",
-        "31008976",
-        "31012678",
-        "31014683",
-        "31015010",
-        "31015548",
-        "31703622",
-        "31704012",
-        "31704111",
-        "31705325",
-        "31815797",
-        "32000047",
-        "32100061",
-        "32100391",
-        "32100494",
-        "32200445",
-        "32200520",
-        "32200565",
-        "32300202",
-        "32300358",
-        "32300884",
-        "33100162",
-        "33200628",
-        "33200742",
-        "33300046",
-        "34100080",
-        "34200005",
-        "34200747",
-        "34300122",
-        "36002828",
-        "36005559",
-        "36006700",
-        "36006979",
-        "36007200",
-        "36007500",
-        "36007738",
-        "36008093",
-        "36009183",
-        "36009261",
-        "36010195",
-        "36010232",
-        "36010827",
-        "36011966",
-        "36012028",
-        "36012840",
-        "36013351",
-        "36013420",
-        "36014044",
-        "36014579",
-        "36014616",
-        "36015072",
-        "36015246",
-        "36015271",
-        "36016241",
-        "36016323",
-        "36101785",
-        "36103406",
-        "36103772",
-        "36104778",
-        "36105797",
-        "36105932",
-        "36106175",
-        "36108034",
-        "36108052",
-        "36108322",
-        "36108763",
-        "36110482",
-        "36114223",
-        "36115199",
-        "36200495",
-        "36201662",
-        "36212289",
-        "36301565",
-        "36302591",
-        "36302798",
-        "36304270",
-        "36304650",
-        "36305438",
-        "36306740",
-        "36306853",
-        "36307375",
-        "36307589",
-        "36310603",
-        "36311865",
-        "36312224",
-        "36312450",
-        "36315982"
+      "intersection_count": 2,
+      "intersection_denominator": 100,
+      "intersection_ids": [
+        "31701703",
+        "36313187"
       ],
-      "new_unique_not_old": [
-        "31000037",
-        "31001084",
-        "31001478",
-        "31002733",
-        "31004142",
-        "31004911",
-        "31006052",
-        "31008455",
-        "31009358",
-        "31009972",
-        "31010307",
-        "31010366",
-        "31011023",
-        "31011137",
-        "31014772",
-        "31014934",
-        "31015321",
-        "31015596",
-        "31015984",
-        "31100246",
-        "31600045",
-        "31703285",
-        "31815261",
-        "32100400",
-        "32100443",
-        "32100678",
-        "32200532",
-        "32300258",
-        "32300583",
-        "32400280",
-        "33200812",
-        "33201484",
-        "33300310",
-        "35100026",
-        "35100035",
-        "35200172",
-        "35200661",
-        "36000087",
-        "36000389",
-        "36000408",
-        "36001221",
-        "36001376",
-        "36001959",
-        "36002097",
-        "36004634",
-        "36004927",
-        "36005762",
-        "36005986",
-        "36006024",
-        "36006637",
-        "36007865",
-        "36008076",
-        "36008096",
-        "36009463",
-        "36009546",
-        "36012880",
-        "36013801",
-        "36014760",
-        "36015107",
-        "36016225",
-        "36101530",
-        "36102213",
-        "36102949",
-        "36102984",
-        "36103084",
-        "36103638",
-        "36104287",
-        "36105184",
-        "36105401",
-        "36105572",
-        "36105605",
-        "36105899",
-        "36106807",
-        "36108183",
-        "36109066",
-        "36111082",
-        "36111894",
-        "36112114",
-        "36112256",
-        "36112452",
-        "36301356",
-        "36301495",
-        "36301698",
-        "36303112",
-        "36303121",
-        "36303527",
-        "36303615",
-        "36304626",
-        "36305173",
-        "36305289",
-        "36305615",
-        "36306212",
-        "36306319",
-        "36306395",
-        "36306771",
-        "36311151",
-        "36313334",
-        "36316168"
-      ],
-      "old_first_10": [
+      "old_only_count": 98,
+      "new_only_count": 98,
+      "old_sequence_first_10": [
         "31004809",
         "36103772",
         "36305438",
@@ -760,7 +940,7 @@
         "31704012",
         "33300046"
       ],
-      "new_first_10": [
+      "new_sequence_first_10": [
         "36111894",
         "36112256",
         "36001376",
@@ -776,215 +956,14 @@
     "테스트B": {
       "old_count": 100,
       "new_count": 100,
-      "sequence_equal": false,
-      "common_unique_count": 0,
       "old_unique_count": 100,
       "new_unique_count": 100,
-      "old_unique_not_new": [
-        "31000235",
-        "31000661",
-        "31000819",
-        "31001563",
-        "31002826",
-        "31002855",
-        "31004167",
-        "31004187",
-        "31005291",
-        "31005499",
-        "31005562",
-        "31005582",
-        "31005952",
-        "31006088",
-        "31008219",
-        "31008791",
-        "31008979",
-        "31009404",
-        "31009671",
-        "31010852",
-        "31010902",
-        "31012029",
-        "31012054",
-        "31014048",
-        "31016322",
-        "31703405",
-        "31703475",
-        "31703636",
-        "31704145",
-        "31704555",
-        "31704592",
-        "31815784",
-        "32000074",
-        "32100254",
-        "32100474",
-        "32100653",
-        "32200651",
-        "32300294",
-        "32300334",
-        "33100297",
-        "33200404",
-        "33200669",
-        "33201229",
-        "33300233",
-        "33300361",
-        "33300424",
-        "34200080",
-        "34200204",
-        "34300130",
-        "34300297",
-        "34400695",
-        "35100661",
-        "35200158",
-        "36000061",
-        "36000607",
-        "36000725",
-        "36000782",
-        "36001691",
-        "36001918",
-        "36002171",
-        "36002253",
-        "36002735",
-        "36003068",
-        "36003185",
-        "36003490",
-        "36004232",
-        "36004877",
-        "36005492",
-        "36005589",
-        "36006496",
-        "36006783",
-        "36009028",
-        "36009052",
-        "36011008",
-        "36011906",
-        "36013619",
-        "36013876",
-        "36101468",
-        "36102207",
-        "36104007",
-        "36104742",
-        "36105249",
-        "36105490",
-        "36105669",
-        "36105790",
-        "36106221",
-        "36107827",
-        "36111415",
-        "36114163",
-        "36114555",
-        "36301359",
-        "36302091",
-        "36305703",
-        "36306238",
-        "36306399",
-        "36306699",
-        "36313157",
-        "36313961",
-        "36315368",
-        "36315391"
-      ],
-      "new_unique_not_old": [
-        "31000245",
-        "31000380",
-        "31001774",
-        "31002934",
-        "31003008",
-        "31003191",
-        "31004023",
-        "31004138",
-        "31004809",
-        "31005675",
-        "31005921",
-        "31006665",
-        "31007091",
-        "31007149",
-        "31007829",
-        "31008938",
-        "31010081",
-        "31010758",
-        "31010956",
-        "31011498",
-        "31011905",
-        "31012428",
-        "31014234",
-        "31016034",
-        "31703674",
-        "31704203",
-        "31704332",
-        "31704696",
-        "31704919",
-        "32000047",
-        "32100061",
-        "32100391",
-        "32200379",
-        "32200520",
-        "32200526",
-        "32300037",
-        "32300322",
-        "32300727",
-        "34200362",
-        "34400012",
-        "34400272",
-        "36002764",
-        "36003566",
-        "36005234",
-        "36005726",
-        "36007075",
-        "36007752",
-        "36007970",
-        "36008161",
-        "36008682",
-        "36009646",
-        "36010032",
-        "36010075",
-        "36010195",
-        "36010232",
-        "36010827",
-        "36011779",
-        "36011872",
-        "36012241",
-        "36012931",
-        "36013212",
-        "36013653",
-        "36014044",
-        "36015072",
-        "36100773",
-        "36101003",
-        "36101167",
-        "36101508",
-        "36102355",
-        "36102374",
-        "36102485",
-        "36102781",
-        "36103745",
-        "36104049",
-        "36107747",
-        "36107971",
-        "36108036",
-        "36110059",
-        "36110968",
-        "36111087",
-        "36112240",
-        "36112405",
-        "36113223",
-        "36113881",
-        "36114519",
-        "36115199",
-        "36115632",
-        "36115656",
-        "36201616",
-        "36204924",
-        "36300654",
-        "36301350",
-        "36301648",
-        "36303153",
-        "36305148",
-        "36305381",
-        "36305906",
-        "36307165",
-        "36310482",
-        "36313688"
-      ],
-      "old_first_10": [
+      "intersection_count": 0,
+      "intersection_denominator": 100,
+      "intersection_ids": [],
+      "old_only_count": 100,
+      "new_only_count": 100,
+      "old_sequence_first_10": [
         "36002735",
         "36005492",
         "32300334",
@@ -996,7 +975,7 @@
         "34200080",
         "31704145"
       ],
-      "new_first_10": [
+      "new_sequence_first_10": [
         "34400012",
         "36201616",
         "36005234",
@@ -1015,5 +994,114 @@
   "runner_started_utc": "2026-11-04T17:50:34.0045175Z",
   "runner_finished_utc": "2026-11-04T17:52:03.5621088Z",
   "runner_code_sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a",
-  "finalizer_code_sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee"
+  "finalizer_code_sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee",
+  "metadata_correction": {
+    "status": "corrected",
+    "type": "metadata field type normalization",
+    "corrected_utc": "2026-11-04T18:00:03.745251+00:00",
+    "raw_sources_preserved": true,
+    "preservation_directory": "testB\\round_001\\input_compatibility\\pre_metadata_fix",
+    "original_file_hashes": {
+      "summary.json": {
+        "path": "testB\\round_001\\input_compatibility\\summary.json",
+        "sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507",
+        "bytes": 42834,
+        "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\summary.json",
+        "preserved_sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507"
+      },
+      "manifest.json": {
+        "path": "testB\\round_001\\input_compatibility\\manifest.json",
+        "sha256": "80b61b3e1aa4048ab97fa426f8168cc67503435c2c0a98f14c3b223b3f0dd04e",
+        "bytes": 20424,
+        "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\manifest.json",
+        "preserved_sha256": "80b61b3e1aa4048ab97fa426f8168cc67503435c2c0a98f14c3b223b3f0dd04e"
+      },
+      "comparison_report.md": {
+        "path": "testB\\round_001\\input_compatibility\\comparison_report.md",
+        "sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868",
+        "bytes": 6625,
+        "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\comparison_report.md",
+        "preserved_sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868"
+      },
+      "run_comparison.py": {
+        "path": "testB\\round_001\\input_compatibility\\run_comparison.py",
+        "sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a",
+        "bytes": 18791,
+        "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\run_comparison.py",
+        "preserved_sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a"
+      },
+      "finalize_outputs.py": {
+        "path": "testB\\round_001\\input_compatibility\\finalize_outputs.py",
+        "sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee",
+        "bytes": 10164,
+        "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\finalize_outputs.py",
+        "preserved_sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee"
+      },
+      "csv_identity.csv": {
+        "path": "testB\\round_001\\input_compatibility\\csv_identity.csv",
+        "sha256": "7f5e4ba8f502140fbcdd1f321e3368664582adffd05f25c201e9a1b849439714",
+        "bytes": 10988,
+        "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\csv_identity.csv",
+        "preserved_sha256": "7f5e4ba8f502140fbcdd1f321e3368664582adffd05f25c201e9a1b849439714"
+      },
+      "workbook_comparison.json": {
+        "path": "testB\\round_001\\input_compatibility\\workbook_comparison.json",
+        "sha256": "efdf4b33cc205b61b20dfc87b608c1dab95ac883d2d646fe89b52bf049ac5570",
+        "bytes": 35050422,
+        "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\workbook_comparison.json",
+        "preserved_sha256": "efdf4b33cc205b61b20dfc87b608c1dab95ac883d2d646fe89b52bf049ac5570"
+      }
+    },
+    "reused_structured_summary_fields": [
+      "old_files_meta_before",
+      "old_files_meta_after"
+    ],
+    "rehashed_large_inputs": false,
+    "all_14_metadata_records_unchanged": true,
+    "all_14_content_hashes_match": true,
+    "execution": {
+      "started_utc": "2026-11-04T18:00:03.2597222Z",
+      "finished_utc": "2026-11-04T18:00:04.2438676Z",
+      "actual_exit_code": 0,
+      "code_sha256": "7ba77842f87b5c6abb5ff7253a27261fe934f629ae598e544daaab9351cf02ff",
+      "stdout_path": "testB/round_001/input_compatibility/correction_stdout.log",
+      "stderr_path": "testB/round_001/input_compatibility/correction_stderr.log",
+      "exit_path": "testB/round_001/input_compatibility/correction_exit_status.txt",
+      "runtime_receipt": {
+        "path": "testB\\round_001\\integration\\runtime_receipts\\W0_start.json",
+        "sha256": "064c6eeb8e44920ca5e47f6d53c919d90e8e09c5f77ca73aa4c4c668d90056aa",
+        "dispatchId": "ctx_39f0545dfa0b",
+        "taskId": "task_f483f7eb585c",
+        "runId": "run_131763108c81",
+        "state": "ready",
+        "agent": "codex",
+        "model_observed_at_launch": "gpt-6-luna",
+        "effort_observed_at_launch": "xhigh",
+        "receipt_model": "gpt-6-luna",
+        "receipt_effort": "xhigh",
+        "provider_internal_execution_details": "unknown; the Orca launch receipt records the requested/launch-observed model and effort, not a provider-internal attestation"
+      }
+    },
+    "sync_code_sha256": "9adeeea2a1a197d00fc4d2a6835d47fff1e77a196ae835c31eb24dece0e7a01f"
+  },
+  "legacy100_new_target_use": {
+    "scores_usable_for_new_target": false,
+    "predictions_usable_for_new_target": false,
+    "new_actual_predictions_created": false,
+    "reason": "Legacy100 IDs differ from the new target; Test B set intersection is 0/100 and Test A set intersection is 2/100. Old-target scores/predictions are not valid new-target outputs."
+  },
+  "orca_runtime_receipt": {
+    "path": "testB\\round_001\\integration\\runtime_receipts\\W0_start.json",
+    "sha256": "064c6eeb8e44920ca5e47f6d53c919d90e8e09c5f77ca73aa4c4c668d90056aa",
+    "dispatchId": "ctx_39f0545dfa0b",
+    "taskId": "task_f483f7eb585c",
+    "runId": "run_131763108c81",
+    "state": "ready",
+    "agent": "codex",
+    "model_observed_at_launch": "gpt-6-luna",
+    "effort_observed_at_launch": "xhigh",
+    "receipt_model": "gpt-6-luna",
+    "receipt_effort": "xhigh",
+    "provider_internal_execution_details": "unknown; the Orca launch receipt records the requested/launch-observed model and effort, not a provider-internal attestation"
+  }
 }

@@ -1,0 +1,13 @@
+﻿{
+    "exit_code":  2,
+    "observed_end":  "2026-11-05T03:06:04.4888723+09:00",
+    "argv":  [
+                 "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                 "-X",
+                 "utf8",
+                 "testB/round_001/audit/v2_id_recheck_001/run_v2_id_recheck.py"
+             ],
+    "stdout":  "stdout.log",
+    "stderr":  "stderr.log",
+    "script_sha256":  "dc66366a55f423605436f8a9acdc62f3823cad881d8d57cc14ae07a7b4de178c"
+}

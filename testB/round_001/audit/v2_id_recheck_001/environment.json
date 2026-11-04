@@ -1,0 +1,12 @@
+﻿{
+    "python_executable":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "python_version":  "Python 3.13.3",
+    "platform":  "Microsoft Windows 10.0.26300 ",
+    "end_time":  "2026-11-05T03:08:24.7722916+09:00",
+    "requested_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "preflight_available_ram_bytes":  4683182080,
+    "expected_pickle_peak_bytes":  209715200,
+    "expected_parquet_peak_bytes":  268435456,
+    "python_processes_at_preflight":  0
+}

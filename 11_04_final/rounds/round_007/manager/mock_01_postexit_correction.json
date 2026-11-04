@@ -1,0 +1,20 @@
+{
+  "checked_at_utc": "2026-11-04T18:20:54.380583+00:00",
+  "mock_test_stdout": "pure mock checks passed",
+  "exit_code": 0,
+  "raw_wrapper_status": "failed_or_stopped",
+  "raw_remaining": [
+    30588
+  ],
+  "original_receipt_preserved": true,
+  "os_cim_followup_pids_present": [],
+  "followup_checked_pids": [
+    20748,
+    30588
+  ],
+  "interpretation": "Pure mock assertions passed. Wrapper final remaining check counted exited root process kernel object retained by Popen handle; later OS process snapshot found neither PID. Not a failing adapter test or a running compute process.",
+  "fix": "Check WaitForSingleObject(handle,0)==WAIT_TIMEOUT before treating creation-matched process as alive; SYNCHRONIZE access added.",
+  "patched_wrapper_sha256": "2820871e8884a0fd642e550301154c16039d6c85c6168bda32cbf67340f3bee4",
+  "next_verification": "one final corrective mock02 after independent source review; max2 mock allowance",
+  "additional_termination": false
+}

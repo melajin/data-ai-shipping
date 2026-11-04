@@ -1,0 +1,8 @@
+﻿{
+    "checked_at":  "2026-11-05T03:05:58.7960778+09:00",
+    "free_memory_mib":  4621.5,
+    "total_visible_memory_mib":  14140.9,
+    "expected_peak_mib":  128,
+    "estimate_basis":  "Python standard library plus synthetic row lists; no data/cache load; actual peak not measured",
+    "concurrent_work":  "Unknown; no process inventory or memory-intensive job inspection performed"
+}

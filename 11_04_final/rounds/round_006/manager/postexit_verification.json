@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-11-04T17:58:42.011992+00:00",
+  "original_receipt_remaining": [
+    16792,
+    2716
+  ],
+  "owned_identities": {
+    "16792": 134382886679259894,
+    "26748": 134382886679135856,
+    "2716": 134382886679613168
+  },
+  "same_identity_remaining": [],
+  "recorded_pids_present_in_process_snapshot": [],
+  "additional_termination_performed": false,
+  "interpretation": "Original immediate post-taskkill receipt is preserved. This later identity and OS process-snapshot check confirms whether termination completed."
+}

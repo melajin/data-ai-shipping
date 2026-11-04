@@ -1,0 +1,12 @@
+﻿{
+    "actual_exit_code":  0,
+    "stdout":  "stdout.log",
+    "stderr":  "stderr.log",
+    "stdout_text":  "{\"exit_code\": 0, \"modified\": [\"testB/round_001/timing/readiness_report.md\", \"testB/round_001/timing/summary.json\", \"testB/round_001/timing/code_lineage.json\"], \"readiness_report_sha256_before\": \"94d7929b9c8494b43831294b196a56780cc7ef600ae1ac9ef7fb10c376733c66\", \"readiness_report_sha256_after\": \"5a4b02e22ac87a5433b1658a68ac7c4e16df1890076730a20c09a8e9187f5d6c\", \"code_lineage_sha256_after\": \"d8e05225e6ba59096c8e86e2f7cac0c7dd96148936148da25886d11dff6274f0\", \"summary_sha256_after\": \"329ce5443d9c3fcb651322eedf571ea74eefab413144e78184f5b4abff11ab76\", \"code_changed\": false, \"existing_checks_rerun\": false}",
+    "changed_paths":  [
+                          "testB/round_001/timing/readiness_report.md",
+                          "testB/round_001/timing/summary.json",
+                          "testB/round_001/timing/code_lineage.json"
+                      ],
+    "snapshot":  "testB/round_001/timing/fix_20261105_w2f/docfix_20261105/readiness_report.before.md"
+}

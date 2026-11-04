@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-11-04T17:57:38.740115+00:00",
+  "command": [
+    "C:\\Users\\dlehs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_006\\logs\\mock_01\\source\\test_validate_resolved_inference_state.py",
+    "-v"
+  ],
+  "source_sha256": "a4d10bba93f3fe07ea7188aba216c1211e13eba24cec334fc19d7b985d681505",
+  "test_sha256": "237edc8867af5e1684d8ba99bd3cfd7c8d8aa1404e3956ecabaa10ef32a010b5",
+  "timeout_seconds": 30,
+  "model_imports": false,
+  "checkpoint_loads": 0,
+  "scope": "diagnostic fake objects, not model inference",
+  "exit_code": 0,
+  "status": "PASS",
+  "elapsed_seconds": 0.6559999999990396,
+  "finished_utc": "2026-11-04T17:57:39.393064+00:00"
+}

@@ -1,0 +1,14 @@
+﻿{
+    "started_utc":  "2026-11-04T18:08:43.1132686Z",
+    "deadline_utc":  "2026-11-04T18:38:43.1132686Z",
+    "orca_session":  "codex_3f5d6e5d_c588_43a3_9279_40d5d4f4edd6",
+    "codex_thread":  "01a1a7bf-4318-7dd1-a306-96cb4a55cba4",
+    "incoming_sha256":  "3D3E5A5ED6A6D522F17496A1F966890D8F38FB2EBE748959D234FA91AF30B53F",
+    "accepted_receipt_session":  "codex_3f5d6e5d_c588_43a3_9279_40d5d4f4edd6",
+    "available_gib":  4.271514892578125,
+    "parallel_work":  "manager + code author + independent reviewer; source/text only",
+    "estimated_incremental_ram_gib":  0.2,
+    "estimate_basis":  "Small text/source reads; no torch imports or data arrays",
+    "model_request":  "gpt-6-astra",
+    "effort_request":  "high"
+}

@@ -55,3 +55,13 @@ All 12 pairs were byte-identical by SHA-256; total uncompressed bytes on each si
 - Finalizer SHA-256: `7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee`.
 - Runner stdout, stderr, actual exit code, and start/finish times are retained in this folder.
 - This is input compatibility evidence only; it does not verify cache lineage, application correctness, model performance, or hardware behavior.
+
+
+## Metadata and legacy-target correction
+
+The prior summary marked 12 CSV rows `metadata_unchanged_through_posthash=false` because CSV serialization turned the pre/post-comparison dictionaries into strings, while the posthash fields remained dictionaries. This was a type mismatch in the comparison, not evidence that an input file changed. The correction reuses structured `summary.json` `old_files_meta_before` / `old_files_meta_after` and compares normalized integer `bytes` and `mtime_ns` fields against the recorded posthash metadata. All 14 old exact-path files now agree across comparison and posthash metadata; all 14 recorded comparison SHA-256 values equal their posthash SHA-256 values. No 13 GB input was rehashed during this correction. The pre-correction summary, manifest, report, and code are preserved under `pre_metadata_fix/`; see `metadata_correction_log.json` for their hashes and the raw legacy fields.
+
+The old/new ID set intersection is **Test B: 0/100** and **Test A: 2/100**. Therefore legacy100 scores and predictions are unusable for the new target. No new actual predictions were generated.
+
+
+Correction execution: actual exit code **0**, UTC 2026-11-04T18:00:03.2597222Z to 2026-11-04T18:00:04.2438676Z; correction code SHA-256 `7ba77842f87b5c6abb5ff7253a27261fe934f629ae598e544daaab9351cf02ff`. Orca receipt `testB\round_001\integration\runtime_receipts\W0_start.json` (SHA-256 `064c6eeb8e44920ca5e47f6d53c919d90e8e09c5f77ca73aa4c4c668d90056aa`) records launch-observed model `gpt-6-luna` and effort `xhigh` for dispatch `ctx_39f0545dfa0b`. Provider-internal execution attestation is unknown; this is a launch receipt observation.

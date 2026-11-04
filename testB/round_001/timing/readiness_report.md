@@ -16,9 +16,9 @@
 
 ## A/B/C 인터페이스와 검증
 
-`timing_interface.py`는 명시적 매개변수만 받아 A peak, A와 같은 이상구간 B onset, 해당 구간에서의 C 지속 조건을 계산하는 순수 함수 스켈레톤이다. A를 정할 때는 원입력 순서를 유지하고 최대점 동점이면 처음 등장한 행을 선택한다(`idxmax` 의미); 시간순 정렬은 B/C 구간 탐색에만 쓴다. 시간 구간을 넘어 연결하지 않고 NaN은 구간을 끊으며, 중복 시각의 원행 ID는 보존하되 지속 시간이나 고유 시각 행수를 부풀리지 않는다. C가 통과하면 C=B, 실패하면 시각을 대체하지 않는다. CLI는 합성 자기검사만 지원하며 이 실행에서 실제자료 입력은 열지 않았다.
+`timing_interface.py` is a pure A/B/C selection skeleton with explicit parameters. A is the first maximum in original input order (`idxmax` semantics); time sorting is used only for B/C segment search. Hourly `max_gap_hours` must be in (0,1], so no missing hourly bin can be bridged. NaN splits a segment. Identical duplicate scores preserve source IDs and persistence counts unique timestamps; conflicting scores, including missing/valid conflicts, return `data_conflict / duplicate_timestamp_scores_conflict` with A/B/C blank. C=B on persistence pass. The positive score floor has unresolved accident-decision meaning. Checks are synthetic only.
 
-합성 검사 8종이 실제 종료코드 0으로 통과했다(경계 비교 gt/ge, 정렬 구간 탐색, 원입력순 동점 A가 시간순 최초와 다른 사례, 누락 간격 분절, NaN 분절, 중복시각 추적/지속시간, C=B, 점수 결측). 실행 로그와 환경·해시는 선행 legacy 경로 아래 보존되어 있으며 이 Round 산출물은 원 경로와 해시로 연결한다.
+The current interface passed 14 synthetic checks with actual exit code 0: the prior eight checks plus rejection of max_gap_hours >1, split at timestamps 0/2, acceptance of identical-score duplicates, rejection of conflicting duplicates with blank A/B/C, equivalent missing duplicates, and missing/valid conflict. Logs, environment, memory check, pre-change snapshot, and before/after code hashes are in timing/fix_20261105_w2f/. No actual data or performance evaluation was used.
 
 ## 감독자가 고정할 다음 조건
 
@@ -29,4 +29,4 @@
 5. 임계값 출처, 초과 경계, 최대 구간 간격, 지속 최소 행수·시간을 사전 고정한다.
 6. 전체 예측을 사고시각 열람 전에 동결하고, 공식 시간오차 F1 수식·6시간 경계를 확인한다.
 
-1103_v2는 부모가 intake 중이며 worker는 이를 읽거나 기존 자료와 비교하지 않았다. 모든 관찰은 legacy 자료에 한정된다.
+At the time of the original W2 preparation, 1103_v2 was still in the parent intake queue; this report therefore describes legacy inputs only. The latest direct comparison of the legacy and new rosters is documented in ../audit/v2_id_recheck_001/recheck_report.md. The 100-vessel table remains legacy-only; do not relabel its rows or transfer predictions.

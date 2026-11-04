@@ -1,0 +1,6 @@
+﻿{
+    "observed_at":  "2026-11-05T03:01:35.0525629+09:00",
+    "total_physical_bytes":  14827769856,
+    "available_physical_bytes":  4951564288,
+    "scope":  "supervisor resource snapshot only; operation-specific peak memory estimate required before heavy task"
+}

@@ -1,0 +1,18 @@
+{
+  "python_version": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "requested_model": "gpt-6-luna",
+  "requested_effort": "xhigh",
+  "runtime_receipt": "testB/round_001/integration/runtime_receipts/W2F_start.json",
+  "runtime_receipt_claim": "This dispatch start receipt reports gpt-6-luna/xhigh; provider-internal runtime is not independently observable",
+  "memory": {
+    "checked_at": "2026-11-05T03:05:58.7960778+09:00",
+    "free_memory_mib": 4621.5,
+    "total_visible_memory_mib": 14140.9,
+    "expected_peak_mib": 128,
+    "estimate_basis": "Python standard library plus synthetic row lists; no data/cache load; actual peak not measured",
+    "concurrent_work": "Unknown; no process inventory or memory-intensive job inspection performed"
+  },
+  "process_receipt": "testB/round_001/integration/runtime_receipts/W2F_process.json"
+}

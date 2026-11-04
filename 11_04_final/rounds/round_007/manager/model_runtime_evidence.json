@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-11-04T18:08:13.122Z",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "reasoning_effort": null,
+  "source": "C:/Users/dlehs/.codex/sessions/2026/11/05/rollout-2026-11-05T03-08-12-01a1a7bf-4318-7dd1-a306-96cb4a55cba4.jsonl",
+  "interpretation": "Host turn_context evidence, not internal model authentication",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "high",
+  "request_matches_host": true
+}

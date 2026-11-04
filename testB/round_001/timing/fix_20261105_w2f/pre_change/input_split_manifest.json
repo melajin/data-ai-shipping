@@ -1,0 +1,188 @@
+{
+  "manifest_version": "round001-timing-preparation-1.0",
+  "status": "preparation_only_pending_supervisor_gate",
+  "input_version": "legacy_inputs_only; 1103_v2_not_read_or_verified",
+  "sources": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\timing_interface.py",
+      "exists": true,
+      "size_bytes": 8520,
+      "sha256": "75d68d8001996da152198f444edde1aeb8ff546d63f26f808eb45e5dea3d6548"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\build_inherited_comparison.py",
+      "exists": true,
+      "size_bytes": 2420,
+      "sha256": "943f55bd38f8fe94de5331e2b7b1a98f34be3251478f1d9f51f31ece34b34065"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_preparation.py",
+      "exists": true,
+      "size_bytes": 3667,
+      "sha256": "8c1d077b52802c71ca04cfb25c7506e5c4be55d66755dd62d08ad5ae14155feb"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\process_result.json",
+      "exists": true,
+      "size_bytes": 4354,
+      "sha256": "56e1e572b96ab84e2ed6c91e1739d772bf30ca0a8a9028aff00a441d01917cd4"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\environment.json",
+      "exists": true,
+      "size_bytes": 693,
+      "sha256": "1f0de0ab5c3f760246b9f388adfe50a0473c64733295263133b496f494f9478c"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\synthetic_self_check.stdout.log",
+      "exists": true,
+      "size_bytes": 59,
+      "sha256": "e141403383224a69a7411e360abd915376524fa3c52ad109476bd35ceae08209"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\synthetic_self_check.stderr.log",
+      "exists": true,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\inherited_baseline_table.stdout.log",
+      "exists": true,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\inherited_baseline_table.stderr.log",
+      "exists": true,
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\comparison_readiness_100.csv",
+      "exists": true,
+      "size_bytes": 39978,
+      "sha256": "5e06a7c56b132ecdac291b0f967febb66b9faa53825147e5b5af2c64fa7721cb"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+      "exists": true,
+      "size_bytes": 39306,
+      "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\results\\work_008\\scores_meta.json",
+      "exists": true,
+      "size_bytes": 730,
+      "sha256": "9537192fa3340e4f014b64c588fbe5794bbcb5456a8cad7dab5a30e3caabff03"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\results\\work_008\\scored_rows.pkl",
+      "exists": true,
+      "size_bytes": 8095123,
+      "sha256": "c4037c10b932703473d4b554de6e0743cba224d4993db47ebfa3c1b8a923b9cd"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\results\\submission_20261101\\testB_submission.csv",
+      "exists": true,
+      "size_bytes": 6313,
+      "sha256": "59231d5975f23fd82c3ae14a4c830e054a121fb6ad497b43d1386734db67d59e"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\integration\\runtime_receipts\\W2_start.json",
+      "exists": true,
+      "size_bytes": 453,
+      "sha256": "db1965314f59779196d8f1e9c3efaa8372f27e7448a7dd933149dc3349583d12"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\integration\\runtime_receipts\\W2_process.json",
+      "exists": true,
+      "size_bytes": 88,
+      "sha256": "663a04879a75558e679600253ba241fd0e0ddc148e7c546c6c6a52f0fafc32ea"
+    }
+  ],
+  "score_contract": {
+    "score_direction": "higher is more anomalous; exploratory composite, not accident probability",
+    "score_formula": "nanmean(s_zone, s_change, s_gap); available components only; all-missing -> NaN; positive floor 1e-6",
+    "timing_input_required": [
+      "rfid_id",
+      "ts",
+      "score",
+      "source_row_id"
+    ],
+    "scoring_features_required_from_source": [
+      "rfid_id",
+      "part_dt",
+      "rfid_time",
+      "cen_lon",
+      "cen_lat",
+      "len_m",
+      "bbox_m",
+      "wkt_valid"
+    ],
+    "time_contract": "integer hour index; ts aligns with (part_dt, rfid_time); bins represent [hour start, next hour start); timezone conversion evidence not located",
+    "sort_contract": "sort per vessel by ts, then original stable row ordinal; preserve row ID; no coordinate-line joining",
+    "historical_cache": "2025 Test B only: 100 vessel keys, 82,626 rows, 16 columns; inherited A validated 100 vessels and eight compared output fields mismatch=0",
+    "2026_scores": "not present in identified work_008 cache; do not assume generated",
+    "source_row_trace": "current timing interface accepts source_row_id; the inherited scored cache's persisted original file/shard row ordinal was not verified"
+  },
+  "reference_and_fit_scope": {
+    "known": [
+      "gap/jump quantile references: 3,879,693 adjacent valid train rows across labeled train population; p50 gap 1h, jump 85.723526m",
+      "density maps: 1,376,741 fishing-mask rows, 102,053 fine and 9,174 coarse cells; labels from train population (7,372 vessels per plan)",
+      "zone distance component uses fixed 20km scaling/clipping, documented as simplification rather than fitted train distribution",
+      "per-vessel change scores use prior history >=24 rows; row count is not consecutive-hour guarantee"
+    ],
+    "unknown_or_unmeasured": [
+      "whether accident spreadsheet may be used as development labels despite test-data filename",
+      "confirmed accident-to-vessel identity, confirmed negative/normal examples, source authenticity of negatives",
+      "actual contribution of 95 overlapping target IDs to reference-map cells or their resulting score changes",
+      "threshold source, comparator boundary, max temporal gap, persistence minimum hours/rows"
+    ],
+    "threshold_fitting": "forbidden now; never derive from 2025 test-score quantiles"
+  },
+  "split_design_pending": {
+    "actual_assignment": "pending; train/dev/calibration/eval memberships not fabricated",
+    "leakage_grouping": "build connected components on event-vessel bipartite graph; events sharing any candidate vessel remain in one component; merge duplicate/linked event records before splitting; do not split one vessel across roles",
+    "roles": {
+      "reference_preprocessing_fit": "train groups only; density/normalizers/scalers and any feature selection; exclude all dev/calibration/eval vessel IDs and linked event groups",
+      "model_or_threshold_selection": "development groups only; threshold source must be documented independent of final evaluation",
+      "calibration": "separate calibration groups, if score calibration is introduced; never fit on final eval",
+      "final_evaluation": "event and vessel groups held out; freeze full-period predictions before looking at accident timestamps; compare predictions afterward"
+    },
+    "pending_conditions": [
+      "authorized development use",
+      "confirmed identity evidence",
+      "credible positive and negative references",
+      "sufficient independent event-vessel components",
+      "supervisor-defined grouping and split seed/period",
+      "official metric formula and 6h boundary"
+    ]
+  },
+  "method_states": {
+    "A": "inherited_existing_baseline only; no recomputation in this worker",
+    "B": "same anomalous segment containing A peak; onset timestamp",
+    "C": "persistence check on exactly B's segment; if passes C=B, else persistence_not_met and no substitute time",
+    "segment_breaks": [
+      "NaN or missing score",
+      "above-threshold condition false",
+      "adjacent time gap > configured max_gap_hours"
+    ],
+    "ties_and_duplicates": "stable sort by timestamp then original ordinal; earliest maximum wins; preserve duplicate rows and IDs; duplicates do not imply elapsed duration",
+    "params": [
+      "threshold",
+      "exceedance gt/ge",
+      "max_gap_hours",
+      "persistence_min_hours",
+      "persistence_min_rows",
+      "threshold_source"
+    ]
+  },
+  "scope_limits": [
+    "no 2026 score creation",
+    "no actual B/C",
+    "no threshold fitting",
+    "no performance evaluation",
+    "no accident-near timestamp selection",
+    "no external intake or v2 claims"
+  ]
+}

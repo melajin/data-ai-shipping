@@ -1,81 +1,72 @@
-# 다음 Astra high 관리자 — Round 006
+# 다음 Astra high 관리자 — Round 007
 
-사용자는 학습·국소 실험·fresh manager 인계를 승인했다. 반복 승인을 요청하지 않는다. 새 사용자 지시: 매 회차 보고서에 **이전 회차 대비 변경점 → 이번 진행·개선 결과 → 다음 회차 변경사항**을 명시하고, 다음 fresh session의 수락 영수증을 확인한 뒤 완료한 회차의 세션 창을 닫고 중지한다. 이 절차로 micro-F1 0.7을 추구하되 점수 조작·무한 동일 실패·자원 관문 위반은 하지 않는다. 개발·독립·공식 점수는 구별한다. 해당 세션 하나만 닫으며 앱 전체나 다른 작업 창을 종료하지 않는다. 닫기 API가 없으면 지원 여부와 정확한 미완료 조치를 기록하고 현재 관리자는 종료한다.
+사용자는 학습·국소 실험·fresh manager 인계를 승인했다. 반복 승인을 요청하지 않는다. 관리자 gpt-6-astra/high, 작성자와 별도 검토자는 gpt-6-luna/xhigh/fork_turns=none만 사용한다. 팀 총4슬롯/보조 사용자상한4명 중 낮은 한도를 지키며 파일별 소유자1명을 정한다. 요청값과 host turn_context를 분리하고 타인의 수정을 되돌리지 않는다.
 
-## 시작·역할·제약
+## 시작·자료·제약
 
-루트 `D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final`에서 AGENTS/CYCLE_PROTOCOL/STATUS, round005의 ROUND_REPORT·PLAN_AMENDMENT_01·review/FINAL_REVIEW.md·final_review.json·author_notes.md, logs/pilot_01/receipt.json·stderr.txt·source/replay_inner_pilot.py를 읽는다. 인계 receipt 수신 세션과 ORCA_AGENT_SESSION_ID를 대조하고 중복 실행을 피한다.
+루트 `D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final`에서 AGENTS.md, STATUS.json, CYCLE_PROTOCOL.md와 round006의 ROUND_REPORT.md·author_notes.md·review/FINAL_REVIEW.md·final_review.json·artifacts/result.json·logs/pilot_01/receipt.json·manager/postexit_verification.json·user_ram_recheck_01.json·ram_recheck_after_alternative_work.json을 읽는다. automation/receipts/round_006_launch.json의 수신 세션과 ORCA_AGENT_SESSION_ID를 대조하고 중복실행을 피한다.
 
-관리자 gpt-6-astra/high, 보조 gpt-6-luna/xhigh/fork_turns=none만 사용하며 작성자와 검토자를 분리한다. 팀 호스트 총4슬롯과 보조 사용자상한4명을 지킨다. 요청값/host turn_context를 구분해 저장한다. 파일 소유자를 지정하고 타인의 수정을 되돌리지 않는다. 검토한 소스의 예상 해시를 실행 시 강제하며 승인 후 작성자가 수정하지 않게 동결한다.
+원자료 `F:/문제 데이터_수정_1027`, 이전 저장소 `D:/repos/fishing-track-classification`, 공유자료 P는 읽기 전용이다. 새 출력·temp/cache·코드는 root/rounds/round_007 아래다. 기존 venv/site-packages·checkpoint·과거회차를 수정하지 않는다. **이번 회차는 실제자료 배열/확률을 읽거나 실행하지 않는다.** holdout/전체7372행/Test2025/원자료는 열지 않는다. 설치다운로드·외부업로드·공식제출·유료자원은 제외한다.
 
-새 산출·temp/cache/offload는 root 아래 rounds/round_006에 둔다. 원자료 `F:/문제 데이터_수정_1027`, 이전 저장소 `D:/repos/fishing-track-classification`, 공유자료 P는 읽기 전용이다. 전체7372행 F156/labels/components, holdout 개별 특징·라벨·확률, Test2025, 원자료를 읽지 않는다. holdout 독립성 이력·평가계획 관문은 미해결이다. 외부 업로드·공식 제출·유료자원은 제외한다.
+## 이전 → 현재 → 다음
 
-## 이전→현재→다음
+round005는 입력 복구 후 cache_mode_ 직접접근 오류로 확률 호출 전에 실패했다. round006은 순수mock1회 통과 후 실제모델도 fit 반환과 CPU/FP32/offload/KV 진단을 통과했다. 고정 두 질의 predict_proba 시도1/완료0에서 **가용RAM1.5GiB 관문**으로 중단됐다. 시작4.283466GiB, 관측최저1.392109GiB, sampled소유트리최고3,160,498,176bytes,27.594초다. OS OOM/확률오류/수치재현실패가 관측된 것은 아니다. 후속 생성시각 검사에서 소유프로세스0개이며 child JSON의 STARTED/predict_proba_start는 강제종료 직전 상태로 보존된 것이다.
 
-- round004는 CPU 합성 smoke와 입력 계보만 확인했고 원순서 입력 export는 미실행이었다.
-- round005는 원순서 FIT3144×312/INNER787×312 float32 입력을 export 1회(2.672초)하고 독립검산1회(2.172초)로 두 배열·순서·역할·라벨·클래스·결측변환을 확인했다. **재export하지 않는다.** protected 전체 과거 원행을 재생성한 증거는 아니다.
-- frozen FIT/INNER 해시는 숫자정렬+LF연결(끝LF없음)의 **집합** 해시다. ordered BASE JSON digest와 같지 않다. round005 실행 전 정정을 보존하고 직렬화 후보 탐색을 반복하지 않는다.
-- pilot1회는 **24.125초 후 종료코드1**. `estimator.fit` 반환 뒤 validator의 기록 dict가 `model.cache_mode_`를 직접 읽어 AttributeError가 발생했다. pinned classifier는 `kv_cache=False`일 때 이 속성을 만들지 않는다. 앞의 getattr guard와 기록 접근의 불일치를 작성·검토가 놓쳤다. 모델 예측 실패나 RAM 부족이 아니다.
-- checkpoint/문맥fit1회, 계수학습0, predict_proba 시도0/완료0, F1 0이다. CPU/CUDA 확률 차이는 미측정이다. RAM시작3.572868GiB/최저3.077396GiB, sampled process-tree peak572891136bytes, timeout/RAMkill없음, 최종 소유프로세스0. 이는 추론 전 비용이다.
-- 다음 round006은 **선택적 진단 속성 처리 오류를 고쳐 검증한 뒤, 동일한 두 질의의 원출력을 한 번 재현**한다. M4/모델학습/성능평가는 아직 하지 않는다.
+사용자 재확인에서 RAM4.201679GiB로 회복했으나 시작시와 비슷했다. 동일조건 재시도는0회다. 다음 가설은 **CPU 컬럼 계산의 독립 leading batch축만 작게 나누면 원래 모델·입력을 유지하면서 중간메모리를 줄일 수 있는가**다. pinned CPU inference manager가 자동배치/offload 선택 전에 반환하는 소스근거는 있다. 실제 할당 위치와 최종 필요RAM은 미측정이다.
 
-역사적 반복개발 기준은 micro0.5930133966423605/macro0.5252719738966167, 탐색0.5933525521451586은 미채택이다. 독립·공식 점수는 없다. 참고 docs/20261105_검증자료_PDF반영_기술진단_보강보고서.md의 .628/.669/.708은 미측정 제안이다.
+역사적 반복개발 기준 micro0.5930133966423605/macro0.5252719738966167, 탐색0.5933525521451586은 미채택이다. 신규F1·독립·공식점수는 없다. M4/학습·전체문맥재현은 미해결 관문 뒤다.
 
-## 실행 전 유한 예산
+## 사용자 지속 지시 — RAM 대기와 재개
 
-- 관리자 최대30분, 동시 큰 계산1개, threads≤3.
-- source 수정1세트·별도검토. 모델 패키지/체크포인트를 불러오지 않는 validator mock 검사1회≤30초. 실패 시 근거 있는 수정+검사1회만 추가 허용한다.
-- 실제 pilot **최대1회/600초**, 프로세스 생성부터 종료 확인까지. FIT3144 전부, 원INNER 앞2개, seed42, estimators8, batch1, CPU FP32, AMP/FA3false, n_jobs3, offloadauto, kv_cachefalse, 자동다운로드false.
-- 직전 가용RAM≥3GiB, 실행중<1.5GiB시 소유 자식트리만 중단. 다른 사용자 프로세스 종료 금지. RAM미달/timeout/API오류면 이번회차 pilot 재시도0회.
-- checkpoint load1, pretrained 문맥fit1, predict_proba1호출. 새계수학습/F1/OUTER추론/질의재선정/탐색/설치다운로드/기존 합성smoke반복0회.
+모든 작업에서 RAM이 부족하면 다른 가능한 독립 작업을 먼저 진행하고, 이후 RAM을 다시 확인하여 자원 조건이 충족되면 계속한다. 대체작업·시각·가용량·판단을 기록한다. 이번 대체작업은 소스증명/코드작성/단위mock/계절특징 인벤토리/문서화다. 실행중 메모리 증가로 중단됐으면 사용경로와 절감근거도 검토한다. 유한횟수·시간상한을 유지하고 다른 사용자 프로세스는 종료하지 않는다. 대체작업까지 끝났는데 자원이 부족하면 외부제약과 정확한 재개조건을 남기고 RAM조회만 반복하는 세션을 만들지 않는다.
 
-환경 `environments/round_004_tabicl_cpu/Scripts/python.exe`(Python3.12.14/TabICL2.2.0/Torch2.6.0+cpu)을 재사용한다. checkpoint는 root/model_cache/tabicl-classifier-v2-20260212.ckpt, 110368038bytes, SHA256 `bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0`이다.
+## 실행 전 고정 예산·비교
 
-## 1. 검증된 입력 복사
+관리자 최대30분, 큰계산동시1개, threads<=3. 소스수정1세트+별도검토. 순수mock1회<=30초(실패시 근거수정후1회 추가). **소스관문 통과 후 작은 합성비교 프로세스 최대1회/300초**. 시작 가용RAM>=3GiB, 실행중<1.5GiB면 소유자식트리만 중단한다. 실제 계산 시작 후 실패하면 이번회차 재시도0회다. 실제FIT/INNER/OUTER추론·계수학습·F1·모델탐색은0회다.
 
-round005/artifacts/context_export_attempt_001의 다음 두 파일을 round006/artifacts/context_export_attempt_001로 바이트 복사하고 해시 보존을 확인한다. export_result.json과 review/independent_context_check.json도 provenance 참고로 보존한다. exporter와 전체 배열 재검산은 반복하지 않는다.
+합성비교는 checkpoint load1회, estimator fit1회, **같은 fitted estimator의 predict_proba2회(원경로1+분할1)**만 허용한다. NumPy default_rng(seed20261105) 정규분포 float32 X_fit32×312, X_query2×312, y_fit=np.tile(arange(4),8)을 만든다. 두 경로에서 같은 배열·순서를 쓴다. estimator는 round006 그대로 seed42/8estimators/batch1/CPU FP32/AMPfalse/FA3false/n_jobs3/kv_cachefalse다. 입력hash·shape·dtype·설정·shuffle을 저장한다. 작은 합성결과를 실제선박/전체3144문맥 동등성·F1로 해석하지 않는다.
 
-| 파일 | SHA256 |
-|---|---|
-| fold0_seed42_context.npz | 9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5 |
-| query_freeze.json | 6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef |
+환경 `environments/round_004_tabicl_cpu/Scripts/python.exe`(Python3.12.14/TabICL2.2.0/Torch2.6.0+cpu) 재사용. checkpoint `model_cache/tabicl-classifier-v2-20260212.ckpt`,110368038bytes,SHA256 `bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0`.
 
-고정 queryIDs는 `["36001915","31703435"]`, ordered query digest는 `7750db94f83f57a4e58b62f29b32ba2e737339108e0923a970f9a924bf9be969`다. 이미 원확률 두 행을 읽은 이력을 보존한다. 다른 질의로 바꾸지 않는다.
+## 1. 소스 관문과 로컬 어댑터
 
-## 2. API 수정·검증
+pinned tabicl/_model/inference.py의 InferenceManager.__call__(CPU분기 약1297행), embedding.py의 _compute_embeddings/_inference_with_feature_group/_inference_without_feature_group, encoders.py/layers.py의 batch축 처리, 모델생성부·inference_config.py 및 round004/runtime_author/replay_contract.json을 확인한다. checkpoint 로딩 전에 소스만으로 runtime 컬럼관리자를 식별하고 다음 계약을 작성·별도검토한다.
 
-실제 실행사본 round005/logs/pilot_01/source/replay_inner_pilot.py(SHA256 `b57f6c764d4b833451714d4dfcfa328ed3facecaf6f9a93a0198da8b17c4b860`)를 round006/code로 복사한다. round005는 수정하지 않는다.
+- 분할은 컬럼/feature의 **독립 leading batch축**만 한다. FIT/질의 sequence축·grouping내부축·feature값/순서·attention context축은 자르지 않는다. target-aware y_train을 해당 batch축에 맞추며 broadcast/shared 텐서는 소스계약으로 구분한다. 비텐서 train_size/embed_with_test는 보존한다.
+- 컬럼별 독립계산·정규화·attention/target embedding·shuffle 재조립을 증명한다. 고정 최대chunk16만 사용한다. 순서복원/마지막불완전chunk를 검사하며 list+cat으로 여러벌 쌓지 않는 사전할당출력을 검토한다. output_repeat 의미도 보존한다.
+- 해당 estimator의 **컬럼 관리자만** 로컬 래퍼로 감싼다. ROW/ICL·전역클래스·venv파일은 변경하지 않는다. 원관리자 복구가 가능해야 하고 original _prepare_inputs/_run_forward의 CPU/no_grad/AMP 의미를 보존한다. pinned 비공개API 의존성을 해시와 함께 기록한다.
+- 증명이 불가능하거나 경로가 다르면 모델비교를 실행하지 말고 원인과 대안을 기록한다. 실제문맥/모델head/estimators/FP정밀도를 임의로 바꾸지 않는다.
 
-`cache_mode_` 기록을 안전한 getattr로 바꾸고 hasattr 여부도 남겨 부재와 명시적None을 구별한다. model_kv_cache_ 등 다른 진단 속성도 pinnedsource의 상태별 생성 조건과 대조한다. **모델 구조·estimator설정·shuffle·확률계산은 변경하지 않는다.** fit 반환 직후 별도 staged 기록을 저장해 후속 진단 오류가 완료 단계 증거를 지우지 않게 한다.
+순수mock은 분할순서·불완전chunk·공유인수·금지축·shape오류거부를 확인한다. 모델동등성 검증이라 부르지 않는다. 작성자와 검토자가 예상SHA·분할계약·mock을 승인해야 합성계산을 진행한다.
 
-ROUND 경로 상수만 round006으로 변경한다. copy한 freeze의 역사 schema `round005_frozen_inner_queries.v1`은 입력계약으로 유지하거나 명시적 호환처리를 한다. 파일 전체의 round005 문자열을 무차별 치환해 schema/근거까지 바꾸지 않는다. 경로 검사를 통과하도록 위의 복사된 round006 입력을 사용한다.
+## 2. 합성비교 한 번
 
-mock은 진단함수만 가져와 모델 패키지/체크포인트 없이 검사한다. 정상 kv_cacheFalse/model_kv_cache_None/**cache_mode_부재**가 성공해야 한다. present-but-None도 구별해 기록한다. 잘못된 CPU/AMP/FA3/offload/KV 설정은 거부해야 한다. 최소 부재·명시적None·실제설정위반을 포함하고 검토자가 기대동작을 독립확인한다. 이를 모델 forward 성공이나 새로운 합성smoke로 부르지 않는다.
+round006/manager/run_bounded.py를 round007/manager로 복사해 이 회차 kind/300초/3GiB시작·1.5GiB중단 계약을 구현한다. round006의 taskkill 직후 remaining 문제를 반영해 생성시각이 같은 자식 종료를 제한적으로 확인(최대10초 cleanup)하고 시도/종료확인 시간을 구분한다. 전체timeout은 생성부터 종료확인까지다. source snapshot·실행전SHA guard·PID생성시각·stdout/stderr/RAM곡선·종료코드를 보존한다.
 
-실제 MgrConfig는 `.items()`로 읽는다. COL offload='auto', ROW/ICL offload=False, 세stage CPU/AMPfalse/FA3false, estimator kv_cacheFalse가 pinnedsource 계약이다. 과거 명시 설정/버전 기본값 구분은 round004/runtime_author/replay_contract.json을 유지한다.
-
-## 3. 한 번의 고정 replay
-
-round005/manager/run_bounded.py(SHA256 `a7ebf611656675404d221e24172f58384bd5f6b046839e59bddb298ae8abab1d`)를 round006/manager로 복사하고 ROUND 경로만 변경한다. source snapshot을 직접 실행하고, 실제 승인 SHA를 호출부 또는 argument로 강제한다. venv launcher와 실제Python의 PID·생성시각·프로세스트리를 추적하며 stdout/stderr/RAM곡선/종료후시간/종료코드를 보존한다. 실행별 기록을 덮어쓰지 않는다.
-
-최종검토 후 실제 SHA를 넣어 다음 명령을 한 번 실행한다.
+아래 예정파일/명령은 구현·별도검토 후 사용한다.
 
 ```powershell
-$expected = '<round006 최종승인 pilot SHA256>'
-if ((Get-FileHash './rounds/round_006/code/replay_inner_pilot.py' -Algorithm SHA256).Hash -ne $expected) { throw 'Frozen source changed' }
-& './environments/round_004_tabicl_cpu/Scripts/python.exe' -B './rounds/round_006/manager/run_bounded.py' --kind pilot --run-id pilot_01 --script './rounds/round_006/code/replay_inner_pilot.py'
+$expected='<round007 승인 synthetic_pair.py SHA256>'
+if ((Get-FileHash './rounds/round_007/code/synthetic_pair.py' -Algorithm SHA256).Hash -ne $expected) { throw 'Frozen source changed' }
+& './environments/round_004_tabicl_cpu/Scripts/python.exe' -B './rounds/round_007/manager/run_bounded.py' --kind synthetic_pair --run-id pair_01 --script './rounds/round_007/code/synthetic_pair.py'
 ```
 
-context/freeze hash와 두 ID 검사 뒤 공유 P/evaluation/seed_42/fold_0/inner_predictions.csv의 해당2행 p0..p3만 읽는다. 앞2행 ID가 다르면 검색·교체하지 말고 중단한다. INNER 라벨은 모델/선택/F1에 사용하지 않는다. 통발배수/decision score가 아닌 원확률을 비교한다.
+원경로1회 후 같은 estimator의 컬럼관리자만 바꿔 분할1회 확률을 저장한다. 단계별resource marker와 실제chunk호출shape/최대크기를 남긴다. 판정은 각2×4 finite/[0,1]/행합오차<=1e-5/클래스[0,1,2,3], 원경로대비 **최대절대차<=1e-5 및 두argmax일치**다. exact와 tolerance를 구분하고 실패후 허용오차를 넓히지 않는다. 작은입력의 RAM 수치는 전체문맥 절감 보장이 아니다. 모델재학습·두번째checkpoint로딩은 하지 않는다.
 
-finite/범위/행합오차≤1e-5/클래스순서가 맞고 두질의 모두 **최대절대차≤1e-4 및 argmax일치**면 작은replay PASS다. exact equality와 tolerance를 구별한다. 원확률/새확률/질의별차이/호출시도·완료수를 저장하고 재호출하지 않는다. 이것은 F1/성능채택 관문이 아니다.
+## 3. 사용자 계절 가설 보존
 
-## 종료·다음 인계
+round006/SEASONAL_HYPOTHESIS.md를 읽는다. 사용자는 계절·시간대별 조업형태 차이를 검토하라고 했다. 기존 monthly_repeat는 none_micro seed42 대비 개발+0.0044090/순증26이며 CI에0포함, 현재기준선과 다르다. 자료계약은1–6월이고 date/hour는 시간별요약행 시각이지 좌표별시각이 아니다. 기존 코드·feature-name metadata만 대조해 현재 F156/F304 시간특징 인벤토리를 SEASONAL_FEATURE_INVENTORY.md에 남기는 작업은 RAM대기 중 수행가능하다. protected array/원자료/개별예측은 읽지 않는다. 월별형태·지역·시간대 변화량 가설은 기존 monthly_repeat 반복과 구분하고 이번에는 계절모델을 학습하지 않는다.
 
-보고서에 이전 대비 변경점/이번 결과와 개선/다음 변경을 명시한다. ROUND_REPORT·독립검토·EXPERIMENT_LEDGER·STATUS(current_round=round_006,handoff.ready=true,active_workers=[])·NEXT_SESSION을 실제 결과로 갱신한다. 재현 통과 후에만 M4-a의10출력head 유지/활성4클래스slice/shuffle역변환/무변경·gradient·reload를 별도 유한회차로 설계한다. 이번에 자동확장하지 않는다.
+## 완료·후속 분기
 
-자원부족이 반복되고 다른독립작업이 없으면 같은RAM확인만 하는 세션을 만들지 말고 외부제약·재개조건을 남긴다. 목표미달이고 실행가능한 다음작업이 있으면 아래 명령으로 새Astra high에 인계, 수락영수증 확인, 완료세션만 닫고 중지한다.
+ROUND_REPORT(이전/현재/다음), 독립검토, EXPERIMENT_LEDGER, STATUS(current_round=round_007,handoff.ready=true,active_workers=[]), NEXT_SESSION을 실제결과로 갱신한다. 학습목표는 batch축/sequence축, 합성동등성/실제재현/F1 차이를 설명하는 것이다.
+
+- 소스+mock+합성동등성 통과: round008에 어댑터동결 후 **동일FIT3144/두질의 저메모리 실제재현1회**를 계획한다. 입력해시·질의·원확률·1e-4판정은 round006/manager/incoming_NEXT_SESSION.md를 따른다. 실제재현 통과 후에만 M4-a 별도설계다.
+- 실패: 원인과 변경변수를 좁히며 같은시도 반복 금지. 대체작업후 RAM재확인을 수행하고 실행불가능한 외부제약이면 정확한 재개조건을 기록한다.
+- 계절접근은 가설/인벤토리를 보존한 별도통제실험으로 다룬다. 0.7 도달보장·예상성능을 측정값으로 만들지 않는다.
+
+실행가능 후속이 있으면 아래 명령으로 새Astra high에 인계하고 수락영수증을 확인한 뒤 현재작업을 중지한다. 닫기API가 없으면 해당완료세션 탭 수동닫기방법을 기록하며 앱/다른세션은 닫지 않는다.
 
 ```powershell
-& 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/automation/Start-NextSession.ps1' -FromRound 'round_006'
+& 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/automation/Start-NextSession.ps1' -FromRound 'round_007'
 ```

@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-11-04T18:00:31.279236+00:00",
+  "user_requested_recheck": true,
+  "total_physical_gib": 13.809436798095703,
+  "available_physical_gib": 4.201679229736328,
+  "memory_load_percent": 69,
+  "pilot_start_available_gib": 4.283466339111328,
+  "pilot_minimum_observed_available_gib": 1.3921089172363281,
+  "start_gate_3gib_pass": true,
+  "owned_same_identity_remaining": [],
+  "new_pilot_launched": false,
+  "note": "Available RAM recovery after termination does not establish full-context inference fits."
+}

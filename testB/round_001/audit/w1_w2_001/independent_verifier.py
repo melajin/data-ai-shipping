@@ -31,7 +31,7 @@ def run():
     hash_targets.update(Path(x["path"]) for x in w2m.get("sources",[]) if x.get("path"))
     if w1m.get("code",{}).get("path"): hash_targets.add(Path(w1m["code"]["path"]))
     hash_targets.update(W1/p for p in w1m.get("output_sha256_after_run",{}))
-    hash_targets.update({W1/"evidence_table.csv",W1/"summary.json",W1/"manifest.json",W1/"run_linkage_review.py",W1/"process_result.json",W2/"comparison_readiness_100.csv",W2/"summary.json",W2/"input_split_manifest.json",W2/"input_split_manifest_addendum.json",W2/"timing_interface.py",W2/"readiness_report.md",W2/"code_lineage.json",W2/"round_001"/"run_003"/"process_result.json"})
+    hash_targets.update({W1/"evidence_table.csv",W1/"summary.json",W1/"manifest.json",W1/"run_linkage_review.py",W1/"process_result.json",W2/"comparison_readiness_100.csv",W2/"summary.json",W2/"input_split_manifest.json",W2/"input_split_manifest_addendum.json",W2/"timing_interface.py",W2/"readiness_report.md",W2/"code_lineage.json",W2/"publish_legacy_preparation.py",W2/"round_001"/"run_003"/"process_result.json"})
     w3receipt=ROOT/"testB"/"round_001"/"integration"/"runtime_receipts"/"W3_start.json"
     hash_targets.add(w3receipt)
     def snapshot():
@@ -111,13 +111,17 @@ def run():
     man=j(W2/"input_split_manifest.json"); lin=j(W2/"code_lineage.json"); code=(W2/"timing_interface.py").read_text(encoding="utf-8-sig")
     tie=man.get("method_states",{}).get("ties_and_duplicates","")
     stale="earliest maximum" in tie.lower()
+    generator=W2/"publish_legacy_preparation.py"
+    generator_stale="earliest maximum" in generator.read_text(encoding="utf-8-sig").lower()
     split=man.get("split_design_pending",{}).get("actual_assignment")=="pending"
     over=j(W2/"summary.json").get("target_reference_id_overlap",{}).get("interpretation","")
     overlap_ok="membership only" in over and "unmeasured" in over
     tie_ok=not stale and "first maximum" in tie.lower() and "first maximum" in code.lower() and "first maximum" in lin.get("round_copy",{}).get("change","").lower()
-    checks.append({"item":"W2 current tie contract, split pending, 95 overlap bounded","status":"pass" if tie_ok and split and overlap_ok else "fail","evidence":{"manifest_tie_text":tie,"stale_earliest_maximum":stale,"code_lineage_first_max":tie_ok,"split_assignment":man.get("split_design_pending",{}).get("actual_assignment"),"overlap_interpretation":over}})
+    checks.append({"item":"W2 current tie contract, manifest generator, split pending, 95 overlap bounded","status":"pass" if tie_ok and not generator_stale and split and overlap_ok else "fail","evidence":{"manifest_tie_text":tie,"stale_manifest_earliest_maximum":stale,"manifest_generator":"publish_legacy_preparation.py","generator_stale_earliest_maximum":generator_stale,"code_lineage_first_max":tie_ok,"split_assignment":man.get("split_design_pending",{}).get("actual_assignment"),"overlap_interpretation":over}})
     if stale:
         issues.append({"severity":"blocking","file":"testB/round_001/timing/input_split_manifest.json","location":"method_states.ties_and_duplicates","reproduce":"Read current JSON field: says earliest maximum wins; code and lineage say first max in original input order.","impact":"Contract contradicts current A tie implementation and can select a different row.","suggested_fix":"Change to first maximum in original source order for A; stable timestamp+ordinal ordering is B/C only; retain duplicate rows and count unique timestamps for persistence."})
+    if generator_stale:
+        issues.append({"severity":"high","file":"testB/round_001/timing/publish_legacy_preparation.py","location":"line 94: method_states.ties_and_duplicates literal","reproduce":"Search this generator for 'earliest maximum wins'; it serializes the old rule into input_split_manifest.json.","impact":"Re-running the publisher can restore the contradictory earliest-maximum contract after a manifest-only correction.","suggested_fix":"Update the generator literal to first maximum in original input order for A; note timestamp sorting only affects B/C."})
 
     spec=importlib.util.spec_from_file_location("audited_timing_interface",W2/"timing_interface.py")
     mod=importlib.util.module_from_spec(spec); sys.modules[spec.name]=mod; spec.loader.exec_module(mod)
@@ -138,6 +142,8 @@ def run():
     x=mod.estimate_vessel([{"ts":0,"score":1e-6}],mod.TimingParams(0.0,"gt",1,0,1,"synthetic"))
     syn.append({"case":"positive floor value remains ordinary finite score","pass":x.status=="candidate_ready","observed_status":x.status})
     checks.append({"item":"Independent synthetic timing checks (not self_check)","status":"pass" if all(x["pass"] for x in syn) else "fail","evidence":syn})
+    checks.append({"item":"Duplicate-timestamp conflicting-score policy fully specified","status":"unknown","evidence":{"implemented":"stable timestamp/input-ordinal ordering; duplicate rows retained; persistence counts unique timestamps; A ties use original input order","unresolved":"no explicit rule for reconciling conflicting scores/records at the same timestamp before segment and persistence checks"}})
+    checks.append({"item":"Positive score-floor semantics resolved for future evaluation","status":"unknown","evidence":{"contract":man.get("score_contract",{}).get("score_formula"),"timing_test":"1e-6 is accepted as an ordinary finite score and can cross a lower synthetic threshold","unresolved":"no approved real threshold/source or explicit floor/missing-value semantics for future candidate evaluation"}})
     gap=mod.estimate_vessel([{"ts":0,"score":.8},{"ts":2,"score":.9}],mod.TimingParams(.5,"gt",2,0,1,"synthetic"))
     checks.append({"item":"max_gap parameter can bridge unobserved time","status":"fail" if gap.b_ts==0 else "pass","evidence":{"timestamps":[0,2],"max_gap_hours":2,"B":gap.b_ts,"interpretation":"when delta <= max_gap, a missing bin may be bridged"}})
     issues.append({"severity":"open_design_limit","file":"testB/round_001/timing/timing_interface.py","location":"estimate_vessel gap comparison; TimingParams.max_gap_hours","reproduce":"Synthetic ts=0 and ts=2 above threshold with max_gap_hours=2 yields one segment (B=0).","impact":"A configured tolerance above nominal cadence connects across unobserved bins; this is unresolved against a strict no-missing-time policy.","suggested_fix":"Supervisor must explicitly choose supported cadence/gap semantics. If missing bins always break, require adjacent expected cadence rather than a variable tolerance."})
@@ -145,6 +151,12 @@ def run():
     p2=j(W2/"round_001"/"run_003"/"process_result.json"); env=j(W2/"round_001"/"run_003"/"environment.json")
     receipt=j(ROOT/"26_11_5"/"testb_next_experiment_20261105"/"integration"/"runtime_receipts"/"W2_start.json")
     checks.append({"item":"W2 observed synthetic exit, environment, request receipt","status":"pass" if p2.get("exit_code")==0 and receipt.get("result",{}).get("model")=="gpt-6-luna" and receipt.get("result",{}).get("effort")=="xhigh" else "fail","evidence":{"process":p2,"environment":env,"requested":receipt.get("result",{})}})
+    lineage_path=Path(lin["round_copy"]["path"]); current_timing_sha=sha(W2/"timing_interface.py")
+    round_hashes=j(W2/"summary.json").get("round_output_hashes",{})
+    round_hash_bad={name: {"recorded":digest,"current":sha(W2/name) if (W2/name).is_file() else None} for name,digest in round_hashes.items() if not (W2/name).is_file() or sha(W2/name)!=digest}
+    expected_code=p2.get("code",{}); run_logs=all(Path(p2[k]).is_file() for k in ("stdout","stderr"))
+    lineage_ok=(lineage_path.as_posix().endswith("testB/round_001/timing/timing_interface.py") and lin["round_copy"].get("sha256")==current_timing_sha and lin["round_copy"].get("size_bytes")== (W2/"timing_interface.py").stat().st_size and j(W2/"summary.json").get("timing_interface_sha256")==current_timing_sha and expected_code.get("sha256")==current_timing_sha and expected_code.get("size_bytes")== (W2/"timing_interface.py").stat().st_size)
+    checks.append({"item":"W2 round code lineage, output hashes and process logs are consistent","status":"pass" if lineage_ok and not round_hash_bad and run_logs else "fail","evidence":{"current_timing_sha256":current_timing_sha,"lineage_and_process_code_match":lineage_ok,"round_output_hash_mismatches":round_hash_bad,"stdout_stderr_exist":run_logs,"actual_exit":p2.get("exit_code")}})
     w3r=j(w3receipt).get("result",{})
     checks.append({"item":"W3 model/effort request receipt and dispatch identity","status":"pass" if w3r.get("model")=="gpt-6-luna" and w3r.get("effort")=="xhigh" and w3r.get("runId")=="run_131763108c81" else "fail","evidence":{"model":w3r.get("model"),"effort":w3r.get("effort"),"run_id":w3r.get("runId"),"task_id":w3r.get("taskId"),"dispatch_id":w3r.get("dispatchId")}})
     checks.append({"item":"Provider-internal actual runtime model independently observable","status":"unknown","evidence":"Orca receipt records requested gpt-6-luna/xhigh; provider internal runtime is not independently exposed in inspected artifacts."})
@@ -174,12 +186,12 @@ def run():
     lines += ["","## 핵심 판단","",
     "- W1 30개 사건과 우선 합집합 10개를 표에서 다시 집계했다. 9조건 관계, 안정 1건, 시간확대 다후보 7건, 다선박 수 불일치 3건, 신원 확정 0건이 일치한다. 사용범위는 unknown이고 정상 근거가 없으며, 잔차는 후보 연결 근거다.",
     "- W2 A 순서/ID/시각/점수는 기존 제출 CSV와 대조했다. scored_rows.pkl은 열지 않았다. B/C 값은 비었고 not_computed이며 행별 사유와 not_assessed_not_accident_label 상태가 유지됐다.",
-    "- W2 manifest의 ties_and_duplicates는 earliest maximum이라는 옛 문구가 남아 코드와 code_lineage의 원입력 순서 최초 최대 계약과 충돌한다.",
+    "- W2 manifest의 ties_and_duplicates는 earliest maximum이라는 옛 문구가 남아 코드와 code_lineage의 원입력 순서 최초 최대 계약과 충돌한다. `publish_legacy_preparation.py`도 같은 옛 문구를 재생성하므로 둘 다 고쳐야 한다.",
     "- 독립 합성 검사에서는 동점 A, 동일 구간 B/C 및 C=B, NaN/시간간격 분절, 중복시각 지속행수, 파라미터 출처, 빈 점수 계산불가를 확인했다. 실제 점수 임계값은 선택하지 않았다.",
     "- max_gap_hours가 샘플 cadence보다 크면 미관측 구간을 연결한다. 중복 timestamp 값 충돌의 채택 정책은 미정이며, positive floor는 결측이 아닌 유한점수로 취급되어 임계값에 따라 판정을 바꿀 수 있다.",
     "","## 조치 필요"]
     for x in issues: lines.append(f"- **{x['severity']}** {x['file']} ({x['location']}): {x['impact']} 재현: {x['reproduce']} 제안: {x['suggested_fix']}")
-    lines += ["","## 한계","","W0 v2, 원자료 전체, 디스크 전체, 전체 43+31 선행감사 재검산은 포함하지 않는다. actual split, 2026 실제 점수/사고 평가, 모델 학습, threshold 선택은 하지 않았다. Orca 영수증은 gpt-6-luna/xhigh 요청을 보여주며 provider 내부 모델 관찰은 별도 불가.",""]
+    lines += ["","## 미확정 인터페이스 한도","","- `timing_interface.py`의 timestamp 정렬은 원행 ordinal을 유지하고 중복 시각은 행 추적에 남기며 지속 행수는 고유 시각 수로 센다. 그러나 같은 시각의 점수가 충돌할 때 사전 중복 제거·통합 규칙은 아직 없다. 적용 위치: `timing_interface.py` 79–87, 130–131행.","- `input_split_manifest.json`의 점수식 설명은 양수 floor를 언급하고, 인터페이스는 `1e-6`을 보통 유한 점수로 받아들인다. threshold가 승인되지 않았고 floor의 평가 의미도 고정되지 않아 실제 판정에 미칠 영향은 unknown이다. 실제 임계값은 선택하지 않았다.","","## 한계","","W0 v2, 원자료 전체, 디스크 전체, 전체 43+31 선행감사 재검산은 포함하지 않는다. actual split, 2026 실제 점수/사고 평가, 모델 학습, threshold 선택은 하지 않았다. Orca 영수증은 gpt-6-luna/xhigh 요청을 보여주며 provider 내부 모델 관찰은 별도 불가.",""]
     (OUT/"audit_report.md").write_text("\n".join(lines),encoding="utf-8")
     return {"audit_status":status,"counts":dict(Counter(x["status"] for x in checks)),"issue_count":len(issues),"checks":[{"item":x["item"],"status":x["status"]} for x in checks]}
 

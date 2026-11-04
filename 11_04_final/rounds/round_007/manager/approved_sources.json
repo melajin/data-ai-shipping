@@ -1,0 +1,9 @@
+{
+  "approval_scope": "one corrective mock02 only; synthetic not approved",
+  "review": "rounds/round_007/review/mock02_precheck.json",
+  "sha256": {
+    "rounds/round_007/code/column_chunk.py": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+    "rounds/round_007/code/test_column_chunk.py": "44b3ae7f56560efd05268d8a0d253128cf1be78178bce4d0dcb75f1e3d602a32",
+    "rounds/round_007/manager/run_bounded.py": "2820871e8884a0fd642e550301154c16039d6c85c6168bda32cbf67340f3bee4"
+  }
+}

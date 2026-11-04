@@ -1,0 +1,77 @@
+{
+  "schema": "round007_bounded_receipt.v1",
+  "kind": "mock",
+  "run_id": "mock_02",
+  "started_utc": "2026-11-04T18:22:00.311217+00:00",
+  "status": "completed",
+  "timeout_seconds": 30,
+  "script": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\code\\test_column_chunk.py",
+  "source_sha256": "44b3ae7f56560efd05268d8a0d253128cf1be78178bce4d0dcb75f1e3d602a32",
+  "wrapper_sha256": "2820871e8884a0fd642e550301154c16039d6c85c6168bda32cbf67340f3bee4",
+  "pid": 10448,
+  "exit_code": 0,
+  "launched": true,
+  "stop_reason": null,
+  "approved_sources": {
+    "approval_scope": "one corrective mock02 only; synthetic not approved",
+    "review": "rounds/round_007/review/mock02_precheck.json",
+    "sha256": {
+      "rounds/round_007/code/column_chunk.py": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+      "rounds/round_007/code/test_column_chunk.py": "44b3ae7f56560efd05268d8a0d253128cf1be78178bce4d0dcb75f1e3d602a32",
+      "rounds/round_007/manager/run_bounded.py": "2820871e8884a0fd642e550301154c16039d6c85c6168bda32cbf67340f3bee4"
+    }
+  },
+  "compute_timeout_seconds": 28,
+  "cleanup_max_seconds": 2,
+  "executed_source_snapshot": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\logs\\mock_02\\source\\test_column_chunk.py",
+  "command": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+    "-B",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\logs\\mock_02\\source\\test_column_chunk.py"
+  ],
+  "environment_overrides": {
+    "TEMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\mock_02",
+    "TMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\mock_02",
+    "TMPDIR": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\mock_02",
+    "PYTHONPYCACHEPREFIX": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\mock_02",
+    "HF_HOME": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\mock_02",
+    "TORCH_HOME": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\mock_02",
+    "XDG_CACHE_HOME": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\mock_02",
+    "JOBLIB_TEMP_FOLDER": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\mock_02",
+    "MPLCONFIGDIR": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\mock_02",
+    "OMP_NUM_THREADS": "3",
+    "MKL_NUM_THREADS": "3",
+    "OPENBLAS_NUM_THREADS": "3",
+    "NUMEXPR_NUM_THREADS": "3",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "preflight_available_ram_gib": 4.8018951416015625,
+  "minimum_start_ram_gib": 1.5,
+  "process_creation_started_utc": "2026-11-04T18:22:00.314855+00:00",
+  "elapsed_seconds": 0.2649999999994179,
+  "finished_utc": "2026-11-04T18:22:00.591742+00:00",
+  "postexit_within_timeout": true,
+  "minimum_observed_available_ram_gib": 4.800868988037109,
+  "peak_sampled_tree_working_set_bytes": 9015296,
+  "process_peak_working_set_bytes": {
+    "10448": 2768896,
+    "12852": 6246400
+  },
+  "sampled_cpu_seconds_by_pid": {
+    "10448": 0.015625,
+    "12852": 0
+  },
+  "observed_owned_pids": [
+    10448,
+    12852
+  ],
+  "owned_process_creation_ticks": {
+    "10448": 134382901203195399,
+    "12852": 134382901203251340
+  },
+  "owned_tree_remaining": [],
+  "source_unchanged": true
+}

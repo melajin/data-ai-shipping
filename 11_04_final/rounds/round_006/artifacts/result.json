@@ -1,0 +1,55 @@
+{
+  "schema": "round006_manager_result.v1",
+  "status": "completed_with_limitations_resource_guard_stop",
+  "updated_at_utc": "2026-11-04T18:00:48.143236+00:00",
+  "mock": {
+    "status": "PASS",
+    "runs": 1,
+    "test_methods": 3,
+    "negative_subcases": 10,
+    "process_seconds": 0.6559999999990396
+  },
+  "pilot": {
+    "runs": 1,
+    "status": "failed_or_stopped",
+    "exit_code": 1,
+    "seconds": 27.59400000000096,
+    "stop_reason": "available_ram_below_1_5_gib",
+    "preflight_available_ram_gib": 4.283466339111328,
+    "minimum_observed_available_ram_gib": 1.3921089172363281,
+    "peak_sampled_tree_working_set_bytes": 3160498176,
+    "fit_returned": true,
+    "resolved_settings_passed": true,
+    "predict_proba_attempted": 1,
+    "predict_proba_completed": 0,
+    "probabilities": null,
+    "comparison": null,
+    "raw_child_status": "STARTED",
+    "raw_child_last_stage": "predict_proba_start",
+    "postexit_same_identity_remaining": [],
+    "immediate_receipt_remaining": [
+      16792,
+      2716
+    ]
+  },
+  "evaluation": {
+    "kind": "fixed_development_two_query_replay_interrupted_by_resource_guard",
+    "new_parameter_training_fits": 0,
+    "new_f1": null,
+    "new_f1_evaluations": 0,
+    "independent_f1": null,
+    "official_f1": null,
+    "target_070_achieved": false,
+    "historical_scores_unchanged": true
+  },
+  "scope": {
+    "data_export_runs": 0,
+    "full_array_reverification_runs": 0,
+    "checkpoint_loads": 1,
+    "pretrained_context_fits": 1,
+    "new_pilot_retries": 0,
+    "holdout_individual_rows_read": 0,
+    "hardware_validation": false
+  },
+  "interpretation": "Diagnostic attribute defect resolved; actual inference attempted, stopped by predeclared available-memory threshold. Not an OS OOM, model probability error, numerical replay failure or performance measurement. Full inference memory requirement and allocation site remain unknown."
+}

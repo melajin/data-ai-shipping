@@ -1,0 +1,31 @@
+{
+  "host_total_slots": 4,
+  "user_max_assistants": 4,
+  "actual_team_size": 3,
+  "workers": [
+    {
+      "name": "code_author",
+      "task_name": "/root/code_author",
+      "model_requested": "gpt-6-luna",
+      "reasoning_effort_requested": "xhigh",
+      "fork_turns": "none",
+      "ownership": [
+        "rounds/round_007/code/*",
+        "rounds/round_007/author_notes.md"
+      ]
+    },
+    {
+      "name": "reviewer",
+      "task_name": "/root/reviewer",
+      "model_requested": "gpt-6-luna",
+      "reasoning_effort_requested": "xhigh",
+      "fork_turns": "none",
+      "ownership": [
+        "rounds/round_007/review/*"
+      ]
+    }
+  ],
+  "shared_owner": "manager",
+  "no_revert_others_instruction_sent": true,
+  "ram_policy_sent": true
+}

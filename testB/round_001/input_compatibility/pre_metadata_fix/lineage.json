@@ -1,0 +1,54 @@
+{
+  "preserved_utc": "2026-11-04T18:00:03.742612+00:00",
+  "files": {
+    "summary.json": {
+      "path": "testB\\round_001\\input_compatibility\\summary.json",
+      "sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507",
+      "bytes": 42834,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\summary.json",
+      "preserved_sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507"
+    },
+    "manifest.json": {
+      "path": "testB\\round_001\\input_compatibility\\manifest.json",
+      "sha256": "80b61b3e1aa4048ab97fa426f8168cc67503435c2c0a98f14c3b223b3f0dd04e",
+      "bytes": 20424,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\manifest.json",
+      "preserved_sha256": "80b61b3e1aa4048ab97fa426f8168cc67503435c2c0a98f14c3b223b3f0dd04e"
+    },
+    "comparison_report.md": {
+      "path": "testB\\round_001\\input_compatibility\\comparison_report.md",
+      "sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868",
+      "bytes": 6625,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\comparison_report.md",
+      "preserved_sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868"
+    },
+    "run_comparison.py": {
+      "path": "testB\\round_001\\input_compatibility\\run_comparison.py",
+      "sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a",
+      "bytes": 18791,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\run_comparison.py",
+      "preserved_sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a"
+    },
+    "finalize_outputs.py": {
+      "path": "testB\\round_001\\input_compatibility\\finalize_outputs.py",
+      "sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee",
+      "bytes": 10164,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\finalize_outputs.py",
+      "preserved_sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee"
+    },
+    "csv_identity.csv": {
+      "path": "testB\\round_001\\input_compatibility\\csv_identity.csv",
+      "sha256": "7f5e4ba8f502140fbcdd1f321e3368664582adffd05f25c201e9a1b849439714",
+      "bytes": 10988,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\csv_identity.csv",
+      "preserved_sha256": "7f5e4ba8f502140fbcdd1f321e3368664582adffd05f25c201e9a1b849439714"
+    },
+    "workbook_comparison.json": {
+      "path": "testB\\round_001\\input_compatibility\\workbook_comparison.json",
+      "sha256": "efdf4b33cc205b61b20dfc87b608c1dab95ac883d2d646fe89b52bf049ac5570",
+      "bytes": 35050422,
+      "preserved_copy": "testB\\round_001\\input_compatibility\\pre_metadata_fix\\workbook_comparison.json",
+      "preserved_sha256": "efdf4b33cc205b61b20dfc87b608c1dab95ac883d2d646fe89b52bf049ac5570"
+    }
+  }
+}

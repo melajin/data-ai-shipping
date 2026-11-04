@@ -1,0 +1,81 @@
+﻿{
+  "schema": "round007_independent_precheck.v1",
+  "reviewed_utc": "2026-11-04T18:18:04Z",
+  "reviewer_role": "independent source reviewer",
+  "requested_model": "gpt-6-luna",
+  "requested_effort": "xhigh",
+  "host_evidence": "rounds/round_007/manager/assistant_host_evidence.json",
+  "host_evidence_interpretation": "Requested and host turn_context values match; this is host configuration evidence, not internal model authentication.",
+  "disposition": "approve_mock_only",
+  "mock_execution_status": "pending_manager_execution",
+  "synthetic_pair_status": "not_approved_pending_separate_review",
+  "approval_scope": {
+    "approved": "One pure mock invocation of test_column_chunk.py through round007 manager/run_bounded.py, after manager assembles the exact source manifest and independently checks the three frozen hashes.",
+    "not_approved": [
+      "synthetic_pair.py or any model import/checkpoint load",
+      "actual feature arrays, probabilities, labels, raw data, holdout, Test2025, or full 7,372-row source",
+      "model prediction equivalence, full-context memory reduction, F1, or performance"
+    ]
+  },
+  "frozen_source_sha256": {
+    "rounds/round_007/code/column_chunk.py": "BF263BA75BEF5ED9AAB04364459E426F3A82BE92DA2CE642E89B06558FD9CDED",
+    "rounds/round_007/code/test_column_chunk.py": "44B3AE7F56560EFD05268D8A0D253128CF1BE78178BCE4D0DCB75F1E3D602A32",
+    "rounds/round_007/manager/run_bounded.py": "90654941F881979A72006ADF8620527D87F791AF33A96C5FBE7CA0F72E50BEFA"
+  },
+  "pinned_source_evidence": {
+    "rounds/round_004/runtime_author/replay_contract.json": "819E60FD2F05A655A86DC1CDAA5E52F5A4FD0486E78FDD5DC5A4AB140AD7E2F5",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py": "F9E3CF0D83047E06DF7D6763BB8D8EE7A00FF1BA6708299A14635831F60BA4FC",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/embedding.py": "A0C562600FE22944F91B1B71B706198CB9A4C3D9D8AABA67A86F35A85493D322",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/encoders.py": "A3E0E9BDE47E7F587C4A196D124EA631E25755D4F5AC5D6A8568618A4E299A4E",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/layers.py": "96CCE2E84DB33E176D872C7BB7C0DF8C305DE3EB7A02FCAD9F1128F33D319D95",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py": "583786E5FFD70B9EB425BCA8E52AED415DADCDF4254C908B3B6FA52026A56491",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference_config.py": "852ABB9CF97E9C82AE42A92B034581F6E9131F3BEC70EFBD3CE068AC92A77A37",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py": "64F5EF7EF88A920A3F7A5F6E2D9D8DC08769EC343E931F910ACC2D9C4EAA5534"
+  },
+  "source_contract": {
+    "manager_cpu_path": "InferenceManager.__call__ routes CPU to _run_forward(_prepare_inputs(inputs)) before accelerator memory sizing and batch splitting (inference.py:1234-1297). _prepare_inputs moves tensor inputs and passes non-tensor values through (1210-1223). _run_forward retains no_grad, FA3 toggle, and optional AMP (1226-1232).",
+    "output_repeat": "output_repeat contributes only to output-size estimation on the later accelerator/offload path (1328); it does not change CPU forward values. The no-feature-group shuffle optimization passes output_repeat=B (embedding.py:654-664). Adapter preserves the argument and records it; when auto_batch=False or device is non-CPU it delegates to the original manager.",
+    "manager_scope": "Each ColEmbedding constructs its own InferenceManager(enc_name='tf_col') (embedding.py:183). TabICL wires this ColEmbedding into self.col_embedder and passes only COL_CONFIG (tabicl.py:240-256, 415-429). The adapter replaces only estimator.model_.col_embedder.inference_mgr and returns a restore handle.",
+    "column_batch_shapes": "Grouped path passes features as (B,G+C,T,group_size), with y_train expanded to (B,G+C,train_size) (embedding.py:580-606). Ungrouped path passes (B,H+C,T,1), with y_train expanded to (B,H+C,train_size) (608-644). Shuffle optimization passes (H+C,T,1) and (H+C,train_size), then applies duplication/permutation after the column embedding (646-675). The adapter derives the last leading axis before T/in_dim, slices features and matching target on that same axis, and fails closed on unknown tensor arguments or target shape mismatch.",
+    "independence_and_context": "_compute_embeddings applies the shared input projection, target embedding, set transformer, and affine output per batch item (embedding.py:340-421). Encoder/layer APIs retain arbitrary leading batch axes while attention operates on sequence positions; inducing attention uses only the first train_size positions for keys/values and returns all T positions (encoders.py:120-147; layers.py:406-454, 625-684). Chunking therefore preserves FIT/query sequence, grouping-internal width, feature order, and train_size/embed_with_test; full row interaction and ICL happen only after the full column result returns (tabicl.py:421-442).",
+    "normalization": "The adapter only narrows feature/target views, delegates unchanged manager preparation/forward, and stitches outputs by original column position. It does not change estimator preprocessing, fitted normalization/ensemble generation, tensors' values, or the context sequence."
+  },
+  "mock_review": {
+    "imports": "test_column_chunk.py and column_chunk.py use Python standard library only; neither imports torch/TabICL, opens a checkpoint, or reads protected arrays.",
+    "covered_contracts": [
+      "rank-3 feature-only column axis with 19 columns and incomplete 16+3 chunk reassembly in original order",
+      "rank-4 table plus column/group axes; only the column/group axis is sliced",
+      "target axis follows each slice; scalar train_size/embed_with_test and shared object remain unchanged",
+      "output_repeat is retained",
+      "malformed y_train and unrecognized tensor arguments fail closed",
+      "changed sequence output shape is rejected",
+      "fixed chunk size is 16",
+      "one estimator's column manager install/configure/call/restore path is isolated from an unrelated row manager"
+    ],
+    "claim_limit": "These fake tensors verify wrapper mechanics only; they do not establish model equivalence."
+  },
+  "manager_wrapper_review": {
+    "static_result": "No blocking issue found for this mock-only invocation.",
+    "evidence": [
+      "approved source hashes and round-local path allowlist are checked before launch",
+      "round/manager wrapper and code source snapshots are hashed",
+      "mock wall cap is 30 seconds, start RAM gate is 1.5 GiB, and process-owned tree is sampled with PID creation times",
+      "stdout, stderr, resource curve, termination receipts, and exit code are retained",
+      "no model or checkpoint import is added by the manager wrapper"
+    ],
+    "limitations": [
+      "The manager wrapper's RAM preflight is independent of this source review; manager must record the actual value at launch.",
+      "Synthetic pair requires a separate exact-hash review and the 3 GiB start gate."
+    ]
+  },
+  "known_later_constraint": {
+    "status": "not blocking current mock or planned baseline-first synthetic pair",
+    "detail": "TabICL fit builds inference_config_ and loads the model but does not configure the column InferenceManager; exe_device is assigned during configure. Current adapter installation requires a previously configured CPU manager. The planned synthetic pair installs after the unchunked baseline call, which configures it. Before a future low-memory actual replay, manager must configure the original manager from the resolved CPU COL_CONFIG before installation, then verify settings unchanged; add a mock for fit→configure→install→predict."
+  },
+  "unknowns": [
+    "The checkpoint was not inspected, loaded, or imported in this review; which grouped/ungrouped shape is active for that checkpoint remains to be observed from the approved synthetic run's shape markers.",
+    "No actual TabICL output equivalence or model memory measurement has been established."
+  ],
+  "evidence_scope": "Static source and mock-code review only. No model imports, checkpoint access, data arrays, probabilities, labels, raw data, holdout, Test2025, or F1 evaluation."
+}
+

@@ -1,0 +1,6 @@
+﻿{
+    "actual_exit_code":  0,
+    "stdout":  "integrity2_stdout.log",
+    "stderr":  "integrity2_stderr.log",
+    "scope":  "UTF-8 report and summary/current-lineage hash consistency; no checks/code rerun"
+}

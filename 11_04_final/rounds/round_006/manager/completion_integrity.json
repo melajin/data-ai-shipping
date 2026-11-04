@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "current_round": "round_006",
+  "ledger_rows_for_round": 1,
+  "approved_executed_source_match": true,
+  "performance_fields_null": true,
+  "required_artifacts_present": true,
+  "next_handoff_utf8_valid": true,
+  "review_present": true
+}

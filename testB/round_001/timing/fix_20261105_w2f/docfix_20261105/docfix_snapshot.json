@@ -1,0 +1,8 @@
+﻿{
+    "source":  "readiness_report.md",
+    "snapshot":  "fix_20261105_w2f/docfix_20261105/readiness_report.before.md",
+    "snapshot_sha256":  "94d7929b9c8494b43831294b196a56780cc7ef600ae1ac9ef7fb10c376733c66",
+    "source_sha256_before":  "94d7929b9c8494b43831294b196a56780cc7ef600ae1ac9ef7fb10c376733c66",
+    "bytes":  4484,
+    "created_at":  "2026-11-05T03:14:40.2979439+09:00"
+}

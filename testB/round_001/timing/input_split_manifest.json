@@ -120,10 +120,11 @@
       "wkt_valid"
     ],
     "time_contract": "integer hour index; ts aligns with (part_dt, rfid_time); bins represent [hour start, next hour start); timezone conversion evidence not located",
-    "sort_contract": "sort per vessel by ts, then original stable row ordinal; preserve row ID; no coordinate-line joining",
+    "sort_contract": "A selects the first maximum in original source order (idxmax semantics); stable timestamp then source ordinal ordering is used only for B/C; preserve row ID; no coordinate-line joining",
     "historical_cache": "2025 Test B only: 100 vessel keys, 82,626 rows, 16 columns; inherited A validated 100 vessels and eight compared output fields mismatch=0",
     "2026_scores": "not present in identified work_008 cache; do not assume generated",
-    "source_row_trace": "current timing interface accepts source_row_id; the inherited scored cache's persisted original file/shard row ordinal was not verified"
+    "source_row_trace": "current timing interface accepts source_row_id; the inherited scored cache's persisted original file/shard row ordinal was not verified",
+    "positive_floor_semantics": "the score floor is an implementation detail; its accident-decision meaning, evidence basis, and data sufficiency remain unresolved"
   },
   "reference_and_fit_scope": {
     "known": [
@@ -165,9 +166,9 @@
     "segment_breaks": [
       "NaN or missing score",
       "above-threshold condition false",
-      "adjacent time gap > configured max_gap_hours"
+      "adjacent time gap > configured max_gap_hours; hourly max_gap_hours must be >0 and <=1 so an unobserved hourly bin cannot be bridged"
     ],
-    "ties_and_duplicates": "stable sort by timestamp then original ordinal; earliest maximum wins; preserve duplicate rows and IDs; duplicates do not imply elapsed duration",
+    "ties_and_duplicates": "A is the first maximum in original input order (idxmax semantics); sort by timestamp then original ordinal only for B/C; preserve duplicate rows and source IDs; identical same-time scores are allowed, conflicting valid or missing/valid scores return data_conflict / duplicate_timestamp_scores_conflict with A/B/C blank; count unique timestamps for persistence; duplicates do not imply elapsed duration",
     "params": [
       "threshold",
       "exceedance gt/ge",
@@ -175,7 +176,8 @@
       "persistence_min_hours",
       "persistence_min_rows",
       "threshold_source"
-    ]
+    ],
+    "max_gap_policy": "hourly input max_gap_hours must be greater than 0 and at most 1; values above 1 raise ContractError; no allowed value can join timestamps separated by a missing hourly bin"
   },
   "scope_limits": [
     "no 2026 score creation",

@@ -1,0 +1,28 @@
+﻿{
+    "started_at":  "2026-11-05T03:08:09.8091907+09:00",
+    "ended_at":  "2026-11-05T03:08:10.0349965+09:00",
+    "argv":  [
+                 "python",
+                 "-B",
+                 "-c",
+                 "ast.parse timing_interface.py and publish_legacy_preparation.py"
+             ],
+    "exit_code":  0,
+    "stdout":  "syntax_stdout.log",
+    "stderr":  "syntax_stderr.log",
+    "memory":  {
+                   "checked_at":  "2026-11-05T03:08:09.8091907+09:00",
+                   "free_memory_mib":  4475.2,
+                   "expected_peak_mib":  128,
+                   "estimate_basis":  "AST parsing two small Python source files; no data/cache load; actual peak not measured"
+               },
+    "code_sha256_before":  {
+                               "timing_interface.py":  "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d",
+                               "publish_legacy_preparation.py":  "ad2bcfc19685611968b9f70891d9cc1b3536bad13d71d7efa140cd1acff55ed0"
+                           },
+    "code_sha256_after":  {
+                              "timing_interface.py":  "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d",
+                              "publish_legacy_preparation.py":  "ad2bcfc19685611968b9f70891d9cc1b3536bad13d71d7efa140cd1acff55ed0"
+                          },
+    "scope":  "Syntax parsing only; no publisher execution or output regeneration"
+}

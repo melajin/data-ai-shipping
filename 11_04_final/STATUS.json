@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at_utc": "2026-11-04T17:53:09.777287+00:00",
+  "updated_at_utc": "2026-11-04T18:10:11.293734+00:00",
   "objective": "vessel-level four-class micro-F1 >= 0.7 with development and independent evidence kept separate",
   "goal_status": "in_progress_not_achieved",
   "current_round": "round_006",
-  "round_status": "in_progress_preflight",
-  "manager_session": "codex_192eb310_5ae3_440c_97ef_28aaef23603d",
+  "round_status": "round007_source_and_synthetic_in_progress",
+  "manager_session": "codex_3f5d6e5d_c588_43a3_9279_40d5d4f4edd6",
   "manager_model_request": {
     "model": "gpt-6-astra",
     "reasoning_effort": "high",
@@ -23,7 +23,7 @@
     "raw_read_only": "F:/문제 데이터_수정_1027",
     "source_read_only": "D:/repos/fishing-track-classification",
     "prior_experiment": "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
-    "round": "rounds/round_005"
+    "round": "rounds/round_007"
   },
   "scores": {
     "evaluation_population": "repeatedly exposed development OUTER, 5897 vessels",
@@ -357,48 +357,57 @@
       "model_probability_comparison": null,
       "actual_prediction_calls": 0,
       "goal_070_achieved": false
+    },
+    "round_006": {
+      "evaluation_kind": "fixed_development_two_query_replay_interrupted_by_resource_guard",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "actual_prediction_calls_attempted": 1,
+      "actual_prediction_calls_completed": 0,
+      "model_probability_comparison": null,
+      "candidate_adopted": false,
+      "goal_070_achieved": false,
+      "historical_scores_unchanged": true,
+      "result": "rounds/round_006/artifacts/result.json"
     }
   },
   "budget": {
     "manager_minutes_max": 30,
-    "started_utc": "2026-11-04T17:53:09.777287+00:00",
-    "deadline_utc": "2026-11-04T18:23:09.777287+00:00",
-    "pilot_max_runs": 1,
-    "pilot_max_seconds": 600,
+    "started_utc": "2026-11-04T18:08:43.1132686Z",
+    "deadline_utc": "2026-11-04T18:38:43.1132686Z",
+    "synthetic_pair_max_runs": 1,
+    "synthetic_pair_max_seconds_total": 300,
     "mock_max_runs": 2,
+    "mock_first_allowed_runs": 1,
     "mock_seconds_max_each": 30,
-    "threads_max": 3
+    "threads_max": 3,
+    "actual_data_inference_runs": 0,
+    "parameter_training_fits": 0,
+    "new_f1_evaluations": 0
   },
   "decision_rules": {
-    "current_round": "Runtime acquisition, one synthetic smoke and development-only lineage audit; no new F1",
-    "runtime_gate": "InitialRAM2.196GiB blocked; user requested recheck and launch gate4.045GiB passed; firstsmoke13.047s exit0",
-    "next_gate": "Original ordered FIT/INNER IDs and source-based transforms before real-vessel replay",
-    "holdout": "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan"
+    "current_round": "Round007 source gate, mock, one synthetic equivalence pair",
+    "runtime_gate": "Start>=3GiB; runtime stop<1.5GiB; 300seconds including cleanup",
+    "next_gate": "Only after source/mock/synthetic pass, one full-context adapter replay",
+    "holdout": "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan",
+    "ram_policy": "When RAM insufficient do other feasible independent work first, then recheck and proceed under resource and finite-attempt gates"
   },
-  "current_task": "Fix optional diagnostic attributes, independent mock review, one frozen two-query replay",
-  "next_task": "Round006 fix optional cache_mode_ telemetry, test absent-attribute normal state, then one unchanged two-query replay",
+  "current_task": "round007 source proof, adapter authoring and independent review; no actual data inference",
+  "next_task": "Round007 source-proven column-only CPU chunk adapter and one bounded tiny synthetic equivalence pair; no real-data inference",
   "blockers": [
-    "Round005 one-pilot budget exhausted after optional-attribute telemetry error; next fresh session must fix/test before new pilot"
+    "Unmodified full-context CPU inference crossed predeclared available-RAM threshold; no probabilities produced",
+    "Round006 actual pilot allowance exhausted; no identical retry"
   ],
   "unresolved": [
-    "Full FIT3144 context CPU prediction not reached; CPU/CUDA two-query numerical equivalence unmeasured",
-    "Round005 diagnostics directly accessed cache_mode_ absent when kv_cache=False; narrow fix/mock check assigned round006",
-    "Original complete historical F156 pointwise equivalence not established; only approved development NPZ lineage and transform checked",
-    "Holdout known_holdout_reused=true; independent exposure audit remains unresolved; no individual holdout values opened"
+    "CPU/CUDA fixed two-query probability equivalence remains unmeasured",
+    "Full inference peak memory and exact allocation site unmeasured; CPU bypasses automatic batching by source inspection",
+    "Original complete historical F156 pointwise equivalence not established beyond approved development lineage",
+    "Holdout known_holdout_reused=true; independent exposure audit remains unresolved; individual values not opened",
+    "Seasonal signal hypothesis requires feature inventory and separately controlled development experiment"
   ],
   "active_workers": [
-    {
-      "task": "author",
-      "thread": "01a1a7b1-b022-7fb1-8b54-8c0cfb3c3d43",
-      "model_request": "gpt-6-luna",
-      "effort_request": "xhigh"
-    },
-    {
-      "task": "review",
-      "thread": "01a1a7b1-d620-7b72-87fd-a2383c6feaeb",
-      "model_request": "gpt-6-luna",
-      "effort_request": "xhigh"
-    }
+    "code_author",
+    "reviewer"
   ],
   "handoff": {
     "ready": false,
@@ -410,8 +419,8 @@
     "pause_reason": null,
     "authorization": "User explicitly authorizes local experiments, fresh Astra high handoffs and closing completed session tabs without repeated approval",
     "close_completed_session_requested": true,
-    "completed_session_id": null,
-    "close_completed_session_status": "pending_after_accepted_handoff",
+    "completed_session_id": "codex_192eb310_5ae3_440c_97ef_28aaef23603d",
+    "close_completed_session_status": "CLI has no supported structured-chat close handle; manual close of this completed tab only after accepted handoff",
     "next_session_id": "codex_192eb310_5ae3_440c_97ef_28aaef23603d",
     "accepted_at_utc": "2026-11-04T17:51:44.1652641Z"
   },
@@ -456,26 +465,40 @@
     "new_parameter_training_fits": 0,
     "pretrained_context_fit_returned": 1,
     "model_pilot_launches": 1,
-    "predict_proba_attempted": 0,
+    "predict_proba_attempted": 1,
     "predict_proba_completed": 0,
     "new_actual_f1_evaluations": 0,
     "new_independent_evaluation": false,
     "hardware_validation": false,
-    "export_runs": 1,
-    "independent_array_checks": 1,
+    "export_runs": 0,
+    "independent_array_checks": 0,
+    "mock_runs": 1,
+    "mock_pass": true,
     "pilot_exit_code": 1,
-    "pilot_seconds": 24.125,
-    "total_bounded_child_seconds": 28.96900000000096,
+    "pilot_seconds": 27.59400000000096,
+    "total_bounded_child_seconds": 28.25,
     "all_owned_compute_processes_finished": true,
-    "failure_layer": "diagnostic API attribute access after context fit",
-    "failure": "AttributeError: cache_mode_ absent with kv_cache=False"
+    "failure_layer": "runtime available-memory resource guard during predict_proba",
+    "failure": "available_ram_below_1_5_gib; no OS OOM exception or output probabilities",
+    "postexit_verification": "rounds/round_006/manager/postexit_verification.json"
   },
   "independent_evaluation_blockers": [
     "No exposure-verified independent evaluation roster approved or opened"
   ],
   "latest_user_steering": {
-    "recorded_at_utc": "2026-11-04T17:50:55.064868+00:00",
-    "instruction": "Every round record changes from previous, current progress/improvements, next changes; launch fresh manager, confirm acceptance, close completed session and stop; repeat toward0.7",
+    "recorded_at_utc": "2026-11-04T18:06:35.160145+00:00",
+    "instructions": [
+      "Consider seasonal and time-of-day changes in fishing patterns; hypothesis documented without changing round006 experiment",
+      "Recheck RAM:18:00:31UTC4.201679GiB",
+      "All future work: when RAM insufficient do other feasible independent work, recheck, then proceed under resource gates"
+    ],
+    "policy_persisted_in": [
+      "AGENTS.md",
+      "CYCLE_PROTOCOL.md",
+      "NEXT_SESSION.md"
+    ],
+    "latest_ram_recheck": "rounds/round_006/manager/ram_recheck_after_alternative_work.json",
+    "latest_available_ram_gib": 4.5118408203125,
     "performance_guaranteed": false
   },
   "user_pause": {
@@ -501,7 +524,12 @@
     "checkpoint_exact_sha256_found": true,
     "historical_cuda_runtime_reproduced": false,
     "ready_for_m4_training": false,
-    "next_step": "isolated CPU runtime and input lineage recovery"
+    "next_step": "Prove and test CPU column-only batching on tiny synthetic inputs, then same full-context replay; M4 training remains gated"
   },
-  "next_manager_session": "codex_192eb310_5ae3_440c_97ef_28aaef23603d"
+  "next_manager_session": null,
+  "latest_user_steering_previous": {
+    "recorded_at_utc": "2026-11-04T17:50:55.064868+00:00",
+    "instruction": "Every round record changes from previous, current progress/improvements, next changes; launch fresh manager, confirm acceptance, close completed session and stop; repeat toward0.7",
+    "performance_guaranteed": false
+  }
 }

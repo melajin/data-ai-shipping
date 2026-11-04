@@ -1,0 +1,8 @@
+test_absent_cache_mode_is_accepted_and_reported_as_absent (__main__.ValidatorMockTests.test_absent_cache_mode_is_accepted_and_reported_as_absent) ... ok
+test_explicit_none_cache_mode_is_accepted_and_distinguished (__main__.ValidatorMockTests.test_explicit_none_cache_mode_is_accepted_and_distinguished) ... ok
+test_incorrect_cpu_amp_fa3_offload_and_kv_settings_are_rejected (__main__.ValidatorMockTests.test_incorrect_cpu_amp_fa3_offload_and_kv_settings_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "verified_at_utc": "2026-11-04T18:08:23.507442+00:00",
+  "from_round": "round_006",
+  "accepted": true,
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "high",
+  "new_session_id": "codex_3f5d6e5d_c588_43a3_9279_40d5d4f4edd6",
+  "new_handle": "structured-agent-session-codex_3f5d6e5d_c588_43a3_9279_40d5d4f4edd6",
+  "worktree_id": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+  "handoff_snapshot_sha256": "3D3E5A5ED6A6D522F17496A1F966890D8F38FB2EBE748959D234FA91AF30B53F",
+  "reviewed_handoff_hash_matches": true,
+  "model_verified_in_new_session": false,
+  "interpretation": "Host accepted fresh session launch and journaled prompt; model/effort request is not new session runtime attestation",
+  "old_manager_stopping": true,
+  "completed_tab_closure": "No supported structured-chat close handle in CLI terminal inventory/help. No unrelated process or tab closed. Close only completed session codex_192eb310_5ae3_440c_97ef_28aaef23603d manually if needed.",
+  "shared_STATUS_not_modified_after_transfer": true
+}

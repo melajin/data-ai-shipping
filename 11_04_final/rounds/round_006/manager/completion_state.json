@@ -1,0 +1,40 @@
+{
+  "completed_at_utc": "2026-11-04T18:06:35.160145+00:00",
+  "current_round": "round_006",
+  "handoff": {
+    "ready": true,
+    "next_session_launched": false,
+    "launch_receipt": "automation/receipts/round_006_launch.json",
+    "launcher": "automation/Start-NextSession.ps1",
+    "launcher_owner": "root",
+    "next_round": "round_007",
+    "pause_reason": null,
+    "authorization": "User explicitly authorizes local experiments, fresh Astra high handoffs and closing completed session tabs without repeated approval",
+    "close_completed_session_requested": true,
+    "completed_session_id": "codex_192eb310_5ae3_440c_97ef_28aaef23603d",
+    "close_completed_session_status": "CLI has no supported structured-chat close handle; manual close of this completed tab only after accepted handoff",
+    "next_session_id": "codex_192eb310_5ae3_440c_97ef_28aaef23603d",
+    "accepted_at_utc": "2026-11-04T17:51:44.1652641Z"
+  },
+  "execution_summary": {
+    "new_parameter_training_fits": 0,
+    "pretrained_context_fit_returned": 1,
+    "model_pilot_launches": 1,
+    "predict_proba_attempted": 1,
+    "predict_proba_completed": 0,
+    "new_actual_f1_evaluations": 0,
+    "new_independent_evaluation": false,
+    "hardware_validation": false,
+    "export_runs": 0,
+    "independent_array_checks": 0,
+    "mock_runs": 1,
+    "mock_pass": true,
+    "pilot_exit_code": 1,
+    "pilot_seconds": 27.59400000000096,
+    "total_bounded_child_seconds": 28.25,
+    "all_owned_compute_processes_finished": true,
+    "failure_layer": "runtime available-memory resource guard during predict_proba",
+    "failure": "available_ram_below_1_5_gib; no OS OOM exception or output probabilities",
+    "postexit_verification": "rounds/round_006/manager/postexit_verification.json"
+  }
+}

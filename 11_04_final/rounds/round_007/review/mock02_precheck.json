@@ -1,0 +1,47 @@
+﻿{
+  "schema": "round007_mock_recovery_precheck.v1",
+  "reviewed_utc": "2026-11-04T18:21:00Z",
+  "reviewer_role": "independent source reviewer",
+  "requested_model": "gpt-6-luna",
+  "requested_effort": "xhigh",
+  "host_evidence": "rounds/round_007/manager/assistant_host_evidence.json",
+  "disposition": "approve_one_corrective_mock_only",
+  "mock_attempt_allowance": {
+    "maximum_total_mock_invocations": 2,
+    "mock_01": "already used; adapter assertions passed and child exited 0, but wrapper receipt was falsely marked failed because it counted the signaled Popen-held root process object as alive",
+    "mock_02": "one corrective invocation approved to validate the patched wrapper's normal-exit receipt path; final allowed mock",
+    "synthetic_pair": "not approved by this document"
+  },
+  "exact_approved_sources_sha256": {
+    "rounds/round_007/code/column_chunk.py": "BF263BA75BEF5ED9AAB04364459E426F3A82BE92DA2CE642E89B06558FD9CDED",
+    "rounds/round_007/code/test_column_chunk.py": "44B3AE7F56560EFD05268D8A0D253128CF1BE78178BCE4D0DCB75F1E3D602A32",
+    "rounds/round_007/manager/run_bounded.py": "2820871E8884A0FD642E550301154C16039D6C85C6168BDA32CBF67340F3BEE4"
+  },
+  "mock_01_evidence": {
+    "receipt": "rounds/round_007/logs/mock_01/receipt.json",
+    "raw_wrapper_status": "failed_or_stopped",
+    "child_exit_code": 0,
+    "stdout": "pure mock checks passed",
+    "elapsed_seconds": 0.281,
+    "preflight_available_ram_gib": 4.811370849609375,
+    "minimum_observed_available_ram_gib": 4.800411224365234,
+    "followup": "rounds/round_007/manager/mock_01_postexit_correction.json records no process present in follow-up OS snapshot and no additional termination",
+    "interpretation": "The pure mock assertions completed successfully. The wrapper's old alive check lacked a waitable process state and misclassified an exited root process while its Popen kernel handle remained open."
+  },
+  "wrapper_patch_review": {
+    "source": "rounds/round_007/manager/run_bounded.py",
+    "sha256": "2820871E8884A0FD642E550301154C16039D6C85C6168BDA32CBF67340F3BEE4",
+    "change": "adds SYNCHRONIZE access and WaitForSingleObject(handle, 0); only WAIT_TIMEOUT (258), matching PID creation ticks, is treated as running; WAIT_FAILED raises an OS error",
+    "static_conclusion": "Patch correctly distinguishes a running process from an exited process object retained by Popen. No unrelated process termination is introduced. No blocking issue found for the single mock02 invocation."
+  },
+  "execution_contract": {
+    "kind": "mock",
+    "script": "rounds/round_007/code/test_column_chunk.py",
+    "start_available_ram_gib_min": 1.5,
+    "wall_cap_seconds": 30,
+    "scope": "pure mock only; no TabICL/Torch imports, checkpoint, model inference, or protected data",
+    "source_manifest_must_match": true,
+    "mock_02_is_final_mock_allowance": true
+  },
+  "review_boundary": "This approves only the exact mock sources and one corrective manager run. It does not approve synthetic_pair.py, a model/checkpoint run, actual data, or any performance/F1 claim."
+}

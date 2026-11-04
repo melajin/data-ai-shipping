@@ -1,0 +1,3 @@
+elapsed_seconds,available_ram_gib,tree_working_set_bytes,processes
+0.0,4.801288604736328,9015296,"[{""pid"":10448,""creation_ticks"":134382901203195399,""running"":true,""working_set_bytes"":2768896,""peak_working_set_bytes"":2768896,""private_bytes"":593920,""cpu_seconds"":0.015625},{""pid"":12852,""creation_ticks"":134382901203251340,""running"":true,""working_set_bytes"":6246400,""peak_working_set_bytes"":6246400,""private_bytes"":1134592,""cpu_seconds"":0.0}]"
+0.2649999999994179,4.800868988037109,0,[]

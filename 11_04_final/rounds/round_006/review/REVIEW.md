@@ -24,6 +24,6 @@ The pilot is conditionally approved only if that mock passes and the manager con
 
 This is a static source review. It does not establish that the mock passed, that the model pilot ran, that probabilities reproduced, or that inference meets any performance or F1 target. No protected data, holdout, Test2025, or full 7,372-row source was read.
 
-Requested reviewer configuration was GPT-6 Luna xhigh. Host-turn model/effort evidence was not independently available in this child review and is not claimed here.
+Requested reviewer configuration was GPT-6 Luna xhigh. Host-turn evidence in `manager/assistant_host_evidence.json` also reports GPT-6 Luna xhigh; this is host configuration evidence, not internal model authentication.
 
 See [precheck.json](precheck.json) for hashes and machine-readable disposition.

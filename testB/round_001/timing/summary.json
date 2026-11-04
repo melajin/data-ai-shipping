@@ -8,9 +8,11 @@
   "B_C_unavailable_reason": "2026 scores absent; threshold source, boundary, max gap, persistence minima and approved label/split evidence unresolved",
   "synthetic_checks": {
     "status": "passed",
-    "checks": 8,
+    "checks": 14,
     "actual_exit_code": 0,
-    "log": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\round_001\\run_003\\stdout.log"
+    "log": "testB\\round_001\\timing\\fix_20261105_w2f\\stdout.log",
+    "stderr": "testB\\round_001\\timing\\fix_20261105_w2f\\stderr.log",
+    "scope": "synthetic cases only; not actual-data performance"
   },
   "inherited_table_step_exit_code": 0,
   "score_cache": "2025 Test B only; 100 IDs; 82,626 rows; 16 columns",
@@ -24,8 +26,9 @@
       "model": "gpt-6-luna",
       "effort": "xhigh"
     },
-    "runtime_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\integration\\runtime_receipts\\W2_start.json",
-    "observed": "receipt reports model gpt-6-luna, effort xhigh; provider internal runtime not independently observable"
+    "runtime_receipt": "testB/round_001/integration/runtime_receipts/W2F_start.json",
+    "process_receipt": "testB/round_001/integration/runtime_receipts/W2F_process.json",
+    "observed": "W2F Orca start receipt reports gpt-6-luna/xhigh; provider-internal runtime not independently observable"
   },
   "actual_exit_code": 0,
   "legacy_process_record": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\process_result.json",
@@ -33,12 +36,31 @@
   "manifest": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\input_split_manifest.json",
   "round_output_hashes": {
     "comparison_readiness_100.csv": "5e06a7c56b132ecdac291b0f967febb66b9faa53825147e5b5af2c64fa7721cb",
-    "input_split_manifest.json": "593a684dbc4db16c486b0fbd71d1792f8df18848625843b058168e11fd0cc85a",
-    "timing_interface.py": "167afb9c9e114f75edb07b7c8df02f8b718bea4f10e528e11adee9ce3c59788e",
-    "readiness_report.md": "7909b0db5eb69371af9fa0616ec74d9f5b438e80370b617a408187a685a7c384"
+    "input_split_manifest.json": "b4ac0ae447a0bdaaca07ad3232a953493db8ac90c9ec0180f20811a88af37d0e",
+    "timing_interface.py": "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d",
+    "readiness_report.md": "d0a90fd702686d06c69c1620f684678e4cbb0df001de810c2afab2df7166636e",
+    "publish_legacy_preparation.py": "73c20a70456ee86bc43843f7d55ca047895d51689983efca120103cdef5602ac",
+    "code_lineage.json": "afe6d2c687a3dd333ebc9a777b3f025ebd155c5202d2da30bd6f3d24d36bd279"
   },
-  "tie_break_contract": "A = first maximum in original input order (idxmax); original order retained for A; time-sorted rows are used only for B/C segment search",
-  "timing_interface_sha256": "167afb9c9e114f75edb07b7c8df02f8b718bea4f10e528e11adee9ce3c59788e",
+  "tie_break_contract": "A = first maximum in original input order (idxmax); source order retained for A; stable time plus source ordinal ordering is used only for B/C",
+  "timing_interface_sha256": "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d",
   "tie_order_regression_exit_code": 0,
-  "A_tie_semantics": "first maximum in original input order (idxmax); preserve source order for A, sort by time only for B/C segment search"
+  "A_tie_semantics": "first maximum in original input order (idxmax); sort by time only for B/C segment search",
+  "timing_fix_execution": {
+    "actual_exit_code": 0,
+    "checks": 14,
+    "process_record": "testB\\round_001\\timing\\fix_20261105_w2f\\process_result.json",
+    "environment": "testB\\round_001\\timing\\fix_20261105_w2f\\environment.json",
+    "memory_before_tests": "testB\\round_001\\timing\\fix_20261105_w2f\\memory_before_tests.json",
+    "scope": "Synthetic timing interface cases only; no real scores, events, actual B/C, threshold fitting, or performance evaluation"
+  },
+  "max_gap_policy": "hourly max_gap_hours must be >0 and <=1; values above 1 raise ContractError; missing hourly bins cannot be bridged",
+  "duplicate_timestamp_policy": "identical scores retain source rows; conflicting valid or missing/valid scores return data_conflict / duplicate_timestamp_scores_conflict and leave A/B/C blank; persistence count uses unique timestamps",
+  "score_floor_semantics": "positive floor actual accident-decision meaning and evidence sufficiency remain unresolved",
+  "legacy_target_limit": "100-vessel table is legacy only; W0 report of zero overlap with new v2 Test B roster is pending independent confirmation; do not relabel rows or transfer predictions",
+  "current_dispatch_receipts": {
+    "start": "testB/round_001/integration/runtime_receipts/W2F_start.json",
+    "process": "testB/round_001/integration/runtime_receipts/W2F_process.json",
+    "process_exit_code": 0
+  }
 }

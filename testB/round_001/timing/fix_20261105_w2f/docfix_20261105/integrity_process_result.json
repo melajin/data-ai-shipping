@@ -1,0 +1,7 @@
+﻿{
+    "actual_exit_code":  1,
+    "stdout":  "integrity_stdout.log",
+    "stderr":  "integrity_stderr.log",
+    "checked_at":  "2026-11-05T03:15:36.0987278+09:00",
+    "scope":  "Document hash consistency only; no tests or code rerun"
+}
