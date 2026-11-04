@@ -1,0 +1,14 @@
+﻿{
+    "checked_utc":  "2026-11-04T20:45:18.4713329Z",
+    "available_gib":  4.3654861450195313,
+    "expected_stdlib_peak_mib":  100,
+    "expected_document_workers_overhead_mib":  200,
+    "estimates_not_measurements":  true,
+    "other_python":  [
+
+                     ],
+    "other_work":  "Test B manager active; unrelated, do not terminate",
+    "parallel_agents":  2,
+    "total_slots":  3,
+    "host_limit":  4
+}

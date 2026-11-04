@@ -1,0 +1,346 @@
+﻿{
+    "schema":  "round003_v_failure_audit_v1",
+    "created_local":  "2026-11-05 05:41:42 +09:00",
+    "task_id":  "task_2229502351ed",
+    "dispatch_id":  "ctx_d19e5fc43cd8",
+    "run_id":  "run_202dfeeb8d64",
+    "scope":  "Only testB/round_003/audit/failure_001 was written; execution, canonical, cache, source data and prior-round files remained read-only",
+    "orca":  {
+                 "executable":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\orca\\resources\\bin\\orca.exe",
+                 "version":  "1.4.246.0",
+                 "skills_get":  [
+                                    "orchestration",
+                                    "orca-cli"
+                                ],
+                 "requested_model":  "gpt-6-luna",
+                 "requested_effort":  "xhigh",
+                 "launch_cli_exit":  0,
+                 "provider_internal_model_effort":  "unknown",
+                 "E_dispatch":  "ctx_b7f1523a9658",
+                 "E_worker_done":  "msg_f7d45da31bf0 failed"
+             },
+    "memory":  {
+                   "start_observed_kst":  "2026-11-05 05:29:45 +09:00",
+                   "start_free_mib":  4120.6,
+                   "total_mib":  14140.9,
+                   "start_process_count":  351,
+                   "python_process_observed":  false,
+                   "fixture_preflight_kst":  "2026-11-05 05:31:22 +09:00",
+                   "fixture_preflight_free_mib":  4234.6,
+                   "fixture_preflight_process_count":  342,
+                   "expected_fixture_increment_mib":  "\u003c=32",
+                   "required_session_reserve_mib":  512,
+                   "concurrent_work":  "E settled failed; this V audit only; unattributed Orca/host activity remained",
+                   "actual_peak_measured":  false
+               },
+    "E_execution":  {
+                        "overall_status":  "blocked_for_production_equivalence",
+                        "final_command":  "python -B testB/round_003/execution/compare_loader_sample.py",
+                        "final_exit_code":  2,
+                        "first_attempt_exit_code":  1,
+                        "attempts":  [
+                                         {
+                                             "started_local":  "2026-11-05T05:18:38.9213255+09:00",
+                                             "scope_full_loader_called":  false,
+                                             "receipt_sha256":  "5fe8fd330ebb06d90f9669db84f83ff17db16b1c8aece87bfd4648c0bd5b3d96",
+                                             "finished_local":  "2026-11-05T05:18:40.2282316+09:00",
+                                             "attempt":  "01",
+                                             "stdout_path":  "sample_comparison.stdout.log",
+                                             "stderr_path":  "sample_comparison.stderr.log",
+                                             "stdout_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                             "exit_code":  1,
+                                             "ram_preflight_free_mib":  4333.7,
+                                             "stderr_sha256":  "7f9009d3a3d6aa97841705df18b84e1c3acf26ef936afa544e6b669b1123fcb0"
+                                         },
+                                         {
+                                             "started_local":  "2026-11-05T05:19:06.2016846+09:00",
+                                             "scope_full_loader_called":  false,
+                                             "receipt_sha256":  "589b1a5cfa8ce50f34c50be26965467a1832db31e8ea3059d2f9b7c0f4252d3c",
+                                             "finished_local":  "2026-11-05T05:19:07.4951227+09:00",
+                                             "attempt":  "02",
+                                             "stdout_path":  "sample_comparison_attempt02.stdout.log",
+                                             "stderr_path":  "sample_comparison_attempt02.stderr.log",
+                                             "stdout_sha256":  "4d36a4f03914fe7ef36d5b7e040a6a50d8a225509725e04f33358dbc61547932",
+                                             "exit_code":  0,
+                                             "ram_preflight_free_mib":  4294.4,
+                                             "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                                         },
+                                         {
+                                             "started_local":  "2026-11-05T05:20:30.3722888+09:00",
+                                             "scope_full_loader_called":  false,
+                                             "receipt_sha256":  "529cf24f1f18ed724463a52e96fd0e39b89bc52e27ba0488a6142a65e24f1123",
+                                             "finished_local":  "2026-11-05T05:20:31.6566062+09:00",
+                                             "attempt":  "03",
+                                             "stdout_path":  "sample_comparison_attempt03.stdout.log",
+                                             "stderr_path":  "sample_comparison_attempt03.stderr.log",
+                                             "stdout_sha256":  "b8094634fa6ed298418ca30262f8050814dc73f8a57edc01a4de38000bb6754d",
+                                             "exit_code":  0,
+                                             "ram_preflight_free_mib":  4297.6,
+                                             "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                                         },
+                                         {
+                                             "started_local":  "2026-11-05T05:23:54.3621149+09:00",
+                                             "scope_full_loader_called":  false,
+                                             "receipt_sha256":  "381a90f5e82a135bd767b295e3d1cde65e74fe2cc0ca6b7aa426c7895db2f98d",
+                                             "finished_local":  "2026-11-05T05:23:55.8969772+09:00",
+                                             "attempt":  "04",
+                                             "stdout_path":  "sample_comparison_attempt04.stdout.log",
+                                             "stderr_path":  "sample_comparison_attempt04.stderr.log",
+                                             "stdout_sha256":  "424f7b576d804f52bd4335c53eeb0ebc1f30e0486e9fd7b3a4682fad56c46c60",
+                                             "exit_code":  0,
+                                             "ram_preflight_free_mib":  4457.4,
+                                             "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                                         },
+                                         {
+                                             "started_local":  "2026-11-05T05:24:45.9737442+09:00",
+                                             "scope_full_loader_called":  false,
+                                             "receipt_sha256":  "a1001aced7f4d77ac40ca1444627f24354cad4578a1e507d827592d77a40e3f6",
+                                             "finished_local":  "2026-11-05T05:24:47.2736377+09:00",
+                                             "attempt":  "05",
+                                             "stdout_path":  "sample_comparison_attempt05.stdout.log",
+                                             "stderr_path":  "sample_comparison_attempt05.stderr.log",
+                                             "stdout_sha256":  "6bf5ab1c37181486bf2260fc778d73afb6725893962c84c06d5ff562d64212a0",
+                                             "exit_code":  0,
+                                             "ram_preflight_free_mib":  4462.7,
+                                             "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                                         },
+                                         {
+                                             "started_local":  "2026-11-05T05:26:16.1975237+09:00",
+                                             "scope_full_loader_called":  false,
+                                             "receipt_sha256":  "1fd74cb3fc8bae86865d725a202b253d80169acf30cb89d65f3500582ac638fb",
+                                             "finished_local":  "2026-11-05T05:26:17.4953190+09:00",
+                                             "attempt":  "06",
+                                             "stdout_path":  "sample_comparison_attempt06.stdout.log",
+                                             "stderr_path":  "sample_comparison_attempt06.stderr.log",
+                                             "stdout_sha256":  "6bf5ab1c37181486bf2260fc778d73afb6725893962c84c06d5ff562d64212a0",
+                                             "exit_code":  2,
+                                             "ram_preflight_free_mib":  4269.9,
+                                             "stderr_sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                                         }
+                                     ],
+                        "actual_sample_rows":  16384,
+                        "actual_sample_scope":  "train rows_train_1.parquet row_index 0..16383; projection as listed in sample_comparison.json; Arrow batch 8192",
+                        "whole_canonical_loader_called":  false,
+                        "final_boundary_fixture_equal":  false,
+                        "final_comparison_exit_code":  2,
+                        "worker_task_outcome":  "failed",
+                        "no_full_reference_or_score":  true
+                    },
+    "canonical_sources":  [
+                              {
+                                  "match":  true,
+                                  "path":  "D:/repos/fishing-track-classification/code/tools/run_remeasure_20261031.py",
+                                  "fixture_runtime_sha256":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+                                  "current_sha256":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+                                  "pinned_sha256":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c"
+                              },
+                              {
+                                  "match":  true,
+                                  "path":  "D:/repos/fishing-track-classification/code/tools/run_cycle4_3_featAC_20261101.py",
+                                  "fixture_runtime_sha256":  null,
+                                  "current_sha256":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+                                  "pinned_sha256":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3"
+                              },
+                              {
+                                  "match":  true,
+                                  "path":  "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py",
+                                  "fixture_runtime_sha256":  null,
+                                  "current_sha256":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+                                  "pinned_sha256":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8"
+                              },
+                              {
+                                  "match":  true,
+                                  "path":  "D:/repos/fishing-track-classification/code/tools/run_005_F156_merge_20261101.py",
+                                  "fixture_runtime_sha256":  null,
+                                  "current_sha256":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+                                  "pinned_sha256":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4"
+                              }
+                          ],
+    "round002_readonly_artifacts":  [
+                                        {
+                                            "match":  true,
+                                            "path":  "testB/round_002/preparation/manifest.json",
+                                            "expected_sha256":  "3db3c841f02b9eea6c04978f030c84085a583b81dd4805e2cc5f80b19932af1f",
+                                            "actual_sha256":  "3db3c841f02b9eea6c04978f030c84085a583b81dd4805e2cc5f80b19932af1f"
+                                        },
+                                        {
+                                            "match":  true,
+                                            "path":  "testB/round_002/execution/execution_manifest.json",
+                                            "expected_sha256":  "a8bb74a10936572ad152aabeacc5f741a036d922e3a86fdd2f0dbcb494117e42",
+                                            "actual_sha256":  "a8bb74a10936572ad152aabeacc5f741a036d922e3a86fdd2f0dbcb494117e42"
+                                        },
+                                        {
+                                            "match":  true,
+                                            "path":  "testB/round_002/scorer_review/manifest.json",
+                                            "expected_sha256":  "2502648bb665c5249dc20c353c85b2f705aeaf35b55cc1d8fc18b2f8386eea44",
+                                            "actual_sha256":  "2502648bb665c5249dc20c353c85b2f705aeaf35b55cc1d8fc18b2f8386eea44"
+                                        },
+                                        {
+                                            "match":  true,
+                                            "path":  "testB/round_002/preparation/artifact_hashes.json",
+                                            "expected_sha256":  "d3ccbb1b5cebf2609ddf09f4b07cbe5537d2dfcbd993bab226e3718a04705bae",
+                                            "actual_sha256":  "d3ccbb1b5cebf2609ddf09f4b07cbe5537d2dfcbd993bab226e3718a04705bae"
+                                        },
+                                        {
+                                            "match":  true,
+                                            "path":  "testB/round_002/execution/isolated_runner.py",
+                                            "expected_sha256":  "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d",
+                                            "actual_sha256":  "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d"
+                                        },
+                                        {
+                                            "match":  true,
+                                            "path":  "testB/round_002/scorer_review/scorer_review.md",
+                                            "expected_sha256":  "949a103238df331aae0d2284f1ab798838a52ae15be176b5d1d94e1027dd2bee",
+                                            "actual_sha256":  "949a103238df331aae0d2284f1ab798838a52ae15be176b5d1d94e1027dd2bee"
+                                        }
+                                    ],
+    "e_owned_hashes":  [
+                           {
+                               "match":  true,
+                               "path":  "testB/round_003/execution/round003_runner.py",
+                               "expected_sha256":  "13f96933e2ca576c1fd42553ba4b79a0d7ca3150b6a518f2c2cc1e1ce7ab20ce",
+                               "actual_sha256":  "13f96933e2ca576c1fd42553ba4b79a0d7ca3150b6a518f2c2cc1e1ce7ab20ce"
+                           },
+                           {
+                               "match":  true,
+                               "path":  "testB/round_003/execution/bounded_loader.py",
+                               "expected_sha256":  "89f71a938ce521527307c25856f1d576f90e7b0c7368f7627e337467d6ead218",
+                               "actual_sha256":  "89f71a938ce521527307c25856f1d576f90e7b0c7368f7627e337467d6ead218"
+                           },
+                           {
+                               "match":  true,
+                               "path":  "testB/round_003/execution/preflight_report.md",
+                               "expected_sha256":  "c5cb596b26949688ec4b22ed0737c453abfc89622aa48dee299853634073afea",
+                               "actual_sha256":  "c5cb596b26949688ec4b22ed0737c453abfc89622aa48dee299853634073afea"
+                           },
+                           {
+                               "match":  true,
+                               "path":  "testB/round_003/execution/compare_loader_sample.py",
+                               "expected_sha256":  "2a9252f88f152eafdd956c7e5208113eba4446aac1aa47b99c1115aebed314d8",
+                               "actual_sha256":  "2a9252f88f152eafdd956c7e5208113eba4446aac1aa47b99c1115aebed314d8"
+                           },
+                           {
+                               "match":  true,
+                               "path":  "testB/round_003/execution/sample_comparison.json",
+                               "expected_sha256":  "835f01e41863ca25e77b5a54c7a80795f3aec0a520e0bef871993d3e9a2c0ab0",
+                               "actual_sha256":  "835f01e41863ca25e77b5a54c7a80795f3aec0a520e0bef871993d3e9a2c0ab0"
+                           }
+                       ],
+    "reviewed_inputs":  [
+                            {
+                                "path":  "testB/round_003/execution/preflight_report.md",
+                                "sha256":  "c5cb596b26949688ec4b22ed0737c453abfc89622aa48dee299853634073afea",
+                                "bytes":  12726
+                            },
+                            {
+                                "path":  "testB/round_003/execution/execution_summary.json",
+                                "sha256":  "74b946857ba469ec1e65028c447dcc20bda9399a4b16b20566176e5e781a9ade",
+                                "bytes":  7754
+                            },
+                            {
+                                "path":  "testB/round_003/execution/execution_receipt.json",
+                                "sha256":  "4ae8509dfdcaa77082e58b5f897409f07a8e14514ed0f25d0d5d66b192af86de",
+                                "bytes":  1371
+                            },
+                            {
+                                "path":  "testB/round_003/execution/sample_comparison.json",
+                                "sha256":  "835f01e41863ca25e77b5a54c7a80795f3aec0a520e0bef871993d3e9a2c0ab0",
+                                "bytes":  3454
+                            },
+                            {
+                                "path":  "testB/round_003/execution/sample_comparison_attempt06.receipt.json",
+                                "sha256":  "1fd74cb3fc8bae86865d725a202b253d80169acf30cb89d65f3500582ac638fb",
+                                "bytes":  880
+                            },
+                            {
+                                "path":  "testB/round_003/execution/sample_comparison_attempt06.stdout.log",
+                                "sha256":  "6bf5ab1c37181486bf2260fc778d73afb6725893962c84c06d5ff562d64212a0",
+                                "bytes":  4814
+                            },
+                            {
+                                "path":  "testB/round_003/execution/sample_comparison_attempt06.stderr.log",
+                                "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                "bytes":  0
+                            },
+                            {
+                                "path":  "testB/round_003/execution/bounded_loader.py",
+                                "sha256":  "89f71a938ce521527307c25856f1d576f90e7b0c7368f7627e337467d6ead218",
+                                "bytes":  1770
+                            },
+                            {
+                                "path":  "testB/round_003/execution/compare_loader_sample.py",
+                                "sha256":  "2a9252f88f152eafdd956c7e5208113eba4446aac1aa47b99c1115aebed314d8",
+                                "bytes":  7328
+                            },
+                            {
+                                "path":  "testB/round_003/execution/round003_runner.py",
+                                "sha256":  "13f96933e2ca576c1fd42553ba4b79a0d7ca3150b6a518f2c2cc1e1ce7ab20ce",
+                                "bytes":  1438
+                            },
+                            {
+                                "path":  "testB/round_003/integration/worker_launch_receipts.json",
+                                "sha256":  "cac4130f455014f01bdab337e4164d4d1a152ac94625d2133a9ef6ea41ef51f9",
+                                "bytes":  1587
+                            }
+                        ],
+    "fixture":  {
+                    "script_exit_code":  0,
+                    "actual_canonical_AST_invoked":  true,
+                    "independent_oracle_invoked":  true,
+                    "source_data_read":  false,
+                    "precision_counterexample_global_id":  "9007199254740992",
+                    "precision_counterexample_batch_id":  "9007199254740993",
+                    "key_valid_true_false_both_checked":  true,
+                    "output_index_checked":  true,
+                    "canonical_sha_matches_pinned":  true,
+                    "stdout":  "testB/round_003/audit/failure_001/fixture.stdout.log",
+                    "stderr":  "testB/round_003/audit/failure_001/fixture.stderr.log",
+                    "result_json":  "testB/round_003/audit/failure_001/fixture_result.json"
+                },
+    "preserved_history":  {
+                              "round002_initial_independent_audit":  "FAIL exit 1; preserved separately",
+                              "round002_metadata_only_delta":  "PASS 10 exit 0; distinct event",
+                              "historical_44_hash_first_meaning_or_time":  "unknown",
+                              "historical_44_hash_byte_restoration":  "unknown"
+                          },
+    "status":  {
+                   "audit_task":  "succeeded; requested failure audit completed",
+                   "production_equivalence":  "failed/not established",
+                   "testfit_runtime_gate":  "not run; runner is unimplemented default-deny stub",
+                   "full_train_or_test_scan":  "not run",
+                   "full_reference_score_A_membership":  "not run",
+                   "overall_production_permission":  "default deny"
+               },
+    "deliverables":  [
+                         {
+                             "path":  "testB/round_003/audit/failure_001/failure_audit.md",
+                             "sha256":  "a43287b671b158bdee9ae341f35bcb937e728c5f65f0da45d0e5f19ebc276bd2",
+                             "bytes":  13451
+                         },
+                         {
+                             "path":  "testB/round_003/audit/failure_001/independent_fixture_check.py",
+                             "sha256":  "368cfec1b40b8f978d985392df9be1ba649c6cee0d28586a27362a0d5916eb2f",
+                             "bytes":  11013
+                         },
+                         {
+                             "path":  "testB/round_003/audit/failure_001/fixture_result.json",
+                             "sha256":  "109aee353188162962b5c9559754c20b9fc60abb667f28a4f77ad112273d405a",
+                             "bytes":  19076
+                         },
+                         {
+                             "path":  "testB/round_003/audit/failure_001/fixture.stdout.log",
+                             "sha256":  "109aee353188162962b5c9559754c20b9fc60abb667f28a4f77ad112273d405a",
+                             "bytes":  19076
+                         },
+                         {
+                             "path":  "testB/round_003/audit/failure_001/fixture.stderr.log",
+                             "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                             "bytes":  0
+                         },
+                         {
+                             "path":  "testB/round_003/audit/failure_001/fixture.exit_code.txt",
+                             "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+                             "bytes":  3
+                         }
+                     ]
+}

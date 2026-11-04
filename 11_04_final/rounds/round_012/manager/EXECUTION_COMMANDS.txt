@@ -1,0 +1,5 @@
+﻿Execution commands after reviewer exact-map approval, in this order, stop on any failure:
+& ./rounds/round_012/code/run_audit.ps1 -Mode smoke
+& ./rounds/round_012/code/run_audit.ps1 -Mode mock -MockNumber 1
+& ./rounds/round_012/code/run_audit.ps1 -Mode audit
+Each invocation starts in task root using Windows PowerShell 5.1. Author has frozen code; manager only runs. Max smoke1/mock2 after changed defect/audit1. Runtime starts only before20:42UTC.

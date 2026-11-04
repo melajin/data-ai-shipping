@@ -1,11 +1,11 @@
 ﻿{
     "schema_version":  1,
-    "updated_at_utc":  "2026-11-04T20:06:42.9602571Z",
+    "updated_at_utc":  "2026-11-04T20:48:45.9925181Z",
     "objective":  "vessel-level four-class micro-F1 \u003e= 0.7 with development and independent evidence kept separate",
     "goal_status":  "in_progress_not_achieved",
-    "current_round":  "round_010",
-    "round_status":  "round_011_in_progress_source_audit",
-    "manager_session":  "codex_224a9fbc_58cf_44d2_8dc9_d56b1d8641d0",
+    "current_round":  "round_013",
+    "round_status":  "in_progress_bounded_dynamic_verification",
+    "manager_session":  "codex_cac3fd7d_98ec_4cd3_8b29_95e3f911a10c",
     "manager_model_request":  {
                                   "model":  "gpt-6-astra",
                                   "reasoning_effort":  "high",
@@ -15,7 +15,7 @@
                                    "model":  "gpt-6-luna",
                                    "reasoning_effort":  "xhigh",
                                    "max_assistants_user":  4,
-                                   "current_runtime_assistants":  0,
+                                   "current_runtime_assistants":  1,
                                    "host_total_slots":  4
                                },
     "paths":  {
@@ -23,7 +23,7 @@
                   "raw_read_only":  "F:/문제 데이터_수정_1027",
                   "source_read_only":  "D:/repos/fishing-track-classification",
                   "prior_experiment":  "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
-                  "round":  "rounds/round_010"
+                  "round":  "rounds/round_013"
               },
     "scores":  {
                    "evaluation_population":  "repeatedly exposed development OUTER, 5897 vessels",
@@ -398,29 +398,28 @@
                                  }
                },
     "budget":  {
-                   "manager_minutes_max":  30,
-                   "started_utc":  "2026-11-04T19:34:41Z",
-                   "deadline_utc":  "2026-11-04T20:04:41Z",
+                   "started_utc":  "2026-11-04T20:44:14Z",
+                   "manager_minutes_max":  20,
+                   "experiment_cutoff_utc":  "2026-11-04T21:01:14Z",
+                   "process_control_smoke_max":  1,
+                   "process_control_smoke_seconds_max":  10,
                    "mock_max_runs":  2,
-                   "mock_seconds_max_each":  30,
-                   "actual_pilot_max_runs":  1,
-                   "pilot_seconds_max_including_cleanup":  480,
-                   "threads_max":  3,
-                   "parameter_training_fits":  0,
-                   "new_f1_evaluations":  0
+                   "mock_seconds_max":  30,
+                   "saved_audit_max_runs":  1,
+                   "saved_audit_seconds_max":  30,
+                   "model_calls":  0
                },
     "decision_rules":  {
-                           "current_round":  "Source/mock/one tiny synthetic pair passed; exact numeric difference0",
-                           "runtime_gate":  "Completed49.187s; starting4.44189/min3.93400GiB; sampled peak556965888bytes; owned tree clear",
-                           "next_gate":  "Round010 configure original COL and ROW before install; mock then one fixed full context replay historical tolerance1e-4",
+                           "current_round":  "Source approval only; dynamic runs0; preserve historicalfalse",
+                           "runtime_gate":  "stdlib only; available RAM \u003e=0.5GiB; sequential children; bounded 10s smoke/30s mock/audit",
+                           "next_gate":  "Round013 minimal version/path copy of approved runner, early independent diff review, then smoke/mock/saved audit; no model",
                            "holdout":  "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan",
                            "ram_policy":  "When RAM insufficient do other feasible independent work first, then recheck and proceed under resource and finite-attempt gates"
                        },
-    "current_task":  "Completed one actual replay: numeric pass with source-freeze violation; no new F1",
-    "next_task":  "Round011 provenance audit and freeze-contract repair plus M4 source/evaluation/resource contract; no model rerun",
+    "current_task":  "Round013 frozen minimal copy; independent review before bounded smoke/mock/audit",
+    "next_task":  "Round013 minimal version/path copy of approved runner, early independent diff review, then smoke/mock/saved audit; no model",
     "blockers":  [
-                     "Round010 live wrapper changed after launch; source-freeze gate failed despite numeric replay pass",
-                     "M4 head/gradient/class/evaluation/resource contract not yet complete"
+                     "Dynamic smoke/mock/saved audit not executed: source approval arrived at experiment deadline; minimal version copy next round"
                  ],
     "unresolved":  [
                        "Actual-vessel CPU/CUDA probability equivalence remains unmeasured",
@@ -430,561 +429,73 @@
                        "No independent/official score and no actual F1\u003e=0.7 evidence"
                    ],
     "active_workers":  [
-                           "author:gpt-6-luna/xhigh",
-                           "reviewer:gpt-6-luna/xhigh"
+                           "/root/round013_reviewer"
                        ],
     "handoff":  {
                     "ready":  false,
                     "next_session_launched":  false,
-                    "launch_receipt":  "automation/receipts/round_010_launch.json",
+                    "launch_receipt":  "automation/receipts/round_012_launch.json",
                     "launcher":  "automation/Start-NextSession.ps1",
                     "launcher_owner":  "current manager",
-                    "next_round":  "round_011",
+                    "next_round":  "round_013",
                     "pause_reason":  null,
                     "authorization":  "User authorizes local experiments and fresh Astra high handoffs without repeated approval",
                     "close_completed_session_requested":  true,
-                    "completed_session_id":  "codex_4a9e4942_60c6_472c_8d6c_9cfe5f78c72d",
+                    "completed_session_id":  "codex_56b77d08_9abc_43b3_b97e_6fc1a3e7eea7",
                     "close_completed_session_status":  "No supported structured-chat close command in current orca agent help; end this manager after accepted handoff; manually close only completed session tab if needed",
                     "next_session_id":  null,
                     "accepted_at_utc":  null,
                     "note":  "Canonical launch acceptance is automation receipt; outgoing manager does not mutate shared state after recipient begins"
                 },
     "learning_status":  {
-                            "technical_goal":  "ROW source/mock/synthetic final-probability equivalence passed",
                             "learner_understanding_assessed":  false,
-                            "hardware_verified":  false,
-                            "notes":  "rounds/round_009/LEARNING_NOTES.md"
+                            "technical_goal":  "Partial: process runner repaired and source-approved; dynamic verification pending",
+                            "hardware_verified":  false
                         },
-    "diagnostic_result":  "completed_numeric_replay_pass_source_freeze_violation",
+    "diagnostic_result":  {
+                              "status":  "completed_source_repair_approved_execution_deferred_deadline",
+                              "source_review_approved":  true,
+                              "candidate_frozen":  true,
+                              "process_smoke_runs":  0,
+                              "mock_runs":  0,
+                              "saved_audit_runs":  0,
+                              "model_calls":  0,
+                              "new_f1":  null,
+                              "process_exit_fix_dynamically_verified":  false,
+                              "prelaunch_block":  "Experiment cutoff reached; no smoke launch",
+                              "historical_round010_overall_gate":  false,
+                              "next_action":  "Round013 minimal version/path copy then early source approval and smoke/mock/saved audit; no model"
+                          },
     "next_round_budget":  {
                               "manager_minutes_max":  20,
-                              "model_calls":  0,
+                              "process_control_smoke_max":  1,
+                              "smoke_seconds_max":  10,
                               "mock_max_runs":  2,
-                              "mock_seconds_max_each":  30,
-                              "saved_record_audit_max_runs":  1,
-                              "saved_record_audit_seconds_max":  30,
-                              "new_f1_evaluations":  0
+                              "mock_seconds_max":  30,
+                              "saved_audit_max_runs":  1,
+                              "saved_audit_seconds_max":  30,
+                              "model_calls":  0
                           },
-    "latest_result_report":  "rounds/round_010/ROUND_REPORT.md",
-    "round_completed_at_utc":  "2026-11-04T20:03:56.9867559Z",
+    "latest_result_report":  "rounds/round_012/ROUND_REPORT.md",
+    "round_completed_at_utc":  "2026-11-04T20:43:55.5418947Z",
     "review":  {
-                   "source":  "rounds/round_010/review/SOURCE_REVIEW.md",
-                   "mock":  "rounds/round_010/review/MOCK_REVIEW.md",
-                   "incident":  "rounds/round_010/review/INCIDENT_REVIEW.md",
-                   "final":  "rounds/round_010/review/FINAL_REVIEW.md"
+                   "m4":  "rounds/round_011/review/M4_REVIEW.md",
+                   "source":  "rounds/round_012/review/SOURCE_REVIEW.md",
+                   "final":  "rounds/round_012/review/FINAL_REVIEW.md"
                },
     "execution_summary":  {
-                              "schema":  "round010_manager_result.v1",
-                              "updated_at_utc":  "2026-11-04T20:00:16.616937+00:00",
-                              "status":  "completed_numeric_replay_pass_source_freeze_violation",
-                              "all_execution_gates_passed":  false,
-                              "saved_numeric_replay_gates_passed":  true,
-                              "source_freeze_incident_recorded":  true,
-                              "independent_saved_json_checks":  {
-                                                                    "gates":  {
-                                                                                  "one_bounded_pilot":  true,
-                                                                                  "matching_mock_gate":  true,
-                                                                                  "wrapper_completed":  false,
-                                                                                  "owned_tree_clear":  true,
-                                                                                  "resource_complete":  true,
-                                                                                  "time_bound":  true,
-                                                                                  "start_ram_gate":  true,
-                                                                                  "sources_unchanged":  false,
-                                                                                  "child_complete":  true,
-                                                                                  "fit_and_predict_counts":  true,
-                                                                                  "restored":  true,
-                                                                                  "full_icl_context":  true,
-                                                                                  "input_shuffle_unchanged":  true,
-                                                                                  "canonical_class_order":  true,
-                                                                                  "fixed_query_ids":  true,
-                                                                                  "fixed_reference_scope":  true,
-                                                                                  "finite_range_shape":  true,
-                                                                                  "row_sum":  true,
-                                                                                  "reference_tolerance":  true,
-                                                                                  "argmax_equal":  true,
-                                                                                  "reported_gate":  true,
-                                                                                  "reported_values_agree":  true,
-                                                                                  "journal_complete":  true
-                                                                              },
-                                                                    "max_abs_probability_difference":  1.8446231598301388E-06,
-                                                                    "max_abs_row_sum_error_float64":  5.5413693189620972E-08,
-                                                                    "argmax_equal":  true,
-                                                                    "exact_numeric_equal":  false,
-                                                                    "scope":  "saved two-query JSON only; no new inference or F1"
-                                                                },
-                              "pilot":  {
-                                            "status":  "failed_or_stopped",
-                                            "exit_code":  0,
-                                            "elapsed_seconds":  215.48500000000058,
-                                            "stop_reason":  null,
-                                            "launched":  true,
-                                            "owned_tree_remaining":  [
-
-                                                                     ],
-                                            "owned_tree_status":  "clear",
-                                            "termination_confirmed":  null,
-                                            "preflight_available_ram_gib":  4.562309265136719,
-                                            "minimum_observed_available_ram_gib":  3.3007850646972656,
-                                            "peak_sampled_tree_working_set_bytes":  1265553408,
-                                            "source_unchanged":  true,
-                                            "source_snapshot_unchanged":  true,
-                                            "timeout_seconds":  480,
-                                            "finished_utc":  "2026-11-04T20:00:06.273782+00:00",
-                                            "resource_sampling_complete":  true
-                                        },
-                              "mocks":  [
-                                            {
-                                                "status":  "completed",
-                                                "exit_code":  0,
-                                                "elapsed_seconds":  0.28100000000267755,
-                                                "stop_reason":  null,
-                                                "launched":  true,
-                                                "owned_tree_remaining":  [
-
-                                                                         ],
-                                                "owned_tree_status":  "clear",
-                                                "termination_confirmed":  null,
-                                                "preflight_available_ram_gib":  4.553401947021484,
-                                                "minimum_observed_available_ram_gib":  4.553375244140625,
-                                                "peak_sampled_tree_working_set_bytes":  8241152,
-                                                "source_unchanged":  true,
-                                                "source_snapshot_unchanged":  true,
-                                                "timeout_seconds":  30,
-                                                "finished_utc":  "2026-11-04T19:56:18.312589+00:00",
-                                                "resource_sampling_complete":  true
-                                            }
-                                        ],
-                              "child":  {
-                                            "status":  "PILOT_COMPLETE",
-                                            "stage":  "comparison_complete",
-                                            "current_stage":  "managers_restored",
-                                            "error":  null,
-                                            "fit_returned":  true,
-                                            "predict_proba_attempted_count":  1,
-                                            "predict_proba_completed_count":  1,
-                                            "adapter_restored":  true,
-                                            "row_adapter_restored":  true,
-                                            "icl_observer_restored":  true,
-                                            "all_managers_restored":  true,
-                                            "comparison":  {
-                                                               "scope":  "only two frozen original INNER rows; four original saved raw p0..p3 columns; no decision score/weighting/F1",
-                                                               "reference_probability_sha256":  "4c6040bfb435f0990655eb78be69b6b0a63327e5f41560f73f07c12409ae2a82",
-                                                               "max_abs_probability_difference":  1.8446231598301388E-06,
-                                                               "absolute_tolerance":  0.0001,
-                                                               "per_query":  [
-                                                                                 {
-                                                                                     "query_id":  "36001915",
-                                                                                     "max_abs_probability_difference":  2.6026283017621665E-07,
-                                                                                     "model_argmax":  0,
-                                                                                     "reference_argmax":  0,
-                                                                                     "argmax_equal":  true
-                                                                                 },
-                                                                                 {
-                                                                                     "query_id":  "31703435",
-                                                                                     "max_abs_probability_difference":  1.8446231598301388E-06,
-                                                                                     "model_argmax":  1,
-                                                                                     "reference_argmax":  1,
-                                                                                     "argmax_equal":  true
-                                                                                 }
-                                                                             ],
-                                                               "exact_numeric_equal_after_float64_parse":  false,
-                                                               "within_1e_4_absolute_tolerance":  true,
-                                                               "argmax_equal":  true,
-                                                               "small_replay_gate_pass":  true,
-                                                               "all_managers_restored":  true,
-                                                               "full_icl_context_preserved":  true,
-                                                               "input_and_shuffle_state_unchanged":  true,
-                                                               "predict_proba_attempted_count":  1,
-                                                               "predict_proba_completed_count":  1,
-                                                               "checkpoint_fit_invocation_count":  1,
-                                                               "context_fit_attempted_count":  1,
-                                                               "context_fit_completed_count":  1,
-                                                               "is_performance_or_F1_claim":  false
-                                                           },
-                                            "input_and_shuffle_state_unchanged":  true,
-                                            "latest_adapter_event":  {
-                                                                         "event":  "icl_forward_complete",
-                                                                         "call_id":  7,
-                                                                         "completed":  true,
-                                                                         "output_shape":  [
-                                                                                              1,
-                                                                                              3146,
-                                                                                              10
-                                                                                          ],
-                                                                         "adapter":  "ICL_OBSERVER"
-                                                                     },
-                                            "last_completed_row_chunk":  {
-                                                                             "call_id":  7,
-                                                                             "chunk_index":  393,
-                                                                             "chunk_count":  394,
-                                                                             "row_start":  3144,
-                                                                             "row_stop_exclusive":  3146,
-                                                                             "input_shape":  [
-                                                                                                 1,
-                                                                                                 2,
-                                                                                                 223,
-                                                                                                 128
-                                                                                             ],
-                                                                             "output_shape":  [
-                                                                                                  1,
-                                                                                                  2,
-                                                                                                  512
-                                                                                              ]
-                                                                         },
-                                            "current_row_chunk":  null,
-                                            "adapter_event_counts":  {
-                                                                         "COL:column_chunk_call_started":  8,
-                                                                         "COL:column_chunk_started":  112,
-                                                                         "COL:column_chunk_completed":  112,
-                                                                         "COL:column_chunk_call_completed":  8,
-                                                                         "ROW:row_chunk_call_started":  8,
-                                                                         "ROW:row_chunk_started":  3152,
-                                                                         "ROW:row_chunk_completed":  3152,
-                                                                         "ROW:row_chunk_call_completed":  8
-                                                                     },
-                                            "full_icl_context_verified":  true,
-                                            "icl_forward_attempted_count":  8,
-                                            "icl_forward_completed_count":  8,
-                                            "chunk_progress_summary":  {
-                                                                           "column_call_count":  8,
-                                                                           "column_chunk_started_count":  112,
-                                                                           "column_chunk_completed_count":  112,
-                                                                           "last_completed_column_chunk":  {
-                                                                                                               "call_id":  7,
-                                                                                                               "chunk_index":  13,
-                                                                                                               "chunk_count":  14,
-                                                                                                               "column_start":  208,
-                                                                                                               "column_stop_exclusive":  223,
-                                                                                                               "feature_shape":  [
-                                                                                                                                     1,
-                                                                                                                                     15,
-                                                                                                                                     3146,
-                                                                                                                                     3
-                                                                                                                                 ],
-                                                                                                               "target_shape":  [
-                                                                                                                                    1,
-                                                                                                                                    15,
-                                                                                                                                    3144
-                                                                                                                                ],
-                                                                                                               "output_shape":  [
-                                                                                                                                    1,
-                                                                                                                                    15,
-                                                                                                                                    3146,
-                                                                                                                                    128
-                                                                                                                                ]
-                                                                                                           },
-                                                                           "row_call_count":  8,
-                                                                           "row_chunk_started_count":  3152,
-                                                                           "row_chunk_completed_count":  3152,
-                                                                           "last_completed_row_chunk":  {
-                                                                                                            "call_id":  7,
-                                                                                                            "chunk_index":  393,
-                                                                                                            "chunk_count":  394,
-                                                                                                            "row_start":  3144,
-                                                                                                            "row_stop_exclusive":  3146,
-                                                                                                            "input_shape":  [
-                                                                                                                                1,
-                                                                                                                                2,
-                                                                                                                                223,
-                                                                                                                                128
-                                                                                                                            ],
-                                                                                                            "output_shape":  [
-                                                                                                                                 1,
-                                                                                                                                 2,
-                                                                                                                                 512
-                                                                                                                             ]
-                                                                                                        },
-                                                                           "icl_forward_attempted_count":  8,
-                                                                           "icl_forward_completed_count":  8,
-                                                                           "full_context_preserved":  true,
-                                                                           "runtime_manager_states":  {
-                                                                                                          "COL":  {
-                                                                                                                      "enc_name":  "tf_col",
-                                                                                                                      "configured":  true,
-                                                                                                                      "device_type":  "cpu",
-                                                                                                                      "use_amp":  false,
-                                                                                                                      "use_fa3":  false,
-                                                                                                                      "offload_mode":  "AUTO"
-                                                                                                                  },
-                                                                                                          "ROW":  {
-                                                                                                                      "enc_name":  "tf_row",
-                                                                                                                      "configured":  true,
-                                                                                                                      "device_type":  "cpu",
-                                                                                                                      "use_amp":  false,
-                                                                                                                      "use_fa3":  false,
-                                                                                                                      "offload_mode":  "GPU"
-                                                                                                                  },
-                                                                                                          "ICL":  {
-                                                                                                                      "enc_name":  "tf_icl",
-                                                                                                                      "configured":  true,
-                                                                                                                      "device_type":  "cpu",
-                                                                                                                      "use_amp":  false,
-                                                                                                                      "use_fa3":  false,
-                                                                                                                      "offload_mode":  "GPU"
-                                                                                                                  },
-                                                                                                          "column_adapter_identity_preserved":  true,
-                                                                                                          "row_adapter_identity_preserved":  true,
-                                                                                                          "icl_observer_identity_preserved":  true
-                                                                                                      }
-                                                                       }
-                                        },
-                              "journal_event_counts":  {
-                                                           "stage":  63,
-                                                           "column_chunk_call_started":  8,
-                                                           "column_chunk_started":  112,
-                                                           "column_chunk_completed":  112,
-                                                           "column_chunk_call_completed":  8,
-                                                           "row_chunk_call_started":  8,
-                                                           "row_chunk_started":  3152,
-                                                           "row_chunk_completed":  3152,
-                                                           "row_chunk_call_completed":  8,
-                                                           "icl_forward_enter":  8,
-                                                           "icl_forward_complete":  8
-                                                       },
-                              "journal_parse_errors":  [
-
-                                                       ],
-                              "last_event_by_kind":  {
-                                                         "stage":  {
-                                                                       "event":  "stage",
-                                                                       "stage":  "managers_restored",
-                                                                       "elapsed_seconds":  213.89310289999776,
-                                                                       "utc":  "2026-11-04T20:00:05.445628+00:00"
-                                                                   },
-                                                         "column_chunk_call_started":  {
-                                                                                           "event":  "column_chunk_call_started",
-                                                                                           "call_id":  7,
-                                                                                           "chunk_columns":  16,
-                                                                                           "feature_shape":  [
-                                                                                                                 1,
-                                                                                                                 223,
-                                                                                                                 3146,
-                                                                                                                 3
-                                                                                                             ],
-                                                                                           "column_axis":  1,
-                                                                                           "column_count":  223,
-                                                                                           "sequence_length_preserved":  3146,
-                                                                                           "feature_group_size_preserved":  3,
-                                                                                           "train_size_shared":  3144,
-                                                                                           "embed_with_test_shared":  false,
-                                                                                           "output_repeat_preserved":  1,
-                                                                                           "chunks":  [
-
-                                                                                                      ],
-                                                                                           "adapter":  "COL"
-                                                                                       },
-                                                         "column_chunk_started":  {
-                                                                                      "event":  "column_chunk_started",
-                                                                                      "call_id":  7,
-                                                                                      "chunk_index":  13,
-                                                                                      "chunk_count":  14,
-                                                                                      "column_start":  208,
-                                                                                      "column_stop_exclusive":  223,
-                                                                                      "feature_shape":  [
-                                                                                                            1,
-                                                                                                            15,
-                                                                                                            3146,
-                                                                                                            3
-                                                                                                        ],
-                                                                                      "target_shape":  [
-                                                                                                           1,
-                                                                                                           15,
-                                                                                                           3144
-                                                                                                       ],
-                                                                                      "adapter":  "COL"
-                                                                                  },
-                                                         "column_chunk_completed":  {
-                                                                                        "event":  "column_chunk_completed",
-                                                                                        "call_id":  7,
-                                                                                        "chunk_index":  13,
-                                                                                        "chunk_count":  14,
-                                                                                        "column_start":  208,
-                                                                                        "column_stop_exclusive":  223,
-                                                                                        "feature_shape":  [
-                                                                                                              1,
-                                                                                                              15,
-                                                                                                              3146,
-                                                                                                              3
-                                                                                                          ],
-                                                                                        "target_shape":  [
-                                                                                                             1,
-                                                                                                             15,
-                                                                                                             3144
-                                                                                                         ],
-                                                                                        "output_shape":  [
-                                                                                                             1,
-                                                                                                             15,
-                                                                                                             3146,
-                                                                                                             128
-                                                                                                         ],
-                                                                                        "adapter":  "COL"
-                                                                                    },
-                                                         "column_chunk_call_completed":  {
-                                                                                             "event":  "column_chunk_call_completed",
-                                                                                             "call_id":  7,
-                                                                                             "input_shape":  [
-                                                                                                                 1,
-                                                                                                                 223,
-                                                                                                                 3146,
-                                                                                                                 3
-                                                                                                             ],
-                                                                                             "output_shape":  [
-                                                                                                                  1,
-                                                                                                                  223,
-                                                                                                                  3146,
-                                                                                                                  128
-                                                                                                              ],
-                                                                                             "column_axis":  1,
-                                                                                             "chunk_count":  14,
-                                                                                             "max_chunk_columns":  16,
-                                                                                             "sequence_length_preserved":  3146,
-                                                                                             "train_size_shared":  3144,
-                                                                                             "output_repeat_preserved":  1,
-                                                                                             "adapter":  "COL"
-                                                                                         },
-                                                         "row_chunk_call_started":  {
-                                                                                        "event":  "row_chunk_call_started",
-                                                                                        "call_id":  7,
-                                                                                        "chunk_rows":  8,
-                                                                                        "input_shape":  [
-                                                                                                            1,
-                                                                                                            3146,
-                                                                                                            223,
-                                                                                                            128
-                                                                                                        ],
-                                                                                        "row_axis":  1,
-                                                                                        "row_count":  3146,
-                                                                                        "batch_size_preserved":  1,
-                                                                                        "feature_class_sequence_preserved":  223,
-                                                                                        "embedding_width_preserved":  128,
-                                                                                        "output_repeat_preserved":  1,
-                                                                                        "chunks":  [
-
-                                                                                                   ],
-                                                                                        "adapter":  "ROW"
-                                                                                    },
-                                                         "row_chunk_started":  {
-                                                                                   "event":  "row_chunk_started",
-                                                                                   "call_id":  7,
-                                                                                   "chunk_index":  393,
-                                                                                   "chunk_count":  394,
-                                                                                   "row_start":  3144,
-                                                                                   "row_stop_exclusive":  3146,
-                                                                                   "input_shape":  [
-                                                                                                       1,
-                                                                                                       2,
-                                                                                                       223,
-                                                                                                       128
-                                                                                                   ],
-                                                                                   "adapter":  "ROW"
-                                                                               },
-                                                         "row_chunk_completed":  {
-                                                                                     "event":  "row_chunk_completed",
-                                                                                     "call_id":  7,
-                                                                                     "chunk_index":  393,
-                                                                                     "chunk_count":  394,
-                                                                                     "row_start":  3144,
-                                                                                     "row_stop_exclusive":  3146,
-                                                                                     "input_shape":  [
-                                                                                                         1,
-                                                                                                         2,
-                                                                                                         223,
-                                                                                                         128
-                                                                                                     ],
-                                                                                     "output_shape":  [
-                                                                                                          1,
-                                                                                                          2,
-                                                                                                          512
-                                                                                                      ],
-                                                                                     "adapter":  "ROW"
-                                                                                 },
-                                                         "row_chunk_call_completed":  {
-                                                                                          "event":  "row_chunk_call_completed",
-                                                                                          "call_id":  7,
-                                                                                          "input_shape":  [
-                                                                                                              1,
-                                                                                                              3146,
-                                                                                                              223,
-                                                                                                              128
-                                                                                                          ],
-                                                                                          "output_shape":  [
-                                                                                                               1,
-                                                                                                               3146,
-                                                                                                               512
-                                                                                                           ],
-                                                                                          "row_axis":  1,
-                                                                                          "chunk_count":  394,
-                                                                                          "max_chunk_rows":  8,
-                                                                                          "feature_class_sequence_preserved":  223,
-                                                                                          "embedding_width_preserved":  128,
-                                                                                          "output_repeat_preserved":  1,
-                                                                                          "adapter":  "ROW"
-                                                                                      },
-                                                         "icl_forward_enter":  {
-                                                                                   "event":  "icl_forward_enter",
-                                                                                   "call_id":  7,
-                                                                                   "inputs":  [
-                                                                                                  {
-                                                                                                      "keys":  [
-                                                                                                                   "R",
-                                                                                                                   "y_train"
-                                                                                                               ],
-                                                                                                      "tensor_shapes":  {
-                                                                                                                            "R":  [
-                                                                                                                                      1,
-                                                                                                                                      3146,
-                                                                                                                                      512
-                                                                                                                                  ],
-                                                                                                                            "y_train":  [
-                                                                                                                                            1,
-                                                                                                                                            3144
-                                                                                                                                        ]
-                                                                                                                        },
-                                                                                                      "train_size":  null
-                                                                                                  }
-                                                                                              ],
-                                                                                   "adapter":  "ICL_OBSERVER",
-                                                                                   "R_shape":  [
-                                                                                                   1,
-                                                                                                   3146,
-                                                                                                   512
-                                                                                               ],
-                                                                                   "y_train_shape":  [
-                                                                                                         1,
-                                                                                                         3144
-                                                                                                     ],
-                                                                                   "inferred_train_size":  3144,
-                                                                                   "expected_total_rows":  3146,
-                                                                                   "full_context_preserved":  true
-                                                                               },
-                                                         "icl_forward_complete":  {
-                                                                                      "event":  "icl_forward_complete",
-                                                                                      "call_id":  7,
-                                                                                      "completed":  true,
-                                                                                      "output_shape":  [
-                                                                                                           1,
-                                                                                                           3146,
-                                                                                                           10
-                                                                                                       ],
-                                                                                      "adapter":  "ICL_OBSERVER"
-                                                                                  }
-                                                     },
-                              "evaluation":  {
-                                                 "new_f1":  null,
-                                                 "new_f1_evaluations":  0,
-                                                 "parameter_training_fits":  0,
-                                                 "independent_f1":  null,
-                                                 "official_f1":  null,
-                                                 "goal_070_achieved":  false
-                                             },
-                              "scope":  {
-                                            "raw_data_read":  false,
-                                            "holdout_read":  false,
-                                            "hardware_validation":  false,
-                                            "pilot_runs":  1,
-                                            "pilot_retries":  0,
-                                            "mock_runs":  1
-                                        }
+                              "status":  "completed_source_repair_approved_execution_deferred_deadline",
+                              "source_review_approved":  true,
+                              "candidate_frozen":  true,
+                              "process_smoke_runs":  0,
+                              "mock_runs":  0,
+                              "saved_audit_runs":  0,
+                              "model_calls":  0,
+                              "new_f1":  null,
+                              "process_exit_fix_dynamically_verified":  false,
+                              "prelaunch_block":  "Experiment cutoff reached; no smoke launch",
+                              "historical_round010_overall_gate":  false,
+                              "next_action":  "Round013 minimal version/path copy then early source approval and smoke/mock/saved audit; no model"
                           },
     "independent_evaluation_blockers":  [
                                             "No exposure-verified independent evaluation roster approved or opened"
@@ -1028,7 +539,7 @@
                          "checkpoint_exact_sha256_found":  true,
                          "historical_cuda_runtime_reproduced":  false,
                          "ready_for_m4_training":  false,
-                         "next_step":  "Round011 provenance audit and freeze-contract repair plus M4 source/evaluation/resource contract; no model rerun"
+                         "next_step":  "Round013 minimal version/path copy of approved runner, early independent diff review, then smoke/mock/saved audit; no model"
                      },
     "next_manager_session":  null,
     "latest_user_steering_previous":  {

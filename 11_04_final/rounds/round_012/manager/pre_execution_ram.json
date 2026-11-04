@@ -1,0 +1,10 @@
+﻿{
+    "checked_utc":  "2026-11-04T20:38:57.4065606Z",
+    "available_gib":  4.4427375793457031,
+    "estimated_peak_mib":  100,
+    "other_python":  [
+
+                     ],
+    "purpose":  "Before bounded smoke/mock/audit; each runner also rechecks RAM",
+    "decision":  "resource_gate_pass"
+}

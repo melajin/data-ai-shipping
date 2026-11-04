@@ -1,0 +1,13 @@
+{
+    "schema":  "round012_approved_sources.v1",
+    "round":  "round_012",
+    "sha256":  {
+                   "rounds/round_012/code/verify_frozen_run.py":  "832b4d0627ea508dbcf40a970c9e5daffd2b93b822d19db968ac37f9fc99331b",
+                   "rounds/round_012/code/test_verify_frozen_run.py":  "72d3d43ad677e739b52a128702921c27d2559a9f1d52e818ac4f1a64b312641a",
+                   "rounds/round_012/code/run_audit.ps1":  "c446991ab85167693057afcde11417bba7ebe2360577358ee050c2d9692177d3"
+               },
+    "candidate_manifest_sha256":  "6e283fef3a6c1fb93597f24f244e17565b3dc896dc2f0c124151cd77527972b1",
+    "reviewed_at_utc":  "2026-11-04T20:41:00Z",
+    "scope":  "static source approval for bounded round012 process smoke, stdlib mock, saved-evidence audit",
+    "reviewer_method":  "independent Get-FileHash of frozen code files; no code/tests/model/audit executed"
+}

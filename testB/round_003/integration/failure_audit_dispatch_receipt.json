@@ -1,0 +1,9 @@
+{
+  "evidence_source": "Observed Orca orchestration send stdout and exit0",
+  "actual_cli_exit": 0,
+  "requested_model_effort": "gpt-6-luna/xhigh via existing V dispatch launch",
+  "provider_internal_model_effort": "unknown",
+  "ram_preflight": {"time":"2026-11-05T05:29:31.2622121+09:00","availableKiB":4378208,"totalKiB":14480244,"processCount":341,"python_observed":false,"expected_increment_MiB":256,"session_reserve_MiB":512},
+  "prior_delivery_escalation": {"message_id":"msg_followup_566a85b907cddd48e0c11581","reason":"Finished E did not receive late supervisor status mail because coordinator Run binding was absent. No E continuation was started by that failed delivery. run-use run_202dfeeb8d64 succeeded before the V follow-up."},
+  "receipt": {"ok":true,"result":{"delivery":"reopened","followUpOf":"ctx_d47af35c6d31","dispatchId":"ctx_d19e5fc43cd8","taskId":"task_2229502351ed","runId":"run_202dfeeb8d64","state":"ready","agent":"codex","terminal":"structworker_0a6dbada-3c09-4302-8c27-1da52869007c","workspace":"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING","next":"Orca wakes you when workers report; end your turn when you're done."}}
+}

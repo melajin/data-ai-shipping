@@ -1,0 +1,11 @@
+﻿{
+    "stage":  "mock",
+    "checked_utc":  "2026-11-04T20:50:40.4993440Z",
+    "available_gib":  4.2950706481933594,
+    "expected_peak_mib":  100,
+    "other_python":  [
+
+                     ],
+    "smoke_gate":  true,
+    "approval_map_sha256":  "CCB8ADA4A66760BFD1A6AE970F395F47F779B9A1829D8011034A7964F624DE26"
+}

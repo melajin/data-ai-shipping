@@ -1,0 +1,38 @@
+﻿[
+    {
+        "source_log":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T05-25-00-01a1a83c-8148-7880-a591-8ac9a3f42e1f.jsonl",
+        "timestamp":  "2026-11-04T20:25:01.164Z",
+        "model":  "gpt-6-astra",
+        "effort":  "high",
+        "turn_id":  "01a1a83c-834a-7433-954d-7013f5187b19",
+        "settings":  {
+                         "model":  "gpt-6-astra",
+                         "reasoning_effort":  "high",
+                         "developer_instructions":  null
+                     }
+    },
+    {
+        "source_log":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T05-26-23-01a1a83d-c556-7f42-adc9-b11a0c201d8c.jsonl",
+        "timestamp":  "2026-11-04T20:26:24.077Z",
+        "model":  "gpt-6-luna",
+        "effort":  "xhigh",
+        "turn_id":  "01a1a83d-c648-7321-b545-af564d47e240",
+        "settings":  {
+                         "model":  "gpt-6-luna",
+                         "reasoning_effort":  "xhigh",
+                         "developer_instructions":  null
+                     }
+    },
+    {
+        "source_log":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T05-26-36-01a1a83d-f96c-7b13-b6e2-8a53c1bdbef4.jsonl",
+        "timestamp":  "2026-11-04T20:26:37.258Z",
+        "model":  "gpt-6-luna",
+        "effort":  "xhigh",
+        "turn_id":  "01a1a83d-fa6b-7a93-983a-c7cf3581594a",
+        "settings":  {
+                         "model":  "gpt-6-luna",
+                         "reasoning_effort":  "xhigh",
+                         "developer_instructions":  null
+                     }
+    }
+]

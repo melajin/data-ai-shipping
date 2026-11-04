@@ -1,0 +1,26 @@
+﻿{
+    "requested_manager":  {
+                              "model":  "gpt-6-astra",
+                              "effort":  "high"
+                          },
+    "requested_workers":  [
+                              {
+                                  "reasoning_effort":  "xhigh",
+                                  "fork_turns":  "none",
+                                  "task":  "/root/round013_author",
+                                  "model":  "gpt-6-luna",
+                                  "owns":  "round013/code"
+                              },
+                              {
+                                  "reasoning_effort":  "xhigh",
+                                  "fork_turns":  "none",
+                                  "task":  "/root/round013_reviewer",
+                                  "model":  "gpt-6-luna",
+                                  "owns":  "round013/review"
+                              }
+                          ],
+    "tool_spawn_responses":  "canonical task names only; actual model from host turn_context separately",
+    "host_total_slots":  4,
+    "used_slots":  3,
+    "not_internal_attestation":  true
+}

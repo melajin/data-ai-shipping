@@ -1,0 +1,11 @@
+﻿{
+    "stage":  "smoke",
+    "checked_utc":  "2026-11-04T20:50:23.5598405Z",
+    "available_gib":  4.3014755249023438,
+    "expected_peak_mib":  100,
+    "basis":  "stdlib plus 1MiB streaming buffer, no model",
+    "other_python":  [
+
+                     ],
+    "approval_map_sha256":  "CCB8ADA4A66760BFD1A6AE970F395F47F779B9A1829D8011034A7964F624DE26"
+}

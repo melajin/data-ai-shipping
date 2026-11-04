@@ -39,7 +39,10 @@
     "dtypes_equal": true,
     "values_equal": true,
     "nan_equal": true,
-    "first_mismatch": null
+    "first_mismatch": null,
+    "excluded_source_row_indices_original": [],
+    "excluded_source_row_indices_bounded": [],
+    "excluded_sets_equal": true
   },
   "boundary_fixture": {
     "values": {
@@ -100,7 +103,7 @@
       ]
     },
     "bounded_errors": [],
-    "batch_count": 4,
+    "batch_count": 5,
     "interpretation": "boundary fixture highlights conversion/overflow and cross-batch inference behavior; it is not production equivalence proof",
     "bounded_concat": {
       "rows": 6,
@@ -115,7 +118,7 @@
         "2",
         "-9223372036854775808",
         "3",
-        "9007199254740992",
+        "9007199254740993",
         "1"
       ],
       "dates": [
@@ -126,7 +129,11 @@
         "20250106",
         "20250107"
       ],
-      "equal": false
+      "equal_after_reset_index": false,
+      "first_value_difference": {
+        "original_id": "9007199254740992",
+        "bounded_id": "9007199254740993"
+      }
     }
   }
 }

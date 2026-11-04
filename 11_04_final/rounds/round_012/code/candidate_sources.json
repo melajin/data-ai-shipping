@@ -1,0 +1,16 @@
+{
+    "schema":  "round012_candidate_sources.v1",
+    "round":  "round_012",
+    "source_files_sha256":  {
+                                "rounds/round_012/code/verify_frozen_run.py":  "832b4d0627ea508dbcf40a970c9e5daffd2b93b822d19db968ac37f9fc99331b",
+                                "rounds/round_012/code/test_verify_frozen_run.py":  "72d3d43ad677e739b52a128702921c27d2559a9f1d52e818ac4f1a64b312641a",
+                                "rounds/round_012/code/run_audit.ps1":  "c446991ab85167693057afcde11417bba7ebe2360577358ee050c2d9692177d3"
+                            },
+    "manifest_self_hash_excluded":  true,
+    "requested_execution_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "requested_fork_turns":  "none",
+    "scope":  "round012 code only: saved provenance auditor, copied fixtures, ProcessStartInfo runner",
+    "execution_status":  "author did not run smoke, mock, audit, or tests",
+    "output_and_temp_root":  "rounds/round_012"
+}

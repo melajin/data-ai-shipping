@@ -1,0 +1,152 @@
+{
+    "schema":  "round013_process_receipt.v1",
+    "mode":  "audit",
+    "run_id":  "audit_01",
+    "started_utc":  "2026-11-04T20:51:00.3222369+00:00",
+    "completed":  true,
+    "launched":  true,
+    "exit_code":  0,
+    "timed_out":  false,
+    "timeout_seconds":  30,
+    "available_ram_gib_before":  4.3293380737304688,
+    "expected_peak_mib":  100,
+    "expected_peak_basis":  "standard-library JSON and a 1 MiB streaming SHA-256 buffer; no model imports",
+    "other_python_processes_before":  [
+
+                                      ],
+    "approval_map_path":  "rounds/round_013/review/approved_sources.json",
+    "approval_map_sha256_before":  "ccb8ada4a66760bfd1a6ae970f395f47f779b9a1829d8011034a7964f624de26",
+    "approval_map_sha256_after":  "ccb8ada4a66760bfd1a6ae970f395f47f779b9a1829d8011034a7964f624de26",
+    "approval_map_unchanged":  true,
+    "live_precheck":  [
+                          {
+                              "path":  "rounds/round_013/code/verify_frozen_run.py",
+                              "expected_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                              "actual_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                              "match":  true
+                          },
+                          {
+                              "path":  "rounds/round_013/code/test_verify_frozen_run.py",
+                              "expected_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                              "actual_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                              "match":  true
+                          },
+                          {
+                              "path":  "rounds/round_013/code/run_audit.ps1",
+                              "expected_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                              "actual_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                              "match":  true
+                          }
+                      ],
+    "live_postcheck":  [
+                           {
+                               "path":  "rounds/round_013/code/verify_frozen_run.py",
+                               "expected_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                               "actual_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                               "match":  true
+                           },
+                           {
+                               "path":  "rounds/round_013/code/test_verify_frozen_run.py",
+                               "expected_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                               "actual_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                               "match":  true
+                           },
+                           {
+                               "path":  "rounds/round_013/code/run_audit.ps1",
+                               "expected_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                               "actual_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                               "match":  true
+                           }
+                       ],
+    "source_snapshot":  {
+                            "rounds/round_013/code/verify_frozen_run.py":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\audit_01\\source\\verify_frozen_run.py",
+                            "rounds/round_013/code/test_verify_frozen_run.py":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\audit_01\\source\\test_verify_frozen_run.py",
+                            "rounds/round_013/code/run_audit.ps1":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\audit_01\\source\\run_audit.ps1"
+                        },
+    "snapshots":  [
+                      {
+                          "path":  "rounds/round_013/code/verify_frozen_run.py",
+                          "snapshot_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\audit_01\\source\\verify_frozen_run.py",
+                          "expected_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                          "snapshot_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                          "match":  true
+                      },
+                      {
+                          "path":  "rounds/round_013/code/test_verify_frozen_run.py",
+                          "snapshot_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\audit_01\\source\\test_verify_frozen_run.py",
+                          "expected_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                          "snapshot_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                          "match":  true
+                      },
+                      {
+                          "path":  "rounds/round_013/code/run_audit.ps1",
+                          "snapshot_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\audit_01\\source\\run_audit.ps1",
+                          "expected_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                          "snapshot_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                          "match":  true
+                      }
+                  ],
+    "snapshot_postcheck":  [
+                               {
+                                   "path":  "rounds/round_013/code/verify_frozen_run.py",
+                                   "snapshot_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "rounds/round_013/code/test_verify_frozen_run.py",
+                                   "snapshot_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "rounds/round_013/code/run_audit.ps1",
+                                   "snapshot_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                                   "match":  true
+                               }
+                           ],
+    "children":  [
+
+                 ],
+    "process":  {
+                    "started":  true,
+                    "pid":  28112,
+                    "creation_utc":  "2026-11-04T20:51:00.4504345Z",
+                    "wait_finished":  true,
+                    "timed_out":  false,
+                    "kill_attempted":  false,
+                    "exit_confirmed":  true,
+                    "exit_code":  0,
+                    "owned_process_exited":  true,
+                    "owned_process_residual":  false,
+                    "stdout":  "{\"output\": \"D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\11_04_final\\\\rounds\\\\round_013\\\\artifacts\\\\provenance_audit.json\", \"executed_snapshot_matches_approved\": true, \"live_source_unchanged\": false, \"current_source_gate\": false, \"saved_numeric_replay_passed\": true, \"audit_integrity_passed\": true, \"historical_overall_gate\": false}\r\n",
+                    "stderr":  "",
+                    "stdout_stderr_drained":  true,
+                    "elapsed_seconds":  0.3333715,
+                    "wait_timeout_seconds":  28,
+                    "cleanup_timeout_seconds":  2,
+                    "command":  [
+                                    "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                                    "-B",
+                                    "-S",
+                                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\audit_01\\source\\verify_frozen_run.py",
+                                    "--source-round",
+                                    "round_010",
+                                    "--output",
+                                    "rounds/round_013/artifacts/provenance_audit.json",
+                                    "--root",
+                                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final"
+                                ],
+                    "error":  null
+                },
+    "stdout":  "{\"output\": \"D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\11_04_final\\\\rounds\\\\round_013\\\\artifacts\\\\provenance_audit.json\", \"executed_snapshot_matches_approved\": true, \"live_source_unchanged\": false, \"current_source_gate\": false, \"saved_numeric_replay_passed\": true, \"audit_integrity_passed\": true, \"historical_overall_gate\": false}\r\n",
+    "stderr":  "",
+    "owned_process_exited":  true,
+    "owned_process_residual":  false,
+    "stdout_stderr_drained":  true,
+    "historical_round010_outcome_unchanged":  true,
+    "error":  null,
+    "elapsed_seconds":  0.3333715,
+    "finished_utc":  "2026-11-04T20:51:00.7729666+00:00",
+    "other_python_processes_after":  [
+
+                                     ]
+}

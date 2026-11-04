@@ -1,0 +1,1 @@
+{"output": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\artifacts\\provenance_audit.json", "executed_snapshot_matches_approved": true, "live_source_unchanged": false, "current_source_gate": false, "saved_numeric_replay_passed": true, "audit_integrity_passed": true, "historical_overall_gate": false}

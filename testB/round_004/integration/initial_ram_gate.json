@@ -1,0 +1,72 @@
+﻿{
+    "observed_at":  "2026-11-05T05:52:59.7182575+09:00",
+    "free_kib":  4530664,
+    "total_kib":  14480244,
+    "expected_E_increment_mib":  512,
+    "expected_V_increment_mib":  256,
+    "session_reserve_each_mib":  512,
+    "estimate_basis":  "E \u003c=16384 projected rows in \u003c=4096 batches; V static text; actual peak unknown",
+    "other_work":  "Multiple Orca/Codex/host processes; exact attribution unknown",
+    "top_processes":  [
+                          {
+                              "ProcessName":  "explorer",
+                              "Id":  5828,
+                              "WorkingSet64":  685932544
+                          },
+                          {
+                              "ProcessName":  "Orca",
+                              "Id":  19824,
+                              "WorkingSet64":  564879360
+                          },
+                          {
+                              "ProcessName":  "Orca",
+                              "Id":  17216,
+                              "WorkingSet64":  422440960
+                          },
+                          {
+                              "ProcessName":  "Orca",
+                              "Id":  18136,
+                              "WorkingSet64":  314183680
+                          },
+                          {
+                              "ProcessName":  "explorer",
+                              "Id":  4476,
+                              "WorkingSet64":  272904192
+                          },
+                          {
+                              "ProcessName":  "StartMenuExperienceHost",
+                              "Id":  10992,
+                              "WorkingSet64":  259440640
+                          },
+                          {
+                              "ProcessName":  "codex",
+                              "Id":  15648,
+                              "WorkingSet64":  228544512
+                          },
+                          {
+                              "ProcessName":  "codex",
+                              "Id":  27040,
+                              "WorkingSet64":  226250752
+                          },
+                          {
+                              "ProcessName":  "CrossDeviceService",
+                              "Id":  11432,
+                              "WorkingSet64":  220733440
+                          },
+                          {
+                              "ProcessName":  "codex",
+                              "Id":  9576,
+                              "WorkingSet64":  218431488
+                          },
+                          {
+                              "ProcessName":  "logioptionsplus_agent",
+                              "Id":  17128,
+                              "WorkingSet64":  212639744
+                          },
+                          {
+                              "ProcessName":  "codex",
+                              "Id":  13756,
+                              "WorkingSet64":  187506688
+                          }
+                      ]
+}

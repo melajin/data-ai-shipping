@@ -1,0 +1,8 @@
+﻿{
+    "checked_utc":  "2026-11-04T20:52:44.7440602Z",
+    "help_path":  "rounds/round_013/manager/orca_agent_help.txt",
+    "structured_chat_close_supported":  false,
+    "action":  "End current manager immediately after accepted handoff; if desired manually close only the completed session tab",
+    "session":  "codex_cac3fd7d_98ec_4cd3_8b29_95e3f911a10c",
+    "never_close_app_or_unrelated_sessions":  true
+}

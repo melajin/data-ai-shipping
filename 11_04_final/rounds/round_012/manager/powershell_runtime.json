@@ -1,0 +1,8 @@
+﻿{
+    "checked_utc":  "2026-11-04T20:34:28.0927586Z",
+    "ps_version":  "5.1.26100.9711",
+    "ps_edition":  "Desktop",
+    "clr_version":  "4.0.30319.42000",
+    "pwsh_on_path":  false,
+    "note":  "Read-only runtime metadata, no child smoke run. Candidate must support Windows PowerShell 5.1 ProcessStartInfo.Arguments and EnvironmentVariables."
+}

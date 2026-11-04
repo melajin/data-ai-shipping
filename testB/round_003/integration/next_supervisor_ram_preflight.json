@@ -1,0 +1,12 @@
+{
+    "time":  "2026-11-05T05:48:38.5019022+09:00",
+    "availableKiB":  4686960,
+    "totalKiB":  14480244,
+    "processCount":  326,
+    "python":  [
+
+               ],
+    "planned_action":  "new Sol/high supervisor read-only ACK stage",
+    "estimated_session_reserve_MiB":  512,
+    "heavy_compute_allowed":  false
+}

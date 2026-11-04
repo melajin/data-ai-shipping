@@ -1,0 +1,16 @@
+{
+    "schema":  "round013_candidate_sources.v1",
+    "round":  "round_013",
+    "source_files_sha256":  {
+                                "rounds/round_013/code/verify_frozen_run.py":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                                "rounds/round_013/code/test_verify_frozen_run.py":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                                "rounds/round_013/code/run_audit.ps1":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782"
+                            },
+    "manifest_self_hash_excluded":  true,
+    "requested_execution_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "requested_fork_turns":  "none",
+    "scope":  "round013 minimal copy of round012 auditor, fixtures, runner; only round identifier/output/schema/function-name replacements",
+    "execution_status":  "author did not run tests, smoke, mock, audit, Python, or model",
+    "output_and_temp_root":  "rounds/round_013"
+}

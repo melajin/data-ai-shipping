@@ -1,0 +1,9 @@
+﻿{
+    "ack_received_utc":  "2026-11-04T20:48:45.8739864Z",
+    "author":  "/root/round013_author",
+    "write_freeze":  true,
+    "ack_path":  "rounds/round_013/code/author_freeze_ack.json",
+    "candidate_manifest":  "rounds/round_013/code/candidate_sources.json",
+    "candidate_manifest_sha256":  "C5E9D2CF5B615447B06977DADBCD3A02C60848C57D826D2E59D2F79F2897E3D6",
+    "no_author_runs":  true
+}

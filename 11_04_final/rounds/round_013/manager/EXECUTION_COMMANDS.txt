@@ -1,0 +1,8 @@
+﻿Executed once each, sequentially, Windows PowerShell 5.1, cwd D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final:
+& './rounds/round_013/code/run_audit.ps1' -Mode smoke
+& './rounds/round_013/code/run_audit.ps1' -Mode mock -MockNumber 1
+& './rounds/round_013/code/run_audit.ps1' -Mode audit
+Manager checked UTC < 2026-11-04T21:01:14Z and current RAM >=0.5GiB before each invocation, plus approved map SHA ccb8ada4a66760bfd1a6ae970f395f47f779b9a1829d8011034a7964f624de26.
+Before mock: completed smoke, exact map, 2 children with expected0/7 and no residual.
+Before audit: completed integer exit0 smoke/mock, unchanged same map, owned exit and no residual.
+All succeeded; do not rerun these claims. Source review/ACK and receipts preserve executable bytes and child argument arrays.

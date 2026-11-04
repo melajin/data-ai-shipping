@@ -1,0 +1,15 @@
+﻿{
+    "status":  "completed_with_limitations_mock_receipt_exit_unknown",
+    "mock_test_cases":  2,
+    "test_stdout_status":  "OK in stderr",
+    "mock_wrapper_completed":  false,
+    "mock_exit_code":  null,
+    "mock_elapsed_seconds":  0.4837655,
+    "owned_process_exited":  true,
+    "mock_runs":  1,
+    "saved_audit_runs":  0,
+    "model_calls":  0,
+    "new_f1":  null,
+    "m4_contract_reviewed":  true,
+    "historical_round010_overall_gate":  false
+}

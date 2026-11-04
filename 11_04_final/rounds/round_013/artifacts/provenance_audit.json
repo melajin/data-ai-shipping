@@ -1,0 +1,511 @@
+{
+  "schema": "round013_provenance_audit.v1",
+  "source_round": "round_010",
+  "audited_scope": "approved map, mock_01/pilot_01 launch snapshots and receipts, live approved source files, source-freeze incident, and saved two-query probability JSON",
+  "prohibited_reads": {
+    "raw": "not read",
+    "npz": "not read or re-hashed",
+    "reference_csv": "not read",
+    "checkpoint": "not loaded or re-hashed",
+    "model_runtime": "not imported or run"
+  },
+  "protected_assets_not_reverified": [
+    {
+      "path": "rounds/round_010/artifacts/context_export_attempt_001/fold0_seed42_context.npz",
+      "reason": "array/table data content is explicitly not re-read or re-hashed",
+      "reverified": false
+    },
+    {
+      "path": "model_cache/tabicl-classifier-v2-20260212.ckpt",
+      "reason": "checkpoint size/SHA are saved metadata only; checkpoint bytes were not accessed",
+      "saved_bytes": 110368038,
+      "saved_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+      "reverified": false
+    }
+  ],
+  "executed_snapshot_matches_approved": true,
+  "snapshot_receipts": [
+    {
+      "run_id": "mock_01",
+      "kind": "mock",
+      "receipt_status": "completed",
+      "receipt_exit_code": 0,
+      "receipt_wrapper_unchanged": true,
+      "snapshot_matches_approved": true,
+      "checks": [
+        {
+          "check": "receipt_approved_map_matches",
+          "passed": true
+        },
+        {
+          "check": "snapshot_file_set",
+          "passed": true,
+          "expected": [
+            "column_chunk.py",
+            "icl_observer.py",
+            "replay_inner_pilot.py",
+            "row_chunk.py",
+            "run_bounded.py",
+            "test_adapter_pair.py"
+          ],
+          "actual": [
+            "column_chunk.py",
+            "icl_observer.py",
+            "replay_inner_pilot.py",
+            "row_chunk.py",
+            "run_bounded.py",
+            "test_adapter_pair.py"
+          ]
+        },
+        {
+          "check": "receipt_source_snapshot_paths",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/column_chunk.py",
+          "expected_sha256": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+          "actual_sha256": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/icl_observer.py",
+          "expected_sha256": "73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b",
+          "actual_sha256": "73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/replay_inner_pilot.py",
+          "expected_sha256": "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+          "actual_sha256": "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/row_chunk.py",
+          "expected_sha256": "d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b",
+          "actual_sha256": "d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/test_adapter_pair.py",
+          "expected_sha256": "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+          "actual_sha256": "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+          "passed": true
+        },
+        {
+          "check": "approved_wrapper_snapshot",
+          "path": "rounds/round_010/manager/run_bounded.py",
+          "expected_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+          "snapshot_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+          "receipt_wrapper_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+          "receipt_snapshot_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+          "passed": true
+        },
+        {
+          "check": "executed_script_snapshot",
+          "script": "rounds/round_010/code/test_adapter_pair.py",
+          "expected_sha256": "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+          "snapshot_sha256": "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+          "path_matches": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "run_id": "pilot_01",
+      "kind": "pilot",
+      "receipt_status": "failed_or_stopped",
+      "receipt_exit_code": 0,
+      "receipt_wrapper_unchanged": false,
+      "snapshot_matches_approved": true,
+      "checks": [
+        {
+          "check": "receipt_approved_map_matches",
+          "passed": true
+        },
+        {
+          "check": "snapshot_file_set",
+          "passed": true,
+          "expected": [
+            "column_chunk.py",
+            "icl_observer.py",
+            "replay_inner_pilot.py",
+            "row_chunk.py",
+            "run_bounded.py",
+            "test_adapter_pair.py"
+          ],
+          "actual": [
+            "column_chunk.py",
+            "icl_observer.py",
+            "replay_inner_pilot.py",
+            "row_chunk.py",
+            "run_bounded.py",
+            "test_adapter_pair.py"
+          ]
+        },
+        {
+          "check": "receipt_source_snapshot_paths",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/column_chunk.py",
+          "expected_sha256": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+          "actual_sha256": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/icl_observer.py",
+          "expected_sha256": "73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b",
+          "actual_sha256": "73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/replay_inner_pilot.py",
+          "expected_sha256": "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+          "actual_sha256": "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/row_chunk.py",
+          "expected_sha256": "d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b",
+          "actual_sha256": "d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b",
+          "passed": true
+        },
+        {
+          "check": "approved_code_snapshot",
+          "path": "rounds/round_010/code/test_adapter_pair.py",
+          "expected_sha256": "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+          "actual_sha256": "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+          "passed": true
+        },
+        {
+          "check": "approved_wrapper_snapshot",
+          "path": "rounds/round_010/manager/run_bounded.py",
+          "expected_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+          "snapshot_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+          "receipt_wrapper_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+          "receipt_snapshot_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+          "passed": true
+        },
+        {
+          "check": "executed_script_snapshot",
+          "script": "rounds/round_010/code/replay_inner_pilot.py",
+          "expected_sha256": "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+          "snapshot_sha256": "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+          "path_matches": true,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "mock_gate_passed": true,
+  "pilot_followed_matching_mock": true,
+  "live_source_unchanged": false,
+  "current_source_gate": false,
+  "current_source_gate_scope": "approved launch snapshots plus currently rehashed non-prohibited source-map files; NPZ/checkpoint content excluded",
+  "live_source_checks": [
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl-2.2.0.dist-info/METADATA",
+      "expected_sha256": "e429edbe64f243241e6425854643b0d4128de550121b9feb1598ef710b9941a2",
+      "actual_sha256": "e429edbe64f243241e6425854643b0d4128de550121b9feb1598ef710b9941a2",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/__init__.py",
+      "expected_sha256": "f40b23bee37298b180b86d3aed5444a0a9be154fd1e4b1cd02ee01b4bc112516",
+      "actual_sha256": "f40b23bee37298b180b86d3aed5444a0a9be154fd1e4b1cd02ee01b4bc112516",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/__init__.py",
+      "expected_sha256": "c24eccee285dd1c5dea721708cd3e52501fe39f29a865fb6cd3d8b448a33ad4f",
+      "actual_sha256": "c24eccee285dd1c5dea721708cd3e52501fe39f29a865fb6cd3d8b448a33ad4f",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/attention.py",
+      "expected_sha256": "2406a52571ce33392b003aca185550bc33a8e55797de72bdbf8b4449b09e66f8",
+      "actual_sha256": "2406a52571ce33392b003aca185550bc33a8e55797de72bdbf8b4449b09e66f8",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/embedding.py",
+      "expected_sha256": "a0c562600fe22944f91b1b71b706198cb9a4c3d9d8aaba67a86f35a85493d322",
+      "actual_sha256": "a0c562600fe22944f91b1b71b706198cb9a4c3d9d8aaba67a86f35a85493d322",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/encoders.py",
+      "expected_sha256": "a3e0e9bde47e7f587c4a196d124ea631e25755d4f5ac5d6a8568618a4e299a4e",
+      "actual_sha256": "a3e0e9bde47e7f587c4a196d124ea631e25755d4f5ac5d6a8568618a4e299a4e",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py",
+      "expected_sha256": "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc",
+      "actual_sha256": "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference_config.py",
+      "expected_sha256": "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37",
+      "actual_sha256": "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/interaction.py",
+      "expected_sha256": "6f35b5a70cd7b7ea44286faa8921b64c2cc83aca8ed49a4ad8b287abe54cbf27",
+      "actual_sha256": "6f35b5a70cd7b7ea44286faa8921b64c2cc83aca8ed49a4ad8b287abe54cbf27",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/layers.py",
+      "expected_sha256": "96cce2e84db33e176d872c7bb7c0df8c305de3eb7a02fcad9f1128f33d319d95",
+      "actual_sha256": "96cce2e84db33e176d872c7bb7c0df8c305de3eb7a02fcad9f1128f33d319d95",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/learning.py",
+      "expected_sha256": "7549dff09c3796a3cb0b55ea03e249342392fa601a681526f7b1efb6a6f1eef2",
+      "actual_sha256": "7549dff09c3796a3cb0b55ea03e249342392fa601a681526f7b1efb6a6f1eef2",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/rope.py",
+      "expected_sha256": "f59874106743b58330f35699df27ad8d45d4ae692b38c64626f58cdf2da12eab",
+      "actual_sha256": "f59874106743b58330f35699df27ad8d45d4ae692b38c64626f58cdf2da12eab",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/ssmax.py",
+      "expected_sha256": "29b3955e2597446cdcfe70f2084a70faa959f0ef510a27ac0668e58943d3d639",
+      "actual_sha256": "29b3955e2597446cdcfe70f2084a70faa959f0ef510a27ac0668e58943d3d639",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py",
+      "expected_sha256": "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+      "actual_sha256": "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/__init__.py",
+      "expected_sha256": "000e8247eb8c86e7dbda9f7091f0a341a390e41e6894f617488c034b1ebef11d",
+      "actual_sha256": "000e8247eb8c86e7dbda9f7091f0a341a390e41e6894f617488c034b1ebef11d",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/base.py",
+      "expected_sha256": "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+      "actual_sha256": "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+      "match": true
+    },
+    {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py",
+      "expected_sha256": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+      "actual_sha256": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+      "match": true
+    },
+    {
+      "path": "rounds/round_004/runtime_author/replay_contract.json",
+      "expected_sha256": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5",
+      "actual_sha256": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5",
+      "match": true
+    },
+    {
+      "path": "rounds/round_010/artifacts/context_export_attempt_001/query_freeze.json",
+      "expected_sha256": "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef",
+      "actual_sha256": "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef",
+      "match": true
+    },
+    {
+      "path": "rounds/round_010/code/column_chunk.py",
+      "expected_sha256": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+      "actual_sha256": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+      "match": true
+    },
+    {
+      "path": "rounds/round_010/code/icl_observer.py",
+      "expected_sha256": "73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b",
+      "actual_sha256": "73770185e12662b3c589a24736fc12af7c7673b09c296ea62c9eb12763a2659b",
+      "match": true
+    },
+    {
+      "path": "rounds/round_010/code/replay_inner_pilot.py",
+      "expected_sha256": "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+      "actual_sha256": "488b7e935188e803651ea018a57dbbeb69eb85843041df13a043300e58c28aa0",
+      "match": true
+    },
+    {
+      "path": "rounds/round_010/code/row_chunk.py",
+      "expected_sha256": "d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b",
+      "actual_sha256": "d2a3b4d011e233baf051f4df038df6f562c2b5c73a6fc2f21284963b558e947b",
+      "match": true
+    },
+    {
+      "path": "rounds/round_010/code/test_adapter_pair.py",
+      "expected_sha256": "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+      "actual_sha256": "460bf6aa7c42cdc089d897a162331a2dd2a630ed2e8212abe18e2f93e955dbf6",
+      "match": true
+    },
+    {
+      "path": "rounds/round_010/manager/run_bounded.py",
+      "expected_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+      "actual_sha256": "c1d595c94641e81c1e930a216a448013709fd58050cc32d5e31d84251df38867",
+      "match": false
+    }
+  ],
+  "wrapper_source_diff_and_branch_progress": {
+    "available": true,
+    "approved_snapshot_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\logs\\mock_01\\source\\run_bounded.py",
+    "live_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\manager\\run_bounded.py",
+    "approved_sha256": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+    "live_sha256": "c1d595c94641e81c1e930a216a448013709fd58050cc32d5e31d84251df38867",
+    "added_lines": 2,
+    "removed_lines": 0,
+    "unified_diff": [
+      "--- approved-launch-snapshot/run_bounded.py\n",
+      "+++ live/manager/run_bounded.py\n",
+      "@@ -222,6 +222,8 @@\n",
+      "                                    root_identity_capture_method='Popen process handle fallback failed')\r\n",
+      "                     deadline=min(t0+limit,time.monotonic()+cleanup_seconds)\r\n",
+      "                     receipt['popen_handle_fallback']=terminate_popen_handle(proc,deadline)\r\n",
+      "+                    receipt['wrapper_unchanged']=(sha(__file__)==wrapper_expected\r\n",
+      "+                                                  and sha(source/'run_bounded.py')==wrapper_expected)\r\n",
+      "                     receipt.update(status='root_identity_capture_failed',\r\n",
+      "                                    owned_tree_status='unverified_after_root_identity_failure',\r\n",
+      "                                    owned_tree_remaining={'root_exit_confirmed':receipt['popen_handle_fallback']['root_exit_confirmed'],\r\n"
+    ],
+    "diff_truncated": false,
+    "root_identity_capture_failed_branch": {
+      "in_approved_launch_snapshot": true,
+      "in_live_wrapper": true,
+      "live_diff_added_early_return_diagnostic": true,
+      "incident_mutation_at_utc": "2026-11-04T19:57:09.1491992Z",
+      "pilot_process_started_utc": "2026-11-04T19:56:30.781934+00:00",
+      "mutation_after_pilot_process_start": true,
+      "launch_used_approved_wrapper_bytes": true,
+      "receipt_branch_flag": null,
+      "pilot_progress_journal": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_010\\artifacts\\pilot_01\\progress.jsonl",
+        "event_count": 6639,
+        "stage_count": 63,
+        "first_stage": "inputs_hashed_and_query_freeze_ready",
+        "last_stage": "managers_restored",
+        "predict_proba_complete_seen": true,
+        "managers_restored_seen": true,
+        "root_identity_capture_failed_stage_seen": false,
+        "parse_errors": 0
+      },
+      "pilot_child_completed": true,
+      "early_failure_return_recorded": false,
+      "entered_by_pilot": false,
+      "conclusion": "The two added wrapper_unchanged diagnostics are inside an early-return branch that existed in the approved wrapper. pilot_01 launched the child and its saved journal reaches predict_proba_complete and managers_restored, so this early-return branch was not taken."
+    }
+  },
+  "source_freeze_incident_consistent": true,
+  "source_freeze_incident": {
+    "mutation_at_utc": "2026-11-04T19:57:09.1491992Z",
+    "approved_wrapper_sha": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+    "running_receipt_wrapper_sha": "c0bb06bed9cd5a38b7d231af6c0d1f6a254adc40c0635e5ab38b831a4b75b210",
+    "current_wrapper_sha": "c1d595c94641e81c1e930a216a448013709fd58050cc32d5e31d84251df38867",
+    "new_execution_authorized": false
+  },
+  "saved_numeric_replay_passed": true,
+  "saved_numeric_replay": {
+    "passed": true,
+    "scope": "saved JSON probabilities and saved selected reference rows only; no inference, labels, F1, or model imports",
+    "query_ids": [
+      "36001915",
+      "31703435"
+    ],
+    "class_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "shape": [
+      2,
+      4
+    ],
+    "computed_max_abs_probability_difference": 1.8446231598301388e-06,
+    "recorded_max_abs_probability_difference": 1.8446231598301388e-06,
+    "computed_exact_numeric_equal_after_float64_parse": false,
+    "recorded_exact_numeric_equal_after_float64_parse": false,
+    "exact_equality_status_agrees": true,
+    "tolerance_passed": true,
+    "recorded_tolerance": 0.0001,
+    "per_query": [
+      {
+        "query_id": "36001915",
+        "max_abs_difference": 2.6026283017621665e-07,
+        "model_row_sum_error": 2.176966518163681e-08,
+        "reference_row_sum_error": 0.0,
+        "model_argmax": 0,
+        "reference_argmax": 0,
+        "exact_numeric_equal_after_float64_parse": false,
+        "argmax_equal": true,
+        "finite_in_range": true,
+        "passed": true
+      },
+      {
+        "query_id": "31703435",
+        "max_abs_difference": 1.8446231598301388e-06,
+        "model_row_sum_error": 5.541369318962097e-08,
+        "reference_row_sum_error": 0.0,
+        "model_argmax": 1,
+        "reference_argmax": 1,
+        "exact_numeric_equal_after_float64_parse": false,
+        "argmax_equal": true,
+        "finite_in_range": true,
+        "passed": true
+      }
+    ],
+    "manager_saved_numeric_gate": true,
+    "summary_numeric_gates": {
+      "finite_range_shape": true,
+      "row_sum": true,
+      "reference_tolerance": true,
+      "argmax_equal": true,
+      "reported_gate": true,
+      "reported_values_agree": true
+    },
+    "no_training_or_f1_claim": true,
+    "issues": []
+  },
+  "audit_integrity_passed": true,
+  "audit_integrity_definition": {
+    "passed_when": [
+      "approved launch snapshots match",
+      "saved numeric JSON checks pass",
+      "mock-to-pilot receipt link is consistent",
+      "source-freeze incident metadata matches the saved post-execution check"
+    ],
+    "live_source_unchanged_is_reported_separately": true,
+    "live_source_unchanged_is_not_required_for_audit_integrity": true
+  },
+  "historical_overall_gate": false,
+  "historical_gate_evidence": {
+    "manager_status": "completed_numeric_replay_pass_source_freeze_violation",
+    "manager_all_execution_gates_passed": false,
+    "manager_source_freeze_incident_recorded": true,
+    "pilot_receipt_status": "failed_or_stopped",
+    "pilot_receipt_wrapper_unchanged": false,
+    "incident_consistent": true,
+    "historical_gate_is_never_recomputed_or_forgiven": true
+  },
+  "limitations": [
+    "NPZ and checkpoint files were explicitly excluded from reads and hashing; their saved manifest metadata is not reverified.",
+    "Saved numeric replay checks use only probabilities and selected reference rows already recorded in pilot_result.json.",
+    "A live-source clean result cannot rewrite the historical round010 source-freeze incident."
+  ]
+}

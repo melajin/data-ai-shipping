@@ -1,0 +1,14 @@
+﻿{
+    "status":  "completed_source_repair_approved_execution_deferred_deadline",
+    "source_review_approved":  true,
+    "candidate_frozen":  true,
+    "process_smoke_runs":  0,
+    "mock_runs":  0,
+    "saved_audit_runs":  0,
+    "model_calls":  0,
+    "new_f1":  null,
+    "process_exit_fix_dynamically_verified":  false,
+    "prelaunch_block":  "Experiment cutoff reached; no smoke launch",
+    "historical_round010_overall_gate":  false,
+    "next_action":  "Round013 minimal version/path copy then early source approval and smoke/mock/saved audit; no model"
+}

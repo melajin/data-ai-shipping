@@ -1,0 +1,27 @@
+﻿{
+    "manager":  {
+                    "effort_request":  "high",
+                    "thread":  "01a1a83c-8148-7880-a591-8ac9a3f42e1f",
+                    "model_request":  "gpt-6-astra",
+                    "session":  "codex_56b77d08_9abc_43b3_b97e_6fc1a3e7eea7"
+                },
+    "workers":  [
+                    {
+                        "effort_request":  "xhigh",
+                        "ownership":  "rounds/round_012/code/*",
+                        "fork_turns":  "none",
+                        "task":  "/root/round012_author",
+                        "model_request":  "gpt-6-luna"
+                    },
+                    {
+                        "effort_request":  "xhigh",
+                        "ownership":  "rounds/round_012/review/*",
+                        "fork_turns":  "none",
+                        "task":  "/root/round012_reviewer",
+                        "model_request":  "gpt-6-luna"
+                    }
+                ],
+    "host_slots":  4,
+    "active_in_thread":  3,
+    "note":  "Requests are not internal model attestation; host turn_context captured separately"
+}

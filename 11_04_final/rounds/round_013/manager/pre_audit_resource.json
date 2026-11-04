@@ -1,0 +1,11 @@
+﻿{
+    "stage":  "audit",
+    "checked_utc":  "2026-11-04T20:50:59.9728994Z",
+    "available_gib":  4.3416099548339844,
+    "expected_peak_mib":  100,
+    "other_python":  [
+
+                     ],
+    "smoke_mock_gates":  true,
+    "approval_map_sha256":  "CCB8ADA4A66760BFD1A6AE970F395F47F779B9A1829D8011034A7964F624DE26"
+}

@@ -1,0 +1,3 @@
+smoke_stderr_exit_0
+
+smoke_stderr_exit_7

@@ -1,0 +1,99 @@
+﻿{
+    "schema_version":  "round003_e_execution_summary_v1",
+    "created_local":  "2026-11-05T05:27:06.7174385+09:00",
+    "requested_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "provider_internal_model_effort":  "unknown",
+    "overall_status":  "blocked_for_production_equivalence",
+    "original_canonical_hashes":  {
+                                      "expected":  {
+                                                       "D:/repos/fishing-track-classification/code/tools/run_remeasure_20261031.py":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+                                                       "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+                                                       "D:/repos/fishing-track-classification/code/tools/run_005_F156_merge_20261101.py":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+                                                       "D:/repos/fishing-track-classification/code/tools/run_cycle4_3_featAC_20261101.py":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3"
+                                                   },
+                                      "actual":  {
+                                                     "D:/repos/fishing-track-classification/code/tools/run_remeasure_20261031.py":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+                                                     "D:/repos/fishing-track-classification/code/tools/run_cycle4_3_featAC_20261101.py":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+                                                     "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+                                                     "D:/repos/fishing-track-classification/code/tools/run_005_F156_merge_20261101.py":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4"
+                                                 },
+                                      "all_match":  true
+                                  },
+    "related_readonly_hashes":  {
+                                    "testB/round_002/preparation/manifest.json":  "3db3c841f02b9eea6c04978f030c84085a583b81dd4805e2cc5f80b19932af1f",
+                                    "testB/round_002/execution/execution_manifest.json":  "a8bb74a10936572ad152aabeacc5f741a036d922e3a86fdd2f0dbcb494117e42",
+                                    "testB/round_002/scorer_review/manifest.json":  "2502648bb665c5249dc20c353c85b2f705aeaf35b55cc1d8fc18b2f8386eea44",
+                                    "testB/round_002/preparation/artifact_hashes.json":  "d3ccbb1b5cebf2609ddf09f4b07cbe5537d2dfcbd993bab226e3718a04705bae",
+                                    "testB/round_002/execution/isolated_runner.py":  "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d",
+                                    "testB/round_002/scorer_review/scorer_review.md":  "949a103238df331aae0d2284f1ab798838a52ae15be176b5d1d94e1027dd2bee"
+                                },
+    "owned_execution_file_sha256":  {
+                                        "testB/round_003/execution/round003_runner.py":  "13f96933e2ca576c1fd42553ba4b79a0d7ca3150b6a518f2c2cc1e1ce7ab20ce",
+                                        "testB/round_003/execution/bounded_loader.py":  "89f71a938ce521527307c25856f1d576f90e7b0c7368f7627e337467d6ead218",
+                                        "testB/round_003/execution/preflight_report.md":  "c5cb596b26949688ec4b22ed0737c453abfc89622aa48dee299853634073afea",
+                                        "testB/round_003/execution/compare_loader_sample.py":  "2a9252f88f152eafdd956c7e5208113eba4446aac1aa47b99c1115aebed314d8",
+                                        "testB/round_003/execution/sample_comparison.json":  "835f01e41863ca25e77b5a54c7a80795f3aec0a520e0bef871993d3e9a2c0ab0"
+                                    },
+    "sample":  {
+                   "selection":  "train rows_train_1.parquet row_index 0..16383; projection as listed in sample_comparison.json; Arrow batch 8192",
+                   "input_rows":  16384,
+                   "canonical_full_loader_called":  false,
+                   "actual_sample_columns_order_values_nan_dtype_equal":  true,
+                   "excluded_source_row_indices_original":  [
+
+                                                            ],
+                   "excluded_source_row_indices_bounded":  [
+
+                                                           ],
+                   "excluded_sets_equal":  true,
+                   "sample_scope":  "single bounded sample only; not full equivalence proof",
+                   "boundary_fixture_equal":  false,
+                   "boundary_first_mismatch":  {
+                                                   "canonical_whole_series_rfid_id":  "9007199254740992",
+                                                   "bounded_batch_rfid_id":  "9007199254740993",
+                                                   "raw":  "9007199254740993",
+                                                   "cross_batch_raw":  "1.5"
+                                               },
+                   "final_comparison_exit_code":  2
+               },
+    "ram":  {
+                "start_available_mib":  4282.7,
+                "total_mib":  14140.9,
+                "start_local":  "2026-11-05",
+                "increment_budget_mib":  512,
+                "session_reserve_mib":  512,
+                "peak_measured":  false,
+                "concurrent_V_review":  true,
+                "other_processes":  "Orca/host processes; exact concurrent work and overhead unknown",
+                "planned_future_peak_increment_mib":  {
+                                                          "harbor":  "1536-3072",
+                                                          "density":  "3072-6144",
+                                                          "gap":  "1536-3584"
+                                                      },
+                "minimum_free_gate_mib":  {
+                                              "harbor":  4096,
+                                              "density":  7168,
+                                              "gap":  4608
+                                          }
+            },
+    "execution":  {
+                      "attempt01":  {
+                                        "exit_code":  1,
+                                        "failure":  "AttributeError: pyarrow.parquet has no attribute Table; before comparison JSON"
+                                    },
+                      "attempt02_exit_code":  0,
+                      "attempt03_exit_code":  0,
+                      "attempt04_exit_code":  0,
+                      "attempt05_exit_code":  0,
+                      "attempt06_exit_code":  2,
+                      "stdout":  "sample_comparison_attempt06.stdout.log",
+                      "stderr":  "sample_comparison_attempt06.stderr.log",
+                      "receipt":  "sample_comparison_attempt06.receipt.json",
+                      "stderr_empty_final":  true
+                  },
+    "production_reference_run":  "not run",
+    "actual_score_A_membership":  "not run",
+    "large_train_reference_default_deny":  true,
+    "standalone_code_review_manifest":  "not found by rg --files --hidden; scorer_review/manifest.json and execution/preparation manifests hashed instead"
+}

@@ -1,0 +1,14 @@
+﻿{
+    "command":  "python -B testB/round_003/execution/compare_loader_sample.py",
+    "started_local":  "2026-11-05T05:26:16.1975237+09:00",
+    "finished_local":  "2026-11-05T05:26:17.4953190+09:00",
+    "ram_preflight_free_mib":  4269.9,
+    "ram_expected_peak_increment_mib":  512,
+    "ram_basis":  "max 16,384 projected parquet rows, two bounded 8,192-row Arrow batches plus original/new small pandas frames; actual peak not measured; concurrent V review and host/Orca processes, inventory unknown",
+    "exit_code":  2,
+    "stdout":  "sample_comparison_attempt06.stdout.log",
+    "stderr":  "sample_comparison_attempt06.stderr.log",
+    "result":  "sample_comparison.json",
+    "source_canonical_load_rows_full_dataset_called":  false,
+    "interpretation":  "exit 2 is expected major boundary-equivalence failure; actual train sample comparison passed"
+}

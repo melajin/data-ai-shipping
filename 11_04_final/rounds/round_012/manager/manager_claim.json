@@ -1,0 +1,10 @@
+﻿{
+    "started_utc":  "2026-11-04T20:25:00Z",
+    "deadline_utc":  "2026-11-04T20:45:00Z",
+    "experiment_cutoff_utc":  "2026-11-04T20:42:00Z",
+    "session":  "codex_56b77d08_9abc_43b3_b97e_6fc1a3e7eea7",
+    "thread":  "01a1a83c-8148-7880-a591-8ac9a3f42e1f",
+    "incoming_sha256":  "B991AA5BD7B1AE8D5F017AB7687AD8E7934B81C3AEFB54CE701E2E198F06766D",
+    "previous_manager_state":  "done",
+    "duplicate_round_manager_observed":  false
+}

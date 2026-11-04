@@ -1,0 +1,8 @@
+﻿{
+    "recorded_utc":  "2026-11-04T20:43:55.5418947Z",
+    "guard_command":  "UTC \u003e=2026-11-04T20:42:00Z =\u003e throw before run_audit.ps1 invocation",
+    "error":  "Experiment cutoff reached; no smoke launch",
+    "process_started":  false,
+    "claim_created":  false,
+    "result_inference":  "No dynamic result; not an experimental failure or exit0"
+}

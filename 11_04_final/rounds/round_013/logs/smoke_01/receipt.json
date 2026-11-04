@@ -1,0 +1,183 @@
+{
+    "schema":  "round013_process_receipt.v1",
+    "mode":  "smoke",
+    "run_id":  "smoke_01",
+    "started_utc":  "2026-11-04T20:50:23.9600260+00:00",
+    "completed":  true,
+    "launched":  true,
+    "exit_code":  0,
+    "timed_out":  false,
+    "timeout_seconds":  10,
+    "available_ram_gib_before":  4.282806396484375,
+    "expected_peak_mib":  100,
+    "expected_peak_basis":  "standard-library JSON and a 1 MiB streaming SHA-256 buffer; no model imports",
+    "other_python_processes_before":  [
+
+                                      ],
+    "approval_map_path":  "rounds/round_013/review/approved_sources.json",
+    "approval_map_sha256_before":  "ccb8ada4a66760bfd1a6ae970f395f47f779b9a1829d8011034a7964f624de26",
+    "approval_map_sha256_after":  "ccb8ada4a66760bfd1a6ae970f395f47f779b9a1829d8011034a7964f624de26",
+    "approval_map_unchanged":  true,
+    "live_precheck":  [
+                          {
+                              "path":  "rounds/round_013/code/verify_frozen_run.py",
+                              "expected_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                              "actual_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                              "match":  true
+                          },
+                          {
+                              "path":  "rounds/round_013/code/test_verify_frozen_run.py",
+                              "expected_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                              "actual_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                              "match":  true
+                          },
+                          {
+                              "path":  "rounds/round_013/code/run_audit.ps1",
+                              "expected_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                              "actual_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                              "match":  true
+                          }
+                      ],
+    "live_postcheck":  [
+                           {
+                               "path":  "rounds/round_013/code/verify_frozen_run.py",
+                               "expected_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                               "actual_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                               "match":  true
+                           },
+                           {
+                               "path":  "rounds/round_013/code/test_verify_frozen_run.py",
+                               "expected_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                               "actual_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                               "match":  true
+                           },
+                           {
+                               "path":  "rounds/round_013/code/run_audit.ps1",
+                               "expected_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                               "actual_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                               "match":  true
+                           }
+                       ],
+    "source_snapshot":  {
+                            "rounds/round_013/code/verify_frozen_run.py":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\smoke_01\\source\\verify_frozen_run.py",
+                            "rounds/round_013/code/test_verify_frozen_run.py":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\smoke_01\\source\\test_verify_frozen_run.py",
+                            "rounds/round_013/code/run_audit.ps1":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\smoke_01\\source\\run_audit.ps1"
+                        },
+    "snapshots":  [
+                      {
+                          "path":  "rounds/round_013/code/verify_frozen_run.py",
+                          "snapshot_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\smoke_01\\source\\verify_frozen_run.py",
+                          "expected_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                          "snapshot_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                          "match":  true
+                      },
+                      {
+                          "path":  "rounds/round_013/code/test_verify_frozen_run.py",
+                          "snapshot_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\smoke_01\\source\\test_verify_frozen_run.py",
+                          "expected_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                          "snapshot_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                          "match":  true
+                      },
+                      {
+                          "path":  "rounds/round_013/code/run_audit.ps1",
+                          "snapshot_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\smoke_01\\source\\run_audit.ps1",
+                          "expected_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                          "snapshot_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                          "match":  true
+                      }
+                  ],
+    "snapshot_postcheck":  [
+                               {
+                                   "path":  "rounds/round_013/code/verify_frozen_run.py",
+                                   "snapshot_sha256":  "6a10eee36bad5921e7a856eafc74f99b800970f82991eddaa218688f61f4c41e",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "rounds/round_013/code/test_verify_frozen_run.py",
+                                   "snapshot_sha256":  "85ca95b500a2024801284aaf1c7a8d12aebfa5161ee5d2c20d4bb19e3e7b5f72",
+                                   "match":  true
+                               },
+                               {
+                                   "path":  "rounds/round_013/code/run_audit.ps1",
+                                   "snapshot_sha256":  "be6614b1b523550ff9b16a7fc2db61db88504a088ff17e4b2b7396186200a782",
+                                   "match":  true
+                               }
+                           ],
+    "children":  [
+                     {
+                         "started":  true,
+                         "pid":  11808,
+                         "creation_utc":  "2026-11-04T20:50:24.0919142Z",
+                         "wait_finished":  true,
+                         "timed_out":  false,
+                         "kill_attempted":  false,
+                         "exit_confirmed":  true,
+                         "exit_code":  0,
+                         "owned_process_exited":  true,
+                         "owned_process_residual":  false,
+                         "stdout":  "smoke_stdout_exit_0\r\n",
+                         "stderr":  "smoke_stderr_exit_0\r\n",
+                         "stdout_stderr_drained":  true,
+                         "elapsed_seconds":  0.1260961,
+                         "wait_timeout_seconds":  4,
+                         "cleanup_timeout_seconds":  1,
+                         "command":  [
+                                         "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                                         "-B",
+                                         "-S",
+                                         "-c",
+                                         "import sys; print(\u0027smoke_stdout_exit_0\u0027); print(\u0027smoke_stderr_exit_0\u0027, file=sys.stderr); raise SystemExit(0)"
+                                     ],
+                         "error":  null,
+                         "expected_exit_code":  0,
+                         "exit_code_matches_expected":  true,
+                         "stdout_marker_present":  true,
+                         "stderr_marker_present":  true,
+                         "completed":  true
+                     },
+                     {
+                         "started":  true,
+                         "pid":  11336,
+                         "creation_utc":  "2026-11-04T20:50:24.2230410Z",
+                         "wait_finished":  true,
+                         "timed_out":  false,
+                         "kill_attempted":  false,
+                         "exit_confirmed":  true,
+                         "exit_code":  7,
+                         "owned_process_exited":  true,
+                         "owned_process_residual":  false,
+                         "stdout":  "smoke_stdout_exit_7\r\n",
+                         "stderr":  "smoke_stderr_exit_7\r\n",
+                         "stdout_stderr_drained":  true,
+                         "elapsed_seconds":  0.0602488,
+                         "wait_timeout_seconds":  4,
+                         "cleanup_timeout_seconds":  1,
+                         "command":  [
+                                         "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                                         "-B",
+                                         "-S",
+                                         "-c",
+                                         "import sys; print(\u0027smoke_stdout_exit_7\u0027); print(\u0027smoke_stderr_exit_7\u0027, file=sys.stderr); raise SystemExit(7)"
+                                     ],
+                         "error":  null,
+                         "expected_exit_code":  7,
+                         "exit_code_matches_expected":  true,
+                         "stdout_marker_present":  true,
+                         "stderr_marker_present":  true,
+                         "completed":  true
+                     }
+                 ],
+    "process":  null,
+    "stdout":  "smoke_stdout_exit_0\r\n\nsmoke_stdout_exit_7\r\n",
+    "stderr":  "smoke_stderr_exit_0\r\n\nsmoke_stderr_exit_7\r\n",
+    "owned_process_exited":  true,
+    "owned_process_residual":  false,
+    "stdout_stderr_drained":  true,
+    "historical_round010_outcome_unchanged":  true,
+    "error":  null,
+    "elapsed_seconds":  0.25658729999999996,
+    "finished_utc":  "2026-11-04T20:50:24.3512069+00:00",
+    "other_python_processes_after":  [
+
+                                     ]
+}

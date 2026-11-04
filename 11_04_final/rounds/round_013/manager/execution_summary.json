@@ -1,0 +1,61 @@
+﻿{
+    "recorded_utc":  "2026-11-04T20:51:32.9137234Z",
+    "runs":  [
+                 {
+                     "run_id":  "smoke_01",
+                     "started_utc":  "2026-11-04T20:50:23.9600260+00:00",
+                     "finished_utc":  "2026-11-04T20:50:24.3512069+00:00",
+                     "completed":  true,
+                     "exit_code":  0,
+                     "elapsed_seconds":  0.25658729999999996,
+                     "available_ram_gib_before":  4.282806396484375,
+                     "approval_map_unchanged":  true,
+                     "owned_process_exited":  true,
+                     "owned_process_residual":  false,
+                     "stdout_stderr_drained":  true,
+                     "live_checks_passed":  true,
+                     "snapshot_checks_passed":  true
+                 },
+                 {
+                     "run_id":  "mock_01",
+                     "started_utc":  "2026-11-04T20:50:40.8181761+00:00",
+                     "finished_utc":  "2026-11-04T20:50:41.3779624+00:00",
+                     "completed":  true,
+                     "exit_code":  0,
+                     "elapsed_seconds":  0.4048464,
+                     "available_ram_gib_before":  4.2906303405761719,
+                     "approval_map_unchanged":  true,
+                     "owned_process_exited":  true,
+                     "owned_process_residual":  false,
+                     "stdout_stderr_drained":  true,
+                     "live_checks_passed":  true,
+                     "snapshot_checks_passed":  true
+                 },
+                 {
+                     "run_id":  "audit_01",
+                     "started_utc":  "2026-11-04T20:51:00.3222369+00:00",
+                     "finished_utc":  "2026-11-04T20:51:00.7729666+00:00",
+                     "completed":  true,
+                     "exit_code":  0,
+                     "elapsed_seconds":  0.3333715,
+                     "available_ram_gib_before":  4.3293380737304688,
+                     "approval_map_unchanged":  true,
+                     "owned_process_exited":  true,
+                     "owned_process_residual":  false,
+                     "stdout_stderr_drained":  true,
+                     "live_checks_passed":  true,
+                     "snapshot_checks_passed":  true
+                 }
+             ],
+    "round010_snapshot_matches":  true,
+    "round010_live_source_unchanged":  false,
+    "round010_current_source_gate":  false,
+    "saved_numeric_replay_passed":  true,
+    "max_abs_probability_difference":  1.8446231598301388E-06,
+    "exact_numeric_equal":  false,
+    "audit_integrity_passed":  true,
+    "historical_overall_gate":  false,
+    "new_f1":  null,
+    "model_calls":  0,
+    "historical_selected_files_unchanged":  true
+}

@@ -1,0 +1,10 @@
+﻿{
+    "ack_received_utc":  "2026-11-04T20:39:20.7926406Z",
+    "author_declared_freeze_utc":  "2026-11-04T20:38:41Z",
+    "author":  "/root/round012_author",
+    "write_freeze":  true,
+    "candidate_manifest":  "rounds/round_012/code/candidate_sources.json",
+    "candidate_manifest_sha256":  "6E283FEF3A6C1FB93597F24F244E17565B3DC896DC2F0C124151CD77527972B1",
+    "no_author_runs":  true,
+    "message":  "Candidate ACK received through collaboration; do not edit after independent approval."
+}

@@ -1,0 +1,23 @@
+﻿{
+    "schema_version":  "round003_e_execution_receipt_v1",
+    "created_local":  "2026-11-05T05:27:31.3959656+09:00",
+    "command":  "python -B testB/round_003/execution/compare_loader_sample.py",
+    "primary_command_exit_code":  2,
+    "primary_stdout":  "sample_comparison_attempt06.stdout.log",
+    "primary_stderr":  "sample_comparison_attempt06.stderr.log",
+    "primary_result":  "sample_comparison.json",
+    "primary_run_receipt":  "sample_comparison_attempt06.receipt.json",
+    "all_attempt_receipts":  [
+                                 "sample_comparison_attempt01.receipt.json",
+                                 "sample_comparison_attempt02.receipt.json",
+                                 "sample_comparison_attempt03.receipt.json",
+                                 "sample_comparison_attempt04.receipt.json",
+                                 "sample_comparison_attempt05.receipt.json",
+                                 "sample_comparison_attempt06.receipt.json"
+                             ],
+    "summary_sha256":  "74b946857ba469ec1e65028c447dcc20bda9399a4b16b20566176e5e781a9ade",
+    "report_sha256":  "c5cb596b26949688ec4b22ed0737c453abfc89622aa48dee299853634073afea",
+    "modified_scope":  "testB/round_003/execution/ only",
+    "canonical_sources_hash_matched":  true,
+    "full_train_reference_or_score_run":  false
+}

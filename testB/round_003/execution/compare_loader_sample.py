@@ -60,6 +60,11 @@ def main():
     from bounded_loader import transform_batch
     bounded=transform_batch(injected,month=1,columns=COLUMNS,key_valid_only=True)
     actual={"sample_scope":{"source":str(PARQUET),"source_sha256":sha(PARQUET),"month":1,"selection":"first 16,384 row_index-ordered rows from ParquetFile.iter_batches(8192), columns projected exactly as listed","selected_input_rows":have,"canonical_full_load_rows_called":False},"comparison":compare_frames(original,bounded)}
+    input_rows=set(injected.column("row_index").to_pylist())
+    original_rows=set(original.row_index.to_list()); bounded_rows=set(bounded.row_index.to_list())
+    actual["comparison"]["excluded_source_row_indices_original"]=sorted(input_rows-original_rows)
+    actual["comparison"]["excluded_source_row_indices_bounded"]=sorted(input_rows-bounded_rows)
+    actual["comparison"]["excluded_sets_equal"]=(input_rows-original_rows)==(input_rows-bounded_rows)
     del original,bounded,injected,batches; gc.collect()
     # Boundary fixture checks per-batch inference against canonical whole-series conversion.
     from bounded_loader import transform_batch as bounded_transform
@@ -81,6 +86,7 @@ def main():
     (OUT/"sample_comparison.json").write_text(json.dumps(actual,ensure_ascii=False,indent=2),encoding="utf-8")
     print(json.dumps(actual,ensure_ascii=False))
     if not actual["comparison"]["values_equal"] or not actual["comparison"]["dtypes_equal"]: return 2
+    if not actual["boundary_fixture"].get("bounded_concat",{}).get("equal_after_reset_index",False): return 2
     return 0
 
 if __name__=="__main__": raise SystemExit(main())

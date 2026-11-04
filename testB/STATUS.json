@@ -1,42 +1,19 @@
-{
+﻿{
     "schema_version":  "1.0",
     "updated_date_kst":  "2026-11-05",
-    "active_round":  "round_003",
-    "active_supervisor_session":  "codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7",
-    "previous_supervisor_session":  "codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef",
+    "active_round":  "round_004",
+    "active_supervisor_session":  "codex_8df5a67b_34a4_4a72_b561_d45861870f6f",
+    "previous_supervisor_session":  "codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7",
     "supervisor_requested_model":  "gpt-6.1-sol",
     "supervisor_requested_effort":  "high",
     "supervisor_actual_model":  null,
     "supervisor_actual_effort":  null,
     "runtime_verification_note":  "Actual supervisor provider model/effort receipt not yet available; request is not execution proof.",
-    "run_id":  "run_202dfeeb8d64",
-    "previous_run_id":  "run_a0639d5ac36a",
-    "state":  "running_waiting_E_loader_sample_and_ram_plan_V_static_review_complete",
+    "run_id":  "run_a4759578d2ef",
+    "previous_run_id":  "run_202dfeeb8d64",
+    "state":  "running_round004_small_domain_loader_and_independent_review",
     "workers":  [
-                    {
-                        "task":  "E",
-                        "task_id":  "task_d696ae691b0c",
-                        "dispatch_id":  "ctx_b7f1523a9658",
-                        "handle":  "structworker_b267c5a1-bc89-4e37-92c1-774d02446293",
-                        "state":  "launched_ready_pending_worker_done",
-                        "orca_launch_model":  "gpt-6-luna",
-                        "orca_launch_effort":  "xhigh",
-                        "provider_internal_runtime":  "unknown",
-                        "owned_path":  "testB/round_003/execution"
-                    },
-                    {
-                        "task":  "V",
-                        "task_id":  "task_a2f54ccabfc6",
-                        "dispatch_id":  "ctx_d47af35c6d31",
-                        "handle":  "structworker_0a6dbada-3c09-4302-8c27-1da52869007c",
-                        "state":  "worker_done_static_review_succeeded_dynamic_verification_pending",
-                        "orca_launch_model":  "gpt-6-luna",
-                        "orca_launch_effort":  "xhigh",
-                        "provider_internal_runtime":  "unknown",
-                        "owned_path":  "testB/round_003/audit",
-                        "worker_done_message_id":  "msg_7decbffa1ec9",
-                        "release_observation":  "reclaimable_autoReleaseAt_present_actual_close_not_yet_observed"
-                    }
+
                 ],
     "round001_worker_history":  [
                                     {
@@ -74,7 +51,7 @@
                                     }
                                 ],
     "legacy_evidence_root":  "26_11_5/testb_next_experiment_20261105",
-    "new_evidence_root":  "testB/round_003",
+    "new_evidence_root":  "testB/round_004",
     "v2_intake_owner":  "codex_929b2772_00d4_46cf_a9de_9001a4331c75",
     "final_parent_handoff_message":  "msg_18347d1bf4c5",
     "W2_cleanup":  {
@@ -137,14 +114,14 @@
                                "unknown":  2,
                                "actual_verifier_exit":  0
                            },
-    "next_round":  "round_003",
-    "next_supervisor_session":  "codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7",
-    "next_supervisor_launch_operation_id":  "1793823089402-bdd4869d594d48429311e1bfe803b70a",
+    "next_round":  "round_004",
+    "next_supervisor_session":  "codex_8df5a67b_34a4_4a72_b561_d45861870f6f",
+    "next_supervisor_launch_operation_id":  "1793825320260-137af6b1ba9840279d176f5819dd2fb3",
     "next_supervisor_prompt_delivery":  "journaled",
-    "handoff_token":  "testb_r002_to_r003_20261105_0504",
+    "handoff_token":  "testb_r003_to_r004_20261105_numeric_domain",
     "next_supervisor_ack_received":  true,
-    "handoff_ack_message_id":  "msg_6cb4415e8803",
-    "activation_message_id":  "msg_5572c9a7495b",
+    "handoff_ack_message_id":  "msg_a4a6dab10faf",
+    "activation_message_id":  "msg_0c84a4c3fc9d",
     "activation_confirmed":  true,
     "round002_preparation_completed":  true,
     "round002_result":  {
@@ -217,5 +194,55 @@
                                     }
                                 ],
     "round002_closed":  true,
-    "round003_activation_observed_at":  "2026-11-05T05:15:28.2806106+09:00"
+    "round003_activation_observed_at":  "2026-11-05T05:15:28.2806106+09:00",
+    "round003_closed":  true,
+    "round003_result":  {
+                            "loader_equivalence":  "failed",
+                            "E_actual_exit":  2,
+                            "V_failure_fixture_actual_exit":  0,
+                            "real_sample_scope":  "16384 rows combined table transformed once; not per-batch proof",
+                            "synthetic_precision_counterexample_confirmed":  true,
+                            "canonical_index_difference_confirmed":  true,
+                            "production_runner":  "unimplemented_default_deny_stub",
+                            "actual_scores_computed":  false,
+                            "candidate_A_computed":  false,
+                            "train_references_rebuilt":  false,
+                            "train_membership_computed":  false,
+                            "heavy_peak_RAM":  "unknown; stage envelopes are estimates"
+                        },
+    "round003_worker_history":  [
+                                    {
+                                        "task":  "E",
+                                        "task_id":  "task_d696ae691b0c",
+                                        "dispatch_id":  "ctx_b7f1523a9658",
+                                        "handle":  "structworker_b267c5a1-bc89-4e37-92c1-774d02446293",
+                                        "state":  "settled_failed_boundary_equivalence_exit2",
+                                        "orca_launch_model":  "gpt-6-luna",
+                                        "orca_launch_effort":  "xhigh",
+                                        "provider_internal_runtime":  "unknown",
+                                        "owned_path":  "testB/round_003/execution",
+                                        "worker_done_message_id":  "msg_f7d45da31bf0",
+                                        "release_state":  "released_exited"
+                                    },
+                                    {
+                                        "task":  "V",
+                                        "task_id":  "task_a2f54ccabfc6",
+                                        "dispatch_id":  "ctx_d47af35c6d31",
+                                        "handle":  "structworker_0a6dbada-3c09-4302-8c27-1da52869007c",
+                                        "state":  "worker_done_failure_audit_succeeded_production_failed",
+                                        "orca_launch_model":  "gpt-6-luna",
+                                        "orca_launch_effort":  "xhigh",
+                                        "provider_internal_runtime":  "unknown",
+                                        "owned_path":  "testB/round_003/audit",
+                                        "worker_done_message_id":  "msg_7decbffa1ec9",
+                                        "release_observation":  "latest_followup_released_exited_no_active_followup",
+                                        "latest_followup_dispatch_id":  "ctx_d19e5fc43cd8",
+                                        "latest_followup_task_id":  "task_2229502351ed",
+                                        "latest_worker_done_message_id":  "msg_119d074b1fd3",
+                                        "release_state":  "released_closed_agent_terminal_exited"
+                                    }
+                                ],
+    "round003_activation_message_id":  "msg_5572c9a7495b",
+    "ownership_transferred_at":  "2026-11-05T05:50:50.2752186+09:00",
+    "round004_activation_observed_at":  "2026-11-05T05:52:59.3268665+09:00"
 }

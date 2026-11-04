@@ -1,0 +1,10 @@
+﻿{
+    "checked_utc":  "2026-11-04T20:46:54.5001024Z",
+    "incoming_accepted":  true,
+    "sha256":  "23469A5E22D8572ADB9FA5C400BB48437375A157849E48F8A84B6E276B385CDA",
+    "expected_sha256":  "23469A5E22D8572ADB9FA5C400BB48437375A157849E48F8A84B6E276B385CDA",
+    "session_match":  true,
+    "prior_manager_done":  true,
+    "duplicate_manager_found":  false,
+    "inventory":  "manager/session_inventory.json"
+}

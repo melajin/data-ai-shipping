@@ -1,0 +1,15 @@
+﻿{
+    "verified_utc":  "2026-11-04T20:28:36.3184039Z",
+    "from_round":  "round_011",
+    "receiving_round":  "round_012",
+    "accepted":  true,
+    "delivery":  "journaled",
+    "receipt_session":  "codex_56b77d08_9abc_43b3_b97e_6fc1a3e7eea7",
+    "environment_session":  "codex_56b77d08_9abc_43b3_b97e_6fc1a3e7eea7",
+    "session_match":  true,
+    "handoff_sha256":  "B991AA5BD7B1AE8D5F017AB7687AD8E7934B81C3AEFB54CE701E2E198F06766D",
+    "snapshot_sha256":  "B991AA5BD7B1AE8D5F017AB7687AD8E7934B81C3AEFB54CE701E2E198F06766D",
+    "hash_match":  true,
+    "prior_manager_done":  true,
+    "duplicate_same_round_observed":  false
+}

@@ -1,0 +1,6 @@
+﻿{
+    "checked_utc":  "2026-11-04T20:27:55.1594245Z",
+    "current_session":  "codex_56b77d08_9abc_43b3_b97e_6fc1a3e7eea7",
+    "cli_help":  "orca agent supports hooks and launch; no structured-chat close command",
+    "action":  "After accepted fresh handoff stop this manager. If desired manually close only completed current-session tab; do not close app or unrelated sessions."
+}

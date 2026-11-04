@@ -1,0 +1,13 @@
+﻿{
+    "checked_utc":  "2026-11-04T20:26:06.3210568Z",
+    "available_gib":  4.1445960998535156,
+    "total_gib":  13.809436798095703,
+    "stdlib_expected_peak_mib":  100,
+    "worker_document_overhead_estimated_mib":  200,
+    "estimate_basis":  "Small source/JSON, 1MiB hash buffer; no numerical library/model",
+    "other_python":  [
+
+                     ],
+    "other_work":  "Separate Test B worker active, no observed Python at this check",
+    "decision":  "Proceed with source work and two Luna workers; recheck before each computation"
+}
