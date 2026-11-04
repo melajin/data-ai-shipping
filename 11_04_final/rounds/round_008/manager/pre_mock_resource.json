@@ -1,0 +1,12 @@
+﻿{
+    "observed_utc":  "2026-11-04T18:49:17.8170510Z",
+    "stage":  "pre_mock",
+    "available_ram_gib":  4.3090057373046875,
+    "estimated_incremental_peak_gib":  0.1,
+    "basis":  "standard library fake-tensor mock; no numpy/torch/model imports",
+    "other_model_compute":  [
+
+                            ],
+    "source_workers":  "author final notes + reviewer light source/hash work",
+    "decision":  "run mock only after reviewer approval"
+}

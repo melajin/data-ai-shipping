@@ -1,0 +1,15 @@
+{
+    "started_at":  "2026-11-05T03:25:09.9740992+09:00",
+    "ended_at":  "2026-11-05T03:25:11.3989169+09:00",
+    "argv":  [
+                 "python",
+                 "-B",
+                 "-X",
+                 "utf8",
+                 "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\audit\\final_001\\independent_verifier.py"
+             ],
+    "exit_code":  2,
+    "script_sha256":  "25ac7be2a106dbe47d94eaa704c5139276010a06e10ae45d22dfab8a34a1b170",
+    "stdout":  "stdout.log",
+    "stderr":  "stderr.log"
+}

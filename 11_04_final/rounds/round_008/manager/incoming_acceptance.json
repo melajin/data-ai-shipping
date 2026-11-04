@@ -1,0 +1,14 @@
+﻿{
+    "observed_utc":  "2026-11-04T18:39:31.6834577Z",
+    "incoming_launch_receipt":  "automation/receipts/round_007_launch.json",
+    "incoming_snapshot":  "automation/receipts/round_007_NEXT_SESSION.md",
+    "snapshot_sha256":  "13D442B4AFB7898D97B6DEAD4A8FE0AEEC61AC5E7A037596911257B026EB85C9",
+    "matches_user_expected":  true,
+    "accepted_incoming_session":  "codex_e959665a_5b7a_4729_897c_f8de0d0a718d",
+    "duplicate_round_directory_at_start":  false,
+    "duplicate_compute_at_start":  false,
+    "host_total_slots":  4,
+    "assistants_used":  2,
+    "user_assistant_limit":  4,
+    "close_api":  "orca agent --help exposes launch but no structured-chat close command; manual close only outgoing tab after receipt"
+}

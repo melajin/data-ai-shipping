@@ -1,0 +1,7 @@
+﻿{
+    "actual_exit_code":  0,
+    "observed_at":  "2026-11-05T03:38:03.8652017+09:00",
+    "requested_model":  "gpt-6.1-sol",
+    "requested_effort":  "high",
+    "prompt_file":  "testB/round_001/contract/next_supervisor_prompt.md"
+}

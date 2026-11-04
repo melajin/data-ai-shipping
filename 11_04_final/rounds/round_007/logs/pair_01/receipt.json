@@ -1,0 +1,90 @@
+{
+  "schema": "round007_bounded_receipt.v1",
+  "kind": "synthetic_pair",
+  "run_id": "pair_01",
+  "started_utc": "2026-11-04T18:27:46.311817+00:00",
+  "status": "completed",
+  "timeout_seconds": 300,
+  "script": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\code\\synthetic_pair.py",
+  "source_sha256": "67f74942b38c4c2ee42c6a0509c39997828c0e98658bc04adb2ca96850f445b3",
+  "wrapper_sha256": "2820871e8884a0fd642e550301154c16039d6c85c6168bda32cbf67340f3bee4",
+  "pid": 27312,
+  "exit_code": 0,
+  "launched": true,
+  "stop_reason": null,
+  "approved_sources": {
+    "approval_scope": "one synthetic pair only; mock allowance exhausted",
+    "review": "rounds/round_007/review/synthetic_precheck.json",
+    "sha256": {
+      "rounds/round_007/code/column_chunk.py": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+      "rounds/round_007/code/test_column_chunk.py": "44b3ae7f56560efd05268d8a0d253128cf1be78178bce4d0dcb75f1e3d602a32",
+      "rounds/round_007/code/synthetic_pair.py": "67f74942b38c4c2ee42c6a0509c39997828c0e98658bc04adb2ca96850f445b3",
+      "rounds/round_007/manager/run_bounded.py": "2820871e8884a0fd642e550301154c16039d6c85c6168bda32cbf67340f3bee4",
+      "rounds/round_004/runtime_author/replay_contract.json": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5",
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py": "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc",
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/embedding.py": "a0c562600fe22944f91b1b71b706198cb9a4c3d9d8aaba67a86f35a85493d322",
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/encoders.py": "a3e0e9bde47e7f587c4a196d124ea631e25755d4f5ac5d6a8568618a4e299a4e",
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/layers.py": "96cce2e84db33e176d872c7bb7c0df8c305de3eb7a02fcad9f1128f33d319d95",
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py": "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference_config.py": "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37",
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534"
+    }
+  },
+  "compute_timeout_seconds": 290,
+  "cleanup_max_seconds": 10,
+  "executed_source_snapshot": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\logs\\pair_01\\source\\synthetic_pair.py",
+  "command": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+    "-B",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\logs\\pair_01\\source\\synthetic_pair.py"
+  ],
+  "environment_overrides": {
+    "TEMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\pair_01",
+    "TMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\pair_01",
+    "TMPDIR": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\pair_01",
+    "PYTHONPYCACHEPREFIX": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\pair_01",
+    "HF_HOME": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\pair_01",
+    "TORCH_HOME": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\pair_01",
+    "XDG_CACHE_HOME": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\pair_01",
+    "JOBLIB_TEMP_FOLDER": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\pair_01",
+    "MPLCONFIGDIR": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\temp\\pair_01",
+    "OMP_NUM_THREADS": "3",
+    "MKL_NUM_THREADS": "3",
+    "OPENBLAS_NUM_THREADS": "3",
+    "NUMEXPR_NUM_THREADS": "3",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONUTF8": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "preflight_available_ram_gib": 4.787761688232422,
+  "minimum_start_ram_gib": 3.0,
+  "process_creation_started_utc": "2026-11-04T18:27:46.320213+00:00",
+  "elapsed_seconds": 30.0779999999977,
+  "finished_utc": "2026-11-04T18:28:16.397712+00:00",
+  "postexit_within_timeout": true,
+  "minimum_observed_available_ram_gib": 4.139598846435547,
+  "peak_sampled_tree_working_set_bytes": 780906496,
+  "process_peak_working_set_bytes": {
+    "5300": 7479296,
+    "27312": 4354048,
+    "3196": 770179072
+  },
+  "sampled_cpu_seconds_by_pid": {
+    "5300": 0.015625,
+    "27312": 0,
+    "3196": 65.328125
+  },
+  "observed_owned_pids": [
+    3196,
+    5300,
+    27312
+  ],
+  "owned_process_creation_ticks": {
+    "5300": 134382904663268572,
+    "27312": 134382904663216485,
+    "3196": 134382904663445389
+  },
+  "owned_tree_remaining": [],
+  "source_unchanged": true
+}

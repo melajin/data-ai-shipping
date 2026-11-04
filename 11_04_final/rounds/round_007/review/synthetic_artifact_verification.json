@@ -1,0 +1,124 @@
+{
+  "schema": "round007_synthetic_artifact_verification.v1",
+  "method": "independent NumPy-only artifact check; imported only NumPy, JSON, hashlib, pathlib, datetime; did not import Torch/TabICL or load a checkpoint",
+  "result_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\artifacts\\synthetic_pair_result.json",
+  "npz_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_007\\artifacts\\synthetic_pair_outputs.npz",
+  "npz_sha256": "d950c5e5c8783df382a659d961d7f1b885686402b573f33071736faa6b89dcec",
+  "result_status": "SYNTHETIC_PAIR_COMPLETE",
+  "source_at_entry_sha256": "67f74942b38c4c2ee42c6a0509c39997828c0e98658bc04adb2ca96850f445b3",
+  "input_shapes": {
+    "X_fit": [
+      32,
+      312
+    ],
+    "y_fit": [
+      32
+    ],
+    "X_query": [
+      2,
+      312
+    ]
+  },
+  "input_sha256": {
+    "X_fit": "1a37abc97c75088f5488ca1b0640d2a8fdd156ed7eb6de52f6bd9e78ba0256c4",
+    "y_fit": "30924011a791cc3220ed7cd8ff904e7f37c9d401ce1df487ecd4d34aae2b5aa5",
+    "X_query": "49cfd1f3cda7b6cf95c5ee8bbaa816bd7d7dba9d7f066aeb08c00bbf09873948"
+  },
+  "prediction": {
+    "baseline_gate_pass": true,
+    "chunked_gate_pass": true,
+    "baseline_max_abs_row_sum_error": 5.960464477539063e-08,
+    "chunked_max_abs_row_sum_error": 5.960464477539063e-08,
+    "max_abs_probability_difference": 0.0,
+    "exact_numeric_equal": true,
+    "argmax_baseline": [
+      1,
+      2
+    ],
+    "argmax_chunked": [
+      1,
+      2
+    ],
+    "overall_probability_and_argmax_gate_pass": true
+  },
+  "adapter_events": {
+    "column_calls": 8,
+    "columns_per_call": 316,
+    "chunk_width": 16,
+    "chunks_per_call": 20,
+    "last_chunk_width": 12,
+    "output_shape_per_call": [
+      1,
+      316,
+      34,
+      128
+    ]
+  },
+  "check_count": 50,
+  "checks": {
+    "result_status_complete": true,
+    "result_stage_comparison_complete": true,
+    "approved_source_hash_used": true,
+    "one_fit_and_two_predictions": true,
+    "adapter_restored": true,
+    "npz_sha256_matches_result": true,
+    "npz_members_exact": true,
+    "synthetic_shapes_and_dtypes": true,
+    "expected_label_values": true,
+    "expected_rng_arrays": true,
+    "X_fit_result_shape_dtype_hash": true,
+    "y_fit_result_shape_dtype_hash": true,
+    "X_query_result_shape_dtype_hash": true,
+    "input_fingerprints_at_creation_matches_npz": true,
+    "baseline_pre_call_input_fingerprints_matches_npz": true,
+    "baseline_post_call_input_fingerprints_matches_npz": true,
+    "chunked_pre_call_input_fingerprints_matches_npz": true,
+    "chunked_post_call_input_fingerprints_matches_npz": true,
+    "json_probability_values_match_npz": true,
+    "probability_gates": true,
+    "max_row_sum_errors_match_json": true,
+    "difference_and_exact_equality_match_json": true,
+    "argmax_matches_json": true,
+    "comparison_gate_pass": true,
+    "eight_column_calls": true,
+    "call_0_shape_contract": true,
+    "call_0_twenty_contiguous_chunks": true,
+    "call_0_output_reassembled_shape": true,
+    "call_1_shape_contract": true,
+    "call_1_twenty_contiguous_chunks": true,
+    "call_1_output_reassembled_shape": true,
+    "call_2_shape_contract": true,
+    "call_2_twenty_contiguous_chunks": true,
+    "call_2_output_reassembled_shape": true,
+    "call_3_shape_contract": true,
+    "call_3_twenty_contiguous_chunks": true,
+    "call_3_output_reassembled_shape": true,
+    "call_4_shape_contract": true,
+    "call_4_twenty_contiguous_chunks": true,
+    "call_4_output_reassembled_shape": true,
+    "call_5_shape_contract": true,
+    "call_5_twenty_contiguous_chunks": true,
+    "call_5_output_reassembled_shape": true,
+    "call_6_shape_contract": true,
+    "call_6_twenty_contiguous_chunks": true,
+    "call_6_output_reassembled_shape": true,
+    "call_7_shape_contract": true,
+    "call_7_twenty_contiguous_chunks": true,
+    "call_7_output_reassembled_shape": true,
+    "runtime_managers_unchanged": true
+  },
+  "all_checks_pass": true,
+  "limits": "Synthetic pair only: two synthetic query rows; does not establish actual-data replay equivalence, F1, full-context memory reduction, holdout/Test2025 performance, or hardware behavior.",
+  "verification_completed_utc": null,
+  "verification_completion_timestamp_note": "Exact checker completion timestamp was not preserved during final metadata editing.",
+  "finalized_at_utc": "2026-11-04T18:32:57Z",
+  "ram_evidence": {
+    "pre_inspection_available_ram_gib": 4.878,
+    "pre_inspection_observed_utc": "2026-11-04T18:28:36Z",
+    "pre_inspection_note": "Fresh reading before result/NPZ inspection; not the manager model-run preflight and not a fresh sample immediately before the verifier command.",
+    "estimated_verification_incremental_ram_gib": "<0.15",
+    "estimated_numpy_array_payload_mib": "<0.1",
+    "post_verification_available_ram_gib": 4.813,
+    "post_verification_observed_utc": "2026-11-04T18:32:58Z"
+  }
+}

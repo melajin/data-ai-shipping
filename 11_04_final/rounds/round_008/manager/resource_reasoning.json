@@ -1,0 +1,18 @@
+﻿{
+    "recorded_utc":  "2026-11-04T18:43:20.6289129Z",
+    "purpose":  "Pre-compute resource reasoning; no model invoked",
+    "initial_ram_observation_utc":  "2026-11-04T18:35:41.5529652Z",
+    "initial_available_ram_gib":  4.6787147521972656,
+    "active_model_compute_at_start":  0,
+    "active_workers":  2,
+    "worker_tasks":  "Source author and independent source reviewer; no package/model imports or large array loading",
+    "source_work_incremental_ram_estimate_gib":  0.2,
+    "source_estimate_note":  "Light text/hash/AST work, not empirical peak; estimate documented after delegation and before any model execution",
+    "full_replay_peak_estimate":  "1–4GiB or greater, unverified",
+    "basis":  "Previous original-path stop sampled tree3,160,498,176 bytes; tiny synthetic peak780,906,496 bytes. Full column output (1,316,3146,128) FP32 alone ~0.474GiB; ROW/ICL intermediate allocations add cost. No claim of complete upper bound.",
+    "new_path_difference":  "Only independent column/group batch chunk16; original all-columns inference is not rerun",
+    "start_gate_gib":  3,
+    "runtime_stop_gib":  1.5,
+    "check_again_immediately_before_run":  true,
+    "other_user_processes_may_not_be_stopped":  true
+}

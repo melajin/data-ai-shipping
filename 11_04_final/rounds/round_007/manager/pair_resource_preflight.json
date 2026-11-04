@@ -1,0 +1,12 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T18:27:46.1373199Z",
+    "available_gib":  4.8151473999023438,
+    "total_gib":  13.809436798095703,
+    "estimated_incremental_peak_gib":  "1–2 (unmeasured estimate)",
+    "estimate_basis":  "27.55M FP32 parameters about105MiB; Torch runtime/loading overhead; only34 total sequence rows instead3146; large input peak remains unproven",
+    "other_matching_compute":  [
+
+                               ],
+    "active_work":  "manager execution; independent reviewer source-only; author finished",
+    "decision":  "launch one bounded pair"
+}

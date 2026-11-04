@@ -1,0 +1,31 @@
+{
+  "started_utc": "2026-11-04T18:30:12.558672+00:00",
+  "finished_utc": "2026-11-04T18:30:13.499065+00:00",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB",
+  "requested_model_effort": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "basis": "current Orca task dispatch instructions; provider internals unknown"
+  },
+  "RAM": {
+    "preflight_before_samples": {
+      "available_bytes": 5200408576,
+      "total_bytes": 14827769856,
+      "available_mib": 4959.5,
+      "load_percent": 64
+    },
+    "post_sample": {
+      "available_bytes": 5176958976,
+      "total_bytes": 14827769856,
+      "available_mib": 4937.1,
+      "load_percent": 65
+    },
+    "expected_peak_mib": 128,
+    "estimate_basis": "4 MiB sequential stream sample per ZIP/F: file, workbook inputs ~13 KB each; 1 MiB hash buffers; no tabular cache/model load.",
+    "known_concurrent_work": "W0 finished; W2F localized report/summary/lineage docfix completed with exit 0; no concurrent large-input task reported."
+  },
+  "source_scope": "no 13 GB full rehash, no whole ZIP rehash, no cache reload or score/model evaluation."
+}

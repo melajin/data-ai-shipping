@@ -1,5 +1,17 @@
 # Round 001 감독 상태
 
+## 최종 상태
+
+추가 인계 기록: 새 감독이 msg_b8a342223618로 자기 session ID·토큰·필수문서·RAM규칙·계산보류를 ACK했다. STATUS.json의 단일 소유권을 새 감독에게 전환했다. 이후 활성화 메시지 수락 영수증은 HANDOFF_RECEIPT.json에 기록한다. 이전 감독은 후속 계산/worker를 시작하지 않는다.
+
+활성화 메시지 msg_7163e80af214가 새 감독의 canonical session 주소로 수락됐다(actual exit0). 첫 launch handle 대상 메시지는 terminal_not_found/exit1로 실패했고 영수증을 보존한 뒤 ACK의 실제 canonical 주소로 정정했으며 새 세션을 중복 생성하지 않았다. Round002의 실행·상태·후속보고·완료창 정리는 이제 새 감독 소유다. 이전 감독은 공통 STATUS.json을 더 수정하거나 새 작업을 시작하지 않고 최종 보고 뒤 턴을 종료한다. 이전 감독 창 자체의 닫힘은 아직 검증하지 않았다.
+
+Round001 기술 준비·변경 검산 범위는 완료했다. 최종 감사 pass10/fail0/unknown2, verifier exit0. 사고 성능과 근본 목표는 미완료다. ROUND_REPORT.md를 확정하고 EASY_EXPLANATION.md·NEXT_ROUND.md·HANDOFF_INSTRUCTIONS.md를 작성했다.
+
+다음 실제 Sol high 감독 세션 codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef를 --model gpt-6.1-sol --effort high로 생성했다. 시작 명령 exit0, structured, prompt journaled, operation1793817483656-ca63609c34c34b1f9c6f5b03f594515c. 아직 ACK/활성화 전이며 현재 단독 감독 소유권은 이전 감독에게 있다. HANDOFF_RECEIPT.json을 따른다.
+
+아래는 진행 이력이며 현재 상태는 이 최종 상태와 ../STATUS.json을 우선한다.
+
 2026-11-05. 현재 단일 감독은 codex_929b2772_00d4_46cf_a9de_9001a4331c75이며 Run은 run_131763108c81이다. 감독 요청은 GPT-6.1 Sol high, 실제 provider 설정의 런타임 인증은 미확보다. 실행 workers의 Orca 시작 응답은 각각 GPT-6 Luna xhigh / structured / ready이다.
 
 | 작업 | Task / Dispatch | 수정 소유권 | 상태 |

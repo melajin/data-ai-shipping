@@ -1,0 +1,14 @@
+{
+  "message_id": "msg_b8a342223618",
+  "type": "handoff",
+  "from": "orca_session_id:codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef",
+  "subject": "Round002 인수 ACK",
+  "handoff_token": "testb_r001_to_r002_20261105_0335",
+  "claimed_session_id": "codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef",
+  "required_documents_read": true,
+  "RAM_rule_accepted": true,
+  "no_new_workers_or_calculations_before_activation_reported": true,
+  "model_requested": "gpt-6.1-sol",
+  "effort_requested": "high",
+  "provider_internal_attestation": "unknown"
+}

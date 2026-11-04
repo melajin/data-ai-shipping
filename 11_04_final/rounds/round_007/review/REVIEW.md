@@ -45,3 +45,17 @@ The first bounded mock ran the six pure mock functions successfully: stdout was 
 I reviewed the wrapper change in `run_bounded.py` SHA `2820871E8884A0FD642E550301154C16039D6C85C6168BDA32CBF67340F3BEE4`. It adds `SYNCHRONIZE` and `WaitForSingleObject(handle, 0)`, treating only `WAIT_TIMEOUT` plus the same creation ticks as a live process. The new static review found no blocker for one corrective second/final pure mock invocation. Frozen adapter and test hashes are unchanged. The exact approval is [mock02_precheck.json](mock02_precheck.json); synthetic comparison remains unapproved.
 
 The original [precheck.json](precheck.json) remains the pre-mock01 approval record (SHA-256 `A657D5DC0A4F85D62611D504B08F11D7B4F308DDB3065622A9686AE67B957DED`). This addendum records the first invocation and the single corrective allowance without rewriting the original approval.
+
+## Synthetic pair source gate
+
+I independently reviewed the frozen synthetic pair at SHA-256 `67F74942B38C4C2EE42C6A0509C39997828C0E98658BC04ADB2CA96850F445B3` with the exact adapter, mock, and bounded wrapper hashes recorded in [synthetic_precheck.json](synthetic_precheck.json). **Approve one bounded synthetic pair invocation only**, after the manager verifies the source manifest and rechecks available RAM immediately before launch (minimum 3 GiB). This approval is not a model result; no synthetic execution has occurred at the time of review.
+
+The final version fixes the input-fingerprint object to compare hash/shape/dtype consistently, serializes `torch.device('cpu')` as `cpu`, requires exact Torch `2.6.0+cpu` with CUDA unavailable and no CUDA build, and checks actual configured COL/ROW/ICL manager state after the baseline and adapted calls. Pinned source confirms expected offload enums: `AUTO` for COL and `GPU` for ROW/ICL (`InferenceManager._normalize_offload(False)` maps to GPU); CPU inference returns before accelerator offloading.
+
+The pair is bounded to one checkpoint bind/fit and two `predict_proba` calls using the same estimator and fixed synthetic arrays. It records per-call input and shuffle fingerprints, shape events, runtime settings, outputs, finite/range/row-sum gates, exact equality, maximum absolute difference, and argmax agreement under fixed `1e-5` gates. It installs the adapter only on the fitted estimator's column manager and restores it in `finally`.
+
+Source approval does not predict whether the pair will pass. If the process starts and fails, the one-attempt allowance is consumed. The result will establish only a small synthetic numerical comparison; actual-data replay and full-context memory impact remain unknown.
+
+## Final pair result and artifact verification
+
+The single approved pair completed under its frozen hashes. The final independent review and artifact-only verification are in [FINAL_REVIEW.md](FINAL_REVIEW.md), [final_review.json](final_review.json), and [synthetic_artifact_verification.json](synthetic_artifact_verification.json). The NumPy-only checker verified the NPZ against the result JSON and regenerated inputs; all 50 checks passed. Exact equality applies only to the two synthetic query rows in this run.

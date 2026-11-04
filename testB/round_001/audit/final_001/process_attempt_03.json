@@ -1,0 +1,31 @@
+{
+    "started_at":  "2026-11-05T03:30:12.3779603+09:00",
+    "ended_at":  "2026-11-05T03:30:13.6850294+09:00",
+    "argv":  [
+                 "python",
+                 "-B",
+                 "-X",
+                 "utf8",
+                 "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\audit\\final_001\\independent_verifier.py"
+             ],
+    "exit_code":  2,
+    "script_sha256":  "bb3bca45ee20abd08f9b105ddebc54896e2323862ad544a3cd0f942dcaa8e037",
+    "stdout":  "stdout.log",
+    "stderr":  "stderr.log",
+    "prior_attempts":  [
+                           {
+                               "record":  "process_attempt_01.json",
+                               "actual_exit_code":  2,
+                               "stdout":  "stdout_attempt_01.log",
+                               "stderr":  "stderr_attempt_01.log",
+                               "note":  "over-strict assertions in verifier corrected"
+                           },
+                           {
+                               "record":  "process_attempt_02.json",
+                               "actual_exit_code":  1,
+                               "stdout":  "stdout_attempt_02.log",
+                               "stderr":  "stderr_attempt_02.log",
+                               "note":  "UTF-16LE redirected log decode corrected"
+                           }
+                       ]
+}

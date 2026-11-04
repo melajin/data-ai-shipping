@@ -1,0 +1,150 @@
+{
+  "schema": "round007_manager_result.v1",
+  "status": "completed_synthetic_equivalence_pass",
+  "updated_at_utc": "2026-11-04T18:28:48.247164+00:00",
+  "mock": {
+    "runs": 2,
+    "assertions_passed_both_runs": true,
+    "test_functions_each": 6,
+    "first_wrapper_exit_status": "failed_or_stopped",
+    "first_exit_code": 0,
+    "first_seconds": 0.2809999999990396,
+    "first_receipt_correction": "manager/mock_01_postexit_correction.json",
+    "second_status": "completed",
+    "second_exit_code": 0,
+    "second_seconds": 0.2649999999994179,
+    "corrective_cause": "Exited Popen-held process object was counted as live; WaitForSingleObject running check added"
+  },
+  "synthetic_pair": {
+    "runs": 1,
+    "child_status": "SYNTHETIC_PAIR_COMPLETE",
+    "receipt_status": "completed",
+    "exit_code": 0,
+    "seconds": 30.0779999999977,
+    "checkpoint_context_fits": 1,
+    "predict_attempted": 2,
+    "predict_completed": 2,
+    "comparison": {
+      "scope": "two synthetic query rows only; same fitted estimator and inputs; no F1",
+      "tolerance": 1e-05,
+      "baseline_probability_gate_pass": true,
+      "chunked_probability_gate_pass": true,
+      "max_abs_probability_difference": 0.0,
+      "exact_numeric_equal": true,
+      "argmax_equal": true,
+      "argmax_baseline": [
+        1,
+        2
+      ],
+      "argmax_chunked": [
+        1,
+        2
+      ],
+      "within_tolerance_and_argmax_gate_pass": true
+    },
+    "preflight_available_ram_gib": 4.787761688232422,
+    "min_available_ram_gib": 4.139598846435547,
+    "peak_sampled_owned_tree_working_set_bytes": 780906496,
+    "owned_tree_remaining": [],
+    "source_unchanged": true,
+    "adapter_restored": true,
+    "column_calls": 8,
+    "chunk_forwards": 160,
+    "input_shapes": [
+      [
+        1,
+        316,
+        34,
+        3
+      ]
+    ],
+    "output_shapes": [
+      [
+        1,
+        316,
+        34,
+        128
+      ]
+    ],
+    "max_chunk_columns": 16,
+    "last_chunk_widths": [
+      12
+    ],
+    "baseline_probability_check": {
+      "name": "baseline",
+      "shape": [
+        2,
+        4
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "within_0_1": true,
+      "max_abs_row_sum_error": 5.960464477539063e-08,
+      "row_sum_gate_pass": true,
+      "values": [
+        [
+          0.20490510761737823,
+          0.3307408094406128,
+          0.2752917408943176,
+          0.18906228244304657
+        ],
+        [
+          0.05784132704138756,
+          0.21634957194328308,
+          0.3749523162841797,
+          0.35085684061050415
+        ]
+      ],
+      "gate_pass": true
+    },
+    "chunked_probability_check": {
+      "name": "column_chunked",
+      "shape": [
+        2,
+        4
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "within_0_1": true,
+      "max_abs_row_sum_error": 5.960464477539063e-08,
+      "row_sum_gate_pass": true,
+      "values": [
+        [
+          0.20490510761737823,
+          0.3307408094406128,
+          0.2752917408943176,
+          0.18906228244304657
+        ],
+        [
+          0.05784132704138756,
+          0.21634957194328308,
+          0.3749523162841797,
+          0.35085684061050415
+        ]
+      ],
+      "gate_pass": true
+    },
+    "input_shuffle_state_unchanged_both_paths": true,
+    "runtime_manager_state_unchanged": true
+  },
+  "evaluation": {
+    "kind": "tiny_synthetic_equivalence_only",
+    "real_data_inference_calls": 0,
+    "parameter_training_fits": 0,
+    "new_f1_evaluations": 0,
+    "new_micro_f1": null,
+    "independent_micro_f1": null,
+    "official_micro_f1": null,
+    "goal_070_achieved": false,
+    "historical_scores_unchanged": true
+  },
+  "scope": {
+    "protected_arrays_or_predictions_read": 0,
+    "raw_data_read": false,
+    "holdout_read": false,
+    "package_install_or_download": false,
+    "hardware_validation": false,
+    "synthetic_pair_retry": false
+  },
+  "interpretation": "Column-only chunk16 preserved outputs exactly numerically for this fixed synthetic pair; not actual-vessel equivalence, full-context memory reduction or F1 evidence."
+}

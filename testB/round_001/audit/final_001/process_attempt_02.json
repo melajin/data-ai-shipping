@@ -1,0 +1,24 @@
+{
+    "started_at":  "2026-11-05T03:29:12.9475308+09:00",
+    "ended_at":  "2026-11-05T03:29:13.2547166+09:00",
+    "argv":  [
+                 "python",
+                 "-B",
+                 "-X",
+                 "utf8",
+                 "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\audit\\final_001\\independent_verifier.py"
+             ],
+    "exit_code":  1,
+    "script_sha256":  "ae4e51ebec7432a2f2215c0b98a7cfae33a7e3c1b1b45c49fb5d77da04e42dbd",
+    "stdout":  "stdout.log",
+    "stderr":  "stderr.log",
+    "prior_attempts":  [
+                           {
+                               "record":  "process_attempt_01.json",
+                               "actual_exit_code":  2,
+                               "stdout":  "stdout_attempt_01.log",
+                               "stderr":  "stderr_attempt_01.log",
+                               "note":  "auditor harness assertions corrected; production evidence was not modified"
+                           }
+                       ]
+}

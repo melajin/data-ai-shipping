@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-11-04T18:31:07.224876+00:00",
+  "all_current_and_executed_source_hashes_match": true,
+  "checks": {
+    "rounds/round_007/code/column_chunk.py": {
+      "expected_sha256": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+      "current_sha256": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded"
+    },
+    "rounds/round_007/code/test_column_chunk.py": {
+      "expected_sha256": "44b3ae7f56560efd05268d8a0d253128cf1be78178bce4d0dcb75f1e3d602a32",
+      "current_sha256": "44b3ae7f56560efd05268d8a0d253128cf1be78178bce4d0dcb75f1e3d602a32"
+    },
+    "rounds/round_007/code/synthetic_pair.py": {
+      "expected_sha256": "67f74942b38c4c2ee42c6a0509c39997828c0e98658bc04adb2ca96850f445b3",
+      "current_sha256": "67f74942b38c4c2ee42c6a0509c39997828c0e98658bc04adb2ca96850f445b3"
+    },
+    "rounds/round_007/manager/run_bounded.py": {
+      "expected_sha256": "2820871e8884a0fd642e550301154c16039d6c85c6168bda32cbf67340f3bee4",
+      "current_sha256": "2820871e8884a0fd642e550301154c16039d6c85c6168bda32cbf67340f3bee4"
+    },
+    "rounds/round_004/runtime_author/replay_contract.json": {
+      "expected_sha256": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5",
+      "current_sha256": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5"
+    },
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py": {
+      "expected_sha256": "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc",
+      "current_sha256": "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc"
+    },
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/embedding.py": {
+      "expected_sha256": "a0c562600fe22944f91b1b71b706198cb9a4c3d9d8aaba67a86f35a85493d322",
+      "current_sha256": "a0c562600fe22944f91b1b71b706198cb9a4c3d9d8aaba67a86f35a85493d322"
+    },
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/encoders.py": {
+      "expected_sha256": "a3e0e9bde47e7f587c4a196d124ea631e25755d4f5ac5d6a8568618a4e299a4e",
+      "current_sha256": "a3e0e9bde47e7f587c4a196d124ea631e25755d4f5ac5d6a8568618a4e299a4e"
+    },
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/layers.py": {
+      "expected_sha256": "96cce2e84db33e176d872c7bb7c0df8c305de3eb7a02fcad9f1128f33d319d95",
+      "current_sha256": "96cce2e84db33e176d872c7bb7c0df8c305de3eb7a02fcad9f1128f33d319d95"
+    },
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py": {
+      "expected_sha256": "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+      "current_sha256": "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491"
+    },
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference_config.py": {
+      "expected_sha256": "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37",
+      "current_sha256": "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37"
+    },
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py": {
+      "expected_sha256": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+      "current_sha256": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534"
+    }
+  },
+  "synthetic_reexecuted": false,
+  "raw_or_real_data_arrays_read": false,
+  "scope": "Source and execution snapshot hashes only"
+}

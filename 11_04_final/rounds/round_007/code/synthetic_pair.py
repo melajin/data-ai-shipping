@@ -357,7 +357,10 @@ def main() -> int:
                         "sha256_c_order_bytes": array_sha(query_x)},
             "same_input_arrays_and_order_for_both_paths": True,
         }
-        stage("synthetic_inputs_created", inputs=record["inputs"])
+        initial_input_fingerprints = input_fingerprints(fit_x, fit_y, query_x)
+        record["input_fingerprints_at_creation"] = initial_input_fingerprints
+        stage("synthetic_inputs_created", inputs=record["inputs"],
+              input_fingerprints_at_creation=initial_input_fingerprints)
 
         if os.environ.get("OMP_NUM_THREADS") != "3" or os.environ.get("MKL_NUM_THREADS") != "3":
             raise ValueError("bounded runner must set OMP_NUM_THREADS=3 and MKL_NUM_THREADS=3")
@@ -376,7 +379,8 @@ def main() -> int:
         torch.set_num_threads(3)
         torch.set_num_interop_threads(1)
         from tabicl import TabICLClassifier
-        if not torch.__version__.startswith("2.6.0") or torch.cuda.is_available():
+        if (torch.__version__ != "2.6.0+cpu" or torch.cuda.is_available()
+                or getattr(torch.version, "cuda", None) is not None):
             raise RuntimeError("runtime is not the pinned Torch 2.6.0 CPU environment")
         stage("package_imported", package_versions={"tabicl": version("tabicl"), "torch": torch.__version__,
                                                      "numpy": np.__version__},
@@ -440,7 +444,7 @@ def main() -> int:
 
         baseline_pre_inputs = input_fingerprints(fit_x, fit_y, query_x)
         baseline_pre_shuffle = actual_shuffle_state(estimator)
-        if baseline_pre_inputs != {key: record["inputs"][key] for key in ("X_fit", "y_fit", "X_query")}:
+        if baseline_pre_inputs != initial_input_fingerprints:
             raise RuntimeError("synthetic arrays changed between creation/fit and baseline prediction")
         if baseline_pre_shuffle != record["resolved_shuffle_state"]:
             raise RuntimeError("ensemble shuffle state changed between fit and baseline prediction")

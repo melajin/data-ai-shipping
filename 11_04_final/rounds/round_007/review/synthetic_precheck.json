@@ -1,0 +1,67 @@
+﻿{
+  "schema": "round007_synthetic_precheck.v1",
+  "reviewed_utc": "2026-11-04T18:25:00Z",
+  "reviewer_role": "independent source reviewer",
+  "requested_model": "gpt-6-luna",
+  "requested_effort": "xhigh",
+  "host_evidence": "rounds/round_007/manager/assistant_host_evidence.json",
+  "disposition": "approve_one_bounded_synthetic_pair_invocation",
+  "approval_status": "preapproved; manager must confirm fresh RAM gate and exact manifest immediately before launch",
+  "exact_approved_source_sha256": {
+    "rounds/round_007/code/synthetic_pair.py": "67F74942B38C4C2EE42C6A0509C39997828C0E98658BC04ADB2CA96850F445B3",
+    "rounds/round_007/code/column_chunk.py": "BF263BA75BEF5ED9AAB04364459E426F3A82BE92DA2CE642E89B06558FD9CDED",
+    "rounds/round_007/code/test_column_chunk.py": "44B3AE7F56560EFD05268D8A0D253128CF1BE78178BCE4D0DCB75F1E3D602A32",
+    "rounds/round_007/manager/run_bounded.py": "2820871E8884A0FD642E550301154C16039D6C85C6168BDA32CBF67340F3BEE4",
+    "rounds/round_007/author_notes.md": "866A9986371D4F43198BFBE0EBB484E2B4CE3E0B1142B19D5C205FEB634D8D9E"
+  },
+  "pinned_source_sha256": {
+    "rounds/round_004/runtime_author/replay_contract.json": "819E60FD2F05A655A86DC1CDAA5E52F5A4FD0486E78FDD5DC5A4AB140AD7E2F5",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py": "F9E3CF0D83047E06DF7D6763BB8D8EE7A00FF1BA6708299A14635831F60BA4FC",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/embedding.py": "A0C562600FE22944F91B1B71B706198CB9A4C3D9D8AABA67A86F35A85493D322",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/encoders.py": "A3E0E9BDE47E7F587C4A196D124EA631E25755D4F5AC5D6A8568618A4E299A4E",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/layers.py": "96CCE2E84DB33E176D872C7BB7C0DF8C305DE3EB7A02FCAD9F1128F33D319D95",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py": "583786E5FFD70B9EB425BCA8E52AED415DADCDF4254C908B3B6FA52026A56491",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference_config.py": "852ABB9CF97E9C82AE42A92B034581F6E9131F3BEC70EFBD3CE068AC92A77A37",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py": "64F5EF7EF88A920A3F7A5F6E2D9D8DC08769EC343E931F910ACC2D9C4EAA5534",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/base.py": "7F8F284CA91BF1F5A016179834E508890B3F5368C4A48A7DCB6CB4B83A30051A",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl-2.2.0.dist-info/METADATA": "E429EDBE64F243241E6425854643B0D4128DE550121B9FEB1598EF710B9941A2"
+  },
+  "execution_contract": {
+    "kind": "synthetic_pair",
+    "script": "rounds/round_007/code/synthetic_pair.py",
+    "run_id": "pair_01",
+    "invocations_approved": 1,
+    "total_wall_cap_seconds": 300,
+    "process_compute_cap_seconds": 290,
+    "cleanup_reservation_seconds": 10,
+    "start_available_ram_gib_min": 3.0,
+    "stop_own_tree_if_available_ram_below_gib": 1.5,
+    "manager_must_recheck_ram_immediately_before_run": true,
+    "model_fit_checkpoint_bindings": 1,
+    "predict_proba_calls_same_fitted_estimator": 2,
+    "actual_data_or_probabilities": false,
+    "f1_or_hyperparameter_search": false,
+    "additional_mock_runs": 0,
+    "retry_if_synthetic_computation_starts_and_fails": false
+  },
+  "source_findings": {
+    "cpu_execution": "Pinned InferenceManager.__call__ CPU path returns through the original _prepare_inputs/_run_forward before accelerator batch sizing; _run_forward keeps no_grad/FA3 toggle/optional AMP. Source hashes are listed above.",
+    "slice_contract": "Grouped features use (B,G+C,T,group_size) with y_train expanded to the same leading axes and train_size; ungrouped uses (B,H+C,T,1), while shuffle-optimized uses (H+C,T,1) and passes output_repeat=B. The adapter slices only the last leading column/group axis, matching y_train; sequence T, grouping-internal width, scalar train_size/embed_with_test, and output order are preserved.",
+    "context_and_normalization": "Input transformations and fitted normalization occur before the local column manager. Column set-attention operates over the unchanged sequence, uses train_size for FIT key/value context, and returns full sequence outputs. Row and ICL managers run downstream on the reconstructed full column embeddings.",
+    "runtime_contract_checks": "Script records resolved estimator COL/ROW/ICL settings, model CPU/FP32 storage, canonical classes, and actual configured manager device/AMP/FA3/offload state after baseline and after the chunked call. torch.device values are normalized with str; runtime guard requires torch==2.6.0+cpu, CUDA unavailable, and torch.version.cuda is None. Source confirms OffloadMode.AUTO for COL and OffloadMode.GPU for ROW/ICL when the configured false values normalize through the pinned code; CPU execution bypasses these accelerator offload paths.",
+    "same_input_and_state": "Creation fingerprints are stored without label-value metadata. The same X_fit/y_fit/X_query shape, dtype, and bytes hashes plus fitted feature/class shuffle-state digests are checked before and after each predict_proba call.",
+    "bounded_pair": "The code creates only default_rng(20261105) synthetic float32 X_fit(32,312), X_query(2,312), and tiled four-class y_fit; checks the local checkpoint SHA; fits once; predicts baseline once; installs/restores only estimator.model_.col_embedder.inference_mgr; predicts chunked once; and records synthetic outputs. No project data path is opened by the script."
+  },
+  "mock_evidence": {
+    "mock_01": "Pure mock assertions passed and child exit was 0; old wrapper receipt misclassified an exited Popen-held root handle.",
+    "mock_02": "Corrected wrapper completed with exit 0, stdout `pure mock checks passed`, 0.265 seconds, start RAM 4.801895 GiB, min RAM 4.800869 GiB, no remaining owned process identities, and source hashes matched mock02_precheck.json.",
+    "limitation": "Mock verifies adapter mechanics only, not TabICL model equivalence."
+  },
+  "known_later_constraint": "The adapter installer requires a configured CPU manager. This approved pair runs baseline first, which configures it. For a future low-memory actual replay, configure the original manager from the fitted estimator's resolved CPU COL_CONFIG before installation, verify state unchanged, and test that sequence in a future mock.",
+  "unknowns": [
+    "The checkpoint was not loaded by the reviewer; the active grouped/ungrouped runtime shape must be taken from the approved run's chunk event markers.",
+    "Numerical equivalence and memory use are unknown until the one bounded synthetic process runs.",
+    "Synthetic equality cannot establish full 3,144-row context memory reduction, actual-data replay equivalence, F1, independent evaluation, official score, or shipping-classification performance."
+  ],
+  "review_boundary": "Static source review and prior pure mock receipts only. This reviewer did not import TabICL/Torch, load the checkpoint, execute synthetic_pair.py, or read actual data arrays, probabilities, labels, raw data, holdout, Test2025, or F1."
+}

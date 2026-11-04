@@ -1,0 +1,18 @@
+﻿{
+    "started_utc":  "2026-11-04T18:36:09.9262417Z",
+    "deadline_utc":  "2026-11-04T19:06:09.9262417Z",
+    "manager_session":  "codex_e959665a_5b7a_4729_897c_f8de0d0a718d",
+    "thread_id":  "01a1a7d7-d103-7061-8412-d42bc9f42331",
+    "incoming_hash":  "13D442B4AFB7898D97B6DEAD4A8FE0AEEC61AC5E7A037596911257B026EB85C9",
+    "incoming_receipt_matches_session":  true,
+    "other_round008_compute_processes":  0,
+    "requested_model":  "gpt-6-astra",
+    "requested_effort":  "high",
+    "host_model":  "gpt-6-astra",
+    "host_effort":  "high",
+    "host_source":  "C:/Users/dlehs/.codex/sessions/2026/11/05/rollout-2026-11-05T03-35-01-01a1a7d7-d103-7061-8412-d42bc9f42331.jsonl",
+    "host_timestamp":  "2026-11-04T18:35:02.346Z",
+    "interpretation":  "Host turn_context evidence, not internal model authentication",
+    "initial_available_ram_gib":  4.6787147521972656,
+    "ram_observed_utc":  "2026-11-04T18:35:41.5529652Z"
+}

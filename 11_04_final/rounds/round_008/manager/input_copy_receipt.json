@@ -1,0 +1,16 @@
+﻿[
+    {
+        "source":  "rounds\\round_006\\artifacts\\context_export_attempt_001\\query_freeze.json",
+        "destination":  "rounds\\round_008\\artifacts\\context_export_attempt_001\\query_freeze.json",
+        "bytes":  748,
+        "sha256":  "6B5C5C7E3E13AD105E641BF8A442AF0AE7D5B68AE81BE865FD1FCFD99ACB23EF",
+        "copy_equal":  true
+    },
+    {
+        "source":  "rounds\\round_006\\artifacts\\context_export_attempt_001\\fold0_seed42_context.npz",
+        "destination":  "rounds\\round_008\\artifacts\\context_export_attempt_001\\fold0_seed42_context.npz",
+        "bytes":  1916394,
+        "sha256":  "9C6142974A2EB09BAA8D4DA3EEBFDE5D71FCA40DD2FAFBFE1BF21E22A08EA5C5",
+        "copy_equal":  true
+    }
+]

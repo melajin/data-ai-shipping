@@ -1,0 +1,876 @@
+{
+  "audit_status": "findings_present",
+  "verification_claim": "bounded independent W0 compatibility and W2F synthetic-contract audit; not actual-data performance or product validation",
+  "started_utc": "2026-11-04T18:30:12.558672+00:00",
+  "finished_utc": "2026-11-04T18:30:13.499065+00:00",
+  "requested_model_effort": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "basis": "current Orca task dispatch instructions; provider internals unknown"
+  },
+  "audit_attempt_history": [
+    {
+      "attempt": 1,
+      "actual_exit_code": 2,
+      "cause": "independent verifier had two over-strict assertions: nine independent cases were counted against eight and summary <=1 wording was not treated as equivalent to manifest at-most-1; no production files were modified.",
+      "logs": [
+        "stdout_attempt_01.log",
+        "stderr_attempt_01.log",
+        "process_attempt_01.json",
+        "review_attempt_01.json"
+      ]
+    },
+    {
+      "attempt": 2,
+      "actual_exit_code": 1,
+      "cause": "verifier expected UTF-8 for a preserved PowerShell redirected log that is UTF-16LE with BOM; corrected log decoding, no production files were modified.",
+      "logs": [
+        "stdout_attempt_02.log",
+        "stderr_attempt_02.log",
+        "process_attempt_02.json"
+      ]
+    }
+  ],
+  "W0_W2F_launch_receipts": {
+    "W0": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "provider_internal_runtime": "unknown"
+    },
+    "W2F": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "provider_internal_runtime": "unknown"
+    }
+  },
+  "items": [
+    {
+      "id": "w2f_execution_receipts_and_hash_lineage",
+      "status": "pass",
+      "evidence": {
+        "timing_fix_exit": 0,
+        "checks": 14,
+        "scope": "Synthetic timing interface cases only; no real scores, events, actual B/C, threshold fitting, or performance evaluation",
+        "syntax_exit": 0,
+        "root_process_receipt_exit": 0,
+        "docfix_exit": 0,
+        "docfix_output": {
+          "exit_code": 0,
+          "modified": [
+            "testB/round_001/timing/readiness_report.md",
+            "testB/round_001/timing/summary.json",
+            "testB/round_001/timing/code_lineage.json"
+          ],
+          "readiness_report_sha256_before": "94d7929b9c8494b43831294b196a56780cc7ef600ae1ac9ef7fb10c376733c66",
+          "readiness_report_sha256_after": "5a4b02e22ac87a5433b1658a68ac7c4e16df1890076730a20c09a8e9187f5d6c",
+          "code_lineage_sha256_after": "d8e05225e6ba59096c8e86e2f7cac0c7dd96148936148da25886d11dff6274f0",
+          "summary_sha256_after": "329ce5443d9c3fcb651322eedf571ea74eefab413144e78184f5b4abff11ab76",
+          "code_changed": false,
+          "existing_checks_rerun": false
+        },
+        "docfix_recovery_history": {
+          "initial_docfix_exit": 0,
+          "first_integrity_exit": 1,
+          "first_integrity_error_preserved": true,
+          "path_correction_exit": 0,
+          "path_correction_stdout": {
+            "exit_code": 0,
+            "report_sha256": "d0a90fd702686d06c69c1620f684678e4cbb0df001de810c2afab2df7166636e",
+            "lineage_sha256": "afe6d2c687a3dd333ebc9a777b3f025ebd155c5202d2da30bd6f3d24d36bd279",
+            "summary_sha256": "ccb539ab3c921db4b97e1ef47d1128c43be687ae0632baf95e8a5e9fd52f6c90",
+            "corrected_reference": "../audit/v2_id_recheck_001/recheck_report.md"
+          },
+          "final_integrity_exit": 0,
+          "final_integrity_stdout": {
+            "status": "passed",
+            "report_sha256": "d0a90fd702686d06c69c1620f684678e4cbb0df001de810c2afab2df7166636e",
+            "summary_sha256": "ccb539ab3c921db4b97e1ef47d1128c43be687ae0632baf95e8a5e9fd52f6c90",
+            "lineage_sha256": "afe6d2c687a3dd333ebc9a777b3f025ebd155c5202d2da30bd6f3d24d36bd279",
+            "audit_reference_exists": true,
+            "code_hash_unchanged": true
+          },
+          "current_document_hashes": {
+            "report_sha256": "d0a90fd702686d06c69c1620f684678e4cbb0df001de810c2afab2df7166636e",
+            "summary_sha256": "ccb539ab3c921db4b97e1ef47d1128c43be687ae0632baf95e8a5e9fd52f6c90",
+            "lineage_sha256": "afe6d2c687a3dd333ebc9a777b3f025ebd155c5202d2da30bd6f3d24d36bd279"
+          }
+        },
+        "code_sha256_before_after_current": [
+          "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d",
+          "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d",
+          "60d84634ed59d37518ce5a3b6a2bf8100495ba7408dd3d26a0e68f04723b0d2d"
+        ],
+        "pre_snapshots_all_match": true,
+        "pre_snapshot_checks": [
+          {
+            "file": "timing_interface.py",
+            "match": true,
+            "sha256": "167afb9c9e114f75edb07b7c8df02f8b718bea4f10e528e11adee9ce3c59788e",
+            "bytes": 9451
+          },
+          {
+            "file": "publish_legacy_preparation.py",
+            "match": true,
+            "sha256": "93297af7e6370519b549cc86cc714b8ebc3c5d194e5327d798e8824ee4a5abb9",
+            "bytes": 14089
+          },
+          {
+            "file": "input_split_manifest.json",
+            "match": true,
+            "sha256": "593a684dbc4db16c486b0fbd71d1792f8df18848625843b058168e11fd0cc85a",
+            "bytes": 9650
+          },
+          {
+            "file": "summary.json",
+            "match": true,
+            "sha256": "f88cb10aac7801b4540640036f8e0f7c44508947193145862272234485c96bee",
+            "bytes": 2711
+          },
+          {
+            "file": "readiness_report.md",
+            "match": true,
+            "sha256": "7909b0db5eb69371af9fa0616ec74d9f5b438e80370b617a408187a685a7c384",
+            "bytes": 3980
+          },
+          {
+            "file": "code_lineage.json",
+            "match": true,
+            "sha256": "40397e4b243edb56cffcdac4fa150370c01bba21417227c2253d3e1e1a8076c4",
+            "bytes": 1214
+          },
+          {
+            "file": "run_tie_order_regression.py",
+            "match": true,
+            "sha256": "9ae8643d259c7615a712d9c44ccfbabbf7f9597af50f3a392615ab2d33c9f0ae",
+            "bytes": 5509
+          }
+        ],
+        "post_hashes_all_match": true,
+        "W2F_launch_model_effort": {
+          "model": "gpt-6-luna",
+          "effort": "xhigh",
+          "provider_internal_runtime": "unknown"
+        }
+      }
+    },
+    {
+      "id": "w2f_independent_synthetic_contract_cases",
+      "status": "pass",
+      "evidence": {
+        "cases": {
+          "max_gap_over_1_rejected": {
+            "pass": true
+          },
+          "hour_0_to_2_splits": {
+            "pass": true
+          },
+          "A_tie_first_original_input": {
+            "pass": true
+          },
+          "B_C_same_segment_and_C_equals_B": {
+            "pass": true
+          },
+          "NaN_splits_segment": {
+            "pass": true
+          },
+          "identical_duplicates_trace_unique_time_persistence": {
+            "pass": true
+          },
+          "conflicting_valid_duplicates_blank_ABC": {
+            "pass": true
+          },
+          "missing_duplicates_and_missing_valid_conflict": {
+            "pass": true
+          },
+          "parameter_source_required": {
+            "pass": true
+          }
+        },
+        "independent_case_count": 9,
+        "actual_data_used": false,
+        "producer_self_check_used_as_verification": false
+      }
+    },
+    {
+      "id": "w2f_current_contract_and_pending_scope",
+      "status": "fail",
+      "evidence": {
+        "manifest_tie": "A is the first maximum in original input order (idxmax semantics); sort by timestamp then original ordinal only for B/C; preserve duplicate rows and source IDs; identical same-time scores are allowed, conflicting valid or missing/valid scores return data_conflict / duplicate_timestamp_scores_conflict with A/B/C blank; count unique timestamps for persistence; duplicates do not imply elapsed duration",
+        "summary_tie": "A = first maximum in original input order (idxmax); source order retained for A; stable time plus source ordinal ordering is used only for B/C first maximum in original input order (idxmax); sort by time only for B/C segment search",
+        "lineage_change": "A selects first maximum in original input order; time sort only for B/C; hourly max_gap_hours constrained to (0,1]; duplicate score conflicts yield data_conflict with blank A/B/C; identical duplicates preserve source rows and persistence counts unique timestamps.",
+        "generator_tie_field": true,
+        "manifest_max_gap": "hourly input max_gap_hours must be greater than 0 and at most 1; values above 1 raise ContractError; no allowed value can join timestamps separated by a missing hourly bin",
+        "summary_max_gap": "hourly max_gap_hours must be >0 and <=1; values above 1 raise ContractError; missing hourly bins cannot be bridged",
+        "split_assignment": "pending; train/dev/calibration/eval memberships not fabricated",
+        "B_C_computed": [
+          0,
+          0
+        ],
+        "reference_overlap": {
+          "count": 95,
+          "of": 100,
+          "interpretation": "membership only; actual density/map contribution and score dilution unmeasured"
+        },
+        "floor_semantics": "positive floor actual accident-decision meaning and evidence sufficiency remain unresolved",
+        "readiness_readable_utf8": true,
+        "readiness_sha256": "d0a90fd702686d06c69c1620f684678e4cbb0df001de810c2afab2df7166636e",
+        "readiness_tail": [
+          "3. 반복 후보 연결요소 단위의 train/dev/calibration/eval 배정과 고정 시드를 승인한다.",
+          "4. 참조 지도·분위수 전처리에서 각 eval vessel/event를 제외할 범위를 확정한다.",
+          "5. 임계값 출처, 초과 경계, 최대 구간 간격, 지속 최소 행수·시간을 사전 고정한다.",
+          "6. 전체 예측을 사고시각 열람 전에 동결하고, 공식 시간오차 F1 수식·6시간 경계를 확인한다.",
+          "",
+          "At the time of the original W2 preparation, 1103_v2 was still in the parent intake queue; this report therefore describes legacy inputs only. The latest direct comparison of the legacy and new rosters is documented in ../audit/v2_id_recheck_001/recheck_report.md. The 100-vessel table remains legacy-only; do not relabel its rows or transfer predictions."
+        ],
+        "summary_output_hash_checks": {
+          "comparison_readiness_100.csv": true,
+          "input_split_manifest.json": true,
+          "timing_interface.py": true,
+          "readiness_report.md": true,
+          "publish_legacy_preparation.py": true,
+          "code_lineage.json": true
+        },
+        "lineage_current_code_hash_matches": true
+      },
+      "issue": "현재 문서/계약/해시 정합성 실패"
+    },
+    {
+      "id": "w0_csv_streaming_results_and_artifact_hashes",
+      "status": "pass",
+      "evidence": {
+        "csv_pairs": 12,
+        "identical_pairs": 12,
+        "new_bytes": 13349258148,
+        "old_bytes": 13349258148,
+        "eof_crc_rows": 12,
+        "streaming_and_EOF_logic_inspected": true,
+        "full_source_rehash_performed_by_this_audit": false,
+        "W0_recorded_archive_SHA256": {
+          "before": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
+          "after": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
+          "bytes": 1431714584,
+          "unchanged": true
+        },
+        "actual_exit_codes": {
+          "main": 0,
+          "correction": 0,
+          "sync": 0,
+          "finalizer": 0,
+          "runtime_receipt": 0
+        },
+        "W0_launch_model_effort": {
+          "model": "gpt-6-luna",
+          "effort": "xhigh",
+          "provider_internal_runtime": "unknown"
+        },
+        "W0_artifact_manifest_count": 32,
+        "all_hashes_match": true,
+        "hash_mismatches": []
+      }
+    },
+    {
+      "id": "w0_metadata_correction_evidence",
+      "status": "pass",
+      "evidence": {
+        "preserved_original_false_type_mismatch_rows": 12,
+        "expected_csv_rows": 12,
+        "typed_corrected_records": 14,
+        "typed_metadata_14_of_14": true,
+        "recorded_comparison_and_posthashes_equal_14_of_14": true,
+        "pre_correction_summary_status": "succeeded",
+        "pre_correction_summary_copy_hash_matches_log": true,
+        "preserved_files": [
+          {
+            "file": "summary.json",
+            "match": true,
+            "sha256": "9b203b7947f35e4745a5a73f7abdf2c766e8d81b26bf927ff8cf4c650ab63507",
+            "bytes": 42834
+          },
+          {
+            "file": "manifest.json",
+            "match": true,
+            "sha256": "80b61b3e1aa4048ab97fa426f8168cc67503435c2c0a98f14c3b223b3f0dd04e",
+            "bytes": 20424
+          },
+          {
+            "file": "comparison_report.md",
+            "match": true,
+            "sha256": "0a1d848ebd5a14d541a4276470f0e2d61ed6cf642e3e1367e9d94986ee2a0868",
+            "bytes": 6625
+          },
+          {
+            "file": "run_comparison.py",
+            "match": true,
+            "sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a",
+            "bytes": 18791
+          },
+          {
+            "file": "finalize_outputs.py",
+            "match": true,
+            "sha256": "7d39eb7ad6fdcdd744f70dd9d6cc3f8fedb1284bdfd717ae967438c090f1b5ee",
+            "bytes": 10164
+          },
+          {
+            "file": "csv_identity.csv",
+            "match": true,
+            "sha256": "7f5e4ba8f502140fbcdd1f321e3368664582adffd05f25c201e9a1b849439714",
+            "bytes": 10988
+          },
+          {
+            "file": "workbook_comparison.json",
+            "match": true,
+            "sha256": "efdf4b33cc205b61b20dfc87b608c1dab95ac883d2d646fe89b52bf049ac5570",
+            "bytes": 35050422
+          }
+        ],
+        "large_input_rehash_performed_during_correction": false
+      }
+    },
+    {
+      "id": "prior_id_recheck_reused_without_cache_reload",
+      "status": "pass",
+      "evidence": {
+        "prior_audit_exit": 0,
+        "prior_intersections": {
+          "oldB_vs_newB": 0,
+          "oldA_vs_newA": 2,
+          "oldA_vs_newB": 13,
+          "oldB_vs_newA": 0,
+          "newB_vs_intakeB": 100,
+          "oldB_vs_submission_csv": 100,
+          "newB_vs_submission_csv": 0,
+          "oldB_vs_score_cache_keys": 100,
+          "newB_vs_score_cache_keys": 0
+        },
+        "W0_summary_intersections": {
+          "oldB_newB": 0,
+          "oldA_newA": 2
+        },
+        "legacy_predictions_transfer_allowed": false,
+        "pickle_or_parquet_reopened": false
+      }
+    },
+    {
+      "id": "direct_zip_xlsx_member_vs_F_sample",
+      "status": "pass",
+      "evidence": {
+        "archive_path_valid": true,
+        "archive_size_metadata_only": 1431714584,
+        "zip_member": "테스트셋 및 결과제출 샘플/제출샘플.xlsx",
+        "member_uncompressed_bytes": 12645,
+        "member_compressed_bytes": 9511,
+        "member_crc32": "c1e072af",
+        "new_member_sha256": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+        "old_F_sample_sha256": "b698b87e15bed61436da318c9477c6ac7e5a58b6412aa3414e75ce50f1b6039f",
+        "matches_W0_recorded_hashes": true,
+        "sheet_order_old_and_new": [
+          [
+            "테스트A",
+            "테스트B"
+          ],
+          [
+            "테스트A",
+            "테스트B"
+          ]
+        ],
+        "sheet_details_old": {
+          "테스트A": {
+            "dimension": "A1:C101",
+            "max_row": 101,
+            "max_column": 3,
+            "A1": {
+              "value": "rfid_id",
+              "python_type": "str",
+              "data_type": "s"
+            },
+            "A_ID_count": 100,
+            "A_ID_unique": 100,
+            "A_ID_types": [
+              "str"
+            ],
+            "explicit_widths": [
+              {
+                "key": "B",
+                "index": "B",
+                "min": 2,
+                "max": 2,
+                "width": 29.0,
+                "hidden": false,
+                "customWidth": true
+              }
+            ]
+          },
+          "테스트B": {
+            "dimension": "A1:I101",
+            "max_row": 101,
+            "max_column": 9,
+            "A1": {
+              "value": "rfid_id",
+              "python_type": "str",
+              "data_type": "s"
+            },
+            "A_ID_count": 100,
+            "A_ID_unique": 100,
+            "A_ID_types": [
+              "str"
+            ],
+            "explicit_widths": [
+              {
+                "key": "B",
+                "index": "B",
+                "min": 2,
+                "max": 2,
+                "width": 12.375,
+                "hidden": false,
+                "customWidth": true
+              },
+              {
+                "key": "C",
+                "index": "C",
+                "min": 3,
+                "max": 3,
+                "width": 15.375,
+                "hidden": false,
+                "customWidth": true
+              },
+              {
+                "key": "D",
+                "index": "D",
+                "min": 4,
+                "max": 4,
+                "width": 12.375,
+                "hidden": false,
+                "customWidth": true
+              },
+              {
+                "key": "E",
+                "index": "E",
+                "min": 5,
+                "max": 5,
+                "width": 19.75,
+                "hidden": false,
+                "customWidth": true
+              },
+              {
+                "key": "F",
+                "index": "F",
+                "min": 6,
+                "max": 6,
+                "width": 12.375,
+                "hidden": false,
+                "customWidth": true
+              },
+              {
+                "key": "G",
+                "index": "G",
+                "min": 7,
+                "max": 7,
+                "width": 19.75,
+                "hidden": false,
+                "customWidth": true
+              },
+              {
+                "key": "H",
+                "index": "H",
+                "min": 8,
+                "max": 8,
+                "width": 12.0,
+                "hidden": false,
+                "customWidth": true
+              },
+              {
+                "key": "I",
+                "index": "I",
+                "min": 9,
+                "max": 9,
+                "width": 19.75,
+                "hidden": false,
+                "customWidth": true
+              }
+            ]
+          }
+        },
+        "sheet_details_new": {
+          "테스트A": {
+            "dimension": "A1:C101",
+            "max_row": 101,
+            "max_column": 3,
+            "A1": {
+              "value": "rfid_id",
+              "python_type": "str",
+              "data_type": "s"
+            },
+            "A_ID_count": 100,
+            "A_ID_unique": 100,
+            "A_ID_types": [
+              "str"
+            ],
+            "explicit_widths": []
+          },
+          "테스트B": {
+            "dimension": "A1:I101",
+            "max_row": 101,
+            "max_column": 9,
+            "A1": {
+              "value": "rfid_id",
+              "python_type": "str",
+              "data_type": "s"
+            },
+            "A_ID_count": 100,
+            "A_ID_unique": 100,
+            "A_ID_types": [
+              "str"
+            ],
+            "explicit_widths": []
+          }
+        },
+        "A_column_changed_rows_by_sheet": {
+          "테스트A": 100,
+          "테스트B": 100
+        },
+        "non_A_content_type_format_diff_counts": {
+          "테스트A": 0,
+          "테스트B": 0
+        },
+        "effective_style_diff_counts": {
+          "테스트A": 0,
+          "테스트B": 0
+        },
+        "cross_sheet_intersection_matrix": {
+          "테스트A->테스트A": 2,
+          "테스트A->테스트B": 13,
+          "테스트B->테스트A": 0,
+          "테스트B->테스트B": 0
+        },
+        "archive_manifest_sha256_current": "3916151773a3ad402a020889553bb1fe85c4bf5462f2cc794d526e5e0999e860",
+        "matches_W0_manifest_sha": true,
+        "archive_metadata_unchanged_during_direct_read": true,
+        "whole_ZIP_SHA_recomputed": false
+      }
+    },
+    {
+      "id": "direct_train1_test1_csv_4MiB_samples",
+      "status": "pass",
+      "evidence": {
+        "samples": [
+          {
+            "role": "train1",
+            "zip_member": "vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터/vpass_1월 데이터.csv",
+            "old_F_path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+            "offset_bytes": 0,
+            "bytes_new": 4194304,
+            "bytes_old": 4194304,
+            "sha256_new_sample": "e7effb3aaa67a12830d281fd8c5816f479a9218d24aca076132d4c21311becb1",
+            "sha256_old_sample": "e7effb3aaa67a12830d281fd8c5816f479a9218d24aca076132d4c21311becb1",
+            "sample_bytes_equal": true,
+            "member_uncompressed_bytes": 669416109,
+            "member_crc32": "74c6684d",
+            "sample_consumed_member_to_EOF": false,
+            "old_F_metadata_before": {
+              "exists": true,
+              "bytes": 669416109,
+              "mtime_ns": 1790557016000000000
+            },
+            "old_F_metadata_after": {
+              "exists": true,
+              "bytes": 669416109,
+              "mtime_ns": 1790557016000000000
+            }
+          },
+          {
+            "role": "test1",
+            "zip_member": "테스트셋 및 결과제출 샘플/테스트셋/vpass_1월 데이터.csv",
+            "old_F_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
+            "offset_bytes": 0,
+            "bytes_new": 4194304,
+            "bytes_old": 4194304,
+            "sha256_new_sample": "f6a093ad598c306555a43104c1c27c4df32176b2d9342eea716d2a93818bc44c",
+            "sha256_old_sample": "f6a093ad598c306555a43104c1c27c4df32176b2d9342eea716d2a93818bc44c",
+            "sample_bytes_equal": true,
+            "member_uncompressed_bytes": 1032427516,
+            "member_crc32": "8c538ccb",
+            "sample_consumed_member_to_EOF": false,
+            "old_F_metadata_before": {
+              "exists": true,
+              "bytes": 1032427516,
+              "mtime_ns": 1793019126000000000
+            },
+            "old_F_metadata_after": {
+              "exists": true,
+              "bytes": 1032427516,
+              "mtime_ns": 1793019126000000000
+            }
+          }
+        ],
+        "ram_before": {
+          "available_bytes": 5200408576,
+          "total_bytes": 14827769856,
+          "available_mib": 4959.5,
+          "load_percent": 64
+        },
+        "ram_after": {
+          "available_bytes": 5176958976,
+          "total_bytes": 14827769856,
+          "available_mib": 4937.1,
+          "load_percent": 65
+        },
+        "expected_peak_mib": 128,
+        "estimate_basis": "Sequential 4 MiB reads from ZIP members and F: files; small XLSX only; no pandas/cache/model load.",
+        "known_concurrent_work": "W2F document/hash correction is complete; W0 completed; no concurrent large-input work reported.",
+        "sample_total_bytes_read": 16777216,
+        "full_CSV_or_archive_rehash": false
+      }
+    },
+    {
+      "id": "source_paths_and_current_metadata_scope",
+      "status": "pass",
+      "evidence": {
+        "source_path_count": 14,
+        "all_exist": true,
+        "current_metadata_matches_recorded": true,
+        "source_metadata": [
+          {
+            "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 669416109,
+              "mtime_ns": 1790557016000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 669416109,
+              "mtime_ns": 1790557016000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 635512252,
+              "mtime_ns": 1789435710000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 635512252,
+              "mtime_ns": 1789435710000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 987693693,
+              "mtime_ns": 1789435864000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 987693693,
+              "mtime_ns": 1789435864000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 1113299125,
+              "mtime_ns": 1790584040000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 1113299125,
+              "mtime_ns": 1790584040000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 1201889964,
+              "mtime_ns": 1789436196000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 1201889964,
+              "mtime_ns": 1789436196000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 1255966524,
+              "mtime_ns": 1789436342000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 1255966524,
+              "mtime_ns": 1789436342000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 1032427516,
+              "mtime_ns": 1793019126000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 1032427516,
+              "mtime_ns": 1793019126000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 795028305,
+              "mtime_ns": 1793019136000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 795028305,
+              "mtime_ns": 1793019136000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 1115652054,
+              "mtime_ns": 1793019154000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 1115652054,
+              "mtime_ns": 1793019154000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 1339299305,
+              "mtime_ns": 1793019172000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 1339299305,
+              "mtime_ns": 1793019172000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 1581199983,
+              "mtime_ns": 1793019196000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 1581199983,
+              "mtime_ns": 1793019196000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 1621873318,
+              "mtime_ns": 1793019218000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 1621873318,
+              "mtime_ns": 1793019218000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 28759,
+              "mtime_ns": 1789133150000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 28759,
+              "mtime_ns": 1789133150000000000
+            },
+            "metadata_match": true
+          },
+          {
+            "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx",
+            "current_metadata": {
+              "exists": true,
+              "bytes": 12829,
+              "mtime_ns": 1793083378000000000
+            },
+            "recorded_posthash_metadata": {
+              "bytes": 12829,
+              "mtime_ns": 1793083378000000000
+            },
+            "metadata_match": true
+          }
+        ],
+        "W0_recorded_full_content_hashes_reused_not_recomputed": true,
+        "full_archive_hash_recomputed": false,
+        "claim_limit": "Path/stat and selected bytes only; no whole-disk or current whole-file immutability claim."
+      }
+    },
+    {
+      "id": "actual_scores_events_BC_F1_and_split_evaluation",
+      "status": "unknown",
+      "evidence": {
+        "B_computed": 0,
+        "C_computed": 0,
+        "split_assignment": "pending; train/dev/calibration/eval memberships not fabricated",
+        "score_floor": "positive floor actual accident-decision meaning and evidence sufficiency remain unresolved",
+        "actual_data_evaluated": false,
+        "claim": "not evaluated; preparation-only"
+      }
+    },
+    {
+      "id": "provider_internal_model_attestation",
+      "status": "unknown",
+      "evidence": {
+        "requested_task_model": "gpt-6-luna",
+        "requested_effort": "xhigh",
+        "W0_launch_receipt": [
+          "gpt-6-luna",
+          "xhigh"
+        ],
+        "W2F_launch_receipt": [
+          "gpt-6-luna",
+          "xhigh"
+        ],
+        "provider_internal_runtime": "unknown"
+      }
+    },
+    {
+      "id": "inspected_files_unchanged_during_audit",
+      "status": "pass",
+      "evidence": {
+        "changed_during_audit": [],
+        "target_count": 64
+      }
+    }
+  ],
+  "failed_item_count": 1,
+  "unknown_item_count": 2,
+  "actual_verifier_exit_code": 2,
+  "unknown_scope_limits": [
+    "13 GB full source and full ZIP hashes were not recomputed; retained W0 full-stream SHA/EOF CRC evidence and comparison code path were inspected.",
+    "Scored cache/parquet was not reopened; completed direct ID audit result was reused.",
+    "No real scores, threshold, accident truth, B/C estimates, F1, performance, or split assignment was evaluated.",
+    "Positive score-floor decision meaning and provider-internal runtime model remain unknown."
+  ],
+  "artifacts": {
+    "verifier": "independent_verifier.py",
+    "stdout": "stdout.log",
+    "stderr": "stderr.log",
+    "process": "process_result.json",
+    "environment": "environment.json",
+    "hashes": "hash_manifest.json",
+    "report": "audit_report.md"
+  }
+}

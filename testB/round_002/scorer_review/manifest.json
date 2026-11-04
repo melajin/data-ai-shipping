@@ -1,0 +1,108 @@
+﻿{
+  "schema_version": "testb_round002_scorer_review_v1",
+  "created_kst": "2026-11-05",
+  "scope": "read-only static source and document review; no score generation, cache loading, model fitting, tests, simulation, or hardware experiment",
+  "reviewer_runtime": {
+    "orchestration_guide": "orca skills get orchestration; read before orchestration actions",
+    "model_request_and_launch": "gpt-6-luna/xhigh per task and round002 activation",
+    "provider_internal_model_effort": "unknown",
+    "host": "Windows PowerShell 5.1.26100.9711",
+    "python": "3.13.3",
+    "canonical_git_head": "0e1cbd583abf85cfee5746c9c492949b52848404"
+  },
+  "memory": {
+    "observed_at_kst": "2026-11-05 03:42:28 +09:00",
+    "free_mib": 4295.7,
+    "total_mib": 14140.9,
+    "process_count": 344,
+    "concurrent_agent_count": "unknown; multiple Orca/Codex processes observed",
+    "review_incremental_peak_estimate_mib": "<=256; small text/code/metadata only, actual peak not measured",
+    "production_peak": "unknown; target row count not verified and no production preflight performed"
+  },
+  "verdict": {
+    "static_fit_scope": "score-stage references are built from the 2026 train partition; 2025 test rows are score inputs and are not passed to shared reference builders or calibration/threshold-fitting code",
+    "new_v2_inference": "conditional algorithmic feasibility; do not execute stock CLI yet",
+    "blockers": [
+      "stock CLI reads legacy 1027 workbook TestB ID list; round001 source manifest says 1103_v2 was not read or verified",
+      "stock CLI writes to canonical results/work_008 fixed path",
+      "source row ID/order is not preserved through scorer; A first-original-row tie contract is not proven by timestamp-sorted idxmax output",
+      "new v2 100-ID data presence/schema/rows and overlap with fixed 2026 reference are not yet confirmed by R review"
+    ],
+    "performance_claim": "not evaluated; accident identity, normal evidence, development-use authorization, independent split, thresholds and official metric remain unresolved"
+  },
+  "score_contract": {
+    "components": {
+      "s_zone": "0.5 * min(previous-visited-fine-cell-center distance km / 20, 1) + 0.5 * (1 - min(train-reference vessel count / 3, 1)); missing/zero density -> sparse score 1; fine density uses 0.01 degree grid with coarse 0.05 degree fallback",
+      "s_change": "only after >=24 prior rows; mean of available robust length z squash, straightness z squash, and state surprise; z uses IQR/1.349, then std, then 1; squash=1-exp(-abs(z)/2)",
+      "s_gap": "after first row; 0.5 * training empirical CDF of gap hours + 0.5 * training empirical CDF of jump metres",
+      "composite": "nanmean of available components; all missing -> NaN; otherwise clip to [1e-6, 1.0]",
+      "direction": "higher is more anomalous; exploratory score, not accident probability"
+    },
+    "tie_and_order": "score-stage rows sort by ts, rfid_time; submit uses idxmax. No source row ordinal passed/preserved. This does not prove Round001 original-source-order first-max contract.",
+    "time": "integer hour index derived from part_dt and rfid_time; timezone conversion evidence unknown",
+    "floor": "1e-6 floor is implementation requirement only; no accident decision meaning or data sufficiency evidence"
+  },
+  "fit_and_reference_lineage": [
+    {
+      "artifact": "shared harbor points / nearest harbor lookup",
+      "builder": "code/tools/run_008_testB_20261101.py::build_train_harbors",
+      "input": "remeasure.load_rows('train'); valid stop rows",
+      "fit_population": "2026 train partition (all train rows, not 2025 Test rows)",
+      "method": "0.005 degree cells with >=20 unique train RFIDs; adjacent cells joined into components; nearest-distance KD tree",
+      "source_lines": "run_008:197-246; remeasure:29-37,442-477"
+    },
+    {
+      "artifact": "fine/coarse fishing-density maps",
+      "builder": "build_train_fishing_density_dicts -> run_005._train_arrays -> featac._load_year_arrays('train') -> _build_t5_dicts",
+      "fit_population": "2026 train rows for fishing mask; labeled train IDs from train_labels.csv (7,372 per preserved round001 report) for cell maps",
+      "method": "per-vessel visited-cell sets at 0.01/0.05 degrees; count reference vessels per cell",
+      "source_lines": "run_008:361-396; run_005:63-65,192-196,358-389; featac:70-104"
+    },
+    {
+      "artifact": "gap/jump empirical CDF references",
+      "builder": "build_gap_jump_reference -> build_quantile_normalizer",
+      "fit_population": "all valid rows in 2026 train partition, consecutive rows within RFID after timestamp sort (not limited to labeled IDs in this builder)",
+      "method": "right-inclusive sorted empirical CDF",
+      "preserved_summary": "3,879,693 reference pairs each; gap p50 1 hour; jump p50 85.72352634799219 m",
+      "source_lines": "run_008:350-358,399-413"
+    },
+    {
+      "artifact": "per-target historical features",
+      "builder": "score_vessel",
+      "fit_population": "the target vessel's own ordered 2025 test rows, incremental history only",
+      "method": "visited-cell, previous-row gap/jump, prior feature/state history, accumulated night-stop cells",
+      "source_lines": "run_008:436-529"
+    },
+    {
+      "artifact": "calibration/scaler/KDE/score threshold",
+      "builder": "none in selected scores stage",
+      "fit_population": "none identified",
+      "method": "no scaler, KDE, calibration or test-quantile fit call; distance cap and component cutoffs are fixed code parameters",
+      "source_lines": "run_008:350-579"
+    }
+  ],
+  "input_code_sha256": [
+    {"path": "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py", "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8", "bytes": 39306},
+    {"path": "D:/repos/fishing-track-classification/code/tools/run_remeasure_20261031.py", "sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c", "bytes": 76643},
+    {"path": "D:/repos/fishing-track-classification/code/tools/run_005_F156_merge_20261101.py", "sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4", "bytes": 18718},
+    {"path": "D:/repos/fishing-track-classification/code/tools/run_cycle4_3_featAC_20261101.py", "sha256": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3", "bytes": 22607}
+  ],
+  "preserved_evidence": [
+    {"path": "testB/round_001/timing/input_split_manifest.json", "sha256": "b4ac0ae447a0bdaaca07ad3232a953493db8ac90c9ec0180f20811a88af37d0e", "facts": ["run_008 source hash matches", "legacy input version only; 1103 v2 not read or verified", "old scored_rows.pkl SHA and legacy submission SHA recorded", "inherited cache source_row_id/source ordinal not verified"]},
+    {"path": "testB/round_001/timing/readiness_report.md", "sha256": "d0a90fd702686d06c69c1620f684678e4cbb0df001de810c2afab2df7166636e", "facts": ["legacy 100-vessel A reproduction 8 fields mismatch 0 is inherited prior result", "legacy target/reference ID overlap=95 is membership only", "no score dilution claim"]},
+    {"path": "testB/round_001/NEXT_ROUND.md", "sha256": "25918f9def89ac9cabe33b4a78c0daccd6ee8ec5b690368b6f7d0336aaf44581", "facts": ["new v2 exact 100 IDs/order required", "full-period retrospective scoring allowed conditionally", "Test-fitted references forbidden", "canonical outputs must not be run"]},
+    {"path": "26_11_5/testb_next_experiment_20261105/contract/preparation_contract.md", "sha256": "e9f0e8c1f1962d58ecfb6f1871ec4af2077d3eede3fd49c5177e387013c1d060", "facts": ["A first maximum in existing input order", "B/C thresholds unset", "no event-performance claims"]},
+    {"path": "D:/repos/fishing-track-classification/results/work_008/scores_meta.json", "sha256": "9537192fa3340e4f014b64c588fbe5794bbcb5456a8cad7dab5a30e3caabff03", "facts": ["small metadata read only; 100 legacy targets, no missing rows, reference counts; cache not loaded"]}
+  ],
+  "checks": {
+    "source_reading": "completed, read-only, UTF-8",
+    "source_and_metadata_sha256": "completed on named small code/metadata files only",
+    "large_data_or_cache_read": "not performed",
+    "full_csv_rehash": "not performed",
+    "tests_simulation_actual_score_hardware": {"status": "not run", "exit_code": null},
+    "python_version_query": {"status": "passed", "exit_code": 0},
+    "git_rev_parse_head": {"status": "passed", "exit_code": 0},
+    "execution_status": "no scorer or output-producing stage executed"
+  },
+  "deliverables": ["scorer_review.md", "manifest.json"]
+}

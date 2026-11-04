@@ -1,0 +1,67 @@
+{
+  "schema": "round007_final_review.v1",
+  "disposition": "synthetic_pair_and_artifacts_pass_with_limited_scope",
+  "source_sha256": {
+    "rounds/round_007/code/synthetic_pair.py": "67F74942B38C4C2EE42C6A0509C39997828C0E98658BC04ADB2CA96850F445B3",
+    "rounds/round_007/code/column_chunk.py": "BF263BA75BEF5ED9AAB04364459E426F3A82BE92DA2CE642E89B06558FD9CDED",
+    "rounds/round_007/manager/run_bounded.py": "2820871E8884A0FD642E550301154C16039D6C85C6168BDA32CBF67340F3BEE4"
+  },
+  "execution": {
+    "run_id": "pair_01",
+    "receipt_status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 30.078,
+    "preflight_available_ram_gib": 4.787761688232422,
+    "minimum_available_ram_gib": 4.139598846435547,
+    "sampled_owned_tree_peak_working_set_bytes": 780906496,
+    "owned_processes_remaining": 0,
+    "fit_count": 1,
+    "predict_proba_count": 2,
+    "adapter_restored": true
+  },
+  "comparison": {
+    "scope": "two synthetic query rows only",
+    "baseline_probability_gate_pass": true,
+    "chunked_probability_gate_pass": true,
+    "max_abs_probability_difference": 0.0,
+    "exact_numeric_equal": true,
+    "argmax_baseline": [
+      1,
+      2
+    ],
+    "argmax_chunked": [
+      1,
+      2
+    ],
+    "argmax_equal": true,
+    "tolerance": 1e-05
+  },
+  "independent_artifact_verification": {
+    "method": "NumPy-only artifact verification; no Torch/TabICL imports",
+    "check_count": 50,
+    "all_checks_pass": true,
+    "verification": "synthetic_artifact_verification.json",
+    "checker": "verify_synthetic_artifacts.py"
+  },
+  "artifacts_sha256": {
+    "rounds/round_007/logs/pair_01/receipt.json": "2DFC818217E2F87C2F29B561034BAE5E4D9C7F50114939D5660CC8EFD80778CF",
+    "rounds/round_007/artifacts/synthetic_pair_result.json": "DE911BA39E2389D8282A1DD754AA0DED8457157AFA3C7416CA7C2AC4F219B07A",
+    "rounds/round_007/artifacts/synthetic_pair_outputs.npz": "D950C5E5C8783DF382A659D961D7F1B885686402B573F33071736FAA6B89DCEC"
+  },
+  "limits": [
+    "No actual-data inference, F1 evaluation, holdout/Test2025 access, or hardware validation",
+    "Does not establish full-context memory reduction or actual-vessel equivalence",
+    "Does not establish independent or official score"
+  ],
+  "review_started_utc": "2026-11-04T18:29:00Z",
+  "finalized_at_utc": "2026-11-04T18:32:57Z",
+  "verification_ram_evidence": {
+    "pre_inspection_available_ram_gib": 4.878,
+    "pre_inspection_observed_utc": "2026-11-04T18:28:36Z",
+    "pre_inspection_note": "Fresh reading before result/NPZ inspection; not the manager model-run preflight and not a fresh sample immediately before the verifier command.",
+    "estimated_verification_incremental_ram_gib": "<0.15",
+    "estimated_numpy_array_payload_mib": "<0.1",
+    "post_verification_available_ram_gib": 4.813,
+    "post_verification_observed_utc": "2026-11-04T18:32:58Z"
+  }
+}

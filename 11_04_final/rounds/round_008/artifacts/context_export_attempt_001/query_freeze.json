@@ -1,0 +1,16 @@
+{
+  "schema": "round005_frozen_inner_queries.v1",
+  "fold": 0,
+  "seed": 42,
+  "selection": "first two IDs in the original ordered fold0 inner_ids list; selected before any reference-probability access",
+  "query_ids": [
+    "36001915",
+    "31703435"
+  ],
+  "query_ids_digest_json_sha256": "7750db94f83f57a4e58b62f29b32ba2e737339108e0923a970f9a924bf9be969",
+  "full_inner_ids_digest_json_sha256": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+  "context_npz_sha256": "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+  "reference_probability_rows_read": 0,
+  "source_manifest_sha256": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+  "created_utc": "2026-11-04T17:37:33.850204+00:00"
+}

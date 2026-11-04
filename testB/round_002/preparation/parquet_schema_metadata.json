@@ -1,0 +1,123 @@
+﻿{
+    "inspection":  "Parquet footer/schema metadata only. No row groups or row values read.",
+    "python":  "3.13.3 x64",
+    "pyarrow":  "24.0.0",
+    "all_six_schemas_consistent":  true,
+    "fields":  [
+                   {
+                       "name":  "row_index",
+                       "type":  "int64",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "part_dt",
+                       "type":  "string",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "rfid_id",
+                       "type":  "string",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "rfid_time",
+                       "type":  "int16",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "fishing_code",
+                       "type":  "string",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "key_valid",
+                       "type":  "bool",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "wkt_valid",
+                       "type":  "bool",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "n_coords",
+                       "type":  "int32",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "len_m",
+                       "type":  "double",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "bbox_m",
+                       "type":  "double",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "cen_lon",
+                       "type":  "double",
+                       "nullable":  true
+                   },
+                   {
+                       "name":  "cen_lat",
+                       "type":  "double",
+                       "nullable":  true
+                   }
+               ],
+    "period_from_footer_stats":  "2025-01-01",
+    "period_to_footer_stats":  "2025-06-30",
+    "rfid_time_footer_min":  0,
+    "rfid_time_footer_max":  23,
+    "all_footer_stats_null_count_zero_for_part_dt_rfid_time_key_valid_wkt_valid":  true,
+    "per_month":  [
+                      {
+                          "row_index_min":  0,
+                          "size_bytes":  22102228,
+                          "row_index_max":  592012,
+                          "row_groups":  3,
+                          "month":  1,
+                          "rows":  592013
+                      },
+                      {
+                          "row_index_min":  0,
+                          "size_bytes":  16393715,
+                          "row_index_max":  442714,
+                          "row_groups":  3,
+                          "month":  2,
+                          "rows":  442715
+                      },
+                      {
+                          "row_index_min":  0,
+                          "size_bytes":  23195070,
+                          "row_index_max":  624513,
+                          "row_groups":  4,
+                          "month":  3,
+                          "rows":  624514
+                      },
+                      {
+                          "row_index_min":  0,
+                          "size_bytes":  28452704,
+                          "row_index_max":  755490,
+                          "row_groups":  4,
+                          "month":  4,
+                          "rows":  755491
+                      },
+                      {
+                          "row_index_min":  0,
+                          "size_bytes":  33418976,
+                          "row_index_max":  888877,
+                          "row_groups":  5,
+                          "month":  5,
+                          "rows":  888878
+                      },
+                      {
+                          "row_index_min":  0,
+                          "size_bytes":  34195805,
+                          "row_index_max":  908777,
+                          "row_groups":  5,
+                          "month":  6,
+                          "rows":  908778
+                      }
+                  ]
+}

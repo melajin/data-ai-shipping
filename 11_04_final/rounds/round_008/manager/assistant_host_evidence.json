@@ -1,0 +1,22 @@
+﻿[
+    {
+        "source":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T03-36-21-01a1a7d9-080e-7950-90f4-8fbf9ffd95d9.jsonl",
+        "timestamp":  "2026-11-04T18:36:21.711Z",
+        "model":  "gpt-6-luna",
+        "effort":  "xhigh",
+        "requested_model":  "gpt-6-luna",
+        "requested_effort":  "xhigh",
+        "fork_turns":  "none",
+        "interpretation":  "Host turn_context metadata; not internal authentication"
+    },
+    {
+        "source":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T03-36-32-01a1a7d9-36c8-7d81-ade9-0b4dddb7c18c.jsonl",
+        "timestamp":  "2026-11-04T18:36:33.871Z",
+        "model":  "gpt-6-luna",
+        "effort":  "xhigh",
+        "requested_model":  "gpt-6-luna",
+        "requested_effort":  "xhigh",
+        "fork_turns":  "none",
+        "interpretation":  "Host turn_context metadata; not internal authentication"
+    }
+]

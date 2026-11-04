@@ -1,0 +1,45 @@
+{
+    "started_at":  "2026-11-05T03:32:58.3827497+09:00",
+    "ended_at":  "2026-11-05T03:32:59.5733063+09:00",
+    "argv":  [
+                 "python",
+                 "-B",
+                 "-X",
+                 "utf8",
+                 "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\audit\\final_001\\independent_verifier.py"
+             ],
+    "exit_code":  0,
+    "script_sha256":  "4c47e950f91de95888c8e55ff8a586d06f0ab4961cdc0960a9648daa10cd1f77",
+    "stdout":  "stdout.log",
+    "stderr":  "stderr.log",
+    "prior_attempts":  [
+                           {
+                               "record":  "process_attempt_01.json",
+                               "actual_exit_code":  2,
+                               "stdout":  "stdout_attempt_01.log",
+                               "stderr":  "stderr_attempt_01.log",
+                               "note":  "over-strict verifier assertions corrected"
+                           },
+                           {
+                               "record":  "process_attempt_02.json",
+                               "actual_exit_code":  1,
+                               "stdout":  "stdout_attempt_02.log",
+                               "stderr":  "stderr_attempt_02.log",
+                               "note":  "UTF-16LE redirected log decoder corrected"
+                           },
+                           {
+                               "record":  "process_attempt_03.json",
+                               "actual_exit_code":  2,
+                               "stdout":  "stdout_attempt_03.log",
+                               "stderr":  "stderr_attempt_03.log",
+                               "note":  "case-insensitive contract phrase comparison corrected"
+                           },
+                           {
+                               "record":  "process_attempt_04.json",
+                               "actual_exit_code":  0,
+                               "stdout":  "stdout_attempt_04.log",
+                               "stderr":  "stderr_attempt_04.log",
+                               "note":  "successful audit; final report wording made ASCII-safe"
+                           }
+                       ]
+}
