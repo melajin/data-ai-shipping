@@ -1,0 +1,23 @@
+{
+  "utc": "2026-11-04T22:55:07.857364+00:00",
+  "author": {
+    "agent": "/root/author",
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none",
+    "owns": "rounds/round_019/code/*"
+  },
+  "reviewer": {
+    "agent": "/root/reviewer",
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none",
+    "owns": "rounds/round_019/review/*"
+  },
+  "manager_owns": "Other round019 files and shared status/ledger/handoff",
+  "host_total_slots": 4,
+  "total_used": 3,
+  "user_assistant_limit": 4,
+  "child_agents_forbidden": true,
+  "no_other_edits_reverted": true
+}

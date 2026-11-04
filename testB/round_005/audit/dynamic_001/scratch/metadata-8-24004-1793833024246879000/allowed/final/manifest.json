@@ -1,0 +1,230 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\metadata-8-24004-1793833024246879000\\allowed\\final",
+  "commit_point": "same-volume atomic directory rename",
+  "files": [
+    {
+      "name": "part-000000.parquet",
+      "sha256": "bb13b9c3869836e144ca9a46cc336258901743260136d173b2f1d7184ca612d0",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 0,
+      "concat_offset_end": 1,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        0,
+        0
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000001.parquet",
+      "sha256": "35e1b2cad199c74ff348e19f182b6c09326ac41c9633d9164709491668878413",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 1,
+      "concat_offset_end": 2,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        1,
+        1
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000002.parquet",
+      "sha256": "0a344efe61b4d3868fd01bbaa79f8a7385404204f56bb62ea6e3cae408f582ab",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 2,
+      "concat_offset_end": 3,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        2,
+        2
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000003.parquet",
+      "sha256": "f3b0bc3f09197ec5aa2f3fd11dde9f1ab8fe2e7ecf62e4322f38dc36f80f25ff",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 3,
+      "concat_offset_end": 4,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        3,
+        3
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000004.parquet",
+      "sha256": "56ce126aead52195ce6b7c5916da749cfdb3fd0947c8751e039fb27e1a32c7a4",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 4,
+      "concat_offset_end": 5,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        4,
+        4
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000005.parquet",
+      "sha256": "ba3545f751dec078afa029fc1a9f59e6353ca1e07a42fc608908b36242e69476",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 5,
+      "concat_offset_end": 6,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        5,
+        5
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000006.parquet",
+      "sha256": "61844883a2830c259961a427bc6b6b661c81e8dd711b82f0929ffc8277e7c7c4",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 6,
+      "concat_offset_end": 7,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        6,
+        6
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000007.parquet",
+      "sha256": "5838d1bf817e17b09b62c8ee21259cfc905f2c303a12a178549aaf75c84d3744",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 7,
+      "concat_offset_end": 8,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        7,
+        7
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    }
+  ],
+  "batches": 8,
+  "rows": 8,
+  "pandas_contract": {
+    "stream": "one DataFrame per non-None input RecordBatch; no cross-batch materialization",
+    "reconstruction": "read parts in manifest order, concatenate without ignore_index, set index from __canonical_index__",
+    "index_metadata": "per part: original pandas index class/dtype/name and first/last label; explicit labels persisted",
+    "combined_index_reconstruction": "RangeIndex(0, rows) iff index_range_reconstructable is true; otherwise pandas Index of the explicit labels",
+    "empty": "zero-row RecordBatch parts preserve schema; if the input yields no batches, materialization requires an explicit zero-row canonical empty_template; absent template fails closed"
+  },
+  "columns": [
+    "rfid_id",
+    "key_valid",
+    "month"
+  ],
+  "dtypes": {
+    "rfid_id": "int64",
+    "key_valid": "bool",
+    "month": "int8"
+  },
+  "index_range_reconstructable": true,
+  "manifest_version": 1,
+  "publication_semantics": "public only when this complete directory is visible at final_path after atomic rename"
+}

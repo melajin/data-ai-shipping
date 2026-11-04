@@ -1,0 +1,27 @@
+{
+  "utc": "2026-11-04T23:20:49.384564+00:00",
+  "author": {
+    "name": "/root/author",
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none",
+    "owns": [
+      "code/*",
+      "configs/*"
+    ]
+  },
+  "reviewer": {
+    "name": "/root/reviewer",
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none",
+    "owns": [
+      "review/*"
+    ]
+  },
+  "manager_owns": "remaining round020 files and root STATUS/LEDGER/NEXT",
+  "host_slots": 4,
+  "total_used": 3,
+  "user_assistant_max": 4,
+  "no_child_agents": true
+}

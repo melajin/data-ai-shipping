@@ -346,6 +346,44 @@ def fixture_run(loader, stage_mod):
     results.append(compare_stream(loader, date_tables, date_req, (1,), True,
                                   make_hand(date_records, date_req, "range"), "date_only_skips_id_conversion"))
 
+    no_drop_table = {1: table(rows([
+        (350, "9", "20250109", 35, True, True, 3.5, 4.5, 132.5, 34.5),
+    ]))}
+    no_drop_req = ["rfid_id", "part_dt"]
+    no_drop_hand = make_hand([{"rfid_id":9,"part_dt":20250109,"key_valid":True,"month":1}], no_drop_req, "range")
+    results.append(compare_stream(loader, no_drop_table, no_drop_req, (1,), True, no_drop_hand,
+                                  "both_numeric_keys_no_drop_exact_rangeindex"))
+
+    boundary_rows = rows([
+        (360, "9007199254740992", "2147483647", 36, True, True, 3.6, 4.6, 132.6, 34.6),
+        (361, "-9007199254740992", "-2147483648", 37, True, False, 3.7, 4.7, 132.7, 34.7),
+        (362, "0"*127+"1", "20250101", 38, True, True, 3.8, 4.8, 132.8, 34.8),
+        (363, "+0", "20250102", 39, True, False, 3.9, 4.9, 132.9, 34.9),
+        (364, "-0", "20250103", 40, True, True, 4.0, 5.0, 133.0, 35.0),
+    ])
+    boundary_tables={1:table(boundary_rows)}
+    boundary_req=["rfid_id","part_dt"]
+    boundary_records=[
+        {"rfid_id":2**53,"part_dt":2**31-1,"key_valid":True,"month":1},
+        {"rfid_id":-(2**53),"part_dt":-(2**31),"key_valid":True,"month":1},
+        {"rfid_id":1,"part_dt":20250101,"key_valid":True,"month":1},
+        {"rfid_id":0,"part_dt":20250102,"key_valid":True,"month":1},
+        {"rfid_id":0,"part_dt":20250103,"key_valid":True,"month":1},
+    ]
+    results.append(compare_stream(loader,boundary_tables,boundary_req,(1,),True,
+                                  make_hand(boundary_records,boundary_req,"range"),
+                                  "integer_domain_edges_signs_leading_zero_and_128_char_token"))
+
+    empty_middle_tables={1:no_drop_table[1],2:table([]),3:table(rows([
+        (370,"10","20250110",41,True,False,4.1,5.1,133.1,35.1),
+    ]))}
+    empty_middle_req=["rfid_id"]
+    empty_middle_records=[{"rfid_id":9,"key_valid":True,"month":1},
+                          {"rfid_id":10,"key_valid":True,"month":3}]
+    results.append(compare_stream(loader,empty_middle_tables,empty_middle_req,(1,2,3),True,
+                                  make_hand(empty_middle_records,empty_middle_req,"range"),
+                                  "empty_month_between_nonempty_months_preserves_offset"))
+
     no_numeric_req = ["wkt_valid", "len_m"]
     no_numeric_records = [
         {"wkt_valid": True, "len_m": 1.5, "key_valid": True, "month": 1},
@@ -691,6 +729,27 @@ def atomic_cases(loader, stage_mod, tables):
     out.append({"case":"empty_template_dtype_and_index_provenance_limit","pass":True,"observations":bad_template_observations,
                 "gate_effect":"accepted wrong template is a caller precondition/production limitation, not canonical equivalence"})
 
+    # Wrong shape and nonempty templates are actively rejected and quarantined.
+    template_rejections=[]
+    invalid_templates=[]
+    nonempty=empty_ast.copy()
+    nonempty.loc[0 if len(nonempty) else 0]=[0]*len(nonempty.columns)
+    invalid_templates.append(("nonempty_template", nonempty))
+    wrong_columns=empty_ast.iloc[:,::-1].copy()
+    invalid_templates.append(("wrong_template_column_order", wrong_columns))
+    for name, invalid_template in invalid_templates:
+        base, root=atomic_test_root("reject-"+name)
+        try:
+            stage_mod.run_testfit(columns=empty_columns,allowed_root=root,final_path=root/"final",stage="testfit",
+                months=(1,2),batches_for_month=lambda m:empty_tables[m].to_batches(),empty_template=invalid_template)
+        except ValueError as exc:
+            if (root/"final").exists() or not list((root/"quarantine").glob("*/receipt.json")):
+                raise AssertionError(f"{name}: template rejection state was not quarantined")
+            template_rejections.append({"case":name,"rejected":True,"error_type":type(exc).__name__})
+        else:
+            raise AssertionError(f"invalid empty template accepted: {name}")
+    out.append({"case":"wrong_empty_template_shape_rejected","pass":True,"rejections":template_rejections})
+
     # Empty list of None chunks is distinct from a genuine zero-row batch.
     base, root = atomic_test_root("all-none")
     try:
@@ -712,11 +771,12 @@ def atomic_cases(loader, stage_mod, tables):
         ("duplicate_requested_columns","testfit","testfit",["rfid_id","rfid_id"],None),
         ("reserved_index_column","testfit","testfit",["__canonical_index__"],None),
         ("root_as_final","testfit","testfit",["rfid_id"],"ROOT"),
-        ("path_traversal_outside_root","testfit","testfit",["rfid_id"],"OUTSIDE"),
+        ("path_traversal_outside_root","testfit","testfit",["rfid_id"],"TRAVERSAL"),
     ]:
         base, root = atomic_test_root("deny-"+name)
         if final_path == "ROOT": target=root
         elif final_path == "OUTSIDE": target=base/"outside"
+        elif final_path == "TRAVERSAL": target=root/".."/"outside"
         else: target=root/"denied"
         try:
             stage_mod.run_testfit(columns=columns, allowed_root=root, final_path=target, stage=stage,
@@ -827,6 +887,7 @@ def sample_run(loader, stage_mod):
         raise RuntimeError("fixed sample source SHA mismatch")
     parquet_file = pq.ParquetFile(SAMPLE)
     schema_names = parquet_file.schema_arrow.names
+    footer_rows = int(parquet_file.metadata.num_rows)
     missing = [c for c in SAMPLE_COLUMNS if c not in schema_names]
     if missing:
         raise RuntimeError(f"fixed sample projection columns missing: {missing}")
@@ -843,10 +904,9 @@ def sample_run(loader, stage_mod):
     if physical_count != 16384 or len(batches) != 4 or any(b.num_rows != 4096 for b in batches):
         raise RuntimeError(f"fixed physical sample selection mismatch: rows={physical_count}, batches={[b.num_rows for b in batches]}")
     # Verify the projected sample itself is in the declared limited domain.
-    first_idx = batches[0].column(batches[0].schema.get_field_index("row_index")).to_pylist()
-    last_idx = batches[-1].column(batches[-1].schema.get_field_index("row_index")).to_pylist()
-    if first_idx[0] != 0 or last_idx[-1] != 16383:
-        raise RuntimeError(f"row_index endpoints do not match physical selection: {first_idx[0]}, {last_idx[-1]}")
+    selected_row_index = [int(v) for batch in batches for v in batch.column(batch.schema.get_field_index("row_index")).to_pylist()]
+    if selected_row_index != list(range(16384)):
+        raise RuntimeError("row_index projection does not verify physical sample rows 0..16383")
 
     # Hold only four Arrow record batches; independently construct the whole-column
     # canonical/oracle result from their 16,384-row projected union.
@@ -870,10 +930,14 @@ def sample_run(loader, stage_mod):
         raise AssertionError("sample was not processed in four independent 4096-row parts")
     if [x["concat_offset_start"] for x in manifest["files"]] != [0,4096,8192,12288]:
         raise AssertionError("sample batch global concat offsets differ")
+    source_sha_after = sha256(SAMPLE)
+    if source_sha_after != SAMPLE_SHA:
+        raise RuntimeError(f"fixed sample source changed during execution: {source_sha_after}")
     rss = process_metrics()
-    return {"source_path":str(SAMPLE),"source_sha256":sha256(SAMPLE),"selected_rows":physical_count,
+    return {"source_path":str(SAMPLE),"source_sha256":SAMPLE_SHA,"source_sha256_after":source_sha_after,
+            "source_footer_total_rows":footer_rows,"source_projected_schema":str(parquet_file.schema_arrow),"selected_rows":physical_count,
             "selection":"month 1, physical rows 0..16383, 10 columns, 4 batches of 4096",
-            "columns":SAMPLE_COLUMNS,"row_index_endpoints":[int(first_idx[0]),int(last_idx[-1])],
+            "columns":SAMPLE_COLUMNS,"row_index_endpoints":[selected_row_index[0],selected_row_index[-1]],
             "canonical_rows_after_key_valid_and_numeric_transforms":len(ast_frame),
             "key_valid_admitted_rows":sum(int(x["admitted_rows"]) for x in manifest["files"]),
             "output_rows":len(rebuilt),"strict_ast_oracle_caller_equal":True,

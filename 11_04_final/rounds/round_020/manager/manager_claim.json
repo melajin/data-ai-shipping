@@ -1,0 +1,11 @@
+{
+    "incoming_sha256":  "53557B061E165C6B8A23A18232C4B31BD47EF000E17760C197C6F4D20F2DEEAA",
+    "round":  "round_020",
+    "codex_thread_id":  "01a1a8db-03f8-7c83-9c8b-2a3a216ec65e",
+    "utc":  "2026-11-04T23:19:12.7169452Z",
+    "requested_effort":  "high",
+    "duplicate_round_directory_before_claim":  false,
+    "orca_session_id":  "codex_f1a96a7f_dd68_42ac_a9fd_6781cc48a6e3",
+    "requested_model":  "gpt-6-astra",
+    "manager_budget_minutes":  45
+}

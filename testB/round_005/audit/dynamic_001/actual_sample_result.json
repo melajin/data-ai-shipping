@@ -1,0 +1,197 @@
+{
+  "mode": "fixed actual month1 physical sample",
+  "started_unix": 1793833105.2197833,
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "pandas": "2.2.3",
+  "numpy": "2.2.5",
+  "pyarrow": "24.0.0",
+  "snapshot_before": {
+    "canonical_sources": {
+      "run_remeasure_20261031.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_remeasure_20261031.py",
+        "sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+        "expected": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+        "match": true
+      },
+      "run_008_testB_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+        "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+        "expected": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+        "match": true
+      },
+      "run_005_F156_merge_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_F156_merge_20261101.py",
+        "sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+        "expected": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+        "match": true
+      },
+      "run_cycle4_3_featAC_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_cycle4_3_featAC_20261101.py",
+        "sha256": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+        "expected": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+        "match": true
+      }
+    },
+    "e_snapshot": {
+      "bounded_loader.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\bounded_loader.py",
+        "sha256": "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+        "expected": "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+        "match": true
+      },
+      "isolated_stage.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\isolated_stage.py",
+        "sha256": "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+        "expected": "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+        "match": true
+      },
+      "verify_fixtures.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\verify_fixtures.py",
+        "sha256": "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+        "expected": "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+        "match": true
+      }
+    },
+    "all_match": true
+  },
+  "process_metrics_before": {
+    "working_set_rss_mib": 89.95,
+    "peak_working_set_rss_mib": 90.83,
+    "commit_pagefile_mib": 541.04,
+    "peak_commit_pagefile_mib": 541.19
+  },
+  "sample": {
+    "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet",
+    "source_sha256": "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140",
+    "source_sha256_after": "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140",
+    "source_footer_total_rows": 497942,
+    "source_projected_schema": "row_index: int64\npart_dt: string\nrfid_id: string\nrfid_time: int16\nfishing_code: string\nkey_valid: bool\nwkt_valid: bool\nn_coords: int32\nlen_m: double\nbbox_m: double\ncen_lon: double\ncen_lat: double",
+    "selected_rows": 16384,
+    "selection": "month 1, physical rows 0..16383, 10 columns, 4 batches of 4096",
+    "columns": [
+      "row_index",
+      "rfid_id",
+      "part_dt",
+      "rfid_time",
+      "key_valid",
+      "wkt_valid",
+      "len_m",
+      "bbox_m",
+      "cen_lon",
+      "cen_lat"
+    ],
+    "row_index_endpoints": [
+      0,
+      16383
+    ],
+    "canonical_rows_after_key_valid_and_numeric_transforms": 16384,
+    "key_valid_admitted_rows": 16384,
+    "output_rows": 16384,
+    "strict_ast_oracle_caller_equal": true,
+    "parts": [
+      {
+        "rows": 4096,
+        "admitted_rows": 4096,
+        "offset_start": 0,
+        "offset_end": 4096,
+        "index_type": "RangeIndex",
+        "index_dtype": "int64"
+      },
+      {
+        "rows": 4096,
+        "admitted_rows": 4096,
+        "offset_start": 4096,
+        "offset_end": 8192,
+        "index_type": "RangeIndex",
+        "index_dtype": "int64"
+      },
+      {
+        "rows": 4096,
+        "admitted_rows": 4096,
+        "offset_start": 8192,
+        "offset_end": 12288,
+        "index_type": "RangeIndex",
+        "index_dtype": "int64"
+      },
+      {
+        "rows": 4096,
+        "admitted_rows": 4096,
+        "offset_start": 12288,
+        "offset_end": 16384,
+        "index_type": "RangeIndex",
+        "index_dtype": "int64"
+      }
+    ],
+    "output_sha256": [
+      "0a0d92a94524578f11455ad6770f99b8c44705ae6d3f9f148ad834d0b5c5efc2",
+      "b41269b255d8dc5aa654d7a46b311244340c998c5338e39862699a72f2f74f2e",
+      "686f7c51674ae0c2bc9ee7047c720f4aa55c3d5b73c3f4607e61457320c6851d",
+      "3fa6999d28373ca34313f5ff897a17a904b812423d08d1389961f114922b1d2c"
+    ],
+    "manifest_sha256": "cce13e1aaea867ab10d8eca7d0aad3740281062c8bce917963286df1e89764f6",
+    "process_metrics_after_sample": {
+      "working_set_rss_mib": 134.82,
+      "peak_working_set_rss_mib": 136.82,
+      "commit_pagefile_mib": 643.42,
+      "peak_commit_pagefile_mib": 645.5
+    },
+    "limitations": "one fixed 16,384-row sample only; not full-domain or production approval"
+  },
+  "all_sample_checks_passed": true,
+  "finished_unix": 1793833105.5997257,
+  "process_metrics_after": {
+    "working_set_rss_mib": 131.07,
+    "peak_working_set_rss_mib": 136.82,
+    "commit_pagefile_mib": 639.1,
+    "peak_commit_pagefile_mib": 645.5
+  },
+  "snapshot_after": {
+    "canonical_sources": {
+      "run_remeasure_20261031.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_remeasure_20261031.py",
+        "sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+        "expected": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+        "match": true
+      },
+      "run_008_testB_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+        "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+        "expected": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+        "match": true
+      },
+      "run_005_F156_merge_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_F156_merge_20261101.py",
+        "sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+        "expected": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+        "match": true
+      },
+      "run_cycle4_3_featAC_20261101.py": {
+        "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_cycle4_3_featAC_20261101.py",
+        "sha256": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+        "expected": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+        "match": true
+      }
+    },
+    "e_snapshot": {
+      "bounded_loader.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\bounded_loader.py",
+        "sha256": "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+        "expected": "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+        "match": true
+      },
+      "isolated_stage.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\isolated_stage.py",
+        "sha256": "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+        "expected": "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+        "match": true
+      },
+      "verify_fixtures.py": {
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\verify_fixtures.py",
+        "sha256": "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+        "expected": "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+        "match": true
+      }
+    },
+    "all_match": true
+  }
+}

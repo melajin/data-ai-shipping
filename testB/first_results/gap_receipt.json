@@ -1,0 +1,11 @@
+{
+  "stage": "gap",
+  "elapsed_seconds": 7.862,
+  "process_memory_mib": {
+    "rss": 441.07,
+    "peak_wset": 1045.36,
+    "pagefile": 1556.87,
+    "peak_pagefile": 2162.43
+  },
+  "completed_at": "2026-11-05T08:21:00.778933+09:00"
+}

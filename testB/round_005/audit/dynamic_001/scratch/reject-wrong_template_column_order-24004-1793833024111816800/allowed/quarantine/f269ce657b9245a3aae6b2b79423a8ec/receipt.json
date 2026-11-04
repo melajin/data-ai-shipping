@@ -1,0 +1,15 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\reject-wrong_template_column_order-24004-1793833024111816800\\allowed\\final",
+  "published": false,
+  "commit_point": "same-volume atomic directory rename",
+  "files": [],
+  "batches": 0,
+  "rows": 0,
+  "_range_index_reconstructable": true,
+  "error_type": "ValueError",
+  "error": "empty_template columns do not match canonical output order",
+  "quarantined": true,
+  "quarantine_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\reject-wrong_template_column_order-24004-1793833024111816800\\allowed\\quarantine\\f269ce657b9245a3aae6b2b79423a8ec"
+}

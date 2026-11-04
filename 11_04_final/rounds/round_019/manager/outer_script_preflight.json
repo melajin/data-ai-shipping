@@ -1,0 +1,9 @@
+﻿{
+    "changes":  "round identifiers and latest start cutoff23:13:35Z only",
+    "utc":  "2026-11-04T22:55:18.4804553Z",
+    "no_modes_run":  true,
+    "parse_errors":  [
+
+                     ],
+    "copied_from":  "round018/manager/Invoke-ApprovedMode.ps1"
+}

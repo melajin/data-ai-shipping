@@ -1,0 +1,11 @@
+{
+  "stage": "density",
+  "elapsed_seconds": 23.351,
+  "process_memory_mib": {
+    "rss": 813.54,
+    "peak_wset": 1235.0,
+    "pagefile": 1935.12,
+    "peak_pagefile": 2361.92
+  },
+  "completed_at": "2026-11-05T08:20:46.977726+09:00"
+}

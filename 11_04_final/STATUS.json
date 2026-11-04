@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at_utc": "2026-11-04T22:51:46.795301+00:00",
+  "updated_at_utc": "2026-11-04T23:20:49.384564+00:00",
   "objective": "vessel-level four-class micro-F1 >= 0.7 with development and independent evidence kept separate",
   "goal_status": "in_progress_not_achieved",
-  "current_round": "round_018",
-  "round_status": "completed_smoke_timeout_indeterminate",
-  "manager_session": "codex_7d125970_3736_429c_8a2d_44c17f019da5",
+  "current_round": "round_020",
+  "round_status": "in_progress_input_and_source_review",
+  "manager_session": "codex_f1a96a7f_dd68_42ac_a9fd_6781cc48a6e3",
   "manager_model_request": {
     "model": "gpt-6-astra",
     "reasoning_effort": "high",
@@ -15,7 +15,7 @@
     "model": "gpt-6-luna",
     "reasoning_effort": "xhigh",
     "max_assistants_user": 4,
-    "current_runtime_assistants": 0,
+    "current_runtime_assistants": 2,
     "host_total_slots": 4
   },
   "paths": {
@@ -23,7 +23,7 @@
     "raw_read_only": "F:/문제 데이터_수정_1027",
     "source_read_only": "D:/repos/fishing-track-classification",
     "prior_experiment": "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
-    "round": "rounds/round_018"
+    "round": "rounds/round_020"
   },
   "scores": {
     "evaluation_population": "repeatedly exposed development OUTER, 5897 vessels",
@@ -422,31 +422,40 @@
       "candidate_adopted": false,
       "historical_scores_unchanged": true,
       "result": "rounds/round_018/artifacts/result.json"
+    },
+    "round_019": {
+      "evaluation_kind": "model_zero_control_and_saved_evidence_audit",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "new_f1_evaluations": 0,
+      "candidate_adopted": false,
+      "historical_scores_unchanged": true,
+      "result": "rounds/round_019/artifacts/result.json"
     }
   },
   "budget": {
-    "started_utc": "2026-11-04T22:38:50Z",
-    "manager_minutes_max": 20,
-    "experiment_cutoff_utc": "2026-11-04T22:55:50Z",
-    "smoke_max_runs": 1,
-    "mock_max_runs": 1,
-    "audit_max_runs": 1,
-    "model_runs": 0
+    "manager_minutes_max": 45,
+    "started_utc": "2026-11-04T23:19:12.7169452Z",
+    "compute_seconds_max": 600,
+    "base_fits": 0,
+    "meta_fits_max": 3,
+    "fit_seconds_max": 120,
+    "retries": 0,
+    "threads_max": 3,
+    "compute_concurrency": 1,
+    "expected_peak_gib": 1,
+    "start_available_gib_min": 2
   },
   "decision_rules": {
-    "current_round": "Frozen boolean repair runtime-tested; smoke failed at timeout classifier; no retries, mock/audit/model unexecuted",
+    "current_round": "Round019 static control repair completed; Python raw ExitTime consistency gap blocked approval; no dynamic runs; actual performance priority restored",
     "runtime_gate": "Model-zero only; RAM>=0.5GiB per launch; 1 sequential compute; all same-map gates required",
-    "next_gate": "Separate deadline liveness from last Wait; verify terminal evidence; same-map model-zero smoke/mock/audit before estimator integration",
+    "next_gate": "Round020 SELECT-only fixed logistic fusion of saved LGBM/CatBoost/TabICL raw probabilities; Round021 confirmation if >=0.7 otherwise add current-period spatial prototype8 to same stacker",
     "holdout": "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan",
     "ram_policy": "When RAM insufficient do other feasible independent work first, then recheck and proceed under resource and finite-attempt gates"
   },
-  "current_task": "Round018 completed: boolean writer repaired; three expected normal probes passed; timeout remained indeterminate",
-  "next_task": "Round019 minimal explicit deadline-liveness and bounded terminal-evidence repair, then model-zero smoke/mock/saved audit",
-  "blockers": [
-    "Timeout classifier requires last short wait to reach deadline; monitor-overrun path is indeterminate",
-    "Killed probe ExitTime is 1601 sentinel; terminal evidence requires bounded wait and validity separation",
-    "Saved numeric/provenance audit unexecuted; no full-estimator integration yet"
-  ],
+  "current_task": "Fixed SELECT-only 12 logprob logistic stacker; actual development F1",
+  "next_task": "Frozen round021 current2026 spatialprototype8 controlled addition if below0.7",
+  "blockers": [],
   "unresolved": [
     "Actual-vessel CPU/CUDA probability equivalence remains unmeasured",
     "Small synthetic equality/memory observations do not prove full-context memory reduction",
@@ -454,116 +463,187 @@
     "Holdout known_holdout_reused=true; exposure audit unresolved; individual values not opened",
     "No independent/official score and no actual F1>=0.7 evidence"
   ],
-  "active_workers": [],
+  "active_workers": [
+    "/root/author",
+    "/root/reviewer"
+  ],
   "handoff": {
-    "ready": true,
+    "ready": false,
     "next_session_launched": false,
-    "launch_receipt": "automation/receipts/round_018_launch.json",
+    "launch_receipt": "automation/receipts/round_020_launch.json",
     "launcher": "automation/Start-NextSession.ps1",
     "launcher_owner": "current manager",
-    "next_round": "round_019",
+    "next_round": "round_021",
     "pause_reason": null,
     "authorization": "User authorizes local experiments and fresh Astra high handoffs without repeated approval",
     "close_completed_session_requested": true,
-    "completed_session_id": "codex_7d125970_3736_429c_8a2d_44c17f019da5",
-    "close_completed_session_status": "No supported structured-chat close command in current orca agent help; end this manager after accepted handoff; manually close only completed session tab if needed",
+    "completed_session_id": "codex_f1a96a7f_dd68_42ac_a9fd_6781cc48a6e3",
+    "close_completed_session_status": "Current orca agent help has no structured-chat close command; end this manager after accepted handoff; manually close only completed session tab if needed",
     "next_session_id": null,
     "accepted_at_utc": null,
-    "note": "Acceptance authority is round_018_launch.json; stop after prompt acceptance and do not mutate shared state after recipient starts."
+    "note": "Acceptance authority is round_019_launch.json. Stop after acceptance and do not modify shared state after recipient starts."
   },
   "learning_status": {
     "learner_understanding_assessed": false,
-    "technical_goal": "Partial: first writer and 3 expected normal probes pass; timeout and saved-audit gates incomplete",
+    "technical_goal": "Static deadline/termination repair partial; dynamic and saved evidence gates unexecuted; performance next plan concretely fixed",
     "hardware_verified": false
   },
   "diagnostic_result": {
-    "status": "completed_smoke_timeout_indeterminate",
-    "source_review_approved": true,
+    "utc": "2026-11-04T23:17:41.728066+00:00",
+    "status": "completed_static_control_repair_unapproved_performance_redirect",
+    "source_review_approved": false,
     "candidate_frozen": true,
-    "first_writer_fixed": true,
-    "smoke_wrapper_attempts": 1,
-    "smoke_probe_children": 4,
-    "expected_normal_probe_passes": 3,
-    "timeout_classification": "indeterminate",
-    "timeout_os_code_recorded": -1,
-    "timeout_exit_timestamp_valid": false,
-    "timeout_wait_false_elapsed_seconds": 0.49596989999999996,
-    "timeout_deadline_observed_seconds": 0.9381056,
-    "timeout_exit_observed_seconds": 0.9397325,
-    "auditor_calls": 0,
-    "mock_runs": 0,
-    "saved_audit_runs": 0,
-    "model_runs": 0,
-    "new_f1": null,
-    "numeric_saved_checks_pass": null,
-    "saved_provenance_audit_pass": null,
-    "historical_round015_wrapper_gate": false,
-    "historical_round010_overall_gate": false,
-    "prior_selected_files_unchanged": true,
-    "prior_selected_files_count": 83,
-    "outer_exit_code": 1,
-    "outer_wall_seconds": 8.6628274,
-    "whole_mode_budget_pass": true
-  },
-  "next_round_budget": {
-    "manager_minutes_max": 25,
-    "document_reserve_minutes": 3,
-    "process_probe_batch_max": 1,
-    "probe_children_max": 4,
-    "probe_seconds_max": 15,
-    "mock_max_runs": 1,
-    "mock_seconds_max": 30,
-    "saved_audit_max_runs": 1,
-    "saved_audit_seconds_max": 30,
-    "model_calls": 0,
-    "checkpoint_access": 0,
-    "actual_data_or_f1": 0,
-    "start_available_ram_gib_min": 0.5,
-    "expected_peak_mib": 200,
-    "retries": 0
-  },
-  "latest_result_report": "rounds/round_018/ROUND_REPORT.md",
-  "round_completed_at_utc": "2026-11-04T22:51:46.795301+00:00",
-  "review": {
-    "source": "rounds/round_018/review/SOURCE_REVIEW.md",
-    "final": "rounds/round_018/review/FINAL_REVIEW.md"
-  },
-  "execution_summary": {
-    "process_smoke_runs": 1,
-    "process_smoke_completed": false,
-    "smoke_probe_children": 4,
-    "normal_probe_passes": 3,
-    "auditor_calls": 0,
-    "mock_runs": 0,
-    "saved_audit_runs": 0,
+    "modes": {
+      "smoke": {
+        "attempted": false,
+        "passed": false,
+        "outer_exit_code": null,
+        "outer_wall_seconds": null,
+        "wrapper_state": null,
+        "python_completed": null,
+        "wrapper_error": null,
+        "python_error": null
+      },
+      "mock": {
+        "attempted": false,
+        "passed": false,
+        "outer_exit_code": null,
+        "outer_wall_seconds": null,
+        "wrapper_state": null,
+        "python_completed": null,
+        "wrapper_error": null,
+        "python_error": null
+      },
+      "audit": {
+        "attempted": false,
+        "passed": false,
+        "outer_exit_code": null,
+        "outer_wall_seconds": null,
+        "wrapper_state": null,
+        "python_completed": null,
+        "wrapper_error": null,
+        "python_error": null
+      }
+    },
+    "all_model_zero_gates_pass": false,
+    "probe_count": 0,
+    "probe_pass_count": 0,
+    "probe_classifications": [],
     "model_runs": 0,
     "checkpoint_access": 0,
     "pt_deserialization": 0,
     "project_data_access": 0,
     "new_f1": null,
-    "source_frozen": true,
-    "source_approved": true,
-    "outer_exit_code": 1,
-    "outer_wall_seconds": 8.6628274
+    "numeric_saved_checks_pass": null,
+    "saved_provenance_audit_pass": null,
+    "current_round015_source_matches": null,
+    "historical_round015_wrapper_gate": false,
+    "historical_round010_gate": false,
+    "prior_selected_files_unchanged": true,
+    "prior_selected_files_count": 125
+  },
+  "next_round_budget": {
+    "manager_minutes_max": 45,
+    "document_reserve_minutes": 5,
+    "compute_minutes_max": 30,
+    "score_job_seconds_max": 600,
+    "new_base_fits": 0,
+    "new_meta_fits_max": 3,
+    "threads_max": 3,
+    "compute_concurrency": 1,
+    "start_available_ram_gib_min": 2,
+    "expected_peak_gib": 1,
+    "retries": 0
+  },
+  "latest_result_report": "rounds/round_019/ROUND_REPORT.md",
+  "round_completed_at_utc": "2026-11-04T23:17:41.728066+00:00",
+  "review": {
+    "source": "rounds/round_019/review/SOURCE_REVIEW.md",
+    "final": "rounds/round_019/review/FINAL_REVIEW.md"
+  },
+  "execution_summary": {
+    "utc": "2026-11-04T23:17:41.728066+00:00",
+    "status": "completed_static_control_repair_unapproved_performance_redirect",
+    "source_review_approved": false,
+    "candidate_frozen": true,
+    "modes": {
+      "smoke": {
+        "attempted": false,
+        "passed": false,
+        "outer_exit_code": null,
+        "outer_wall_seconds": null,
+        "wrapper_state": null,
+        "python_completed": null,
+        "wrapper_error": null,
+        "python_error": null
+      },
+      "mock": {
+        "attempted": false,
+        "passed": false,
+        "outer_exit_code": null,
+        "outer_wall_seconds": null,
+        "wrapper_state": null,
+        "python_completed": null,
+        "wrapper_error": null,
+        "python_error": null
+      },
+      "audit": {
+        "attempted": false,
+        "passed": false,
+        "outer_exit_code": null,
+        "outer_wall_seconds": null,
+        "wrapper_state": null,
+        "python_completed": null,
+        "wrapper_error": null,
+        "python_error": null
+      }
+    },
+    "all_model_zero_gates_pass": false,
+    "probe_count": 0,
+    "probe_pass_count": 0,
+    "probe_classifications": [],
+    "model_runs": 0,
+    "checkpoint_access": 0,
+    "pt_deserialization": 0,
+    "project_data_access": 0,
+    "new_f1": null,
+    "numeric_saved_checks_pass": null,
+    "saved_provenance_audit_pass": null,
+    "current_round015_source_matches": null,
+    "historical_round015_wrapper_gate": false,
+    "historical_round010_gate": false,
+    "prior_selected_files_unchanged": true,
+    "prior_selected_files_count": 125
   },
   "independent_evaluation_blockers": [
     "No exposure-verified independent evaluation roster approved or opened"
   ],
   "latest_user_steering": {
-    "recorded_at_utc": "2026-11-04T18:06:35.160145+00:00",
+    "recorded_at_utc": "2026-11-04T23:04:39.2641859Z",
+    "source": "rounds/round_019/manager/PRIORITY_CORRECTION.md",
+    "message_ids": [
+      "msg_17b582e8a8ba",
+      "msg_49e433720914",
+      "msg_8660a1d16d5f",
+      "msg_b82fbfa3001b",
+      "msg_04d0e2bbf75f",
+      "msg_cae4bc359af7"
+    ],
     "instructions": [
-      "Consider seasonal and time-of-day changes in fishing patterns; hypothesis documented without changing round006 experiment",
-      "Recheck RAM:18:00:31UTC4.201679GiB",
-      "All future work: when RAM insufficient do other feasible independent work, recheck, then proceed under resource gates"
+      "Micro-F1 >=0.7 performance goal is central; adopted improvement remains zero",
+      "Finish019 bounded control scope; next round actual same-condition performance comparison on existing validated X304 LightGBM path",
+      "M4 control repair is not prerequisite for independent tree-model performance experiments",
+      "Check prior experiment exposure to avoid same experiment repeats; preserve RAM and holdout/subgroup policies",
+      "User prioritizes next020 and021 actual performance attempts toward0.7",
+      "Exclude already completed sqrt_micro as core experiment; monthly35 alone has weak historical gain evidence",
+      "020 fixed SELECT-only probability stacker;021 confirmation only if020 reaches0.7 otherwise a new richer representation hypothesis",
+      "021 if020<0.7: same stacker12 versus same stacker12+current2026FIT-class spatialprototype8; no base fits; max6meta fits",
+      "Preserve analysis-session reply address and report actual020/021 scores and accepted fresh sessions"
     ],
-    "policy_persisted_in": [
-      "AGENTS.md",
-      "CYCLE_PROTOCOL.md",
-      "NEXT_SESSION.md"
-    ],
-    "latest_ram_recheck": "rounds/round_006/manager/ram_recheck_after_alternative_work.json",
-    "latest_available_ram_gib": 4.5118408203125,
-    "performance_guaranteed": false
+    "adopted_f1_improvement": 0,
+    "performance_guaranteed": false,
+    "next_two_round_plan": "rounds/round_019/manager/PERFORMANCE_NEXT_PLAN.md",
+    "final_round021_branch": "rounds/round_019/manager/ROUND021_FIXED_BRANCH.md"
   },
   "user_pause": {
     "requested": true,
@@ -588,11 +668,12 @@
     "checkpoint_exact_sha256_found": true,
     "historical_cuda_runtime_reproduced": false,
     "ready_for_m4_training": false,
-    "next_step": "Round019 minimal explicit deadline-liveness and bounded terminal-evidence repair, then model-zero smoke/mock/saved audit",
+    "next_step": "Round020 SELECT-only fixed logistic fusion of saved LGBM/CatBoost/TabICL raw probabilities; Round021 confirmation if >=0.7 otherwise add current-period spatial prototype8 to same stacker",
     "ready_for_bounded_synthetic_head_gate": false,
     "actual_m4_training_executed": false,
     "synthetic_head_numerical_checks_recorded": true,
-    "synthetic_wrapper_gate_pass": false
+    "synthetic_wrapper_gate_pass": false,
+    "model_zero_saved_audit_pass": false
   },
   "next_manager_session": null,
   "latest_user_steering_previous": {

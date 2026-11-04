@@ -1,0 +1,11 @@
+{
+  "stage": "harbor",
+  "elapsed_seconds": 3.792,
+  "process_memory_mib": {
+    "rss": 410.4,
+    "peak_wset": 992.89,
+    "pagefile": 1483.6,
+    "peak_pagefile": 2070.98
+  },
+  "completed_at": "2026-11-05T08:20:18.003858+09:00"
+}

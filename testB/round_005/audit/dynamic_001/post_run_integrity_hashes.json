@@ -1,0 +1,102 @@
+﻿{
+    "recorded_at":  "2026-11-05 07:59:20 +09:00",
+    "hash_checks":  [
+                        {
+                            "kind":  "canonical",
+                            "path":  "D:\\repos\\fishing-track-classification\\code\\tools\\run_remeasure_20261031.py",
+                            "sha256":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c"
+                        },
+                        {
+                            "kind":  "canonical",
+                            "path":  "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+                            "sha256":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8"
+                        },
+                        {
+                            "kind":  "canonical",
+                            "path":  "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_F156_merge_20261101.py",
+                            "sha256":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4"
+                        },
+                        {
+                            "kind":  "canonical",
+                            "path":  "D:\\repos\\fishing-track-classification\\code\\tools\\run_cycle4_3_featAC_20261101.py",
+                            "sha256":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3"
+                        },
+                        {
+                            "kind":  "E_snapshot",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\bounded_loader.py",
+                            "sha256":  "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee"
+                        },
+                        {
+                            "kind":  "E_snapshot",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\isolated_stage.py",
+                            "sha256":  "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea"
+                        },
+                        {
+                            "kind":  "E_snapshot",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\execution\\verify_fixtures.py",
+                            "sha256":  "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f"
+                        },
+                        {
+                            "kind":  "sample_input",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet",
+                            "sha256":  "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140"
+                        },
+                        {
+                            "kind":  "audit_artifact",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\independent_dynamic_check.py",
+                            "sha256":  "efea1c35abb71f115190f52d228e443d172567c7a30185dfdb39aa746041acc5"
+                        },
+                        {
+                            "kind":  "audit_artifact",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\fixture_result.json",
+                            "sha256":  "379b25c4278a30681a438998db0ad758c565a39a5d0ac1f6a28f5e5e7c2f63ec"
+                        },
+                        {
+                            "kind":  "audit_artifact",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\actual_sample_result.json",
+                            "sha256":  "95c6e17c1006da4bd8828d6fde0ccfa047752794c055f86f910a0888b18b02f2"
+                        },
+                        {
+                            "kind":  "audit_artifact",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\sample_run02_stdout.log",
+                            "sha256":  "51d519f6c26743ade8986089b620566bd761c9613672402abc82d4b2ba50a310"
+                        },
+                        {
+                            "kind":  "audit_artifact",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\sample_run02_stderr.log",
+                            "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                        },
+                        {
+                            "kind":  "audit_artifact",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\sample_run02_exit_code.txt",
+                            "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+                        },
+                        {
+                            "kind":  "audit_artifact",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\fixture_run07_stdout.log",
+                            "sha256":  "cddd0862beeafc73292321d055007698e2460fd4c5fe1f78eaa25aab3c9223c2"
+                        },
+                        {
+                            "kind":  "audit_artifact",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\fixture_run07_stderr.log",
+                            "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                        },
+                        {
+                            "kind":  "audit_artifact",
+                            "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\fixture_run07_exit_code.txt",
+                            "sha256":  "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+                        }
+                    ],
+    "expected_canonical":  [
+                               "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+                               "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+                               "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+                               "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3"
+                           ],
+    "expected_e":  [
+                       "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+                       "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+                       "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f"
+                   ],
+    "expected_sample":  "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140"
+}

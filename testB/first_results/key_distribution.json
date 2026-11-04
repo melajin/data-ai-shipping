@@ -1,0 +1,20 @@
+{
+  "train": {
+    "rows": 3887069,
+    "rfid_id_noninteger": 1,
+    "part_dt_noninteger": 1,
+    "admitted_rfid_id_noninteger": 0,
+    "admitted_part_dt_noninteger": 0,
+    "rfid_id_max_length": 38,
+    "part_dt_max_length": 11
+  },
+  "test": {
+    "rows": 4212389,
+    "rfid_id_noninteger": 0,
+    "part_dt_noninteger": 0,
+    "admitted_rfid_id_noninteger": 0,
+    "admitted_part_dt_noninteger": 0,
+    "rfid_id_max_length": 8,
+    "part_dt_max_length": 8
+  }
+}

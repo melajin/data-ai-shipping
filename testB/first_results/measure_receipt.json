@@ -1,0 +1,11 @@
+{
+  "stage": "measure",
+  "elapsed_seconds": 9.731,
+  "process_memory_mib": {
+    "rss": 750.4,
+    "peak_wset": 1314.24,
+    "pagefile": 1823.25,
+    "peak_pagefile": 2388.38
+  },
+  "completed_at": "2026-11-05T08:19:49.739560+09:00"
+}

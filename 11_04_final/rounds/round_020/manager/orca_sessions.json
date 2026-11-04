@@ -1,0 +1,225 @@
+﻿{
+  "id": "4ed0d7ba-4444-43e3-bef9-60a6722a18b8",
+  "ok": true,
+  "result": {
+    "worktrees": [
+      {
+        "workspaceKind": "git",
+        "worktreeId": "791c376e-68fa-4ff4-91af-cf03587519fc::D:/obsidian/claude/obsidian_export/Edge_module_folder/edge-alimi-site",
+        "repoId": "791c376e-68fa-4ff4-91af-cf03587519fc",
+        "hostId": "local",
+        "terminalPlatform": "win32",
+        "repo": "edge-alimi-site",
+        "path": "D:/obsidian/claude/obsidian_export/Edge_module_folder/edge-alimi-site",
+        "branch": "refs/heads/main",
+        "isArchived": false,
+        "isMainWorktree": true,
+        "hasHostSidebarActivity": true,
+        "defaultBranch": true,
+        "worktreeInstanceId": "7a39e8f4-e052-401a-aa2c-792a6c2fe6b7",
+        "parentWorktreeId": null,
+        "childWorktreeIds": [],
+        "displayName": "main",
+        "workspaceStatus": "in-progress",
+        "sortOrder": 1793497803362,
+        "lastActivityAt": 1793489140003,
+        "linkedIssue": null,
+        "linkedPR": null,
+        "linkedLinearIssue": null,
+        "linkedGitLabMR": null,
+        "linkedGitLabIssue": null,
+        "linkedItems": [],
+        "comment": "",
+        "isPinned": false,
+        "isActive": false,
+        "unread": false,
+        "liveTerminalCount": 0,
+        "hasAttachedPty": false,
+        "unverifiableTerminalCount": 0,
+        "lastOutputAt": null,
+        "preview": "",
+        "status": "inactive",
+        "agents": [],
+        "sidebarStatus": "inactive",
+        "terminalVerdict": "none"
+      },
+      {
+        "workspaceKind": "git",
+        "worktreeId": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+        "repoId": "694309e1-3a51-45ba-b9c8-19f164cfd785",
+        "hostId": "local",
+        "terminalPlatform": "win32",
+        "repo": "DATA AI SHIPPING",
+        "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+        "branch": "refs/heads/main",
+        "isArchived": false,
+        "isMainWorktree": true,
+        "hasHostSidebarActivity": true,
+        "defaultBranch": true,
+        "worktreeInstanceId": "9ce7a0a0-6302-484e-a9f1-41cb741bb335",
+        "parentWorktreeId": null,
+        "childWorktreeIds": [],
+        "displayName": "DATA AI SHIPPING",
+        "workspaceStatus": "in-progress",
+        "sortOrder": 1793781834736,
+        "lastActivityAt": 1793834311700,
+        "linkedIssue": null,
+        "linkedPR": null,
+        "linkedLinearIssue": null,
+        "linkedGitLabMR": null,
+        "linkedGitLabIssue": null,
+        "linkedItems": [],
+        "comment": "",
+        "isPinned": false,
+        "isActive": true,
+        "unread": false,
+        "liveTerminalCount": 0,
+        "hasAttachedPty": false,
+        "unverifiableTerminalCount": 0,
+        "lastOutputAt": null,
+        "preview": "",
+        "status": "working",
+        "agents": [
+          {
+            "paneKey": "structured-agent-session-claude_d206dcbf_1ffc_48cf_9ec5_38d8bc2e68db:65aaf482-d34a-48de-a52e-7a1a4762668e",
+            "parentPaneKey": null,
+            "state": "done",
+            "agentType": "claude",
+            "prompt": "실험 시작하지말고, 그전에 지금까지 실험방식이 적절했는지, 문제점이 뭔지, 결과가 얼마나 높게 나왔는지, 앞으로 할 작업이 뭔지만 나열",
+            "taskTitle": null,
+            "displayName": null,
+            "conversationName": "Test B 5라운드 처리 코드 검증 현황",
+            "lastAssistantMessage": "실험은 시작하지 않았습니다. 중간까지 `round_006/execution/`에 수정판 2개(`isolated_stage.py`, `verify_fixtures.py`)를 작성했지만 **한 줄도 실행하지 않았습니다.** 평가만 정리합니다. --- ## 1. 결과가 얼마나 높게 나왔는가 — 점수는 없습니다 | 지표 | 값 | |---|---| | 새 Test",
+            "toolName": null,
+            "toolInput": null,
+            "interrupted": false,
+            "mainAgent": {
+              "state": "done",
+              "outcome": "success",
+              "stateStartedAt": 1793833893700
+            },
+            "stateStartedAt": 1793833893700,
+            "updatedAt": 1793833893701,
+            "children": [],
+            "structuredHostOwned": true,
+            "subagentObservation": "live"
+          },
+          {
+            "paneKey": "structured-agent-session-codex_912d93c5_8564_45a8_a96b_21f4ca932209:1fdd93da-fe45-41ab-a7be-21accd4a56e8",
+            "parentPaneKey": null,
+            "state": "working",
+            "agentType": "codex",
+            "prompt": "좀 시키는 것 만 해 왜이러지 아까부터",
+            "taskTitle": null,
+            "displayName": null,
+            "conversationName": "testB 진행 현황 및 전체 과정",
+            "lastAssistantMessage": "원본 로더가 전체 Train을 정상 로딩했습니다. 최대 RAM은 약 1.28GiB였고, 이번 실행에서는 커스텀 로더가 필요하지 않았습니다. 원본 코드로 참조와 새 100척 점수 계산을 이어가겠습니다.",
+            "toolName": "shell",
+            "toolInput": "\"C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\" -Command '$env…",
+            "interrupted": false,
+            "mainAgent": {
+              "state": "working",
+              "stateStartedAt": 1793834236734
+            },
+            "stateStartedAt": 1793834236734,
+            "updatedAt": 1793834401884,
+            "children": [],
+            "structuredHostOwned": true,
+            "subagentObservation": "live"
+          },
+          {
+            "paneKey": "structured-agent-session-codex_f1a96a7f_dd68_42ac_a9fd_6781cc48a6e3:0024fb15-512a-4ffe-a570-cf6af7973f3d",
+            "parentPaneKey": null,
+            "state": "working",
+            "agentType": "codex",
+            "prompt": "사용자가 승인한 새 회차 관리자 세션입니다. 모델은 gpt-6-astra, effort high로 요청되었습니다. 먼저 작업 디렉터리를 아래 루트로 설정하고 해당 루트의 AGENTS.md, STATUS.json, CYCLE_PROTOCOL.md, NEXT_SESSION.md, 직전 회차 결과 보고서를 읽으세요. 작업 루트: D:\\obsidian\\claude",
+            "taskTitle": null,
+            "displayName": null,
+            "conversationName": "선박 조업 분류 반복 실험 관리자 세션",
+            "lastAssistantMessage": "현재 세션 ID와 round_019의 수락 영수증·인계 SHA256이 일치하며, round_020 중복 실행 증거는 없습니다. 가용 RAM은 약 4.4GiB로 확인됐습니다. Luna xhigh 작성자와 검토자를 분리했고, 각 fold의 SELECT 자료가 기존 모델의 학습·조기 종료에 쓰이지 않았는지 확인하고 있습니다.",
+            "toolName": "shell",
+            "toolInput": "\"C:\\\\WINDOWS\\\\System32\\\\WindowsPowerShell\\\\v1.0\\\\powershell.exe\" -Command \"& 'C…",
+            "interrupted": false,
+            "mainAgent": {
+              "state": "working",
+              "stateStartedAt": 1793834288655
+            },
+            "stateStartedAt": 1793834288655,
+            "updatedAt": 1793834462548,
+            "children": [
+              {
+                "id": "3ff7d2de-f587-46ad-99ea-4309f829b187",
+                "providerId": "01a1a8dc-3ad9-7b61-a6f4-d6f8d64ba5b2",
+                "kind": "agent",
+                "description": "author",
+                "state": "working",
+                "membership": "live",
+                "firstObservedAt": 1793834368243,
+                "observedAt": 1793834460665,
+                "stoppable": true,
+                "invocation": {
+                  "invocationId": "01a1a8dc-3bda-78d3-94a1-1b0a8ed873ca",
+                  "generation": 1
+                }
+              },
+              {
+                "id": "e3962a97-2322-4622-a782-04e3bb04f8bf",
+                "providerId": "01a1a8dc-6153-7b23-8e66-ad55838abbd8",
+                "kind": "agent",
+                "description": "reviewer",
+                "state": "working",
+                "membership": "live",
+                "firstObservedAt": 1793834378158,
+                "observedAt": 1793834462266,
+                "stoppable": true,
+                "invocation": {
+                  "invocationId": "01a1a8dc-626e-7e50-8a84-1c6645b5e2d4",
+                  "generation": 1
+                }
+              }
+            ],
+            "structuredHostOwned": true,
+            "subagentObservation": "live"
+          },
+          {
+            "paneKey": "structured-agent-session-codex_6b307c5a_55da_483c_b425_0031c6f730b8:60647dd9-a645-4942-a053-d1790633ea4d",
+            "parentPaneKey": null,
+            "state": "done",
+            "agentType": "codex",
+            "prompt": "You have 1 orchestration message. Run `orca orchestration check`.",
+            "taskTitle": null,
+            "displayName": null,
+            "conversationName": "11_04_final 전체 분석 및 실험 구조",
+            "lastAssistantMessage": "**20·21차를 실제 성능 실험으로 고정했고, 20차 새 Astra 관리자 세션 생성과 인계 수락까지 확인했습니다.** M4 검증기 수리는 보류했습니다. - **20차:** LightGBM·CatBoost·TabICL의 원확률을 학습해 결합합니다. 각 모델이 서로 다른 선박을 맞히는 정보를 활용하는 실험입니다. - **21차:** 20차가 0.7 미달이면",
+            "toolName": null,
+            "toolInput": null,
+            "interrupted": false,
+            "mainAgent": {
+              "state": "done",
+              "outcome": "success",
+              "stateStartedAt": 1793834363148
+            },
+            "stateStartedAt": 1793834363148,
+            "updatedAt": 1793834363148,
+            "children": [],
+            "structuredHostOwned": true,
+            "subagentObservation": "live"
+          }
+        ],
+        "sidebarStatus": "working",
+        "terminalVerdict": "none"
+      }
+    ],
+    "hostScope": {
+      "hostIds": [
+        "local"
+      ],
+      "omittedHostIds": []
+    },
+    "totalCount": 2,
+    "truncated": false
+  },
+  "_meta": {
+    "runtimeId": "b4aa8510-0609-45a9-b7ba-e1cdeeab97f6"
+  }
+}

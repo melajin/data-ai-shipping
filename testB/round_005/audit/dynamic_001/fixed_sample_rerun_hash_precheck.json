@@ -1,0 +1,28 @@
+﻿{
+    "recorded_at":  "2026-11-05 07:58:12 +09:00",
+    "sample_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet",
+    "sample_bytes":  18817327,
+    "sample_sha256":  "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140",
+    "sample_match":  true,
+    "e_hashes":  [
+                     {
+                         "file":  "verify_fixtures",
+                         "sha256":  "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+                         "expected":  "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+                         "match":  true
+                     },
+                     {
+                         "file":  "isolated_stage",
+                         "sha256":  "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+                         "expected":  "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+                         "match":  true
+                     },
+                     {
+                         "file":  "bounded_loader",
+                         "sha256":  "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+                         "expected":  "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee",
+                         "match":  true
+                     }
+                 ],
+    "all_e_match":  true
+}

@@ -1,6 +1,6 @@
 {
   "mode": "independent small fixtures and caller transaction checks",
-  "started_unix": 1793832774.330383,
+  "started_unix": 1793833022.5754547,
   "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
   "pandas": "2.2.3",
   "numpy": "2.2.5",
@@ -55,10 +55,10 @@
     "all_match": true
   },
   "process_metrics_before": {
-    "working_set_rss_mib": 89.4,
-    "peak_working_set_rss_mib": 90.28,
-    "commit_pagefile_mib": 540.38,
-    "peak_commit_pagefile_mib": 540.53
+    "working_set_rss_mib": 89.78,
+    "peak_working_set_rss_mib": 90.66,
+    "commit_pagefile_mib": 540.72,
+    "peak_commit_pagefile_mib": 540.88
   },
   "fixture_cases": [
     {
@@ -157,6 +157,75 @@
       ],
       "dtypes": {
         "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "RangeIndex",
+      "index_name": null,
+      "index_labels": [
+        0,
+        1
+      ]
+    },
+    {
+      "case": "both_numeric_keys_no_drop_exact_rangeindex",
+      "pass": true,
+      "rows": 1,
+      "columns": [
+        "rfid_id",
+        "part_dt",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "RangeIndex",
+      "index_name": null,
+      "index_labels": [
+        0
+      ]
+    },
+    {
+      "case": "integer_domain_edges_signs_leading_zero_and_128_char_token",
+      "pass": true,
+      "rows": 5,
+      "columns": [
+        "rfid_id",
+        "part_dt",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_type": "RangeIndex",
+      "index_name": null,
+      "index_labels": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "case": "empty_month_between_nonempty_months_preserves_offset",
+      "pass": true,
+      "rows": 2,
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
         "key_valid": "bool",
         "month": "int8"
       },
@@ -427,7 +496,7 @@
       "pass": true,
       "exception": "UnsupportedDomain",
       "final_absent": true,
-      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\late_unsupported_after_one_yield-1020-1793832775209044300\\allowed\\quarantine\\cd27c79e3b504401b82959580d02b6c9\\receipt.json",
+      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\late_unsupported_after_one_yield-24004-1793833023772802000\\allowed\\quarantine\\9c492cde104646719017070eb79b0740\\receipt.json",
       "committed_batches_before_failure": 1
     },
     {
@@ -435,7 +504,7 @@
       "pass": true,
       "exception": "RuntimeError",
       "final_absent": true,
-      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\late_general_exception_after_one_yield-1020-1793832775231545700\\allowed\\quarantine\\c70c40e97b4245c1bfec0ded5ad3ffad\\receipt.json",
+      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\late_general_exception_after_one_yield-24004-1793833023799646400\\allowed\\quarantine\\0be261d808814e2e98b8b5d601938758\\receipt.json",
       "committed_batches_before_failure": 1
     },
     {
@@ -443,7 +512,7 @@
       "pass": true,
       "exception": "OSError",
       "final_absent": true,
-      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\scratch_write_failure-1020-1793832775253803400\\allowed\\quarantine\\ef11a7913d6a4955a65126084de3a3f4\\receipt.json",
+      "quarantine_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\scratch_write_failure-24004-1793833023822943000\\allowed\\quarantine\\760ec0af09cb47fe9cd67e6fe360487e\\receipt.json",
       "committed_batches_before_failure": 0
     },
     {
@@ -570,6 +639,22 @@
       "gate_effect": "accepted wrong template is a caller precondition/production limitation, not canonical equivalence"
     },
     {
+      "case": "wrong_empty_template_shape_rejected",
+      "pass": true,
+      "rejections": [
+        {
+          "case": "nonempty_template",
+          "rejected": true,
+          "error_type": "ValueError"
+        },
+        {
+          "case": "wrong_template_column_order",
+          "rejected": true,
+          "error_type": "ValueError"
+        }
+      ]
+    },
+    {
       "case": "all_none_stream_no_template_fail_closed",
       "pass": true,
       "final_absent": true,
@@ -613,7 +698,7 @@
           "case": "final_link_escape",
           "verified": true,
           "link_kind": "junction_fallback",
-          "symlink_error": "[WinError 1314] 클라이언트가 필요한 권한을 가지고 있지 않습니다: 'D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\testB\\\\round_005\\\\audit\\\\dynamic_001\\\\scratch\\\\final-link-1020-1793832775537742600\\\\outside' -> 'D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\testB\\\\round_005\\\\audit\\\\dynamic_001\\\\scratch\\\\final-link-1020-1793832775537742600\\\\allowed\\\\link_out'"
+          "symlink_error": "[WinError 1314] 클라이언트가 필요한 권한을 가지고 있지 않습니다: 'D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\testB\\\\round_005\\\\audit\\\\dynamic_001\\\\scratch\\\\final-link-24004-1793833024150533200\\\\outside' -> 'D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\\\\testB\\\\round_005\\\\audit\\\\dynamic_001\\\\scratch\\\\final-link-24004-1793833024150533200\\\\allowed\\\\link_out'"
         },
         {
           "case": "quarantine_root_link",
@@ -632,21 +717,21 @@
         "batches": 1,
         "receipt_files": 1,
         "manifest_files": 1,
-        "receipt_recursive_bytes": 4691,
+        "receipt_recursive_bytes": 4692,
         "manifest_file_entries_recursive_bytes": 2285
       },
       {
         "batches": 8,
         "receipt_files": 8,
         "manifest_files": 8,
-        "receipt_recursive_bytes": 13375,
+        "receipt_recursive_bytes": 13376,
         "manifest_file_entries_recursive_bytes": 12075
       },
       {
         "batches": 32,
         "receipt_files": 32,
         "manifest_files": 32,
-        "receipt_recursive_bytes": 43232,
+        "receipt_recursive_bytes": 43233,
         "manifest_file_entries_recursive_bytes": 45723
       }
     ],
@@ -664,16 +749,16 @@
     ],
     "interpretation": "trace retention is bounded separately; caller receipt/files metadata is O(batch_count), has no configured cap, and remains a scale limitation"
   },
-  "frame_case_count": 13,
-  "atomic_case_count": 15,
+  "frame_case_count": 16,
+  "atomic_case_count": 16,
   "all_fixture_assertions_passed": true,
   "production_gate": "CONDITIONAL_FAIL if bad empty-template provenance accepted; see limitations",
-  "finished_unix": 1793832775.9136488,
+  "finished_unix": 1793833024.5351646,
   "process_metrics_after": {
-    "working_set_rss_mib": 105.05,
-    "peak_working_set_rss_mib": 109.38,
-    "commit_pagefile_mib": 551.21,
-    "peak_commit_pagefile_mib": 555.12
+    "working_set_rss_mib": 106.02,
+    "peak_working_set_rss_mib": 109.66,
+    "commit_pagefile_mib": 553.33,
+    "peak_commit_pagefile_mib": 555.72
   },
   "snapshot_after": {
     "canonical_sources": {

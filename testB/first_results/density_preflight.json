@@ -1,0 +1,55 @@
+{
+  "at": "2026-11-05T08:20:22.645826+09:00",
+  "stage": "density",
+  "available_mib": 4217.2,
+  "planned_process_peak_mib": 2800,
+  "reserve_mib": 640,
+  "basis": "Sequential original implementation; estimate, not measured upper bound",
+  "other_large_processes": [
+    {
+      "pid": 4676,
+      "name": "claude.exe",
+      "rss_mib": 277.8
+    },
+    {
+      "pid": 5828,
+      "name": "explorer.exe",
+      "rss_mib": 446.7
+    },
+    {
+      "pid": 6656,
+      "name": "codex.exe",
+      "rss_mib": 275.2
+    },
+    {
+      "pid": 6940,
+      "name": "ASDSvc.exe",
+      "rss_mib": 215.9
+    },
+    {
+      "pid": 10956,
+      "name": "codex.exe",
+      "rss_mib": 235.0
+    },
+    {
+      "pid": 11432,
+      "name": "CrossDeviceService.exe",
+      "rss_mib": 207.6
+    },
+    {
+      "pid": 17216,
+      "name": "Orca.exe",
+      "rss_mib": 390.7
+    },
+    {
+      "pid": 19824,
+      "name": "Orca.exe",
+      "rss_mib": 499.6
+    },
+    {
+      "pid": 24432,
+      "name": "codex.exe",
+      "rss_mib": 203.7
+    }
+  ]
+}

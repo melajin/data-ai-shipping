@@ -1,0 +1,26 @@
+﻿{
+    "scope":  "manager metadata check; independent approval still pending",
+    "utc":  "2026-11-04T23:10:27.9840570Z",
+    "files":  [
+                  {
+                      "path":  "rounds/round_019/code/saved_m4_audit.py",
+                      "sha256":  "551176887ab273f3a92f30642143e4a3760f15bf41274c61d4aedf5ec024f751",
+                      "bytes":  53708
+                  },
+                  {
+                      "path":  "rounds/round_019/code/run_saved_m4_audit.ps1",
+                      "sha256":  "36854d10d0a050753f2d77ebc0119cf94669ee8e2906b011023f7e30afc0cbc2",
+                      "bytes":  41382
+                  },
+                  {
+                      "path":  "rounds/round_019/code/candidate_sources.json",
+                      "sha256":  "fc0402503454ad68431adcffd9399a9286b52b95e2a12872f141a3be6c69482c",
+                      "bytes":  4199
+                  },
+                  {
+                      "path":  "rounds/round_019/code/author_freeze_ack.json",
+                      "sha256":  "33349b56992837f93e49f891b86327160f236bde4f57f41258ff2261ce0e7eb6",
+                      "bytes":  1880
+                  }
+              ]
+}

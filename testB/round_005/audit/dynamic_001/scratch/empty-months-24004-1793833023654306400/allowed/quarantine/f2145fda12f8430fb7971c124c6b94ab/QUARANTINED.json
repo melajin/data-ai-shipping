@@ -1,0 +1,14 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\empty-months-24004-1793833023654306400\\allowed\\empty",
+  "published": false,
+  "commit_point": "same-volume atomic directory rename",
+  "files": [],
+  "batches": 0,
+  "rows": 0,
+  "_range_index_reconstructable": true,
+  "error_type": "ValueError",
+  "error": "No objects to concatenate",
+  "quarantined": true
+}

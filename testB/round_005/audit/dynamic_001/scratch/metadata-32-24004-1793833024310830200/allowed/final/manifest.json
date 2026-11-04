@@ -1,0 +1,830 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\metadata-32-24004-1793833024310830200\\allowed\\final",
+  "commit_point": "same-volume atomic directory rename",
+  "files": [
+    {
+      "name": "part-000000.parquet",
+      "sha256": "bb13b9c3869836e144ca9a46cc336258901743260136d173b2f1d7184ca612d0",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 0,
+      "concat_offset_end": 1,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        0,
+        0
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000001.parquet",
+      "sha256": "35e1b2cad199c74ff348e19f182b6c09326ac41c9633d9164709491668878413",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 1,
+      "concat_offset_end": 2,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        1,
+        1
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000002.parquet",
+      "sha256": "0a344efe61b4d3868fd01bbaa79f8a7385404204f56bb62ea6e3cae408f582ab",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 2,
+      "concat_offset_end": 3,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        2,
+        2
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000003.parquet",
+      "sha256": "f3b0bc3f09197ec5aa2f3fd11dde9f1ab8fe2e7ecf62e4322f38dc36f80f25ff",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 3,
+      "concat_offset_end": 4,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        3,
+        3
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000004.parquet",
+      "sha256": "56ce126aead52195ce6b7c5916da749cfdb3fd0947c8751e039fb27e1a32c7a4",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 4,
+      "concat_offset_end": 5,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        4,
+        4
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000005.parquet",
+      "sha256": "ba3545f751dec078afa029fc1a9f59e6353ca1e07a42fc608908b36242e69476",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 5,
+      "concat_offset_end": 6,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        5,
+        5
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000006.parquet",
+      "sha256": "61844883a2830c259961a427bc6b6b661c81e8dd711b82f0929ffc8277e7c7c4",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 6,
+      "concat_offset_end": 7,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        6,
+        6
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000007.parquet",
+      "sha256": "5838d1bf817e17b09b62c8ee21259cfc905f2c303a12a178549aaf75c84d3744",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 7,
+      "concat_offset_end": 8,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        7,
+        7
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000008.parquet",
+      "sha256": "d82315430a7f5e0224990d6ba1e116df7013b052798d928780516d7b655fa145",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 8,
+      "concat_offset_end": 9,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        8,
+        8
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000009.parquet",
+      "sha256": "3a0961eae8aaa91a19ecc6404d7d280c466e0b38e6d4de1a19bb91dea5211f3c",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 9,
+      "concat_offset_end": 10,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        9,
+        9
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000010.parquet",
+      "sha256": "bf3d3fdaebfd13c31c2693101cf5d7298a64d7a6c6e218cfddd0a2e78a6b52e5",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 10,
+      "concat_offset_end": 11,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        10,
+        10
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000011.parquet",
+      "sha256": "d994a4a5687ff9e0421201f26dbc85d30b901069047af20afc0a3c9377ab4847",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 11,
+      "concat_offset_end": 12,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        11,
+        11
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000012.parquet",
+      "sha256": "57b34c8ba48b5318ab2091da12fde9fb83b49826846106d14c1c47ba134af44a",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 12,
+      "concat_offset_end": 13,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        12,
+        12
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000013.parquet",
+      "sha256": "2d62c3d0b2800d4c5cb19270b5d895deb021cbc5c40aae200abd34ae33eb9175",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 13,
+      "concat_offset_end": 14,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        13,
+        13
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000014.parquet",
+      "sha256": "834a82d34b3b4808030082180367d95939556b95b1df79fe150cb2e07ed28e1a",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 14,
+      "concat_offset_end": 15,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        14,
+        14
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000015.parquet",
+      "sha256": "d0d2694271402fd1e27be8e4faf3614e198e77a98d377a98e762f1d871a04bf7",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 15,
+      "concat_offset_end": 16,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        15,
+        15
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000016.parquet",
+      "sha256": "69b77de6ca2cde5d3f6cf7ee9dab8dbda6193830914ede0b0ac43ebc56e35d33",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 16,
+      "concat_offset_end": 17,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        16,
+        16
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000017.parquet",
+      "sha256": "95d610e6414e48a71706d04c2d7c23bb216775fe8714f77263961bea96cfe655",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 17,
+      "concat_offset_end": 18,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        17,
+        17
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000018.parquet",
+      "sha256": "894798d0badf2aee412697701f1e11314950a555968319aed3c512adf0bde4bc",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 18,
+      "concat_offset_end": 19,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        18,
+        18
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000019.parquet",
+      "sha256": "1bb098ad44575116279b485bc5bb2e400169abb0c585ea91ec538aed64af6f11",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 19,
+      "concat_offset_end": 20,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        19,
+        19
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000020.parquet",
+      "sha256": "3d55d2e2a8eb8308bf44c5036401cf07a443c1299099e3cc9357743e222d91a4",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 20,
+      "concat_offset_end": 21,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        20,
+        20
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000021.parquet",
+      "sha256": "1efa6f21cc47338a07c0264fe280d3ccb05483222e3dd4a79c18e2d18ae42c97",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 21,
+      "concat_offset_end": 22,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        21,
+        21
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000022.parquet",
+      "sha256": "804fca0669acb311efb0f2459e21f792a935b68e5f2ed0ad4989a5a49b5edf21",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 22,
+      "concat_offset_end": 23,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        22,
+        22
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000023.parquet",
+      "sha256": "b323497764352728758579c4d34e8ddfecdf471ed2c04a34622591d815237907",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 23,
+      "concat_offset_end": 24,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        23,
+        23
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000024.parquet",
+      "sha256": "cb164c018c0a7333cd1995d8227082970ab434643949032296108ae19367470d",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 24,
+      "concat_offset_end": 25,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        24,
+        24
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000025.parquet",
+      "sha256": "624f4a2a18bee888bbddf7c89a105a39054ef682ca136812f209b54884943685",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 25,
+      "concat_offset_end": 26,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        25,
+        25
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000026.parquet",
+      "sha256": "68fd9c6b0365f8a9136ce55b61037f549772baf218a44bf28cfff75ed8c34b21",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 26,
+      "concat_offset_end": 27,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        26,
+        26
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000027.parquet",
+      "sha256": "7ea1d7eda3dfa2bf5a899207d80895b6af51ad8e0bcfaed39801537d9b63e4b8",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 27,
+      "concat_offset_end": 28,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        27,
+        27
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000028.parquet",
+      "sha256": "0d42e96f50b760e0163a7720d2f241a0c5a72e1e5e5517b78648fb88d1e2fd5c",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 28,
+      "concat_offset_end": 29,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        28,
+        28
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000029.parquet",
+      "sha256": "1dc957de52faa2b2ded4679e9c54c93725b919f87693c3768eaefb1bbff8fcbc",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 29,
+      "concat_offset_end": 30,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        29,
+        29
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000030.parquet",
+      "sha256": "7cf2e5df972b2375a3155dcae47b3f5700e51cef8b67245886ca7ebf8eb3eebc",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 30,
+      "concat_offset_end": 31,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        30,
+        30
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000031.parquet",
+      "sha256": "13ca3e7b2a1a28d39e209a3ffac1acd0d15a4f049038d6219a5fa047be72969b",
+      "rows": 1,
+      "admitted_rows": 1,
+      "concat_offset_start": 31,
+      "concat_offset_end": 32,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        31,
+        31
+      ],
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    }
+  ],
+  "batches": 32,
+  "rows": 32,
+  "pandas_contract": {
+    "stream": "one DataFrame per non-None input RecordBatch; no cross-batch materialization",
+    "reconstruction": "read parts in manifest order, concatenate without ignore_index, set index from __canonical_index__",
+    "index_metadata": "per part: original pandas index class/dtype/name and first/last label; explicit labels persisted",
+    "combined_index_reconstruction": "RangeIndex(0, rows) iff index_range_reconstructable is true; otherwise pandas Index of the explicit labels",
+    "empty": "zero-row RecordBatch parts preserve schema; if the input yields no batches, materialization requires an explicit zero-row canonical empty_template; absent template fails closed"
+  },
+  "columns": [
+    "rfid_id",
+    "key_valid",
+    "month"
+  ],
+  "dtypes": {
+    "rfid_id": "int64",
+    "key_valid": "bool",
+    "month": "int8"
+  },
+  "index_range_reconstructable": true,
+  "manifest_version": 1,
+  "publication_semantics": "public only when this complete directory is visible at final_path after atomic rename"
+}

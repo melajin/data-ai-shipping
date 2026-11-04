@@ -1,0 +1,52 @@
+{
+    "schema":  "round019_candidate_sources.v1",
+    "round":  "round_019",
+    "source_files_sha256":  {
+                                "rounds/round_019/code/saved_m4_audit.py":  "551176887ab273f3a92f30642143e4a3760f15bf41274c61d4aedf5ec024f751",
+                                "rounds/round_019/code/run_saved_m4_audit.ps1":  "36854d10d0a050753f2d77ebc0119cf94669ee8e2906b011023f7e30afc0cbc2"
+                            },
+    "manifest_self_hash_excluded":  true,
+    "requested_execution_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "requested_fork_turns":  "none",
+    "execution_identity_attestation":  "not asserted; manager host turn evidence is separate",
+    "scope":  "Minimal round018-to-round019 process-control repair for the existing model-zero saved-evidence audit. No model, checkpoint, tensor replay, project-data, F1, installation, or hardware work.",
+    "source_changes":  {
+                           "python":  "Round-specific identifiers and schema paths changed to round_019; process smoke validation now requires explicit wait-call and termination provenance and validates deadline live-before-kill evidence; classifier receipt cases cover the corrected control contract.",
+                           "powershell":  "Shared classifier, absolute Stopwatch deadline, per-wait begin/request/end/result, explicit strict post-deadline live observation before kill, unconditional bounded termination wait, and independent HasExited/ExitCode/ExitTime read/error/validity evidence are applied to probes and auditor. Mock cases exercise the live production classifier.",
+                           "retained":  "claimed=$true; RAM and owned-process-tree monitoring; inherited Round015/010 source and artifact references/hashes; saved numeric checks and tolerances; model-zero gate.",
+                           "historical_files_modified":  false,
+                           "source_diff_claim":  "Round018 sources copied to round019. No exact-transform diff claim; edits are restricted to current-round identifiers, process control, receipt validation and requested regressions."
+                       },
+    "inherited_numeric_contract":  {
+                                       "raw_tolerance":  1E-05,
+                                       "probability_tolerance":  1E-06,
+                                       "row_sum_tolerance":  1E-06,
+                                       "call_counts":  {
+                                                           "backward":  4,
+                                                           "checkpoint_load":  1,
+                                                           "context_fit":  1,
+                                                           "full_forward":  4,
+                                                           "head_evaluation":  12,
+                                                           "predict_proba":  1
+                                                       }
+                                   },
+    "python":  {
+                   "executable":  "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                   "flags":  "-B -S -X utf8",
+                   "stdlib_only":  true
+               },
+    "author_static_checks":  {
+                                 "powershell_parser":  "passed; Parser API only; 0 syntax errors",
+                                 "powershell_bareword_literal_scan":  "passed; no bareword true/false/null tokens",
+                                 "python_ast":  "passed; base Python -B -S -X utf8 ast.parse only",
+                                 "smoke_mock_audit_run":  false,
+                                 "process_probes_launched":  false,
+                                 "target_module_imported":  false,
+                                 "torch_numpy_tabicl_imported":  false,
+                                 "checkpoint_read_hashed_or_loaded":  false,
+                                 "project_data_read":  false
+                             },
+    "outputs_and_temp":  "rounds/round_019 only",
+    "write_freeze_requested_after_ack":  true
+}

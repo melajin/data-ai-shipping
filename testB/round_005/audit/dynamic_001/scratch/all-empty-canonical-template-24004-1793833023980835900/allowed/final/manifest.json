@@ -1,0 +1,64 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\all-empty-canonical-template-24004-1793833023980835900\\allowed\\final",
+  "commit_point": "same-volume atomic directory rename",
+  "files": [
+    {
+      "name": "part-000000.parquet",
+      "sha256": "d6c613847ca25c54a7758b807a75d0316ec004b8266c2da9875ef6340ab790ad",
+      "rows": 0,
+      "admitted_rows": 0,
+      "concat_offset_start": 0,
+      "concat_offset_end": 0,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": null,
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "wkt_valid",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "wkt_valid": "bool",
+        "key_valid": "bool",
+        "month": "int8"
+      }
+    }
+  ],
+  "batches": 1,
+  "rows": 0,
+  "pandas_contract": {
+    "stream": "one DataFrame per non-None input RecordBatch; no cross-batch materialization",
+    "reconstruction": "read parts in manifest order, concatenate without ignore_index, set index from __canonical_index__",
+    "index_metadata": "per part: original pandas index class/dtype/name and first/last label; explicit labels persisted",
+    "combined_index_reconstruction": "RangeIndex(0, rows) iff index_range_reconstructable is true; otherwise pandas Index of the explicit labels",
+    "empty": "zero-row RecordBatch parts preserve schema; if the input yields no batches, materialization requires an explicit zero-row canonical empty_template; absent template fails closed"
+  },
+  "columns": [
+    "row_index",
+    "rfid_id",
+    "part_dt",
+    "wkt_valid",
+    "key_valid",
+    "month"
+  ],
+  "dtypes": {
+    "row_index": "int64",
+    "rfid_id": "int64",
+    "part_dt": "int32",
+    "wkt_valid": "bool",
+    "key_valid": "bool",
+    "month": "int8"
+  },
+  "index_range_reconstructable": true,
+  "manifest_version": 1,
+  "publication_semantics": "public only when this complete directory is visible at final_path after atomic rename"
+}

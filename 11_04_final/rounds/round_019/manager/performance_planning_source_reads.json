@@ -1,0 +1,21 @@
+﻿{
+    "utc":  "2026-11-04T23:10:43.0562230Z",
+    "holdout_reads":  0,
+    "raw_data_reads":  0,
+    "model_runs":  0,
+    "read_files":  [
+                       {
+                           "path":  "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104/reports/temporal_final.md",
+                           "sha256":  "72F552C73DAE13F699948871D9126334D62F30231873F545B1DD67FB8F80EC88",
+                           "bytes":  10287
+                       },
+                       {
+                           "path":  "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104/configs/exp01/experiment.json",
+                           "sha256":  "AE901771CD7F9DB2D14B20AD919D58CB68CA54ED71EB4EE432170B941E452791",
+                           "bytes":  3162
+                       }
+                   ],
+    "purpose":  "Read-only next performance plan following explicit user priority correction; current control experiment inputs unchanged",
+    "failed_read_path":  "artifacts/temporal_cache_v1_20261104_v3/manifest.json does not exist; actual name in report temporal_cache_manifest.json not read",
+    "original_repository_writes":  0
+}

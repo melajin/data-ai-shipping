@@ -1,0 +1,10 @@
+{
+  "status": "completed_static_control_repair_unapproved_performance_redirect",
+  "all_model_zero_gates_pass": false,
+  "current_task": "Round019 static control repair completed; Python raw ExitTime consistency gap blocked approval; no dynamic runs; actual performance priority restored",
+  "next_task": "Round020 SELECT-only fixed logistic fusion of saved LGBM/CatBoost/TabICL raw probabilities; Round021 confirmation if >=0.7 otherwise add current-period spatial prototype8 to same stacker",
+  "blockers": ["Local M4 control path: Python validator does not cross-check raw ExitTime and validity; deferred, not prerequisite for tree/stacker performance", "0.7 not achieved; adopted F1 improvement remains zero", "No exposure-verified independent evaluation roster opened"],
+  "technical_goal": "Static deadline/termination repair partial; dynamic and saved evidence gates unexecuted; performance next plan concretely fixed",
+  "ledger_hypothesis": "Explicit deadline liveness and bounded terminal evidence repair; static raw timestamp validator gap prevents approval; redirect to actual probability fusion and spatial representation experiments",
+  "next_round_budget": {"manager_minutes_max":45,"document_reserve_minutes":5,"compute_minutes_max":30,"score_job_seconds_max":600,"new_base_fits":0,"new_meta_fits_max":3,"threads_max":3,"compute_concurrency":1,"start_available_ram_gib_min":2,"expected_peak_gib":1,"retries":0}
+}

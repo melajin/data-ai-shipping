@@ -1,0 +1,29 @@
+{
+  "target_vessels": 100,
+  "scored_rows": 46705,
+  "A_vessels": 100,
+  "all_hourly_scores": {
+    "count": 46705.0,
+    "mean": 0.3610691582916507,
+    "std": 0.09331164058672112,
+    "min": 1e-06,
+    "25%": 0.29470499517112975,
+    "50%": 0.3496028884990195,
+    "75%": 0.42175518446497423,
+    "max": 0.9228469233797589
+  },
+  "vessel_peak_scores": {
+    "count": 100.0,
+    "mean": 0.5444452108134868,
+    "std": 0.17271233671560357,
+    "min": 1e-06,
+    "25%": 0.4985106872103257,
+    "50%": 0.5488236560453433,
+    "75%": 0.6317378137053137,
+    "max": 0.9228469233797589
+  },
+  "meaning": "Unsupervised anomaly score and A time candidate; not accident probability or measured competition performance.",
+  "submission": "Local A-only baseline in submission format; all finite A candidates filled; no calibrated accident threshold; not uploaded.",
+  "tie_rule": "First maximum in original source ordinal; causal scoring in timestamp/source order.",
+  "missing_ground_truth": "No confirmed 2025 Test B accident labels; precision/recall/time error not computed."
+}

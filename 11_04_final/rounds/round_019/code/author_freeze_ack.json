@@ -1,0 +1,29 @@
+{
+    "schema":  "round019_author_freeze_ack.v1",
+    "acknowledged_utc":  "2026-11-04T23:09:52.1205810Z",
+    "author":  "/root/author",
+    "write_freeze":  true,
+    "candidate_manifest":  "rounds/round_019/code/candidate_sources.json",
+    "candidate_manifest_sha256":  "fc0402503454ad68431adcffd9399a9286b52b95e2a12872f141a3be6c69482c",
+    "source_files_sha256":  {
+                                "rounds/round_019/code/saved_m4_audit.py":  "551176887ab273f3a92f30642143e4a3760f15bf41274c61d4aedf5ec024f751",
+                                "rounds/round_019/code/run_saved_m4_audit.ps1":  "36854d10d0a050753f2d77ebc0119cf94669ee8e2906b011023f7e30afc0cbc2"
+                            },
+    "no_author_runs":  true,
+    "settings_requested":  {
+                               "model":  "gpt-6-luna",
+                               "effort":  "xhigh",
+                               "fork_turns":  "none"
+                           },
+    "execution_identity_attestation":  "not asserted; manager host turn evidence is separate",
+    "static_syntax_review":  {
+                                 "powershell":  "Parser API only; 0 errors; no bareword true/false/null tokens",
+                                 "python":  "base Python -B -S -X utf8 ast.parse only; passed",
+                                 "smoke_mock_audit_run":  false,
+                                 "process_probes_launched":  false,
+                                 "target_modules_imported":  false,
+                                 "checkpoint_or_models_loaded":  false,
+                                 "project_data_read":  false
+                             },
+    "message":  "Author write-stop after candidate freeze. No smoke, mock, audit or probe was run. Reviewer may request a correction before any run; if requested, source hashes and ACK must be regenerated."
+}

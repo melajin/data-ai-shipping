@@ -1,0 +1,35 @@
+﻿{
+    "files":  [
+                  {
+                      "expected":  "551176887ab273f3a92f30642143e4a3760f15bf41274c61d4aedf5ec024f751",
+                      "path":  "rounds/round_019/code/saved_m4_audit.py",
+                      "sha256":  "551176887ab273f3a92f30642143e4a3760f15bf41274c61d4aedf5ec024f751",
+                      "unchanged":  true
+                  },
+                  {
+                      "expected":  "36854d10d0a050753f2d77ebc0119cf94669ee8e2906b011023f7e30afc0cbc2",
+                      "path":  "rounds/round_019/code/run_saved_m4_audit.ps1",
+                      "sha256":  "36854d10d0a050753f2d77ebc0119cf94669ee8e2906b011023f7e30afc0cbc2",
+                      "unchanged":  true
+                  },
+                  {
+                      "expected":  "fc0402503454ad68431adcffd9399a9286b52b95e2a12872f141a3be6c69482c",
+                      "path":  "rounds/round_019/code/candidate_sources.json",
+                      "sha256":  "fc0402503454ad68431adcffd9399a9286b52b95e2a12872f141a3be6c69482c",
+                      "unchanged":  true
+                  },
+                  {
+                      "expected":  "33349b56992837f93e49f891b86327160f236bde4f57f41258ff2261ce0e7eb6",
+                      "path":  "rounds/round_019/code/author_freeze_ack.json",
+                      "sha256":  "33349b56992837f93e49f891b86327160f236bde4f57f41258ff2261ce0e7eb6",
+                      "unchanged":  true
+                  }
+              ],
+    "owned_child_pids":  [
+
+                         ],
+    "user_processes_terminated":  0,
+    "no_execution_claims":  true,
+    "all_unchanged":  true,
+    "utc":  "2026-11-04T23:17:41.5937334Z"
+}

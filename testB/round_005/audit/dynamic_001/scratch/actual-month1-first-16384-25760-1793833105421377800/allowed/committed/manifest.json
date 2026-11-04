@@ -1,0 +1,210 @@
+{
+  "stage": "testfit",
+  "dataset": "testfit",
+  "final_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch\\actual-month1-first-16384-25760-1793833105421377800\\allowed\\committed",
+  "commit_point": "same-volume atomic directory rename",
+  "files": [
+    {
+      "name": "part-000000.parquet",
+      "sha256": "0a0d92a94524578f11455ad6770f99b8c44705ae6d3f9f148ad834d0b5c5efc2",
+      "rows": 4096,
+      "admitted_rows": 4096,
+      "concat_offset_start": 0,
+      "concat_offset_end": 4096,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        0,
+        4095
+      ],
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "rfid_time",
+        "key_valid",
+        "wkt_valid",
+        "len_m",
+        "bbox_m",
+        "cen_lon",
+        "cen_lat",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "rfid_time": "int16",
+        "key_valid": "bool",
+        "wkt_valid": "bool",
+        "len_m": "float64",
+        "bbox_m": "float64",
+        "cen_lon": "float64",
+        "cen_lat": "float64",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000001.parquet",
+      "sha256": "b41269b255d8dc5aa654d7a46b311244340c998c5338e39862699a72f2f74f2e",
+      "rows": 4096,
+      "admitted_rows": 4096,
+      "concat_offset_start": 4096,
+      "concat_offset_end": 8192,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        4096,
+        8191
+      ],
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "rfid_time",
+        "key_valid",
+        "wkt_valid",
+        "len_m",
+        "bbox_m",
+        "cen_lon",
+        "cen_lat",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "rfid_time": "int16",
+        "key_valid": "bool",
+        "wkt_valid": "bool",
+        "len_m": "float64",
+        "bbox_m": "float64",
+        "cen_lon": "float64",
+        "cen_lat": "float64",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000002.parquet",
+      "sha256": "686f7c51674ae0c2bc9ee7047c720f4aa55c3d5b73c3f4607e61457320c6851d",
+      "rows": 4096,
+      "admitted_rows": 4096,
+      "concat_offset_start": 8192,
+      "concat_offset_end": 12288,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        8192,
+        12287
+      ],
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "rfid_time",
+        "key_valid",
+        "wkt_valid",
+        "len_m",
+        "bbox_m",
+        "cen_lon",
+        "cen_lat",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "rfid_time": "int16",
+        "key_valid": "bool",
+        "wkt_valid": "bool",
+        "len_m": "float64",
+        "bbox_m": "float64",
+        "cen_lon": "float64",
+        "cen_lat": "float64",
+        "month": "int8"
+      }
+    },
+    {
+      "name": "part-000003.parquet",
+      "sha256": "3fa6999d28373ca34313f5ff897a17a904b812423d08d1389961f114922b1d2c",
+      "rows": 4096,
+      "admitted_rows": 4096,
+      "concat_offset_start": 12288,
+      "concat_offset_end": 16384,
+      "index_type": "RangeIndex",
+      "index_dtype": "int64",
+      "index_name": null,
+      "index_first_last": [
+        12288,
+        16383
+      ],
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "rfid_time",
+        "key_valid",
+        "wkt_valid",
+        "len_m",
+        "bbox_m",
+        "cen_lon",
+        "cen_lat",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "rfid_time": "int16",
+        "key_valid": "bool",
+        "wkt_valid": "bool",
+        "len_m": "float64",
+        "bbox_m": "float64",
+        "cen_lon": "float64",
+        "cen_lat": "float64",
+        "month": "int8"
+      }
+    }
+  ],
+  "batches": 4,
+  "rows": 16384,
+  "pandas_contract": {
+    "stream": "one DataFrame per non-None input RecordBatch; no cross-batch materialization",
+    "reconstruction": "read parts in manifest order, concatenate without ignore_index, set index from __canonical_index__",
+    "index_metadata": "per part: original pandas index class/dtype/name and first/last label; explicit labels persisted",
+    "combined_index_reconstruction": "RangeIndex(0, rows) iff index_range_reconstructable is true; otherwise pandas Index of the explicit labels",
+    "empty": "zero-row RecordBatch parts preserve schema; if the input yields no batches, materialization requires an explicit zero-row canonical empty_template; absent template fails closed"
+  },
+  "columns": [
+    "row_index",
+    "rfid_id",
+    "part_dt",
+    "rfid_time",
+    "key_valid",
+    "wkt_valid",
+    "len_m",
+    "bbox_m",
+    "cen_lon",
+    "cen_lat",
+    "month"
+  ],
+  "dtypes": {
+    "row_index": "int64",
+    "rfid_id": "int64",
+    "part_dt": "int32",
+    "rfid_time": "int16",
+    "key_valid": "bool",
+    "wkt_valid": "bool",
+    "len_m": "float64",
+    "bbox_m": "float64",
+    "cen_lon": "float64",
+    "cen_lat": "float64",
+    "month": "int8"
+  },
+  "index_range_reconstructable": true,
+  "manifest_version": 1,
+  "publication_semantics": "public only when this complete directory is visible at final_path after atomic rename"
+}

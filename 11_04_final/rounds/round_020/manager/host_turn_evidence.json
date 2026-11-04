@@ -1,0 +1,64 @@
+{
+  "utc": "2026-11-04T23:20:49.384564+00:00",
+  "thread_id": "01a1a8db-03f8-7c83-9c8b-2a3a216ec65e",
+  "orca_session_id": "codex_f1a96a7f_dd68_42ac_a9fd_6781cc48a6e3",
+  "requested_manager": {
+    "model": "gpt-6-astra",
+    "effort": "high"
+  },
+  "requested_assistants": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none"
+  },
+  "host_turn_context": [
+    {
+      "path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T08-18-08-01a1a8db-03f8-7c83-9c8b-2a3a216ec65e.jsonl",
+      "session_id": "01a1a8db-03f8-7c83-9c8b-2a3a216ec65e",
+      "parent": "vscode",
+      "utc": "2026-11-04T23:18:09.563Z",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    },
+    {
+      "path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T08-19-27-01a1a8dc-3ad9-7b61-a6f4-d6f8d64ba5b2.jsonl",
+      "session_id": "01a1a8dc-3ad9-7b61-a6f4-d6f8d64ba5b2",
+      "parent": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a1a8db-03f8-7c83-9c8b-2a3a216ec65e",
+            "depth": 1,
+            "agent_path": "/root/author",
+            "agent_nickname": "Volta",
+            "agent_role": "luna_worker"
+          }
+        }
+      },
+      "utc": "2026-11-04T23:19:28.840Z",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    },
+    {
+      "path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T08-19-37-01a1a8dc-6153-7b23-8e66-ad55838abbd8.jsonl",
+      "session_id": "01a1a8dc-6153-7b23-8e66-ad55838abbd8",
+      "parent": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a1a8db-03f8-7c83-9c8b-2a3a216ec65e",
+            "depth": 1,
+            "agent_path": "/root/reviewer",
+            "agent_nickname": "Descartes",
+            "agent_role": "luna_worker"
+          }
+        }
+      },
+      "utc": "2026-11-04T23:19:38.764Z",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    }
+  ],
+  "internal_model_authentication": false
+}

@@ -1,0 +1,10 @@
+﻿{
+    "recorded_at":  "2026-11-05 07:57:01 +09:00",
+    "available_mib":  5982.3,
+    "total_mib":  14140.9,
+    "planned_process_peak_mib":  512,
+    "host_reserve_mib":  1024,
+    "minimum_start_mib":  1536,
+    "other_work":  "prior independent sample completed; E settled; host process attribution unknown",
+    "basis":  "expanded synthetic fixture matrix only; estimate not guarantee"
+}

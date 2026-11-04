@@ -1,5 +1,15 @@
 ﻿{
     "schema_version":  "1.0",
+    "latest_results": {
+        "path": "testB/first_results/results.json",
+        "actual_scores_computed": true,
+        "scored_rows": 46705,
+        "candidate_A_vessels": 100,
+        "submission_candidate": "testB/first_results/testB_submission_candidate.csv",
+        "official_submission_performed": false,
+        "accident_performance_evaluated": false,
+        "method": "Original loader, reference builders and scorer; custom round003-006 loaders unused. Historical round state fields below are retained."
+    },
     "updated_date_kst":  "2026-11-05",
     "active_round":  "round_005",
     "active_supervisor_session":  "codex_3420efaa_9881_48b8_b7f4_4985bdf027b2",

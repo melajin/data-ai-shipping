@@ -1,0 +1,23 @@
+﻿{
+    "recorded_at":  "2026-11-05 07:57:57 +09:00",
+    "purpose":  "final-script fixed-sample rerun plan",
+    "reason":  "The first fixed sample exit 0 preceded expansion of the independent fixture matrix; rerun makes final sample result correspond to the final audit script",
+    "unchanged_selection":  "Train month 1, first 16384 physical rows, projection of 10 pinned columns, four 4096-row batches",
+    "command":  "PYTHONDONTWRITEBYTECODE=1 python -B independent_dynamic_check.py --sample",
+    "ram":  {
+                "total_mib":  14140.9,
+                "basis":  "fixed sample and scratch commit/reconstruction; estimate not guarantee",
+                "other_work":  "fixture matrix exit 0; E settled; process RSS/commit sampled separately",
+                "observed_at":  "2026-11-05 07:57:29 +09:00",
+                "host_reserve_mib":  1024,
+                "minimum_start_mib":  1536,
+                "free_mib":  5713.1,
+                "planned_process_peak_mib":  512
+            },
+    "pinned_sample_sha256":  "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140",
+    "pinned_e_hashes":  {
+                            "verify_fixtures":  "61c7b9c3acddce4e904bf3b368ff8c3828a78f6344d5cfd2aee072c9219ed57f",
+                            "isolated_stage":  "76f3f7f8e3a39a27d8c24f1d3532b83181bf2e20470da38b7543b55a04795fea",
+                            "bounded_loader":  "0c60af2d4453c4ffb0a640410006e09247218a96633075cdd89567e4ae6f3cee"
+                        }
+}

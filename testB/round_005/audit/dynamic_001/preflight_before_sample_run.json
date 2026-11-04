@@ -1,0 +1,10 @@
+﻿{
+    "recorded_at":  "2026-11-05 07:54:49 +09:00",
+    "available_mib":  5567.8,
+    "total_mib":  14140.9,
+    "planned_process_peak_mib":  512,
+    "host_reserve_mib":  1024,
+    "minimum_start_mib":  1536,
+    "other_work":  "fixture passed; sample and E hashes preverified",
+    "basis":  "fixed 16384 projected rows x 10 columns, four independent batches and scratch commit/reconstruction; estimate not guarantee"
+}

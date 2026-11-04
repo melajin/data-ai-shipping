@@ -1,0 +1,41 @@
+{
+  "rows": 3887068,
+  "columns": [
+    "row_index",
+    "part_dt",
+    "rfid_id",
+    "rfid_time",
+    "fishing_code",
+    "key_valid",
+    "wkt_valid",
+    "n_coords",
+    "len_m",
+    "bbox_m",
+    "cen_lon",
+    "cen_lat",
+    "month"
+  ],
+  "dataframe_deep_mib": 508.59,
+  "dtypes": {
+    "row_index": "int64",
+    "part_dt": "int32",
+    "rfid_id": "int64",
+    "rfid_time": "int16",
+    "fishing_code": "object",
+    "key_valid": "bool",
+    "wkt_valid": "bool",
+    "n_coords": "float64",
+    "len_m": "float64",
+    "bbox_m": "float64",
+    "cen_lon": "float64",
+    "cen_lat": "float64",
+    "month": "int8"
+  },
+  "process_memory_mib": {
+    "rss": 750.37,
+    "peak_wset": 1314.24,
+    "pagefile": 1823.25,
+    "peak_pagefile": 2388.38
+  },
+  "original_loader": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\tools\\run_remeasure_20261031.py"
+}

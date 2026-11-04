@@ -1,0 +1,48 @@
+﻿{
+    "recorded_at":  "2026-11-05 07:54:16 +09:00",
+    "authorized_followup":  "Round005 V fixed-snapshot independent dynamic verification",
+    "prerequisites":  {
+                          "small_fixture_exit":  0,
+                          "small_fixture_cases":  13,
+                          "sample_gate":  "small fixture AST/oracle/hand-expected agreement observed",
+                          "E_latest_task":  "task_6ff53dda043c",
+                          "E_worker_done":  "msg_70525506a270",
+                          "atomic_cases":  15,
+                          "E_latest_dispatch":  "ctx_8f62e408a6cd"
+                      },
+    "source_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_train_1.parquet",
+    "expected_source_sha256":  "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140",
+    "selection":  "Train month 1, first 16384 physical rows, projection only, direct ParquetFile.iter_batches",
+    "expected_batches":  [
+                             4096,
+                             4096,
+                             4096,
+                             4096
+                         ],
+    "columns":  [
+                    "row_index",
+                    "rfid_id",
+                    "part_dt",
+                    "rfid_time",
+                    "key_valid",
+                    "wkt_valid",
+                    "len_m",
+                    "bbox_m",
+                    "cen_lon",
+                    "cen_lat"
+                ],
+    "command":  "PYTHONDONTWRITEBYTECODE=1 python -B independent_dynamic_check.py --sample",
+    "output_root":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_005\\audit\\dynamic_001\\scratch",
+    "planned_process_peak_mib":  512,
+    "host_reserve_mib":  1024,
+    "minimum_start_mib":  1536,
+    "ram_observation":  {
+                            "time":  "2026-11-05 07:53:59 +09:00",
+                            "total_mib":  14140.9,
+                            "basis":  "fixed 16384 x 10 rows/columns; planning estimate not guarantee",
+                            "available_mib":  5523.8,
+                            "other_work":  "fixture exit0; E settled; process RSS/commit recorded separately"
+                        },
+    "sample_reason":  "Round005 E adapter/caller was changed; verify the new four-batch caller path end-to-end.",
+    "limits":  "sample only; not full-domain verification or production approval"
+}

@@ -1,0 +1,10 @@
+﻿{
+    "recorded_at":  "2026-11-05 07:58:24 +09:00",
+    "available_mib":  5770.5,
+    "total_mib":  14140.9,
+    "planned_process_peak_mib":  512,
+    "host_reserve_mib":  1024,
+    "minimum_start_mib":  1536,
+    "other_work":  "fixture 16/16 exit0; fixed sample and E hashes reverified",
+    "basis":  "final audit script fixed 16,384-row x 10-column sample; four 4,096 batches; estimate not guarantee"
+}

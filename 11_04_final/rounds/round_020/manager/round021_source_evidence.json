@@ -1,0 +1,35 @@
+﻿{
+    "pyarrow_in_round002_env":  false,
+    "reads":  "source text plus streamed SHA only; no parquet rows",
+    "files":  [
+                  {
+                      "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s6_fingerprint_grid.parquet",
+                      "sha256":  "B732E2D87F795885426ABBC805381E29BCAD466E8BE7ABF37FC4C361BD853131",
+                      "bytes":  8353532
+                  },
+                  {
+                      "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\code\\s6_fingerprint_build.py",
+                      "sha256":  "62A0DF2A62A68CEC43925C50E93CB3F01C79D5823EBEA4B74C5B9D11498FA0DB",
+                      "bytes":  5116
+                  },
+                  {
+                      "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\code\\parse_s2_s3.py",
+                      "sha256":  "2FDC528D243D0C9BDA99EA2D25590D1597AAF3E598F69D78DB1EFD507FEB0DFC",
+                      "bytes":  9865
+                  },
+                  {
+                      "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\code\\historical\\TinyTabM\\TinyTabM_구현_20261029\\fishing_tiny_tabm.py",
+                      "sha256":  "D9054E929AD67EA11D32B8C4DAB59EE63B2896320EFDCB65557D888A46A6C381",
+                      "bytes":  103671
+                  },
+                  {
+                      "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\SOURCE_SHA256.json",
+                      "sha256":  "C7AE17C798541CBA1E77A637BC06A59F0D16A3FA3D527586A1109AE029D50532",
+                      "bytes":  12290
+                  }
+              ],
+    "s6_period_evidence":  "parse_s2_s3.py:200 train2026/test2025 months1..6; s6 groups id/year and normalizes each day equally",
+    "year_caveat":  "probabilities lack year column; Train2026 provenance constant, not rowwise measured year",
+    "round021_needs":  "resolve existing pyarrow environment or isolated dependency before filtered parquet scan; never full-load mixed years/holdout",
+    "utc":  "2026-11-04T23:23:01.1751933Z"
+}

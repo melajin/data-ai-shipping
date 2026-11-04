@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-04T23:20:49.384564+00:00",
+  "session": "codex_f1a96a7f_dd68_42ac_a9fd_6781cc48a6e3",
+  "incoming_session_matches": true,
+  "incoming_sha256": "53557b061e165c6b8a23a18232c4b31bd47ef000e17760c197c6f4d20f2deeaa",
+  "duplicate_round_directory_before_claim": false,
+  "matching_computation_processes_at_start": [],
+  "initial_available_ram_kib": 4645264,
+  "expected_peak_gib": 1,
+  "estimate_basis": "~10000 rows x12 float probabilities plus small sklearn model and library reserve; not measured peak",
+  "read_only_paths": [
+    "F:/문제 데이터_수정_1027",
+    "D:/repos/fishing-track-classification"
+  ]
+}

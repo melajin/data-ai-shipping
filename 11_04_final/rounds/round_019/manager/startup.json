@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-04T22:55:07.857364+00:00",
+  "thread": "01a1a8c3-3fc2-7471-a25a-deb9a6647634",
+  "session": "codex_0365aba2_7db2_4c76_b472_be3feeb55d44",
+  "incoming_session_matches": true,
+  "handoff_sha256": "d5955b87efaa069ca8c6ae8bb4a148486cea408de306eead436f84a710c14d92",
+  "existing_round019_before_claim": false,
+  "no_python_at_start": true,
+  "expected_peak_mib": 200,
+  "estimate_basis": "small stdlib JSON; streamed historical hashes; PS plus Python, not measured peak"
+}

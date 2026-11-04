@@ -1,0 +1,54 @@
+{
+  "utc": "2026-11-04T23:17:41.728066+00:00",
+  "status": "completed_static_control_repair_unapproved_performance_redirect",
+  "source_review_approved": false,
+  "candidate_frozen": true,
+  "modes": {
+    "smoke": {
+      "attempted": false,
+      "passed": false,
+      "outer_exit_code": null,
+      "outer_wall_seconds": null,
+      "wrapper_state": null,
+      "python_completed": null,
+      "wrapper_error": null,
+      "python_error": null
+    },
+    "mock": {
+      "attempted": false,
+      "passed": false,
+      "outer_exit_code": null,
+      "outer_wall_seconds": null,
+      "wrapper_state": null,
+      "python_completed": null,
+      "wrapper_error": null,
+      "python_error": null
+    },
+    "audit": {
+      "attempted": false,
+      "passed": false,
+      "outer_exit_code": null,
+      "outer_wall_seconds": null,
+      "wrapper_state": null,
+      "python_completed": null,
+      "wrapper_error": null,
+      "python_error": null
+    }
+  },
+  "all_model_zero_gates_pass": false,
+  "probe_count": 0,
+  "probe_pass_count": 0,
+  "probe_classifications": [],
+  "model_runs": 0,
+  "checkpoint_access": 0,
+  "pt_deserialization": 0,
+  "project_data_access": 0,
+  "new_f1": null,
+  "numeric_saved_checks_pass": null,
+  "saved_provenance_audit_pass": null,
+  "current_round015_source_matches": null,
+  "historical_round015_wrapper_gate": false,
+  "historical_round010_gate": false,
+  "prior_selected_files_unchanged": true,
+  "prior_selected_files_count": 125
+}

@@ -1,0 +1,90 @@
+{
+  "schema": "round005_v_dynamic_attempt_ledger_v1",
+  "all_attempts_preserved": true,
+  "attempts": [
+    {
+      "id": "fixture_attempt01",
+      "command": "python -B independent_dynamic_check.py --fixtures",
+      "actual_exit": 1,
+      "classification": "audit harness failure, not E failure",
+      "cause": "GetProcessMemoryInfo ctypes argument declaration was incomplete",
+      "stdout": "fixture_run_stdout.log",
+      "stderr": "fixture_run_stderr.log"
+    },
+    {
+      "id": "fixture_attempt02",
+      "command": "python -B independent_dynamic_check.py --fixtures",
+      "actual_exit": 1,
+      "classification": "independent oracle harness failure, not E failure",
+      "cause": "oracle used .loc boolean selection, producing Index where canonical bracket selection retained RangeIndex",
+      "stdout": "fixture_run02_stdout.log",
+      "stderr": "fixture_run02_stderr.log"
+    },
+    {
+      "id": "fixture_attempt03",
+      "command": "python -B independent_dynamic_check.py --fixtures",
+      "actual_exit": 1,
+      "classification": "audit harness failure, not E failure",
+      "cause": "fake canonical pq reader did not accept the keyword argument columns",
+      "stdout": "fixture_run03_stdout.log",
+      "stderr": "fixture_run03_stderr.log"
+    },
+    {
+      "id": "fixture_attempt04",
+      "command": "python -B independent_dynamic_check.py --fixtures",
+      "actual_exit": 1,
+      "classification": "hand-expected fixture correction, not E failure",
+      "cause": "expected null/drop labels omitted valid row index 5; observed canonical mask was [0,5,6]",
+      "stdout": "fixture_run04_stdout.log",
+      "stderr": "fixture_run04_stderr.log"
+    },
+    {
+      "id": "fixture_attempt05",
+      "command": "python -B independent_dynamic_check.py --fixtures",
+      "actual_exit": 1,
+      "classification": "audit harness failure, not E failure",
+      "cause": "empty-month caller test used an unqualified run_testfit name",
+      "stdout": "fixture_run05_stdout.log",
+      "stderr": "fixture_run05_stderr.log"
+    },
+    {
+      "id": "fixture_attempt06",
+      "command": "python -B independent_dynamic_check.py --fixtures",
+      "actual_exit": 0,
+      "classification": "pre-expansion independent fixture suite",
+      "result": "13 frame cases + 15 atomic cases, all assertions passed",
+      "stdout": "fixture_run06_stdout.log",
+      "stderr": "fixture_run06_stderr.log"
+    },
+    {
+      "id": "fixture_attempt07",
+      "command": "python -B independent_dynamic_check.py --fixtures",
+      "actual_exit": 0,
+      "classification": "final expanded independent fixture suite",
+      "result": "16 frame cases + 16 atomic cases, all assertions passed",
+      "stdout": "fixture_run07_stdout.log",
+      "stderr": "fixture_run07_stderr.log",
+      "exit_file": "fixture_run07_exit_code.txt"
+    },
+    {
+      "id": "sample_attempt01",
+      "command": "python -B independent_dynamic_check.py --sample",
+      "actual_exit": 0,
+      "classification": "same fixed sample, prior audit script before fixture expansion",
+      "result": "16,384 rows strictly matched AST/oracle/caller; superseded by sample_attempt02 as final-script evidence",
+      "stdout": "sample_run_stdout.log",
+      "stderr": "sample_run_stderr.log",
+      "exit_file": "sample_run_exit_code.txt"
+    },
+    {
+      "id": "sample_attempt02",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python -B independent_dynamic_check.py --sample",
+      "actual_exit": 0,
+      "classification": "final fixed-sample run for final audit script",
+      "result": "16,384 rows strictly matched AST/oracle/caller across four 4,096-row parts; pinned sample and E hashes matched before/after",
+      "stdout": "sample_run02_stdout.log",
+      "stderr": "sample_run02_stderr.log",
+      "exit_file": "sample_run02_exit_code.txt"
+    }
+  ]
+}
