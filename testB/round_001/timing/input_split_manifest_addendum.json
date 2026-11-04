@@ -1,0 +1,58 @@
+{
+  "addendum_version": "1.0",
+  "parent_manifest": {
+    "path": "testB/round_001/timing/input_split_manifest.json",
+    "sha256_at_addendum_creation": "593a684dbc4db16c486b0fbd71d1792f8df18848625843b058168e11fd0cc85a"
+  },
+  "source_inventory": [
+    {
+      "role": "2025 evaluation target, unlabeled",
+      "raw_location": "F:/문제 데이터_수정_1027/테스트셋 및 결과제출 샘플/테스트셋",
+      "cached_location": "29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_test_1.parquet ... rows_test_6.parquet",
+      "score_location": "D:/repos/fishing-track-classification/results/work_008/scored_rows.pkl",
+      "period": "2025-01-01 through 2025-06-30",
+      "role_limit": "A baseline only; not a source of accident/normal labels or threshold quantiles"
+    },
+    {
+      "role": "2026 labeled fishing-track source; possible development reference only, permission unresolved",
+      "raw_location": "F:/문제 데이터_수정_1027/vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터",
+      "cached_location": "29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_train_1.parquet ... rows_train_6.parquet",
+      "period": "2026-01-01 through 2026-06-30",
+      "recorded_counts": {"raw_rows": 3887069, "valid_rows": 3887065},
+      "role_limit": "Existing score reference maps/normalizers used the training population; eval vessels must be excluded from any future refit"
+    },
+    {
+      "role": "2026 accident events; identity and development-use status unresolved",
+      "raw_location": "F:/문제 데이터_수정_1027/26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "recorded_event_count": 167,
+      "known_columns_from_readonly_linkage_manifest": ["발생일시", "위도(변환)", "경도(변환)", "사고선박수", "선 종", "톤수"],
+      "identity_limit": "No RFID or vessel-name field; candidate links are not confirmed identity labels"
+    },
+    {
+      "role": "Existing Test B A output/template context",
+      "location": "D:/repos/fishing-track-classification/results/submission_20261101/testB_submission.csv",
+      "purpose": "Read-only inherited A fields for comparison preparation; no A recalculation"
+    }
+  ],
+  "reference_sources": [
+    {
+      "path": "D:/repos/fishing-track-classification/results/work_008/scores_meta.json",
+      "sha256": "9537192fa3340e4f014b64c588fbe5794bbcb5456a8cad7dab5a30e3caabff03",
+      "describes": "normalizer reference counts/medians and density map size; no anomaly threshold"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py",
+      "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+      "describes": "score construction, input columns, training reference builders, and 2025-only target scoring"
+    },
+    {
+      "path": "26_11_5/accident_linkage_audit_20261105/run_001/manifest.json",
+      "describes": "read-only provenance for 2026 accident workbook and six rows_train parquet inputs; source file lists hashes"
+    }
+  ],
+  "audit_limits": [
+    "No 1103_v2 ZIP was opened, extracted, or compared by this worker.",
+    "No raw 2026 event or track files were loaded for timing estimation.",
+    "Actual split memberships remain pending and must operate on event-vessel connected components."
+  ]
+}

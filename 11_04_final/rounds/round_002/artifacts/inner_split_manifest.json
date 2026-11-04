@@ -1,0 +1,77 @@
+{
+  "random_state": 20261105,
+  "method": "sklearn train_test_split; test_size=0.5; stratify=INNER labels",
+  "class_order": [
+    "연안복합",
+    "자망",
+    "통발",
+    "채낚기연승낚시"
+  ],
+  "folds": {
+    "0": {
+      "inner": 787,
+      "inner_es": 393,
+      "inner_select": 394,
+      "inner_es_counts": {
+        "연안복합": 195,
+        "자망": 134,
+        "통발": 55,
+        "채낚기연승낚시": 9
+      },
+      "inner_select_counts": {
+        "연안복합": 195,
+        "자망": 135,
+        "통발": 56,
+        "채낚기연승낚시": 8
+      },
+      "inner_es_ids_sha256": "59781a28d327dfc1426125e4d24e6f12a30b3ffe8aabe5192de6e0ee6ae51b1d",
+      "inner_select_ids_sha256": "4a47dfb71f13be5e6858570ab75cc55793cc33e49558efe68f55b192732ecfcb",
+      "inner_es_label_sha256": "58465bacfb86a671bb296b54bfbab54c365813efd4921ccf5fc882a6b3317585",
+      "inner_select_label_sha256": "e8c09b83564c133108e982ffd1157c1ce13f50b470cd1e7edb63120528612d69"
+    },
+    "1": {
+      "inner": 787,
+      "inner_es": 393,
+      "inner_select": 394,
+      "inner_es_counts": {
+        "연안복합": 195,
+        "자망": 134,
+        "통발": 55,
+        "채낚기연승낚시": 9
+      },
+      "inner_select_counts": {
+        "연안복합": 195,
+        "자망": 135,
+        "통발": 56,
+        "채낚기연승낚시": 8
+      },
+      "inner_es_ids_sha256": "0af5ae90be8335e8a1d53ef60994c47cea9b2e57ec8977284a030359abc51ef4",
+      "inner_select_ids_sha256": "2e22894d0bd1f64ca06a804b9152a16742d756d1a2a9191e1891cca3691ccb8f",
+      "inner_es_label_sha256": "a88ea818b4f001eb9acf9862b12ba5ff4df9f0ed51b9b6390cc4e2b220769109",
+      "inner_select_label_sha256": "7556e79f6f705710b44d9955ae3851980e12c2f279dcb0b99a94dfad0eb80225"
+    },
+    "2": {
+      "inner": 787,
+      "inner_es": 393,
+      "inner_select": 394,
+      "inner_es_counts": {
+        "연안복합": 195,
+        "자망": 134,
+        "통발": 55,
+        "채낚기연승낚시": 9
+      },
+      "inner_select_counts": {
+        "연안복합": 195,
+        "자망": 135,
+        "통발": 56,
+        "채낚기연승낚시": 8
+      },
+      "inner_es_ids_sha256": "fa7863657c0e3f39cfc4132ad53c83275b17beeb4c5379f9c2a4c9da294dbf26",
+      "inner_select_ids_sha256": "c4688a1c7e01969aa0a335ec7fa6cb14dfe12af85f16f03ea67f75e486adbe24",
+      "inner_es_label_sha256": "ffc5f76bc33c037faa6b5afd0d6e6bbe2fe648f8eed4feb8b6474a5956897264",
+      "inner_select_label_sha256": "b5441495ff57a2bc13cfb759c01483acdc4493bc99d840f5ec3fa3492d468a23"
+    }
+  },
+  "roster_rows": 2361,
+  "roster_sha256": "a73d9b65ae402befb7d5ba134bfc382f7edc71ab22a5c081d443c66f3b8525ec"
+}

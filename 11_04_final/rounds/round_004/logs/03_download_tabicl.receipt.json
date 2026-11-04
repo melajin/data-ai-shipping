@@ -1,0 +1,33 @@
+{
+  "name": "03_download_tabicl",
+  "command": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+    "-m",
+    "pip",
+    "download",
+    "--no-cache-dir",
+    "--only-binary=:all:",
+    "--dest",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\environment\\wheels",
+    "--find-links",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\environment\\wheels",
+    "-c",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\configs\\pins.txt",
+    "tabicl==2.2.0",
+    "numpy==2.3.5",
+    "scikit-learn==1.7.2",
+    "--index-url",
+    "https://pypi.org/simple"
+  ],
+  "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+  "started_utc": "2026-11-04T16:51:14.081766+00:00",
+  "timeout_seconds": 884.1879999999983,
+  "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+  "pid": 30168,
+  "exit_code": 0,
+  "timed_out": false,
+  "final_observed_download_disk_bytes": 283019957,
+  "peak_observed_download_disk_bytes": 283868825,
+  "elapsed_seconds": 7.360000000000582,
+  "finished_utc": "2026-11-04T16:51:21.448866+00:00"
+}

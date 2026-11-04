@@ -1,0 +1,333 @@
+{
+  "created_at_utc": "2026-11-04T16:34:28.917376+00:00",
+  "round": "round_003",
+  "scope": "saved development OOF and INNER probabilities, decision files, role roster, selected package metadata and copied source code only",
+  "input_root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료",
+  "local": {
+    "runner": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\code\\run_round003.py",
+      "sha256": "9f333f7f4be7ed81ef8296f36b4474f8a6730f99f306c8e4f586c9d031bea6a2",
+      "bytes": 68388
+    },
+    "launcher": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\code\\launch_round003.ps1",
+      "sha256": "0346fb307a015289c4686cc186aedcaf9854f6f5702a0808d66217cde35b0760",
+      "bytes": 7507
+    },
+    "configuration": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\configs\\experiment.json",
+      "sha256": "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6",
+      "bytes": 2006
+    },
+    "plan": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\ROUND_PLAN.md",
+      "sha256": "54cef183b6845d6cecfca64314fc0d801c8d1b8c7c826da76f9a42b665ea2ce0",
+      "bytes": 5167
+    }
+  },
+  "package_manifest_sha256": "9acfd2f121168745bd5d7658ae33f83c18a321cef44bb5689fb49dda9b5ec1c6",
+  "source_manifest_sha256": "c7ae17c798541cba1e77a637bc06a59f0d16a3fa3d527586a1109ae029d50532",
+  "whitelisted_files": {
+    "README_먼저읽기.md": {
+      "sha256": "6a78f2d50e651544ed388acf563f4a8d469ca5d3d37bee43cbbf93d5169995f8",
+      "bytes": 5171,
+      "manifest_sha256": "6a78f2d50e651544ed388acf563f4a8d469ca5d3d37bee43cbbf93d5169995f8",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "MANIFEST_SHA256.json": {
+      "sha256": "9acfd2f121168745bd5d7658ae33f83c18a321cef44bb5689fb49dda9b5ec1c6",
+      "bytes": 10773,
+      "manifest_sha256": null,
+      "manifest_match": null,
+      "manifest_note": "manifest file is not self-listed"
+    },
+    "SOURCE_SHA256.json": {
+      "sha256": "c7ae17c798541cba1e77a637bc06a59f0d16a3fa3d527586a1109ae029d50532",
+      "bytes": 12290,
+      "manifest_sha256": "c7ae17c798541cba1e77a637bc06a59f0d16a3fa3d527586a1109ae029d50532",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/trap_factors.csv": {
+      "sha256": "36ed46958f2e27b83aa5ab63d7a925149f1cb59a05f1cff5629df7e02445bb04",
+      "bytes": 180,
+      "manifest_sha256": "36ed46958f2e27b83aa5ab63d7a925149f1cb59a05f1cff5629df7e02445bb04",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/final_fixed_decision_rule.json": {
+      "sha256": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+      "bytes": 4375,
+      "manifest_sha256": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "metadata/classes.json": {
+      "sha256": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+      "bytes": 96,
+      "manifest_sha256": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "metadata/run_settings.json": {
+      "sha256": "e951067a229cf41056bd1d5d73bc46fa688430b84bae255ed79950e3ea6cb85f",
+      "bytes": 1077,
+      "manifest_sha256": "e951067a229cf41056bd1d5d73bc46fa688430b84bae255ed79950e3ea6cb85f",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "metadata/package_validation.json": {
+      "sha256": "05f0cd8c71aefbe87ea7f2ac90bf5c92ca8fe8c2041b0c8cd71971a23308e1af",
+      "bytes": 892,
+      "manifest_sha256": "05f0cd8c71aefbe87ea7f2ac90bf5c92ca8fe8c2041b0c8cd71971a23308e1af",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "metadata/software_environment.json": {
+      "sha256": "e58e5fef99eb9cc9875ccc8277aaad8817daa30832bc1246f407e14862d7c24a",
+      "bytes": 472,
+      "manifest_sha256": "e58e5fef99eb9cc9875ccc8277aaad8817daa30832bc1246f407e14862d7c24a",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "splits/development_roles_long.csv": {
+      "sha256": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+      "bytes": 299600,
+      "manifest_sha256": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "code/historical/TabM/TabM_개선_20261030/comparison_models.py": {
+      "sha256": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+      "bytes": 24032,
+      "manifest_sha256": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "code/historical/TabM/TabM_개선_20261030/run_experiments.py": {
+      "sha256": "fa2297714250f39492abde98f762e5859e64f18766d9bde68f8df2360bd67262",
+      "bytes": 30967,
+      "manifest_sha256": "fa2297714250f39492abde98f762e5859e64f18766d9bde68f8df2360bd67262",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "code/historical/TabM/TabM_개선_20261030/refinement_features.py": {
+      "sha256": "4e714ba834cd6dfc07abad784edd3fe82999121471d1ea1d15f4fa2e9476d561",
+      "bytes": 18918,
+      "manifest_sha256": "4e714ba834cd6dfc07abad784edd3fe82999121471d1ea1d15f4fa2e9476d561",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "code/historical/TabM/TabM_개선_20261030/finalize_comparisons.py": {
+      "sha256": "fa16f95ed55c215c2c0cfac9e062172b74a41ec2755785607dbaf00ff86bc9a7",
+      "bytes": 19284,
+      "manifest_sha256": "fa16f95ed55c215c2c0cfac9e062172b74a41ec2755785607dbaf00ff86bc9a7",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "code/historical/TabM/TabM_개선_20261030/apply_frozen_decision.py": {
+      "sha256": "29f0b0c6cb8adbbb41768dd063cc75faac97cd65dddec309dc460ff2f52c21fa",
+      "bytes": 13593,
+      "manifest_sha256": "29f0b0c6cb8adbbb41768dd063cc75faac97cd65dddec309dc460ff2f52c21fa",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "code/historical/TabM/TabM_개선_20261030/검증/audit_experiments.py": {
+      "sha256": "89c3a36c9533dbcb7c8ddabfb655ed7ceb9720f803df23dcf537323c903a9de9",
+      "bytes": 9830,
+      "manifest_sha256": "89c3a36c9533dbcb7c8ddabfb655ed7ceb9720f803df23dcf537323c903a9de9",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "code/historical/TinyTabM/TinyTabM_구현_20261029/fishing_tiny_tabm.py": {
+      "sha256": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381",
+      "bytes": 103671,
+      "manifest_sha256": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_42/original_oof_predictions.csv": {
+      "sha256": "ff1b7788547efc40f0810af511a6f1e6939aa54ff6c1959c7a7e9af6ee598d89",
+      "bytes": 574152,
+      "manifest_sha256": "ff1b7788547efc40f0810af511a6f1e6939aa54ff6c1959c7a7e9af6ee598d89",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_42/oof_decisions.csv": {
+      "sha256": "20694996c615b585714a34e05841869f24ed0b4ccc00b47517f3c7f02cfddff2",
+      "bytes": 1410202,
+      "manifest_sha256": "20694996c615b585714a34e05841869f24ed0b4ccc00b47517f3c7f02cfddff2",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_42/fold_0/inner_predictions.csv": {
+      "sha256": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+      "bytes": 74992,
+      "manifest_sha256": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_42/fold_0/training.json": {
+      "sha256": "adf22319dcda21029baa279dbbeb60669c55f3b1c222a5cc5864cb1e9912eba4",
+      "bytes": 1321,
+      "manifest_sha256": "adf22319dcda21029baa279dbbeb60669c55f3b1c222a5cc5864cb1e9912eba4",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_42/fold_1/inner_predictions.csv": {
+      "sha256": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+      "bytes": 75200,
+      "manifest_sha256": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_42/fold_1/training.json": {
+      "sha256": "00e5dec930467abbf37e779d99aebb0601bbb92c5306c3070326960db6ee203f",
+      "bytes": 1322,
+      "manifest_sha256": "00e5dec930467abbf37e779d99aebb0601bbb92c5306c3070326960db6ee203f",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_42/fold_2/inner_predictions.csv": {
+      "sha256": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+      "bytes": 75157,
+      "manifest_sha256": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_42/fold_2/training.json": {
+      "sha256": "b34474e1b183401aeebd94b6bf54791b8098efcbefb685a87bb42eedd1be65a7",
+      "bytes": 1321,
+      "manifest_sha256": "b34474e1b183401aeebd94b6bf54791b8098efcbefb685a87bb42eedd1be65a7",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_2026/original_oof_predictions.csv": {
+      "sha256": "de94f93e06517564decb4961067307bc83c90c22b89467a3c8e13ddb4388f3b8",
+      "bytes": 573840,
+      "manifest_sha256": "de94f93e06517564decb4961067307bc83c90c22b89467a3c8e13ddb4388f3b8",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_2026/oof_decisions.csv": {
+      "sha256": "2a6ce37c3715186fe999bf7b19e01993ee03017bd9192b088519ad6839a232c1",
+      "bytes": 1409675,
+      "manifest_sha256": "2a6ce37c3715186fe999bf7b19e01993ee03017bd9192b088519ad6839a232c1",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_2026/fold_0/inner_predictions.csv": {
+      "sha256": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+      "bytes": 74989,
+      "manifest_sha256": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_2026/fold_0/training.json": {
+      "sha256": "629421a1db6985c1fbb66af88b5cfd4bbd76b3f20490054f29f5041bae68b7c0",
+      "bytes": 1321,
+      "manifest_sha256": "629421a1db6985c1fbb66af88b5cfd4bbd76b3f20490054f29f5041bae68b7c0",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_2026/fold_1/inner_predictions.csv": {
+      "sha256": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+      "bytes": 75166,
+      "manifest_sha256": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_2026/fold_1/training.json": {
+      "sha256": "aa682f49e27328a0c5a98eebe51ede2bd4f622c5a2e7e8ffa5efdcb3ee1131f3",
+      "bytes": 1322,
+      "manifest_sha256": "aa682f49e27328a0c5a98eebe51ede2bd4f622c5a2e7e8ffa5efdcb3ee1131f3",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_2026/fold_2/inner_predictions.csv": {
+      "sha256": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+      "bytes": 75080,
+      "manifest_sha256": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+      "manifest_match": true,
+      "manifest_note": null
+    },
+    "evaluation/seed_2026/fold_2/training.json": {
+      "sha256": "d08a1668edb1632c3f7ad8534d13e6df5ad480a0f40b2bcfe6c035aae3eae4d1",
+      "bytes": 1322,
+      "manifest_sha256": "d08a1668edb1632c3f7ad8534d13e6df5ad480a0f40b2bcfe6c035aae3eae4d1",
+      "manifest_match": true,
+      "manifest_note": null
+    }
+  },
+  "upstream_source_code": {
+    "code/historical/TabM/TabM_개선_20261030/comparison_models.py": {
+      "source_manifest_key": "TabM 총정리\\TabM\\TabM_개선_20261030\\comparison_models.py",
+      "sha256": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+      "source_manifest_sha256": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+      "source_manifest_match": true
+    },
+    "code/historical/TabM/TabM_개선_20261030/run_experiments.py": {
+      "source_manifest_key": "TabM 총정리\\TabM\\TabM_개선_20261030\\run_experiments.py",
+      "sha256": "fa2297714250f39492abde98f762e5859e64f18766d9bde68f8df2360bd67262",
+      "source_manifest_sha256": "fa2297714250f39492abde98f762e5859e64f18766d9bde68f8df2360bd67262",
+      "source_manifest_match": true
+    },
+    "code/historical/TabM/TabM_개선_20261030/refinement_features.py": {
+      "source_manifest_key": "TabM 총정리\\TabM\\TabM_개선_20261030\\refinement_features.py",
+      "sha256": "4e714ba834cd6dfc07abad784edd3fe82999121471d1ea1d15f4fa2e9476d561",
+      "source_manifest_sha256": "4e714ba834cd6dfc07abad784edd3fe82999121471d1ea1d15f4fa2e9476d561",
+      "source_manifest_match": true
+    },
+    "code/historical/TabM/TabM_개선_20261030/finalize_comparisons.py": {
+      "source_manifest_key": "TabM 총정리\\TabM\\TabM_개선_20261030\\finalize_comparisons.py",
+      "sha256": "fa16f95ed55c215c2c0cfac9e062172b74a41ec2755785607dbaf00ff86bc9a7",
+      "source_manifest_sha256": "fa16f95ed55c215c2c0cfac9e062172b74a41ec2755785607dbaf00ff86bc9a7",
+      "source_manifest_match": true
+    },
+    "code/historical/TabM/TabM_개선_20261030/apply_frozen_decision.py": {
+      "source_manifest_key": "TabM 총정리\\TabM\\TabM_개선_20261030\\apply_frozen_decision.py",
+      "sha256": "29f0b0c6cb8adbbb41768dd063cc75faac97cd65dddec309dc460ff2f52c21fa",
+      "source_manifest_sha256": "29f0b0c6cb8adbbb41768dd063cc75faac97cd65dddec309dc460ff2f52c21fa",
+      "source_manifest_match": true
+    },
+    "code/historical/TabM/TabM_개선_20261030/검증/audit_experiments.py": {
+      "source_manifest_key": "TabM 총정리\\TabM\\TabM_개선_20261030\\검증\\audit_experiments.py",
+      "sha256": "89c3a36c9533dbcb7c8ddabfb655ed7ceb9720f803df23dcf537323c903a9de9",
+      "source_manifest_sha256": "89c3a36c9533dbcb7c8ddabfb655ed7ceb9720f803df23dcf537323c903a9de9",
+      "source_manifest_match": true
+    },
+    "code/historical/TinyTabM/TinyTabM_구현_20261029/fishing_tiny_tabm.py": {
+      "source_manifest_key": "TabM 총정리\\TinyTabM\\TinyTabM_구현_20261029\\fishing_tiny_tabm.py",
+      "sha256": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381",
+      "source_manifest_sha256": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381",
+      "source_manifest_match": true
+    }
+  },
+  "excluded_from_opening_or_hashing": [
+    "data/F156_train.csv",
+    "data/F156_test.csv",
+    "data/train_labels.csv",
+    "data/cv/*/F156_train.csv",
+    "data/cv/*/F156_test.csv",
+    "evaluation/holdout/*",
+    "splits/holdout_ids.csv",
+    "Test2025",
+    "raw source tables"
+  ],
+  "feature_shape_ambiguity": {
+    "status": "unresolved for M4",
+    "readme_and_run_settings": "describe F156 and state no missing-flag columns",
+    "copied_generation_code": "FitMedianImputer.transform appends one missing-indicator column per input column, which would double the width if applied to all 156 columns",
+    "scope_limit": "R0 does not load feature rows or model tensors and cannot establish which exact transformed width was used by every saved query"
+  },
+  "config_sha256": "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6",
+  "plan_sha256": "54cef183b6845d6cecfca64314fc0d801c8d1b8c7c826da76f9a42b665ea2ce0",
+  "config_frozen_before_scoring": true,
+  "id_hash_serialization": {
+    "historical_serializer": "json.dumps(sort_keys=True, ensure_ascii=False) from the copied helper",
+    "csv_row_order_digest_is_only_diagnostic": true,
+    "fixed_rule_id_hash_validation": "unverified because the original producer's ID list order is unavailable; do not treat a CSV-order digest difference as an ID mismatch",
+    "primary_checks": "exact INNER file SHA256 against final_fixed_decision_rule plus ID uniqueness, role, y_true and observed_days alignment"
+  }
+}

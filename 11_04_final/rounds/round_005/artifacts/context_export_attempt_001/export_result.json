@@ -1,0 +1,330 @@
+{
+  "schema": "round005_context_export_result.v1",
+  "status": "CONTEXT_READY",
+  "scope": {
+    "fold": 0,
+    "seed": 42,
+    "development_only": true,
+    "fit_rows": 3144,
+    "inner_rows": 787,
+    "outer_ids_used_for_partition_checks_only": 1966,
+    "holdout_feature_label_probability_rows_loaded": 0,
+    "holdout_id_metadata_seen_for_disjointness_only": true,
+    "model_or_checkpoint_loaded": false,
+    "training": false,
+    "inference": false,
+    "F1_computed": false
+  },
+  "source": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\logs\\export_01\\source\\build_context.py",
+    "source_at_launch_sha256": "08f4808238c3d613fd616c7d7b4d07a30cf20b806f8361828f3c7acaaace550d",
+    "source_hash_captured_at_process_start": true,
+    "source_hash_captured_utc": "2026-11-04T17:37:33.194123+00:00",
+    "settings_sha256": "72b7aeeacbbdc8865d3d7a33c3d0bd0fdc0ed2703e485ea75230e38bee38fe1c",
+    "configuration": {
+      "fold": 0,
+      "seed": 42,
+      "allowed_source_root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료",
+      "development_npz_sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+      "fit_rows": 3144,
+      "inner_rows": 787,
+      "outer_rows": 1966,
+      "features_raw": 156,
+      "features_exported": 312,
+      "classes": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "query_policy": "first two row IDs in ordered fold0 inner_ids; frozen before probability access",
+      "transform": "FIT saved medians; raw-column missing flags; C-order float32"
+    }
+  },
+  "inputs": {
+    "split_manifest": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\splits\\splits_original.json",
+      "sha256": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+      "bytes": 497418
+    },
+    "decision_rule": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\final_fixed_decision_rule.json",
+      "sha256": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+      "bytes": 4375
+    },
+    "parent_fingerprint": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\parent_fingerprint.json",
+      "sha256": "64b992fb807b4ada967d641279c625e5640865997234d38c003f179cb9b25475",
+      "bytes": 3511
+    },
+    "fold0_vocabulary_state": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\fold_0\\vocabulary_state.json",
+      "sha256": "402f44fd2fe8bfef82709452b5678a17cea40d302d1eac61731f96a61665397d",
+      "bytes": 68781
+    },
+    "seed42_fold0_preprocessor": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\preprocessor.json",
+      "sha256": "eea7d15bd4f0610450600502fcfb36d584a6f5324f26b6b325c3014d10065740",
+      "bytes": 3424
+    },
+    "P_development_roles": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\splits\\development_roles_long.csv",
+      "sha256": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+      "bytes": 299600
+    },
+    "exp01_development_roster": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fixed_split_roster.csv",
+      "sha256": "9639abbeccf5335e8baa8f0c8c165c319da453615e410674d28e4410e355e29f",
+      "bytes": 334980
+    },
+    "exp01_fold0_npz": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz",
+      "sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+      "bytes": 8187401
+    },
+    "P_feature_columns": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\feature_columns.json",
+      "sha256": "a6ac08c4cbec615cb1fc5b4cc1af434840915cf6e05e45c8b92a6e157b3a49a0",
+      "bytes": 5190
+    },
+    "P_classes": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\classes.json",
+      "sha256": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+      "bytes": 96
+    },
+    "P_run_settings": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\run_settings.json",
+      "sha256": "e951067a229cf41056bd1d5d73bc46fa688430b84bae255ed79950e3ea6cb85f",
+      "bytes": 1077
+    },
+    "P_comparison_models_source": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\code\\historical\\TabM\\TabM_개선_20261030\\comparison_models.py",
+      "sha256": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+      "bytes": 24032
+    },
+    "P_split_generator_source": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\code\\historical\\TabM\\TabM_개선_20261030\\run_experiments.py",
+      "sha256": "fa2297714250f39492abde98f762e5859e64f18766d9bde68f8df2360bd67262",
+      "bytes": 30967
+    },
+    "P_BASE_digest_json_source": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\code\\historical\\TinyTabM\\TinyTabM_구현_20261029\\fishing_tiny_tabm.py",
+      "sha256": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381",
+      "bytes": 103671
+    },
+    "round003_v4_idhash_result": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\verification_20261105\\v4_idhash.json",
+      "sha256": "285ff5d653eccf50cebec61ca6b9801f8c90e8e37cb406d1c412c58577fbea85",
+      "bytes": 1738
+    },
+    "round004_replay_contract": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\runtime_author\\replay_contract.json",
+      "sha256": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5",
+      "bytes": 8093
+    }
+  },
+  "lineage": {
+    "source_split_manifest_sha256": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+    "frozen_rule_manifest_sha256_match": true,
+    "seed42_parent_manifest_sha256_match": true,
+    "fit_membership_vocab_hash_match": true,
+    "fold_roles_pairwise_disjoint": true,
+    "fold_role_union_equals_development_ids": true,
+    "development_npz_ids_exactly_match_manifest": true,
+    "filtered_role_and_roster_ids_unique_and_complete": true,
+    "fit_order_source": "split manifest fit_ids order used by source .loc[fold['fit_ids']]",
+    "frozen_membership_serializer": "numeric-sorted normalized integer IDs joined by LF; no trailing LF",
+    "frozen_fit_membership_expected": "2470cabe8ecbe7a063ab8303bcb66faa85cb907596c9d44f69dda3b8ee6b0ed5",
+    "frozen_fit_membership_actual": "2470cabe8ecbe7a063ab8303bcb66faa85cb907596c9d44f69dda3b8ee6b0ed5",
+    "frozen_inner_membership_expected": "cb82568ec4fcedf20a5706d15db6a76f84f84a23b9273aa4b18948c3014ed0c3",
+    "frozen_inner_membership_actual": "cb82568ec4fcedf20a5706d15db6a76f84f84a23b9273aa4b18948c3014ed0c3",
+    "v4_fit_membership_record": {
+      "source": "splits_original.json folds[0][fit_ids]",
+      "serialization": "sorted_int_as_int|newline",
+      "sha256": "2470cabe8ecbe7a063ab8303bcb66faa85cb907596c9d44f69dda3b8ee6b0ed5",
+      "n": 3144
+    },
+    "v4_inner_membership_record": {
+      "source": "splits_original.json folds[0][inner_ids]",
+      "serialization": "sorted_int_as_int|newline",
+      "sha256": "cb82568ec4fcedf20a5706d15db6a76f84f84a23b9273aa4b18948c3014ed0c3",
+      "n": 787
+    },
+    "vocabulary_membership_serializer": "BASE.digest_json(sorted(set(map(str, fit_ids)))) per vocabulary_features.py",
+    "vocabulary_fit_membership_expected": "21f039d424635c4b8a18a79b123749f54d49b80294813d42492dd2a82e54faba",
+    "vocabulary_fit_membership_actual": "21f039d424635c4b8a18a79b123749f54d49b80294813d42492dd2a82e54faba",
+    "ordered_ids_serializer": "BASE.digest_json: json.dumps(value, sort_keys=True, ensure_ascii=False), UTF-8 SHA256",
+    "ordered_fit_ids_digest": "bdfb86ec3c99bbc783a5f0e8d3a1524b789d3c7e1101293d42805f7ccacca3f0",
+    "ordered_inner_ids_digest": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+    "direct_ordered_inner_vs_frozen_membership_match": false,
+    "direct_ordered_vs_membership_mismatch_expected": true,
+    "feature_contract": "156 raw columns + 156 FIT-median imputations' raw missing flags",
+    "saved_median_float64_sha256": "15685976c24db05217d53296bb06a7429ec189343eaf0be0d160fe492d1d96f6",
+    "transform_samples": [
+      {
+        "fit_row_position": 0,
+        "feature_index": 0,
+        "feature_name": "length_m__day_p10",
+        "source_is_missing": false,
+        "source_value_finite": true,
+        "saved_fit_median": 34.36039934158325,
+        "exported_imputed_value": 63.96506881713867,
+        "exported_missing_flag": 0.0
+      },
+      {
+        "fit_row_position": 0,
+        "feature_index": 78,
+        "feature_name": "mean_step_m__day_iqr",
+        "source_is_missing": false,
+        "source_value_finite": true,
+        "saved_fit_median": 53.47058114409447,
+        "exported_imputed_value": 47.24243927001953,
+        "exported_missing_flag": 0.0
+      },
+      {
+        "fit_row_position": 0,
+        "feature_index": 155,
+        "feature_name": "large_jump_fraction",
+        "source_is_missing": false,
+        "source_value_finite": true,
+        "saved_fit_median": 0.0,
+        "exported_imputed_value": 0.0,
+        "exported_missing_flag": 0.0
+      },
+      {
+        "fit_row_position": 1,
+        "feature_index": 0,
+        "feature_name": "length_m__day_p10",
+        "source_is_missing": false,
+        "source_value_finite": true,
+        "saved_fit_median": 34.36039934158325,
+        "exported_imputed_value": 9.080402374267578,
+        "exported_missing_flag": 0.0
+      },
+      {
+        "fit_row_position": 1,
+        "feature_index": 78,
+        "feature_name": "mean_step_m__day_iqr",
+        "source_is_missing": false,
+        "source_value_finite": true,
+        "saved_fit_median": 53.47058114409447,
+        "exported_imputed_value": 206.97714233398438,
+        "exported_missing_flag": 0.0
+      },
+      {
+        "fit_row_position": 1,
+        "feature_index": 155,
+        "feature_name": "large_jump_fraction",
+        "source_is_missing": false,
+        "source_value_finite": true,
+        "saved_fit_median": 0.0,
+        "exported_imputed_value": 0.0,
+        "exported_missing_flag": 0.0
+      }
+    ]
+  },
+  "split_sequence": {
+    "fit_membership_digest_expected": "2470cabe8ecbe7a063ab8303bcb66faa85cb907596c9d44f69dda3b8ee6b0ed5",
+    "fit_membership_digest_actual": "2470cabe8ecbe7a063ab8303bcb66faa85cb907596c9d44f69dda3b8ee6b0ed5",
+    "fit_membership_digest_match": true,
+    "inner_membership_digest_expected": "cb82568ec4fcedf20a5706d15db6a76f84f84a23b9273aa4b18948c3014ed0c3",
+    "inner_membership_digest_actual": "cb82568ec4fcedf20a5706d15db6a76f84f84a23b9273aa4b18948c3014ed0c3",
+    "inner_membership_digest_match": true,
+    "fit_ordered_json_digest": "bdfb86ec3c99bbc783a5f0e8d3a1524b789d3c7e1101293d42805f7ccacca3f0",
+    "inner_ordered_json_digest": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+    "inner_ordered_base_digest_vs_frozen_match": false,
+    "fit_membership_vocab_hash_match": true,
+    "future_query_ids_first2": [
+      "36001915",
+      "31703435"
+    ],
+    "fit_ids_sha256": "bdfb86ec3c99bbc783a5f0e8d3a1524b789d3c7e1101293d42805f7ccacca3f0",
+    "inner_ids_sha256": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d"
+  },
+  "arrays": {
+    "X_fit": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order": "ac254509d62c1ee0093941fe462c9539b0184e8a50d762dc8e9ba69c140869dd"
+    },
+    "X_inner": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order": "03949c49801d7ed6e609bc38eaa9702fca1343af8bed6eb3f2e9a2e0bb3be361"
+    },
+    "y_fit": {
+      "shape": [
+        3144
+      ],
+      "dtype": "int64",
+      "values_range": [
+        0,
+        3
+      ]
+    },
+    "y_inner": {
+      "shape": [
+        787
+      ],
+      "dtype": "int64",
+      "values_range": [
+        0,
+        3
+      ]
+    },
+    "ids_fit_digest_json_sha256": "bdfb86ec3c99bbc783a5f0e8d3a1524b789d3c7e1101293d42805f7ccacca3f0",
+    "ids_inner_digest_json_sha256": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+    "ids_fit_sha256": "bdfb86ec3c99bbc783a5f0e8d3a1524b789d3c7e1101293d42805f7ccacca3f0",
+    "ids_inner_sha256": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+    "feature_names_sha256": "39fc18c182ef25ea6d34e81bcc5dcd37098a3959b4f54d96da512c6d72170381",
+    "class_names": [
+      "연안복합",
+      "자망",
+      "통발",
+      "채낚기연승낚시"
+    ]
+  },
+  "frozen_queries": {
+    "schema": "round005_frozen_inner_queries.v1",
+    "fold": 0,
+    "seed": 42,
+    "selection": "first two IDs in the original ordered fold0 inner_ids list; selected before any reference-probability access",
+    "query_ids": [
+      "36001915",
+      "31703435"
+    ],
+    "query_ids_digest_json_sha256": "7750db94f83f57a4e58b62f29b32ba2e737339108e0923a970f9a924bf9be969",
+    "full_inner_ids_digest_json_sha256": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+    "context_npz_sha256": "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+    "reference_probability_rows_read": 0,
+    "source_manifest_sha256": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+    "created_utc": "2026-11-04T17:37:33.850204+00:00"
+  },
+  "outputs": {
+    "context_npz": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\artifacts\\context_export_attempt_001\\fold0_seed42_context.npz",
+      "bytes": 1916394,
+      "sha256": "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5"
+    },
+    "query_freeze": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\artifacts\\context_export_attempt_001\\query_freeze.json",
+      "sha256": "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef"
+    }
+  },
+  "command": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+    "-B",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\logs\\export_01\\source\\build_context.py",
+    "--output-dir",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\artifacts\\context_export_attempt_001"
+  ],
+  "pid": 12980,
+  "elapsed_seconds": 0.6592564999991737,
+  "finished_utc": "2026-11-04T17:37:33.871198+00:00"
+}

@@ -1,0 +1,141 @@
+{
+    "schema_version":  1,
+    "updated_at_utc":  "2026-11-04T14:30:17.7007446Z",
+    "objective":  "vessel-level four-class micro-F1 \u003e= 0.7 with development and independent evidence kept separate",
+    "goal_status":  "active_not_achieved",
+    "current_round":  "round_001",
+    "round_status":  "completed_with_limitations",
+    "manager_session":  "/root/next_step_decision",
+    "manager_model_request":  {
+                                  "model":  "gpt-6-astra",
+                                  "reasoning_effort":  "high",
+                                  "role":  "astra_decision"
+                              },
+    "assistant_model_policy":  {
+                                   "model":  "gpt-6-luna",
+                                   "reasoning_effort":  "xhigh",
+                                   "max_assistants_user":  4,
+                                   "current_runtime_assistants":  2,
+                                   "host_total_slots":  4
+                               },
+    "paths":  {
+                  "work":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final",
+                  "raw_read_only":  "F:/문제 데이터_수정_1027",
+                  "source_read_only":  "D:/repos/fishing-track-classification",
+                  "prior_experiment":  "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
+                  "round":  "rounds/round_001"
+              },
+    "scores":  {
+                   "evaluation_population":  "repeatedly exposed development OUTER, 5897 vessels",
+                   "baseline":  {
+                                    "name":  "sqrt_macro_5seed",
+                                    "micro_f1":  0.5930133966423605,
+                                    "macro_f1":  0.5252719738966167,
+                                    "correct":  3497,
+                                    "n":  5897,
+                                    "source":  "Replayed in round001 on all 5897 development OUTER vessels; stored seed probabilities exact and ensemble within1e-12"
+                                },
+                   "exploratory_best":  {
+                                            "name":  "six_source_mean",
+                                            "micro_f1":  0.5933525521451586,
+                                            "correct":  3499,
+                                            "n":  5897,
+                                            "adopted":  false,
+                                            "reason":  "net+2; macro declined; paired CI includes zero"
+                                        },
+                   "historical_s6_aggregate":  0.59183,
+                   "independent_micro_f1":  null,
+                   "official_micro_f1":  null,
+                   "development_observed_ge_070":  false,
+                   "independently_verified_ge_070":  false,
+                   "official_score_ge_070":  false
+               },
+    "budget":  {
+                   "manager_round_minutes":  45,
+                   "compute_minutes":  30,
+                   "max_new_fits":  0,
+                   "concurrent_large_compute":  1,
+                   "threads_max":  3,
+                   "minimum_free_ram_gib_before_large_compute":  1.5
+               },
+    "decision_rules":  {
+                           "current_round":  "diagnostic completion does not require score increase; identify T5 array differences and saved-model inference effects with provenance",
+                           "saved_probability_abs_tolerance":  1E-12,
+                           "t5_comparison":  "exact equality plus abs1e-12/1e-10; NaN masks and ID/column order checked separately",
+                           "holdout":  "no individual feature/label/prediction reads until exposure history and frozen evaluation plan are verified",
+                           "selection":  "no pooled INNER; predeclare separation of early-stop and blend selection before a new training round"
+                       },
+    "current_task":  "round_001 complete: allowed parser/replay diagnosis passed; original dynamic-array parity remains unmeasured",
+    "next_task":  "round_002: same-FIT CatBoost pipeline versus retrained seed42 baseline with INNER_ES/INNER_SELECT split; ExtraTrees availability fallback",
+    "blockers":  [
+
+                 ],
+    "unresolved":  [
+                       "Original dynamic T5-to-CSV parity unmeasured: exact eligible aggregate/mask unavailable without protected holdout geometry",
+                       "Historical S6 .59183 difference attribution unresolved",
+                       "Holdout exposure independence not established",
+                       "Main detached run exit code and launch-time source hash unavailable; current post-run source hash recorded"
+                   ],
+    "active_workers":  [
+
+                       ],
+    "handoff":  {
+                    "ready":  true,
+                    "next_session_launched":  false,
+                    "launch_receipt":  null,
+                    "launcher_owner":  "root",
+                    "launcher":  "automation/Start-NextSession.ps1",
+                    "next_round":  "round_002",
+                    "receipt_directory":  "automation/receipts/"
+                },
+    "learning_status":  "explanation questions prepared; learner understanding not assessed",
+    "diagnostic_result":  {
+                              "fixed_npz_t5_default_csv_exact":  true,
+                              "reader_max_abs_delta":  8.8817841970012523E-16,
+                              "baseline_stored_seed_probability_max_delta":  0,
+                              "baseline_stored_ensemble_max_delta":  2.2204460492503131E-16,
+                              "round_trip_ensemble_max_probability_delta":  0.0012018578769440735,
+                              "round_trip_ensemble_argmax_changed":  0,
+                              "baseline_correct":  3497,
+                              "round_trip_correct":  3497,
+                              "new_fits":  0,
+                              "direct_dynamic_original_array_comparison":  "unmeasured",
+                              "historical_s6_score_difference":  "unresolved",
+                              "main_exit_code":  null,
+                              "supplemental_attempt2_exit_code":  0
+                          },
+    "next_round_budget":  {
+                              "manager_minutes":  45,
+                              "environment_discovery_minutes":  5,
+                              "isolated_install_minutes":  8,
+                              "compute_minutes":  30,
+                              "new_fits_max":  6,
+                              "concurrent_training":  1,
+                              "threads_max":  3
+                          },
+    "latest_result_report":  "rounds/round_001/ROUND_REPORT.md",
+    "round_completed_at_utc":  "2026-11-04T14:30:17.7007446Z",
+    "review":  {
+                   "verdict":  "CONDITIONAL",
+                   "source":  "rounds/round_001/review/review.json",
+                   "manager_receipt":  "rounds/round_001/REVIEW_RECEIPT.md",
+                   "next_session_readiness":  "not_blocked_for_bounded_development_candidate_exploration",
+                   "worker_final_files_present":  true,
+                   "review_md_format":  "duplicate JSON; authoritative structured file is review.json",
+                   "worker_status":  "interrupted after bounded review; no active writes"
+               },
+    "execution_summary":  {
+                              "new_fits":  0,
+                              "successful_compute_seconds":  52.707632000001468,
+                              "successful_compute_time_excludes_failed_attempt":  true,
+                              "main_exit_code":  null,
+                              "supplemental_attempt1_exit_code":  null,
+                              "supplemental_attempt2_exit_code":  0,
+                              "all_owned_compute_processes_finished":  true,
+                              "new_independent_evaluation":  false,
+                              "hardware_validation":  false
+                          },
+    "independent_evaluation_blockers":  [
+                                            "No exposure-verified independent evaluation roster approved or opened"
+                                        ]
+}

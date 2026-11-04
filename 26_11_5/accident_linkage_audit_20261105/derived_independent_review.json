@@ -1,0 +1,291 @@
+{
+  "status": "passed",
+  "verification_type": "independent_derived_statistics_audit",
+  "checked_at_utc": "2026-11-04T16:32:41.763469+00:00",
+  "checks": [
+    {
+      "name": "all_167_unique_events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_event_categories_recalculated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_candidate_ids_and_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_event_stable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_event_retained_narrow",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_event_becomes_multi",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "summary_all_events",
+      "passed": true,
+      "detail": {
+        "recalculated": 167,
+        "reported": 167
+      }
+    },
+    {
+      "name": "summary_category_counts",
+      "passed": true,
+      "detail": {
+        "recalculated": {
+          "baseline_multiple_candidates": 88,
+          "no_candidate_all_conditions": 45,
+          "baseline_single_condition_sensitive": 26,
+          "baseline_none_wider_candidate": 4,
+          "baseline_single_but_multi_vessel_accident": 3,
+          "same_single_candidate_all_nine_conditions": 1
+        },
+        "reported": {
+          "baseline_multiple_candidates": 88,
+          "no_candidate_all_conditions": 45,
+          "baseline_single_condition_sensitive": 26,
+          "baseline_none_wider_candidate": 4,
+          "baseline_single_but_multi_vessel_accident": 3,
+          "same_single_candidate_all_nine_conditions": 1
+        }
+      }
+    },
+    {
+      "name": "summary_baseline_single_count",
+      "passed": true,
+      "detail": {
+        "recalculated": 30,
+        "reported": 30
+      }
+    },
+    {
+      "name": "summary_same_single_candidate_all_nine_conditions",
+      "passed": true,
+      "detail": {
+        "recalculated": 1,
+        "reported": 1
+      }
+    },
+    {
+      "name": "summary_baseline_single_present_in_narrowest_condition",
+      "passed": true,
+      "detail": {
+        "recalculated": 2,
+        "reported": 2
+      }
+    },
+    {
+      "name": "summary_baseline_single_becomes_multiple_when_time_widened",
+      "passed": true,
+      "detail": {
+        "recalculated": 7,
+        "reported": 7
+      }
+    },
+    {
+      "name": "summary_baseline_none_recovered_only_by_wider_condition",
+      "passed": true,
+      "detail": {
+        "recalculated": 4,
+        "reported": 4
+      }
+    },
+    {
+      "name": "summary_baseline_distinct_candidate_vessels",
+      "passed": true,
+      "detail": {
+        "recalculated": 325,
+        "reported": 325
+      }
+    },
+    {
+      "name": "summary_baseline_candidate_vessels_linked_to_multiple_events",
+      "passed": true,
+      "detail": {
+        "recalculated": 86,
+        "reported": 86
+      }
+    },
+    {
+      "name": "summary_maximum_candidate_events_per_vessel",
+      "passed": true,
+      "detail": {
+        "recalculated": 11,
+        "reported": 11
+      }
+    },
+    {
+      "name": "summary_widest_distinct_candidate_vessels",
+      "passed": true,
+      "detail": {
+        "recalculated": 382,
+        "reported": 382
+      }
+    },
+    {
+      "name": "summary_all_condition_event_vessel_associations",
+      "passed": true,
+      "detail": {
+        "recalculated": 2567,
+        "reported": 2567
+      }
+    },
+    {
+      "name": "summary_stable_single_event_ids",
+      "passed": true,
+      "detail": {
+        "recalculated": [
+          "E0023"
+        ],
+        "reported": [
+          "E0023"
+        ]
+      }
+    },
+    {
+      "name": "summary_single_but_multi_vessel_event_ids",
+      "passed": true,
+      "detail": {
+        "recalculated": [
+          "E0042",
+          "E0108",
+          "E0123"
+        ],
+        "reported": [
+          "E0042",
+          "E0108",
+          "E0123"
+        ]
+      }
+    },
+    {
+      "name": "repeated_vessel_table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "repeated_vessel_event_lists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single_table_complete_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single_table_source_minimum_distance_row__centroid_distance_m",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single_table_source_minimum_distance_row__track_hour_start_minus_accident_minutes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single_table_source_best_time_row__source_row_index",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single_distance_quantiles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "single_start_residual_over_60min",
+      "passed": true,
+      "detail": {
+        "recalculated": 10
+      }
+    },
+    {
+      "name": "no_identity_or_training_label_claim",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_script_and_output_hashes",
+      "passed": true,
+      "detail": [
+        {
+          "filename": "event_audit.csv",
+          "passed": true
+        },
+        {
+          "filename": "candidate_vessels.csv",
+          "passed": true
+        },
+        {
+          "filename": "baseline_single_review.csv",
+          "passed": true
+        },
+        {
+          "filename": "repeated_candidate_vessels.csv",
+          "passed": true
+        },
+        {
+          "filename": "review_queue.csv",
+          "passed": true
+        },
+        {
+          "filename": "build_review_queue.py",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "input_pre_post_equal",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "recalculated_statistics": {
+    "all_events": 167,
+    "category_counts": {
+      "baseline_multiple_candidates": 88,
+      "no_candidate_all_conditions": 45,
+      "baseline_single_condition_sensitive": 26,
+      "baseline_none_wider_candidate": 4,
+      "baseline_single_but_multi_vessel_accident": 3,
+      "same_single_candidate_all_nine_conditions": 1
+    },
+    "baseline_single_count": 30,
+    "same_single_candidate_all_nine_conditions": 1,
+    "baseline_single_present_in_narrowest_condition": 2,
+    "baseline_single_becomes_multiple_when_time_widened": 7,
+    "baseline_none_recovered_only_by_wider_condition": 4,
+    "baseline_distinct_candidate_vessels": 325,
+    "baseline_candidate_vessels_linked_to_multiple_events": 86,
+    "maximum_candidate_events_per_vessel": 11,
+    "widest_distinct_candidate_vessels": 382,
+    "all_condition_event_vessel_associations": 2567,
+    "stable_single_event_ids": [
+      "E0023"
+    ],
+    "single_but_multi_vessel_event_ids": [
+      "E0042",
+      "E0108",
+      "E0123"
+    ]
+  },
+  "limits": [
+    "Uses already independently audited run_001 tables; no new accident matching or model training.",
+    "Uniqueness under a condition does not confirm vessel identity.",
+    "No producer code or existing output modified."
+  ]
+}

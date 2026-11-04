@@ -1,0 +1,24 @@
+﻿catboost @ file:///D:/obsidian/claude/obsidian_export/DATA%20AI%20SHIPPING/11_04_final/environments/round_002_catboost/dist/catboost-1.2.10-cp313-cp313-win_amd64.whl#sha256=5ede858e634d6d0f521bf6dd6fad9374f23d37049ee48e0779ccd2a372632cb1
+cloudpickle==3.1.2
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.68.0
+graphviz==0.21
+joblib==1.6.0
+kiwisolver==1.5.1
+lightgbm==4.7.0
+matplotlib==3.11.2
+narwhals==2.28.0
+numpy==2.2.5
+packaging==26.3
+pandas==3.1.0
+pillow==13.0.0
+plotly==7.1.0
+psutil==7.2.2
+pyparsing==3.3.3
+python-dateutil==4.0.0
+scikit-learn==1.6.1
+scipy==1.18.1
+six==1.17.0
+threadpoolctl==3.7.0
+tzdata==2026.6

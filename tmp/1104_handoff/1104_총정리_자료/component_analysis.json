@@ -1,0 +1,4175 @@
+{
+  "scope": "post-hoc diagnostics from saved predictions; no model fitted, no production policy changed; component substitutions were not selected on INNER and are not additional official attempts",
+  "component_only": {
+    "TabICL_global": {
+      "n": 6526,
+      "correct": 4252,
+      "micro_f1": 0.6515476555317192,
+      "class_f1": [
+        0.7422495516269536,
+        0.5578120769022475,
+        0.34960629921259845,
+        0.7279151943462897
+      ],
+      "macro_f1": 0.5943957805220222,
+      "weighted_f1": 0.6209129185141622,
+      "precision": [
+        0.6266493618862211,
+        0.7113259668508287,
+        0.7092651757188498,
+        0.7253521126760564
+      ],
+      "recall": [
+        0.9101476594407791,
+        0.45879732739420936,
+        0.23197492163009403,
+        0.7304964539007093
+      ],
+      "support": [
+        3183,
+        2245,
+        957,
+        141
+      ],
+      "predicted_support": [
+        4623,
+        1448,
+        313,
+        142
+      ],
+      "confusion": [
+        [
+          2897,
+          241,
+          41,
+          4
+        ],
+        [
+          1144,
+          1030,
+          42,
+          29
+        ],
+        [
+          567,
+          162,
+          222,
+          6
+        ],
+        [
+          15,
+          15,
+          8,
+          103
+        ]
+      ],
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group",
+      "short_group_definition": "observed_days <= 7: distinct calendar days with any record, including invalid geometry; not prior natural_days",
+      "groups": {
+        "known_by_ref_id": {
+          "n": 5835,
+          "correct": 3852,
+          "micro_f1": 0.6601542416452442,
+          "class_f1": [
+            0.7478336221837089,
+            0.5784726398075767,
+            0.36731255265374896,
+            0.7124463519313304
+          ],
+          "macro_f1": 0.6015162916440913,
+          "weighted_f1": 0.6312944435138541,
+          "precision": [
+            0.6319257993653893,
+            0.7304479878511769,
+            0.7147540983606557,
+            0.7155172413793104
+          ],
+          "recall": [
+            0.9158118146444995,
+            0.47884519661523145,
+            0.2471655328798186,
+            0.7094017094017094
+          ],
+          "support": [
+            2827,
+            2009,
+            882,
+            117
+          ],
+          "predicted_support": [
+            4097,
+            1317,
+            305,
+            116
+          ],
+          "confusion": [
+            [
+              2589,
+              195,
+              40,
+              3
+            ],
+            [
+              984,
+              962,
+              39,
+              24
+            ],
+            [
+              509,
+              149,
+              218,
+              6
+            ],
+            [
+              15,
+              11,
+              8,
+              83
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_by_ref_id": {
+          "n": 691,
+          "correct": 400,
+          "micro_f1": 0.5788712011577424,
+          "class_f1": [
+            0.6984126984126984,
+            0.37057220708446864,
+            0.0963855421686747,
+            0.8
+          ],
+          "macro_f1": 0.49134261191646045,
+          "weighted_f1": 0.5246293446736697,
+          "precision": [
+            0.5855513307984791,
+            0.5190839694656488,
+            0.5,
+            0.7692307692307693
+          ],
+          "recall": [
+            0.8651685393258427,
+            0.288135593220339,
+            0.05333333333333334,
+            0.8333333333333334
+          ],
+          "support": [
+            356,
+            236,
+            75,
+            24
+          ],
+          "predicted_support": [
+            526,
+            131,
+            8,
+            26
+          ],
+          "confusion": [
+            [
+              308,
+              46,
+              1,
+              1
+            ],
+            [
+              160,
+              68,
+              3,
+              5
+            ],
+            [
+              58,
+              13,
+              4,
+              0
+            ],
+            [
+              0,
+              4,
+              0,
+              20
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_le7": {
+          "n": 1621,
+          "correct": 998,
+          "micro_f1": 0.6156693399136336,
+          "class_f1": [
+            0.7426567295046033,
+            0.3794037940379404,
+            0.10576923076923077,
+            0.0
+          ],
+          "macro_f1": 0.3069574385779436,
+          "weighted_f1": 0.5493435089050438,
+          "precision": [
+            0.6177972283005105,
+            0.6194690265486725,
+            0.7333333333333333,
+            0.0
+          ],
+          "recall": [
+            0.9307692307692308,
+            0.2734375,
+            0.05699481865284974,
+            0.0
+          ],
+          "support": [
+            910,
+            512,
+            193,
+            6
+          ],
+          "predicted_support": [
+            1371,
+            226,
+            15,
+            9
+          ],
+          "confusion": [
+            [
+              847,
+              59,
+              3,
+              1
+            ],
+            [
+              363,
+              140,
+              1,
+              8
+            ],
+            [
+              158,
+              24,
+              11,
+              0
+            ],
+            [
+              3,
+              3,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_gt7": {
+          "n": 4905,
+          "correct": 3254,
+          "micro_f1": 0.6634046890927625,
+          "class_f1": [
+            0.7420814479638009,
+            0.6023688663282571,
+            0.3973634651600753,
+            0.7686567164179104
+          ],
+          "macro_f1": 0.627617623967511,
+          "weighted_f1": 0.6397575373429775,
+          "precision": [
+            0.6303813038130381,
+            0.7283142389525368,
+            0.7080536912751678,
+            0.7744360902255639
+          ],
+          "recall": [
+            0.9018917729872415,
+            0.5135603000577034,
+            0.2761780104712042,
+            0.762962962962963
+          ],
+          "support": [
+            2273,
+            1733,
+            764,
+            135
+          ],
+          "predicted_support": [
+            3252,
+            1222,
+            298,
+            133
+          ],
+          "confusion": [
+            [
+              2050,
+              182,
+              38,
+              3
+            ],
+            [
+              781,
+              890,
+              41,
+              21
+            ],
+            [
+              409,
+              138,
+              211,
+              6
+            ],
+            [
+              12,
+              12,
+              8,
+              103
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "known_short": {
+          "n": 1242,
+          "correct": 792,
+          "micro_f1": 0.6376811594202898,
+          "class_f1": [
+            0.7600680657969371,
+            0.40808823529411764,
+            0.13095238095238096,
+            0.0
+          ],
+          "macro_f1": 0.3247771705108589,
+          "weighted_f1": 0.5732343487689509,
+          "precision": [
+            0.635673624288425,
+            0.6568047337278107,
+            0.7333333333333333,
+            0.0
+          ],
+          "recall": [
+            0.9449929478138223,
+            0.296,
+            0.0718954248366013,
+            0.0
+          ],
+          "support": [
+            709,
+            375,
+            153,
+            5
+          ],
+          "predicted_support": [
+            1054,
+            169,
+            15,
+            4
+          ],
+          "confusion": [
+            [
+              670,
+              36,
+              3,
+              0
+            ],
+            [
+              259,
+              111,
+              1,
+              4
+            ],
+            [
+              122,
+              20,
+              11,
+              0
+            ],
+            [
+              3,
+              2,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_short": {
+          "n": 379,
+          "correct": 206,
+          "micro_f1": 0.5435356200527705,
+          "class_f1": [
+            0.6833976833976834,
+            0.29896907216494845,
+            0.0,
+            0.0
+          ],
+          "macro_f1": 0.24559168889065797,
+          "weighted_f1": 0.47050579749216964,
+          "precision": [
+            0.5583596214511041,
+            0.5087719298245614,
+            0.0,
+            0.0
+          ],
+          "recall": [
+            0.8805970149253731,
+            0.2116788321167883,
+            0.0,
+            0.0
+          ],
+          "support": [
+            201,
+            137,
+            40,
+            1
+          ],
+          "predicted_support": [
+            317,
+            57,
+            0,
+            5
+          ],
+          "confusion": [
+            [
+              177,
+              23,
+              0,
+              1
+            ],
+            [
+              104,
+              29,
+              0,
+              4
+            ],
+            [
+              36,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        }
+      },
+      "scope": "one final fishing-class prediction per vessel; chronological development evaluation, not official Test A"
+    },
+    "TabICL_local": {
+      "n": 6526,
+      "correct": 3562,
+      "micro_f1": 0.545816733067729,
+      "class_f1": [
+        0.6522335721908827,
+        0.5123177476118652,
+        0.4136490250696379,
+        0.19833178869323448
+      ],
+      "macro_f1": 0.4441330333914051,
+      "weighted_f1": 0.5593073403110033,
+      "precision": [
+        0.6335900473933649,
+        0.58799769186382,
+        0.6200417536534447,
+        0.1140724946695096
+      ],
+      "recall": [
+        0.6720075400565504,
+        0.45389755011135857,
+        0.3103448275862069,
+        0.7588652482269503
+      ],
+      "support": [
+        3183,
+        2245,
+        957,
+        141
+      ],
+      "predicted_support": [
+        3376,
+        1733,
+        479,
+        938
+      ],
+      "confusion": [
+        [
+          2139,
+          529,
+          97,
+          418
+        ],
+        [
+          864,
+          1019,
+          73,
+          289
+        ],
+        [
+          371,
+          165,
+          297,
+          124
+        ],
+        [
+          2,
+          20,
+          12,
+          107
+        ]
+      ],
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group",
+      "short_group_definition": "observed_days <= 7: distinct calendar days with any record, including invalid geometry; not prior natural_days",
+      "groups": {
+        "known_by_ref_id": {
+          "n": 5835,
+          "correct": 3254,
+          "micro_f1": 0.557669237360754,
+          "class_f1": [
+            0.661373835001726,
+            0.5321408608160983,
+            0.4361463778939507,
+            0.19603753910323254
+          ],
+          "macro_f1": 0.45642465320375186,
+          "weighted_f1": 0.5735033964536356,
+          "precision": [
+            0.6457701381867206,
+            0.6067558954748248,
+            0.6389496717724289,
+            0.11163895486935867
+          ],
+          "recall": [
+            0.6777502652989035,
+            0.4738675958188153,
+            0.3310657596371882,
+            0.8034188034188035
+          ],
+          "support": [
+            2827,
+            2009,
+            882,
+            117
+          ],
+          "predicted_support": [
+            2967,
+            1569,
+            457,
+            842
+          ],
+          "confusion": [
+            [
+              1916,
+              452,
+              94,
+              365
+            ],
+            [
+              724,
+              952,
+              62,
+              271
+            ],
+            [
+              325,
+              153,
+              292,
+              112
+            ],
+            [
+              2,
+              12,
+              9,
+              94
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_by_ref_id": {
+          "n": 691,
+          "correct": 308,
+          "micro_f1": 0.44573082489146165,
+          "class_f1": [
+            0.5830065359477125,
+            0.335,
+            0.10309278350515463,
+            0.21666666666666667
+          ],
+          "macro_f1": 0.3094414965298835,
+          "weighted_f1": 0.4334910065995256,
+          "precision": [
+            0.5452322738386308,
+            0.40853658536585363,
+            0.22727272727272727,
+            0.13541666666666666
+          ],
+          "recall": [
+            0.6264044943820225,
+            0.2838983050847458,
+            0.06666666666666667,
+            0.5416666666666666
+          ],
+          "support": [
+            356,
+            236,
+            75,
+            24
+          ],
+          "predicted_support": [
+            409,
+            164,
+            22,
+            96
+          ],
+          "confusion": [
+            [
+              223,
+              77,
+              3,
+              53
+            ],
+            [
+              140,
+              67,
+              11,
+              18
+            ],
+            [
+              46,
+              12,
+              5,
+              12
+            ],
+            [
+              0,
+              8,
+              3,
+              13
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_le7": {
+          "n": 1621,
+          "correct": 849,
+          "micro_f1": 0.5237507711289328,
+          "class_f1": [
+            0.6652998462327012,
+            0.3918757467144564,
+            0.23846153846153847,
+            0.05154639175257732
+          ],
+          "macro_f1": 0.33679588079031836,
+          "weighted_f1": 0.5258455260105812,
+          "precision": [
+            0.6234390009606148,
+            0.5046153846153846,
+            0.4626865671641791,
+            0.026595744680851064
+          ],
+          "recall": [
+            0.7131868131868132,
+            0.3203125,
+            0.16062176165803108,
+            0.8333333333333334
+          ],
+          "support": [
+            910,
+            512,
+            193,
+            6
+          ],
+          "predicted_support": [
+            1041,
+            325,
+            67,
+            188
+          ],
+          "confusion": [
+            [
+              649,
+              131,
+              24,
+              106
+            ],
+            [
+              282,
+              164,
+              12,
+              54
+            ],
+            [
+              110,
+              29,
+              31,
+              23
+            ],
+            [
+              0,
+              1,
+              0,
+              5
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_gt7": {
+          "n": 4905,
+          "correct": 2713,
+          "micro_f1": 0.5531090723751274,
+          "class_f1": [
+            0.6467013888888888,
+            0.5444126074498568,
+            0.4523809523809524,
+            0.2305084745762712
+          ],
+          "macro_f1": 0.46850085582399226,
+          "weighted_f1": 0.5688393470625669,
+          "precision": [
+            0.6381156316916489,
+            0.6072443181818182,
+            0.6456310679611651,
+            0.136
+          ],
+          "recall": [
+            0.6555213374395072,
+            0.4933641084824005,
+            0.3481675392670157,
+            0.7555555555555555
+          ],
+          "support": [
+            2273,
+            1733,
+            764,
+            135
+          ],
+          "predicted_support": [
+            2335,
+            1408,
+            412,
+            750
+          ],
+          "confusion": [
+            [
+              1490,
+              398,
+              73,
+              312
+            ],
+            [
+              582,
+              855,
+              61,
+              235
+            ],
+            [
+              261,
+              136,
+              266,
+              101
+            ],
+            [
+              2,
+              19,
+              12,
+              102
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "known_short": {
+          "n": 1242,
+          "correct": 681,
+          "micro_f1": 0.5483091787439613,
+          "class_f1": [
+            0.6893787575150301,
+            0.42105263157894735,
+            0.27230046948356806,
+            0.05442176870748299
+          ],
+          "macro_f1": 0.3592884068212571,
+          "weighted_f1": 0.5544270181922584,
+          "precision": [
+            0.6548223350253807,
+            0.5238095238095238,
+            0.48333333333333334,
+            0.028169014084507043
+          ],
+          "recall": [
+            0.7277856135401974,
+            0.352,
+            0.1895424836601307,
+            0.8
+          ],
+          "support": [
+            709,
+            375,
+            153,
+            5
+          ],
+          "predicted_support": [
+            788,
+            252,
+            60,
+            142
+          ],
+          "confusion": [
+            [
+              516,
+              95,
+              22,
+              76
+            ],
+            [
+              191,
+              132,
+              9,
+              43
+            ],
+            [
+              81,
+              24,
+              29,
+              19
+            ],
+            [
+              0,
+              1,
+              0,
+              4
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_short": {
+          "n": 379,
+          "correct": 168,
+          "micro_f1": 0.44327176781002636,
+          "class_f1": [
+            0.5859030837004405,
+            0.3047619047619048,
+            0.0851063829787234,
+            0.0425531914893617
+          ],
+          "macro_f1": 0.2545811407326076,
+          "weighted_f1": 0.42998867885701264,
+          "precision": [
+            0.525691699604743,
+            0.4383561643835616,
+            0.2857142857142857,
+            0.021739130434782608
+          ],
+          "recall": [
+            0.6616915422885572,
+            0.23357664233576642,
+            0.05,
+            1.0
+          ],
+          "support": [
+            201,
+            137,
+            40,
+            1
+          ],
+          "predicted_support": [
+            253,
+            73,
+            7,
+            46
+          ],
+          "confusion": [
+            [
+              133,
+              36,
+              2,
+              30
+            ],
+            [
+              91,
+              32,
+              3,
+              11
+            ],
+            [
+              29,
+              5,
+              2,
+              4
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        }
+      },
+      "scope": "one final fishing-class prediction per vessel; chronological development evaluation, not official Test A"
+    },
+    "TabICL_blend": {
+      "n": 6526,
+      "correct": 4135,
+      "micro_f1": 0.6336193686791296,
+      "class_f1": [
+        0.7289131920710868,
+        0.564143007360673,
+        0.41297935103244837,
+        0.4020797227036395
+      ],
+      "macro_f1": 0.527028818291962,
+      "weighted_f1": 0.6188394455602585,
+      "precision": [
+        0.6452081316553727,
+        0.6882617062219372,
+        0.7017543859649122,
+        0.26605504587155965
+      ],
+      "recall": [
+        0.837574615142947,
+        0.4779510022271715,
+        0.29258098223615464,
+        0.8226950354609929
+      ],
+      "support": [
+        3183,
+        2245,
+        957,
+        141
+      ],
+      "predicted_support": [
+        4132,
+        1559,
+        399,
+        436
+      ],
+      "confusion": [
+        [
+          2666,
+          316,
+          62,
+          139
+        ],
+        [
+          990,
+          1073,
+          50,
+          132
+        ],
+        [
+          470,
+          158,
+          280,
+          49
+        ],
+        [
+          6,
+          12,
+          7,
+          116
+        ]
+      ],
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group",
+      "short_group_definition": "observed_days <= 7: distinct calendar days with any record, including invalid geometry; not prior natural_days",
+      "groups": {
+        "known_by_ref_id": {
+          "n": 5835,
+          "correct": 3760,
+          "micro_f1": 0.6443873179091688,
+          "class_f1": [
+            0.7373784159333024,
+            0.5835033517924804,
+            0.43478260869565216,
+            0.386317907444668
+          ],
+          "macro_f1": 0.5354955709665258,
+          "weighted_f1": 0.6316203036221303,
+          "precision": [
+            0.6542465753424658,
+            0.7039381153305204,
+            0.7180156657963447,
+            0.25263157894736843
+          ],
+          "recall": [
+            0.844711708524938,
+            0.49825783972125437,
+            0.31179138321995464,
+            0.8205128205128205
+          ],
+          "support": [
+            2827,
+            2009,
+            882,
+            117
+          ],
+          "predicted_support": [
+            3650,
+            1422,
+            383,
+            380
+          ],
+          "confusion": [
+            [
+              2388,
+              262,
+              60,
+              117
+            ],
+            [
+              843,
+              1001,
+              44,
+              121
+            ],
+            [
+              413,
+              148,
+              275,
+              46
+            ],
+            [
+              6,
+              11,
+              4,
+              96
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_by_ref_id": {
+          "n": 691,
+          "correct": 375,
+          "micro_f1": 0.5426917510853835,
+          "class_f1": [
+            0.6634844868735084,
+            0.38605898123324395,
+            0.10989010989010989,
+            0.5
+          ],
+          "macro_f1": 0.4148583944992156,
+          "weighted_f1": 0.5029698337768058,
+          "precision": [
+            0.5767634854771784,
+            0.5255474452554745,
+            0.3125,
+            0.35714285714285715
+          ],
+          "recall": [
+            0.7808988764044944,
+            0.3050847457627119,
+            0.06666666666666667,
+            0.8333333333333334
+          ],
+          "support": [
+            356,
+            236,
+            75,
+            24
+          ],
+          "predicted_support": [
+            482,
+            137,
+            16,
+            56
+          ],
+          "confusion": [
+            [
+              278,
+              54,
+              2,
+              22
+            ],
+            [
+              147,
+              72,
+              6,
+              11
+            ],
+            [
+              57,
+              10,
+              5,
+              3
+            ],
+            [
+              0,
+              1,
+              3,
+              20
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_le7": {
+          "n": 1621,
+          "correct": 953,
+          "micro_f1": 0.5879086983343615,
+          "class_f1": [
+            0.7194043741275011,
+            0.3884514435695538,
+            0.226890756302521,
+            0.10752688172043011
+          ],
+          "macro_f1": 0.3605683639300015,
+          "weighted_f1": 0.553966808649196,
+          "precision": [
+            0.6238902340597255,
+            0.592,
+            0.6,
+            0.05747126436781609
+          ],
+          "recall": [
+            0.8494505494505494,
+            0.2890625,
+            0.13989637305699482,
+            0.8333333333333334
+          ],
+          "support": [
+            910,
+            512,
+            193,
+            6
+          ],
+          "predicted_support": [
+            1239,
+            250,
+            45,
+            87
+          ],
+          "confusion": [
+            [
+              773,
+              81,
+              13,
+              43
+            ],
+            [
+              331,
+              148,
+              5,
+              28
+            ],
+            [
+              135,
+              20,
+              27,
+              11
+            ],
+            [
+              0,
+              1,
+              0,
+              5
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_gt7": {
+          "n": 4905,
+          "correct": 3182,
+          "micro_f1": 0.6487257900101937,
+          "class_f1": [
+            0.7328687572590011,
+            0.6081525312294543,
+            0.4525939177101968,
+            0.45867768595041325
+          ],
+          "macro_f1": 0.5630732230372664,
+          "weighted_f1": 0.6376029077684506,
+          "precision": [
+            0.6543380573798825,
+            0.706646294881589,
+            0.7146892655367232,
+            0.31805157593123207
+          ],
+          "recall": [
+            0.8328200615926089,
+            0.5337564916330063,
+            0.331151832460733,
+            0.8222222222222222
+          ],
+          "support": [
+            2273,
+            1733,
+            764,
+            135
+          ],
+          "predicted_support": [
+            2893,
+            1309,
+            354,
+            349
+          ],
+          "confusion": [
+            [
+              1893,
+              235,
+              49,
+              96
+            ],
+            [
+              659,
+              925,
+              45,
+              104
+            ],
+            [
+              335,
+              138,
+              253,
+              38
+            ],
+            [
+              6,
+              11,
+              7,
+              111
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "known_short": {
+          "n": 1242,
+          "correct": 764,
+          "micro_f1": 0.6151368760064412,
+          "class_f1": [
+            0.7439613526570048,
+            0.4176991150442478,
+            0.2653061224489796,
+            0.11940298507462686
+          ],
+          "macro_f1": 0.38659239380621474,
+          "weighted_f1": 0.5839731230559392,
+          "precision": [
+            0.6504751847940866,
+            0.6210526315789474,
+            0.6046511627906976,
+            0.06451612903225806
+          ],
+          "recall": [
+            0.8688293370944993,
+            0.31466666666666665,
+            0.16993464052287582,
+            0.8
+          ],
+          "support": [
+            709,
+            375,
+            153,
+            5
+          ],
+          "predicted_support": [
+            947,
+            190,
+            43,
+            62
+          ],
+          "confusion": [
+            [
+              616,
+              54,
+              12,
+              27
+            ],
+            [
+              232,
+              118,
+              5,
+              20
+            ],
+            [
+              99,
+              17,
+              26,
+              11
+            ],
+            [
+              0,
+              1,
+              0,
+              4
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_short": {
+          "n": 379,
+          "correct": 189,
+          "micro_f1": 0.49868073878627966,
+          "class_f1": [
+            0.6369168356997972,
+            0.30456852791878175,
+            0.047619047619047616,
+            0.07692307692307693
+          ],
+          "macro_f1": 0.26650687204017587,
+          "weighted_f1": 0.4531078028554546,
+          "precision": [
+            0.5376712328767124,
+            0.5,
+            0.5,
+            0.04
+          ],
+          "recall": [
+            0.7810945273631841,
+            0.21897810218978103,
+            0.025,
+            1.0
+          ],
+          "support": [
+            201,
+            137,
+            40,
+            1
+          ],
+          "predicted_support": [
+            292,
+            60,
+            2,
+            25
+          ],
+          "confusion": [
+            [
+              157,
+              27,
+              1,
+              16
+            ],
+            [
+              99,
+              30,
+              0,
+              8
+            ],
+            [
+              36,
+              3,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        }
+      },
+      "scope": "one final fishing-class prediction per vessel; chronological development evaluation, not official Test A"
+    },
+    "retrieval_top1": {
+      "n": 6526,
+      "correct": 5405,
+      "micro_f1": 0.8282255593012565,
+      "class_f1": [
+        0.8549594013692087,
+        0.8058400522989758,
+        0.8076311605723371,
+        0.7389830508474576
+      ],
+      "macro_f1": 0.8018534162719948,
+      "weighted_f1": 0.828615740546523,
+      "precision": [
+        0.8666881859264042,
+        0.7888225255972696,
+        0.8193548387096774,
+        0.7077922077922078
+      ],
+      "recall": [
+        0.8435438265786993,
+        0.8236080178173719,
+        0.7962382445141066,
+        0.7730496453900709
+      ],
+      "support": [
+        3183,
+        2245,
+        957,
+        141
+      ],
+      "predicted_support": [
+        3098,
+        2344,
+        930,
+        154
+      ],
+      "confusion": [
+        [
+          2685,
+          384,
+          94,
+          20
+        ],
+        [
+          305,
+          1849,
+          71,
+          20
+        ],
+        [
+          101,
+          89,
+          762,
+          5
+        ],
+        [
+          7,
+          22,
+          3,
+          109
+        ]
+      ],
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group",
+      "short_group_definition": "observed_days <= 7: distinct calendar days with any record, including invalid geometry; not prior natural_days",
+      "groups": {
+        "known_by_ref_id": {
+          "n": 5835,
+          "correct": 5048,
+          "micro_f1": 0.8651242502142245,
+          "class_f1": [
+            0.8876947877485223,
+            0.8457394711067581,
+            0.8537279453614115,
+            0.7560975609756098
+          ],
+          "macro_f1": 0.8358149412980753,
+          "weighted_f1": 0.8654764738408672,
+          "precision": [
+            0.8991291727140783,
+            0.832289156626506,
+            0.8571428571428571,
+            0.7209302325581395
+          ],
+          "recall": [
+            0.876547576936682,
+            0.8596316575410652,
+            0.8503401360544217,
+            0.7948717948717948
+          ],
+          "support": [
+            2827,
+            2009,
+            882,
+            117
+          ],
+          "predicted_support": [
+            2756,
+            2075,
+            875,
+            129
+          ],
+          "confusion": [
+            [
+              2478,
+              268,
+              65,
+              16
+            ],
+            [
+              208,
+              1727,
+              57,
+              17
+            ],
+            [
+              66,
+              63,
+              750,
+              3
+            ],
+            [
+              4,
+              17,
+              3,
+              93
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_by_ref_id": {
+          "n": 691,
+          "correct": 357,
+          "micro_f1": 0.516642547033285,
+          "class_f1": [
+            0.5931232091690545,
+            0.48316831683168315,
+            0.18461538461538463,
+            0.6530612244897959
+          ],
+          "macro_f1": 0.47849203377647953,
+          "weighted_f1": 0.5133128921423583,
+          "precision": [
+            0.6052631578947368,
+            0.45353159851301117,
+            0.21818181818181817,
+            0.64
+          ],
+          "recall": [
+            0.5814606741573034,
+            0.5169491525423728,
+            0.16,
+            0.6666666666666666
+          ],
+          "support": [
+            356,
+            236,
+            75,
+            24
+          ],
+          "predicted_support": [
+            342,
+            269,
+            55,
+            25
+          ],
+          "confusion": [
+            [
+              207,
+              116,
+              29,
+              4
+            ],
+            [
+              97,
+              122,
+              14,
+              3
+            ],
+            [
+              35,
+              26,
+              12,
+              2
+            ],
+            [
+              3,
+              5,
+              0,
+              16
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_le7": {
+          "n": 1621,
+          "correct": 1125,
+          "micro_f1": 0.6940160394818014,
+          "class_f1": [
+            0.7595936794582393,
+            0.6280373831775701,
+            0.592,
+            0.4
+          ],
+          "macro_f1": 0.5949077656589523,
+          "weighted_f1": 0.6967559460172201,
+          "precision": [
+            0.7807424593967517,
+            0.6021505376344086,
+            0.6098901098901099,
+            0.2631578947368421
+          ],
+          "recall": [
+            0.7395604395604396,
+            0.65625,
+            0.5751295336787565,
+            0.8333333333333334
+          ],
+          "support": [
+            910,
+            512,
+            193,
+            6
+          ],
+          "predicted_support": [
+            862,
+            558,
+            182,
+            19
+          ],
+          "confusion": [
+            [
+              673,
+              183,
+              47,
+              7
+            ],
+            [
+              145,
+              336,
+              24,
+              7
+            ],
+            [
+              43,
+              39,
+              111,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              5
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_gt7": {
+          "n": 4905,
+          "correct": 4280,
+          "micro_f1": 0.872579001019368,
+          "class_f1": [
+            0.8924373475271679,
+            0.8599033816425121,
+            0.8611111111111112,
+            0.7703703703703704
+          ],
+          "macro_f1": 0.8459555526627904,
+          "weighted_f1": 0.8727036779214302,
+          "precision": [
+            0.8998211091234347,
+            0.8471444568868981,
+            0.8703208556149733,
+            0.7703703703703704
+          ],
+          "recall": [
+            0.8851737791465024,
+            0.8730525100980958,
+            0.8520942408376964,
+            0.7703703703703704
+          ],
+          "support": [
+            2273,
+            1733,
+            764,
+            135
+          ],
+          "predicted_support": [
+            2236,
+            1786,
+            748,
+            135
+          ],
+          "confusion": [
+            [
+              2012,
+              201,
+              47,
+              13
+            ],
+            [
+              160,
+              1513,
+              47,
+              13
+            ],
+            [
+              58,
+              50,
+              651,
+              5
+            ],
+            [
+              6,
+              22,
+              3,
+              104
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "known_short": {
+          "n": 1242,
+          "correct": 929,
+          "micro_f1": 0.7479871175523349,
+          "class_f1": [
+            0.8046477850399419,
+            0.6794871794871795,
+            0.6883116883116883,
+            0.42105263157894735
+          ],
+          "macro_f1": 0.6483748211044392,
+          "weighted_f1": 0.7509822249360661,
+          "precision": [
+            0.8293413173652695,
+            0.654320987654321,
+            0.6838709677419355,
+            0.2857142857142857
+          ],
+          "recall": [
+            0.7813822284908322,
+            0.7066666666666667,
+            0.6928104575163399,
+            0.8
+          ],
+          "support": [
+            709,
+            375,
+            153,
+            5
+          ],
+          "predicted_support": [
+            668,
+            405,
+            155,
+            14
+          ],
+          "confusion": [
+            [
+              554,
+              118,
+              32,
+              5
+            ],
+            [
+              88,
+              265,
+              17,
+              5
+            ],
+            [
+              25,
+              22,
+              106,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              4
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_short": {
+          "n": 379,
+          "correct": 196,
+          "micro_f1": 0.5171503957783641,
+          "class_f1": [
+            0.6025316455696202,
+            0.4896551724137931,
+            0.14925373134328357,
+            0.3333333333333333
+          ],
+          "macro_f1": 0.39369347066500754,
+          "weighted_f1": 0.5131796885679366,
+          "precision": [
+            0.6134020618556701,
+            0.46405228758169936,
+            0.18518518518518517,
+            0.2
+          ],
+          "recall": [
+            0.5920398009950248,
+            0.5182481751824818,
+            0.125,
+            1.0
+          ],
+          "support": [
+            201,
+            137,
+            40,
+            1
+          ],
+          "predicted_support": [
+            194,
+            153,
+            27,
+            5
+          ],
+          "confusion": [
+            [
+              119,
+              65,
+              15,
+              2
+            ],
+            [
+              57,
+              71,
+              7,
+              2
+            ],
+            [
+              18,
+              17,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        }
+      },
+      "scope": "one final fishing-class prediction per vessel; chronological development evaluation, not official Test A"
+    },
+    "final10_before_class_bias": {
+      "n": 6526,
+      "correct": 5483,
+      "micro_f1": 0.8401777505363163,
+      "class_f1": [
+        0.8682956815736899,
+        0.8186975266621285,
+        0.8106928532460448,
+        0.7278688524590164
+      ],
+      "macro_f1": 0.8063887284852198,
+      "weighted_f1": 0.8397523246335764,
+      "precision": [
+        0.8498796630565584,
+        0.8344125809435707,
+        0.8481735159817352,
+        0.676829268292683
+      ],
+      "recall": [
+        0.8875274897895068,
+        0.8035634743875278,
+        0.7763845350052246,
+        0.7872340425531915
+      ],
+      "support": [
+        3183,
+        2245,
+        957,
+        141
+      ],
+      "predicted_support": [
+        3324,
+        2162,
+        876,
+        164
+      ],
+      "confusion": [
+        [
+          2825,
+          262,
+          75,
+          21
+        ],
+        [
+          365,
+          1804,
+          52,
+          24
+        ],
+        [
+          129,
+          77,
+          743,
+          8
+        ],
+        [
+          5,
+          19,
+          6,
+          111
+        ]
+      ],
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group",
+      "short_group_definition": "observed_days <= 7: distinct calendar days with any record, including invalid geometry; not prior natural_days",
+      "groups": {
+        "known_by_ref_id": {
+          "n": 5835,
+          "correct": 5107,
+          "micro_f1": 0.875235646958012,
+          "class_f1": [
+            0.8972027972027972,
+            0.8580045237496858,
+            0.8596389050669773,
+            0.7559055118110236
+          ],
+          "macro_f1": 0.8426879344576209,
+          "weighted_f1": 0.8751955192898698,
+          "precision": [
+            0.8869685447632216,
+            0.8664974619289341,
+            0.8838323353293414,
+            0.7007299270072993
+          ],
+          "recall": [
+            0.9076759816059426,
+            0.8496764559482329,
+            0.8367346938775511,
+            0.8205128205128205
+          ],
+          "support": [
+            2827,
+            2009,
+            882,
+            117
+          ],
+          "predicted_support": [
+            2893,
+            1970,
+            835,
+            137
+          ],
+          "confusion": [
+            [
+              2566,
+              193,
+              52,
+              16
+            ],
+            [
+              241,
+              1707,
+              41,
+              20
+            ],
+            [
+              83,
+              56,
+              738,
+              5
+            ],
+            [
+              3,
+              14,
+              4,
+              96
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_by_ref_id": {
+          "n": 691,
+          "correct": 376,
+          "micro_f1": 0.5441389290882779,
+          "class_f1": [
+            0.6581956797966964,
+            0.4532710280373832,
+            0.08620689655172414,
+            0.5882352941176471
+          ],
+          "macro_f1": 0.4464772246258627,
+          "weighted_f1": 0.5236943399777846,
+          "precision": [
+            0.6009280742459396,
+            0.5052083333333334,
+            0.12195121951219512,
+            0.5555555555555556
+          ],
+          "recall": [
+            0.7275280898876404,
+            0.4110169491525424,
+            0.06666666666666667,
+            0.625
+          ],
+          "support": [
+            356,
+            236,
+            75,
+            24
+          ],
+          "predicted_support": [
+            431,
+            192,
+            41,
+            27
+          ],
+          "confusion": [
+            [
+              259,
+              69,
+              23,
+              5
+            ],
+            [
+              124,
+              97,
+              11,
+              4
+            ],
+            [
+              46,
+              21,
+              5,
+              3
+            ],
+            [
+              2,
+              5,
+              2,
+              15
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_le7": {
+          "n": 1621,
+          "correct": 1173,
+          "micro_f1": 0.7236273904996916,
+          "class_f1": [
+            0.7941176470588235,
+            0.6408376963350786,
+            0.6074498567335244,
+            0.29411764705882354
+          ],
+          "macro_f1": 0.5841307117965625,
+          "weighted_f1": 0.7216276912887186,
+          "precision": [
+            0.7605633802816901,
+            0.690744920993228,
+            0.6794871794871795,
+            0.17857142857142858
+          ],
+          "recall": [
+            0.8307692307692308,
+            0.59765625,
+            0.5492227979274611,
+            0.8333333333333334
+          ],
+          "support": [
+            910,
+            512,
+            193,
+            6
+          ],
+          "predicted_support": [
+            994,
+            443,
+            156,
+            28
+          ],
+          "confusion": [
+            [
+              756,
+              107,
+              35,
+              12
+            ],
+            [
+              181,
+              306,
+              15,
+              10
+            ],
+            [
+              56,
+              30,
+              106,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              5
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_gt7": {
+          "n": 4905,
+          "correct": 4310,
+          "micro_f1": 0.8786952089704383,
+          "class_f1": [
+            0.8989789267868781,
+            0.8679026651216686,
+            0.8584905660377359,
+            0.7822878228782287
+          ],
+          "macro_f1": 0.8519149952061279,
+          "weighted_f1": 0.8784811555114815,
+          "precision": [
+            0.8879828326180258,
+            0.8714368819080861,
+            0.8847222222222222,
+            0.7794117647058824
+          ],
+          "recall": [
+            0.9102507699076111,
+            0.864396999422966,
+            0.8337696335078534,
+            0.7851851851851852
+          ],
+          "support": [
+            2273,
+            1733,
+            764,
+            135
+          ],
+          "predicted_support": [
+            2330,
+            1719,
+            720,
+            136
+          ],
+          "confusion": [
+            [
+              2069,
+              155,
+              40,
+              9
+            ],
+            [
+              184,
+              1498,
+              37,
+              14
+            ],
+            [
+              73,
+              47,
+              637,
+              7
+            ],
+            [
+              4,
+              19,
+              6,
+              106
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "known_short": {
+          "n": 1242,
+          "correct": 971,
+          "micro_f1": 0.7818035426731079,
+          "class_f1": [
+            0.8389771941948859,
+            0.7121001390820584,
+            0.7123287671232876,
+            0.3076923076923077
+          ],
+          "macro_f1": 0.6427746020231349,
+          "weighted_f1": 0.7829284587345173,
+          "precision": [
+            0.8224932249322493,
+            0.7441860465116279,
+            0.7482014388489209,
+            0.19047619047619047
+          ],
+          "recall": [
+            0.8561354019746121,
+            0.6826666666666666,
+            0.6797385620915033,
+            0.8
+          ],
+          "support": [
+            709,
+            375,
+            153,
+            5
+          ],
+          "predicted_support": [
+            738,
+            344,
+            139,
+            21
+          ],
+          "confusion": [
+            [
+              607,
+              70,
+              23,
+              9
+            ],
+            [
+              100,
+              256,
+              12,
+              7
+            ],
+            [
+              30,
+              18,
+              104,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              4
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_short": {
+          "n": 379,
+          "correct": 202,
+          "micro_f1": 0.5329815303430079,
+          "class_f1": [
+            0.6520787746170679,
+            0.423728813559322,
+            0.07017543859649122,
+            0.25
+          ],
+          "macro_f1": 0.3489957566932203,
+          "weighted_f1": 0.5070598910277505,
+          "precision": [
+            0.58203125,
+            0.5050505050505051,
+            0.11764705882352941,
+            0.14285714285714285
+          ],
+          "recall": [
+            0.7412935323383084,
+            0.36496350364963503,
+            0.05,
+            1.0
+          ],
+          "support": [
+            201,
+            137,
+            40,
+            1
+          ],
+          "predicted_support": [
+            256,
+            99,
+            17,
+            7
+          ],
+          "confusion": [
+            [
+              149,
+              37,
+              12,
+              3
+            ],
+            [
+              81,
+              50,
+              3,
+              3
+            ],
+            [
+              26,
+              12,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        }
+      },
+      "scope": "one final fishing-class prediction per vessel; chronological development evaluation, not official Test A"
+    },
+    "final10": {
+      "n": 6526,
+      "correct": 5471,
+      "micro_f1": 0.8383389518847686,
+      "class_f1": [
+        0.8667074289208193,
+        0.8147808124856553,
+        0.8118918918918919,
+        0.7260726072607261
+      ],
+      "macro_f1": 0.8048631851397732,
+      "weighted_f1": 0.8377673074547298,
+      "precision": [
+        0.8440011908306043,
+        0.8404356060606061,
+        0.8409854423292273,
+        0.6790123456790124
+      ],
+      "recall": [
+        0.8906691800188501,
+        0.7906458797327395,
+        0.7847439916405433,
+        0.7801418439716312
+      ],
+      "support": [
+        3183,
+        2245,
+        957,
+        141
+      ],
+      "predicted_support": [
+        3359,
+        2112,
+        893,
+        162
+      ],
+      "confusion": [
+        [
+          2835,
+          249,
+          79,
+          20
+        ],
+        [
+          390,
+          1775,
+          56,
+          24
+        ],
+        [
+          129,
+          69,
+          751,
+          8
+        ],
+        [
+          5,
+          19,
+          7,
+          110
+        ]
+      ],
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group",
+      "short_group_definition": "observed_days <= 7: distinct calendar days with any record, including invalid geometry; not prior natural_days",
+      "groups": {
+        "known_by_ref_id": {
+          "n": 5835,
+          "correct": 5096,
+          "micro_f1": 0.8733504712939161,
+          "class_f1": [
+            0.895231465367212,
+            0.8548223350253807,
+            0.8602771362586605,
+            0.753968253968254
+          ],
+          "macro_f1": 0.8410747976548768,
+          "weighted_f1": 0.8732024239166277,
+          "precision": [
+            0.881123672490579,
+            0.8720870015535992,
+            0.8764705882352941,
+            0.7037037037037037
+          ],
+          "recall": [
+            0.9097983728333923,
+            0.8382279741164759,
+            0.844671201814059,
+            0.811965811965812
+          ],
+          "support": [
+            2827,
+            2009,
+            882,
+            117
+          ],
+          "predicted_support": [
+            2919,
+            1931,
+            850,
+            135
+          ],
+          "confusion": [
+            [
+              2572,
+              184,
+              56,
+              15
+            ],
+            [
+              261,
+              1684,
+              44,
+              20
+            ],
+            [
+              83,
+              49,
+              745,
+              5
+            ],
+            [
+              3,
+              14,
+              5,
+              95
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_by_ref_id": {
+          "n": 691,
+          "correct": 375,
+          "micro_f1": 0.5426917510853835,
+          "class_f1": [
+            0.6608040201005025,
+            0.4364508393285372,
+            0.1016949152542373,
+            0.5882352941176471
+          ],
+          "macro_f1": 0.446796267200231,
+          "weighted_f1": 0.5209745223447251,
+          "precision": [
+            0.5977272727272728,
+            0.5027624309392266,
+            0.13953488372093023,
+            0.5555555555555556
+          ],
+          "recall": [
+            0.7387640449438202,
+            0.3855932203389831,
+            0.08,
+            0.625
+          ],
+          "support": [
+            356,
+            236,
+            75,
+            24
+          ],
+          "predicted_support": [
+            440,
+            181,
+            43,
+            27
+          ],
+          "confusion": [
+            [
+              263,
+              65,
+              23,
+              5
+            ],
+            [
+              129,
+              91,
+              12,
+              4
+            ],
+            [
+              46,
+              20,
+              6,
+              3
+            ],
+            [
+              2,
+              5,
+              2,
+              15
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_le7": {
+          "n": 1621,
+          "correct": 1165,
+          "micro_f1": 0.7186921653300432,
+          "class_f1": [
+            0.7910369984366857,
+            0.6275346851654215,
+            0.6062322946175638,
+            0.30303030303030304
+          ],
+          "macro_f1": 0.5819585703124935,
+          "weighted_f1": 0.7155844799885573,
+          "precision": [
+            0.7522299306243806,
+            0.691764705882353,
+            0.66875,
+            0.18518518518518517
+          ],
+          "recall": [
+            0.8340659340659341,
+            0.57421875,
+            0.5544041450777202,
+            0.8333333333333334
+          ],
+          "support": [
+            910,
+            512,
+            193,
+            6
+          ],
+          "predicted_support": [
+            1009,
+            425,
+            160,
+            27
+          ],
+          "confusion": [
+            [
+              759,
+              103,
+              37,
+              11
+            ],
+            [
+              192,
+              294,
+              16,
+              10
+            ],
+            [
+              57,
+              28,
+              107,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              5
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_gt7": {
+          "n": 4905,
+          "correct": 4306,
+          "micro_f1": 0.8778797145769622,
+          "class_f1": [
+            0.8981181051265412,
+            0.8660818713450292,
+            0.8603874415497662,
+            0.7777777777777778
+          ],
+          "macro_f1": 0.8505912989497786,
+          "weighted_f1": 0.8776102632696402,
+          "precision": [
+            0.8834042553191489,
+            0.8778897451096621,
+            0.878581173260573,
+            0.7777777777777778
+          ],
+          "recall": [
+            0.9133304003519578,
+            0.8545874206578188,
+            0.8429319371727748,
+            0.7777777777777778
+          ],
+          "support": [
+            2273,
+            1733,
+            764,
+            135
+          ],
+          "predicted_support": [
+            2350,
+            1687,
+            733,
+            135
+          ],
+          "confusion": [
+            [
+              2076,
+              146,
+              42,
+              9
+            ],
+            [
+              198,
+              1481,
+              40,
+              14
+            ],
+            [
+              72,
+              41,
+              644,
+              7
+            ],
+            [
+              4,
+              19,
+              7,
+              105
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "known_short": {
+          "n": 1242,
+          "correct": 965,
+          "micro_f1": 0.7769726247987118,
+          "class_f1": [
+            0.8345916266300618,
+            0.7015558698727016,
+            0.711864406779661,
+            0.32
+          ],
+          "macro_f1": 0.6420029758206061,
+          "weighted_f1": 0.7772336302095532,
+          "precision": [
+            0.8128342245989305,
+            0.7469879518072289,
+            0.7394366197183099,
+            0.2
+          ],
+          "recall": [
+            0.8575458392101551,
+            0.6613333333333333,
+            0.6862745098039216,
+            0.8
+          ],
+          "support": [
+            709,
+            375,
+            153,
+            5
+          ],
+          "predicted_support": [
+            748,
+            332,
+            142,
+            20
+          ],
+          "confusion": [
+            [
+              608,
+              68,
+              25,
+              8
+            ],
+            [
+              108,
+              248,
+              12,
+              7
+            ],
+            [
+              31,
+              16,
+              105,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              4
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_short": {
+          "n": 379,
+          "correct": 200,
+          "micro_f1": 0.5277044854881267,
+          "class_f1": [
+            0.6536796536796536,
+            0.4,
+            0.06896551724137931,
+            0.25
+          ],
+          "macro_f1": 0.34316129273025825,
+          "weighted_f1": 0.49920377593473764,
+          "precision": [
+            0.578544061302682,
+            0.4946236559139785,
+            0.1111111111111111,
+            0.14285714285714285
+          ],
+          "recall": [
+            0.7512437810945274,
+            0.3357664233576642,
+            0.05,
+            1.0
+          ],
+          "support": [
+            201,
+            137,
+            40,
+            1
+          ],
+          "predicted_support": [
+            261,
+            93,
+            18,
+            7
+          ],
+          "confusion": [
+            [
+              151,
+              35,
+              12,
+              3
+            ],
+            [
+              84,
+              46,
+              4,
+              3
+            ],
+            [
+              26,
+              12,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        }
+      },
+      "scope": "one final fishing-class prediction per vessel; chronological development evaluation, not official Test A"
+    },
+    "posthoc_same_policy_TabICL_global": {
+      "n": 6526,
+      "correct": 5477,
+      "micro_f1": 0.8392583512105425,
+      "class_f1": [
+        0.8664336726941194,
+        0.8139481532461573,
+        0.8106928532460448,
+        0.7813620071684588
+      ],
+      "macro_f1": 0.8181091715886951,
+      "weighted_f1": 0.8383660876172575,
+      "precision": [
+        0.839022954679223,
+        0.8391674550614948,
+        0.8481735159817352,
+        0.7898550724637681
+      ],
+      "recall": [
+        0.8956958843857996,
+        0.7902004454342985,
+        0.7763845350052246,
+        0.7730496453900709
+      ],
+      "support": [
+        3183,
+        2245,
+        957,
+        141
+      ],
+      "predicted_support": [
+        3398,
+        2114,
+        876,
+        138
+      ],
+      "confusion": [
+        [
+          2851,
+          247,
+          74,
+          11
+        ],
+        [
+          404,
+          1774,
+          53,
+          14
+        ],
+        [
+          136,
+          74,
+          743,
+          4
+        ],
+        [
+          7,
+          19,
+          6,
+          109
+        ]
+      ],
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group",
+      "short_group_definition": "observed_days <= 7: distinct calendar days with any record, including invalid geometry; not prior natural_days",
+      "groups": {
+        "known_by_ref_id": {
+          "n": 5835,
+          "correct": 5099,
+          "micro_f1": 0.8738646101113967,
+          "class_f1": [
+            0.8944357774310973,
+            0.8547528517110267,
+            0.858139534883721,
+            0.8050847457627118
+          ],
+          "macro_f1": 0.8531032274471392,
+          "weighted_f1": 0.8734948426575568,
+          "precision": [
+            0.8769544527532291,
+            0.8708677685950413,
+            0.8806682577565632,
+            0.7983193277310925
+          ],
+          "recall": [
+            0.9126282278033251,
+            0.839223494275759,
+            0.8367346938775511,
+            0.811965811965812
+          ],
+          "support": [
+            2827,
+            2009,
+            882,
+            117
+          ],
+          "predicted_support": [
+            2942,
+            1936,
+            838,
+            119
+          ],
+          "confusion": [
+            [
+              2580,
+              186,
+              52,
+              9
+            ],
+            [
+              267,
+              1686,
+              44,
+              12
+            ],
+            [
+              90,
+              51,
+              738,
+              3
+            ],
+            [
+              5,
+              13,
+              4,
+              95
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_by_ref_id": {
+          "n": 691,
+          "correct": 378,
+          "micro_f1": 0.5470332850940666,
+          "class_f1": [
+            0.6674876847290641,
+            0.4251207729468599,
+            0.08849557522123894,
+            0.6511627906976745
+          ],
+          "macro_f1": 0.45806670589870935,
+          "weighted_f1": 0.5213012927602647,
+          "precision": [
+            0.5942982456140351,
+            0.4943820224719101,
+            0.13157894736842105,
+            0.7368421052631579
+          ],
+          "recall": [
+            0.7612359550561798,
+            0.3728813559322034,
+            0.06666666666666667,
+            0.5833333333333334
+          ],
+          "support": [
+            356,
+            236,
+            75,
+            24
+          ],
+          "predicted_support": [
+            456,
+            178,
+            38,
+            19
+          ],
+          "confusion": [
+            [
+              271,
+              61,
+              22,
+              2
+            ],
+            [
+              137,
+              88,
+              9,
+              2
+            ],
+            [
+              46,
+              23,
+              5,
+              1
+            ],
+            [
+              2,
+              6,
+              2,
+              14
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_le7": {
+          "n": 1621,
+          "correct": 1173,
+          "micro_f1": 0.7236273904996916,
+          "class_f1": [
+            0.7936016511867905,
+            0.6319148936170212,
+            0.6011560693641619,
+            0.3333333333333333
+          ],
+          "macro_f1": 0.5900014868753268,
+          "weighted_f1": 0.7179155148051681,
+          "precision": [
+            0.7480544747081712,
+            0.6939252336448598,
+            0.6797385620915033,
+            0.25
+          ],
+          "recall": [
+            0.845054945054945,
+            0.580078125,
+            0.538860103626943,
+            0.5
+          ],
+          "support": [
+            910,
+            512,
+            193,
+            6
+          ],
+          "predicted_support": [
+            1028,
+            428,
+            153,
+            12
+          ],
+          "confusion": [
+            [
+              769,
+              101,
+              36,
+              4
+            ],
+            [
+              197,
+              297,
+              13,
+              5
+            ],
+            [
+              60,
+              29,
+              104,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              3
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_gt7": {
+          "n": 4905,
+          "correct": 4304,
+          "micro_f1": 0.8774719673802243,
+          "class_f1": [
+            0.896833943570967,
+            0.8639953202690845,
+            0.859448554135844,
+            0.8122605363984674
+          ],
+          "macro_f1": 0.8581345885935907,
+          "weighted_f1": 0.8770807974590641,
+          "precision": [
+            0.8784810126582279,
+            0.8760379596678529,
+            0.8838174273858921,
+            0.8412698412698413
+          ],
+          "recall": [
+            0.9159700835899692,
+            0.8522792844777842,
+            0.8363874345549738,
+            0.7851851851851852
+          ],
+          "support": [
+            2273,
+            1733,
+            764,
+            135
+          ],
+          "predicted_support": [
+            2370,
+            1686,
+            723,
+            126
+          ],
+          "confusion": [
+            [
+              2082,
+              146,
+              38,
+              7
+            ],
+            [
+              207,
+              1477,
+              40,
+              9
+            ],
+            [
+              76,
+              45,
+              639,
+              4
+            ],
+            [
+              5,
+              18,
+              6,
+              106
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "known_short": {
+          "n": 1242,
+          "correct": 973,
+          "micro_f1": 0.78341384863124,
+          "class_f1": [
+            0.8370824812542604,
+            0.7124824684431977,
+            0.7034482758620689,
+            0.42857142857142855
+          ],
+          "macro_f1": 0.6703961635327389,
+          "weighted_f1": 0.7813549502618546,
+          "precision": [
+            0.8100263852242744,
+            0.7514792899408284,
+            0.7445255474452555,
+            0.3333333333333333
+          ],
+          "recall": [
+            0.8660084626234132,
+            0.6773333333333333,
+            0.6666666666666666,
+            0.6
+          ],
+          "support": [
+            709,
+            375,
+            153,
+            5
+          ],
+          "predicted_support": [
+            758,
+            338,
+            137,
+            9
+          ],
+          "confusion": [
+            [
+              614,
+              68,
+              24,
+              3
+            ],
+            [
+              107,
+              254,
+              11,
+              3
+            ],
+            [
+              35,
+              16,
+              102,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              3
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_short": {
+          "n": 379,
+          "correct": 200,
+          "micro_f1": 0.5277044854881267,
+          "class_f1": [
+            0.6581740976645435,
+            0.3788546255506608,
+            0.07142857142857142,
+            0.0
+          ],
+          "macro_f1": 0.2771143236609439,
+          "weighted_f1": 0.4935441165914423,
+          "precision": [
+            0.5740740740740741,
+            0.4777777777777778,
+            0.125,
+            0.0
+          ],
+          "recall": [
+            0.7711442786069652,
+            0.31386861313868614,
+            0.05,
+            0.0
+          ],
+          "support": [
+            201,
+            137,
+            40,
+            1
+          ],
+          "predicted_support": [
+            270,
+            90,
+            16,
+            3
+          ],
+          "confusion": [
+            [
+              155,
+              33,
+              12,
+              1
+            ],
+            [
+              90,
+              43,
+              2,
+              2
+            ],
+            [
+              25,
+              13,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        }
+      },
+      "scope": "one final fishing-class prediction per vessel; chronological development evaluation, not official Test A"
+    },
+    "posthoc_same_policy_TabICL_local": {
+      "n": 6526,
+      "correct": 5425,
+      "micro_f1": 0.8312902237205027,
+      "class_f1": [
+        0.8638120265883444,
+        0.8119266055045872,
+        0.807961269499731,
+        0.6043956043956044
+      ],
+      "macro_f1": 0.7720238764970668,
+      "weighted_f1": 0.8321678861660315,
+      "precision": [
+        0.8502738892270237,
+        0.8368794326241135,
+        0.8325942350332595,
+        0.49327354260089684
+      ],
+      "recall": [
+        0.8777882500785422,
+        0.7884187082405345,
+        0.7847439916405433,
+        0.7801418439716312
+      ],
+      "support": [
+        3183,
+        2245,
+        957,
+        141
+      ],
+      "predicted_support": [
+        3286,
+        2115,
+        902,
+        223
+      ],
+      "confusion": [
+        [
+          2794,
+          256,
+          82,
+          51
+        ],
+        [
+          369,
+          1770,
+          61,
+          45
+        ],
+        [
+          118,
+          71,
+          751,
+          17
+        ],
+        [
+          5,
+          18,
+          8,
+          110
+        ]
+      ],
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group",
+      "short_group_definition": "observed_days <= 7: distinct calendar days with any record, including invalid geometry; not prior natural_days",
+      "groups": {
+        "known_by_ref_id": {
+          "n": 5835,
+          "correct": 5059,
+          "micro_f1": 0.8670094258783205,
+          "class_f1": [
+            0.8927943760984183,
+            0.8527918781725888,
+            0.8566493955094991,
+            0.6270627062706271
+          ],
+          "macro_f1": 0.8073245890127834,
+          "weighted_f1": 0.868229595193145,
+          "precision": [
+            0.8871812783793224,
+            0.8700155359917141,
+            0.8701754385964913,
+            0.510752688172043
+          ],
+          "recall": [
+            0.8984789529536611,
+            0.8362369337979094,
+            0.8435374149659864,
+            0.811965811965812
+          ],
+          "support": [
+            2827,
+            2009,
+            882,
+            117
+          ],
+          "predicted_support": [
+            2863,
+            1931,
+            855,
+            186
+          ],
+          "confusion": [
+            [
+              2540,
+              187,
+              59,
+              41
+            ],
+            [
+              243,
+              1680,
+              47,
+              39
+            ],
+            [
+              77,
+              50,
+              744,
+              11
+            ],
+            [
+              3,
+              14,
+              5,
+              95
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_by_ref_id": {
+          "n": 691,
+          "correct": 366,
+          "micro_f1": 0.5296671490593343,
+          "class_f1": [
+            0.6521181001283697,
+            0.42857142857142855,
+            0.11475409836065574,
+            0.4918032786885246
+          ],
+          "macro_f1": 0.4218117264372446,
+          "weighted_f1": 0.5118766090508401,
+          "precision": [
+            0.6004728132387707,
+            0.4891304347826087,
+            0.14893617021276595,
+            0.40540540540540543
+          ],
+          "recall": [
+            0.7134831460674157,
+            0.3813559322033898,
+            0.09333333333333334,
+            0.625
+          ],
+          "support": [
+            356,
+            236,
+            75,
+            24
+          ],
+          "predicted_support": [
+            423,
+            184,
+            47,
+            37
+          ],
+          "confusion": [
+            [
+              254,
+              69,
+              23,
+              10
+            ],
+            [
+              126,
+              90,
+              14,
+              6
+            ],
+            [
+              41,
+              21,
+              7,
+              6
+            ],
+            [
+              2,
+              4,
+              3,
+              15
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_le7": {
+          "n": 1621,
+          "correct": 1150,
+          "micro_f1": 0.7094386181369525,
+          "class_f1": [
+            0.7854122621564482,
+            0.6259378349410504,
+            0.6077348066298343,
+            0.18181818181818182
+          ],
+          "macro_f1": 0.5502257713863786,
+          "weighted_f1": 0.7116527185827592,
+          "precision": [
+            0.7566191446028513,
+            0.6935866983372921,
+            0.650887573964497,
+            0.10204081632653061
+          ],
+          "recall": [
+            0.8164835164835165,
+            0.5703125,
+            0.5699481865284974,
+            0.8333333333333334
+          ],
+          "support": [
+            910,
+            512,
+            193,
+            6
+          ],
+          "predicted_support": [
+            982,
+            421,
+            169,
+            49
+          ],
+          "confusion": [
+            [
+              743,
+              103,
+              40,
+              24
+            ],
+            [
+              186,
+              292,
+              19,
+              15
+            ],
+            [
+              52,
+              26,
+              110,
+              5
+            ],
+            [
+              1,
+              0,
+              0,
+              5
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "observed_days_gt7": {
+          "n": 4905,
+          "correct": 4275,
+          "micro_f1": 0.8715596330275229,
+          "class_f1": [
+            0.8962202315927463,
+            0.8625620075868107,
+            0.8563794255177021,
+            0.6796116504854369
+          ],
+          "macro_f1": 0.823693328795674,
+          "weighted_f1": 0.8721610600345187,
+          "precision": [
+            0.8901909722222222,
+            0.872491145218418,
+            0.8744884038199181,
+            0.603448275862069
+          ],
+          "recall": [
+            0.9023317201935768,
+            0.8528563185227929,
+            0.8390052356020943,
+            0.7777777777777778
+          ],
+          "support": [
+            2273,
+            1733,
+            764,
+            135
+          ],
+          "predicted_support": [
+            2304,
+            1694,
+            733,
+            174
+          ],
+          "confusion": [
+            [
+              2051,
+              153,
+              42,
+              27
+            ],
+            [
+              183,
+              1478,
+              42,
+              30
+            ],
+            [
+              66,
+              45,
+              641,
+              12
+            ],
+            [
+              4,
+              18,
+              8,
+              105
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "known_short": {
+          "n": 1242,
+          "correct": 951,
+          "micro_f1": 0.7657004830917874,
+          "class_f1": [
+            0.8272980501392758,
+            0.6978723404255319,
+            0.7086092715231788,
+            0.1951219512195122
+          ],
+          "macro_f1": 0.6072254033268747,
+          "weighted_f1": 0.7710541654649476,
+          "precision": [
+            0.8170563961485557,
+            0.7454545454545455,
+            0.7181208053691275,
+            0.1111111111111111
+          ],
+          "recall": [
+            0.8377997179125529,
+            0.656,
+            0.6993464052287581,
+            0.8
+          ],
+          "support": [
+            709,
+            375,
+            153,
+            5
+          ],
+          "predicted_support": [
+            727,
+            330,
+            149,
+            36
+          ],
+          "confusion": [
+            [
+              594,
+              70,
+              28,
+              17
+            ],
+            [
+              103,
+              246,
+              14,
+              12
+            ],
+            [
+              29,
+              14,
+              107,
+              3
+            ],
+            [
+              1,
+              0,
+              0,
+              4
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        },
+        "novel_short": {
+          "n": 379,
+          "correct": 199,
+          "micro_f1": 0.525065963060686,
+          "class_f1": [
+            0.6535087719298246,
+            0.40350877192982454,
+            0.1,
+            0.14285714285714285
+          ],
+          "macro_f1": 0.324968671679198,
+          "weighted_f1": 0.503374200673187,
+          "precision": [
+            0.5843137254901961,
+            0.5054945054945055,
+            0.15,
+            0.07692307692307693
+          ],
+          "recall": [
+            0.7412935323383084,
+            0.3357664233576642,
+            0.075,
+            1.0
+          ],
+          "support": [
+            201,
+            137,
+            40,
+            1
+          ],
+          "predicted_support": [
+            255,
+            91,
+            20,
+            13
+          ],
+          "confusion": [
+            [
+              149,
+              33,
+              12,
+              7
+            ],
+            [
+              83,
+              46,
+              5,
+              3
+            ],
+            [
+              23,
+              12,
+              3,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "class_order": [
+            "연안복합",
+            "자망",
+            "통발",
+            "채낚기연승낚시"
+          ],
+          "absent_class_f1_policy": "zero when a nonempty group has no true or predicted examples; null for an entirely empty group"
+        }
+      },
+      "scope": "one final fishing-class prediction per vessel; chronological development evaluation, not official Test A"
+    }
+  },
+  "fusion_changes": {
+    "all": {
+      "n": 6526,
+      "final_correct": 5471,
+      "both_correct": 3629,
+      "both_wrong": 615,
+      "model_only_correct": 506,
+      "retrieval_only_correct": 1776,
+      "fusion_corrected_model_errors": 1646,
+      "fusion_damaged_model_correct": 310,
+      "fusion_corrected_retrieval_errors": 213,
+      "fusion_damaged_retrieval_correct": 147,
+      "retrieval_weight_quantiles": [
+        0.0,
+        0.15111451596021652,
+        0.45429468154907227,
+        0.6661759316921234,
+        0.7268185168504715,
+        0.739631861448288,
+        0.7460601925849915
+      ],
+      "retrieval_weight_mean": 0.5567920804023743
+    },
+    "known": {
+      "n": 5835,
+      "final_correct": 5096,
+      "both_correct": 3399,
+      "both_wrong": 426,
+      "model_only_correct": 361,
+      "retrieval_only_correct": 1649,
+      "fusion_corrected_model_errors": 1574,
+      "fusion_damaged_model_correct": 238,
+      "fusion_corrected_retrieval_errors": 135,
+      "fusion_damaged_retrieval_correct": 87,
+      "retrieval_weight_quantiles": [
+        0.0,
+        0.2803907573223114,
+        0.513258695602417,
+        0.6824495196342468,
+        0.7294260859489441,
+        0.7402716875076294,
+        0.7460601925849915
+      ],
+      "retrieval_weight_mean": 0.5850774645805359
+    },
+    "novel": {
+      "n": 691,
+      "final_correct": 375,
+      "both_correct": 230,
+      "both_wrong": 189,
+      "model_only_correct": 145,
+      "retrieval_only_correct": 127,
+      "fusion_corrected_model_errors": 72,
+      "fusion_damaged_model_correct": 72,
+      "fusion_corrected_retrieval_errors": 78,
+      "fusion_damaged_retrieval_correct": 60,
+      "retrieval_weight_quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.33317553997039795,
+        0.5836411416530609,
+        0.6755005121231079,
+        0.7409298419952393
+      ],
+      "retrieval_weight_mean": 0.31794193387031555
+    }
+  },
+  "class_bias_diagnostic": {
+    "changed": 59,
+    "corrected": 21,
+    "damaged": 33,
+    "changed_pairs": [
+      [
+        0,
+        0,
+        7,
+        0
+      ],
+      [
+        41,
+        0,
+        9,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  "confidence_bins": {
+    "all": [
+      {
+        "min": 0.0,
+        "max": 0.5,
+        "n": 297,
+        "accuracy": 0.43434343434343436,
+        "mean_score": 0.4425296969155406
+      },
+      {
+        "min": 0.5,
+        "max": 0.7,
+        "n": 1187,
+        "accuracy": 0.6225779275484414,
+        "mean_score": 0.616371892406751
+      },
+      {
+        "min": 0.7,
+        "max": 0.9,
+        "n": 3889,
+        "accuracy": 0.8932887631781949,
+        "mean_score": 0.814336895105841
+      },
+      {
+        "min": 0.9,
+        "max": 1.0,
+        "n": 1153,
+        "accuracy": 0.9791847354726799,
+        "mean_score": 0.9343798981374282
+      }
+    ],
+    "known": [
+      {
+        "min": 0.0,
+        "max": 0.5,
+        "n": 217,
+        "accuracy": 0.43317972350230416,
+        "mean_score": 0.442541082295728
+      },
+      {
+        "min": 0.5,
+        "max": 0.7,
+        "n": 915,
+        "accuracy": 0.6721311475409836,
+        "mean_score": 0.6168573109553327
+      },
+      {
+        "min": 0.7,
+        "max": 0.9,
+        "n": 3578,
+        "accuracy": 0.9161542761319172,
+        "mean_score": 0.8163177687759435
+      },
+      {
+        "min": 0.9,
+        "max": 1.0,
+        "n": 1125,
+        "accuracy": 0.9857777777777778,
+        "mean_score": 0.9346720125703978
+      }
+    ],
+    "novel": [
+      {
+        "min": 0.0,
+        "max": 0.5,
+        "n": 80,
+        "accuracy": 0.4375,
+        "mean_score": 0.4424988140717822
+      },
+      {
+        "min": 0.5,
+        "max": 0.7,
+        "n": 272,
+        "accuracy": 0.45588235294117646,
+        "mean_score": 0.6147389586863391
+      },
+      {
+        "min": 0.7,
+        "max": 0.9,
+        "n": 311,
+        "accuracy": 0.6302250803858521,
+        "mean_score": 0.7915472938465898
+      },
+      {
+        "min": 0.9,
+        "max": 1.0,
+        "n": 28,
+        "accuracy": 0.7142857142857143,
+        "mean_score": 0.9226431575270518
+      }
+    ]
+  },
+  "composition_sensitivity": [
+    {
+      "novel_fraction": 0.0,
+      "micro": 0.8733504712939161
+    },
+    {
+      "novel_fraction": 0.1,
+      "micro": 0.8402845992730629
+    },
+    {
+      "novel_fraction": 0.25,
+      "micro": 0.7906857912417828
+    },
+    {
+      "novel_fraction": 0.5,
+      "micro": 0.7080211111896497
+    },
+    {
+      "novel_fraction": 0.75,
+      "micro": 0.6253564311375166
+    },
+    {
+      "novel_fraction": 1.0,
+      "micro": 0.5426917510853835
+    }
+  ],
+  "sensitivity_limit": "Arithmetic scenario holding each observed group accuracy constant; not a forecast for new populations."
+}

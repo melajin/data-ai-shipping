@@ -1,0 +1,1557 @@
+{
+  "experiment": "round001 T5 CSV parser/serialization sensitivity and saved sqrt_macro replay",
+  "status": "completed_with_dynamic_array_comparison_unmeasured",
+  "started_utc": "2026-11-04T14:06:29.844984+00:00",
+  "finished_utc": "2026-11-04T14:07:03.326451+00:00",
+  "elapsed_seconds": 33.48146870000164,
+  "scope": {
+    "development_only": true,
+    "fold_rows": 5897,
+    "holdout_rows_read": 0,
+    "raw_csv_or_parquet_parsed": false,
+    "model_training": false,
+    "actual_hardware_measurement": false,
+    "dynamic_t5_reconstructed": false,
+    "dynamic_comparison_blocker": "The source dynamic path reads all Train geometries for the global fishing mask and Train+Test geometries to build shared harbors. The only discovered saved harbor cache is train-only (Run 008) and explicitly differs from T5's Train+Test population. Reusing either full-cohort geometry or a different harbor cache would violate the frozen input condition/holdout boundary."
+  },
+  "environment": {
+    "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "lightgbm": "4.7.0",
+    "cpu_threads_for_prediction": 1,
+    "random_seed": null,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONPYCACHEPREFIX": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\.pycache",
+      "TEMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\temp",
+      "TMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\temp"
+    }
+  },
+  "input_scope": {
+    "source_inputs": {
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_0_t5.csv": {
+        "bytes": 1065764,
+        "mtime_ns": 1793490020801759900,
+        "sha256": "973c193ac8aed0a677265f4f264e40c30b05de2027f473f81caa630896866a97"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_1_t5.csv": {
+        "bytes": 1067107,
+        "mtime_ns": 1793490074236198100,
+        "sha256": "182329eb8a4461e9c351a2ac571ff44334d90ce38e6b8893eecb365d81abd348"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_2_t5.csv": {
+        "bytes": 1065650,
+        "mtime_ns": 1793490124145258200,
+        "sha256": "2f7992921f2c35191a03394185b676c3562e9a263ede8f39aecdb365e55bc0cb"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz": {
+        "bytes": 8187401,
+        "mtime_ns": 1793795800448994400,
+        "sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz": {
+        "bytes": 8237632,
+        "mtime_ns": 1793795802062513600,
+        "sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz": {
+        "bytes": 8236813,
+        "mtime_ns": 1793795803647850900,
+        "sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_1.txt": {
+        "bytes": 10907541,
+        "mtime_ns": 1793796234883245200,
+        "sha256": "149a12107b73253fc8f2d9cd7cc9ddce7ef834cc6d8f7aaa7bad4ee62d626161"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2024.txt": {
+        "bytes": 3415287,
+        "mtime_ns": 1793796254250375500,
+        "sha256": "c6b4104959964de8445a42da6b354183352e974447300946555bb4f21c24e29e"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2026.txt": {
+        "bytes": 18585070,
+        "mtime_ns": 1793796178977692700,
+        "sha256": "f670dd70bca019f5da861aa72212d79c40bdbb52d563e5e9bc203f617e13597d"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_42.txt": {
+        "bytes": 4357806,
+        "mtime_ns": 1793796138745518900,
+        "sha256": "f68797aeb24c6f512c208529cfcc7f93c33385f8b2586a25a3711dd0ec36b3c7"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_7.txt": {
+        "bytes": 6455403,
+        "mtime_ns": 1793796202300173300,
+        "sha256": "b328f6c242777be579d2e064e03466eada6f218de9a34df4d4f4f909ad135d5e"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_1.txt": {
+        "bytes": 8135831,
+        "mtime_ns": 1793796373548846100,
+        "sha256": "f315be0a84c070e2c589305718e73fa53bf7e21bdf6f102c02b7bd74420a7990"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2024.txt": {
+        "bytes": 18484249,
+        "mtime_ns": 1793796414326600900,
+        "sha256": "c03e7b3b0bb64a70d2b00d767756c7471bfbb44eae2a66b7957b74332dabee71"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2026.txt": {
+        "bytes": 8407479,
+        "mtime_ns": 1793796306354556900,
+        "sha256": "ca883ebc8ae48ae3563d9672c469e2b383b9b888437dd8c10067c804528dae44"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_42.txt": {
+        "bytes": 7717077,
+        "mtime_ns": 1793796279771210400,
+        "sha256": "d019097f80745fe4e29765109376e18050db41bc59203253d219aecc14d1eed7"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_7.txt": {
+        "bytes": 18975482,
+        "mtime_ns": 1793796347095745300,
+        "sha256": "2ac4d9307359eb845c5fe343a96ad9502dd2323042181ecfd4716fbe6f21c3d0"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_1.txt": {
+        "bytes": 8644291,
+        "mtime_ns": 1793796521036229100,
+        "sha256": "98e4f3b86eeddd94943482e1b20f701d8f84d36d39a1d3f3d42e6629f6458cc6"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2024.txt": {
+        "bytes": 9092742,
+        "mtime_ns": 1793796548629072300,
+        "sha256": "dd668f54c43fcd16ab5489fbc096745d806ce73f29e65350b75ee8e79fc9f7a4"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2026.txt": {
+        "bytes": 9955382,
+        "mtime_ns": 1793796469374140200,
+        "sha256": "645ec9c6af6e0a96005680fa6dd282d8153e7f8f71ccc41da078ebba195e5254"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_42.txt": {
+        "bytes": 7701143,
+        "mtime_ns": 1793796440751785700,
+        "sha256": "2634de7fd32c1bb9bec8a77ee80cfc8f77813a4db5024e8daddb48c2308feeb0"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_7.txt": {
+        "bytes": 6757584,
+        "mtime_ns": 1793796493859505700,
+        "sha256": "85f0ca9c6e487e9abdf281b3f4009827ded126064d2d49f808f64abbe12c882f"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\experiments\\exp01\\run_exp01.py": {
+        "bytes": 22894,
+        "mtime_ns": 1793798456100634300,
+        "sha256": "ad84ee500d58983a087a5004fef695df030920086a490d62ca9a93dac2800162"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\data_validation.json": {
+        "bytes": 20224,
+        "mtime_ns": 1793798646182659400,
+        "sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\provenance_addendum.json": {
+        "bytes": 4933,
+        "mtime_ns": 1793799459147414100,
+        "sha256": "06ac9838395be4c4d4df2bdf29a3eb8c85e317c20f0ce72da7de4f6c1ed00713"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\data_adapter.py": {
+        "bytes": 26229,
+        "mtime_ns": 1793797914537603700,
+        "sha256": "761e7e84d9eb1568c8ab200ed8513cf9036799475d1eb456fa39079cd7c6a6b6"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\eval_contract.py": {
+        "bytes": 10903,
+        "mtime_ns": 1793797192794888300,
+        "sha256": "4213e3a18ff418551b92420b04da49b1af6d3064ae0f02eb430040fb165a4ad1"
+      },
+      "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_F156_merge_20261101.py": {
+        "bytes": 18718,
+        "mtime_ns": 1793489201467893500,
+        "sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4"
+      },
+      "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_main_20261101.py": {
+        "bytes": 12324,
+        "mtime_ns": 1793489922047579800,
+        "sha256": "8fbf13c6bec957f845ac86b24b6c5f4b257e35a7fac3e2513214d32abeaaa04a"
+      }
+    },
+    "source_inputs_after": {
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_0_t5.csv": {
+        "bytes": 1065764,
+        "mtime_ns": 1793490020801759900,
+        "sha256": "973c193ac8aed0a677265f4f264e40c30b05de2027f473f81caa630896866a97"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_1_t5.csv": {
+        "bytes": 1067107,
+        "mtime_ns": 1793490074236198100,
+        "sha256": "182329eb8a4461e9c351a2ac571ff44334d90ce38e6b8893eecb365d81abd348"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_2_t5.csv": {
+        "bytes": 1065650,
+        "mtime_ns": 1793490124145258200,
+        "sha256": "2f7992921f2c35191a03394185b676c3562e9a263ede8f39aecdb365e55bc0cb"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz": {
+        "bytes": 8187401,
+        "mtime_ns": 1793795800448994400,
+        "sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz": {
+        "bytes": 8237632,
+        "mtime_ns": 1793795802062513600,
+        "sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz": {
+        "bytes": 8236813,
+        "mtime_ns": 1793795803647850900,
+        "sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_1.txt": {
+        "bytes": 10907541,
+        "mtime_ns": 1793796234883245200,
+        "sha256": "149a12107b73253fc8f2d9cd7cc9ddce7ef834cc6d8f7aaa7bad4ee62d626161"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2024.txt": {
+        "bytes": 3415287,
+        "mtime_ns": 1793796254250375500,
+        "sha256": "c6b4104959964de8445a42da6b354183352e974447300946555bb4f21c24e29e"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2026.txt": {
+        "bytes": 18585070,
+        "mtime_ns": 1793796178977692700,
+        "sha256": "f670dd70bca019f5da861aa72212d79c40bdbb52d563e5e9bc203f617e13597d"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_42.txt": {
+        "bytes": 4357806,
+        "mtime_ns": 1793796138745518900,
+        "sha256": "f68797aeb24c6f512c208529cfcc7f93c33385f8b2586a25a3711dd0ec36b3c7"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_7.txt": {
+        "bytes": 6455403,
+        "mtime_ns": 1793796202300173300,
+        "sha256": "b328f6c242777be579d2e064e03466eada6f218de9a34df4d4f4f909ad135d5e"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_1.txt": {
+        "bytes": 8135831,
+        "mtime_ns": 1793796373548846100,
+        "sha256": "f315be0a84c070e2c589305718e73fa53bf7e21bdf6f102c02b7bd74420a7990"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2024.txt": {
+        "bytes": 18484249,
+        "mtime_ns": 1793796414326600900,
+        "sha256": "c03e7b3b0bb64a70d2b00d767756c7471bfbb44eae2a66b7957b74332dabee71"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2026.txt": {
+        "bytes": 8407479,
+        "mtime_ns": 1793796306354556900,
+        "sha256": "ca883ebc8ae48ae3563d9672c469e2b383b9b888437dd8c10067c804528dae44"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_42.txt": {
+        "bytes": 7717077,
+        "mtime_ns": 1793796279771210400,
+        "sha256": "d019097f80745fe4e29765109376e18050db41bc59203253d219aecc14d1eed7"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_7.txt": {
+        "bytes": 18975482,
+        "mtime_ns": 1793796347095745300,
+        "sha256": "2ac4d9307359eb845c5fe343a96ad9502dd2323042181ecfd4716fbe6f21c3d0"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_1.txt": {
+        "bytes": 8644291,
+        "mtime_ns": 1793796521036229100,
+        "sha256": "98e4f3b86eeddd94943482e1b20f701d8f84d36d39a1d3f3d42e6629f6458cc6"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2024.txt": {
+        "bytes": 9092742,
+        "mtime_ns": 1793796548629072300,
+        "sha256": "dd668f54c43fcd16ab5489fbc096745d806ce73f29e65350b75ee8e79fc9f7a4"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2026.txt": {
+        "bytes": 9955382,
+        "mtime_ns": 1793796469374140200,
+        "sha256": "645ec9c6af6e0a96005680fa6dd282d8153e7f8f71ccc41da078ebba195e5254"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_42.txt": {
+        "bytes": 7701143,
+        "mtime_ns": 1793796440751785700,
+        "sha256": "2634de7fd32c1bb9bec8a77ee80cfc8f77813a4db5024e8daddb48c2308feeb0"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_7.txt": {
+        "bytes": 6757584,
+        "mtime_ns": 1793796493859505700,
+        "sha256": "85f0ca9c6e487e9abdf281b3f4009827ded126064d2d49f808f64abbe12c882f"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\experiments\\exp01\\run_exp01.py": {
+        "bytes": 22894,
+        "mtime_ns": 1793798456100634300,
+        "sha256": "ad84ee500d58983a087a5004fef695df030920086a490d62ca9a93dac2800162"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\data_validation.json": {
+        "bytes": 20224,
+        "mtime_ns": 1793798646182659400,
+        "sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\provenance_addendum.json": {
+        "bytes": 4933,
+        "mtime_ns": 1793799459147414100,
+        "sha256": "06ac9838395be4c4d4df2bdf29a3eb8c85e317c20f0ce72da7de4f6c1ed00713"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\data_adapter.py": {
+        "bytes": 26229,
+        "mtime_ns": 1793797914537603700,
+        "sha256": "761e7e84d9eb1568c8ab200ed8513cf9036799475d1eb456fa39079cd7c6a6b6"
+      },
+      "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\eval_contract.py": {
+        "bytes": 10903,
+        "mtime_ns": 1793797192794888300,
+        "sha256": "4213e3a18ff418551b92420b04da49b1af6d3064ae0f02eb430040fb165a4ad1"
+      },
+      "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_F156_merge_20261101.py": {
+        "bytes": 18718,
+        "mtime_ns": 1793489201467893500,
+        "sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4"
+      },
+      "D:\\repos\\fishing-track-classification\\code\\tools\\run_005_main_20261101.py": {
+        "bytes": 12324,
+        "mtime_ns": 1793489922047579800,
+        "sha256": "8fbf13c6bec957f845ac86b24b6c5f4b257e35a7fac3e2513214d32abeaaa04a"
+      }
+    },
+    "source_files_changed": [],
+    "input_validation_json_sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d",
+    "provenance_addendum_sha256": "06ac9838395be4c4d4df2bdf29a3eb8c85e317c20f0ce72da7de4f6c1ed00713"
+  },
+  "prepared_fold_checks": {
+    "0": {
+      "rows": 5897,
+      "role_counts": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "class_counts_fit_only": {
+        "0": 1556,
+        "1": 1075,
+        "2": 446,
+        "3": 67
+      },
+      "id_order_equal_csv_npz": true,
+      "feature_names": [
+        "t5_main_연안복합",
+        "t5_main_자망",
+        "t5_main_통발",
+        "t5_main_채낚기연승낚시",
+        "t5_month_연안복합",
+        "t5_month_자망",
+        "t5_month_통발",
+        "t5_month_채낚기연승낚시",
+        "t5_fine_grid_ok_ratio",
+        "t5_log1p_fishing_rows"
+      ],
+      "X304_T5_vs_default_csv": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      }
+    },
+    "1": {
+      "rows": 5897,
+      "role_counts": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "class_counts_fit_only": {
+        "0": 1557,
+        "1": 1075,
+        "2": 445,
+        "3": 67
+      },
+      "id_order_equal_csv_npz": true,
+      "feature_names": [
+        "t5_main_연안복합",
+        "t5_main_자망",
+        "t5_main_통발",
+        "t5_main_채낚기연승낚시",
+        "t5_month_연안복합",
+        "t5_month_자망",
+        "t5_month_통발",
+        "t5_month_채낚기연승낚시",
+        "t5_fine_grid_ok_ratio",
+        "t5_log1p_fishing_rows"
+      ],
+      "X304_T5_vs_default_csv": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      }
+    },
+    "2": {
+      "rows": 5897,
+      "role_counts": {
+        "FIT": 3145,
+        "INNER": 787,
+        "OUTER": 1965
+      },
+      "class_counts_fit_only": {
+        "0": 1557,
+        "1": 1075,
+        "2": 446,
+        "3": 67
+      },
+      "id_order_equal_csv_npz": true,
+      "feature_names": [
+        "t5_main_연안복합",
+        "t5_main_자망",
+        "t5_main_통발",
+        "t5_main_채낚기연승낚시",
+        "t5_month_연안복합",
+        "t5_month_자망",
+        "t5_month_통발",
+        "t5_month_채낚기연승낚시",
+        "t5_fine_grid_ok_ratio",
+        "t5_log1p_fishing_rows"
+      ],
+      "X304_T5_vs_default_csv": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      }
+    }
+  },
+  "csv_reader_and_reexport_checks": {
+    "0": {
+      "csv_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_0_t5.csv",
+      "csv_sha256": "973c193ac8aed0a677265f4f264e40c30b05de2027f473f81caa630896866a97",
+      "csv_rows": 5897,
+      "csv_columns": [
+        "rfid_id",
+        "t5_main_연안복합",
+        "t5_main_자망",
+        "t5_main_통발",
+        "t5_main_채낚기연승낚시",
+        "t5_month_연안복합",
+        "t5_month_자망",
+        "t5_month_통발",
+        "t5_month_채낚기연승낚시",
+        "t5_fine_grid_ok_ratio",
+        "t5_log1p_fishing_rows"
+      ],
+      "default_vs_round_trip_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": false,
+        "exact_equal_with_nan": false,
+        "changed_finite_values": 27705,
+        "max_abs": 8.881784197001252e-16,
+        "mean_abs": 3.340919749748992e-17,
+        "max_rel": 1.0299913643759567e-13,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "default_reader_reexport_default_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "default_reader_reexport_round_trip_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "round_trip_reader_reexport_default_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": false,
+        "exact_equal_with_nan": false,
+        "changed_finite_values": 27705,
+        "max_abs": 8.881784197001252e-16,
+        "mean_abs": 3.340919749748992e-17,
+        "max_rel": 1.0299913643759567e-13,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "round_trip_reader_reexport_round_trip_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      }
+    },
+    "1": {
+      "csv_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_1_t5.csv",
+      "csv_sha256": "182329eb8a4461e9c351a2ac571ff44334d90ce38e6b8893eecb365d81abd348",
+      "csv_rows": 5897,
+      "csv_columns": [
+        "rfid_id",
+        "t5_main_연안복합",
+        "t5_main_자망",
+        "t5_main_통발",
+        "t5_main_채낚기연승낚시",
+        "t5_month_연안복합",
+        "t5_month_자망",
+        "t5_month_통발",
+        "t5_month_채낚기연승낚시",
+        "t5_fine_grid_ok_ratio",
+        "t5_log1p_fishing_rows"
+      ],
+      "default_vs_round_trip_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": false,
+        "exact_equal_with_nan": false,
+        "changed_finite_values": 27888,
+        "max_abs": 8.881784197001252e-16,
+        "mean_abs": 3.3629979556545486e-17,
+        "max_rel": 8.799598117565629e-14,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "default_reader_reexport_default_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "default_reader_reexport_round_trip_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "round_trip_reader_reexport_default_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": false,
+        "exact_equal_with_nan": false,
+        "changed_finite_values": 27888,
+        "max_abs": 8.881784197001252e-16,
+        "mean_abs": 3.3629979556545486e-17,
+        "max_rel": 8.799598117565629e-14,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "round_trip_reader_reexport_round_trip_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      }
+    },
+    "2": {
+      "csv_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_2_t5.csv",
+      "csv_sha256": "2f7992921f2c35191a03394185b676c3562e9a263ede8f39aecdb365e55bc0cb",
+      "csv_rows": 5897,
+      "csv_columns": [
+        "rfid_id",
+        "t5_main_연안복합",
+        "t5_main_자망",
+        "t5_main_통발",
+        "t5_main_채낚기연승낚시",
+        "t5_month_연안복합",
+        "t5_month_자망",
+        "t5_month_통발",
+        "t5_month_채낚기연승낚시",
+        "t5_fine_grid_ok_ratio",
+        "t5_log1p_fishing_rows"
+      ],
+      "default_vs_round_trip_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": false,
+        "exact_equal_with_nan": false,
+        "changed_finite_values": 27831,
+        "max_abs": 8.881784197001252e-16,
+        "mean_abs": 3.3391829011877165e-17,
+        "max_rel": 8.840359333995594e-14,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "default_reader_reexport_default_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "default_reader_reexport_round_trip_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "round_trip_reader_reexport_default_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": false,
+        "exact_equal_with_nan": false,
+        "changed_finite_values": 27831,
+        "max_abs": 8.881784197001252e-16,
+        "mean_abs": 3.3391829011877165e-17,
+        "max_rel": 8.840359333995594e-14,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      },
+      "round_trip_reader_reexport_round_trip_reader": {
+        "shape": [
+          5897,
+          10
+        ],
+        "nan_count_a": 5910,
+        "nan_count_b": 5910,
+        "nan_mask_equal": true,
+        "finite_pairs": 53060,
+        "bitwise_equal_on_finite": true,
+        "exact_equal_with_nan": true,
+        "changed_finite_values": 0,
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "max_rel": 0.0,
+        "allclose_atol_1e_12_rtol_0": true,
+        "allclose_atol_1e_10_rtol_0": true
+      }
+    }
+  },
+  "saved_model_replay": {
+    "aggregate": {
+      "models_replayed": 15,
+      "outer_rows_total_across_fold_seed_models": 29485,
+      "argmax_changed_rows_outer_total_model_row_instances": 0,
+      "models_with_outer_argmax_change": 0,
+      "max_probability_abs_delta": 0.004175363752329006,
+      "outer_micro_delta_min": 0.0,
+      "outer_micro_delta_max": 0.0
+    },
+    "per_fold_seed": [
+      {
+        "fold": 0,
+        "seed": 1,
+        "model_sha256": "149a12107b73253fc8f2d9cd7cc9ddce7ef834cc6d8f7aaa7bad4ee62d626161",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.001901272803354781,
+        "probability_mean_abs_delta": 9.74391796137099e-07,
+        "probability_exact_row_changes": 21,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1166,
+          "micro_f1": 0.5930824008138352,
+          "macro_f1": 0.5323792041779549,
+          "class_recall": [
+            0.8141683778234087,
+            0.4375,
+            0.17266187050359713,
+            0.7380952380952381
+          ],
+          "class_f1": [
+            0.6928789864569681,
+            0.5,
+            0.2553191489361702,
+            0.6813186813186813
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1166,
+          "micro_f1": 0.5930824008138352,
+          "macro_f1": 0.5323792041779549,
+          "class_recall": [
+            0.8141683778234087,
+            0.4375,
+            0.17266187050359713,
+            0.7380952380952381
+          ],
+          "class_f1": [
+            0.6928789864569681,
+            0.5,
+            0.2553191489361702,
+            0.6813186813186813
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 0,
+        "seed": 7,
+        "model_sha256": "b328f6c242777be579d2e064e03466eada6f218de9a34df4d4f4f909ad135d5e",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.0024012585705918132,
+        "probability_mean_abs_delta": 4.177492575892246e-07,
+        "probability_exact_row_changes": 5,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1159,
+          "micro_f1": 0.5895218718209563,
+          "macro_f1": 0.5328681700103323,
+          "class_recall": [
+            0.8162217659137577,
+            0.42857142857142855,
+            0.1618705035971223,
+            0.7380952380952381
+          ],
+          "class_f1": [
+            0.685640362225097,
+            0.5,
+            0.24128686327077747,
+            0.7045454545454546
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1159,
+          "micro_f1": 0.5895218718209563,
+          "macro_f1": 0.5328681700103323,
+          "class_recall": [
+            0.8162217659137577,
+            0.42857142857142855,
+            0.1618705035971223,
+            0.7380952380952381
+          ],
+          "class_f1": [
+            0.685640362225097,
+            0.5,
+            0.24128686327077747,
+            0.7045454545454546
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 0,
+        "seed": 42,
+        "model_sha256": "f68797aeb24c6f512c208529cfcc7f93c33385f8b2586a25a3711dd0ec36b3c7",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.002505199104590683,
+        "probability_mean_abs_delta": 5.185087539117658e-07,
+        "probability_exact_row_changes": 4,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1162,
+          "micro_f1": 0.5910478128179044,
+          "macro_f1": 0.51610949998054,
+          "class_recall": [
+            0.8418891170431212,
+            0.41369047619047616,
+            0.12589928057553956,
+            0.6904761904761905
+          ],
+          "class_f1": [
+            0.6966864910790145,
+            0.48986784140969164,
+            0.19553072625698323,
+            0.6823529411764706
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1162,
+          "micro_f1": 0.5910478128179044,
+          "macro_f1": 0.51610949998054,
+          "class_recall": [
+            0.8418891170431212,
+            0.41369047619047616,
+            0.12589928057553956,
+            0.6904761904761905
+          ],
+          "class_f1": [
+            0.6966864910790145,
+            0.48986784140969164,
+            0.19553072625698323,
+            0.6823529411764706
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 0,
+        "seed": 2024,
+        "model_sha256": "c6b4104959964de8445a42da6b354183352e974447300946555bb4f21c24e29e",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.0014476809064110086,
+        "probability_mean_abs_delta": 3.2961662875421037e-07,
+        "probability_exact_row_changes": 3,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1160,
+          "micro_f1": 0.590030518819939,
+          "macro_f1": 0.5160086118742407,
+          "class_recall": [
+            0.8562628336755647,
+            0.3958333333333333,
+            0.1079136690647482,
+            0.7142857142857143
+          ],
+          "class_f1": [
+            0.6982000837170365,
+            0.47713004484304933,
+            0.1744186046511628,
+            0.7142857142857143
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1160,
+          "micro_f1": 0.590030518819939,
+          "macro_f1": 0.5160086118742407,
+          "class_recall": [
+            0.8562628336755647,
+            0.3958333333333333,
+            0.1079136690647482,
+            0.7142857142857143
+          ],
+          "class_f1": [
+            0.6982000837170365,
+            0.47713004484304933,
+            0.1744186046511628,
+            0.7142857142857143
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 0,
+        "seed": 2026,
+        "model_sha256": "f670dd70bca019f5da861aa72212d79c40bdbb52d563e5e9bc203f617e13597d",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.0018490485014479863,
+        "probability_mean_abs_delta": 6.691271542946954e-07,
+        "probability_exact_row_changes": 18,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1150,
+          "micro_f1": 0.5849440488301119,
+          "macro_f1": 0.5253899704993897,
+          "class_recall": [
+            0.7926078028747433,
+            0.4479166666666667,
+            0.16546762589928057,
+            0.7380952380952381
+          ],
+          "class_f1": [
+            0.6819787985865724,
+            0.5029239766081871,
+            0.24274406332453827,
+            0.6739130434782609
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1150,
+          "micro_f1": 0.5849440488301119,
+          "macro_f1": 0.5253899704993897,
+          "class_recall": [
+            0.7926078028747433,
+            0.4479166666666667,
+            0.16546762589928057,
+            0.7380952380952381
+          ],
+          "class_f1": [
+            0.6819787985865724,
+            0.5029239766081871,
+            0.24274406332453827,
+            0.6739130434782609
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 1,
+        "seed": 1,
+        "model_sha256": "f315be0a84c070e2c589305718e73fa53bf7e21bdf6f102c02b7bd74420a7990",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.003223589216513112,
+        "probability_mean_abs_delta": 2.7332450538520316e-07,
+        "probability_exact_row_changes": 1,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1155,
+          "micro_f1": 0.5874872838250255,
+          "macro_f1": 0.5352703449714886,
+          "class_recall": [
+            0.8057553956834532,
+            0.46130952380952384,
+            0.1039426523297491,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.690748898678414,
+            0.503655564581641,
+            0.166189111747851,
+            0.7804878048780488
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1155,
+          "micro_f1": 0.5874872838250255,
+          "macro_f1": 0.5352703449714886,
+          "class_recall": [
+            0.8057553956834532,
+            0.46130952380952384,
+            0.1039426523297491,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.690748898678414,
+            0.503655564581641,
+            0.166189111747851,
+            0.7804878048780488
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 1,
+        "seed": 7,
+        "model_sha256": "2ac4d9307359eb845c5fe343a96ad9502dd2323042181ecfd4716fbe6f21c3d0",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.00275178774222673,
+        "probability_mean_abs_delta": 3.844293018796227e-07,
+        "probability_exact_row_changes": 5,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1156,
+          "micro_f1": 0.5879959308240081,
+          "macro_f1": 0.5397041154530813,
+          "class_recall": [
+            0.8006166495375129,
+            0.4642857142857143,
+            0.11827956989247312,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.6930604982206405,
+            0.5044462409054163,
+            0.18082191780821918,
+            0.7804878048780488
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1156,
+          "micro_f1": 0.5879959308240081,
+          "macro_f1": 0.5397041154530813,
+          "class_recall": [
+            0.8006166495375129,
+            0.4642857142857143,
+            0.11827956989247312,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.6930604982206405,
+            0.5044462409054163,
+            0.18082191780821918,
+            0.7804878048780488
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 1,
+        "seed": 42,
+        "model_sha256": "d019097f80745fe4e29765109376e18050db41bc59203253d219aecc14d1eed7",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.001645471608064275,
+        "probability_mean_abs_delta": 1.3951768764323393e-07,
+        "probability_exact_row_changes": 1,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1162,
+          "micro_f1": 0.5910478128179044,
+          "macro_f1": 0.5325305283064405,
+          "class_recall": [
+            0.8150051387461459,
+            0.4642857142857143,
+            0.08960573476702509,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.6965305226174792,
+            0.5069049553208773,
+            0.14619883040935672,
+            0.7804878048780488
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1162,
+          "micro_f1": 0.5910478128179044,
+          "macro_f1": 0.5325305283064405,
+          "class_recall": [
+            0.8150051387461459,
+            0.4642857142857143,
+            0.08960573476702509,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.6965305226174792,
+            0.5069049553208773,
+            0.14619883040935672,
+            0.7804878048780488
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 1,
+        "seed": 2024,
+        "model_sha256": "c03e7b3b0bb64a70d2b00d767756c7471bfbb44eae2a66b7957b74332dabee71",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.0009093096203128398,
+        "probability_mean_abs_delta": 2.0731206364117584e-07,
+        "probability_exact_row_changes": 6,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1176,
+          "micro_f1": 0.5981688708036622,
+          "macro_f1": 0.5446383113887432,
+          "class_recall": [
+            0.816032887975334,
+            0.47023809523809523,
+            0.12186379928315412,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.7001763668430335,
+            0.5146579804560261,
+            0.19263456090651557,
+            0.7710843373493976
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1176,
+          "micro_f1": 0.5981688708036622,
+          "macro_f1": 0.5446383113887432,
+          "class_recall": [
+            0.816032887975334,
+            0.47023809523809523,
+            0.12186379928315412,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.7001763668430335,
+            0.5146579804560261,
+            0.19263456090651557,
+            0.7710843373493976
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 1,
+        "seed": 2026,
+        "model_sha256": "ca883ebc8ae48ae3563d9672c469e2b383b9b888437dd8c10067c804528dae44",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1966,
+        "probability_max_abs_delta": 0.002012967049996095,
+        "probability_mean_abs_delta": 3.5379938740849197e-07,
+        "probability_exact_row_changes": 4,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1966,
+          "correct": 1174,
+          "micro_f1": 0.5971515768056969,
+          "macro_f1": 0.5371296517160791,
+          "class_recall": [
+            0.8150051387461459,
+            0.47619047619047616,
+            0.1039426523297491,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.6968365553602812,
+            0.5211726384364821,
+            0.1686046511627907,
+            0.7619047619047619
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1966,
+          "correct": 1174,
+          "micro_f1": 0.5971515768056969,
+          "macro_f1": 0.5371296517160791,
+          "class_recall": [
+            0.8150051387461459,
+            0.47619047619047616,
+            0.1039426523297491,
+            0.7619047619047619
+          ],
+          "class_f1": [
+            0.6968365553602812,
+            0.5211726384364821,
+            0.1686046511627907,
+            0.7619047619047619
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 2,
+        "seed": 1,
+        "model_sha256": "98e4f3b86eeddd94943482e1b20f701d8f84d36d39a1d3f3d42e6629f6458cc6",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1965,
+        "probability_max_abs_delta": 0.004175363752329006,
+        "probability_mean_abs_delta": 4.357404237476745e-06,
+        "probability_exact_row_changes": 44,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1965,
+          "correct": 1154,
+          "micro_f1": 0.5872773536895675,
+          "macro_f1": 0.5033217960607667,
+          "class_recall": [
+            0.7985611510791367,
+            0.4538690476190476,
+            0.15827338129496402,
+            0.6666666666666666
+          ],
+          "class_f1": [
+            0.69375,
+            0.49836601307189543,
+            0.23783783783783785,
+            0.5833333333333334
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1965,
+          "correct": 1154,
+          "micro_f1": 0.5872773536895675,
+          "macro_f1": 0.5033217960607667,
+          "class_recall": [
+            0.7985611510791367,
+            0.4538690476190476,
+            0.15827338129496402,
+            0.6666666666666666
+          ],
+          "class_f1": [
+            0.69375,
+            0.49836601307189543,
+            0.23783783783783785,
+            0.5833333333333334
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 2,
+        "seed": 7,
+        "model_sha256": "85f0ca9c6e487e9abdf281b3f4009827ded126064d2d49f808f64abbe12c882f",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1965,
+        "probability_max_abs_delta": 0.0029309680393230786,
+        "probability_mean_abs_delta": 1.768420804344105e-06,
+        "probability_exact_row_changes": 31,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1965,
+          "correct": 1160,
+          "micro_f1": 0.5903307888040712,
+          "macro_f1": 0.5072530184011017,
+          "class_recall": [
+            0.8098663926002055,
+            0.44642857142857145,
+            0.15827338129496402,
+            0.6666666666666666
+          ],
+          "class_f1": [
+            0.6970367094206104,
+            0.4971002485501243,
+            0.2391304347826087,
+            0.5957446808510638
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1965,
+          "correct": 1160,
+          "micro_f1": 0.5903307888040712,
+          "macro_f1": 0.5072530184011017,
+          "class_recall": [
+            0.8098663926002055,
+            0.44642857142857145,
+            0.15827338129496402,
+            0.6666666666666666
+          ],
+          "class_f1": [
+            0.6970367094206104,
+            0.4971002485501243,
+            0.2391304347826087,
+            0.5957446808510638
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 2,
+        "seed": 42,
+        "model_sha256": "2634de7fd32c1bb9bec8a77ee80cfc8f77813a4db5024e8daddb48c2308feeb0",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1965,
+        "probability_max_abs_delta": 0.003983381273732017,
+        "probability_mean_abs_delta": 2.3382411445338502e-06,
+        "probability_exact_row_changes": 30,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1965,
+          "correct": 1150,
+          "micro_f1": 0.5852417302798982,
+          "macro_f1": 0.5082885323225306,
+          "class_recall": [
+            0.7975334018499486,
+            0.44494047619047616,
+            0.16546762589928057,
+            0.6904761904761905
+          ],
+          "class_f1": [
+            0.6913140311804009,
+            0.49299258037922505,
+            0.24468085106382978,
+            0.6041666666666666
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1965,
+          "correct": 1150,
+          "micro_f1": 0.5852417302798982,
+          "macro_f1": 0.5082885323225306,
+          "class_recall": [
+            0.7975334018499486,
+            0.44494047619047616,
+            0.16546762589928057,
+            0.6904761904761905
+          ],
+          "class_f1": [
+            0.6913140311804009,
+            0.49299258037922505,
+            0.24468085106382978,
+            0.6041666666666666
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 2,
+        "seed": 2024,
+        "model_sha256": "dd668f54c43fcd16ab5489fbc096745d806ce73f29e65350b75ee8e79fc9f7a4",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1965,
+        "probability_max_abs_delta": 0.0015948035302597585,
+        "probability_mean_abs_delta": 3.7338038466758647e-07,
+        "probability_exact_row_changes": 7,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1965,
+          "correct": 1164,
+          "micro_f1": 0.5923664122137404,
+          "macro_f1": 0.5182026774670312,
+          "class_recall": [
+            0.802672147995889,
+            0.4568452380952381,
+            0.16546762589928057,
+            0.7142857142857143
+          ],
+          "class_f1": [
+            0.6951490876724522,
+            0.5053497942386831,
+            0.24731182795698925,
+            0.625
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1965,
+          "correct": 1164,
+          "micro_f1": 0.5923664122137404,
+          "macro_f1": 0.5182026774670312,
+          "class_recall": [
+            0.802672147995889,
+            0.4568452380952381,
+            0.16546762589928057,
+            0.7142857142857143
+          ],
+          "class_f1": [
+            0.6951490876724522,
+            0.5053497942386831,
+            0.24731182795698925,
+            0.625
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      },
+      {
+        "fold": 2,
+        "seed": 2026,
+        "model_sha256": "645ec9c6af6e0a96005680fa6dd282d8153e7f8f71ccc41da078ebba195e5254",
+        "dev_rows_inferred": 5897,
+        "outer_rows_scored": 1965,
+        "probability_max_abs_delta": 0.002395412005469222,
+        "probability_mean_abs_delta": 1.929946949169209e-06,
+        "probability_exact_row_changes": 32,
+        "argmax_changed_rows_all_dev": 0,
+        "argmax_changed_rows_outer": 0,
+        "baseline_outer": {
+          "n": 1965,
+          "correct": 1163,
+          "micro_f1": 0.5918575063613232,
+          "macro_f1": 0.5102833985315786,
+          "class_recall": [
+            0.8047276464542652,
+            0.45535714285714285,
+            0.1618705035971223,
+            0.6904761904761905
+          ],
+          "class_f1": [
+            0.6963094708759449,
+            0.504950495049505,
+            0.24193548387096775,
+            0.5979381443298969
+          ]
+        },
+        "round_trip_outer": {
+          "n": 1965,
+          "correct": 1163,
+          "micro_f1": 0.5918575063613232,
+          "macro_f1": 0.5102833985315786,
+          "class_recall": [
+            0.8047276464542652,
+            0.45535714285714285,
+            0.1618705035971223,
+            0.6904761904761905
+          ],
+          "class_f1": [
+            0.6963094708759449,
+            0.504950495049505,
+            0.24193548387096775,
+            0.5979381443298969
+          ]
+        },
+        "outer_micro_delta": 0.0,
+        "outer_macro_delta": 0.0
+      }
+    ]
+  },
+  "interpretation": [
+    "The direct numeric comparison here is cached X304 T5 versus serialized fold CSV parser modes, not dynamic in-memory T5 versus CSV.",
+    "CSV default and round_trip parsing only test decimal-to-float decoding. Re-export checks only test pandas reserialization of the already serialized CSV values.",
+    "Saved model scores are repeated development OUTER re-inference on the same 5897-vessel roster, not independent validation or a new performance result.",
+    "The existing 0.593013 baseline and 0.593353 exploratory aggregate remain prior report values; this diagnostic does not update them."
+  ]
+}

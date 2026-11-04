@@ -1,0 +1,51 @@
+﻿{
+  "schema": "round004_runtime_precheck.v1",
+  "precheck_status": "PASS_WITH_CONDITIONS",
+  "review_decision": "ALLOW_FIRST_SYNTHETIC_SMOKE_ONLY_WHEN_INSTALL_AND_RAM_GATES_PASS",
+  "reviewed_at_utc": "2026-11-04T16:55:56Z",
+  "reviewer_role": "independent pre-smoke reviewer",
+  "reviewer_model_effort": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none",
+    "host_evidence_file": "rounds/round_004/model_runtime_evidence.json",
+    "reviewer_session_file_id": "rollout-2026-11-05T01-46-50-01a1a774-c7a5-7d71-9402-312b5b7f7f77",
+    "role_mapping_file": "rounds/round_004/MODEL_AND_OWNERSHIP.md"
+  },
+  "reviewed_files": {
+    "manager_wrapper": {"path": "rounds/round_004/code/manage_runtime.py", "sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750"},
+    "probe": {"path": "rounds/round_004/code/probe_tabicl_runtime.py", "sha256": "7dee24ee5cc215733450be17db34b10a5e9d9adacc5c7ba33021bac3ecf4a0b2", "bytes": 23562},
+    "plan": {"path": "rounds/round_004/ROUND_PLAN.md", "sha256": "6716ea5848228ebe2ffd70c72880e5c8a4e9c56d42e0437b04a22ed761e484fe"},
+    "budget": {"path": "rounds/round_004/configs/budget.json", "sha256": "f0ba537b0570902107da451df4b5e5f3b9ee1e170e5f062a6631106f09f7bb5f"},
+    "checkpoint": {"path": "model_cache/tabicl-classifier-v2-20260212.ckpt", "bytes": 110368038, "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"}
+  },
+  "contract_checks": {
+    "synthetic_data_only": "PASS: seeded 16 FIT + 4 query rows, 312 float32 features, all four FIT labels, no project dataset access in probe source.",
+    "CPU_and_dtype": "PASS_BY_CODE: explicit device='cpu'; actual estimator.device_ and all model parameter/buffer device placements are checked for CPU; floating parameters must be FP32; configured threads do not exceed 3.",
+    "download_prevention": "PASS_BY_CODE: explicit verified local checkpoint, allow_auto_download=False, manager sets HF_HUB_OFFLINE=1, and the pinned upstream loader loads an existing model_path directly.",
+    "no_training_or_F1": "PASS_BY_CODE: no optimizer/backward/parameter-update calls and no F1/accuracy/real-data evaluation; official v2.2.0 classifier fit binds the synthetic in-context set and loads pretrained parameters, with upstream docs explicitly stating the model itself is not trained on fit data.",
+    "runtime_checks": "PASS: saves first and repeated 4x4 probability matrices; checks finite values, row sums, classes_ and inverse mapping, exact repeated-prediction tolerance, and no gradients.",
+    "model_structure": "PASS: retains full registered Linear list and separately inspects named icl_predictor.decoder Linear layers; compares output-head dimensions and full parameter count with historical reference.",
+    "root_bound_output": "PASS: output resolves under project root; manager passes --checkpoint and --output matching the script CLI; staged JSON, temp, and caches are root-local under manager environment.",
+    "attempt_and_timeout": "PASS_BY_WRAPPER: only first smoke is currently allowed, each child smoke is capped at 180s, and the wrapper checks available system RAM >=3 GiB before starting.",
+    "install_and_ram_gates": "CONDITIONAL: manager must first verify successful install receipt, pip check exit 0, and pinned versions. Manager reported last available RAM about 2.12 GiB; reviewer did not sample it. Current launch must be skipped if wrapper reports <3 GiB."
+  },
+  "authoritative_api_sources": [
+    {"url": "https://raw.githubusercontent.com/soda-inria/tabicl/v2.2.0/src/tabicl/_sklearn/classifier.py", "supports": "Pinned constructor arguments, local model_path with allow_auto_download disabled, .eval() model load, and fit docstring/implementation stating model weights are not trained."},
+    {"url": "https://raw.githubusercontent.com/soda-inria/tabicl/v2.2.0/src/tabicl/_model/tabicl.py", "supports": "TabICL registers self.icl_predictor as ICLearning."},
+    {"url": "https://raw.githubusercontent.com/soda-inria/tabicl/v2.2.0/src/tabicl/_model/learning.py", "supports": "ICLearning decoder is Linear -> GELU -> Linear; classifier batch forward uses torch.no_grad()."}
+  ],
+  "reviewed_runtime_evidence": {
+    "tabicl_source_version_reported_by_runtime_author": "2.2.0",
+    "verification_method": "read-only inspection of installed source files and upstream v2.2.0 primary source; no import or model load",
+    "verified_claims": ["constructor options exist", "fit resolves device_ and moves model to device_", "named icl_predictor.decoder head", "inference path uses torch.no_grad()"],
+    "source_checks_are_not_execution": true
+  },
+  "reviewer_execution": {"install_started": false, "smoke_started": false, "checkpoint_loaded": false, "real_data_read": false, "F1_computed": false, "hardware_validation": false},
+  "blocking_issues": [],
+  "limitations": [
+    "This is a code/API precheck only; model load, synthetic inference, probability checks, and runtime success are not established until a gated smoke runs.",
+    "Manager-reported current RAM was below the configured 3 GiB threshold; do not launch/model-load unless the wrapper's launch-time measurement reaches the threshold.",
+    "The install disk guard is local wheel/temp artifact accounting rather than exact network byte accounting, as documented in install_precheck.json."
+  ]
+}

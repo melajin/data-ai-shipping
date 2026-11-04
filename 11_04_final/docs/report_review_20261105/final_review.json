@@ -1,0 +1,61 @@
+{
+  "schema": "final_review_20261105.v1",
+  "review_status": "PASS_WITH_LIMITATIONS",
+  "review_scope": "Independent read-only review of the quantitative supplement and its evidence references; no protected data or new model runs.",
+  "reviewed_report": {
+    "path": "docs/20261105_검증자료_PDF반영_기술진단_보강보고서.md",
+    "sha256": "0d170e316843420169338ad765c1e887a9c09869b57f4911022cd8137aace8da"
+  },
+  "findings": [
+    {
+      "severity": "none",
+      "status": "supported",
+      "claim": "Target correct count 4128 and +631 gap from mean correct 3497.",
+      "basis": "Single-label micro-F1 equals accuracy; 4128 is ceil(0.70*5897)."
+    },
+    {
+      "severity": "none",
+      "status": "supported",
+      "claim": "A_micro_select gain/loss is +4 only for seed42 and +2 mean across seeds.",
+      "basis": "v2 recomputation and saved result; per-seed denominators are 5897."
+    },
+    {
+      "severity": "none",
+      "status": "supported",
+      "claim": "PDF class table's current/target/delta totals conflict with actual support and target totals.",
+      "basis": "PDF row arithmetic and saved raw confusion-matrix supports/TP."
+    },
+    {
+      "severity": "minor_clarity",
+      "status": "non_blocking",
+      "claim": "PDF states 104 correct ships sacrificed by A_old.",
+      "basis": "A_old versus A_raw is -100/-114 (mean -107); 104 is seed42 A_micro_select minus A_old, so comparator is ambiguous."
+    },
+    {
+      "severity": "none",
+      "status": "appropriately_limited",
+      "claim": "Failed tested rescaling does not establish universal post-hoc impossibility.",
+      "basis": "The tested policy/grid is finite; no universal optimizer or proof was supplied."
+    },
+    {
+      "severity": "none",
+      "status": "appropriately_limited",
+      "claim": "Future feature, M4, stacking, calibration, and segment proposals remain conditional hypotheses.",
+      "basis": "The reviewed artifacts contain no corresponding performance experiments; report specifies data, architecture, and evaluation gates."
+    }
+  ],
+  "limitations": [
+    "No protected holdout, Test2025, or raw feature/label rows accessed.",
+    "No inference, training, or prediction-row metric recomputation performed.",
+    "Round 003 development OUTER is repeatedly exposed and is not independent final evaluation.",
+    "The source review confirms artifact/report consistency, not external or official performance."
+  ],
+  "source_sha256": {
+    "pdf": "47bb4b67d506c1e487fd076631aba5aecf3fad5052799c4c9d4a92b62ed6161a",
+    "rounds/round_003/artifacts/result.json": "4fa42825644b9eb93935f03e63e9d26c9f5ff7e98cdf07d0e0033b41f7c3deba",
+    "rounds/round_003/verification_20261105/v2_recompute.json": "320cd30ae450ff7fd96dadfa2af1247257e7e4ba8b6d63d1f64a4aca81f429ca",
+    "rounds/round_003/verification_20261105/v3_bootstrap_gate.json": "530d3b234a628eac48b9f7570c02d09df6b608086a8eb95e48a05a9af681d85b",
+    "rounds/round_003/verification_20261105/v4_idhash.json": "285ff5d653eccf50cebec61ca6b9801f8c90e8e37cb406d1c412c58577fbea85",
+    "rounds/round_004/artifacts/smoke.json": "e26df55a2c9501fc6a46102d323ca18226c922bd98ceb9eba9146a0cb0643ae2"
+  }
+}

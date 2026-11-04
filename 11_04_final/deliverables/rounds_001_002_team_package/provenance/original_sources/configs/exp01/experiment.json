@@ -1,0 +1,116 @@
+{
+  "experiment": "exp01",
+  "title": "304 feature S6-controlled early stopping and sample weighting",
+  "status": "fixed before OUTER evaluation",
+  "feature_schema": {
+    "columns": 304,
+    "components_in_order": [
+      {
+        "name": "F156",
+        "columns": 156
+      },
+      {
+        "name": "T5",
+        "columns": 10
+      },
+      {
+        "name": "behavior_without_obs_days",
+        "columns": 68
+      },
+      {
+        "name": "local_rel",
+        "columns": 70
+      }
+    ],
+    "obs_days_is_model_feature": false
+  },
+  "split": {
+    "source": "team development_roles_long.csv",
+    "folds": [
+      0,
+      1,
+      2
+    ],
+    "roles": [
+      "FIT",
+      "INNER",
+      "OUTER"
+    ],
+    "selection_scope": "within each fold, INNER only",
+    "pooled_inner_selection": false,
+    "outer_role": "one-time-per-ship fixed development OOF; previously exposed development evaluation, not a new blind set"
+  },
+  "model": {
+    "class_order": [
+      "연안복합",
+      "자망",
+      "통발",
+      "채낚기연승낚시"
+    ],
+    "objective": "multiclass",
+    "num_class": 4,
+    "n_estimators": 8000,
+    "learning_rate": 0.01,
+    "num_leaves": 127,
+    "min_child_samples": 10,
+    "colsample_bytree": 0.6,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "reg_lambda": 1.0,
+    "early_stopping_rounds": 200,
+    "seeds": [
+      42,
+      2026,
+      7,
+      1,
+      2024
+    ],
+    "threads": 3,
+    "decision_weight": 1.0,
+    "decision_rule": "mean five-seed probabilities; raw argmax"
+  },
+  "conditions": [
+    {
+      "name": "sqrt_macro",
+      "sample_weight": "sqrt_class_inverse_frequency_normalized_on_FIT",
+      "early_stop_metric": "macro_f1"
+    },
+    {
+      "name": "sqrt_micro",
+      "sample_weight": "sqrt_class_inverse_frequency_normalized_on_FIT",
+      "early_stop_metric": "micro_f1"
+    },
+    {
+      "name": "none_macro",
+      "sample_weight": "none",
+      "early_stop_metric": "macro_f1"
+    },
+    {
+      "name": "none_micro",
+      "sample_weight": "none",
+      "early_stop_metric": "micro_f1"
+    }
+  ],
+  "primary_metric": "micro_f1 (= accuracy for single-label four-class classification)",
+  "secondary_metrics": [
+    "macro_recall",
+    "macro_f1",
+    "class_recall",
+    "class_f1",
+    "obs_days_bucket_metrics",
+    "paired_new_correct_new_incorrect_net"
+  ],
+  "t5_cache": {
+    "generator": "run_005_main_20261101.py::stage_export",
+    "fit_labels_per_fold_only": true,
+    "fit_leave_self_out": true,
+    "global_geometry_filter": "Unlabeled shared-harbor candidate geometry from all Jan-Jun 2026 Train and 2025 Test rows; the mask is applied to active 2026 Train rows using shared harbors and Train-only own moorings.",
+    "query_geometry": "each vessel's full observed Jan-Jun 2026 Train rows",
+    "raw_csv_reparse": false,
+    "geometry_population_is_transductive_across_roles": true
+  },
+  "historical_reference": {
+    "S6_saved_accuracy": 0.59183,
+    "interpretation": "previous saved aggregate only; not rescored in this experiment"
+  }
+}

@@ -1,0 +1,26 @@
+﻿[
+    {
+        "path":  "rounds/round_004/ROUND_PLAN.md",
+        "sha256":  "6716EA5848228EBE2FFD70C72880E5C8A4E9C56D42E0437B04A22ED761E484FE",
+        "created_utc":  "2026-11-04T16:47:42.1038898Z",
+        "modified_utc":  "2026-11-04T16:47:42.1038898Z"
+    },
+    {
+        "path":  "rounds/round_004/configs/budget.json",
+        "sha256":  "F0BA537B0570902107DA451DF4B5E5F3B9EE1E170E5F062A6631106F09F7BB5F",
+        "created_utc":  "2026-11-04T16:47:42.1038898Z",
+        "modified_utc":  "2026-11-04T16:47:42.1038898Z"
+    },
+    {
+        "path":  "rounds/round_004/code/manage_runtime.py",
+        "sha256":  "381F20FD24F2DE465643C2EC8B648A6332C5632E21F4C8D1FA05073E32602750",
+        "created_utc":  "2026-11-04T16:48:12.5013739Z",
+        "modified_utc":  "2026-11-04T16:50:07.8619708Z"
+    },
+    {
+        "path":  "rounds/round_004/environment/manage_runtime_preinstall.py",
+        "sha256":  "381F20FD24F2DE465643C2EC8B648A6332C5632E21F4C8D1FA05073E32602750",
+        "created_utc":  "2026-11-04T16:48:56.0968269Z",
+        "modified_utc":  "2026-11-04T16:50:07.8619708Z"
+    }
+]

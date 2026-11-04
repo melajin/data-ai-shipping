@@ -1,0 +1,14 @@
+﻿{
+    "orca_session":  "codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9",
+    "codex_thread":  "01a1a756-2f2b-79a3-b7a6-507c7d37e7fc",
+    "receipt_session":  "codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9",
+    "receipt_match":  true,
+    "handoff_sha256":  "1E440F52259CB33011A567C9BF6AC083BDEAD3110D1912AA3E62D00D6921D66E",
+    "previous_manager_state":  "done in Orca worktree ps",
+    "other_same_round_execution_found":  false,
+    "other_TestB_session_untouched":  true,
+    "manager_request":  "gpt-6-astra/high",
+    "worker_requests":  "gpt-6-luna/xhigh/fork_turns=none",
+    "host_model_evidence":  "model_runtime_evidence.json",
+    "claim_utc":  "2026-11-04T16:15:32.1444601Z"
+}

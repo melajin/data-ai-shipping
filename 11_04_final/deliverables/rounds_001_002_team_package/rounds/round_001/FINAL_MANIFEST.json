@@ -1,0 +1,69 @@
+{
+    "created_at_utc":  "2026-11-04T14:30:17.7007446Z",
+    "round":  "round_001",
+    "status":  "completed_with_limitations",
+    "goal_achieved":  false,
+    "handoff_ready":  true,
+    "artifacts":  [
+                      {
+                          "path":  "CYCLE_PROTOCOL.md",
+                          "sha256":  "f38926c30d8036593abaf2a4ef2cb65ae76cb29e677022a022fb5dca580351d7",
+                          "bytes":  8791
+                      },
+                      {
+                          "path":  "STATUS.json",
+                          "sha256":  "7f42e65ff3ff4b256472bbab2825ee894bc0130b87d69a93ccc0077e618d87a1",
+                          "bytes":  8559
+                      },
+                      {
+                          "path":  "EXPERIMENT_LEDGER.csv",
+                          "sha256":  "c9fee8db8c9f4c52fae66c3197ee9c304fda2469309e3fcd4d1e0fabb1af1acc",
+                          "bytes":  536
+                      },
+                      {
+                          "path":  "NEXT_SESSION.md",
+                          "sha256":  "c8f0d8c90ed3c60fd2140b91482483cee2f9df5b9deae652af39928e1abf7577",
+                          "bytes":  11647
+                      },
+                      {
+                          "path":  "rounds/round_001/ROUND_PLAN.md",
+                          "sha256":  "44ae9c5534b8e3be1d213b4a1b1c10a7c39bcc0de2451bfc2140df0406c91ac7",
+                          "bytes":  5143
+                      },
+                      {
+                          "path":  "rounds/round_001/ROUND_REPORT.md",
+                          "sha256":  "658d3a6cc89083f210b9fab738aadb39f5748a80dd727be5dde78f5cdd092609",
+                          "bytes":  9565
+                      },
+                      {
+                          "path":  "rounds/round_001/MANAGER_RECORD.md",
+                          "sha256":  "da293b0d2565144ed2d442a06cc497f55f5ba2882f40b85b3c6b8a81c7989702",
+                          "bytes":  6893
+                      },
+                      {
+                          "path":  "rounds/round_001/REVIEW_RECEIPT.md",
+                          "sha256":  "b3ddacd40e931981be9839b2a8b3f605bc03200dcb0af0d62c60689919e8c065",
+                          "bytes":  5168
+                      },
+                      {
+                          "path":  "rounds/round_001/review/review.json",
+                          "sha256":  "0417835a04dd28372d496edac906d474000be7c984db3cff674ce3bcc2ec7a62",
+                          "bytes":  9855
+                      },
+                      {
+                          "path":  "rounds/round_001/execution/result.json",
+                          "sha256":  "140298cf11e53801f0f2fda4699a12827c8fe396a52351de3802cef849b3d008",
+                          "bytes":  58186
+                      },
+                      {
+                          "path":  "rounds/round_001/execution/supplemental_ensemble.json",
+                          "sha256":  "251fb8a00fd77cc9ee8af04773c9eae73ba61246d33e07f6cdd863200a93eee7",
+                          "bytes":  42542
+                      },
+                      {
+                          "path":  "rounds/round_001/execution/supplemental_attempt2_launch_manifest.json",
+                          "sha256":  "7ef7905b61783cf48ecef673ac9ac70597506b9d9a69e778e6951a935a5bb48b",
+                          "bytes":  768
+                      }
+                  ]
+}

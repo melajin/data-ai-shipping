@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_002\code\run_round002_resume.py", line 522, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_002\code\run_round002_resume.py", line 509, in main
+    result=run(cfg,start,manifest)
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_002\code\run_round002_resume.py", line 427, in run
+    fit_records.append(fit_candidate(fold, d, es, sel, cfg, nfit, start)); nfit += 1
+                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_002\code\run_round002_resume.py", line 302, in fit_candidate
+    m.fit(fit_pool, eval_set=es_pool, verbose=False)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\environments\round_002_catboost\Lib\site-packages\catboost\core.py", line 5547, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              eval_set, verbose, logging_level, plot, plot_file, column_description, verbose_eval, metric_period,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              silent, early_stopping_rounds, save_snapshot, snapshot_file, snapshot_interval, init_model, callbacks, log_cout, log_cerr)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\environments\round_002_catboost\Lib\site-packages\catboost\core.py", line 2716, in _fit
+    self._train(
+    ~~~~~~~~~~~^
+        train_pool,
+        ^^^^^^^^^^^
+    ...<3 lines>...
+        train_params["init_model"]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\environments\round_002_catboost\Lib\site-packages\catboost\core.py", line 1824, in _train
+    self._object._train(train_pool, test_pool, params, allow_clear_pool, init_model._object if init_model else None)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "_catboost.pyx", line 5430, in _catboost._CatBoost._train
+  File "_catboost.pyx", line 5479, in _catboost._CatBoost._train
+_catboost.CatBoostError: catboost/libs/metrics/metric.cpp:6898: If non-default weights for objects are not set, the 'use_weights' parameter must not be specified.

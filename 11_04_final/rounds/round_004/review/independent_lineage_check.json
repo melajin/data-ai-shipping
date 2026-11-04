@@ -1,0 +1,305 @@
+{
+  "schema": "round004_independent_lineage_check.v1",
+  "status": "PASS_WITH_LIMITATIONS",
+  "checked_at_utc": "2026-11-04T17:02:30.945259+00:00",
+  "reviewer_code_sha256": "3f8db4c9c5e6ab1a51d25ab3c5a2bd8a223dcec39549d2ec3dd120b6b4bf9af7",
+  "scope": {
+    "inputs": "Only three already-approved development fold NPZs, development rosters, round002 config, F156 metadata, six saved preprocessors, six training metadata files, and three vocabulary metadata states/source files.",
+    "protected_rows_read": 0,
+    "model_loaded": false,
+    "training_or_inference": false,
+    "F1_or_accuracy": false,
+    "exact_original_F156_array_comparison": false,
+    "original_fit_or_inner_sequence_available": false
+  },
+  "feature_metadata": {
+    "columns": 156,
+    "dictionary_rows": 156,
+    "positions_sequential": true,
+    "dictionary_names_equal_metadata_order": true,
+    "definitions_and_groups_nonempty": true,
+    "group_counts": {
+      "base90": 90,
+      "spatial20": 20,
+      "temporal12": 12,
+      "vocabulary34": 34
+    },
+    "semantic_source_value_validation": false
+  },
+  "folds": {
+    "0": {
+      "npz_sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+      "npz_shape": [
+        5897,
+        304
+      ],
+      "first156_names_equal_dictionary_order": true,
+      "npz_row_order_equal_development_roster_and_P_role_table": true,
+      "roles_equal": true,
+      "labels_equal_roster_y_true": true,
+      "role_counts": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "original_fit_id_order_recorded_in_training_json": false
+    },
+    "1": {
+      "npz_sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+      "npz_shape": [
+        5897,
+        304
+      ],
+      "first156_names_equal_dictionary_order": true,
+      "npz_row_order_equal_development_roster_and_P_role_table": true,
+      "roles_equal": true,
+      "labels_equal_roster_y_true": true,
+      "role_counts": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "original_fit_id_order_recorded_in_training_json": false
+    },
+    "2": {
+      "npz_sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633",
+      "npz_shape": [
+        5897,
+        304
+      ],
+      "first156_names_equal_dictionary_order": true,
+      "npz_row_order_equal_development_roster_and_P_role_table": true,
+      "roles_equal": true,
+      "labels_equal_roster_y_true": true,
+      "role_counts": {
+        "FIT": 3145,
+        "INNER": 787,
+        "OUTER": 1965
+      },
+      "original_fit_id_order_recorded_in_training_json": false
+    }
+  },
+  "fit_medians": {
+    "42/0": {
+      "saved_median_count": 156,
+      "npz_fit_rows": 3144,
+      "max_abs_delta": 2.842170943040401e-14,
+      "mismatch_count_at_1e-10": 0
+    },
+    "2026/0": {
+      "saved_median_count": 156,
+      "npz_fit_rows": 3144,
+      "max_abs_delta": 2.842170943040401e-14,
+      "mismatch_count_at_1e-10": 0
+    },
+    "42/1": {
+      "saved_median_count": 156,
+      "npz_fit_rows": 3144,
+      "max_abs_delta": 0.0,
+      "mismatch_count_at_1e-10": 0
+    },
+    "2026/1": {
+      "saved_median_count": 156,
+      "npz_fit_rows": 3144,
+      "max_abs_delta": 0.0,
+      "mismatch_count_at_1e-10": 0
+    },
+    "42/2": {
+      "saved_median_count": 156,
+      "npz_fit_rows": 3145,
+      "max_abs_delta": 0.0,
+      "mismatch_count_at_1e-10": 0
+    },
+    "2026/2": {
+      "saved_median_count": 156,
+      "npz_fit_rows": 3145,
+      "max_abs_delta": 0.0,
+      "mismatch_count_at_1e-10": 0
+    }
+  },
+  "transformed_tensor_hashes": {
+    "42/0/FIT": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 3144,
+      "input_is_original_saved_model_replay": false
+    },
+    "42/0/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 787,
+      "input_is_original_saved_model_replay": false
+    },
+    "2026/0/FIT": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 3144,
+      "input_is_original_saved_model_replay": false
+    },
+    "2026/0/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 787,
+      "input_is_original_saved_model_replay": false
+    },
+    "42/1/FIT": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 3144,
+      "input_is_original_saved_model_replay": false
+    },
+    "42/1/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 787,
+      "input_is_original_saved_model_replay": false
+    },
+    "2026/1/FIT": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 3144,
+      "input_is_original_saved_model_replay": false
+    },
+    "2026/1/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 787,
+      "input_is_original_saved_model_replay": false
+    },
+    "42/2/FIT": {
+      "shape": [
+        3145,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 3145,
+      "input_is_original_saved_model_replay": false
+    },
+    "42/2/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 787,
+      "input_is_original_saved_model_replay": false
+    },
+    "2026/2/FIT": {
+      "shape": [
+        3145,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 3145,
+      "input_is_original_saved_model_replay": false
+    },
+    "2026/2/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "tensor_sha256_matches_result": true,
+      "row_order_sha256_matches_result": true,
+      "row_count": 787,
+      "input_is_original_saved_model_replay": false
+    }
+  },
+  "vocabulary_fit_membership": {
+    "fit_id_membership_hash_matches_state_metadata_each_fold": true,
+    "source_module_hash_matches_state_metadata": true,
+    "baseline_source_hash_matches_state_metadata": true,
+    "hash_semantics": "sorted FIT ID set; confirms membership, not original FIT row order",
+    "vocabulary_feature_values_regenerated": false
+  },
+  "training_order_metadata": [
+    {
+      "seed": 42,
+      "fold": 0,
+      "fit_ids_order_recorded": false,
+      "inner_ids_order_recorded": false
+    },
+    {
+      "seed": 42,
+      "fold": 1,
+      "fit_ids_order_recorded": false,
+      "inner_ids_order_recorded": false
+    },
+    {
+      "seed": 42,
+      "fold": 2,
+      "fit_ids_order_recorded": false,
+      "inner_ids_order_recorded": false
+    },
+    {
+      "seed": 2026,
+      "fold": 0,
+      "fit_ids_order_recorded": false,
+      "inner_ids_order_recorded": false
+    },
+    {
+      "seed": 2026,
+      "fold": 1,
+      "fit_ids_order_recorded": false,
+      "inner_ids_order_recorded": false
+    },
+    {
+      "seed": 2026,
+      "fold": 2,
+      "fit_ids_order_recorded": false,
+      "inner_ids_order_recorded": false
+    }
+  ],
+  "result_json_sha256": "ab57f7882c8e7e05831786345bf947069f4ba5df1569ffdc62a410524e354de1",
+  "source_sha256": {
+    "round002_config": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+    "P_feature_columns": "a6ac08c4cbec615cb1fc5b4cc1af434840915cf6e05e45c8b92a6e157b3a49a0",
+    "P_F156_dictionary": "97d419ab85b58e1ab9b9b0c8a295e1c3da5184df49bc2f601d69a6b72523a773"
+  }
+}

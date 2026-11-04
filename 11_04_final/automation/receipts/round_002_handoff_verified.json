@@ -1,0 +1,14 @@
+{
+  "verified_at_utc": "2026-11-04T16:13:55.438537+00:00",
+  "status": "handoff_accepted",
+  "worktree_id": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+  "agent_handle": "structured-agent-session-codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9",
+  "session_id": "codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9",
+  "prompt_outcome": "journaled",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "high",
+  "runtime_model_verified_by_sender": false,
+  "handoff_snapshot_hash_verified": true,
+  "ownership": "Transferred to new manager; sender stops experiment work",
+  "status_metadata_updated_by_sender": true
+}

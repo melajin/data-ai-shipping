@@ -1,0 +1,90 @@
+{
+  "schema": "round005_pilot_static_precheck.v1",
+  "review_status": "PASS_WITH_LIMITATIONS",
+  "decision": "GO_FOR_ONE_BOUNDED_PILOT_ONLY_IF_MANAGER_RAM_PREFLIGHT_IS_AT_LEAST_3_GIB",
+  "reviewed_at_utc": "2026-11-04T17:44:00Z",
+  "reviewer": {
+    "role": "independent static pilot-code reviewer",
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none"
+  },
+  "sources": {
+    "pilot_code": {
+      "path": "rounds/round_005/code/replay_inner_pilot.py",
+      "sha256": "b57f6c764d4b833451714d4dfcfa328ed3facecaf6f9a93a0198da8b17c4b860"
+    },
+    "bounded_wrapper": {
+      "path": "rounds/round_005/manager/run_bounded.py",
+      "sha256": "a7ebf611656675404d221e24172f58384bd5f6b046839e59bddb298ae8abab1d"
+    },
+    "round004_runtime_contract": {
+      "path": "rounds/round_004/runtime_author/replay_contract.json",
+      "sha256": "819e60fd2f05a655a86dc1cda5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5"
+    },
+    "tabicl_sklearn_base": {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/base.py",
+      "sha256": "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a"
+    },
+    "tabicl_inference_config": {
+      "path": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference_config.py",
+      "sha256": "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37"
+    },
+    "independent_context_precheck": {
+      "path": "rounds/round_005/review/precheck.json",
+      "status": "PASS_WITH_LIMITATIONS"
+    },
+    "independent_context_check": {
+      "path": "rounds/round_005/review/independent_context_check.json",
+      "status": "PASS"
+    }
+  },
+  "static_checks": {
+    "fixed_context_and_query_freeze_hashes_verified_before_reference_access": true,
+    "query_ids_match_first_two_original_ordered_inner_ids": true,
+    "reference_reads_only_two_rows_and_fields_id_p0_through_p3": true,
+    "reference_csv_labels_not_accessed_or_used": true,
+    "reference_row_order_mismatch_fails_closed_without_search_or_reorder": true,
+    "fit_rows": 3144,
+    "query_rows": 2,
+    "feature_count": 312,
+    "canonical_classes": [0, 1, 2, 3],
+    "seed": 42,
+    "n_estimators": 8,
+    "batch_size": 1,
+    "n_jobs": 3,
+    "torch_intra_op_threads": 3,
+    "torch_inter_op_threads": 1,
+    "device": "CPU",
+    "AMP": false,
+    "FA3": false,
+    "automatic_downloads": false,
+    "checkpoint_hash_and_size_pinned": true,
+    "resolved_stage_devices_amp_fa3_gated": true,
+    "resolved_column_offload_auto_row_icl_offload_false": true,
+    "floating_parameters_and_buffers_FP32": true,
+    "all_parameters_and_buffers_CPU": true,
+    "KV_cache_disabled_and_absent": true,
+    "predict_proba_attempted_and_completed_count_separately_recorded": true,
+    "exactly_one_predict_proba_call_in_code": true,
+    "no_training_no_inner_labels_no_F1_no_outer_inference": true,
+    "gradient_presence_checked_after_inference": true,
+    "partial_stages_and_failure_receipt_preserved": true,
+    "outputs_and_offload_root_local": true,
+    "wrapper_600s_process_tree_timeout_and_RAM_policy": true
+  },
+  "scope_and_execution": {
+    "review_was_static_only": true,
+    "pilot_imported_or_executed_by_reviewer": false,
+    "checkpoint_loaded_by_reviewer": false,
+    "reference_probability_rows_read_by_reviewer": 0,
+    "query_ids_or_reference_probabilities_accessed_by_reviewer": false
+  },
+  "limitations": [
+    "The bounded manager must still pass the frozen 3 GiB pilot-start RAM gate and enforce stop of only its owned process tree below 1.5 GiB.",
+    "The strict reference parser fails closed unless the first five CSV columns are the approved ID and p0-p3 fields; quoted/comma-containing fields are unsupported by design.",
+    "The reference input reads only the first two raw CSV lines for the frozen IDs; bytes after p3 on those lines may contain other columns, but the parser does not split or access them.",
+    "The compressed NPZ X_inner member may be decompressed as an array before selecting its first two rows; only the two fixed rows are passed to predict_proba.",
+    "This source review does not establish actual runtime settings, CPU/CUDA probability equivalence, resource cost, or pilot outcome."
+  ]
+}

@@ -1,0 +1,720 @@
+{
+  "task": "Round 004 development-only input lineage audit",
+  "status": "PASS_WITH_LIMITATIONS",
+  "scope": {
+    "read_sources": [
+      "P code/metadata; seed42/2026 per-fold preprocessors and vocabulary metadata",
+      "exp01 three NPZs and fixed development roster",
+      "P development roles roster",
+      "round002 frozen config"
+    ],
+    "not_read_in_current_scope": [
+      "P/splits/splits_original.json (needed to prove original fit_ids/inner_ids sequence)"
+    ],
+    "protected_row_reads": {
+      "F156_full7372": 0,
+      "train_labels": 0,
+      "components_train": 0,
+      "holdout": 0,
+      "Test2025": 0,
+      "raw": 0
+    },
+    "model_loads": 0,
+    "training_calls": 0,
+    "inference_calls": 0,
+    "F1_calculations": 0
+  },
+  "source_contracts": {
+    "round002_config_sha256": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+    "round002_NPZ_dimensions": 304,
+    "components": [
+      "F156:156",
+      "T5:10",
+      "behavior_without_obs_days:68",
+      "local_rel:70"
+    ],
+    "direct_F156_first_block_in_exp01_source": true,
+    "P_F156_metadata_name_order_consistency": true,
+    "P_F156_dictionary_definitions_complete": true,
+    "semantic_feature_value_equality_against_protected_source_rows": false,
+    "exp01_source_declares_first_block_from_F156": true,
+    "P_fold_F156_source_rebuild_order_and_vocabulary_scope": true,
+    "P_F156_columns": 156,
+    "P_class_order_matches_exp01_and_round002": true,
+    "P_generator_metadata_order_and_fold_vocab_scope": true,
+    "P_run_settings_says_no_missing_flags": true,
+    "P_preprocessor_store_156_medians": true,
+    "P_preprocessor_kind": "fit_median_and_raw_missing_flags",
+    "comparison_code_appends_missing_flags_after_imputation": true,
+    "P_comparison_code_uses_ordered_fit_ids": true,
+    "original_TabICL_fit_and_query_id_sequence_verified": false,
+    "unread_order_metadata_needed_next": "P/splits/splits_original.json (ID-only fold fit_ids/inner_ids/outer_ids after schema review)",
+    "expected_TabICL_width": 312
+  },
+  "folds": {
+    "0": {
+      "npz_sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+      "expected_round002_sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+      "npz_hash_matches_round002": true,
+      "keys": [
+        "X",
+        "feature_names",
+        "fold",
+        "obs_days",
+        "rfid_ids",
+        "roles",
+        "y"
+      ],
+      "shapes": {
+        "X": [
+          5897,
+          304
+        ],
+        "ids": [
+          5897
+        ],
+        "labels": [
+          5897
+        ],
+        "roles": [
+          5897
+        ],
+        "feature_names": [
+          304
+        ],
+        "obs_days": [
+          5897
+        ]
+      },
+      "dtypes": {
+        "X": "float64",
+        "y": "int64",
+        "roles": "<U5"
+      },
+      "row_order_equal_npz_exp01_roster_P_roles": true,
+      "role_order_equal": true,
+      "labels_equal_roster_y_true": true,
+      "role_counts": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "FIT_count": 3144,
+      "label_counts_by_P_class_order": {
+        "연안복합": 2920,
+        "자망": 2016,
+        "통발": 835,
+        "채낚기연승낚시": 126
+      },
+      "nan_count_first156": 43352,
+      "inf_count_first156": 0
+    },
+    "1": {
+      "npz_sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+      "expected_round002_sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+      "npz_hash_matches_round002": true,
+      "keys": [
+        "X",
+        "feature_names",
+        "fold",
+        "obs_days",
+        "rfid_ids",
+        "roles",
+        "y"
+      ],
+      "shapes": {
+        "X": [
+          5897,
+          304
+        ],
+        "ids": [
+          5897
+        ],
+        "labels": [
+          5897
+        ],
+        "roles": [
+          5897
+        ],
+        "feature_names": [
+          304
+        ],
+        "obs_days": [
+          5897
+        ]
+      },
+      "dtypes": {
+        "X": "float64",
+        "y": "int64",
+        "roles": "<U5"
+      },
+      "row_order_equal_npz_exp01_roster_P_roles": true,
+      "role_order_equal": true,
+      "labels_equal_roster_y_true": true,
+      "role_counts": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "FIT_count": 3144,
+      "label_counts_by_P_class_order": {
+        "연안복합": 2920,
+        "자망": 2016,
+        "통발": 835,
+        "채낚기연승낚시": 126
+      },
+      "nan_count_first156": 36389,
+      "inf_count_first156": 0
+    },
+    "2": {
+      "npz_sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633",
+      "expected_round002_sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633",
+      "npz_hash_matches_round002": true,
+      "keys": [
+        "X",
+        "feature_names",
+        "fold",
+        "obs_days",
+        "rfid_ids",
+        "roles",
+        "y"
+      ],
+      "shapes": {
+        "X": [
+          5897,
+          304
+        ],
+        "ids": [
+          5897
+        ],
+        "labels": [
+          5897
+        ],
+        "roles": [
+          5897
+        ],
+        "feature_names": [
+          304
+        ],
+        "obs_days": [
+          5897
+        ]
+      },
+      "dtypes": {
+        "X": "float64",
+        "y": "int64",
+        "roles": "<U5"
+      },
+      "row_order_equal_npz_exp01_roster_P_roles": true,
+      "role_order_equal": true,
+      "labels_equal_roster_y_true": true,
+      "role_counts": {
+        "FIT": 3145,
+        "INNER": 787,
+        "OUTER": 1965
+      },
+      "FIT_count": 3145,
+      "label_counts_by_P_class_order": {
+        "연안복합": 2920,
+        "자망": 2016,
+        "통발": 835,
+        "채낚기연승낚시": 126
+      },
+      "nan_count_first156": 36620,
+      "inf_count_first156": 0
+    }
+  },
+  "feature_checks": {
+    "0": {
+      "npz_width": 304,
+      "exp01_component_widths": [
+        "F156:156",
+        "T5:10",
+        "behavior_without_obs_days:68",
+        "local_rel:70"
+      ],
+      "first156_names_match_P": true,
+      "P_F156_columns": 156,
+      "remaining_columns": 148,
+      "remaining_columns_are_not_in_P_F156": true,
+      "names_unique": true,
+      "no_inf": true
+    },
+    "1": {
+      "npz_width": 304,
+      "exp01_component_widths": [
+        "F156:156",
+        "T5:10",
+        "behavior_without_obs_days:68",
+        "local_rel:70"
+      ],
+      "first156_names_match_P": true,
+      "P_F156_columns": 156,
+      "remaining_columns": 148,
+      "remaining_columns_are_not_in_P_F156": true,
+      "names_unique": true,
+      "no_inf": true
+    },
+    "2": {
+      "npz_width": 304,
+      "exp01_component_widths": [
+        "F156:156",
+        "T5:10",
+        "behavior_without_obs_days:68",
+        "local_rel:70"
+      ],
+      "first156_names_match_P": true,
+      "P_F156_columns": 156,
+      "remaining_columns": 148,
+      "remaining_columns_are_not_in_P_F156": true,
+      "names_unique": true,
+      "no_inf": true
+    }
+  },
+  "vocabulary_checks": {
+    "0": {
+      "metadata_fit_id_count": 3144,
+      "development_FIT_count": 3144,
+      "FIT_ID_hash_matches_P_fold_vocabulary": true,
+      "n_clusters": 16,
+      "seed": 20261030,
+      "P_F156_vocabulary_column_count": 34,
+      "P_generator_selects_fold_vocabulary_scope": true,
+      "same_fold_NPZ_first156_name_order": true,
+      "vocabulary_feature_values_independently_regenerated": false
+    },
+    "1": {
+      "metadata_fit_id_count": 3144,
+      "development_FIT_count": 3144,
+      "FIT_ID_hash_matches_P_fold_vocabulary": true,
+      "n_clusters": 16,
+      "seed": 20261030,
+      "P_F156_vocabulary_column_count": 34,
+      "P_generator_selects_fold_vocabulary_scope": true,
+      "same_fold_NPZ_first156_name_order": true,
+      "vocabulary_feature_values_independently_regenerated": false
+    },
+    "2": {
+      "metadata_fit_id_count": 3145,
+      "development_FIT_count": 3145,
+      "FIT_ID_hash_matches_P_fold_vocabulary": true,
+      "n_clusters": 16,
+      "seed": 20261030,
+      "P_F156_vocabulary_column_count": 34,
+      "P_generator_selects_fold_vocabulary_scope": true,
+      "same_fold_NPZ_first156_name_order": true,
+      "vocabulary_feature_values_independently_regenerated": false
+    }
+  },
+  "fit_median_comparisons": {
+    "42/0": {
+      "kind": "fit_median_and_raw_missing_flags",
+      "saved_median_count": 156,
+      "npz_fit_rows": 3144,
+      "max_abs_delta": 2.842170943040401e-14,
+      "mismatch_count": 0,
+      "matches_atol_1e-10": true,
+      "first_mismatches": []
+    },
+    "2026/0": {
+      "kind": "fit_median_and_raw_missing_flags",
+      "saved_median_count": 156,
+      "npz_fit_rows": 3144,
+      "max_abs_delta": 2.842170943040401e-14,
+      "mismatch_count": 0,
+      "matches_atol_1e-10": true,
+      "first_mismatches": []
+    },
+    "42/1": {
+      "kind": "fit_median_and_raw_missing_flags",
+      "saved_median_count": 156,
+      "npz_fit_rows": 3144,
+      "max_abs_delta": 0.0,
+      "mismatch_count": 0,
+      "matches_atol_1e-10": true,
+      "first_mismatches": []
+    },
+    "2026/1": {
+      "kind": "fit_median_and_raw_missing_flags",
+      "saved_median_count": 156,
+      "npz_fit_rows": 3144,
+      "max_abs_delta": 0.0,
+      "mismatch_count": 0,
+      "matches_atol_1e-10": true,
+      "first_mismatches": []
+    },
+    "42/2": {
+      "kind": "fit_median_and_raw_missing_flags",
+      "saved_median_count": 156,
+      "npz_fit_rows": 3145,
+      "max_abs_delta": 0.0,
+      "mismatch_count": 0,
+      "matches_atol_1e-10": true,
+      "first_mismatches": []
+    },
+    "2026/2": {
+      "kind": "fit_median_and_raw_missing_flags",
+      "saved_median_count": 156,
+      "npz_fit_rows": 3145,
+      "max_abs_delta": 0.0,
+      "mismatch_count": 0,
+      "matches_atol_1e-10": true,
+      "first_mismatches": []
+    }
+  },
+  "transformed_input_hashes": {
+    "42/0/FIT": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "ac254509d62c1ee0093941fe462c9539b0184e8a50d762dc8e9ba69c140869dd",
+      "row_ids_order_sha256": "bdfb86ec3c99bbc783a5f0e8d3a1524b789d3c7e1101293d42805f7ccacca3f0",
+      "row_count": 3144,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": null,
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "42/0/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "03949c49801d7ed6e609bc38eaa9702fca1343af8bed6eb3f2e9a2e0bb3be361",
+      "row_ids_order_sha256": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+      "row_count": 787,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": "INNER",
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "2026/0/FIT": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "ac254509d62c1ee0093941fe462c9539b0184e8a50d762dc8e9ba69c140869dd",
+      "row_ids_order_sha256": "bdfb86ec3c99bbc783a5f0e8d3a1524b789d3c7e1101293d42805f7ccacca3f0",
+      "row_count": 3144,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": null,
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "2026/0/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "03949c49801d7ed6e609bc38eaa9702fca1343af8bed6eb3f2e9a2e0bb3be361",
+      "row_ids_order_sha256": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+      "row_count": 787,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": "INNER",
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "42/1/FIT": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "c18269392ddfb50ef6c323b29af188ff05d8207d490f6709a9451e94a21356c3",
+      "row_ids_order_sha256": "07e847b2ddef7eda4efa7a3266ff2d6cd1d98f48157b01046859516202927de9",
+      "row_count": 3144,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": null,
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "42/1/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "95814c780ae8558a1c0a162b7c8a630d6fa4999cfe9c88f5a6fcd45c97bdbe20",
+      "row_ids_order_sha256": "6d76c015715ad40248bf435470f58efb2ec6bd4e30377906a62a9619af2694d2",
+      "row_count": 787,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": "INNER",
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "2026/1/FIT": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "c18269392ddfb50ef6c323b29af188ff05d8207d490f6709a9451e94a21356c3",
+      "row_ids_order_sha256": "07e847b2ddef7eda4efa7a3266ff2d6cd1d98f48157b01046859516202927de9",
+      "row_count": 3144,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": null,
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "2026/1/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "95814c780ae8558a1c0a162b7c8a630d6fa4999cfe9c88f5a6fcd45c97bdbe20",
+      "row_ids_order_sha256": "6d76c015715ad40248bf435470f58efb2ec6bd4e30377906a62a9619af2694d2",
+      "row_count": 787,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": "INNER",
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "42/2/FIT": {
+      "shape": [
+        3145,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "5188e5c18ddc365b15e8930000a876855665411f1e68e8cdcc16596115586c4c",
+      "row_ids_order_sha256": "c809c404dfdf6d647171dd21f9934d13f370f5976e375b123d681fbfe9cbe74f",
+      "row_count": 3145,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": null,
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "42/2/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "243eec1d7fe240970ee01ca49cbdc1cec54839e7315c71b5c65f09e1e44e3d2d",
+      "row_ids_order_sha256": "ae95018ccbb1d59606efdb39047da3b952c4704b4b40bde68bc9e29cdcd3bf02",
+      "row_count": 787,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": "INNER",
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "2026/2/FIT": {
+      "shape": [
+        3145,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "5188e5c18ddc365b15e8930000a876855665411f1e68e8cdcc16596115586c4c",
+      "row_ids_order_sha256": "c809c404dfdf6d647171dd21f9934d13f370f5976e375b123d681fbfe9cbe74f",
+      "row_count": 3145,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": null,
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    },
+    "2026/2/INNER_QUERY": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "sha256_C_order_float32_bytes": "243eec1d7fe240970ee01ca49cbdc1cec54839e7315c71b5c65f09e1e44e3d2d",
+      "row_ids_order_sha256": "ae95018ccbb1d59606efdb39047da3b952c4704b4b40bde68bc9e29cdcd3bf02",
+      "row_count": 787,
+      "feature_order": "first156 raw/imputed columns followed by matching 156 raw missing flags",
+      "query_role": "INNER",
+      "input_is_model_replay": false,
+      "row_order_basis": "NPZ/P development_roles_long roster order",
+      "original_fit_ids_sequence_verified": false
+    }
+  },
+  "mismatch_mapping": [
+    {
+      "issue": "run_settings_no_missing_flags_vs_saved_preprocessor_and_source_code_append_flags",
+      "resolution": "documented conflict; effective transform supported by comparison_models.py and preprocessor.kind; 312 columns"
+    },
+    {
+      "issue": "exp01_npz_width_304_vs_TabICL_F156_input_312",
+      "resolution": "extract first156 P F156 columns; discard added exp01 T5/behavior/local_rel148; append raw missing flags after FIT median imputation"
+    },
+    {
+      "issue": "original_ordered_fit_and_inner_id_lists_not_verified",
+      "resolution": "NPZ/P role-roster sequence only; source uses fold.fit_ids/inner_ids; inspect only P/splits/splits_original.json ID arrays in a follow-up"
+    },
+    {
+      "issue": "per_row_feature_value_equality_against_P_F156_not_checked",
+      "resolution": "source lineage, names/order, fold vocabulary ID hashes, and FIT medians verified; protected P F156 rows not read"
+    }
+  ],
+  "parent_fingerprint_summary": {
+    "42": {
+      "seed": 42,
+      "feature_variant": {
+        "name": "stable_f156",
+        "features": "spatial",
+        "extra_tables": [
+          "temporal"
+        ],
+        "learned_tables": [
+          "vocabulary"
+        ],
+        "width": 128,
+        "tabicl_use_amp": false,
+        "attempt": 24
+      },
+      "input_lineage_seed": 42,
+      "input_file_count": 12,
+      "preprocessing": "fit median and missing flags; each algorithm uses its own internal transforms",
+      "raw_information_matches_tabm": true
+    },
+    "2026": {
+      "seed": 2026,
+      "feature_variant": {
+        "name": "stable_f156",
+        "features": "spatial",
+        "extra_tables": [
+          "temporal"
+        ],
+        "learned_tables": [
+          "vocabulary"
+        ],
+        "width": 128,
+        "tabicl_use_amp": false,
+        "attempt": 24
+      },
+      "input_lineage_seed": 2026,
+      "input_file_count": 12,
+      "preprocessing": "fit median and missing flags; each algorithm uses its own internal transforms",
+      "raw_information_matches_tabm": true
+    }
+  },
+  "training_summary": {
+    "42/0": {
+      "method": "tabicl",
+      "context_rows": 3144,
+      "inner_vessels": 787,
+      "parameters_trained_on_this_dataset": 0,
+      "selection_metric": null,
+      "fit_vessels": 3144
+    },
+    "42/1": {
+      "method": "tabicl",
+      "context_rows": 3144,
+      "inner_vessels": 787,
+      "parameters_trained_on_this_dataset": 0,
+      "selection_metric": null,
+      "fit_vessels": 3144
+    },
+    "42/2": {
+      "method": "tabicl",
+      "context_rows": 3145,
+      "inner_vessels": 787,
+      "parameters_trained_on_this_dataset": 0,
+      "selection_metric": null,
+      "fit_vessels": 3145
+    },
+    "2026/0": {
+      "method": "tabicl",
+      "context_rows": 3144,
+      "inner_vessels": 787,
+      "parameters_trained_on_this_dataset": 0,
+      "selection_metric": null,
+      "fit_vessels": 3144
+    },
+    "2026/1": {
+      "method": "tabicl",
+      "context_rows": 3144,
+      "inner_vessels": 787,
+      "parameters_trained_on_this_dataset": 0,
+      "selection_metric": null,
+      "fit_vessels": 3144
+    },
+    "2026/2": {
+      "method": "tabicl",
+      "context_rows": 3145,
+      "inner_vessels": 787,
+      "parameters_trained_on_this_dataset": 0,
+      "selection_metric": null,
+      "fit_vessels": 3145
+    }
+  },
+  "mismatches": [],
+  "source_input_sha256": {
+    "round_002_config": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+    "P_feature_columns": "a6ac08c4cbec615cb1fc5b4cc1af434840915cf6e05e45c8b92a6e157b3a49a0",
+    "P_F156_dictionary": "97d419ab85b58e1ab9b9b0c8a295e1c3da5184df49bc2f601d69a6b72523a773",
+    "P_classes": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+    "P_run_settings": "e951067a229cf41056bd1d5d73bc46fa688430b84bae255ed79950e3ea6cb85f",
+    "P_rebuild_features_code": "07c043af5f0fafd81a2d34ecda47f35b001728a00eb93b617906f9116445a388",
+    "exp01_data_adapter": "761e7e84d9eb1568c8ab200ed8513cf9036799475d1eb456fa39079cd7c6a6b6",
+    "exp01_eval_contract": "4213e3a18ff418551b92420b04da49b1af6d3064ae0f02eb430040fb165a4ad1",
+    "P_comparison_models_code": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+    "P_vocabulary_features_code": "45bac687a235b3c1aa4768cb2ac860422bd6b54c2d3c5a6625fab372e33ab615",
+    "P_digest_json_source": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381",
+    "P_seed_42_parent_fingerprint": "64b992fb807b4ada967d641279c625e5640865997234d38c003f179cb9b25475",
+    "P_seed_42_fold_0_training": "adf22319dcda21029baa279dbbeb60669c55f3b1c222a5cc5864cb1e9912eba4",
+    "P_seed_42_fold_1_training": "00e5dec930467abbf37e779d99aebb0601bbb92c5306c3070326960db6ee203f",
+    "P_seed_42_fold_2_training": "b34474e1b183401aeebd94b6bf54791b8098efcbefb685a87bb42eedd1be65a7",
+    "P_seed_2026_parent_fingerprint": "68ee32a81ce53a92131aa26c55de5a6db2c4d8d7a380bb09b8399b416d489dec",
+    "P_seed_2026_fold_0_training": "629421a1db6985c1fbb66af88b5cfd4bbd76b3f20490054f29f5041bae68b7c0",
+    "P_seed_2026_fold_1_training": "aa682f49e27328a0c5a98eebe51ede2bd4f622c5a2e7e8ffa5efdcb3ee1131f3",
+    "P_seed_2026_fold_2_training": "d08a1668edb1632c3f7ad8534d13e6df5ad480a0f40b2bcfe6c035aae3eae4d1",
+    "exp01_experiment_contract": "ae901771cd7f9db2d14b20ad919d58cb68ca54ed71eb4ee432170b941e452791",
+    "exp01_development_roster": "9639abbeccf5335e8baa8f0c8c165c319da453615e410674d28e4410e355e29f",
+    "P_development_roles_long": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+    "exp01_fold_0_features_npz": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+    "P_fold_0_vocabulary_state": "402f44fd2fe8bfef82709452b5678a17cea40d302d1eac61731f96a61665397d",
+    "P_seed_42_fold_0_preprocessor": "eea7d15bd4f0610450600502fcfb36d584a6f5324f26b6b325c3014d10065740",
+    "P_seed_2026_fold_0_preprocessor": "eea7d15bd4f0610450600502fcfb36d584a6f5324f26b6b325c3014d10065740",
+    "exp01_fold_1_features_npz": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+    "P_fold_1_vocabulary_state": "acdff97e7ee3c87fb4fabb131e1b1ed86e026007236a3448a80fa3fd20c50bbb",
+    "P_seed_42_fold_1_preprocessor": "d3098f53b2189afca5680a8f5c765828dc280a387844f0f3db23889fc88e9fde",
+    "P_seed_2026_fold_1_preprocessor": "d3098f53b2189afca5680a8f5c765828dc280a387844f0f3db23889fc88e9fde",
+    "exp01_fold_2_features_npz": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633",
+    "P_fold_2_vocabulary_state": "c9f56efc70a4b5e74db674e0efe9b33805e58eb94e845c466002ea067a0c8b76",
+    "P_seed_42_fold_2_preprocessor": "5f90c875df2198b067696a687e22704e24642405c9d6314dab9374c7ee6b75f4",
+    "P_seed_2026_fold_2_preprocessor": "5f90c875df2198b067696a687e22704e24642405c9d6314dab9374c7ee6b75f4",
+    "audit_script": "7c156e0250112317aa5912119c93717c9e207131a0a09e3567d43187bf098ae3"
+  },
+  "commands": [
+    "& \"C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\lineage\\audit_input_lineage.py\""
+  ],
+  "run_metadata": {
+    "audit_iteration": "final_extended_rerun_7",
+    "prior_diagnostic_run_count": 6,
+    "prior_diagnostic_runs_superseded": true,
+    "started_utc": "2026-11-04T17:00:07.960207+00:00",
+    "finished_utc": "2026-11-04T17:00:08.476803+00:00",
+    "elapsed_seconds": 0.516611400002148,
+    "exit_code": 0,
+    "stdout_log": "rounds/round_004/lineage/run.log",
+    "stdout_log_sha256": "27d962835100bbe54c748426de8840fafc803431a34104fb22b65e68ebe951ad",
+    "python_executable": "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "command_actual": "& \"C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\lineage\\audit_input_lineage.py\""
+  },
+  "counts": {
+    "folds": 3,
+    "npz_hashes_matching_round002": 3,
+    "first156_column_orders_matching_P": 3,
+    "role_order_label_mappings_passing": 3,
+    "preprocessor_median_comparisons": 6,
+    "median_mismatch_count": 0,
+    "transformed_inputs_hashed": 12
+  }
+}

@@ -1,0 +1,122 @@
+Looking in links: d:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_004\environment\wheels
+Collecting tabicl==2.2.0
+  Downloading tabicl-2.2.0-py3-none-any.whl.metadata (38 kB)
+Collecting numpy==2.3.5
+  Downloading numpy-2.3.5-cp312-cp312-win_amd64.whl.metadata (60 kB)
+Collecting scikit-learn==1.7.2
+  Downloading scikit_learn-1.7.2-cp312-cp312-win_amd64.whl.metadata (11 kB)
+Collecting einops>=0.7 (from tabicl==2.2.0)
+  Downloading einops-0.8.2-py3-none-any.whl.metadata (13 kB)
+Collecting huggingface-hub (from tabicl==2.2.0)
+  Downloading huggingface_hub-2.4.0-py3-none-any.whl.metadata (16 kB)
+Collecting psutil (from tabicl==2.2.0)
+  Downloading psutil-7.2.2-cp37-abi3-win_amd64.whl.metadata (22 kB)
+Collecting scipy (from tabicl==2.2.0)
+  Downloading scipy-1.18.1-cp312-cp312-win_amd64.whl.metadata (61 kB)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\torch-2.6.0+cpu-cp312-cp312-win_amd64.whl (from tabicl==2.2.0)
+  File was already downloaded d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\torch-2.6.0+cpu-cp312-cp312-win_amd64.whl
+Collecting tqdm>=4.64.0 (from tabicl==2.2.0)
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting joblib>=1.2.0 (from scikit-learn==1.7.2)
+  Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn==1.7.2)
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+Collecting cloudpickle>=3.0 (from joblib>=1.2.0->scikit-learn==1.7.2)
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting filelock (from torch>=2.2->tabicl==2.2.0)
+  Downloading filelock-4.2.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting typing-extensions>=4.10.0 (from torch>=2.2->tabicl==2.2.0)
+  File was already downloaded d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\typing_extensions-4.16.0-py3-none-any.whl
+Collecting networkx (from torch>=2.2->tabicl==2.2.0)
+  File was already downloaded d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\networkx-3.7-py3-none-any.whl
+Collecting jinja2 (from torch>=2.2->tabicl==2.2.0)
+  File was already downloaded d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\jinja2-3.1.6-py3-none-any.whl
+Collecting fsspec (from torch>=2.2->tabicl==2.2.0)
+  File was already downloaded d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\fsspec-2026.9.0-py3-none-any.whl
+Collecting setuptools (from torch>=2.2->tabicl==2.2.0)
+  Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy==1.13.1 (from torch>=2.2->tabicl==2.2.0)
+  File was already downloaded d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\sympy-1.13.1-py3-none-any.whl
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch>=2.2->tabicl==2.2.0)
+  File was already downloaded d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\mpmath-1.3.0-py3-none-any.whl
+Collecting colorama (from tqdm>=4.64.0->tabicl==2.2.0)
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting click<9.0.0,>=8.4.2 (from huggingface-hub->tabicl==2.2.0)
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting hf-xet<2.0.0,>=1.6.0 (from huggingface-hub->tabicl==2.2.0)
+  Downloading hf_xet-1.8.0-cp38-abi3-win_amd64.whl.metadata (4.9 kB)
+Collecting httpx2<3,>=2.0.0 (from huggingface-hub->tabicl==2.2.0)
+  Downloading httpx2-2.16.0-py3-none-any.whl.metadata (10 kB)
+Collecting packaging>=20.9 (from huggingface-hub->tabicl==2.2.0)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pyyaml>=5.1 (from huggingface-hub->tabicl==2.2.0)
+  Downloading pyyaml-6.0.3-cp312-cp312-win_amd64.whl.metadata (2.4 kB)
+Collecting anyio>=4.10 (from httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+  Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting httpcore2==2.16.0 (from httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+  Downloading httpcore2-2.16.0-py3-none-any.whl.metadata (27 kB)
+Collecting idna>=3.18 (from httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting truststore>=0.10 (from httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+  Downloading truststore-0.10.5-py3-none-any.whl.metadata (4.5 kB)
+Collecting h11>=0.16 (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+  Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch>=2.2->tabicl==2.2.0)
+  Downloading markupsafe-3.0.4-cp312-cp312-win_amd64.whl.metadata (2.8 kB)
+Downloading tabicl-2.2.0-py3-none-any.whl (310 kB)
+Downloading numpy-2.3.5-cp312-cp312-win_amd64.whl (12.8 MB)
+   ---------------------------------------- 12.8/12.8 MB 34.9 MB/s eta 0:00:00
+Downloading scikit_learn-1.7.2-cp312-cp312-win_amd64.whl (8.7 MB)
+   ---------------------------------------- 8.7/8.7 MB 24.6 MB/s eta 0:00:00
+Downloading einops-0.8.2-py3-none-any.whl (65 kB)
+Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+Downloading scipy-1.18.1-cp312-cp312-win_amd64.whl (36.7 MB)
+   ---------------------------------------- 36.7/36.7 MB 37.0 MB/s eta 0:00:00
+Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+Downloading huggingface_hub-2.4.0-py3-none-any.whl (857 kB)
+   --------------------------------------- 857.0/857.0 kB 39.7 MB/s eta 0:00:00
+Downloading psutil-7.2.2-cp37-abi3-win_amd64.whl (137 kB)
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading filelock-4.2.8-py3-none-any.whl (164 kB)
+Downloading hf_xet-1.8.0-cp38-abi3-win_amd64.whl (3.9 MB)
+   ---------------------------------------- 3.9/3.9 MB 33.5 MB/s eta 0:00:00
+Downloading httpx2-2.16.0-py3-none-any.whl (97 kB)
+Downloading httpcore2-2.16.0-py3-none-any.whl (85 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pyyaml-6.0.3-cp312-cp312-win_amd64.whl (154 kB)
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+   --------------------------------------- 876.3/876.3 kB 40.9 MB/s eta 0:00:00
+Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading markupsafe-3.0.4-cp312-cp312-win_amd64.whl (14 kB)
+Downloading truststore-0.10.5-py3-none-any.whl (19 kB)
+Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\tabicl-2.2.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\numpy-2.3.5-cp312-cp312-win_amd64.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\scikit_learn-1.7.2-cp312-cp312-win_amd64.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\einops-0.8.2-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\joblib-1.6.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\scipy-1.18.1-cp312-cp312-win_amd64.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\threadpoolctl-3.7.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\tqdm-4.70.1-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\huggingface_hub-2.4.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\psutil-7.2.2-cp37-abi3-win_amd64.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\click-8.5.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\cloudpickle-3.1.2-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\filelock-4.2.8-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\hf_xet-1.8.0-cp38-abi3-win_amd64.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\httpx2-2.16.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\httpcore2-2.16.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\packaging-26.3-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\pyyaml-6.0.3-cp312-cp312-win_amd64.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\colorama-0.4.6-py2.py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\setuptools-84.2.1-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\anyio-4.16.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\idna-3.20-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\markupsafe-3.0.4-cp312-cp312-win_amd64.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\truststore-0.10.5-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\h11-0.16.0-py3-none-any.whl
+Successfully downloaded tabicl numpy scikit-learn einops joblib scipy threadpoolctl torch sympy tqdm huggingface-hub psutil click cloudpickle filelock fsspec hf-xet httpx2 httpcore2 packaging pyyaml typing-extensions colorama jinja2 networkx setuptools anyio idna MarkupSafe mpmath truststore h11

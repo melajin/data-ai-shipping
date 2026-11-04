@@ -1,0 +1,21 @@
+﻿{
+    "command":  [
+                    "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe",
+                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\run_linkage_review.py"
+                ],
+    "started_local":  "2026-11-05T02:46:06.0214929+09:00",
+    "finished_local":  "2026-11-05T02:46:09.5108402+09:00",
+    "exit_code":  0,
+    "stdout_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stdout.log",
+    "stderr_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stderr.log",
+    "previous_attempts":  [
+                              1,
+                              0,
+                              1,
+                              0,
+                              0,
+                              0,
+                              1
+                          ],
+    "note":  "Final corrected run with cache and documentation inputs hashed"
+}

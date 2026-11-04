@@ -1,0 +1,336 @@
+{
+ "input_hashes": {
+  "evaluation/seed_42/original_oof_predictions.csv": {
+   "live": "ff1b7788547efc40f0810af511a6f1e6939aa54ff6c1959c7a7e9af6ee598d89",
+   "pkg_manifest": "ff1b7788547efc40f0810af511a6f1e6939aa54ff6c1959c7a7e9af6ee598d89",
+   "pkg_match": true,
+   "round_manifest": "ff1b7788547efc40f0810af511a6f1e6939aa54ff6c1959c7a7e9af6ee598d89",
+   "round_match": true
+  },
+  "evaluation/seed_42/oof_decisions.csv": {
+   "live": "20694996c615b585714a34e05841869f24ed0b4ccc00b47517f3c7f02cfddff2",
+   "pkg_manifest": "20694996c615b585714a34e05841869f24ed0b4ccc00b47517f3c7f02cfddff2",
+   "pkg_match": true,
+   "round_manifest": "20694996c615b585714a34e05841869f24ed0b4ccc00b47517f3c7f02cfddff2",
+   "round_match": true
+  },
+  "evaluation/seed_42/fold_0/inner_predictions.csv": {
+   "live": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+   "pkg_manifest": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+   "pkg_match": true,
+   "round_manifest": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+   "round_match": true
+  },
+  "evaluation/seed_42/fold_0/training.json": {
+   "live": "adf22319dcda21029baa279dbbeb60669c55f3b1c222a5cc5864cb1e9912eba4",
+   "pkg_manifest": "adf22319dcda21029baa279dbbeb60669c55f3b1c222a5cc5864cb1e9912eba4",
+   "pkg_match": true,
+   "round_manifest": "adf22319dcda21029baa279dbbeb60669c55f3b1c222a5cc5864cb1e9912eba4",
+   "round_match": true
+  },
+  "evaluation/seed_42/fold_1/inner_predictions.csv": {
+   "live": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+   "pkg_manifest": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+   "pkg_match": true,
+   "round_manifest": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+   "round_match": true
+  },
+  "evaluation/seed_42/fold_1/training.json": {
+   "live": "00e5dec930467abbf37e779d99aebb0601bbb92c5306c3070326960db6ee203f",
+   "pkg_manifest": "00e5dec930467abbf37e779d99aebb0601bbb92c5306c3070326960db6ee203f",
+   "pkg_match": true,
+   "round_manifest": "00e5dec930467abbf37e779d99aebb0601bbb92c5306c3070326960db6ee203f",
+   "round_match": true
+  },
+  "evaluation/seed_42/fold_2/inner_predictions.csv": {
+   "live": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+   "pkg_manifest": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+   "pkg_match": true,
+   "round_manifest": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+   "round_match": true
+  },
+  "evaluation/seed_42/fold_2/training.json": {
+   "live": "b34474e1b183401aeebd94b6bf54791b8098efcbefb685a87bb42eedd1be65a7",
+   "pkg_manifest": "b34474e1b183401aeebd94b6bf54791b8098efcbefb685a87bb42eedd1be65a7",
+   "pkg_match": true,
+   "round_manifest": "b34474e1b183401aeebd94b6bf54791b8098efcbefb685a87bb42eedd1be65a7",
+   "round_match": true
+  },
+  "evaluation/seed_2026/original_oof_predictions.csv": {
+   "live": "de94f93e06517564decb4961067307bc83c90c22b89467a3c8e13ddb4388f3b8",
+   "pkg_manifest": "de94f93e06517564decb4961067307bc83c90c22b89467a3c8e13ddb4388f3b8",
+   "pkg_match": true,
+   "round_manifest": "de94f93e06517564decb4961067307bc83c90c22b89467a3c8e13ddb4388f3b8",
+   "round_match": true
+  },
+  "evaluation/seed_2026/oof_decisions.csv": {
+   "live": "2a6ce37c3715186fe999bf7b19e01993ee03017bd9192b088519ad6839a232c1",
+   "pkg_manifest": "2a6ce37c3715186fe999bf7b19e01993ee03017bd9192b088519ad6839a232c1",
+   "pkg_match": true,
+   "round_manifest": "2a6ce37c3715186fe999bf7b19e01993ee03017bd9192b088519ad6839a232c1",
+   "round_match": true
+  },
+  "evaluation/seed_2026/fold_0/inner_predictions.csv": {
+   "live": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+   "pkg_manifest": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+   "pkg_match": true,
+   "round_manifest": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+   "round_match": true
+  },
+  "evaluation/seed_2026/fold_0/training.json": {
+   "live": "629421a1db6985c1fbb66af88b5cfd4bbd76b3f20490054f29f5041bae68b7c0",
+   "pkg_manifest": "629421a1db6985c1fbb66af88b5cfd4bbd76b3f20490054f29f5041bae68b7c0",
+   "pkg_match": true,
+   "round_manifest": "629421a1db6985c1fbb66af88b5cfd4bbd76b3f20490054f29f5041bae68b7c0",
+   "round_match": true
+  },
+  "evaluation/seed_2026/fold_1/inner_predictions.csv": {
+   "live": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+   "pkg_manifest": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+   "pkg_match": true,
+   "round_manifest": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+   "round_match": true
+  },
+  "evaluation/seed_2026/fold_1/training.json": {
+   "live": "aa682f49e27328a0c5a98eebe51ede2bd4f622c5a2e7e8ffa5efdcb3ee1131f3",
+   "pkg_manifest": "aa682f49e27328a0c5a98eebe51ede2bd4f622c5a2e7e8ffa5efdcb3ee1131f3",
+   "pkg_match": true,
+   "round_manifest": "aa682f49e27328a0c5a98eebe51ede2bd4f622c5a2e7e8ffa5efdcb3ee1131f3",
+   "round_match": true
+  },
+  "evaluation/seed_2026/fold_2/inner_predictions.csv": {
+   "live": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+   "pkg_manifest": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+   "pkg_match": true,
+   "round_manifest": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+   "round_match": true
+  },
+  "evaluation/seed_2026/fold_2/training.json": {
+   "live": "d08a1668edb1632c3f7ad8534d13e6df5ad480a0f40b2bcfe6c035aae3eae4d1",
+   "pkg_manifest": "d08a1668edb1632c3f7ad8534d13e6df5ad480a0f40b2bcfe6c035aae3eae4d1",
+   "pkg_match": true,
+   "round_manifest": "d08a1668edb1632c3f7ad8534d13e6df5ad480a0f40b2bcfe6c035aae3eae4d1",
+   "round_match": true
+  },
+  "splits/development_roles_long.csv": {
+   "live": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+   "pkg_manifest": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+   "pkg_match": true,
+   "round_manifest": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+   "round_match": true
+  },
+  "evaluation/final_fixed_decision_rule.json": {
+   "live": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+   "pkg_manifest": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+   "pkg_match": true,
+   "round_manifest": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+   "round_match": true
+  },
+  "evaluation/trap_factors.csv": {
+   "live": "36ed46958f2e27b83aa5ab63d7a925149f1cb59a05f1cff5629df7e02445bb04",
+   "pkg_manifest": "36ed46958f2e27b83aa5ab63d7a925149f1cb59a05f1cff5629df7e02445bb04",
+   "pkg_match": true,
+   "round_manifest": "36ed46958f2e27b83aa5ab63d7a925149f1cb59a05f1cff5629df7e02445bb04",
+   "round_match": true
+  },
+  "metadata/classes.json": {
+   "live": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+   "pkg_manifest": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+   "pkg_match": true,
+   "round_manifest": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+   "round_match": true
+  }
+ },
+ "input_hash_all_match_pkg": true,
+ "input_hash_all_match_round": true,
+ "input_hash_missing_from_round_manifest": [],
+ "frozen_rule_inner_hashes": {
+  "42/0": {
+   "rule_sha": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+   "live": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+   "match": true,
+   "rule_trap_factor": 2.0
+  },
+  "42/1": {
+   "rule_sha": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+   "live": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+   "match": true,
+   "rule_trap_factor": 3.0
+  },
+  "42/2": {
+   "rule_sha": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+   "live": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+   "match": true,
+   "rule_trap_factor": 2.0
+  },
+  "2026/0": {
+   "rule_sha": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+   "live": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+   "match": true,
+   "rule_trap_factor": 2.0
+  },
+  "2026/1": {
+   "rule_sha": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+   "live": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+   "match": true,
+   "rule_trap_factor": 3.0
+  },
+  "2026/2": {
+   "rule_sha": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+   "live": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+   "match": true,
+   "rule_trap_factor": 2.0
+  }
+ },
+ "roles": {
+  "rows": 17691,
+  "unique_vessels": 5897,
+  "rows_expected_5897x3": true,
+  "role_counts": {
+   "(0, 'FIT')": 3144,
+   "(0, 'INNER')": 787,
+   "(0, 'OUTER')": 1966,
+   "(1, 'FIT')": 3144,
+   "(1, 'INNER')": 787,
+   "(1, 'OUTER')": 1966,
+   "(2, 'FIT')": 3145,
+   "(2, 'INNER')": 787,
+   "(2, 'OUTER')": 1965
+  }
+ },
+ "oof_structure": {
+  "42": {
+   "rows": 5897,
+   "unique_vessels": 5897,
+   "fold_counts": {
+    "0": 1966,
+    "1": 1966,
+    "2": 1965
+   },
+   "y_true_values": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "prob_finite": true,
+   "prob_min": 1.057698116085135e-05,
+   "prob_max": 0.96107227852091,
+   "max_rowsum_err": 4.440892098500626e-16,
+   "inner_0_rows": 787,
+   "inner_0_class_support": [
+    390,
+    269,
+    111,
+    17
+   ],
+   "inner_1_rows": 787,
+   "inner_1_class_support": [
+    390,
+    269,
+    111,
+    17
+   ],
+   "inner_2_rows": 787,
+   "inner_2_class_support": [
+    390,
+    269,
+    111,
+    17
+   ]
+  },
+  "2026": {
+   "rows": 5897,
+   "unique_vessels": 5897,
+   "fold_counts": {
+    "0": 1966,
+    "1": 1966,
+    "2": 1965
+   },
+   "y_true_values": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "prob_finite": true,
+   "prob_min": 1.6115841455451182e-05,
+   "prob_max": 0.9701849278655424,
+   "max_rowsum_err": 4.440892098500626e-16,
+   "inner_0_rows": 787,
+   "inner_0_class_support": [
+    390,
+    269,
+    111,
+    17
+   ],
+   "inner_1_rows": 787,
+   "inner_1_class_support": [
+    390,
+    269,
+    111,
+    17
+   ],
+   "inner_2_rows": 787,
+   "inner_2_class_support": [
+    390,
+    269,
+    111,
+    17
+   ]
+  }
+ },
+ "inner_set_relations": {
+  "fold0_eq_fold1_seed42": false,
+  "fold0_eq_fold2_seed42": false,
+  "fold1_eq_fold2_seed42": false,
+  "seed42_eq_seed2026_per_fold": {
+   "0": true,
+   "1": true,
+   "2": true
+  },
+  "pairwise_overlap_seed42": {
+   "0&1": 94,
+   "0&2": 66,
+   "1&2": 80
+  }
+ },
+ "inner_roster_relation": {
+  "0": {
+   "roster_inner_n": 787,
+   "roster_outer_n": 1966,
+   "inner_file_matches_roster": true,
+   "inner_outer_overlap": 0
+  },
+  "1": {
+   "roster_inner_n": 787,
+   "roster_outer_n": 1966,
+   "inner_file_matches_roster": true,
+   "inner_outer_overlap": 0
+  },
+  "2": {
+   "roster_inner_n": 787,
+   "roster_outer_n": 1965,
+   "inner_file_matches_roster": true,
+   "inner_outer_overlap": 0
+  }
+ },
+ "seed_alignment": {
+  "ids_equal": true,
+  "y_true_equal": true,
+  "observed_days_equal": true,
+  "fold_equal": true,
+  "probs_identical": false
+ },
+ "observed_days": {
+  "min": 1.0,
+  "max": 181.0,
+  "zero": 0,
+  "negative": 0,
+  "nonfinite": 0,
+  "d1_7": 962,
+  "d8_30": 1292,
+  "d31_90": 2336,
+  "d91p": 1307
+ }
+}

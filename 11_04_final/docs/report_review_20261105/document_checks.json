@@ -1,0 +1,17 @@
+{
+  "report_sha256": "0d170e316843420169338ad765c1e887a9c09869b57f4911022cd8137aace8da",
+  "missing_relative_links": [],
+  "target_correct": 4128,
+  "gap_from_3497": 631,
+  "seed42_delta": 0.0006783110055960658,
+  "two_seed_mean_delta": 0.0003391555027980329,
+  "pdf_current_rows_sum": 3314,
+  "pdf_target_rows_sum": 4166,
+  "pdf_delta_rows_sum": 852,
+  "actual_support_sum": 5897,
+  "actual_seed42_correct": 3491,
+  "actual_seed2026_correct": 3503,
+  "ram_free_gib": 3.3892135620117188,
+  "ram_os_visible_gib": 13.809436798095703,
+  "note": "Document arithmetic/link validation only; no data, model, or metrics rerun."
+}

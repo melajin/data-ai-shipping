@@ -1,0 +1,76 @@
+{
+  "schema": "round004_final_independent_review.v1",
+  "review_status": "PASS_WITH_LIMITATIONS",
+  "reviewed_at_utc": "2026-11-04T17:04:59Z",
+  "reviewer": {
+    "role": "independent round004 reviewer",
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none",
+    "host_evidence_file": "rounds/round_004/model_runtime_evidence.json",
+    "session_file_id": "rollout-2026-11-05T01-46-50-01a1a774-c7a5-7d71-9402-312b5b7f7f77"
+  },
+  "decision": "ACCEPT_ROUND004_WITH_DOCUMENTED_LIMITATIONS",
+  "blocking_issues": [],
+  "evidence_reviewed": {
+    "runtime_install": {
+      "status": "PASS",
+      "observed": "environment/install.json reports success; all six steps exit 0; aggregate elapsed 150.437 seconds against 900 seconds; pip check exit 0.",
+      "download_guard": "Peak observed wheel/temp disk bytes 283868825 and final observed bytes 283019957, below 1 GiB. This is local artifact accounting, not exact network traffic accounting; index metadata/header bytes are not metered.",
+      "model_load_or_download": "Checkpoint SHA256 was bound and matches the local checkpoint; install did not load the model or download weights."
+    },
+    "synthetic_smoke": {
+      "status": "SKIPPED_RESOURCE_GATE",
+      "observed": "At 2026-11-04T16:56:49.810181Z, available RAM was 2.1962547302246094 GiB versus the 3 GiB minimum. The manager wrapper exited 1 at the gate.",
+      "attempts": 0,
+      "probe_subprocess_started": false,
+      "model_loaded": false,
+      "probability_or_runtime_checks_performed": false,
+      "F1_computed": false,
+      "classification": "Resource-gate skip, not model/runtime failure."
+    },
+    "development_lineage": {
+      "status": "PASS_WITH_LIMITATIONS",
+      "independent_check": "Only approved development NPZs and associated rosters, metadata, saved preprocessing/vocabulary states, and source files were used. No protected rows were read; no model was loaded; no training, inference, or F1 was run.",
+      "verified": [
+        "All three NPZ hashes match round002; each is 5897x304 float64.",
+        "First 156 names/order match P metadata and the complete 156-row feature dictionary; definitions/groups are populated with counts base90=90, spatial20=20, temporal12=12, vocabulary34=34.",
+        "NPZ row/role/label alignment matches the development roster and P role table; FIT/INNER/OUTER counts are 3144/787/1966, 3144/787/1966, and 3145/787/1965.",
+        "All six FIT-only medians match saved preprocessors within 1e-10; maximum absolute difference is 2.8421709430404007e-14.",
+        "All 12 independently recomputed 312-column float32 candidate tensor and row-order hashes match the final lineage result. These use NPZ/roster order and are not original saved model replay arrays.",
+        "Vocabulary FIT-ID digest checks confirm sorted FIT membership, not original FIT row order."
+      ],
+      "not_established": [
+        "Pointwise equality of the first 156 columns against every original F156 row or regeneration of vocabulary values.",
+        "Original FIT/INNER sequence; training metadata does not save the ordered ID arrays. Roster order is not proof of source-code selection order.",
+        "Historical GPU probabilities, CPU/GPU equivalence, model structure in an actual loaded checkpoint, or any performance result."
+      ],
+      "history_provenance": "DIAGNOSTIC_HISTORY.md records eight successful audit invocations while the final result.json hard-codes iteration 7. Earlier diagnostic snapshots and launch-time hashes were not retained. The discrepancy is documented; the frozen numeric results were not changed or rerun for the correction."
+    },
+    "report_and_handoff": {
+      "round_report": "ROUND_REPORT.md accurately distinguishes successful environment installation from an unstarted smoke, reports zero new F1, records the development-only scope, and states the original-order/value and replay limitations.",
+      "next_session_draft": "NEXT_SESSION_DRAFT.md scopes round005 to ID-only source-order recovery, development-only input construction, inference-contract freeze, and at most one synthetic smoke if launch-time RAM is at least 3 GiB. It excludes protected row values, actual-vessel inference, F1, and training.",
+      "consistency": "No substantive contradiction found between the checked receipts, lineage result, round report, and next-session scope."
+    }
+  },
+  "reviewed_artifact_sha256": {
+    "rounds/round_004/ROUND_REPORT.md": "8a6445cfaf7d4fa1256de66cede3c8855459b2fddb90748a1e682bc1da203dcd",
+    "rounds/round_004/NEXT_SESSION_DRAFT.md": "b1ab645d28d5c036ee5660d776b573ba72e1945a61707c826424ac70504e1501",
+    "rounds/round_004/lineage/result.json": "ab57f7882c8e7e05831786345bf947069f4ba5df1569ffdc62a410524e354de1",
+    "rounds/round_004/lineage/DIAGNOSTIC_HISTORY.md": "4ee4ee185186949bef217217b29fdeb424c6e1281197e004915988d6b0437bdd",
+    "rounds/round_004/review/independent_lineage_check.json": "d1af5791dae6f3be3d1af26228c1dbde255613785e90b0fff27dfcf48ce34a8d",
+    "rounds/round_004/review/precheck.json": "985f1b578c6c7d9ad505d8408d040daa89a412678f48c42de66caba5b74bb6e8",
+    "rounds/round_004/review/install_precheck.json": "33ddcaf63e96ce6d0b62b4532f3473aa883d98e4e661ba39713b111dc56aee70",
+    "rounds/round_004/environment/install.json": "72a1df4e636d9d44dfe48112cd846d8d965da96bee2367129023a2d7d85bd23a",
+    "rounds/round_004/artifacts/smoke_resource_gate.json": "23d3dd703d58048c772f9d8970f9889d3c0d54eed4a4ee5ec76f2e6463eb61a8",
+    "rounds/round_004/logs/smoke_manager_receipt.json": "c6da11931a9ca3b4afb5c940fb447b644d5c197a2aad2419c140828332cc16fc"
+  },
+  "scope_and_non_actions": {
+    "reviewer_read_protected_rows": false,
+    "reviewer_loaded_model": false,
+    "reviewer_started_install_or_smoke": false,
+    "reviewer_trained_or_inferred": false,
+    "reviewer_computed_F1": false,
+    "hardware_validation": false
+  }
+}

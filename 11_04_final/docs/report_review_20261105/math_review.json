@@ -1,0 +1,53 @@
+{
+  "schema": "math_review_20261105.v1",
+  "status": "PASS_WITH_LIMITATIONS",
+  "scope": {
+    "sources": [
+      "rounds/round_003/artifacts/result.json",
+      "rounds/round_003/verification_20261105/v2_recompute.json",
+      "rounds/round_003/verification_20261105/v3_bootstrap_gate.json",
+      "docs/report_review_20261105/pdf_text.txt",
+      "docs/20261105_검증자료_PDF반영_기술진단_보강보고서.md"
+    ],
+    "performed": ["read-only artifact comparison", "arithmetic verification"],
+    "not_performed": ["raw-row access", "protected-data access", "model inference or training", "metric recomputation from prediction rows"]
+  },
+  "verified": {
+    "target_correct": 4128,
+    "gap_from_mean_correct_3497": 631,
+    "per_seed_gap": {"42": 637, "2026": 625},
+    "a_micro_select_vs_raw": {
+      "seed42_gain": 32,
+      "seed42_loss": 28,
+      "seed42_net": 4,
+      "seed42_micro_delta": 0.000678311005596,
+      "seed2026_net": 0,
+      "mean_net": 2,
+      "mean_micro_delta": 0.000339155502798,
+      "paired_bootstrap_ci95": [-0.000932677632695, 0.001610988638291]
+    },
+    "a_old_vs_a_raw_correct_delta": {"seed42": -100, "seed2026": -114, "mean": -107},
+    "raw_support": [2920, 2016, 835, 126],
+    "raw_tp": {"seed42": [2519, 764, 123, 85], "seed2026": [2537, 757, 124, 85]},
+    "pdf_class_table": {
+      "current_tp_sum": 3314,
+      "target_tp_sum": 4166,
+      "row_delta_sum": 852,
+      "stated_total_delta": 669,
+      "last_class_proposed_gain": 100,
+      "seed42_remaining_fn_last_class": 41
+    }
+  },
+  "interpretation": {
+    "posthoc_limit": "The tested A_micro_select failed its predeclared gate; this does not prove all post-hoc policies impossible.",
+    "104_ship_statement": "Not A_old versus A_raw; it equals seed42 A_micro_select minus A_old, so the PDF comparator is ambiguous.",
+    "evaluation_limit": "Repeatedly exposed development OUTER; not an independent generalization estimate."
+  },
+  "source_sha256": {
+    "rounds/round_003/artifacts/result.json": "4fa42825644b9eb93935f03e63e9d26c9f5ff7e98cdf07d0e0033b41f7c3deba",
+    "rounds/round_003/verification_20261105/v2_recompute.json": "320cd30ae450ff7fd96dadfa2af1247257e7e4ba8b6d63d1f64a4aca81f429ca",
+    "rounds/round_003/verification_20261105/v3_bootstrap_gate.json": "530d3b234a628eac48b9f7570c02d09df6b608086a8eb95e48a05a9af681d85b",
+    "rounds/round_003/verification_20261105/v4_idhash.json": "285ff5d653eccf50cebec61ca6b9801f8c90e8e37cb406d1c412c58577fbea85",
+    "docs/report_review_20261105/pdf_text.txt": "02ed5ea2855c101cd60e635b205025483f81d905221daf9804c210af60428ace"
+  }
+}

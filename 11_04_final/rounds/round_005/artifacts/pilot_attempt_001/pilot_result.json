@@ -1,0 +1,217 @@
+{
+  "schema": "round005_inner_pilot_result.v1",
+  "status": "FAILED",
+  "stage": "exception",
+  "started_utc": "2026-11-04T17:44:19.209735+00:00",
+  "pid": 1020,
+  "source": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\logs\\pilot_01\\source\\replay_inner_pilot.py",
+    "source_at_launch_sha256": "b57f6c764d4b833451714d4dfcfa328ed3facecaf6f9a93a0198da8b17c4b860",
+    "settings_sha256": "c901b29e71245953d9e3b2295c754c917336dd1c700828b1860019ef6af2e843",
+    "runtime_contract_sha256": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5"
+  },
+  "inputs": {
+    "context_npz": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\artifacts\\context_export_attempt_001\\fold0_seed42_context.npz",
+      "sha256": "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+      "bytes": 1916394
+    },
+    "query_freeze": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\artifacts\\context_export_attempt_001\\query_freeze.json",
+      "sha256": "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef",
+      "bytes": 748
+    },
+    "checkpoint": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\model_cache\\tabicl-classifier-v2-20260212.ckpt",
+      "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+      "bytes": 110368038
+    },
+    "reference_csv": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\inner_predictions.csv",
+      "selection": "only first two ordered rows after frozen query ID verification"
+    }
+  },
+  "settings": {
+    "package": "tabicl==2.2.0",
+    "seed": 42,
+    "fold": 0,
+    "device": "cpu",
+    "n_estimators": 8,
+    "batch_size": 1,
+    "n_jobs": 3,
+    "fit_rows": 3144,
+    "query_rows": 2,
+    "feature_count": 312,
+    "threads_environment": {
+      "OMP_NUM_THREADS": "3",
+      "MKL_NUM_THREADS": "3",
+      "OPENBLAS_NUM_THREADS": "3",
+      "NUMEXPR_NUM_THREADS": "3"
+    },
+    "use_amp": false,
+    "use_fa3": false,
+    "model_path": "explicit pinned local checkpoint",
+    "allow_auto_download": false,
+    "checkpoint_version": "tabicl-classifier-v2-20260212.ckpt",
+    "offload_mode": "auto",
+    "disk_offload_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\artifacts\\pilot_attempt_001\\offload",
+    "norm_methods": {
+      "value": null,
+      "origin": "TabICL 2.2.0 default; fit expands to none,power"
+    },
+    "feat_shuffle_method": {
+      "value": "latin",
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "class_shuffle_method": {
+      "value": "shift",
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "softmax_temperature": {
+      "value": 0.9,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "average_logits": {
+      "value": true,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "outlier_threshold": {
+      "value": 4.0,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "support_many_classes": {
+      "value": true,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "kv_cache": {
+      "value": false,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "verbose": {
+      "value": false,
+      "origin": "TabICL 2.2.0 constructor default"
+    },
+    "predict_proba_calls": 1,
+    "f1_computations": 0,
+    "inner_labels_used": false,
+    "outer_inference": false,
+    "weight_training": false,
+    "hyperparameter_search": false
+  },
+  "progress": [
+    {
+      "stage": "inputs_hashed_and_query_freeze_ready",
+      "elapsed_seconds": 0.1351399000013771,
+      "utc": "2026-11-04T17:44:19.379085+00:00"
+    },
+    {
+      "stage": "context_validated",
+      "elapsed_seconds": 0.3342601000003924,
+      "utc": "2026-11-04T17:44:19.579504+00:00"
+    },
+    {
+      "stage": "fixed_reference_rows_verified",
+      "elapsed_seconds": 0.3403877000018838,
+      "utc": "2026-11-04T17:44:19.581512+00:00"
+    },
+    {
+      "stage": "package_import_pending",
+      "elapsed_seconds": 0.34418509999886737,
+      "utc": "2026-11-04T17:44:19.588483+00:00"
+    },
+    {
+      "stage": "package_imported",
+      "elapsed_seconds": 16.947875199999544,
+      "utc": "2026-11-04T17:44:36.189069+00:00"
+    },
+    {
+      "stage": "checkpoint_fit_context_bind_start",
+      "elapsed_seconds": 16.95251560000179,
+      "utc": "2026-11-04T17:44:36.197132+00:00"
+    }
+  ],
+  "probabilities": null,
+  "comparison": null,
+  "inner_labels_loaded_or_used": false,
+  "f1_computed": false,
+  "training_performed": false,
+  "predict_proba_attempted_count": 0,
+  "predict_proba_completed_count": 0,
+  "fit_rows": 3144,
+  "query_rows": 2,
+  "fit_shape": [
+    3144,
+    312
+  ],
+  "query_shape": [
+    2,
+    312
+  ],
+  "feature_count": 312,
+  "fit_label_values": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "query_ids": [
+    "36001915",
+    "31703435"
+  ],
+  "query_ids_digest_json_sha256": "7750db94f83f57a4e58b62f29b32ba2e737339108e0923a970f9a924bf9be969",
+  "reference_evidence": {
+    "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\inner_predictions.csv",
+    "source_row_order": "first two data rows only; must equal frozen query ID order",
+    "rows_read": 2,
+    "fields_used": [
+      "rfid_id",
+      "p0",
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "labels_used": false,
+    "label_fields_accessed": false,
+    "source_row_bytes_may_contain_unparsed_other_columns": true,
+    "selected_reference_probabilities_sha256": "4c6040bfb435f0990655eb78be69b6b0a63327e5f41560f73f07c12409ae2a82",
+    "selected_reference_probability_rows": [
+      {
+        "rfid_id": "36001915",
+        "p0_p3": [
+          0.7054161210962702,
+          0.20406881832956503,
+          0.0891343476588679,
+          0.0013807129152969416
+        ]
+      },
+      {
+        "rfid_id": "31703435",
+        "p0_p3": [
+          0.3821725814128632,
+          0.5288910410158137,
+          0.08566828824177695,
+          0.0032680893295460724
+        ]
+      }
+    ],
+    "finite": true,
+    "min_probability": 0.0013807129152969416,
+    "max_probability": 0.7054161210962702,
+    "max_abs_row_sum_error": 0.0
+  },
+  "selected_reference_probabilities_sha256": "4c6040bfb435f0990655eb78be69b6b0a63327e5f41560f73f07c12409ae2a82",
+  "package_versions": {
+    "tabicl": "2.2.0",
+    "torch": "2.6.0+cpu",
+    "numpy": "2.3.5"
+  },
+  "torch_threads": {
+    "intra_op": 3,
+    "interop": 1
+  },
+  "error_type": "AttributeError",
+  "error": "'TabICLClassifier' object has no attribute 'cache_mode_'",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\logs\\pilot_01\\source\\replay_inner_pilot.py\", line 483, in main\n    result = execute(args.context, args.query_freeze, args.reference, args.checkpoint,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\logs\\pilot_01\\source\\replay_inner_pilot.py\", line 379, in execute\n    resolved_settings = validate_resolved_inference_state(estimator)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\logs\\pilot_01\\source\\replay_inner_pilot.py\", line 221, in validate_resolved_inference_state\n    \"cache_mode\": model.cache_mode_}\n                  ^^^^^^^^^^^^^^^^^\nAttributeError: 'TabICLClassifier' object has no attribute 'cache_mode_'\n",
+  "finished_utc": "2026-11-04T17:44:41.037964+00:00",
+  "elapsed_seconds": 21.81156920000285
+}

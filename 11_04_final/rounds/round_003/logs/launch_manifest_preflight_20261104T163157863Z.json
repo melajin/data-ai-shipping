@@ -1,0 +1,44 @@
+﻿{
+    "mode":  "preflight",
+    "frozen_before_process_start":  true,
+    "created_at_utc":  "2026-11-04T16:31:58.6148959+00:00",
+    "round_root":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003",
+    "python":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "sources":  {
+                    "runner":  {
+                                   "source":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\code\\run_round003.py",
+                                   "snapshot":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\artifacts\\run_snapshot_preflight_20261104T163157863Z\\run_round003.py",
+                                   "source_sha256":  "c0202b5d5c042f97b8c3bd2b47da76881598e96d43fa1a166b017041d44e458c",
+                                   "snapshot_sha256":  "c0202b5d5c042f97b8c3bd2b47da76881598e96d43fa1a166b017041d44e458c"
+                               },
+                    "launcher":  {
+                                     "source":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\code\\launch_round003.ps1",
+                                     "snapshot":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\artifacts\\run_snapshot_preflight_20261104T163157863Z\\launch_round003.ps1",
+                                     "source_sha256":  "0346fb307a015289c4686cc186aedcaf9854f6f5702a0808d66217cde35b0760",
+                                     "snapshot_sha256":  "0346fb307a015289c4686cc186aedcaf9854f6f5702a0808d66217cde35b0760"
+                                 },
+                    "config":  {
+                                   "source":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\configs\\experiment.json",
+                                   "snapshot":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\artifacts\\run_snapshot_preflight_20261104T163157863Z\\experiment.json",
+                                   "source_sha256":  "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6",
+                                   "snapshot_sha256":  "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6"
+                               },
+                    "plan":  {
+                                 "source":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\ROUND_PLAN.md",
+                                 "snapshot":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\artifacts\\run_snapshot_preflight_20261104T163157863Z\\ROUND_PLAN.md",
+                                 "source_sha256":  "54cef183b6845d6cecfca64314fc0d801c8d1b8c7c826da76f9a42b665ea2ce0",
+                                 "snapshot_sha256":  "54cef183b6845d6cecfca64314fc0d801c8d1b8c7c826da76f9a42b665ea2ce0"
+                             }
+                },
+    "compute_budget_minutes":  15,
+    "manager_deadline_utc":  "2026-11-04T16:58:25.0000000+00:00",
+    "process_timeout_ms":  900000,
+    "free_ram_gib_at_launch":  3.7730140686035156,
+    "minimum_free_ram_gib_for_score":  1.5,
+    "command_template":  "python run_round003.py --mode {mode} --config {config}",
+    "stdout":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs\\stdout_preflight_20261104T163157863Z.log",
+    "stderr":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs\\stderr_preflight_20261104T163157863Z.log",
+    "pycache_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs\\pycache",
+    "temp_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs",
+    "thread_cap":  3
+}

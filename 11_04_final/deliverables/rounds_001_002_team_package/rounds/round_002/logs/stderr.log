@@ -1,0 +1,17 @@
+D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\environments\round_002_catboost\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+Traceback (most recent call last):
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_002\code\run_round002.py", line 462, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_002\code\run_round002.py", line 449, in main
+    result=run(cfg,start,manifest)
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_002\code\run_round002.py", line 368, in run
+    fit_records.append(fit_candidate(fold, d, es, sel, cfg, nfit, start)); nfit += 1
+                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_002\code\run_round002.py", line 294, in fit_candidate
+    m = CatBoostClassifier(iterations=3000, depth=6, learning_rate=.03, l2_leaf_reg=3,
+        loss_function="MultiClass", eval_metric="Accuracy:use_weights=false", random_seed=42,
+        task_type="CPU", thread_count=3, nan_mode="Min", od_type="Iter", od_wait=200,
+        use_best_model=True, verbose=False, allow_writing_files=True, train_dir=str(tr), feature_names=d["names"])
+TypeError: CatBoostClassifier.__init__() got an unexpected keyword argument 'feature_names'. Did you mean 'feature_calcers'?

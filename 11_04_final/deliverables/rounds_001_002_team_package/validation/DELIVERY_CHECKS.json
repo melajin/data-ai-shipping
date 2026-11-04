@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "model_count": 21,
+  "max_model_probability_delta": 0.0,
+  "csv_outer_argmax_changes": 0,
+  "t5_rows_per_fold": [
+    5897,
+    5897,
+    5897
+  ],
+  "package_data_scope": "development only",
+  "secret_pattern_scan": "no matches for tested common credential formats; not a comprehensive secret audit",
+  "pause_state": "round002 complete; paused; round003 not started",
+  "verification_scope": "stored models and predictions; no retraining or independent evaluation",
+  "report_check": {
+    "html_tables": 9,
+    "replacement_characters": 0
+  }
+}

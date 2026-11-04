@@ -1,0 +1,2386 @@
+{
+  "schema": "tabicl_runtime_probe.v1",
+  "status": "completed",
+  "stage": "complete",
+  "started_at_utc": "2026-11-04T17:06:50.413251+00:00",
+  "scope": "synthetic_only; no project dataset inputs; no training; no F1/accuracy metrics",
+  "project_root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+  "cli": {
+    "checkpoint": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\model_cache\\tabicl-classifier-v2-20260212.ckpt",
+    "requested_output": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\artifacts\\smoke.json",
+    "staged_output": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\artifacts\\smoke.json"
+  },
+  "expected": {
+    "tabicl_version": "2.2.0",
+    "checkpoint_name": "tabicl-classifier-v2-20260212.ckpt",
+    "seed": 20261105,
+    "fit_rows": 16,
+    "query_rows": 4,
+    "features": 312,
+    "dtype": "float32",
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "n_estimators": 1,
+    "batch_size": 1,
+    "device": "cpu",
+    "use_amp": false,
+    "use_fa3": false,
+    "allow_auto_download": false,
+    "threads": 3
+  },
+  "sources": {
+    "version_pinned_classifier": "https://github.com/soda-inria/tabicl/blob/v2.2.0/src/tabicl/_sklearn/classifier.py",
+    "version_pinned_base": "https://github.com/soda-inria/tabicl/blob/v2.2.0/src/tabicl/_sklearn/base.py",
+    "version_pinned_model": "https://github.com/soda-inria/tabicl/blob/v2.2.0/src/tabicl/_model/tabicl.py",
+    "version_pinned_learning": "https://github.com/soda-inria/tabicl/blob/v2.2.0/src/tabicl/_model/learning.py"
+  },
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "tabicl": "2.2.0",
+    "torch": "2.6.0+cpu",
+    "numpy": "2.3.5",
+    "scikit_learn": "1.7.2"
+  },
+  "historical_reference": {
+    "parameter_count": 27552258,
+    "output_head_linear_dimensions": [
+      [
+        512,
+        1024
+      ],
+      [
+        1024,
+        10
+      ]
+    ],
+    "note": "Round 004 NEXT_SESSION historical reference for the output head, not the full model's Linear layer list."
+  },
+  "updated_at_utc": "2026-11-04T17:07:02.146804+00:00",
+  "checkpoint": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\model_cache\\tabicl-classifier-v2-20260212.ckpt",
+    "bytes": 110368038,
+    "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+  },
+  "runtime_settings": {
+    "torch_num_threads": 3,
+    "torch_num_interop_threads": 3
+  },
+  "api_signatures": {
+    "TabICLClassifier.__init__": "(self, n_estimators: 'int' = 8, norm_methods: 'Optional[str | List[str]]' = None, feat_shuffle_method: 'str' = 'latin', class_shuffle_method: 'str' = 'shift', outlier_threshold: 'float' = 4.0, softmax_temperature: 'float' = 0.9, average_logits: 'bool' = True, support_many_classes: 'bool' = True, batch_size: 'Optional[int]' = 8, kv_cache: 'bool | str' = False, model_path: 'Optional[str | Path]' = None, allow_auto_download: 'bool' = True, checkpoint_version: 'str' = 'tabicl-classifier-v2-20260212.ckpt', device: 'Optional[str | torch.device]' = None, use_amp: 'bool | str' = 'auto', use_fa3: 'bool | str' = 'auto', offload_mode: 'str | bool' = 'auto', disk_offload_dir: 'Optional[str]' = None, random_state: 'int | None' = 42, n_jobs: 'Optional[int]' = None, verbose: 'bool' = False, inference_config: 'Optional[InferenceConfig | Dict]' = None)",
+    "TabICLClassifier.fit": "(self, X: 'np.ndarray', y: 'np.ndarray') -> 'TabICLClassifier'",
+    "TabICLClassifier.predict_proba": "(self, X: 'np.ndarray') -> 'np.ndarray'",
+    "TabICLClassifier.predict": "(self, X: 'np.ndarray') -> 'np.ndarray'"
+  },
+  "synthetic_input": {
+    "fit_shape": [
+      16,
+      312
+    ],
+    "query_shape": [
+      4,
+      312
+    ],
+    "fit_dtype": "float32",
+    "query_dtype": "float32",
+    "fit_label_counts": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4
+    },
+    "feature_sha256": "8570caf6d681b332bba7cd14198713018e25fbab99f56ffb6970ff2cfbf5fefd",
+    "label_sha256": "e25dc0179960dcc446a7309b23e341f8218f64d009535cfa7dc692b23c5ea8db"
+  },
+  "memory_snapshots": {
+    "fit_context_and_checkpoint_load_before": {
+      "windows_process_memory": {
+        "current_working_set_bytes": 299466752,
+        "peak_working_set_bytes": 299466752,
+        "private_bytes": 402264064
+      },
+      "rss_bytes": 299474944,
+      "available_system_ram_bytes": 4074573824
+    },
+    "fit_context_and_checkpoint_load_after": {
+      "windows_process_memory": {
+        "current_working_set_bytes": 529133568,
+        "peak_working_set_bytes": 529133568,
+        "private_bytes": 771112960
+      },
+      "rss_bytes": 529137664,
+      "available_system_ram_bytes": 3843956736
+    },
+    "predict_proba_first_before": {
+      "windows_process_memory": {
+        "current_working_set_bytes": 529285120,
+        "peak_working_set_bytes": 529285120,
+        "private_bytes": 771170304
+      },
+      "rss_bytes": 529285120,
+      "available_system_ram_bytes": 3843457024
+    },
+    "predict_proba_first_after": {
+      "windows_process_memory": {
+        "current_working_set_bytes": 759926784,
+        "peak_working_set_bytes": 759926784,
+        "private_bytes": 948957184
+      },
+      "rss_bytes": 759926784,
+      "available_system_ram_bytes": 3591352320
+    },
+    "predict_proba_repeat_before": {
+      "windows_process_memory": {
+        "current_working_set_bytes": 760176640,
+        "peak_working_set_bytes": 760176640,
+        "private_bytes": 949133312
+      },
+      "rss_bytes": 760176640,
+      "available_system_ram_bytes": 3590180864
+    },
+    "predict_proba_repeat_after": {
+      "windows_process_memory": {
+        "current_working_set_bytes": 760262656,
+        "peak_working_set_bytes": 760262656,
+        "private_bytes": 949067776
+      },
+      "rss_bytes": 760262656,
+      "available_system_ram_bytes": 3599970304
+    },
+    "predict_labels_before": {
+      "windows_process_memory": {
+        "current_working_set_bytes": 760303616,
+        "peak_working_set_bytes": 760303616,
+        "private_bytes": 949067776
+      },
+      "rss_bytes": 760303616,
+      "available_system_ram_bytes": 3599929344
+    },
+    "predict_labels_after": {
+      "windows_process_memory": {
+        "current_working_set_bytes": 761376768,
+        "peak_working_set_bytes": 761376768,
+        "private_bytes": 949067776
+      },
+      "rss_bytes": 761376768,
+      "available_system_ram_bytes": 3597815808
+    }
+  },
+  "timings": {
+    "fit_context_and_checkpoint_load": {
+      "wall_seconds": 0.3149286000007123,
+      "process_cpu_seconds": 0.78125
+    },
+    "predict_proba_first": {
+      "wall_seconds": 1.645212999999785,
+      "process_cpu_seconds": 1.90625
+    },
+    "predict_proba_repeat": {
+      "wall_seconds": 1.62496629999805,
+      "process_cpu_seconds": 1.546875
+    },
+    "predict_labels": {
+      "wall_seconds": 1.6096115000000282,
+      "process_cpu_seconds": 1.578125
+    }
+  },
+  "fit_semantics": {
+    "interpretation": "synthetic in-context binding and checkpoint loading; pretrained model weights are not trained",
+    "model_training_requested": false,
+    "fit_rows": 16,
+    "resolved_estimator_device": "cpu"
+  },
+  "model": {
+    "class": "tabicl._model.tabicl.TabICL",
+    "config": {
+      "max_classes": 10,
+      "num_quantiles": 999,
+      "embed_dim": 128,
+      "col_num_blocks": 3,
+      "col_nhead": 8,
+      "col_num_inds": 128,
+      "col_affine": false,
+      "col_feature_group": "same",
+      "col_feature_group_size": 3,
+      "col_target_aware": true,
+      "col_ssmax": "qassmax-mlp-elementwise",
+      "row_num_blocks": 3,
+      "row_nhead": 8,
+      "row_num_cls": 4,
+      "row_rope_base": 100000,
+      "row_rope_interleaved": false,
+      "icl_num_blocks": 12,
+      "icl_nhead": 8,
+      "icl_ssmax": "qassmax-mlp-elementwise",
+      "ff_factor": 2,
+      "dropout": 0.0,
+      "activation": "gelu",
+      "norm_first": true,
+      "bias_free_ln": false,
+      "recompute": false
+    },
+    "repr": "TabICL(\n  (col_embedder): ColEmbedding(\n    (in_linear): SkippableLinear(in_features=3, out_features=128, bias=True)\n    (tf_col): SetTransformer(\n      (blocks): ModuleList(\n        (0-2): 3 x InducedSelfAttentionBlock(\n          (multihead_attn1): MultiheadAttentionBlock(\n            (linear1): Linear(in_features=128, out_features=256, bias=True)\n            (dropout): Dropout(p=0.0, inplace=False)\n            (linear2): Linear(in_features=256, out_features=128, bias=True)\n            (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)\n            (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)\n            (dropout1): Dropout(p=0.0, inplace=False)\n            (dropout2): Dropout(p=0.0, inplace=False)\n            (attn): MultiheadAttention(\n              (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)\n              (ssmax_layer): QASSMaxMLP(\n                (base_mlp): Sequential(\n                  (0): Linear(in_features=1, out_features=64, bias=True)\n                  (1): GELU(approximate='none')\n                  (2): Linear(in_features=64, out_features=128, bias=True)\n                )\n                (query_mlp): Sequential(\n                  (0): Linear(in_features=16, out_features=64, bias=True)\n                  (1): GELU(approximate='none')\n                  (2): Linear(in_features=64, out_features=16, bias=True)\n                )\n              )\n            )\n          )\n          (multihead_attn2): MultiheadAttentionBlock(\n            (linear1): Linear(in_features=128, out_features=256, bias=True)\n            (dropout): Dropout(p=0.0, inplace=False)\n            (linear2): Linear(in_features=256, out_features=128, bias=True)\n            (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)\n            (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)\n            (dropout1): Dropout(p=0.0, inplace=False)\n            (dropout2): Dropout(p=0.0, inplace=False)\n            (attn): MultiheadAttention(\n              (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)\n            )\n          )\n        )\n      )\n    )\n    (y_encoder): OneHotAndLinear(in_features=10, out_features=128, bias=True)\n  )\n  (row_interactor): RowInteraction(\n    (tf_row): Encoder(\n      (blocks): ModuleList(\n        (0-2): 3 x MultiheadAttentionBlock(\n          (linear1): Linear(in_features=128, out_features=256, bias=True)\n          (dropout): Dropout(p=0.0, inplace=False)\n          (linear2): Linear(in_features=256, out_features=128, bias=True)\n          (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)\n          (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)\n          (dropout1): Dropout(p=0.0, inplace=False)\n          (dropout2): Dropout(p=0.0, inplace=False)\n          (attn): MultiheadAttention(\n            (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)\n          )\n        )\n      )\n      (rope): RotaryEmbedding()\n    )\n    (out_ln): LayerNorm((128,), eps=1e-05, elementwise_affine=True)\n  )\n  (icl_predictor): ICLearning(\n    (tf_icl): Encoder(\n      (blocks): ModuleList(\n        (0-11): 12 x MultiheadAttentionBlock(\n          (linear1): Linear(in_features=512, out_features=1024, bias=True)\n          (dropout): Dropout(p=0.0, inplace=False)\n          (linear2): Linear(in_features=1024, out_features=512, bias=True)\n          (norm1): LayerNorm((512,), eps=1e-05, elementwise_affine=True)\n          (norm2): LayerNorm((512,), eps=1e-05, elementwise_affine=True)\n          (dropout1): Dropout(p=0.0, inplace=False)\n          (dropout2): Dropout(p=0.0, inplace=False)\n          (attn): MultiheadAttention(\n            (out_proj): NonDynamicallyQuantizableLinear(in_features=512, out_features=512, bias=True)\n            (ssmax_layer): QASSMaxMLP(\n              (base_mlp): Sequential(\n                (0): Linear(in_features=1, out_features=64, bias=True)\n                (1): GELU(approximate='none')\n                (2): Linear(in_features=64, out_features=512, bias=True)\n              )\n              (query_mlp): Sequential(\n                (0): Linear(in_features=64, out_features=64, bias=True)\n                (1): GELU(approximate='none')\n                (2): Linear(in_features=64, out_features=64, bias=True)\n              )\n            )\n          )\n        )\n      )\n    )\n    (ln): LayerNorm((512,), eps=1e-05, elementwise_affine=True)\n    (y_encoder): OneHotAndLinear(in_features=10, out_features=512, bias=True)\n    (decoder): Sequential(\n      (0): Linear(in_features=512, out_features=1024, bias=True)\n      (1): GELU(approximate='none')\n      (2): Linear(in_features=1024, out_features=10, bias=True)\n    )\n  )\n)",
+    "parameter_count": 27552258,
+    "trainable_parameter_count": 27552250,
+    "registered_linear_layer_count": 128,
+    "registered_linear_layers": [
+      {
+        "name": "col_embedder.in_linear",
+        "in_features": 3,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          3
+        ],
+        "has_bias": true,
+        "parameter_count": 512
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn1.linear1",
+        "in_features": 128,
+        "out_features": 256,
+        "weight_shape": [
+          256,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 33024
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn1.linear2",
+        "in_features": 256,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          256
+        ],
+        "has_bias": true,
+        "parameter_count": 32896
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn1.attn.out_proj",
+        "in_features": 128,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 16512
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn1.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn1.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 8320
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn1.attn.ssmax_layer.query_mlp.0",
+        "in_features": 16,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          16
+        ],
+        "has_bias": true,
+        "parameter_count": 1088
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn1.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 16,
+        "weight_shape": [
+          16,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 1040
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn2.linear1",
+        "in_features": 128,
+        "out_features": 256,
+        "weight_shape": [
+          256,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 33024
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn2.linear2",
+        "in_features": 256,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          256
+        ],
+        "has_bias": true,
+        "parameter_count": 32896
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.0.multihead_attn2.attn.out_proj",
+        "in_features": 128,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 16512
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn1.linear1",
+        "in_features": 128,
+        "out_features": 256,
+        "weight_shape": [
+          256,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 33024
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn1.linear2",
+        "in_features": 256,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          256
+        ],
+        "has_bias": true,
+        "parameter_count": 32896
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn1.attn.out_proj",
+        "in_features": 128,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 16512
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn1.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn1.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 8320
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn1.attn.ssmax_layer.query_mlp.0",
+        "in_features": 16,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          16
+        ],
+        "has_bias": true,
+        "parameter_count": 1088
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn1.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 16,
+        "weight_shape": [
+          16,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 1040
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn2.linear1",
+        "in_features": 128,
+        "out_features": 256,
+        "weight_shape": [
+          256,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 33024
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn2.linear2",
+        "in_features": 256,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          256
+        ],
+        "has_bias": true,
+        "parameter_count": 32896
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.1.multihead_attn2.attn.out_proj",
+        "in_features": 128,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 16512
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn1.linear1",
+        "in_features": 128,
+        "out_features": 256,
+        "weight_shape": [
+          256,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 33024
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn1.linear2",
+        "in_features": 256,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          256
+        ],
+        "has_bias": true,
+        "parameter_count": 32896
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn1.attn.out_proj",
+        "in_features": 128,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 16512
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn1.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn1.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 8320
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn1.attn.ssmax_layer.query_mlp.0",
+        "in_features": 16,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          16
+        ],
+        "has_bias": true,
+        "parameter_count": 1088
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn1.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 16,
+        "weight_shape": [
+          16,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 1040
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn2.linear1",
+        "in_features": 128,
+        "out_features": 256,
+        "weight_shape": [
+          256,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 33024
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn2.linear2",
+        "in_features": 256,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          256
+        ],
+        "has_bias": true,
+        "parameter_count": 32896
+      },
+      {
+        "name": "col_embedder.tf_col.blocks.2.multihead_attn2.attn.out_proj",
+        "in_features": 128,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 16512
+      },
+      {
+        "name": "col_embedder.y_encoder",
+        "in_features": 10,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          10
+        ],
+        "has_bias": true,
+        "parameter_count": 1408
+      },
+      {
+        "name": "row_interactor.tf_row.blocks.0.linear1",
+        "in_features": 128,
+        "out_features": 256,
+        "weight_shape": [
+          256,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 33024
+      },
+      {
+        "name": "row_interactor.tf_row.blocks.0.linear2",
+        "in_features": 256,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          256
+        ],
+        "has_bias": true,
+        "parameter_count": 32896
+      },
+      {
+        "name": "row_interactor.tf_row.blocks.0.attn.out_proj",
+        "in_features": 128,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 16512
+      },
+      {
+        "name": "row_interactor.tf_row.blocks.1.linear1",
+        "in_features": 128,
+        "out_features": 256,
+        "weight_shape": [
+          256,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 33024
+      },
+      {
+        "name": "row_interactor.tf_row.blocks.1.linear2",
+        "in_features": 256,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          256
+        ],
+        "has_bias": true,
+        "parameter_count": 32896
+      },
+      {
+        "name": "row_interactor.tf_row.blocks.1.attn.out_proj",
+        "in_features": 128,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 16512
+      },
+      {
+        "name": "row_interactor.tf_row.blocks.2.linear1",
+        "in_features": 128,
+        "out_features": 256,
+        "weight_shape": [
+          256,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 33024
+      },
+      {
+        "name": "row_interactor.tf_row.blocks.2.linear2",
+        "in_features": 256,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          256
+        ],
+        "has_bias": true,
+        "parameter_count": 32896
+      },
+      {
+        "name": "row_interactor.tf_row.blocks.2.attn.out_proj",
+        "in_features": 128,
+        "out_features": 128,
+        "weight_shape": [
+          128,
+          128
+        ],
+        "has_bias": true,
+        "parameter_count": 16512
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.0.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.0.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.0.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.0.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.0.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.0.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.0.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.1.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.1.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.1.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.1.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.1.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.1.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.1.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.2.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.2.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.2.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.2.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.2.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.2.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.2.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.3.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.3.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.3.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.3.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.3.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.3.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.3.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.4.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.4.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.4.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.4.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.4.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.4.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.4.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.5.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.5.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.5.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.5.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.5.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.5.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.5.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.6.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.6.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.6.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.6.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.6.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.6.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.6.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.7.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.7.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.7.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.7.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.7.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.7.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.7.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.8.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.8.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.8.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.8.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.8.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.8.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.8.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.9.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.9.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.9.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.9.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.9.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.9.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.9.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.10.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.10.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.10.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.10.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.10.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.10.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.10.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.11.linear1",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.11.linear2",
+        "in_features": 1024,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 524800
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.11.attn.out_proj",
+        "in_features": 512,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 262656
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.11.attn.ssmax_layer.base_mlp.0",
+        "in_features": 1,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          1
+        ],
+        "has_bias": true,
+        "parameter_count": 128
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.11.attn.ssmax_layer.base_mlp.2",
+        "in_features": 64,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 33280
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.11.attn.ssmax_layer.query_mlp.0",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.tf_icl.blocks.11.attn.ssmax_layer.query_mlp.2",
+        "in_features": 64,
+        "out_features": 64,
+        "weight_shape": [
+          64,
+          64
+        ],
+        "has_bias": true,
+        "parameter_count": 4160
+      },
+      {
+        "name": "icl_predictor.y_encoder",
+        "in_features": 10,
+        "out_features": 512,
+        "weight_shape": [
+          512,
+          10
+        ],
+        "has_bias": true,
+        "parameter_count": 5632
+      },
+      {
+        "name": "icl_predictor.decoder.0",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.decoder.2",
+        "in_features": 1024,
+        "out_features": 10,
+        "weight_shape": [
+          10,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 10250
+      }
+    ],
+    "last_registered_linear": {
+      "name": "icl_predictor.decoder.2",
+      "in_features": 1024,
+      "out_features": 10,
+      "weight_shape": [
+        10,
+        1024
+      ],
+      "has_bias": true,
+      "parameter_count": 10250
+    },
+    "output_head_path": "icl_predictor.decoder (TabICL v2.2.0 ICLearning decoder)",
+    "output_head_linear_layers": [
+      {
+        "name": "icl_predictor.decoder.0",
+        "in_features": 512,
+        "out_features": 1024,
+        "weight_shape": [
+          1024,
+          512
+        ],
+        "has_bias": true,
+        "parameter_count": 525312
+      },
+      {
+        "name": "icl_predictor.decoder.2",
+        "in_features": 1024,
+        "out_features": 10,
+        "weight_shape": [
+          10,
+          1024
+        ],
+        "has_bias": true,
+        "parameter_count": 10250
+      }
+    ],
+    "output_head_parameter_count": 535562,
+    "output_head_final_linear": {
+      "name": "icl_predictor.decoder.2",
+      "in_features": 1024,
+      "out_features": 10,
+      "weight_shape": [
+        10,
+        1024
+      ],
+      "has_bias": true,
+      "parameter_count": 10250
+    },
+    "parameter_devices": [
+      "cpu"
+    ],
+    "parameter_device_types": [
+      "cpu"
+    ],
+    "floating_parameter_dtypes": [
+      "torch.float32"
+    ],
+    "buffer_devices": [
+      "cpu"
+    ],
+    "buffer_dtypes": [
+      "torch.int64"
+    ],
+    "historical_comparison": {
+      "parameter_count_matches": true,
+      "output_head_dimensions_match_reference": true,
+      "actual_registered_linear_dimensions": [
+        [
+          3,
+          128
+        ],
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          128
+        ],
+        [
+          16,
+          64
+        ],
+        [
+          64,
+          16
+        ],
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          128
+        ],
+        [
+          16,
+          64
+        ],
+        [
+          64,
+          16
+        ],
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          128
+        ],
+        [
+          16,
+          64
+        ],
+        [
+          64,
+          16
+        ],
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          10,
+          128
+        ],
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          128
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          512
+        ],
+        [
+          512,
+          512
+        ],
+        [
+          1,
+          64
+        ],
+        [
+          64,
+          512
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          10,
+          512
+        ],
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          10
+        ]
+      ],
+      "actual_output_head_linear_dimensions": [
+        [
+          512,
+          1024
+        ],
+        [
+          1024,
+          10
+        ]
+      ]
+    }
+  },
+  "probability_outputs": {
+    "first_call": {
+      "dtype": "float32",
+      "values": [
+        [
+          0.21560582518577576,
+          0.27321672439575195,
+          0.28537100553512573,
+          0.22580647468566895
+        ],
+        [
+          0.10333330929279327,
+          0.37235769629478455,
+          0.23558059334754944,
+          0.28872841596603394
+        ],
+        [
+          0.18770354986190796,
+          0.19734448194503784,
+          0.3752889931201935,
+          0.2396630346775055
+        ],
+        [
+          0.3900728225708008,
+          0.1371869146823883,
+          0.32605576515197754,
+          0.14668451249599457
+        ]
+      ]
+    },
+    "repeat_call": {
+      "dtype": "float32",
+      "values": [
+        [
+          0.21560582518577576,
+          0.27321672439575195,
+          0.28537100553512573,
+          0.22580647468566895
+        ],
+        [
+          0.10333330929279327,
+          0.37235769629478455,
+          0.23558059334754944,
+          0.28872841596603394
+        ],
+        [
+          0.18770354986190796,
+          0.19734448194503784,
+          0.3752889931201935,
+          0.2396630346775055
+        ],
+        [
+          0.3900728225708008,
+          0.1371869146823883,
+          0.32605576515197754,
+          0.14668451249599457
+        ]
+      ]
+    }
+  },
+  "checks": {
+    "probability_shape": [
+      4,
+      4
+    ],
+    "probability_dtype": "float32",
+    "probabilities_finite": true,
+    "probability_row_sums": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "probability_row_sums_close_to_one_atol_1e-5": true,
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "class_inverse_mapping_valid": true,
+    "predicted_labels": [
+      2,
+      1,
+      2,
+      0
+    ],
+    "repeat_max_absolute_probability_delta": 0.0,
+    "repeat_equal_atol_1e-7": true,
+    "probability_first": [
+      [
+        0.21560582518577576,
+        0.27321672439575195,
+        0.28537100553512573,
+        0.22580647468566895
+      ],
+      [
+        0.10333330929279327,
+        0.37235769629478455,
+        0.23558059334754944,
+        0.28872841596603394
+      ],
+      [
+        0.18770354986190796,
+        0.19734448194503784,
+        0.3752889931201935,
+        0.2396630346775055
+      ],
+      [
+        0.3900728225708008,
+        0.1371869146823883,
+        0.32605576515197754,
+        0.14668451249599457
+      ]
+    ],
+    "probability_repeat": [
+      [
+        0.21560582518577576,
+        0.27321672439575195,
+        0.28537100553512573,
+        0.22580647468566895
+      ],
+      [
+        0.10333330929279327,
+        0.37235769629478455,
+        0.23558059334754944,
+        0.28872841596603394
+      ],
+      [
+        0.18770354986190796,
+        0.19734448194503784,
+        0.3752889931201935,
+        0.2396630346775055
+      ],
+      [
+        0.3900728225708008,
+        0.1371869146823883,
+        0.32605576515197754,
+        0.14668451249599457
+      ]
+    ],
+    "parameter_gradients_present": false,
+    "numpy_output_has_gradient": false
+  },
+  "finished_at_utc": "2026-11-04T17:07:02.146804+00:00",
+  "final_memory_snapshot": {
+    "windows_process_memory": {
+      "current_working_set_bytes": 761470976,
+      "peak_working_set_bytes": 761470976,
+      "private_bytes": 949067776
+    },
+    "rss_bytes": 761475072,
+    "available_system_ram_bytes": 3597742080
+  }
+}

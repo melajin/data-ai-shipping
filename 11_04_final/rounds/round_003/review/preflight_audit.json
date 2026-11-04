@@ -1,0 +1,273 @@
+{
+  "reviewer_scope": "pre-score evidence review only",
+  "allowlisted_data_files_read": [
+    "evaluation/seed_42/original_oof_predictions.csv",
+    "evaluation/seed_2026/original_oof_predictions.csv",
+    "evaluation/seed_42/oof_decisions.csv",
+    "evaluation/seed_2026/oof_decisions.csv",
+    "evaluation/trap_factors.csv",
+    "evaluation/final_fixed_decision_rule.json",
+    "metadata/classes.json",
+    "metadata/run_settings.json",
+    "metadata/package_validation.json",
+    "splits/development_roles_long.csv",
+    "evaluation/seed_42/fold_0/inner_predictions.csv",
+    "evaluation/seed_42/fold_1/inner_predictions.csv",
+    "evaluation/seed_42/fold_2/inner_predictions.csv",
+    "evaluation/seed_2026/fold_0/inner_predictions.csv",
+    "evaluation/seed_2026/fold_1/inner_predictions.csv",
+    "evaluation/seed_2026/fold_2/inner_predictions.csv",
+    "MANIFEST_SHA256.json",
+    "SOURCE_SHA256.json",
+    "evaluation/seed_42/fold_0/training.json",
+    "evaluation/seed_42/fold_1/training.json",
+    "evaluation/seed_42/fold_2/training.json",
+    "evaluation/seed_2026/fold_0/training.json",
+    "evaluation/seed_2026/fold_1/training.json",
+    "evaluation/seed_2026/fold_2/training.json"
+  ],
+  "prohibited_data_access": {
+    "holdout_individual_rows_read": 0,
+    "full_7372_f156_or_labels_rows_read": 0,
+    "test2025_rows_read": 0,
+    "raw_rows_read": 0,
+    "feature_rows_read": 0,
+    "model_or_checkpoint_loaded": false,
+    "fit_or_model_inference": false,
+    "classification_metrics_computed": false
+  },
+  "input_hashes": {
+    "evaluation/seed_42/original_oof_predictions.csv": "ff1b7788547efc40f0810af511a6f1e6939aa54ff6c1959c7a7e9af6ee598d89",
+    "evaluation/seed_2026/original_oof_predictions.csv": "de94f93e06517564decb4961067307bc83c90c22b89467a3c8e13ddb4388f3b8",
+    "evaluation/seed_42/oof_decisions.csv": "20694996c615b585714a34e05841869f24ed0b4ccc00b47517f3c7f02cfddff2",
+    "evaluation/seed_2026/oof_decisions.csv": "2a6ce37c3715186fe999bf7b19e01993ee03017bd9192b088519ad6839a232c1",
+    "evaluation/trap_factors.csv": "36ed46958f2e27b83aa5ab63d7a925149f1cb59a05f1cff5629df7e02445bb04",
+    "evaluation/final_fixed_decision_rule.json": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+    "metadata/classes.json": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+    "metadata/run_settings.json": "e951067a229cf41056bd1d5d73bc46fa688430b84bae255ed79950e3ea6cb85f",
+    "metadata/package_validation.json": "05f0cd8c71aefbe87ea7f2ac90bf5c92ca8fe8c2041b0c8cd71971a23308e1af",
+    "splits/development_roles_long.csv": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+    "evaluation/seed_42/fold_0/inner_predictions.csv": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+    "evaluation/seed_42/fold_1/inner_predictions.csv": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+    "evaluation/seed_42/fold_2/inner_predictions.csv": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+    "evaluation/seed_2026/fold_0/inner_predictions.csv": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+    "evaluation/seed_2026/fold_1/inner_predictions.csv": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+    "evaluation/seed_2026/fold_2/inner_predictions.csv": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73"
+  },
+  "source_hashes": {
+    "comparison_models.py": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+    "run_experiments.py": "fa2297714250f39492abde98f762e5859e64f18766d9bde68f8df2360bd67262",
+    "finalize_comparisons.py": "fa16f95ed55c215c2c0cfac9e062172b74a41ec2755785607dbaf00ff86bc9a7",
+    "apply_frozen_decision.py": "29f0b0c6cb8adbbb41768dd063cc75faac97cd65dddec309dc460ff2f52c21fa",
+    "fishing_tiny_tabm.py": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381"
+  },
+  "source_manifest_matches": {
+    "comparison_models.py": true,
+    "run_experiments.py": true,
+    "finalize_comparisons.py": true,
+    "apply_frozen_decision.py": true,
+    "fishing_tiny_tabm.py": true
+  },
+  "checks": {
+    "allowlisted_inputs_match_package_manifest": true,
+    "historical_source_hashes_match": {
+      "comparison_models.py": true,
+      "run_experiments.py": true,
+      "finalize_comparisons.py": true,
+      "apply_frozen_decision.py": true,
+      "fishing_tiny_tabm.py": true
+    },
+    "class_order_matches_rule": true,
+    "historical_runtime_metadata": {
+      "algorithm": "TabICLv2",
+      "tabicl_version": "2.2.0",
+      "torch_version": "2.6.0+cu124",
+      "checkpoint": "tabicl-classifier-v2-20260212.ckpt",
+      "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+      "package_validation_features": 156,
+      "package_validation_development_vessels": 5897,
+      "package_validation_new_training": false,
+      "package_validation_new_model_queries": false,
+      "run_settings_fit_preprocess": "FIT feature median imputation, all-missing=0; no TabM log/IQR/clip and no missing flags"
+    },
+    "development_role_roster": {
+      "rows": 17691,
+      "unique_vessels": 5897,
+      "rows_by_fold_role": {
+        "0:FIT": 3144,
+        "0:INNER": 787,
+        "0:OUTER": 1966,
+        "1:FIT": 3144,
+        "1:INNER": 787,
+        "1:OUTER": 1966,
+        "2:FIT": 3145,
+        "2:INNER": 787,
+        "2:OUTER": 1965
+      }
+    },
+    "oof_counts_and_roles": {
+      "42": {
+        "rows": 5897,
+        "unique_vessels": 5897,
+        "fold_counts": {
+          "0": 1966,
+          "1": 1966,
+          "2": 1965
+        }
+      },
+      "2026": {
+        "rows": 5897,
+        "unique_vessels": 5897,
+        "fold_counts": {
+          "0": 1966,
+          "1": 1966,
+          "2": 1965
+        }
+      }
+    },
+    "inner_role_and_manifest_alignment": {
+      "42:0": {
+        "rows": 787,
+        "unique_ids": 787,
+        "probability_sha256": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+        "frozen_rule_prediction_hash_match": true,
+        "inner_role_ids_verified_against_allowlisted_roster": true,
+        "current_csv_order_digest_json_attempt_matches_frozen_inner_ids_hash": false,
+        "frozen_rule_inner_ids_hash_serialization": "not independently reconstructed; rule producer/order absent from allowlisted code"
+      },
+      "42:1": {
+        "rows": 787,
+        "unique_ids": 787,
+        "probability_sha256": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+        "frozen_rule_prediction_hash_match": true,
+        "inner_role_ids_verified_against_allowlisted_roster": true,
+        "current_csv_order_digest_json_attempt_matches_frozen_inner_ids_hash": false,
+        "frozen_rule_inner_ids_hash_serialization": "not independently reconstructed; rule producer/order absent from allowlisted code"
+      },
+      "42:2": {
+        "rows": 787,
+        "unique_ids": 787,
+        "probability_sha256": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+        "frozen_rule_prediction_hash_match": true,
+        "inner_role_ids_verified_against_allowlisted_roster": true,
+        "current_csv_order_digest_json_attempt_matches_frozen_inner_ids_hash": false,
+        "frozen_rule_inner_ids_hash_serialization": "not independently reconstructed; rule producer/order absent from allowlisted code"
+      },
+      "2026:0": {
+        "rows": 787,
+        "unique_ids": 787,
+        "probability_sha256": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+        "frozen_rule_prediction_hash_match": true,
+        "inner_role_ids_verified_against_allowlisted_roster": true,
+        "current_csv_order_digest_json_attempt_matches_frozen_inner_ids_hash": false,
+        "frozen_rule_inner_ids_hash_serialization": "not independently reconstructed; rule producer/order absent from allowlisted code"
+      },
+      "2026:1": {
+        "rows": 787,
+        "unique_ids": 787,
+        "probability_sha256": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+        "frozen_rule_prediction_hash_match": true,
+        "inner_role_ids_verified_against_allowlisted_roster": true,
+        "current_csv_order_digest_json_attempt_matches_frozen_inner_ids_hash": false,
+        "frozen_rule_inner_ids_hash_serialization": "not independently reconstructed; rule producer/order absent from allowlisted code"
+      },
+      "2026:2": {
+        "rows": 787,
+        "unique_ids": 787,
+        "probability_sha256": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+        "frozen_rule_prediction_hash_match": true,
+        "inner_role_ids_verified_against_allowlisted_roster": true,
+        "current_csv_order_digest_json_attempt_matches_frozen_inner_ids_hash": false,
+        "frozen_rule_inner_ids_hash_serialization": "not independently reconstructed; rule producer/order absent from allowlisted code"
+      }
+    },
+    "old_decision_replay_without_metric_scoring": {
+      "42": {
+        "rows": 5897,
+        "normalized_score_rows": 5897,
+        "unnormalized_score_rows": 0
+      },
+      "2026": {
+        "rows": 5897,
+        "normalized_score_rows": 5897,
+        "unnormalized_score_rows": 0
+      }
+    },
+    "saved_training_metadata": {
+      "42:0": {
+        "method": "tabicl",
+        "official_estimator": "tabicl.TabICLClassifier",
+        "parameters_trained_on_this_dataset": 0,
+        "context_rows": 3144,
+        "fit_vessels": 3144,
+        "inner_vessels": 787,
+        "selection_metric": null,
+        "selection_metric_reason": "fixed zero-shot in-context model; inner split unused",
+        "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+      },
+      "42:1": {
+        "method": "tabicl",
+        "official_estimator": "tabicl.TabICLClassifier",
+        "parameters_trained_on_this_dataset": 0,
+        "context_rows": 3144,
+        "fit_vessels": 3144,
+        "inner_vessels": 787,
+        "selection_metric": null,
+        "selection_metric_reason": "fixed zero-shot in-context model; inner split unused",
+        "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+      },
+      "42:2": {
+        "method": "tabicl",
+        "official_estimator": "tabicl.TabICLClassifier",
+        "parameters_trained_on_this_dataset": 0,
+        "context_rows": 3145,
+        "fit_vessels": 3145,
+        "inner_vessels": 787,
+        "selection_metric": null,
+        "selection_metric_reason": "fixed zero-shot in-context model; inner split unused",
+        "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+      },
+      "2026:0": {
+        "method": "tabicl",
+        "official_estimator": "tabicl.TabICLClassifier",
+        "parameters_trained_on_this_dataset": 0,
+        "context_rows": 3144,
+        "fit_vessels": 3144,
+        "inner_vessels": 787,
+        "selection_metric": null,
+        "selection_metric_reason": "fixed zero-shot in-context model; inner split unused",
+        "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+      },
+      "2026:1": {
+        "method": "tabicl",
+        "official_estimator": "tabicl.TabICLClassifier",
+        "parameters_trained_on_this_dataset": 0,
+        "context_rows": 3144,
+        "fit_vessels": 3144,
+        "inner_vessels": 787,
+        "selection_metric": null,
+        "selection_metric_reason": "fixed zero-shot in-context model; inner split unused",
+        "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+      },
+      "2026:2": {
+        "method": "tabicl",
+        "official_estimator": "tabicl.TabICLClassifier",
+        "parameters_trained_on_this_dataset": 0,
+        "context_rows": 3145,
+        "fit_vessels": 3145,
+        "inner_vessels": 787,
+        "selection_metric": null,
+        "selection_metric_reason": "fixed zero-shot in-context model; inner split unused",
+        "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+      }
+    }
+  },
+  "limitations": [
+    "The historical BASE.digest_json serializer is verified from source, but applying it to the current INNER CSV row order does not reproduce the frozen inner_ids_sha256. The frozen-rule producer/original ID-list order is absent from the allowlisted package; this is not asserted to be corruption or a split mismatch.",
+    "Saved oof_decisions.csv decision_score columns are normalized after applying the trap multiplier, while the packaged apply_frozen_decision.py describes unnormalized scores. The argmax is invariant; Round 003 recomputes A_old directly from original p and the frozen factor.",
+    "Feature metadata conflicts: run_settings.json says no missing flags, while fingerprinted comparison_models.py appends missing flags after imputation. The 156 raw-feature metadata therefore implies a possible 312-column model input; no feature rows were read, so this is not an independent feature-row confirmation.",
+    "Saved-probability lineage and INNER nonuse for training/early stopping do not reproduce the original model inference or validate the saved model binary/checkpoint on this host."
+  ],
+  "preflight_status": "PASS",
+  "failures": []
+}

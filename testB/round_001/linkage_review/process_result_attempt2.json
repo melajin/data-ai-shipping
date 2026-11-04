@@ -1,0 +1,13 @@
+﻿{
+    "command":  [
+                    "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe",
+                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\run_linkage_review.py"
+                ],
+    "started_local":  "2026-11-05T02:42:08.1979691+09:00",
+    "finished_local":  "2026-11-05T02:42:11.5642215+09:00",
+    "exit_code":  0,
+    "stdout_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stdout.log",
+    "stderr_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stderr.log",
+    "previous_attempt_exit_code":  1,
+    "fix":  "Read UTF-8 BOM-bearing runtime receipt using utf-8-sig"
+}

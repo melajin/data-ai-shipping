@@ -1,0 +1,94 @@
+{
+  "schema": "round005_final_independent_review.v1",
+  "review_status": "PILOT_FAILED_BEFORE_PREDICT_PROBA",
+  "reviewed_at_utc": "2026-11-04T17:45:00Z",
+  "reviewer": {
+    "role": "independent post-run reviewer",
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none"
+  },
+  "source_hashes": {
+    "pilot_precheck_sha256": "03214759804446baa611eaca3d56f5607315c04c3b8131c13e4e5a34130c60e9",
+    "pilot_source_sha256": "b57f6c764d4b833451714d4dfcfa328ed3facecaf6f9a93a0198da8b17c4b860",
+    "pilot_executed_snapshot_sha256": "b57f6c764d4b833451714d4dfcfa328ed3facecaf6f9a93a0198da8b17c4b860",
+    "bounded_wrapper_sha256": "a7ebf611656675404d221e24172f58384bd5f6b046839e59bddb298ae8abab1d",
+    "tabicl_classifier_source_sha256": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534"
+  },
+  "run_receipt": {
+    "run_id": "pilot_01",
+    "receipt_path": "rounds/round_005/logs/pilot_01/receipt.json",
+    "receipt_sha256": "d9f47176c8f825c5963b028587dc616e812bb556865c68ad9ab7daf2ab47b9d4",
+    "stdout_sha256": "3ce489587cc06be6a3ffd12faa63b29fb8d15cc0416a5d494ff97b7325327a76",
+    "stderr_sha256": "40b7d628cbf4c5df0fa79bac0f478ed750c424e00cf959362fcf203b02639393",
+    "result_path": "rounds/round_005/artifacts/pilot_attempt_001/pilot_result.json",
+    "result_sha256": "9ab4514993a72f8e32e442a4b2d8fe91073d9995ecc63bafae7f4bb25fe07861",
+    "status": "failed_or_stopped",
+    "exit_code": 1,
+    "started_utc": "2026-11-04T17:44:18.298862+00:00",
+    "elapsed_seconds_from_process_creation": 24.125,
+    "timeout_seconds": 600,
+    "stop_reason": null,
+    "source_unchanged": true
+  },
+  "resources": {
+    "preflight_available_ram_gib": 3.5728683471679688,
+    "minimum_observed_available_ram_gib": 3.0773963928222656,
+    "minimum_start_ram_gib": 3.0,
+    "peak_sampled_tree_working_set_bytes": 572891136,
+    "owned_tree_remaining": [],
+    "timeout_hit": false,
+    "memory_stop_hit": false
+  },
+  "observed_stages": {
+    "inputs_hashed_and_query_freeze_ready": true,
+    "context_validated": true,
+    "fixed_reference_rows_verified": true,
+    "package_imported": true,
+    "checkpoint_fit_context_bind_start": true,
+    "checkpoint_fit_context_bind_complete": false,
+    "predict_proba_start": false,
+    "predict_proba_complete": false
+  },
+  "failure": {
+    "error_type": "AttributeError",
+    "error": "TabICLClassifier has no attribute cache_mode_",
+    "failure_location": "replay_inner_pilot.py:validate_resolved_inference_state; access to model.cache_mode_",
+    "cause_confirmed_from_source": true,
+    "source_evidence": "TabICLClassifier.fit initializes model_kv_cache_ to None and creates cache_mode_ only inside if self.kv_cache; the frozen run set kv_cache=False.",
+    "precheck_gap": "The static review verified KV-cache=False but missed that cache_mode_ is absent, rather than None, when caching is disabled."
+  },
+  "actual_execution_scope": {
+    "checkpoint_loaded_and_fit_call_returned": true,
+    "fit_rows": 3144,
+    "fit_shape": [3144, 312],
+    "query_rows_selected": 2,
+    "historical_reference_rows_read_after_freeze": 2,
+    "reference_fields_used": ["rfid_id", "p0", "p1", "p2", "p3"],
+    "historical_label_fields_accessed_or_used": false,
+    "predict_proba_attempted_count": 0,
+    "predict_proba_completed_count": 0,
+    "model_probabilities_produced": false,
+    "model_vs_historical_probability_comparison": false,
+    "new_training_performed": false,
+    "F1_or_accuracy_computed": false,
+    "outer_inference": false,
+    "protected_feature_or_label_rows_read": 0
+  },
+  "reference_evidence": {
+    "selected_reference_probabilities_sha256": "4c6040bfb435f0990655eb78be69b6b0a63327e5f41560f73f07c12409ae2a82",
+    "reference_rows_finite_in_unit_interval": true,
+    "maximum_reference_row_sum_error": 0.0,
+    "reference_probability_values_reproduced_in_review": false
+  },
+  "unknowns": [
+    "The pilot did not call predict_proba, so CPU model probabilities, comparison tolerance, argmax agreement, and replay gate are unknown.",
+    "No separate completed timestamp for FIT context binding was written before the telemetry exception; full FIT bind wall time is not isolated from package import and validation.",
+    "Predict inference time and memory, and full pilot runtime cost, were not measured."
+  ],
+  "retry_policy": {
+    "pilot_attempt_limit_exhausted": true,
+    "same_round_retry_performed": false,
+    "next_step": "Record the optional-attribute lifecycle defect and a source-backed remediation for a separately approved future attempt; do not claim replay, performance, F1, or full inference cost."
+  }
+}

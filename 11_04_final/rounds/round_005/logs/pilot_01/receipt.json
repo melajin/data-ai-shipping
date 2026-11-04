@@ -1,0 +1,70 @@
+{
+  "schema": "round005_bounded_receipt.v1",
+  "kind": "pilot",
+  "run_id": "pilot_01",
+  "started_utc": "2026-11-04T17:44:18.298862+00:00",
+  "status": "failed_or_stopped",
+  "timeout_seconds": 600,
+  "script": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\code\\replay_inner_pilot.py",
+  "source_sha256": "b57f6c764d4b833451714d4dfcfa328ed3facecaf6f9a93a0198da8b17c4b860",
+  "wrapper_sha256": "a7ebf611656675404d221e24172f58384bd5f6b046839e59bddb298ae8abab1d",
+  "pid": 27684,
+  "exit_code": 1,
+  "launched": true,
+  "stop_reason": null,
+  "executed_source_snapshot": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\logs\\pilot_01\\source\\replay_inner_pilot.py",
+  "command": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+    "-B",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\logs\\pilot_01\\source\\replay_inner_pilot.py"
+  ],
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TEMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\temp\\pilot_01",
+    "TMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\temp\\pilot_01",
+    "TMPDIR": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\temp\\pilot_01",
+    "PYTHONPYCACHEPREFIX": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\temp\\pilot_01",
+    "HF_HOME": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\temp\\pilot_01",
+    "TORCH_HOME": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\temp\\pilot_01",
+    "XDG_CACHE_HOME": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\temp\\pilot_01",
+    "JOBLIB_TEMP_FOLDER": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\temp\\pilot_01",
+    "MPLCONFIGDIR": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\temp\\pilot_01",
+    "OMP_NUM_THREADS": "3",
+    "MKL_NUM_THREADS": "3",
+    "OPENBLAS_NUM_THREADS": "3",
+    "NUMEXPR_NUM_THREADS": "3",
+    "PYTHONUTF8": "1",
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "preflight_available_ram_gib": 3.5728683471679688,
+  "minimum_start_ram_gib": 3.0,
+  "process_creation_started_utc": "2026-11-04T17:44:18.304982+00:00",
+  "elapsed_seconds": 24.125,
+  "finished_utc": "2026-11-04T17:44:42.429237+00:00",
+  "postexit_within_timeout": true,
+  "minimum_observed_available_ram_gib": 3.0773963928222656,
+  "peak_sampled_tree_working_set_bytes": 572891136,
+  "process_peak_working_set_bytes": {
+    "19204": 7643136,
+    "27684": 4431872,
+    "1020": 569446400
+  },
+  "sampled_cpu_seconds_by_pid": {
+    "19204": 0.015625,
+    "27684": 0.03125,
+    "1020": 22.75
+  },
+  "observed_owned_pids": [
+    1020,
+    19204,
+    27684
+  ],
+  "owned_process_creation_ticks": {
+    "19204": 134382878583240305,
+    "27684": 134382878583119389,
+    "1020": 134382878583551182
+  },
+  "owned_tree_remaining": [],
+  "source_unchanged": true
+}

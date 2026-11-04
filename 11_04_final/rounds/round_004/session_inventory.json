@@ -1,0 +1,42 @@
+﻿{
+    "checked_utc":  "2026-11-04T16:48:55.9508731Z",
+    "runtime_id":  "b4aa8510-0609-45a9-b7ba-e1cdeeab97f6",
+    "current_session":  "codex_53b6ac45_0a2c_4a1a_b5d5_2624c7a28d9e",
+    "agents":  [
+                   {
+                       "paneKey":  "structured-agent-session-codex_53b6ac45_0a2c_4a1a_b5d5_2624c7a28d9e:6ca4c52f-31dd-4067-a289-32779b1108ac",
+                       "state":  "working",
+                       "children":  [
+                                        {
+                                            "providerId":  "01a1a774-7d04-7623-be0c-9abfa93b0515",
+                                            "description":  "runtime_author",
+                                            "state":  "working"
+                                        },
+                                        {
+                                            "providerId":  "01a1a774-a4b4-7a12-8920-f74f9185ef40",
+                                            "description":  "lineage_author",
+                                            "state":  "working"
+                                        },
+                                        {
+                                            "providerId":  "01a1a774-c7a5-7d71-9402-312b5b7f7f77",
+                                            "description":  "reviewer",
+                                            "state":  "working"
+                                        }
+                                    ]
+                   },
+                   {
+                       "paneKey":  "structured-agent-session-codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9:3fc56044-efa1-44ee-a4db-00eff4b05343",
+                       "state":  "done",
+                       "children":  [
+
+                                    ]
+                   },
+                   {
+                       "paneKey":  "structured-agent-session-codex_eaaf02db_26da_478b_9356_48d04f3fca5d:dd713c75-0c2f-42c2-ac93-a0be63ba201e",
+                       "state":  "working",
+                       "children":  [
+
+                                    ]
+                   }
+               ]
+}

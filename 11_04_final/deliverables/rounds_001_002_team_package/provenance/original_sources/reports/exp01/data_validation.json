@@ -1,0 +1,568 @@
+{
+  "contract_version": "manager_execution_record_v1",
+  "repository_root": "D:\\repos\\fishing-track-classification",
+  "original_results_root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과",
+  "raw_data_root_checked_only": "F:\\문제 데이터_수정_1027",
+  "raw_data_root_exists": true,
+  "raw_source_files_read": false,
+  "team_root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료",
+  "t5_cache_root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate",
+  "behavior_cache": "D:\\repos\\fishing-track-classification\\11월 4일\\work\\behavior_B50_train2026.csv",
+  "local_rel_cache": "D:\\repos\\fishing-track-classification\\11월 4일\\work\\local_rel_train2026.csv",
+  "class_order": [
+    "연안복합",
+    "자망",
+    "통발",
+    "채낚기연승낚시"
+  ],
+  "feature_components": [
+    [
+      "F156",
+      156
+    ],
+    [
+      "T5",
+      10
+    ],
+    [
+      "B_behavior_without_obs_days",
+      68
+    ],
+    [
+      "local_rel",
+      70
+    ]
+  ],
+  "feature_count": 304,
+  "feature_names": [
+    "length_m__day_p10",
+    "bbox_diagonal_m__day_p10",
+    "endpoint_distance_m__day_p10",
+    "straightness__day_p10",
+    "turn_mean_rad__day_p10",
+    "turn_p90_rad__day_p10",
+    "turn_gt_pi2_fraction__day_p10",
+    "linearity__day_p10",
+    "area_m2__day_p10",
+    "centroid_radius_m__day_p10",
+    "max_step_m__day_p10",
+    "point_count__day_p10",
+    "component_count__day_p10",
+    "compressed_point_count__day_p10",
+    "repeat_fraction__day_p10",
+    "mean_step_m__day_p10",
+    "observed_turn_count__day_p10",
+    "bbox_width_m__day_p10",
+    "bbox_height_m__day_p10",
+    "span_to_length__day_p10",
+    "component_chord_sum_m__day_p10",
+    "length_m__day_median",
+    "bbox_diagonal_m__day_median",
+    "endpoint_distance_m__day_median",
+    "straightness__day_median",
+    "turn_mean_rad__day_median",
+    "turn_p90_rad__day_median",
+    "turn_gt_pi2_fraction__day_median",
+    "linearity__day_median",
+    "area_m2__day_median",
+    "centroid_radius_m__day_median",
+    "max_step_m__day_median",
+    "point_count__day_median",
+    "component_count__day_median",
+    "compressed_point_count__day_median",
+    "repeat_fraction__day_median",
+    "mean_step_m__day_median",
+    "observed_turn_count__day_median",
+    "bbox_width_m__day_median",
+    "bbox_height_m__day_median",
+    "span_to_length__day_median",
+    "component_chord_sum_m__day_median",
+    "length_m__day_p90",
+    "bbox_diagonal_m__day_p90",
+    "endpoint_distance_m__day_p90",
+    "straightness__day_p90",
+    "turn_mean_rad__day_p90",
+    "turn_p90_rad__day_p90",
+    "turn_gt_pi2_fraction__day_p90",
+    "linearity__day_p90",
+    "area_m2__day_p90",
+    "centroid_radius_m__day_p90",
+    "max_step_m__day_p90",
+    "point_count__day_p90",
+    "component_count__day_p90",
+    "compressed_point_count__day_p90",
+    "repeat_fraction__day_p90",
+    "mean_step_m__day_p90",
+    "observed_turn_count__day_p90",
+    "bbox_width_m__day_p90",
+    "bbox_height_m__day_p90",
+    "span_to_length__day_p90",
+    "component_chord_sum_m__day_p90",
+    "length_m__day_iqr",
+    "bbox_diagonal_m__day_iqr",
+    "endpoint_distance_m__day_iqr",
+    "straightness__day_iqr",
+    "turn_mean_rad__day_iqr",
+    "turn_p90_rad__day_iqr",
+    "turn_gt_pi2_fraction__day_iqr",
+    "linearity__day_iqr",
+    "area_m2__day_iqr",
+    "centroid_radius_m__day_iqr",
+    "max_step_m__day_iqr",
+    "point_count__day_iqr",
+    "component_count__day_iqr",
+    "compressed_point_count__day_iqr",
+    "repeat_fraction__day_iqr",
+    "mean_step_m__day_iqr",
+    "observed_turn_count__day_iqr",
+    "bbox_width_m__day_iqr",
+    "bbox_height_m__day_iqr",
+    "span_to_length__day_iqr",
+    "component_chord_sum_m__day_iqr",
+    "spatial_lon__day_median",
+    "spatial_lat__day_median",
+    "spatial_lon__day_iqr",
+    "spatial_lat__day_iqr",
+    "spatial_lon__day_p10",
+    "spatial_lon__day_p90",
+    "spatial_lat__day_p10",
+    "spatial_lat__day_p90",
+    "spatial_width_m__extent",
+    "spatial_height_m__extent",
+    "spatial_daily_span_m__median",
+    "spatial_daily_span_m__p90",
+    "spatial_daily_shift_m__median",
+    "spatial_daily_shift_m__p90",
+    "spatial_daily_grid_cells__median",
+    "spatial_daily_grid_cells__p90",
+    "spatial_equal_day_grid_entropy",
+    "spatial_period_grid_cells",
+    "spatial_adjacent_hour_static_fraction",
+    "spatial_daily_dominant_cell_fraction",
+    "temporal_bin0__zero_path_fraction",
+    "temporal_bin0__log_length_median",
+    "temporal_bin0__straightness_median",
+    "temporal_bin1__zero_path_fraction",
+    "temporal_bin1__log_length_median",
+    "temporal_bin1__straightness_median",
+    "temporal_bin2__zero_path_fraction",
+    "temporal_bin2__log_length_median",
+    "temporal_bin2__straightness_median",
+    "temporal_bin3__zero_path_fraction",
+    "temporal_bin3__log_length_median",
+    "temporal_bin3__straightness_median",
+    "vocabulary_mode0__day_fraction",
+    "vocabulary_mode1__day_fraction",
+    "vocabulary_mode2__day_fraction",
+    "vocabulary_mode3__day_fraction",
+    "vocabulary_mode4__day_fraction",
+    "vocabulary_mode5__day_fraction",
+    "vocabulary_mode6__day_fraction",
+    "vocabulary_mode7__day_fraction",
+    "vocabulary_mode8__day_fraction",
+    "vocabulary_mode9__day_fraction",
+    "vocabulary_mode10__day_fraction",
+    "vocabulary_mode11__day_fraction",
+    "vocabulary_mode12__day_fraction",
+    "vocabulary_mode13__day_fraction",
+    "vocabulary_mode14__day_fraction",
+    "vocabulary_mode15__day_fraction",
+    "vocabulary_mode0__stay_probability",
+    "vocabulary_mode1__stay_probability",
+    "vocabulary_mode2__stay_probability",
+    "vocabulary_mode3__stay_probability",
+    "vocabulary_mode4__stay_probability",
+    "vocabulary_mode5__stay_probability",
+    "vocabulary_mode6__stay_probability",
+    "vocabulary_mode7__stay_probability",
+    "vocabulary_mode8__stay_probability",
+    "vocabulary_mode9__stay_probability",
+    "vocabulary_mode10__stay_probability",
+    "vocabulary_mode11__stay_probability",
+    "vocabulary_mode12__stay_probability",
+    "vocabulary_mode13__stay_probability",
+    "vocabulary_mode14__stay_probability",
+    "vocabulary_mode15__stay_probability",
+    "vocabulary_day_entropy_mean",
+    "vocabulary_day_distinct_count_mean",
+    "observed_rows",
+    "observed_days",
+    "usable_days",
+    "observation_fraction",
+    "geometry_fraction",
+    "large_jump_fraction",
+    "t5_main_연안복합",
+    "t5_main_자망",
+    "t5_main_통발",
+    "t5_main_채낚기연승낚시",
+    "t5_month_연안복합",
+    "t5_month_자망",
+    "t5_month_통발",
+    "t5_month_채낚기연승낚시",
+    "t5_fine_grid_ok_ratio",
+    "t5_log1p_fishing_rows",
+    "obs_hours",
+    "obs_hours_per_day_mean",
+    "obs_hours_per_day_p90",
+    "obs_points_per_hour_mean",
+    "obs_parts_per_hour_mean",
+    "obs_day_coverage",
+    "g01_cells",
+    "g01_entropy",
+    "g01_top1_frac",
+    "g01_top3_frac",
+    "g05_cells",
+    "g05_entropy",
+    "g05_top1_frac",
+    "g05_top3_frac",
+    "g10_cells",
+    "g10_entropy",
+    "g10_top1_frac",
+    "g10_top3_frac",
+    "g01_cells_per_day",
+    "g01_cells_per_hour",
+    "g05_cells_per_day",
+    "g10_cells_per_day",
+    "dim_01_05",
+    "dim_05_10",
+    "dim_01_10",
+    "rev_days_per_cell_mean",
+    "rev_days_per_cell_max",
+    "rev_cell_multiday_frac",
+    "rev_gap_median",
+    "rev_gap_mean",
+    "rev_n_per_day",
+    "rev_gap1_frac",
+    "rev_gap2_3_frac",
+    "rev_gap4_7_frac",
+    "rev_gap8p_frac",
+    "rev_new_cell_frac",
+    "mov_step_mean_km",
+    "mov_step_p90_km",
+    "mov_step_cv",
+    "mov_hours_measured_frac",
+    "stat_flag_frac",
+    "slow_frac",
+    "slow_run_mean",
+    "slow_run_p90",
+    "slow_run_max",
+    "slow_runs_per_day",
+    "slow_day_frac",
+    "home_dist_p50_km",
+    "home_dist_p90_km",
+    "home_dist_max_km",
+    "home_cell_frac",
+    "home_far10_frac",
+    "slow_far_frac",
+    "slow_dist_p50_km",
+    "slow_dist_p90_km",
+    "trip_count",
+    "trip_per_day",
+    "trip_hours_mean",
+    "trip_hours_p90",
+    "trip_maxdist_mean_km",
+    "trip_maxdist_p90_km",
+    "hour_entropy",
+    "rhy_night_frac",
+    "rhy_dawn_frac",
+    "rhy_day_frac",
+    "rhy_eve_frac",
+    "rhy_night_stat_frac",
+    "rhy_circ_r",
+    "lr_obs_hours",
+    "lr_obs_days",
+    "lr_obs_hours_per_day_mean",
+    "lr_obs_hours_per_day_p90",
+    "lr_obs_points_per_hour_mean",
+    "lr_obs_parts_per_hour_mean",
+    "lr_obs_day_coverage",
+    "lr_g01_cells",
+    "lr_g01_entropy",
+    "lr_g01_top1_frac",
+    "lr_g01_top3_frac",
+    "lr_g05_cells",
+    "lr_g05_entropy",
+    "lr_g05_top1_frac",
+    "lr_g05_top3_frac",
+    "lr_g10_cells",
+    "lr_g10_entropy",
+    "lr_g10_top1_frac",
+    "lr_g10_top3_frac",
+    "lr_g01_cells_per_day",
+    "lr_g01_cells_per_hour",
+    "lr_g05_cells_per_day",
+    "lr_g10_cells_per_day",
+    "lr_dim_01_05",
+    "lr_dim_05_10",
+    "lr_dim_01_10",
+    "lr_rev_days_per_cell_mean",
+    "lr_rev_days_per_cell_max",
+    "lr_rev_cell_multiday_frac",
+    "lr_rev_gap_median",
+    "lr_rev_gap_mean",
+    "lr_rev_n_per_day",
+    "lr_rev_gap1_frac",
+    "lr_rev_gap2_3_frac",
+    "lr_rev_gap4_7_frac",
+    "lr_rev_gap8p_frac",
+    "lr_rev_new_cell_frac",
+    "lr_mov_step_mean_km",
+    "lr_mov_step_p90_km",
+    "lr_mov_step_cv",
+    "lr_mov_hours_measured_frac",
+    "lr_stat_flag_frac",
+    "lr_slow_frac",
+    "lr_slow_run_mean",
+    "lr_slow_run_p90",
+    "lr_slow_run_max",
+    "lr_slow_runs_per_day",
+    "lr_slow_day_frac",
+    "lr_home_dist_p50_km",
+    "lr_home_dist_p90_km",
+    "lr_home_dist_max_km",
+    "lr_home_cell_frac",
+    "lr_home_far10_frac",
+    "lr_slow_far_frac",
+    "lr_slow_dist_p50_km",
+    "lr_slow_dist_p90_km",
+    "lr_trip_count",
+    "lr_trip_per_day",
+    "lr_trip_hours_mean",
+    "lr_trip_hours_p90",
+    "lr_trip_maxdist_mean_km",
+    "lr_trip_maxdist_p90_km",
+    "lr_hour_entropy",
+    "lr_rhy_night_frac",
+    "lr_rhy_dawn_frac",
+    "lr_rhy_day_frac",
+    "lr_rhy_eve_frac",
+    "lr_rhy_night_stat_frac",
+    "lr_rhy_circ_r",
+    "lr_region_n"
+  ],
+  "input_hashes": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\data\\train_labels.csv": {
+      "bytes": 164369,
+      "sha256": "47ac4d571e07ffa9d329b58c39464f642ef5e36d4f89bf5db11fb00ec468c0b8"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\splits\\development_roles_long.csv": {
+      "bytes": 299600,
+      "sha256": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\splits\\holdout_ids.csv": {
+      "bytes": 14762,
+      "sha256": "d8300c81cc0da407909cb2d27405d73ee6e43f51dcc9eee0226e655501e0f7ba"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\classes.json": {
+      "bytes": 96,
+      "sha256": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675"
+    },
+    "D:\\repos\\fishing-track-classification\\11월 4일\\work\\behavior_B50_train2026.csv": {
+      "bytes": 6943640,
+      "sha256": "29f7177d3b81ec322b0d0a259391e30f2f833b59d94f82f0e900ad813bf3b8b5"
+    },
+    "D:\\repos\\fishing-track-classification\\11월 4일\\work\\local_rel_train2026.csv": {
+      "bytes": 9099420,
+      "sha256": "5eaafe7e454c16d0143b61a466e39485490cc86c4322a79d8c5f90fb808f6810"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\data\\cv\\fold_0\\F156_train.csv": {
+      "bytes": 15795580,
+      "sha256": "970aaaf069e5865f98f40c9237496b624af6f5005cc1cae0a52b79f8fb3357e1"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_0_t5.csv": {
+      "bytes": 1065764,
+      "sha256": "973c193ac8aed0a677265f4f264e40c30b05de2027f473f81caa630896866a97"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\data\\cv\\fold_1\\F156_train.csv": {
+      "bytes": 15995839,
+      "sha256": "d06659baf28bba0f7f300d15d49a08698579c61fc4d2abfc979fdfd75af5f58b"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_1_t5.csv": {
+      "bytes": 1067107,
+      "sha256": "182329eb8a4461e9c351a2ac571ff44334d90ce38e6b8893eecb365d81abd348"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\data\\cv\\fold_2\\F156_train.csv": {
+      "bytes": 15993277,
+      "sha256": "5864dde70fe2afe550ee3e5389a85c4a1b6e30c5b2d0f8fd30a27596f702dfd3"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_2_t5.csv": {
+      "bytes": 1065650,
+      "sha256": "2f7992921f2c35191a03394185b676c3562e9a263ede8f39aecdb365e55bc0cb"
+    }
+  },
+  "split_validation": {
+    "n_role_rows": 17691,
+    "n_development_vessels": 5897,
+    "n_outer_vessels": 5897,
+    "folds": {
+      "0": {
+        "FIT": {
+          "n": 3144,
+          "class_counts": {
+            "연안복합": 1556,
+            "자망": 1075,
+            "통발": 446,
+            "채낚기연승낚시": 67
+          },
+          "ordered_rfid_id_sha256": "e84ad1082b5639769f723a5ff10154ab29a0789d7ec89576caa155e2826bb9ae"
+        },
+        "INNER": {
+          "n": 787,
+          "class_counts": {
+            "연안복합": 390,
+            "자망": 269,
+            "통발": 111,
+            "채낚기연승낚시": 17
+          },
+          "ordered_rfid_id_sha256": "df1a227d4eaf5d576d8d0f10bdf0b16284eaee70e6f88b6189450987408e9d77"
+        },
+        "OUTER": {
+          "n": 1966,
+          "class_counts": {
+            "연안복합": 974,
+            "자망": 672,
+            "통발": 278,
+            "채낚기연승낚시": 42
+          },
+          "ordered_rfid_id_sha256": "5e2028574cee32c807e94c204f263278bcb6bf242949d4ce544bbf43d0d8f788"
+        }
+      },
+      "1": {
+        "FIT": {
+          "n": 3144,
+          "class_counts": {
+            "연안복합": 1557,
+            "자망": 1075,
+            "통발": 445,
+            "채낚기연승낚시": 67
+          },
+          "ordered_rfid_id_sha256": "7d8353c101bf7b85d00082325bc471038a8af8005ac18c84af41fe10bfd8dc90"
+        },
+        "INNER": {
+          "n": 787,
+          "class_counts": {
+            "연안복합": 390,
+            "자망": 269,
+            "통발": 111,
+            "채낚기연승낚시": 17
+          },
+          "ordered_rfid_id_sha256": "0234ea8da7666b79a9163fec62ca4ac6e7d46e179d5e05fbd378ca65adf144dd"
+        },
+        "OUTER": {
+          "n": 1966,
+          "class_counts": {
+            "연안복합": 973,
+            "자망": 672,
+            "통발": 279,
+            "채낚기연승낚시": 42
+          },
+          "ordered_rfid_id_sha256": "775bbdaecbfa81611cadd09f65bc0985bd495afb4822d1301486e5f8443a7148"
+        }
+      },
+      "2": {
+        "FIT": {
+          "n": 3145,
+          "class_counts": {
+            "연안복합": 1557,
+            "자망": 1075,
+            "통발": 446,
+            "채낚기연승낚시": 67
+          },
+          "ordered_rfid_id_sha256": "edb83723d8d6bcc161b468cf9d248ed0c4f4e1ad62804ab0eff31d0136415d0e"
+        },
+        "INNER": {
+          "n": 787,
+          "class_counts": {
+            "연안복합": 390,
+            "자망": 269,
+            "통발": 111,
+            "채낚기연승낚시": 17
+          },
+          "ordered_rfid_id_sha256": "a2f32c5c7742c96ad46bdca29a76f4516dc32ca50b5b02c406a71f79ec2d4289"
+        },
+        "OUTER": {
+          "n": 1965,
+          "class_counts": {
+            "연안복합": 973,
+            "자망": 672,
+            "통발": 278,
+            "채낚기연승낚시": 42
+          },
+          "ordered_rfid_id_sha256": "064a9ab8eef008925fef209dc3477fe025bdfa0bc955f211c57c1453d4edebc4"
+        }
+      }
+    },
+    "outer_partition_sha256": "1772a9a8c66a33abea100ccbb1c1443837c36f11aae1d169309652925337ba0d"
+  },
+  "folds": {
+    "0": {
+      "artifact": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz",
+      "artifact_bytes": 8187401,
+      "artifact_sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+      "n_rows": 5897,
+      "role_counts": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "class_counts": {
+        "연안복합": 2920,
+        "자망": 2016,
+        "통발": 835,
+        "채낚기연승낚시": 126
+      },
+      "matrix_bytes_uncompressed": 14341504
+    },
+    "1": {
+      "artifact": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz",
+      "artifact_bytes": 8237632,
+      "artifact_sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+      "n_rows": 5897,
+      "role_counts": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "class_counts": {
+        "연안복합": 2920,
+        "자망": 2016,
+        "통발": 835,
+        "채낚기연승낚시": 126
+      },
+      "matrix_bytes_uncompressed": 14341504
+    },
+    "2": {
+      "artifact": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz",
+      "artifact_bytes": 8236813,
+      "artifact_sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633",
+      "n_rows": 5897,
+      "role_counts": {
+        "FIT": 3145,
+        "INNER": 787,
+        "OUTER": 1965
+      },
+      "class_counts": {
+        "연안복합": 2920,
+        "자망": 2016,
+        "통발": 835,
+        "채낚기연승낚시": 126
+      },
+      "matrix_bytes_uncompressed": 14341504
+    }
+  },
+  "fixed_split_roster": {
+    "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fixed_split_roster.csv",
+    "rows": 17691,
+    "sha256": "9639abbeccf5335e8baa8f0c8c165c319da453615e410674d28e4410e355e29f"
+  },
+  "t5_cache_provenance": {
+    "generator": "run_005_main_20261101.py::stage_export",
+    "generator_sha256": "8fbf13c6bec957f845ac86b24b6c5f4b257e35a7fac3e2513214d32abeaaa04a",
+    "fold_specific_fit_labels_only": true,
+    "leave_self_out_for_fit_vessels": true,
+    "global_fishing_mask_source": "Unlabeled shared-harbor candidate geometry uses all Jan-Jun 2026 Train and 2025 Test rows; the fishing mask is applied to active 2026 Train rows using shared harbors and Train-only own moorings.",
+    "query_period": "each development vessel's full Jan-Jun 2026 train-track geometry",
+    "cached_file_ids_and_t5_schema_verified": true,
+    "note": "FIT labels construct fold-specific class distributions; held-out role labels are not used. The unlabeled harbor geometry population includes 2026 Train and 2025 Test (transductive across roles). Vessel query features use the full observed Jan-Jun 2026 Train tracks."
+  }
+}

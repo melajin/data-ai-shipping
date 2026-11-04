@@ -1,0 +1,26 @@
+﻿{
+    "utc":  "2026-11-04T17:06:49.4236948Z",
+    "user_instruction":  "램 확인하고 할수있는거 다해",
+    "change":  "Recheck RAM and execute previously unstarted approved synthetic smoke if \u003e=3GiB; prior gate/report preserved",
+    "unchanged":  "One first smoke180s, no actual-vessel inference/F1/parameter training, manager deadline17:30:47UTC",
+    "user_recheck_free_ram_gib":  3.9860115051269531,
+    "context_recovery":  {
+                             "authorized_at_utc":  "2026-11-04T17:08:40.5188961Z",
+                             "scope":  "ID-only original split metadata, one fold0/seed42 development FIT/INNER tensor export, fixed first2 INNER IDs for future replay",
+                             "deadline_utc":  "2026-11-04T17:15:00Z",
+                             "export_runs_max":  1,
+                             "justified_fix_max":  1,
+                             "independent_checks_max":  1,
+                             "actual_vessel_model_inference":  0,
+                             "F1_evaluations":  0,
+                             "parameter_training":  0,
+                             "source_owner":  "lineage_author in context_recovery/",
+                             "review_owner":  "reviewer"
+                         },
+    "replay_contract_preparation":  {
+                                        "source_only":  true,
+                                        "owner":  "runtime_author",
+                                        "deadline_utc":  "2026-11-04T17:14:00Z",
+                                        "actual_vessel_inference":  0
+                                    }
+}

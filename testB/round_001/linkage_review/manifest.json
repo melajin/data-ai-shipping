@@ -1,0 +1,612 @@
+﻿{
+    "task":  "W1 linkage evidence review",
+    "output_version":  "testB/round_001/linkage_review",
+    "input_version":  "legacy existing audit data and local legacy provided files",
+    "started_local":  "2026-11-05T02:46:06.183268+09:00",
+    "finished_local":  "2026-11-05T02:46:09.198462+09:00",
+    "model_evidence":  {
+                           "requested_by_orca":  "gpt-6-luna",
+                           "effort_requested":  "xhigh",
+                           "evidence_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\integration\\runtime_receipts\\W1_start.json",
+                           "receipt":  {
+                                           "ok":  true,
+                                           "result":  {
+                                                          "dispatchId":  "ctx_96e88ef698ce",
+                                                          "taskId":  "task_8ea9f23abf9d",
+                                                          "runId":  "run_131763108c81",
+                                                          "runCreated":  true,
+                                                          "state":  "ready",
+                                                          "agent":  "codex",
+                                                          "model":  "gpt-6-luna",
+                                                          "effort":  "xhigh",
+                                                          "mode":  "structured",
+                                                          "terminal":  "structworker_4b8c13c6-1915-4dd0-8018-165d721b9f71",
+                                                          "workspace":  "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+                                                          "next":  "Orca wakes you when workers report; end your turn when you\u0027re done."
+                                                      }
+                                       },
+                           "server_internal_runtime_model":  "unknown"
+                       },
+    "environment":  {
+                        "python":  "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+                        "python_executable":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                        "platform":  "Windows-11-10.0.26300-SP0",
+                        "pyarrow":  "24.0.0",
+                        "openpyxl":  "3.1.5"
+                    },
+    "inputs_pre":  {
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\event_audit.csv":  {
+                                                                                                                                                           "size_bytes":  91679,
+                                                                                                                                                           "sha256":  "2d35630d95efe74f85cf6ba072637beea79b9d428617b251a961e08c7bf09d39"
+                                                                                                                                                       },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\candidate_vessels.csv":  {
+                                                                                                                                                                 "size_bytes":  961613,
+                                                                                                                                                                 "sha256":  "53c954c5592922d8f0da6226fc420be4f0a68879033f54e9b0859986ec09a94f"
+                                                                                                                                                             },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\summary.json":  {
+                                                                                                                                                        "size_bytes":  6876,
+                                                                                                                                                        "sha256":  "5a410512d2ecf9b33fc3d1ab8e917fc2acee4b8483f684e7099cb93accf39158"
+                                                                                                                                                    },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001\\baseline_single_review.csv":  {
+                                                                                                                                                                          "size_bytes":  32595,
+                                                                                                                                                                          "sha256":  "1aba1eaff7a2481438020daa0081ba0c009771b31d27c42ad4e1cd18a040c4f0"
+                                                                                                                                                                      },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001\\review_queue.csv":  {
+                                                                                                                                                                "size_bytes":  107357,
+                                                                                                                                                                "sha256":  "99017de4ace983f414f3215759659749e399b9d1cda07b48319af3433645d162"
+                                                                                                                                                            },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001\\review_summary.json":  {
+                                                                                                                                                                   "size_bytes":  4205,
+                                                                                                                                                                   "sha256":  "29fde9cd97e73ff5c6f67e6465a09ca34032cec4b357cec775d48240e70cb6ac"
+                                                                                                                                                               },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\manifest.json":  {
+                                                                                                                                                         "size_bytes":  13644,
+                                                                                                                                                         "sha256":  "7dbfc1e7f8786811c879bdcdab25f2ee9efd8d25d596b6926ba196306ab357c5"
+                                                                                                                                                     },
+                       "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx":  {
+                                                                                  "size_bytes":  28759,
+                                                                                  "sha256":  "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a"
+                                                                              },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\20261105_TestB_감독세션_위임.md":  {
+                                                                                                                           "size_bytes":  14750,
+                                                                                                                           "sha256":  "d9dbcca440d3371ae946cf91b92738ea70bb20be7d7bd19947f1b7c5eb1d91f6"
+                                                                                                                       },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\20261105_사고연결_실행결과_상세보고서.md":  {
+                                                                                                                             "size_bytes":  23922,
+                                                                                                                             "sha256":  "2bb7bd63544de6b321e479554cbcfc2268a1af2a6ea11de7039fe487f0007a1d"
+                                                                                                                         },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\20261105_분석종합과_TestB_실행계획.md":  {
+                                                                                                                              "size_bytes":  44637,
+                                                                                                                              "sha256":  "e61e41d8740a7096955f30bf34071a58575b1315c40563ff0a659d8a8f58f187"
+                                                                                                                          },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\PROTOCOL.md":  {
+                                                                                                                                              "size_bytes":  4339,
+                                                                                                                                              "sha256":  "25b65b059646d5e87097c24c9d60993a26bd20c1f02afe8d50b7f9338189eb56"
+                                                                                                                                          },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\contract\\preparation_contract.md":  {
+                                                                                                                                                                   "size_bytes":  4414,
+                                                                                                                                                                   "sha256":  "e9f0e8c1f1962d58ecfb6f1871ec4af2077d3eede3fd49c5177e387013c1d060"
+                                                                                                                                                               },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\contract\\path_transition.md":  {
+                                                                                                                                       "size_bytes":  2265,
+                                                                                                                                       "sha256":  "f53469cdf87c5f10acdf104e9640417c987cf921024334de71d7cdee6c27d606"
+                                                                                                                                   },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\integration\\runtime_receipts\\W1_path_transition_send.json":  {
+                                                                                                                                                                      "size_bytes":  58,
+                                                                                                                                                                      "sha256":  "1c3ee1633279cf5cec14384b81fe15162fc06151d06ff5c9aecf42a2212acb18"
+                                                                                                                                                                  },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\integration\\runtime_receipts\\W1_start.json":  {
+                                                                                                                                                                              "size_bytes":  471,
+                                                                                                                                                                              "sha256":  "fce4e8ed29b4cc2cc7a7ef5f025592399461b9b19e164522527654f6200e61ae"
+                                                                                                                                                                          },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\real_support_evidence_20261028.md":  {
+                                                                                                                                "size_bytes":  5165,
+                                                                                                                                "sha256":  "c77db8fbed9b3ca88b61f50172800ec6bd90d690126a8675e8cd0793a3224227"
+                                                                                                                            },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\competition_20261019\\04_파일목록과_검증기록.md":  {
+                                                                                                                                     "size_bytes":  22500,
+                                                                                                                                     "sha256":  "4b9f0995961434e3f6ac4a33d5bc9b60736973a0b66bf9bd26e28013d0b05440"
+                                                                                                                                 },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\fishing_integration\\04_평가와_후속실험.md":  {
+                                                                                                                                  "size_bytes":  14618,
+                                                                                                                                  "sha256":  "b355aac856f952d4d5e4e6540149ceb27f77edbf6229be2d06ee6c195c7064fc"
+                                                                                                                              },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet":  {
+                                                                                                                                                                  "size_bytes":  18817327,
+                                                                                                                                                                  "sha256":  "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140"
+                                                                                                                                                              },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_2.parquet":  {
+                                                                                                                                                                  "size_bytes":  18009625,
+                                                                                                                                                                  "sha256":  "748692493429823c116e204871d57920991c0c6d62d8a46a2b793ac1a80f356f"
+                                                                                                                                                              },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_3.parquet":  {
+                                                                                                                                                                  "size_bytes":  24848272,
+                                                                                                                                                                  "sha256":  "a2333ffee0aa491d1b450395b94a49c77f79084651b4101e31de37c573e2f2bd"
+                                                                                                                                                              },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_4.parquet":  {
+                                                                                                                                                                  "size_bytes":  27340845,
+                                                                                                                                                                  "sha256":  "256498c7a97daf930678c0fb138c89f4081052cd333f030ac2d78e62ba11972a"
+                                                                                                                                                              },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_5.parquet":  {
+                                                                                                                                                                  "size_bytes":  29009998,
+                                                                                                                                                                  "sha256":  "264957261a27d0a4b77336523fcd95d0483fce1399ca42cdf0e960f184131217"
+                                                                                                                                                              },
+                       "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_6.parquet":  {
+                                                                                                                                                                  "size_bytes":  29470852,
+                                                                                                                                                                  "sha256":  "b4cd5e6805ff9431fb5ba861205b962af17603a83dee6ac2dd0fe26195e17078"
+                                                                                                                                                              }
+                   },
+    "inputs_post":  {
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\event_audit.csv":  {
+                                                                                                                                                            "size_bytes":  91679,
+                                                                                                                                                            "sha256":  "2d35630d95efe74f85cf6ba072637beea79b9d428617b251a961e08c7bf09d39"
+                                                                                                                                                        },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\candidate_vessels.csv":  {
+                                                                                                                                                                  "size_bytes":  961613,
+                                                                                                                                                                  "sha256":  "53c954c5592922d8f0da6226fc420be4f0a68879033f54e9b0859986ec09a94f"
+                                                                                                                                                              },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\summary.json":  {
+                                                                                                                                                         "size_bytes":  6876,
+                                                                                                                                                         "sha256":  "5a410512d2ecf9b33fc3d1ab8e917fc2acee4b8483f684e7099cb93accf39158"
+                                                                                                                                                     },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001\\baseline_single_review.csv":  {
+                                                                                                                                                                           "size_bytes":  32595,
+                                                                                                                                                                           "sha256":  "1aba1eaff7a2481438020daa0081ba0c009771b31d27c42ad4e1cd18a040c4f0"
+                                                                                                                                                                       },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001\\review_queue.csv":  {
+                                                                                                                                                                 "size_bytes":  107357,
+                                                                                                                                                                 "sha256":  "99017de4ace983f414f3215759659749e399b9d1cda07b48319af3433645d162"
+                                                                                                                                                             },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001\\review_summary.json":  {
+                                                                                                                                                                    "size_bytes":  4205,
+                                                                                                                                                                    "sha256":  "29fde9cd97e73ff5c6f67e6465a09ca34032cec4b357cec775d48240e70cb6ac"
+                                                                                                                                                                },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\manifest.json":  {
+                                                                                                                                                          "size_bytes":  13644,
+                                                                                                                                                          "sha256":  "7dbfc1e7f8786811c879bdcdab25f2ee9efd8d25d596b6926ba196306ab357c5"
+                                                                                                                                                      },
+                        "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx":  {
+                                                                                   "size_bytes":  28759,
+                                                                                   "sha256":  "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a"
+                                                                               },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\20261105_TestB_감독세션_위임.md":  {
+                                                                                                                            "size_bytes":  14750,
+                                                                                                                            "sha256":  "d9dbcca440d3371ae946cf91b92738ea70bb20be7d7bd19947f1b7c5eb1d91f6"
+                                                                                                                        },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\20261105_사고연결_실행결과_상세보고서.md":  {
+                                                                                                                              "size_bytes":  23922,
+                                                                                                                              "sha256":  "2bb7bd63544de6b321e479554cbcfc2268a1af2a6ea11de7039fe487f0007a1d"
+                                                                                                                          },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\20261105_분석종합과_TestB_실행계획.md":  {
+                                                                                                                               "size_bytes":  44637,
+                                                                                                                               "sha256":  "e61e41d8740a7096955f30bf34071a58575b1315c40563ff0a659d8a8f58f187"
+                                                                                                                           },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\PROTOCOL.md":  {
+                                                                                                                                               "size_bytes":  4339,
+                                                                                                                                               "sha256":  "25b65b059646d5e87097c24c9d60993a26bd20c1f02afe8d50b7f9338189eb56"
+                                                                                                                                           },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\contract\\preparation_contract.md":  {
+                                                                                                                                                                    "size_bytes":  4414,
+                                                                                                                                                                    "sha256":  "e9f0e8c1f1962d58ecfb6f1871ec4af2077d3eede3fd49c5177e387013c1d060"
+                                                                                                                                                                },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\contract\\path_transition.md":  {
+                                                                                                                                        "size_bytes":  2265,
+                                                                                                                                        "sha256":  "f53469cdf87c5f10acdf104e9640417c987cf921024334de71d7cdee6c27d606"
+                                                                                                                                    },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\integration\\runtime_receipts\\W1_path_transition_send.json":  {
+                                                                                                                                                                       "size_bytes":  58,
+                                                                                                                                                                       "sha256":  "1c3ee1633279cf5cec14384b81fe15162fc06151d06ff5c9aecf42a2212acb18"
+                                                                                                                                                                   },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\integration\\runtime_receipts\\W1_start.json":  {
+                                                                                                                                                                               "size_bytes":  471,
+                                                                                                                                                                               "sha256":  "fce4e8ed29b4cc2cc7a7ef5f025592399461b9b19e164522527654f6200e61ae"
+                                                                                                                                                                           },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\real_support_evidence_20261028.md":  {
+                                                                                                                                 "size_bytes":  5165,
+                                                                                                                                 "sha256":  "c77db8fbed9b3ca88b61f50172800ec6bd90d690126a8675e8cd0793a3224227"
+                                                                                                                             },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\competition_20261019\\04_파일목록과_검증기록.md":  {
+                                                                                                                                      "size_bytes":  22500,
+                                                                                                                                      "sha256":  "4b9f0995961434e3f6ac4a33d5bc9b60736973a0b66bf9bd26e28013d0b05440"
+                                                                                                                                  },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\fishing_integration\\04_평가와_후속실험.md":  {
+                                                                                                                                   "size_bytes":  14618,
+                                                                                                                                   "sha256":  "b355aac856f952d4d5e4e6540149ceb27f77edbf6229be2d06ee6c195c7064fc"
+                                                                                                                               },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet":  {
+                                                                                                                                                                   "size_bytes":  18817327,
+                                                                                                                                                                   "sha256":  "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140"
+                                                                                                                                                               },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_2.parquet":  {
+                                                                                                                                                                   "size_bytes":  18009625,
+                                                                                                                                                                   "sha256":  "748692493429823c116e204871d57920991c0c6d62d8a46a2b793ac1a80f356f"
+                                                                                                                                                               },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_3.parquet":  {
+                                                                                                                                                                   "size_bytes":  24848272,
+                                                                                                                                                                   "sha256":  "a2333ffee0aa491d1b450395b94a49c77f79084651b4101e31de37c573e2f2bd"
+                                                                                                                                                               },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_4.parquet":  {
+                                                                                                                                                                   "size_bytes":  27340845,
+                                                                                                                                                                   "sha256":  "256498c7a97daf930678c0fb138c89f4081052cd333f030ac2d78e62ba11972a"
+                                                                                                                                                               },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_5.parquet":  {
+                                                                                                                                                                   "size_bytes":  29009998,
+                                                                                                                                                                   "sha256":  "264957261a27d0a4b77336523fcd95d0483fce1399ca42cdf0e960f184131217"
+                                                                                                                                                               },
+                        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_6.parquet":  {
+                                                                                                                                                                   "size_bytes":  29470852,
+                                                                                                                                                                   "sha256":  "b4cd5e6805ff9431fb5ba861205b962af17603a83dee6ac2dd0fe26195e17078"
+                                                                                                                                                               }
+                    },
+    "input_hashes_unchanged":  true,
+    "code":  {
+                 "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\run_linkage_review.py",
+                 "sha256_pre":  "3fc83be9799d999a46425735583fb0a78aa84c09d8799aa46677d3cce8231283",
+                 "sha256_post":  "3fc83be9799d999a46425735583fb0a78aa84c09d8799aa46677d3cce8231283",
+                 "unchanged":  true
+             },
+    "scope":  {
+                  "event_ids_reviewed":  [
+                                             "E0006",
+                                             "E0010",
+                                             "E0019",
+                                             "E0023",
+                                             "E0024",
+                                             "E0038",
+                                             "E0042",
+                                             "E0044",
+                                             "E0046",
+                                             "E0052",
+                                             "E0054",
+                                             "E0068",
+                                             "E0075",
+                                             "E0096",
+                                             "E0098",
+                                             "E0108",
+                                             "E0109",
+                                             "E0123",
+                                             "E0124",
+                                             "E0126",
+                                             "E0129",
+                                             "E0132",
+                                             "E0134",
+                                             "E0136",
+                                             "E0138",
+                                             "E0143",
+                                             "E0148",
+                                             "E0160",
+                                             "E0161",
+                                             "E0167"
+                                         ],
+                  "priority_union_event_ids":  [
+                                                   "E0023",
+                                                   "E0042",
+                                                   "E0046",
+                                                   "E0052",
+                                                   "E0096",
+                                                   "E0108",
+                                                   "E0109",
+                                                   "E0123",
+                                                   "E0134",
+                                                   "E0136"
+                                               ],
+                  "candidate_conditions_inherited":  [
+                                                         "h0_r1000m",
+                                                         "h0_r3000m",
+                                                         "h0_r5000m",
+                                                         "h1_r1000m",
+                                                         "h1_r3000m",
+                                                         "h1_r5000m",
+                                                         "h2_r1000m",
+                                                         "h2_r3000m",
+                                                         "h2_r5000m"
+                                                     ],
+                  "raw_accident_rows_read":  30,
+                  "cache_rows_selected":  30,
+                  "source_wkt_geometry_read":  false,
+                  "external_internet_or_contact":  false,
+                  "v2_zip_read":  false
+              },
+    "local_document_search":  {
+                                  "terms":  [
+                                                "RFID",
+                                                "선명",
+                                                "선박 ID",
+                                                "선박ID",
+                                                "제원",
+                                                "테스트 데이터",
+                                                "학습 금지",
+                                                "전체 항적",
+                                                "이후 항적",
+                                                "사고시각",
+                                                "6시간",
+                                                "정상 정답"
+                                            ],
+                                  "scope":  [
+                                                "26_11_5/20261105_TestB_감독세션_위임.md",
+                                                "26_11_5/20261105_분석종합과_TestB_실행계획.md",
+                                                "26_11_5/20261105_사고연결_실행결과_상세보고서.md",
+                                                "26_11_5/20261105_팀원자료_검토보고서.md",
+                                                "26_11_5/20261105_Gemini대화_검토반박.md",
+                                                "26_11_5/accident_linkage_audit_20261105/PROTOCOL.md",
+                                                "docs/competition_20261019/** (local provided-material inventory and analysis notes)",
+                                                "data/reference/competition_20261019/** (local provided-material inventory and project notes)",
+                                                "docs/real_support_evidence_20261028.md",
+                                                "docs/project_review_20261104.md",
+                                                "11_04_final/docs/report_review_20261105/pdf_text.txt",
+                                                "F:/문제 데이터_수정_1027/ (top-level/file-name inventory; contents not mass-searched)"
+                                            ],
+                                  "not_exhaustive_paths":  [
+                                                               "other user/cloud accounts",
+                                                               "unindexed files outside listed local source folders",
+                                                               "original organizer email/chat not saved as a local file"
+                                                           ]
+                              },
+    "outputs":  [
+                    "evidence_table.csv",
+                    "review_report.md",
+                    "summary.json",
+                    "manifest.json",
+                    "run_linkage_review.py",
+                    "stdout.log",
+                    "stderr.log",
+                    "process_result.json",
+                    "stdout_attempt1.log",
+                    "stderr_attempt1.log",
+                    "process_result_attempt1.json",
+                    "process_result_attempt2.json",
+                    "stdout_attempt3.log",
+                    "stderr_attempt3.log",
+                    "process_result_attempt3.json",
+                    "stdout_attempt4.log",
+                    "stderr_attempt4.log",
+                    "process_result_attempt4.json",
+                    "stdout_attempt5.log",
+                    "stderr_attempt5.log",
+                    "process_result_attempt5.json",
+                    "process_result_attempt6_pre_source_hashes.json",
+                    "stdout_attempt7.log",
+                    "stderr_attempt7.log",
+                    "process_result_attempt7.json"
+                ],
+    "output_sha256_after_run":  {
+                                    "evidence_table.csv":  "612a7e26898c7e285065f471ef9a455bb342c1ad94fbc1176680548905fa7903",
+                                    "process_result.json":  "c17c37f0dc5dd1354c9a6f6b3ccc48d95de27fcd3e601d7e0aa75a68daff2aba",
+                                    "process_result_attempt1.json":  "3cf9f9cc13a825a668a88b7cf99860c904454c054dba6aaa4ff86911043f1e4d",
+                                    "process_result_attempt2.json":  "e2fecdc9a94c1304b7ed813133778fc876b3ea0b17ef6acf01198f5a7b991d36",
+                                    "process_result_attempt3.json":  "dc20cf6aad7abe18bc1c23420036dc12a9140151c89d4fbdb3457da33e9c3412",
+                                    "process_result_attempt4.json":  "ca399bb8032a5d79f20cd5c48cf4d0bcb701928e65ec8b72e890850a9445c27c",
+                                    "process_result_attempt5.json":  "713eab74bf1b9b9d191f7baea9ded867f3ae43c4b81db2724f38b5ae1c1d606e",
+                                    "process_result_attempt6_pre_source_hashes.json":  "5a273f5ad0b0696fd93eacced4faba3e842cb548e2543487593ff6bef45855d3",
+                                    "process_result_attempt7.json":  "f173b51d6dd288cf032b93146f5f5ad3f8b68f3f4d592d72fa5c0fbe4924e61b",
+                                    "review_report.md":  "24941d015a9552660ff0c062326f5ab5319dc41c594ed2332449a992b1bd32b7",
+                                    "run_linkage_review.py":  "3fc83be9799d999a46425735583fb0a78aa84c09d8799aa46677d3cce8231283",
+                                    "stderr.log":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                    "stderr_attempt1.log":  "32a509d9effba546658b4508bb2c4b33ec093a6387be84f38ee5dcc8f17b7b51",
+                                    "stderr_attempt3.log":  "560258c8d1b4d97c550270c8cf415831bc78daf3a87be6111a27512ce8476c05",
+                                    "stderr_attempt4.log":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                    "stderr_attempt5.log":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                    "stderr_attempt7.log":  "da9dffae8c885b6b5fd45596f1bf175765cd8a04ffd0e078b0a2b6ae78eec672",
+                                    "stdout.log":  "202daa9779dc5d566fb4c4903d1edc8082e2fa035afa53de3e45a88160384c8b",
+                                    "stdout_attempt1.log":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                    "stdout_attempt3.log":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                    "stdout_attempt4.log":  "202daa9779dc5d566fb4c4903d1edc8082e2fa035afa53de3e45a88160384c8b",
+                                    "stdout_attempt5.log":  "202daa9779dc5d566fb4c4903d1edc8082e2fa035afa53de3e45a88160384c8b",
+                                    "stdout_attempt7.log":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                                    "summary.json":  "9c79c3c5f78c7285e3c143570732f4242dd9b1d6825355504812067302ac1f1e"
+                                },
+    "attempt_history":  [
+                            {
+                                "attempt":  1,
+                                "exit_code":  1,
+                                "reason":  "UTF-8 BOM in Orca receipt was not handled",
+                                "artifacts":  [
+                                                  "stdout_attempt1.log",
+                                                  "stderr_attempt1.log",
+                                                  "process_result_attempt1.json"
+                                              ]
+                            },
+                            {
+                                "attempt":  2,
+                                "exit_code":  0,
+                                "note":  "preliminary artifact run before field-label correction",
+                                "artifact":  "process_result_attempt2.json"
+                            },
+                            {
+                                "attempt":  3,
+                                "exit_code":  1,
+                                "reason":  "attempt-history metadata syntax error",
+                                "artifacts":  [
+                                                  "stdout_attempt3.log",
+                                                  "stderr_attempt3.log",
+                                                  "process_result_attempt3.json"
+                                              ]
+                            },
+                            {
+                                "attempt":  4,
+                                "exit_code":  0,
+                                "note":  "field labels corrected; before cache/document hashes",
+                                "artifacts":  [
+                                                  "stdout_attempt4.log",
+                                                  "stderr_attempt4.log",
+                                                  "process_result_attempt4.json"
+                                              ]
+                            },
+                            {
+                                "attempt":  5,
+                                "exit_code":  0,
+                                "note":  "preliminary run before selected XLSX row fields and cache hashes",
+                                "artifacts":  [
+                                                  "stdout_attempt5.log",
+                                                  "stderr_attempt5.log",
+                                                  "process_result_attempt5.json"
+                                              ]
+                            },
+                            {
+                                "attempt":  6,
+                                "exit_code":  0,
+                                "note":  "selected XLSX rows stored, but cache source hashes still absent",
+                                "artifact":  "process_result_attempt6_pre_source_hashes.json"
+                            },
+                            {
+                                "attempt":  7,
+                                "exit_code":  1,
+                                "reason":  "runtime receipt pointer still referenced appended parquet input",
+                                "artifacts":  [
+                                                  "stdout_attempt7.log",
+                                                  "stderr_attempt7.log",
+                                                  "process_result_attempt7.json"
+                                              ]
+                            },
+                            {
+                                "attempt":  8,
+                                "exit_code":  0,
+                                "note":  "final: cache shards, source documents and selected XLSX row values included",
+                                "artifact":  "process_result.json"
+                            }
+                        ],
+    "process_result_recorded_by_wrapper":  "process_result.json (actual Python exit code captured by PowerShell wrapper)",
+    "final_process_record":  {
+                                 "command":  [
+                                                 "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe",
+                                                 "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\run_linkage_review.py"
+                                             ],
+                                 "started_local":  "2026-11-05T02:46:06.0214929+09:00",
+                                 "finished_local":  "2026-11-05T02:46:09.5108402+09:00",
+                                 "exit_code":  0,
+                                 "stdout_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stdout.log",
+                                 "stderr_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stderr.log",
+                                 "previous_attempts":  [
+                                                           1,
+                                                           0,
+                                                           1,
+                                                           0,
+                                                           0,
+                                                           0,
+                                                           1
+                                                       ],
+                                 "note":  "Final corrected run with cache and documentation inputs hashed"
+                             },
+    "output_files":  [
+                         {
+                             "name":  "evidence_table.csv",
+                             "size_bytes":  104511,
+                             "sha256":  "612a7e26898c7e285065f471ef9a455bb342c1ad94fbc1176680548905fa7903"
+                         },
+                         {
+                             "name":  "process_result.json",
+                             "size_bytes":  1044,
+                             "sha256":  "c17c37f0dc5dd1354c9a6f6b3ccc48d95de27fcd3e601d7e0aa75a68daff2aba"
+                         },
+                         {
+                             "name":  "process_result_attempt1.json",
+                             "size_bytes":  668,
+                             "sha256":  "3cf9f9cc13a825a668a88b7cf99860c904454c054dba6aaa4ff86911043f1e4d"
+                         },
+                         {
+                             "name":  "process_result_attempt2.json",
+                             "size_bytes":  778,
+                             "sha256":  "e2fecdc9a94c1304b7ed813133778fc876b3ea0b17ef6acf01198f5a7b991d36"
+                         },
+                         {
+                             "name":  "process_result_attempt3.json",
+                             "size_bytes":  876,
+                             "sha256":  "dc20cf6aad7abe18bc1c23420036dc12a9140151c89d4fbdb3457da33e9c3412"
+                         },
+                         {
+                             "name":  "process_result_attempt4.json",
+                             "size_bytes":  920,
+                             "sha256":  "ca399bb8032a5d79f20cd5c48cf4d0bcb701928e65ec8b72e890850a9445c27c"
+                         },
+                         {
+                             "name":  "process_result_attempt5.json",
+                             "size_bytes":  953,
+                             "sha256":  "713eab74bf1b9b9d191f7baea9ded867f3ae43c4b81db2724f38b5ae1c1d606e"
+                         },
+                         {
+                             "name":  "process_result_attempt6_pre_source_hashes.json",
+                             "size_bytes":  1015,
+                             "sha256":  "5a273f5ad0b0696fd93eacced4faba3e842cb548e2543487593ff6bef45855d3"
+                         },
+                         {
+                             "name":  "process_result_attempt7.json",
+                             "size_bytes":  1034,
+                             "sha256":  "f173b51d6dd288cf032b93146f5f5ad3f8b68f3f4d592d72fa5c0fbe4924e61b"
+                         },
+                         {
+                             "name":  "review_report.md",
+                             "size_bytes":  10623,
+                             "sha256":  "24941d015a9552660ff0c062326f5ab5319dc41c594ed2332449a992b1bd32b7"
+                         },
+                         {
+                             "name":  "run_linkage_review.py",
+                             "size_bytes":  20921,
+                             "sha256":  "3fc83be9799d999a46425735583fb0a78aa84c09d8799aa46677d3cce8231283"
+                         },
+                         {
+                             "name":  "stderr.log",
+                             "size_bytes":  0,
+                             "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                         },
+                         {
+                             "name":  "stderr_attempt1.log",
+                             "size_bytes":  2042,
+                             "sha256":  "32a509d9effba546658b4508bb2c4b33ec093a6387be84f38ee5dcc8f17b7b51"
+                         },
+                         {
+                             "name":  "stderr_attempt3.log",
+                             "size_bytes":  2790,
+                             "sha256":  "560258c8d1b4d97c550270c8cf415831bc78daf3a87be6111a27512ce8476c05"
+                         },
+                         {
+                             "name":  "stderr_attempt4.log",
+                             "size_bytes":  0,
+                             "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                         },
+                         {
+                             "name":  "stderr_attempt5.log",
+                             "size_bytes":  0,
+                             "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                         },
+                         {
+                             "name":  "stderr_attempt7.log",
+                             "size_bytes":  2928,
+                             "sha256":  "da9dffae8c885b6b5fd45596f1bf175765cd8a04ffd0e078b0a2b6ae78eec672"
+                         },
+                         {
+                             "name":  "stdout.log",
+                             "size_bytes":  556,
+                             "sha256":  "202daa9779dc5d566fb4c4903d1edc8082e2fa035afa53de3e45a88160384c8b"
+                         },
+                         {
+                             "name":  "stdout_attempt1.log",
+                             "size_bytes":  0,
+                             "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                         },
+                         {
+                             "name":  "stdout_attempt3.log",
+                             "size_bytes":  0,
+                             "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                         },
+                         {
+                             "name":  "stdout_attempt4.log",
+                             "size_bytes":  556,
+                             "sha256":  "202daa9779dc5d566fb4c4903d1edc8082e2fa035afa53de3e45a88160384c8b"
+                         },
+                         {
+                             "name":  "stdout_attempt5.log",
+                             "size_bytes":  556,
+                             "sha256":  "202daa9779dc5d566fb4c4903d1edc8082e2fa035afa53de3e45a88160384c8b"
+                         },
+                         {
+                             "name":  "stdout_attempt7.log",
+                             "size_bytes":  0,
+                             "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                         },
+                         {
+                             "name":  "summary.json",
+                             "size_bytes":  4113,
+                             "sha256":  "9c79c3c5f78c7285e3c143570732f4242dd9b1d6825355504812067302ac1f1e"
+                         }
+                     ]
+}

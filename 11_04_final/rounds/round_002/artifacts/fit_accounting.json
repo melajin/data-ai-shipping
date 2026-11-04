@@ -1,0 +1,31 @@
+﻿{
+  "round": "round_002",
+  "status": "completed_with_limitations",
+  "result_path": "rounds/round_002/artifacts/result.json",
+  "result_sha256": "38bfdc81016d2b136e3c3509c089823b32d0b79860edfe8848b9876f13960295",
+  "attempts": [
+    {"attempt": 1, "runner_sha256": "92434b512db78551e2218de4c266e5b2569320129b99ef1480efe05fda23b4d4", "config_sha256": "f7240e3eb5adb8bc130979b7aa891762ef840993b7e6ccf39aae8e52c85cb214", "successful_models": 1, "elapsed_seconds": 23.5393616, "exit_code": "unavailable", "failure": "CatBoost constructor rejected feature_names; no CatBoost.fit call"},
+    {"attempt": 2, "runner_sha256": "23362d1fca269485ded3f13a46127675dd261c8b3cc011a95e6a105a3fa9bd63", "config_sha256": "f7240e3eb5adb8bc130979b7aa891762ef840993b7e6ccf39aae8e52c85cb214", "launcher_pid": 12528, "runner_pid": 23548, "exit_code": 1, "elapsed_seconds": 0.8680143, "successful_models": 0, "failed_catboost_fit_calls_before_iteration": 1, "failure": "CatBoost rejected explicit use_weights=false without non-default object weights"},
+    {"attempt": 3, "runner_sha256": "b8113bea3887402fb5703c79b29136d5036df73b68a1ccaaf1503016cf28deed", "config_sha256": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94", "launcher_pid": 6152, "runner_pid": 2716, "exit_code": 0, "elapsed_seconds": 270.1724512, "new_successful_models": 5, "reused_successful_models": 1}
+  ],
+  "fit_accounting": {
+    "total_successful_models": 6,
+    "lightgbm_models": 3,
+    "catboost_models": 3,
+    "failed_catboost_fit_calls_before_iteration": 1,
+    "catboost_constructor_failures_without_fit": 1,
+    "fit_api_calls": 7,
+    "attempt3_new_fits": 5,
+    "reused_fold0_baseline_fit": 1,
+    "cumulative_attempt_wall_seconds": 294.5798271
+  },
+  "evaluation": {
+    "development_outer_rows": 5897,
+    "independent_validation": false,
+    "holdout_individual_rows_read": 0,
+    "raw_data_read": false,
+    "outer_predictions_after_fold_local_alpha_freeze": true,
+    "fold_local_alpha": {"0": 1.0, "1": 0.0, "2": 0.5},
+    "round003_handoff": false
+  }
+}

@@ -1,0 +1,35 @@
+Looking in links: d:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_004\environment\wheels
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\torch-2.6.0+cpu-cp312-cp312-win_amd64.whl
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\tabicl-2.2.0-py3-none-any.whl
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\numpy-2.3.5-cp312-cp312-win_amd64.whl
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\scikit_learn-1.7.2-cp312-cp312-win_amd64.whl
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\filelock-4.2.8-py3-none-any.whl (from torch==2.6.0+cpu)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\typing_extensions-4.16.0-py3-none-any.whl (from torch==2.6.0+cpu)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\networkx-3.7-py3-none-any.whl (from torch==2.6.0+cpu)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\jinja2-3.1.6-py3-none-any.whl (from torch==2.6.0+cpu)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\fsspec-2026.9.0-py3-none-any.whl (from torch==2.6.0+cpu)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\setuptools-84.2.1-py3-none-any.whl (from torch==2.6.0+cpu)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\sympy-1.13.1-py3-none-any.whl (from torch==2.6.0+cpu)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\einops-0.8.2-py3-none-any.whl (from tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\huggingface_hub-2.4.0-py3-none-any.whl (from tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\psutil-7.2.2-cp37-abi3-win_amd64.whl (from tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\scipy-1.18.1-cp312-cp312-win_amd64.whl (from tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\tqdm-4.70.1-py3-none-any.whl (from tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\joblib-1.6.0-py3-none-any.whl (from scikit-learn==1.7.2)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\threadpoolctl-3.7.0-py3-none-any.whl (from scikit-learn==1.7.2)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\mpmath-1.3.0-py3-none-any.whl (from sympy==1.13.1->torch==2.6.0+cpu)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\cloudpickle-3.1.2-py3-none-any.whl (from joblib>=1.2.0->scikit-learn==1.7.2)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\colorama-0.4.6-py2.py3-none-any.whl (from tqdm>=4.64.0->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\click-8.5.0-py3-none-any.whl (from huggingface-hub->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\hf_xet-1.8.0-cp38-abi3-win_amd64.whl (from huggingface-hub->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\httpx2-2.16.0-py3-none-any.whl (from huggingface-hub->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\packaging-26.3-py3-none-any.whl (from huggingface-hub->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\pyyaml-6.0.3-cp312-cp312-win_amd64.whl (from huggingface-hub->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\markupsafe-3.0.4-cp312-cp312-win_amd64.whl (from jinja2->torch==2.6.0+cpu)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\anyio-4.16.0-py3-none-any.whl (from httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\httpcore2-2.16.0-py3-none-any.whl (from httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\idna-3.20-py3-none-any.whl (from httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\truststore-0.10.5-py3-none-any.whl (from httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+Processing d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\h11-0.16.0-py3-none-any.whl (from httpcore2==2.16.0->httpx2<3,>=2.0.0->huggingface-hub->tabicl==2.2.0)
+Installing collected packages: mpmath, typing-extensions, truststore, threadpoolctl, sympy, setuptools, pyyaml, psutil, packaging, numpy, networkx, MarkupSafe, idna, hf-xet, h11, fsspec, filelock, einops, colorama, cloudpickle, click, tqdm, scipy, joblib, jinja2, httpcore2, anyio, torch, scikit-learn, httpx2, huggingface-hub, tabicl
+Successfully installed MarkupSafe-3.0.4 anyio-4.16.0 click-8.5.0 cloudpickle-3.1.2 colorama-0.4.6 einops-0.8.2 filelock-4.2.8 fsspec-2026.9.0 h11-0.16.0 hf-xet-1.8.0 httpcore2-2.16.0 httpx2-2.16.0 huggingface-hub-2.4.0 idna-3.20 jinja2-3.1.6 joblib-1.6.0 mpmath-1.3.0 networkx-3.7 numpy-2.3.5 packaging-26.3 psutil-7.2.2 pyyaml-6.0.3 scikit-learn-1.7.2 scipy-1.18.1 setuptools-84.2.1 sympy-1.13.1 tabicl-2.2.0 threadpoolctl-3.7.0 torch-2.6.0+cpu tqdm-4.70.1 truststore-0.10.5 typing-extensions-4.16.0

@@ -1,0 +1,237 @@
+{
+  "status": "completed",
+  "pid": 2716,
+  "parent_pid": 6152,
+  "command": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\run_round002_resume.py"
+  ],
+  "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002",
+  "started_at_utc": "2026-11-04T15:18:42+00:00",
+  "config_sha256": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+  "source_hashes_at_start": {
+    "baseline_config": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\configs\\exp01\\experiment.json",
+      "bytes": 3162,
+      "sha256": "ae901771cd7f9db2d14b20ad919d58cb68ca54ed71eb4ee432170b941e452791"
+    },
+    "baseline_eval_contract": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\eval_contract.py",
+      "bytes": 10903,
+      "sha256": "4213e3a18ff418551b92420b04da49b1af6d3064ae0f02eb430040fb165a4ad1"
+    },
+    "baseline_data_adapter": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\data_adapter.py",
+      "bytes": 26229,
+      "sha256": "761e7e84d9eb1568c8ab200ed8513cf9036799475d1eb456fa39079cd7c6a6b6"
+    },
+    "baseline_runner": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\experiments\\exp01\\run_exp01.py",
+      "bytes": 22894,
+      "sha256": "ad84ee500d58983a087a5004fef695df030920086a490d62ca9a93dac2800162"
+    },
+    "source_data_validation": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\data_validation.json",
+      "bytes": 20224,
+      "sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d"
+    },
+    "round001_manifest": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\FINAL_MANIFEST.json",
+      "bytes": 3492,
+      "sha256": "63d9c9c84f5109ac13d331cd1dec7a4bb87e6fc40dc5f2e562e2fcb86651126f"
+    },
+    "round001_replay_code": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\replay_ensemble.py",
+      "bytes": 9335,
+      "sha256": "cecb8983c3b6b896aa9ab0aa995443a53c16c12d2cce5b6bab96632f912241fd"
+    },
+    "round002_plan": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\ROUND_PLAN.md",
+      "bytes": 3230,
+      "sha256": "cdcf86e623b6502a6fc8a12e1cb1d99e24336c88fe2f11cd96e2b47856b9756e"
+    }
+  },
+  "start_available_ram_bytes": 3721138176,
+  "next_session_sha256_at_launch": "c8f0d8c90ed3c60fd2140b91482483cee2f9df5b9deae652af39928e1abf7577",
+  "runner_sha256": "b8113bea3887402fb5703c79b29136d5036df73b68a1ccaaf1503016cf28deed",
+  "runner_snapshot_sha256": "b8113bea3887402fb5703c79b29136d5036df73b68a1ccaaf1503016cf28deed",
+  "plan_snapshot_sha256": "cdcf86e623b6502a6fc8a12e1cb1d99e24336c88fe2f11cd96e2b47856b9756e",
+  "manager_reserve_deadline_utc": "2026-11-04T15:25:00+00:00",
+  "prior_attempt_elapsed_seconds": 24.407375899999998,
+  "max_production_fits": 6,
+  "threads_max": 3,
+  "compute_limit_seconds": 1800,
+  "exit_code": 0,
+  "fit_records": [
+    {
+      "time_utc": "2026-11-04T15:02:06+00:00",
+      "event": "fit_completed",
+      "model": "baseline_lightgbm",
+      "fold": 0,
+      "fit_num": 1,
+      "pid": 29184,
+      "free_ram_before_bytes": 3872817152,
+      "fit_seconds": 23.1284586999991,
+      "n_fit": 3144,
+      "best_iteration": 108,
+      "threads": 3,
+      "weights": "sqrt inverse frequency from FIT only, normalized mean 1",
+      "early_stop": "unweighted macro F1 on INNER_ES",
+      "model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_0_baseline_lightgbm.txt",
+      "model_sha256": "1ca092222b1fd344bd9d72e19706719dd46b4b0e1f7ffbbca1b1e11cdec5c012",
+      "reload_max_abs_inner_es": 0.0,
+      "reload_max_abs_inner_select": 0.0,
+      "reused_from_attempt": 1,
+      "fit_counted_toward_six": true
+    },
+    {
+      "model": "candidate_catboost",
+      "fold": 0,
+      "fit_num": 2,
+      "pid": 2716,
+      "free_ram_before_bytes": 3657486336,
+      "fit_seconds": 122.12388640000063,
+      "n_fit": 3144,
+      "best_iteration_zero_based": 322,
+      "tree_count": 323,
+      "threads": 3,
+      "sample_weight": "none",
+      "eval_metric": "Accuracy",
+      "early_stop": "unweighted Accuracy on INNER_ES, wait 200",
+      "nan_mode": "Min",
+      "model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_0_candidate_catboost.cbm",
+      "model_sha256": "6d42f241ad3bb65ba7298001d9e10c0fce30af53abc26e1d6301077514d7467b",
+      "train_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_0",
+      "reload_max_abs_inner_es": 0.0,
+      "reload_max_abs_inner_select": 0.0
+    },
+    {
+      "model": "baseline_lightgbm",
+      "fold": 1,
+      "fit_num": 3,
+      "pid": 2716,
+      "free_ram_before_bytes": 3652173824,
+      "fit_seconds": 23.27078149999943,
+      "n_fit": 3144,
+      "best_iteration": 154,
+      "threads": 3,
+      "weights": "sqrt inverse frequency from FIT only, normalized mean 1",
+      "early_stop": "unweighted macro F1 on INNER_ES",
+      "model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_1_baseline_lightgbm.txt",
+      "model_sha256": "81d7d379225def12fc0e58b383f399846ecca74a1bba845ac64f5e93cb93a830",
+      "reload_max_abs_inner_es": 0.0,
+      "reload_max_abs_inner_select": 0.0
+    },
+    {
+      "model": "candidate_catboost",
+      "fold": 1,
+      "fit_num": 4,
+      "pid": 2716,
+      "free_ram_before_bytes": 3649245184,
+      "fit_seconds": 54.45431879999887,
+      "n_fit": 3144,
+      "best_iteration_zero_based": 114,
+      "tree_count": 115,
+      "threads": 3,
+      "sample_weight": "none",
+      "eval_metric": "Accuracy",
+      "early_stop": "unweighted Accuracy on INNER_ES, wait 200",
+      "nan_mode": "Min",
+      "model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_1_candidate_catboost.cbm",
+      "model_sha256": "e48049a7ee2391c569891a0288d11e1e726bc6b8ce007b55903c87f34c51d9d9",
+      "train_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_1",
+      "reload_max_abs_inner_es": 0.0,
+      "reload_max_abs_inner_select": 0.0
+    },
+    {
+      "model": "baseline_lightgbm",
+      "fold": 2,
+      "fit_num": 5,
+      "pid": 2716,
+      "free_ram_before_bytes": 3431636992,
+      "fit_seconds": 25.399099499998556,
+      "n_fit": 3145,
+      "best_iteration": 199,
+      "threads": 3,
+      "weights": "sqrt inverse frequency from FIT only, normalized mean 1",
+      "early_stop": "unweighted macro F1 on INNER_ES",
+      "model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_2_baseline_lightgbm.txt",
+      "model_sha256": "6fc182bb7be97945ea39a2e54c06a6b1360b6c34719ff84d0f128726727cc142",
+      "reload_max_abs_inner_es": 0.0,
+      "reload_max_abs_inner_select": 0.0
+    },
+    {
+      "model": "candidate_catboost",
+      "fold": 2,
+      "fit_num": 6,
+      "pid": 2716,
+      "free_ram_before_bytes": 3392909312,
+      "fit_seconds": 41.95221759999913,
+      "n_fit": 3145,
+      "best_iteration_zero_based": 38,
+      "tree_count": 39,
+      "threads": 3,
+      "sample_weight": "none",
+      "eval_metric": "Accuracy",
+      "early_stop": "unweighted Accuracy on INNER_ES, wait 200",
+      "nan_mode": "Min",
+      "model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_2_candidate_catboost.cbm",
+      "model_sha256": "c0b54373222603aa64fcd0a7de9ca879ccda5d3f715bcd83179cd6873fa3f152",
+      "train_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_2",
+      "reload_max_abs_inner_es": 0.0,
+      "reload_max_abs_inner_select": 0.0
+    }
+  ],
+  "input_hashes_before": {
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633"
+  },
+  "source_hashes_before": {
+    "baseline_config": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\configs\\exp01\\experiment.json",
+      "bytes": 3162,
+      "sha256": "ae901771cd7f9db2d14b20ad919d58cb68ca54ed71eb4ee432170b941e452791"
+    },
+    "baseline_eval_contract": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\eval_contract.py",
+      "bytes": 10903,
+      "sha256": "4213e3a18ff418551b92420b04da49b1af6d3064ae0f02eb430040fb165a4ad1"
+    },
+    "baseline_data_adapter": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\data_adapter.py",
+      "bytes": 26229,
+      "sha256": "761e7e84d9eb1568c8ab200ed8513cf9036799475d1eb456fa39079cd7c6a6b6"
+    },
+    "baseline_runner": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\experiments\\exp01\\run_exp01.py",
+      "bytes": 22894,
+      "sha256": "ad84ee500d58983a087a5004fef695df030920086a490d62ca9a93dac2800162"
+    },
+    "source_data_validation": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\data_validation.json",
+      "bytes": 20224,
+      "sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d"
+    },
+    "round001_manifest": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\FINAL_MANIFEST.json",
+      "bytes": 3492,
+      "sha256": "63d9c9c84f5109ac13d331cd1dec7a4bb87e6fc40dc5f2e562e2fcb86651126f"
+    },
+    "round001_replay_code": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\replay_ensemble.py",
+      "bytes": 9335,
+      "sha256": "cecb8983c3b6b896aa9ab0aa995443a53c16c12d2cce5b6bab96632f912241fd"
+    },
+    "round002_plan": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\ROUND_PLAN.md",
+      "bytes": 3230,
+      "sha256": "cdcf86e623b6502a6fc8a12e1cb1d99e24336c88fe2f11cd96e2b47856b9756e"
+    }
+  },
+  "split_manifest_sha256": "9e4e791199f7a29604adfe10ca3df74a4761faa94891945f9604f6b96b15dce5",
+  "finished_at_utc": "2026-11-04T15:23:12+00:00",
+  "elapsed_seconds": 270.1793392000018,
+  "result_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\result.json",
+  "result_sha256": "38bfdc81016d2b136e3c3509c089823b32d0b79860edfe8848b9876f13960295"
+}

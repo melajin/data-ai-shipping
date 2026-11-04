@@ -1,0 +1,200 @@
+{
+  "status": "PASS",
+  "performed_at_utc": "2026-11-04T16:34:29.128316+00:00",
+  "execution_mode": "preflight_only_no_outer_metrics",
+  "scope": "whitelisted saved development probability files, label/role metadata, source-code copies and package manifests",
+  "counts": {
+    "development_vessels": 5897,
+    "oof_per_seed": {
+      "42": 5897,
+      "2026": 5897
+    },
+    "oof_fold_counts": {
+      "42": {
+        "1": 1966,
+        "2": 1965,
+        "0": 1966
+      },
+      "2026": {
+        "1": 1966,
+        "2": 1965,
+        "0": 1966
+      }
+    },
+    "oof_probability_checks": {
+      "42": {
+        "finite_and_in_range": true,
+        "max_abs_sum_to_one": 1.1102230246251565e-16,
+        "sum_tolerance": 1e-12
+      },
+      "2026": {
+        "finite_and_in_range": true,
+        "max_abs_sum_to_one": 1.1102230246251565e-16,
+        "sum_tolerance": 1e-12
+      }
+    },
+    "inner_per_seed_fold": {
+      "42/0": 787,
+      "42/1": 787,
+      "42/2": 787,
+      "2026/0": 787,
+      "2026/1": 787,
+      "2026/2": 787
+    },
+    "roster_rows": 17691,
+    "roster_role_counts_by_fold": {
+      "0": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "1": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "2": {
+        "FIT": 3145,
+        "INNER": 787,
+        "OUTER": 1965
+      }
+    }
+  },
+  "checks": {
+    "classes_match_frozen_order": true,
+    "oof_unique_ids_and_roles_match_roster": true,
+    "seed_id_label_fold_observed_day_alignment": true,
+    "inner_ids_labels_observed_days_match_role_and_development_roster": true,
+    "inner_prediction_file_hashes_match_fixed_rule_and_role_membership": true,
+    "historical_inner_id_hash_list_order": "unverified; CSV-order digest recorded without treating difference as an ID mismatch",
+    "TabICL_fit_only_zero_shot_generation_lineage": "confirmed_for_saved TabICLv2 generation based on archived source and six fold training records",
+    "old_factor_table_matches_frozen_2_3_2": true
+  },
+  "historical_inner_hashes": {
+    "42/0": {
+      "inner_predictions_sha256": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+      "fixed_rule_inner_predictions_sha256": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+      "inner_predictions_hash_matches_fixed_rule": true,
+      "historical_serializer_csv_row_order_digest": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+      "fixed_rule_inner_ids_sha256": "cb82568ec4fcedf20a5706d15db6a76f84f84a23b9273aa4b18948c3014ed0c3",
+      "historical_id_hash_matches_csv_row_order": false,
+      "id_hash_status": "unverified_original_list_order_unavailable; CSV-order digest is diagnostic only"
+    },
+    "42/1": {
+      "inner_predictions_sha256": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+      "fixed_rule_inner_predictions_sha256": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+      "inner_predictions_hash_matches_fixed_rule": true,
+      "historical_serializer_csv_row_order_digest": "6d76c015715ad40248bf435470f58efb2ec6bd4e30377906a62a9619af2694d2",
+      "fixed_rule_inner_ids_sha256": "c18b275a64434d25a3c111cadc2dc15483dc1a2e6980c500466cbce566bb89c2",
+      "historical_id_hash_matches_csv_row_order": false,
+      "id_hash_status": "unverified_original_list_order_unavailable; CSV-order digest is diagnostic only"
+    },
+    "42/2": {
+      "inner_predictions_sha256": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+      "fixed_rule_inner_predictions_sha256": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+      "inner_predictions_hash_matches_fixed_rule": true,
+      "historical_serializer_csv_row_order_digest": "ae95018ccbb1d59606efdb39047da3b952c4704b4b40bde68bc9e29cdcd3bf02",
+      "fixed_rule_inner_ids_sha256": "524c88b188f67a50844d33c01c27f06a055f262f06492ceb3c02585155c33e59",
+      "historical_id_hash_matches_csv_row_order": false,
+      "id_hash_status": "unverified_original_list_order_unavailable; CSV-order digest is diagnostic only"
+    },
+    "2026/0": {
+      "inner_predictions_sha256": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+      "fixed_rule_inner_predictions_sha256": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+      "inner_predictions_hash_matches_fixed_rule": true,
+      "historical_serializer_csv_row_order_digest": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+      "fixed_rule_inner_ids_sha256": "cb82568ec4fcedf20a5706d15db6a76f84f84a23b9273aa4b18948c3014ed0c3",
+      "historical_id_hash_matches_csv_row_order": false,
+      "id_hash_status": "unverified_original_list_order_unavailable; CSV-order digest is diagnostic only"
+    },
+    "2026/1": {
+      "inner_predictions_sha256": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+      "fixed_rule_inner_predictions_sha256": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+      "inner_predictions_hash_matches_fixed_rule": true,
+      "historical_serializer_csv_row_order_digest": "6d76c015715ad40248bf435470f58efb2ec6bd4e30377906a62a9619af2694d2",
+      "fixed_rule_inner_ids_sha256": "c18b275a64434d25a3c111cadc2dc15483dc1a2e6980c500466cbce566bb89c2",
+      "historical_id_hash_matches_csv_row_order": false,
+      "id_hash_status": "unverified_original_list_order_unavailable; CSV-order digest is diagnostic only"
+    },
+    "2026/2": {
+      "inner_predictions_sha256": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+      "fixed_rule_inner_predictions_sha256": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+      "inner_predictions_hash_matches_fixed_rule": true,
+      "historical_serializer_csv_row_order_digest": "ae95018ccbb1d59606efdb39047da3b952c4704b4b40bde68bc9e29cdcd3bf02",
+      "fixed_rule_inner_ids_sha256": "524c88b188f67a50844d33c01c27f06a055f262f06492ceb3c02585155c33e59",
+      "historical_id_hash_matches_csv_row_order": false,
+      "id_hash_status": "unverified_original_list_order_unavailable; CSV-order digest is diagnostic only"
+    }
+  },
+  "model_lineage": {
+    "status": "confirmed_for_saved TabICLv2 generation based on archived source and six fold training records",
+    "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\code\\historical\\TabM\\TabM_개선_20261030\\comparison_models.py",
+    "source_sha256": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+    "fit_estimator_tabicl_branch": "model.fit(fit_x, fit_y); INNER arguments are not passed to TabICL fit",
+    "training_metadata": [
+      {
+        "seed": 42,
+        "fold": 0,
+        "fit_vessels": 3144,
+        "inner_vessels": 787,
+        "trained_parameters": 0,
+        "selection_metric": null,
+        "inner_used_for_training_or_early_stopping": false
+      },
+      {
+        "seed": 42,
+        "fold": 1,
+        "fit_vessels": 3144,
+        "inner_vessels": 787,
+        "trained_parameters": 0,
+        "selection_metric": null,
+        "inner_used_for_training_or_early_stopping": false
+      },
+      {
+        "seed": 42,
+        "fold": 2,
+        "fit_vessels": 3145,
+        "inner_vessels": 787,
+        "trained_parameters": 0,
+        "selection_metric": null,
+        "inner_used_for_training_or_early_stopping": false
+      },
+      {
+        "seed": 2026,
+        "fold": 0,
+        "fit_vessels": 3144,
+        "inner_vessels": 787,
+        "trained_parameters": 0,
+        "selection_metric": null,
+        "inner_used_for_training_or_early_stopping": false
+      },
+      {
+        "seed": 2026,
+        "fold": 1,
+        "fit_vessels": 3144,
+        "inner_vessels": 787,
+        "trained_parameters": 0,
+        "selection_metric": null,
+        "inner_used_for_training_or_early_stopping": false
+      },
+      {
+        "seed": 2026,
+        "fold": 2,
+        "fit_vessels": 3145,
+        "inner_vessels": 787,
+        "trained_parameters": 0,
+        "selection_metric": null,
+        "inner_used_for_training_or_early_stopping": false
+      }
+    ],
+    "limitation": "This confirms the archived saved run's documented code/metadata lineage; no model re-fit or query replay is performed in R0."
+  },
+  "feature_input_ambiguity": {
+    "status": "unresolved for M4",
+    "readme_and_run_settings": "describe F156 and state no missing-flag columns",
+    "copied_generation_code": "FitMedianImputer.transform appends one missing-indicator column per input column, which would double the width if applied to all 156 columns",
+    "scope_limit": "R0 does not load feature rows or model tensors and cannot establish which exact transformed width was used by every saved query"
+  },
+  "no_oof_metrics_computed": true,
+  "no_raw_or_holdout_or_7372_rows_opened": true
+}

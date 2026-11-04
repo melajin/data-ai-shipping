@@ -1,0 +1,1 @@
+{"status": "PASS", "fit": 3144, "inner": 787, "protected_rows_read": 0, "report": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\review\\independent_context_check.json"}

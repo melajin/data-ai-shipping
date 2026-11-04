@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "verification_type": "real_data_candidate_linkage_audit",
+  "baseline_reproduced": true,
+  "baseline_checks": {
+    "event_count": {
+      "expected": 167,
+      "actual": 167,
+      "matches": true
+    },
+    "candidate_event_count": {
+      "expected": 118,
+      "actual": 118,
+      "matches": true
+    },
+    "single_candidate_event_count": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "raw_track_rows": {
+      "expected": 3887069,
+      "actual": 3887069,
+      "matches": true
+    },
+    "valid_track_rows": {
+      "expected": 3887065,
+      "actual": 3887065,
+      "matches": true
+    }
+  },
+  "track_validation": {
+    "raw_rows": 3887069,
+    "key_valid_rows": 3887068,
+    "key_and_wkt_valid_rows": 3887065,
+    "invalid_id_or_date_numeric_rows": 0,
+    "invalid_calendar_date_rows": 0,
+    "invalid_hour_rows": 0,
+    "invalid_source_row_index_rows": 0,
+    "invalid_centroid_rows": 0,
+    "usable_rows": 3887065
+  },
+  "baseline": {
+    "hour_bucket_radius": 1,
+    "spatial_radius_m": 5000,
+    "is_baseline_condition": true,
+    "all_event_count": 167,
+    "valid_metadata_event_count": 167,
+    "invalid_metadata_event_count": 0,
+    "no_candidate_event_count": 49,
+    "candidate_event_count": 118,
+    "single_candidate_event_count": 30,
+    "multiple_candidate_event_count": 88,
+    "candidate_event_vessel_association_count": 505,
+    "mean_candidate_vessels_per_candidate_event": 4.279661016949152,
+    "nearby_event_row_association_count": 1087
+  },
+  "possible_duplicate_pair_count": 0,
+  "single_candidate_multi_vessel_incomplete_event_count": 3,
+  "metadata_invalid_event_count": 0,
+  "sensitivity": [
+    {
+      "hour_bucket_radius": 0,
+      "spatial_radius_m": 1000,
+      "is_baseline_condition": false,
+      "all_event_count": 167,
+      "valid_metadata_event_count": 167,
+      "invalid_metadata_event_count": 0,
+      "no_candidate_event_count": 126,
+      "candidate_event_count": 41,
+      "single_candidate_event_count": 25,
+      "multiple_candidate_event_count": 16,
+      "candidate_event_vessel_association_count": 63,
+      "mean_candidate_vessels_per_candidate_event": 1.5365853658536586,
+      "nearby_event_row_association_count": 63
+    },
+    {
+      "hour_bucket_radius": 0,
+      "spatial_radius_m": 3000,
+      "is_baseline_condition": false,
+      "all_event_count": 167,
+      "valid_metadata_event_count": 167,
+      "invalid_metadata_event_count": 0,
+      "no_candidate_event_count": 80,
+      "candidate_event_count": 87,
+      "single_candidate_event_count": 35,
+      "multiple_candidate_event_count": 52,
+      "candidate_event_vessel_association_count": 200,
+      "mean_candidate_vessels_per_candidate_event": 2.2988505747126435,
+      "nearby_event_row_association_count": 200
+    },
+    {
+      "hour_bucket_radius": 0,
+      "spatial_radius_m": 5000,
+      "is_baseline_condition": false,
+      "all_event_count": 167,
+      "valid_metadata_event_count": 167,
+      "invalid_metadata_event_count": 0,
+      "no_candidate_event_count": 62,
+      "candidate_event_count": 105,
+      "single_candidate_event_count": 32,
+      "multiple_candidate_event_count": 73,
+      "candidate_event_vessel_association_count": 360,
+      "mean_candidate_vessels_per_candidate_event": 3.4285714285714284,
+      "nearby_event_row_association_count": 360
+    },
+    {
+      "hour_bucket_radius": 1,
+      "spatial_radius_m": 1000,
+      "is_baseline_condition": false,
+      "all_event_count": 167,
+      "valid_metadata_event_count": 167,
+      "invalid_metadata_event_count": 0,
+      "no_candidate_event_count": 119,
+      "candidate_event_count": 48,
+      "single_candidate_event_count": 27,
+      "multiple_candidate_event_count": 21,
+      "candidate_event_vessel_association_count": 88,
+      "mean_candidate_vessels_per_candidate_event": 1.8333333333333333,
+      "nearby_event_row_association_count": 181
+    },
+    {
+      "hour_bucket_radius": 1,
+      "spatial_radius_m": 3000,
+      "is_baseline_condition": false,
+      "all_event_count": 167,
+      "valid_metadata_event_count": 167,
+      "invalid_metadata_event_count": 0,
+      "no_candidate_event_count": 68,
+      "candidate_event_count": 99,
+      "single_candidate_event_count": 36,
+      "multiple_candidate_event_count": 63,
+      "candidate_event_vessel_association_count": 277,
+      "mean_candidate_vessels_per_candidate_event": 2.797979797979798,
+      "nearby_event_row_association_count": 573
+    },
+    {
+      "hour_bucket_radius": 1,
+      "spatial_radius_m": 5000,
+      "is_baseline_condition": true,
+      "all_event_count": 167,
+      "valid_metadata_event_count": 167,
+      "invalid_metadata_event_count": 0,
+      "no_candidate_event_count": 49,
+      "candidate_event_count": 118,
+      "single_candidate_event_count": 30,
+      "multiple_candidate_event_count": 88,
+      "candidate_event_vessel_association_count": 505,
+      "mean_candidate_vessels_per_candidate_event": 4.279661016949152,
+      "nearby_event_row_association_count": 1087
+    },
+    {
+      "hour_bucket_radius": 2,
+      "spatial_radius_m": 1000,
+      "is_baseline_condition": false,
+      "all_event_count": 167,
+      "valid_metadata_event_count": 167,
+      "invalid_metadata_event_count": 0,
+      "no_candidate_event_count": 113,
+      "candidate_event_count": 54,
+      "single_candidate_event_count": 27,
+      "multiple_candidate_event_count": 27,
+      "candidate_event_vessel_association_count": 113,
+      "mean_candidate_vessels_per_candidate_event": 2.0925925925925926,
+      "nearby_event_row_association_count": 293
+    },
+    {
+      "hour_bucket_radius": 2,
+      "spatial_radius_m": 3000,
+      "is_baseline_condition": false,
+      "all_event_count": 167,
+      "valid_metadata_event_count": 167,
+      "invalid_metadata_event_count": 0,
+      "no_candidate_event_count": 64,
+      "candidate_event_count": 103,
+      "single_candidate_event_count": 34,
+      "multiple_candidate_event_count": 69,
+      "candidate_event_vessel_association_count": 339,
+      "mean_candidate_vessels_per_candidate_event": 3.29126213592233,
+      "nearby_event_row_association_count": 912
+    },
+    {
+      "hour_bucket_radius": 2,
+      "spatial_radius_m": 5000,
+      "is_baseline_condition": false,
+      "all_event_count": 167,
+      "valid_metadata_event_count": 167,
+      "invalid_metadata_event_count": 0,
+      "no_candidate_event_count": 45,
+      "candidate_event_count": 122,
+      "single_candidate_event_count": 27,
+      "multiple_candidate_event_count": 95,
+      "candidate_event_vessel_association_count": 622,
+      "mean_candidate_vessels_per_candidate_event": 5.098360655737705,
+      "nearby_event_row_association_count": 1786
+    }
+  ],
+  "interpretation": "Candidate association counts and linkage residuals; not accident detection accuracy or confirmed vessel identity"
+}

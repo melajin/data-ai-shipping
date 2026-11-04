@@ -1,0 +1,86 @@
+{
+  "started_at": "2026-11-05T02:39:59.601406+09:00",
+  "ended_at": "2026-11-05T02:40:00.146492+09:00",
+  "exit_code": 0,
+  "steps": [
+    {
+      "name": "synthetic_self_check",
+      "command": [
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\timing_interface.py",
+        "--self-check"
+      ],
+      "exit_code": 0,
+      "stdout_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\synthetic_self_check.stdout.log",
+      "stderr_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\synthetic_self_check.stderr.log"
+    },
+    {
+      "name": "inherited_baseline_table",
+      "command": [
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\build_inherited_comparison.py"
+      ],
+      "exit_code": 0,
+      "stdout_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\inherited_baseline_table.stdout.log",
+      "stderr_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\inherited_baseline_table.stderr.log"
+    }
+  ],
+  "environment_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\environment.json",
+  "input_code_hashes": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\timing_interface.py",
+      "exists": true,
+      "size_bytes": 8520,
+      "sha256": "75d68d8001996da152198f444edde1aeb8ff546d63f26f808eb45e5dea3d6548"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\build_inherited_comparison.py",
+      "exists": true,
+      "size_bytes": 2420,
+      "sha256": "943f55bd38f8fe94de5331e2b7b1a98f34be3251478f1d9f51f31ece34b34065"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_preparation.py",
+      "exists": true,
+      "size_bytes": 3667,
+      "sha256": "8c1d077b52802c71ca04cfb25c7506e5c4be55d66755dd62d08ad5ae14155feb"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+      "exists": true,
+      "size_bytes": 39306,
+      "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\results\\work_008\\scores_meta.json",
+      "exists": true,
+      "size_bytes": 730,
+      "sha256": "9537192fa3340e4f014b64c588fbe5794bbcb5456a8cad7dab5a30e3caabff03"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\results\\work_008\\scored_rows.pkl",
+      "exists": true,
+      "size_bytes": 8095123,
+      "sha256": "c4037c10b932703473d4b554de6e0743cba224d4993db47ebfa3c1b8a923b9cd"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\results\\submission_20261101\\testB_submission.csv",
+      "exists": true,
+      "size_bytes": 6313,
+      "sha256": "59231d5975f23fd82c3ae14a4c830e054a121fb6ad497b43d1386734db67d59e"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\integration\\runtime_receipts\\W2_start.json",
+      "exists": true,
+      "size_bytes": 453,
+      "sha256": "db1965314f59779196d8f1e9c3efaa8372f27e7448a7dd933149dc3349583d12"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\integration\\runtime_receipts\\W2_process.json",
+      "exists": true,
+      "size_bytes": 88,
+      "sha256": "663a04879a75558e679600253ba241fd0e0ddc148e7c546c6c6a52f0fafc32ea"
+    }
+  ],
+  "scope": "synthetic checks + read-only copy of inherited A fields; no actual 2026 score/B/C/threshold/performance work"
+}

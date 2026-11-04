@@ -1,0 +1,92 @@
+{
+  "schema": "round004_runtime_smoke_independent_review.v1",
+  "review_status": "PASS_WITH_LIMITATIONS",
+  "reviewed_at_utc": "2026-11-04T17:17:00Z",
+  "scope": "Read-only review of the authorized single synthetic smoke output and receipts. No smoke was launched by the reviewer.",
+  "resource_gate": {
+    "user_requested_ram_recheck_utc": "2026-11-04T17:06:32.3376974Z",
+    "user_recheck_free_ram_gib": 3.986011505126953,
+    "launch_gate_utc": "2026-11-04T17:06:49.874120+00:00",
+    "launch_gate_free_ram_gib": 4.045330047607422,
+    "minimum_gib": 3,
+    "user_steering": "램 확인하고 할수있는거 다해"
+  },
+  "execution": {
+    "status": "completed",
+    "started_utc": "2026-11-04T17:06:50.105818Z",
+    "finished_utc": "2026-11-04T17:07:03.145186Z",
+    "pid": 4060,
+    "exit_code": 0,
+    "timed_out": false,
+    "elapsed_seconds": 13.046999999998661,
+    "attempts": 1,
+    "code_sha256": "7dee24ee5cc215733450be17db34b10a5e9d9adacc5c7ba33021bac3ecf4a0b2",
+    "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+    "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0"
+  },
+  "synthetic_contract": {
+    "seed": 20261105,
+    "fit_rows": 16,
+    "query_rows": 4,
+    "features": 312,
+    "dtype": "float32",
+    "fit_label_counts": {"0": 4, "1": 4, "2": 4, "3": 4},
+    "n_estimators": 1,
+    "batch_size": 1,
+    "device_requested_and_resolved": "cpu",
+    "use_amp": false,
+    "use_fa3": false,
+    "allow_auto_download": false,
+    "fit_semantics": "Synthetic in-context binding and checkpoint loading; pretrained model weights are not trained.",
+    "no_training": true,
+    "no_project_data": true,
+    "no_F1_or_accuracy": true
+  },
+  "runtime_findings": {
+    "version": "TabICL 2.2.0; Torch 2.6.0+cpu; NumPy 2.3.5; scikit-learn 1.7.2",
+    "parameter_count": 27552258,
+    "historical_parameter_count_matches": true,
+    "registered_linear_layer_count": 128,
+    "named_output_head": "icl_predictor.decoder",
+    "actual_output_head_dimensions": [[512, 1024], [1024, 10]],
+    "historical_output_head_dimensions_match": true,
+    "estimator_device": "cpu",
+    "parameter_devices": ["cpu"],
+    "buffer_devices": ["cpu"],
+    "floating_parameter_dtypes": ["torch.float32"],
+    "buffer_dtypes": ["torch.int64"],
+    "predicted_labels": [2, 1, 2, 0],
+    "gradient_buffers_present": false,
+    "numpy_output_has_gradient": false
+  },
+  "probability_review": {
+    "artifact_path": "rounds/round_004/artifacts/smoke.json",
+    "artifact_sha256": "e26df55a2c9501fc6a46102d323ca18226c922bd98ceb9eba9146a0cb0643ae2",
+    "first_call_matrix_shape": [4, 4],
+    "dtype": "float32",
+    "finite": true,
+    "row_sums_reported_by_probe": [1.0, 1.0, 1.0, 1.0],
+    "row_sum_tolerance": 0.00001,
+    "independent_sum_of_serialized_float_values": [1.00000002980232, 1.00000001490116, 1.00000005960464, 1.00000001490116],
+    "repeat_max_absolute_delta": 0.0,
+    "class_inverse_mapping_valid": true,
+    "predicted_labels_equal_probability_argmax": true,
+    "full_first_and_repeat_matrices_retained_in_artifact": true
+  },
+  "timings_and_memory": {
+    "fit_and_checkpoint_load_wall_seconds": 0.3149286000007123,
+    "first_predict_proba_wall_seconds": 1.645212999999785,
+    "repeat_predict_proba_wall_seconds": 1.62496629999805,
+    "predict_labels_wall_seconds": 1.6096115000000282,
+    "peak_working_set_bytes": 761470976,
+    "final_private_bytes": 949067776,
+    "scope_limit": "Observed only on the 16+4 synthetic probe; do not extrapolate to 787, 3144, or 5897 rows."
+  },
+  "receipt_sha256": "02339471f695c294d93c762d93a420e6eb7ed7b3310a72af684c87564faac8f3",
+  "input_binding_sha256": "aabcd44b0329ba4345a7dce307e21671e49357958573d477cab435f1422fd7f6",
+  "limits": [
+    "This is a synthetic smoke only; it does not establish real-data behavior, accuracy, F1, or CPU/GPU equivalence.",
+    "The head and parameter count were observed in one loaded checkpoint, but no full dataset inference or cost estimate was run.",
+    "The earlier skipped RAM gate remains documented in the pre_user_recheck backup; the authorized later gate passed and the single smoke completed."
+  ]
+}

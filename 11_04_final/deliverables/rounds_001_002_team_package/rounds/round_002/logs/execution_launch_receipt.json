@@ -1,0 +1,21 @@
+﻿{
+    "status":  "failed_or_cutoff",
+    "started_at_utc":  "2026-11-04T15:01:40.9115481Z",
+    "python":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "script":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\run_round002.py",
+    "script_sha256":  "92434b512db78551e2218de4c266e5b2569320129b99ef1480efe05fda23b4d4",
+    "config":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\configs\\experiment.json",
+    "config_sha256":  "f7240e3eb5adb8bc130979b7aa891762ef840993b7e6ccf39aae8e52c85cb214",
+    "working_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002",
+    "stdout":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stdout.log",
+    "stderr":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stderr.log",
+    "manager_compute_cutoff_utc":  "2026-11-04T15:10:00Z",
+    "review_verdict":  "PASS",
+    "reviewer":  "/root/round002_review",
+    "reviewed_runner_sha256":  "92434b512db78551e2218de4c266e5b2569320129b99ef1480efe05fda23b4d4",
+    "frozen_source_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\worker_freeze",
+    "pid":  26352,
+    "finished_at_utc":  "2026-11-04T15:02:07.0616488Z",
+    "exit_code":  null,
+    "elapsed_seconds":  26.232341599999998
+}

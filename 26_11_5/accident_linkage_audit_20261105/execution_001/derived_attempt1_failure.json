@@ -1,0 +1,11 @@
+{
+  "stage": "build_review_queue.py: single-event derived table merge",
+  "actual_exit_code": 1,
+  "exception_type": "pandas.errors.MergeError",
+  "message": "Merge keys are not unique in right dataset; not a one-to-one merge",
+  "cause": "Right relation included multi-candidate events although left table contained only single-candidate events. pandas validates the entire right merge input.",
+  "correction": "Filter right relation to single-event IDs before one_to_one validation; preserve validation.",
+  "producer_outputs_modified": false,
+  "derived_output_written_before_failure": false,
+  "failed_script_snapshot": "build_review_queue_attempt1.py"
+}

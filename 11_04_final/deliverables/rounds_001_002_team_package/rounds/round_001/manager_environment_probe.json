@@ -1,0 +1,19 @@
+{
+  "purpose": "next-round dependency feasibility, no model import/training",
+  "scope": "active python command only; not a complete inventory of all existing environments",
+  "method": "importlib.util.find_spec and importlib.metadata.version",
+  "python_site_packages": "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/Lib/site-packages",
+  "packages": {
+    "numpy": {"available": true, "version": "2.2.5"},
+    "pandas": {"available": true, "version": "2.2.3"},
+    "scipy": {"available": true, "version": "1.15.3"},
+    "scikit-learn": {"available": true, "version": "1.6.1"},
+    "lightgbm": {"available": true, "version": "4.7.0"},
+    "catboost": {"available": false, "version": null},
+    "xgboost": {"available": false, "version": null},
+    "torch": {"available": false, "version": null},
+    "tabicl": {"available": false, "version": null}
+  },
+  "no_environment_mutation": true,
+  "no_raw_or_holdout_data_read": true
+}

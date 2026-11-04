@@ -1,0 +1,16 @@
+﻿[
+    {
+        "source":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T02-23-21-01a1a796-3506-7252-806d-d5d588a54668.jsonl",
+        "timestamp":  "2026-11-04T17:23:22.887Z",
+        "model":  "gpt-6-luna",
+        "effort":  "xhigh",
+        "turn_id":  "01a1a796-35b5-7891-9c5d-0c7fd543297d"
+    },
+    {
+        "source":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T02-23-36-01a1a796-6fc3-7b83-8db9-fe262694f855.jsonl",
+        "timestamp":  "2026-11-04T17:23:37.712Z",
+        "model":  "gpt-6-luna",
+        "effort":  "xhigh",
+        "turn_id":  "01a1a796-702b-77e2-adbc-24bd3d5924a4"
+    }
+]

@@ -1,0 +1,20 @@
+﻿[
+    {
+        "source_file":  "C:/Users/dlehs/.codex/sessions/2026/11/04/rollout-2026-11-04T23-30-47-01a1a6f8-384e-7f91-a392-3ef51b543a6a.jsonl",
+        "timestamp":  "2026-11-04T14:30:50.867Z",
+        "model":  "gpt-6-astra",
+        "effort":  "high"
+    },
+    {
+        "source_file":  "C:/Users/dlehs/.codex/sessions/2026/11/04/rollout-2026-11-04T23-31-53-01a1a6f9-39e6-7051-b917-1d7ec36510ba.jsonl",
+        "timestamp":  "2026-11-04T14:31:55.259Z",
+        "model":  "gpt-6-luna",
+        "effort":  "xhigh"
+    },
+    {
+        "source_file":  "C:/Users/dlehs/.codex/sessions/2026/11/04/rollout-2026-11-04T23-32-18-01a1a6f9-9c0f-7f21-bd03-9829a372c7e0.jsonl",
+        "timestamp":  "2026-11-04T14:32:19.905Z",
+        "model":  "gpt-6-luna",
+        "effort":  "xhigh"
+    }
+]

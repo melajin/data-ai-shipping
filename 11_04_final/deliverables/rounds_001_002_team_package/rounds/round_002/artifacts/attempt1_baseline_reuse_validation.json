@@ -1,0 +1,18 @@
+{
+  "source_attempt": 1,
+  "model": "baseline_lightgbm",
+  "fold": 0,
+  "config_sha256": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+  "attempt1_config_sha256": "f7240e3eb5adb8bc130979b7aa891762ef840993b7e6ccf39aae8e52c85cb214",
+  "config_change_scope": "candidate.eval_metric syntax only; same unweighted Accuracy target",
+  "input_sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+  "model_sha256": "1ca092222b1fd344bd9d72e19706719dd46b4b0e1f7ffbbca1b1e11cdec5c012",
+  "inner_es_ids_sha256": "59781a28d327dfc1426125e4d24e6f12a30b3ffe8aabe5192de6e0ee6ae51b1d",
+  "inner_select_ids_sha256": "4a47dfb71f13be5e6858570ab75cc55793cc33e49558efe68f55b192732ecfcb",
+  "inner_es_label_sha256": "58465bacfb86a671bb296b54bfbab54c365813efd4921ccf5fc882a6b3317585",
+  "inner_select_label_sha256": "e8c09b83564c133108e982ffd1157c1ce13f50b470cd1e7edb63120528612d69",
+  "reloaded_saved_probabilities_max_abs_delta": "<=1e-12",
+  "prior_attempt_elapsed_seconds": 24.407375899999998,
+  "attempt1_exit_code": 1,
+  "attempt1_exit_code_status": "unavailable"
+}

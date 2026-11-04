@@ -1,0 +1,355 @@
+{
+  "review_status": "PASS",
+  "scope": "independent verification of saved development probability decisions and output artifacts only",
+  "holdout_individual_rows_read": 0,
+  "full7372_f156_rows_or_labels_read": 0,
+  "test2025_rows_read": 0,
+  "raw_rows_read": 0,
+  "feature_rows_read": 0,
+  "model_fit_or_inference": false,
+  "runner_sha256": "9f333f7f4be7ed81ef8296f36b4474f8a6730f99f306c8e4f586c9d031bea6a2",
+  "config_sha256": "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6",
+  "precheck_sha256": "3674a9ab1789f1b9b95f33d2abfba44763fb79e5a37c62858d81d79196ae34e2",
+  "comparisons": {
+    "frozen_policy_digest": {
+      "status": "PASS",
+      "saved": "ee938b6ad2887e883ad5fd7a5b90982d3156d6e70460584b17708a03837c337a",
+      "independent": "ee938b6ad2887e883ad5fd7a5b90982d3156d6e70460584b17708a03837c337a"
+    },
+    "selection": {
+      "42/0": {
+        "independent_factor": 1.0,
+        "saved_factor": 1.0,
+        "match": true,
+        "fallback": null
+      },
+      "42/1": {
+        "independent_factor": 1.5,
+        "saved_factor": 1.5,
+        "match": true,
+        "fallback": null
+      },
+      "42/2": {
+        "independent_factor": 1.0,
+        "saved_factor": 1.0,
+        "match": true,
+        "fallback": null
+      },
+      "2026/0": {
+        "independent_factor": 1.0,
+        "saved_factor": 1.0,
+        "match": true,
+        "fallback": null
+      },
+      "2026/1": {
+        "independent_factor": 1.0,
+        "saved_factor": 1.0,
+        "match": true,
+        "fallback": null
+      },
+      "2026/2": {
+        "independent_factor": 1.0,
+        "saved_factor": 1.0,
+        "match": true,
+        "fallback": null
+      }
+    },
+    "saved_predictions": {
+      "rows": 11794,
+      "unique_seed_vessel_pairs": 11794,
+      "mismatch_count_by_seed": {
+        "42": 0,
+        "2026": 0
+      },
+      "status": "PASS",
+      "artifact_sha256": "34c84db1518748f5fac181df424a9c2cdb24e1bcb9ea2e734eca65613de42573"
+    },
+    "metrics_all_scopes": {
+      "checked_metric_fields": [
+        "micro_f1",
+        "macro_f1",
+        "weighted_f1",
+        "class_precision",
+        "class_recall",
+        "class_f1",
+        "class_support",
+        "confusion_matrix"
+      ],
+      "total_fields": 960,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "paired_transition_counts": {
+      "status": "PASS",
+      "comparisons": {
+        "A_old_to_A_raw": {
+          "42": {
+            "gain": 289,
+            "loss": 189,
+            "net": 100,
+            "saved_gain": 289,
+            "saved_loss": 189,
+            "prediction_transition_matrix_match": true,
+            "match": true
+          },
+          "2026": {
+            "gain": 301,
+            "loss": 187,
+            "net": 114,
+            "saved_gain": 301,
+            "saved_loss": 187,
+            "prediction_transition_matrix_match": true,
+            "match": true
+          }
+        },
+        "A_old_to_A_micro_select": {
+          "42": {
+            "gain": 261,
+            "loss": 157,
+            "net": 104,
+            "saved_gain": 261,
+            "saved_loss": 157,
+            "prediction_transition_matrix_match": true,
+            "match": true
+          },
+          "2026": {
+            "gain": 301,
+            "loss": 187,
+            "net": 114,
+            "saved_gain": 301,
+            "saved_loss": 187,
+            "prediction_transition_matrix_match": true,
+            "match": true
+          }
+        },
+        "A_raw_to_A_micro_select": {
+          "42": {
+            "gain": 32,
+            "loss": 28,
+            "net": 4,
+            "saved_gain": 32,
+            "saved_loss": 28,
+            "prediction_transition_matrix_match": true,
+            "match": true
+          },
+          "2026": {
+            "gain": 0,
+            "loss": 0,
+            "net": 0,
+            "saved_gain": 0,
+            "saved_loss": 0,
+            "prediction_transition_matrix_match": true,
+            "match": true
+          }
+        }
+      }
+    },
+    "paired_bootstrap": {
+      "status": "PASS",
+      "artifact_sha256": "247fbebf650ff2e66f4c646193c7dbbdffce72a0d9c829649c3b328f34c87bdb",
+      "pairs": {
+        "A_old_to_A_raw": {
+          "micro_f1": {
+            "raw_draw_shape": [
+              5000,
+              2
+            ],
+            "independent_ci": [
+              0.011192131592335118,
+              0.025012718331354933
+            ],
+            "saved_summary_ci": [
+              0.011192131592335118,
+              0.025012718331354933
+            ],
+            "ci_from_saved_draws": [
+              0.011192131592335118,
+              0.025012718331354933
+            ],
+            "independently_recomputed_draws_exact_match": true,
+            "independent_draw_max_absolute_difference": 0.0,
+            "match": true
+          },
+          "macro_f1": {
+            "raw_draw_shape": [
+              5000,
+              2
+            ],
+            "independent_ci": [
+              -0.0334538418851829,
+              -0.00977920508415905
+            ],
+            "saved_summary_ci": [
+              -0.03345384188518291,
+              -0.009779205084159056
+            ],
+            "ci_from_saved_draws": [
+              -0.03345384188518291,
+              -0.009779205084159056
+            ],
+            "independently_recomputed_draws_exact_match": true,
+            "independent_draw_max_absolute_difference": 0.0,
+            "match": true
+          }
+        },
+        "A_old_to_A_micro_select": {
+          "micro_f1": {
+            "raw_draw_shape": [
+              5000,
+              2
+            ],
+            "independent_ci": [
+              0.011868322876038645,
+              0.024843140579955958
+            ],
+            "saved_summary_ci": [
+              0.011868322876038645,
+              0.024843140579955958
+            ],
+            "ci_from_saved_draws": [
+              0.011868322876038645,
+              0.024843140579955958
+            ],
+            "independently_recomputed_draws_exact_match": true,
+            "independent_draw_max_absolute_difference": 0.0,
+            "match": true
+          },
+          "macro_f1": {
+            "raw_draw_shape": [
+              5000,
+              2
+            ],
+            "independent_ci": [
+              -0.02804580832909857,
+              -0.005349071765445549
+            ],
+            "saved_summary_ci": [
+              -0.02804580832909857,
+              -0.005349071765445549
+            ],
+            "ci_from_saved_draws": [
+              -0.02804580832909857,
+              -0.005349071765445549
+            ],
+            "independently_recomputed_draws_exact_match": true,
+            "independent_draw_max_absolute_difference": 0.0,
+            "match": true
+          }
+        },
+        "A_raw_to_A_micro_select": {
+          "micro_f1": {
+            "raw_draw_shape": [
+              5000,
+              2
+            ],
+            "independent_ci": [
+              -0.0009326776326945563,
+              0.001610988638290678
+            ],
+            "saved_summary_ci": [
+              -0.0009326776326945563,
+              0.001610988638290678
+            ],
+            "ci_from_saved_draws": [
+              -0.0009326776326945563,
+              0.001610988638290678
+            ],
+            "independently_recomputed_draws_exact_match": true,
+            "independent_draw_max_absolute_difference": 0.0,
+            "match": true
+          },
+          "macro_f1": {
+            "raw_draw_shape": [
+              5000,
+              2
+            ],
+            "independent_ci": [
+              0.0026074088867233656,
+              0.007562640292602716
+            ],
+            "saved_summary_ci": [
+              0.0026074088867233656,
+              0.007562640292602716
+            ],
+            "ci_from_saved_draws": [
+              0.0026074088867233656,
+              0.007562640292602716
+            ],
+            "independently_recomputed_draws_exact_match": true,
+            "independent_draw_max_absolute_difference": 0.0,
+            "match": true
+          }
+        }
+      }
+    },
+    "original_probability_quality": {
+      "status": "PASS",
+      "by_seed": {
+        "42": {
+          "match": true
+        },
+        "2026": {
+          "match": true
+        }
+      }
+    },
+    "selected_vs_raw_progress_gate": {
+      "independent": {
+        "mean_micro_delta_at_least_0_005": false,
+        "both_seed_micro_deltas_positive": false,
+        "paired_micro_ci_lower_above_zero": false,
+        "mean_macro_not_lower": true,
+        "each_seed_class_f1_drop_no_more_than_0_01": true,
+        "each_seed_natural_1_7_macro_drop_no_more_than_0_01": true,
+        "all_conditions": false
+      },
+      "saved": {
+        "criteria": {
+          "mean_micro_delta_at_least_0_005": false,
+          "both_seed_micro_deltas_positive": false,
+          "paired_5000_vessel_bootstrap_ci_lower_above_zero": false,
+          "mean_macro_f1_not_decreased": true,
+          "each_seed_class_f1_drop_no_more_than_0_01": true,
+          "each_seed_natural_1_7_macro_f1_drop_no_more_than_0_01": true
+        },
+        "all_criteria_met": false,
+        "micro_delta_by_seed": {
+          "42": 0.0006783110055960107,
+          "2026": 0.0
+        },
+        "macro_delta_mean": 0.005004813383927109,
+        "class_f1_delta_by_seed": {
+          "42": [
+            -0.00022242464704613774,
+            -0.00199833715283948,
+            0.03963459695529248,
+            0.002624671916010568
+          ],
+          "2026": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "natural_1_7_macro_delta_by_seed": {
+          "42": 0.0002550475946557218,
+          "2026": 0.0
+        },
+        "paired_ci95_mean_micro_delta_vs_raw": [
+          -0.0009326776326945563,
+          0.001610988638290678
+        ],
+        "interpretation": "development confirmation candidate gate only; not independent or official performance"
+      },
+      "match": true
+    }
+  },
+  "mismatches": [],
+  "limitations": [
+    "Evaluation is the previously exposed development OUTER population, not independent validation.",
+    "Bootstrap intervals do not remove repeated-development selection bias or geographic dependence.",
+    "The archived generation lineage is verified from source and metadata; no model re-inference or checkpoint validation was performed.",
+    "F156 versus missing-flag/312-column input discrepancy remains unresolved for M4; no feature rows were read."
+  ]
+}

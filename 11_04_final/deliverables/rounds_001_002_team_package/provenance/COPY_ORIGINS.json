@@ -1,0 +1,1160 @@
+[
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\environment.json",
+    "package_path": "rounds/round_001/execution/environment.json",
+    "sha256": "88a5f406ecd8cdae973c8c370d5a2edb6cfce80a49da0b37b422c822f5280a4e",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\failed_attempts\\replay_ensemble_attempt1.py",
+    "package_path": "rounds/round_001/execution/failed_attempts/replay_ensemble_attempt1.py",
+    "sha256": "f536f811c925658cf5084d199e39ae28277fc40959e28e3503411ad880758366",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\launch_manifest.json",
+    "package_path": "rounds/round_001/execution/launch_manifest.json",
+    "sha256": "877f2193bc09e6e417f80d3f9558a2179d138fdd7fd12fff3ad8c447b782ddd3",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\replay_ensemble.py",
+    "package_path": "rounds/round_001/execution/replay_ensemble.py",
+    "sha256": "cecb8983c3b6b896aa9ab0aa995443a53c16c12d2cce5b6bab96632f912241fd",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\result.json",
+    "package_path": "rounds/round_001/execution/result.json",
+    "sha256": "140298cf11e53801f0f2fda4699a12827c8fe396a52351de3802cef849b3d008",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\run_t5_csv_roundtrip.py",
+    "package_path": "rounds/round_001/execution/run_t5_csv_roundtrip.py",
+    "sha256": "738cb598c80b1fc4443b6770a536efe25832f1b0c88e69fc0ec8f319140f778a",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\stderr.log",
+    "package_path": "rounds/round_001/execution/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\stdout.log",
+    "package_path": "rounds/round_001/execution/stdout.log",
+    "sha256": "033c22101850cf88cfb535ff52b8ade13f20108ac26399398a478e5006f948dc",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\supplemental_attempt2_launch_manifest.json",
+    "package_path": "rounds/round_001/execution/supplemental_attempt2_launch_manifest.json",
+    "sha256": "7ef7905b61783cf48ecef673ac9ac70597506b9d9a69e778e6951a935a5bb48b",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\supplemental_attempt2_stderr.log",
+    "package_path": "rounds/round_001/execution/supplemental_attempt2_stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\supplemental_attempt2_stdout.log",
+    "package_path": "rounds/round_001/execution/supplemental_attempt2_stdout.log",
+    "sha256": "4790c9d7e7dd289991325716358ca678840b9f0e5283eb6a8864d8bf15eddafc",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\supplemental_ensemble.json",
+    "package_path": "rounds/round_001/execution/supplemental_ensemble.json",
+    "sha256": "251fb8a00fd77cc9ee8af04773c9eae73ba61246d33e07f6cdd863200a93eee7",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\supplemental_launch_manifest.json",
+    "package_path": "rounds/round_001/execution/supplemental_launch_manifest.json",
+    "sha256": "3d3ce1ba8fd0863025f7c2e1c9b389bdada6c9f3ae2de6cc7a1f64dda1408b9d",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\supplemental_stderr.log",
+    "package_path": "rounds/round_001/execution/supplemental_stderr.log",
+    "sha256": "ef978fae4d1fb03b4f2d470d804a977f7133cd6308ebe689257860ed909d9bf4",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\supplemental_stdout.log",
+    "package_path": "rounds/round_001/execution/supplemental_stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\FINAL_MANIFEST.json",
+    "package_path": "rounds/round_001/FINAL_MANIFEST.json",
+    "sha256": "63d9c9c84f5109ac13d331cd1dec7a4bb87e6fc40dc5f2e562e2fcb86651126f",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\manager_environment_probe.json",
+    "package_path": "rounds/round_001/manager_environment_probe.json",
+    "sha256": "458307d1a809280267202468af086f3908dc1c676ab7f86e3ec9ec4ed572f7f8",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\MANAGER_RECORD.md",
+    "package_path": "rounds/round_001/MANAGER_RECORD.md",
+    "sha256": "da293b0d2565144ed2d442a06cc497f55f5ba2882f40b85b3c6b8a81c7989702",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\review\\preliminary_review.md",
+    "package_path": "rounds/round_001/review/preliminary_review.md",
+    "sha256": "b601ce4c93794cac65e6b2dc7303684bd1cc6b24c25d037b195298599538bcc9",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\review\\review.json",
+    "package_path": "rounds/round_001/review/review.json",
+    "sha256": "0417835a04dd28372d496edac906d474000be7c984db3cff674ce3bcc2ec7a62",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\review\\review.md",
+    "package_path": "rounds/round_001/review/review.md",
+    "sha256": "0417835a04dd28372d496edac906d474000be7c984db3cff674ce3bcc2ec7a62",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\REVIEW_RECEIPT.md",
+    "package_path": "rounds/round_001/REVIEW_RECEIPT.md",
+    "sha256": "b3ddacd40e931981be9839b2a8b3f605bc03200dcb0af0d62c60689919e8c065",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\ROUND_PLAN.md",
+    "package_path": "rounds/round_001/ROUND_PLAN.md",
+    "sha256": "44ae9c5534b8e3be1d213b4a1b1c10a7c39bcc0de2451bfc2140df0406c91ac7",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\ROUND_REPORT.md",
+    "package_path": "rounds/round_001/ROUND_REPORT.md",
+    "sha256": "658d3a6cc89083f210b9fab738aadb39f5748a80dd727be5dde78f5cdd092609",
+    "purpose": "round_001 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\alpha_selection_frozen.json",
+    "package_path": "rounds/round_002/artifacts/alpha_selection_frozen.json",
+    "sha256": "dd6e6b0d2947aded94ef424307b82e4deea9ccf3fd37d287144791884d798ea3",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\attempt1_baseline_reuse_validation.json",
+    "package_path": "rounds/round_002/artifacts/attempt1_baseline_reuse_validation.json",
+    "sha256": "d03532889f43b7de288f6cb0db1537ac9ea5942624b8ff7269cc09a12479de0a",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\fit_accounting.json",
+    "package_path": "rounds/round_002/artifacts/fit_accounting.json",
+    "sha256": "c378d99c1f6f9479e96a9e6035e32aebe62fe64b587bb8875ed599db92da48c0",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\inner_split_manifest.json",
+    "package_path": "rounds/round_002/artifacts/inner_split_manifest.json",
+    "sha256": "9e4e791199f7a29604adfe10ca3df74a4761faa94891945f9604f6b96b15dce5",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\inner_split_roster.csv",
+    "package_path": "rounds/round_002/artifacts/inner_split_roster.csv",
+    "sha256": "a73d9b65ae402befb7d5ba134bfc382f7edc71ab22a5c081d443c66f3b8525ec",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_0_baseline_lightgbm.txt",
+    "package_path": "rounds/round_002/artifacts/models/fold_0_baseline_lightgbm.txt",
+    "sha256": "1ca092222b1fd344bd9d72e19706719dd46b4b0e1f7ffbbca1b1e11cdec5c012",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_0_candidate_catboost.cbm",
+    "package_path": "rounds/round_002/artifacts/models/fold_0_candidate_catboost.cbm",
+    "sha256": "6d42f241ad3bb65ba7298001d9e10c0fce30af53abc26e1d6301077514d7467b",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_1_baseline_lightgbm.txt",
+    "package_path": "rounds/round_002/artifacts/models/fold_1_baseline_lightgbm.txt",
+    "sha256": "81d7d379225def12fc0e58b383f399846ecca74a1bba845ac64f5e93cb93a830",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_1_candidate_catboost.cbm",
+    "package_path": "rounds/round_002/artifacts/models/fold_1_candidate_catboost.cbm",
+    "sha256": "e48049a7ee2391c569891a0288d11e1e726bc6b8ce007b55903c87f34c51d9d9",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_2_baseline_lightgbm.txt",
+    "package_path": "rounds/round_002/artifacts/models/fold_2_baseline_lightgbm.txt",
+    "sha256": "6fc182bb7be97945ea39a2e54c06a6b1360b6c34719ff84d0f128726727cc142",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\models\\fold_2_candidate_catboost.cbm",
+    "package_path": "rounds/round_002/artifacts/models/fold_2_candidate_catboost.cbm",
+    "sha256": "c0b54373222603aa64fcd0a7de9ca879ccda5d3f715bcd83179cd6873fa3f152",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_baseline_lightgbm_inner_es.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_0_baseline_lightgbm_inner_es.npz",
+    "sha256": "a3b53cad3d9378376144ef88f384b3ecd046f920d4664983c4c69ccf5f74e769",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_baseline_lightgbm_inner_select.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_0_baseline_lightgbm_inner_select.npz",
+    "sha256": "14cd19c245dd5b070f06dbfcb3aeee4101976c5e4940e0411fc75622c00a42b3",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_baseline_lightgbm_outer.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_0_baseline_lightgbm_outer.npz",
+    "sha256": "61e9dc14ee377f0092eb254b24a4ea8f708228aa345f56e10a6aaa288e7648e9",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_blend_outer.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_0_blend_outer.npz",
+    "sha256": "2b8db26baf8377d8877e660cb799ef8f4ad354388185d3807ee8f16cba8257eb",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_candidate_catboost_inner_es.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_0_candidate_catboost_inner_es.npz",
+    "sha256": "450d2af8eddcf99866f30e383d2a478c63ccbf36da92a599da80a1fc46ca1668",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_candidate_catboost_inner_select.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_0_candidate_catboost_inner_select.npz",
+    "sha256": "760b48f84df29c5a3803dc41d01a1cd1ef3be5e20145fa057cee194b3db27b9f",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_candidate_catboost_outer.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_0_candidate_catboost_outer.npz",
+    "sha256": "1e52db4c74018c5fc9ac2ad7f70f85634fbf6b84268703a069e3c1604223b74f",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_baseline_lightgbm_inner_es.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_1_baseline_lightgbm_inner_es.npz",
+    "sha256": "3b36e17b70c6ae7500d2cd987d69ebde92d70f44d95367d3c0658050a364f063",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_baseline_lightgbm_inner_select.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_1_baseline_lightgbm_inner_select.npz",
+    "sha256": "ffe30afdb3c17333f25a29ef895429c759b5d48fc896266d22b5f578baec99f3",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_baseline_lightgbm_outer.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_1_baseline_lightgbm_outer.npz",
+    "sha256": "243fe81ce11a0190b5eb4a10664e757db064c398e0f909952b885ebdde3fcb8f",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_blend_outer.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_1_blend_outer.npz",
+    "sha256": "243fe81ce11a0190b5eb4a10664e757db064c398e0f909952b885ebdde3fcb8f",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_candidate_catboost_inner_es.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_1_candidate_catboost_inner_es.npz",
+    "sha256": "b1bc6e20e8836341b5048d406440bbc2eba92dd4256875dfd5ef87cc88e544d5",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_candidate_catboost_inner_select.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_1_candidate_catboost_inner_select.npz",
+    "sha256": "9b959a559a3cc20e983967f5df07d531876e6260bcb90eaff61a1d7f3828aa33",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_candidate_catboost_outer.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_1_candidate_catboost_outer.npz",
+    "sha256": "c8320e5c6c89af14d01cb404970fb5660a1498ddafa7cafd14f68bf730b6324b",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_baseline_lightgbm_inner_es.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_2_baseline_lightgbm_inner_es.npz",
+    "sha256": "44268a1bc97557d914b45427c1045b9297dc897916ce998b686898347cc72cd6",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_baseline_lightgbm_inner_select.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_2_baseline_lightgbm_inner_select.npz",
+    "sha256": "f35332ac13720ca360f7addff9097b5e7d8e2ba03c9ce30f3a8af0cba38f5a27",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_baseline_lightgbm_outer.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_2_baseline_lightgbm_outer.npz",
+    "sha256": "e918a12eb3370d80d7615b9aa58c8370abc221284d41c5b4e10e32948a8bd0e5",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_blend_outer.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_2_blend_outer.npz",
+    "sha256": "12b66bda20826021f93f4b1430122410eb949817b2bb725c124f893989bc05a3",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_candidate_catboost_inner_es.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_2_candidate_catboost_inner_es.npz",
+    "sha256": "03744935256cf6998097b2c2de31b4eb99bf7e5901a50d605dfc31ba2e8fc267",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_candidate_catboost_inner_select.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_2_candidate_catboost_inner_select.npz",
+    "sha256": "58ee58f7f227eb3ac54e8f79384552d9a4a12676be9d0b1c21222a2cb1158d91",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_candidate_catboost_outer.npz",
+    "package_path": "rounds/round_002/artifacts/probabilities/fold_2_candidate_catboost_outer.npz",
+    "sha256": "e85b50c2d3567cb78d3466d4601a5c7a130b25816815825b9053bb2d533e8ac0",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\result.json",
+    "package_path": "rounds/round_002/artifacts/result.json",
+    "sha256": "38bfdc81016d2b136e3c3509c089823b32d0b79860edfe8848b9876f13960295",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\run_snapshot\\experiment.json",
+    "package_path": "rounds/round_002/artifacts/run_snapshot/experiment.json",
+    "sha256": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\run_snapshot\\NEXT_SESSION_at_launch.md",
+    "package_path": "rounds/round_002/artifacts/run_snapshot/NEXT_SESSION_at_launch.md",
+    "sha256": "c8f0d8c90ed3c60fd2140b91482483cee2f9df5b9deae652af39928e1abf7577",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\run_snapshot\\ROUND_PLAN.md",
+    "package_path": "rounds/round_002/artifacts/run_snapshot/ROUND_PLAN.md",
+    "sha256": "cdcf86e623b6502a6fc8a12e1cb1d99e24336c88fe2f11cd96e2b47856b9756e",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\run_snapshot\\run_round002.py",
+    "package_path": "rounds/round_002/artifacts/run_snapshot/run_round002.py",
+    "sha256": "b8113bea3887402fb5703c79b29136d5036df73b68a1ccaaf1503016cf28deed",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\worker_freeze\\experiment.json",
+    "package_path": "rounds/round_002/artifacts/worker_freeze/experiment.json",
+    "sha256": "f7240e3eb5adb8bc130979b7aa891762ef840993b7e6ccf39aae8e52c85cb214",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\worker_freeze\\run_round002.py",
+    "package_path": "rounds/round_002/artifacts/worker_freeze/run_round002.py",
+    "sha256": "92434b512db78551e2218de4c266e5b2569320129b99ef1480efe05fda23b4d4",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\worker_freeze_attempt_02\\experiment.json",
+    "package_path": "rounds/round_002/artifacts/worker_freeze_attempt_02/experiment.json",
+    "sha256": "f7240e3eb5adb8bc130979b7aa891762ef840993b7e6ccf39aae8e52c85cb214",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\worker_freeze_attempt_02\\launch_round002_resume.py",
+    "package_path": "rounds/round_002/artifacts/worker_freeze_attempt_02/launch_round002_resume.py",
+    "sha256": "e0b63db85b12909864583036dc4d03cfc2626334154907c8f03333eb522ca66e",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\worker_freeze_attempt_02\\run_round002_resume.py",
+    "package_path": "rounds/round_002/artifacts/worker_freeze_attempt_02/run_round002_resume.py",
+    "sha256": "23362d1fca269485ded3f13a46127675dd261c8b3cc011a95e6a105a3fa9bd63",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\worker_freeze_attempt_03\\experiment.json",
+    "package_path": "rounds/round_002/artifacts/worker_freeze_attempt_03/experiment.json",
+    "sha256": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\worker_freeze_attempt_03\\launch_round002_attempt3.py",
+    "package_path": "rounds/round_002/artifacts/worker_freeze_attempt_03/launch_round002_attempt3.py",
+    "sha256": "786282839f65d176e46ec62299ac2e5581ebc33943c99e6e72db6e6d94ac8062",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\worker_freeze_attempt_03\\run_round002_resume.py",
+    "package_path": "rounds/round_002/artifacts/worker_freeze_attempt_03/run_round002_resume.py",
+    "sha256": "b8113bea3887402fb5703c79b29136d5036df73b68a1ccaaf1503016cf28deed",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\launch_round002_attempt3.py",
+    "package_path": "rounds/round_002/code/launch_round002_attempt3.py",
+    "sha256": "786282839f65d176e46ec62299ac2e5581ebc33943c99e6e72db6e6d94ac8062",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\launch_round002_resume.py",
+    "package_path": "rounds/round_002/code/launch_round002_resume.py",
+    "sha256": "50524eee7de2e630c288e146456d76f4b8fdac5aa77cba17ff407e7859273d17",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\run_round002.py",
+    "package_path": "rounds/round_002/code/run_round002.py",
+    "sha256": "92434b512db78551e2218de4c266e5b2569320129b99ef1480efe05fda23b4d4",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\run_round002_resume.py",
+    "package_path": "rounds/round_002/code/run_round002_resume.py",
+    "sha256": "b8113bea3887402fb5703c79b29136d5036df73b68a1ccaaf1503016cf28deed",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\configs\\experiment.json",
+    "package_path": "rounds/round_002/configs/experiment.json",
+    "sha256": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\environments\\discovery.json",
+    "package_path": "rounds/round_002/environments/discovery.json",
+    "sha256": "f1786cae4471ec340c382568ecd8b5719ac52bb12a5ac1532df0d8f4a0630c9f",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\IDEA_REVIEW_AND_ROUND003.md",
+    "package_path": "rounds/round_002/IDEA_REVIEW_AND_ROUND003.md",
+    "sha256": "c61aa4bb89f1f03b89a5afc5cca2a740552e7a122a12eb0853ac48c59bfcf538",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_01\\execution.jsonl",
+    "package_path": "rounds/round_002/logs/attempt_01/execution.jsonl",
+    "sha256": "a61ac476ee428d82c9a93b5ca404cb63dd6932e3a68b68deecbe7d562d6962af",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_01\\execution_launch_receipt.json",
+    "package_path": "rounds/round_002/logs/attempt_01/execution_launch_receipt.json",
+    "sha256": "f738494312144aaf3eff1a74b83126a9daddf4ca8fc83d2fd0a387efabce525f",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_01\\experiment.json",
+    "package_path": "rounds/round_002/logs/attempt_01/experiment.json",
+    "sha256": "f7240e3eb5adb8bc130979b7aa891762ef840993b7e6ccf39aae8e52c85cb214",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_01\\launch_manifest.json",
+    "package_path": "rounds/round_002/logs/attempt_01/launch_manifest.json",
+    "sha256": "15f5e15fbde2e77009c292d2380fbe5355c7fc04b5af0b9b87091fb213cb5dd5",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_01\\run_round002.py",
+    "package_path": "rounds/round_002/logs/attempt_01/run_round002.py",
+    "sha256": "92434b512db78551e2218de4c266e5b2569320129b99ef1480efe05fda23b4d4",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_01\\stderr.log",
+    "package_path": "rounds/round_002/logs/attempt_01/stderr.log",
+    "sha256": "89a40a38d828f01b4a6fdaa1e76970a99f496a86a574d95dcb92bfef7e2b9bcd",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_01\\stdout.log",
+    "package_path": "rounds/round_002/logs/attempt_01/stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_02\\execution_events.jsonl",
+    "package_path": "rounds/round_002/logs/attempt_02/execution_events.jsonl",
+    "sha256": "5658162f23989df1cecff2f96166aa996ff3a4a6e3e3ae4f583f24b375725572",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_02\\failure_record.json",
+    "package_path": "rounds/round_002/logs/attempt_02/failure_record.json",
+    "sha256": "f7b1a682c97e0c3aca6001212ec59737916b895ddd50a971226efd204aa425d7",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_02\\launcher_receipt.json",
+    "package_path": "rounds/round_002/logs/attempt_02/launcher_receipt.json",
+    "sha256": "6e96e4d09cc4d43848d0e96c324853bea79e2d0a7227fe30967948c6c6b77bb0",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_02\\repair_recommendation.md",
+    "package_path": "rounds/round_002/logs/attempt_02/repair_recommendation.md",
+    "sha256": "c06b821c7c8df89870979c21bde1b29b8fd9407e7543793c360b5ae80c48b6b7",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_02\\runner_launch_manifest.json",
+    "package_path": "rounds/round_002/logs/attempt_02/runner_launch_manifest.json",
+    "sha256": "4cb7a67f75345459a9b91949bc907980de64e7cf9b35246728f7fdd870333f04",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_02\\stderr.log",
+    "package_path": "rounds/round_002/logs/attempt_02/stderr.log",
+    "sha256": "6ede87432e8361f70f611314f9ee423c458a806823c26df7ea3ce5e3c01dfb95",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\attempt_02\\stdout.log",
+    "package_path": "rounds/round_002/logs/attempt_02/stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_0\\catboost_training.json",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_0/catboost_training.json",
+    "sha256": "12cf4c1f28bf61b2ec1dd6a32f689981d5f33a32cf195dca0e68ab3795cbda52",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_0\\learn\\events.out.tfevents",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_0/learn/events.out.tfevents",
+    "sha256": "b5326bae5d46c753995988451a92be486fb00f0acd35fb9366572f9ce5eea150",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_0\\learn_error.tsv",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_0/learn_error.tsv",
+    "sha256": "d22fa609c6fcebd56b1874305aa28d6e751a25086baa203e295dcacd43f44596",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_0\\test\\events.out.tfevents",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_0/test/events.out.tfevents",
+    "sha256": "ce9850a4a6b0f3a1c25fe532ee01ad1b94c4dd5edb53fd198a51f356c1db3ac6",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_0\\test_error.tsv",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_0/test_error.tsv",
+    "sha256": "9b727baeceaa23883092a607889e9ea286eb0b530ac3f17f744634dfeb3524c2",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_0\\time_left.tsv",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_0/time_left.tsv",
+    "sha256": "351af0c9c3996d2a0edee8f9c4addb80eb08c6e8caaf5079d9b2f40e378e49fe",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_1\\catboost_training.json",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_1/catboost_training.json",
+    "sha256": "db7335730cddebf9bc6a40ad949adac1686b1b2b94a2a36179097d7b7a8fc3e9",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_1\\learn\\events.out.tfevents",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_1/learn/events.out.tfevents",
+    "sha256": "da5a1c92bc728b4895acfcddefa1f0a0d3dd279b59da07c145a9d57a5c2168d4",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_1\\learn_error.tsv",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_1/learn_error.tsv",
+    "sha256": "d98f7d6c982b5a6091cc565855eed874deb5faca3b2a624b899df22b44853541",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_1\\test\\events.out.tfevents",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_1/test/events.out.tfevents",
+    "sha256": "a3cd57cc7506e75c4d2d088823481d468320475a1b31ff8b0b1a3d72829ec7a7",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_1\\test_error.tsv",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_1/test_error.tsv",
+    "sha256": "c451b408bc251df14c367c93e5ccfb243016cc0c2d6e1d5a9eef12571b31793c",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_1\\time_left.tsv",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_1/time_left.tsv",
+    "sha256": "9c416d33c6db8d1f0d7b176164ad7a3e44e778c676f8da2f21ecddc731012c31",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_2\\catboost_training.json",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_2/catboost_training.json",
+    "sha256": "20e0e69592e15f38cd9c5ffde3a058d90cb7d9d1d13ecf686ffd4c00d58128bd",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_2\\learn\\events.out.tfevents",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_2/learn/events.out.tfevents",
+    "sha256": "0c590411eb5ccd477a0a508294401c4a4cc5d0851d88dc0a3d0c112b25018f75",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_2\\learn_error.tsv",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_2/learn_error.tsv",
+    "sha256": "458ad2a5884aebe2cca112da94fc462f86bf258ec4a0a3c59c4d4838b7707dda",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_2\\test\\events.out.tfevents",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_2/test/events.out.tfevents",
+    "sha256": "ae3f6fde1bf264abd21efbcc37fa22b83cab747b887008338d1ad7d0ade8e727",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_2\\test_error.tsv",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_2/test_error.tsv",
+    "sha256": "d43abd052b1aa7640fbea187183d9a14551d07f8b26b256b608aa9e23c054521",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\catboost_train\\fold_2\\time_left.tsv",
+    "package_path": "rounds/round_002/logs/catboost_train/fold_2/time_left.tsv",
+    "sha256": "c8f093eb209d2cab803a056699070ef4c04e440b2cb112428d71f220b96892fe",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\execution.jsonl",
+    "package_path": "rounds/round_002/logs/execution.jsonl",
+    "sha256": "9a76c64bc1ce6e9fbff042d05d663b60166f3dda6a968a5c05197d0b3b173342",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\execution_attempt02_launch_receipt.json",
+    "package_path": "rounds/round_002/logs/execution_attempt02_launch_receipt.json",
+    "sha256": "6e96e4d09cc4d43848d0e96c324853bea79e2d0a7227fe30967948c6c6b77bb0",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\execution_attempt03_launch_receipt.json",
+    "package_path": "rounds/round_002/logs/execution_attempt03_launch_receipt.json",
+    "sha256": "350816436fb900f1e65c358bcc4bcaa109e946011a20a566df4edac6110a06e1",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\execution_launch_receipt.json",
+    "package_path": "rounds/round_002/logs/execution_launch_receipt.json",
+    "sha256": "f738494312144aaf3eff1a74b83126a9daddf4ca8fc83d2fd0a387efabce525f",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\execution_summary.json",
+    "package_path": "rounds/round_002/logs/execution_summary.json",
+    "sha256": "f07c6825f4e763b7a41e0468684575005bcfc57ffaca045e819e15ec875f852f",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\launch_manifest.json",
+    "package_path": "rounds/round_002/logs/launch_manifest.json",
+    "sha256": "0a89aa43cf23e37787bccf21ed5c0843c69cd207472c56ba208ee90239a31fcf",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\launcher_attempt02.stderr.log",
+    "package_path": "rounds/round_002/logs/launcher_attempt02.stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\launcher_attempt02.stdout.log",
+    "package_path": "rounds/round_002/logs/launcher_attempt02.stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\launcher_attempt03.stderr.log",
+    "package_path": "rounds/round_002/logs/launcher_attempt03.stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\launcher_attempt03.stdout.log",
+    "package_path": "rounds/round_002/logs/launcher_attempt03.stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stderr.log",
+    "package_path": "rounds/round_002/logs/stderr.log",
+    "sha256": "89a40a38d828f01b4a6fdaa1e76970a99f496a86a574d95dcb92bfef7e2b9bcd",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stderr_attempt02.log",
+    "package_path": "rounds/round_002/logs/stderr_attempt02.log",
+    "sha256": "6ede87432e8361f70f611314f9ee423c458a806823c26df7ea3ce5e3c01dfb95",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stderr_attempt03.log",
+    "package_path": "rounds/round_002/logs/stderr_attempt03.log",
+    "sha256": "c580a748afd7347d552357e92ef5fae8038f08100997244e7b860bc5cdd120a5",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stdout.log",
+    "package_path": "rounds/round_002/logs/stdout.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stdout_attempt02.log",
+    "package_path": "rounds/round_002/logs/stdout_attempt02.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stdout_attempt03.log",
+    "package_path": "rounds/round_002/logs/stdout_attempt03.log",
+    "sha256": "e99ed00094e354aa0d4510ca02270020a0af311e25cea2cad7e0f696c08f012a",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\manager_launch_check.json",
+    "package_path": "rounds/round_002/manager_launch_check.json",
+    "sha256": "5d85a0b026d381ca28c94424db6999422743d3a44eb5431e5fd01c8f812744fb",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\MANAGER_RECORD.md",
+    "package_path": "rounds/round_002/MANAGER_RECORD.md",
+    "sha256": "ce1bad85e08c65017ecce1cc93c27e61e67e1e137c00677d51c994af892ba285",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\model_runtime_evidence.json",
+    "package_path": "rounds/round_002/model_runtime_evidence.json",
+    "sha256": "29c663036d64261b93150cfc164904700f68e745531e74979038f2b4f2f70559",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\NEXT_BRANCH_SOURCE_NOTES.md",
+    "package_path": "rounds/round_002/NEXT_BRANCH_SOURCE_NOTES.md",
+    "sha256": "8430f9eb9ad21418c68a9e6b8a995cfff4dc9d3e1cf497a04af3577a60b6b942",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\NEXT_SESSION_DRAFT.md",
+    "package_path": "rounds/round_002/NEXT_SESSION_DRAFT.md",
+    "sha256": "75c48e2868e96d2fe7a08b3c321def106a54dc6c30061927b9417c957a74534a",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\plan_hash.json",
+    "package_path": "rounds/round_002/plan_hash.json",
+    "sha256": "d4a2be90ad042bc00c119de39abdc999e560551659ddadefd8311b7779008fe9",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\references\\algorithm_variant_ideas.md",
+    "package_path": "rounds/round_002/references/algorithm_variant_ideas.md",
+    "sha256": "75be0fd2f451b9e4215ec2f02a8f200b8084f26145e4fe845a22c2cba6be91bc",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\references\\idea_source_hash.json",
+    "package_path": "rounds/round_002/references/idea_source_hash.json",
+    "sha256": "dd08412507bc59495add056f82fa00b0f33d5f7d10f51c435b8c3cb2b5c1ee77",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\review\\preliminary_review.md",
+    "package_path": "rounds/round_002/review/preliminary_review.md",
+    "sha256": "fc0e2246208af7af7da22d85e1ddfadf1015f34a77026173bd710e65dd16acec",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\review\\review.json",
+    "package_path": "rounds/round_002/review/review.json",
+    "sha256": "9d8e2bc07d1682f703349201e1ab6e613e37aa8ce9d11f6ccc64a7cceec5ce3b",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\ROUND_PLAN.md",
+    "package_path": "rounds/round_002/ROUND_PLAN.md",
+    "sha256": "cdcf86e623b6502a6fc8a12e1cb1d99e24336c88fe2f11cd96e2b47856b9756e",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\ROUND_REPORT.md",
+    "package_path": "rounds/round_002/ROUND_REPORT.md",
+    "sha256": "303db45fead14b3d355259e89c506a8eee13cd6ceccf698f11d19b4f51e5e5ad",
+    "purpose": "round_002 original evidence; archival scripts are not portable launchers"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\AGENTS.md",
+    "package_path": "project_state/AGENTS.md",
+    "sha256": "7669fde3225cbdf926164f72f2114b2fc38920ee8190cd98983ae287cf20f918",
+    "purpose": "Paused project state snapshot"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\CYCLE_PROTOCOL.md",
+    "package_path": "project_state/CYCLE_PROTOCOL.md",
+    "sha256": "f38926c30d8036593abaf2a4ef2cb65ae76cb29e677022a022fb5dca580351d7",
+    "purpose": "Paused project state snapshot"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\STATUS.json",
+    "package_path": "project_state/STATUS.json",
+    "sha256": "c9497363c5f46d31694076169631107db7238044041eed2a65fca93ead5dbbca",
+    "purpose": "Paused project state snapshot"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\EXPERIMENT_LEDGER.csv",
+    "package_path": "project_state/EXPERIMENT_LEDGER.csv",
+    "sha256": "eca283bd7d51622198ce14d54e4a4d20be18b2dd674a4e76b601abd100cfcced",
+    "purpose": "Paused project state snapshot"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\NEXT_SESSION.md",
+    "package_path": "project_state/NEXT_SESSION.md",
+    "sha256": "89ad192e7817141502bbae26ed1f31067570d16807a28d0989c9b8b7668955f7",
+    "purpose": "Paused project state snapshot"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\USER_PAUSE.md",
+    "package_path": "project_state/USER_PAUSE.md",
+    "sha256": "dea5df424d0578884167cb1e7e00469d53f0af469c968ca4b6ab4214a43fb331",
+    "purpose": "Paused project state snapshot"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\README.md",
+    "package_path": "project_state/README.md",
+    "sha256": "b7692edd923353964a03cc2c95c1aa5eaf6a82973bcefc1b99a9de5f2427ff62",
+    "purpose": "Paused project state snapshot"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\environment.json",
+    "package_path": "environment/round_002/environment.json",
+    "sha256": "f489298e852414f343c9a7f4c98d80723bc3a71a1d9aa61ebc969869e6901048",
+    "purpose": "Original execution environment evidence; no virtualenv or wheels"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\install_dependencies.log",
+    "package_path": "environment/round_002/install_dependencies.log",
+    "sha256": "caaa8aec35726b4612b5a77a55a8542363d2f59ae6038efd2e48871b3dd79bb9",
+    "purpose": "Original execution environment evidence; no virtualenv or wheels"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\install_download.log",
+    "package_path": "environment/round_002/install_download.log",
+    "sha256": "fcd8969135c961da92a634cb1bc12c31323dbbd7f98534a513ae7d912e21d2f4",
+    "purpose": "Original execution environment evidence; no virtualenv or wheels"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\install_experiment_dependencies.log",
+    "package_path": "environment/round_002/install_experiment_dependencies.log",
+    "sha256": "c6bcf838c3253858da5545fe41d5e39602c374a82d6876a65bf35d077741f6ab",
+    "purpose": "Original execution environment evidence; no virtualenv or wheels"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\install_psutil.log",
+    "package_path": "environment/round_002/install_psutil.log",
+    "sha256": "f670c457bf189bf8d262b24e58cc36f3053e62b184efa7c711f378803d187093",
+    "purpose": "Original execution environment evidence; no virtualenv or wheels"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\requirements-freeze.txt",
+    "package_path": "environment/round_002/requirements-freeze.txt",
+    "sha256": "830a5c4c0f0ffbf6e81f3bef3c1cec89c75534d2279159f4a43d01ab9980efe1",
+    "purpose": "Original execution environment evidence; no virtualenv or wheels"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz",
+    "package_path": "inputs/development/fold_0_features.npz",
+    "sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+    "purpose": "5897 development vessels only; fixed X304 fold matrix"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_1.txt",
+    "package_path": "historical_baseline/models/fold_0_seed_1.txt",
+    "sha256": "149a12107b73253fc8f2d9cd7cc9ddce7ef834cc6d8f7aaa7bad4ee62d626161",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_1.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_0_seed_1.npz",
+    "sha256": "b7a97855ee161b8a2bbb17ba1617a5ec808c13225a63c7c360514e85c6a36904",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_7.txt",
+    "package_path": "historical_baseline/models/fold_0_seed_7.txt",
+    "sha256": "b328f6c242777be579d2e064e03466eada6f218de9a34df4d4f4f909ad135d5e",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_7.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_0_seed_7.npz",
+    "sha256": "9a51a3966a1ebe837799188dfbc3f681011e8dc3b67f02ef098846ce62f82c67",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_42.txt",
+    "package_path": "historical_baseline/models/fold_0_seed_42.txt",
+    "sha256": "f68797aeb24c6f512c208529cfcc7f93c33385f8b2586a25a3711dd0ec36b3c7",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_42.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_0_seed_42.npz",
+    "sha256": "324ea6842712f01ac88baee84d8bdd76eb645fcfc3ffb9889962e6dfdae14a5c",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2024.txt",
+    "package_path": "historical_baseline/models/fold_0_seed_2024.txt",
+    "sha256": "c6b4104959964de8445a42da6b354183352e974447300946555bb4f21c24e29e",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_2024.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_0_seed_2024.npz",
+    "sha256": "551e5c1e7fabf86b88a8d7990f35922016960c756a8a61e3581f3d6364189a15",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2026.txt",
+    "package_path": "historical_baseline/models/fold_0_seed_2026.txt",
+    "sha256": "f670dd70bca019f5da861aa72212d79c40bdbb52d563e5e9bc203f617e13597d",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_2026.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_0_seed_2026.npz",
+    "sha256": "c31b5d99f0414387cc783e5b59560bceb4a6c84ada54747ec21548ca8e5674f7",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz",
+    "package_path": "inputs/development/fold_1_features.npz",
+    "sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+    "purpose": "5897 development vessels only; fixed X304 fold matrix"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_1.txt",
+    "package_path": "historical_baseline/models/fold_1_seed_1.txt",
+    "sha256": "f315be0a84c070e2c589305718e73fa53bf7e21bdf6f102c02b7bd74420a7990",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_1.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_1_seed_1.npz",
+    "sha256": "307205ca817ad8dd3e9fb25ffda7d6b5320dec0adb21eda36052b17b89d51877",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_7.txt",
+    "package_path": "historical_baseline/models/fold_1_seed_7.txt",
+    "sha256": "2ac4d9307359eb845c5fe343a96ad9502dd2323042181ecfd4716fbe6f21c3d0",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_7.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_1_seed_7.npz",
+    "sha256": "cbb861f46d321d55e088b3fab0db07c1f54c01985f910c4f2a001cea74889ad2",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_42.txt",
+    "package_path": "historical_baseline/models/fold_1_seed_42.txt",
+    "sha256": "d019097f80745fe4e29765109376e18050db41bc59203253d219aecc14d1eed7",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_42.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_1_seed_42.npz",
+    "sha256": "4b491c561a26746f024f5ec5a52c91b5596040b6cfe0f85af7685282ba500dfc",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2024.txt",
+    "package_path": "historical_baseline/models/fold_1_seed_2024.txt",
+    "sha256": "c03e7b3b0bb64a70d2b00d767756c7471bfbb44eae2a66b7957b74332dabee71",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_2024.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_1_seed_2024.npz",
+    "sha256": "99c67792feeea814a8c8a41ec484f2a29fc839a4852fec3c1980fffff900d8a3",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2026.txt",
+    "package_path": "historical_baseline/models/fold_1_seed_2026.txt",
+    "sha256": "ca883ebc8ae48ae3563d9672c469e2b383b9b888437dd8c10067c804528dae44",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_2026.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_1_seed_2026.npz",
+    "sha256": "769069398d2711caf493a56ce823c78e62748e3e4afdd0c738d7af1f179684dc",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz",
+    "package_path": "inputs/development/fold_2_features.npz",
+    "sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633",
+    "purpose": "5897 development vessels only; fixed X304 fold matrix"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_1.txt",
+    "package_path": "historical_baseline/models/fold_2_seed_1.txt",
+    "sha256": "98e4f3b86eeddd94943482e1b20f701d8f84d36d39a1d3f3d42e6629f6458cc6",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_1.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_2_seed_1.npz",
+    "sha256": "fe13d8e44bf6a4a8def8dbce48912cd14a3ae28bdc2d80e820b0d7411bc99e9a",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_7.txt",
+    "package_path": "historical_baseline/models/fold_2_seed_7.txt",
+    "sha256": "85f0ca9c6e487e9abdf281b3f4009827ded126064d2d49f808f64abbe12c882f",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_7.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_2_seed_7.npz",
+    "sha256": "5b4ae3f55b8313334d478319e04b1f8c40072030b87354e2130a0f448262aca5",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_42.txt",
+    "package_path": "historical_baseline/models/fold_2_seed_42.txt",
+    "sha256": "2634de7fd32c1bb9bec8a77ee80cfc8f77813a4db5024e8daddb48c2308feeb0",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_42.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_2_seed_42.npz",
+    "sha256": "d4aeb9d285161fc451d9a43692fd0fbef71623fa51b1269ff98c4ce16c7c054b",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2024.txt",
+    "package_path": "historical_baseline/models/fold_2_seed_2024.txt",
+    "sha256": "dd668f54c43fcd16ab5489fbc096745d806ce73f29e65350b75ee8e79fc9f7a4",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_2024.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_2_seed_2024.npz",
+    "sha256": "134bff195bc7c249bc76d4d6be5b549ebc5f8a88fe982a751161b760002d136d",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2026.txt",
+    "package_path": "historical_baseline/models/fold_2_seed_2026.txt",
+    "sha256": "645ec9c6af6e0a96005680fa6dd282d8153e7f8f71ccc41da078ebba195e5254",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_2026.npz",
+    "package_path": "historical_baseline/seed_predictions/fold_2_seed_2026.npz",
+    "sha256": "1764e144b1a62275d79c29a4255ededf2866b50f32f640a684a692b705e44a51",
+    "purpose": "Historical five-seed baseline replay for round001"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\outer_predictions.csv",
+    "package_path": "historical_baseline/outer_predictions.csv",
+    "sha256": "dfdf805f5c60cff019400e3b16f57f5d03aa6d24277e31c3cdfb2c5b2f4992a4",
+    "purpose": "Historical ensemble predictions"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_0_t5.csv",
+    "package_path": "inputs/t5/fold_0_t5.csv",
+    "sha256": "973c193ac8aed0a677265f4f264e40c30b05de2027f473f81caa630896866a97",
+    "purpose": "CSV parser precision replay; development rows only"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_1_t5.csv",
+    "package_path": "inputs/t5/fold_1_t5.csv",
+    "sha256": "182329eb8a4461e9c351a2ac571ff44334d90ce38e6b8893eecb365d81abd348",
+    "purpose": "CSV parser precision replay; development rows only"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_2_t5.csv",
+    "package_path": "inputs/t5/fold_2_t5.csv",
+    "sha256": "2f7992921f2c35191a03394185b676c3562e9a263ede8f39aecdb365e55bc0cb",
+    "purpose": "CSV parser precision replay; development rows only"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\configs\\exp01\\experiment.json",
+    "package_path": "provenance/original_sources/configs/exp01/experiment.json",
+    "sha256": "ae901771cd7f9db2d14b20ad919d58cb68ca54ed71eb4ee432170b941e452791",
+    "purpose": "Historical source snapshot, not an automatic training entrypoint"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\eval_contract.py",
+    "package_path": "provenance/original_sources/shared/eval_contract.py",
+    "sha256": "4213e3a18ff418551b92420b04da49b1af6d3064ae0f02eb430040fb165a4ad1",
+    "purpose": "Historical source snapshot, not an automatic training entrypoint"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\data_adapter.py",
+    "package_path": "provenance/original_sources/shared/data_adapter.py",
+    "sha256": "761e7e84d9eb1568c8ab200ed8513cf9036799475d1eb456fa39079cd7c6a6b6",
+    "purpose": "Historical source snapshot, not an automatic training entrypoint"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\experiments\\exp01\\run_exp01.py",
+    "package_path": "provenance/original_sources/experiments/exp01/run_exp01.py",
+    "sha256": "ad84ee500d58983a087a5004fef695df030920086a490d62ca9a93dac2800162",
+    "purpose": "Historical source snapshot, not an automatic training entrypoint"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\data_validation.json",
+    "package_path": "provenance/original_sources/reports/exp01/data_validation.json",
+    "sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d",
+    "purpose": "Historical source snapshot, not an automatic training entrypoint"
+  },
+  {
+    "original_path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\provenance_addendum.json",
+    "package_path": "provenance/provenance_addendum.json",
+    "sha256": "06ac9838395be4c4d4df2bdf29a3eb8c85e317c20f0ce72da7de4f6c1ed00713",
+    "purpose": "Historical data provenance and limitations"
+  },
+  {
+    "original_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\deliverables\\build_tools\\verify_package.py",
+    "package_path": "reproduce/verify_package.py",
+    "sha256": "d9d14c9d9cc4aa23ad3bbd2b34eb71c5477ddde1477e2d2659ef48620aa5a001",
+    "purpose": "Portable read-only replay verifier"
+  }
+]

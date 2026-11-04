@@ -1,0 +1,324 @@
+{
+  "review_status": "PASS_WITH_LIMITATIONS",
+  "reviewer_role": "independent Round 003 preflight and result reviewer",
+  "reviewer_model_effort": {
+    "task_assignment": "GPT-6 Luna / xhigh",
+    "host_evidence_file": "rounds/round_003/model_runtime_evidence.json",
+    "matching_records": [
+      {
+        "timestamp": "2026-11-04T16:14:04.165Z",
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "session_file_id": "rollout-2026-11-05T01-14-03-01a1a756-c18b-7543-b879-e6fdd41395b3"
+      },
+      {
+        "timestamp": "2026-11-04T16:14:12.526Z",
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "session_file_id": "rollout-2026-11-05T01-14-11-01a1a756-e2d8-7531-a79a-376a3ec4d8e1"
+      }
+    ],
+    "identity_mapping_limit": "The host evidence file records two Luna/xhigh worker sessions without an explicit agent-name mapping; no unique session is attributed here."
+  },
+  "authorization_and_execution": {
+    "precheck_status": "PASS",
+    "precheck_receipt_sha256": "3674a9ab1789f1b9b95f33d2abfba44763fb79e5a37c62858d81d79196ae34e2",
+    "score_run_status": "completed",
+    "score_run_exit_code": 0,
+    "score_run_elapsed_seconds": 15.1265969,
+    "score_run_timed_out": false,
+    "runner_sha256": "9f333f7f4be7ed81ef8296f36b4474f8a6730f99f306c8e4f586c9d031bea6a2",
+    "launcher_sha256": "0346fb307a015289c4686cc186aedcaf9854f6f5702a0808d66217cde35b0760",
+    "config_sha256": "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6",
+    "plan_sha256": "54cef183b6845d6cecfca64314fc0d801c8d1b8c7c826da76f9a42b665ea2ce0",
+    "runner_config_hashes_still_match_launch": {
+      "runner": true,
+      "config": true
+    }
+  },
+  "review_scope": {
+    "reviewed_population": "Saved development OOF probabilities and INNER predictions only",
+    "holdout_individual_rows_read": 0,
+    "full7372_f156_or_label_rows_read": 0,
+    "test2025_rows_read": 0,
+    "raw_rows_read": 0,
+    "feature_rows_read": 0,
+    "model_or_checkpoint_loaded": false,
+    "fit_or_new_model_inference": false,
+    "classification_metrics_computed_during_pre_score_audit": false,
+    "classification_metrics_independently_recomputed_after_authorized_run": true
+  },
+  "pre_score_audit": {
+    "status": "PASS",
+    "allowlisted_data_files_read": 24,
+    "development_vessels": 5897,
+    "oof_per_seed": {
+      "42": 5897,
+      "2026": 5897
+    },
+    "oof_fold_counts": {
+      "42": {
+        "1": 1966,
+        "2": 1965,
+        "0": 1966
+      },
+      "2026": {
+        "1": 1966,
+        "2": 1965,
+        "0": 1966
+      }
+    },
+    "inner_per_seed_fold": {
+      "42/0": 787,
+      "42/1": 787,
+      "42/2": 787,
+      "2026/0": 787,
+      "2026/1": 787,
+      "2026/2": 787
+    },
+    "max_abs_probability_sum_error": 1.1102230246251565e-16,
+    "inner_prediction_hashes_match_frozen_rule": true,
+    "historical_inner_id_order_hash_status": "unverified original producer/order; current CSV-order digest differs, not evidence of corruption/split mismatch",
+    "manifest_checks": "All checked allowlisted package/source entries match; the package manifest does not self-list its own hash file.",
+    "saved_tabicl_lineage": {
+      "status": "confirmed_for_saved TabICLv2 generation based on archived source and six fold training records",
+      "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\code\\historical\\TabM\\TabM_개선_20261030\\comparison_models.py",
+      "source_sha256": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+      "fit_estimator_tabicl_branch": "model.fit(fit_x, fit_y); INNER arguments are not passed to TabICL fit",
+      "training_metadata": [
+        {
+          "seed": 42,
+          "fold": 0,
+          "fit_vessels": 3144,
+          "inner_vessels": 787,
+          "trained_parameters": 0,
+          "selection_metric": null,
+          "inner_used_for_training_or_early_stopping": false
+        },
+        {
+          "seed": 42,
+          "fold": 1,
+          "fit_vessels": 3144,
+          "inner_vessels": 787,
+          "trained_parameters": 0,
+          "selection_metric": null,
+          "inner_used_for_training_or_early_stopping": false
+        },
+        {
+          "seed": 42,
+          "fold": 2,
+          "fit_vessels": 3145,
+          "inner_vessels": 787,
+          "trained_parameters": 0,
+          "selection_metric": null,
+          "inner_used_for_training_or_early_stopping": false
+        },
+        {
+          "seed": 2026,
+          "fold": 0,
+          "fit_vessels": 3144,
+          "inner_vessels": 787,
+          "trained_parameters": 0,
+          "selection_metric": null,
+          "inner_used_for_training_or_early_stopping": false
+        },
+        {
+          "seed": 2026,
+          "fold": 1,
+          "fit_vessels": 3144,
+          "inner_vessels": 787,
+          "trained_parameters": 0,
+          "selection_metric": null,
+          "inner_used_for_training_or_early_stopping": false
+        },
+        {
+          "seed": 2026,
+          "fold": 2,
+          "fit_vessels": 3145,
+          "inner_vessels": 787,
+          "trained_parameters": 0,
+          "selection_metric": null,
+          "inner_used_for_training_or_early_stopping": false
+        }
+      ],
+      "limitation": "This confirms the archived saved run's documented code/metadata lineage; no model re-fit or query replay is performed in R0."
+    },
+    "limitations": [
+      "The historical BASE.digest_json serializer is verified from source, but applying it to the current INNER CSV row order does not reproduce the frozen inner_ids_sha256. The frozen-rule producer/original ID-list order is absent from the allowlisted package; this is not asserted to be corruption or a split mismatch.",
+      "Saved oof_decisions.csv decision_score columns are normalized after applying the trap multiplier, while the packaged apply_frozen_decision.py describes unnormalized scores. The argmax is invariant; Round 003 recomputes A_old directly from original p and the frozen factor.",
+      "Feature metadata conflicts: run_settings.json says no missing flags, while fingerprinted comparison_models.py appends missing flags after imputation. The 156 raw-feature metadata therefore implies a possible 312-column model input; no feature rows were read, so this is not an independent feature-row confirmation.",
+      "Saved-probability lineage and INNER nonuse for training/early stopping do not reproduce the original model inference or validate the saved model binary/checkpoint on this host."
+    ]
+  },
+  "independent_result_check": {
+    "status": "PASS",
+    "mismatches": [],
+    "policy_factors_by_seed_fold": {
+      "42/0": 1.0,
+      "42/1": 1.5,
+      "42/2": 1.0,
+      "2026/0": 1.0,
+      "2026/1": 1.0,
+      "2026/2": 1.0
+    },
+    "prediction_rows": 11794,
+    "prediction_mismatch_count_by_seed": {
+      "42": 0,
+      "2026": 0
+    },
+    "metric_fields_checked_including_empty_scope_nulls": 960,
+    "metric_mismatches": [],
+    "paired_transition_status": "PASS",
+    "probability_quality_status": "PASS",
+    "bootstrap_status": "PASS",
+    "bootstrap_all_numeric_cells_exact_match": true,
+    "bootstrap_max_absolute_numeric_draw_difference": 0.0,
+    "bootstrap_repetitions": 5000,
+    "bootstrap_paired_vessel_unit": true
+  },
+  "headline_metrics": {
+    "mean_metrics_by_policy": {
+      "A_raw": {
+        "vessels_per_seed": 5897.0,
+        "not_summed_across_seeds": true,
+        "micro_f1": 0.5930133966423605,
+        "macro_f1": 0.5155580319500959,
+        "weighted_f1": 0.5539843909787947,
+        "mean_assigned_class_original_probability": 0.6023470809961545,
+        "class_precision": [
+          0.5921765705366602,
+          0.6092231826027811,
+          0.4940156169994879,
+          0.6563804412641622
+        ],
+        "class_recall": [
+          0.8657534246575342,
+          0.37723214285714285,
+          0.1479041916167665,
+          0.6746031746031746
+        ],
+        "class_f1": [
+          0.7032946144231786,
+          0.4659240858591347,
+          0.22764884418473677,
+          0.6653645833333333
+        ]
+      },
+      "A_old": {
+        "vessels_per_seed": 5897.0,
+        "not_summed_across_seeds": true,
+        "micro_f1": 0.5748685772426658,
+        "macro_f1": 0.5372271285505399,
+        "weighted_f1": 0.558096720517929,
+        "mean_assigned_class_original_probability": 0.5807682080078466,
+        "class_precision": [
+          0.6122071914782623,
+          0.6400725655613055,
+          0.3335479063368777,
+          0.7041029766693483
+        ],
+        "class_recall": [
+          0.7917808219178082,
+          0.3412698412698413,
+          0.37305389221556884,
+          0.623015873015873
+        ],
+        "class_f1": [
+          0.6905091849259105,
+          0.4451585588273005,
+          0.3521883628182841,
+          0.6610524076306645
+        ]
+      },
+      "A_micro_select": {
+        "vessels_per_seed": 5897.0,
+        "not_summed_across_seeds": true,
+        "micro_f1": 0.5933525521451586,
+        "macro_f1": 0.520562845334023,
+        "weighted_f1": 0.5564218565926311,
+        "mean_assigned_class_original_probability": 0.6017685797336274,
+        "class_precision": [
+          0.5934874770596876,
+          0.6122470021146091,
+          0.48303480413572153,
+          0.6589543269230769
+        ],
+        "class_recall": [
+          0.8626712328767123,
+          0.37475198412698413,
+          0.16706586826347306,
+          0.6746031746031746
+        ],
+        "class_f1": [
+          0.7031834020996556,
+          0.46492491728271496,
+          0.247466142662383,
+          0.6666769192913387
+        ]
+      }
+    },
+    "selected_vs_raw_micro_delta_by_seed": {
+      "42": 0.0006783110055960107,
+      "2026": 0.0
+    },
+    "selected_vs_raw_mean_micro_delta": 0.0003391555027980053,
+    "selected_vs_raw_mean_macro_delta": 0.005004813383927109,
+    "selected_vs_raw_paired_micro_ci95": [
+      -0.0009326776326945563,
+      0.001610988638290678
+    ],
+    "selected_vs_raw_paired_macro_ci95": [
+      0.0026074088867233656,
+      0.007562640292602716
+    ],
+    "progress_gate_met": false,
+    "progress_gate_criteria": {
+      "mean_micro_delta_at_least_0_005": false,
+      "both_seed_micro_deltas_positive": false,
+      "paired_5000_vessel_bootstrap_ci_lower_above_zero": false,
+      "mean_macro_f1_not_decreased": true,
+      "each_seed_class_f1_drop_no_more_than_0_01": true,
+      "each_seed_natural_1_7_macro_f1_drop_no_more_than_0_01": true
+    }
+  },
+  "limitations": [
+    "The evaluation OUTER population was previously exposed; this is not independent validation or an official score.",
+    "Bootstrap intervals do not remove repeated-development selection bias or geographic dependence.",
+    "The archived ID-hash producer/order is unavailable, so the historical ID digest cannot be verified against the present CSV order; prediction-file hashes and role membership do match.",
+    "Saved normalized decision_score values and archived unnormalized helper values differ in scale; argmax agrees and neither is a calibrated probability.",
+    "F156 versus missing-indicator/312-column input ambiguity remains unresolved; no feature rows were read.",
+    "Saved-probability lineage is supported by archived source and metadata only; there was no checkpoint load, original model replay, fit, or new inference."
+  ],
+  "report_consistency_check": {
+    "round_report_status": "PASS",
+    "round_report_path": "rounds/round_003/ROUND_REPORT.md",
+    "next_session_draft_status": "PASS_FOR_SCOPE_AND_HANDOFF",
+    "next_session_draft_path": "rounds/round_003/NEXT_SESSION_DRAFT.md",
+    "notes": [
+      "ROUND_REPORT was updated to say 960 checked metric fields: 816 previously counted values plus 144 null class-metric slots in empty observed-day scopes, consistent with the latest artifact comparison.",
+      "ROUND_REPORT and NEXT_SESSION_DRAFT preserve that the progress gate failed, selected factors and deltas match, no independent/official score is claimed, and next scope is runtime/synthetic smoke/development-only lineage preparation without new F1 evaluation.",
+      "No edits to either manager-owned report were made by the reviewer."
+    ],
+    "m4_readiness_status": "Manager readiness file reports expected checkpoint hash present in cache, no Torch/TabICL in checked current Python environments, AMD Radeon 780M, no nvidia-smi and no fold model.pkl. This is source/host readiness evidence, not checkpoint replay or runtime validation.",
+    "m4_readiness_elapsed_seconds": 186.623378
+  },
+  "evidence_files": {
+    "precheck": "rounds/round_003/review/precheck.json",
+    "preflight_audit": "rounds/round_003/review/preflight_audit.json",
+    "independent_recompute_code": "rounds/round_003/review/independent_recompute.py",
+    "independent_recompute_output": "rounds/round_003/review/independent_recompute.json",
+    "artifact_comparison_code": "rounds/round_003/review/compare_saved_artifacts.py",
+    "artifact_comparison_output": "rounds/round_003/review/artifact_comparison.json",
+    "review_note": "rounds/round_003/review/FINAL_REVIEW.md"
+  },
+  "sha256": {
+    "review_note": "da8ad98f0916805bf94e46c82b358c8e5ab10ddaed779a2d3560e8ce50e3b379",
+    "artifact_comparison": "fb5e58b677194e5d2d2a2007e418886a0986ffd56ade1c128e73e7f9af08f27e",
+    "independent_recompute_code": "27d5e6e9438aac503578c15cd27c019f938a5fecf42e390c33a7e3eb31e22e5f",
+    "artifact_comparison_code": "831923f8af3f2d30ccdd62f9cc8bb4d7ec7280704dc253524851439cbdbcd165",
+    "result_json": "4fa42825644b9eb93935f03e63e9d26c9f5ff7e98cdf07d0e0033b41f7c3deba",
+    "prediction_csv": "34c84db1518748f5fac181df424a9c2cdb24e1bcb9ea2e734eca65613de42573",
+    "decision_policy": "06dac0581974c2856d3e29ccc5cf49555e543f4ee55215ba1dda5c54640aa289",
+    "paired_bootstrap_draws": "247fbebf650ff2e66f4c646193c7dbbdffce72a0d9c829649c3b328f34c87bdb"
+  }
+}

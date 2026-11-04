@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_001\execution\replay_ensemble.py", line 109, in <module>
+    if __name__=="__main__": main()
+                             ~~~~^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_001\execution\replay_ensemble.py", line 56, in main
+    if len(oi)!=1966 or len(set(oids))!=1966: raise RuntimeError(f"fold {f}: invalid outer roster")
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: fold 2: invalid outer roster

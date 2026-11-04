@@ -1,0 +1,52 @@
+{
+ "split_manifest": {
+  "rule_split_manifest_sha256": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+  "sha256_of_splits_original_json": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+  "match": true
+ },
+ "fold_keys": [
+  "fit_ids",
+  "fold",
+  "inner_ids",
+  "outer_ids"
+ ],
+ "recovered": {
+  "fit/fold0": {
+   "source": "splits_original.json folds[0][fit_ids]",
+   "serialization": "sorted_int_as_int|newline",
+   "sha256": "2470cabe8ecbe7a063ab8303bcb66faa85cb907596c9d44f69dda3b8ee6b0ed5",
+   "n": 3144
+  },
+  "inner/fold0": {
+   "source": "splits_original.json folds[0][inner_ids]",
+   "serialization": "sorted_int_as_int|newline",
+   "sha256": "cb82568ec4fcedf20a5706d15db6a76f84f84a23b9273aa4b18948c3014ed0c3",
+   "n": 787
+  },
+  "fit/fold1": {
+   "source": "splits_original.json folds[1][fit_ids]",
+   "serialization": "sorted_int_as_int|newline",
+   "sha256": "2e5980b8e942aabd038cf09154fe23e51c9d043eecd3fff2085f00c96f86515d",
+   "n": 3144
+  },
+  "inner/fold1": {
+   "source": "splits_original.json folds[1][inner_ids]",
+   "serialization": "sorted_int_as_int|newline",
+   "sha256": "c18b275a64434d25a3c111cadc2dc15483dc1a2e6980c500466cbce566bb89c2",
+   "n": 787
+  },
+  "fit/fold2": {
+   "source": "splits_original.json folds[2][fit_ids]",
+   "serialization": "sorted_int_as_int|newline",
+   "sha256": "9ab05dcab9df336c9af45f9e134fdd3483205db8f07eaa5561bd31fa9213e7df",
+   "n": 3145
+  },
+  "inner/fold2": {
+   "source": "splits_original.json folds[2][inner_ids]",
+   "serialization": "sorted_int_as_int|newline",
+   "sha256": "524c88b188f67a50844d33c01c27f06a055f262f06492ceb3c02585155c33e59",
+   "n": 787
+  }
+ },
+ "unrecovered": []
+}

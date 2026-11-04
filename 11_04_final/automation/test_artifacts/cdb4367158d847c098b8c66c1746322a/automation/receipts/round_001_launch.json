@@ -1,0 +1,31 @@
+﻿{
+    "from_round":  "round_001",
+    "requested_model":  "gpt-6-astra",
+    "requested_effort":  "high",
+    "task_root":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\test_artifacts\\cdb4367158d847c098b8c66c1746322a",
+    "workspace":  "path:D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\test_artifacts",
+    "handoff_sha256":  "71130A82258DFE4A4BE1846AE35BAC928F823DD87F17C3B953298E4A6BA1E295",
+    "started_at_utc":  "2026-11-04T14:33:05.1357385Z",
+    "accepted":  true,
+    "status":  "prompt_delivered",
+    "exit_code":  0,
+    "raw_stdout":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\test_artifacts\\cdb4367158d847c098b8c66c1746322a\\automation\\receipts\\round_001_launch.stdout.json",
+    "raw_stderr":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\test_artifacts\\cdb4367158d847c098b8c66c1746322a\\automation\\receipts\\round_001_launch.stderr.txt",
+    "host_response":  {
+                          "ok":  true,
+                          "result":  {
+                                         "launch":  {
+                                                        "outcome":  {
+                                                                        "kind":  "structured",
+                                                                        "handle":  "TEST_ONLY_HANDLE"
+                                                                    },
+                                                        "prompt":  {
+                                                                       "outcome":  "journaled"
+                                                                   }
+                                                    }
+                                     }
+                      },
+    "handoff_snapshot":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\test_artifacts\\cdb4367158d847c098b8c66c1746322a\\automation\\receipts\\round_001_NEXT_SESSION.md",
+    "status_snapshot":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\test_artifacts\\cdb4367158d847c098b8c66c1746322a\\automation\\receipts\\round_001_STATUS.json",
+    "completed_at_utc":  "2026-11-04T14:33:05.2392322Z"
+}

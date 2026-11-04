@@ -1,0 +1,13 @@
+{
+  "completed_at_utc": "2026-11-04T16:45:24.452413+00:00",
+  "files": {
+    "STATUS.json": "baf7903e78aca76d3aaaca5a57bfaa675b1d9a05fc158f5836b3900bc78d83ab",
+    "EXPERIMENT_LEDGER.csv": "452269ed1704ee166ac0e2fee912d533c9a07457d5caaf16ea4b7370b0ba5a8c",
+    "NEXT_SESSION.md": "b726e9cd58f3ac6828c38396f5ed7f4d5eacbeb63a979fd1a539342bbe849894",
+    "rounds\\round_003\\ROUND_REPORT.md": "b545fd8893f67f3fba5eb260ec27813b8b1f1e9f433810daa6dc7f5802c4fcb4",
+    "rounds\\round_003\\review\\review.json": "e67026ced190587ef2d3b4916059533e9a1a9f560580aebe1ce035f7bcfefa9f",
+    "rounds\\round_003\\artifacts\\result.json": "4fa42825644b9eb93935f03e63e9d26c9f5ff7e98cdf07d0e0033b41f7c3deba"
+  },
+  "score_process_finished": true,
+  "next_session_not_yet_launched": true
+}

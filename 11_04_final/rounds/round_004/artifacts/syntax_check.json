@@ -1,0 +1,20 @@
+[
+  {
+    "file": "rounds/round_004/code/probe_tabicl_runtime.py",
+    "sha256": "7dee24ee5cc215733450be17db34b10a5e9d9adacc5c7ba33021bac3ecf4a0b2",
+    "ast_parse": "pass",
+    "code_executed": false
+  },
+  {
+    "file": "rounds/round_004/code/manage_runtime.py",
+    "sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+    "ast_parse": "pass",
+    "code_executed": false
+  },
+  {
+    "file": "rounds/round_004/code/finalize_round.py",
+    "sha256": "a5967108e6c92f612a21467fbcbcd9ae9d0983c7477af26fea3be2b72aca2978",
+    "ast_parse": "pass",
+    "code_executed": false
+  }
+]

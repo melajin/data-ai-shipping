@@ -1,0 +1,514 @@
+{
+  "started_utc": "2026-11-04T17:41:08.019030+00:00",
+  "finished_utc": "2026-11-04T17:41:12.256765+00:00",
+  "archive_path": "C:\\Users\\dlehs\\Downloads\\문제 데이터_수정_1103_v2.zip",
+  "archive_bytes": 1431714584,
+  "archive_sha256_before": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
+  "archive_sha256_after": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
+  "archive_unchanged": true,
+  "archive_entry_count": 18,
+  "regular_file_count": 14,
+  "total_uncompressed_file_bytes": 13349299552,
+  "csv_count": 12,
+  "xlsx_count": 2,
+  "csv_exact_old_path_count": 12,
+  "csv_same_size_count": 12,
+  "csv_same_header_count": 12,
+  "csv_full_content_identity_verified": false,
+  "xlsx_byte_identical_count": 1,
+  "small_references_extracted": [
+    "26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+    "테스트셋 및 결과제출 샘플/제출샘플.xlsx"
+  ],
+  "full_archive_extracted": false,
+  "script_sha256": "52dd78c97b62a544e9bd55b6e1dd4d248f034686ec4a5988022a1fbf8026e96b",
+  "elapsed_seconds": 4.242017099997611,
+  "entries": [
+    {
+      "name": "26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "is_directory": false,
+      "uncompressed_bytes": 28759,
+      "compressed_bytes": 25681,
+      "zip_crc32": "826f8211",
+      "zip_member_datetime": [
+        2026,
+        9,
+        11,
+        22,
+        25,
+        50
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "old_exact_path_exists": true,
+      "old_bytes": 28759,
+      "same_size": true,
+      "new_sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a",
+      "extracted_reference_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\intake\\1103_v2\\inspection_001\\reference_01_26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "old_sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a",
+      "byte_identical_to_old": true
+    },
+    {
+      "name": "vpass_26년(1월_6월) 데이터/",
+      "is_directory": true,
+      "uncompressed_bytes": 0,
+      "compressed_bytes": 0,
+      "zip_crc32": "00000000",
+      "zip_member_datetime": [
+        2026,
+        9,
+        15,
+        10,
+        10,
+        20
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터",
+      "old_exact_path_exists": true
+    },
+    {
+      "name": "vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터/",
+      "is_directory": true,
+      "uncompressed_bytes": 0,
+      "compressed_bytes": 0,
+      "zip_crc32": "00000000",
+      "zip_member_datetime": [
+        2026,
+        9,
+        28,
+        10,
+        58,
+        22
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터",
+      "old_exact_path_exists": true
+    },
+    {
+      "name": "vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터/vpass_1월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 669416109,
+      "compressed_bytes": 77171213,
+      "zip_crc32": "74c6684d",
+      "zip_member_datetime": [
+        2026,
+        9,
+        28,
+        9,
+        56,
+        56
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 669416109,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "a90acbc99b18ad89cdbf95001ab04f761b4f48a27a1ca6a7e6dbe1dc8793cdc8",
+        "first_physical_line_bytes": 48,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "a90acbc99b18ad89cdbf95001ab04f761b4f48a27a1ca6a7e6dbe1dc8793cdc8",
+        "first_physical_line_bytes": 48,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터/vpass_2월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 635512252,
+      "compressed_bytes": 71586794,
+      "zip_crc32": "cee81648",
+      "zip_member_datetime": [
+        2026,
+        9,
+        15,
+        10,
+        28,
+        30
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 635512252,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "a90acbc99b18ad89cdbf95001ab04f761b4f48a27a1ca6a7e6dbe1dc8793cdc8",
+        "first_physical_line_bytes": 48,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "a90acbc99b18ad89cdbf95001ab04f761b4f48a27a1ca6a7e6dbe1dc8793cdc8",
+        "first_physical_line_bytes": 48,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터/vpass_3월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 987693693,
+      "compressed_bytes": 108338238,
+      "zip_crc32": "36ab0716",
+      "zip_member_datetime": [
+        2026,
+        9,
+        15,
+        10,
+        31,
+        4
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 987693693,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "a90acbc99b18ad89cdbf95001ab04f761b4f48a27a1ca6a7e6dbe1dc8793cdc8",
+        "first_physical_line_bytes": 48,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "a90acbc99b18ad89cdbf95001ab04f761b4f48a27a1ca6a7e6dbe1dc8793cdc8",
+        "first_physical_line_bytes": 48,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터/vpass_4월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 1113299125,
+      "compressed_bytes": 121547940,
+      "zip_crc32": "e17d9805",
+      "zip_member_datetime": [
+        2026,
+        9,
+        28,
+        17,
+        27,
+        20
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 1113299125,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "47b7f753986954bb31513b7b4b738675ddc39489593fbca1c85919131ccff648",
+        "first_physical_line_bytes": 53,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "47b7f753986954bb31513b7b4b738675ddc39489593fbca1c85919131ccff648",
+        "first_physical_line_bytes": 53,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터/vpass_5월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 1201889964,
+      "compressed_bytes": 133532235,
+      "zip_crc32": "e8fa72b7",
+      "zip_member_datetime": [
+        2026,
+        9,
+        15,
+        10,
+        36,
+        36
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 1201889964,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "a90acbc99b18ad89cdbf95001ab04f761b4f48a27a1ca6a7e6dbe1dc8793cdc8",
+        "first_physical_line_bytes": 48,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "a90acbc99b18ad89cdbf95001ab04f761b4f48a27a1ca6a7e6dbe1dc8793cdc8",
+        "first_physical_line_bytes": 48,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터/vpass_6월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 1255966524,
+      "compressed_bytes": 133865344,
+      "zip_crc32": "c55b82bc",
+      "zip_member_datetime": [
+        2026,
+        9,
+        15,
+        10,
+        39,
+        2
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 1255966524,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "19d90abafe312b9a530e2f057a5fb253a40aab8d83e1dfafa6c9ecc31b57adc9",
+        "first_physical_line_bytes": 116,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "19d90abafe312b9a530e2f057a5fb253a40aab8d83e1dfafa6c9ecc31b57adc9",
+        "first_physical_line_bytes": 116,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "테스트셋 및 결과제출 샘플/",
+      "is_directory": true,
+      "uncompressed_bytes": 0,
+      "compressed_bytes": 0,
+      "zip_crc32": "00000000",
+      "zip_member_datetime": [
+        2026,
+        10,
+        27,
+        15,
+        44,
+        24
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플",
+      "old_exact_path_exists": true
+    },
+    {
+      "name": "테스트셋 및 결과제출 샘플/제출샘플.xlsx",
+      "is_directory": false,
+      "uncompressed_bytes": 12645,
+      "compressed_bytes": 9511,
+      "zip_crc32": "c1e072af",
+      "zip_member_datetime": [
+        2026,
+        11,
+        3,
+        15,
+        47,
+        12
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx",
+      "old_exact_path_exists": true,
+      "old_bytes": 12829,
+      "same_size": false,
+      "new_sha256": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+      "extracted_reference_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\intake\\1103_v2\\inspection_001\\reference_02_제출샘플.xlsx",
+      "old_sha256": "b698b87e15bed61436da318c9477c6ac7e5a58b6412aa3414e75ce50f1b6039f",
+      "byte_identical_to_old": false
+    },
+    {
+      "name": "테스트셋 및 결과제출 샘플/테스트셋/",
+      "is_directory": true,
+      "uncompressed_bytes": 0,
+      "compressed_bytes": 0,
+      "zip_crc32": "00000000",
+      "zip_member_datetime": [
+        2026,
+        10,
+        27,
+        9,
+        27,
+        14
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋",
+      "old_exact_path_exists": true
+    },
+    {
+      "name": "테스트셋 및 결과제출 샘플/테스트셋/vpass_1월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 1032427516,
+      "compressed_bytes": 111508138,
+      "zip_crc32": "8c538ccb",
+      "zip_member_datetime": [
+        2026,
+        10,
+        26,
+        21,
+        52,
+        6
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 1032427516,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "테스트셋 및 결과제출 샘플/테스트셋/vpass_2월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 795028305,
+      "compressed_bytes": 80681030,
+      "zip_crc32": "72fcac10",
+      "zip_member_datetime": [
+        2026,
+        10,
+        26,
+        21,
+        52,
+        16
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 795028305,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "테스트셋 및 결과제출 샘플/테스트셋/vpass_3월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 1115652054,
+      "compressed_bytes": 112917958,
+      "zip_crc32": "d571a186",
+      "zip_member_datetime": [
+        2026,
+        10,
+        26,
+        21,
+        52,
+        34
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 1115652054,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "테스트셋 및 결과제출 샘플/테스트셋/vpass_4월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 1339299305,
+      "compressed_bytes": 139188467,
+      "zip_crc32": "226d9543",
+      "zip_member_datetime": [
+        2026,
+        10,
+        26,
+        21,
+        52,
+        52
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 1339299305,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "테스트셋 및 결과제출 샘플/테스트셋/vpass_5월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 1581199983,
+      "compressed_bytes": 167810057,
+      "zip_crc32": "3335fb63",
+      "zip_member_datetime": [
+        2026,
+        10,
+        26,
+        21,
+        53,
+        16
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 1581199983,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    },
+    {
+      "name": "테스트셋 및 결과제출 샘플/테스트셋/vpass_6월 데이터.csv",
+      "is_directory": false,
+      "uncompressed_bytes": 1621873318,
+      "compressed_bytes": 173525236,
+      "zip_crc32": "8b7debd5",
+      "zip_member_datetime": [
+        2026,
+        10,
+        26,
+        21,
+        53,
+        38
+      ],
+      "old_exact_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv",
+      "old_exact_path_exists": true,
+      "old_bytes": 1621873318,
+      "same_size": true,
+      "new_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "old_header": {
+        "first_physical_line_sha256": "2af86c4de81e91489b2c9b40b35dcaf6ad963bc4e696083b92810df8e6ee63db",
+        "first_physical_line_bytes": 35,
+        "line_complete_within_limit": true
+      },
+      "header_identical_to_old": true,
+      "full_content_identity_verified": false
+    }
+  ]
+}

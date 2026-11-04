@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "archive_name": "선박조업분류_1차_2차_결과보고서_팀원전달.zip",
+  "bytes": 104112566,
+  "sha256": "13534cbed24b273be17d9a7a88ba9e8194c5fb9c19b74d3574457165406c0ef9",
+  "file_count": 205,
+  "uncompressed_bytes": 200422569,
+  "zip_crc_test": "PASS",
+  "each_zip_member_sha256_matches_staging": true,
+  "staging_model_replay_status": "PASS",
+  "training_started": false,
+  "round003_started": false
+}

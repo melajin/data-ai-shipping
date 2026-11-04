@@ -1,0 +1,16 @@
+﻿{
+    "timestamp_utc":  "2026-11-04T17:25:59.8799513Z",
+    "manager_session":  "codex_505bd45f_37f4_4824_b7ff_6d9075c223fa",
+    "python":  "environments/round_004_tabicl_cpu/Scripts/python.exe",
+    "environment_manifest_reference":  "rounds/round_004/environment/requirements.freeze.txt",
+    "free_ram_gib":  3.2430381774902344,
+    "total_ram_gib":  13.809436798095703,
+    "cpu":  {
+                "Name":  "AMD Ryzen 7 8845HS w/ Radeon 780M Graphics",
+                "NumberOfCores":  8,
+                "NumberOfLogicalProcessors":  16
+            },
+    "python_processes":  [
+
+                         ]
+}

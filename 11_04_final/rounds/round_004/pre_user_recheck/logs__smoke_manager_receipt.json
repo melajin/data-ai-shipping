@@ -1,0 +1,9 @@
+﻿{
+    "started_utc":  "2026-11-04T16:56:49.6286145Z",
+    "finished_utc":  "2026-11-04T16:56:49.9148315Z",
+    "manager_wrapper_exit_code":  1,
+    "command":  "python rounds/round_004/code/manage_runtime.py smoke",
+    "review_sha256":  "985F1B578C6C7D9AD505D8408D040DAA89A412678F48C42DE66CABA5B74BB6E8",
+    "wrapper_sha256":  "381F20FD24F2DE465643C2EC8B648A6332C5632E21F4C8D1FA05073E32602750",
+    "probe_sha256":  "7DEE24EE5CC215733450BE17DB34B10A5E9D9ADACC5C7BA33021BAC3ECF4A0B2"
+}

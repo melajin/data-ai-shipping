@@ -1,0 +1,18 @@
+﻿{
+    "script_sha256":  "EC75B7B941B9F10F7DFF57DA78908FD6ECE96136D3EE61730D5E6D8E583EC324",
+    "python":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "stderr_encoding":  "PowerShell redirection Unicode",
+    "stdout_encoding":  "PowerShell redirection Unicode",
+    "argv":  [
+                 "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\audit_linkage.py",
+                 "--accidents",
+                 "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+                 "--train-cache-dir",
+                 "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031",
+                 "--output-dir",
+                 "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001",
+                 "--vessel-count-column",
+                 "사고선박수"
+             ],
+    "started_utc":  "2026-11-04T16:30:16.3608009Z"
+}

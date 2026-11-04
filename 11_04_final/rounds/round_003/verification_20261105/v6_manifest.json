@@ -1,0 +1,306 @@
+{
+ "completion_manifest": {
+  "STATUS.json": {
+   "exists": true,
+   "expected": "baf7903e78aca76d3aaaca5a57bfaa675b1d9a05fc158f5836b3900bc78d83ab",
+   "actual": "58e4e72efdc5159b51c50031a38e2381573f6d4895372d12e4ff6794a095e19a",
+   "match": false
+  },
+  "EXPERIMENT_LEDGER.csv": {
+   "exists": true,
+   "expected": "452269ed1704ee166ac0e2fee912d533c9a07457d5caaf16ea4b7370b0ba5a8c",
+   "actual": "452269ed1704ee166ac0e2fee912d533c9a07457d5caaf16ea4b7370b0ba5a8c",
+   "match": true
+  },
+  "NEXT_SESSION.md": {
+   "exists": true,
+   "expected": "b726e9cd58f3ac6828c38396f5ed7f4d5eacbeb63a979fd1a539342bbe849894",
+   "actual": "b726e9cd58f3ac6828c38396f5ed7f4d5eacbeb63a979fd1a539342bbe849894",
+   "match": true
+  },
+  "rounds\\round_003\\ROUND_REPORT.md": {
+   "exists": true,
+   "expected": "b545fd8893f67f3fba5eb260ec27813b8b1f1e9f433810daa6dc7f5802c4fcb4",
+   "actual": "b545fd8893f67f3fba5eb260ec27813b8b1f1e9f433810daa6dc7f5802c4fcb4",
+   "match": true
+  },
+  "rounds\\round_003\\review\\review.json": {
+   "exists": true,
+   "expected": "e67026ced190587ef2d3b4916059533e9a1a9f560580aebe1ce035f7bcfefa9f",
+   "actual": "e67026ced190587ef2d3b4916059533e9a1a9f560580aebe1ce035f7bcfefa9f",
+   "match": true
+  },
+  "rounds\\round_003\\artifacts\\result.json": {
+   "exists": true,
+   "expected": "4fa42825644b9eb93935f03e63e9d26c9f5ff7e98cdf07d0e0033b41f7c3deba",
+   "actual": "4fa42825644b9eb93935f03e63e9d26c9f5ff7e98cdf07d0e0033b41f7c3deba",
+   "match": true
+  }
+ },
+ "completion_manifest_all_match": false,
+ "result_json_referenced_artifacts": {
+  "predictions.csv": {
+   "exists": true,
+   "expected": "34c84db1518748f5fac181df424a9c2cdb24e1bcb9ea2e734eca65613de42573",
+   "actual": "34c84db1518748f5fac181df424a9c2cdb24e1bcb9ea2e734eca65613de42573",
+   "match": true
+  },
+  "paired_bootstrap_draws.npz": {
+   "exists": true,
+   "expected": "247fbebf650ff2e66f4c646193c7dbbdffce72a0d9c829649c3b328f34c87bdb",
+   "actual": "247fbebf650ff2e66f4c646193c7dbbdffce72a0d9c829649c3b328f34c87bdb",
+   "match": true
+  },
+  "run_round003.py": {
+   "exists": true,
+   "expected": "9f333f7f4be7ed81ef8296f36b4474f8a6730f99f306c8e4f586c9d031bea6a2",
+   "actual": "9f333f7f4be7ed81ef8296f36b4474f8a6730f99f306c8e4f586c9d031bea6a2",
+   "match": true
+  },
+  "experiment.json": {
+   "exists": true,
+   "expected": "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6",
+   "actual": "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6",
+   "match": true
+  },
+  "source_hash_manifest.json": {
+   "exists": true,
+   "expected": "81bc8e27b5f08d5920f4f59c2c6e2f693bad1e64d20bec95f9a42d74c66f4189",
+   "actual": "81bc8e27b5f08d5920f4f59c2c6e2f693bad1e64d20bec95f9a42d74c66f4189",
+   "match": true
+  },
+  "review/precheck.json": {
+   "exists": true,
+   "expected": "3674a9ab1789f1b9b95f33d2abfba44763fb79e5a37c62858d81d79196ae34e2",
+   "actual": "3674a9ab1789f1b9b95f33d2abfba44763fb79e5a37c62858d81d79196ae34e2",
+   "match": true
+  },
+  "decision_policy_frozen.json": {
+   "exists": true,
+   "expected_canonical_pre_hash": "ee938b6ad2887e883ad5fd7a5b90982d3156d6e70460584b17708a03837c337a",
+   "embedded_pre_hash": "ee938b6ad2887e883ad5fd7a5b90982d3156d6e70460584b17708a03837c337a",
+   "recomputed_canonical_pre_hash": "ee938b6ad2887e883ad5fd7a5b90982d3156d6e70460584b17708a03837c337a",
+   "raw_file_sha256": "06dac0581974c2856d3e29ccc5cf49555e543f4ee55215ba1dda5c54640aa289",
+   "match": true
+  }
+ },
+ "result_json_refs_all_match": true,
+ "plan_hash": {
+  "recorded": "54cef183b6845d6cecfca64314fc0d801c8d1b8c7c826da76f9a42b665ea2ce0",
+  "actual": "54cef183b6845d6cecfca64314fc0d801c8d1b8c7c826da76f9a42b665ea2ce0",
+  "match": true
+ },
+ "launcher_hash": {
+  "recorded": "0346fb307a015289c4686cc186aedcaf9854f6f5702a0808d66217cde35b0760",
+  "actual": "0346fb307a015289c4686cc186aedcaf9854f6f5702a0808d66217cde35b0760",
+  "match": true
+ },
+ "run_snapshots_identical_to_live": {
+  "run_snapshot_preflight_20261104T163157863Z": {
+   "run_round003.py": false,
+   "launch_round003.ps1": true,
+   "experiment.json": true,
+   "ROUND_PLAN.md": true
+  },
+  "run_snapshot_preflight_20261104T163312701Z": {
+   "run_round003.py": true,
+   "launch_round003.ps1": true,
+   "experiment.json": true,
+   "ROUND_PLAN.md": true
+  },
+  "run_snapshot_score_20261104T163427781Z": {
+   "run_round003.py": true,
+   "launch_round003.ps1": true,
+   "experiment.json": true,
+   "ROUND_PLAN.md": true
+  }
+ },
+ "score_run_evidence": {
+  "receipt_runner_pid": 440,
+  "runner_self_reported_pid": 19052,
+  "pid_agrees": false,
+  "receipt_elapsed_s": 15.1265969,
+  "runner_elapsed_s": 13.93416690000231,
+  "receipt_exit": 0,
+  "runner_exit": 0,
+  "timed_out": false,
+  "score_receipts_found": 1,
+  "stderr_bytes": 0
+ },
+ "ledger_last_rows": [
+  "\"round_002\",\"2026-11-04T14:30:47Z\",\"2026-11-04T15:23:12+00:00\",\"completed_not_adopted_user_pause\",\"Same X304/FIT CatBoost pipeline vs refit sqrt_macro seed42 with INNER_ES/SELECT\",\"0.5894522638629812\",\"0.5806342207902323\",\"repeated_development_training_and_outer_evaluation\",\"6\",\"rounds/round_002/ROUND_REPORT.md\",\"PAUSED by user; preserved round003 TabICL R0 decision-policy audit plan\"",
+  "\"round_003\",\"2026-11-04T16:13:25Z\",\"2026-11-04T16:45:24.452413+00:00\",\"completed_with_limitations_not_adopted\",\"Unchanged TabICL saved probabilities: raw vs old vs INNER-selected trap decision multiplier\",\"0.5930133966423605\",\"0.5933525521451586\",\"repeated_development_saved_probability_decision_audit_two_seed_mean\",\"0\",\"rounds/round_003/ROUND_REPORT.md\",\"Round004 isolated CPU TabICL2.2.0 runtime acquisition, bounded synthetic smoke, development-only input lineage audit; no new actual-data F1 or parameter training\""
+ ],
+ "status_round": {
+  "current_round": "round_003",
+  "round_status": "round_004_in_progress",
+  "goal_status": "in_progress_not_achieved"
+ },
+ "status_scores_keys": [
+  "evaluation_population",
+  "baseline",
+  "exploratory_best",
+  "historical_s6_aggregate",
+  "independent_micro_f1",
+  "official_micro_f1",
+  "development_observed_ge_070",
+  "independently_verified_ge_070",
+  "official_score_ge_070",
+  "round_002",
+  "round_003"
+ ],
+ "status_round_003": {
+  "evaluation_population": "repeatedly exposed development OUTER, 5,897 unique vessels",
+  "seeds": [
+   42,
+   2026
+  ],
+  "aggregation": "arithmetic mean of seed metrics; not probability ensemble and not 11794 independent vessels",
+  "mean_metrics": {
+   "A_raw": {
+    "vessels_per_seed": 5897.0,
+    "not_summed_across_seeds": true,
+    "micro_f1": 0.5930133966423605,
+    "macro_f1": 0.5155580319500959,
+    "weighted_f1": 0.5539843909787947,
+    "mean_assigned_class_original_probability": 0.6023470809961545,
+    "class_precision": [
+     0.5921765705366602,
+     0.6092231826027811,
+     0.4940156169994879,
+     0.6563804412641622
+    ],
+    "class_recall": [
+     0.8657534246575342,
+     0.37723214285714285,
+     0.1479041916167665,
+     0.6746031746031746
+    ],
+    "class_f1": [
+     0.7032946144231786,
+     0.4659240858591347,
+     0.22764884418473677,
+     0.6653645833333333
+    ]
+   },
+   "A_old": {
+    "vessels_per_seed": 5897.0,
+    "not_summed_across_seeds": true,
+    "micro_f1": 0.5748685772426658,
+    "macro_f1": 0.5372271285505399,
+    "weighted_f1": 0.558096720517929,
+    "mean_assigned_class_original_probability": 0.5807682080078466,
+    "class_precision": [
+     0.6122071914782623,
+     0.6400725655613055,
+     0.3335479063368777,
+     0.7041029766693483
+    ],
+    "class_recall": [
+     0.7917808219178082,
+     0.3412698412698413,
+     0.37305389221556884,
+     0.623015873015873
+    ],
+    "class_f1": [
+     0.6905091849259105,
+     0.4451585588273005,
+     0.3521883628182841,
+     0.6610524076306645
+    ]
+   },
+   "A_micro_select": {
+    "vessels_per_seed": 5897.0,
+    "not_summed_across_seeds": true,
+    "micro_f1": 0.5933525521451586,
+    "macro_f1": 0.520562845334023,
+    "weighted_f1": 0.5564218565926311,
+    "mean_assigned_class_original_probability": 0.6017685797336274,
+    "class_precision": [
+     0.5934874770596876,
+     0.6122470021146091,
+     0.48303480413572153,
+     0.6589543269230769
+    ],
+    "class_recall": [
+     0.8626712328767123,
+     0.37475198412698413,
+     0.16706586826347306,
+     0.6746031746031746
+    ],
+    "class_f1": [
+     0.7031834020996556,
+     0.46492491728271496,
+     0.247466142662383,
+     0.6666769192913387
+    ]
+   }
+  },
+  "correct_by_seed": {
+   "42": {
+    "A_raw": 3491,
+    "A_old": 3391,
+    "A_micro_select": 3495
+   },
+   "2026": {
+    "A_raw": 3503,
+    "A_old": 3389,
+    "A_micro_select": 3503
+   }
+  },
+  "selected_factors": {
+   "42": [
+    1,
+    1.5,
+    1
+   ],
+   "2026": [
+    1,
+    1,
+    1
+   ]
+  },
+  "progress_gate": {
+   "criteria": {
+    "mean_micro_delta_at_least_0_005": false,
+    "both_seed_micro_deltas_positive": false,
+    "paired_5000_vessel_bootstrap_ci_lower_above_zero": false,
+    "mean_macro_f1_not_decreased": true,
+    "each_seed_class_f1_drop_no_more_than_0_01": true,
+    "each_seed_natural_1_7_macro_f1_drop_no_more_than_0_01": true
+   },
+   "all_criteria_met": false,
+   "micro_delta_by_seed": {
+    "42": 0.0006783110055960107,
+    "2026": 0.0
+   },
+   "macro_delta_mean": 0.005004813383927109,
+   "class_f1_delta_by_seed": {
+    "42": [
+     -0.00022242464704613774,
+     -0.00199833715283948,
+     0.03963459695529248,
+     0.002624671916010568
+    ],
+    "2026": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "natural_1_7_macro_delta_by_seed": {
+    "42": 0.0002550475946557218,
+    "2026": 0.0
+   },
+   "paired_ci95_mean_micro_delta_vs_raw": [
+    -0.0009326776326945563,
+    0.001610988638290678
+   ],
+   "interpretation": "development confirmation candidate gate only; not independent or official performance"
+  },
+  "candidate_adopted": false,
+  "result": "rounds/round_003/artifacts/result.json",
+  "historical_baseline_unchanged": true
+ }
+}

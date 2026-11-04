@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "verification_type": "independent_real_data_output_audit",
+  "checked_at_utc": "2026-11-04T16:31:10.822818+00:00",
+  "run_directory": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001",
+  "checks": [
+    {
+      "name": "successful_manifest_and_input_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_input_and_output_hashes",
+      "passed": true,
+      "detail": [
+        {
+          "filename": "26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+          "passed": true
+        },
+        {
+          "filename": "rows_train_1.parquet",
+          "passed": true
+        },
+        {
+          "filename": "rows_train_2.parquet",
+          "passed": true
+        },
+        {
+          "filename": "rows_train_3.parquet",
+          "passed": true
+        },
+        {
+          "filename": "rows_train_4.parquet",
+          "passed": true
+        },
+        {
+          "filename": "rows_train_5.parquet",
+          "passed": true
+        },
+        {
+          "filename": "rows_train_6.parquet",
+          "passed": true
+        },
+        {
+          "filename": "candidate_vessels.csv",
+          "passed": true
+        },
+        {
+          "filename": "event_audit.csv",
+          "passed": true
+        },
+        {
+          "filename": "possible_duplicate_events.csv",
+          "passed": true
+        },
+        {
+          "filename": "sensitivity_summary.csv",
+          "passed": true
+        },
+        {
+          "filename": "summary.json",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "pre_post_hash_records_equal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "script_hash_current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "output_outside_canonical",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_167_source_rows_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original_event_fields_and_row_mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invalid_events_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "candidate_keys_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "candidate_event_ids_exist",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_confirmed_identity_claim",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nine_distinct_conditions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h0_r1000m_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h0_r1000m_minimum_distance_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h0_r1000m_best_time_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h0_r3000m_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h0_r3000m_minimum_distance_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h0_r3000m_best_time_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h0_r5000m_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h0_r5000m_minimum_distance_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h0_r5000m_best_time_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h1_r1000m_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h1_r1000m_minimum_distance_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h1_r1000m_best_time_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h1_r3000m_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h1_r3000m_minimum_distance_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h1_r3000m_best_time_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h1_r5000m_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h1_r5000m_minimum_distance_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h1_r5000m_best_time_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h2_r1000m_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h2_r1000m_minimum_distance_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h2_r1000m_best_time_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h2_r3000m_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h2_r3000m_minimum_distance_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h2_r3000m_best_time_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h2_r5000m_counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h2_r5000m_minimum_distance_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "h2_r5000m_best_time_row__finite_boundaries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nested_candidate_sets_nondecreasing",
+      "passed": true,
+      "detail": "Single-candidate event counts are not required to be monotonic."
+    },
+    {
+      "name": "baseline_118_candidate_30_single_events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate_pairs_unique_not_merged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent_selected_cache_provenance_and_argmin",
+      "passed": true,
+      "detail": [
+        {
+          "event_id": "E0001",
+          "rfid_id": "31015643",
+          "source_rows_recomputed": 1,
+          "passed": true
+        },
+        {
+          "event_id": "E0083",
+          "rfid_id": "31704073",
+          "source_rows_recomputed": 1,
+          "passed": true
+        },
+        {
+          "event_id": "E0167",
+          "rfid_id": "32301163",
+          "source_rows_recomputed": 3,
+          "passed": true
+        },
+        {
+          "event_id": "E0001",
+          "rfid_id": "31704073",
+          "source_rows_recomputed": 3,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "event_count": 167,
+  "candidate_association_rows": 2567,
+  "limits": [
+    "Candidate linkage is not confirmed vessel identity or accident detection performance.",
+    "Direct raw-cache argmin verification covers selected event/vessel samples; table aggregation covers every output row.",
+    "No source data, canonical repository, or producer output is modified."
+  ]
+}

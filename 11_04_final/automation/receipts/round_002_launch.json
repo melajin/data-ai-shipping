@@ -1,0 +1,45 @@
+﻿{
+    "from_round":  "round_002",
+    "requested_model":  "gpt-6-astra",
+    "requested_effort":  "high",
+    "task_root":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+    "workspace":  "path:D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+    "handoff_sha256":  "1E440F52259CB33011A567C9BF6AC083BDEAD3110D1912AA3E62D00D6921D66E",
+    "started_at_utc":  "2026-11-04T16:13:24.3463836Z",
+    "accepted":  true,
+    "status":  "prompt_delivered",
+    "exit_code":  0,
+    "raw_stdout":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\receipts\\round_002_launch.stdout.json",
+    "raw_stderr":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\receipts\\round_002_launch.stderr.txt",
+    "host_response":  {
+                          "id":  "d1053848-1645-4aa9-8b0d-32a6033079fc",
+                          "ok":  true,
+                          "result":  {
+                                         "outcome":  {
+                                                         "kind":  "structured",
+                                                         "sessionId":  "codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9",
+                                                         "handle":  "structured-agent-session-codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9",
+                                                         "tabId":  "structured-agent-session-codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9"
+                                                     },
+                                         "worktreeId":  "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+                                         "receipt":  {
+                                                         "mode":  "structured",
+                                                         "preferred":  "structured",
+                                                         "reason":  "user_default",
+                                                         "detail":  "Started a structured chat session, the default for new agent tabs in your settings."
+                                                     },
+                                         "prompt":  {
+                                                        "delivery":  "submit",
+                                                        "outcome":  "journaled",
+                                                        "messageId":  "1793808804930-5c0dd9da96f445a29514a1b416595f83"
+                                                    },
+                                         "operationId":  "1793808804916-85b7098dda964041a54c47027c363561"
+                                     },
+                          "_meta":  {
+                                        "runtimeId":  "b4aa8510-0609-45a9-b7ba-e1cdeeab97f6"
+                                    }
+                      },
+    "handoff_snapshot":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\receipts\\round_002_NEXT_SESSION.md",
+    "status_snapshot":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\receipts\\round_002_STATUS.json",
+    "completed_at_utc":  "2026-11-04T16:13:25.0953361Z"
+}

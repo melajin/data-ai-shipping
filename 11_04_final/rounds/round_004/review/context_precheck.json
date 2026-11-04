@@ -1,0 +1,77 @@
+{
+  "schema": "round004_context_export_precheck.v1",
+  "review_status": "PASS_WITH_LIMITATIONS",
+  "decision": "READY_FOR_ONE_BOUNDED_CONTEXT_EXPORT_IN_ROUND005; DO_NOT_TREAT_AS_EXECUTED",
+  "reviewed_at_utc": "2026-11-04T17:17:00Z",
+  "reviewer": {
+    "role": "independent source and export-code precheck",
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none"
+  },
+  "code": {
+    "path": "rounds/round_004/context_recovery/build_context.py",
+    "sha256": "1e87753eda6e5253cf248c1abbde6e1155d7eee3693d91495d8e78c8ac884c6d",
+    "reviewed_static_only": true,
+    "execution_authorized_or_performed_this_round": false,
+    "execution_status": "NOT_RUN: parent cutoff was 2026-11-04T17:15:00Z; no export artifact exists in this review."
+  },
+  "source_schema_metadata": {
+    "path": "P/splits/splits_original.json",
+    "bytes": 497418,
+    "sha256": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+    "top_level_counts": {
+      "development_ids": 5897,
+      "holdout_ids": 1475,
+      "folds": 3
+    },
+    "outer_seed": 20261030,
+    "known_holdout_reused": true,
+    "selection_scope": "development exploratory nested early-stop evaluation",
+    "fold_role_counts": {
+      "0": {"fit_ids": 3144, "inner_ids": 787, "outer_ids": 1966},
+      "1": {"fit_ids": 3144, "inner_ids": 787, "outer_ids": 1966},
+      "2": {"fit_ids": 3145, "inner_ids": 787, "outer_ids": 1965}
+    },
+    "identifier_values_printed": false,
+    "holdout_feature_label_probability_values_read": false,
+    "interpretation": "The source generator's verifier rejects development/holdout ID overlap. The known_holdout_reused flag is preserved as provenance; it does not establish a new independent evaluation or imply ID-set overlap. The history and meaning of prior reuse remain unresolved."
+  },
+  "code_review": {
+    "scope": "One fold0/seed42 development context export, comprising ordered FIT and INNER IDs, development labels, raw first-156-column-derived transformed float32 arrays, names, and hashes.",
+    "checks_present": [
+      "Pinned fold0 development NPZ SHA256 equals the reviewed round002 anchor.",
+      "P split-manifest hash must match both the frozen decision rule and seed42 parent fingerprint.",
+      "Manifest development/holdout ID sets must be disjoint; FIT/INNER IDs must be disjoint.",
+      "Ordered INNER IDs must match the frozen digest using BASE.digest_json-compatible UTF-8 JSON serialization.",
+      "FIT membership must match the stored vocabulary membership hash; this sorted-set digest does not prove FIT row order.",
+      "P role and exp01 roster tables are filtered to fold0 before map construction; development labels are compared against roster y_true.",
+      "Only fold0 FIT and INNER arrays are exported; no outer/holdout feature, label, or probability rows are exported.",
+      "Transform uses the saved 156 medians and 156 raw missing flags to produce float32 312-column arrays.",
+      "Outputs and result metadata are written under the round004 context_recovery directory; imports do not load TabICL/Torch or a checkpoint."
+    ],
+    "issues_found_and_fixed_before_review": [
+      "Role/roster maps initially mixed folds; final candidate filters both tables to fold0.",
+      "A label check initially addressed the role tuple slot; final candidate compares y_true at tuple index 1.",
+      "The initial candidate lacked the pinned NPZ hash guard and development/holdout ID-set disjoint assertion; both are present in the reviewed candidate."
+    ],
+    "remaining_limitations": [
+      "This is static code review only; output arrays, ordered ID hashes, and run-time provenance have not been produced or independently checked.",
+      "The script checks fold0 outer_ids count only and does not export or use outer IDs; the split manifest and source verifier are hash-bound, and the requested export is FIT/INNER only.",
+      "The provenance flags known_holdout_reused=true and the stated selection_scope require explicit context in the handoff; they are not proof of independent evaluation."
+    ],
+    "no_model_training_inference_or_F1": true,
+    "no_protected_feature_or_label_rows": true
+  },
+  "reviewed_source_sha256": {
+    "P/run_experiments.py": "fa2297714250f39492abde98f762e5859e64f18766d9bde68f8df2360bd67262",
+    "P/audit_experiments.py": "89c3a36c9533dbcb7c8ddabfb655ed7ceb9720f803df23dcf537323c903a9de9",
+    "P/final_fixed_decision_rule.json": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+    "P/seed_42_parent_fingerprint.json": "64b992fb807b4ada967d641279c625e5640865997234d38c003f179cb9b25475",
+    "P/fold0_vocabulary_state.json": "402f44fd2fe8bfef82709452b5678a17cea40d302d1eac61731f96a61665397d",
+    "P/seed42_fold0_preprocessor.json": "eea7d15bd4f0610450600502fcfb36d584a6f5324f26b6b325c3014d10065740",
+    "P/development_roles_long.csv": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+    "exp01/fixed_split_roster.csv": "9639abbeccf5335e8baa8f0c8c165c319da453615e410674d28e4410e355e29f",
+    "exp01/fold0_features.npz": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95"
+  }
+}

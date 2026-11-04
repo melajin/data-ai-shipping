@@ -1,0 +1,6 @@
+{"stage": "inputs_hashed_and_query_freeze_ready", "elapsed_seconds": 0.1351399000013771}
+{"stage": "context_validated", "elapsed_seconds": 0.3342601000003924}
+{"stage": "fixed_reference_rows_verified", "elapsed_seconds": 0.3403877000018838}
+{"stage": "package_import_pending", "elapsed_seconds": 0.34418509999886737}
+{"stage": "package_imported", "elapsed_seconds": 16.947875199999544}
+{"stage": "checkpoint_fit_context_bind_start", "elapsed_seconds": 16.95251560000179}

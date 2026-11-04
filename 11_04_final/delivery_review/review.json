@@ -1,0 +1,177 @@
+﻿{
+  "review_id": "rounds_001_002_team_package_delivery_review",
+  "status": "staging_review_pass_zip_integrity_pending",
+  "review_date": "2026-11-05",
+  "package_path": "deliverables/rounds_001_002_team_package",
+  "scope": {
+    "source_reports_reviewed": [
+      "rounds/round_001/ROUND_REPORT.md",
+      "rounds/round_001/review/review.json",
+      "rounds/round_001/execution/result.json",
+      "rounds/round_001/execution/supplemental_ensemble.json",
+      "rounds/round_002/ROUND_REPORT.md",
+      "rounds/round_002/review/review.json",
+      "rounds/round_002/review/preliminary_review.md",
+      "rounds/round_002/IDEA_REVIEW_AND_ROUND003.md"
+    ],
+    "package_readme": "00_README.md",
+    "combined_report": [
+      "01_통합결과보고서.md",
+      "01_통합결과보고서.html"
+    ],
+    "raw_data_read": false,
+    "holdout_individual_rows_read": false,
+    "source_repo_write": false,
+    "training_started": false,
+    "archive_crc_checked_by_this_reviewer": false,
+    "zip_sidecar_sha_checked_by_this_reviewer": false
+  },
+  "model_effort_provenance": {
+    "requested_model": "gpt-6-luna",
+    "requested_effort": "xhigh",
+    "host_runtime_evidence_for_this_review": "unavailable",
+    "actual_runtime_claim": "unverified",
+    "note": "Round 002 model_runtime_evidence.json concerns prior manager/worker contexts, not this review session."
+  },
+  "report_checks": {
+    "round001_saved_five_seed_replay": {
+      "correct": 3497,
+      "n": 5897,
+      "micro_f1": 0.5930133966423605,
+      "macro_f1": 0.5252719738966167,
+      "no_new_training": true,
+      "exploratory_0_593352_adopted": false,
+      "dynamic_t5_parity": "unmeasured",
+      "historical_s6_attribution": "unresolved"
+    },
+    "round002_same_round_baseline": {
+      "correct": 3476,
+      "micro_f1": 0.5894522638629812,
+      "macro_f1": 0.519210304310862
+    },
+    "round002_catboost": {
+      "correct": 3424,
+      "micro_f1": 0.5806342207902323,
+      "macro_f1": 0.4689224222226287,
+      "adopted": false
+    },
+    "round002_blend": {
+      "correct": 3474,
+      "micro_f1": 0.5891131083601832,
+      "macro_f1": 0.5061678493519742,
+      "adopted": false
+    },
+    "previously_exposed_development_outer": true,
+    "rounds_presented_as_causal_direct_comparison": false,
+    "hardware_or_official_score_claimed": false,
+    "user_pause_after_round002_preserved": true
+  },
+  "manifest_review": {
+    "format_version": 1,
+    "manifest_entries": 198,
+    "listed_content_total_bytes": 200364097,
+    "listed_paths_missing": 0,
+    "unlisted_eligible_files": 0,
+    "bad_sha256_fields": 0,
+    "absolute_or_parent_traversal_paths": 0,
+    "declared_excluded_roots": [
+      "MANIFEST.json",
+      "validation/",
+      "delivery_review/"
+    ],
+    "hash_only_verifier": {
+      "status": "PASS",
+      "files_verified": 198,
+      "command": "python -B reproduce/verify_package.py --hash-only"
+    }
+  },
+  "content_boundary_review": {
+    "required_rounds_evidence_present": true,
+    "fixed_development_x304_present": true,
+    "t5_csvs_present": true,
+    "saved_round001_models_and_probabilities_present": true,
+    "round002_models_and_probabilities_present": true,
+    "pause_and_handoff_documents_present": true,
+    "raw_data_present": false,
+    "holdout_individual_features_labels_or_predictions_present": false,
+    "virtual_environment_or_site_packages_present": false,
+    "wheel_or_bytecode_or_cache_present": false,
+    "suspiciously_named_secret_or_credential_file_found": false,
+    "secret_content_audit": "not comprehensive",
+    "automatic_round003_launcher_present": false,
+    "historical_manual_round002_launch_wrappers_present": true,
+    "historical_launcher_note": "Retained as evidence; README says not to execute original run code. No launcher starts round003 automatically.",
+    "absolute_source_paths_in_historical_metadata": true,
+    "local_wheel_uri_in_freeze": true,
+    "readme_discloses_historical_paths_and_freeze_limitation": true
+  },
+  "verifier_review": {
+    "package_relative_paths": true,
+    "path_escape_guard": true,
+    "checks_file_size_and_sha256": true,
+    "npz_loaded_with_allow_pickle_false": true,
+    "contains_training_call": false,
+    "contains_external_raw_or_holdout_path": false,
+    "pandas_version_assert": "2.2.3 for default CSV precision replay",
+    "clean_machine_install_test": false
+  },
+  "full_model_replay": {
+    "status": "PASS",
+    "evidence": "validation/model_replay.json",
+    "files_verified": 198,
+    "training_performed": false,
+    "models_replayed": 21,
+    "maximum_probability_abs_delta": 0.0,
+    "round001_correct": 3497,
+    "round002_baseline_correct": 3476,
+    "round002_catboost_correct": 3424,
+    "round002_blend_correct": 3474,
+    "frozen_alphas": [1.0, 0.0, 0.5],
+    "t5_default_reader_matches_x304": true,
+    "round_trip_ensemble_outer_max_probability_delta_by_fold": [
+      0.00036644210845432346,
+      0.0009529509584444984,
+      0.0012018578769440735
+    ],
+    "round_trip_outer_argmax_changes": 0,
+    "bootstrap_recomputed": false,
+    "verification_environment": {
+      "python": "3.13.3",
+      "numpy": "2.2.5",
+      "pandas": "2.2.3",
+      "lightgbm": "4.7.0",
+      "catboost": "1.2.10"
+    },
+    "initial_pandas_3_1_attempt": "Failed default CSV equality assertion before model replay; packaging requirements corrected, no experiment changed."
+  },
+  "html_sample_check": {
+    "tables": 9,
+    "headings_h1_to_h3": 21,
+    "replacement_characters": 0,
+    "key_result_strings_present": true
+  },
+  "packaging_followups": {
+    "delivery_review_copied_to_staging_at_review_time": false,
+    "must_copy_delivery_review_files_before_zip": true,
+    "zip_crc_and_sidecar_sha": "pending package owner",
+    "zip_extraction_integrity": "pending package owner"
+  },
+  "sources": [
+    "deliverables/rounds_001_002_team_package/00_README.md",
+    "deliverables/rounds_001_002_team_package/01_통합결과보고서.md",
+    "deliverables/rounds_001_002_team_package/01_통합결과보고서.html",
+    "deliverables/rounds_001_002_team_package/MANIFEST.json",
+    "deliverables/rounds_001_002_team_package/reproduce/verify_package.py",
+    "deliverables/rounds_001_002_team_package/validation/model_replay.json",
+    "deliverables/rounds_001_002_team_package/validation/VALIDATION_NOTES.md",
+    "rounds/round_001/ROUND_REPORT.md",
+    "rounds/round_001/review/review.json",
+    "rounds/round_001/execution/result.json",
+    "rounds/round_001/execution/supplemental_ensemble.json",
+    "rounds/round_002/ROUND_REPORT.md",
+    "rounds/round_002/review/review.json",
+    "rounds/round_002/IDEA_REVIEW_AND_ROUND003.md",
+    "project_state/USER_PAUSE.md",
+    "project_state/STATUS.json"
+  ]
+}

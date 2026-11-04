@@ -1,0 +1,91 @@
+{
+  "title": "W1 연결근거 검토",
+  "date_local": "2026-11-05",
+  "input_version": "legacy provided inputs; no 1103_v2 archive used or validated",
+  "finding": {
+    "priority_union_event_count": 10,
+    "priority_union_event_ids": [
+      "E0023",
+      "E0042",
+      "E0046",
+      "E0052",
+      "E0096",
+      "E0108",
+      "E0109",
+      "E0123",
+      "E0134",
+      "E0136"
+    ],
+    "all_existing_single_candidate_events_reviewed": 30,
+    "identity_confirmed_count": 0,
+    "direct_crosswalk_found": false,
+    "registry_found_in_audit": false,
+    "type_tonnage_filter_applied": false,
+    "development_use_allowed": "unknown",
+    "normal_label_evidence_available": false,
+    "recommended_gate": "아직 시각 비교 준비만 가능",
+    "recommendation_reason": "후보표는 항적 유사성을 보일 뿐 직접 신원 키가 없고, 사고 자료의 개발용 사용 허용에 대한 원문이 로컬에서 확인되지 않았으며, 독립적인 확인 정상 라벨/분모도 없다."
+  },
+  "case_counts": {
+    "base_single_candidates": 30,
+    "stable_same_candidate_all_nine_conditions": 1,
+    "time_widened_to_multiple": 7,
+    "reported_multiple_accident_vessel_count": 3,
+    "selected_cache_rows_checked": 30,
+    "xlsx_headers_count": 18,
+    "xlsx_selected_source_row_match_count": 30,
+    "direct_id_headers": []
+  },
+  "local_search": {
+    "terms": [
+      "RFID",
+      "선명",
+      "선박 ID",
+      "선박ID",
+      "제원",
+      "테스트 데이터",
+      "학습 금지",
+      "전체 항적",
+      "이후 항적",
+      "사고시각",
+      "6시간",
+      "정상 정답"
+    ],
+    "scope": [
+      "26_11_5/20261105_TestB_감독세션_위임.md",
+      "26_11_5/20261105_분석종합과_TestB_실행계획.md",
+      "26_11_5/20261105_사고연결_실행결과_상세보고서.md",
+      "26_11_5/20261105_팀원자료_검토보고서.md",
+      "26_11_5/20261105_Gemini대화_검토반박.md",
+      "26_11_5/accident_linkage_audit_20261105/PROTOCOL.md",
+      "docs/competition_20261019/** (local provided-material inventory and analysis notes)",
+      "data/reference/competition_20261019/** (local provided-material inventory and project notes)",
+      "docs/real_support_evidence_20261028.md",
+      "docs/project_review_20261104.md",
+      "11_04_final/docs/report_review_20261105/pdf_text.txt",
+      "F:/문제 데이터_수정_1027/ (top-level/file-name inventory; contents not mass-searched)"
+    ],
+    "conclusion": "In the inspected local source inventory, accident workbook identifies time/location/type/count/tonnage but no RFID, vessel name, registration number, or vessel registry crosswalk. No primary original competition announcement/Q&A file was located; rule statements are repeated in local handoff/planning documents that attribute them to user-provided organizer replies. No universal absence claim."
+  },
+  "input_inventory": [
+    {
+      "path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "size_bytes": 28759,
+      "content_read": true
+    },
+    {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx",
+      "size_bytes": 12829,
+      "content_read": false
+    }
+  ],
+  "limits": [
+    "The full 30-case table is existing single-candidate subset only, not all 167 events; no relabeling of the other 137 events.",
+    "The existing candidate conditions are inherited, not recalculated.",
+    "Cache rows provide summarized geometry (n_coords, length, bbox, centroid) but not original WKT/part boundaries; no raw CSV geometry was read.",
+    "No point-level timestamps; no speed or acceleration calculated.",
+    "Candidate distance/time residuals are linkage evidence only, never detection error or performance.",
+    "No test-set training, label fitting, outside search, external contact, or new classifier/threshold fitting.",
+    "The 1103_v2 ZIP was not opened; this is explicitly legacy-input analysis."
+  ]
+}

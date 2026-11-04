@@ -1,0 +1,79 @@
+{
+ "split_identity": {
+  "0": {
+   "sizes": {
+    "fit_ids": 3144,
+    "inner_ids": 787,
+    "outer_ids": 1966
+   },
+   "fit_matches_roster": true,
+   "inner_matches_roster": true,
+   "outer_matches_roster": true,
+   "inner_matches_inner_predictions_csv": true,
+   "outer_matches_oof_fold_rows": true,
+   "fit_inner_overlap": 0,
+   "fit_outer_overlap": 0,
+   "inner_outer_overlap": 0,
+   "union_is_development": true
+  },
+  "1": {
+   "sizes": {
+    "fit_ids": 3144,
+    "inner_ids": 787,
+    "outer_ids": 1966
+   },
+   "fit_matches_roster": true,
+   "inner_matches_roster": true,
+   "outer_matches_roster": true,
+   "inner_matches_inner_predictions_csv": true,
+   "outer_matches_oof_fold_rows": true,
+   "fit_inner_overlap": 0,
+   "fit_outer_overlap": 0,
+   "inner_outer_overlap": 0,
+   "union_is_development": true
+  },
+  "2": {
+   "sizes": {
+    "fit_ids": 3145,
+    "inner_ids": 787,
+    "outer_ids": 1965
+   },
+   "fit_matches_roster": true,
+   "inner_matches_roster": true,
+   "outer_matches_roster": true,
+   "inner_matches_inner_predictions_csv": true,
+   "outer_matches_oof_fold_rows": true,
+   "fit_inner_overlap": 0,
+   "fit_outer_overlap": 0,
+   "inner_outer_overlap": 0,
+   "union_is_development": true
+  }
+ },
+ "development_holdout_disjoint": true,
+ "development_n": 5897,
+ "holdout_n": 1475,
+ "decision_scores": {
+  "42": {
+   "factor_matches_fold_map": true,
+   "saved_scores_rowsum_max_err": 7.771561172376096e-16,
+   "max_abs_diff_vs_normalized_scaled": 5.551115123125783e-16,
+   "max_abs_diff_vs_unnormalized_scaled": 1.3222391040075108,
+   "argmax_saved_scores_vs_argmax_unnormalized": 0,
+   "argmax_saved_scores_vs_chosen_class": 0,
+   "chosen_class_prob_is_original_p": 0.0,
+   "uncorrected_class_prob_is_original_p": 0.0,
+   "saved_p_vs_original_oof_max_abs_diff": 2.220446049250313e-16
+  },
+  "2026": {
+   "factor_matches_fold_map": true,
+   "saved_scores_rowsum_max_err": 6.661338147750939e-16,
+   "max_abs_diff_vs_normalized_scaled": 6.661338147750939e-16,
+   "max_abs_diff_vs_unnormalized_scaled": 1.3042697654320419,
+   "argmax_saved_scores_vs_argmax_unnormalized": 0,
+   "argmax_saved_scores_vs_chosen_class": 0,
+   "chosen_class_prob_is_original_p": 0.0,
+   "uncorrected_class_prob_is_original_p": 0.0,
+   "saved_p_vs_original_oof_max_abs_diff": 2.220446049250313e-16
+  }
+ }
+}

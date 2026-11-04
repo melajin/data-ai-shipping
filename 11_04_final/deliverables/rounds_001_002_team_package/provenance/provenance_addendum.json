@@ -1,0 +1,56 @@
+{
+  "document": "exp01 provenance addendum",
+  "updated_at_utc": "2026-11-04T13:24:06+00:00",
+  "scope": "Metadata correction and provenance clarification only; fixed feature NPZs, source CSV caches, models, and predictions were not regenerated or modified.",
+  "t5_cache": {
+    "generator": "run_005_main_20261101.py::stage_export",
+    "generator_sha256": "8fbf13c6bec957f845ac86b24b6c5f4b257e35a7fac3e2513214d32abeaaa04a",
+    "harbor_builder": "run_005_F156_merge_20261101.py::_lean_build_harbors",
+    "population_geometry": "The builder loops over _train_arrays() and _test_arrays(); shared unlabeled harbor candidates therefore include Jan-Jun 2026 Train and 2025 Test geometry.",
+    "mask_application": "The global fishing mask is applied to active 2026 Train rows using the shared harbor candidates plus Train-only own moorings.",
+    "label_scope": "Fold-specific class distributions use FIT labels only; held-out labels are not used for T5 construction.",
+    "query_scope": "Each development vessel query uses its full observed Jan-Jun 2026 Train track.",
+    "caveat": "The cached T5 CSVs have verified vessel IDs and schema. A bitwise comparison with the original in-memory dynamic T5 arrays was not performed; CSV float round-trip differences are therefore unmeasured."
+  },
+  "feature_scope": {
+    "X304": "156 F156 + 10 T5 + 68 B behavior features excluding obs_days + 70 local_rel features = 304 columns.",
+    "B68": "Deterministic per-vessel aggregation from that vessel’s own full Jan-Jun 2026 observations; no cross-vessel population statistic.",
+    "local_rel70": "Uses cohort-level 2026 Train medians/MADs by 0.1-degree region, with small-region fallback; self is included. This is transductive across FIT/INNER/OUTER roles.",
+    "coordinates": "No timestamp-aligned coordinate speed or acceleration is claimed."
+  },
+  "evidence": [
+    "reports/exp06/input_audit.md (source lineage and fold input equality audit)",
+    "run_005_F156_merge_20261101.py::_lean_build_harbors (Train and Test geometry inputs)",
+    "run_005_main_20261101.py::stage_export (saved fold T5 CSV export)",
+    "Historical adapter hashes are recorded in exp03/exp04 run_report.json; old source snapshots were not retained."
+  ],
+  "metadata_changes": [
+    "reports/exp01/data_validation.json::t5_cache_provenance.global_fishing_mask_source",
+    "reports/exp01/data_validation.json::t5_cache_provenance.note",
+    "configs/exp01/experiment.json::t5_cache.global_geometry_filter (post-run static metadata correction)"
+  ],
+  "execution_note": "For the currently running none_macro condition, launch-time source snapshots are preserved in that condition’s source_snapshot and launch_manifest. This metadata update does not change its model inputs. The none_macro launch snapshot retains the launch-time config copy; this post-run metadata correction does not alter its saved model inputs or run report. The sqrt_micro run report captured the pre-correction data_validation SHA b478ff67…; none_macro captured the corrected SHA f32d3812… matching the current file.",
+  "shared_adapter_lineage": {
+    "recorded_sha256": {
+      "exp03_daily_and_monthly_runs": "e1639d2d734b131ddf5e104393a2da03d450271eabd976fc049cc965a1d11168",
+      "exp04_run": "9b50765f5649fa65cfdbb1fc36e61bc5622d9630ade54045face9ba0567ecb20",
+      "current_exp01_source": "761e7e84d9eb1568c8ab200ed8513cf9036799475d1eb456fa39079cd7c6a6b6"
+    },
+    "historical_source_snapshots_available": false,
+    "exact_code_diff_and_change_timing": "Not recoverable from current artifacts: the historical adapter source files for the exp03 and exp04 hashes are absent, and shared/data_adapter.py is untracked with no repository history.",
+    "input_artifact_evidence": {
+      "prepared_fold_sha256": {
+        "0": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+        "1": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+        "2": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633"
+      },
+      "checks": "exp03 and exp04 run reports record these same prepared-fold artifact hashes; current exp01 loads those immutable NPZs. reports/exp06/input_audit.md records exact X304 block-value and NaN-mask agreement and verifies fixed IDs, labels, and roles."
+    },
+    "claim_boundary": "The artifact and audit evidence supports that the prepared model inputs matched; it does not prove byte-for-byte or full behavioral equivalence of historical adapter source implementations."
+  },
+  "data_validation_revision_hashes": {
+    "sqrt_micro_run_report_pre_correction": "b478ff672723cc0c9461acb39aa956800643a91c4e059cdb63b9042958d4d93d",
+    "current_corrected_file": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d",
+    "none_macro_run_report_corrected": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d"
+  }
+}

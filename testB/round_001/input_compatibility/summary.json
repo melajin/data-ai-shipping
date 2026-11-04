@@ -1,0 +1,294 @@
+{
+  "started_utc": "2026-11-04T17:48:29.799292+00:00",
+  "script_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\run_comparison.py",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "openpyxl": "3.1.5",
+  "zipfile_crc_checked_on_eof": true,
+  "status": "failed",
+  "errors": [
+    {
+      "exception": "SystemExit(0)",
+      "traceback": "Traceback (most recent call last):\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\run_comparison.py\", line 205, in <module>\n    sys.exit(0 if run['status']=='succeeded' else 1)\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSystemExit: 0\n"
+    }
+  ],
+  "input_manifest_sha256": "3916151773a3ad402a020889553bb1fe85c4bf5462f2cc794d526e5e0999e860",
+  "archive_path": "C:\\Users\\dlehs\\Downloads\\문제 데이터_수정_1103_v2.zip",
+  "archive_meta_before": {
+    "path": "C:\\Users\\dlehs\\Downloads\\문제 데이터_수정_1103_v2.zip",
+    "exists": true,
+    "bytes": 1431714584,
+    "mtime_ns": 1793812688429846700,
+    "mtime_utc": "2026-11-04T17:18:08.429847+00:00"
+  },
+  "archive_sha256_before": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
+  "archive_hash_bytes_before": 1431714584,
+  "old_files_meta_before": {
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+      "exists": true,
+      "bytes": 669416109,
+      "mtime_ns": 1790557016000000000,
+      "mtime_utc": "2026-09-28T00:56:56+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv",
+      "exists": true,
+      "bytes": 635512252,
+      "mtime_ns": 1789435710000000000,
+      "mtime_utc": "2026-09-15T01:28:30+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv",
+      "exists": true,
+      "bytes": 987693693,
+      "mtime_ns": 1789435864000000000,
+      "mtime_utc": "2026-09-15T01:31:04+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv",
+      "exists": true,
+      "bytes": 1113299125,
+      "mtime_ns": 1790584040000000000,
+      "mtime_utc": "2026-09-28T08:27:20+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv",
+      "exists": true,
+      "bytes": 1201889964,
+      "mtime_ns": 1789436196000000000,
+      "mtime_utc": "2026-09-15T01:36:36+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv",
+      "exists": true,
+      "bytes": 1255966524,
+      "mtime_ns": 1789436342000000000,
+      "mtime_utc": "2026-09-15T01:39:02+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
+      "exists": true,
+      "bytes": 1032427516,
+      "mtime_ns": 1793019126000000000,
+      "mtime_utc": "2026-10-26T12:52:06+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv",
+      "exists": true,
+      "bytes": 795028305,
+      "mtime_ns": 1793019136000000000,
+      "mtime_utc": "2026-10-26T12:52:16+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv",
+      "exists": true,
+      "bytes": 1115652054,
+      "mtime_ns": 1793019154000000000,
+      "mtime_utc": "2026-10-26T12:52:34+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv",
+      "exists": true,
+      "bytes": 1339299305,
+      "mtime_ns": 1793019172000000000,
+      "mtime_utc": "2026-10-26T12:52:52+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv",
+      "exists": true,
+      "bytes": 1581199983,
+      "mtime_ns": 1793019196000000000,
+      "mtime_utc": "2026-10-26T12:53:16+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv",
+      "exists": true,
+      "bytes": 1621873318,
+      "mtime_ns": 1793019218000000000,
+      "mtime_utc": "2026-10-26T12:53:38+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx": {
+      "path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "exists": true,
+      "bytes": 28759,
+      "mtime_ns": 1789133150000000000,
+      "mtime_utc": "2026-09-11T13:25:50+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx",
+      "exists": true,
+      "bytes": 12829,
+      "mtime_ns": 1793083378000000000,
+      "mtime_utc": "2026-10-27T06:42:58+00:00"
+    }
+  },
+  "zip_testzip_result": "not_run_full_archive_scan_avoided",
+  "zip_testzip_note": "Each of the 12 CSV and 2 XLSX members is explicitly streamed to EOF; ZipExtFile verifies its CRC at EOF.",
+  "xlsx_member_stream_results": [
+    {
+      "member": "26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "new_stream_bytes": 28759,
+      "old_stream_bytes": 28759,
+      "new_sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a",
+      "old_sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a",
+      "content_identical": true,
+      "zip_crc_checked_to_eof": true,
+      "elapsed_seconds": 0.002
+    },
+    {
+      "member": "테스트셋 및 결과제출 샘플/제출샘플.xlsx",
+      "new_stream_bytes": 12645,
+      "old_stream_bytes": 12829,
+      "new_sha256": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+      "old_sha256": "b698b87e15bed61436da318c9477c6ac7e5a58b6412aa3414e75ce50f1b6039f",
+      "content_identical": false,
+      "zip_crc_checked_to_eof": true,
+      "elapsed_seconds": 0.002
+    }
+  ],
+  "xlsx_results": [
+    {
+      "member": "26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "new_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\intake\\1103_v2\\inspection_001\\reference_01_26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "old_path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "cell_or_structure_difference_count": 0,
+      "manifest_byte_identical_to_old": true,
+      "zip_package_difference_count": 0
+    },
+    {
+      "member": "테스트셋 및 결과제출 샘플/제출샘플.xlsx",
+      "new_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\intake\\1103_v2\\inspection_001\\reference_02_제출샘플.xlsx",
+      "old_path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx",
+      "cell_or_structure_difference_count": 202,
+      "manifest_byte_identical_to_old": false,
+      "zip_package_difference_count": 5
+    }
+  ],
+  "archive_meta_after": {
+    "path": "C:\\Users\\dlehs\\Downloads\\문제 데이터_수정_1103_v2.zip",
+    "exists": true,
+    "bytes": 1431714584,
+    "mtime_ns": 1793812688429846700,
+    "mtime_utc": "2026-11-04T17:18:08.429847+00:00"
+  },
+  "archive_sha256_after": "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
+  "archive_hash_bytes_after": 1431714584,
+  "archive_unchanged_by_hash": true,
+  "archive_metadata_unchanged": true,
+  "old_files_meta_after": {
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+      "exists": true,
+      "bytes": 669416109,
+      "mtime_ns": 1790557016000000000,
+      "mtime_utc": "2026-09-28T00:56:56+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv",
+      "exists": true,
+      "bytes": 635512252,
+      "mtime_ns": 1789435710000000000,
+      "mtime_utc": "2026-09-15T01:28:30+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv",
+      "exists": true,
+      "bytes": 987693693,
+      "mtime_ns": 1789435864000000000,
+      "mtime_utc": "2026-09-15T01:31:04+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv",
+      "exists": true,
+      "bytes": 1113299125,
+      "mtime_ns": 1790584040000000000,
+      "mtime_utc": "2026-09-28T08:27:20+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv",
+      "exists": true,
+      "bytes": 1201889964,
+      "mtime_ns": 1789436196000000000,
+      "mtime_utc": "2026-09-15T01:36:36+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv",
+      "exists": true,
+      "bytes": 1255966524,
+      "mtime_ns": 1789436342000000000,
+      "mtime_utc": "2026-09-15T01:39:02+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
+      "exists": true,
+      "bytes": 1032427516,
+      "mtime_ns": 1793019126000000000,
+      "mtime_utc": "2026-10-26T12:52:06+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv",
+      "exists": true,
+      "bytes": 795028305,
+      "mtime_ns": 1793019136000000000,
+      "mtime_utc": "2026-10-26T12:52:16+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv",
+      "exists": true,
+      "bytes": 1115652054,
+      "mtime_ns": 1793019154000000000,
+      "mtime_utc": "2026-10-26T12:52:34+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv",
+      "exists": true,
+      "bytes": 1339299305,
+      "mtime_ns": 1793019172000000000,
+      "mtime_utc": "2026-10-26T12:52:52+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv",
+      "exists": true,
+      "bytes": 1581199983,
+      "mtime_ns": 1793019196000000000,
+      "mtime_utc": "2026-10-26T12:53:16+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv",
+      "exists": true,
+      "bytes": 1621873318,
+      "mtime_ns": 1793019218000000000,
+      "mtime_utc": "2026-10-26T12:53:38+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx": {
+      "path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "exists": true,
+      "bytes": 28759,
+      "mtime_ns": 1789133150000000000,
+      "mtime_utc": "2026-09-11T13:25:50+00:00"
+    },
+    "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx": {
+      "path": "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx",
+      "exists": true,
+      "bytes": 12829,
+      "mtime_ns": 1793083378000000000,
+      "mtime_utc": "2026-10-27T06:42:58+00:00"
+    }
+  },
+  "all_old_file_metadata_unchanged": true,
+  "csv_summary": {
+    "count": 12,
+    "identical_count": 12,
+    "different_count": 0,
+    "total_new_bytes": 13349258148,
+    "total_old_bytes": 13349258148
+  },
+  "zip_crc_verified_all_csv_eof": true,
+  "zip_crc_verified_all_file_members_eof": true,
+  "csv_results_file": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\csv_identity.csv",
+  "workbook_differences_file": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\workbook_cell_differences.csv",
+  "workbook_detail_file": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\workbook_comparison.json",
+  "finished_utc": "2026-11-04T17:50:01.399712+00:00",
+  "elapsed_seconds": 91.6
+}

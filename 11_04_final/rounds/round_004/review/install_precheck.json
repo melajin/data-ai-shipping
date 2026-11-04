@@ -1,0 +1,37 @@
+﻿{
+  "schema": "round004_install_precheck.v1",
+  "precheck_status": "PASS_WITH_LIMITATIONS",
+  "review_decision": "ALLOW_INSTALL_ONLY",
+  "reviewed_at_utc": "2026-11-04T16:55:56Z",
+  "reviewer_role": "independent install-wrapper precheck",
+  "reviewer_model_effort": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none",
+    "host_evidence_file": "rounds/round_004/model_runtime_evidence.json",
+    "reviewer_session_file_id": "rollout-2026-11-05T01-46-50-01a1a774-c7a5-7d71-9402-312b5b7f7f77",
+    "role_mapping_file": "rounds/round_004/MODEL_AND_OWNERSHIP.md"
+  },
+  "reviewed_files": {
+    "manager_wrapper": {"path": "rounds/round_004/code/manage_runtime.py", "sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750", "bytes": 7082},
+    "plan": {"path": "rounds/round_004/ROUND_PLAN.md", "sha256": "6716ea5848228ebe2ffd70c72880e5c8a4e9c56d42e0437b04a22ed761e484fe"},
+    "budget": {"path": "rounds/round_004/configs/budget.json", "sha256": "f0ba537b0570902107da451df4b5e5f3b9ee1e170e5f062a6631106f09f7bb5f"},
+    "checkpoint": {"path": "model_cache/tabicl-classifier-v2-20260212.ckpt", "bytes": 110368038, "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0", "matches_expected": true}
+  },
+  "checks": {
+    "root_local_venv_cache_temp_logs_outputs": "PASS: wrapper directs the venv, wheelhouse, TEMP/TMP, pip/HF/Torch caches, logs, and artifacts below project ROOT; the base Python is only used to create the venv.",
+    "install_commands": "PASS: binary wheels only, no pip cache, Torch CPU constraint, exact top-level pins, wheelhouse download followed by --no-index install, pip check, and freeze.",
+    "timeout": "PASS_WITH_LIMITATION: each subprocess receives the remaining 900-second allowance and checks elapsed after exit. Inspect aggregate install.json elapsed_seconds before claiming it remained under the full limit; the final wrapper bookkeeping interval is not itself converted to a failure if it crosses 900 seconds.",
+    "download_size": "PASS_WITH_LIMITATION: the guard checks wheelhouse plus dedicated round004 temp artifacts during and after downloads and records observed peak/final disk bytes. It is not exact network-interface accounting and excludes index metadata traffic.",
+    "process_termination": "PASS: taskkill is scoped to the launched child PID tree on timeout or disk-cap trip; it does not target unrelated processes.",
+    "checkpoint_binding": "PASS: current checkpoint size/hash match the previous readiness record; smoke wrapper checks the same expected digest before use.",
+    "execution_results": "PENDING_INDEPENDENT_REVIEW: manager reports all install steps exited 0, pip check clean, and 150.437 seconds elapsed. This reviewer did not launch or independently inspect the receipts in this precheck."
+  },
+  "review_scope": {"model_loaded": false, "install_started_by_reviewer": false, "smoke_started_by_reviewer": false, "real_data_read": false},
+  "blocking_issues_for_install": [],
+  "smoke_not_authorized_by_this_receipt": true,
+  "limitations": [
+    "The 1 GiB control is artifact-based local disk accounting, not total network bytes; no downloads were measured by this reviewer.",
+    "This receipt covers the install wrapper only; smoke requires the separate precheck.json and launch-time install and RAM gates."
+  ]
+}

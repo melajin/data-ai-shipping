@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "updated_date_kst": "2026-11-05",
+  "active_round": "round_001",
+  "active_supervisor_session": "codex_929b2772_00d4_46cf_a9de_9001a4331c75",
+  "supervisor_requested_model": "gpt-6.1-sol",
+  "supervisor_requested_effort": "high",
+  "supervisor_actual_model": null,
+  "supervisor_actual_effort": null,
+  "runtime_verification_note": "Actual supervisor provider model/effort receipt not yet available; request is not execution proof.",
+  "run_id": "run_131763108c81",
+  "state": "W1_W2_reported_W3_independent_audit_and_W0_input_comparison_in_progress",
+  "workers": [
+    {"task": "W1", "task_id": "task_8ea9f23abf9d", "dispatch_id": "ctx_96e88ef698ce", "state": "reported_30_cases_0_confirmed_identities_pending_independent_audit", "followup_dispatch_id": "ctx_708b7e99411b", "orca_launch_model": "gpt-6-luna", "orca_launch_effort": "xhigh"},
+    {"task": "W2", "task_id": "task_885788d2f20f", "dispatch_id": "ctx_56089211395f", "state": "reported_8_synthetic_checks_exit0_pending_independent_audit", "followup_task_id": "task_3efbee95706c", "followup_dispatch_id": "ctx_8460e08f0123", "orca_launch_model": "gpt-6-luna", "orca_launch_effort": "xhigh"},
+    {"task": "W0", "task_id": "task_f483f7eb585c", "dispatch_id": "ctx_39f0545dfa0b", "orca_launch_model": "gpt-6-luna", "orca_launch_effort": "xhigh"},
+    {"task": "W3", "task_id": "task_f3f5f3ac7814", "dispatch_id": "ctx_b471eddc1464", "orca_launch_model": "gpt-6-luna", "orca_launch_effort": "xhigh"}
+  ],
+  "legacy_evidence_root": "26_11_5/testb_next_experiment_20261105",
+  "new_evidence_root": "testB/round_001",
+  "v2_intake_owner": "codex_929b2772_00d4_46cf_a9de_9001a4331c75",
+  "final_parent_handoff_message": "msg_18347d1bf4c5",
+  "v2_mixing_allowed": false,
+  "performance_gate_passed": false,
+  "round_closed": false,
+  "next_supervisor_ack_received": false
+}

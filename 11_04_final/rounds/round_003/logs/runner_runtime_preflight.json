@@ -1,0 +1,23 @@
+{
+  "mode": "preflight",
+  "pid": 31748,
+  "started_at_utc": "2026-11-04T16:33:13.707685+00:00",
+  "elapsed_seconds": 0.3182852999998431,
+  "exit_code": 0,
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.2.5",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "3",
+    "MKL_NUM_THREADS": "3",
+    "OPENBLAS_NUM_THREADS": "3",
+    "NUMEXPR_NUM_THREADS": "3",
+    "BLIS_NUM_THREADS": "3"
+  },
+  "temporary_directories": {
+    "TEMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs",
+    "TMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs",
+    "TMPDIR": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs",
+    "PYTHONPYCACHEPREFIX": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs\\pycache"
+  }
+}

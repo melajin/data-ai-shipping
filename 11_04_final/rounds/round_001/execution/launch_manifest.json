@@ -1,0 +1,26 @@
+{
+    "started_at_utc":  "2026-11-04T14:06:24.5035211Z",
+    "pid":  1012,
+    "command":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -u run_t5_csv_roundtrip.py",
+    "working_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution",
+    "stdout":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\stdout.log",
+    "stderr":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\stderr.log",
+    "python_environment":  {
+                               "OPENBLAS_NUM_THREADS":  "1",
+                               "PYTHONPYCACHEPREFIX":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\.pycache",
+                               "TMP":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\temp",
+                               "PYTHONDONTWRITEBYTECODE":  "1",
+                               "OMP_NUM_THREADS":  "1",
+                               "NUMEXPR_NUM_THREADS":  "1",
+                               "MKL_NUM_THREADS":  "1",
+                               "TEMP":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\temp"
+                           },
+    "status":  "result_completed_exit_code_unavailable",
+    "finalized_by":  "manager_after_execution_ownership_transfer",
+    "exit_code":  null,
+    "result_finished_at_utc":  "2026-11-04T14:07:03.326451+00:00",
+    "source_script_sha256_post_run":  "738cb598c80b1fc4443b6770a536efe25832f1b0c88e69fc0ec8f319140f778a",
+    "source_script_sha256_at_launch":  null,
+    "exit_code_reason":  "Detached process handle was not retained; completed result/stdout and empty stderr do not independently establish exit code.",
+    "post_run_hash_note":  "Hash of current retained source only; not a recorded launch-time snapshot."
+}

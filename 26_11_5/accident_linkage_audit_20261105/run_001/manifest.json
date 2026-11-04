@@ -1,0 +1,321 @@
+{
+  "schema_version": "1.0.0",
+  "status": "completed",
+  "started": {
+    "utc": "2026-11-04T16:30:17.270380+00:00",
+    "kst": "2026-11-05T01:30:17.270380+09:00"
+  },
+  "command_argv": [
+    "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\audit_linkage.py",
+    "--accidents",
+    "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+    "--train-cache-dir",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031",
+    "--output-dir",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001",
+    "--vessel-count-column",
+    "사고선박수"
+  ],
+  "input_pre": [
+    {
+      "path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "filename": "26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "size_bytes": 28759,
+      "mtime_ns": 1789133150000000000,
+      "sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet",
+      "filename": "rows_train_1.parquet",
+      "size_bytes": 18817327,
+      "mtime_ns": 1793455250079052200,
+      "sha256": "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_2.parquet",
+      "filename": "rows_train_2.parquet",
+      "size_bytes": 18009625,
+      "mtime_ns": 1793455327815027600,
+      "sha256": "748692493429823c116e204871d57920991c0c6d62d8a46a2b793ac1a80f356f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_3.parquet",
+      "filename": "rows_train_3.parquet",
+      "size_bytes": 24848272,
+      "mtime_ns": 1793455415105532600,
+      "sha256": "a2333ffee0aa491d1b450395b94a49c77f79084651b4101e31de37c573e2f2bd"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_4.parquet",
+      "filename": "rows_train_4.parquet",
+      "size_bytes": 27340845,
+      "mtime_ns": 1793455510538186100,
+      "sha256": "256498c7a97daf930678c0fb138c89f4081052cd333f030ac2d78e62ba11972a"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_5.parquet",
+      "filename": "rows_train_5.parquet",
+      "size_bytes": 29009998,
+      "mtime_ns": 1793455616585271800,
+      "sha256": "264957261a27d0a4b77336523fcd95d0483fce1399ca42cdf0e960f184131217"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_6.parquet",
+      "filename": "rows_train_6.parquet",
+      "size_bytes": 29470852,
+      "mtime_ns": 1793455720555103600,
+      "sha256": "b4cd5e6805ff9431fb5ba861205b962af17603a83dee6ac2dd0fe26195e17078"
+    }
+  ],
+  "script_pre": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\audit_linkage.py",
+    "filename": "audit_linkage.py",
+    "size_bytes": 40162,
+    "mtime_ns": 1793809797035441400,
+    "sha256": "ec75b7b941b9f10f7dff57da78908fd6ece96136d3ee61730d5e6d8e583ec324"
+  },
+  "environment": {
+    "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "numpy": "2.2.5",
+      "pandas": "2.2.3",
+      "pyarrow": "24.0.0",
+      "openpyxl": "3.1.5"
+    }
+  },
+  "execution_role": {
+    "requested_role": "sol_module",
+    "requested_model": "GPT-6.1 Sol",
+    "requested_effort": "xhigh",
+    "runtime_model_is_not_introspected": true
+  },
+  "contract": {
+    "candidate_rules": [
+      {
+        "hour_bucket_radius": 0,
+        "spatial_radius_m": 1000
+      },
+      {
+        "hour_bucket_radius": 0,
+        "spatial_radius_m": 3000
+      },
+      {
+        "hour_bucket_radius": 0,
+        "spatial_radius_m": 5000
+      },
+      {
+        "hour_bucket_radius": 1,
+        "spatial_radius_m": 1000
+      },
+      {
+        "hour_bucket_radius": 1,
+        "spatial_radius_m": 3000
+      },
+      {
+        "hour_bucket_radius": 1,
+        "spatial_radius_m": 5000
+      },
+      {
+        "hour_bucket_radius": 2,
+        "spatial_radius_m": 1000
+      },
+      {
+        "hour_bucket_radius": 2,
+        "spatial_radius_m": 3000
+      },
+      {
+        "hour_bucket_radius": 2,
+        "spatial_radius_m": 5000
+      }
+    ],
+    "baseline_rule": "abs(track_hour - floor(accident_time, hour)) <= 1 and centroid_distance_m <= 5000",
+    "time_rule_is_not_absolute_minutes": true,
+    "track_time_semantics": "Hourly interval [hour_start, hour_start + 1h); no per-point timestamps",
+    "time_alignment_assumption": "Naive input wall clocks are compared unchanged; source timezone not independently verified",
+    "signed_residual": "track_hour_start_minus_accident_minutes = track hour start minus exact accident time",
+    "interval_gap": "max(start - event, event - end, 0) in minutes; at exclusive end gap=0 but inside=False",
+    "best_time_rule": "minimum interval_gap, then absolute hour-start residual, distance, source filename, row index, cache index",
+    "minimum_distance_rule": "minimum distance, then interval gap, source filename, row index, cache index",
+    "distance": "Haversine distance from event coordinate to cached centroid proxy, not nearest route point",
+    "earth_radius_m": 6371000.0,
+    "spatial_boundary": "inclusive without pre-comparison rounding",
+    "filter": "key_valid and wkt_valid, numeric integral ID/date/hour/source index, valid calendar date and lonlat",
+    "train_scope": "2026 January through June; usable rows outside scope reject run",
+    "source_row_index": "row_index field copied as stored, not assumed to be an Excel or CSV line number",
+    "source_cache_row_index": "zero-based physical record position within cache file",
+    "accident_source_row_index": "zero-based data row; Excel row assumes first-row header, no skiprows",
+    "duplicate_rule": "exact original row or exact parsed timestamp and coordinates; flag pairs without merging",
+    "vessel_identity": "Candidate RFID associations only; no vessel registry; type and tonnage are not used to filter",
+    "labels": "No confirmed accident identity, cause label, accident-positive label, or negative label created",
+    "reference_counts_are_conditional_linkage_metrics": true,
+    "accident_training_suitability": "Unresolved; source filename says test data; no training performed",
+    "raw_geometry_loaded": false,
+    "project_modules_imported": false
+  },
+  "accident_schema": {
+    "sheet": "Sheet1",
+    "columns": [
+      "발생일시",
+      "관할해경서",
+      "발생해역",
+      "위도(변환)",
+      "경도(변환)",
+      "기상상태",
+      "발생원인",
+      "긴급/비긴급",
+      "발생유형",
+      "사고선박수",
+      "발생인원",
+      "구조",
+      "부상",
+      "사망",
+      "실종",
+      "선 종",
+      "어업면허",
+      "톤수"
+    ],
+    "vessel_count_column": "사고선박수"
+  },
+  "baseline_checks": {
+    "event_count": {
+      "expected": 167,
+      "actual": 167,
+      "matches": true
+    },
+    "candidate_event_count": {
+      "expected": 118,
+      "actual": 118,
+      "matches": true
+    },
+    "single_candidate_event_count": {
+      "expected": 30,
+      "actual": 30,
+      "matches": true
+    },
+    "raw_track_rows": {
+      "expected": 3887069,
+      "actual": 3887069,
+      "matches": true
+    },
+    "valid_track_rows": {
+      "expected": 3887065,
+      "actual": 3887065,
+      "matches": true
+    }
+  },
+  "track_validation": {
+    "raw_rows": 3887069,
+    "key_valid_rows": 3887068,
+    "key_and_wkt_valid_rows": 3887065,
+    "invalid_id_or_date_numeric_rows": 0,
+    "invalid_calendar_date_rows": 0,
+    "invalid_hour_rows": 0,
+    "invalid_source_row_index_rows": 0,
+    "invalid_centroid_rows": 0,
+    "usable_rows": 3887065
+  },
+  "input_post": [
+    {
+      "path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "filename": "26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "size_bytes": 28759,
+      "mtime_ns": 1789133150000000000,
+      "sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet",
+      "filename": "rows_train_1.parquet",
+      "size_bytes": 18817327,
+      "mtime_ns": 1793455250079052200,
+      "sha256": "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_2.parquet",
+      "filename": "rows_train_2.parquet",
+      "size_bytes": 18009625,
+      "mtime_ns": 1793455327815027600,
+      "sha256": "748692493429823c116e204871d57920991c0c6d62d8a46a2b793ac1a80f356f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_3.parquet",
+      "filename": "rows_train_3.parquet",
+      "size_bytes": 24848272,
+      "mtime_ns": 1793455415105532600,
+      "sha256": "a2333ffee0aa491d1b450395b94a49c77f79084651b4101e31de37c573e2f2bd"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_4.parquet",
+      "filename": "rows_train_4.parquet",
+      "size_bytes": 27340845,
+      "mtime_ns": 1793455510538186100,
+      "sha256": "256498c7a97daf930678c0fb138c89f4081052cd333f030ac2d78e62ba11972a"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_5.parquet",
+      "filename": "rows_train_5.parquet",
+      "size_bytes": 29009998,
+      "mtime_ns": 1793455616585271800,
+      "sha256": "264957261a27d0a4b77336523fcd95d0483fce1399ca42cdf0e960f184131217"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_6.parquet",
+      "filename": "rows_train_6.parquet",
+      "size_bytes": 29470852,
+      "mtime_ns": 1793455720555103600,
+      "sha256": "b4cd5e6805ff9431fb5ba861205b962af17603a83dee6ac2dd0fe26195e17078"
+    }
+  ],
+  "script_post": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\audit_linkage.py",
+    "filename": "audit_linkage.py",
+    "size_bytes": 40162,
+    "mtime_ns": 1793809797035441400,
+    "sha256": "ec75b7b941b9f10f7dff57da78908fd6ece96136d3ee61730d5e6d8e583ec324"
+  },
+  "input_and_script_unchanged": true,
+  "finished": {
+    "utc": "2026-11-04T16:30:31.069151+00:00",
+    "kst": "2026-11-05T01:30:31.069151+09:00"
+  },
+  "elapsed_seconds": 13.798790200002259,
+  "outputs": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\candidate_vessels.csv",
+      "filename": "candidate_vessels.csv",
+      "size_bytes": 961613,
+      "mtime_ns": 1793809830906680600,
+      "sha256": "53c954c5592922d8f0da6226fc420be4f0a68879033f54e9b0859986ec09a94f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\event_audit.csv",
+      "filename": "event_audit.csv",
+      "size_bytes": 91679,
+      "mtime_ns": 1793809830856337400,
+      "sha256": "2d35630d95efe74f85cf6ba072637beea79b9d428617b251a961e08c7bf09d39"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\possible_duplicate_events.csv",
+      "filename": "possible_duplicate_events.csv",
+      "size_bytes": 162,
+      "mtime_ns": 1793809830908688800,
+      "sha256": "1ea0fd20e248630429e272ecc42129bc518ebd1b2796549285d0f10c6a59ebcf"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\sensitivity_summary.csv",
+      "filename": "sensitivity_summary.csv",
+      "size_bytes": 887,
+      "mtime_ns": 1793809830908688800,
+      "sha256": "9ce3276a0cf7883f3da111710cacb17e992073a49e569bbd6b62a846189970ef"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\summary.json",
+      "filename": "summary.json",
+      "size_bytes": 6876,
+      "mtime_ns": 1793809830908688800,
+      "sha256": "5a410512d2ecf9b33fc3d1ab8e917fc2acee4b8483f684e7099cb93accf39158"
+    }
+  ]
+}

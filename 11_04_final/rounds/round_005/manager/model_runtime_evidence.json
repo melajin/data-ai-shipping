@@ -1,0 +1,20 @@
+﻿{
+    "interpretation":  "host-reported configuration, not internal model attestation",
+    "request":  {
+                    "model":  "gpt-6-astra",
+                    "effort":  "high"
+                },
+    "source":  "C:/Users/dlehs/.codex/sessions/2026/11/05/rollout-2026-11-05T02-22-31-01a1a795-708c-7a72-b633-c6cb78ca1ea7.jsonl",
+    "host_turn_context":  [
+                              {
+                                  "timestamp":  "2026-11-04T17:22:32.464Z",
+                                  "turn_id":  "01a1a795-720f-7341-beb5-f5267e449854",
+                                  "model":  "gpt-6-astra",
+                                  "effort":  "high",
+                                  "cwd":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+                              }
+                          ],
+    "orca_session":  "codex_505bd45f_37f4_4824_b7ff_6d9075c223fa",
+    "thread":  "01a1a795-708c-7a72-b633-c6cb78ca1ea7",
+    "checked_at_utc":  "2026-11-04T17:24:33.4815224Z"
+}

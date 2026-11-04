@@ -1,0 +1,18 @@
+{
+  "started_at": "2026-11-05T02:46:03.726336+09:00",
+  "ended_at": "2026-11-05T02:46:03.884433+09:00",
+  "argv": [
+    "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\timing_interface.py",
+    "--self-check"
+  ],
+  "exit_code": 0,
+  "stdout": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\round_001\\run_003\\stdout.log",
+  "stderr": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\round_001\\run_003\\stderr.log",
+  "code": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\timing_interface.py",
+    "size_bytes": 9451,
+    "sha256": "167afb9c9e114f75edb07b7c8df02f8b718bea4f10e528e11adee9ce3c59788e"
+  },
+  "scope": "synthetic test rows only; no actual score/event inputs read"
+}

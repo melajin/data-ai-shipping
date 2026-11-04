@@ -1,0 +1,18 @@
+{
+  "name": "01_venv",
+  "command": [
+    "C:\\Users\\dlehs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-m",
+    "venv",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu"
+  ],
+  "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+  "started_utc": "2026-11-04T16:50:58.266933+00:00",
+  "timeout_seconds": 900.0,
+  "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+  "pid": 23804,
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 7.5310000000026776,
+  "finished_utc": "2026-11-04T16:51:05.803105+00:00"
+}

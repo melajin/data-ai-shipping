@@ -1,0 +1,8 @@
+﻿{
+    "timestamp_utc":  "2026-11-04T16:18:57.2901391Z",
+    "free_ram_gib":  3.307,
+    "total_ram_gib":  13.809,
+    "cpu_logical":  16,
+    "manager_deadline_utc":  "2026-11-04T16:58:25Z",
+    "note":  "Initial resource snapshot; must recheck before large compute"
+}

@@ -1,0 +1,22 @@
+{
+    "started_at_utc":  "2026-11-04T14:11:09.3476498Z",
+    "pid":  4904,
+    "command":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe -u replay_ensemble.py",
+    "working_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution",
+    "stdout":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\supplemental_stdout.log",
+    "stderr":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\supplemental_stderr.log",
+    "python_environment":  {
+                               "OPENBLAS_NUM_THREADS":  "1",
+                               "PYTHONPYCACHEPREFIX":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\.pycache",
+                               "TMP":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\temp",
+                               "PYTHONDONTWRITEBYTECODE":  "1",
+                               "OMP_NUM_THREADS":  "1",
+                               "NUMEXPR_NUM_THREADS":  "1",
+                               "MKL_NUM_THREADS":  "1",
+                               "TEMP":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\temp"
+                           },
+    "status":  "failed_fold2_roster_assertion",
+    "exit_code":  null,
+    "exit_code_reason":  "Detached process exit code unavailable; stderr proves RuntimeError for fold2 expected count.",
+    "superseded_by":  "supplemental_attempt2_launch_manifest.json"
+}

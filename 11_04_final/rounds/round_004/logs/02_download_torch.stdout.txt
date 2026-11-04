@@ -1,0 +1,47 @@
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Collecting torch==2.6.0
+  Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.6.0%2Bcpu-cp312-cp312-win_amd64.whl.metadata (28 kB)
+Collecting filelock (from torch==2.6.0)
+  Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.10.0 (from torch==2.6.0)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting networkx (from torch==2.6.0)
+  Downloading networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting jinja2 (from torch==2.6.0)
+  Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.6.0)
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting setuptools (from torch==2.6.0)
+  Downloading https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy==1.13.1 (from torch==2.6.0)
+  Downloading sympy-1.13.1-py3-none-any.whl.metadata (12 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy==1.13.1->torch==2.6.0)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.6.0)
+  Downloading https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-win_amd64.whl.metadata (2.8 kB)
+Downloading https://download-r2.pytorch.org/whl/cpu/torch-2.6.0%2Bcpu-cp312-cp312-win_amd64.whl (206.5 MB)
+   --------------------------------------- 206.5/206.5 MB 46.5 MB/s eta 0:00:00
+Downloading sympy-1.13.1-py3-none-any.whl (6.2 MB)
+   ---------------------------------------- 6.2/6.2 MB 42.0 MB/s eta 0:00:00
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading networkx-3.7-py3-none-any.whl (2.1 MB)
+   ---------------------------------------- 2.1/2.1 MB 60.6 MB/s eta 0:00:00
+Downloading https://download.pytorch.org/whl/setuptools-78.1.0-py3-none-any.whl (1.3 MB)
+   ---------------------------------------- 1.3/1.3 MB 32.1 MB/s eta 0:00:00
+Downloading https://download.pytorch.org/whl/markupsafe-3.0.3-cp312-cp312-win_amd64.whl (15 kB)
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ---------------------------------------- 536.2/536.2 kB ? eta 0:00:00
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\torch-2.6.0+cpu-cp312-cp312-win_amd64.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\sympy-1.13.1-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\typing_extensions-4.16.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\filelock-4.2.4-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\fsspec-2026.9.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\jinja2-3.1.6-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\networkx-3.7-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\setuptools-78.1.0-py3-none-any.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\markupsafe-3.0.3-cp312-cp312-win_amd64.whl
+Saved d:\obsidian\claude\obsidian_export\data ai shipping\11_04_final\rounds\round_004\environment\wheels\mpmath-1.3.0-py3-none-any.whl
+Successfully downloaded torch sympy typing-extensions filelock fsspec jinja2 networkx setuptools MarkupSafe mpmath

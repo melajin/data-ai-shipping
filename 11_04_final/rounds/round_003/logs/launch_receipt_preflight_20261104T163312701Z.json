@@ -1,0 +1,30 @@
+﻿{
+    "mode":  "preflight",
+    "status":  "completed",
+    "started_at_utc":  "2026-11-04T16:33:12.7013840+00:00",
+    "finished_at_utc":  "2026-11-04T16:33:14.2219061+00:00",
+    "elapsed_seconds":  1.5205221,
+    "launcher_pid":  29876,
+    "runner_pid":  10204,
+    "exit_code":  0,
+    "python":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "runner":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\code\\run_round003.py",
+    "runner_sha256":  "9f333f7f4be7ed81ef8296f36b4474f8a6730f99f306c8e4f586c9d031bea6a2",
+    "config":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\configs\\experiment.json",
+    "config_sha256":  "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6",
+    "working_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003",
+    "command":  "\"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe\" \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\code\\run_round003.py\" --mode preflight --config \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\configs\\experiment.json\"",
+    "launch_manifest":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs\\launch_manifest_preflight_20261104T163312701Z.json",
+    "launch_manifest_sha256":  "b869d6cedda8009b18329321582bf0d70f103b6fc32467befa9698669c7005e5",
+    "stdout":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs\\stdout_preflight_20261104T163312701Z.log",
+    "stderr":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs\\stderr_preflight_20261104T163312701Z.log",
+    "pycache_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs\\pycache",
+    "temp_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\logs",
+    "thread_cap":  3,
+    "manager_go_supplied":  false,
+    "timed_out":  false,
+    "source_hashes_still_match_launch":  {
+                                             "runner":  true,
+                                             "config":  true
+                                         }
+}

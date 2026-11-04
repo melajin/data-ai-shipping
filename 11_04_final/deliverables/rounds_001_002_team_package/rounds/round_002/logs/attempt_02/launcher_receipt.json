@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "started_at_utc": "2026-11-04T15:11:51+00:00",
+  "python": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+  "runner": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\run_round002_resume.py",
+  "working_directory": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002",
+  "stdout": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stdout_attempt02.log",
+  "stderr": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\logs\\stderr_attempt02.log",
+  "reviewed_runner_sha256": "23362d1fca269485ded3f13a46127675dd261c8b3cc011a95e6a105a3fa9bd63",
+  "config_sha256": "f7240e3eb5adb8bc130979b7aa891762ef840993b7e6ccf39aae8e52c85cb214",
+  "manager_cutoff_utc": "2026-11-04T15:14:00Z",
+  "attempt1_exit_code": "unavailable",
+  "pid": 12528,
+  "finished_at_utc": "2026-11-04T15:12:00+00:00",
+  "exit_code": 1
+}

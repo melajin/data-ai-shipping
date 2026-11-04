@@ -1,0 +1,28 @@
+{
+  "id": "f968d80c-e061-461c-ad86-b13683ee22ff",
+  "ok": true,
+  "result": {
+    "outcome": {
+      "kind": "structured",
+      "sessionId": "codex_505bd45f_37f4_4824_b7ff_6d9075c223fa",
+      "handle": "structured-agent-session-codex_505bd45f_37f4_4824_b7ff_6d9075c223fa",
+      "tabId": "structured-agent-session-codex_505bd45f_37f4_4824_b7ff_6d9075c223fa"
+    },
+    "worktreeId": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+    "receipt": {
+      "mode": "structured",
+      "preferred": "structured",
+      "reason": "user_default",
+      "detail": "Started a structured chat session, the default for new agent tabs in your settings."
+    },
+    "prompt": {
+      "delivery": "submit",
+      "outcome": "journaled",
+      "messageId": "1793812950183-216c5078b18348cb8bd2d607c8aebe64"
+    },
+    "operationId": "1793812950039-b92d41255d574d9da7eeaafd74b12bf0"
+  },
+  "_meta": {
+    "runtimeId": "b4aa8510-0609-45a9-b7ba-e1cdeeab97f6"
+  }
+}

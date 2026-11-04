@@ -1,0 +1,35 @@
+{
+  "completed_at_utc": "2026-11-04T17:50:55.064868+00:00",
+  "current_round": "round_005",
+  "handoff": {
+    "ready": true,
+    "next_session_launched": false,
+    "launch_receipt": "automation/receipts/round_005_launch.json",
+    "launcher": "automation/Start-NextSession.ps1",
+    "launcher_owner": "root",
+    "next_round": "round_006",
+    "pause_reason": null,
+    "authorization": "User explicitly authorizes local experiments, fresh Astra high handoffs and closing completed session tabs without repeated approval",
+    "close_completed_session_requested": true,
+    "completed_session_id": "codex_505bd45f_37f4_4824_b7ff_6d9075c223fa",
+    "close_completed_session_status": "pending_after_accepted_handoff"
+  },
+  "execution_summary": {
+    "new_parameter_training_fits": 0,
+    "pretrained_context_fit_returned": 1,
+    "model_pilot_launches": 1,
+    "predict_proba_attempted": 0,
+    "predict_proba_completed": 0,
+    "new_actual_f1_evaluations": 0,
+    "new_independent_evaluation": false,
+    "hardware_validation": false,
+    "export_runs": 1,
+    "independent_array_checks": 1,
+    "pilot_exit_code": 1,
+    "pilot_seconds": 24.125,
+    "total_bounded_child_seconds": 28.96900000000096,
+    "all_owned_compute_processes_finished": true,
+    "failure_layer": "diagnostic API attribute access after context fit",
+    "failure": "AttributeError: cache_mode_ absent with kv_cache=False"
+  }
+}

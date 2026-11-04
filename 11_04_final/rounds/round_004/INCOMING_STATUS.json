@@ -1,0 +1,487 @@
+﻿{
+    "schema_version":  1,
+    "updated_at_utc":  "2026-11-04T16:45:24.452413+00:00",
+    "objective":  "vessel-level four-class micro-F1 \u003e= 0.7 with development and independent evidence kept separate",
+    "goal_status":  "in_progress_not_achieved",
+    "current_round":  "round_003",
+    "round_status":  "completed_with_limitations_not_adopted",
+    "manager_session":  "codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9",
+    "manager_model_request":  {
+                                  "model":  "gpt-6-astra",
+                                  "reasoning_effort":  "high",
+                                  "role":  "astra_decision"
+                              },
+    "assistant_model_policy":  {
+                                   "model":  "gpt-6-luna",
+                                   "reasoning_effort":  "xhigh",
+                                   "max_assistants_user":  4,
+                                   "current_runtime_assistants":  0,
+                                   "host_total_slots":  4
+                               },
+    "paths":  {
+                  "work":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final",
+                  "raw_read_only":  "F:/문제 데이터_수정_1027",
+                  "source_read_only":  "D:/repos/fishing-track-classification",
+                  "prior_experiment":  "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
+                  "round":  "rounds/round_003"
+              },
+    "scores":  {
+                   "evaluation_population":  "repeatedly exposed development OUTER, 5897 vessels",
+                   "baseline":  {
+                                    "name":  "sqrt_macro_5seed",
+                                    "micro_f1":  0.5930133966423605,
+                                    "macro_f1":  0.5252719738966167,
+                                    "correct":  3497,
+                                    "n":  5897,
+                                    "source":  "Replayed in round001 on all 5897 development OUTER vessels; stored seed probabilities exact and ensemble within1e-12"
+                                },
+                   "exploratory_best":  {
+                                            "name":  "six_source_mean",
+                                            "micro_f1":  0.5933525521451586,
+                                            "correct":  3499,
+                                            "n":  5897,
+                                            "adopted":  false,
+                                            "reason":  "net+2; macro declined; paired CI includes zero"
+                                        },
+                   "historical_s6_aggregate":  0.59183,
+                   "independent_micro_f1":  null,
+                   "official_micro_f1":  null,
+                   "development_observed_ge_070":  false,
+                   "independently_verified_ge_070":  false,
+                   "official_score_ge_070":  false,
+                   "round_002":  {
+                                     "evaluation_population":  "Repeatedly exposed development OUTER, 5897 vessels",
+                                     "same_condition_baseline":  {
+                                                                     "n":  5897,
+                                                                     "correct":  3476,
+                                                                     "micro_f1":  0.5894522638629812,
+                                                                     "macro_f1":  0.519210304310862,
+                                                                     "class_recall":  [
+                                                                                          0.8181506849315069,
+                                                                                          0.4409722222222222,
+                                                                                          0.12934131736526946,
+                                                                                          0.7142857142857143
+                                                                                      ],
+                                                                     "class_f1":  [
+                                                                                      0.6945777002471291,
+                                                                                      0.4974818130945719,
+                                                                                      0.20037105751391468,
+                                                                                      0.6844106463878327
+                                                                                  ],
+                                                                     "confusion_matrix":  [
+                                                                                              [
+                                                                                                  2389,
+                                                                                                  464,
+                                                                                                  58,
+                                                                                                  9
+                                                                                              ],
+                                                                                              [
+                                                                                                  1028,
+                                                                                                  889,
+                                                                                                  73,
+                                                                                                  26
+                                                                                              ],
+                                                                                              [
+                                                                                                  525,
+                                                                                                  190,
+                                                                                                  108,
+                                                                                                  12
+                                                                                              ],
+                                                                                              [
+                                                                                                  17,
+                                                                                                  15,
+                                                                                                  4,
+                                                                                                  90
+                                                                                              ]
+                                                                                          ]
+                                                                 },
+                                     "candidate":  {
+                                                       "n":  5897,
+                                                       "correct":  3424,
+                                                       "micro_f1":  0.5806342207902323,
+                                                       "macro_f1":  0.4689224222226287,
+                                                       "class_recall":  [
+                                                                            0.8613013698630136,
+                                                                            0.39732142857142855,
+                                                                            0.033532934131736525,
+                                                                            0.6349206349206349
+                                                                        ],
+                                                       "class_f1":  [
+                                                                        0.6904598490048044,
+                                                                        0.47396449704142013,
+                                                                        0.06349206349206349,
+                                                                        0.6477732793522267
+                                                                    ],
+                                                       "confusion_matrix":  [
+                                                                                [
+                                                                                    2515,
+                                                                                    389,
+                                                                                    11,
+                                                                                    5
+                                                                                ],
+                                                                                [
+                                                                                    1190,
+                                                                                    801,
+                                                                                    7,
+                                                                                    18
+                                                                                ],
+                                                                                [
+                                                                                    635,
+                                                                                    154,
+                                                                                    28,
+                                                                                    18
+                                                                                ],
+                                                                                [
+                                                                                    25,
+                                                                                    20,
+                                                                                    1,
+                                                                                    80
+                                                                                ]
+                                                                            ]
+                                                   },
+                                     "blend":  {
+                                                   "n":  5897,
+                                                   "correct":  3474,
+                                                   "micro_f1":  0.5891131083601832,
+                                                   "macro_f1":  0.5061678493519742,
+                                                   "class_recall":  [
+                                                                        0.8383561643835616,
+                                                                        0.4270833333333333,
+                                                                        0.09221556886227544,
+                                                                        0.6984126984126984
+                                                                    ],
+                                                   "class_f1":  [
+                                                                    0.6950596252129472,
+                                                                    0.49045855881515243,
+                                                                    0.1569826707441386,
+                                                                    0.6821705426356589
+                                                                ],
+                                                   "confusion_matrix":  [
+                                                                            [
+                                                                                2448,
+                                                                                434,
+                                                                                30,
+                                                                                8
+                                                                            ],
+                                                                            [
+                                                                                1096,
+                                                                                861,
+                                                                                36,
+                                                                                23
+                                                                            ],
+                                                                            [
+                                                                                563,
+                                                                                182,
+                                                                                77,
+                                                                                13
+                                                                            ],
+                                                                            [
+                                                                                17,
+                                                                                18,
+                                                                                3,
+                                                                                88
+                                                                            ]
+                                                                        ]
+                                               },
+                                     "candidate_adopted":  false,
+                                     "blend_adopted":  false,
+                                     "reason":  "micro improvement gate failed; class2 recall drops exceed .03",
+                                     "result":  "rounds/round_002/artifacts/result.json"
+                                 },
+                   "round_003":  {
+                                     "evaluation_population":  "repeatedly exposed development OUTER, 5,897 unique vessels",
+                                     "seeds":  [
+                                                   42,
+                                                   2026
+                                               ],
+                                     "aggregation":  "arithmetic mean of seed metrics; not probability ensemble and not 11794 independent vessels",
+                                     "mean_metrics":  {
+                                                          "A_raw":  {
+                                                                        "vessels_per_seed":  5897.0,
+                                                                        "not_summed_across_seeds":  true,
+                                                                        "micro_f1":  0.5930133966423605,
+                                                                        "macro_f1":  0.5155580319500959,
+                                                                        "weighted_f1":  0.5539843909787947,
+                                                                        "mean_assigned_class_original_probability":  0.6023470809961545,
+                                                                        "class_precision":  [
+                                                                                                0.5921765705366602,
+                                                                                                0.6092231826027811,
+                                                                                                0.4940156169994879,
+                                                                                                0.6563804412641622
+                                                                                            ],
+                                                                        "class_recall":  [
+                                                                                             0.8657534246575342,
+                                                                                             0.37723214285714285,
+                                                                                             0.1479041916167665,
+                                                                                             0.6746031746031746
+                                                                                         ],
+                                                                        "class_f1":  [
+                                                                                         0.7032946144231786,
+                                                                                         0.4659240858591347,
+                                                                                         0.22764884418473677,
+                                                                                         0.6653645833333333
+                                                                                     ]
+                                                                    },
+                                                          "A_old":  {
+                                                                        "vessels_per_seed":  5897.0,
+                                                                        "not_summed_across_seeds":  true,
+                                                                        "micro_f1":  0.5748685772426658,
+                                                                        "macro_f1":  0.5372271285505399,
+                                                                        "weighted_f1":  0.558096720517929,
+                                                                        "mean_assigned_class_original_probability":  0.5807682080078466,
+                                                                        "class_precision":  [
+                                                                                                0.6122071914782623,
+                                                                                                0.6400725655613055,
+                                                                                                0.3335479063368777,
+                                                                                                0.7041029766693483
+                                                                                            ],
+                                                                        "class_recall":  [
+                                                                                             0.7917808219178082,
+                                                                                             0.3412698412698413,
+                                                                                             0.37305389221556884,
+                                                                                             0.623015873015873
+                                                                                         ],
+                                                                        "class_f1":  [
+                                                                                         0.6905091849259105,
+                                                                                         0.4451585588273005,
+                                                                                         0.3521883628182841,
+                                                                                         0.6610524076306645
+                                                                                     ]
+                                                                    },
+                                                          "A_micro_select":  {
+                                                                                 "vessels_per_seed":  5897.0,
+                                                                                 "not_summed_across_seeds":  true,
+                                                                                 "micro_f1":  0.5933525521451586,
+                                                                                 "macro_f1":  0.520562845334023,
+                                                                                 "weighted_f1":  0.5564218565926311,
+                                                                                 "mean_assigned_class_original_probability":  0.6017685797336274,
+                                                                                 "class_precision":  [
+                                                                                                         0.5934874770596876,
+                                                                                                         0.6122470021146091,
+                                                                                                         0.48303480413572153,
+                                                                                                         0.6589543269230769
+                                                                                                     ],
+                                                                                 "class_recall":  [
+                                                                                                      0.8626712328767123,
+                                                                                                      0.37475198412698413,
+                                                                                                      0.16706586826347306,
+                                                                                                      0.6746031746031746
+                                                                                                  ],
+                                                                                 "class_f1":  [
+                                                                                                  0.7031834020996556,
+                                                                                                  0.46492491728271496,
+                                                                                                  0.247466142662383,
+                                                                                                  0.6666769192913387
+                                                                                              ]
+                                                                             }
+                                                      },
+                                     "correct_by_seed":  {
+                                                             "42":  {
+                                                                        "A_raw":  3491,
+                                                                        "A_old":  3391,
+                                                                        "A_micro_select":  3495
+                                                                    },
+                                                             "2026":  {
+                                                                          "A_raw":  3503,
+                                                                          "A_old":  3389,
+                                                                          "A_micro_select":  3503
+                                                                      }
+                                                         },
+                                     "selected_factors":  {
+                                                              "42":  [
+                                                                         1,
+                                                                         1.5,
+                                                                         1
+                                                                     ],
+                                                              "2026":  [
+                                                                           1,
+                                                                           1,
+                                                                           1
+                                                                       ]
+                                                          },
+                                     "progress_gate":  {
+                                                           "criteria":  {
+                                                                            "mean_micro_delta_at_least_0_005":  false,
+                                                                            "both_seed_micro_deltas_positive":  false,
+                                                                            "paired_5000_vessel_bootstrap_ci_lower_above_zero":  false,
+                                                                            "mean_macro_f1_not_decreased":  true,
+                                                                            "each_seed_class_f1_drop_no_more_than_0_01":  true,
+                                                                            "each_seed_natural_1_7_macro_f1_drop_no_more_than_0_01":  true
+                                                                        },
+                                                           "all_criteria_met":  false,
+                                                           "micro_delta_by_seed":  {
+                                                                                       "42":  0.0006783110055960107,
+                                                                                       "2026":  0.0
+                                                                                   },
+                                                           "macro_delta_mean":  0.005004813383927109,
+                                                           "class_f1_delta_by_seed":  {
+                                                                                          "42":  [
+                                                                                                     -0.00022242464704613774,
+                                                                                                     -0.00199833715283948,
+                                                                                                     0.03963459695529248,
+                                                                                                     0.002624671916010568
+                                                                                                 ],
+                                                                                          "2026":  [
+                                                                                                       0.0,
+                                                                                                       0.0,
+                                                                                                       0.0,
+                                                                                                       0.0
+                                                                                                   ]
+                                                                                      },
+                                                           "natural_1_7_macro_delta_by_seed":  {
+                                                                                                   "42":  0.0002550475946557218,
+                                                                                                   "2026":  0.0
+                                                                                               },
+                                                           "paired_ci95_mean_micro_delta_vs_raw":  [
+                                                                                                       -0.0009326776326945563,
+                                                                                                       0.001610988638290678
+                                                                                                   ],
+                                                           "interpretation":  "development confirmation candidate gate only; not independent or official performance"
+                                                       },
+                                     "candidate_adopted":  false,
+                                     "result":  "rounds/round_003/artifacts/result.json",
+                                     "historical_baseline_unchanged":  true
+                                 }
+               },
+    "budget":  {
+                   "manager_round_minutes":  45,
+                   "compute_minutes":  15,
+                   "max_new_fits":  0,
+                   "concurrent_large_compute":  1,
+                   "threads_max":  3,
+                   "minimum_free_ram_gib_before_large_compute":  1.5,
+                   "manager_deadline_utc":  "2026-11-04T16:58:25Z",
+                   "m4_readiness_minutes_max":  10
+               },
+    "decision_rules":  {
+                           "current_round":  "Frozen saved probability R0; seed/fold INNER-only grid [1,1.5,2,2.5,3]",
+                           "selection":  "micro maximum subject to no macro drop and class/day macro losses\u003c=.01; tie nearest1 then smaller; support fallback raw",
+                           "advance":  "mean micro gain\u003e=.005; both seeds positive; paired CI lower\u003e0; no mean macro loss; class/day losses\u003c=.01",
+                           "holdout":  "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan"
+                       },
+    "current_task":  "Round003 R0 completed and independently checked; next manager owns Round004",
+    "next_task":  "Round004 isolated CPU TabICL2.2.0 runtime acquisition, bounded synthetic smoke, development-only input lineage audit; no new actual-data F1 or parameter training",
+    "blockers":  [
+
+                 ],
+    "unresolved":  [
+                       "Original dynamic T5-to-CSV parity unmeasured: exact eligible aggregate/mask unavailable without protected holdout geometry",
+                       "Historical S6 .59183 difference attribution unresolved",
+                       "Holdout exposure independence not established",
+                       "Main detached run exit code and launch-time source hash unavailable; current post-run source hash recorded",
+                       "Historical INNER ID-list original ordering/digest not reconstructed; prediction file hashes and membership verified",
+                       "A original feature/context/order/class permutation replay incomplete; source and saved preprocessor imply312 columns but settings say no missing flags",
+                       "Torch/TabICL absent in three inspected local environments; exact checkpoint located; isolated CPU environment is feasible next step"
+                   ],
+    "active_workers":  [
+
+                       ],
+    "handoff":  {
+                    "ready":  true,
+                    "next_session_launched":  true,
+                    "launch_receipt":  "automation/receipts/round_003_launch.json",
+                    "launcher_owner":  "root",
+                    "launcher":  "automation/Start-NextSession.ps1",
+                    "next_round":  "round_004",
+                    "receipt_directory":  "automation/receipts/",
+                    "pause_reason":  null,
+                    "resume_authorization":  "automation/receipts/round_003_resume_authorization.json",
+                    "accepted_at_utc":  "2026-11-04T16:13:25.0953361Z",
+                    "next_session_id":  "codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9",
+                    "agent_handle":  "structured-agent-session-codex_72aeaa5c_d706_4426_8c38_be2ff5da2bd9",
+                    "worktree_id":  "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+                },
+    "learning_status":  "Technical audit completed; learner explanation competency not assessed; LEARNING_NOTES.md saved",
+    "diagnostic_result":  {
+                              "fixed_npz_t5_default_csv_exact":  true,
+                              "reader_max_abs_delta":  8.8817841970012523E-16,
+                              "baseline_stored_seed_probability_max_delta":  0,
+                              "baseline_stored_ensemble_max_delta":  2.2204460492503131E-16,
+                              "round_trip_ensemble_max_probability_delta":  0.0012018578769440735,
+                              "round_trip_ensemble_argmax_changed":  0,
+                              "baseline_correct":  3497,
+                              "round_trip_correct":  3497,
+                              "new_fits":  0,
+                              "direct_dynamic_original_array_comparison":  "unmeasured",
+                              "historical_s6_score_difference":  "unresolved",
+                              "main_exit_code":  null,
+                              "supplemental_attempt2_exit_code":  0
+                          },
+    "next_round_budget":  {
+                              "manager_minutes":  45,
+                              "installation_download_minutes_max":  15,
+                              "new_download_bytes_max":  1073741824,
+                              "synthetic_smoke_max_runs":  2,
+                              "synthetic_smoke_seconds_each_max":  180,
+                              "new_parameter_training_fits_max":  0,
+                              "actual_data_f1_evaluations_max":  0,
+                              "concurrent_large_compute":  1,
+                              "threads_max":  3,
+                              "minimum_free_ram_gib_before_model_load":  3,
+                              "status":  "authorized_continuation"
+                          },
+    "latest_result_report":  "rounds/round_003/ROUND_REPORT.md",
+    "round_completed_at_utc":  "2026-11-04T16:45:24.452413+00:00",
+    "review":  {
+                   "verdict":  "PASS_WITH_DOCUMENTED_LIMITATIONS",
+                   "protocol":  "PASS",
+                   "adoption":  "REJECT",
+                   "source":  "rounds/round_003/review/review.json",
+                   "artifact_comparison":  "rounds/round_003/review/artifact_comparison.json",
+                   "independent_probability_metric_and_factor_checks":  true,
+                   "bootstrap_recomputed_by_reviewer":  true
+               },
+    "execution_summary":  {
+                              "successful_model_fits_total":  0,
+                              "new_model_inference":  false,
+                              "scoring_runs":  1,
+                              "preflight_runs":  2,
+                              "score_exit_code":  0,
+                              "score_compute_seconds":  15.1265969,
+                              "all_runner_seconds":  18.9334871,
+                              "all_owned_compute_processes_finished":  true,
+                              "new_independent_evaluation":  false,
+                              "hardware_validation":  false,
+                              "note":  "Runner durations exclude authoring, review and readiness metadata probes"
+                          },
+    "independent_evaluation_blockers":  [
+                                            "No exposure-verified independent evaluation roster approved or opened"
+                                        ],
+    "latest_user_steering":  {
+                                 "instruction":  "3차 돌려보자 일단 새 세션 오픈해서",
+                                 "recorded_at_utc":  "2026-11-04T16:13:16.344705+00:00",
+                                 "corrected_explanation":  "docs/20261105_추가조건_검토및3차실험_수정제안.md",
+                                 "corrected_explanation_sha256":  "eb2c55d89c81170b006c27653516c0d7b206499e8c8abdd7594618eb269fc2b1",
+                                 "existing_059_is_vessel_disjoint_development_evaluation":  true,
+                                 "retain_existing_split_and_improve_accuracy":  true,
+                                 "same_vessel_historical_profile_route_forbidden":  true,
+                                 "source_report":  "../26_11_5/20261105_팀원자료_검토보고서.md",
+                                 "round002_contract_unchanged":  true
+                             },
+    "user_pause":  {
+                       "requested":  true,
+                       "after_round":  "round_002",
+                       "instruction":  "Complete round_002 then pause; do not launch round_003",
+                       "requested_at_utc":  "2026-11-04T15:15:23.2336258Z",
+                       "resume_requires_explicit_user_instruction":  true,
+                       "effective":  false,
+                       "effective_at_utc":  "2026-11-04T15:30:56.5365856Z",
+                       "resumed_at_utc":  "2026-11-04T16:13:16.344705+00:00",
+                       "resume_instruction":  "3차 돌려보자 일단 새 세션 오픈해서"
+                   },
+    "latest_user_steering_before_resume":  {
+                                               "source":  "rounds/round_002/references/algorithm_variant_ideas.md",
+                                               "source_sha256":  "75BE0FD2F451B9E4215EC2F02A8F200B8084F26145E4FE845A22C2CBA6BE91BC",
+                                               "review":  "rounds/round_002/IDEA_REVIEW_AND_ROUND003.md",
+                                               "plan_explained_before_round003":  true,
+                                               "round002_contract_unchanged":  true
+                                           },
+    "m4_readiness":  {
+                         "source":  "rounds/round_003/m4_readiness/readiness.json",
+                         "checkpoint_exact_sha256_found":  true,
+                         "historical_cuda_runtime_reproduced":  false,
+                         "ready_for_m4_training":  false,
+                         "next_step":  "isolated CPU runtime and input lineage recovery"
+                     },
+    "next_manager_session":  "codex_53b6ac45_0a2c_4a1a_b5d5_2624c7a28d9e"
+}

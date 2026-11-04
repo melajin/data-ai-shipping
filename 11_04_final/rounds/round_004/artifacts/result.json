@@ -1,0 +1,84 @@
+{
+  "round": "round_004",
+  "status": "completed_with_limitations",
+  "finished_utc": "2026-11-04T17:22:06.088393+00:00",
+  "installation": {
+    "status": "success",
+    "elapsed_seconds": 150.43700000000172,
+    "wheel_bytes": 283019957,
+    "pip_check_exit_code": 0,
+    "source": "environment/install.json"
+  },
+  "runtime_smoke": {
+    "status": "passed_after_user_requested_ram_recheck",
+    "free_ram_gib": 4.045330047607422,
+    "minimum_free_ram_gib": 3,
+    "resource_checks_at_launch": 2,
+    "initial_free_ram_gib": 2.1962547302246094,
+    "smoke_processes_started": 1,
+    "checkpoint_loads": 1,
+    "synthetic_context_bindings": 1,
+    "elapsed_seconds": 13.046999999998661,
+    "parameter_count": 27552258,
+    "repeat_max_delta": 0.0,
+    "source": "artifacts/smoke.json"
+  },
+  "lineage": {
+    "status": "PASS_WITH_LIMITATIONS",
+    "counts": {
+      "folds": 3,
+      "npz_hashes_matching_round002": 3,
+      "first156_column_orders_matching_P": 3,
+      "role_order_label_mappings_passing": 3,
+      "preprocessor_median_comparisons": 6,
+      "median_mismatch_count": 0,
+      "transformed_inputs_hashed": 12
+    },
+    "source": "lineage/result.json",
+    "original_context_order_verified": false,
+    "original_feature_rows_exactly_reproduced": false,
+    "original_model_probabilities_replayed": false,
+    "author_reported_successful_audit_invocations": 8,
+    "provenance_limitation": "Result metadata hardcodes iteration7; author transcript audit counts8. Seven earlier snapshots not separately retained. See lineage/DIAGNOSTIC_HISTORY.md."
+  },
+  "new_parameter_fits": 0,
+  "real_vessel_inference_calls": 0,
+  "new_f1_evaluations": 0,
+  "independent_score": null,
+  "official_score": null,
+  "context_recovery": {
+    "status": "EXPORT_NOT_RUN",
+    "split_manifest_sha256": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+    "manifest_matches_original_fingerprints": true,
+    "ordered_inner_digest_comparison_executed": false,
+    "export_executed": false,
+    "candidate_source_sha256": "1E87753EDA6E5253CF248C1ABBDE6E1155D7EEE3693D91495D8E78C8AC884C6D",
+    "known_holdout_reused_metadata": true,
+    "holdout_feature_label_probability_rows_read": 0,
+    "source": "context_recovery/result.json"
+  },
+  "replay_runtime_contract": {
+    "status": "source_review_complete_runtime_not_run",
+    "source": "runtime_author/replay_contract.json",
+    "CPU_two_query_vs_historical_GPU_equivalence_measured": false
+  },
+  "review_status": "PASS_WITH_LIMITATIONS",
+  "learning_status": "technical preparation recorded; learner competency not assessed",
+  "next_round": "round_005",
+  "next_task": "Frozen original-context and inference-contract replay on fixed small INNER query set, bounded CPU pilot; no new F1 or parameter training",
+  "sources": {
+    "rounds\\round_004\\ROUND_REPORT.md": "362bb70a32a2622ae54e6f5ff08408be94b458d7786b8c0db5efe284d39cb914",
+    "rounds\\round_004\\NEXT_SESSION_DRAFT.md": "5c97cef4df735d23f79c8399fc1fd4a5aa755ec84ed16701fc51e83cead695c3",
+    "rounds\\round_004\\lineage\\result.json": "ab57f7882c8e7e05831786345bf947069f4ba5df1569ffdc62a410524e354de1",
+    "rounds\\round_004\\review\\review.json": "51e593832ea455513b5c5907ee7e3cb3442167063d5c5a529523b726c6b3be76",
+    "rounds\\round_004\\environment\\install.json": "72a1df4e636d9d44dfe48112cd846d8d965da96bee2367129023a2d7d85bd23a",
+    "rounds\\round_004\\artifacts\\smoke_resource_gate.json": "7ea2c278820d22d64635545147156237e3147da797cd67af0feb2ced40ab2116",
+    "rounds\\round_004\\artifacts\\smoke.json": "e26df55a2c9501fc6a46102d323ca18226c922bd98ceb9eba9146a0cb0643ae2",
+    "rounds\\round_004\\context_recovery\\result.json": "386203406d5ff1f9324b1c84d99ddbcdce0d8df9e06e887590897c5bf3c7e79b",
+    "rounds\\round_004\\context_recovery\\build_context.py": "1e87753eda6e5253cf248c1abbde6e1155d7eee3693d91495d8e78c8ac884c6d",
+    "rounds\\round_004\\runtime_author\\replay_contract.json": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5",
+    "rounds\\round_004\\code\\manage_runtime.py": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+    "rounds\\round_004\\code\\probe_tabicl_runtime.py": "7dee24ee5cc215733450be17db34b10a5e9d9adacc5c7ba33021bac3ecf4a0b2",
+    "rounds\\round_004\\USER_STEERING_AMENDMENT.json": "f5659c10fd35012778d451e8471afa96d448a56032bb0eafc1e7a0db55deee6d"
+  }
+}

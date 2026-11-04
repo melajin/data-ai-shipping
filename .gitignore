@@ -1,0 +1,41 @@
+# ==========================================
+# DATA AI SHIPPING - Git Ignore Rules
+# ==========================================
+
+# 1. 가상환경, 패키지 캐시, 런타임 빌드 산출물
+**/environments/
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+*$py.class
+**/pip_cache/
+**/model_cache/
+**/cache/
+**/temp/
+**/.pytest_cache/
+
+# 2. 대용량 모델 가중치 및 바이너리
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.whl
+
+# 3. 100MB 초과 대용량 압축 파일
+**/round_004.zip
+**/선박조업분류_1차_2차_결과보고서_팀원전달.zip
+*.zip.big
+
+# 4. 원격 저장소 보호를 위한 비대상 거대 폴더 (수 GB 규모)
+outputs/
+26_11_2/
+29-30일 모델 심층 분석/
+data/raw/*
+!data/raw/.gitkeep
+
+# 5. OS 생성 파일
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,121 @@
+﻿{
+    "started_at_utc":  "2026-11-04T16:34:43Z",
+    "finished_at_utc":  "2026-11-04T16:37:49.6233784Z",
+    "scope":  "Known project/package/current Python and standard HuggingFace cache only; no broad personal search",
+    "checkpoint":  {
+                       "path":  "C:/Users/dlehs/.cache/huggingface/hub/models--jingang--TabICL/snapshots/4dcd344ece2c00be9e831fdd35bed57b5ad83e19/tabicl-classifier-v2-20260212.ckpt",
+                       "sha256":  "BDC7DBD5E4FF21F8F0456FCF90C6B7CDF72DBEA960F2D05B19BEC19F9B3D4ED0",
+                       "loaded":  false,
+                       "bytes":  110368038,
+                       "expected_match":  true
+                   },
+    "runtime":  [
+                    {
+                        "python":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                        "version":  "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+                        "packages":  {
+                                         "torch":  null,
+                                         "tabicl":  null,
+                                         "numpy":  "2.2.5",
+                                         "scikit-learn":  "1.6.1"
+                                     }
+                    },
+                    {
+                        "python":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+                        "version":  "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+                        "packages":  {
+                                         "torch":  null,
+                                         "tabicl":  null,
+                                         "numpy":  "2.2.5",
+                                         "scikit-learn":  "1.6.1"
+                                     }
+                    },
+                    {
+                        "python":  "C:\\Users\\dlehs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+                        "version":  "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+                        "packages":  {
+                                         "torch":  null,
+                                         "tabicl":  null,
+                                         "numpy":  "2.3.5",
+                                         "scikit-learn":  null
+                                     }
+                    }
+                ],
+    "gpu":  [
+                {
+                    "Name":  "AMD Radeon 780M Graphics",
+                    "AdapterRAM":  2147483648,
+                    "DriverVersion":  "31.0.22060.6004"
+                }
+            ],
+    "nvidia_smi_on_path":  false,
+    "historical_cuda_runtime_reproduced":  false,
+    "fold_model_files":  [
+                             {
+                                 "seed":  42,
+                                 "fold":  0,
+                                 "model_pkl_exists":  false,
+                                 "preprocessor_sha256":  "EEA7D15BD4F0610450600502FCFB36D584A6F5324F26B6B325C3014D10065740"
+                             },
+                             {
+                                 "seed":  42,
+                                 "fold":  1,
+                                 "model_pkl_exists":  false,
+                                 "preprocessor_sha256":  "D3098F53B2189AFCA5680A8F5C765828DC280A387844F0F3DB23889FC88E9FDE"
+                             },
+                             {
+                                 "seed":  42,
+                                 "fold":  2,
+                                 "model_pkl_exists":  false,
+                                 "preprocessor_sha256":  "5F90C875DF2198B067696A687E22704E24642405C9D6314DAB9374C7EE6B75F4"
+                             },
+                             {
+                                 "seed":  2026,
+                                 "fold":  0,
+                                 "model_pkl_exists":  false,
+                                 "preprocessor_sha256":  "EEA7D15BD4F0610450600502FCFB36D584A6F5324F26B6B325C3014D10065740"
+                             },
+                             {
+                                 "seed":  2026,
+                                 "fold":  1,
+                                 "model_pkl_exists":  false,
+                                 "preprocessor_sha256":  "D3098F53B2189AFCA5680A8F5C765828DC280A387844F0F3DB23889FC88E9FDE"
+                             },
+                             {
+                                 "seed":  2026,
+                                 "fold":  2,
+                                 "model_pkl_exists":  false,
+                                 "preprocessor_sha256":  "5F90C875DF2198B067696A687E22704E24642405C9D6314DAB9374C7EE6B75F4"
+                             }
+                         ],
+    "preprocessing":  {
+                          "saved_median_count":  156,
+                          "source_appends_missing_flags":  true,
+                          "inferred_transformed_width":  312,
+                          "saved_kind":  "fit_median_and_raw_missing_flags",
+                          "actual_feature_rows_read":  0,
+                          "raw_feature_metadata_count":  156,
+                          "inference":  "code+saved metadata favor312, source-vs-settings inconsistency remains; no actual input replay"
+                      },
+    "fit_context":  {
+                        "context_input_order_unverified":  true,
+                        "development_role_roster_verified":  true,
+                        "context_row_counts":  [
+                                                   3144,
+                                                   3144,
+                                                   3145
+                                               ],
+                        "model_binary_missing":  true,
+                        "class_permutation_runtime_unverified":  true
+                    },
+    "installs":  0,
+    "downloads_model":  0,
+    "new_fits":  0,
+    "new_model_inference":  0,
+    "next_route":  "round004 isolated CPU runtime acquisition and bounded synthetic smoke/source lineage audit before original replay or M4 training",
+    "official_sources":  [
+                             "https://pypi.org/pypi/tabicl/2.2.0/json",
+                             "https://github.com/soda-inria/tabicl"
+                         ],
+    "probe_recovery":  "Initial inline PowerShell quoting caused SyntaxError before imports; moved exact metadata probe to file and all three invocations exited0"
+}

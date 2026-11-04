@@ -1,0 +1,119 @@
+{
+  "status": "failed",
+  "pid": 23548,
+  "parent_pid": 12528,
+  "command": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\run_round002_resume.py"
+  ],
+  "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002",
+  "started_at_utc": "2026-11-04T15:11:59+00:00",
+  "config_sha256": "f7240e3eb5adb8bc130979b7aa891762ef840993b7e6ccf39aae8e52c85cb214",
+  "source_hashes_at_start": {
+    "baseline_config": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\configs\\exp01\\experiment.json",
+      "bytes": 3162,
+      "sha256": "ae901771cd7f9db2d14b20ad919d58cb68ca54ed71eb4ee432170b941e452791"
+    },
+    "baseline_eval_contract": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\eval_contract.py",
+      "bytes": 10903,
+      "sha256": "4213e3a18ff418551b92420b04da49b1af6d3064ae0f02eb430040fb165a4ad1"
+    },
+    "baseline_data_adapter": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\data_adapter.py",
+      "bytes": 26229,
+      "sha256": "761e7e84d9eb1568c8ab200ed8513cf9036799475d1eb456fa39079cd7c6a6b6"
+    },
+    "baseline_runner": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\experiments\\exp01\\run_exp01.py",
+      "bytes": 22894,
+      "sha256": "ad84ee500d58983a087a5004fef695df030920086a490d62ca9a93dac2800162"
+    },
+    "source_data_validation": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\data_validation.json",
+      "bytes": 20224,
+      "sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d"
+    },
+    "round001_manifest": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\FINAL_MANIFEST.json",
+      "bytes": 3492,
+      "sha256": "63d9c9c84f5109ac13d331cd1dec7a4bb87e6fc40dc5f2e562e2fcb86651126f"
+    },
+    "round001_replay_code": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\replay_ensemble.py",
+      "bytes": 9335,
+      "sha256": "cecb8983c3b6b896aa9ab0aa995443a53c16c12d2cce5b6bab96632f912241fd"
+    },
+    "round002_plan": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\ROUND_PLAN.md",
+      "bytes": 3230,
+      "sha256": "cdcf86e623b6502a6fc8a12e1cb1d99e24336c88fe2f11cd96e2b47856b9756e"
+    }
+  },
+  "start_available_ram_bytes": 4291796992,
+  "next_session_sha256_at_launch": "c8f0d8c90ed3c60fd2140b91482483cee2f9df5b9deae652af39928e1abf7577",
+  "runner_sha256": "23362d1fca269485ded3f13a46127675dd261c8b3cc011a95e6a105a3fa9bd63",
+  "runner_snapshot_sha256": "23362d1fca269485ded3f13a46127675dd261c8b3cc011a95e6a105a3fa9bd63",
+  "plan_snapshot_sha256": "cdcf86e623b6502a6fc8a12e1cb1d99e24336c88fe2f11cd96e2b47856b9756e",
+  "manager_reserve_deadline_utc": "2026-11-04T15:14:00+00:00",
+  "prior_attempt_elapsed_seconds": 23.5393616,
+  "max_production_fits": 6,
+  "threads_max": 3,
+  "compute_limit_seconds": 1800,
+  "exit_code": 1,
+  "fit_records": [],
+  "input_hashes_before": {
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633"
+  },
+  "source_hashes_before": {
+    "baseline_config": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\configs\\exp01\\experiment.json",
+      "bytes": 3162,
+      "sha256": "ae901771cd7f9db2d14b20ad919d58cb68ca54ed71eb4ee432170b941e452791"
+    },
+    "baseline_eval_contract": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\eval_contract.py",
+      "bytes": 10903,
+      "sha256": "4213e3a18ff418551b92420b04da49b1af6d3064ae0f02eb430040fb165a4ad1"
+    },
+    "baseline_data_adapter": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\shared\\data_adapter.py",
+      "bytes": 26229,
+      "sha256": "761e7e84d9eb1568c8ab200ed8513cf9036799475d1eb456fa39079cd7c6a6b6"
+    },
+    "baseline_runner": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\experiments\\exp01\\run_exp01.py",
+      "bytes": 22894,
+      "sha256": "ad84ee500d58983a087a5004fef695df030920086a490d62ca9a93dac2800162"
+    },
+    "source_data_validation": {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\data_validation.json",
+      "bytes": 20224,
+      "sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d"
+    },
+    "round001_manifest": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\FINAL_MANIFEST.json",
+      "bytes": 3492,
+      "sha256": "63d9c9c84f5109ac13d331cd1dec7a4bb87e6fc40dc5f2e562e2fcb86651126f"
+    },
+    "round001_replay_code": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\replay_ensemble.py",
+      "bytes": 9335,
+      "sha256": "cecb8983c3b6b896aa9ab0aa995443a53c16c12d2cce5b6bab96632f912241fd"
+    },
+    "round002_plan": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\ROUND_PLAN.md",
+      "bytes": 3230,
+      "sha256": "cdcf86e623b6502a6fc8a12e1cb1d99e24336c88fe2f11cd96e2b47856b9756e"
+    }
+  },
+  "split_manifest_sha256": "9e4e791199f7a29604adfe10ca3df74a4761faa94891945f9604f6b96b15dce5",
+  "finished_at_utc": "2026-11-04T15:11:59+00:00",
+  "elapsed_seconds": 0.8680143000001408,
+  "error_type": "CatBoostError",
+  "error": "catboost/libs/metrics/metric.cpp:6898: If non-default weights for objects are not set, the 'use_weights' parameter must not be specified.",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\run_round002_resume.py\", line 509, in main\n    result=run(cfg,start,manifest)\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\run_round002_resume.py\", line 427, in run\n    fit_records.append(fit_candidate(fold, d, es, sel, cfg, nfit, start)); nfit += 1\n                       ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\code\\run_round002_resume.py\", line 302, in fit_candidate\n    m.fit(fit_pool, eval_set=es_pool, verbose=False)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Lib\\site-packages\\catboost\\core.py\", line 5547, in fit\n    self._fit(X, y, cat_features, text_features, embedding_features, None, graph, sample_weight, None, None, None, None, baseline, use_best_model,\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n              eval_set, verbose, logging_level, plot, plot_file, column_description, verbose_eval, metric_period,\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n              silent, early_stopping_rounds, save_snapshot, snapshot_file, snapshot_interval, init_model, callbacks, log_cout, log_cerr)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Lib\\site-packages\\catboost\\core.py\", line 2716, in _fit\n    self._train(\n    ~~~~~~~~~~~^\n        train_pool,\n        ^^^^^^^^^^^\n    ...<3 lines>...\n        train_params[\"init_model\"]\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Lib\\site-packages\\catboost\\core.py\", line 1824, in _train\n    self._object._train(train_pool, test_pool, params, allow_clear_pool, init_model._object if init_model else None)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"_catboost.pyx\", line 5430, in _catboost._CatBoost._train\n  File \"_catboost.pyx\", line 5479, in _catboost._CatBoost._train\n_catboost.CatBoostError: catboost/libs/metrics/metric.cpp:6898: If non-default weights for objects are not set, the 'use_weights' parameter must not be specified.\n"
+}

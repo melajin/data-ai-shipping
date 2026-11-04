@@ -1,0 +1,94 @@
+﻿{
+  "schema": "tabicl_replay_runtime_contract.v1",
+  "status": "source_review_complete_runtime_not_run",
+  "scope": "source and metadata only; no package import, data load, checkpoint load, inference, training, or F1",
+  "requested_pilot": {
+    "seed": 42,
+    "fold": 0,
+    "fit_rows": 3144,
+    "inner_rows_total": 787,
+    "query_rows": 2,
+    "query_selection": "first two row IDs in the recovered original fold-0 inner_ids order; row identity/order must be supplied by the context-recovery owner",
+    "feature_shape": [3144, 312],
+    "feature_dtype": "float32",
+    "device": "cpu",
+    "threads": 3,
+    "wall_cap_seconds": 600,
+    "preflight_available_ram_gib_min": 3,
+    "stop_own_child_if_available_ram_gib_below": 1.5,
+    "labels_to_fit": "FIT labels only; INNER labels are not passed to fit or selection"
+  },
+  "historical_runner": {
+    "package": "tabicl==2.2.0",
+    "checkpoint": "tabicl-classifier-v2-20260212.ckpt",
+    "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "device_recorded": "cuda",
+    "n_estimators": {"value": 8, "evidence": "explicit runner branch; smoke-only branch is 1"},
+    "batch_size": {"value": 1, "evidence": "explicit; this batches ensemble views, not query rows"},
+    "random_state": {"value": 42, "evidence": "explicitly passed from seed"},
+    "use_amp": {"value": false, "evidence": "explicit variant/run metadata; all stages resolved false"},
+    "use_fa3": {"value": false, "evidence": "runner derives false from use_amp=false; all stages resolved false"},
+    "model_path": {"value": "TABICL_PATH", "evidence": "explicit local checkpoint"},
+    "allow_auto_download": {"value": false, "evidence": "explicit"},
+    "checkpoint_version": {"value": "tabicl-classifier-v2-20260212.ckpt", "evidence": "explicit"},
+    "offload_mode": {"value": "auto", "evidence": "explicit"},
+    "disk_offload_dir": {"value": "fold/offload", "evidence": "explicit"},
+    "n_jobs": {"value": 3, "evidence": "explicit; predict_proba temporarily sets PyTorch intra-op threads and restores them"},
+    "norm_methods": {"value": ["none", "power"], "evidence": "not passed; tabicl 2.2.0 default None expands to these in fit"},
+    "feat_shuffle_method": {"value": "latin", "evidence": "not passed; package constructor default"},
+    "class_shuffle_method": {"value": "shift", "evidence": "not passed; package constructor default"},
+    "softmax_temperature": {"value": 0.9, "evidence": "not passed; package constructor default"},
+    "average_logits": {"value": true, "evidence": "not passed; package constructor default"},
+    "outlier_threshold": {"value": 4.0, "evidence": "not passed; package constructor default"},
+    "support_many_classes": {"value": true, "evidence": "not passed; package constructor default; four classes are within native support"},
+    "kv_cache": {"value": false, "evidence": "not passed; package constructor default"},
+    "verbose": {"value": false, "evidence": "not passed; package constructor default"},
+    "original_query_call": {"value": "one predict_proba call for complete 787-row INNER array in recovered inner_ids order", "evidence": "comparison_models.py role loop"},
+    "canonical_class_order": [0, 1, 2, 3],
+    "feature_contract_conflict": {
+      "code_and_fold_preprocessor": "FIT median + raw missing flags; 156 raw -> 312 float32",
+      "README_and_run_settings": "say no missing flags",
+      "status": "unresolved until context-recovery evidence settles exact exported matrix"
+    }
+  },
+  "query_batch_source_review": {
+    "batch_size_dimension": "leading n_datasets ensemble dimension; not sample/query dimension",
+    "preprocessing": "preprocessors fit on FIT; query data transformed with fitted objects",
+    "column_embedding": "default embed_with_test=false; inducing points use FIT positions",
+    "dataset_icl_attention": "full sequence as queries; keys/values restricted to first train_size FIT positions",
+    "cpu_internal_auto_batch": "InferenceManager does not accelerator-batch on CPU; one forward call for passed query group",
+    "interpretation": "source supports per-query mathematical independence from other query rows in this fixed FIT path",
+    "unverified": "bitwise or tolerance-level equality of two-query CPU output with the original 787-query CUDA output; no such replay was run"
+  },
+  "manager_reported_prior_smoke": {
+    "synthetic_smoke_seconds": 13.047,
+    "parameter_count": 27552258,
+    "output_head_match": true,
+    "resolved_device": "cpu",
+    "parameter_dtype": "float32",
+    "provenance": "reported by manager; not measured by this source-review agent",
+    "not_a_full_pilot_cost_estimate": true
+  },
+  "sources": [
+    {"path": "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/code/historical/TabM/TabM_개선_20261030/comparison_models.py", "sha256": "F818C0F2C3BB79CD80781A4DF22C3D6CCA425528FC3E3DF4A08E55324D914251", "lines": "70-80, 133-138, 206-230, 294-340"},
+    {"path": "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/metadata/run_settings.json", "sha256": "E951067A229CF41056BD1D5D73BC46FA688430B84BAE255ED79950E3EA6CB85F"},
+    {"path": "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/evaluation/seed_42/parent_fingerprint.json", "sha256": "64B992FB807B4ADA967D641279C625E5640865997234D38C003F179CB9B25475"},
+    {"path": "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/evaluation/seed_42/fold_0/training.json", "sha256": "ADF22319DCDA21029BAA279DBBEB60669C55F3B1C222A5CC5864CB1E9912EBA4"},
+    {"path": "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/evaluation/seed_42/fold_0/preprocessor.json", "sha256": "EEA7D15BD4F0610450600502FCFB36D584A6F5324F26B6B325C3014D10065740"},
+    {"path": "11_04_final/environments/round_004_tabicl_cpu/Lib/site-packages/tabicl-2.2.0.dist-info/METADATA", "sha256": "E429EDBE64F243241E6425854643B0D4128DE550121B9FEB1598EF710B9941A2", "lines": "3"},
+    {"path": "11_04_final/environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py", "sha256": "64F5EF7EF88A920A3F7A5F6E2D9D8DC08769EC343E931F910ACC2D9C4EAA5534", "lines": "282-320, 504-512, 564-605, 666-775"},
+    {"path": "11_04_final/environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/base.py", "sha256": "7F8F284CA91BF1F5A016179834E508890B3F5368C4A48A7DCB6CB4B83A30051A", "lines": "64-66, 68-145, 146-170, 322-328"},
+    {"path": "11_04_final/environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/preprocessing.py", "sha256": "2163A3BF6754127365A7AEDAC854D99A6F565545CC1EA7E63C68A596081B2976", "lines": "687-755, 1036-1070, 1143-1212"},
+    {"path": "11_04_final/environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/embedding.py", "sha256": "A0C562600FE22944F91B1B71B706198CB9A4C3D9D8AABA67A86F35A85493D322", "lines": "520-581, 679-732"},
+    {"path": "11_04_final/environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/encoders.py", "sha256": "A3E0E9BDE47E7F587C4A196D124EA631E25755D4F5AC5D6A8568618A4E299A4E", "lines": "120-146"},
+    {"path": "11_04_final/environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/layers.py", "sha256": "96CCE2E84DB33E176D872C7BB7C0DF8C305DE3EB7A02FCAD9F1128F33D319D95", "lines": "406-438, 625-650"},
+    {"path": "11_04_final/environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/learning.py", "sha256": "7549DFF09C3796A3CB0B55EA03E249342392FA601A681526F7B1EFB6A6F1EEF2", "lines": "241-278, 416-550"},
+    {"path": "11_04_final/environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py", "sha256": "583786E5FFD70B9EB425BCA8E52AED415DADCDF4254C908B3B6FA52026A56491", "lines": "361-439"}
+  ],
+  "unknowns": [
+    "exact recovered FIT/INNER identifiers and 312-column lineage are owned by the context-recovery agent",
+    "whether CPU two-query outputs match persisted historical CUDA probabilities within a prespecified tolerance has not been measured",
+    "full pilot wall time and memory use are unknown"
+  ]
+}
+

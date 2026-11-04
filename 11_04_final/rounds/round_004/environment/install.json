@@ -1,0 +1,151 @@
+{
+  "started_utc": "2026-11-04T16:50:58.265933+00:00",
+  "steps": [
+    {
+      "name": "01_venv",
+      "command": [
+        "C:\\Users\\dlehs\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "venv",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu"
+      ],
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+      "started_utc": "2026-11-04T16:50:58.266933+00:00",
+      "timeout_seconds": 900.0,
+      "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+      "pid": 23804,
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 7.5310000000026776,
+      "finished_utc": "2026-11-04T16:51:05.803105+00:00"
+    },
+    {
+      "name": "02_download_torch",
+      "command": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "download",
+        "--no-cache-dir",
+        "--only-binary=:all:",
+        "--dest",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\environment\\wheels",
+        "torch==2.6.0",
+        "--index-url",
+        "https://download.pytorch.org/whl/cpu"
+      ],
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+      "started_utc": "2026-11-04T16:51:05.805803+00:00",
+      "timeout_seconds": 892.4689999999973,
+      "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+      "pid": 31000,
+      "exit_code": 0,
+      "timed_out": false,
+      "final_observed_download_disk_bytes": 217196920,
+      "peak_observed_download_disk_bytes": 217366214,
+      "elapsed_seconds": 8.28099999999904,
+      "finished_utc": "2026-11-04T16:51:14.077764+00:00"
+    },
+    {
+      "name": "03_download_tabicl",
+      "command": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "download",
+        "--no-cache-dir",
+        "--only-binary=:all:",
+        "--dest",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\environment\\wheels",
+        "--find-links",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\environment\\wheels",
+        "-c",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\configs\\pins.txt",
+        "tabicl==2.2.0",
+        "numpy==2.3.5",
+        "scikit-learn==1.7.2",
+        "--index-url",
+        "https://pypi.org/simple"
+      ],
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+      "started_utc": "2026-11-04T16:51:14.081766+00:00",
+      "timeout_seconds": 884.1879999999983,
+      "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+      "pid": 30168,
+      "exit_code": 0,
+      "timed_out": false,
+      "final_observed_download_disk_bytes": 283019957,
+      "peak_observed_download_disk_bytes": 283868825,
+      "elapsed_seconds": 7.360000000000582,
+      "finished_utc": "2026-11-04T16:51:21.448866+00:00"
+    },
+    {
+      "name": "04_install_offline",
+      "command": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "--no-index",
+        "--find-links",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\environment\\wheels",
+        "--report",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\environment\\pip_install_report.json",
+        "torch==2.6.0+cpu",
+        "tabicl==2.2.0",
+        "numpy==2.3.5",
+        "scikit-learn==1.7.2"
+      ],
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+      "started_utc": "2026-11-04T16:51:21.964298+00:00",
+      "timeout_seconds": 876.3129999999983,
+      "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+      "pid": 5060,
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 124.15699999999924,
+      "finished_utc": "2026-11-04T16:53:26.118287+00:00"
+    },
+    {
+      "name": "05_pip_check",
+      "command": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+      "started_utc": "2026-11-04T16:53:26.122297+00:00",
+      "timeout_seconds": 752.155999999999,
+      "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+      "pid": 25764,
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 1.5459999999984575,
+      "finished_utc": "2026-11-04T16:53:27.666050+00:00"
+    },
+    {
+      "name": "06_pip_freeze",
+      "command": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "freeze",
+        "--all"
+      ],
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+      "started_utc": "2026-11-04T16:53:27.669069+00:00",
+      "timeout_seconds": 750.6100000000006,
+      "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+      "pid": 2160,
+      "exit_code": 0,
+      "timed_out": false,
+      "elapsed_seconds": 1.0320000000028813,
+      "finished_utc": "2026-11-04T16:53:28.699216+00:00"
+    }
+  ],
+  "status": "success",
+  "finished_utc": "2026-11-04T16:53:28.702951+00:00",
+  "elapsed_seconds": 150.43700000000172
+}

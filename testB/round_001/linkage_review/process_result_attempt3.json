@@ -1,0 +1,14 @@
+﻿{
+    "command":  [
+                    "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe",
+                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\run_linkage_review.py"
+                ],
+    "started_local":  "2026-11-05T02:42:40.5220618+09:00",
+    "finished_local":  "2026-11-05T02:42:40.8624835+09:00",
+    "exit_code":  1,
+    "stdout_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stdout.log",
+    "stderr_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stderr.log",
+    "previous_attempt_exit_code":  1,
+    "note":  "Final corrected run; attempt 1 failure and attempt 2 preliminary success retained",
+    "fix":  "UTF-8 BOM handling and accurate condition field names"
+}

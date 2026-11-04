@@ -1,0 +1,1 @@
+{"status": "CONTEXT_READY", "fit_rows": 3144, "inner_rows": 787, "ordered_inner_ids_preserved": true, "frozen_inner_membership_match": true, "frozen_query_digest": "7750db94f83f57a4e58b62f29b32ba2e737339108e0923a970f9a924bf9be969"}

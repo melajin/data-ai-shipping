@@ -1,0 +1,94 @@
+{
+  "created_utc": "2026-11-04T16:31:51.957824+00:00",
+  "scope": "Derived evidence organization only; no confirmed identity or accident labels",
+  "all_events": 167,
+  "category_counts": {
+    "baseline_multiple_candidates": 88,
+    "no_candidate_all_conditions": 45,
+    "baseline_single_condition_sensitive": 26,
+    "baseline_none_wider_candidate": 4,
+    "baseline_single_but_multi_vessel_accident": 3,
+    "same_single_candidate_all_nine_conditions": 1
+  },
+  "baseline_single_count": 30,
+  "same_single_candidate_all_nine_conditions": 1,
+  "baseline_single_present_in_narrowest_condition": 2,
+  "baseline_single_becomes_multiple_when_time_widened": 7,
+  "baseline_none_recovered_only_by_wider_condition": 4,
+  "baseline_distinct_candidate_vessels": 325,
+  "baseline_candidate_vessels_linked_to_multiple_events": 86,
+  "maximum_candidate_events_per_vessel": 11,
+  "widest_distinct_candidate_vessels": 382,
+  "all_condition_event_vessel_associations": 2567,
+  "stable_single_event_ids": [
+    "E0023"
+  ],
+  "single_but_multi_vessel_event_ids": [
+    "E0042",
+    "E0108",
+    "E0123"
+  ],
+  "baseline_single_distance_quantiles_m": {
+    "0": 435.891073839,
+    "0.25": 1793.821881675,
+    "0.5": 2610.9129254150002,
+    "0.75": 3554.7421301900004,
+    "1": 4967.13562181
+  },
+  "baseline_single_minimum_distance_row_start_abs_residual_over_60min": 10,
+  "input_pre": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\event_audit.csv",
+      "size_bytes": 91679,
+      "sha256": "2d35630d95efe74f85cf6ba072637beea79b9d428617b251a961e08c7bf09d39"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\candidate_vessels.csv",
+      "size_bytes": 961613,
+      "sha256": "53c954c5592922d8f0da6226fc420be4f0a68879033f54e9b0859986ec09a94f"
+    }
+  ],
+  "script": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\build_review_queue.py",
+    "size_bytes": 6981,
+    "sha256": "9b8dd293bd2c46a479a94ba0d3c2d7be5e11c62dbcb34b34fe770599a1494bd6"
+  },
+  "command_argv": [
+    "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\build_review_queue.py",
+    "--input-dir",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001",
+    "--output-dir",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001"
+  ],
+  "input_post": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\event_audit.csv",
+      "size_bytes": 91679,
+      "sha256": "2d35630d95efe74f85cf6ba072637beea79b9d428617b251a961e08c7bf09d39"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\run_001\\candidate_vessels.csv",
+      "size_bytes": 961613,
+      "sha256": "53c954c5592922d8f0da6226fc420be4f0a68879033f54e9b0859986ec09a94f"
+    }
+  ],
+  "input_unchanged": true,
+  "outputs": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001\\baseline_single_review.csv",
+      "size_bytes": 32595,
+      "sha256": "1aba1eaff7a2481438020daa0081ba0c009771b31d27c42ad4e1cd18a040c4f0"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001\\repeated_candidate_vessels.csv",
+      "size_bytes": 2674,
+      "sha256": "cba1075ad35e698309ed3aab55fb75fc6eb917cc656faf33abf7b9cc5769d902"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\accident_linkage_audit_20261105\\derived_001\\review_queue.csv",
+      "size_bytes": 107357,
+      "sha256": "99017de4ace983f414f3215759659749e399b9d1cda07b48319af3433645d162"
+    }
+  ]
+}

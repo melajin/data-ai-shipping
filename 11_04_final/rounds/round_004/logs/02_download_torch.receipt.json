@@ -1,0 +1,27 @@
+{
+  "name": "02_download_torch",
+  "command": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_004_tabicl_cpu\\Scripts\\python.exe",
+    "-m",
+    "pip",
+    "download",
+    "--no-cache-dir",
+    "--only-binary=:all:",
+    "--dest",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_004\\environment\\wheels",
+    "torch==2.6.0",
+    "--index-url",
+    "https://download.pytorch.org/whl/cpu"
+  ],
+  "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+  "started_utc": "2026-11-04T16:51:05.805803+00:00",
+  "timeout_seconds": 892.4689999999973,
+  "wrapper_sha256": "381f20fd24f2de465643c2ec8b648a6332c5632e21f4c8d1fa05073e32602750",
+  "pid": 31000,
+  "exit_code": 0,
+  "timed_out": false,
+  "final_observed_download_disk_bytes": 217196920,
+  "peak_observed_download_disk_bytes": 217366214,
+  "elapsed_seconds": 8.28099999999904,
+  "finished_utc": "2026-11-04T16:51:14.077764+00:00"
+}

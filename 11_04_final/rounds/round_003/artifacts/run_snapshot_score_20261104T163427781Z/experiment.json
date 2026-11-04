@@ -1,0 +1,56 @@
+﻿{
+    "experiment":  "round_003_tabicl_saved_probability_decisions",
+    "frozen_before_scoring":  true,
+    "frozen_at_utc":  "2026-11-04T16:15:31.7836971Z",
+    "plan":  "rounds/round_003/ROUND_PLAN.md",
+    "seeds":  [
+                  42,
+                  2026
+              ],
+    "folds":  [
+                  0,
+                  1,
+                  2
+              ],
+    "class_labels":  [
+                         0,
+                         1,
+                         2,
+                         3
+                     ],
+    "grid":  [
+                 1,
+                 1.5,
+                 2,
+                 2.5,
+                 3
+             ],
+    "old_factors":  [
+                        2,
+                        3,
+                        2
+                    ],
+    "numeric_tolerance":  1E-12,
+    "support_fallback":  "raw if any true class absent in full INNER or natural 1-7 day INNER",
+    "bootstrap":  {
+                      "method":  "percentile",
+                      "repetitions":  5000,
+                      "seed":  20261105,
+                      "unit":  "same vessel jointly across both seeds"
+                  },
+    "budget":  {
+                   "threads_max":  3,
+                   "large_compute_concurrency":  1,
+                   "compute_minutes":  15,
+                   "manager_deadline_utc":  "2026-11-04T16:58:25Z",
+                   "m4_readiness_minutes":  10,
+                   "manager_minutes":  45,
+                   "new_fits_max":  0
+               },
+    "probability_diagnostics":  {
+                                    "ece_bins":  "equal width [0,.1,...,1], last includes1",
+                                    "brier":  "mean row sum (p-onehot)^2, no division by class count",
+                                    "high_confidence_threshold":  0.9,
+                                    "original_probability_unchanged":  true
+                                }
+}

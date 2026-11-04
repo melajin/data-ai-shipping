@@ -1,0 +1,77 @@
+{
+  "report": "1104_총정리.md",
+  "bytes": 52164,
+  "characters": 25726,
+  "lines": 503,
+  "local_links_checked": 14,
+  "missing_links": [],
+  "markdown_tables_consistent": true,
+  "all_metrics_rows_checked_by_independent_reviewer": 32,
+  "files": [
+    {
+      "path": "1104_총정리.md",
+      "bytes": 52164,
+      "sha256": "bb571b07af9eb41f314c185ead216958f13a2850c62d97385f2ba648a8480c27"
+    },
+    {
+      "path": "1104_총정리_자료/analysis_components.py",
+      "bytes": 5014,
+      "sha256": "ebdd59e122fa65b65bca5f569f1e9e6a7fa1c7cd926bf00235af33ae45ea8e38"
+    },
+    {
+      "path": "1104_총정리_자료/component_analysis.json",
+      "bytes": 100270,
+      "sha256": "0246e28e5056406fbe1a19d49b9aa3163e2c662b0445e9e4b1a03bebada911a0"
+    },
+    {
+      "path": "1104_총정리_자료/make_figures.py",
+      "bytes": 3317,
+      "sha256": "d4c22e2a5922ae3bb93c16c640b72cf101663c004a473ceff22d83364811e328"
+    },
+    {
+      "path": "1104_총정리_자료/구현_비판검토.md",
+      "bytes": 32072,
+      "sha256": "5efe43fdbb69d9b7c0c49318f433aef7aece1165725a918ca37fb88514801a72"
+    },
+    {
+      "path": "1104_총정리_자료/그림/01_기존신규_성적.png",
+      "bytes": 72309,
+      "sha256": "b7b59ec42529e1c86de4dee8bf8ca6048a0169c94931b38344322519a6788767"
+    },
+    {
+      "path": "1104_총정리_자료/그림/02_10차_집단별혼동.png",
+      "bytes": 134242,
+      "sha256": "f8abdba59e31cf238f36d5bc6432e5a3d181542939896d509661719a7d6b55e2"
+    },
+    {
+      "path": "1104_총정리_자료/그림/03_구성요소_분해.png",
+      "bytes": 52489,
+      "sha256": "27623d77a2e312746fe41e9e228b3e8858abd96e5a2521316ca98fe608b540ec"
+    },
+    {
+      "path": "1104_총정리_자료/독립_성적분해_분석.py",
+      "bytes": 25564,
+      "sha256": "37d2a6a0098f1d7f365a06314dfc63e2246b0f38917a2fd52f76e24413a434ad"
+    },
+    {
+      "path": "1104_총정리_자료/독립_성적분해_요약.md",
+      "bytes": 10679,
+      "sha256": "7c4ae00241af50f68f81231d48f04ea36d7e74b4c9b655c5111a55c5cc0a380d"
+    },
+    {
+      "path": "1104_총정리_자료/독립_성적분해_측정.json",
+      "bytes": 205685,
+      "sha256": "4109c9f0d37f2e628a8b7f75266b78b8fc7dacd81d60ae1d7c24d4c195dae2e0"
+    },
+    {
+      "path": "1104_총정리_자료/문서대조_검토.md",
+      "bytes": 21217,
+      "sha256": "af38397be76f43749a6b34387f730cfd53427d17d458853c809115e767ce1395"
+    },
+    {
+      "path": "1104_총정리_자료/인수인계_읽기.txt",
+      "bytes": 704,
+      "sha256": "60ad5ae7b5a475d86b927e9d21360ed46a04aa07aa3f2aa21f2d45479baf9990"
+    }
+  ]
+}

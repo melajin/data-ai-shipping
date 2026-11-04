@@ -1,0 +1,4 @@
+torch==2.6.0+cpu
+numpy==2.3.5
+scikit-learn==1.7.2
+tabicl==2.2.0

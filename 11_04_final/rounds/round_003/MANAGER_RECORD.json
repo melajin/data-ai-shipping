@@ -1,0 +1,45 @@
+﻿{
+    "started_at_utc":  "2026-11-04T16:13:25Z",
+    "deadline_utc":  "2026-11-04T16:58:25Z",
+    "requested":  {
+                      "author":  "gpt-6-luna/xhigh",
+                      "reviewer":  "gpt-6-luna/xhigh",
+                      "manager":  "gpt-6-astra/high"
+                  },
+    "evidence":  "model_runtime_evidence.json; host turn_context, not independent model-internals verification",
+    "ownership":  {
+                      "author":  [
+                                     "code",
+                                     "artifacts",
+                                     "logs"
+                                 ],
+                      "reviewer":  [
+                                       "review"
+                                   ],
+                      "manager":  [
+                                      "ROUND_PLAN.md",
+                                      "configs/experiment.json",
+                                      "ROUND_REPORT.md",
+                                      "STATUS.json",
+                                      "NEXT_SESSION.md",
+                                      "EXPERIMENT_LEDGER.csv"
+                                  ]
+                  },
+    "duplicate_check":  {
+                            "receipt_matched":  true,
+                            "previous_manager_done":  true,
+                            "TestB_session_untouched":  true,
+                            "no_round003_compute_found":  true
+                        },
+    "frozen_plan_sha256":  "54CEF183B6845D6CECFCA64314FC0D801C8D1B8C7C826DA76F9A42B665EA2CE0",
+    "frozen_config_sha256":  "29202080EA8F2A33120F2F6471679ACC1F7AFE702848F28ED8A741E3F4CCBBB6",
+    "scoring_authorized":  true,
+    "read_only_roots":  [
+                            "F:/문제 데이터_수정_1027",
+                            "D:/repos/fishing-track-classification"
+                        ],
+    "diagnostic_convention_clarified_at_utc":  "2026-11-04T16:21:35.1322183Z",
+    "scoring_authorized_at_utc":  "2026-11-04T16:34:11.8529960Z",
+    "reviewer_precheck_sha256":  "3674A9AB1789F1B9B95F33D2ABFBA44763FB79E5A37C62858D81D79196AE34E2",
+    "runner_sha256":  "9F333F7F4BE7ED81EF8296F36B4474F8A6730F99F306C8E4F586C9D031BEA6A2"
+}

@@ -1,0 +1,14 @@
+{"status": "FAILED", "error_type": "AttributeError", "error": "'TabICLClassifier' object has no attribute 'cache_mode_'"}
+Traceback (most recent call last):
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_005\logs\pilot_01\source\replay_inner_pilot.py", line 504, in <module>
+    main()
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_005\logs\pilot_01\source\replay_inner_pilot.py", line 483, in main
+    result = execute(args.context, args.query_freeze, args.reference, args.checkpoint,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_005\logs\pilot_01\source\replay_inner_pilot.py", line 379, in execute
+    resolved_settings = validate_resolved_inference_state(estimator)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_005\logs\pilot_01\source\replay_inner_pilot.py", line 221, in validate_resolved_inference_state
+    "cache_mode": model.cache_mode_}
+                  ^^^^^^^^^^^^^^^^^
+AttributeError: 'TabICLClassifier' object has no attribute 'cache_mode_'

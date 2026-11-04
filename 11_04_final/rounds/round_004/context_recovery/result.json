@@ -1,0 +1,47 @@
+﻿{
+  "status": "EXPORT_NOT_RUN",
+  "reason": "Parent execution cutoff reached at 17:15 UTC before final reviewer approval.",
+  "scope": {
+    "fold": 0,
+    "seed": 42,
+    "development_only": true,
+    "model_or_checkpoint_loaded": false,
+    "training_or_inference": false,
+    "f1_computed": false,
+    "holdout_feature_label_probability_rows_loaded": 0,
+    "split_manifest_includes_holdout_id_metadata": true
+  },
+  "manifest": {
+    "path": "P/splits/splits_original.json",
+    "sha256": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+    "matches_frozen_rule_and_seed42_parent_fingerprint": true,
+    "reviewer_schema_counts": {
+      "development_ids": 5897,
+      "holdout_ids": 1475,
+      "fold_count": 3,
+      "fold0_fit_ids": 3144,
+      "fold0_inner_ids": 787,
+      "fold0_outer_ids": 1966
+    }
+  },
+  "ordered_inner_digest": {
+    "expected": "cb82568ecf4cedf20a5706d15db6a76f84f84a23b9273aa4b18948c3014ed0c3",
+    "actual": null,
+    "comparison_executed": false,
+    "serializer": "BASE.digest_json: json.dumps(jsonable(value), sort_keys=True, ensure_ascii=False), UTF-8 SHA256"
+  },
+  "development_npz": {
+    "path": "exp01/artifacts/fold_0_features.npz",
+    "sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+    "candidate_pins_exact_hash": true
+  },
+  "candidate": {
+    "path": "rounds/round_004/context_recovery/build_context.py",
+    "sha256": "1E87753EDA6E5253CF248C1ABBDE6E1155D7EEE3693D91495D8E78C8AC884C6D",
+    "ast_parse_before_final_constant_correction": true,
+    "final_execution": false
+  },
+  "export_artifact": null,
+  "launch_receipt": null,
+  "next_step": "Reviewer checks pinned source, then parent authorizes one execution and launch receipt."
+}

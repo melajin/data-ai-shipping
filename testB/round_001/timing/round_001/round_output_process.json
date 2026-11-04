@@ -1,0 +1,44 @@
+{
+  "started_at": "2026-11-05T02:41:34.095426+09:00",
+  "ended_at": "2026-11-05T02:41:34.296341+09:00",
+  "exit_code": 0,
+  "operation": "copy inherited preparation CSV and write manifest/summary/report; no new calculations",
+  "source": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\comparison_readiness_100.csv",
+    "exists": true,
+    "size_bytes": 39978,
+    "sha256": "5e06a7c56b132ecdac291b0f967febb66b9faa53825147e5b5af2c64fa7721cb"
+  },
+  "outputs": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\comparison_readiness_100.csv",
+      "exists": true,
+      "size_bytes": 39978,
+      "sha256": "5e06a7c56b132ecdac291b0f967febb66b9faa53825147e5b5af2c64fa7721cb"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\input_split_manifest.json",
+      "exists": true,
+      "size_bytes": 9650,
+      "sha256": "593a684dbc4db16c486b0fbd71d1792f8df18848625843b058168e11fd0cc85a"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\summary.json",
+      "exists": true,
+      "size_bytes": 2106,
+      "sha256": "6b4ce291753802d6ff7d3dec7333e9d4f388a1d24d41b09fe0c2719964eee5a3"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\readiness_report.md",
+      "exists": true,
+      "size_bytes": 3720,
+      "sha256": "2952d2914c12413bed592dc0747d8f48174675d90cadd7c6fd1c33b5d9424a76"
+    }
+  ],
+  "preserved_legacy_execution": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\process_result.json",
+    "exists": true,
+    "size_bytes": 4354,
+    "sha256": "56e1e572b96ab84e2ed6c91e1739d772bf30ca0a8a9028aff00a441d01917cd4"
+  }
+}

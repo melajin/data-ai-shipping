@@ -1,0 +1,172 @@
+{
+  "review_status": "CONDITIONAL",
+  "protocol_review": "PASS",
+  "adoption_decision": "REJECT",
+  "scope": {
+    "development_only": true,
+    "development_outer_rows": 5897,
+    "holdout_individual_rows_read": 0,
+    "raw_data_read": false,
+    "source_repo_modified": false,
+    "training_performed_by_reviewer": false
+  },
+  "reviewed_sources": {
+    "result_json": "rounds/round_002/artifacts/result.json",
+    "alpha_selection": "rounds/round_002/artifacts/alpha_selection_frozen.json",
+    "saved_probabilities": "rounds/round_002/artifacts/probabilities/*.npz",
+    "attempt3_runner_sha256": "b8113bea3887402fb5703c79b29136d5036df73b68a1ccaaf1503016cf28deed",
+    "attempt3_config_sha256": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+    "alpha_selection_sha256": "dd6e6b0d2947aded94ef424307b82e4deea9ccf3fd37d287144791884d798ea3"
+  },
+  "attempts": {
+    "attempt1": {
+      "exit_code": "unavailable",
+      "successful_model": 1,
+      "failure": "CatBoost constructor rejected feature_names before candidate fit; reused baseline fold 0 replay deltas were zero"
+    },
+    "attempt2": {
+      "exit_code": 1,
+      "failure": "CatBoost rejected use_weights=false before training iteration"
+    },
+    "attempt3": {
+      "exit_code": 0,
+      "elapsed_seconds": 270.17245120000007,
+      "new_fits": 5,
+      "reused_baseline_fold0": true,
+      "successful_models_counted_toward_cap": 6
+    }
+  },
+  "independent_saved_probability_checks": {
+    "status": "PASS",
+    "pooled_unique_rows": 5897,
+    "folds": [
+      {
+        "fold": 0,
+        "selected_alpha": 1.0,
+        "inner_select_correct_by_alpha": [
+          224,
+          225,
+          228,
+          229,
+          230
+        ],
+        "n_outer": 1966
+      },
+      {
+        "fold": 1,
+        "selected_alpha": 0.0,
+        "inner_select_correct_by_alpha": [
+          229,
+          228,
+          228,
+          222,
+          219
+        ],
+        "n_outer": 1966
+      },
+      {
+        "fold": 2,
+        "selected_alpha": 0.5,
+        "inner_select_correct_by_alpha": [
+          222,
+          225,
+          228,
+          224,
+          223
+        ],
+        "n_outer": 1965
+      }
+    ],
+    "all_model_ids_labels_aligned": true,
+    "probabilities_finite_normalized": true,
+    "saved_predictions_equal_argmax": true,
+    "blend_max_probability_abs_delta": 0.0,
+    "pooled_metrics_recomputed_and_match_result": {
+      "baseline_lightgbm": {
+        "n": 5897,
+        "correct": 3476,
+        "micro_f1": 0.5894522638629812,
+        "macro_f1": 0.519210304310862,
+        "class_recall": [
+          0.8181506849315069,
+          0.4409722222222222,
+          0.12934131736526946,
+          0.7142857142857143
+        ]
+      },
+      "candidate_catboost": {
+        "n": 5897,
+        "correct": 3424,
+        "micro_f1": 0.5806342207902323,
+        "macro_f1": 0.4689224222226287,
+        "class_recall": [
+          0.8613013698630136,
+          0.39732142857142855,
+          0.033532934131736525,
+          0.6349206349206349
+        ]
+      },
+      "blend": {
+        "n": 5897,
+        "correct": 3474,
+        "micro_f1": 0.5891131083601832,
+        "macro_f1": 0.5061678493519742,
+        "class_recall": [
+          0.8383561643835616,
+          0.4270833333333333,
+          0.09221556886227544,
+          0.6984126984126984
+        ]
+      }
+    },
+    "alpha_reselected_from_saved_inner_select": true,
+    "outer_used_for_alpha_selection": false,
+    "bootstrap_ci_independently_recomputed": false
+  },
+  "reported_paired_bootstrap_development_outer_only": {
+    "candidate_vs_baseline": {
+      "unit": "vessel",
+      "repetitions": 5000,
+      "seed": 20261105,
+      "point_delta_micro_f1": -0.008818043072748855,
+      "ci95_percentile": [
+        -0.0167924368322876,
+        -0.0006783110055960658
+      ],
+      "limitation": "development OUTER interval; does not remove selection bias or establish independent performance"
+    },
+    "blend_vs_baseline": {
+      "unit": "vessel",
+      "repetitions": 5000,
+      "seed": 20261105,
+      "point_delta_micro_f1": -0.0003391555027980329,
+      "ci95_percentile": [
+        -0.005765643547566559,
+        0.005087332541970494
+      ],
+      "limitation": "development OUTER interval; does not remove selection bias or establish independent performance"
+    }
+  },
+  "adoption_basis": {
+    "candidate_net_correct_vs_baseline": -52,
+    "blend_net_correct_vs_baseline": -2,
+    "candidate_macro_f1_delta": -0.050287882088233316,
+    "candidate_trap_recall_delta": -0.09580838323353294,
+    "blend_trap_recall_delta": -0.03712574850299402,
+    "candidate_bootstrap_ci95": [
+      -0.0167924368322876,
+      -0.0006783110055960658
+    ],
+    "blend_bootstrap_ci95": [
+      -0.005765643547566559,
+      0.005087332541970494
+    ],
+    "decision": "Candidate loses correct predictions and macro F1; blend trap recall drop exceeds planned 0.03 maximum subgroup drop. No adoption."
+  },
+  "limitations": [
+    "Previously exposed development OUTER, not independent validation.",
+    "Bootstrap intervals were read from run result, not independently recomputed by reviewer.",
+    "Comparison changes model, objective, weighting and missing-value treatment; not a pure model-family causal effect.",
+    "No inference about hardware or operational performance."
+  ]
+}

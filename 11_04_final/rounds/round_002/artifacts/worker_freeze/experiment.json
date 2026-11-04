@@ -1,0 +1,108 @@
+{
+  "experiment": "round_002_catboost_vs_refit_sqrt_macro_seed42",
+  "frozen_before_training": true,
+  "candidate_selection_basis": "environment availability only; CatBoost installed and smoke-imported before scores",
+  "question": "Do probabilities from a different tabular model pipeline reduce errors on the same fixed X304 development population and FIT folds?",
+  "input": {
+    "source_root": "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104/artifacts/exp01",
+    "file_template": "fold_{fold}_features.npz",
+    "fold_sha256": {
+      "0": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+      "1": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+      "2": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633"
+    },
+    "rows_per_fold": 5897,
+    "feature_count": 304,
+    "ordered_feature_names_sha256": "905728e72aaad6496e57a8e82f242b86f119be86b05a565f7773cc465ee68590",
+    "features_in_order": ["F156:156", "T5:10", "behavior_without_obs_days:68", "local_rel:70"],
+    "class_order": ["연안복합", "자망", "통발", "채낚기연승낚시"],
+    "raw_data_read": false,
+    "holdout_individual_rows_read": 0
+  },
+  "split": {
+    "method": "sklearn.model_selection.train_test_split over INNER row indices",
+    "test_size": 0.5,
+    "stratify": "INNER labels",
+    "random_state": 20261105,
+    "train_role": "INNER_ES",
+    "test_role": "INNER_SELECT"
+  },
+  "baseline": {
+    "model": "LightGBM LGBMClassifier",
+    "condition": "sqrt_macro",
+    "objective": "multiclass",
+    "num_class": 4,
+    "n_estimators": 8000,
+    "learning_rate": 0.01,
+    "num_leaves": 127,
+    "min_child_samples": 10,
+    "colsample_bytree": 0.6,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "reg_lambda": 1.0,
+    "seed": 42,
+    "threads": 3,
+    "metric": "None",
+    "fit_sample_weight": "sqrt inverse class-frequency, normalized to mean 1; frequencies from FIT only",
+    "early_stopping": {"metric": "unweighted macro F1", "rounds": 200, "data": "INNER_ES only"}
+  },
+  "candidate": {
+    "type": "catboost",
+    "package": "catboost==1.2.10",
+    "task_type": "CPU",
+    "iterations": 3000,
+    "depth": 6,
+    "learning_rate": 0.03,
+    "l2_leaf_reg": 3,
+    "seed": 42,
+    "thread_count": 3,
+    "loss_function": "MultiClass",
+    "eval_metric": "Accuracy:use_weights=false",
+    "early_stopping_rounds": 200,
+    "early_stopping_data": "INNER_ES only",
+    "fit_sample_weight": "none",
+    "nan_mode": "Min",
+    "model_format": "cbm",
+    "extra_trees_fallback": {
+      "allowed_only_if": "CatBoost install/compatibility failure before OUTER score calculation",
+      "pipeline": "FIT-only median imputer(add_indicator=true, keep_empty_features=true) -> ExtraTreesClassifier(n_estimators=600,max_features=0.7,min_samples_leaf=2,class_weight=null,random_state=42,n_jobs=3); no early stopping; INNER_ES excluded from fit"
+    }
+  },
+  "blend_selection": {
+    "scope": "fold-local INNER_SELECT only",
+    "formula": "p=(1-alpha)*baseline+alpha*candidate",
+    "alpha_candidates": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "objective": "maximize correct count (micro F1)",
+    "tie_rule": "smaller alpha",
+    "pooled_inner_selection": false,
+    "outer_predictions_after_alpha_freeze": true
+  },
+  "output_roles": ["INNER_ES", "INNER_SELECT", "OUTER"],
+  "reload_tolerance_abs": 1e-12,
+  "probability_row_sum_tolerance_abs": 1e-5,
+  "bootstrap": {"unit": "vessel", "repetitions": 5000, "seed": 20261105, "confidence": 0.95},
+  "execution_limits": {"max_production_fits": 6, "max_compute_seconds": 1800, "max_concurrent_fits": 1, "max_threads": 3, "minimum_available_ram_bytes_before_each_fit": 1610612736},
+  "environment": {
+    "python": "3.13.3",
+    "catboost": "1.2.10",
+    "numpy": "2.2.5",
+    "lightgbm": "4.7.0",
+    "scikit_learn": "1.6.1",
+    "psutil": "7.2.2",
+    "venv": "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost",
+    "freeze_path": "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/requirements-freeze.txt",
+    "freeze_sha256": "830a5c4c0f0ffbf6e81f3bef3c1cec89c75534d2279159f4a43d01ab9980efe1",
+    "catboost_wheel": "catboost-1.2.10-cp313-cp313-win_amd64.whl",
+    "catboost_wheel_sha256": "5ede858e634d6d0f521bf6dd6fad9374f23d37049ee48e0779ccd2a372632cb1",
+    "catboost_wheel_bytes": 100201430,
+    "package_source": "https://pypi.org/simple"
+  },
+  "official_references": {
+    "installation": "https://catboost.ai/docs/en/installation/python-installation-method-pip-install",
+    "fit_api": "https://catboost.ai/docs/en/concepts/python-reference_catboostclassifier_fit",
+    "multiclass_metrics_and_use_weights": "https://catboost.ai/docs/en/concepts/loss-functions-multiclassification",
+    "nan_mode": "https://catboost.ai/docs/en/references/training-parameters/common"
+  },
+  "source_read_only": true,
+  "expected_performance": null
+}

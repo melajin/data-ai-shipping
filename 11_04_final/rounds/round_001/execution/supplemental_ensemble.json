@@ -1,0 +1,1110 @@
+{
+  "experiment": "supplemental five-seed ensemble inference comparison",
+  "status": "completed",
+  "started_utc": "2026-11-04T14:17:56.967153+00:00",
+  "finished_utc": "2026-11-04T14:18:16.193314+00:00",
+  "elapsed_seconds": 19.226163299999826,
+  "scope": {
+    "development_only": true,
+    "outer_rows": 5897,
+    "holdout_rows_read": 0,
+    "raw_parsing": false,
+    "training": false,
+    "round_trip_reader": "pandas float_precision=round_trip",
+    "stored_prediction_reference": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\outer_predictions.csv"
+  },
+  "environment": {
+    "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "lightgbm": "4.7.0",
+    "prediction_threads": 1,
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPYCACHEPREFIX": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\.pycache",
+    "TEMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\temp",
+    "TMP": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_001\\execution\\temp"
+  },
+  "input_hashes_before": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_0_t5.csv": {
+      "bytes": 1065764,
+      "mtime_ns": 1793490020801759900,
+      "sha256": "973c193ac8aed0a677265f4f264e40c30b05de2027f473f81caa630896866a97"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_1_t5.csv": {
+      "bytes": 1067107,
+      "mtime_ns": 1793490074236198100,
+      "sha256": "182329eb8a4461e9c351a2ac571ff44334d90ce38e6b8893eecb365d81abd348"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_2_t5.csv": {
+      "bytes": 1065650,
+      "mtime_ns": 1793490124145258200,
+      "sha256": "2f7992921f2c35191a03394185b676c3562e9a263ede8f39aecdb365e55bc0cb"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz": {
+      "bytes": 8187401,
+      "mtime_ns": 1793795800448994400,
+      "sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz": {
+      "bytes": 8237632,
+      "mtime_ns": 1793795802062513600,
+      "sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz": {
+      "bytes": 8236813,
+      "mtime_ns": 1793795803647850900,
+      "sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_1.txt": {
+      "bytes": 10907541,
+      "mtime_ns": 1793796234883245200,
+      "sha256": "149a12107b73253fc8f2d9cd7cc9ddce7ef834cc6d8f7aaa7bad4ee62d626161"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2024.txt": {
+      "bytes": 3415287,
+      "mtime_ns": 1793796254250375500,
+      "sha256": "c6b4104959964de8445a42da6b354183352e974447300946555bb4f21c24e29e"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2026.txt": {
+      "bytes": 18585070,
+      "mtime_ns": 1793796178977692700,
+      "sha256": "f670dd70bca019f5da861aa72212d79c40bdbb52d563e5e9bc203f617e13597d"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_42.txt": {
+      "bytes": 4357806,
+      "mtime_ns": 1793796138745518900,
+      "sha256": "f68797aeb24c6f512c208529cfcc7f93c33385f8b2586a25a3711dd0ec36b3c7"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_7.txt": {
+      "bytes": 6455403,
+      "mtime_ns": 1793796202300173300,
+      "sha256": "b328f6c242777be579d2e064e03466eada6f218de9a34df4d4f4f909ad135d5e"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_1.txt": {
+      "bytes": 8135831,
+      "mtime_ns": 1793796373548846100,
+      "sha256": "f315be0a84c070e2c589305718e73fa53bf7e21bdf6f102c02b7bd74420a7990"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2024.txt": {
+      "bytes": 18484249,
+      "mtime_ns": 1793796414326600900,
+      "sha256": "c03e7b3b0bb64a70d2b00d767756c7471bfbb44eae2a66b7957b74332dabee71"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2026.txt": {
+      "bytes": 8407479,
+      "mtime_ns": 1793796306354556900,
+      "sha256": "ca883ebc8ae48ae3563d9672c469e2b383b9b888437dd8c10067c804528dae44"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_42.txt": {
+      "bytes": 7717077,
+      "mtime_ns": 1793796279771210400,
+      "sha256": "d019097f80745fe4e29765109376e18050db41bc59203253d219aecc14d1eed7"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_7.txt": {
+      "bytes": 18975482,
+      "mtime_ns": 1793796347095745300,
+      "sha256": "2ac4d9307359eb845c5fe343a96ad9502dd2323042181ecfd4716fbe6f21c3d0"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_1.txt": {
+      "bytes": 8644291,
+      "mtime_ns": 1793796521036229100,
+      "sha256": "98e4f3b86eeddd94943482e1b20f701d8f84d36d39a1d3f3d42e6629f6458cc6"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2024.txt": {
+      "bytes": 9092742,
+      "mtime_ns": 1793796548629072300,
+      "sha256": "dd668f54c43fcd16ab5489fbc096745d806ce73f29e65350b75ee8e79fc9f7a4"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2026.txt": {
+      "bytes": 9955382,
+      "mtime_ns": 1793796469374140200,
+      "sha256": "645ec9c6af6e0a96005680fa6dd282d8153e7f8f71ccc41da078ebba195e5254"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_42.txt": {
+      "bytes": 7701143,
+      "mtime_ns": 1793796440751785700,
+      "sha256": "2634de7fd32c1bb9bec8a77ee80cfc8f77813a4db5024e8daddb48c2308feeb0"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_7.txt": {
+      "bytes": 6757584,
+      "mtime_ns": 1793796493859505700,
+      "sha256": "85f0ca9c6e487e9abdf281b3f4009827ded126064d2d49f808f64abbe12c882f"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\outer_predictions.csv": {
+      "bytes": 595704,
+      "mtime_ns": 1793796548789728000,
+      "sha256": "dfdf805f5c60cff019400e3b16f57f5d03aa6d24277e31c3cdfb2c5b2f4992a4"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_1.npz": {
+      "bytes": 95747,
+      "mtime_ns": 1793796234913244500,
+      "sha256": "b7a97855ee161b8a2bbb17ba1617a5ec808c13225a63c7c360514e85c6a36904"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_2024.npz": {
+      "bytes": 95641,
+      "mtime_ns": 1793796254271375100,
+      "sha256": "551e5c1e7fabf86b88a8d7990f35922016960c756a8a61e3581f3d6364189a15"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_2026.npz": {
+      "bytes": 95790,
+      "mtime_ns": 1793796179012228600,
+      "sha256": "c31b5d99f0414387cc783e5b59560bceb4a6c84ada54747ec21548ca8e5674f7"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_42.npz": {
+      "bytes": 95658,
+      "mtime_ns": 1793796138769025800,
+      "sha256": "324ea6842712f01ac88baee84d8bdd76eb645fcfc3ffb9889962e6dfdae14a5c"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_7.npz": {
+      "bytes": 95758,
+      "mtime_ns": 1793796202330085200,
+      "sha256": "9a51a3966a1ebe837799188dfbc3f681011e8dc3b67f02ef098846ce62f82c67"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_1.npz": {
+      "bytes": 95760,
+      "mtime_ns": 1793796373575028900,
+      "sha256": "307205ca817ad8dd3e9fb25ffda7d6b5320dec0adb21eda36052b17b89d51877"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_2024.npz": {
+      "bytes": 95772,
+      "mtime_ns": 1793796414361405500,
+      "sha256": "99c67792feeea814a8c8a41ec484f2a29fc839a4852fec3c1980fffff900d8a3"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_2026.npz": {
+      "bytes": 95755,
+      "mtime_ns": 1793796306380554600,
+      "sha256": "769069398d2711caf493a56ce823c78e62748e3e4afdd0c738d7af1f179684dc"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_42.npz": {
+      "bytes": 95753,
+      "mtime_ns": 1793796279795212700,
+      "sha256": "4b491c561a26746f024f5ec5a52c91b5596040b6cfe0f85af7685282ba500dfc"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_7.npz": {
+      "bytes": 95785,
+      "mtime_ns": 1793796347129984400,
+      "sha256": "cbb861f46d321d55e088b3fab0db07c1f54c01985f910c4f2a001cea74889ad2"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_1.npz": {
+      "bytes": 95641,
+      "mtime_ns": 1793796521064733200,
+      "sha256": "fe13d8e44bf6a4a8def8dbce48912cd14a3ae28bdc2d80e820b0d7411bc99e9a"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_2024.npz": {
+      "bytes": 95699,
+      "mtime_ns": 1793796548653072400,
+      "sha256": "134bff195bc7c249bc76d4d6be5b549ebc5f8a88fe982a751161b760002d136d"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_2026.npz": {
+      "bytes": 95693,
+      "mtime_ns": 1793796469400654300,
+      "sha256": "1764e144b1a62275d79c29a4255ededf2866b50f32f640a684a692b705e44a51"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_42.npz": {
+      "bytes": 95679,
+      "mtime_ns": 1793796440777300500,
+      "sha256": "d4aeb9d285161fc451d9a43692fd0fbef71623fa51b1269ff98c4ce16c7c054b"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_7.npz": {
+      "bytes": 95649,
+      "mtime_ns": 1793796493885794500,
+      "sha256": "5b4ae3f55b8313334d478319e04b1f8c40072030b87354e2130a0f448262aca5"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\data_validation.json": {
+      "bytes": 20224,
+      "mtime_ns": 1793798646182659400,
+      "sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d"
+    }
+  },
+  "input_hashes_after": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_0_t5.csv": {
+      "bytes": 1065764,
+      "mtime_ns": 1793490020801759900,
+      "sha256": "973c193ac8aed0a677265f4f264e40c30b05de2027f473f81caa630896866a97"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_1_t5.csv": {
+      "bytes": 1067107,
+      "mtime_ns": 1793490074236198100,
+      "sha256": "182329eb8a4461e9c351a2ac571ff44334d90ce38e6b8893eecb365d81abd348"
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\f156_merge\\for_teammate\\fold_2_t5.csv": {
+      "bytes": 1065650,
+      "mtime_ns": 1793490124145258200,
+      "sha256": "2f7992921f2c35191a03394185b676c3562e9a263ede8f39aecdb365e55bc0cb"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz": {
+      "bytes": 8187401,
+      "mtime_ns": 1793795800448994400,
+      "sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz": {
+      "bytes": 8237632,
+      "mtime_ns": 1793795802062513600,
+      "sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz": {
+      "bytes": 8236813,
+      "mtime_ns": 1793795803647850900,
+      "sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_1.txt": {
+      "bytes": 10907541,
+      "mtime_ns": 1793796234883245200,
+      "sha256": "149a12107b73253fc8f2d9cd7cc9ddce7ef834cc6d8f7aaa7bad4ee62d626161"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2024.txt": {
+      "bytes": 3415287,
+      "mtime_ns": 1793796254250375500,
+      "sha256": "c6b4104959964de8445a42da6b354183352e974447300946555bb4f21c24e29e"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_2026.txt": {
+      "bytes": 18585070,
+      "mtime_ns": 1793796178977692700,
+      "sha256": "f670dd70bca019f5da861aa72212d79c40bdbb52d563e5e9bc203f617e13597d"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_42.txt": {
+      "bytes": 4357806,
+      "mtime_ns": 1793796138745518900,
+      "sha256": "f68797aeb24c6f512c208529cfcc7f93c33385f8b2586a25a3711dd0ec36b3c7"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_0_seed_7.txt": {
+      "bytes": 6455403,
+      "mtime_ns": 1793796202300173300,
+      "sha256": "b328f6c242777be579d2e064e03466eada6f218de9a34df4d4f4f909ad135d5e"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_1.txt": {
+      "bytes": 8135831,
+      "mtime_ns": 1793796373548846100,
+      "sha256": "f315be0a84c070e2c589305718e73fa53bf7e21bdf6f102c02b7bd74420a7990"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2024.txt": {
+      "bytes": 18484249,
+      "mtime_ns": 1793796414326600900,
+      "sha256": "c03e7b3b0bb64a70d2b00d767756c7471bfbb44eae2a66b7957b74332dabee71"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_2026.txt": {
+      "bytes": 8407479,
+      "mtime_ns": 1793796306354556900,
+      "sha256": "ca883ebc8ae48ae3563d9672c469e2b383b9b888437dd8c10067c804528dae44"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_42.txt": {
+      "bytes": 7717077,
+      "mtime_ns": 1793796279771210400,
+      "sha256": "d019097f80745fe4e29765109376e18050db41bc59203253d219aecc14d1eed7"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_1_seed_7.txt": {
+      "bytes": 18975482,
+      "mtime_ns": 1793796347095745300,
+      "sha256": "2ac4d9307359eb845c5fe343a96ad9502dd2323042181ecfd4716fbe6f21c3d0"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_1.txt": {
+      "bytes": 8644291,
+      "mtime_ns": 1793796521036229100,
+      "sha256": "98e4f3b86eeddd94943482e1b20f701d8f84d36d39a1d3f3d42e6629f6458cc6"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2024.txt": {
+      "bytes": 9092742,
+      "mtime_ns": 1793796548629072300,
+      "sha256": "dd668f54c43fcd16ab5489fbc096745d806ce73f29e65350b75ee8e79fc9f7a4"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_2026.txt": {
+      "bytes": 9955382,
+      "mtime_ns": 1793796469374140200,
+      "sha256": "645ec9c6af6e0a96005680fa6dd282d8153e7f8f71ccc41da078ebba195e5254"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_42.txt": {
+      "bytes": 7701143,
+      "mtime_ns": 1793796440751785700,
+      "sha256": "2634de7fd32c1bb9bec8a77ee80cfc8f77813a4db5024e8daddb48c2308feeb0"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\models\\fold_2_seed_7.txt": {
+      "bytes": 6757584,
+      "mtime_ns": 1793796493859505700,
+      "sha256": "85f0ca9c6e487e9abdf281b3f4009827ded126064d2d49f808f64abbe12c882f"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\outer_predictions.csv": {
+      "bytes": 595704,
+      "mtime_ns": 1793796548789728000,
+      "sha256": "dfdf805f5c60cff019400e3b16f57f5d03aa6d24277e31c3cdfb2c5b2f4992a4"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_1.npz": {
+      "bytes": 95747,
+      "mtime_ns": 1793796234913244500,
+      "sha256": "b7a97855ee161b8a2bbb17ba1617a5ec808c13225a63c7c360514e85c6a36904"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_2024.npz": {
+      "bytes": 95641,
+      "mtime_ns": 1793796254271375100,
+      "sha256": "551e5c1e7fabf86b88a8d7990f35922016960c756a8a61e3581f3d6364189a15"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_2026.npz": {
+      "bytes": 95790,
+      "mtime_ns": 1793796179012228600,
+      "sha256": "c31b5d99f0414387cc783e5b59560bceb4a6c84ada54747ec21548ca8e5674f7"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_42.npz": {
+      "bytes": 95658,
+      "mtime_ns": 1793796138769025800,
+      "sha256": "324ea6842712f01ac88baee84d8bdd76eb645fcfc3ffb9889962e6dfdae14a5c"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_0_seed_7.npz": {
+      "bytes": 95758,
+      "mtime_ns": 1793796202330085200,
+      "sha256": "9a51a3966a1ebe837799188dfbc3f681011e8dc3b67f02ef098846ce62f82c67"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_1.npz": {
+      "bytes": 95760,
+      "mtime_ns": 1793796373575028900,
+      "sha256": "307205ca817ad8dd3e9fb25ffda7d6b5320dec0adb21eda36052b17b89d51877"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_2024.npz": {
+      "bytes": 95772,
+      "mtime_ns": 1793796414361405500,
+      "sha256": "99c67792feeea814a8c8a41ec484f2a29fc839a4852fec3c1980fffff900d8a3"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_2026.npz": {
+      "bytes": 95755,
+      "mtime_ns": 1793796306380554600,
+      "sha256": "769069398d2711caf493a56ce823c78e62748e3e4afdd0c738d7af1f179684dc"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_42.npz": {
+      "bytes": 95753,
+      "mtime_ns": 1793796279795212700,
+      "sha256": "4b491c561a26746f024f5ec5a52c91b5596040b6cfe0f85af7685282ba500dfc"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_1_seed_7.npz": {
+      "bytes": 95785,
+      "mtime_ns": 1793796347129984400,
+      "sha256": "cbb861f46d321d55e088b3fab0db07c1f54c01985f910c4f2a001cea74889ad2"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_1.npz": {
+      "bytes": 95641,
+      "mtime_ns": 1793796521064733200,
+      "sha256": "fe13d8e44bf6a4a8def8dbce48912cd14a3ae28bdc2d80e820b0d7411bc99e9a"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_2024.npz": {
+      "bytes": 95699,
+      "mtime_ns": 1793796548653072400,
+      "sha256": "134bff195bc7c249bc76d4d6be5b549ebc5f8a88fe982a751161b760002d136d"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_2026.npz": {
+      "bytes": 95693,
+      "mtime_ns": 1793796469400654300,
+      "sha256": "1764e144b1a62275d79c29a4255ededf2866b50f32f640a684a692b705e44a51"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_42.npz": {
+      "bytes": 95679,
+      "mtime_ns": 1793796440777300500,
+      "sha256": "d4aeb9d285161fc451d9a43692fd0fbef71623fa51b1269ff98c4ce16c7c054b"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\seed_predictions\\fold_2_seed_7.npz": {
+      "bytes": 95649,
+      "mtime_ns": 1793796493885794500,
+      "sha256": "5b4ae3f55b8313334d478319e04b1f8c40072030b87354e2130a0f448262aca5"
+    },
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\reports\\exp01\\data_validation.json": {
+      "bytes": 20224,
+      "mtime_ns": 1793798646182659400,
+      "sha256": "f32d3812d563019619eb2c7f59568887f793d6c0d9b16e93cd6206584d87be9d"
+    }
+  },
+  "source_files_changed": [],
+  "fold_results": {
+    "0": {
+      "outer_rows": 1966,
+      "saved_seed_prediction_checks": [
+        {
+          "seed": 1,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 7,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 42,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 2024,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 2026,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        }
+      ],
+      "five_seed_mean_vs_stored_outer_predictions": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 2.220446049250313e-16,
+        "mean_abs": 1.488456272444189e-17,
+        "exact_rows_changed": 1582,
+        "allclose_1e_12": true
+      },
+      "outer_probability_delta_individual_seed_max_abs": 0.0018490485014479863,
+      "outer_probability_delta_five_seed_mean": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.00036644210845432346,
+        "mean_abs": 1.8685349335866496e-07,
+        "exact_rows_changed": 2,
+        "allclose_1e_12": false
+      },
+      "stored_outer_prediction_argmax_matches_baseline_ensemble": true,
+      "baseline_ensemble_score": {
+        "n": 1966,
+        "correct": 1166,
+        "micro_f1": 0.5930824008138352,
+        "macro_f1": 0.5296205559357441,
+        "class_recall": [
+          0.8254620123203286,
+          0.43005952380952384,
+          0.1510791366906475,
+          0.7380952380952381
+        ],
+        "class_f1": [
+          0.6934023285899095,
+          0.4995678478824546,
+          0.22888283378746593,
+          0.6966292134831461
+        ]
+      },
+      "round_trip_ensemble_score": {
+        "n": 1966,
+        "correct": 1166,
+        "micro_f1": 0.5930824008138352,
+        "macro_f1": 0.5296205559357441,
+        "class_recall": [
+          0.8254620123203286,
+          0.43005952380952384,
+          0.1510791366906475,
+          0.7380952380952381
+        ],
+        "class_f1": [
+          0.6934023285899095,
+          0.4995678478824546,
+          0.22888283378746593,
+          0.6966292134831461
+        ]
+      },
+      "argmax_changed": 0,
+      "gains_correct": 0,
+      "losses_correct": 0,
+      "net_correct_delta": 0,
+      "micro_delta": 0.0,
+      "macro_delta": 0.0
+    },
+    "1": {
+      "outer_rows": 1966,
+      "saved_seed_prediction_checks": [
+        {
+          "seed": 1,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 7,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 42,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 2024,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 2026,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1966,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        }
+      ],
+      "five_seed_mean_vs_stored_outer_predictions": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 2.220446049250313e-16,
+        "mean_abs": 1.491290860016201e-17,
+        "exact_rows_changed": 1561,
+        "allclose_1e_12": true
+      },
+      "outer_probability_delta_individual_seed_max_abs": 0.00275178774222673,
+      "outer_probability_delta_five_seed_mean": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.0009529509584444984,
+        "mean_abs": 3.268526073590747e-07,
+        "exact_rows_changed": 3,
+        "allclose_1e_12": false
+      },
+      "stored_outer_prediction_argmax_matches_baseline_ensemble": true,
+      "baseline_ensemble_score": {
+        "n": 1966,
+        "correct": 1167,
+        "micro_f1": 0.5935910478128179,
+        "macro_f1": 0.535544697919641,
+        "class_recall": [
+          0.8139773895169579,
+          0.46875,
+          0.1003584229390681,
+          0.7619047619047619
+        ],
+        "class_f1": [
+          0.6962637362637363,
+          0.5134474327628362,
+          0.16138328530259366,
+          0.7710843373493976
+        ]
+      },
+      "round_trip_ensemble_score": {
+        "n": 1966,
+        "correct": 1167,
+        "micro_f1": 0.5935910478128179,
+        "macro_f1": 0.535544697919641,
+        "class_recall": [
+          0.8139773895169579,
+          0.46875,
+          0.1003584229390681,
+          0.7619047619047619
+        ],
+        "class_f1": [
+          0.6962637362637363,
+          0.5134474327628362,
+          0.16138328530259366,
+          0.7710843373493976
+        ]
+      },
+      "argmax_changed": 0,
+      "gains_correct": 0,
+      "losses_correct": 0,
+      "net_correct_delta": 0,
+      "micro_delta": 0.0,
+      "macro_delta": 0.0
+    },
+    "2": {
+      "outer_rows": 1965,
+      "saved_seed_prediction_checks": [
+        {
+          "seed": 1,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1965,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 7,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1965,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 42,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1965,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 2024,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1965,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        },
+        {
+          "seed": 2026,
+          "saved_probability_vs_model_replay": {
+            "shape": [
+              1965,
+              4
+            ],
+            "max_abs": 0.0,
+            "mean_abs": 0.0,
+            "exact_rows_changed": 0,
+            "allclose_1e_12": true
+          }
+        }
+      ],
+      "five_seed_mean_vs_stored_outer_predictions": {
+        "shape": [
+          1965,
+          4
+        ],
+        "max_abs": 2.220446049250313e-16,
+        "mean_abs": 1.4851307560045207e-17,
+        "exact_rows_changed": 1523,
+        "allclose_1e_12": true
+      },
+      "outer_probability_delta_individual_seed_max_abs": 0.003983381273732017,
+      "outer_probability_delta_five_seed_mean": {
+        "shape": [
+          1965,
+          4
+        ],
+        "max_abs": 0.0012018578769440735,
+        "mean_abs": 1.2260969895020298e-06,
+        "exact_rows_changed": 10,
+        "allclose_1e_12": false
+      },
+      "stored_outer_prediction_argmax_matches_baseline_ensemble": true,
+      "baseline_ensemble_score": {
+        "n": 1965,
+        "correct": 1164,
+        "micro_f1": 0.5923664122137404,
+        "macro_f1": 0.5128157651083134,
+        "class_recall": [
+          0.8067831449126414,
+          0.4523809523809524,
+          0.16546762589928057,
+          0.6904761904761905
+        ],
+        "class_f1": [
+          0.6974677920924034,
+          0.5016501650165016,
+          0.24797843665768193,
+          0.6041666666666666
+        ]
+      },
+      "round_trip_ensemble_score": {
+        "n": 1965,
+        "correct": 1164,
+        "micro_f1": 0.5923664122137404,
+        "macro_f1": 0.5128157651083134,
+        "class_recall": [
+          0.8067831449126414,
+          0.4523809523809524,
+          0.16546762589928057,
+          0.6904761904761905
+        ],
+        "class_f1": [
+          0.6974677920924034,
+          0.5016501650165016,
+          0.24797843665768193,
+          0.6041666666666666
+        ]
+      },
+      "argmax_changed": 0,
+      "gains_correct": 0,
+      "losses_correct": 0,
+      "net_correct_delta": 0,
+      "micro_delta": 0.0,
+      "macro_delta": 0.0
+    }
+  },
+  "pooled_development_outer": {
+    "outer_rows": 5897,
+    "stored_baseline_outer_prediction_match_count": 5897,
+    "baseline_ensemble_score": {
+      "n": 5897,
+      "correct": 3497,
+      "micro_f1": 0.5930133966423605,
+      "macro_f1": 0.5252719738966167,
+      "class_recall": [
+        0.8154109589041096,
+        0.4503968253968254,
+        0.13892215568862276,
+        0.7301587301587301
+      ],
+      "class_f1": [
+        0.695690284879474,
+        0.5050055617352615,
+        0.21382488479262673,
+        0.6865671641791045
+      ]
+    },
+    "round_trip_ensemble_score": {
+      "n": 5897,
+      "correct": 3497,
+      "micro_f1": 0.5930133966423605,
+      "macro_f1": 0.5252719738966167,
+      "class_recall": [
+        0.8154109589041096,
+        0.4503968253968254,
+        0.13892215568862276,
+        0.7301587301587301
+      ],
+      "class_f1": [
+        0.695690284879474,
+        0.5050055617352615,
+        0.21382488479262673,
+        0.6865671641791045
+      ]
+    },
+    "argmax_changed": 0,
+    "gains_correct": 0,
+    "losses_correct": 0,
+    "net_correct_delta": 0,
+    "micro_delta": 0.0,
+    "macro_delta": 0.0
+  },
+  "per_model_outer_replay": [
+    {
+      "fold": 0,
+      "seed": 1,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.0009303852895329867,
+        "mean_abs": 2.5433055710753495e-07,
+        "exact_rows_changed": 2,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 0,
+      "seed": 7,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_rows_changed": 0,
+        "allclose_1e_12": true
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 0,
+      "seed": 42,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_rows_changed": 0,
+        "allclose_1e_12": true
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 0,
+      "seed": 2024,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_rows_changed": 0,
+        "allclose_1e_12": true
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 0,
+      "seed": 2026,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.0018490485014479863,
+        "mean_abs": 6.996118398236295e-07,
+        "exact_rows_changed": 2,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 1,
+      "seed": 1,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_rows_changed": 0,
+        "allclose_1e_12": true
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 1,
+      "seed": 7,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.00275178774222673,
+        "mean_abs": 6.998442884605138e-07,
+        "exact_rows_changed": 1,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.001645471608064275,
+        "mean_abs": 4.184820976765771e-07,
+        "exact_rows_changed": 1,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 1,
+      "seed": 2024,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.0,
+        "mean_abs": 0.0,
+        "exact_rows_changed": 0,
+        "allclose_1e_12": true
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 1,
+      "seed": 2026,
+      "outer_rows": 1966,
+      "probability_delta": {
+        "shape": [
+          1966,
+          4
+        ],
+        "max_abs": 0.002012967049996095,
+        "mean_abs": 5.159366506582673e-07,
+        "exact_rows_changed": 2,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 2,
+      "seed": 1,
+      "outer_rows": 1965,
+      "probability_delta": {
+        "shape": [
+          1965,
+          4
+        ],
+        "max_abs": 0.0023239736301021996,
+        "mean_abs": 2.0951057457751656e-06,
+        "exact_rows_changed": 9,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 2,
+      "seed": 7,
+      "outer_rows": 1965,
+      "probability_delta": {
+        "shape": [
+          1965,
+          4
+        ],
+        "max_abs": 0.0007765907494016733,
+        "mean_abs": 8.631674812096843e-07,
+        "exact_rows_changed": 9,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "outer_rows": 1965,
+      "probability_delta": {
+        "shape": [
+          1965,
+          4
+        ],
+        "max_abs": 0.003983381273732017,
+        "mean_abs": 2.83140173368204e-06,
+        "exact_rows_changed": 9,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 2,
+      "seed": 2024,
+      "outer_rows": 1965,
+      "probability_delta": {
+        "shape": [
+          1965,
+          4
+        ],
+        "max_abs": 0.0002992767923693379,
+        "mean_abs": 7.615185556470753e-08,
+        "exact_rows_changed": 1,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    },
+    {
+      "fold": 2,
+      "seed": 2026,
+      "outer_rows": 1965,
+      "probability_delta": {
+        "shape": [
+          1965,
+          4
+        ],
+        "max_abs": 0.0023833699621597926,
+        "mean_abs": 8.622311523511148e-07,
+        "exact_rows_changed": 9,
+        "allclose_1e_12": false
+      },
+      "outer_argmax_changed": 0
+    }
+  ],
+  "interpretation": [
+    "Baseline 5-seed model probabilities were compared with existing stored seed and outer aggregate artifacts before interpreting the parser perturbation.",
+    "Round-trip predictions are parser-sensitivity re-inference on the same development OUTER roster, not new independent performance evidence.",
+    "No dynamic original T5 array was reconstructed; this supplemental run only isolates CSV parser and ensemble effects."
+  ]
+}

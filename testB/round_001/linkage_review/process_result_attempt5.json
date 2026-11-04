@@ -1,0 +1,18 @@
+﻿{
+    "command":  [
+                    "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe",
+                    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\run_linkage_review.py"
+                ],
+    "started_local":  "2026-11-05T02:44:02.2308889+09:00",
+    "finished_local":  "2026-11-05T02:44:05.3928410+09:00",
+    "exit_code":  0,
+    "stdout_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stdout.log",
+    "stderr_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\stderr.log",
+    "previous_attempts":  [
+                              1,
+                              0,
+                              1,
+                              0
+                          ],
+    "note":  "Final run includes hashes for all six source cache shards and source docs"
+}

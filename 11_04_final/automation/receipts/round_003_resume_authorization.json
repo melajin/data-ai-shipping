@@ -1,0 +1,18 @@
+{
+  "recorded_at_utc": "2026-11-04T16:13:16.344705+00:00",
+  "user_instruction": "3차 돌려보자 일단 새 세션 오픈해서",
+  "from_round": "round_002",
+  "target_round": "round_003",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "high",
+  "assistant_policy": "gpt-6-luna / xhigh only, host concurrency limit applies",
+  "worktree_id": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+  "duplicate_check": "Orca worktree ps reported current manager plus separate TestB sessions; no other round003 manager observed. No round003 folder or round002 launch receipt/claim existed.",
+  "corrected_explanation": "docs/20261105_추가조건_검토및3차실험_수정제안.md",
+  "corrected_explanation_sha256": "eb2c55d89c81170b006c27653516c0d7b206499e8c8abdd7594618eb269fc2b1",
+  "handoff_sha256": "1e440f52259cb33011a567c9bf6ac083bdead3110d1912aa3e62d00d6921d66e",
+  "scope": "Round003 R0: saved TabICL A probabilities, raw/old/INNER-selected decision comparison, then bounded M4 readiness; no new fits",
+  "same_vessel_historical_profile_route": "excluded by user constraint",
+  "prior_round_reports_and_zip": "preserved as historical snapshots",
+  "launch_status": "not_yet_launched"
+}

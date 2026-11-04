@@ -1,0 +1,63 @@
+{
+  "run_started_utc": "2026-11-04T17:48:29.799292+00:00",
+  "run_finished_utc": "2026-11-04T17:50:01.311668+00:00",
+  "exit_code_intended": 0,
+  "status": "succeeded",
+  "artifacts": [
+    {
+      "path": "testB\\round_001\\input_compatibility\\csv_identity.csv",
+      "bytes": 10989,
+      "sha256": "e647094c9a6160a78c9f9af75dacf21ab071a1891411df70c3bde2931d0c0f33"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\finished_utc.txt",
+      "bytes": 33,
+      "sha256": "fe8157a144cb69437e0029b1e5fa3b6b886dc74928c3d0c18cfa23038a018134"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\run_comparison.py",
+      "bytes": 18795,
+      "sha256": "024a1d13a2e31257e9a983e65c63ac3b6c22ad60709f248b4b62060673a21dec"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\started_utc.txt",
+      "bytes": 33,
+      "sha256": "b2727af2201b91fd95f3e1c8593a23fd45e48db30eb3cdf69c5644bf9fe5e72d"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\summary.json",
+      "bytes": 15715,
+      "sha256": "44277dcb55816d3cdd62b6a47e1f8045f3b2ab3de3b9dc4a00054d5a867c039e"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\workbook_cell_differences.csv",
+      "bytes": 748317,
+      "sha256": "e162f7e19dfb1b4ef5d61abc1e687700190ba9da581e620e72332e1418fbad5b"
+    },
+    {
+      "path": "testB\\round_001\\input_compatibility\\workbook_comparison.json",
+      "bytes": 35050422,
+      "sha256": "efdf4b33cc205b61b20dfc87b608c1dab95ac883d2d646fe89b52bf049ac5570"
+    }
+  ],
+  "inputs": {
+    "zip": "C:\\Users\\dlehs\\Downloads\\문제 데이터_수정_1103_v2.zip",
+    "manifest": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\intake\\1103_v2\\inspection_001\\archive_manifest.json",
+    "old_exact_paths": [
+      "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv",
+      "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+      "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\제출샘플.xlsx"
+    ]
+  }
+}

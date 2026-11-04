@@ -1,0 +1,7 @@
+{
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "copy_operation": "stdlib byte-copy of prepared legacy CSV; no scoring code imported",
+  "legacy_actual_exit_code": 0,
+  "round_artifact_creation_exit_code": 0
+}

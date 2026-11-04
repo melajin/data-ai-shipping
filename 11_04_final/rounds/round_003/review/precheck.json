@@ -1,0 +1,59 @@
+{
+  "precheck_status": "PASS",
+  "review_decision": "PASS_FOR_FROZEN_SCORE_STEP",
+  "reviewed_at_utc": "2026-11-04T16:33:51.312685+00:00",
+  "runner_sha256": "9f333f7f4be7ed81ef8296f36b4474f8a6730f99f306c8e4f586c9d031bea6a2",
+  "launcher_sha256": "0346fb307a015289c4686cc186aedcaf9854f6f5702a0808d66217cde35b0760",
+  "config_sha256": "29202080ea8f2a33120f2f6471679acc1f7afe702848f28ed8a741e3f4ccbbb6",
+  "plan_sha256": "54cef183b6845d6cecfca64314fc0d801c8d1b8c7c826da76f9a42b665ea2ce0",
+  "preflight_validation_sha256": "53edb4a2c5683b21b18612e681339574645ec60490b234756372902cbe4d73f1",
+  "preflight_audit_sha256": "78a5d6a7467e6ac4dae35cc46ff07cbfe96986e271b4fd9d9e5f71ff91ac02ed",
+  "reviewer_preflight_code_sha256": "2393adb25c594dcd86760e4a3d28ddb32cff4ab0dff5fb7f7e4da7556c0aafd6",
+  "independent_recompute_code_sha256": "27d5e6e9438aac503578c15cd27c019f938a5fecf42e390c33a7e3eb31e22e5f",
+  "package_manifest_sha256": "9acfd2f121168745bd5d7658ae33f83c18a321cef44bb5689fb49dda9b5ec1c6",
+  "source_manifest_sha256": "c7ae17c798541cba1e77a637bc06a59f0d16a3fa3d527586a1109ae029d50532",
+  "source_hashes": {
+    "comparison_models.py": "f818c0f2c3bb79cd80781a4df22c3d6cca425528fc3e3df4a08e55324d914251",
+    "run_experiments.py": "fa2297714250f39492abde98f762e5859e64f18766d9bde68f8df2360bd67262",
+    "finalize_comparisons.py": "fa16f95ed55c215c2c0cfac9e062172b74a41ec2755785607dbaf00ff86bc9a7",
+    "apply_frozen_decision.py": "29f0b0c6cb8adbbb41768dd063cc75faac97cd65dddec309dc460ff2f52c21fa",
+    "fishing_tiny_tabm.py": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381"
+  },
+  "input_hashes": {
+    "evaluation/seed_42/original_oof_predictions.csv": "ff1b7788547efc40f0810af511a6f1e6939aa54ff6c1959c7a7e9af6ee598d89",
+    "evaluation/seed_2026/original_oof_predictions.csv": "de94f93e06517564decb4961067307bc83c90c22b89467a3c8e13ddb4388f3b8",
+    "evaluation/seed_42/oof_decisions.csv": "20694996c615b585714a34e05841869f24ed0b4ccc00b47517f3c7f02cfddff2",
+    "evaluation/seed_2026/oof_decisions.csv": "2a6ce37c3715186fe999bf7b19e01993ee03017bd9192b088519ad6839a232c1",
+    "evaluation/trap_factors.csv": "36ed46958f2e27b83aa5ab63d7a925149f1cb59a05f1cff5629df7e02445bb04",
+    "evaluation/final_fixed_decision_rule.json": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+    "metadata/classes.json": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+    "metadata/run_settings.json": "e951067a229cf41056bd1d5d73bc46fa688430b84bae255ed79950e3ea6cb85f",
+    "metadata/package_validation.json": "05f0cd8c71aefbe87ea7f2ac90bf5c92ca8fe8c2041b0c8cd71971a23308e1af",
+    "splits/development_roles_long.csv": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+    "evaluation/seed_42/fold_0/inner_predictions.csv": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+    "evaluation/seed_42/fold_1/inner_predictions.csv": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+    "evaluation/seed_42/fold_2/inner_predictions.csv": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+    "evaluation/seed_2026/fold_0/inner_predictions.csv": "9e3b8ef1062684b1b1be13dae5e717da8ac5040c1cca894261f5ba0ff92e867d",
+    "evaluation/seed_2026/fold_1/inner_predictions.csv": "72a4b1dd163721572c7fc13ff08ccabdc6d7a21cad4ee87064a388e1ee170360",
+    "evaluation/seed_2026/fold_2/inner_predictions.csv": "d86c2501b3d00ca6373db1fdaa34ed0f8eff17371f101044ba3995d98fa9ab73",
+    "MANIFEST_SHA256.json": "9acfd2f121168745bd5d7658ae33f83c18a321cef44bb5689fb49dda9b5ec1c6",
+    "SOURCE_SHA256.json": "c7ae17c798541cba1e77a637bc06a59f0d16a3fa3d527586a1109ae029d50532"
+  },
+  "checks": {
+    "saved_input_preflight": "PASS",
+    "archived_tabicl_source_and_six_training_metadata_confirm_fit_only_inner_unused": "PASS",
+    "oof_and_inner_manifest_and_role_checks": "PASS",
+    "old_class_decision_replays_from_original_probabilities_and_2_3_2_factor": "PASS",
+    "saved_decision_score_normalized_representation": "verified independently; not used as probabilities",
+    "holdout_full7372_f156_test2025_raw_rows_read": 0,
+    "model_fit_or_inference": false,
+    "classification_metrics_computed_by_reviewer_preflight": false
+  },
+  "limitations": [
+    "The historical BASE.digest_json serializer is verified from source, but applying it to the current INNER CSV row order does not reproduce the frozen inner_ids_sha256. The frozen-rule producer/original ID-list order is absent from the allowlisted package; this is not asserted to be corruption or a split mismatch.",
+    "Saved oof_decisions.csv decision_score columns are normalized after applying the trap multiplier, while the packaged apply_frozen_decision.py describes unnormalized scores. The argmax is invariant; Round 003 recomputes A_old directly from original p and the frozen factor.",
+    "Feature metadata conflicts: run_settings.json says no missing flags, while fingerprinted comparison_models.py appends missing flags after imputation. The 156 raw-feature metadata therefore implies a possible 312-column model input; no feature rows were read, so this is not an independent feature-row confirmation.",
+    "Saved-probability lineage and INNER nonuse for training/early stopping do not reproduce the original model inference or validate the saved model binary/checkpoint on this host."
+  ],
+  "execution_gate": "Scoring still requires manager authorization token and launcher score mode; this receipt binds only the reviewed frozen runner/config."
+}
