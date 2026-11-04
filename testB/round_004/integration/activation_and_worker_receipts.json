@@ -1,0 +1,34 @@
+﻿{
+    "session_id":  "codex_8df5a67b_34a4_4a72_b561_d45861870f6f",
+    "run_id":  "run_a4759578d2ef",
+    "ack_message":  "msg_a4a6dab10faf",
+    "activation_message":  "msg_0c84a4c3fc9d",
+    "ownership_and_explicit_activation_verified":  true,
+    "recorded_at":  "2026-11-05T05:53:39.5360380+09:00",
+    "supervisor_requested_and_recorded_launch":  "gpt-6.1-sol/high",
+    "provider_internal_model_effort":  "unknown",
+    "workers":  [
+                    {
+                        "task":  "E",
+                        "task_id":  "task_90c7d3fb7fca",
+                        "dispatch_id":  "ctx_5c62c63dcf5d",
+                        "handle":  "structworker_33994cb5-4bd0-4e7a-b99c-4975b2b3ec2a",
+                        "state":  "ready",
+                        "orca_launch_model":  "gpt-6-luna",
+                        "orca_launch_effort":  "xhigh",
+                        "provider_internal_runtime":  "unknown",
+                        "owned_path":  "testB/round_004/execution"
+                    },
+                    {
+                        "task":  "V",
+                        "task_id":  "task_15389efe1b37",
+                        "dispatch_id":  "ctx_a8eef931ac8d",
+                        "handle":  "structworker_c9cd1fa0-443d-4e98-bb80-5a613731fd12",
+                        "state":  "ready",
+                        "orca_launch_model":  "gpt-6-luna",
+                        "orca_launch_effort":  "xhigh",
+                        "provider_internal_runtime":  "unknown",
+                        "owned_path":  "testB/round_004/audit"
+                    }
+                ]
+}

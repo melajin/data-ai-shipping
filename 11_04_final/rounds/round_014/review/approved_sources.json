@@ -1,0 +1,14 @@
+{
+    "schema":  "round014_approved_sources.v1",
+    "round":  "round_014",
+    "sha256":  {
+                   "rounds/round_014/code/m4_synthetic.py":  "06319a56f3194c11edb405695e0e87b331c555a04340c62cf5e9810dd099c199",
+                   "rounds/round_014/code/test_m4_mock.py":  "119f9431f7d562d379ca720fb815efde13eba2fdd5a4dca48e8d6c7c5dece1eb",
+                   "rounds/round_014/code/run_m4.ps1":  "330a6ccd14eb2b69c6adf5d5ca2d4749a0bbe476cff7961561a2771ce201e10e"
+               },
+    "candidate_manifest_sha256":  "5239194656ecad7758865b6b706593c1427aca5a39fbda91dd2202c979e1d813",
+    "candidate_freeze_ack_sha256":  "de124bc75d76328503b1ed0d66eec08ffe421663a4131c182f218af5d5358e63",
+    "reviewed_at_utc":  "2026-11-04T21:22:35.1051201+00:00",
+    "scope":  "Independent static approval for Round014 process-control smoke/mock; synthetic execution deferred",
+    "reviewer_method":  "Direct Get-FileHash compared to candidate manifest and write-stop ACK; static source review only; no test/import/runner/checkpoint/model/data execution"
+}

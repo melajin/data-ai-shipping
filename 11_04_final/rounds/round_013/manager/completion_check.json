@@ -1,0 +1,76 @@
+﻿{
+    "checked_utc":  "2026-11-04T20:55:10.2466121Z",
+    "files":  [
+                  {
+                      "path":  "rounds/round_013/ROUND_REPORT.md",
+                      "exists":  true,
+                      "sha256":  "8ED079238616A66BE8D32EE8946683DF430E4D9106E3A5B7899AD91F2E80087F"
+                  },
+                  {
+                      "path":  "rounds/round_013/ROUND_PLAN.md",
+                      "exists":  true,
+                      "sha256":  "F976D91B85637BB1E4AF496F453DF734D7D2F981D6133B085C30D1FB4EC740D3"
+                  },
+                  {
+                      "path":  "rounds/round_013/review/SOURCE_REVIEW.md",
+                      "exists":  true,
+                      "sha256":  "BA16796EFE7F0EE28D31E31AD86C7DD70719CE0795736A42F1EA13138592DA5D"
+                  },
+                  {
+                      "path":  "rounds/round_013/review/FINAL_REVIEW.md",
+                      "exists":  true,
+                      "sha256":  "9C7DD69607D781951A0424FC4C67318C4BE11511AB0C67D9CC62EDC250E552A4"
+                  },
+                  {
+                      "path":  "rounds/round_013/artifacts/provenance_audit.json",
+                      "exists":  true,
+                      "sha256":  "4ECD75C6FA37F3FF0F6936903DDA3F7FDD08459F7E58F77B9C1419E6FA44B00A"
+                  },
+                  {
+                      "path":  "rounds/round_013/manager/host_turn_evidence.json",
+                      "exists":  true,
+                      "sha256":  "3AD1EC5FAAB22796EF8826380CEA8F5A9340FB8A8A3CEA51024F278B770C831C"
+                  },
+                  {
+                      "path":  "NEXT_SESSION.md",
+                      "exists":  true,
+                      "sha256":  "D6036C250D4629D85E2DED7E07270867058A5E3A81B3592C8EAF11C668C6BE6E"
+                  },
+                  {
+                      "path":  "STATUS.json",
+                      "exists":  true,
+                      "sha256":  "221497D266D4A731EC124629ECE67FD834372F19DAE1EA247858D689AB5AFC7E"
+                  },
+                  {
+                      "path":  "EXPERIMENT_LEDGER.csv",
+                      "exists":  true,
+                      "sha256":  "883BE015B57D1FEB791C17134DD530B034F5AD69578005723B17CCD31003D6E0"
+                  }
+              ],
+    "sources":  [
+                    {
+                        "path":  "rounds/round_013/code/verify_frozen_run.py",
+                        "match":  true
+                    },
+                    {
+                        "path":  "rounds/round_013/code/test_verify_frozen_run.py",
+                        "match":  true
+                    },
+                    {
+                        "path":  "rounds/round_013/code/run_audit.ps1",
+                        "match":  true
+                    }
+                ],
+    "status_current_round":  "round_013",
+    "handoff_ready":  true,
+    "active_workers":  [
+
+                       ],
+    "all_required_present":  true,
+    "ledger_rows":  1,
+    "completion_check_correction":  "PS5 scalar pipeline .Count absent; counted @(...).Count, one row confirmed; no duplicate append",
+    "next_session_not_yet_launched":  true,
+    "acceptance_canonical_receipt":  "automation/receipts/round_013_launch.json",
+    "new_f1":  null,
+    "protected_data_read":  false
+}

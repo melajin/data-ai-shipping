@@ -1,0 +1,12 @@
+﻿{
+    "utc":  "2026-11-04T21:16:51.8669804Z",
+    "stage":  "ready_for_source_approval_then_smoke_mock",
+    "available_ram_gib":  5.6600151062011719,
+    "other_python":  [
+
+                     ],
+    "expected_peak_mib":  100,
+    "expected_peak_basis":  "stdlib subprocess smoke/mock; estimate not measurement",
+    "concurrent_large_computation":  0,
+    "synthetic_requires_fresh_prelaunch_check":  true
+}

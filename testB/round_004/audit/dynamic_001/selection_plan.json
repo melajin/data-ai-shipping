@@ -1,0 +1,31 @@
+﻿{
+    "dataset":  "2026 Train",
+    "prohibited":  "full row scan, full key scan, reference/score/A/membership, Test rescan",
+    "source_file":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet",
+    "expected_train_footer_rows_from_pinned_history":  3887069,
+    "source_file_bytes":  18817327,
+    "partition":  "train",
+    "selection_plan_command_exit":  0,
+    "expected_rows":  16384,
+    "first_write_attempt":  "PowerShell bare false emitted a nonterminating command error; this corrected version rewrites and validates the plan",
+    "allowed_read":  "footer metadata for rows_train_1..6 and only this selected month-1 sample",
+    "schema":  "round004_v_dynamic_sample_selection_v1",
+    "created_kst":  "2026-11-05 06:19:27 +09:00",
+    "batch_size_max":  4096,
+    "columns":  [
+                    "row_index",
+                    "rfid_id",
+                    "part_dt",
+                    "rfid_time",
+                    "key_valid",
+                    "wkt_valid",
+                    "len_m",
+                    "bbox_m",
+                    "cen_lon",
+                    "cen_lat"
+                ],
+    "expected_source_sha256":  "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140",
+    "selection":  "first 16384 physical rows from month 1",
+    "sample_data_read":  false,
+    "row_count_discrepancy_note":  "4212389 is pinned 2025 Test total in round002 preparation metadata/report, not Train; current scan draft will not be adopted"
+}

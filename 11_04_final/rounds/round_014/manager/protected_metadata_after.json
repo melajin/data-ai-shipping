@@ -1,0 +1,170 @@
+﻿[
+    {
+        "path":  "AGENTS.md",
+        "expected_sha256":  "08FA7DD4EDF239910B8F000DB2176589F87178AA9E911D31E1B627AB535A7DFC",
+        "actual_sha256":  "08FA7DD4EDF239910B8F000DB2176589F87178AA9E911D31E1B627AB535A7DFC",
+        "match":  true
+    },
+    {
+        "path":  "CYCLE_PROTOCOL.md",
+        "expected_sha256":  "BEEF29AF4F77E46CDAEAFA6B705889DCD2B3DA51D49E5D3819190A2388DDB7AC",
+        "actual_sha256":  "BEEF29AF4F77E46CDAEAFA6B705889DCD2B3DA51D49E5D3819190A2388DDB7AC",
+        "match":  true
+    },
+    {
+        "path":  "automation/Start-NextSession.ps1",
+        "expected_sha256":  "06FACD71CBB16C3F36172DEB2B1BAB49E87596388D752C427BCF7A47F1AC1BFF",
+        "actual_sha256":  "06FACD71CBB16C3F36172DEB2B1BAB49E87596388D752C427BCF7A47F1AC1BFF",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_013/ROUND_REPORT.md",
+        "expected_sha256":  "8ED079238616A66BE8D32EE8946683DF430E4D9106E3A5B7899AD91F2E80087F",
+        "actual_sha256":  "8ED079238616A66BE8D32EE8946683DF430E4D9106E3A5B7899AD91F2E80087F",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_013/ROUND_PLAN.md",
+        "expected_sha256":  "F976D91B85637BB1E4AF496F453DF734D7D2F981D6133B085C30D1FB4EC740D3",
+        "actual_sha256":  "F976D91B85637BB1E4AF496F453DF734D7D2F981D6133B085C30D1FB4EC740D3",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_013/FREEZE_PROTOCOL.md",
+        "expected_sha256":  "DE1C0E99A4FE9598D88243A8CF5043F3937CFD1C3888C438F60E516DB1D943B8",
+        "actual_sha256":  "DE1C0E99A4FE9598D88243A8CF5043F3937CFD1C3888C438F60E516DB1D943B8",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_013/review/SOURCE_REVIEW.md",
+        "expected_sha256":  "BA16796EFE7F0EE28D31E31AD86C7DD70719CE0795736A42F1EA13138592DA5D",
+        "actual_sha256":  "BA16796EFE7F0EE28D31E31AD86C7DD70719CE0795736A42F1EA13138592DA5D",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_013/review/FINAL_REVIEW.md",
+        "expected_sha256":  "9C7DD69607D781951A0424FC4C67318C4BE11511AB0C67D9CC62EDC250E552A4",
+        "actual_sha256":  "9C7DD69607D781951A0424FC4C67318C4BE11511AB0C67D9CC62EDC250E552A4",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_013/review/approved_sources.json",
+        "expected_sha256":  "CCB8ADA4A66760BFD1A6AE970F395F47F779B9A1829D8011034A7964F624DE26",
+        "actual_sha256":  "CCB8ADA4A66760BFD1A6AE970F395F47F779B9A1829D8011034A7964F624DE26",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_013/artifacts/provenance_audit.json",
+        "expected_sha256":  "4ECD75C6FA37F3FF0F6936903DDA3F7FDD08459F7E58F77B9C1419E6FA44B00A",
+        "actual_sha256":  "4ECD75C6FA37F3FF0F6936903DDA3F7FDD08459F7E58F77B9C1419E6FA44B00A",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_011/m4_contract/M4_CONTRACT.md",
+        "expected_sha256":  "DADBE1654C4BEBFB309E2C5DBD771983EFBCA3FFA83DA53298E9BC51303EDD63",
+        "actual_sha256":  "DADBE1654C4BEBFB309E2C5DBD771983EFBCA3FFA83DA53298E9BC51303EDD63",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_011/m4_contract/source_evidence.json",
+        "expected_sha256":  "D46F08EFB561E22A42584F2CF3CBB636B37D3AB0B75217274485D8472C280C41",
+        "actual_sha256":  "D46F08EFB561E22A42584F2CF3CBB636B37D3AB0B75217274485D8472C280C41",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_011/review/M4_REVIEW.md",
+        "expected_sha256":  "CFA2A3EDF1522F8A4C1C9C8A5A27648BA594AAA1EDF664D394E6EB2E0AF61A05",
+        "actual_sha256":  "CFA2A3EDF1522F8A4C1C9C8A5A27648BA594AAA1EDF664D394E6EB2E0AF61A05",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_012/review/M4_NEXT_CHECKLIST.md",
+        "expected_sha256":  "21E386DCA1EF92EBAC1FB3F6B959C21147167FB9D343E0BF1003BD5771DB5BCB",
+        "actual_sha256":  "21E386DCA1EF92EBAC1FB3F6B959C21147167FB9D343E0BF1003BD5771DB5BCB",
+        "match":  true
+    },
+    {
+        "path":  "environments/round_004_tabicl_cpu/pyvenv.cfg",
+        "expected_sha256":  "90413145ADAF057C7626E21B898755DD20DB4AEDEE830390BD03F73D2C9C603C",
+        "actual_sha256":  "90413145ADAF057C7626E21B898755DD20DB4AEDEE830390BD03F73D2C9C603C",
+        "match":  true
+    },
+    {
+        "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\audit_01\\receipt.json",
+        "expected_sha256":  "121751512CF4CA0E705EBB3D47E23B251162D283469EC3564AF6FA4ED8C9B43C",
+        "actual_sha256":  "121751512CF4CA0E705EBB3D47E23B251162D283469EC3564AF6FA4ED8C9B43C",
+        "match":  true
+    },
+    {
+        "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\mock_01\\receipt.json",
+        "expected_sha256":  "BF75E9ABD933F097CE8369270C9C4B18CA06CDE801A2A8BAA7566504CF2732F1",
+        "actual_sha256":  "BF75E9ABD933F097CE8369270C9C4B18CA06CDE801A2A8BAA7566504CF2732F1",
+        "match":  true
+    },
+    {
+        "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_013\\logs\\smoke_01\\receipt.json",
+        "expected_sha256":  "83EF1100A5E6F1F413BECA3627533A5216587503286AFC4A41EEE0117DB6BA84",
+        "actual_sha256":  "83EF1100A5E6F1F413BECA3627533A5216587503286AFC4A41EEE0117DB6BA84",
+        "match":  true
+    },
+    {
+        "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/learning.py",
+        "expected_sha256":  "7549DFF09C3796A3CB0B55EA03E249342392FA601A681526F7B1EFB6A6F1EEF2",
+        "actual_sha256":  "7549DFF09C3796A3CB0B55EA03E249342392FA601A681526F7B1EFB6A6F1EEF2",
+        "match":  true
+    },
+    {
+        "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py",
+        "expected_sha256":  "583786E5FFD70B9EB425BCA8E52AED415DADCDF4254C908B3B6FA52026A56491",
+        "actual_sha256":  "583786E5FFD70B9EB425BCA8E52AED415DADCDF4254C908B3B6FA52026A56491",
+        "match":  true
+    },
+    {
+        "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py",
+        "expected_sha256":  "F9E3CF0D83047E06DF7D6763BB8D8EE7A00FF1BA6708299A14635831F60BA4FC",
+        "actual_sha256":  "F9E3CF0D83047E06DF7D6763BB8D8EE7A00FF1BA6708299A14635831F60BA4FC",
+        "match":  true
+    },
+    {
+        "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py",
+        "expected_sha256":  "64F5EF7EF88A920A3F7A5F6E2D9D8DC08769EC343E931F910ACC2D9C4EAA5534",
+        "actual_sha256":  "64F5EF7EF88A920A3F7A5F6E2D9D8DC08769EC343E931F910ACC2D9C4EAA5534",
+        "match":  true
+    },
+    {
+        "path":  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/preprocessing.py",
+        "expected_sha256":  "2163A3BF6754127365A7AEDAC854D99A6F565545CC1EA7E63C68A596081B2976",
+        "actual_sha256":  "2163A3BF6754127365A7AEDAC854D99A6F565545CC1EA7E63C68A596081B2976",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_004/artifacts/smoke.json",
+        "expected_sha256":  "E26DF55A2C9501FC6A46102D323CA18226C922BD98CEB9EBA9146A0CB0643AE2",
+        "actual_sha256":  "E26DF55A2C9501FC6A46102D323CA18226C922BD98CEB9EBA9146A0CB0643AE2",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_004/runtime_author/replay_contract.json",
+        "expected_sha256":  "819E60FD2F05A655A86DC1CDAA5E52F5A4FD0486E78FDD5DC5A4AB140AD7E2F5",
+        "actual_sha256":  "819E60FD2F05A655A86DC1CDAA5E52F5A4FD0486E78FDD5DC5A4AB140AD7E2F5",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_003/m4_readiness/READINESS.md",
+        "expected_sha256":  "C031B31B4F9B9B674BBF8CAB1B98971576AF95FB285F07B90697553B126A5E6F",
+        "actual_sha256":  "C031B31B4F9B9B674BBF8CAB1B98971576AF95FB285F07B90697553B126A5E6F",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_002/IDEA_REVIEW_AND_ROUND003.md",
+        "expected_sha256":  "C61AA4BB89F1F03B89A5AFC5CCA2A740552E7A122A12EB0853AC48C59BFCF538",
+        "actual_sha256":  "C61AA4BB89F1F03B89A5AFC5CCA2A740552E7A122A12EB0853AC48C59BFCF538",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_002/references/algorithm_variant_ideas.md",
+        "expected_sha256":  "75BE0FD2F451B9E4215EC2F02A8F200B8084F26145E4FE845A22C2CBA6BE91BC",
+        "actual_sha256":  "75BE0FD2F451B9E4215EC2F02A8F200B8084F26145E4FE845A22C2CBA6BE91BC",
+        "match":  true
+    }
+]

@@ -1,0 +1,13 @@
+﻿{
+    "utc":  "2026-11-04T20:56:25.0861755Z",
+    "session":  "codex_a64a16a7_215f_4304_a93c_6c6b60b86467",
+    "thread":  "01a1a858-420b-7f72-b722-4e8df0f9d216",
+    "available_ram_gib":  3.8670463562011719,
+    "estimate_author_review_mib":  200,
+    "estimate_synthetic_peak_gib":  1.5,
+    "estimates_not_measurements":  true,
+    "manager_request":  "gpt-6-astra/high",
+    "manager_deadline_utc":  "2026-11-04T21:25:19Z",
+    "experiment_deadline_utc":  "2026-11-04T21:22:19Z",
+    "handoff_sha256":  "D6036C250D4629D85E2DED7E07270867058A5E3A81B3592C8EAF11C668C6BE6E"
+}

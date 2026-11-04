@@ -1,0 +1,21 @@
+﻿{
+    "recorded_at":  "2026-11-05T06:10:13.2321476+09:00",
+    "E_initial_worker_done":  "msg_dd0fa18d7756",
+    "E_latest_followup_worker_done":  "msg_cf5c24f09425",
+    "E_reported_exit":  0,
+    "E_scope":  "synthetic supported/rejected cases and actual16384 rows four4096 batches only",
+    "full_train_domain":  "unknown",
+    "V_followup_dispatch":  "ctx_80f1e954bee2",
+    "V_followup_task":  "task_a0f4ea39b854",
+    "pending_review":  [
+                           "train row-count in scan draft",
+                           "transform_months accumulated output_index trace",
+                           "late unsupported partial yield and caller atomicity",
+                           "independent AST/oracle/multiple-batch equivalence"
+                       ],
+    "production_gate":  "closed",
+    "ram_observed_at":  "2026-11-05T06:08:31.5857722+09:00",
+    "free_kib":  2007920,
+    "other_process":  "powershell PID30764 working set2516348928 bytes, attribution unknown",
+    "V_requirement":  "fresh RAM before each memory operation; expected256MiB increment/512MiB process plus1024MiB reserve; defer if insufficient; no polling or termination"
+}

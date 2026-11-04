@@ -1,0 +1,46 @@
+{
+    "schema":  "round014_candidate_sources.v1",
+    "round":  "round_014",
+    "source_files_sha256":  {
+                                "rounds/round_014/code/m4_synthetic.py":  "06319a56f3194c11edb405695e0e87b331c555a04340c62cf5e9810dd099c199",
+                                "rounds/round_014/code/test_m4_mock.py":  "119f9431f7d562d379ca720fb815efde13eba2fdd5a4dca48e8d6c7c5dece1eb",
+                                "rounds/round_014/code/run_m4.ps1":  "330a6ccd14eb2b69c6adf5d5ca2d4749a0bbe476cff7961561a2771ce201e10e"
+                            },
+    "manifest_self_hash_excluded":  true,
+    "requested_execution_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "requested_fork_turns":  "none",
+    "execution_identity_attestation":  "not asserted; request metadata only, host evidence is recorded by manager separately",
+    "scope":  "synthetic-only M4 tiny head capture, training, merge and head-only reload; no real-data/F1/model-performance claim",
+    "python_bootstrap":  {
+                             "executable":  "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                             "flags":  "-B -S",
+                             "package_path":  "environments/round_004_tabicl_cpu/Lib/site-packages inserted explicitly after static checks",
+                             "windows_dll_paths":  "torch/lib and existing *.libs folders via os.add_dll_directory",
+                             "venv_pyvenv_static":  "Python 3.12.14, same base executable",
+                             "child_pythonpath_pythonhome":  "removed"
+                         },
+    "runtime_source_sha256":  {
+                                  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/learning.py":  "7549dff09c3796a3cb0b55ea03e249342392fa601a681526f7b1efb6a6f1eef2",
+                                  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py":  "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+                                  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py":  "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc",
+                                  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py":  "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+                                  "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/preprocessing.py":  "2163a3bf6754127365a7aedac854d99a6f565545cc1ea7e63c68a596081b2976"
+                              },
+    "checkpoint_contract":  {
+                                "path":  "model_cache/tabicl-classifier-v2-20260212.ckpt",
+                                "bytes":  110368038,
+                                "expected_sha256":  "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+                                "author_did_not_read_or_hash_checkpoint":  true
+                            },
+    "author_static_checks":  {
+                                 "powershell_parser":  "passed; parser only",
+                                 "python_ast":  "passed; -B -S ast.parse only",
+                                 "python_module_imported":  false,
+                                 "mock_run":  false,
+                                 "smoke_run":  false,
+                                 "model_or_checkpoint_loaded":  false
+                             },
+    "outputs_and_temp":  "rounds/round_014 only",
+    "write_freeze_requested_after_ack":  true
+}

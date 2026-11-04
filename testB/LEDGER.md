@@ -10,3 +10,4 @@
 Round001·002의 기술 준비와 해당 변경 검산은 완료됐고, Round003은 loader 가설의 실패와 독립 원인 검산을 완료했다. 근본 목표와 사고 성능은 미완료다. 실제 새감독 생성·ACK·활성화는 각 라운드 HANDOFF_RECEIPT.json과 STATUS.json에 기록한다. 현재 감독은 다음 감독 ACK와 명시적 활성화 전까지 단독 소유권을 유지한다.
 
 | round_004 | round003 numeric 반례·index차이 독립확인 | 실제새Sol/high감독 ACK 확인. 단일소유권 이전, 명시적 활성화 수신 뒤 시작 | round_003/NEXT_ROUND.md |
+| round_004 활성화 | ACK msg_a4a6dab10faf·활성화 msg_0c84a4c3fc9d·STATUS 소유권 확인 | Run run_a4759578d2ef, 별도 실제 Luna/xhigh E/V ready. 제한 도메인 구현·독립 정적검토 시작; 실제 전체 domain unknown | 작은 fixture와 실제 multi-batch 동등성 독립검산 후 전수 domain 기술관문 |

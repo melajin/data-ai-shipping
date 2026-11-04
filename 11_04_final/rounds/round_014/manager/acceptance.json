@@ -1,0 +1,17 @@
+﻿{
+    "recorded_utc":  "2026-11-04T21:01:46.8071970Z",
+    "incoming_receipt":  "automation/receipts/round_013_launch.json",
+    "incoming_session_matches_current":  true,
+    "incoming_document_and_snapshot_sha256":  "D6036C250D4629D85E2DED7E07270867058A5E3A81B3592C8EAF11C668C6BE6E",
+    "previous_manager_host_state":  "done",
+    "same_round_other_manager_found":  false,
+    "other_active_work":  "Test B R004 E/V; unrelated, preserved",
+    "prohibited_inputs_opened":  [
+
+                                 ],
+    "checkpoint_loads":  0,
+    "f1_evaluations":  0,
+    "manager_model_evidence":  "manager/host_turn_evidence.json",
+    "worker_model_evidence":  "manager/worker_model_summary.json",
+    "internal_model_identity_verified":  false
+}

@@ -1,0 +1,27 @@
+{
+    "schema":  "round014_author_freeze_ack.v1",
+    "acknowledged_utc":  "2026-11-04T21:19:00.3646625+00:00",
+    "author":  "/root/round014_author",
+    "write_freeze":  true,
+    "candidate_manifest":  "rounds/round_014/code/candidate_sources.json",
+    "candidate_manifest_sha256":  "5239194656ecad7758865b6b706593c1427aca5a39fbda91dd2202c979e1d813",
+    "source_files_sha256":  {
+                                "rounds/round_014/code/m4_synthetic.py":  "06319a56f3194c11edb405695e0e87b331c555a04340c62cf5e9810dd099c199",
+                                "rounds/round_014/code/test_m4_mock.py":  "119f9431f7d562d379ca720fb815efde13eba2fdd5a4dca48e8d6c7c5dece1eb",
+                                "rounds/round_014/code/run_m4.ps1":  "330a6ccd14eb2b69c6adf5d5ca2d4749a0bbe476cff7961561a2771ce201e10e"
+                            },
+    "no_author_runs":  true,
+    "settings_requested":  {
+                               "model":  "gpt-6-luna",
+                               "effort":  "xhigh",
+                               "fork_turns":  "none"
+                           },
+    "execution_identity_attestation":  "not asserted; settings are request metadata; manager host evidence is separate",
+    "static_syntax_review":  {
+                                 "powershell":  "Parser only, no runner execution",
+                                 "python":  "AST parse only using base Python -B -S; no imports",
+                                 "models_or_checkpoint_loaded":  false,
+                                 "tests_mock_smoke_run":  false
+                             },
+    "message":  "Author write-stop after candidate freeze; no further code edits."
+}

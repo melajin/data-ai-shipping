@@ -1,0 +1,59 @@
+﻿{
+    "recorded_at":  "2026-11-05T06:07:22.9260102+09:00",
+    "requested_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "provider_internal_model_effort":  "unknown",
+    "python":  "3.13.3",
+    "pandas":  "2.2.3",
+    "numpy":  "2.2.5",
+    "pyarrow":  "24.0.0",
+    "canonical_source_sha256":  [
+                                    {
+                                        "path":  "D:/repos/fishing-track-classification/code/tools/run_remeasure_20261031.py",
+                                        "sha256":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c"
+                                    },
+                                    {
+                                        "path":  "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py",
+                                        "sha256":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8"
+                                    },
+                                    {
+                                        "path":  "D:/repos/fishing-track-classification/code/tools/run_005_F156_merge_20261101.py",
+                                        "sha256":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4"
+                                    },
+                                    {
+                                        "path":  "D:/repos/fishing-track-classification/code/tools/run_cycle4_3_featAC_20261101.py",
+                                        "sha256":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3"
+                                    }
+                                ],
+    "input_parquet":  {
+                          "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet",
+                          "sha256":  "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140",
+                          "selected_rows":  16384,
+                          "selection":  "month 1, first 16,384 physical rows, ten columns"
+                      },
+    "command":  "PYTHONDONTWRITEBYTECODE=1 python -B \"D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/testB/round_004/execution/compare_loader_adapter.py\" from testB/round_004/execution/.isolated_cwd",
+    "actual_exit":  0,
+    "stdout":  "run_stdout.log",
+    "stderr":  "run_stderr.log",
+    "stderr_bytes":  0,
+    "original_sample_output_sha256":  "0e70ea62112fc29e1feda89cb61e620c5b40e4558a99ae235a3fe08ad364c581",
+    "adapter_sample_output_sha256":  "0e70ea62112fc29e1feda89cb61e620c5b40e4558a99ae235a3fe08ad364c581",
+    "transform_batches_calls":  4,
+    "rss_observed":  {
+                         "process_start":  {
+                                               "current_working_set_mib":  80.08,
+                                               "peak_working_set_mib":  80.08,
+                                               "pagefile_mib":  535.74,
+                                               "peak_pagefile_mib":  535.74
+                                           },
+                         "after_actual_sample":  {
+                                                     "current_working_set_mib":  112.53,
+                                                     "peak_working_set_mib":  120.96,
+                                                     "pagefile_mib":  603.6,
+                                                     "peak_pagefile_mib":  611.21
+                                                 }
+                     },
+    "full_domain":  "unknown",
+    "full_reference":  "not run",
+    "actual_scores":  "not run"
+}

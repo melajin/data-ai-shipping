@@ -11,9 +11,38 @@
     "runtime_verification_note":  "Actual supervisor provider model/effort receipt not yet available; request is not execution proof.",
     "run_id":  "run_a4759578d2ef",
     "previous_run_id":  "run_202dfeeb8d64",
-    "state":  "running_round004_small_domain_loader_and_independent_review",
+    "state":  "running_V_independent_dynamic_audit_E_snapshot_frozen",
     "workers":  [
-
+                    {
+                        "task":  "E",
+                        "task_id":  "task_90c7d3fb7fca",
+                        "dispatch_id":  "ctx_5c62c63dcf5d",
+                        "handle":  "structworker_33994cb5-4bd0-4e7a-b99c-4975b2b3ec2a",
+                        "state":  "settled_small_sample_succeeded_pending_independent_dynamic_audit",
+                        "orca_launch_model":  "gpt-6-luna",
+                        "orca_launch_effort":  "xhigh",
+                        "provider_internal_runtime":  "unknown",
+                        "owned_path":  "testB/round_004/execution",
+                        "worker_done_message_id":  "msg_dd0fa18d7756",
+                        "latest_followup_dispatch_id":  "ctx_94f3ac9fe789",
+                        "latest_followup_task_id":  "task_98ff809b03bc",
+                        "latest_worker_done_message_id":  "msg_cf5c24f09425"
+                    },
+                    {
+                        "task":  "V",
+                        "task_id":  "task_15389efe1b37",
+                        "dispatch_id":  "ctx_a8eef931ac8d",
+                        "handle":  "structworker_c9cd1fa0-443d-4e98-bb80-5a613731fd12",
+                        "state":  "independent_dynamic_followup_ready",
+                        "orca_launch_model":  "gpt-6-luna",
+                        "orca_launch_effort":  "xhigh",
+                        "provider_internal_runtime":  "unknown",
+                        "owned_path":  "testB/round_004/audit",
+                        "worker_done_message_id":  "msg_0b8b1f7b1d7a",
+                        "release_observation":  "reclaimable; auto-release scheduled; liveness unverifiable, exit unproven",
+                        "latest_followup_dispatch_id":  "ctx_80f1e954bee2",
+                        "latest_followup_task_id":  "task_a0f4ea39b854"
+                    }
                 ],
     "round001_worker_history":  [
                                     {

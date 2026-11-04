@@ -1,0 +1,12 @@
+﻿{
+    "requested_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "fork_turns":  "none",
+    "author":  "/root/round014_author",
+    "reviewer":  "/root/round014_reviewer",
+    "root_plus_assistants":  3,
+    "host_total_slots":  4,
+    "user_assistant_limit":  4,
+    "host_evidence_pending":  false,
+    "host_evidence_path":  "manager/worker_host_evidence.json"
+}

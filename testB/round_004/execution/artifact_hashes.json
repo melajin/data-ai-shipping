@@ -1,0 +1,91 @@
+﻿{
+    "algorithm":  "SHA-256",
+    "generated_at":  "2026-11-05T06:07:23.0261526+09:00",
+    "scope":  "Round004 E execution artifacts and attempt logs",
+    "files":  [
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt01_exit_code.txt",
+                      "sha256":  "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt01_stderr.log",
+                      "sha256":  "560dc1c800f89770f2d3c48330e37da685936298666a1352f6350c67abc04d9a"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt01_stdout.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt02_exit_code.txt",
+                      "sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt02_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt02_stdout.log",
+                      "sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt03_exit_code.txt",
+                      "sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt03_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt03_stdout.log",
+                      "sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt04_exit_code.txt",
+                      "sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt04_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\attempt04_stdout.log",
+                      "sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\bounded_loader.py",
+                      "sha256":  "da1c5b35561ea4d7478dc169e0cf4edaa6416c0aabb87e34d418dea9a9ab11c8"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\compare_loader_adapter.py",
+                      "sha256":  "f1205517b8f3995677e2e678d116fe4fa1e5a04defed6541e90a4f945f4645fe"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\comparison_result.json",
+                      "sha256":  "123058ced61c1975399d037816ee535273ad2e9b9dfb7480618fb2be27471d84"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\domain_and_equivalence.md",
+                      "sha256":  "e35bab157f6dac9a6e9fcfb384653b7988683e4332c87344e760a067c531877a"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\execution_receipt.json",
+                      "sha256":  "14590f0c56fd375cb7b53bd66d5bd4a218581835be33511b60bf96cd5b4ff111"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\exit_code.txt",
+                      "sha256":  "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\preflight_report.md",
+                      "sha256":  "be007ac94054d1f58c76a2179c5fab7833d60a19cec95b56fefda1195256605a"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\run_stderr.log",
+                      "sha256":  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                  },
+                  {
+                      "path":  "testB\\round_004\\execution\\run_stdout.log",
+                      "sha256":  "04b8f8c3b4e502dd5bca5e67a0192084561f777660e7a1bc6f5733e78e47e173"
+                  }
+              ]
+}

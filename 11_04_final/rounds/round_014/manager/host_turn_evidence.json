@@ -1,0 +1,13 @@
+﻿{
+    "request":  {
+                    "model":  "gpt-6-astra",
+                    "effort":  "high"
+                },
+    "source":  "C:/Users/dlehs/.codex/sessions/2026/11/05/rollout-2026-11-05T05-55-19-01a1a858-420b-7f72-b722-4e8df0f9d216.jsonl",
+    "timestamp":  "2026-11-04T20:55:19.944Z",
+    "host_model":  "gpt-6-astra",
+    "host_effort":  "high",
+    "host_cwd":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+    "commands_workdir":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+    "internal_model_authentication":  false
+}

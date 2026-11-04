@@ -1,0 +1,190 @@
+﻿{
+    "reviewer_session":  "orca_session_id:8d65fc0f-b1e3-41eb-8761-e4c5f382ab0e",
+    "memory":  {
+                   "concurrent_E_increment_plan_mib":  "\u003c=512 plus separate 512 MiB reserve; not measured",
+                   "other_work":  "E worker may be concurrent; multiple Orca/Codex/host processes, exact attribution unknown",
+                   "review_increment_peak_estimate_mib":  "\u003c=256; not measured",
+                   "session_reserve_mib":  512,
+                   "free_mib":  4119.9,
+                   "total_mib":  14140.9,
+                   "observations_kst":  [
+                                            "05:53:34 3893.9 MiB",
+                                            "05:54:05 4090.4 MiB",
+                                            "05:54:16 4097.2 MiB",
+                                            "05:54:27 4040.9 MiB",
+                                            "05:54:43 4084.5 MiB",
+                                            "05:55:04 4118.8 MiB",
+                                            "05:56:01 3911.7 MiB",
+                                            "06:00:38 4107.8 MiB"
+                                        ],
+                   "observed_at":  "2026-11-05 06:01:18 +09:00"
+               },
+    "orca_skills_guides":  [
+                               "skills get orchestration --json",
+                               "skills get orca-cli --json"
+                           ],
+    "exit_codes":  {
+                       "static_read_task":  0,
+                       "report_plan_write":  0,
+                       "final_verification":  0
+                   },
+    "scope":  "testB/round_004/audit only; no tests or production execution",
+    "dispatch_id":  "ctx_a8eef931ac8d",
+    "task_id":  "task_15389efe1b37",
+    "artifacts":  [
+                      {
+                          "sha256":  "fd5c3a9de2550e4f49b37eb1ebe831b495a52325c8437c2e4975f9ff4cac72ea",
+                          "path":  "testB/round_004/audit/independent_static_review.md"
+                      },
+                      {
+                          "sha256":  "6001cd4e8863b42be8712706928e441fa63ffcf0806208c7dc9d2930615a9e31",
+                          "path":  "testB/round_004/audit/followup_dynamic_review_plan.md"
+                      }
+                  ],
+    "requested_effort":  "xhigh",
+    "requested_model":  "gpt-6-luna",
+    "review_inputs":  [
+                          {
+                              "path":  "AGENTS.md",
+                              "sha256":  "e8a6fcc73d695b5ea8bbd3c6e8a8da1f62093c2c40d921a12d24d377d04ac356",
+                              "bytes":  5134
+                          },
+                          {
+                              "path":  "testB/USER_DIRECTIVE_20261105.md",
+                              "sha256":  "2955189ab74ec6fb133ab013d2f7ca74d72f626a948596c1c7b7e7ee2c2c157a",
+                              "bytes":  2483
+                          },
+                          {
+                              "path":  "testB/ROUND_PROTOCOL.md",
+                              "sha256":  "6006831f2970e5c0c1136497ba9293a3c8bc2e155230b53d3b3b4683f665d6d6",
+                              "bytes":  10261
+                          },
+                          {
+                              "path":  "testB/STATUS.json",
+                              "sha256":  "5f2d8b7d220d66e9b6037660086b82c656ca1803abe96cbc7fa7c011ccb6bd1c",
+                              "bytes":  16876
+                          },
+                          {
+                              "path":  "testB/round_004/ROUND_PLAN.md",
+                              "sha256":  "82585d864c02eed74affe04fa5d5337ae5585e2602548a77a12142e45bc43a9d",
+                              "bytes":  4995
+                          },
+                          {
+                              "path":  "testB/round_003/NEXT_ROUND.md",
+                              "sha256":  "f0b5a925fdf1f95722897ed61dcc707b6ca4c61f5fb02dc295205e6f7542c67e",
+                              "bytes":  6016
+                          },
+                          {
+                              "path":  "testB/round_003/ROUND_REPORT.md",
+                              "sha256":  "eee3b26226ba382e5177313a4ddd3bb612e2f9f3ceef25b3c558fdd10d1b4cd2",
+                              "bytes":  6786
+                          },
+                          {
+                              "path":  "testB/round_003/audit/independent_static_review.md",
+                              "sha256":  "7b1917d284601acb0791499f8550035daef69b6d325a35358bc51a91a28bc815",
+                              "bytes":  14169
+                          },
+                          {
+                              "path":  "testB/round_003/audit/failure_001/failure_audit.md",
+                              "sha256":  "a43287b671b158bdee9ae341f35bcb937e728c5f65f0da45d0e5f19ebc276bd2",
+                              "bytes":  13451
+                          },
+                          {
+                              "path":  "testB/round_003/audit/failure_001/fixture_result.json",
+                              "sha256":  "109aee353188162962b5c9559754c20b9fc60abb667f28a4f77ad112273d405a",
+                              "bytes":  19076
+                          },
+                          {
+                              "path":  "testB/round_002/contract/EXPLORATORY_EXECUTION_CONTRACT.md",
+                              "sha256":  "344f260b86a172dccc091a64f4f9292528c5077dfa58a588c34c9354237c6975",
+                              "bytes":  4856
+                          },
+                          {
+                              "path":  "testB/round_004/integration/E_TASK.md",
+                              "sha256":  "176ace0aae4e8cb5838a72cdc70fd20893f86fb6886ed525b2cc0865c4583130",
+                              "bytes":  4083
+                          },
+                          {
+                              "path":  "testB/round_004/integration/V_TASK.md",
+                              "sha256":  "96132f2237a9d13d7b88816c6000209e072793685015c03feecbbcc8f306fef7",
+                              "bytes":  3218
+                          },
+                          {
+                              "path":  "testB/round_004/integration/initial_ram_gate.json",
+                              "sha256":  "a5905a66eae792c24081a38e8b8efca689ff9d06f5597c467224ffa67f852df8",
+                              "bytes":  3153
+                          }
+                      ],
+    "schema":  "round004_v_independent_static_review_v1",
+    "created_kst":  "2026-11-05 06:01:18 +09:00",
+    "run_id":  "run_a4759578d2ef",
+    "provider_internal_model_effort":  "unknown",
+    "canonical_sources":  [
+                              {
+                                  "path":  "D:/repos/fishing-track-classification/code/tools/run_remeasure_20261031.py",
+                                  "pinned_match":  true,
+                                  "expected_sha256":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+                                  "actual_sha256":  "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c"
+                              },
+                              {
+                                  "path":  "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py",
+                                  "pinned_match":  true,
+                                  "expected_sha256":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+                                  "actual_sha256":  "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8"
+                              },
+                              {
+                                  "path":  "D:/repos/fishing-track-classification/code/tools/run_005_F156_merge_20261101.py",
+                                  "pinned_match":  true,
+                                  "expected_sha256":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+                                  "actual_sha256":  "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4"
+                              },
+                              {
+                                  "path":  "D:/repos/fishing-track-classification/code/tools/run_cycle4_3_featAC_20261101.py",
+                                  "pinned_match":  true,
+                                  "expected_sha256":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+                                  "actual_sha256":  "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3"
+                              }
+                          ],
+    "review":  {
+                   "dynamic_fixture":  "not run",
+                   "historical_44_hash":  "first meaning/time and byte restoration unknown",
+                   "full_scan_reference_score_A_membership":  "not run",
+                   "round002_delta":  "PASS 10 exit 0, distinct event",
+                   "round003_V_fixture":  "failure reproduction audit succeeded; actual fixture exit 0",
+                   "actual_multi_batch":  "not run",
+                   "actual_domain":  "unknown",
+                   "round002_initial":  "FAIL exit 1 preserved",
+                   "round003_E":  "failed; final actual exit 2",
+                   "limited_integer_global_batch_proof":  "conditional only",
+                   "outcome":  "static review completed; no production equivalence pass claimed",
+                   "production_permission":  "not established"
+               },
+    "coordinator_session":  "orca_session_id:codex_8df5a67b_34a4_4a72_b561_d45861870f6f",
+    "commands":  [
+                     {
+                         "command":  "selected Orca executable skills get orchestration --json",
+                         "actual_exit_code":  0
+                     },
+                     {
+                         "command":  "selected Orca executable skills get orca-cli --json",
+                         "actual_exit_code":  0
+                     },
+                     {
+                         "command":  "PowerShell UTF-8 reads; source Get-FileHash; rg call-site search/direct source line reads",
+                         "actual_exit_code":  0
+                     },
+                     {
+                         "command":  "PowerShell write independent_static_review.md and followup_dynamic_review_plan.md",
+                         "actual_exit_code":  0
+                     },
+                     {
+                         "command":  "PowerShell generate this manifest (RAM checked before write)",
+                         "actual_exit_code":  0
+                     },
+                     {
+                         "command":  "PowerShell read-only verification of all review-input hashes, all 4 pinned canonical hashes and both artifact hashes",
+                         "actual_exit_code":  0
+                     }
+                 ],
+    "orca_cli_command":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\orca\\resources\\bin\\orca.exe"
+}

@@ -1,0 +1,11 @@
+﻿{
+    "observed_at":  "2026-11-05T06:03:07.0399898+09:00",
+    "V_worker_done":  "msg_0b8b1f7b1d7a",
+    "V_outcome":  "succeeded static review only",
+    "V_dynamic_equivalence":  "unknown pending E completion and independent followup",
+    "domain_coverage":  "unknown",
+    "E_guidance_message":  "msg_2e67ef1e8dee",
+    "production_reference_score_A":  "not authorized at this gate",
+    "V_release":  "reclaimable; auto-release scheduled; exit unproven",
+    "E_state":  "ready/in_progress; liveness unverifiable not an exit proof"
+}
