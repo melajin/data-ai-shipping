@@ -1,0 +1,1607 @@
+[
+  {
+    "path": "전체 시스템 요약정리(중요함).txt",
+    "bytes": 2718,
+    "sha256": "b42260442b2c9c8e04048cef44b335dbb07df2eff1405289c898b28cc6bf69ff"
+  },
+  {
+    "path": "재식별_투트랙_지시001_데이터준비와_전제확인.md",
+    "bytes": 11082,
+    "sha256": "571f0e1605a13feae9bb82e47613ad523a2f79bfcb61a31e3d82acce44cfd9e4"
+  },
+  {
+    "path": "재식별_투트랙_시스템_설계.md",
+    "bytes": 18575,
+    "sha256": "353fb7d86929af35ca572c8dcf3150fee7e43e86415691864e2c2e37eab8e3d6"
+  },
+  {
+    "path": "어선항적_2차모델결과_총정리_해설.md",
+    "bytes": 21103,
+    "sha256": "1216838965421ff1f7a5d44246a8fbd8bbb2abdcd036a276c9de18253cfa5e90"
+  },
+  {
+    "path": "어선항적_1차모델결과_총정리_해설.md",
+    "bytes": 10582,
+    "sha256": "22a5a312e4bb68aa8c18bf76a8905ead54a17beaf1cda01935a9427dec9b017f"
+  },
+  {
+    "path": "어선 항적 통합 학습 가이드.md",
+    "bytes": 7631,
+    "sha256": "5a0637880a874c1aa6737a69d16fd994a022578ca7d43eefbd54d0493d14e25b"
+  },
+  {
+    "path": "어선 항적 분석 소개.md",
+    "bytes": 10403,
+    "sha256": "da72cb6452bbade70dca2677b290d609a50546b1b59958261334570f51ad8058"
+  },
+  {
+    "path": "_handoff/STATUS.md",
+    "bytes": 145,
+    "sha256": "38a5ccb4d0af23cf71cd6b8556627a45b252174edf2e12d00fa1f65b7ad3d862"
+  },
+  {
+    "path": "_handoff/README.md",
+    "bytes": 253,
+    "sha256": "b4caccd0b47e6e6766cbc5cfcf34a61f1f19932ee9f083fbb060741e81c166dd"
+  },
+  {
+    "path": "_handoff/EXECUTOR_PROMPT.md",
+    "bytes": 364,
+    "sha256": "2f65be680319201c8fcbee07e5475eb53bfa5cfe5b06e648fb3c563f4afe1117"
+  },
+  {
+    "path": "_handoff/inbox/001_tasks_1-2.md",
+    "bytes": 214,
+    "sha256": "238211026aec17a8ebc8fd10d2272b975653c4b68fdf8d900625776ed1acefb2"
+  },
+  {
+    "path": "1차 모델 실험 결과.md",
+    "bytes": 90460,
+    "sha256": "4f8b1c6a3a796b427335cb6a851c15e63e7c8f5f88b11435abac61a6b4536c61"
+  },
+  {
+    "path": "2026 데이터 분석대회 데이터 분석 정리.md",
+    "bytes": 4607,
+    "sha256": "a048a958b58330a90a54e396bd3c5ea3e7428f0ead2dc7b0fefca1c444f9e008"
+  },
+  {
+    "path": ".codex/config.toml",
+    "bytes": 282,
+    "sha256": "7c5e0edb8c9f27ebfa540707134418eb02f0b711c2ae9c97c0dc3fc6b1480b60"
+  },
+  {
+    "path": "data/reference/competition_20261019/additional/IT종합설계프로젝트_제안서_C215192 최승빈.pdf",
+    "bytes": 727631,
+    "sha256": "9f160b28ded8eabdfaaa86f7cc35eee3c841d2afa032f1862337ba0f7b44349c"
+  },
+  {
+    "path": ".codex/agents/sol_review.toml",
+    "bytes": 501,
+    "sha256": "981eeec5a8f0da6d4e19d1cf3cd1041ada6f2b68a88aa44039a0ce2021c87137"
+  },
+  {
+    "path": ".codex/agents/sol_module.toml",
+    "bytes": 520,
+    "sha256": "4968336ebbff493b91ede6d1aa3388b46aa673bc16de1d92577fb71bd3cf053e"
+  },
+  {
+    "path": ".codex/agents/sol_complex.toml",
+    "bytes": 574,
+    "sha256": "d9fb751e83bca2124509488f5867f7ae3f736f85f70ef955892e9f9ad67ddb2b"
+  },
+  {
+    "path": ".codex/agents/luna_worker.toml",
+    "bytes": 561,
+    "sha256": "fcea4331b6c5e2fedfb10e8dc5b25470bd24f69b37a832c65aa9d9a38e344645"
+  },
+  {
+    "path": ".codex/agents/astra_decision.toml",
+    "bytes": 635,
+    "sha256": "5eafb4e46e6fdb0f64b3c2f46b103b1ee0fb2aa433d96a9161a0d3f784b94a63"
+  },
+  {
+    "path": "tmp/pdfs/integration_20261013/P3.txt",
+    "bytes": 48137,
+    "sha256": "e63a596f99e623f975b6ae57484f74149f813d63a65b237e29ab51c6230f5384"
+  },
+  {
+    "path": "tmp/pdfs/integration_20261013/P2.txt",
+    "bytes": 11977,
+    "sha256": "086e21307189adc366439f8f1633051c38f105caee564e4003a740d64ecbd9b0"
+  },
+  {
+    "path": "tmp/pdfs/integration_20261013/P1.txt",
+    "bytes": 53416,
+    "sha256": "a6dbb298c90e3a2bb0d910679ab7d258d586a10f93c25ec5e969748f6544ee8e"
+  },
+  {
+    "path": "AGENTS.md",
+    "bytes": 4041,
+    "sha256": "ccd315e836f06eb09a7f1e6a7bc4fc527f6affeb893090de8b2678786a7e084a"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/현재 코치 의견.md",
+    "bytes": 5289,
+    "sha256": "f3d23b1feaa14208867836cd6e869e6dc2a1b28e7e557e91c2e89b58b1e546e4"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/운영안내.md",
+    "bytes": 4009,
+    "sha256": "dc4b0550e292ab376472d2707b59fb84388ecdf55bd69718e81717ec639830ff"
+  },
+  {
+    "path": "docs/어선항적_전체진행과_실제모델성능_통합정리_20261029.md",
+    "bytes": 27689,
+    "sha256": "eb0ecb5c9f6e12a7231c9585e24ccd8ddd1d7a91547d60ea031b3712c4b2f7fe"
+  },
+  {
+    "path": "docs/시스템 가이드, 시각화 대쉬보드, 검증기록 프롬프트.txt",
+    "bytes": 6227,
+    "sha256": "2e743840cf1d1a03dc6109b6ab69d32d135c9af0415e8346eab1d5e64f93fe80"
+  },
+  {
+    "path": "docs/shape9_critique_comparison_protocol_20261027.md",
+    "bytes": 7386,
+    "sha256": "b38aba9ad71285d440624e97271bd5c54265049867b920d47626ae20715ac99a"
+  },
+  {
+    "path": "docs/shape9_critique_audit_20261027.md",
+    "bytes": 15832,
+    "sha256": "bff7062619d9890177ad7ce684349d51d81172fe3a5f263dcdf8fbeb1af8fb77"
+  },
+  {
+    "path": "docs/sample_system_contract.md",
+    "bytes": 5841,
+    "sha256": "785080a9df03c538cc23f9ed3e5f0df72a0dcfa2c859bde10341d8913aa760cd"
+  },
+  {
+    "path": "docs/real_support_evidence_20261028.md",
+    "bytes": 5165,
+    "sha256": "c77db8fbed9b3ca88b61f50172800ec6bd90d690126a8675e8cd0793a3224227"
+  },
+  {
+    "path": "docs/real_model_cycle_protocol_20261028.md",
+    "bytes": 10853,
+    "sha256": "c3a3d2d10c12f68af4cce1a033145d88e519b3b5fcf55acf1f12bd14c439a78b"
+  },
+  {
+    "path": "docs/real_model_cycle_final_review_20261029.md",
+    "bytes": 7404,
+    "sha256": "32a5e38573274e32ef78704d65da36b6c2e055d55a8379bc8b00fb7ea475f686"
+  },
+  {
+    "path": "docs/real_evaluation_root_review_20261028.md",
+    "bytes": 8073,
+    "sha256": "87dbb034ef788729c7b3f9d7f47ad8324dc4cbf9166a8fcdd33b9f6799553184"
+  },
+  {
+    "path": "docs/real_accuracy_diagnosis_and_evaluation_history_20261029.md",
+    "bytes": 40731,
+    "sha256": "a9eadf4d76fb491aaf58b903a678672eb0d8e411cffd4d3eefd40b2b680ac995"
+  },
+  {
+    "path": "docs/project_purpose(초안).md",
+    "bytes": 5155,
+    "sha256": "97bdd9d8f12d7925d78c05357c131214847a6743fc9cb35845e7ae088357071a"
+  },
+  {
+    "path": "docs/iterative_model_protocol_20261026.md",
+    "bytes": 7976,
+    "sha256": "be264c504c1b79104269308b3907f9fad46a574fb98bb04a71f02bea97c1bb86"
+  },
+  {
+    "path": "docs/initial_spec(초안 조건 분석).md",
+    "bytes": 26818,
+    "sha256": "85f23ba3a1cbcd833bdb7b8d7b1dc3d4d69cc3d712dc94900f2d85f13b3527ae"
+  },
+  {
+    "path": "docs/guided_baseline_protocol_20261026.md",
+    "bytes": 5621,
+    "sha256": "87388184b440b06a53f3e9d4b63d9341313ec0a3ee047b4e0b36133b3fd31509"
+  },
+  {
+    "path": "docs/fishing_verification.md",
+    "bytes": 8198,
+    "sha256": "131d9557c16048374fc00b47345064820dff518a169750d14f375467d79c7f3f"
+  },
+  {
+    "path": "docs/fishing_team_collaboration.md",
+    "bytes": 50842,
+    "sha256": "a743f20a536d49e6ac2209e2e1df53dbd93ba228c6eb2d4f86141438be6efc39"
+  },
+  {
+    "path": "docs/fishing_sample_verification.md",
+    "bytes": 7596,
+    "sha256": "a7b68ffcc796ea415206c3652ec2a1293cf088c7c5cb827f8e9bfaa74c4d089f"
+  },
+  {
+    "path": "docs/fishing_sample_system_guide.md",
+    "bytes": 51549,
+    "sha256": "15a83183ffae35a701cbdf8e36830cb8ffd11c822be1fc2ee6d705739c6495f6"
+  },
+  {
+    "path": "docs/fishing_report_updated_20261028.md",
+    "bytes": 43518,
+    "sha256": "953f786becd40c12a8d1bdd68db41f7c12f9a4210323951df236b6c00e62a02a"
+  },
+  {
+    "path": "docs/fishing_iteration_results_20261026.md",
+    "bytes": 10971,
+    "sha256": "2ca2e8621c8fc818f88cbff0c63a0a9ff4201e0d126a6057f164423fc9ceb7b0"
+  },
+  {
+    "path": "26_11_4/work/상한선_011/progress.md",
+    "bytes": 3941,
+    "sha256": "f8b5b917dd35d9c9231eda7b49f6c6cb0bfbb0e481aec2faec147791bb93bd17"
+  },
+  {
+    "path": "26_11_4/inbox/011_데이터상한선_측정.md",
+    "bytes": 19689,
+    "sha256": "21edc4cbddb5391f558ead896d0409b31f77904b0ed558079c4f8fb752383ead"
+  },
+  {
+    "path": "26_11_4/20261104_종합보고서.md",
+    "bytes": 15105,
+    "sha256": "58406f479036ae06c4f2e10ff20089f45c5b841474f023f3db1b3807fccdad14"
+  },
+  {
+    "path": "26_11_4/11_upper_bound_report.md",
+    "bytes": 10549,
+    "sha256": "38c953d9cc41d9369791e98fbdd3c8fb7f90f36f658e7f238d81e4340515287a"
+  },
+  {
+    "path": "26_11_4/RESULTS.md",
+    "bytes": 9244,
+    "sha256": "b4813be31796ec696208e8b1e65f2a6b5e6f53512595cead9800dd7cc2f04b05"
+  },
+  {
+    "path": "26_11_4/README.md",
+    "bytes": 4231,
+    "sha256": "23c90056fc16cb386aa7416c42e74447c16efcc48c6902fb658da465995127bc"
+  },
+  {
+    "path": "26_11_2/README.md",
+    "bytes": 4102,
+    "sha256": "0a23547e275c523362a8fd36eaad711dcda0c9de2c2f4ab7a05edc97bbfa55bc"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/08_IT종합설계_주제적합성_검토.md",
+    "bytes": 6930,
+    "sha256": "02ae1e3e5c52218634164455d88efc28853beefef0c920d25e5fc15473a739f7"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/03_NeurIPS_근거기반_혼합알고리즘_선정가이드.pdf",
+    "bytes": 320835,
+    "sha256": "a05265bd88da6b9168a5efe7cc88faa070c91c06de6e72b549a2c61c3fab8115"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/02_항적데이터_전처리와_모델설계_통합본.pdf",
+    "bytes": 504715,
+    "sha256": "f9be1473889e27c3d97d074fbf3aed7a0d3e96b84e773f922be08feafd76f425"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/01_참가신청서_가이드와_제안서_통합본.pdf",
+    "bytes": 298270,
+    "sha256": "ab7df3241710dfefd5b11a59ddda3f7100838196c29826beed774443ced7386c"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/(참고 논문) 선박종류 분류 모델 개발.pdf",
+    "bytes": 3043491,
+    "sha256": "98245b8ad5e9a15b99334966825954a45f4141cc06d93c448ea48da98382e5c4"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/여기서 중요한 문서 알려준다.txt",
+    "bytes": 954,
+    "sha256": "1b21df7811f20d3dfd352a150c76edd579c05f45c020d35002a14995d6e8277c"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/어선항적과제_이해가이드.pdf",
+    "bytes": 2442617,
+    "sha256": "6e1b9caf7716cb0c12cbffd40e28c6248bfea02b7f591d16a57e9da972a9a25d"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/문제점과_분석정리_20261030/README.md",
+    "bytes": 737,
+    "sha256": "e4f8c9ad250a8415fbe538b0d770a3c268215d16dad96c9518269ad724428637"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/문제점과_분석정리_20261030/02_지금까지_분석한_내용.md",
+    "bytes": 13869,
+    "sha256": "8bcc4502530ea9c7361cf35eddee39df59cf18b2e0c96576d44b4ad1664b6853"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/문제점과_분석정리_20261030/01_현재_문제점.md",
+    "bytes": 10221,
+    "sha256": "78150a67098aa7cf96160d7e5527081cd9b91bd2274b8c70a35c2db357c4799b"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/어선항적_2차모델결과_총정리_해설.md",
+    "bytes": 24341,
+    "sha256": "c177744ff28bbad7182d72a3e9aed8a91212ea21db0d1b34dfdd70a3ae5b7a61"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/어선항적_1차모델결과_총정리_해설.md",
+    "bytes": 10582,
+    "sha256": "22a5a312e4bb68aa8c18bf76a8905ead54a17beaf1cda01935a9427dec9b017f"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/검토_개선방안_20261029-2차.md",
+    "bytes": 16637,
+    "sha256": "b68b164a9a771348feaa6d089483bc15e950cd741d2c47d0deca6973945119ab"
+  },
+  {
+    "path": "26_11_2/prompts/CLAUDE_CODE_EXECUTOR_PROMPT.md",
+    "bytes": 6642,
+    "sha256": "65f442029be8a85f33a6de78ca8ed069dcc3fb61a3d0082d6b6384becc1418fe"
+  },
+  {
+    "path": "26_11_2/ROADMAP.md",
+    "bytes": 5648,
+    "sha256": "5e686c5b590ba333eb861db37f5cfa8e0888b5ddfc72b89096d33d57935acf25"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/STATUS.md",
+    "bytes": 322,
+    "sha256": "41b636f0834578837fd7818e847ab12a3f8df158cbe7b8051809d7600aba168a"
+  },
+  {
+    "path": "docs/fishing_integration/통합_검증기록.md",
+    "bytes": 4960,
+    "sha256": "1a388bc4748b30271cfbe5227ff3105becad6aeb27309693942b2bd394fd17ac"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/알고리즘_원리_설명_그림/알고리즘_원리_설명.md",
+    "bytes": 27782,
+    "sha256": "e2227f1eadfa9e0b442b4d1e8458c92f356df8434b14f946b4f093cf1bc3818b"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_08-50_응답_004.md",
+    "bytes": 1873,
+    "sha256": "8ced872f753fdb41e8230a7cb4f0c62e640a52ce0049a586df2bab41c39b9e6b"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_08-05_응답_003.md",
+    "bytes": 1753,
+    "sha256": "2a6b489c84a188c4617e4a985e2244f369a297e663f096af5477faf660e26223"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_01-15_응답_002.md",
+    "bytes": 1949,
+    "sha256": "20d2cd2b186431d17c6d7de36d0ad2a06caa5e4a73de91136c7e4d54fdefe57a"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_00-35_응답_C005.md",
+    "bytes": 940,
+    "sha256": "968fd3ce20a8961f6b2fa86875a5a74fe0157609b4842be43ddcc10b14f6b438"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_00-05_응답_001.md",
+    "bytes": 2007,
+    "sha256": "e91343240078d2ebf3ec09627a60b53979ad2e35ef1806bb6584531e0b768d66"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-29_23-30_연결안내.md",
+    "bytes": 1602,
+    "sha256": "e32d3e4a2e5ffb0e87b32c1d5e7342f75797ad6aeff53c1e40a8bf161e54cae1"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_01-48-13_코치의견.md",
+    "bytes": 815,
+    "sha256": "e13dfda6036993bc70566d561157a5937a542750ca6e19831d8737a671b49415"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_01-17-36_코치의견.md",
+    "bytes": 4416,
+    "sha256": "44b3918a64637d52e5ef63a50202d2787e00328e60e0c6d2029fd154bb99333e"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_00-48-22_코치의견.md",
+    "bytes": 2018,
+    "sha256": "0b5357f61bc273983256880884c4a03a2b0171da6b1a4747619ee13f259e61bc"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_00-17-35_코치의견.md",
+    "bytes": 2570,
+    "sha256": "7b50ed708c98af60d8604038bb6157c143aac0818523b05ef9254aeb66b2803b"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-29_23-48-27_코치의견.md",
+    "bytes": 3721,
+    "sha256": "08bfe3b31f22e89d8979dbf4d1c840a7c347f6363b320e76a83c28201b018a1c"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-29_23-21-32_코치의견.md",
+    "bytes": 5534,
+    "sha256": "345500084bfce4fd09b6c11c181852ca40e51c2ed3b6aaf46899d4659ffaecc4"
+  },
+  {
+    "path": "26_11_2/outbox/팀원공유_분석요약_20261103.md",
+    "bytes": 8933,
+    "sha256": "8f60d5f810e4110227d0a185047139045663920bf8f5e58da18ce9b80ba31d08"
+  },
+  {
+    "path": "26_11_2/work/모델개선_002/progress.md",
+    "bytes": 1631,
+    "sha256": "dc394db60d6f02fa2e7bd2892e1c2af7320fe1be5537e62074f568fb19ffae1f"
+  },
+  {
+    "path": "26_11_2/outbox/003_report.md",
+    "bytes": 7040,
+    "sha256": "f5733521365c7cda7c873bb4428cce71af893d260c90277485dad1791fcb54c0"
+  },
+  {
+    "path": "26_11_2/outbox/002_report.md",
+    "bytes": 9706,
+    "sha256": "c52025552aeb769e360be5a1a7e490d089f10b21facda3b5ebc5281056ee1fe6"
+  },
+  {
+    "path": "26_11_2/outbox/002v1_report.md",
+    "bytes": 13095,
+    "sha256": "1e652a7859dea40f1026dab0e52338674e4d2e31b05df41231cff12ed08541d7"
+  },
+  {
+    "path": "26_11_2/outbox/001_report.md",
+    "bytes": 13775,
+    "sha256": "6fcb122dcdb6568e69a54ee4d4c997f2ef9d53b8f22ab722d10a627a97a1ccfd"
+  },
+  {
+    "path": "26_11_2/outbox/001r1_report.md",
+    "bytes": 15303,
+    "sha256": "7220931b49488634cbe218fec26dc28a26b70695a1872cb363b6aa81b6d790b0"
+  },
+  {
+    "path": "26_11_2/docs/재식별_투트랙_시스템_설계.md",
+    "bytes": 18575,
+    "sha256": "353fb7d86929af35ca572c8dcf3150fee7e43e86415691864e2c2e37eab8e3d6"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/reviews/final_pr_reweight_check.txt",
+    "bytes": 1262,
+    "sha256": "60c40dd12458233aca95ea27f32e3c456e4f54e98326729a075f0740779bd405"
+  },
+  {
+    "path": "26_11_2/reviews/003_verify.txt",
+    "bytes": 1135,
+    "sha256": "29de152e32564b8f0e46713f282a5a1acebcf879369512397def06b898ff89e5"
+  },
+  {
+    "path": "26_11_2/reviews/003_selfcheck.md",
+    "bytes": 5032,
+    "sha256": "fe97e041c7516130cb7b04f8c9afdd5e9f210ad324e366b05ace25c716e497fb"
+  },
+  {
+    "path": "26_11_2/reviews/003_review.md",
+    "bytes": 2470,
+    "sha256": "e9857beb37e24c62a8ae963cf68ad684b54a325d7e31a8dd10696a17ce40c96e"
+  },
+  {
+    "path": "26_11_2/reviews/002_verify.txt",
+    "bytes": 1216,
+    "sha256": "ee97f30e4b1996d89125a4685eab0c54d18c554a2c8aad13ea0f9e7321b77b02"
+  },
+  {
+    "path": "26_11_2/reviews/002_selfcheck.md",
+    "bytes": 5421,
+    "sha256": "f1c3a6093ecf812cdb96e0c7af1a860809cf87cbffeccc33a692d4ea510a35cd"
+  },
+  {
+    "path": "26_11_2/reviews/002_review.md",
+    "bytes": 10936,
+    "sha256": "0dd1d254f95507cc94f06f8d1f9fdc0c2c7602034cf41e574ee01d41d9a8abac"
+  },
+  {
+    "path": "26_11_2/reviews/002v1_verify.txt",
+    "bytes": 1717,
+    "sha256": "ce7c2ce0a5c06a6b62ce24a2436c9444a16389ca5d1214037c8240cc73d22e09"
+  },
+  {
+    "path": "26_11_2/reviews/002v1_selfcheck.md",
+    "bytes": 4379,
+    "sha256": "52d22983c10fd58deb4c0c1b0da72490ec9a7ccea845791691c4d1bf2d36e97f"
+  },
+  {
+    "path": "26_11_2/reviews/002v1_review.md",
+    "bytes": 2943,
+    "sha256": "ddcb92bc250c3924b705e53d843be52d86895a4540f48676ca393d372e7c6201"
+  },
+  {
+    "path": "26_11_2/reviews/001_verify.txt",
+    "bytes": 908,
+    "sha256": "01956b0db466c199d4b3cb36dbcb7517bea1bb6ae2f3267b1b2c19521ebeb577"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/reviews/004_verify.txt",
+    "bytes": 2798,
+    "sha256": "5b747de01ec52ec03fc30d278120aebd7d90b43f5f6e79df47fe8164b3783c6c"
+  },
+  {
+    "path": "26_11_2/reviews/001_selfcheck.md",
+    "bytes": 6308,
+    "sha256": "47aae3f7f54a2c43138d90a6f56c784a7107a61ad6970900d3ccf8033c42450d"
+  },
+  {
+    "path": "26_11_2/reviews/001_review.md",
+    "bytes": 3930,
+    "sha256": "55a3927a5145822f14071bd9221baa52b33d8f45fe52ff983effd176cf96084e"
+  },
+  {
+    "path": "26_11_2/reviews/001r1_추가분석_전원일치규칙.md",
+    "bytes": 2409,
+    "sha256": "6d0877ea8b88b4f4066c9dbdd86d92f44734729026744e6e02a5c1d75b5c4932"
+  },
+  {
+    "path": "26_11_2/reviews/001r1_verify.txt",
+    "bytes": 1471,
+    "sha256": "b6c53f4fd08594601f8020731c041d8a451c90f1c90c1190e988f69343a80ede"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/reviews/004_review.md",
+    "bytes": 5044,
+    "sha256": "be7e38d80a7203f7876ee765da5e223deb983387c0b4af3830d078b6e14b0df4"
+  },
+  {
+    "path": "26_11_2/reviews/001r1_selfcheck.md",
+    "bytes": 5276,
+    "sha256": "ed3775321e73cfbfcdba0dc808ddbe021ac948b211cf92a4293d94ac55b9cc8f"
+  },
+  {
+    "path": "26_11_2/reviews/001r1_review.md",
+    "bytes": 5413,
+    "sha256": "e683d97ab10c908bfd86437a4a01d7a65c60aa489e1c9e42ea2b3c6837603436"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/reviews/003_verify.txt",
+    "bytes": 1211,
+    "sha256": "c5ab250a4c3c7e418b78a0c88c989dba10cb514b7bba40211d27816f427fad2c"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/reviews/003_review.md",
+    "bytes": 5280,
+    "sha256": "63e97c9bc7b2f63ef0c99266af22c5609602b4ed336b840891698958f98a4f14"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/reviews/002_review.md",
+    "bytes": 7014,
+    "sha256": "5a6d11a11674d9c950e3347d06533790fa63a5292fcda36b717c1df6c3f924c2"
+  },
+  {
+    "path": "26_11_2/STATUS.md",
+    "bytes": 270,
+    "sha256": "6e6d453592a96342287cacd774258748e78eb9f2bc8c027163a1e4f676d945ba"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/reviews/002_mlsf_rank.txt",
+    "bytes": 856,
+    "sha256": "cadb8f7b25acf607788367c7f808281cd8b9f89cb5a45d053718bbcded3f2a54"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/reviews/001_review.md",
+    "bytes": 4723,
+    "sha256": "781a38e90fc5fe6b3ce46a30104d7444f68e48c22e41dc5b3f9707a85b6cc33f"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/README.md",
+    "bytes": 4186,
+    "sha256": "cb663043bbe8cf1e003954b05948298ea00fd8423a0c4be5df6697ffd55212b4"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/inbox/005_summary.md",
+    "bytes": 3362,
+    "sha256": "c56aefd4ffda27521eaf5d5e7d1589e07199f31971a050d491dad4dcd0b5006e"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/inbox/004_task5redo-7.md",
+    "bytes": 4490,
+    "sha256": "3122eb7ae081e1fddf2d74478e705521d4f12dfe16511041b0ab1ffa4767cd9d"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/inbox/003_task5-6.md",
+    "bytes": 4967,
+    "sha256": "3882d90db68d8aabcb4997102a0546fd1548a717fe22f14e1aa3e72e7129db45"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/inbox/002_task4.md",
+    "bytes": 4473,
+    "sha256": "c55233eeb027ba2ace1be2b47b505ed97781d6ab555ff17f2f57bd0b07de89f5"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/inbox/001_report_tasks_1-3.md",
+    "bytes": 1740,
+    "sha256": "cdeed0d90b540d90ef88083d2b54f527079d0b6196fb5c515e08521265104c40"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/EXECUTOR_PROMPT.md",
+    "bytes": 3298,
+    "sha256": "3bbc9c9070dbf451b59b2652561cf94a0e30e43a2b02e644e69bf951d3684277"
+  },
+  {
+    "path": "docs/fishing_integration/sources/어선항적과제_이해가이드.pdf",
+    "bytes": 2442617,
+    "sha256": "6e1b9caf7716cb0c12cbffd40e28c6248bfea02b7f591d16a57e9da972a9a25d"
+  },
+  {
+    "path": "docs/fishing_integration/sources/02_항적데이터_전처리와_모델설계_통합본.pdf",
+    "bytes": 504715,
+    "sha256": "f9be1473889e27c3d97d074fbf3aed7a0d3e96b84e773f922be08feafd76f425"
+  },
+  {
+    "path": "docs/fishing_integration/sources/01_참가신청서_가이드와_제안서_통합본.pdf",
+    "bytes": 298270,
+    "sha256": "ab7df3241710dfefd5b11a59ddda3f7100838196c29826beed774443ced7386c"
+  },
+  {
+    "path": "docs/fishing_integration/99_출처와_통합판단.md",
+    "bytes": 27341,
+    "sha256": "530212f37d27b0ddcbd481af3ab44064999001046d1ab98cb6166a9ce0d208b1"
+  },
+  {
+    "path": "docs/fishing_integration/05_제안서와_학습활동.md",
+    "bytes": 13035,
+    "sha256": "8f146f0e3d60bc32cd5c9351c5a45f2bf8377f5003b5c16efc5ac86481f386e9"
+  },
+  {
+    "path": "docs/fishing_integration/04_평가와_후속실험.md",
+    "bytes": 14618,
+    "sha256": "b355aac856f952d4d5e4e6540149ceb27f77edbf6229be2d06ee6c195c7064fc"
+  },
+  {
+    "path": "docs/fishing_integration/03_모델과_현재구현.md",
+    "bytes": 16403,
+    "sha256": "c4563388432092a1d0d88d222a82776a9569c9fc02a360e30fe09c04db295fc6"
+  },
+  {
+    "path": "docs/fishing_integration/02_데이터와_전처리.md",
+    "bytes": 12267,
+    "sha256": "adc30529392b572779731c0e46cd030f596d5863fdc6d52604a50217467d0a75"
+  },
+  {
+    "path": "docs/fishing_integration/01_과제와_현재상태.md",
+    "bytes": 9873,
+    "sha256": "e0f6df6ea96fb36d9e2cd86fc0be027aafccb9f605453df2cebc32f6801375e8"
+  },
+  {
+    "path": "docs/fishing_guided_baseline_20261026.md",
+    "bytes": 17117,
+    "sha256": "f6757a4702af6e30d66e064104246b842b36d75af5b38d663997291525708bef"
+  },
+  {
+    "path": "docs/fishing_execution_plan.md",
+    "bytes": 49904,
+    "sha256": "c2ed16fdcff18c05a24a871b7a605331d8ce26d3c28f8f60cdb3340b9675c4b0"
+  },
+  {
+    "path": "docs/fishing_evaluation_cycle_results_20261028.md",
+    "bytes": 18398,
+    "sha256": "14320cac46b7e3f10259e790182b96305bfffb02e13f58f0e91dfa5933f07688"
+  },
+  {
+    "path": "docs/evaluation_cycle_supervision_20261028.md",
+    "bytes": 10791,
+    "sha256": "2e1c0ad6911257e682a9c97ac59144a367fb9fcb49f0910b4deb4637aa5ca6b8"
+  },
+  {
+    "path": "docs/cycle4_tasks_20261030.md",
+    "bytes": 10010,
+    "sha256": "e82463a8d041f04511490f644386024401740d8012cbdf8a5c21a00ccd644389"
+  },
+  {
+    "path": "docs/cycle2_summary_audit_20261029.md",
+    "bytes": 9751,
+    "sha256": "192b0ab1f7c7e56e03f9c8bc125e7a1d3cd661142228b2b45b08012d1d85b50a"
+  },
+  {
+    "path": "docs/cycle2_prediction_diagnostics_20261029.md",
+    "bytes": 14841,
+    "sha256": "451b5254a00e53bfdc735f39da31fbf9406f05f26f3f2b637b1a4917fc41f0f9"
+  },
+  {
+    "path": "docs/cycle2_followup_tasks.md",
+    "bytes": 12889,
+    "sha256": "49fe6cc59df9619d5dc8b48905de2b0a9b447229251101f0230a7a3029c033fd"
+  },
+  {
+    "path": "docs/cycle2_development_ablation_20261029.md",
+    "bytes": 18324,
+    "sha256": "0e2b7e8be166d319969f5c54ea532d5bb23a838ed80b51d05ec42623b9214f85"
+  },
+  {
+    "path": "26_11_2/inbox/003_짧은관측_학습예시보강.md",
+    "bytes": 10230,
+    "sha256": "7e3006425e6b006a06809e8d0c099a7a349ade14e0b516eb498de20fdf1b92c8"
+  },
+  {
+    "path": "26_11_2/inbox/003r1_GPU환경_실행절차.md",
+    "bytes": 17709,
+    "sha256": "9332f6d29a03988f6ddcf0954548767e5feb9214f6c8811360113d7bd68faeb5"
+  },
+  {
+    "path": "26_11_2/inbox/002_모델확률_이웃투표_결합.md",
+    "bytes": 5894,
+    "sha256": "19c4c750c4dbaaaf657c0822ad1d03269612cedafed7748f6e67d62e2d614764"
+  },
+  {
+    "path": "26_11_2/inbox/002v1_판정결과_정규분포_시각화.md",
+    "bytes": 6267,
+    "sha256": "62a0d3fa878b9320c09fb0883d1a2d65b6cc777359a92dd33954dbb5c1786998"
+  },
+  {
+    "path": "26_11_2/inbox/001_데이터준비와_전제확인.md",
+    "bytes": 11724,
+    "sha256": "001cd2f28e7383d73f2f732db02bf3a0b3d8d84f6569e52a107eb8ca5b0e1db3"
+  },
+  {
+    "path": "26_11_2/inbox/001r1_재실행.md",
+    "bytes": 3569,
+    "sha256": "c6a3cf88ec0b81ff52a82b72d63279d7a9eeeb538d4f72c38ee2544c4e89e65e"
+  },
+  {
+    "path": "26_11_2/commander/20261102_2056_cc.md",
+    "bytes": 1405,
+    "sha256": "6e142db74aba2f92e12c176516088985b4b7db0a034faf1095f10e7186e66fec"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/outbox/cycle3_3_report.md",
+    "bytes": 1874,
+    "sha256": "288ebe449115d1f7a0e22900a454e1a402e81f78da386979f246ff37ceb9f82a"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/outbox/cycle3_2_report.md",
+    "bytes": 1122,
+    "sha256": "de1db6af8e91e11f77e6a82cdb62b64f10ceb16de6ba5a78eea36a899b59ae3f"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/outbox/cycle3_0_report.md",
+    "bytes": 1858,
+    "sha256": "41cf2ae67795b9051e16c8a1823e7b39438f07153d736234c6ac371e55fc0ec7"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/outbox/005_report.md",
+    "bytes": 4095,
+    "sha256": "6401cd45cac5e29946849f90a8832775ccf8da56209e8d941bf70adbf4d61ac7"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/outbox/004_report.md",
+    "bytes": 7494,
+    "sha256": "6d9b45df161b212066762e150e67eacacf5b2d8b3056d2152e8d4cd380fc864f"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/outbox/003_report.md",
+    "bytes": 7606,
+    "sha256": "cc338ee6cdb95a126e58455ebb6b0d488c2a845a9c1366ab846c5ad1c39601eb"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/outbox/002_report.md",
+    "bytes": 8496,
+    "sha256": "5de9126a035c08382f6cddd700f7a6608739b571262f741249f2557350bd188a"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/_handoff/outbox/001_report.md",
+    "bytes": 11047,
+    "sha256": "07dbcdcdee7e12f199c5380964609ca91a3356b6e19fc6134e8a1ad307492f13"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/Claude outputs (사용X)/조업형태_분류_알고리즘_추천.pdf",
+    "bytes": 977109,
+    "sha256": "6fb98b960efdd0f7e22b7f559bc8ace582b35fefb5327bff601e98599fd32c85"
+  },
+  {
+    "path": "requirements-sample.txt",
+    "bytes": 14,
+    "sha256": "8f40ca44a22b1aa83e698b44fe63c246695b49eb7e4a12b9de93c2276c0d62f9"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/15_어선항적_최종_제안서작성_가이드라인.pdf",
+    "bytes": 215360,
+    "sha256": "d61ddb0abc27590894c1e5288e52bd92c83dd1d2e0b253f8bfe4cb07e479c625"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/14_평가기준기반_창의성우수성효과성_보충자료.pdf",
+    "bytes": 219590,
+    "sha256": "65b65a638a4b67e56ab8c3b7f2c9a3e9a83a8995a47c18aa60322e5f4a6e64c0"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/13_프로젝트제안서_인코더디코더_Transformer_확장안.md",
+    "bytes": 18527,
+    "sha256": "74f5ce3b0490113f80958fb27be3a29818c88f458997e439a887d421cb7e82ef"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/12_4안건_혼합실험과_2026후속연구_검토.md",
+    "bytes": 23943,
+    "sha256": "2ff9c616b26c321e1282622f72b43355ae1a41d39542ddfe2a7e301a3e61434d"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/11_RealMLP_어선항적_AI응용_프로젝트제안서.pdf",
+    "bytes": 165209,
+    "sha256": "29e55040202b80e72576f01842f5e2ade5ebf1cfbee3adbe8a973f5bfee99ed9"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/10_TabM_어선항적_AI응용_프로젝트제안서.pdf",
+    "bytes": 173866,
+    "sha256": "c260d3fc943f8c167d967428b72edce3a6274ea5205e3e3b191e8455678e2d81"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/09_MLP응용_선정판단과_두논문_핵심요약.md",
+    "bytes": 9842,
+    "sha256": "1d03ba2ebcb8ead22d8299d6aaf2d9cd9876afa510cf21037db708f034b6ddfe"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/07_4안건기반_예상결과물_3쪽.pdf",
+    "bytes": 133162,
+    "sha256": "d3a00a530b28cf746392382dd88bafeda0c60a89ca7482b16874c0081cfe0dd8"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/06_4안건기반_데이터활용방안_4쪽.pdf",
+    "bytes": 153406,
+    "sha256": "31061d69647cdfb97ed45d67417c6f22dd043605f637fec79e6857019d60ac88"
+  },
+  {
+    "path": "data/reference/competition_20261019/2026 데이터 분석대회/04_어선항적_모델선정_4안건_통합보고서.pdf",
+    "bytes": 427874,
+    "sha256": "a97c5165f6e75b602ed0edd129a6463249163cfca81e0cfbacaf23504885dc10"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/README.md",
+    "bytes": 6265,
+    "sha256": "2e81ccc9cf28e822e61042b3b5209c47fca3da3125ebd049b5a2507500644313"
+  },
+  {
+    "path": "26_11_2/work/시각화_002/progress.md",
+    "bytes": 5579,
+    "sha256": "b64dcc54b6a60d4cab90d86a84f4f8eba3c64059e4384c5f0ebd0565683e6021"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/remeasure_20261031.md",
+    "bytes": 23907,
+    "sha256": "f23efb7773ac7b6c1ff8a7d0dc55f1e898fa0ad51238b8345202d9d619f991d9"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/f156_merge_20261101.md",
+    "bytes": 7484,
+    "sha256": "7ca26491c0b59bb47e8765d947ed5e7b47ffd7ce8591cb579b2a9c001ddc4dd5"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_summary.md",
+    "bytes": 3978,
+    "sha256": "e282d8f428daa554fb43bdbb1156a9eb8e8063892117ea7788a491bbe3d3694a"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_revision_proposal_20261101.md",
+    "bytes": 6915,
+    "sha256": "369bd408dd92ac2cc869ef3c022d393381db44d0f1f7477e0b22b0795eb3f222"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_data_status_20261030.md",
+    "bytes": 5890,
+    "sha256": "0281c66d1d4f9bc6497d71b27ea9debe6c599e22aa5ad60d5e18b954daa9d462"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_3_featAC.md",
+    "bytes": 5977,
+    "sha256": "4b0babc645d3227d08ec408eee1218a10f3f45a39cd5899855d17f4181591f05"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_2_bd.md",
+    "bytes": 3138,
+    "sha256": "cbfe3933a85ed4dee55a4769b9e98d850af99df3a5f62aea4748b5697bc31928"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_1_baseline.md",
+    "bytes": 2409,
+    "sha256": "fbc9972ecec6e379b78f289d8b3972a50cf0f72cb93b37f124a17306645c7a3d"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_0_testA_setup.md",
+    "bytes": 2487,
+    "sha256": "cd3999482376840afa7fa03c5fb98019b7232a67037bd487a16289d2ae3fc4ea"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle3_progress_20261030.md",
+    "bytes": 19354,
+    "sha256": "dc218c536dbd6751f3a4df1465b40e64cf01b3108931d06d555d059558d67465"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle3_3_error_trace.md",
+    "bytes": 7394,
+    "sha256": "24a83220921e6aadd79d6d7bb57a47ac40997fc89d29c5e2c46cc0571dfd4479"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle3_2_exclusion.md",
+    "bytes": 3082,
+    "sha256": "1b282c1ce7f810e915f4c1aab0f15ce6e1235f5f1354e8ede34fb8b7dc06a80e"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_summary_audit_20261029.md",
+    "bytes": 9751,
+    "sha256": "192b0ab1f7c7e56e03f9c8bc125e7a1d3cd661142228b2b45b08012d1d85b50a"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_prediction_diagnostics_20261029.md",
+    "bytes": 17744,
+    "sha256": "3fd64420fdce34fff118e405f4a8479b9277c85aece6ea75d7ff225705f1f33a"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_summary.md",
+    "bytes": 12104,
+    "sha256": "e1eb5ec235c2e630b176006a6ae8130c883444dd1f9beac5264ff687d97ad6b1"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_7_agg_2x2.md",
+    "bytes": 8260,
+    "sha256": "5df965c7017a7cac6ca002a520a0e4d0b8ea85a0c3a1ae21fb763e1ddc24f0db"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_6_trap_binary.md",
+    "bytes": 7141,
+    "sha256": "9a0af8c770991ce466101dc8aa20162c1b87eba57f63c9ff7e4ba5e1b176ba63"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_5_calibration.md",
+    "bytes": 9318,
+    "sha256": "bf4fa1c470795895cb47644b5f056b91a4f7a0f3e81a9068794618c3c17cb712"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_4_zero_prob.md",
+    "bytes": 12562,
+    "sha256": "4201111d77d52d61b7806c4a6a5fd84d4b5ba02a97cea4b1f60a0198f73f767c"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_3_rerun.md",
+    "bytes": 9405,
+    "sha256": "3d0998f93e7781780732e15af98fa6a5908b1c453eb830c04dc41a421a66e5d8"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_1_provenance.md",
+    "bytes": 6596,
+    "sha256": "9d49a73b2166d96a0dd3e9ad44e814967629aa4205621e25256ebad7bd7d6e0e"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_development_ablation_20261029.md",
+    "bytes": 18324,
+    "sha256": "0e2b7e8be166d319969f5c54ea532d5bb23a838ed80b51d05ec42623b9214f85"
+  },
+  {
+    "path": "26_11_2/work/재식별_투트랙_001r1/progress.md",
+    "bytes": 6042,
+    "sha256": "9b624691c0cb982822abb7f40b5a1c6e1e32f2ef27b57722e79027d6b7ff414a"
+  },
+  {
+    "path": "docs/competition_20261019/04_파일목록과_검증기록.md",
+    "bytes": 22500,
+    "sha256": "4b9f0995961434e3f6ac4a33d5bc9b60736973a0b66bf9bd26e28013d0b05440"
+  },
+  {
+    "path": "docs/competition_20261019/03_첨부자료와_분석방향.md",
+    "bytes": 14764,
+    "sha256": "72663ee5e14f3781fc400bd7975c04b2cc5be49c0f30a0062608988bd181e1ee"
+  },
+  {
+    "path": "docs/competition_20261019/02_분석해석과_다음단계.md",
+    "bytes": 13904,
+    "sha256": "1e254a2491f8c9e574aa72c880d7512e9b607beb7954a93817edc1b5ab0e0ddc"
+  },
+  {
+    "path": "docs/competition_20261019/01_데이터구조와_직접집계.md",
+    "bytes": 8836,
+    "sha256": "854f701fe6d103e9c483c8e308af9816bd2274d752ad258209b1d65281a5b187"
+  },
+  {
+    "path": "docs/algae_prediction_system.md",
+    "bytes": 13184,
+    "sha256": "5558f5a2ab7decaccab80da8cc98e37e96559b53998480ae24d23b3af80fd98f"
+  },
+  {
+    "path": "docs/2026학년도 가을 일반대학원 학과 및 연구실 탐방프로그램 사전신청 링크.txt",
+    "bytes": 99,
+    "sha256": "02e7c68f45832b2bfe16b0e351b14e9d861b1a9cb2228a2f3dca5f23079ab78d"
+  },
+  {
+    "path": "docs/ai_learning_framework(부록).md",
+    "bytes": 32321,
+    "sha256": "49d519e3effb00787f7e991693780c7f45cad0ba5802c2725d1cb1ed7d273ec4"
+  },
+  {
+    "path": "26_11_2/coach/gpt/20261104_1246_gpt.md",
+    "bytes": 23891,
+    "sha256": "c89afe6119f9228919f9d8e430b4b6828526154c6a0127296fcfa3e7097650e5"
+  },
+  {
+    "path": "26_11_2/coach/gpt/20261104_0945_gpt.md",
+    "bytes": 17922,
+    "sha256": "aba4e2df0459a3fb3ad2b8e5341d27a51c32107d14b1437cbf80698ea9addbe2"
+  },
+  {
+    "path": "26_11_2/coach/gpt/20261102_2051_gpt.md",
+    "bytes": 3188,
+    "sha256": "581ee4bfa7cd3dfe0705bef22a103e502b26a306c44f90e0005b09ff7c0f92f7"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/어선항적_2차모델결과_총정리_해설_20261030_정정전.md",
+    "bytes": 23421,
+    "sha256": "6e34b7a85c22b2926e04a1e33bbe3fd2d42f07e33bf1580ee6ebeda378e91eb8"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/data_remeasure_20261031.md",
+    "bytes": 13089,
+    "sha256": "efce750970c431d869ddf0e44d38287b60ed2a2dcc3b9cf9eb098f2b5278c7ae"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/어선항적_2차모델결과_총정리_해설_20261029_작업2이전.md",
+    "bytes": 21103,
+    "sha256": "1216838965421ff1f7a5d44246a8fbd8bbb2abdcd036a276c9de18253cfa5e90"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/remeasure_20261031_003수정전.md",
+    "bytes": 25099,
+    "sha256": "ec9a6bbaa6fa3e81b2dd5528f06bfeb58c77e296716566932b2baffe1e457509"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/remeasure_20261031_002수정전.md",
+    "bytes": 18656,
+    "sha256": "b377a995d7b423f617a0e0b723577c8cee75954da483d8dc7d333ab39d8889b2"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/remeasure_20261031_001.md",
+    "bytes": 9941,
+    "sha256": "49d46a057f86b4718aeb49044010feecd8a6bb01fa99c6f947c49b3d1bc335ab"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/docs/remeasure_20261031.md",
+    "bytes": 47964,
+    "sha256": "451adeb4154b3e81d94e831e9092710ca9dd036c4d8202da7d303e69468d429e"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_prediction_diagnostics_20261029_작업2이전.md",
+    "bytes": 14841,
+    "sha256": "451b5254a00e53bfdc735f39da31fbf9406f05f26f3f2b637b1a4917fc41f0f9"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_prediction_diagnostics_20261029_20261030_정정전.md",
+    "bytes": 16907,
+    "sha256": "79a8734fe0057132da72e8f7ff641405e3e3fa55235bed251bfb50226953bffd"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/docs/Claude_응답_gemini.md",
+    "bytes": 2570,
+    "sha256": "e84ad505e7ed4ff542260783c10e3cc81c994f9d2d29963e765eea9e64d831a5"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_7_agg_2x2_20261030_정정전.md",
+    "bytes": 6848,
+    "sha256": "82003b0e11c68f1126437355450f2e0d5dfe1361201f202e54b40154f8c3ae7c"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_6_trap_binary_20261030_정정전.md",
+    "bytes": 6731,
+    "sha256": "312102b06c87a7a397fe043f802833445b41d26a51d2fbb42848b89f98d6d6b5"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_5_calibration_20261030_BLOCKED판.md",
+    "bytes": 6560,
+    "sha256": "e50207da793e8d08db8863e75f33da11ad9c93bb6a02aed5e4b3fc561bc1fd18"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_4_zero_prob_20261030_정정전.md",
+    "bytes": 10285,
+    "sha256": "dae114f61cc5d74a60ee6144f63fc1708efb36d6f7c6290ad2c4c2ed6602d9f9"
+  },
+  {
+    "path": "docs/ai_textbook/91_model_cases.md",
+    "bytes": 10840,
+    "sha256": "cf1821c30c689feea675e4fea13bef1d6fc11bc0ec52e5a5b0d9f42977eaec3c"
+  },
+  {
+    "path": "docs/ai_textbook/90_solutions.md",
+    "bytes": 21038,
+    "sha256": "0918f8e82ea476156626f8b5c4bd9018600c5ad56c1124cb6d9962ac2e26c501"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/cycle3_tasks_20261030.md",
+    "bytes": 16969,
+    "sha256": "9fdc2907595176205649137e85a2f7c2107af08d9fc8a29a9c7ee6df4f7c2972"
+  },
+  {
+    "path": "docs/ai_textbook/92_sources.md",
+    "bytes": 20067,
+    "sha256": "de975098b174666b732a0a52aceafbe3070727040632452ccd2ad9594fa42dcd"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/분석 결과/cycle2_followup_tasks.md",
+    "bytes": 13524,
+    "sha256": "a9c686380042c5c7ec5de239e9d0bb437b46a5f819172c061a20da2c2130b7b0"
+  },
+  {
+    "path": "docs/ai_textbook/93_glossary.md",
+    "bytes": 38863,
+    "sha256": "8a022f36b8c0480d564d21f006155dd561fd3603ddcc2fdfe9242fb4720196b7"
+  },
+  {
+    "path": "docs/ai_textbook/모델 해석 목차.md",
+    "bytes": 11720,
+    "sha256": "c19da415019a44e4daaf690d4fab79aefb7312f02c8a04789fe081eafe7f7e23"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/README_먼저읽기.md",
+    "bytes": 5171,
+    "sha256": "6a78f2d50e651544ed388acf563f4a8d469ca5d3d37bee43cbbf93d5169995f8"
+  },
+  {
+    "path": "26_11_2/coach/gemini/20261102_2058_gemini.md",
+    "bytes": 6593,
+    "sha256": "25b4ac4c96c60f6a9e8c13d65500e6b63d375498f8579f87367cfa3e12847db3"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/30일/할일_20261030.md",
+    "bytes": 4315,
+    "sha256": "3187e5e2edd45b154c590a90af447f8027b12051aa45b4afd6537a792f049ab6"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/30일/어선항적_2차후속_최종정리_및_향후과제_20261030.md",
+    "bytes": 12104,
+    "sha256": "e1eb5ec235c2e630b176006a6ae8130c883444dd1f9beac5264ff687d97ad6b1"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/30일/어선항적_2차후속_진행상황_쉬운해설_20261030.md",
+    "bytes": 37430,
+    "sha256": "11e0e12072441b25cb361fef3c7d5d0635fa74984ce2b2c8fca03b6991357a57"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/30일/cycle4_trip_tasks_20261030.md",
+    "bytes": 14323,
+    "sha256": "3e294e2e0c43f45548d28bfa92da21a0bb06ffc3f739b49f7b70f63cb971e861"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/30일/cycle4_tasks_20261030.md",
+    "bytes": 10010,
+    "sha256": "e82463a8d041f04511490f644386024401740d8012cbdf8a5c21a00ccd644389"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/30일/cycle3_tasks_20261030.md",
+    "bytes": 16969,
+    "sha256": "9fdc2907595176205649137e85a2f7c2107af08d9fc8a29a9c7ee6df4f7c2972"
+  },
+  {
+    "path": "26_11_2/work/재식별_투트랙_001/progress.md",
+    "bytes": 5688,
+    "sha256": "2c4da9a33e4cf3d78102eb43793c87a81614bf62071a48500e0335eec02f340e"
+  },
+  {
+    "path": "26_11_2/work/모델개선_003/progress.md",
+    "bytes": 2365,
+    "sha256": "5d524b5faa00f10b88aeba5bf7122f9e8d1d6992ef25faaa837340c87b017f88"
+  },
+  {
+    "path": "docs/ai_textbook/validation/README.md",
+    "bytes": 5780,
+    "sha256": "0a60e8b10b89eb81045512b108afc6834b6827cf136fd420ae4a25c9e231fb21"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/재시작_안내.md",
+    "bytes": 2880,
+    "sha256": "5d7d90189b56d717fa7c65ad9cb44b841e562a92c59515ccfd8388f1cf15f655"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/STATUS.md",
+    "bytes": 210,
+    "sha256": "eb122a34ad387fbe9c76f4986c96ad631a4619cd1d9ab36901ec8ae04b55872b"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/26_fishing_sample_system_personal_study.md",
+    "bytes": 79838,
+    "sha256": "38c37549289e898b572c90f9b05812a6ce0c72b3f628aebd91099e8913146178"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/25_fishing_evaluation_system.md",
+    "bytes": 20070,
+    "sha256": "ff336b19d1b77fffe95ab24cb7ddccbc3aa2d1320a8f7d5dfa693471052cb25b"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/25_algae_project.md",
+    "bytes": 11403,
+    "sha256": "b19fd40df19b2973387323ab521cb44730d1ce973c3d95e0ba2affc4f8339ab9"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/24_fishing_virtual_units.md",
+    "bytes": 35919,
+    "sha256": "5c339c302fdff8caa1d5966c6c76bb8c0c399996bb7f6e7ed9e65774c68c0cb9"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/24_algae_evaluation.md",
+    "bytes": 16052,
+    "sha256": "a9008fefd289c600244047f160a32bcb1b91a669b1e9b599550259781dd44135"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/23_fishing_environment.md",
+    "bytes": 17671,
+    "sha256": "eaa20f16c22b5d5e2d647c8895c78f552546a0aa2b3e1838d6baa77af2a67eb8"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/23_algae_temporal_hybrid.md",
+    "bytes": 29928,
+    "sha256": "3daa2bdda03c4c24d2a93e331b307092e4833355082e292dca2c3ab78e3a1b5c"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/22_fishing_anomaly.md",
+    "bytes": 31736,
+    "sha256": "5145af3155d30ba038f63f68cfe2666cbe46759c9a7cbcfb00c3acf157847bc4"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/22_algae_regression.md",
+    "bytes": 24887,
+    "sha256": "06b539c474ea2805b0f14dccc4c15bf49bc11a3c267be15d39313c8481ba8725"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/21_fishing_sequence_models.md",
+    "bytes": 28957,
+    "sha256": "2f276a57239cb6fc6a6c31003648a12617fb97539785545083861433f0478f3a"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/21_algae_data_features.md",
+    "bytes": 30329,
+    "sha256": "c88fb86200c40efa6b2bb943644f9a08775bad0888e924e3d5d183c88aeaca14"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/20_fishing_classification.md",
+    "bytes": 24851,
+    "sha256": "168234715cd859cf429be9e8766c2ba116c9bb39c595e9e2c946ab04a802ab2d"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/20_algae_dynamics.md",
+    "bytes": 30600,
+    "sha256": "83f335f6a590d5d380982b5a3a20139e360d3a766e0087f2d70fd9b87870b652"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/19_fishing_data_geometry.md",
+    "bytes": 18538,
+    "sha256": "004f7156e0f188491f06ec079d003418863cf26af6eb3e31e392765a41ecee7f"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/19_algae_foundations.md",
+    "bytes": 14766,
+    "sha256": "36f272ea4239c8955cdcbe4ecf2cbfe721887844c6218decd99f03ab89c39a33"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/18_evaluation.md",
+    "bytes": 24240,
+    "sha256": "85f827bea09981ebda26337b709232dc8692c900d6e48f8371027c7a6d42194b"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/17_systems.md",
+    "bytes": 21279,
+    "sha256": "a8303ee891157be11d22afb8374f56d800d71903c75fdea42192614ef74928f9"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/16_alternative_scientific.md",
+    "bytes": 21400,
+    "sha256": "f837c7cb668f78271aa788d4e036b299f21a52b17e1da571b670420dafe1282d"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/15_causality.md",
+    "bytes": 18482,
+    "sha256": "c3dd9507454ebcd62493d00d15e97f43919c4de281f9a68877f5e3c00c104e0c"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/14_structured_domains.md",
+    "bytes": 11169,
+    "sha256": "93733127cdc2b63b486da41675a8a3acf5ac956fd62ed517716caae0900d23a0"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/13_multimodal.md",
+    "bytes": 11022,
+    "sha256": "f8e822ceed31f456b768b4254b5448a1820b3bd03725b3fc2952f86ae42a51de"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/12_language_models.md",
+    "bytes": 13565,
+    "sha256": "55116b45635cc6f26342e355e84e55f15a6f6d9e8b329dba0221023200999258"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/11_reinforcement_control.md",
+    "bytes": 10706,
+    "sha256": "ab0e2ac7f22378e923c96637787672415ceabf9c10310c4213280a640e6f5c4d"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/10_generative.md",
+    "bytes": 11164,
+    "sha256": "e6a09986efe009cbcc13ac3372766eae314ac2628be923e0eadf78997d91de6d"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/09_learning_paradigms.md",
+    "bytes": 10979,
+    "sha256": "e95ec77a7f08cb1d8b1d39f30e150997f7378f2927132f02a208382e2d764bad"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/08_neural_networks.md",
+    "bytes": 11934,
+    "sha256": "2bc7807441a882f017005ec23ff11d45b1ce97b524ede660b688c5e1c8c5354f"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/07_probabilistic_models.md",
+    "bytes": 15958,
+    "sha256": "39d7bc7b3fd1ad2364db8203352dd810db8717c3cfacf144cce77a5b98343076"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/06_statistical_learning.md",
+    "bytes": 14114,
+    "sha256": "2fe7c7334ab716bb3256ce389e6c9ca9437b75f026014099f0623b5e14cd6912"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/05_symbolic.md",
+    "bytes": 12676,
+    "sha256": "c10f3a1ecddab780b06267627639a6876a60eb7fae9e714e127b56b5ac2ac6fe"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/04_computing.md",
+    "bytes": 16672,
+    "sha256": "e534f592dca1df2ccf57d9be4256119b3d4dc337f015b6d492ee490b102b6c36"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/03_probability.md",
+    "bytes": 17869,
+    "sha256": "2f86cdd908ede188f79a3fcdd73163d025544d1adb81efdb8e249feb8b1ed8a2"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/02_math.md",
+    "bytes": 18576,
+    "sha256": "8021714e4222cb9cb1b67e75a8c5def1b670136e64d02b96df1c73a9216acab3"
+  },
+  {
+    "path": "docs/ai_textbook/chapters/01_problem_data.md",
+    "bytes": 18160,
+    "sha256": "43c65132d0911fd92b730c86e4cb76e112bc66539b6c390098c34b4186ca80f0"
+  },
+  {
+    "path": "docs/ai_textbook/algae_learning_path.md",
+    "bytes": 4624,
+    "sha256": "c73687470e1d6087b4aedbfdd4c6040d543bb24d60aac00e7741aecf1d607535"
+  },
+  {
+    "path": "docs/ai_textbook/95_fishing_guide.md",
+    "bytes": 12519,
+    "sha256": "510ff9103c77b43e428f45c9cb9207b20981879b21e2a359afbd02b7e2e30248"
+  },
+  {
+    "path": "docs/ai_textbook/95_algae_solutions.md",
+    "bytes": 11265,
+    "sha256": "82e719dd3169f550fc9e6831a44913ce3c05d23c36c4c4010393035a117d1456"
+  },
+  {
+    "path": "docs/ai_textbook/94_fishing_solutions.md",
+    "bytes": 14163,
+    "sha256": "0add0484b3506e6dbf7e46ede9c21c57bdafff82471a5fd4884b3f0522731221"
+  },
+  {
+    "path": "docs/ai_textbook/94_algae_sources.md",
+    "bytes": 5926,
+    "sha256": "06695fe033b5e3cc51778805ba6a64293595536df88266626d3eaefdfc09b577"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/reviews/004_review.md",
+    "bytes": 1159,
+    "sha256": "bcf1d44427a8152231c23589864a46472b4353feb0749e5fc4d524a27b7ecd34"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/reviews/003_review.md",
+    "bytes": 1487,
+    "sha256": "e9571969cfccd1de461e03ab3c2db5d24784f3c28b2c5921f7ffb6b655a0dd6a"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/reviews/002_review.md",
+    "bytes": 3115,
+    "sha256": "1f92175d8a35f7e2341cb30cd54e3cb0034e1f8be15e5588f7dd3be8fa9dc127"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/reviews/001_review.md",
+    "bytes": 3389,
+    "sha256": "e647b437acd60c888a61bd0fcfaeb5acfb6e972c0bc3cd140323bff72639f98f"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/REVIEWER_PROMPT.md",
+    "bytes": 5099,
+    "sha256": "846a0f52d235a3b2565c58b873f47199d84bd1ef9651a7826b3bf935a5e9f0df"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/reviewer_log.md",
+    "bytes": 1910,
+    "sha256": "7f3ad90db3ad6d7b8f910ca971f7bbb94ada55408ac27f873d48843b040f2c92"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/README.md",
+    "bytes": 4642,
+    "sha256": "cd5f194d7dce1fdd525dab13e0233c761f125102915a542587e2fc7b53ead755"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/006_migrate_report.md",
+    "bytes": 8557,
+    "sha256": "8fceb533c67fa22350ed8fbb377d1f52fafc25b6d29a203c31c5db453c36831f"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/005_report.md",
+    "bytes": 6618,
+    "sha256": "44231373965661ab4adcc98c0d74772fc314631d1afd231cf79819aef8690a18"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/004_report.md",
+    "bytes": 4850,
+    "sha256": "ab5d2d1eb5b00970f78c584d3101d606399a04039be861a8ec781b9d4a98671d"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/003_report.md",
+    "bytes": 3430,
+    "sha256": "1ccaaa7f0d75b7d59ce158531e84c6c3658ebc05f5f39fe3155e530f16ced269"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/002_report.md",
+    "bytes": 6592,
+    "sha256": "b73ff02835d4f97ea64793a3be9ec89811d0780d0f3db47a1523b705cc0416dd"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/001_report.md",
+    "bytes": 7740,
+    "sha256": "398a6a8c1c8f0fe9efc09982d9a8cb27e6315e4c2b26be279cd6e9095bcd08dd"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/NOTICE_20261031_gemini.md",
+    "bytes": 2339,
+    "sha256": "d0c52b8a73ad69c2d0a9c30cc20d3ba07fec60064c608df28f8784b57ae825cd"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/005_F156_merge_T5.md",
+    "bytes": 5102,
+    "sha256": "08a2cc5a00135087acf8998d6a54186d3f1dc259f560f1ea62ba8ff9aca4d848"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/progress/005.md",
+    "bytes": 1215,
+    "sha256": "99dddc5d57ca3654b74e003526429ded1102c215a69ad1db9658f1da9f2fee01"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/004_cycle4_featAC.md",
+    "bytes": 4071,
+    "sha256": "7ad4fdfff1692ba38a98969a3834117cfcde8dab98a96ad5a27e176d4dba03c5"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/progress/004.md",
+    "bytes": 2116,
+    "sha256": "07c29422fcbbe11a9c7eabfd16a67a7a8bee1c89ddbbac2f884eab773ff8f672"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/003_cycle4_revision_proposal.md",
+    "bytes": 4273,
+    "sha256": "de8592752b21399e83edfb5aecb6d6ebcfb1de7bbf7d7dc162ddc6fe3886be18"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/progress/002.md",
+    "bytes": 4707,
+    "sha256": "ab1c3efc150a25738da2562cc943324727e01c66cbf3ca3d840ddbf449b869bc"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/002_remeasure_R6b_R8-R14.md",
+    "bytes": 2329,
+    "sha256": "edbe599f6332ff7e4a93b9c43b35633c4c4a14c26852b5c4ffea4a4a61466f02"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/001_remeasure_R0-R7.md",
+    "bytes": 3295,
+    "sha256": "e4461cef6cf195692191686ce51ac62a6ca3cd74f05a0fd1320a5e2eb2b7b232"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/_handoff/EXECUTOR_PROMPT.md",
+    "bytes": 7426,
+    "sha256": "794e6d3f8b5dd4715069ac97e515eb753425811d113d9c25a486f28d90076a6c"
+  },
+  {
+    "path": "outputs/iterative_models_20261026/protocol.md",
+    "bytes": 7976,
+    "sha256": "be264c504c1b79104269308b3907f9fad46a574fb98bb04a71f02bea97c1bb86"
+  },
+  {
+    "path": "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/docs/기본특징설명.md",
+    "bytes": 28416,
+    "sha256": "555a71bc2284383cc74bea7e81009d68e2c2bcf28ed8eb7e9e7d7c1bb061bac7"
+  },
+  {
+    "path": "outputs/competition_20261019/proposal_attachment_text.txt",
+    "bytes": 19570,
+    "sha256": "8dec96b83332e93d34edf8ef939d9adbba27180dfce4c7c68e884d7cf12dff27"
+  },
+  {
+    "path": "outputs/competition_20261019/independent_review.md",
+    "bytes": 5387,
+    "sha256": "66135fd4501bffceb2d3747d44409a8ccc480625d847d3dd2d948a43f863c680"
+  },
+  {
+    "path": "outputs/competition_20261019/source_evidence.md",
+    "bytes": 11686,
+    "sha256": "c775a45363d053c982c3b8df31463b8951bc53ebe394e2a62053ee58b7a0f767"
+  },
+  {
+    "path": "outputs/competition_20261019/scope_decision.md",
+    "bytes": 7788,
+    "sha256": "6389cbb905fefff62e3040e6dda27cf4ffa6270cd4db9f705d36973e3b91f2b1"
+  },
+  {
+    "path": "outputs/competition_20261019/proposal_integration_review.md",
+    "bytes": 5678,
+    "sha256": "58a5d6b6149baaf3906f3294613227465f73b2564268c2a661cf1d09ae90c83e"
+  },
+  {
+    "path": "outputs/competition_20261019/proposal_integration_evidence.md",
+    "bytes": 12476,
+    "sha256": "58581184e3b0e1a0dedd76e8ee9e59e9e2d4389ce9b880947732160be4123702"
+  },
+  {
+    "path": "outputs/competition_20261019/proposal_integration_decision.md",
+    "bytes": 11774,
+    "sha256": "36fd910b48156596c001e5485c818f86edd54282151f1851f56af3ef7cfc966a"
+  },
+  {
+    "path": "outputs/guided_baseline_20261026/protocol.md",
+    "bytes": 5621,
+    "sha256": "87388184b440b06a53f3e9d4b63d9341313ec0a3ee047b4e0b36133b3fd31509"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/조업형태_분류_알고리즘_추천.txt",
+    "bytes": 13122,
+    "sha256": "44fb8875da6f1f3dd1bb44d7db715ebbee9e5cfb291a8e1859258f46d21a3245"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/어선항적과제_이해가이드.txt",
+    "bytes": 53160,
+    "sha256": "4d9bf769ee82bac12681f06cbf1cf2408a1b4f585f5b27acfdd7a3b8c36e7d5c"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/15_어선항적_최종_제안서작성_가이드라인.txt",
+    "bytes": 18558,
+    "sha256": "e23cfaeb5f2f391d06ae24078e4927c0192023c41aa95a1f364c0ebb2a1fb437"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/14_평가기준기반_창의성우수성효과성_보충자료.txt",
+    "bytes": 19558,
+    "sha256": "8d6d1bd4959fb2afbeea19f81f337f61a31e04166de0e19f2b947b5e7bc4106c"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/11_RealMLP_어선항적_AI응용_프로젝트제안서.txt",
+    "bytes": 12019,
+    "sha256": "69fb5d0b62c61fa2db5c8d8f2a389ca468644425fc1acd6ecce0dc500688ee81"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/10_TabM_어선항적_AI응용_프로젝트제안서.txt",
+    "bytes": 12068,
+    "sha256": "0cca69ce88e7797437dc08c3140aab5780842ffd555f0edda448f20d55d051bf"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/07_4안건기반_예상결과물_3쪽.txt",
+    "bytes": 5951,
+    "sha256": "d85d389f1b14fab9b94bbe6b6fc66741bd517a1d5cf310a30a2b59185b512fa7"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/06_4안건기반_데이터활용방안_4쪽.txt",
+    "bytes": 8552,
+    "sha256": "335a197ff73402cf59846559a69f99a57f8b40ef85e6f0a95ca0673c3061948e"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/04_어선항적_모델선정_4안건_통합보고서.txt",
+    "bytes": 29922,
+    "sha256": "e3ea1bcaf1bb8a93dd1caff6e415b1f1d9c5d79cb40e7e67349cfddb06fafcf7"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/03_NeurIPS_근거기반_혼합알고리즘_선정가이드.txt",
+    "bytes": 47473,
+    "sha256": "a0c03080831a3484d243e4b3de8684a304fb16981d9b9a69497b5ade903b88dc"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/02_항적데이터_전처리와_모델설계_통합본.txt",
+    "bytes": 47721,
+    "sha256": "d1493fc5313d049f273d9bc669facf51350348a89f0c9789d73f62ce310efa66"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/01_참가신청서_가이드와_제안서_통합본.txt",
+    "bytes": 11881,
+    "sha256": "d8290ddc30f564f57e153541ba832dd029f36928ca86f320ad7e1e55f1c073f8"
+  },
+  {
+    "path": "outputs/competition_20261019/extracted_text/(참고 논문) 선박종류 분류 모델 개발.txt",
+    "bytes": 23439,
+    "sha256": "50e22891388c4c7141c55a48da69b326b28bb3b973228e5ff784a748c497245d"
+  }
+]

@@ -1,0 +1,12 @@
+﻿{
+    "exit_code":  2,
+    "observed_end":  "2026-11-05T02:52:57.8860831+09:00",
+    "argv":  [
+                 "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                 "-X",
+                 "utf8",
+                 "testB/round_001/audit/w1_w2_001/independent_verifier.py"
+             ],
+    "stdout":  "stdout.log",
+    "stderr":  "stderr.log"
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": "synthetic_geometry_contract_v1",
+  "source_type": "synthetic_example",
+  "metadata": {
+    "title": "부분선 경계를 보존하는 교육용 독립 검산",
+    "statement": "실제 대회자료가 아니다. 원자료 없이 만든 고정 합성 예제이며, 평면 XY·미터·부분선 안 점 순서는 교육용 가정이다. 실측 시각과 조업·이상 라벨은 없다.",
+    "not_real_competition_data": true
+  },
+  "coordinate_contract": {
+    "system": "planar_xy",
+    "axis_order": ["x", "y"],
+    "unit": "m",
+    "basis": "educational_assumption"
+  },
+  "observation_contract": {
+    "point_order": "confirmed_within_each_part",
+    "part_boundaries": "preserved_do_not_connect",
+    "measured_timestamps": "absent",
+    "fishing_labels": "absent",
+    "anomaly_labels": "absent"
+  },
+  "parts": [
+    {"id": "part_1", "points": [[0, 0], [3, 4], [6, 4]]},
+    {"id": "part_2", "points": [[100, 0], [100, 12]]}
+  ],
+  "tolerance": {
+    "distance_absolute_m": 1e-9,
+    "ratio_absolute": 1e-12
+  },
+  "expected": {
+    "parts": [
+      {
+        "id": "part_1",
+        "segment_lengths_m": [
+          {"value": 5, "hand_calculation": "sqrt(3^2 + 4^2) = 5 m"},
+          {"value": 3, "hand_calculation": "sqrt(3^2 + 0^2) = 3 m"}
+        ],
+        "length_m": {"value": 8, "hand_calculation": "5 + 3 = 8 m"},
+        "displacement_m": {"value": 7.211102550927978, "hand_calculation": "sqrt(6^2 + 4^2) = sqrt(52) m"},
+        "straightness": {"value": 0.9013878188659973, "hand_calculation": "sqrt(52) / 8"}
+      },
+      {
+        "id": "part_2",
+        "segment_lengths_m": [
+          {"value": 12, "hand_calculation": "sqrt(0^2 + 12^2) = 12 m"}
+        ],
+        "length_m": {"value": 12, "hand_calculation": "12 m"},
+        "displacement_m": {"value": 12, "hand_calculation": "sqrt(0^2 + 12^2) = 12 m"},
+        "straightness": {"value": 1, "hand_calculation": "12 / 12 = 1"}
+      }
+    ],
+    "total_length_m": {"value": 20, "hand_calculation": "8 + 12 = 20 m; do not add an inter-part connection"},
+    "forbidden_connection": {
+      "bridge_lengths_m": [
+        {"value": 94.08506789071261, "hand_calculation": "EDUCATIONAL COUNTEREXAMPLE ONLY: sqrt((100 - 6)^2 + (0 - 4)^2) = sqrt(8852) m"}
+      ],
+      "wrong_connected_length_m": {"value": 114.08506789071261, "hand_calculation": "EDUCATIONAL COUNTEREXAMPLE ONLY: 20 + sqrt(8852) m; the added bridge was not observed"}
+    }
+  }
+}

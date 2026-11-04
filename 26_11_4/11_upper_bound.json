@@ -1,0 +1,1547 @@
+{
+  "title": "지시 011 데이터만으로 도달 가능한 macro-F1 상한 측정 종합 결과",
+  "date": "2026-11-04",
+  "warning": "이 보고서에서 제시된 상한선 수치는 OUTER(평가용 배)의 정답을 직접 보고 최적화한 오라클 수치가 포함되어 있으며, 실제 달성 가능한 일반화 성능으로 사용해서는 안 됩니다.",
+  "summary": [
+    {
+      "항목": "현재 제출본 (L_base, 통발배수 w=1.5 INNER)",
+      "종류": "실현",
+      "macro_f1": 0.53185,
+      "micro_f1_accuracy": 0.563,
+      "출처": "기준선"
+    },
+    {
+      "항목": "08 전체가중합 (5개 모델, INNER 선택)",
+      "종류": "실현",
+      "macro_f1": 0.54307,
+      "micro_f1_accuracy": 0.56469,
+      "출처": "오늘 08 측정"
+    },
+    {
+      "항목": "S6 대용량 모델 (305열, LightGBM 8000트리 5시드, INNER 선택)",
+      "종류": "실현(채택후보)",
+      "macro_f1": 0.54843,
+      "micro_f1_accuracy": 0.58436,
+      "출처": "S6"
+    },
+    {
+      "항목": "S4 6개 모델 가중합 (TabICL 포함, INNER 선택)",
+      "종류": "실현(채택후보)",
+      "macro_f1": 0.54524,
+      "micro_f1_accuracy": 0.55944,
+      "출처": "S4"
+    },
+    {
+      "항목": "S2 4차원 배수 (INNER 선택)",
+      "종류": "실현(기각)",
+      "macro_f1": 0.52957,
+      "micro_f1_accuracy": 0.54604,
+      "출처": "S2"
+    },
+    {
+      "항목": "S2 4차원 배수 (OUTER 오라클)",
+      "종류": "상한(오라클)",
+      "macro_f1": 0.54059,
+      "micro_f1_accuracy": 0.55944,
+      "출처": "S2"
+    },
+    {
+      "항목": "S3 확률 보정 (Isotonic, OUTER 오라클)",
+      "종류": "상한(오라클)",
+      "macro_f1": 0.52686,
+      "micro_f1_accuracy": 0.59115,
+      "출처": "S3"
+    },
+    {
+      "항목": "S4 6개 모델 가중합 (OUTER 오라클)",
+      "종류": "상한(오라클)",
+      "macro_f1": 0.55538,
+      "micro_f1_accuracy": 0.57758,
+      "출처": "S4"
+    },
+    {
+      "항목": "S4 모델 선택 (선박마다 맞힌 모델 오라클 선택)",
+      "종류": "상한(가장 느슨)",
+      "macro_f1": 0.74059,
+      "micro_f1_accuracy": 0.77853,
+      "출처": "S4"
+    },
+    {
+      "항목": "S1 Bayes 오차 환산 (Cover-Hart 하한 기반)",
+      "종류": "상한(가장 느슨)",
+      "macro_f1": 0.71395,
+      "micro_f1_accuracy": null,
+      "출처": "S1"
+    },
+    {
+      "항목": "S7 동일 선박 전/후반기 둘 다 맞은 비율",
+      "종류": "참고(데이터 안정성 바닥)",
+      "macro_f1": null,
+      "micro_f1_accuracy": 0.36011,
+      "출처": "S7"
+    },
+    {
+      "항목": "S5 FIT 자기 예측",
+      "종류": "진단",
+      "macro_f1": 0.87017,
+      "micro_f1_accuracy": 0.87141,
+      "출처": "S5"
+    }
+  ],
+  "adoption_candidates": {
+    "S6_large_capacity_model": {
+      "passed": true,
+      "delta": 0.01658,
+      "ci_lower_gt_0": true,
+      "ci_95": [
+        0.00274,
+        0.030396
+      ],
+      "max_class_f1_drop": -0.01174
+    },
+    "S4_ensemble_6m": {
+      "passed": true,
+      "delta": 0.01339,
+      "ci_lower_gt_0": true,
+      "max_class_f1_drop": 0.00303,
+      "day17_macro_drop": -0.00153
+    },
+    "S2_inner_4d": {
+      "passed": false,
+      "delta": -0.00228,
+      "ci_lower_gt_0": false,
+      "max_class_f1_drop": 0.04013,
+      "day17_macro_drop": 0.00667
+    }
+  },
+  "core_findings": {
+    "model_capacity": "S5에서 FIT 자기 예측 macro-F1이 0.87017에 달해 언더피팅이 아님을 증명. 일반화 갭 +0.338은 특징 공간 중복과 미관측 선박에 대한 정보 부재에서 기인함.",
+    "tight_upper_bound": "현재 주어진 특징 및 모델군에서 달성 가능한 가장 빡빡한 오라클 상한은 S4 가중합의 0.55538, S2 임계값 오라클의 0.54059 수준임.",
+    "blind_spot": "S4에서 6개 이종 모델 전원이 동시에 오답을 낸 선박이 1,306척(22.15%), S1에서 3-NN 전원 불일치 선박이 1,285척(21.79%)으로 정확히 일치하여 22% 선박은 현재 특징공간에서 구조적으로 분리 불가능함.",
+    "stability_ceiling": "S7에서 동일 선박의 상반기/하반기 B69 벡터를 비교했을 때 두 기간 모두 맞힌 비율은 36.01%에 불과하여 계절적 항적 변화가 정적 요약 모델의 천장을 형성함.",
+    "confusion_source": "S8에서 확인된 바와 같이 전체 오답의 58%가 연안복합과 자망의 상호 혼동(1,346척)에서 발생함."
+  },
+  "raw_experiments": {
+    "S1": {
+      "experiment": "S1_bayes_error_bound",
+      "description": "F156+T5 특징공간 중복도에서 오는 원리적 바닥 (Bayes 오차 Cover-Hart 하한)",
+      "limitation_warning": "유클리드 거리는 '특징이 같다'의 한 정의일 뿐이며 실제 결정트리가 학습하는 비선형 분할면과 다름. 따라서 이 상한은 매우 느슨한(높게 나오는) 이론적 상한선임.",
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "n_outer_ships": 5897,
+      "pca_dimensions_per_fold": [
+        73,
+        72,
+        73
+      ],
+      "spaces": {
+        "raw_166d": {
+          "k_1": {
+            "e_knn_majority_error": 0.53587,
+            "all_neighbors_different_class_ratio": 0.53587,
+            "all_neighbors_different_class_count": 3160,
+            "label_entropy_mean": 0.0,
+            "label_entropy_quantiles_25_50_75_90": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bayes_error_lower_bound": 0.3492,
+            "bayes_error_ci_95": [
+              0.33783,
+              0.36166
+            ],
+            "macro_f1_upper_bound": 0.71395,
+            "e_1nn_overall": 0.53587,
+            "e_1nn_ci_95": [
+              0.52349,
+              0.54892
+            ]
+          },
+          "k_3": {
+            "e_knn_majority_error": 0.49618,
+            "all_neighbors_different_class_ratio": 0.21791,
+            "all_neighbors_different_class_count": 1285,
+            "label_entropy_mean": 0.8021,
+            "label_entropy_quantiles_25_50_75_90": [
+              0.9183,
+              0.9183,
+              0.9183,
+              1.585
+            ]
+          },
+          "k_5": {
+            "e_knn_majority_error": 0.48872,
+            "all_neighbors_different_class_ratio": 0.11209,
+            "all_neighbors_different_class_count": 661,
+            "label_entropy_mean": 1.03,
+            "label_entropy_quantiles_25_50_75_90": [
+              0.7219,
+              0.971,
+              1.371,
+              1.5219
+            ]
+          },
+          "k_10": {
+            "e_knn_majority_error": 0.45973,
+            "all_neighbors_different_class_ratio": 0.03205,
+            "all_neighbors_different_class_count": 189,
+            "label_entropy_mean": 1.226,
+            "label_entropy_quantiles_25_50_75_90": [
+              0.971,
+              1.3568,
+              1.4855,
+              1.571
+            ]
+          },
+          "k_20": {
+            "e_knn_majority_error": 0.45277,
+            "all_neighbors_different_class_ratio": 0.00763,
+            "all_neighbors_different_class_count": 45,
+            "label_entropy_mean": 1.3346,
+            "label_entropy_quantiles_25_50_75_90": [
+              1.2192,
+              1.371,
+              1.5129,
+              1.5589
+            ]
+          }
+        },
+        "pca_95pct_variance": {
+          "k_1": {
+            "e_knn_majority_error": 0.53485,
+            "all_neighbors_different_class_ratio": 0.53485,
+            "all_neighbors_different_class_count": 3154,
+            "label_entropy_mean": 0.0,
+            "label_entropy_quantiles_25_50_75_90": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "bayes_error_lower_bound": 0.3483,
+            "bayes_error_ci_95": [
+              0.33629,
+              0.36068
+            ],
+            "macro_f1_upper_bound": 0.71712,
+            "e_1nn_overall": 0.53485,
+            "e_1nn_ci_95": [
+              0.52179,
+              0.54791
+            ]
+          },
+          "k_3": {
+            "e_knn_majority_error": 0.49211,
+            "all_neighbors_different_class_ratio": 0.21977,
+            "all_neighbors_different_class_count": 1296,
+            "label_entropy_mean": 0.7997,
+            "label_entropy_quantiles_25_50_75_90": [
+              0.9183,
+              0.9183,
+              0.9183,
+              1.585
+            ]
+          },
+          "k_5": {
+            "e_knn_majority_error": 0.48228,
+            "all_neighbors_different_class_ratio": 0.11124,
+            "all_neighbors_different_class_count": 656,
+            "label_entropy_mean": 1.0275,
+            "label_entropy_quantiles_25_50_75_90": [
+              0.7219,
+              0.971,
+              1.371,
+              1.5219
+            ]
+          },
+          "k_10": {
+            "e_knn_majority_error": 0.4582,
+            "all_neighbors_different_class_ratio": 0.03324,
+            "all_neighbors_different_class_count": 196,
+            "label_entropy_mean": 1.2212,
+            "label_entropy_quantiles_25_50_75_90": [
+              0.971,
+              1.2955,
+              1.4855,
+              1.5219
+            ]
+          },
+          "k_20": {
+            "e_knn_majority_error": 0.44684,
+            "all_neighbors_different_class_ratio": 0.00746,
+            "all_neighbors_different_class_count": 44,
+            "label_entropy_mean": 1.332,
+            "label_entropy_quantiles_25_50_75_90": [
+              1.2192,
+              1.369,
+              1.5,
+              1.5589
+            ]
+          }
+        }
+      }
+    },
+    "S2": {
+      "experiment": "S2_decision_oracle",
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "grid_points": 40,
+      "rounds": 6,
+      "macro_optimization": {
+        "baseline_w_1.5": {
+          "type": "실현(현재방식)",
+          "c": [
+            1.0,
+            1.0,
+            1.5,
+            1.0
+          ],
+          "metrics": {
+            "macro_f1": 0.53185,
+            "accuracy": 0.563,
+            "class_f1": [
+              0.66772,
+              0.47706,
+              0.32769,
+              0.65493
+            ],
+            "pred_counts": [
+              3427,
+              1493,
+              819,
+              158
+            ],
+            "by_days": {
+              "1-7": {
+                "n": 962,
+                "macro_f1": 0.31892,
+                "accuracy": 0.52703
+              },
+              "8-30": {
+                "n": 1292,
+                "macro_f1": 0.47815,
+                "accuracy": 0.57353
+              },
+              "31-90": {
+                "n": 2336,
+                "macro_f1": 0.56406,
+                "accuracy": 0.55736
+              },
+              "91-+": {
+                "n": 1307,
+                "macro_f1": 0.56567,
+                "accuracy": 0.58914
+              }
+            },
+            "diff_macro_f1": 0.0,
+            "ci_macro_f1": [
+              0.0,
+              0.0
+            ],
+            "p_macro_gt_0": 0.0,
+            "diff_accuracy": 0.0,
+            "ci_accuracy": [
+              0.0,
+              0.0
+            ],
+            "p_acc_gt_0": 0.0
+          }
+        },
+        "inner_selected_4d": {
+          "type": "실현(후보)",
+          "c": [
+            1.0,
+            1.3349,
+            1.5745,
+            1.0
+          ],
+          "inner_score": 0.53996,
+          "metrics": {
+            "macro_f1": 0.52957,
+            "accuracy": 0.54604,
+            "class_f1": [
+              0.62759,
+              0.51305,
+              0.31342,
+              0.66423
+            ],
+            "pred_counts": [
+              2829,
+              2198,
+              722,
+              148
+            ],
+            "by_days": {
+              "1-7": {
+                "n": 962,
+                "macro_f1": 0.31225,
+                "accuracy": 0.4948
+              },
+              "8-30": {
+                "n": 1292,
+                "macro_f1": 0.4873,
+                "accuracy": 0.55263
+              },
+              "31-90": {
+                "n": 2336,
+                "macro_f1": 0.55774,
+                "accuracy": 0.54067
+              },
+              "91-+": {
+                "n": 1307,
+                "macro_f1": 0.56783,
+                "accuracy": 0.58684
+              }
+            },
+            "diff_macro_f1": -0.002275,
+            "ci_macro_f1": [
+              -0.010241,
+              0.005523
+            ],
+            "p_macro_gt_0": 0.2794,
+            "diff_accuracy": -0.016958,
+            "ci_accuracy": [
+              -0.025098,
+              -0.009157
+            ],
+            "p_acc_gt_0": 0.0002
+          },
+          "adoption_check": {
+            "passed": false,
+            "delta": -0.00228,
+            "ci_lower_gt_0": false,
+            "max_class_f1_drop": 0.04013,
+            "day17_macro_drop": 0.00667
+          }
+        },
+        "outer_oracle_4d": {
+          "type": "상한(오라클)",
+          "c": [
+            1.0,
+            1.0421,
+            1.5745,
+            0.4958
+          ],
+          "outer_score": 0.54059,
+          "metrics": {
+            "macro_f1": 0.54059,
+            "accuracy": 0.55944,
+            "class_f1": [
+              0.66067,
+              0.48328,
+              0.33774,
+              0.68067
+            ],
+            "pred_counts": [
+              3307,
+              1572,
+              906,
+              112
+            ],
+            "by_days": {
+              "1-7": {
+                "n": 962,
+                "macro_f1": 0.29439,
+                "accuracy": 0.52287
+              },
+              "8-30": {
+                "n": 1292,
+                "macro_f1": 0.47554,
+                "accuracy": 0.56811
+              },
+              "31-90": {
+                "n": 2336,
+                "macro_f1": 0.57918,
+                "accuracy": 0.55479
+              },
+              "91-+": {
+                "n": 1307,
+                "macro_f1": 0.56744,
+                "accuracy": 0.58607
+              }
+            },
+            "diff_macro_f1": 0.008741,
+            "ci_macro_f1": [
+              -0.004016,
+              0.021553
+            ],
+            "p_macro_gt_0": 0.9096,
+            "diff_accuracy": -0.003561,
+            "ci_accuracy": [
+              -0.007461,
+              0.00017
+            ],
+            "p_acc_gt_0": 0.0288
+          }
+        }
+      },
+      "accuracy_optimization": {
+        "baseline_w_1.0": {
+          "type": "실현(현재방식)",
+          "c": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metrics": {
+            "macro_f1": 0.51984,
+            "accuracy": 0.57792,
+            "class_f1": [
+              0.67968,
+              0.4933,
+              0.24895,
+              0.65744
+            ],
+            "pred_counts": [
+              3739,
+              1641,
+              354,
+              163
+            ],
+            "by_days": {
+              "1-7": {
+                "n": 962,
+                "macro_f1": 0.29911,
+                "accuracy": 0.5395
+              },
+              "8-30": {
+                "n": 1292,
+                "macro_f1": 0.45384,
+                "accuracy": 0.58282
+              },
+              "31-90": {
+                "n": 2336,
+                "macro_f1": 0.55647,
+                "accuracy": 0.57449
+              },
+              "91-+": {
+                "n": 1307,
+                "macro_f1": 0.55692,
+                "accuracy": 0.6075
+              }
+            },
+            "diff_macro_f1": 0.0,
+            "ci_macro_f1": [
+              0.0,
+              0.0
+            ],
+            "p_macro_gt_0": 0.0,
+            "diff_accuracy": 0.0,
+            "ci_accuracy": [
+              0.0,
+              0.0
+            ],
+            "p_acc_gt_0": 0.0
+          }
+        },
+        "inner_selected_4d": {
+          "type": "실현(후보)",
+          "c": [
+            1.0,
+            0.8836,
+            0.3871,
+            0.6351
+          ],
+          "inner_score": 0.58365,
+          "metrics": {
+            "macro_f1": 0.47609,
+            "accuracy": 0.58301,
+            "class_f1": [
+              0.69026,
+              0.4898,
+              0.05524,
+              0.66909
+            ],
+            "pred_counts": [
+              4202,
+              1512,
+              34,
+              149
+            ],
+            "by_days": {
+              "1-7": {
+                "n": 962,
+                "macro_f1": 0.26069,
+                "accuracy": 0.56133
+              },
+              "8-30": {
+                "n": 1292,
+                "macro_f1": 0.42232,
+                "accuracy": 0.58901
+              },
+              "31-90": {
+                "n": 2336,
+                "macro_f1": 0.5019,
+                "accuracy": 0.57449
+              },
+              "91-+": {
+                "n": 1307,
+                "macro_f1": 0.51405,
+                "accuracy": 0.60826
+              }
+            },
+            "diff_macro_f1": -0.043748,
+            "ci_macro_f1": [
+              -0.055457,
+              -0.032272
+            ],
+            "p_macro_gt_0": 0.0,
+            "diff_accuracy": 0.005087,
+            "ci_accuracy": [
+              -0.001865,
+              0.012379
+            ],
+            "p_acc_gt_0": 0.9246
+          }
+        },
+        "outer_oracle_4d": {
+          "type": "상한(오라클)",
+          "c": [
+            1.0,
+            0.8136,
+            0.6898,
+            0.6351
+          ],
+          "outer_score": 0.58928,
+          "metrics": {
+            "macro_f1": 0.50406,
+            "accuracy": 0.58928,
+            "class_f1": [
+              0.69879,
+              0.47398,
+              0.16946,
+              0.67399
+            ],
+            "pred_counts": [
+              4261,
+              1309,
+              180,
+              147
+            ],
+            "by_days": {
+              "1-7": {
+                "n": 962,
+                "macro_f1": 0.26038,
+                "accuracy": 0.56549
+              },
+              "8-30": {
+                "n": 1292,
+                "macro_f1": 0.43127,
+                "accuracy": 0.59675
+              },
+              "31-90": {
+                "n": 2336,
+                "macro_f1": 0.53704,
+                "accuracy": 0.58348
+              },
+              "91-+": {
+                "n": 1307,
+                "macro_f1": 0.5497,
+                "accuracy": 0.60979
+              }
+            },
+            "diff_macro_f1": -0.015787,
+            "ci_macro_f1": [
+              -0.025733,
+              -0.006286
+            ],
+            "p_macro_gt_0": 0.0006,
+            "diff_accuracy": 0.011362,
+            "ci_accuracy": [
+              0.004409,
+              0.018484
+            ],
+            "p_acc_gt_0": 0.9992
+          }
+        }
+      }
+    },
+    "S3": {
+      "experiment": "S3_isotonic_oracle",
+      "description": "1-vs-rest IsotonicRegression 확률 보정 오라클 vs INNER 실현",
+      "baseline_w_1.5": {
+        "type": "실현(현재방식)",
+        "metrics": {
+          "macro_f1": 0.53185,
+          "accuracy": 0.563,
+          "class_f1": [
+            0.66772,
+            0.47706,
+            0.32769,
+            0.65493
+          ],
+          "pred_counts": [
+            3427,
+            1493,
+            819,
+            158
+          ],
+          "by_days": {
+            "1-7": {
+              "n": 962,
+              "macro_f1": 0.31892,
+              "accuracy": 0.52703
+            },
+            "8-30": {
+              "n": 1292,
+              "macro_f1": 0.47815,
+              "accuracy": 0.57353
+            },
+            "31-90": {
+              "n": 2336,
+              "macro_f1": 0.56406,
+              "accuracy": 0.55736
+            },
+            "91-+": {
+              "n": 1307,
+              "macro_f1": 0.56567,
+              "accuracy": 0.58914
+            }
+          },
+          "diff_macro_f1": 0.0,
+          "ci_macro_f1": [
+            0.0,
+            0.0
+          ],
+          "p_macro_gt_0": 0.0,
+          "diff_accuracy": 0.0,
+          "ci_accuracy": [
+            0.0,
+            0.0
+          ],
+          "p_acc_gt_0": 0.0
+        }
+      },
+      "inner_calibrated_raw": {
+        "type": "실현(후보_순수argmax)",
+        "metrics": {
+          "macro_f1": 0.49618,
+          "accuracy": 0.58708,
+          "class_f1": [
+            0.70147,
+            0.45295,
+            0.18839,
+            0.64189
+          ],
+          "pred_counts": [
+            4339,
+            1172,
+            216,
+            170
+          ],
+          "by_days": {
+            "1-7": {
+              "n": 962,
+              "macro_f1": 0.2752,
+              "accuracy": 0.56133
+            },
+            "8-30": {
+              "n": 1292,
+              "macro_f1": 0.42167,
+              "accuracy": 0.59907
+            },
+            "31-90": {
+              "n": 2336,
+              "macro_f1": 0.53009,
+              "accuracy": 0.58091
+            },
+            "91-+": {
+              "n": 1307,
+              "macro_f1": 0.5376,
+              "accuracy": 0.6052
+            }
+          },
+          "diff_macro_f1": -0.035672,
+          "ci_macro_f1": [
+            -0.046759,
+            -0.024636
+          ],
+          "p_macro_gt_0": 0.0,
+          "diff_accuracy": 0.02408,
+          "ci_accuracy": [
+            0.014245,
+            0.033576
+          ],
+          "p_acc_gt_0": 1.0
+        },
+        "adoption_check": {
+          "passed": false,
+          "delta": -0.03567,
+          "ci_lower_gt_0": false,
+          "max_class_f1_drop": 0.1393,
+          "day17_macro_drop": 0.04372
+        }
+      },
+      "inner_calibrated_w15": {
+        "type": "실현(후보_w1.5)",
+        "metrics": {
+          "macro_f1": 0.51158,
+          "accuracy": 0.58352,
+          "class_f1": [
+            0.70008,
+            0.44131,
+            0.26328,
+            0.64164
+          ],
+          "pred_counts": [
+            4202,
+            1102,
+            426,
+            167
+          ],
+          "by_days": {
+            "1-7": {
+              "n": 962,
+              "macro_f1": 0.28543,
+              "accuracy": 0.55925
+            },
+            "8-30": {
+              "n": 1292,
+              "macro_f1": 0.44672,
+              "accuracy": 0.60217
+            },
+            "31-90": {
+              "n": 2336,
+              "macro_f1": 0.54153,
+              "accuracy": 0.57406
+            },
+            "91-+": {
+              "n": 1307,
+              "macro_f1": 0.55299,
+              "accuracy": 0.59985
+            }
+          },
+          "diff_macro_f1": -0.02027,
+          "ci_macro_f1": [
+            -0.029522,
+            -0.011193
+          ],
+          "p_macro_gt_0": 0.0,
+          "diff_accuracy": 0.020519,
+          "ci_accuracy": [
+            0.01204,
+            0.029167
+          ],
+          "p_acc_gt_0": 1.0
+        },
+        "adoption_check": {
+          "passed": false,
+          "delta": -0.02027,
+          "ci_lower_gt_0": false,
+          "max_class_f1_drop": 0.06441,
+          "day17_macro_drop": 0.03349
+        }
+      },
+      "outer_oracle_raw": {
+        "type": "상한(오라클_순수argmax)",
+        "metrics": {
+          "macro_f1": 0.51123,
+          "accuracy": 0.59183,
+          "class_f1": [
+            0.70447,
+            0.46163,
+            0.2,
+            0.67883
+          ],
+          "pred_counts": [
+            4311,
+            1203,
+            235,
+            148
+          ],
+          "by_days": {
+            "1-7": {
+              "n": 962,
+              "macro_f1": 0.28344,
+              "accuracy": 0.56653
+            },
+            "8-30": {
+              "n": 1292,
+              "macro_f1": 0.4418,
+              "accuracy": 0.60449
+            },
+            "31-90": {
+              "n": 2336,
+              "macro_f1": 0.54296,
+              "accuracy": 0.58519
+            },
+            "91-+": {
+              "n": 1307,
+              "macro_f1": 0.55434,
+              "accuracy": 0.60979
+            }
+          },
+          "diff_macro_f1": -0.020616,
+          "ci_macro_f1": [
+            -0.031798,
+            -0.00972
+          ],
+          "p_macro_gt_0": 0.0,
+          "diff_accuracy": 0.028828,
+          "ci_accuracy": [
+            0.019667,
+            0.038155
+          ],
+          "p_acc_gt_0": 1.0
+        }
+      },
+      "outer_oracle_w15": {
+        "type": "상한(오라클_w1.5)",
+        "metrics": {
+          "macro_f1": 0.52686,
+          "accuracy": 0.59115,
+          "class_f1": [
+            0.70417,
+            0.45272,
+            0.27658,
+            0.67399
+          ],
+          "pred_counts": [
+            4209,
+            1125,
+            416,
+            147
+          ],
+          "by_days": {
+            "1-7": {
+              "n": 962,
+              "macro_f1": 0.29082,
+              "accuracy": 0.56549
+            },
+            "8-30": {
+              "n": 1292,
+              "macro_f1": 0.46299,
+              "accuracy": 0.60836
+            },
+            "31-90": {
+              "n": 2336,
+              "macro_f1": 0.56129,
+              "accuracy": 0.58476
+            },
+            "91-+": {
+              "n": 1307,
+              "macro_f1": 0.56327,
+              "accuracy": 0.60444
+            }
+          },
+          "diff_macro_f1": -0.004984,
+          "ci_macro_f1": [
+            -0.014166,
+            0.004264
+          ],
+          "p_macro_gt_0": 0.146,
+          "diff_accuracy": 0.02815,
+          "ci_accuracy": [
+            0.019501,
+            0.037138
+          ],
+          "p_acc_gt_0": 1.0
+        }
+      },
+      "gap_analysis": {
+        "s3_raw_oracle_vs_baseline": -0.02062,
+        "s3_w15_oracle_vs_baseline": -0.00499,
+        "explanation": "S3(보정 오라클)과 S2(판정 오라클)의 차이가 확률값의 형상을 고쳐 얻는 몫이며, 1.0과의 차이가 순위 자체가 틀려서 못 고치는 원리적 한계이다."
+      }
+    },
+    "S4": {
+      "experiment": "S4_model_oracle",
+      "models": [
+        "L_base",
+        "M_base",
+        "E_base",
+        "L_b69",
+        "K_base",
+        "TabICL_A"
+      ],
+      "distribution_num_correct_models": {
+        "0": 1306,
+        "1": 576,
+        "2": 421,
+        "3": 463,
+        "4": 503,
+        "5": 908,
+        "6": 1720
+      },
+      "blind_spot_all_wrong_ships": 1306,
+      "blind_spot_all_wrong_ratio": 0.2215,
+      "baseline_L_base": {
+        "type": "실현(기준선)",
+        "metrics": {
+          "macro_f1": 0.53185,
+          "accuracy": 0.563,
+          "class_f1": [
+            0.66772,
+            0.47706,
+            0.32769,
+            0.65493
+          ],
+          "pred_counts": [
+            3427,
+            1493,
+            819,
+            158
+          ],
+          "by_days": {
+            "1-7": {
+              "n": 962,
+              "macro_f1": 0.31892,
+              "accuracy": 0.52703
+            },
+            "8-30": {
+              "n": 1292,
+              "macro_f1": 0.47815,
+              "accuracy": 0.57353
+            },
+            "31-90": {
+              "n": 2336,
+              "macro_f1": 0.56406,
+              "accuracy": 0.55736
+            },
+            "91-+": {
+              "n": 1307,
+              "macro_f1": 0.56567,
+              "accuracy": 0.58914
+            }
+          },
+          "diff_macro_f1": 0.0,
+          "ci_macro_f1": [
+            0.0,
+            0.0
+          ],
+          "p_macro_gt_0": 0.0,
+          "diff_accuracy": 0.0,
+          "ci_accuracy": [
+            0.0,
+            0.0
+          ],
+          "p_acc_gt_0": 0.0
+        }
+      },
+      "inner_selected_ensemble_6m": {
+        "type": "실현(채택후보)",
+        "weights": {
+          "L_base": 0.4,
+          "M_base": 0.02,
+          "E_base": 0.0,
+          "L_b69": 0.4,
+          "K_base": 0.06,
+          "TabICL_A": 0.12
+        },
+        "w": 2.0,
+        "inner_macro_f1": 0.54798,
+        "metrics": {
+          "macro_f1": 0.54524,
+          "accuracy": 0.55944,
+          "class_f1": [
+            0.66472,
+            0.47403,
+            0.36054,
+            0.68165
+          ],
+          "pred_counts": [
+            3260,
+            1334,
+            1162,
+            141
+          ],
+          "by_days": {
+            "1-7": {
+              "n": 962,
+              "macro_f1": 0.32045,
+              "accuracy": 0.52183
+            },
+            "8-30": {
+              "n": 1292,
+              "macro_f1": 0.48997,
+              "accuracy": 0.57198
+            },
+            "31-90": {
+              "n": 2336,
+              "macro_f1": 0.57591,
+              "accuracy": 0.55265
+            },
+            "91-+": {
+              "n": 1307,
+              "macro_f1": 0.58722,
+              "accuracy": 0.58684
+            }
+          },
+          "diff_macro_f1": 0.013387,
+          "ci_macro_f1": [
+            0.003393,
+            0.023181
+          ],
+          "p_macro_gt_0": 0.997,
+          "diff_accuracy": -0.003561,
+          "ci_accuracy": [
+            -0.010683,
+            0.0039
+          ],
+          "p_acc_gt_0": 0.1644
+        },
+        "adoption_check": {
+          "passed": true,
+          "delta": 0.01339,
+          "ci_lower_gt_0": true,
+          "max_class_f1_drop": 0.00303,
+          "day17_macro_drop": -0.00153
+        }
+      },
+      "outer_oracle_weighted_ensemble": {
+        "type": "상한(오라클_가중합)",
+        "weights": {
+          "L_base": 0.2195,
+          "M_base": 0.4634,
+          "E_base": 0.2195,
+          "L_b69": 0.0488,
+          "K_base": 0.0,
+          "TabICL_A": 0.0488
+        },
+        "w": 1.75,
+        "outer_score": 0.55538,
+        "metrics": {
+          "macro_f1": 0.55538,
+          "accuracy": 0.57758,
+          "class_f1": [
+            0.68097,
+            0.47409,
+            0.3481,
+            0.71837
+          ],
+          "pred_counts": [
+            3653,
+            1380,
+            745,
+            119
+          ],
+          "by_days": {
+            "1-7": {
+              "n": 962,
+              "macro_f1": 0.28303,
+              "accuracy": 0.53015
+            },
+            "8-30": {
+              "n": 1292,
+              "macro_f1": 0.4775,
+              "accuracy": 0.58824
+            },
+            "31-90": {
+              "n": 2336,
+              "macro_f1": 0.58384,
+              "accuracy": 0.57663
+            },
+            "91-+": {
+              "n": 1307,
+              "macro_f1": 0.60406,
+              "accuracy": 0.60367
+            }
+          },
+          "diff_macro_f1": 0.023532,
+          "ci_macro_f1": [
+            0.01015,
+            0.037522
+          ],
+          "p_macro_gt_0": 0.9996,
+          "diff_accuracy": 0.014584,
+          "ci_accuracy": [
+            0.006105,
+            0.022554
+          ],
+          "p_acc_gt_0": 0.9994
+        }
+      },
+      "outer_oracle_model_selection": {
+        "type": "상한(가장느슨_모델선택오라클)",
+        "description": "선박마다 6개 모델 중 하나라도 맞히면 정답 처리",
+        "metrics": {
+          "macro_f1": 0.74059,
+          "accuracy": 0.77853,
+          "class_f1": [
+            0.83871,
+            0.73735,
+            0.61341,
+            0.77291
+          ],
+          "pred_counts": [
+            3590,
+            1540,
+            642,
+            125
+          ],
+          "by_days": {
+            "1-7": {
+              "n": 962,
+              "macro_f1": 0.51979,
+              "accuracy": 0.75988
+            },
+            "8-30": {
+              "n": 1292,
+              "macro_f1": 0.67963,
+              "accuracy": 0.76625
+            },
+            "31-90": {
+              "n": 2336,
+              "macro_f1": 0.76618,
+              "accuracy": 0.77825
+            },
+            "91-+": {
+              "n": 1307,
+              "macro_f1": 0.78317,
+              "accuracy": 0.8049
+            }
+          },
+          "diff_macro_f1": 0.208743,
+          "ci_macro_f1": [
+            0.194944,
+            0.222785
+          ],
+          "p_macro_gt_0": 1.0,
+          "diff_accuracy": 0.215533,
+          "ci_accuracy": [
+            0.20502,
+            0.226047
+          ],
+          "p_acc_gt_0": 1.0
+        }
+      }
+    },
+    "S5": {
+      "experiment": "S5_model_capacity",
+      "description": "FIT 자기 예측과 OUTER 예측의 일반화 갭 비교 (진단용)",
+      "interpretation": "FIT 점수 자체가 높지 않다면 모델 용량 부족(언더피팅), FIT은 매우 높은데 OUTER가 낮다면 일반화 한계(과적합/특징 중복/누락 정보).",
+      "w_1.5_macro_mode": {
+        "fit_macro_f1": 0.87017,
+        "fit_accuracy": 0.87141,
+        "fit_class_f1": [
+          0.89266,
+          0.84284,
+          0.85833,
+          0.88684
+        ],
+        "outer_macro_f1": 0.53185,
+        "outer_accuracy": 0.563,
+        "outer_class_f1": [
+          0.66772,
+          0.47706,
+          0.32769,
+          0.65493
+        ],
+        "gap_macro_f1_fit_minus_outer": 0.33832,
+        "gap_accuracy_fit_minus_outer": 0.30841
+      },
+      "w_1.0_acc_mode": {
+        "fit_macro_f1": 0.86856,
+        "fit_accuracy": 0.87491,
+        "fit_class_f1": [
+          0.8921,
+          0.85291,
+          0.86242,
+          0.86682
+        ],
+        "outer_macro_f1": 0.51984,
+        "outer_accuracy": 0.57792,
+        "outer_class_f1": [
+          0.67968,
+          0.4933,
+          0.24895,
+          0.65744
+        ],
+        "gap_macro_f1_fit_minus_outer": 0.34872,
+        "gap_accuracy_fit_minus_outer": 0.29699
+      }
+    },
+    "S6": {
+      "experiment": "S6_large_capacity_model",
+      "description": "305개 전체 특징 및 num_leaves=127, lr=0.01 대형 LightGBM 모델의 공정 평가 (선택은 INNER)",
+      "features_count": 305,
+      "seeds": [
+        42,
+        2026,
+        7,
+        1,
+        2024
+      ],
+      "avg_trees_used": 303.4,
+      "inner_selected_w": 2.0,
+      "inner_score": 0.53715,
+      "macro_mode_w_selected": {
+        "outer_macro_f1": 0.54843,
+        "outer_accuracy": 0.58436,
+        "outer_class_f1": [
+          0.68871,
+          0.4917,
+          0.34663,
+          0.66667
+        ],
+        "diff_vs_baseline_w15": 0.01658,
+        "ci_95": [
+          0.00274,
+          0.030396
+        ],
+        "p_gt_0": 0.9922,
+        "adoption_candidate_check": {
+          "passed": true,
+          "delta": 0.01658,
+          "ci_lower_gt_0": true,
+          "ci_95": [
+            0.00274,
+            0.030396
+          ],
+          "max_class_f1_drop": -0.01174
+        }
+      },
+      "acc_mode_w_1.0": {
+        "outer_accuracy": 0.59183,
+        "outer_macro_f1": 0.52179,
+        "outer_class_f1": [
+          0.69519,
+          0.50428,
+          0.21111,
+          0.67658
+        ],
+        "diff_vs_baseline_w10": 0.01391,
+        "ci_95": [
+          0.006779,
+          0.021371
+        ],
+        "p_gt_0": 1.0
+      }
+    },
+    "S7": {
+      "experiment": "S7_temporal_split_stability",
+      "description": "동일 선박 1~3월(전반기) vs 4~6월(후반기) B69 예측 일치율 및 안정성 바닥 진단",
+      "sample_counts": {
+        "valid_ships_obs_days_ge_7_both_halves": 4460,
+        "evaluated_outer_ships": 3560
+      },
+      "cosine_similarity_distribution": {
+        "mean": 0.9402,
+        "median": 0.9826,
+        "p10": 0.8195,
+        "p25": 0.9329,
+        "p75": 0.9959,
+        "p90": 0.9988
+      },
+      "prediction_agreement": {
+        "overall_agreement_ratio": 0.65365,
+        "agreement_by_class": {
+          "연안복합": 0.68228,
+          "자망": 0.64274,
+          "통발": 0.58719,
+          "채낚기연승낚시": 0.69014
+        }
+      },
+      "accuracy_breakdown": {
+        "h1_accuracy": 0.48792,
+        "h2_accuracy": 0.50253,
+        "both_correct_ratio": 0.36011,
+        "only_h1_correct_ratio": 0.12781,
+        "only_h2_correct_ratio": 0.14242,
+        "both_wrong_ratio": 0.36966,
+        "interpretation": "'둘 다 맞은 비율'은 기간이 바뀌어도 모델이 동일하게 정답을 유지할 수 있는 데이터 자체의 안정적 상한을 의미함."
+      },
+      "limitation_note": "B69 행동 특징만으로 측정한 수치이므로 F156을 포함한 본 모델 전체의 상한이 아니며 데이터의 계절적 흔들림 방향성을 진단하기 위한 참고치임."
+    },
+    "S8": {
+      "experiment": "S8_class_sensitivity",
+      "baseline_08_ensemble": {
+        "macro_f1": 0.54307,
+        "accuracy": 0.56469,
+        "class_f1": [
+          0.66677,
+          0.4841,
+          0.34502,
+          0.67636
+        ]
+      },
+      "single_class_perfect_oracle": {
+        "연안복합": {
+          "class_id": 0,
+          "target_n_vessels": 2920,
+          "macro_f1": 0.85361,
+          "delta_macro_f1": 0.31054,
+          "ci_macro_f1": [
+            0.296339,
+            0.325177
+          ],
+          "accuracy": 0.91843,
+          "delta_accuracy": 0.35374,
+          "ci_accuracy": [
+            0.34119,
+            0.365614
+          ],
+          "class_f1": [
+            1.0,
+            0.8827,
+            0.75195,
+            0.77978
+          ]
+        },
+        "자망": {
+          "class_id": 1,
+          "target_n_vessels": 2016,
+          "macro_f1": 0.80312,
+          "delta_macro_f1": 0.26005,
+          "ci_macro_f1": [
+            0.246797,
+            0.273836
+          ],
+          "accuracy": 0.8701,
+          "delta_accuracy": 0.30541,
+          "ci_accuracy": [
+            0.29337,
+            0.316602
+          ],
+          "class_f1": [
+            0.87398,
+            1.0,
+            0.54779,
+            0.7907
+          ]
+        },
+        "통발": {
+          "class_id": 2,
+          "target_n_vessels": 835,
+          "macro_f1": 0.79069,
+          "delta_macro_f1": 0.24762,
+          "ci_macro_f1": [
+            0.234943,
+            0.260819
+          ],
+          "accuracy": 0.76106,
+          "delta_accuracy": 0.19637,
+          "ci_accuracy": [
+            0.186531,
+            0.206715
+          ],
+          "class_f1": [
+            0.77945,
+            0.61924,
+            1.0,
+            0.76404
+          ]
+        },
+        "채낚기연승낚시": {
+          "class_id": 3,
+          "target_n_vessels": 126,
+          "macro_f1": 0.63258,
+          "delta_macro_f1": 0.08952,
+          "ci_macro_f1": [
+            0.072495,
+            0.107706
+          ],
+          "accuracy": 0.57979,
+          "delta_accuracy": 0.01509,
+          "ci_accuracy": [
+            0.01204,
+            0.018145
+          ],
+          "class_f1": [
+            0.67114,
+            0.49658,
+            0.36261,
+            1.0
+          ]
+        }
+      },
+      "pair_perfect_separation_oracle": {
+        "연안복합-자망": {
+          "pair": [
+            0,
+            1
+          ],
+          "resolved_errors": 1346,
+          "macro_f1": 0.69452,
+          "delta_macro_f1": 0.15145,
+          "ci_macro_f1": [
+            0.144646,
+            0.158245
+          ],
+          "accuracy": 0.79295,
+          "delta_accuracy": 0.22825,
+          "ci_accuracy": [
+            0.217568,
+            0.238935
+          ],
+          "class_f1": [
+            0.87398,
+            0.8827,
+            0.34502,
+            0.67636
+          ]
+        },
+        "연안복합-통발": {
+          "pair": [
+            0,
+            2
+          ],
+          "resolved_errors": 712,
+          "macro_f1": 0.67297,
+          "delta_macro_f1": 0.1299,
+          "ci_macro_f1": [
+            0.121921,
+            0.137806
+          ],
+          "accuracy": 0.68543,
+          "delta_accuracy": 0.12074,
+          "ci_accuracy": [
+            0.1126,
+            0.129218
+          ],
+          "class_f1": [
+            0.77945,
+            0.4841,
+            0.75195,
+            0.67636
+          ]
+        },
+        "자망-통발": {
+          "pair": [
+            1,
+            2
+          ],
+          "resolved_errors": 420,
+          "macro_f1": 0.62754,
+          "delta_macro_f1": 0.08448,
+          "ci_macro_f1": [
+            0.077118,
+            0.091974
+          ],
+          "accuracy": 0.63592,
+          "delta_accuracy": 0.07122,
+          "ci_accuracy": [
+            0.064779,
+            0.077836
+          ],
+          "class_f1": [
+            0.66677,
+            0.61924,
+            0.54779,
+            0.67636
+          ]
+        }
+      },
+      "chaenak_sample_sensitivity": {
+        "cohort_size": 126,
+        "total_outer_ships": 5897,
+        "cohort_ratio": 0.0214,
+        "f1_weight_in_macro": 0.25,
+        "theoretical_macro_impact_per_0.05_f1": 0.0125,
+        "single_ship_f1_impact_approx": 0.00198,
+        "note": "채낚기는 126척(전체의 2.1%)에 불과하지만 macro-F1에서는 동일한 25% 가중치를 가지므로 단 1척의 오류가 macro-F1 약 0.002에 해당하는 강한 레버리지를 가짐."
+      }
+    }
+  }
+}

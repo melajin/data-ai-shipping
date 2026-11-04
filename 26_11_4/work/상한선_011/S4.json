@@ -1,0 +1,262 @@
+{
+  "experiment": "S4_model_oracle",
+  "models": [
+    "L_base",
+    "M_base",
+    "E_base",
+    "L_b69",
+    "K_base",
+    "TabICL_A"
+  ],
+  "distribution_num_correct_models": {
+    "0": 1306,
+    "1": 576,
+    "2": 421,
+    "3": 463,
+    "4": 503,
+    "5": 908,
+    "6": 1720
+  },
+  "blind_spot_all_wrong_ships": 1306,
+  "blind_spot_all_wrong_ratio": 0.2215,
+  "baseline_L_base": {
+    "type": "실현(기준선)",
+    "metrics": {
+      "macro_f1": 0.53185,
+      "accuracy": 0.563,
+      "class_f1": [
+        0.66772,
+        0.47706,
+        0.32769,
+        0.65493
+      ],
+      "pred_counts": [
+        3427,
+        1493,
+        819,
+        158
+      ],
+      "by_days": {
+        "1-7": {
+          "n": 962,
+          "macro_f1": 0.31892,
+          "accuracy": 0.52703
+        },
+        "8-30": {
+          "n": 1292,
+          "macro_f1": 0.47815,
+          "accuracy": 0.57353
+        },
+        "31-90": {
+          "n": 2336,
+          "macro_f1": 0.56406,
+          "accuracy": 0.55736
+        },
+        "91-+": {
+          "n": 1307,
+          "macro_f1": 0.56567,
+          "accuracy": 0.58914
+        }
+      },
+      "diff_macro_f1": 0.0,
+      "ci_macro_f1": [
+        0.0,
+        0.0
+      ],
+      "p_macro_gt_0": 0.0,
+      "diff_accuracy": 0.0,
+      "ci_accuracy": [
+        0.0,
+        0.0
+      ],
+      "p_acc_gt_0": 0.0
+    }
+  },
+  "inner_selected_ensemble_6m": {
+    "type": "실현(채택후보)",
+    "weights": {
+      "L_base": 0.4,
+      "M_base": 0.02,
+      "E_base": 0.0,
+      "L_b69": 0.4,
+      "K_base": 0.06,
+      "TabICL_A": 0.12
+    },
+    "w": 2.0,
+    "inner_macro_f1": 0.54798,
+    "metrics": {
+      "macro_f1": 0.54524,
+      "accuracy": 0.55944,
+      "class_f1": [
+        0.66472,
+        0.47403,
+        0.36054,
+        0.68165
+      ],
+      "pred_counts": [
+        3260,
+        1334,
+        1162,
+        141
+      ],
+      "by_days": {
+        "1-7": {
+          "n": 962,
+          "macro_f1": 0.32045,
+          "accuracy": 0.52183
+        },
+        "8-30": {
+          "n": 1292,
+          "macro_f1": 0.48997,
+          "accuracy": 0.57198
+        },
+        "31-90": {
+          "n": 2336,
+          "macro_f1": 0.57591,
+          "accuracy": 0.55265
+        },
+        "91-+": {
+          "n": 1307,
+          "macro_f1": 0.58722,
+          "accuracy": 0.58684
+        }
+      },
+      "diff_macro_f1": 0.013387,
+      "ci_macro_f1": [
+        0.003393,
+        0.023181
+      ],
+      "p_macro_gt_0": 0.997,
+      "diff_accuracy": -0.003561,
+      "ci_accuracy": [
+        -0.010683,
+        0.0039
+      ],
+      "p_acc_gt_0": 0.1644
+    },
+    "adoption_check": {
+      "passed": true,
+      "delta": 0.01339,
+      "ci_lower_gt_0": true,
+      "max_class_f1_drop": 0.00303,
+      "day17_macro_drop": -0.00153
+    }
+  },
+  "outer_oracle_weighted_ensemble": {
+    "type": "상한(오라클_가중합)",
+    "weights": {
+      "L_base": 0.2195,
+      "M_base": 0.4634,
+      "E_base": 0.2195,
+      "L_b69": 0.0488,
+      "K_base": 0.0,
+      "TabICL_A": 0.0488
+    },
+    "w": 1.75,
+    "outer_score": 0.55538,
+    "metrics": {
+      "macro_f1": 0.55538,
+      "accuracy": 0.57758,
+      "class_f1": [
+        0.68097,
+        0.47409,
+        0.3481,
+        0.71837
+      ],
+      "pred_counts": [
+        3653,
+        1380,
+        745,
+        119
+      ],
+      "by_days": {
+        "1-7": {
+          "n": 962,
+          "macro_f1": 0.28303,
+          "accuracy": 0.53015
+        },
+        "8-30": {
+          "n": 1292,
+          "macro_f1": 0.4775,
+          "accuracy": 0.58824
+        },
+        "31-90": {
+          "n": 2336,
+          "macro_f1": 0.58384,
+          "accuracy": 0.57663
+        },
+        "91-+": {
+          "n": 1307,
+          "macro_f1": 0.60406,
+          "accuracy": 0.60367
+        }
+      },
+      "diff_macro_f1": 0.023532,
+      "ci_macro_f1": [
+        0.01015,
+        0.037522
+      ],
+      "p_macro_gt_0": 0.9996,
+      "diff_accuracy": 0.014584,
+      "ci_accuracy": [
+        0.006105,
+        0.022554
+      ],
+      "p_acc_gt_0": 0.9994
+    }
+  },
+  "outer_oracle_model_selection": {
+    "type": "상한(가장느슨_모델선택오라클)",
+    "description": "선박마다 6개 모델 중 하나라도 맞히면 정답 처리",
+    "metrics": {
+      "macro_f1": 0.74059,
+      "accuracy": 0.77853,
+      "class_f1": [
+        0.83871,
+        0.73735,
+        0.61341,
+        0.77291
+      ],
+      "pred_counts": [
+        3590,
+        1540,
+        642,
+        125
+      ],
+      "by_days": {
+        "1-7": {
+          "n": 962,
+          "macro_f1": 0.51979,
+          "accuracy": 0.75988
+        },
+        "8-30": {
+          "n": 1292,
+          "macro_f1": 0.67963,
+          "accuracy": 0.76625
+        },
+        "31-90": {
+          "n": 2336,
+          "macro_f1": 0.76618,
+          "accuracy": 0.77825
+        },
+        "91-+": {
+          "n": 1307,
+          "macro_f1": 0.78317,
+          "accuracy": 0.8049
+        }
+      },
+      "diff_macro_f1": 0.208743,
+      "ci_macro_f1": [
+        0.194944,
+        0.222785
+      ],
+      "p_macro_gt_0": 1.0,
+      "diff_accuracy": 0.215533,
+      "ci_accuracy": [
+        0.20502,
+        0.226047
+      ],
+      "p_acc_gt_0": 1.0
+    }
+  }
+}

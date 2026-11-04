@@ -1,0 +1,32 @@
+{
+  "checked_on": "2026-10-13",
+  "scope": "document_structure_links_sources_only",
+  "new_markdown_notes": 8,
+  "new_markdown_characters": 53319,
+  "local_links_checked": 134,
+  "pdf_page_links_checked": 59,
+  "pdf_page_counts": {
+    "01_참가신청서_가이드와_제안서_통합본.pdf": 6,
+    "02_항적데이터_전처리와_모델설계_통합본.pdf": 26,
+    "어선항적과제_이해가이드.pdf": 16
+  },
+  "source_pdf_hashes_match": true,
+  "existing_index_entries_verified": true,
+  "errors": [],
+  "model_retrained": false,
+  "software_tests_rerun": false,
+  "real_data_evaluated": false,
+  "obsidian_visual_preview_verified": false,
+  "new_markdown_sha256": {
+    "어선 항적 통합 학습 가이드.md": "9de3e78453926bfbf6b7923fd152be00ff1fde4fa8e0b1cfd8bf10a54bd49917",
+    "docs\\fishing_integration\\01_과제와_현재상태.md": "e0f6df6ea96fb36d9e2cd86fc0be027aafccb9f605453df2cebc32f6801375e8",
+    "docs\\fishing_integration\\02_데이터와_전처리.md": "adc30529392b572779731c0e46cd030f596d5863fdc6d52604a50217467d0a75",
+    "docs\\fishing_integration\\03_모델과_현재구현.md": "c4563388432092a1d0d88d222a82776a9569c9fc02a360e30fe09c04db295fc6",
+    "docs\\fishing_integration\\04_평가와_후속실험.md": "b355aac856f952d4d5e4e6540149ceb27f77edbf6229be2d06ee6c195c7064fc",
+    "docs\\fishing_integration\\05_제안서와_학습활동.md": "8f146f0e3d60bc32cd5c9351c5a45f2bf8377f5003b5c16efc5ac86481f386e9",
+    "docs\\fishing_integration\\99_출처와_통합판단.md": "530212f37d27b0ddcbd481af3ab44064999001046d1ab98cb6166a9ce0d208b1",
+    "docs\\fishing_integration\\통합_검증기록.md": "1a388bc4748b30271cfbe5227ff3105becad6aeb27309693942b2bd394fd17ac"
+  },
+  "task_pdf_intermediates_removed": false,
+  "temporary_cleanup_policy_blocked": true
+}

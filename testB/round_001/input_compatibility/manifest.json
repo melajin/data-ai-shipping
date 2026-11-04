@@ -1,33 +1,33 @@
 {
-  "run_started_utc": "2026-11-04T17:48:29.799292+00:00",
-  "run_finished_utc": "2026-11-04T17:50:01.311668+00:00",
+  "run_started_utc": "2026-11-04T17:50:35.167386+00:00",
+  "run_finished_utc": "2026-11-04T17:52:03.246763+00:00",
   "exit_code_intended": 0,
   "status": "succeeded",
   "artifacts": [
     {
       "path": "testB\\round_001\\input_compatibility\\csv_identity.csv",
-      "bytes": 10989,
-      "sha256": "e647094c9a6160a78c9f9af75dacf21ab071a1891411df70c3bde2931d0c0f33"
+      "bytes": 10988,
+      "sha256": "7f5e4ba8f502140fbcdd1f321e3368664582adffd05f25c201e9a1b849439714"
     },
     {
       "path": "testB\\round_001\\input_compatibility\\finished_utc.txt",
       "bytes": 33,
-      "sha256": "fe8157a144cb69437e0029b1e5fa3b6b886dc74928c3d0c18cfa23038a018134"
+      "sha256": "0300eb684e7e1ea706e9c3ccdfd49d33287a12812823d897d3c66c7642ab5ef6"
     },
     {
       "path": "testB\\round_001\\input_compatibility\\run_comparison.py",
-      "bytes": 18795,
-      "sha256": "024a1d13a2e31257e9a983e65c63ac3b6c22ad60709f248b4b62060673a21dec"
+      "bytes": 18791,
+      "sha256": "5a5dce6e36a267b02f1779813ff30d82e33544a409ecfdcc7a9b4d2c62c8459a"
     },
     {
       "path": "testB\\round_001\\input_compatibility\\started_utc.txt",
       "bytes": 33,
-      "sha256": "b2727af2201b91fd95f3e1c8593a23fd45e48db30eb3cdf69c5644bf9fe5e72d"
+      "sha256": "8e98c3414681f99e75af25eef89f1512a7d69d2a78141fdc1dc0fa8f0a28c39d"
     },
     {
       "path": "testB\\round_001\\input_compatibility\\summary.json",
       "bytes": 15715,
-      "sha256": "44277dcb55816d3cdd62b6a47e1f8045f3b2ab3de3b9dc4a00054d5a867c039e"
+      "sha256": "3a027f7b12e3e22871b51401ce526db33a5c884fc8e29605fa03204be7704882"
     },
     {
       "path": "testB\\round_001\\input_compatibility\\workbook_cell_differences.csv",

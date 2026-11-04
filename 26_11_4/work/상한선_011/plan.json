@@ -1,0 +1,25 @@
+{
+  "warning": "핵심 주의 — 이 실험이 내는 수치는 '달성 가능한 성능'이 아니다. 여기서 재는 상한의 상당수는 OUTER(평가용 배)의 정답을 직접 보고 최적화해서 얻는다. 이것은 지금까지 지켜 온 '선택은 INNER에서만' 규칙을 의도적으로 위반하는 것이다. 보고서·발표·제출 어디에도 이 숫자를 성능으로 쓰지 않는다. 모든 표의 열 이름에 반드시 상한(오라클)을 붙인다. 상한이 높게 나왔다고 해서 그 설정을 채택하지 않는다. 채택은 기존 기준 (Δ≥+0.005 and 대응 95% 구간 하한 > 0, 선택은 INNER)으로만 한다.",
+  "fixed_settings": {
+    "evaluation_target": "개발 5,897척의 3-fold OUTER 연결",
+    "num_ships": 5897,
+    "label_mapping": {
+      "0": "연안복합",
+      "1": "자망",
+      "2": "통발",
+      "3": "채낚기연승낚시"
+    },
+    "primary_metric": "macro_f1",
+    "secondary_metric": "micro_f1_accuracy",
+    "boot_seed": 20261104,
+    "n_bootstrap": 5000,
+    "imputation_rule": "각 fold의 FIT 중앙값 대체 (OUTER 통계 사용 금지)",
+    "standardization_rule": "거리 기반 실험(S1)에서만 FIT 평균·표준편차 기준"
+  },
+  "preconditions_status": {
+    "2-1_outer_L_base_macro_f1_0.53185": "PASS (0.5318490)",
+    "2-2_tabicl_y_true_match_train_labels": "PASS (5897/5897 전수 일치)",
+    "2-3_label_order_check": "PASS (0:연안복합, 1:자망, 2:통발, 3:채낚기연승낚시)"
+  },
+  "created_at": "2026-11-04T19:01:00"
+}

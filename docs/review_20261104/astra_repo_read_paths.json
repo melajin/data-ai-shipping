@@ -1,0 +1,206 @@
+{
+  "read_paths": [
+    "D:/repos/fishing-track-classification/AGENTS.md",
+    "D:/repos/fishing-track-classification/handoff/inbox/007_testA_submission.md",
+    "D:/repos/fishing-track-classification/handoff/inbox/008_testB_minimal.md",
+    "D:/repos/fishing-track-classification/handoff/outbox/007_report.md",
+    "D:/repos/fishing-track-classification/handoff/outbox/008_report.md",
+    "D:/repos/fishing-track-classification/handoff/outbox/009_report.md",
+    "D:/repos/fishing-track-classification/handoff/outbox/010_report.md",
+    "D:/repos/fishing-track-classification/handoff/outbox/011_report.md",
+    "D:/repos/fishing-track-classification/handoff/outbox/012_report.md",
+    "D:/repos/fishing-track-classification/handoff/outbox/013_final_report_실행위치.md",
+    "D:/repos/fishing-track-classification/handoff/outbox/014_report.md",
+    "D:/repos/fishing-track-classification/handoff/outbox/015_016_report.md",
+    "D:/repos/fishing-track-classification/handoff/progress/007.md",
+    "D:/repos/fishing-track-classification/handoff/progress/008.md",
+    "D:/repos/fishing-track-classification/handoff/progress/011.md",
+    "D:/repos/fishing-track-classification/handoff/prompts/EXECUTOR_PROMPT.md",
+    "D:/repos/fishing-track-classification/handoff/prompts/README.md",
+    "D:/repos/fishing-track-classification/handoff/prompts/reviewer_log.md",
+    "D:/repos/fishing-track-classification/handoff/prompts/REVIEWER_PROMPT.md",
+    "D:/repos/fishing-track-classification/handoff/prompts/재시작_안내.md",
+    "D:/repos/fishing-track-classification/README.md",
+    "D:/repos/fishing-track-classification/ROLES.md",
+    "D:/repos/fishing-track-classification/STATUS.md",
+    "D:/repos/fishing-track-classification/team/3단계_공통입력_대조진단_결과_20261101.md"
+  ],
+  "records": [
+    {
+      "path": "D:/repos/fishing-track-classification/AGENTS.md",
+      "relative_path": "AGENTS.md",
+      "mode": "full_text",
+      "sha256": "ccd315e836f06eb09a7f1e6a7bc4fc527f6affeb893090de8b2678786a7e084a"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/inbox/007_testA_submission.md",
+      "relative_path": "handoff/inbox/007_testA_submission.md",
+      "mode": "full_text",
+      "sha256": "0223a30323768c45009356504cdd42cc6cfa3c9afe7f2c1362b1773a29eabf68"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/inbox/008_testB_minimal.md",
+      "relative_path": "handoff/inbox/008_testB_minimal.md",
+      "mode": "full_text",
+      "sha256": "caea22f93f781d9c5e7c0f366dd54374184ab04d5dff7e888f3c8f3e5db9447b"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/outbox/007_report.md",
+      "relative_path": "handoff/outbox/007_report.md",
+      "mode": "full_text",
+      "sha256": "cda6a7096fb0b1ee22eef0dfb4bf045f353a9149b3bf8fbf5fcdb72c69c5751f"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/outbox/008_report.md",
+      "relative_path": "handoff/outbox/008_report.md",
+      "mode": "full_text",
+      "sha256": "08d8518429350a813a9bb8c1eacb176f35da22966ad1b1e1a2e86ffb77580943"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/outbox/009_report.md",
+      "relative_path": "handoff/outbox/009_report.md",
+      "mode": "full_text",
+      "sha256": "11ef43bb434f1f48243448e7e8586a4c97f2b42280eebbb662746d134e0af475"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/outbox/010_report.md",
+      "relative_path": "handoff/outbox/010_report.md",
+      "mode": "full_text",
+      "sha256": "618c7a4c92d96d797d2ac180115d8a00cb4fc4cd1776539be93b48dbce1d8643"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/outbox/011_report.md",
+      "relative_path": "handoff/outbox/011_report.md",
+      "mode": "full_text",
+      "sha256": "beffb0132b62a63edf0fe0b0da60c260f2c6a75a59da44bd8d5caf5c24cb5af3"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/outbox/012_report.md",
+      "relative_path": "handoff/outbox/012_report.md",
+      "mode": "full_text",
+      "sha256": "4d2fb604b5449b455614cdf0cd1844dbac332e0efdc8b049de2abcbca822aefb"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/outbox/013_final_report_실행위치.md",
+      "relative_path": "handoff/outbox/013_final_report_실행위치.md",
+      "mode": "full_text",
+      "sha256": "e6bfe6b24b12fe9e3b22ee10c425b37a7fa213f68660af81a5bb177878fbb3bd"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/outbox/014_report.md",
+      "relative_path": "handoff/outbox/014_report.md",
+      "mode": "full_text",
+      "sha256": "8ce851cfe558ddde8b4d1a21e6f92730d6ffda58b4096e5f2e5b7377b5c51533"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/outbox/015_016_report.md",
+      "relative_path": "handoff/outbox/015_016_report.md",
+      "mode": "full_text",
+      "sha256": "637282ee72c8af9c95983f006d0e1762468d29f245e8f791092e2e1aea586d9b"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/progress/007.md",
+      "relative_path": "handoff/progress/007.md",
+      "mode": "full_text",
+      "sha256": "a07a21122c33d11bf14f1975147dee61693ea03c22cffc807ba1395938748fc7"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/progress/008.md",
+      "relative_path": "handoff/progress/008.md",
+      "mode": "full_text",
+      "sha256": "ab7a81d2cce0c40d7179ae537b3c0065b2f7654309b20d72a66ea020baa51e0c"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/progress/011.md",
+      "relative_path": "handoff/progress/011.md",
+      "mode": "full_text",
+      "sha256": "5265a339c9d060fd0aabb7387eca855935c9e163fe00a66f0e15301db89aad0f"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/prompts/EXECUTOR_PROMPT.md",
+      "relative_path": "handoff/prompts/EXECUTOR_PROMPT.md",
+      "mode": "full_text",
+      "sha256": "4e3bacda1bb6371960491da78e83479309fb6ddb1d4c9f1f48cf12868eeae4e1"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/prompts/README.md",
+      "relative_path": "handoff/prompts/README.md",
+      "mode": "full_text",
+      "sha256": "cd5f194d7dce1fdd525dab13e0233c761f125102915a542587e2fc7b53ead755"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/prompts/reviewer_log.md",
+      "relative_path": "handoff/prompts/reviewer_log.md",
+      "mode": "full_text",
+      "sha256": "7f3ad90db3ad6d7b8f910ca971f7bbb94ada55408ac27f873d48843b040f2c92"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/prompts/REVIEWER_PROMPT.md",
+      "relative_path": "handoff/prompts/REVIEWER_PROMPT.md",
+      "mode": "full_text",
+      "sha256": "4c176e499830a63bd005b6a32d13e5cbaf51df3d6bb53fb3c7daa0cc03a6ccbe"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/handoff/prompts/재시작_안내.md",
+      "relative_path": "handoff/prompts/재시작_안내.md",
+      "mode": "full_text",
+      "sha256": "74fa9d94bbb0cc3585c7af561dcad6f97b0acd291443ed309fce69a81e17622d"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/README.md",
+      "relative_path": "README.md",
+      "mode": "full_text",
+      "sha256": "57776f196eddc1e66303cd9efde49e392ae918563f6b8c9d5daf0ca41eb925e3"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/ROLES.md",
+      "relative_path": "ROLES.md",
+      "mode": "full_text",
+      "sha256": "6efdb168437cac70b0a2e8f8373c153e449da3b7ea314cf0c868bcc140bd1eb5"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/STATUS.md",
+      "relative_path": "STATUS.md",
+      "mode": "full_text",
+      "sha256": "0ad092d900245c3ca1c3bdafd52af46cac6724f0a6bd06c0a19490d5cd0d25ac"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/team/3단계_공통입력_대조진단_결과_20261101.md",
+      "relative_path": "team/3단계_공통입력_대조진단_결과_20261101.md",
+      "mode": "full_text",
+      "sha256": "1692da2b7d04373aafb236c88259e7df89434c0ff4b342127df5a13448c6d738"
+    }
+  ],
+  "supplemental": [
+    {
+      "path": "D:/repos/fishing-track-classification/code/tools/run_016_t5_testperiod_gapfill_20261102.py",
+      "mode": "full_source"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/code/tools/run_018_submission_s6_acc_20261104.py",
+      "mode": "full_source"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py",
+      "mode": "excerpt",
+      "lines": [
+        "160-230",
+        "360-535",
+        "590-635"
+      ]
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/results/submission_20261104_s6_acc/submit_report.json",
+      "mode": "full_json"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/outputs/f156_merge/for_teammate/production_t5_v4.csv",
+      "mode": "read_only_split_source_count"
+    }
+  ],
+  "exclusions": [
+    "raw datasets full re-evaluation",
+    "image pixel inspection",
+    "external linked team JSON and figures"
+  ]
+}

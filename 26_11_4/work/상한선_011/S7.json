@@ -1,0 +1,35 @@
+{
+  "experiment": "S7_temporal_split_stability",
+  "description": "동일 선박 1~3월(전반기) vs 4~6월(후반기) B69 예측 일치율 및 안정성 바닥 진단",
+  "sample_counts": {
+    "valid_ships_obs_days_ge_7_both_halves": 4460,
+    "evaluated_outer_ships": 3560
+  },
+  "cosine_similarity_distribution": {
+    "mean": 0.9402,
+    "median": 0.9826,
+    "p10": 0.8195,
+    "p25": 0.9329,
+    "p75": 0.9959,
+    "p90": 0.9988
+  },
+  "prediction_agreement": {
+    "overall_agreement_ratio": 0.65365,
+    "agreement_by_class": {
+      "연안복합": 0.68228,
+      "자망": 0.64274,
+      "통발": 0.58719,
+      "채낚기연승낚시": 0.69014
+    }
+  },
+  "accuracy_breakdown": {
+    "h1_accuracy": 0.48792,
+    "h2_accuracy": 0.50253,
+    "both_correct_ratio": 0.36011,
+    "only_h1_correct_ratio": 0.12781,
+    "only_h2_correct_ratio": 0.14242,
+    "both_wrong_ratio": 0.36966,
+    "interpretation": "'둘 다 맞은 비율'은 기간이 바뀌어도 모델이 동일하게 정답을 유지할 수 있는 데이터 자체의 안정적 상한을 의미함."
+  },
+  "limitation_note": "B69 행동 특징만으로 측정한 수치이므로 F156을 포함한 본 모델 전체의 상한이 아니며 데이터의 계절적 흔들림 방향성을 진단하기 위한 참고치임."
+}

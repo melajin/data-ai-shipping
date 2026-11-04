@@ -1,0 +1,539 @@
+{
+  "scope": "Selected synthetic calculations, finite differences and algae-extension document structure; no actual model training or device measurement",
+  "checks": [
+    {
+      "name": "M19 total cells",
+      "condition": "3 m3 at 50 cells/mL",
+      "expected": 150000000.0,
+      "observed": 150000000.0,
+      "passed": true
+    },
+    {
+      "name": "M19 outflow concentration",
+      "condition": "Well-mixed removal of 1 m3; no growth or inflow",
+      "expected": 50,
+      "observed": 50.0,
+      "passed": true
+    },
+    {
+      "name": "M19 daily volume",
+      "condition": "Q=2 m3/s",
+      "expected": 172800,
+      "observed": 172800,
+      "passed": true
+    },
+    {
+      "name": "M19 log inverse 0",
+      "condition": "C_ref=1 cells/mL",
+      "expected": 0,
+      "observed": 0.0,
+      "passed": true
+    },
+    {
+      "name": "M19 log inverse 9",
+      "condition": "C_ref=1 cells/mL",
+      "expected": 9,
+      "observed": 9.0,
+      "passed": true
+    },
+    {
+      "name": "M19 log inverse 99",
+      "condition": "C_ref=1 cells/mL",
+      "expected": 99,
+      "observed": 99.0,
+      "passed": true
+    },
+    {
+      "name": "M19 log inverse 999",
+      "condition": "C_ref=1 cells/mL",
+      "expected": 999,
+      "observed": 999.0,
+      "passed": true
+    },
+    {
+      "name": "M19 log inverse 12345",
+      "condition": "C_ref=1 cells/mL",
+      "expected": 12345,
+      "observed": 12345.000000000007,
+      "passed": true
+    },
+    {
+      "name": "M19 log derivative",
+      "condition": "Finite difference at C=99",
+      "expected": 0.004342944819032518,
+      "observed": 0.004342944814883509,
+      "passed": true
+    },
+    {
+      "name": "M19 gradient w",
+      "condition": "x=(0,1), y=(1,2), b=1",
+      "expected": -1,
+      "observed": -1.0000000000065512,
+      "passed": true
+    },
+    {
+      "name": "M19 descent eta0.1",
+      "condition": "w=.1 b=1.1",
+      "expected": 0.325,
+      "observed": 0.32500000000000007,
+      "passed": true
+    },
+    {
+      "name": "M19 descent eta0.2",
+      "condition": "w=.2 b=1.2",
+      "expected": 0.2,
+      "observed": 0.20000000000000004,
+      "passed": true
+    },
+    {
+      "name": "M19 Jensen toy inverse",
+      "condition": "Equally probable C=9 and 99; mean log=1.5",
+      "expected": 30.6227766017,
+      "observed": 30.622776601683793,
+      "passed": true
+    },
+    {
+      "name": "M20 exponential",
+      "condition": "Constant r=.2/day, C0=1000",
+      "expected": 4055.199966845,
+      "observed": 4055.1999668446756,
+      "passed": true
+    },
+    {
+      "name": "M20 logistic C0=1000",
+      "condition": "K=10000, r=.2/day",
+      "expected": 3106.19521667,
+      "observed": 3106.1952150433285,
+      "passed": true
+    },
+    {
+      "name": "M20 logistic derivative",
+      "condition": "Analytic solution compared to ODE at t=7",
+      "expected": 428.2700687295043,
+      "observed": 428.2700687326723,
+      "passed": true
+    },
+    {
+      "name": "M20 logistic C0=8000",
+      "condition": "K=10000, r=.2/day",
+      "expected": 9419.3077349,
+      "observed": 9419.306880225524,
+      "passed": true
+    },
+    {
+      "name": "M20 Monod derivative",
+      "condition": "K_S=2, S=3",
+      "expected": 0.08,
+      "observed": 0.08000000000785157,
+      "passed": true
+    },
+    {
+      "name": "M20 nutrient limited growth",
+      "condition": "mu_max=.4; T=.8; I=.5; N=.5; P=.9; loss=.03",
+      "expected": 0.05,
+      "observed": 0.05000000000000002,
+      "passed": true
+    },
+    {
+      "name": "M20 nutrient improved forecast",
+      "condition": "Both nutrient factors=.9; loss=.03",
+      "expected": 2221.09389588,
+      "observed": 2221.094294751435,
+      "passed": true
+    },
+    {
+      "name": "M20 mass balance qout=0",
+      "condition": "Consistent volume units, Cout=C; variable volume cancellation",
+      "expected": 80.0,
+      "observed": 80.0,
+      "passed": true
+    },
+    {
+      "name": "M20 mass balance qout=2",
+      "condition": "Consistent volume units, Cout=C; variable volume cancellation",
+      "expected": 80.0,
+      "observed": 80.0,
+      "passed": true
+    },
+    {
+      "name": "M20 mass balance qout=5",
+      "condition": "Consistent volume units, Cout=C; variable volume cancellation",
+      "expected": 80.0,
+      "observed": 80.0,
+      "passed": true
+    },
+    {
+      "name": "M20 clean inflow",
+      "condition": "No growth; D=.2/day; Cin=0",
+      "expected": 246.596963942,
+      "observed": 246.5969639416065,
+      "passed": true
+    },
+    {
+      "name": "M20 rich inflow",
+      "condition": "No growth; D=.2/day; Cin=2000",
+      "expected": 1753.403036058,
+      "observed": 1753.4030360583936,
+      "passed": true
+    },
+    {
+      "name": "M20 identified r assumption",
+      "condition": "Observed doubling; independent D=.15/day; Cin=0",
+      "expected": 0.249021025794,
+      "observed": 0.24902102579427787,
+      "passed": true
+    },
+    {
+      "name": "M21 nearest label",
+      "condition": "Goal July8; candidates July5,10,11,12; tolerance3days",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "M21 label actual horizon",
+      "condition": "Audit horizon, not predictor input",
+      "expected": 9,
+      "observed": 9,
+      "passed": true
+    },
+    {
+      "name": "M21 shifted log trend",
+      "condition": "999 to3999 in7days; reference1",
+      "expected": 0.0860085701897,
+      "observed": 0.08600857018970891,
+      "passed": true
+    },
+    {
+      "name": "M21 linear rate",
+      "condition": "99 to999 in7days",
+      "expected": 128.571428571,
+      "observed": 128.57142857142858,
+      "passed": true
+    },
+    {
+      "name": "M21 extended14day trend",
+      "condition": "Past14day shifted log change1; extend7days",
+      "expected": 3161.277660168,
+      "observed": 3161.2776601683795,
+      "passed": true
+    },
+    {
+      "name": "M21 time average",
+      "condition": "20C for1hour,30C for3hours",
+      "expected": 27.5,
+      "observed": 27.5,
+      "passed": true
+    },
+    {
+      "name": "M21 residence days",
+      "condition": "m3 and m3/s conversion",
+      "expected": 10,
+      "observed": 10.0,
+      "passed": true
+    },
+    {
+      "name": "M21 adjacent season distance",
+      "condition": "December andJanuary onunitcircle",
+      "expected": 0.517638090205,
+      "observed": 0.517638090205042,
+      "passed": true
+    },
+    {
+      "name": "M22 ridge slope",
+      "condition": "Z=(-1,1), centered y=(-1,1),lambda2",
+      "expected": 0.5,
+      "observed": 0.5,
+      "passed": true
+    },
+    {
+      "name": "M22 ridge new inverse",
+      "condition": "new standardized temperature .5; intercept2; slope.5",
+      "expected": 176.827941004,
+      "observed": 176.82794100389228,
+      "passed": true
+    },
+    {
+      "name": "M22 CART parentRSS",
+      "condition": "Six syntheticlogtargets",
+      "expected": 7.333333333333333,
+      "observed": 7.333333333333334,
+      "passed": true
+    },
+    {
+      "name": "M22 CART splitRSS",
+      "condition": "Split after third sample",
+      "expected": 1.3333333333333333,
+      "observed": 1.3333333333333335,
+      "passed": true
+    },
+    {
+      "name": "M22 CART improvement",
+      "condition": "Same sample trainingRSS",
+      "expected": 6,
+      "observed": 6.0,
+      "passed": true
+    },
+    {
+      "name": "M22 leaf derivative",
+      "condition": "Leaf mean2 minimizes squaredloss",
+      "expected": 0,
+      "observed": 0.0,
+      "passed": true
+    },
+    {
+      "name": "M22 boostedRSS",
+      "condition": "eta.5 afterone residualtree",
+      "expected": 2,
+      "observed": 2,
+      "passed": true
+    },
+    {
+      "name": "M22 regularizedGain",
+      "condition": "G_L=2,G_R=-2,H_L=H_R=2,lambda1,gamma.1",
+      "expected": 1.233333333333,
+      "observed": 1.2333333333333332,
+      "passed": true
+    },
+    {
+      "name": "M22 unregularizedGain",
+      "condition": "lambda0,gamma.1",
+      "expected": 1.9,
+      "observed": 1.9,
+      "passed": true
+    },
+    {
+      "name": "M23 Kalmanmean",
+      "condition": "P=.04,R=.01,obs2.3",
+      "expected": 2.24,
+      "observed": 2.2399999999999998,
+      "passed": true
+    },
+    {
+      "name": "M23 Kalmanvariance",
+      "condition": "Scalarposterior",
+      "expected": 0.008,
+      "observed": 0.008000000000000004,
+      "passed": true
+    },
+    {
+      "name": "M23 transitionvariance",
+      "condition": "A=.9,processvariance.02",
+      "expected": 0.02648,
+      "observed": 0.02648,
+      "passed": true
+    },
+    {
+      "name": "M23 highnoise posterior",
+      "condition": "P=.04,R=.09",
+      "expected": 2.092307692308,
+      "observed": 2.0923076923076924,
+      "passed": true
+    },
+    {
+      "name": "M23 LSTMstate",
+      "condition": "Fixedscalar gates; c_prev1",
+      "expected": 0.3581489351,
+      "observed": 0.3581489350995122,
+      "passed": true
+    },
+    {
+      "name": "M23 attention",
+      "condition": "q1,keys0and1,values0and2",
+      "expected": 1.46211715726,
+      "observed": 1.4621171572600098,
+      "passed": true
+    },
+    {
+      "name": "M23 receptivefield",
+      "condition": "3layers,oneconv each,kernel3,dilation1,2,4",
+      "expected": 15,
+      "observed": 15,
+      "passed": true
+    },
+    {
+      "name": "M23 mechanism",
+      "condition": "r.1,D.05,clean inflow constant volume",
+      "expected": 141.906754859,
+      "observed": 141.90675485932573,
+      "passed": true
+    },
+    {
+      "name": "M23 hybrid inverse",
+      "condition": "Physicallog2 plusresidual.3",
+      "expected": 198.526231497,
+      "observed": 198.52623149688787,
+      "passed": true
+    },
+    {
+      "name": "M24 rawMAE",
+      "condition": "Toy concentration errors",
+      "expected": 30,
+      "observed": 30.0,
+      "passed": true
+    },
+    {
+      "name": "M24 rawRMSE",
+      "condition": "Toy concentration errors",
+      "expected": 51.9615242271,
+      "observed": 51.96152422706632,
+      "passed": true
+    },
+    {
+      "name": "M24 logRMSE",
+      "condition": "Logerrors0,0,-1",
+      "expected": 0.57735026919,
+      "observed": 0.5773502691896257,
+      "passed": true
+    },
+    {
+      "name": "M24 SST",
+      "condition": "Mean actual36",
+      "expected": 5994,
+      "observed": 5994.0,
+      "passed": true
+    },
+    {
+      "name": "M24 R2 NSE",
+      "condition": "Same unweighteddefinition",
+      "expected": -0.351351351351,
+      "observed": -0.3513513513513513,
+      "passed": true
+    },
+    {
+      "name": "M24 macroF1",
+      "condition": "Rowsactual,columnspredicted",
+      "expected": 0.575,
+      "observed": 0.575,
+      "passed": true
+    },
+    {
+      "name": "M24 accuracy",
+      "condition": "Same confusionmatrix15rows",
+      "expected": 0.6,
+      "observed": 0.6,
+      "passed": true
+    },
+    {
+      "name": "M24 conformalrank",
+      "condition": "Synthetic sortederrors; mathematicalrank only",
+      "expected": 8,
+      "observed": 8,
+      "passed": true
+    },
+    {
+      "name": "M24 strictrank",
+      "condition": "No time-series coverage guarantee",
+      "expected": 9,
+      "observed": 9,
+      "passed": true
+    },
+    {
+      "name": "19_algae_foundations math delimiters",
+      "condition": "Paired standalone displaymath delimiters; not TeX rendering",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "19_algae_foundations no leaked tokens",
+      "condition": "No placeholder citations or replacementcharacters",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "20_algae_dynamics math delimiters",
+      "condition": "Paired standalone displaymath delimiters; not TeX rendering",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "20_algae_dynamics no leaked tokens",
+      "condition": "No placeholder citations or replacementcharacters",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "21_algae_data_features math delimiters",
+      "condition": "Paired standalone displaymath delimiters; not TeX rendering",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "21_algae_data_features no leaked tokens",
+      "condition": "No placeholder citations or replacementcharacters",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "22_algae_regression math delimiters",
+      "condition": "Paired standalone displaymath delimiters; not TeX rendering",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "22_algae_regression no leaked tokens",
+      "condition": "No placeholder citations or replacementcharacters",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "23_algae_temporal_hybrid math delimiters",
+      "condition": "Paired standalone displaymath delimiters; not TeX rendering",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "23_algae_temporal_hybrid no leaked tokens",
+      "condition": "No placeholder citations or replacementcharacters",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "24_algae_evaluation math delimiters",
+      "condition": "Paired standalone displaymath delimiters; not TeX rendering",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "24_algae_evaluation no leaked tokens",
+      "condition": "No placeholder citations or replacementcharacters",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "25_algae_project math delimiters",
+      "condition": "Paired standalone displaymath delimiters; not TeX rendering",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    },
+    {
+      "name": "25_algae_project no leaked tokens",
+      "condition": "No placeholder citations or replacementcharacters",
+      "expected": true,
+      "observed": true,
+      "passed": true
+    }
+  ],
+  "count": 75,
+  "passed": 75,
+  "failed": [],
+  "structure": {
+    "documents": 10,
+    "chapters": 7,
+    "exercise_pairs": 21,
+    "errors": []
+  }
+}

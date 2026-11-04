@@ -1,0 +1,168 @@
+{
+  "read_paths": [
+    "D:/repos/fishing-track-classification/code/tools/diag_out.txt",
+    "D:/repos/fishing-track-classification/ROLES.md",
+    "D:/repos/fishing-track-classification/11월 1일/README.md",
+    "D:/repos/fishing-track-classification/11월 1일/GEMINI_인계.md",
+    "D:/repos/fishing-track-classification/11월 1일/CLAUDE_CODE_위임.md",
+    "D:/repos/fishing-track-classification/data_manifest.md",
+    "D:/repos/fishing-track-classification/README.md",
+    "D:/repos/fishing-track-classification/tasks/설계재정립_20261101.md",
+    "D:/repos/fishing-track-classification/STATUS.md",
+    "D:/repos/fishing-track-classification/coach/claude/진행분석_20261101.md",
+    "D:/repos/fishing-track-classification/docs/real_accuracy_diagnosis_and_evaluation_history_20261029.md",
+    "D:/repos/fishing-track-classification/coach/decisions/2026-11-01_2300_007_검토_및_008_승인.md",
+    "D:/repos/fishing-track-classification/coach/decisions/2026-11-01_0950_005_followup.md",
+    "D:/repos/fishing-track-classification/coach/gemini/2026-11-02_0325_011_012_검토_및_다방면재실험_최종승인.md",
+    "D:/repos/fishing-track-classification/coach/gemini/2026-11-02_0025_010_보고서_검토_및_GEM-C018_기각_확인.md",
+    "D:/repos/fishing-track-classification/coach/gemini/2026-11-01_2325_008_009_완료보고서_검토.md",
+    "D:/repos/fishing-track-classification/coach/gemini/2026-11-01_2240_007_보고서_검토_및_메인질의_답변.md",
+    "D:/repos/fishing-track-classification/coach/gemini/2026-11-01_2230_인계검토_및_007_008_진단.md"
+  ],
+  "records": [
+    {
+      "path": "D:/repos/fishing-track-classification/code/tools/diag_out.txt",
+      "relative_path": "code/tools/diag_out.txt",
+      "bytes": 571,
+      "sha256": "3fc13367961c8c452c27ee171294274922a449d2c03349f8f95bb7372b20c205",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/ROLES.md",
+      "relative_path": "ROLES.md",
+      "bytes": 2498,
+      "sha256": "6efdb168437cac70b0a2e8f8373c153e449da3b7ea314cf0c868bcc140bd1eb5",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/11월 1일/README.md",
+      "relative_path": "11월 1일/README.md",
+      "bytes": 5768,
+      "sha256": "175ac31e4b24b4071667e62209d2dd319676c7ee8a2f6eaec217bbb3d995c4da",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/11월 1일/GEMINI_인계.md",
+      "relative_path": "11월 1일/GEMINI_인계.md",
+      "bytes": 14072,
+      "sha256": "172c86426dcc45d815d2a202f177a139003cdca8425335cfe259d2c5f6ea2656",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/11월 1일/CLAUDE_CODE_위임.md",
+      "relative_path": "11월 1일/CLAUDE_CODE_위임.md",
+      "bytes": 9068,
+      "sha256": "0b348d965ddc3291938a1cf63288c3120097921d1bc15d52599b32c408be0a83",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/data_manifest.md",
+      "relative_path": "data_manifest.md",
+      "bytes": 10325,
+      "sha256": "dc26eff92cdfd3b82cb3b86e2a2722614dd4dfa7b27115976d3d512ee86c1e59",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/README.md",
+      "relative_path": "README.md",
+      "bytes": 3313,
+      "sha256": "57776f196eddc1e66303cd9efde49e392ae918563f6b8c9d5daf0ca41eb925e3",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/tasks/설계재정립_20261101.md",
+      "relative_path": "tasks/설계재정립_20261101.md",
+      "bytes": 14774,
+      "sha256": "d3dc0e1752402a5926b14223e31c42df3f8fd9c1f3ca87a8568293f1df18206c",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/STATUS.md",
+      "relative_path": "STATUS.md",
+      "bytes": 608,
+      "sha256": "0ad092d900245c3ca1c3bdafd52af46cac6724f0a6bd06c0a19490d5cd0d25ac",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/coach/claude/진행분석_20261101.md",
+      "relative_path": "coach/claude/진행분석_20261101.md",
+      "bytes": 20097,
+      "sha256": "c691f54352e12ac66eaeb8e381d26c4f70f1736813f5f27fbf63f8fff96cb521",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/docs/real_accuracy_diagnosis_and_evaluation_history_20261029.md",
+      "relative_path": "docs/real_accuracy_diagnosis_and_evaluation_history_20261029.md",
+      "bytes": 41033,
+      "sha256": "aba1dcc4dca35fddb67d72377c5e71d807ad62b5e2f2f7aeb0ccb012a1d5a784",
+      "identical_workspace_paths": [],
+      "read_status": "full_diff_read_against_original_full_text; normalized_lines_identical"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/coach/decisions/2026-11-01_2300_007_검토_및_008_승인.md",
+      "relative_path": "coach/decisions/2026-11-01_2300_007_검토_및_008_승인.md",
+      "bytes": 1943,
+      "sha256": "a41e90bf81d5737e5ee89c5a18390c56f07245c7663b1ebf604ecbfb8633e5f5",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/coach/decisions/2026-11-01_0950_005_followup.md",
+      "relative_path": "coach/decisions/2026-11-01_0950_005_followup.md",
+      "bytes": 4118,
+      "sha256": "10cb2bbb063091911a6bddb8b11d9e275b515298691530349648830d38bceb55",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/coach/gemini/2026-11-02_0325_011_012_검토_및_다방면재실험_최종승인.md",
+      "relative_path": "coach/gemini/2026-11-02_0325_011_012_검토_및_다방면재실험_최종승인.md",
+      "bytes": 7007,
+      "sha256": "5d0706ce668576bed17596b5c1627c1a5d452c570e6c045fdfccb472f2a09331",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/coach/gemini/2026-11-02_0025_010_보고서_검토_및_GEM-C018_기각_확인.md",
+      "relative_path": "coach/gemini/2026-11-02_0025_010_보고서_검토_및_GEM-C018_기각_확인.md",
+      "bytes": 7548,
+      "sha256": "62775777d3795355b4dd16efe68ee9c0047ca37b200a67858a5279d78dd83532",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/coach/gemini/2026-11-01_2325_008_009_완료보고서_검토.md",
+      "relative_path": "coach/gemini/2026-11-01_2325_008_009_완료보고서_검토.md",
+      "bytes": 5183,
+      "sha256": "ad3a31319ed970b44b852cddba37a4b5a1b00314d2b0ef001843172bf938b2f9",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/coach/gemini/2026-11-01_2240_007_보고서_검토_및_메인질의_답변.md",
+      "relative_path": "coach/gemini/2026-11-01_2240_007_보고서_검토_및_메인질의_답변.md",
+      "bytes": 5190,
+      "sha256": "650b6d5139af1df9c1135fbfd9e7134875fdfdb73514f47730317cf66135b4a8",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    },
+    {
+      "path": "D:/repos/fishing-track-classification/coach/gemini/2026-11-01_2230_인계검토_및_007_008_진단.md",
+      "relative_path": "coach/gemini/2026-11-01_2230_인계검토_및_007_008_진단.md",
+      "bytes": 17291,
+      "sha256": "9b680155ba5959b2236122ad77436583c4c5d45106d992381afb591bc6983794",
+      "identical_workspace_paths": [],
+      "read_status": "full_text_read"
+    }
+  ]
+}

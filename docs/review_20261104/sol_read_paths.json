@@ -1,0 +1,1310 @@
+{
+  "reviewer": "sol_history",
+  "requested_role": "sol_review",
+  "requested_model_effort": "GPT-6.1 Sol high",
+  "document_path_count": 129,
+  "unique_sha256_count": 123,
+  "paths": [
+    "29-30일 모델 심층 분석/30일/cycle3_tasks_20261030.md",
+    "29-30일 모델 심층 분석/30일/cycle4_tasks_20261030.md",
+    "29-30일 모델 심층 분석/30일/cycle4_trip_tasks_20261030.md",
+    "29-30일 모델 심층 분석/30일/어선항적_2차후속_진행상황_쉬운해설_20261030.md",
+    "29-30일 모델 심층 분석/30일/어선항적_2차후속_최종정리_및_향후과제_20261030.md",
+    "29-30일 모델 심층 분석/30일/할일_20261030.md",
+    "29-30일 모델 심층 분석/31일/_handoff/EXECUTOR_PROMPT.md",
+    "29-30일 모델 심층 분석/31일/_handoff/NOTICE_20261031_gemini.md",
+    "29-30일 모델 심층 분석/31일/_handoff/README.md",
+    "29-30일 모델 심층 분석/31일/_handoff/REVIEWER_PROMPT.md",
+    "29-30일 모델 심층 분석/31일/_handoff/STATUS.md",
+    "29-30일 모델 심층 분석/31일/_handoff/inbox/001_remeasure_R0-R7.md",
+    "29-30일 모델 심층 분석/31일/_handoff/inbox/002_remeasure_R6b_R8-R14.md",
+    "29-30일 모델 심층 분석/31일/_handoff/inbox/003_cycle4_revision_proposal.md",
+    "29-30일 모델 심층 분석/31일/_handoff/inbox/004_cycle4_featAC.md",
+    "29-30일 모델 심층 분석/31일/_handoff/inbox/005_F156_merge_T5.md",
+    "29-30일 모델 심층 분석/31일/_handoff/outbox/001_report.md",
+    "29-30일 모델 심층 분석/31일/_handoff/outbox/002_report.md",
+    "29-30일 모델 심층 분석/31일/_handoff/outbox/003_report.md",
+    "29-30일 모델 심층 분석/31일/_handoff/outbox/004_report.md",
+    "29-30일 모델 심층 분석/31일/_handoff/outbox/005_report.md",
+    "29-30일 모델 심층 분석/31일/_handoff/outbox/006_migrate_report.md",
+    "29-30일 모델 심층 분석/31일/_handoff/progress/002.md",
+    "29-30일 모델 심층 분석/31일/_handoff/progress/004.md",
+    "29-30일 모델 심층 분석/31일/_handoff/progress/005.md",
+    "29-30일 모델 심층 분석/31일/_handoff/reviewer_log.md",
+    "29-30일 모델 심층 분석/31일/_handoff/reviews/001_review.md",
+    "29-30일 모델 심층 분석/31일/_handoff/reviews/002_review.md",
+    "29-30일 모델 심층 분석/31일/_handoff/reviews/003_review.md",
+    "29-30일 모델 심층 분석/31일/_handoff/reviews/004_review.md",
+    "29-30일 모델 심층 분석/31일/_handoff/재시작_안내.md",
+    "29-30일 모델 심층 분석/31일/data_remeasure_20261031.md",
+    "29-30일 모델 심층 분석/31일/docs/Claude_응답_gemini.md",
+    "29-30일 모델 심층 분석/31일/docs/remeasure_20261031.md",
+    "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/README_먼저읽기.md",
+    "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/docs/기본특징설명.md",
+    "29-30일 모델 심층 분석/_handoff/EXECUTOR_PROMPT.md",
+    "29-30일 모델 심층 분석/_handoff/README.md",
+    "29-30일 모델 심층 분석/_handoff/STATUS.md",
+    "29-30일 모델 심층 분석/_handoff/inbox/001_report_tasks_1-3.md",
+    "29-30일 모델 심층 분석/_handoff/inbox/002_task4.md",
+    "29-30일 모델 심층 분석/_handoff/inbox/003_task5-6.md",
+    "29-30일 모델 심층 분석/_handoff/inbox/004_task5redo-7.md",
+    "29-30일 모델 심층 분석/_handoff/inbox/005_summary.md",
+    "29-30일 모델 심층 분석/_handoff/outbox/001_report.md",
+    "29-30일 모델 심층 분석/_handoff/outbox/002_report.md",
+    "29-30일 모델 심층 분석/_handoff/outbox/003_report.md",
+    "29-30일 모델 심층 분석/_handoff/outbox/004_report.md",
+    "29-30일 모델 심층 분석/_handoff/outbox/005_report.md",
+    "29-30일 모델 심층 분석/_handoff/outbox/cycle3_0_report.md",
+    "29-30일 모델 심층 분석/_handoff/outbox/cycle3_2_report.md",
+    "29-30일 모델 심층 분석/_handoff/outbox/cycle3_3_report.md",
+    "29-30일 모델 심층 분석/_handoff/reviews/001_review.md",
+    "29-30일 모델 심층 분석/_handoff/reviews/002_mlsf_rank.txt",
+    "29-30일 모델 심층 분석/_handoff/reviews/002_review.md",
+    "29-30일 모델 심층 분석/_handoff/reviews/003_review.md",
+    "29-30일 모델 심층 분석/_handoff/reviews/003_verify.txt",
+    "29-30일 모델 심층 분석/_handoff/reviews/004_review.md",
+    "29-30일 모델 심층 분석/_handoff/reviews/004_verify.txt",
+    "29-30일 모델 심층 분석/_handoff/reviews/final_pr_reweight_check.txt",
+    "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-29_23-30_연결안내.md",
+    "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_00-05_응답_001.md",
+    "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_00-35_응답_C005.md",
+    "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_01-15_응답_002.md",
+    "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_08-05_응답_003.md",
+    "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_08-50_응답_004.md",
+    "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-29_23-21-32_코치의견.md",
+    "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-29_23-48-27_코치의견.md",
+    "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_00-17-35_코치의견.md",
+    "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_00-48-22_코치의견.md",
+    "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_01-17-36_코치의견.md",
+    "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_01-48-13_코치의견.md",
+    "29-30일 모델 심층 분석/gpt의 의견/문제점과_분석정리_20261030/01_현재_문제점.md",
+    "29-30일 모델 심층 분석/gpt의 의견/문제점과_분석정리_20261030/02_지금까지_분석한_내용.md",
+    "29-30일 모델 심층 분석/gpt의 의견/문제점과_분석정리_20261030/README.md",
+    "29-30일 모델 심층 분석/gpt의 의견/운영안내.md",
+    "29-30일 모델 심층 분석/gpt의 의견/현재 코치 의견.md",
+    "29-30일 모델 심층 분석/분석 결과/README.md",
+    "29-30일 모델 심층 분석/분석 결과/cycle2_followup_tasks.md",
+    "29-30일 모델 심층 분석/분석 결과/cycle3_tasks_20261030.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_4_zero_prob_20261030_정정전.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_5_calibration_20261030_BLOCKED판.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_6_trap_binary_20261030_정정전.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_7_agg_2x2_20261030_정정전.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_prediction_diagnostics_20261029_20261030_정정전.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_prediction_diagnostics_20261029_작업2이전.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/remeasure_20261031_001.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/remeasure_20261031_002수정전.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/remeasure_20261031_003수정전.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/어선항적_2차모델결과_총정리_해설_20261029_작업2이전.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/archive/어선항적_2차모델결과_총정리_해설_20261030_정정전.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_development_ablation_20261029.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_1_provenance.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_3_rerun.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_4_zero_prob.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_5_calibration.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_6_trap_binary.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_7_agg_2x2.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_summary.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_prediction_diagnostics_20261029.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle2_summary_audit_20261029.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle3_2_exclusion.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle3_3_error_trace.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle3_progress_20261030.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle4_0_testA_setup.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle4_1_baseline.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle4_2_bd.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle4_3_featAC.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle4_data_status_20261030.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle4_revision_proposal_20261101.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/cycle4_summary.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/f156_merge_20261101.md",
+    "29-30일 모델 심층 분석/분석 결과/docs/remeasure_20261031.md",
+    "29-30일 모델 심층 분석/분석 결과/검토_개선방안_20261029-2차.md",
+    "29-30일 모델 심층 분석/분석 결과/어선항적_1차모델결과_총정리_해설.md",
+    "29-30일 모델 심층 분석/분석 결과/어선항적_2차모델결과_총정리_해설.md",
+    "_handoff/EXECUTOR_PROMPT.md",
+    "_handoff/README.md",
+    "_handoff/STATUS.md",
+    "_handoff/inbox/001_tasks_1-2.md",
+    "docs/cycle2_development_ablation_20261029.md",
+    "docs/cycle2_followup_tasks.md",
+    "docs/cycle2_prediction_diagnostics_20261029.md",
+    "docs/cycle2_summary_audit_20261029.md",
+    "docs/cycle4_tasks_20261030.md",
+    "docs/fishing_evaluation_cycle_results_20261028.md",
+    "docs/fishing_report_updated_20261028.md",
+    "docs/real_accuracy_diagnosis_and_evaluation_history_20261029.md",
+    "docs/어선항적_전체진행과_실제모델성능_통합정리_20261029.md"
+  ],
+  "records": [
+    {
+      "path": "29-30일 모델 심층 분석/30일/cycle3_tasks_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\30일\\cycle3_tasks_20261030.md",
+      "sha256": "9fdc2907595176205649137e85a2f7c2107af08d9fc8a29a9c7ee6df4f7c2972",
+      "line_count": 298,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/30일/cycle4_tasks_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\30일\\cycle4_tasks_20261030.md",
+      "sha256": "e82463a8d041f04511490f644386024401740d8012cbdf8a5c21a00ccd644389",
+      "line_count": 174,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/30일/cycle4_trip_tasks_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\30일\\cycle4_trip_tasks_20261030.md",
+      "sha256": "3e294e2e0c43f45548d28bfa92da21a0bb06ffc3f739b49f7b70f63cb971e861",
+      "line_count": 264,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/30일/어선항적_2차후속_진행상황_쉬운해설_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\30일\\어선항적_2차후속_진행상황_쉬운해설_20261030.md",
+      "sha256": "11e0e12072441b25cb361fef3c7d5d0635fa74984ce2b2c8fca03b6991357a57",
+      "line_count": 677,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/30일/어선항적_2차후속_최종정리_및_향후과제_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\30일\\어선항적_2차후속_최종정리_및_향후과제_20261030.md",
+      "sha256": "e1eb5ec235c2e630b176006a6ae8130c883444dd1f9beac5264ff687d97ad6b1",
+      "line_count": 117,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/30일/할일_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\30일\\할일_20261030.md",
+      "sha256": "3187e5e2edd45b154c590a90af447f8027b12051aa45b4afd6537a792f049ab6",
+      "line_count": 67,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/EXECUTOR_PROMPT.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\EXECUTOR_PROMPT.md",
+      "sha256": "794e6d3f8b5dd4715069ac97e515eb753425811d113d9c25a486f28d90076a6c",
+      "line_count": 110,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/NOTICE_20261031_gemini.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\NOTICE_20261031_gemini.md",
+      "sha256": "d0c52b8a73ad69c2d0a9c30cc20d3ba07fec60064c608df28f8784b57ae825cd",
+      "line_count": 37,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/README.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\README.md",
+      "sha256": "cd5f194d7dce1fdd525dab13e0233c761f125102915a542587e2fc7b53ead755",
+      "line_count": 89,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/REVIEWER_PROMPT.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\REVIEWER_PROMPT.md",
+      "sha256": "846a0f52d235a3b2565c58b873f47199d84bd1ef9651a7826b3bf935a5e9f0df",
+      "line_count": 60,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/STATUS.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\STATUS.md",
+      "sha256": "eb122a34ad387fbe9c76f4986c96ad631a4619cd1d9ab36901ec8ae04b55872b",
+      "line_count": 5,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/001_remeasure_R0-R7.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\inbox\\001_remeasure_R0-R7.md",
+      "sha256": "e4461cef6cf195692191686ce51ac62a6ca3cd74f05a0fd1320a5e2eb2b7b232",
+      "line_count": 45,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/002_remeasure_R6b_R8-R14.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\inbox\\002_remeasure_R6b_R8-R14.md",
+      "sha256": "edbe599f6332ff7e4a93b9c43b35633c4c4a14c26852b5c4ffea4a4a61466f02",
+      "line_count": 40,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/003_cycle4_revision_proposal.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\inbox\\003_cycle4_revision_proposal.md",
+      "sha256": "de8592752b21399e83edfb5aecb6d6ebcfb1de7bbf7d7dc162ddc6fe3886be18",
+      "line_count": 48,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/004_cycle4_featAC.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\inbox\\004_cycle4_featAC.md",
+      "sha256": "7ad4fdfff1692ba38a98969a3834117cfcde8dab98a96ad5a27e176d4dba03c5",
+      "line_count": 63,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/inbox/005_F156_merge_T5.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\inbox\\005_F156_merge_T5.md",
+      "sha256": "08a2cc5a00135087acf8998d6a54186d3f1dc259f560f1ea62ba8ff9aca4d848",
+      "line_count": 54,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/001_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\outbox\\001_report.md",
+      "sha256": "398a6a8c1c8f0fe9efc09982d9a8cb27e6315e4c2b26be279cd6e9095bcd08dd",
+      "line_count": 78,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/002_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\outbox\\002_report.md",
+      "sha256": "b73ff02835d4f97ea64793a3be9ec89811d0780d0f3db47a1523b705cc0416dd",
+      "line_count": 68,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/003_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\outbox\\003_report.md",
+      "sha256": "1ccaaa7f0d75b7d59ce158531e84c6c3658ebc05f5f39fe3155e530f16ced269",
+      "line_count": 41,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/004_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\outbox\\004_report.md",
+      "sha256": "ab5d2d1eb5b00970f78c584d3101d606399a04039be861a8ec781b9d4a98671d",
+      "line_count": 55,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/005_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\outbox\\005_report.md",
+      "sha256": "44231373965661ab4adcc98c0d74772fc314631d1afd231cf79819aef8690a18",
+      "line_count": 68,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/outbox/006_migrate_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\outbox\\006_migrate_report.md",
+      "sha256": "8fceb533c67fa22350ed8fbb377d1f52fafc25b6d29a203c31c5db453c36831f",
+      "line_count": 85,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/progress/002.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\progress\\002.md",
+      "sha256": "ab1c3efc150a25738da2562cc943324727e01c66cbf3ca3d840ddbf449b869bc",
+      "line_count": 37,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/progress/004.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\progress\\004.md",
+      "sha256": "07c29422fcbbe11a9c7eabfd16a67a7a8bee1c89ddbbac2f884eab773ff8f672",
+      "line_count": 30,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/progress/005.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\progress\\005.md",
+      "sha256": "99dddc5d57ca3654b74e003526429ded1102c215a69ad1db9658f1da9f2fee01",
+      "line_count": 17,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/reviewer_log.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\reviewer_log.md",
+      "sha256": "7f3ad90db3ad6d7b8f910ca971f7bbb94ada55408ac27f873d48843b040f2c92",
+      "line_count": 11,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/reviews/001_review.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\reviews\\001_review.md",
+      "sha256": "e647b437acd60c888a61bd0fcfaeb5acfb6e972c0bc3cd140323bff72639f98f",
+      "line_count": 43,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/reviews/002_review.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\reviews\\002_review.md",
+      "sha256": "1f92175d8a35f7e2341cb30cd54e3cb0034e1f8be15e5588f7dd3be8fa9dc127",
+      "line_count": 51,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/reviews/003_review.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\reviews\\003_review.md",
+      "sha256": "e9571969cfccd1de461e03ab3c2db5d24784f3c28b2c5921f7ffb6b655a0dd6a",
+      "line_count": 25,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/reviews/004_review.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\reviews\\004_review.md",
+      "sha256": "bcf1d44427a8152231c23589864a46472b4353feb0749e5fc4d524a27b7ecd34",
+      "line_count": 22,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/_handoff/재시작_안내.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\_handoff\\재시작_안내.md",
+      "sha256": "5d7d90189b56d717fa7c65ad9cb44b841e562a92c59515ccfd8388f1cf15f655",
+      "line_count": 46,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/data_remeasure_20261031.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\data_remeasure_20261031.md",
+      "sha256": "efce750970c431d869ddf0e44d38287b60ed2a2dcc3b9cf9eb098f2b5278c7ae",
+      "line_count": 195,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/docs/Claude_응답_gemini.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\docs\\Claude_응답_gemini.md",
+      "sha256": "e84ad505e7ed4ff542260783c10e3cc81c994f9d2d29963e765eea9e64d831a5",
+      "line_count": 36,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/docs/remeasure_20261031.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\docs\\remeasure_20261031.md",
+      "sha256": "451adeb4154b3e81d94e831e9092710ca9dd036c4d8202da7d303e69468d429e",
+      "line_count": 221,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/README_먼저읽기.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\README_먼저읽기.md",
+      "sha256": "6a78f2d50e651544ed388acf563f4a8d469ca5d3d37bee43cbbf93d5169995f8",
+      "line_count": 40,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/docs/기본특징설명.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\docs\\기본특징설명.md",
+      "sha256": "555a71bc2284383cc74bea7e81009d68e2c2bcf28ed8eb7e9e7d7c1bb061bac7",
+      "line_count": 393,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/EXECUTOR_PROMPT.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\EXECUTOR_PROMPT.md",
+      "sha256": "3bbc9c9070dbf451b59b2652561cf94a0e30e43a2b02e644e69bf951d3684277",
+      "line_count": 64,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/README.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\README.md",
+      "sha256": "cb663043bbe8cf1e003954b05948298ea00fd8423a0c4be5df6697ffd55212b4",
+      "line_count": 82,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/STATUS.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\STATUS.md",
+      "sha256": "41b636f0834578837fd7818e847ab12a3f8df158cbe7b8051809d7600aba168a",
+      "line_count": 5,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/inbox/001_report_tasks_1-3.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\inbox\\001_report_tasks_1-3.md",
+      "sha256": "cdeed0d90b540d90ef88083d2b54f527079d0b6196fb5c515e08521265104c40",
+      "line_count": 20,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/inbox/002_task4.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\inbox\\002_task4.md",
+      "sha256": "c55233eeb027ba2ace1be2b47b505ed97781d6ab555ff17f2f57bd0b07de89f5",
+      "line_count": 60,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/inbox/003_task5-6.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\inbox\\003_task5-6.md",
+      "sha256": "3882d90db68d8aabcb4997102a0546fd1548a717fe22f14e1aa3e72e7129db45",
+      "line_count": 88,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/inbox/004_task5redo-7.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\inbox\\004_task5redo-7.md",
+      "sha256": "3122eb7ae081e1fddf2d74478e705521d4f12dfe16511041b0ab1ffa4767cd9d",
+      "line_count": 79,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/inbox/005_summary.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\inbox\\005_summary.md",
+      "sha256": "c56aefd4ffda27521eaf5d5e7d1589e07199f31971a050d491dad4dcd0b5006e",
+      "line_count": 65,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/outbox/001_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\outbox\\001_report.md",
+      "sha256": "07dbcdcdee7e12f199c5380964609ca91a3356b6e19fc6134e8a1ad307492f13",
+      "line_count": 101,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/outbox/002_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\outbox\\002_report.md",
+      "sha256": "5de9126a035c08382f6cddd700f7a6608739b571262f741249f2557350bd188a",
+      "line_count": 85,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/outbox/003_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\outbox\\003_report.md",
+      "sha256": "cc338ee6cdb95a126e58455ebb6b0d488c2a845a9c1366ab846c5ad1c39601eb",
+      "line_count": 86,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/outbox/004_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\outbox\\004_report.md",
+      "sha256": "6d9b45df161b212066762e150e67eacacf5b2d8b3056d2152e8d4cd380fc864f",
+      "line_count": 84,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/outbox/005_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\outbox\\005_report.md",
+      "sha256": "6401cd45cac5e29946849f90a8832775ccf8da56209e8d941bf70adbf4d61ac7",
+      "line_count": 58,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/outbox/cycle3_0_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\outbox\\cycle3_0_report.md",
+      "sha256": "41cf2ae67795b9051e16c8a1823e7b39438f07153d736234c6ac371e55fc0ec7",
+      "line_count": 28,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/outbox/cycle3_2_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\outbox\\cycle3_2_report.md",
+      "sha256": "de1db6af8e91e11f77e6a82cdb62b64f10ceb16de6ba5a78eea36a899b59ae3f",
+      "line_count": 29,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/outbox/cycle3_3_report.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\outbox\\cycle3_3_report.md",
+      "sha256": "288ebe449115d1f7a0e22900a454e1a402e81f78da386979f246ff37ceb9f82a",
+      "line_count": 33,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/reviews/001_review.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\reviews\\001_review.md",
+      "sha256": "781a38e90fc5fe6b3ce46a30104d7444f68e48c22e41dc5b3f9707a85b6cc33f",
+      "line_count": 56,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/reviews/002_mlsf_rank.txt",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\reviews\\002_mlsf_rank.txt",
+      "sha256": "cadb8f7b25acf607788367c7f808281cd8b9f89cb5a45d053718bbcded3f2a54",
+      "line_count": 10,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/reviews/002_review.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\reviews\\002_review.md",
+      "sha256": "5a6d11a11674d9c950e3347d06533790fa63a5292fcda36b717c1df6c3f924c2",
+      "line_count": 75,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/reviews/003_review.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\reviews\\003_review.md",
+      "sha256": "63e97c9bc7b2f63ef0c99266af22c5609602b4ed336b840891698958f98a4f14",
+      "line_count": 62,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/reviews/003_verify.txt",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\reviews\\003_verify.txt",
+      "sha256": "c5ab250a4c3c7e418b78a0c88c989dba10cb514b7bba40211d27816f427fad2c",
+      "line_count": 8,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/reviews/004_review.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\reviews\\004_review.md",
+      "sha256": "be7e38d80a7203f7876ee765da5e223deb983387c0b4af3830d078b6e14b0df4",
+      "line_count": 74,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/reviews/004_verify.txt",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\reviews\\004_verify.txt",
+      "sha256": "5b747de01ec52ec03fc30d278120aebd7d90b43f5f6e79df47fe8164b3783c6c",
+      "line_count": 20,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/_handoff/reviews/final_pr_reweight_check.txt",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\_handoff\\reviews\\final_pr_reweight_check.txt",
+      "sha256": "60c40dd12458233aca95ea27f32e3c456e4f54e98326729a075f0740779bd405",
+      "line_count": 17,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-29_23-30_연결안내.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\Claude_응답\\2026-10-29_23-30_연결안내.md",
+      "sha256": "e32d3e4a2e5ffb0e87b32c1d5e7342f75797ad6aeff53c1e40a8bf161e54cae1",
+      "line_count": 17,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_00-05_응답_001.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\Claude_응답\\2026-10-30_00-05_응답_001.md",
+      "sha256": "e91343240078d2ebf3ec09627a60b53979ad2e35ef1806bb6584531e0b768d66",
+      "line_count": 31,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_00-35_응답_C005.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\Claude_응답\\2026-10-30_00-35_응답_C005.md",
+      "sha256": "968fd3ce20a8961f6b2fa86875a5a74fe0157609b4842be43ddcc10b14f6b438",
+      "line_count": 8,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_01-15_응답_002.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\Claude_응답\\2026-10-30_01-15_응답_002.md",
+      "sha256": "20d2cd2b186431d17c6d7de36d0ad2a06caa5e4a73de91136c7e4d54fdefe57a",
+      "line_count": 24,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_08-05_응답_003.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\Claude_응답\\2026-10-30_08-05_응답_003.md",
+      "sha256": "2a6b489c84a188c4617e4a985e2244f369a297e663f096af5477faf660e26223",
+      "line_count": 21,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/Claude_응답/2026-10-30_08-50_응답_004.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\Claude_응답\\2026-10-30_08-50_응답_004.md",
+      "sha256": "8ced872f753fdb41e8230a7cb4f0c62e640a52ce0049a586df2bab41c39b9e6b",
+      "line_count": 25,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-29_23-21-32_코치의견.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\기록\\2026-10-29_23-21-32_코치의견.md",
+      "sha256": "345500084bfce4fd09b6c11c181852ca40e51c2ed3b6aaf46899d4659ffaecc4",
+      "line_count": 41,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-29_23-48-27_코치의견.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\기록\\2026-10-29_23-48-27_코치의견.md",
+      "sha256": "08bfe3b31f22e89d8979dbf4d1c840a7c347f6363b320e76a83c28201b018a1c",
+      "line_count": 31,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_00-17-35_코치의견.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\기록\\2026-10-30_00-17-35_코치의견.md",
+      "sha256": "7b50ed708c98af60d8604038bb6157c143aac0818523b05ef9254aeb66b2803b",
+      "line_count": 22,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_00-48-22_코치의견.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\기록\\2026-10-30_00-48-22_코치의견.md",
+      "sha256": "0b5357f61bc273983256880884c4a03a2b0171da6b1a4747619ee13f259e61bc",
+      "line_count": 17,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_01-17-36_코치의견.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\기록\\2026-10-30_01-17-36_코치의견.md",
+      "sha256": "44b3918a64637d52e5ef63a50202d2787e00328e60e0c6d2029fd154bb99333e",
+      "line_count": 31,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/기록/2026-10-30_01-48-13_코치의견.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\기록\\2026-10-30_01-48-13_코치의견.md",
+      "sha256": "e13dfda6036993bc70566d561157a5937a542750ca6e19831d8737a671b49415",
+      "line_count": 5,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/문제점과_분석정리_20261030/01_현재_문제점.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\문제점과_분석정리_20261030\\01_현재_문제점.md",
+      "sha256": "78150a67098aa7cf96160d7e5527081cd9b91bd2274b8c70a35c2db357c4799b",
+      "line_count": 129,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/문제점과_분석정리_20261030/02_지금까지_분석한_내용.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\문제점과_분석정리_20261030\\02_지금까지_분석한_내용.md",
+      "sha256": "8bcc4502530ea9c7361cf35eddee39df59cf18b2e0c96576d44b4ad1664b6853",
+      "line_count": 171,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/문제점과_분석정리_20261030/README.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\문제점과_분석정리_20261030\\README.md",
+      "sha256": "e4f8c9ad250a8415fbe538b0d770a3c268215d16dad96c9518269ad724428637",
+      "line_count": 8,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/운영안내.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\운영안내.md",
+      "sha256": "dc4b0550e292ab376472d2707b59fb84388ecdf55bd69718e81717ec639830ff",
+      "line_count": 46,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/gpt의 의견/현재 코치 의견.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\gpt의 의견\\현재 코치 의견.md",
+      "sha256": "f3d23b1feaa14208867836cd6e869e6dc2a1b28e7e557e91c2e89b58b1e546e4",
+      "line_count": 39,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/README.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\README.md",
+      "sha256": "2e81ccc9cf28e822e61042b3b5209c47fca3da3125ebd049b5a2507500644313",
+      "line_count": 113,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/cycle2_followup_tasks.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\cycle2_followup_tasks.md",
+      "sha256": "a9c686380042c5c7ec5de239e9d0bb437b46a5f819172c061a20da2c2130b7b0",
+      "line_count": 190,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/cycle3_tasks_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\cycle3_tasks_20261030.md",
+      "sha256": "9fdc2907595176205649137e85a2f7c2107af08d9fc8a29a9c7ee6df4f7c2972",
+      "line_count": 298,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": "29-30일 모델 심층 분석/30일/cycle3_tasks_20261030.md"
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_4_zero_prob_20261030_정정전.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\cycle2_followup_4_zero_prob_20261030_정정전.md",
+      "sha256": "dae114f61cc5d74a60ee6144f63fc1708efb36d6f7c6290ad2c4c2ed6602d9f9",
+      "line_count": 115,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_5_calibration_20261030_BLOCKED판.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\cycle2_followup_5_calibration_20261030_BLOCKED판.md",
+      "sha256": "e50207da793e8d08db8863e75f33da11ad9c93bb6a02aed5e4b3fc561bc1fd18",
+      "line_count": 76,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_6_trap_binary_20261030_정정전.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\cycle2_followup_6_trap_binary_20261030_정정전.md",
+      "sha256": "312102b06c87a7a397fe043f802833445b41d26a51d2fbb42848b89f98d6d6b5",
+      "line_count": 94,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_followup_7_agg_2x2_20261030_정정전.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\cycle2_followup_7_agg_2x2_20261030_정정전.md",
+      "sha256": "82003b0e11c68f1126437355450f2e0d5dfe1361201f202e54b40154f8c3ae7c",
+      "line_count": 97,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_prediction_diagnostics_20261029_20261030_정정전.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\cycle2_prediction_diagnostics_20261029_20261030_정정전.md",
+      "sha256": "79a8734fe0057132da72e8f7ff641405e3e3fa55235bed251bfb50226953bffd",
+      "line_count": 228,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_prediction_diagnostics_20261029_작업2이전.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\cycle2_prediction_diagnostics_20261029_작업2이전.md",
+      "sha256": "451b5254a00e53bfdc735f39da31fbf9406f05f26f3f2b637b1a4917fc41f0f9",
+      "line_count": 228,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/remeasure_20261031_001.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\remeasure_20261031_001.md",
+      "sha256": "49d46a057f86b4718aeb49044010feecd8a6bb01fa99c6f947c49b3d1bc335ab",
+      "line_count": 114,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/remeasure_20261031_002수정전.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\remeasure_20261031_002수정전.md",
+      "sha256": "b377a995d7b423f617a0e0b723577c8cee75954da483d8dc7d333ab39d8889b2",
+      "line_count": 115,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/remeasure_20261031_003수정전.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\remeasure_20261031_003수정전.md",
+      "sha256": "ec9a6bbaa6fa3e81b2dd5528f06bfeb58c77e296716566932b2baffe1e457509",
+      "line_count": 132,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/어선항적_2차모델결과_총정리_해설_20261029_작업2이전.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\어선항적_2차모델결과_총정리_해설_20261029_작업2이전.md",
+      "sha256": "1216838965421ff1f7a5d44246a8fbd8bbb2abdcd036a276c9de18253cfa5e90",
+      "line_count": 256,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/archive/어선항적_2차모델결과_총정리_해설_20261030_정정전.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\archive\\어선항적_2차모델결과_총정리_해설_20261030_정정전.md",
+      "sha256": "6e34b7a85c22b2926e04a1e33bbe3fd2d42f07e33bf1580ee6ebeda378e91eb8",
+      "line_count": 276,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_development_ablation_20261029.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_development_ablation_20261029.md",
+      "sha256": "0e2b7e8be166d319969f5c54ea532d5bb23a838ed80b51d05ec42623b9214f85",
+      "line_count": 173,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_1_provenance.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_followup_1_provenance.md",
+      "sha256": "9d49a73b2166d96a0dd3e9ad44e814967629aa4205621e25256ebad7bd7d6e0e",
+      "line_count": 108,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_3_rerun.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_followup_3_rerun.md",
+      "sha256": "3d0998f93e7781780732e15af98fa6a5908b1c453eb830c04dc41a421a66e5d8",
+      "line_count": 116,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_4_zero_prob.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_followup_4_zero_prob.md",
+      "sha256": "4201111d77d52d61b7806c4a6a5fd84d4b5ba02a97cea4b1f60a0198f73f767c",
+      "line_count": 131,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_5_calibration.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_followup_5_calibration.md",
+      "sha256": "bf4fa1c470795895cb47644b5f056b91a4f7a0f3e81a9068794618c3c17cb712",
+      "line_count": 97,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_6_trap_binary.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_followup_6_trap_binary.md",
+      "sha256": "9a0af8c770991ce466101dc8aa20162c1b87eba57f63c9ff7e4ba5e1b176ba63",
+      "line_count": 94,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_7_agg_2x2.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_followup_7_agg_2x2.md",
+      "sha256": "5df965c7017a7cac6ca002a520a0e4d0b8ea85a0c3a1ae21fb763e1ddc24f0db",
+      "line_count": 107,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_followup_summary.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_followup_summary.md",
+      "sha256": "e1eb5ec235c2e630b176006a6ae8130c883444dd1f9beac5264ff687d97ad6b1",
+      "line_count": 117,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": "29-30일 모델 심층 분석/30일/어선항적_2차후속_최종정리_및_향후과제_20261030.md"
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_prediction_diagnostics_20261029.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_prediction_diagnostics_20261029.md",
+      "sha256": "3fd64420fdce34fff118e405f4a8479b9277c85aece6ea75d7ff225705f1f33a",
+      "line_count": 230,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_summary_audit_20261029.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle2_summary_audit_20261029.md",
+      "sha256": "192b0ab1f7c7e56e03f9c8bc125e7a1d3cd661142228b2b45b08012d1d85b50a",
+      "line_count": 91,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle3_2_exclusion.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle3_2_exclusion.md",
+      "sha256": "1b282c1ce7f810e915f4c1aab0f15ce6e1235f5f1354e8ede34fb8b7dc06a80e",
+      "line_count": 49,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle3_3_error_trace.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle3_3_error_trace.md",
+      "sha256": "24a83220921e6aadd79d6d7bb57a47ac40997fc89d29c5e2c46cc0571dfd4479",
+      "line_count": 94,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle3_progress_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle3_progress_20261030.md",
+      "sha256": "dc218c536dbd6751f3a4df1465b40e64cf01b3108931d06d555d059558d67465",
+      "line_count": 343,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_0_testA_setup.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle4_0_testA_setup.md",
+      "sha256": "cd3999482376840afa7fa03c5fb98019b7232a67037bd487a16289d2ae3fc4ea",
+      "line_count": 48,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_1_baseline.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle4_1_baseline.md",
+      "sha256": "fbc9972ecec6e379b78f289d8b3972a50cf0f72cb93b37f124a17306645c7a3d",
+      "line_count": 34,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_2_bd.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle4_2_bd.md",
+      "sha256": "cbfe3933a85ed4dee55a4769b9e98d850af99df3a5f62aea4748b5697bc31928",
+      "line_count": 44,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_3_featAC.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle4_3_featAC.md",
+      "sha256": "4b0babc645d3227d08ec408eee1218a10f3f45a39cd5899855d17f4181591f05",
+      "line_count": 82,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_data_status_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle4_data_status_20261030.md",
+      "sha256": "0281c66d1d4f9bc6497d71b27ea9debe6c599e22aa5ad60d5e18b954daa9d462",
+      "line_count": 76,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_revision_proposal_20261101.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle4_revision_proposal_20261101.md",
+      "sha256": "369bd408dd92ac2cc869ef3c022d393381db44d0f1f7477e0b22b0795eb3f222",
+      "line_count": 33,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/cycle4_summary.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\cycle4_summary.md",
+      "sha256": "e282d8f428daa554fb43bdbb1156a9eb8e8063892117ea7788a491bbe3d3694a",
+      "line_count": 58,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/f156_merge_20261101.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\f156_merge_20261101.md",
+      "sha256": "7ca26491c0b59bb47e8765d947ed5e7b47ffd7ce8591cb579b2a9c001ddc4dd5",
+      "line_count": 110,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/docs/remeasure_20261031.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\docs\\remeasure_20261031.md",
+      "sha256": "f23efb7773ac7b6c1ff8a7d0dc55f1e898fa0ad51238b8345202d9d619f991d9",
+      "line_count": 124,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/검토_개선방안_20261029-2차.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\검토_개선방안_20261029-2차.md",
+      "sha256": "b68b164a9a771348feaa6d089483bc15e950cd741d2c47d0deca6973945119ab",
+      "line_count": 134,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/어선항적_1차모델결과_총정리_해설.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\어선항적_1차모델결과_총정리_해설.md",
+      "sha256": "22a5a312e4bb68aa8c18bf76a8905ead54a17beaf1cda01935a9427dec9b017f",
+      "line_count": 168,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "29-30일 모델 심층 분석/분석 결과/어선항적_2차모델결과_총정리_해설.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\어선항적_2차모델결과_총정리_해설.md",
+      "sha256": "c177744ff28bbad7182d72a3e9aed8a91212ea21db0d1b34dfdd70a3ae5b7a61",
+      "line_count": 278,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "_handoff/EXECUTOR_PROMPT.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\_handoff\\EXECUTOR_PROMPT.md",
+      "sha256": "2f65be680319201c8fcbee07e5475eb53bfa5cfe5b06e648fb3c563f4afe1117",
+      "line_count": 7,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "_handoff/README.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\_handoff\\README.md",
+      "sha256": "b4caccd0b47e6e6766cbc5cfcf34a61f1f19932ee9f083fbb060741e81c166dd",
+      "line_count": 5,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "_handoff/STATUS.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\_handoff\\STATUS.md",
+      "sha256": "38a5ccb4d0af23cf71cd6b8556627a45b252174edf2e12d00fa1f65b7ad3d862",
+      "line_count": 4,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "_handoff/inbox/001_tasks_1-2.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\_handoff\\inbox\\001_tasks_1-2.md",
+      "sha256": "238211026aec17a8ebc8fd10d2272b975653c4b68fdf8d900625776ed1acefb2",
+      "line_count": 5,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "docs/cycle2_development_ablation_20261029.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\cycle2_development_ablation_20261029.md",
+      "sha256": "0e2b7e8be166d319969f5c54ea532d5bb23a838ed80b51d05ec42623b9214f85",
+      "line_count": 173,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_development_ablation_20261029.md"
+    },
+    {
+      "path": "docs/cycle2_followup_tasks.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\cycle2_followup_tasks.md",
+      "sha256": "49fe6cc59df9619d5dc8b48905de2b0a9b447229251101f0230a7a3029c033fd",
+      "line_count": 187,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "docs/cycle2_prediction_diagnostics_20261029.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\cycle2_prediction_diagnostics_20261029.md",
+      "sha256": "451b5254a00e53bfdc735f39da31fbf9406f05f26f3f2b637b1a4917fc41f0f9",
+      "line_count": 228,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": "29-30일 모델 심층 분석/분석 결과/docs/archive/cycle2_prediction_diagnostics_20261029_작업2이전.md"
+    },
+    {
+      "path": "docs/cycle2_summary_audit_20261029.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\cycle2_summary_audit_20261029.md",
+      "sha256": "192b0ab1f7c7e56e03f9c8bc125e7a1d3cd661142228b2b45b08012d1d85b50a",
+      "line_count": 91,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": "29-30일 모델 심층 분석/분석 결과/docs/cycle2_summary_audit_20261029.md"
+    },
+    {
+      "path": "docs/cycle4_tasks_20261030.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\cycle4_tasks_20261030.md",
+      "sha256": "e82463a8d041f04511490f644386024401740d8012cbdf8a5c21a00ccd644389",
+      "line_count": 174,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": "29-30일 모델 심층 분석/30일/cycle4_tasks_20261030.md"
+    },
+    {
+      "path": "docs/fishing_evaluation_cycle_results_20261028.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\fishing_evaluation_cycle_results_20261028.md",
+      "sha256": "14320cac46b7e3f10259e790182b96305bfffb02e13f58f0e91dfa5933f07688",
+      "line_count": 192,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "docs/fishing_report_updated_20261028.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\fishing_report_updated_20261028.md",
+      "sha256": "953f786becd40c12a8d1bdd68db41f7c12f9a4210323951df236b6c00e62a02a",
+      "line_count": 356,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "docs/real_accuracy_diagnosis_and_evaluation_history_20261029.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\real_accuracy_diagnosis_and_evaluation_history_20261029.md",
+      "sha256": "a9eadf4d76fb491aaf58b903a678672eb0d8e411cffd4d3eefd40b2b680ac995",
+      "line_count": 302,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    },
+    {
+      "path": "docs/어선항적_전체진행과_실제모델성능_통합정리_20261029.md",
+      "absolute_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\docs\\어선항적_전체진행과_실제모델성능_통합정리_20261029.md",
+      "sha256": "eb0ecb5c9f6e12a7231c9585e24ccd8ddd1d7a91547d60ea031b3712c4b2f7fe",
+      "line_count": 215,
+      "read_status": "complete",
+      "method": "full_text_with_exact_repeated_lines_read_at_first_occurrence",
+      "same_content_as": null
+    }
+  ],
+  "instructions_read": [
+    "AGENTS.md"
+  ],
+  "exclusions": [
+    "Raw datasets and files other than .md/.txt were not part of full-document coverage.",
+    "venv/.venv/vendor directories excluded.",
+    "PDF coverage assigned to parent."
+  ],
+  "auxiliary_evidence": "Read-only stored JSON/CSV arithmetic and selected code ranges, described in sol_history_review.md. No training."
+}

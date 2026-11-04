@@ -1,0 +1,23 @@
+[
+  {
+    "id": "P1",
+    "source": "C:\\Users\\dlehs\\Downloads\\어선항적과제_이해가이드.pdf",
+    "copy": "docs\\fishing_integration\\sources\\어선항적과제_이해가이드.pdf",
+    "sha256": "6e1b9caf7716cb0c12cbffd40e28c6248bfea02b7f591d16a57e9da972a9a25d",
+    "bytes": 2442617
+  },
+  {
+    "id": "P2",
+    "source": "C:\\Users\\dlehs\\Downloads\\01_참가신청서_가이드와_제안서_통합본.pdf",
+    "copy": "docs\\fishing_integration\\sources\\01_참가신청서_가이드와_제안서_통합본.pdf",
+    "sha256": "ab7df3241710dfefd5b11a59ddda3f7100838196c29826beed774443ced7386c",
+    "bytes": 298270
+  },
+  {
+    "id": "P3",
+    "source": "C:\\Users\\dlehs\\Downloads\\02_항적데이터_전처리와_모델설계_통합본.pdf",
+    "copy": "docs\\fishing_integration\\sources\\02_항적데이터_전처리와_모델설계_통합본.pdf",
+    "sha256": "f9be1473889e27c3d97d074fbf3aed7a0d3e96b84e773f922be08feafd76f425",
+    "bytes": 504715
+  }
+]

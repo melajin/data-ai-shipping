@@ -1,0 +1,189 @@
+{
+  "experiment": "S8_class_sensitivity",
+  "baseline_08_ensemble": {
+    "macro_f1": 0.54307,
+    "accuracy": 0.56469,
+    "class_f1": [
+      0.66677,
+      0.4841,
+      0.34502,
+      0.67636
+    ]
+  },
+  "single_class_perfect_oracle": {
+    "연안복합": {
+      "class_id": 0,
+      "target_n_vessels": 2920,
+      "macro_f1": 0.85361,
+      "delta_macro_f1": 0.31054,
+      "ci_macro_f1": [
+        0.296339,
+        0.325177
+      ],
+      "accuracy": 0.91843,
+      "delta_accuracy": 0.35374,
+      "ci_accuracy": [
+        0.34119,
+        0.365614
+      ],
+      "class_f1": [
+        1.0,
+        0.8827,
+        0.75195,
+        0.77978
+      ]
+    },
+    "자망": {
+      "class_id": 1,
+      "target_n_vessels": 2016,
+      "macro_f1": 0.80312,
+      "delta_macro_f1": 0.26005,
+      "ci_macro_f1": [
+        0.246797,
+        0.273836
+      ],
+      "accuracy": 0.8701,
+      "delta_accuracy": 0.30541,
+      "ci_accuracy": [
+        0.29337,
+        0.316602
+      ],
+      "class_f1": [
+        0.87398,
+        1.0,
+        0.54779,
+        0.7907
+      ]
+    },
+    "통발": {
+      "class_id": 2,
+      "target_n_vessels": 835,
+      "macro_f1": 0.79069,
+      "delta_macro_f1": 0.24762,
+      "ci_macro_f1": [
+        0.234943,
+        0.260819
+      ],
+      "accuracy": 0.76106,
+      "delta_accuracy": 0.19637,
+      "ci_accuracy": [
+        0.186531,
+        0.206715
+      ],
+      "class_f1": [
+        0.77945,
+        0.61924,
+        1.0,
+        0.76404
+      ]
+    },
+    "채낚기연승낚시": {
+      "class_id": 3,
+      "target_n_vessels": 126,
+      "macro_f1": 0.63258,
+      "delta_macro_f1": 0.08952,
+      "ci_macro_f1": [
+        0.072495,
+        0.107706
+      ],
+      "accuracy": 0.57979,
+      "delta_accuracy": 0.01509,
+      "ci_accuracy": [
+        0.01204,
+        0.018145
+      ],
+      "class_f1": [
+        0.67114,
+        0.49658,
+        0.36261,
+        1.0
+      ]
+    }
+  },
+  "pair_perfect_separation_oracle": {
+    "연안복합-자망": {
+      "pair": [
+        0,
+        1
+      ],
+      "resolved_errors": 1346,
+      "macro_f1": 0.69452,
+      "delta_macro_f1": 0.15145,
+      "ci_macro_f1": [
+        0.144646,
+        0.158245
+      ],
+      "accuracy": 0.79295,
+      "delta_accuracy": 0.22825,
+      "ci_accuracy": [
+        0.217568,
+        0.238935
+      ],
+      "class_f1": [
+        0.87398,
+        0.8827,
+        0.34502,
+        0.67636
+      ]
+    },
+    "연안복합-통발": {
+      "pair": [
+        0,
+        2
+      ],
+      "resolved_errors": 712,
+      "macro_f1": 0.67297,
+      "delta_macro_f1": 0.1299,
+      "ci_macro_f1": [
+        0.121921,
+        0.137806
+      ],
+      "accuracy": 0.68543,
+      "delta_accuracy": 0.12074,
+      "ci_accuracy": [
+        0.1126,
+        0.129218
+      ],
+      "class_f1": [
+        0.77945,
+        0.4841,
+        0.75195,
+        0.67636
+      ]
+    },
+    "자망-통발": {
+      "pair": [
+        1,
+        2
+      ],
+      "resolved_errors": 420,
+      "macro_f1": 0.62754,
+      "delta_macro_f1": 0.08448,
+      "ci_macro_f1": [
+        0.077118,
+        0.091974
+      ],
+      "accuracy": 0.63592,
+      "delta_accuracy": 0.07122,
+      "ci_accuracy": [
+        0.064779,
+        0.077836
+      ],
+      "class_f1": [
+        0.66677,
+        0.61924,
+        0.54779,
+        0.67636
+      ]
+    }
+  },
+  "chaenak_sample_sensitivity": {
+    "cohort_size": 126,
+    "total_outer_ships": 5897,
+    "cohort_ratio": 0.0214,
+    "f1_weight_in_macro": 0.25,
+    "theoretical_macro_impact_per_0.05_f1": 0.0125,
+    "single_ship_f1_impact_approx": 0.00198,
+    "note": "채낚기는 126척(전체의 2.1%)에 불과하지만 macro-F1에서는 동일한 25% 가중치를 가지므로 단 1척의 오류가 macro-F1 약 0.002에 해당하는 강한 레버리지를 가짐."
+  }
+}

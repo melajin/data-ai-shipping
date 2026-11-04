@@ -1,0 +1,443 @@
+{
+  "read_paths": [
+    "1차 모델 실험 결과.md",
+    "2026 데이터 분석대회 데이터 분석 정리.md",
+    "26_11_2/coach/gemini/20261102_2058_gemini.md",
+    "26_11_2/coach/gpt/20261102_2051_gpt.md",
+    "26_11_2/coach/gpt/20261104_0945_gpt.md",
+    "26_11_2/coach/gpt/20261104_1246_gpt.md",
+    "26_11_2/commander/20261102_2056_cc.md",
+    "26_11_2/docs/재식별_투트랙_시스템_설계.md",
+    "26_11_2/inbox/001_데이터준비와_전제확인.md",
+    "26_11_2/inbox/001r1_재실행.md",
+    "26_11_2/inbox/002_모델확률_이웃투표_결합.md",
+    "26_11_2/inbox/002v1_판정결과_정규분포_시각화.md",
+    "26_11_2/inbox/003_짧은관측_학습예시보강.md",
+    "26_11_2/inbox/003r1_GPU환경_실행절차.md",
+    "26_11_2/outbox/001_report.md",
+    "26_11_2/outbox/001r1_report.md",
+    "26_11_2/outbox/002_report.md",
+    "26_11_2/outbox/002v1_report.md",
+    "26_11_2/outbox/003_report.md",
+    "26_11_2/outbox/팀원공유_분석요약_20261103.md",
+    "26_11_2/prompts/CLAUDE_CODE_EXECUTOR_PROMPT.md",
+    "26_11_2/README.md",
+    "26_11_2/reviews/001_review.md",
+    "26_11_2/reviews/001_selfcheck.md",
+    "26_11_2/reviews/001_verify.txt",
+    "26_11_2/reviews/001r1_review.md",
+    "26_11_2/reviews/001r1_selfcheck.md",
+    "26_11_2/reviews/001r1_verify.txt",
+    "26_11_2/reviews/001r1_추가분석_전원일치규칙.md",
+    "26_11_2/reviews/002_review.md",
+    "26_11_2/reviews/002_selfcheck.md",
+    "26_11_2/reviews/002_verify.txt",
+    "26_11_2/reviews/002v1_review.md",
+    "26_11_2/reviews/002v1_selfcheck.md",
+    "26_11_2/reviews/002v1_verify.txt",
+    "26_11_2/reviews/003_review.md",
+    "26_11_2/reviews/003_selfcheck.md",
+    "26_11_2/reviews/003_verify.txt",
+    "26_11_2/ROADMAP.md",
+    "26_11_2/STATUS.md",
+    "26_11_2/work/모델개선_002/progress.md",
+    "26_11_2/work/모델개선_003/progress.md",
+    "26_11_2/work/시각화_002/progress.md",
+    "26_11_2/work/재식별_투트랙_001/progress.md",
+    "26_11_2/work/재식별_투트랙_001r1/progress.md",
+    "26_11_4/11_upper_bound_report.md",
+    "26_11_4/20261104_종합보고서.md",
+    "26_11_4/inbox/011_데이터상한선_측정.md",
+    "26_11_4/README.md",
+    "26_11_4/RESULTS.md",
+    "26_11_4/work/상한선_011/progress.md",
+    "AGENTS.md",
+    "docs/fishing_team_collaboration.md",
+    "requirements-sample.txt",
+    "어선 항적 분석 소개.md",
+    "어선 항적 통합 학습 가이드.md",
+    "어선항적_1차모델결과_총정리_해설.md",
+    "어선항적_2차모델결과_총정리_해설.md",
+    "재식별_투트랙_시스템_설계.md",
+    "재식별_투트랙_지시001_데이터준비와_전제확인.md",
+    "전체 시스템 요약정리(중요함).txt"
+  ],
+  "records": [
+    {
+      "path": "1차 모델 실험 결과.md",
+      "mode": "full_prose_embedded_base64_image_pixels_excluded",
+      "bytes": 90460,
+      "sha256": "4f8b1c6a3a796b427335cb6a851c15e63e7c8f5f88b11435abac61a6b4536c61"
+    },
+    {
+      "path": "2026 데이터 분석대회 데이터 분석 정리.md",
+      "mode": "full_text",
+      "bytes": 4607,
+      "sha256": "a048a958b58330a90a54e396bd3c5ea3e7428f0ead2dc7b0fefca1c444f9e008"
+    },
+    {
+      "path": "26_11_2/coach/gemini/20261102_2058_gemini.md",
+      "mode": "full_text",
+      "bytes": 6593,
+      "sha256": "25b4ac4c96c60f6a9e8c13d65500e6b63d375498f8579f87367cfa3e12847db3"
+    },
+    {
+      "path": "26_11_2/coach/gpt/20261102_2051_gpt.md",
+      "mode": "full_text",
+      "bytes": 3188,
+      "sha256": "581ee4bfa7cd3dfe0705bef22a103e502b26a306c44f90e0005b09ff7c0f92f7"
+    },
+    {
+      "path": "26_11_2/coach/gpt/20261104_0945_gpt.md",
+      "mode": "full_text",
+      "bytes": 17922,
+      "sha256": "aba4e2df0459a3fb3ad2b8e5341d27a51c32107d14b1437cbf80698ea9addbe2"
+    },
+    {
+      "path": "26_11_2/coach/gpt/20261104_1246_gpt.md",
+      "mode": "full_text",
+      "bytes": 23891,
+      "sha256": "c89afe6119f9228919f9d8e430b4b6828526154c6a0127296fcfa3e7097650e5"
+    },
+    {
+      "path": "26_11_2/commander/20261102_2056_cc.md",
+      "mode": "full_text",
+      "bytes": 1405,
+      "sha256": "6e142db74aba2f92e12c176516088985b4b7db0a034faf1095f10e7186e66fec"
+    },
+    {
+      "path": "26_11_2/docs/재식별_투트랙_시스템_설계.md",
+      "mode": "full_text",
+      "bytes": 18575,
+      "sha256": "353fb7d86929af35ca572c8dcf3150fee7e43e86415691864e2c2e37eab8e3d6"
+    },
+    {
+      "path": "26_11_2/inbox/001_데이터준비와_전제확인.md",
+      "mode": "full_text",
+      "bytes": 11724,
+      "sha256": "001cd2f28e7383d73f2f732db02bf3a0b3d8d84f6569e52a107eb8ca5b0e1db3"
+    },
+    {
+      "path": "26_11_2/inbox/001r1_재실행.md",
+      "mode": "full_text",
+      "bytes": 3569,
+      "sha256": "c6a3cf88ec0b81ff52a82b72d63279d7a9eeeb538d4f72c38ee2544c4e89e65e"
+    },
+    {
+      "path": "26_11_2/inbox/002_모델확률_이웃투표_결합.md",
+      "mode": "full_text",
+      "bytes": 5894,
+      "sha256": "19c4c750c4dbaaaf657c0822ad1d03269612cedafed7748f6e67d62e2d614764"
+    },
+    {
+      "path": "26_11_2/inbox/002v1_판정결과_정규분포_시각화.md",
+      "mode": "full_text",
+      "bytes": 6267,
+      "sha256": "62a0d3fa878b9320c09fb0883d1a2d65b6cc777359a92dd33954dbb5c1786998"
+    },
+    {
+      "path": "26_11_2/inbox/003_짧은관측_학습예시보강.md",
+      "mode": "full_text",
+      "bytes": 10230,
+      "sha256": "7e3006425e6b006a06809e8d0c099a7a349ade14e0b516eb498de20fdf1b92c8"
+    },
+    {
+      "path": "26_11_2/inbox/003r1_GPU환경_실행절차.md",
+      "mode": "full_text",
+      "bytes": 17709,
+      "sha256": "9332f6d29a03988f6ddcf0954548767e5feb9214f6c8811360113d7bd68faeb5"
+    },
+    {
+      "path": "26_11_2/outbox/001_report.md",
+      "mode": "full_text",
+      "bytes": 13775,
+      "sha256": "6fcb122dcdb6568e69a54ee4d4c997f2ef9d53b8f22ab722d10a627a97a1ccfd"
+    },
+    {
+      "path": "26_11_2/outbox/001r1_report.md",
+      "mode": "full_text",
+      "bytes": 15303,
+      "sha256": "7220931b49488634cbe218fec26dc28a26b70695a1872cb363b6aa81b6d790b0"
+    },
+    {
+      "path": "26_11_2/outbox/002_report.md",
+      "mode": "full_text",
+      "bytes": 9706,
+      "sha256": "c52025552aeb769e360be5a1a7e490d089f10b21facda3b5ebc5281056ee1fe6"
+    },
+    {
+      "path": "26_11_2/outbox/002v1_report.md",
+      "mode": "full_text",
+      "bytes": 13095,
+      "sha256": "1e652a7859dea40f1026dab0e52338674e4d2e31b05df41231cff12ed08541d7"
+    },
+    {
+      "path": "26_11_2/outbox/003_report.md",
+      "mode": "full_text",
+      "bytes": 7040,
+      "sha256": "f5733521365c7cda7c873bb4428cce71af893d260c90277485dad1791fcb54c0"
+    },
+    {
+      "path": "26_11_2/outbox/팀원공유_분석요약_20261103.md",
+      "mode": "full_text",
+      "bytes": 8933,
+      "sha256": "8f60d5f810e4110227d0a185047139045663920bf8f5e58da18ce9b80ba31d08"
+    },
+    {
+      "path": "26_11_2/prompts/CLAUDE_CODE_EXECUTOR_PROMPT.md",
+      "mode": "full_text",
+      "bytes": 6642,
+      "sha256": "65f442029be8a85f33a6de78ca8ed069dcc3fb61a3d0082d6b6384becc1418fe"
+    },
+    {
+      "path": "26_11_2/README.md",
+      "mode": "full_text",
+      "bytes": 4102,
+      "sha256": "0a23547e275c523362a8fd36eaad711dcda0c9de2c2f4ab7a05edc97bbfa55bc"
+    },
+    {
+      "path": "26_11_2/reviews/001_review.md",
+      "mode": "full_text",
+      "bytes": 3930,
+      "sha256": "55a3927a5145822f14071bd9221baa52b33d8f45fe52ff983effd176cf96084e"
+    },
+    {
+      "path": "26_11_2/reviews/001_selfcheck.md",
+      "mode": "full_text",
+      "bytes": 6308,
+      "sha256": "47aae3f7f54a2c43138d90a6f56c784a7107a61ad6970900d3ccf8033c42450d"
+    },
+    {
+      "path": "26_11_2/reviews/001_verify.txt",
+      "mode": "full_text",
+      "bytes": 908,
+      "sha256": "01956b0db466c199d4b3cb36dbcb7517bea1bb6ae2f3267b1b2c19521ebeb577"
+    },
+    {
+      "path": "26_11_2/reviews/001r1_review.md",
+      "mode": "full_text",
+      "bytes": 5413,
+      "sha256": "e683d97ab10c908bfd86437a4a01d7a65c60aa489e1c9e42ea2b3c6837603436"
+    },
+    {
+      "path": "26_11_2/reviews/001r1_selfcheck.md",
+      "mode": "full_text",
+      "bytes": 5276,
+      "sha256": "ed3775321e73cfbfcdba0dc808ddbe021ac948b211cf92a4293d94ac55b9cc8f"
+    },
+    {
+      "path": "26_11_2/reviews/001r1_verify.txt",
+      "mode": "full_text",
+      "bytes": 1471,
+      "sha256": "b6c53f4fd08594601f8020731c041d8a451c90f1c90c1190e988f69343a80ede"
+    },
+    {
+      "path": "26_11_2/reviews/001r1_추가분석_전원일치규칙.md",
+      "mode": "full_text",
+      "bytes": 2409,
+      "sha256": "6d0877ea8b88b4f4066c9dbdd86d92f44734729026744e6e02a5c1d75b5c4932"
+    },
+    {
+      "path": "26_11_2/reviews/002_review.md",
+      "mode": "full_text",
+      "bytes": 10936,
+      "sha256": "0dd1d254f95507cc94f06f8d1f9fdc0c2c7602034cf41e574ee01d41d9a8abac"
+    },
+    {
+      "path": "26_11_2/reviews/002_selfcheck.md",
+      "mode": "full_text",
+      "bytes": 5421,
+      "sha256": "f1c3a6093ecf812cdb96e0c7af1a860809cf87cbffeccc33a692d4ea510a35cd"
+    },
+    {
+      "path": "26_11_2/reviews/002_verify.txt",
+      "mode": "full_text",
+      "bytes": 1216,
+      "sha256": "ee97f30e4b1996d89125a4685eab0c54d18c554a2c8aad13ea0f9e7321b77b02"
+    },
+    {
+      "path": "26_11_2/reviews/002v1_review.md",
+      "mode": "full_text",
+      "bytes": 2943,
+      "sha256": "ddcb92bc250c3924b705e53d843be52d86895a4540f48676ca393d372e7c6201"
+    },
+    {
+      "path": "26_11_2/reviews/002v1_selfcheck.md",
+      "mode": "full_text",
+      "bytes": 4379,
+      "sha256": "52d22983c10fd58deb4c0c1b0da72490ec9a7ccea845791691c4d1bf2d36e97f"
+    },
+    {
+      "path": "26_11_2/reviews/002v1_verify.txt",
+      "mode": "full_text",
+      "bytes": 1717,
+      "sha256": "ce7c2ce0a5c06a6b62ce24a2436c9444a16389ca5d1214037c8240cc73d22e09"
+    },
+    {
+      "path": "26_11_2/reviews/003_review.md",
+      "mode": "full_text",
+      "bytes": 2470,
+      "sha256": "e9857beb37e24c62a8ae963cf68ad684b54a325d7e31a8dd10696a17ce40c96e"
+    },
+    {
+      "path": "26_11_2/reviews/003_selfcheck.md",
+      "mode": "full_text",
+      "bytes": 5032,
+      "sha256": "fe97e041c7516130cb7b04f8c9afdd5e9f210ad324e366b05ace25c716e497fb"
+    },
+    {
+      "path": "26_11_2/reviews/003_verify.txt",
+      "mode": "full_text",
+      "bytes": 1135,
+      "sha256": "29de152e32564b8f0e46713f282a5a1acebcf879369512397def06b898ff89e5"
+    },
+    {
+      "path": "26_11_2/ROADMAP.md",
+      "mode": "full_text",
+      "bytes": 5648,
+      "sha256": "5e686c5b590ba333eb861db37f5cfa8e0888b5ddfc72b89096d33d57935acf25"
+    },
+    {
+      "path": "26_11_2/STATUS.md",
+      "mode": "full_text",
+      "bytes": 270,
+      "sha256": "6e6d453592a96342287cacd774258748e78eb9f2bc8c027163a1e4f676d945ba"
+    },
+    {
+      "path": "26_11_2/work/모델개선_002/progress.md",
+      "mode": "full_text",
+      "bytes": 1631,
+      "sha256": "dc394db60d6f02fa2e7bd2892e1c2af7320fe1be5537e62074f568fb19ffae1f"
+    },
+    {
+      "path": "26_11_2/work/모델개선_003/progress.md",
+      "mode": "full_text",
+      "bytes": 2365,
+      "sha256": "5d524b5faa00f10b88aeba5bf7122f9e8d1d6992ef25faaa837340c87b017f88"
+    },
+    {
+      "path": "26_11_2/work/시각화_002/progress.md",
+      "mode": "full_text",
+      "bytes": 5579,
+      "sha256": "b64dcc54b6a60d4cab90d86a84f4f8eba3c64059e4384c5f0ebd0565683e6021"
+    },
+    {
+      "path": "26_11_2/work/재식별_투트랙_001/progress.md",
+      "mode": "full_text",
+      "bytes": 5688,
+      "sha256": "2c4da9a33e4cf3d78102eb43793c87a81614bf62071a48500e0335eec02f340e"
+    },
+    {
+      "path": "26_11_2/work/재식별_투트랙_001r1/progress.md",
+      "mode": "full_text",
+      "bytes": 6042,
+      "sha256": "9b624691c0cb982822abb7f40b5a1c6e1e32f2ef27b57722e79027d6b7ff414a"
+    },
+    {
+      "path": "26_11_4/11_upper_bound_report.md",
+      "mode": "full_text",
+      "bytes": 10549,
+      "sha256": "38c953d9cc41d9369791e98fbdd3c8fb7f90f36f658e7f238d81e4340515287a"
+    },
+    {
+      "path": "26_11_4/20261104_종합보고서.md",
+      "mode": "full_text",
+      "bytes": 15105,
+      "sha256": "58406f479036ae06c4f2e10ff20089f45c5b841474f023f3db1b3807fccdad14"
+    },
+    {
+      "path": "26_11_4/inbox/011_데이터상한선_측정.md",
+      "mode": "full_text",
+      "bytes": 19689,
+      "sha256": "21edc4cbddb5391f558ead896d0409b31f77904b0ed558079c4f8fb752383ead"
+    },
+    {
+      "path": "26_11_4/README.md",
+      "mode": "full_text",
+      "bytes": 4231,
+      "sha256": "23c90056fc16cb386aa7416c42e74447c16efcc48c6902fb658da465995127bc"
+    },
+    {
+      "path": "26_11_4/RESULTS.md",
+      "mode": "full_text",
+      "bytes": 9244,
+      "sha256": "b4813be31796ec696208e8b1e65f2a6b5e6f53512595cead9800dd7cc2f04b05"
+    },
+    {
+      "path": "26_11_4/work/상한선_011/progress.md",
+      "mode": "full_text",
+      "bytes": 3941,
+      "sha256": "f8b5b917dd35d9c9231eda7b49f6c6cb0bfbb0e481aec2faec147791bb93bd17"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "full_text",
+      "bytes": 4041,
+      "sha256": "ccd315e836f06eb09a7f1e6a7bc4fc527f6affeb893090de8b2678786a7e084a"
+    },
+    {
+      "path": "docs/fishing_team_collaboration.md",
+      "mode": "full_text",
+      "bytes": 50842,
+      "sha256": "a743f20a536d49e6ac2209e2e1df53dbd93ba228c6eb2d4f86141438be6efc39"
+    },
+    {
+      "path": "requirements-sample.txt",
+      "mode": "full_text",
+      "bytes": 14,
+      "sha256": "8f40ca44a22b1aa83e698b44fe63c246695b49eb7e4a12b9de93c2276c0d62f9"
+    },
+    {
+      "path": "어선 항적 분석 소개.md",
+      "mode": "full_text",
+      "bytes": 10403,
+      "sha256": "da72cb6452bbade70dca2677b290d609a50546b1b59958261334570f51ad8058"
+    },
+    {
+      "path": "어선 항적 통합 학습 가이드.md",
+      "mode": "full_text",
+      "bytes": 7631,
+      "sha256": "5a0637880a874c1aa6737a69d16fd994a022578ca7d43eefbd54d0493d14e25b"
+    },
+    {
+      "path": "어선항적_1차모델결과_총정리_해설.md",
+      "mode": "full_text",
+      "bytes": 10582,
+      "sha256": "22a5a312e4bb68aa8c18bf76a8905ead54a17beaf1cda01935a9427dec9b017f"
+    },
+    {
+      "path": "어선항적_2차모델결과_총정리_해설.md",
+      "mode": "full_text",
+      "bytes": 21103,
+      "sha256": "1216838965421ff1f7a5d44246a8fbd8bbb2abdcd036a276c9de18253cfa5e90"
+    },
+    {
+      "path": "재식별_투트랙_시스템_설계.md",
+      "mode": "sha256_identical_to_read_copy",
+      "bytes": 18575,
+      "sha256": "353fb7d86929af35ca572c8dcf3150fee7e43e86415691864e2c2e37eab8e3d6"
+    },
+    {
+      "path": "재식별_투트랙_지시001_데이터준비와_전제확인.md",
+      "mode": "full_diff_against_read_inbox001",
+      "bytes": 11082,
+      "sha256": "571f0e1605a13feae9bb82e47613ad523a2f79bfcb61a31e3d82acce44cfd9e4"
+    },
+    {
+      "path": "전체 시스템 요약정리(중요함).txt",
+      "mode": "full_text",
+      "bytes": 2718,
+      "sha256": "b42260442b2c9c8e04048cef44b335dbb07df2eff1405289c898b28cc6bf69ff"
+    }
+  ],
+  "supplemental_text": [
+    "docs/review_20261104/application_hwp_text.txt"
+  ],
+  "exclusions": [
+    "venv/.venv/vendor/package documents",
+    "inline base64 image pixels",
+    "binary figures",
+    "full raw data",
+    "linked external papers"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "experiment": "S5_model_capacity",
+  "description": "FIT 자기 예측과 OUTER 예측의 일반화 갭 비교 (진단용)",
+  "interpretation": "FIT 점수 자체가 높지 않다면 모델 용량 부족(언더피팅), FIT은 매우 높은데 OUTER가 낮다면 일반화 한계(과적합/특징 중복/누락 정보).",
+  "w_1.5_macro_mode": {
+    "fit_macro_f1": 0.87017,
+    "fit_accuracy": 0.87141,
+    "fit_class_f1": [
+      0.89266,
+      0.84284,
+      0.85833,
+      0.88684
+    ],
+    "outer_macro_f1": 0.53185,
+    "outer_accuracy": 0.563,
+    "outer_class_f1": [
+      0.66772,
+      0.47706,
+      0.32769,
+      0.65493
+    ],
+    "gap_macro_f1_fit_minus_outer": 0.33832,
+    "gap_accuracy_fit_minus_outer": 0.30841
+  },
+  "w_1.0_acc_mode": {
+    "fit_macro_f1": 0.86856,
+    "fit_accuracy": 0.87491,
+    "fit_class_f1": [
+      0.8921,
+      0.85291,
+      0.86242,
+      0.86682
+    ],
+    "outer_macro_f1": 0.51984,
+    "outer_accuracy": 0.57792,
+    "outer_class_f1": [
+      0.67968,
+      0.4933,
+      0.24895,
+      0.65744
+    ],
+    "gap_macro_f1_fit_minus_outer": 0.34872,
+    "gap_accuracy_fit_minus_outer": 0.29699
+  }
+}

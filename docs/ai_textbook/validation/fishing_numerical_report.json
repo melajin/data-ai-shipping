@@ -1,0 +1,675 @@
+{
+  "date": "2026-10-07",
+  "scope": "Selected synthetic calculations in fishing chapters19-25; not actual model or vessel validation",
+  "real_data_evaluated": false,
+  "model_training_performed": false,
+  "hardware_experiment_performed": false,
+  "checks": 83,
+  "passed": 83,
+  "results": [
+    {
+      "name": "M19 length",
+      "condition": "One connected synthetic part, coordinates in m",
+      "expected": 700,
+      "computed": 700.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 displacement",
+      "condition": "End-to-end distance",
+      "expected": 500,
+      "computed": 500.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 straightness",
+      "condition": "D/L",
+      "expected": 0.7142857142857143,
+      "computed": 0.7142857142857143,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 multipart length",
+      "condition": "Separate 300 m second part; no gap edge",
+      "expected": 1000,
+      "computed": 1000.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 multipart straightness",
+      "condition": "Sum D / sum L",
+      "expected": 0.8,
+      "computed": 0.8,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 turn",
+      "condition": "Vectors (300,0),(0,400), rad",
+      "expected": 1.5707963267948966,
+      "computed": 1.5707963267948966,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 box area",
+      "condition": "Width 300 m, height 400 m",
+      "expected": 120000,
+      "computed": 120000,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 covariance 0,0",
+      "condition": "Population point covariance, m²",
+      "expected": 20000,
+      "computed": 20000.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 covariance 0,1",
+      "condition": "Population point covariance, m²",
+      "expected": 13333.333333333334,
+      "computed": 13333.333333333334,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 covariance 1,1",
+      "condition": "Population point covariance, m²",
+      "expected": 35555.555555555555,
+      "computed": 35555.555555555555,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 arc-length interpolation",
+      "condition": "350 m is 50/400 along second segment",
+      "expected": 50,
+      "computed": 50.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 DTW",
+      "condition": "A=(0,2), B=(0,1,2), squared cost then sqrt",
+      "expected": 1,
+      "computed": 1.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M19 spherical distance",
+      "condition": "Equator 0.01 deg, assumed R=6371000 m",
+      "expected": 1111.9492664455875,
+      "computed": 1111.9492664455875,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M20 initial CE",
+      "condition": "Class index 1, z=(0,ln2,ln3)",
+      "expected": 1.0986122886681098,
+      "computed": 1.0986122886681098,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M20 CE gradient 0",
+      "condition": "Central finite difference against p-onehot",
+      "expected": 0.16666666666666666,
+      "computed": 0.166666666689963,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "M20 CE gradient 1",
+      "condition": "Central finite difference against p-onehot",
+      "expected": -0.6666666666666667,
+      "computed": -0.6666666665378074,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "M20 CE gradient 2",
+      "condition": "Central finite difference against p-onehot",
+      "expected": 0.5,
+      "computed": 0.500000000069889,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "M20 updated probability",
+      "condition": "Joint W,b step eta=.1 on x=(1,2)",
+      "expected": 0.488247090454,
+      "computed": 0.48824709045425563,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M20 updated CE",
+      "condition": "Same single synthetic sample",
+      "expected": 0.716933668374,
+      "computed": 0.7169336683741733,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M20 weighted CE exercise",
+      "condition": "Loss .4,1; weight 1,3",
+      "expected": 0.85,
+      "computed": 0.85,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M20 Gini parent",
+      "condition": "Class frequencies 3/4,1/4",
+      "expected": 0.375,
+      "computed": 0.375,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M20 RBF",
+      "condition": "gamma=.5, squared distance 2",
+      "expected": 0.367879441171,
+      "computed": 0.36787944117144233,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M20 joint objective",
+      "condition": "ln2 plus .2 times half squared residual .5",
+      "expected": 0.71814718056,
+      "computed": 0.7181471805599453,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M20 shared gradient",
+      "condition": ".2 times residual -.5 times decoder .5",
+      "expected": -0.05,
+      "computed": -0.05,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M20 opposing objectives",
+      "condition": "gC=(1,0),gA=(-2,1)",
+      "expected": -2,
+      "computed": -2,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21 causal attention",
+      "condition": "Only scores 0,ln2; values 10,20",
+      "expected": 16.666666666667,
+      "computed": 16.666666666666668,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21 unmasked attention",
+      "condition": "Scores 0,ln2,ln4; values 10,20,100",
+      "expected": 64.285714285714,
+      "computed": 64.28571428571429,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21 TCN receptive field",
+      "condition": "One conv/layer; k=3, dilations 1,2,4",
+      "expected": 15,
+      "computed": 15,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21 LSTM cell",
+      "condition": "f=.8,cprev=1,i=.2,candidate=.5",
+      "expected": 0.9,
+      "computed": 0.9,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21 LSTM hidden",
+      "condition": "o=.5,c=.9",
+      "expected": 0.3581489351,
+      "computed": 0.3581489350995122,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21-Q2 likelihood",
+      "condition": "Forward sums all state paths",
+      "expected": 0.19,
+      "computed": 0.19,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21-Q2 posterior V",
+      "condition": "alpha2V divided by likelihood",
+      "expected": 0.589473684211,
+      "computed": 0.5894736842105263,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21-Q2 Viterbi",
+      "condition": "Maximum joint path probability",
+      "expected": 0.084,
+      "computed": 0.08399999999999999,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21 AR",
+      "condition": "c=.2,phi=.8,current=1.5",
+      "expected": 1.4,
+      "computed": 1.4000000000000001,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21-Q3 gain",
+      "condition": "H=1,Pminus=9,R=3",
+      "expected": 0.75,
+      "computed": 0.75,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21-Q3 mean",
+      "condition": "Prior5,observation8",
+      "expected": 7.25,
+      "computed": 7.25,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M21-Q3 variance",
+      "condition": "Joseph form agrees with scalar shortcut",
+      "expected": 2.25,
+      "computed": 2.25,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 MAD",
+      "condition": "14 against baseline8..12; fixed1.4826 convention",
+      "expected": 2.69796303790638,
+      "computed": 2.697963037906381,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22-Q1 D2 aligned",
+      "condition": "Sigma=[[1,.8],[.8,1]]",
+      "expected": 1.1111111111111112,
+      "computed": 1.111111111111111,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22-Q1 NLL aligned",
+      "condition": "2D Gaussian log determinant included",
+      "expected": 1.882606998198,
+      "computed": 1.8826069981989102,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "M22-Q1 D2 opposed",
+      "condition": "Sigma=[[1,.8],[.8,1]]",
+      "expected": 10,
+      "computed": 10.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22-Q1 NLL opposed",
+      "condition": "2D Gaussian log determinant included",
+      "expected": 6.327051442642,
+      "computed": 6.327051442643355,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "M22 mixture density",
+      "condition": "Fixed weights .6,.4 and unit variances",
+      "expected": 0.159657210095,
+      "computed": 0.15965721029603203,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 KDE 0",
+      "condition": "h=1,Gaussian kernel,base(-1,0,1)",
+      "expected": 1.223174051735,
+      "computed": 1.223174052455139,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "M22 KDE 3",
+      "condition": "h=1,Gaussian kernel,base(-1,0,1)",
+      "expected": 3.936373364569,
+      "computed": 3.93637298872825,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "M22 isolation c8",
+      "condition": "Exact harmonic-number convention",
+      "expected": 3.4357142857142855,
+      "computed": 3.435714285714286,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22-Q2 isolation score",
+      "condition": "Average corrected path=3",
+      "expected": 0.545941823059,
+      "computed": 0.545941822908326,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 tail 0.8",
+      "condition": "One plus count>=score, divide by n+1",
+      "expected": 0.5,
+      "computed": 0.5,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 tail 1.2",
+      "condition": "One plus count>=score, divide by n+1",
+      "expected": 0.16666666666666666,
+      "computed": 0.16666666666666666,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 PCA residual",
+      "condition": "Projection(2,0) on span(1,1) gives(1,1)",
+      "expected": 1,
+      "computed": 1.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 AE MSE",
+      "condition": "Input(2,0),reconstruction(1.5,.5)",
+      "expected": 0.25,
+      "computed": 0.25,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 CUSUM step1",
+      "condition": "kappa=.5,threshold1.5",
+      "expected": 0,
+      "computed": 0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 CUSUM step2",
+      "condition": "kappa=.5,threshold1.5",
+      "expected": 0.5,
+      "computed": 0.5,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 CUSUM step3",
+      "condition": "kappa=.5,threshold1.5",
+      "expected": 1.1,
+      "computed": 1.1,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 CUSUM step4",
+      "condition": "kappa=.5,threshold1.5",
+      "expected": 0.7,
+      "computed": 0.7000000000000002,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22 CUSUM step5",
+      "condition": "kappa=.5,threshold1.5",
+      "expected": 1.6,
+      "computed": 1.6,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22-Q3 masked BCE",
+      "condition": "Known labels1,0; third unknown excluded",
+      "expected": 0.289909247626,
+      "computed": 0.2899092476264711,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22-Q3 false negative label BCE",
+      "condition": "Incorrectly forcing unknown p=.9 to negative",
+      "expected": 0.960801196082,
+      "computed": 0.9608011960823292,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M22-Q3 joint loss",
+      "condition": "Lclass=.4,lambda=.5",
+      "expected": 0.544954623813,
+      "computed": 0.5449546238132356,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M23 IDW sum",
+      "condition": "Distances in m,p=2",
+      "expected": 1,
+      "computed": 1.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M23 IDW value",
+      "condition": "Observations2m,5m",
+      "expected": 2.6,
+      "computed": 2.6,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M23 bilinear",
+      "condition": "Corners1,2,3,4;relativea=b=.25",
+      "expected": 1.75,
+      "computed": 1.75,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M23 valid-time mean",
+      "condition": "20min2m,10min5m",
+      "expected": 3,
+      "computed": 3.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M23 coverage",
+      "condition": "30 of60 minutes valid",
+      "expected": 0.5,
+      "computed": 0.5,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M23 future observation unavailable",
+      "condition": "11:10 publication after10:30 judgment",
+      "expected": 0,
+      "computed": 0.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24-Q1 position east",
+      "condition": "Synthetic dt5s,current(.3,-.2)m/s",
+      "expected": 1.5,
+      "computed": 1.5000000000000004,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24-Q1 position north",
+      "condition": "Synthetic dt5s,current(.3,-.2)m/s",
+      "expected": 9,
+      "computed": 9.0,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24-Q1 direction",
+      "condition": "Current headingpi/2,rate-.02rad/s,dt5s",
+      "expected": 1.470796326795,
+      "computed": 1.4707963267948965,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24-Q1 ground speed",
+      "condition": "Ground vector(.3,1.8)m/s",
+      "expected": 1.824828759089,
+      "computed": 1.8248287590894658,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24-Q2 Markov T",
+      "condition": "P=[[.8,.2],[.4,.6]],startT,two steps",
+      "expected": 0.72,
+      "computed": 0.7200000000000002,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24-Q2 dwell",
+      "condition": "Self-transition.8,geometricsteps",
+      "expected": 5,
+      "computed": 5.000000000000001,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24-Q2 AR1 sd",
+      "condition": "rho=.8,innovationSD=.012rad/s",
+      "expected": 0.02,
+      "computed": 0.020000000000000004,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24 OU coefficient",
+      "condition": "kappa=.1/s,dt10s",
+      "expected": 0.367879441171,
+      "computed": 0.36787944117144233,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24 OU innovation sd",
+      "condition": "sigma=.002,kappa=.1,dt10",
+      "expected": 0.004158521043,
+      "computed": 0.004158520690734597,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M24-Q3 KL",
+      "condition": "q=N(1,.25),p=N(0,1)",
+      "expected": 0.81814718056,
+      "computed": 0.8181471805599453,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M25 macro F1",
+      "condition": "Specified3x3syntheticconfusionmatrix",
+      "expected": 0.65,
+      "computed": 0.65,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M25 accuracy",
+      "condition": "6correctof9",
+      "expected": 0.6666666666666666,
+      "computed": 0.6666666666666666,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M25-Q1 AUC",
+      "condition": "Two positive, two negative labelled examples",
+      "expected": 0.75,
+      "computed": 0.75,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M25-Q1 AP",
+      "condition": "Positive ranks1,3,no ties",
+      "expected": 0.8333333333333334,
+      "computed": 0.8333333333333333,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M25 Brier",
+      "condition": "Fully definedbinarytargets",
+      "expected": 0.255,
+      "computed": 0.255,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M25 NLL",
+      "condition": "Probabilities andbinarytargets",
+      "expected": 0.684112418883,
+      "computed": 0.6841124189059771,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M25 temperature",
+      "condition": "Logitsln9,0;T=2",
+      "expected": 0.75,
+      "computed": 0.75,
+      "tolerance": 1e-08,
+      "passed": true
+    },
+    {
+      "name": "M25-Q2 lead minutes",
+      "condition": "Incident10:40,judgment11:05",
+      "expected": -25,
+      "computed": -25,
+      "tolerance": 1e-08,
+      "passed": true
+    }
+  ]
+}

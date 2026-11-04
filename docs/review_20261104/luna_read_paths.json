@@ -1,0 +1,994 @@
+{
+    "agent":  "luna_learning_sources",
+    "generated_on":  "2026-11-04",
+    "coverage_summary":  {
+                             "scoped_text_paths":  89,
+                             "direct_read_complete":  66,
+                             "workspace_pdf_paths":  17,
+                             "unique_pdf_files":  14,
+                             "exact_duplicate_pdf_paths":  3,
+                             "pdfs_with_text_counterpart":  17,
+                             "pdf_text_counterpart_read_pending":  0,
+                             "delegated_read_complete":  23,
+                             "delegated_read_pending":  0,
+                             "all_text_paths_complete":  89
+                         },
+    "files":  [
+                  {
+                      "path":  "data/reference/competition_20261019/2026 데이터 분석대회/09_MLP응용_선정판단과_두논문_핵심요약.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  9842,
+                      "lines":  92,
+                      "sha256":  "1d03ba2ebcb8ead22d8299d6aaf2d9cd9876afa510cf21037db708f034b6ddfe",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "data/reference/competition_20261019/2026 데이터 분석대회/12_4안건_혼합실험과_2026후속연구_검토.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  23943,
+                      "lines":  221,
+                      "sha256":  "2ff9c616b26c321e1282622f72b43355ae1a41d39542ddfe2a7e301a3e61434d",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "data/reference/competition_20261019/2026 데이터 분석대회/13_프로젝트제안서_인코더디코더_Transformer_확장안.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  18527,
+                      "lines":  180,
+                      "sha256":  "74f5ce3b0490113f80958fb27be3a29818c88f458997e439a887d421cb7e82ef",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "data/reference/competition_20261019/2026 데이터 분석대회/알고리즘_원리_설명_그림/알고리즘_원리_설명.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  27782,
+                      "lines":  347,
+                      "sha256":  "e2227f1eadfa9e0b442b4d1e8458c92f356df8434b14f946b4f093cf1bc3818b",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "data/reference/competition_20261019/2026 데이터 분석대회/여기서 중요한 문서 알려준다.txt",
+                      "status":  "complete_direct_read",
+                      "bytes":  954,
+                      "lines":  18,
+                      "sha256":  "1b21df7811f20d3dfd352a150c76edd579c05f45c020d35002a14995d6e8277c",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/08_IT종합설계_주제적합성_검토.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  6930,
+                      "lines":  52,
+                      "sha256":  "02ae1e3e5c52218634164455d88efc28853beefef0c920d25e5fc15473a739f7",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_learning_framework(부록).md",
+                      "status":  "complete_direct_read",
+                      "bytes":  32321,
+                      "lines":  246,
+                      "sha256":  "49d519e3effb00787f7e991693780c7f45cad0ba5802c2725d1cb1ed7d273ec4",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/90_solutions.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  21038,
+                      "lines":  259,
+                      "sha256":  "0918f8e82ea476156626f8b5c4bd9018600c5ad56c1124cb6d9962ac2e26c501",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/91_model_cases.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  10840,
+                      "lines":  88,
+                      "sha256":  "cf1821c30c689feea675e4fea13bef1d6fc11bc0ec52e5a5b0d9f42977eaec3c",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/92_sources.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  20067,
+                      "lines":  107,
+                      "sha256":  "de975098b174666b732a0a52aceafbe3070727040632452ccd2ad9594fa42dcd",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/93_glossary.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  38863,
+                      "lines":  274,
+                      "sha256":  "8a022f36b8c0480d564d21f006155dd561fd3603ddcc2fdfe9242fb4720196b7",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/94_algae_sources.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  5926,
+                      "lines":  57,
+                      "sha256":  "06695fe033b5e3cc51778805ba6a64293595536df88266626d3eaefdfc09b577",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/94_fishing_solutions.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  14163,
+                      "lines":  153,
+                      "sha256":  "0add0484b3506e6dbf7e46ede9c21c57bdafff82471a5fd4884b3f0522731221",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/95_algae_solutions.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  11265,
+                      "lines":  204,
+                      "sha256":  "82e719dd3169f550fc9e6831a44913ce3c05d23c36c4c4010393035a117d1456",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/95_fishing_guide.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  12519,
+                      "lines":  110,
+                      "sha256":  "510ff9103c77b43e428f45c9cb9207b20981879b21e2a359afbd02b7e2e30248",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/algae_learning_path.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  4624,
+                      "lines":  62,
+                      "sha256":  "c73687470e1d6087b4aedbfdd4c6040d543bb24d60aac00e7741aecf1d607535",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/01_problem_data.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  18160,
+                      "lines":  152,
+                      "sha256":  "43c65132d0911fd92b730c86e4cb76e112bc66539b6c390098c34b4186ca80f0",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/02_math.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  18576,
+                      "lines":  180,
+                      "sha256":  "8021714e4222cb9cb1b67e75a8c5def1b670136e64d02b96df1c73a9216acab3",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/03_probability.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  17869,
+                      "lines":  183,
+                      "sha256":  "2f86cdd908ede188f79a3fcdd73163d025544d1adb81efdb8e249feb8b1ed8a2",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/04_computing.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  16672,
+                      "lines":  142,
+                      "sha256":  "e534f592dca1df2ccf57d9be4256119b3d4dc337f015b6d492ee490b102b6c36",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/05_symbolic.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  12676,
+                      "lines":  97,
+                      "sha256":  "c10f3a1ecddab780b06267627639a6876a60eb7fae9e714e127b56b5ac2ac6fe",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/06_statistical_learning.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  14114,
+                      "lines":  101,
+                      "sha256":  "2fe7c7334ab716bb3256ce389e6c9ca9437b75f026014099f0623b5e14cd6912",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/07_probabilistic_models.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  15958,
+                      "lines":  135,
+                      "sha256":  "39d7bc7b3fd1ad2364db8203352dd810db8717c3cfacf144cce77a5b98343076",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/08_neural_networks.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  11934,
+                      "lines":  103,
+                      "sha256":  "2bc7807441a882f017005ec23ff11d45b1ce97b524ede660b688c5e1c8c5354f",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/09_learning_paradigms.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  10979,
+                      "lines":  87,
+                      "sha256":  "e95ec77a7f08cb1d8b1d39f30e150997f7378f2927132f02a208382e2d764bad",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/10_generative.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  11164,
+                      "lines":  110,
+                      "sha256":  "e6a09986efe009cbcc13ac3372766eae314ac2628be923e0eadf78997d91de6d",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/11_reinforcement_control.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  10706,
+                      "lines":  99,
+                      "sha256":  "ab0e2ac7f22378e923c96637787672415ceabf9c10310c4213280a640e6f5c4d",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/12_language_models.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  13565,
+                      "lines":  102,
+                      "sha256":  "55116b45635cc6f26342e355e84e55f15a6f6d9e8b329dba0221023200999258",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/13_multimodal.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  11022,
+                      "lines":  83,
+                      "sha256":  "f8e822ceed31f456b768b4254b5448a1820b3bd03725b3fc2952f86ae42a51de",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/14_structured_domains.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  11169,
+                      "lines":  95,
+                      "sha256":  "93733127cdc2b63b486da41675a8a3acf5ac956fd62ed517716caae0900d23a0",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/15_causality.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  18482,
+                      "lines":  137,
+                      "sha256":  "c3dd9507454ebcd62493d00d15e97f43919c4de281f9a68877f5e3c00c104e0c",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/16_alternative_scientific.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  21400,
+                      "lines":  154,
+                      "sha256":  "f837c7cb668f78271aa788d4e036b299f21a52b17e1da571b670420dafe1282d",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/17_systems.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  21279,
+                      "lines":  142,
+                      "sha256":  "a8303ee891157be11d22afb8374f56d800d71903c75fdea42192614ef74928f9",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/18_evaluation.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  24240,
+                      "lines":  152,
+                      "sha256":  "85f827bea09981ebda26337b709232dc8692c900d6e48f8371027c7a6d42194b",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/19_algae_foundations.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  14766,
+                      "lines":  283,
+                      "sha256":  "36f272ea4239c8955cdcbe4ecf2cbfe721887844c6218decd99f03ab89c39a33",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/19_fishing_data_geometry.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  18538,
+                      "lines":  212,
+                      "sha256":  "004f7156e0f188491f06ec079d003418863cf26af6eb3e31e392765a41ecee7f",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/20_algae_dynamics.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  30600,
+                      "lines":  453,
+                      "sha256":  "83f335f6a590d5d380982b5a3a20139e360d3a766e0087f2d70fd9b87870b652",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/20_fishing_classification.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  24851,
+                      "lines":  218,
+                      "sha256":  "168234715cd859cf429be9e8766c2ba116c9bb39c595e9e2c946ab04a802ab2d",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/21_algae_data_features.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  30329,
+                      "lines":  452,
+                      "sha256":  "c88fb86200c40efa6b2bb943644f9a08775bad0888e924e3d5d183c88aeaca14",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/21_fishing_sequence_models.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  28957,
+                      "lines":  248,
+                      "sha256":  "2f276a57239cb6fc6a6c31003648a12617fb97539785545083861433f0478f3a",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/22_algae_regression.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  24887,
+                      "lines":  422,
+                      "sha256":  "06b539c474ea2805b0f14dccc4c15bf49bc11a3c267be15d39313c8481ba8725",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/22_fishing_anomaly.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  31736,
+                      "lines":  242,
+                      "sha256":  "5145af3155d30ba038f63f68cfe2666cbe46759c9a7cbcfb00c3acf157847bc4",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/23_algae_temporal_hybrid.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  29928,
+                      "lines":  441,
+                      "sha256":  "3daa2bdda03c4c24d2a93e331b307092e4833355082e292dca2c3ab78e3a1b5c",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/23_fishing_environment.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  17671,
+                      "lines":  195,
+                      "sha256":  "eaa20f16c22b5d5e2d647c8895c78f552546a0aa2b3e1838d6baa77af2a67eb8",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/24_algae_evaluation.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  16052,
+                      "lines":  279,
+                      "sha256":  "a9008fefd289c600244047f160a32bcb1b91a669b1e9b599550259781dd44135",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/24_fishing_virtual_units.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  35919,
+                      "lines":  337,
+                      "sha256":  "5c339c302fdff8caa1d5966c6c76bb8c0c399996bb7f6e7ed9e65774c68c0cb9",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/25_algae_project.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  11403,
+                      "lines":  179,
+                      "sha256":  "b19fd40df19b2973387323ab521cb44730d1ce973c3d95e0ba2affc4f8339ab9",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/25_fishing_evaluation_system.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  20070,
+                      "lines":  213,
+                      "sha256":  "ff336b19d1b77fffe95ab24cb7ddccbc3aa2d1320a8f7d5dfa693471052cb25b",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/chapters/26_fishing_sample_system_personal_study.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  79838,
+                      "lines":  1054,
+                      "sha256":  "38c37549289e898b572c90f9b05812a6ce0c72b3f628aebd91099e8913146178",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/validation/README.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  5780,
+                      "lines":  53,
+                      "sha256":  "0a60e8b10b89eb81045512b108afc6834b6827cf136fd420ae4a25c9e231fb21",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/ai_textbook/모델 해석 목차.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  11720,
+                      "lines":  96,
+                      "sha256":  "c19da415019a44e4daaf690d4fab79aefb7312f02c8a04789fe081eafe7f7e23",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/algae_prediction_system.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  13184,
+                      "lines":  163,
+                      "sha256":  "5558f5a2ab7decaccab80da8cc98e37e96559b53998480ae24d23b3af80fd98f",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/competition_20261019/01_데이터구조와_직접집계.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  8836,
+                      "lines":  83,
+                      "sha256":  "854f701fe6d103e9c483c8e308af9816bd2274d752ad258209b1d65281a5b187",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/competition_20261019/02_분석해석과_다음단계.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  13904,
+                      "lines":  119,
+                      "sha256":  "1e254a2491f8c9e574aa72c880d7512e9b607beb7954a93817edc1b5ab0e0ddc",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/competition_20261019/03_첨부자료와_분석방향.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  14764,
+                      "lines":  109,
+                      "sha256":  "72663ee5e14f3781fc400bd7975c04b2cc5be49c0f30a0062608988bd181e1ee",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/competition_20261019/04_파일목록과_검증기록.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  22500,
+                      "lines":  122,
+                      "sha256":  "4b9f0995961434e3f6ac4a33d5bc9b60736973a0b66bf9bd26e28013d0b05440",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_guided_baseline_20261026.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  17117,
+                      "lines":  204,
+                      "sha256":  "f6757a4702af6e30d66e064104246b842b36d75af5b38d663997291525708bef",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_integration/01_과제와_현재상태.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  9873,
+                      "lines":  111,
+                      "sha256":  "e0f6df6ea96fb36d9e2cd86fc0be027aafccb9f605453df2cebc32f6801375e8",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_integration/02_데이터와_전처리.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  12267,
+                      "lines":  155,
+                      "sha256":  "adc30529392b572779731c0e46cd030f596d5863fdc6d52604a50217467d0a75",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_integration/03_모델과_현재구현.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  16403,
+                      "lines":  200,
+                      "sha256":  "c4563388432092a1d0d88d222a82776a9569c9fc02a360e30fe09c04db295fc6",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_integration/04_평가와_후속실험.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  14618,
+                      "lines":  159,
+                      "sha256":  "b355aac856f952d4d5e4e6540149ceb27f77edbf6229be2d06ee6c195c7064fc",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_integration/05_제안서와_학습활동.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  13035,
+                      "lines":  149,
+                      "sha256":  "8f146f0e3d60bc32cd5c9351c5a45f2bf8377f5003b5c16efc5ac86481f386e9",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_integration/99_출처와_통합판단.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  27341,
+                      "lines":  112,
+                      "sha256":  "530212f37d27b0ddcbd481af3ab44064999001046d1ab98cb6166a9ce0d208b1",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_integration/통합_검증기록.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  4960,
+                      "lines":  49,
+                      "sha256":  "1a388bc4748b30271cfbe5227ff3105becad6aeb27309693942b2bd394fd17ac",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_iteration_results_20261026.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  10971,
+                      "lines":  130,
+                      "sha256":  "2ca2e8621c8fc818f88cbff0c63a0a9ff4201e0d126a6057f164423fc9ceb7b0",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "docs/fishing_sample_system_guide.md",
+                      "status":  "complete_direct_read",
+                      "bytes":  51549,
+                      "lines":  515,
+                      "sha256":  "15a83183ffae35a701cbdf8e36830cb8ffd11c822be1fc2ee6d705739c6495f6",
+                      "read_method":  "full_file_read_utf8; chunked_when_needed"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/(참고 논문) 선박종류 분류 모델 개발.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  23439,
+                      "lines":  1383,
+                      "sha256":  "50e22891388c4c7141c55a48da69b326b28bb3b973228e5ff784a748c497245d",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/01_참가신청서_가이드와_제안서_통합본.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  11881,
+                      "lines":  221,
+                      "sha256":  "d8290ddc30f564f57e153541ba832dd029f36928ca86f320ad7e1e55f1c073f8",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/02_항적데이터_전처리와_모델설계_통합본.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  47721,
+                      "lines":  1113,
+                      "sha256":  "d1493fc5313d049f273d9bc669facf51350348a89f0c9789d73f62ce310efa66",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/03_NeurIPS_근거기반_혼합알고리즘_선정가이드.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  47473,
+                      "lines":  862,
+                      "sha256":  "a0c03080831a3484d243e4b3de8684a304fb16981d9b9a69497b5ade903b88dc",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/04_어선항적_모델선정_4안건_통합보고서.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  29922,
+                      "lines":  483,
+                      "sha256":  "e3ea1bcaf1bb8a93dd1caff6e415b1f1d9c5d79cb40e7e67349cfddb06fafcf7",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/06_4안건기반_데이터활용방안_4쪽.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  8552,
+                      "lines":  138,
+                      "sha256":  "335a197ff73402cf59846559a69f99a57f8b40ef85e6f0a95ca0673c3061948e",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/07_4안건기반_예상결과물_3쪽.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  5951,
+                      "lines":  110,
+                      "sha256":  "d85d389f1b14fab9b94bbe6b6fc66741bd517a1d5cf310a30a2b59185b512fa7",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/10_TabM_어선항적_AI응용_프로젝트제안서.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  12068,
+                      "lines":  203,
+                      "sha256":  "0cca69ce88e7797437dc08c3140aab5780842ffd555f0edda448f20d55d051bf",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/11_RealMLP_어선항적_AI응용_프로젝트제안서.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  12019,
+                      "lines":  201,
+                      "sha256":  "69fb5d0b62c61fa2db5c8d8f2a389ca468644425fc1acd6ecce0dc500688ee81",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/14_평가기준기반_창의성우수성효과성_보충자료.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  19558,
+                      "lines":  362,
+                      "sha256":  "8d6d1bd4959fb2afbeea19f81f337f61a31e04166de0e19f2b947b5e7bc4106c",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/15_어선항적_최종_제안서작성_가이드라인.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  18558,
+                      "lines":  330,
+                      "sha256":  "e23cfaeb5f2f391d06ae24078e4927c0192023c41aa95a1f364c0ebb2a1fb437",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/어선항적과제_이해가이드.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  53160,
+                      "lines":  691,
+                      "sha256":  "4d9bf769ee82bac12681f06cbf1cf2408a1b4f585f5b27acfdd7a3b8c36e7d5c",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/extracted_text/조업형태_분류_알고리즘_추천.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  13122,
+                      "lines":  226,
+                      "sha256":  "44fb8875da6f1f3dd1bb44d7db715ebbee9e5cfb291a8e1859258f46d21a3245",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/independent_review.md",
+                      "status":  "delegated_read_complete",
+                      "bytes":  5387,
+                      "lines":  40,
+                      "sha256":  "66135fd4501bffceb2d3747d44409a8ccc480625d847d3dd2d948a43f863c680",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/proposal_attachment_text.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  19570,
+                      "lines":  353,
+                      "sha256":  "8dec96b83332e93d34edf8ef939d9adbba27180dfce4c7c68e884d7cf12dff27",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/proposal_integration_decision.md",
+                      "status":  "delegated_read_complete",
+                      "bytes":  11774,
+                      "lines":  64,
+                      "sha256":  "36fd910b48156596c001e5485c818f86edd54282151f1851f56af3ef7cfc966a",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/proposal_integration_evidence.md",
+                      "status":  "delegated_read_complete",
+                      "bytes":  12476,
+                      "lines":  59,
+                      "sha256":  "58581184e3b0e1a0dedd76e8ee9e59e9e2d4389ce9b880947732160be4123702",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/proposal_integration_review.md",
+                      "status":  "delegated_read_complete",
+                      "bytes":  5678,
+                      "lines":  34,
+                      "sha256":  "58a5d6b6149baaf3906f3294613227465f73b2564268c2a661cf1d09ae90c83e",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/scope_decision.md",
+                      "status":  "delegated_read_complete",
+                      "bytes":  7788,
+                      "lines":  38,
+                      "sha256":  "6389cbb905fefff62e3040e6dda27cf4ffa6270cd4db9f705d36973e3b91f2b1",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "outputs/competition_20261019/source_evidence.md",
+                      "status":  "delegated_read_complete",
+                      "bytes":  11686,
+                      "lines":  50,
+                      "sha256":  "c775a45363d053c982c3b8df31463b8951bc53ebe394e2a62053ee58b7a0f767",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "tmp/pdfs/integration_20261013/P1.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  53416,
+                      "lines":  691,
+                      "sha256":  "a6dbb298c90e3a2bb0d910679ab7d258d586a10f93c25ec5e969748f6544ee8e",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "tmp/pdfs/integration_20261013/P2.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  11977,
+                      "lines":  221,
+                      "sha256":  "086e21307189adc366439f8f1633051c38f105caee564e4003a740d64ecbd9b0",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  },
+                  {
+                      "path":  "tmp/pdfs/integration_20261013/P3.txt",
+                      "status":  "delegated_read_complete",
+                      "bytes":  48137,
+                      "lines":  1113,
+                      "sha256":  "e63a596f99e623f975b6ae57484f74149f813d63a65b237e29ab51c6230f5384",
+                      "read_method":  "full_file_read_by_Sol; completion_confirmed_by_agent_message"
+                  }
+              ],
+    "pdf_sources":  [
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/04_어선항적_모델선정_4안건_통합보고서.pdf",
+                            "sha256":  "a97c5165f6e75b602ed0edd129a6463249163cfca81e0cfbacaf23504885dc10",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/04_어선항적_모델선정_4안건_통합보고서.txt",
+                                                     "bytes":  29922,
+                                                     "sha256":  "e3ea1bcaf1bb8a93dd1caff6e415b1f1d9c5d79cb40e7e67349cfddb06fafcf7",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/06_4안건기반_데이터활용방안_4쪽.pdf",
+                            "sha256":  "31061d69647cdfb97ed45d67417c6f22dd043605f637fec79e6857019d60ac88",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/06_4안건기반_데이터활용방안_4쪽.txt",
+                                                     "bytes":  8552,
+                                                     "sha256":  "335a197ff73402cf59846559a69f99a57f8b40ef85e6f0a95ca0673c3061948e",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/07_4안건기반_예상결과물_3쪽.pdf",
+                            "sha256":  "d3a00a530b28cf746392382dd88bafeda0c60a89ca7482b16874c0081cfe0dd8",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/07_4안건기반_예상결과물_3쪽.txt",
+                                                     "bytes":  5951,
+                                                     "sha256":  "d85d389f1b14fab9b94bbe6b6fc66741bd517a1d5cf310a30a2b59185b512fa7",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/10_TabM_어선항적_AI응용_프로젝트제안서.pdf",
+                            "sha256":  "c260d3fc943f8c167d967428b72edce3a6274ea5205e3e3b191e8455678e2d81",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/10_TabM_어선항적_AI응용_프로젝트제안서.txt",
+                                                     "bytes":  12068,
+                                                     "sha256":  "0cca69ce88e7797437dc08c3140aab5780842ffd555f0edda448f20d55d051bf",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/11_RealMLP_어선항적_AI응용_프로젝트제안서.pdf",
+                            "sha256":  "29e55040202b80e72576f01842f5e2ade5ebf1cfbee3adbe8a973f5bfee99ed9",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/11_RealMLP_어선항적_AI응용_프로젝트제안서.txt",
+                                                     "bytes":  12019,
+                                                     "sha256":  "69fb5d0b62c61fa2db5c8d8f2a389ca468644425fc1acd6ecce0dc500688ee81",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/14_평가기준기반_창의성우수성효과성_보충자료.pdf",
+                            "sha256":  "65b65a638a4b67e56ab8c3b7f2c9a3e9a83a8995a47c18aa60322e5f4a6e64c0",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/14_평가기준기반_창의성우수성효과성_보충자료.txt",
+                                                     "bytes":  19558,
+                                                     "sha256":  "8d6d1bd4959fb2afbeea19f81f337f61a31e04166de0e19f2b947b5e7bc4106c",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/15_어선항적_최종_제안서작성_가이드라인.pdf",
+                            "sha256":  "d61ddb0abc27590894c1e5288e52bd92c83dd1d2e0b253f8bfe4cb07e479c625",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/15_어선항적_최종_제안서작성_가이드라인.txt",
+                                                     "bytes":  18558,
+                                                     "sha256":  "e23cfaeb5f2f391d06ae24078e4927c0192023c41aa95a1f364c0ebb2a1fb437",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/Claude outputs (사용X)/조업형태_분류_알고리즘_추천.pdf",
+                            "sha256":  "6fb98b960efdd0f7e22b7f559bc8ace582b35fefb5327bff601e98599fd32c85",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/조업형태_분류_알고리즘_추천.txt",
+                                                     "bytes":  13122,
+                                                     "sha256":  "44fb8875da6f1f3dd1bb44d7db715ebbee9e5cfb291a8e1859258f46d21a3245",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/어선항적과제_이해가이드.pdf",
+                            "sha256":  "6e1b9caf7716cb0c12cbffd40e28c6248bfea02b7f591d16a57e9da972a9a25d",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/어선항적과제_이해가이드.txt",
+                                                     "bytes":  53160,
+                                                     "sha256":  "4d9bf769ee82bac12681f06cbf1cf2408a1b4f585f5b27acfdd7a3b8c36e7d5c",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/(참고 논문) 선박종류 분류 모델 개발.pdf",
+                            "sha256":  "98245b8ad5e9a15b99334966825954a45f4141cc06d93c448ea48da98382e5c4",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/(참고 논문) 선박종류 분류 모델 개발.txt",
+                                                     "bytes":  23439,
+                                                     "sha256":  "50e22891388c4c7141c55a48da69b326b28bb3b973228e5ff784a748c497245d",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/01_참가신청서_가이드와_제안서_통합본.pdf",
+                            "sha256":  "ab7df3241710dfefd5b11a59ddda3f7100838196c29826beed774443ced7386c",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/01_참가신청서_가이드와_제안서_통합본.txt",
+                                                     "bytes":  11881,
+                                                     "sha256":  "d8290ddc30f564f57e153541ba832dd029f36928ca86f320ad7e1e55f1c073f8",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/02_항적데이터_전처리와_모델설계_통합본.pdf",
+                            "sha256":  "f9be1473889e27c3d97d074fbf3aed7a0d3e96b84e773f922be08feafd76f425",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/02_항적데이터_전처리와_모델설계_통합본.txt",
+                                                     "bytes":  47721,
+                                                     "sha256":  "d1493fc5313d049f273d9bc669facf51350348a89f0c9789d73f62ce310efa66",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/03_NeurIPS_근거기반_혼합알고리즘_선정가이드.pdf",
+                            "sha256":  "a05265bd88da6b9168a5efe7cc88faa070c91c06de6e72b549a2c61c3fab8115",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/03_NeurIPS_근거기반_혼합알고리즘_선정가이드.txt",
+                                                     "bytes":  47473,
+                                                     "sha256":  "a0c03080831a3484d243e4b3de8684a304fb16981d9b9a69497b5ade903b88dc",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "data/reference/competition_20261019/additional/IT종합설계프로젝트_제안서_C215192 최승빈.pdf",
+                            "sha256":  "9f160b28ded8eabdfaaa86f7cc35eee3c841d2afa032f1862337ba0f7b44349c",
+                            "duplicate_of":  null,
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/proposal_attachment_text.txt",
+                                                     "bytes":  19570,
+                                                     "sha256":  "8dec96b83332e93d34edf8ef939d9adbba27180dfce4c7c68e884d7cf12dff27",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "docs/fishing_integration/sources/01_참가신청서_가이드와_제안서_통합본.pdf",
+                            "sha256":  "ab7df3241710dfefd5b11a59ddda3f7100838196c29826beed774443ced7386c",
+                            "duplicate_of":  "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/01_참가신청서_가이드와_제안서_통합본.pdf",
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/01_참가신청서_가이드와_제안서_통합본.txt",
+                                                     "bytes":  11881,
+                                                     "sha256":  "d8290ddc30f564f57e153541ba832dd029f36928ca86f320ad7e1e55f1c073f8",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "docs/fishing_integration/sources/02_항적데이터_전처리와_모델설계_통합본.pdf",
+                            "sha256":  "f9be1473889e27c3d97d074fbf3aed7a0d3e96b84e773f922be08feafd76f425",
+                            "duplicate_of":  "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/02_항적데이터_전처리와_모델설계_통합본.pdf",
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/02_항적데이터_전처리와_모델설계_통합본.txt",
+                                                     "bytes":  47721,
+                                                     "sha256":  "d1493fc5313d049f273d9bc669facf51350348a89f0c9789d73f62ce310efa66",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        },
+                        {
+                            "path":  "docs/fishing_integration/sources/어선항적과제_이해가이드.pdf",
+                            "sha256":  "6e1b9caf7716cb0c12cbffd40e28c6248bfea02b7f591d16a57e9da972a9a25d",
+                            "duplicate_of":  "data/reference/competition_20261019/2026 데이터 분석대회/어선항적과제_이해가이드.pdf",
+                            "text_counterpart":  {
+                                                     "path":  "outputs/competition_20261019/extracted_text/어선항적과제_이해가이드.txt",
+                                                     "bytes":  53160,
+                                                     "sha256":  "4d9bf769ee82bac12681f06cbf1cf2408a1b4f585f5b27acfdd7a3b8c36e7d5c",
+                                                     "read_status":  "read_via_delegated_full_text",
+                                                     "mapping_basis":  "filename/title mapping; counterpart text was fully read by Sol; PDF visuals were not rechecked"
+                                                 },
+                            "pdf_visual_status":  "not_visually_rechecked"
+                        }
+                    ],
+    "additional_extracted_text_copies":  [
+                                             {
+                                                 "path":  "tmp/pdfs/integration_20261013/P1.txt",
+                                                 "sha256":  "a6dbb298c90e3a2bb0d910679ab7d258d586a10f93c25ec5e969748f6544ee8e",
+                                                 "status":  "delegated_read_complete",
+                                                 "matched_output_txt_by_sha256":  false,
+                                                 "candidate_source_pdf":  null,
+                                                 "note":  "Mapped by delegated full-read comparison; no PDF visual check.",
+                                                 "source_pdf_path":  "data/reference/competition_20261019/2026 데이터 분석대회/어선항적과제_이해가이드.pdf",
+                                                 "mapped_output_txt":  "outputs/competition_20261019/extracted_text/어선항적과제_이해가이드.txt",
+                                                 "match_basis":  "Full-text line comparison found duplicate body content after excluding page markers; SHA-256 differs."
+                                             },
+                                             {
+                                                 "path":  "tmp/pdfs/integration_20261013/P2.txt",
+                                                 "sha256":  "086e21307189adc366439f8f1633051c38f105caee564e4003a740d64ecbd9b0",
+                                                 "status":  "delegated_read_complete",
+                                                 "matched_output_txt_by_sha256":  false,
+                                                 "candidate_source_pdf":  null,
+                                                 "note":  "Mapped by delegated full-read comparison; no PDF visual check.",
+                                                 "source_pdf_path":  "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/01_참가신청서_가이드와_제안서_통합본.pdf",
+                                                 "mapped_output_txt":  "outputs/competition_20261019/extracted_text/01_참가신청서_가이드와_제안서_통합본.txt",
+                                                 "match_basis":  "Full-text line comparison found duplicate body content after excluding page markers; SHA-256 differs."
+                                             },
+                                             {
+                                                 "path":  "tmp/pdfs/integration_20261013/P3.txt",
+                                                 "sha256":  "e63a596f99e623f975b6ae57484f74149f813d63a65b237e29ab51c6230f5384",
+                                                 "status":  "delegated_read_complete",
+                                                 "matched_output_txt_by_sha256":  false,
+                                                 "candidate_source_pdf":  null,
+                                                 "note":  "Mapped by delegated full-read comparison; no PDF visual check.",
+                                                 "source_pdf_path":  "data/reference/competition_20261019/2026 데이터 분석대회/중요도 떨어지는 문서 모음/02_항적데이터_전처리와_모델설계_통합본.pdf",
+                                                 "mapped_output_txt":  "outputs/competition_20261019/extracted_text/02_항적데이터_전처리와_모델설계_통합본.txt",
+                                                 "match_basis":  "Full-text line comparison found duplicate body content after excluding page markers; SHA-256 differs."
+                                             }
+                                         ],
+    "limitations":  [
+                        "No PDF page figures/tables/layout were visually rechecked.",
+                        "PDF-to-text mapping identifies which text was read; it does not establish visual fidelity.",
+                        "P1-P3 map to extracted texts by delegated full-text line comparison excluding page markers; file SHA-256 differs.",
+                        "No training, tests, or hardware experiments were performed by this agent."
+                    ]
+}

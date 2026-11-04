@@ -1,0 +1,165 @@
+{
+  "experiment": "S1_bayes_error_bound",
+  "description": "F156+T5 특징공간 중복도에서 오는 원리적 바닥 (Bayes 오차 Cover-Hart 하한)",
+  "limitation_warning": "유클리드 거리는 '특징이 같다'의 한 정의일 뿐이며 실제 결정트리가 학습하는 비선형 분할면과 다름. 따라서 이 상한은 매우 느슨한(높게 나오는) 이론적 상한선임.",
+  "class_order": [
+    "연안복합",
+    "자망",
+    "통발",
+    "채낚기연승낚시"
+  ],
+  "n_outer_ships": 5897,
+  "pca_dimensions_per_fold": [
+    73,
+    72,
+    73
+  ],
+  "spaces": {
+    "raw_166d": {
+      "k_1": {
+        "e_knn_majority_error": 0.53587,
+        "all_neighbors_different_class_ratio": 0.53587,
+        "all_neighbors_different_class_count": 3160,
+        "label_entropy_mean": 0.0,
+        "label_entropy_quantiles_25_50_75_90": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bayes_error_lower_bound": 0.3492,
+        "bayes_error_ci_95": [
+          0.33783,
+          0.36166
+        ],
+        "macro_f1_upper_bound": 0.71395,
+        "e_1nn_overall": 0.53587,
+        "e_1nn_ci_95": [
+          0.52349,
+          0.54892
+        ]
+      },
+      "k_3": {
+        "e_knn_majority_error": 0.49618,
+        "all_neighbors_different_class_ratio": 0.21791,
+        "all_neighbors_different_class_count": 1285,
+        "label_entropy_mean": 0.8021,
+        "label_entropy_quantiles_25_50_75_90": [
+          0.9183,
+          0.9183,
+          0.9183,
+          1.585
+        ]
+      },
+      "k_5": {
+        "e_knn_majority_error": 0.48872,
+        "all_neighbors_different_class_ratio": 0.11209,
+        "all_neighbors_different_class_count": 661,
+        "label_entropy_mean": 1.03,
+        "label_entropy_quantiles_25_50_75_90": [
+          0.7219,
+          0.971,
+          1.371,
+          1.5219
+        ]
+      },
+      "k_10": {
+        "e_knn_majority_error": 0.45973,
+        "all_neighbors_different_class_ratio": 0.03205,
+        "all_neighbors_different_class_count": 189,
+        "label_entropy_mean": 1.226,
+        "label_entropy_quantiles_25_50_75_90": [
+          0.971,
+          1.3568,
+          1.4855,
+          1.571
+        ]
+      },
+      "k_20": {
+        "e_knn_majority_error": 0.45277,
+        "all_neighbors_different_class_ratio": 0.00763,
+        "all_neighbors_different_class_count": 45,
+        "label_entropy_mean": 1.3346,
+        "label_entropy_quantiles_25_50_75_90": [
+          1.2192,
+          1.371,
+          1.5129,
+          1.5589
+        ]
+      }
+    },
+    "pca_95pct_variance": {
+      "k_1": {
+        "e_knn_majority_error": 0.53485,
+        "all_neighbors_different_class_ratio": 0.53485,
+        "all_neighbors_different_class_count": 3154,
+        "label_entropy_mean": 0.0,
+        "label_entropy_quantiles_25_50_75_90": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bayes_error_lower_bound": 0.3483,
+        "bayes_error_ci_95": [
+          0.33629,
+          0.36068
+        ],
+        "macro_f1_upper_bound": 0.71712,
+        "e_1nn_overall": 0.53485,
+        "e_1nn_ci_95": [
+          0.52179,
+          0.54791
+        ]
+      },
+      "k_3": {
+        "e_knn_majority_error": 0.49211,
+        "all_neighbors_different_class_ratio": 0.21977,
+        "all_neighbors_different_class_count": 1296,
+        "label_entropy_mean": 0.7997,
+        "label_entropy_quantiles_25_50_75_90": [
+          0.9183,
+          0.9183,
+          0.9183,
+          1.585
+        ]
+      },
+      "k_5": {
+        "e_knn_majority_error": 0.48228,
+        "all_neighbors_different_class_ratio": 0.11124,
+        "all_neighbors_different_class_count": 656,
+        "label_entropy_mean": 1.0275,
+        "label_entropy_quantiles_25_50_75_90": [
+          0.7219,
+          0.971,
+          1.371,
+          1.5219
+        ]
+      },
+      "k_10": {
+        "e_knn_majority_error": 0.4582,
+        "all_neighbors_different_class_ratio": 0.03324,
+        "all_neighbors_different_class_count": 196,
+        "label_entropy_mean": 1.2212,
+        "label_entropy_quantiles_25_50_75_90": [
+          0.971,
+          1.2955,
+          1.4855,
+          1.5219
+        ]
+      },
+      "k_20": {
+        "e_knn_majority_error": 0.44684,
+        "all_neighbors_different_class_ratio": 0.00746,
+        "all_neighbors_different_class_count": 44,
+        "label_entropy_mean": 1.332,
+        "label_entropy_quantiles_25_50_75_90": [
+          1.2192,
+          1.369,
+          1.5,
+          1.5589
+        ]
+      }
+    }
+  }
+}

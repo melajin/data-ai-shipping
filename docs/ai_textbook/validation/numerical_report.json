@@ -1,0 +1,1501 @@
+{
+  "scope": "Independent recomputation of listed synthetic textbook examples",
+  "checks": 136,
+  "passed": 136,
+  "results": [
+    {
+      "case": "M01 worked example t=0.5 TP FP FN TN",
+      "actual": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "expected": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "case": "M01 worked example t=0.7 TP FP FN TN",
+      "actual": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "expected": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "case": "M01 mean log loss rounded to 3 decimals",
+      "actual": 0.338,
+      "expected": 0.338,
+      "passed": true
+    },
+    {
+      "case": "M01-Q3 t=0.5 TP FP FN TN",
+      "actual": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "expected": [
+        1,
+        0,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "case": "M01-Q3 t=0.4 TP FP FN TN",
+      "actual": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "expected": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "case": "M02 Ax",
+      "actual": [
+        4,
+        1,
+        5
+      ],
+      "expected": [
+        4,
+        1,
+        5
+      ],
+      "passed": true
+    },
+    {
+      "case": "M02-Q1 Ax+b",
+      "actual": [
+        5,
+        1,
+        3
+      ],
+      "expected": [
+        5,
+        1,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "case": "M02 projection",
+      "actual": [
+        0.8,
+        1.6
+      ],
+      "expected": [
+        0.8,
+        1.6
+      ],
+      "passed": true
+    },
+    {
+      "case": "M02 residual orthogonality",
+      "actual": -2.220446049250313e-16,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "case": "M02 finite difference gradient",
+      "actual": -4.000000000004,
+      "expected": -4,
+      "passed": true
+    },
+    {
+      "case": "M02 updated w",
+      "actual": 0.9,
+      "expected": 0.9,
+      "passed": true
+    },
+    {
+      "case": "M02 updated loss",
+      "actual": 0.72,
+      "expected": 0.72,
+      "passed": true
+    },
+    {
+      "case": "M02 separate quadratic updated w",
+      "actual": 0.5,
+      "expected": 0.5,
+      "passed": true
+    },
+    {
+      "case": "M02-Q2 projection and residual",
+      "actual": [
+        2.0,
+        2.0,
+        1.0,
+        -1.0
+      ],
+      "expected": [
+        2,
+        2,
+        1,
+        -1
+      ],
+      "passed": true
+    },
+    {
+      "case": "M02-Q3 large learning rate w and loss",
+      "actual": [
+        2.9,
+        3.9199999999999995
+      ],
+      "expected": [
+        2.9,
+        3.92
+      ],
+      "passed": true
+    },
+    {
+      "case": "M03 Bayesian posterior",
+      "actual": 0.26865671641791045,
+      "expected": 0.26865671641791045,
+      "passed": true
+    },
+    {
+      "case": "M03 estimated proportion standard error rounded",
+      "actual": 0.145,
+      "expected": 0.145,
+      "passed": true
+    },
+    {
+      "case": "M03 one-sided all-heads p-value",
+      "actual": 0.0009765625,
+      "expected": 0.0009765625,
+      "passed": true
+    },
+    {
+      "case": "M03 entropy in bits",
+      "actual": 0.8112781244591328,
+      "expected": 0.8112781244591328,
+      "passed": true
+    },
+    {
+      "case": "M03-Q3 forward KL in bits",
+      "actual": 0.18872187554086717,
+      "expected": 0.18872187554086717,
+      "passed": true
+    },
+    {
+      "case": "M03-Q3 reverse KL in bits",
+      "actual": 0.20751874963942185,
+      "expected": 0.20751874963942185,
+      "passed": true
+    },
+    {
+      "case": "M03-Q1 Bayesian posterior",
+      "actual": 0.07476635514018691,
+      "expected": 0.07476635514018691,
+      "passed": true
+    },
+    {
+      "case": "M03-Q2 one-sided tail if pre-specified",
+      "actual": 0.057659149169921875,
+      "expected": 0.057659149169921875,
+      "passed": true
+    },
+    {
+      "case": "M04 activation bytes",
+      "actual": 50331648,
+      "expected": 50331648,
+      "passed": true
+    },
+    {
+      "case": "M04 activation MiB",
+      "actual": 48.0,
+      "expected": 48,
+      "passed": true
+    },
+    {
+      "case": "M04-Q1 multiplication count",
+      "actual": 81920,
+      "expected": 81920,
+      "passed": true
+    },
+    {
+      "case": "M04-Q1 array byte counts",
+      "actual": [
+        32768,
+        5120,
+        2560
+      ],
+      "expected": [
+        32768,
+        5120,
+        2560
+      ],
+      "passed": true
+    },
+    {
+      "case": "M04-Q2 attention element ratio",
+      "actual": 4.0,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "case": "M04 worked example finite difference gradients",
+      "actual": [
+        -17.999999999851468,
+        -12.000000001677336,
+        -6.000000000838668
+      ],
+      "expected": [
+        -18,
+        -12,
+        -6
+      ],
+      "passed": true
+    },
+    {
+      "case": "M04-Q3 changed condition gradients",
+      "actual": [
+        -32.00000000180836,
+        -8.000000000230045,
+        -8.000000000230045
+      ],
+      "expected": [
+        -32,
+        -8,
+        -8
+      ],
+      "passed": true
+    },
+    {
+      "case": "M04 actual textbook Python execution",
+      "actual": [
+        4,
+        1,
+        5
+      ],
+      "expected": [
+        4,
+        1,
+        5
+      ],
+      "passed": true
+    },
+    {
+      "case": "M05 path costs through A and B",
+      "actual": [
+        4,
+        7
+      ],
+      "expected": [
+        4,
+        7
+      ],
+      "passed": true
+    },
+    {
+      "case": "M05 all edges meet consistency condition",
+      "actual": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "case": "M05 changed B to G edge shortest path",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "case": "M05-Q1 changed graph shortest path",
+      "actual": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "case": "M06 initial loss and gradient",
+      "actual": [
+        0.5,
+        -1.5
+      ],
+      "expected": [
+        0.5,
+        -1.5
+      ],
+      "passed": true
+    },
+    {
+      "case": "M06 updated weight and loss",
+      "actual": [
+        1.15,
+        0.3031250000000001
+      ],
+      "expected": [
+        1.15,
+        0.303125
+      ],
+      "passed": true
+    },
+    {
+      "case": "M06 analytic optimum and loss",
+      "actual": [
+        1.6,
+        0.049999999999999996
+      ],
+      "expected": [
+        1.6,
+        0.05
+      ],
+      "passed": true
+    },
+    {
+      "case": "M06 ridge optimum lambda one",
+      "actual": 1.1428571428571428,
+      "expected": 1.1428571428571428,
+      "passed": true
+    },
+    {
+      "case": "M06-Q1 unregularized and regularized optima",
+      "actual": [
+        1.7,
+        1.4166666666666667
+      ],
+      "expected": [
+        1.7,
+        1.4166666666666667
+      ],
+      "passed": true
+    },
+    {
+      "case": "M07 single observation probability and posterior",
+      "actual": [
+        0.24000000000000005,
+        0.6666666666666666
+      ],
+      "expected": [
+        0.24,
+        0.6666666666666666
+      ],
+      "passed": true
+    },
+    {
+      "case": "M07 joint observations and posterior",
+      "actual": [
+        0.12800000000000003,
+        0.8749999999999999
+      ],
+      "expected": [
+        0.128,
+        0.875
+      ],
+      "passed": true
+    },
+    {
+      "case": "M07 independent product differs from joint",
+      "actual": 0.07200000000000002,
+      "expected": 0.072,
+      "passed": true
+    },
+    {
+      "case": "M07 Beta posterior mean MAP MLE",
+      "actual": [
+        0.625,
+        0.6666666666666666,
+        0.75
+      ],
+      "expected": [
+        0.625,
+        0.6666666666666666,
+        0.75
+      ],
+      "passed": true
+    },
+    {
+      "case": "M07 HMM first forward weights",
+      "actual": [
+        0.54,
+        0.08000000000000002
+      ],
+      "expected": [
+        0.54,
+        0.08
+      ],
+      "passed": true
+    },
+    {
+      "case": "M07 HMM second forward weights",
+      "actual": [
+        0.3546,
+        0.04520000000000001
+      ],
+      "expected": [
+        0.3546,
+        0.0452
+      ],
+      "passed": true
+    },
+    {
+      "case": "M07 HMM observation likelihood",
+      "actual": 0.39980000000000004,
+      "expected": 0.3998,
+      "passed": true
+    },
+    {
+      "case": "M07 HMM posterior rounded",
+      "actual": 0.886943,
+      "expected": 0.886943,
+      "passed": true
+    },
+    {
+      "case": "M07-Q1 changed prior posterior",
+      "actual": 0.888888888888889,
+      "expected": 0.8888888888888888,
+      "passed": true
+    },
+    {
+      "case": "M07-Q2 posterior mean MAP MLE",
+      "actual": [
+        0.5,
+        0.5,
+        0.4
+      ],
+      "expected": [
+        0.5,
+        0.5,
+        0.4
+      ],
+      "passed": true
+    },
+    {
+      "case": "M08 finite difference gradients",
+      "actual": [
+        -1.5000000000986446,
+        -0.7500000001048335,
+        -1.4999999999876223,
+        -1.4999999999876223
+      ],
+      "expected": [
+        -1.5,
+        -0.75,
+        -1.5,
+        -1.5
+      ],
+      "passed": true
+    },
+    {
+      "case": "M08 simultaneous update",
+      "actual": [
+        1.1500000000098645,
+        -0.9249999999895167,
+        0.6499999999987622,
+        0.14999999999876223
+      ],
+      "expected": [
+        1.15,
+        -0.925,
+        0.65,
+        0.15
+      ],
+      "passed": true
+    },
+    {
+      "case": "M08 updated loss",
+      "actual": 0.45720703123403217,
+      "expected": 0.45720703125,
+      "passed": true
+    },
+    {
+      "case": "M08 attention weights rounded",
+      "actual": [
+        0.669762,
+        0.330238
+      ],
+      "expected": [
+        0.669762,
+        0.330238
+      ],
+      "passed": true
+    },
+    {
+      "case": "M08 attention weighted output rounded",
+      "actual": [
+        1.339523,
+        1.320954
+      ],
+      "expected": [
+        1.339523,
+        1.320954
+      ],
+      "passed": true
+    },
+    {
+      "case": "M08-Q1 changed target loss and gradients",
+      "actual": [
+        0.125,
+        -0.49999999997968336,
+        -0.2500000000141278,
+        -0.49999999997968336,
+        -0.49999999997968336
+      ],
+      "expected": [
+        0.125,
+        -0.5,
+        -0.25,
+        -0.5,
+        -0.5
+      ],
+      "passed": true
+    },
+    {
+      "case": "M08-Q1 changed target update",
+      "actual": [
+        1.0499999999979683,
+        -0.9749999999985872,
+        0.5499999999979683,
+        0.049999999997968336
+      ],
+      "expected": [
+        1.05,
+        -0.975,
+        0.55,
+        0.05
+      ],
+      "passed": true
+    },
+    {
+      "case": "M09 contrastive losses with alternative temperatures",
+      "actual": [
+        0.313262,
+        0.126928
+      ],
+      "expected": [
+        0.313262,
+        0.126928
+      ],
+      "passed": true
+    },
+    {
+      "case": "M09 FedAvg sample-weighted versus uniform",
+      "actual": [
+        2.75,
+        3.5
+      ],
+      "expected": [
+        2.75,
+        3.5
+      ],
+      "passed": true
+    },
+    {
+      "case": "M09-Q2 changed client sample count",
+      "actual": 3.2,
+      "expected": 3.2,
+      "passed": true
+    },
+    {
+      "case": "M10 autoregressive joint probabilities",
+      "actual": [
+        0.12,
+        0.48,
+        0.2,
+        0.2
+      ],
+      "expected": [
+        0.12,
+        0.48,
+        0.2,
+        0.2
+      ],
+      "passed": true
+    },
+    {
+      "case": "M10 Gaussian KL and ELBO rounded",
+      "actual": [
+        0.818147,
+        -2.818147
+      ],
+      "expected": [
+        0.818147,
+        -2.818147
+      ],
+      "passed": true
+    },
+    {
+      "case": "M10 flow density at transformed origin rounded",
+      "actual": 0.199471,
+      "expected": 0.199471,
+      "passed": true
+    },
+    {
+      "case": "M10 normalized energy distribution",
+      "actual": [
+        0.75,
+        0.25
+      ],
+      "expected": [
+        0.75,
+        0.25
+      ],
+      "passed": true
+    },
+    {
+      "case": "M10 noised input and reconstructed estimate",
+      "actual": [
+        1.0,
+        1.625
+      ],
+      "expected": [
+        1,
+        1.625
+      ],
+      "passed": true
+    },
+    {
+      "case": "M10-Q1 joint probabilities",
+      "actual": [
+        0.2805,
+        0.2695,
+        0.44549999999999995,
+        0.004500000000000003
+      ],
+      "expected": [
+        0.2805,
+        0.2695,
+        0.4455,
+        0.0045
+      ],
+      "passed": true
+    },
+    {
+      "case": "M10-Q2 corrected flow density",
+      "actual": 0.1329807601338109,
+      "expected": 0.1329807601338109,
+      "passed": true
+    },
+    {
+      "case": "M11 Bellman go value and Q update",
+      "actual": [
+        2.7,
+        1.85
+      ],
+      "expected": [
+        2.7,
+        1.85
+      ],
+      "passed": true
+    },
+    {
+      "case": "M11 changed discount go value",
+      "actual": 0.6000000000000001,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "case": "M11 closed-loop coefficients",
+      "actual": [
+        0.5,
+        -1.2
+      ],
+      "expected": [
+        0.5,
+        -1.2
+      ],
+      "passed": true
+    },
+    {
+      "case": "M11 control trajectories",
+      "actual": [
+        2.0,
+        1.0,
+        0.5,
+        0.25
+      ],
+      "expected": [
+        2,
+        1,
+        0.5,
+        0.25
+      ],
+      "passed": true
+    },
+    {
+      "case": "M11 one-step MPC input next state cost",
+      "actual": [
+        -1.0,
+        1.0,
+        2.0
+      ],
+      "expected": [
+        -1,
+        1,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "case": "M11-Q1 action values in two conditions",
+      "actual": [
+        1,
+        1.5,
+        1,
+        0.5
+      ],
+      "expected": [
+        1,
+        1.5,
+        1,
+        0.5
+      ],
+      "passed": true
+    },
+    {
+      "case": "M11-Q2 target and updated Q",
+      "actual": [
+        3.0,
+        0.6000000000000001
+      ],
+      "expected": [
+        3,
+        0.6
+      ],
+      "passed": true
+    },
+    {
+      "case": "M11-Q3 coefficient and open stability interval endpoints",
+      "actual": [
+        -1.0999999999999999,
+        -0.19999999999999996,
+        1.8
+      ],
+      "expected": [
+        -1.1,
+        -0.2,
+        1.8
+      ],
+      "passed": true
+    },
+    {
+      "case": "M12 token probabilities",
+      "actual": [
+        0.25,
+        0.7500000000000001
+      ],
+      "expected": [
+        0.25,
+        0.75
+      ],
+      "passed": true
+    },
+    {
+      "case": "M12 temperature two probabilities rounded",
+      "actual": [
+        0.366025,
+        0.633975
+      ],
+      "expected": [
+        0.366025,
+        0.633975
+      ],
+      "passed": true
+    },
+    {
+      "case": "M12 token negative log likelihood rounded",
+      "actual": 0.287682,
+      "expected": 0.287682,
+      "passed": true
+    },
+    {
+      "case": "M12 LoRA low-rank product",
+      "actual": [
+        2,
+        -2,
+        1,
+        -1
+      ],
+      "expected": [
+        2,
+        -2,
+        1,
+        -1
+      ],
+      "passed": true
+    },
+    {
+      "case": "M12 LoRA updated output",
+      "actual": [
+        -1,
+        1
+      ],
+      "expected": [
+        -1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "case": "M12 DPO preference loss rounded",
+      "actual": 0.510826,
+      "expected": 0.510826,
+      "passed": true
+    },
+    {
+      "case": "M12-Q1 original and changed temperature probabilities",
+      "actual": [
+        0.2,
+        0.8,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "expected": [
+        0.2,
+        0.8,
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "passed": true
+    },
+    {
+      "case": "M12-Q1 negative log likelihood rounded",
+      "actual": 0.223144,
+      "expected": 0.223144,
+      "passed": true
+    },
+    {
+      "case": "M12-Q2 trainable and original parameter counts",
+      "actual": [
+        720,
+        8000
+      ],
+      "expected": [
+        720,
+        8000
+      ],
+      "passed": true
+    },
+    {
+      "case": "M13 two aliasing frequencies on sampled grid",
+      "actual": [
+        0.0,
+        2.4492935982947064e-16,
+        0.0,
+        -7.347880794884119e-16,
+        0.0,
+        3.0010036385476035e-15,
+        0.0,
+        6.185132059395602e-17
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "case": "M13 overlapping-box IoU",
+      "actual": 0.3333333333333333,
+      "expected": 0.3333333333333333,
+      "passed": true
+    },
+    {
+      "case": "M13 audio window and DFT bin spacing",
+      "actual": [
+        320.0,
+        50.0
+      ],
+      "expected": [
+        320,
+        50
+      ],
+      "passed": true
+    },
+    {
+      "case": "M13 two-candidate contrastive scores rounded",
+      "actual": [
+        0.731059,
+        0.268941
+      ],
+      "expected": [
+        0.731059,
+        0.268941
+      ],
+      "passed": true
+    },
+    {
+      "case": "M13-Q1 changed audio window samples",
+      "actual": 400.0,
+      "expected": 400,
+      "passed": true
+    },
+    {
+      "case": "M13-Q2 contained-box IoU",
+      "actual": 0.5,
+      "expected": 0.5,
+      "passed": true
+    },
+    {
+      "case": "M14 scalar Kalman update",
+      "actual": [
+        0.8,
+        11.6,
+        0.7999999999999998
+      ],
+      "expected": [
+        0.8,
+        11.6,
+        0.8
+      ],
+      "passed": true
+    },
+    {
+      "case": "M14 next-state mean and variance",
+      "actual": [
+        10.44,
+        1.1480000000000001
+      ],
+      "expected": [
+        10.44,
+        1.148
+      ],
+      "passed": true
+    },
+    {
+      "case": "M14 increased observation noise",
+      "actual": [
+        0.5,
+        11.0,
+        2.0
+      ],
+      "expected": [
+        0.5,
+        11,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "case": "M14 autoregressive mean forecasts",
+      "actual": [
+        4.0,
+        2.0
+      ],
+      "expected": [
+        4,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "case": "M14 recommendation scores",
+      "actual": [
+        2,
+        4
+      ],
+      "expected": [
+        2,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "case": "M14 self-including mean aggregation",
+      "actual": [
+        1.5,
+        2.6666666666666665,
+        3.5
+      ],
+      "expected": [
+        1.5,
+        2.6666666666666665,
+        3.5
+      ],
+      "passed": true
+    },
+    {
+      "case": "M14-Q1 changed Kalman update",
+      "actual": [
+        0.75,
+        13.0,
+        2.25
+      ],
+      "expected": [
+        0.75,
+        13,
+        2.25
+      ],
+      "passed": true
+    },
+    {
+      "case": "M14-Q2 changed recommendation scores",
+      "actual": [
+        2,
+        3
+      ],
+      "expected": [
+        2,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "case": "M15 crude observational difference",
+      "actual": -0.15000000000000002,
+      "expected": -0.15,
+      "passed": true
+    },
+    {
+      "case": "M15 standardized intervention means",
+      "actual": [
+        0.65,
+        0.55
+      ],
+      "expected": [
+        0.65,
+        0.55
+      ],
+      "passed": true
+    },
+    {
+      "case": "M15 changed population means",
+      "actual": [
+        0.5000000000000001,
+        0.4
+      ],
+      "expected": [
+        0.5,
+        0.4
+      ],
+      "passed": true
+    },
+    {
+      "case": "M15 utility with alternative costs",
+      "actual": [
+        -1.0,
+        1.0
+      ],
+      "expected": [
+        -1,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "case": "M15-Q1 standardized means",
+      "actual": [
+        0.575,
+        0.45000000000000007
+      ],
+      "expected": [
+        0.575,
+        0.45
+      ],
+      "passed": true
+    },
+    {
+      "case": "M15-Q1 changed population effect",
+      "actual": 0.17500000000000016,
+      "expected": 0.175,
+      "passed": true
+    },
+    {
+      "case": "M15-Q2 exogenous factor and counterfactual",
+      "actual": [
+        3,
+        7
+      ],
+      "expected": [
+        3,
+        7
+      ],
+      "passed": true
+    },
+    {
+      "case": "M15-Q3 IPS value and net utility",
+      "actual": [
+        0.5,
+        0.3
+      ],
+      "expected": [
+        0.5,
+        0.3
+      ],
+      "passed": true
+    },
+    {
+      "case": "M16 fuzzy output at T=28 rounded",
+      "actual": 44.55,
+      "expected": 44.55,
+      "passed": true
+    },
+    {
+      "case": "M16-Q2 fuzzy outputs",
+      "actual": [
+        50.0,
+        56.666666666666664
+      ],
+      "expected": [
+        50,
+        56.666666666666664
+      ],
+      "passed": true
+    },
+    {
+      "case": "M16 PINN residual loss rounded",
+      "actual": 0.170985,
+      "expected": 0.170985,
+      "passed": true
+    },
+    {
+      "case": "M16 PINN solution error rounded",
+      "actual": 0.238651,
+      "expected": 0.238651,
+      "passed": true
+    },
+    {
+      "case": "M16-Q3 changed physics residual loss rounded",
+      "actual": 0.567668,
+      "expected": 0.567668,
+      "passed": true
+    },
+    {
+      "case": "M16-Q3 changed physics solution error rounded",
+      "actual": 0.232544,
+      "expected": 0.232544,
+      "passed": true
+    },
+    {
+      "case": "M16 neuro-symbolic sum probabilities",
+      "actual": [
+        0.13999999999999999,
+        0.6199999999999999,
+        0.24
+      ],
+      "expected": [
+        0.14,
+        0.62,
+        0.24
+      ],
+      "passed": true
+    },
+    {
+      "case": "M17 weighted data-parallel gradient",
+      "actual": 2.5,
+      "expected": 2.5,
+      "passed": true
+    },
+    {
+      "case": "M17 serial latency in milliseconds",
+      "actual": 220,
+      "expected": 220,
+      "passed": true
+    },
+    {
+      "case": "M17 chain-rule success probabilities",
+      "actual": [
+        0.684,
+        0.8122499999999999,
+        0.76
+      ],
+      "expected": [
+        0.684,
+        0.81225,
+        0.76
+      ],
+      "passed": true
+    },
+    {
+      "case": "M17 quantization codes reconstruction and errors",
+      "actual": [
+        2,
+        0.6,
+        0.07999999999999996,
+        3,
+        0.9,
+        0.29999999999999993
+      ],
+      "expected": [
+        2,
+        0.6,
+        0.08,
+        3,
+        0.9,
+        0.3
+      ],
+      "passed": true
+    },
+    {
+      "case": "M17 weight-only storage bytes",
+      "actual": [
+        4000000.0,
+        1000000.0
+      ],
+      "expected": [
+        4000000,
+        1000000
+      ],
+      "passed": true
+    },
+    {
+      "case": "M17 synthetic request cost and increased context",
+      "actual": [
+        0.0004,
+        0.4,
+        0.0008
+      ],
+      "expected": [
+        0.0004,
+        0.4,
+        0.0008
+      ],
+      "passed": true
+    },
+    {
+      "case": "M17-Q1 quantization codes reconstruction and errors",
+      "actual": [
+        2,
+        0.7999999999999999,
+        0.06999999999999995,
+        3,
+        1.2,
+        0.30000000000000004
+      ],
+      "expected": [
+        2,
+        0.8,
+        0.07,
+        3,
+        1.2,
+        0.3
+      ],
+      "passed": true
+    },
+    {
+      "case": "M17-Q2 original and changed success and costs",
+      "actual": [
+        0.5400000000000001,
+        0.0007,
+        0.6480000000000001,
+        0.0011
+      ],
+      "expected": [
+        0.54,
+        0.0007,
+        0.648,
+        0.0011
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18 original accuracy precision recall F1",
+      "actual": [
+        0.85,
+        0.6,
+        0.75,
+        0.6666666666666666
+      ],
+      "expected": [
+        0.85,
+        0.6,
+        0.75,
+        0.6666666666666666
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18 raised-threshold metrics",
+      "actual": [
+        0.88,
+        0.75,
+        0.6,
+        0.6666666666666666
+      ],
+      "expected": [
+        0.88,
+        0.75,
+        0.6,
+        0.6666666666666666
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18 cost-sensitive versus equal costs",
+      "actual": [
+        0.3,
+        0.36,
+        0.15,
+        0.12
+      ],
+      "expected": [
+        0.3,
+        0.36,
+        0.15,
+        0.12
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18 accuracy standard error rounded",
+      "actual": 0.0357,
+      "expected": 0.0357,
+      "passed": true
+    },
+    {
+      "case": "M18 Brier score",
+      "actual": 0.19000000000000003,
+      "expected": 0.19,
+      "passed": true
+    },
+    {
+      "case": "M18 two-bin positive-probability ECE",
+      "actual": 0.25,
+      "expected": 0.25,
+      "passed": true
+    },
+    {
+      "case": "M18 Laplace scale and basic composition",
+      "actual": [
+        2.0,
+        1.0
+      ],
+      "expected": [
+        2,
+        1
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18 group A TPR FPR acceptance rate",
+      "actual": [
+        0.8,
+        0.2,
+        0.32
+      ],
+      "expected": [
+        0.8,
+        0.2,
+        0.32
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18 group B TPR FPR acceptance rate",
+      "actual": [
+        0.8,
+        0.2,
+        0.44
+      ],
+      "expected": [
+        0.8,
+        0.2,
+        0.44
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18-Q1 original metrics",
+      "actual": [
+        0.82,
+        0.5454545454545454,
+        0.6,
+        0.5714285714285714
+      ],
+      "expected": [
+        0.82,
+        0.5454545454545454,
+        0.6,
+        0.5714285714285714
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18-Q1 accuracy and cost comparison",
+      "actual": [
+        0.82,
+        0.42,
+        0.84,
+        0.52
+      ],
+      "expected": [
+        0.82,
+        0.42,
+        0.84,
+        0.52
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18-Q2 Brier and ECE",
+      "actual": [
+        0.41000000000000003,
+        0.4
+      ],
+      "expected": [
+        0.41,
+        0.4
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18-Q3 group A rates",
+      "actual": [
+        0.8,
+        0.1,
+        0.38
+      ],
+      "expected": [
+        0.8,
+        0.1,
+        0.38
+      ],
+      "passed": true
+    },
+    {
+      "case": "M18-Q3 group B rates",
+      "actual": [
+        0.8,
+        0.1,
+        0.24
+      ],
+      "expected": [
+        0.8,
+        0.1,
+        0.24
+      ],
+      "passed": true
+    },
+    {
+      "case": "Jev case synthetic Choice confidence for two distributions",
+      "actual": [
+        0.39999999999999997,
+        0.39999999999999997
+      ],
+      "expected": [
+        0.4,
+        0.4
+      ],
+      "passed": true
+    }
+  ]
+}

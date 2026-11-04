@@ -1,0 +1,200 @@
+{
+  "scope": "Local document structure and navigation; no external URL or content proof",
+  "markdown_documents": 43,
+  "chapters": [
+    {
+      "chapter": "chapters/01_problem_data.md",
+      "characters": 8470,
+      "lines": 152,
+      "headings": 16
+    },
+    {
+      "chapter": "chapters/02_math.md",
+      "characters": 9856,
+      "lines": 180,
+      "headings": 17
+    },
+    {
+      "chapter": "chapters/03_probability.md",
+      "characters": 8818,
+      "lines": 183,
+      "headings": 18
+    },
+    {
+      "chapter": "chapters/04_computing.md",
+      "characters": 8176,
+      "lines": 142,
+      "headings": 12
+    },
+    {
+      "chapter": "chapters/05_symbolic.md",
+      "characters": 5903,
+      "lines": 97,
+      "headings": 14
+    },
+    {
+      "chapter": "chapters/06_statistical_learning.md",
+      "characters": 7106,
+      "lines": 101,
+      "headings": 14
+    },
+    {
+      "chapter": "chapters/07_probabilistic_models.md",
+      "characters": 8443,
+      "lines": 135,
+      "headings": 17
+    },
+    {
+      "chapter": "chapters/08_neural_networks.md",
+      "characters": 6228,
+      "lines": 103,
+      "headings": 14
+    },
+    {
+      "chapter": "chapters/09_learning_paradigms.md",
+      "characters": 5176,
+      "lines": 87,
+      "headings": 13
+    },
+    {
+      "chapter": "chapters/10_generative.md",
+      "characters": 6023,
+      "lines": 110,
+      "headings": 15
+    },
+    {
+      "chapter": "chapters/11_reinforcement_control.md",
+      "characters": 5246,
+      "lines": 99,
+      "headings": 14
+    },
+    {
+      "chapter": "chapters/12_language_models.md",
+      "characters": 7015,
+      "lines": 102,
+      "headings": 16
+    },
+    {
+      "chapter": "chapters/13_multimodal.md",
+      "characters": 5378,
+      "lines": 83,
+      "headings": 13
+    },
+    {
+      "chapter": "chapters/14_structured_domains.md",
+      "characters": 5571,
+      "lines": 95,
+      "headings": 13
+    },
+    {
+      "chapter": "chapters/15_causality.md",
+      "characters": 8890,
+      "lines": 137,
+      "headings": 14
+    },
+    {
+      "chapter": "chapters/16_alternative_scientific.md",
+      "characters": 10448,
+      "lines": 154,
+      "headings": 17
+    },
+    {
+      "chapter": "chapters/17_systems.md",
+      "characters": 9894,
+      "lines": 142,
+      "headings": 15
+    },
+    {
+      "chapter": "chapters/18_evaluation.md",
+      "characters": 11890,
+      "lines": 152,
+      "headings": 17
+    },
+    {
+      "chapter": "chapters/19_algae_foundations.md",
+      "characters": 8545,
+      "lines": 283,
+      "headings": 17
+    },
+    {
+      "chapter": "chapters/19_fishing_data_geometry.md",
+      "characters": 10493,
+      "lines": 212,
+      "headings": 23
+    },
+    {
+      "chapter": "chapters/20_algae_dynamics.md",
+      "characters": 16780,
+      "lines": 453,
+      "headings": 26
+    },
+    {
+      "chapter": "chapters/20_fishing_classification.md",
+      "characters": 13844,
+      "lines": 218,
+      "headings": 20
+    },
+    {
+      "chapter": "chapters/21_algae_data_features.md",
+      "characters": 16156,
+      "lines": 452,
+      "headings": 27
+    },
+    {
+      "chapter": "chapters/21_fishing_sequence_models.md",
+      "characters": 16396,
+      "lines": 248,
+      "headings": 20
+    },
+    {
+      "chapter": "chapters/22_algae_regression.md",
+      "characters": 14257,
+      "lines": 422,
+      "headings": 22
+    },
+    {
+      "chapter": "chapters/22_fishing_anomaly.md",
+      "characters": 17266,
+      "lines": 242,
+      "headings": 19
+    },
+    {
+      "chapter": "chapters/23_algae_temporal_hybrid.md",
+      "characters": 16815,
+      "lines": 441,
+      "headings": 24
+    },
+    {
+      "chapter": "chapters/23_fishing_environment.md",
+      "characters": 9296,
+      "lines": 195,
+      "headings": 21
+    },
+    {
+      "chapter": "chapters/24_algae_evaluation.md",
+      "characters": 8915,
+      "lines": 279,
+      "headings": 20
+    },
+    {
+      "chapter": "chapters/24_fishing_virtual_units.md",
+      "characters": 19899,
+      "lines": 337,
+      "headings": 18
+    },
+    {
+      "chapter": "chapters/25_algae_project.md",
+      "characters": 5490,
+      "lines": 179,
+      "headings": 19
+    },
+    {
+      "chapter": "chapters/25_fishing_evaluation_system.md",
+      "characters": 10249,
+      "lines": 213,
+      "headings": 21
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

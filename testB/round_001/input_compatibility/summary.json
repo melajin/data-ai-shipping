@@ -1,17 +1,12 @@
 {
-  "started_utc": "2026-11-04T17:48:29.799292+00:00",
+  "started_utc": "2026-11-04T17:50:35.167386+00:00",
   "script_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\run_comparison.py",
   "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
   "platform": "Windows-11-10.0.26300-SP0",
   "openpyxl": "3.1.5",
   "zipfile_crc_checked_on_eof": true,
-  "status": "failed",
-  "errors": [
-    {
-      "exception": "SystemExit(0)",
-      "traceback": "Traceback (most recent call last):\n  File \"D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\run_comparison.py\", line 205, in <module>\n    sys.exit(0 if run['status']=='succeeded' else 1)\n    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nSystemExit: 0\n"
-    }
-  ],
+  "status": "succeeded",
+  "errors": [],
   "input_manifest_sha256": "3916151773a3ad402a020889553bb1fe85c4bf5462f2cc794d526e5e0999e860",
   "archive_path": "C:\\Users\\dlehs\\Downloads\\문제 데이터_수정_1103_v2.zip",
   "archive_meta_before": {
@@ -134,7 +129,7 @@
       "old_sha256": "4c300bafae9be06fdb102e8bfca9301d9820329a8722537009ae11993051aa0a",
       "content_identical": true,
       "zip_crc_checked_to_eof": true,
-      "elapsed_seconds": 0.002
+      "elapsed_seconds": 0.169
     },
     {
       "member": "테스트셋 및 결과제출 샘플/제출샘플.xlsx",
@@ -144,7 +139,7 @@
       "old_sha256": "b698b87e15bed61436da318c9477c6ac7e5a58b6412aa3414e75ce50f1b6039f",
       "content_identical": false,
       "zip_crc_checked_to_eof": true,
-      "elapsed_seconds": 0.002
+      "elapsed_seconds": 0.003
     }
   ],
   "xlsx_results": [
@@ -289,6 +284,6 @@
   "csv_results_file": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\csv_identity.csv",
   "workbook_differences_file": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\workbook_cell_differences.csv",
   "workbook_detail_file": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\input_compatibility\\workbook_comparison.json",
-  "finished_utc": "2026-11-04T17:50:01.399712+00:00",
-  "elapsed_seconds": 91.6
+  "finished_utc": "2026-11-04T17:52:03.246763+00:00",
+  "elapsed_seconds": 88.079
 }

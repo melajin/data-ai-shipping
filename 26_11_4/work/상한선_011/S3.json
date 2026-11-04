@@ -1,0 +1,288 @@
+{
+  "experiment": "S3_isotonic_oracle",
+  "description": "1-vs-rest IsotonicRegression 확률 보정 오라클 vs INNER 실현",
+  "baseline_w_1.5": {
+    "type": "실현(현재방식)",
+    "metrics": {
+      "macro_f1": 0.53185,
+      "accuracy": 0.563,
+      "class_f1": [
+        0.66772,
+        0.47706,
+        0.32769,
+        0.65493
+      ],
+      "pred_counts": [
+        3427,
+        1493,
+        819,
+        158
+      ],
+      "by_days": {
+        "1-7": {
+          "n": 962,
+          "macro_f1": 0.31892,
+          "accuracy": 0.52703
+        },
+        "8-30": {
+          "n": 1292,
+          "macro_f1": 0.47815,
+          "accuracy": 0.57353
+        },
+        "31-90": {
+          "n": 2336,
+          "macro_f1": 0.56406,
+          "accuracy": 0.55736
+        },
+        "91-+": {
+          "n": 1307,
+          "macro_f1": 0.56567,
+          "accuracy": 0.58914
+        }
+      },
+      "diff_macro_f1": 0.0,
+      "ci_macro_f1": [
+        0.0,
+        0.0
+      ],
+      "p_macro_gt_0": 0.0,
+      "diff_accuracy": 0.0,
+      "ci_accuracy": [
+        0.0,
+        0.0
+      ],
+      "p_acc_gt_0": 0.0
+    }
+  },
+  "inner_calibrated_raw": {
+    "type": "실현(후보_순수argmax)",
+    "metrics": {
+      "macro_f1": 0.49618,
+      "accuracy": 0.58708,
+      "class_f1": [
+        0.70147,
+        0.45295,
+        0.18839,
+        0.64189
+      ],
+      "pred_counts": [
+        4339,
+        1172,
+        216,
+        170
+      ],
+      "by_days": {
+        "1-7": {
+          "n": 962,
+          "macro_f1": 0.2752,
+          "accuracy": 0.56133
+        },
+        "8-30": {
+          "n": 1292,
+          "macro_f1": 0.42167,
+          "accuracy": 0.59907
+        },
+        "31-90": {
+          "n": 2336,
+          "macro_f1": 0.53009,
+          "accuracy": 0.58091
+        },
+        "91-+": {
+          "n": 1307,
+          "macro_f1": 0.5376,
+          "accuracy": 0.6052
+        }
+      },
+      "diff_macro_f1": -0.035672,
+      "ci_macro_f1": [
+        -0.046759,
+        -0.024636
+      ],
+      "p_macro_gt_0": 0.0,
+      "diff_accuracy": 0.02408,
+      "ci_accuracy": [
+        0.014245,
+        0.033576
+      ],
+      "p_acc_gt_0": 1.0
+    },
+    "adoption_check": {
+      "passed": false,
+      "delta": -0.03567,
+      "ci_lower_gt_0": false,
+      "max_class_f1_drop": 0.1393,
+      "day17_macro_drop": 0.04372
+    }
+  },
+  "inner_calibrated_w15": {
+    "type": "실현(후보_w1.5)",
+    "metrics": {
+      "macro_f1": 0.51158,
+      "accuracy": 0.58352,
+      "class_f1": [
+        0.70008,
+        0.44131,
+        0.26328,
+        0.64164
+      ],
+      "pred_counts": [
+        4202,
+        1102,
+        426,
+        167
+      ],
+      "by_days": {
+        "1-7": {
+          "n": 962,
+          "macro_f1": 0.28543,
+          "accuracy": 0.55925
+        },
+        "8-30": {
+          "n": 1292,
+          "macro_f1": 0.44672,
+          "accuracy": 0.60217
+        },
+        "31-90": {
+          "n": 2336,
+          "macro_f1": 0.54153,
+          "accuracy": 0.57406
+        },
+        "91-+": {
+          "n": 1307,
+          "macro_f1": 0.55299,
+          "accuracy": 0.59985
+        }
+      },
+      "diff_macro_f1": -0.02027,
+      "ci_macro_f1": [
+        -0.029522,
+        -0.011193
+      ],
+      "p_macro_gt_0": 0.0,
+      "diff_accuracy": 0.020519,
+      "ci_accuracy": [
+        0.01204,
+        0.029167
+      ],
+      "p_acc_gt_0": 1.0
+    },
+    "adoption_check": {
+      "passed": false,
+      "delta": -0.02027,
+      "ci_lower_gt_0": false,
+      "max_class_f1_drop": 0.06441,
+      "day17_macro_drop": 0.03349
+    }
+  },
+  "outer_oracle_raw": {
+    "type": "상한(오라클_순수argmax)",
+    "metrics": {
+      "macro_f1": 0.51123,
+      "accuracy": 0.59183,
+      "class_f1": [
+        0.70447,
+        0.46163,
+        0.2,
+        0.67883
+      ],
+      "pred_counts": [
+        4311,
+        1203,
+        235,
+        148
+      ],
+      "by_days": {
+        "1-7": {
+          "n": 962,
+          "macro_f1": 0.28344,
+          "accuracy": 0.56653
+        },
+        "8-30": {
+          "n": 1292,
+          "macro_f1": 0.4418,
+          "accuracy": 0.60449
+        },
+        "31-90": {
+          "n": 2336,
+          "macro_f1": 0.54296,
+          "accuracy": 0.58519
+        },
+        "91-+": {
+          "n": 1307,
+          "macro_f1": 0.55434,
+          "accuracy": 0.60979
+        }
+      },
+      "diff_macro_f1": -0.020616,
+      "ci_macro_f1": [
+        -0.031798,
+        -0.00972
+      ],
+      "p_macro_gt_0": 0.0,
+      "diff_accuracy": 0.028828,
+      "ci_accuracy": [
+        0.019667,
+        0.038155
+      ],
+      "p_acc_gt_0": 1.0
+    }
+  },
+  "outer_oracle_w15": {
+    "type": "상한(오라클_w1.5)",
+    "metrics": {
+      "macro_f1": 0.52686,
+      "accuracy": 0.59115,
+      "class_f1": [
+        0.70417,
+        0.45272,
+        0.27658,
+        0.67399
+      ],
+      "pred_counts": [
+        4209,
+        1125,
+        416,
+        147
+      ],
+      "by_days": {
+        "1-7": {
+          "n": 962,
+          "macro_f1": 0.29082,
+          "accuracy": 0.56549
+        },
+        "8-30": {
+          "n": 1292,
+          "macro_f1": 0.46299,
+          "accuracy": 0.60836
+        },
+        "31-90": {
+          "n": 2336,
+          "macro_f1": 0.56129,
+          "accuracy": 0.58476
+        },
+        "91-+": {
+          "n": 1307,
+          "macro_f1": 0.56327,
+          "accuracy": 0.60444
+        }
+      },
+      "diff_macro_f1": -0.004984,
+      "ci_macro_f1": [
+        -0.014166,
+        0.004264
+      ],
+      "p_macro_gt_0": 0.146,
+      "diff_accuracy": 0.02815,
+      "ci_accuracy": [
+        0.019501,
+        0.037138
+      ],
+      "p_acc_gt_0": 1.0
+    }
+  },
+  "gap_analysis": {
+    "s3_raw_oracle_vs_baseline": -0.02062,
+    "s3_w15_oracle_vs_baseline": -0.00499,
+    "explanation": "S3(보정 오라클)과 S2(판정 오라클)의 차이가 확률값의 형상을 고쳐 얻는 몫이며, 1.0과의 차이가 순위 자체가 틀려서 못 고치는 원리적 한계이다."
+  }
+}

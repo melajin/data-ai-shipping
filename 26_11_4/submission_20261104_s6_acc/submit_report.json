@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-11-04 20:21:27",
+  "model_config": {
+    "model": "S6 Large Capacity LightGBM (5-seed average)",
+    "features_count": 304,
+    "feature_components": [
+      "F156 (156)",
+      "T5_v4 (10)",
+      "B69 (69)",
+      "local_rel (70)"
+    ],
+    "parameters": {
+      "n_estimators": 303,
+      "learning_rate": 0.01,
+      "num_leaves": 127,
+      "min_child_samples": 10,
+      "colsample_bytree": 0.6,
+      "subsample": 0.8,
+      "reg_lambda": 1.0,
+      "seeds": [
+        42,
+        2026,
+        7,
+        1,
+        2024
+      ]
+    },
+    "decision_rule": {
+      "metric_target": "micro-F1 (accuracy)",
+      "trap_multiplier_w": 1.0,
+      "note": "대회 공식 지표인 정확도 최적화를 위해 통발 가중(1.5~2.0) 배제, 자연 argmax 적용"
+    }
+  },
+  "target_count": 100,
+  "validation_checks": {
+    "1_rows": {
+      "n": 100,
+      "ok": true
+    },
+    "2_ids": {
+      "dup": 0,
+      "set_equal": true,
+      "ok": true
+    },
+    "3_labels": {
+      "values": [
+        "연안복합",
+        "자망",
+        "채낚기연승낚시",
+        "통발"
+      ],
+      "ok": true
+    },
+    "4_prob_range": {
+      "min": 0.35740967550014824,
+      "max": 0.9139504976179913,
+      "ok": true
+    },
+    "5_distribution": {
+      "pred": {
+        "연안복합": 61,
+        "자망": 28,
+        "통발": 6,
+        "채낚기연승낚시": 5
+      },
+      "train_label_counts": {
+        "연안복합": 3650,
+        "자망": 2520,
+        "통발": 1044,
+        "채낚기연승낚시": 158
+      },
+      "ok": true
+    },
+    "6_sanity_in_train": {
+      "n": 91,
+      "agree": 65,
+      "rate": 0.7143,
+      "ok": true
+    }
+  },
+  "all_checks_ok": true,
+  "distribution_comparison": {
+    "previous_submission_macro_w15": {
+      "연안복합": 48,
+      "자망": 27,
+      "통발": 21,
+      "채낚기연승낚시": 4
+    },
+    "new_submission_acc_w10": {
+      "연안복합": 61,
+      "자망": 28,
+      "통발": 6,
+      "채낚기연승낚시": 5
+    },
+    "changed_ships_count": 18,
+    "agreement_ratio": 0.82
+  },
+  "artifacts": {
+    "csv": {
+      "repo_path": "D:\\repos\\fishing-track-classification\\results\\submission_20261104_s6_acc\\testA_submission.csv",
+      "sha256": "67ce26c4555dddcddf55371a0daf056762bc6583c88b5006de0c8582c24c4e3b"
+    },
+    "xlsx": {
+      "repo_path": "D:\\repos\\fishing-track-classification\\results\\submission_20261104_s6_acc\\제출_20261104_s6_acc.xlsx",
+      "sha256": "ff087d07f74ec38b2fe989782db8eaf14daceda6c0ed3a914c5891f45e59571f"
+    }
+  }
+}

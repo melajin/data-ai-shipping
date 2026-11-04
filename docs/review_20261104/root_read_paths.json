@@ -1,0 +1,170 @@
+[
+  {
+    "path": ".codex/config.toml",
+    "bytes": 282,
+    "sha256": "7c5e0edb8c9f27ebfa540707134418eb02f0b711c2ae9c97c0dc3fc6b1480b60",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": ".codex/agents/sol_review.toml",
+    "bytes": 501,
+    "sha256": "981eeec5a8f0da6d4e19d1cf3cd1041ada6f2b68a88aa44039a0ce2021c87137",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": ".codex/agents/sol_module.toml",
+    "bytes": 520,
+    "sha256": "4968336ebbff493b91ede6d1aa3388b46aa673bc16de1d92577fb71bd3cf053e",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": ".codex/agents/sol_complex.toml",
+    "bytes": 574,
+    "sha256": "d9fb751e83bca2124509488f5867f7ae3f736f85f70ef955892e9f9ad67ddb2b",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": ".codex/agents/luna_worker.toml",
+    "bytes": 561,
+    "sha256": "fcea4331b6c5e2fedfb10e8dc5b25470bd24f69b37a832c65aa9d9a38e344645",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": ".codex/agents/astra_decision.toml",
+    "bytes": 635,
+    "sha256": "5eafb4e46e6fdb0f64b3c2f46b103b1ee0fb2aa433d96a9161a0d3f784b94a63",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "AGENTS.md",
+    "bytes": 4041,
+    "sha256": "ccd315e836f06eb09a7f1e6a7bc4fc527f6affeb893090de8b2678786a7e084a",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/시스템 가이드, 시각화 대쉬보드, 검증기록 프롬프트.txt",
+    "bytes": 6227,
+    "sha256": "2e743840cf1d1a03dc6109b6ab69d32d135c9af0415e8346eab1d5e64f93fe80",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/shape9_critique_comparison_protocol_20261027.md",
+    "bytes": 7386,
+    "sha256": "b38aba9ad71285d440624e97271bd5c54265049867b920d47626ae20715ac99a",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/shape9_critique_audit_20261027.md",
+    "bytes": 15832,
+    "sha256": "bff7062619d9890177ad7ce684349d51d81172fe3a5f263dcdf8fbeb1af8fb77",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/sample_system_contract.md",
+    "bytes": 5841,
+    "sha256": "785080a9df03c538cc23f9ed3e5f0df72a0dcfa2c859bde10341d8913aa760cd",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/real_support_evidence_20261028.md",
+    "bytes": 5165,
+    "sha256": "c77db8fbed9b3ca88b61f50172800ec6bd90d690126a8675e8cd0793a3224227",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/real_model_cycle_protocol_20261028.md",
+    "bytes": 10853,
+    "sha256": "c3a3d2d10c12f68af4cce1a033145d88e519b3b5fcf55acf1f12bd14c439a78b",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/real_model_cycle_final_review_20261029.md",
+    "bytes": 7404,
+    "sha256": "32a5e38573274e32ef78704d65da36b6c2e055d55a8379bc8b00fb7ea475f686",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/real_evaluation_root_review_20261028.md",
+    "bytes": 8073,
+    "sha256": "87dbb034ef788729c7b3f9d7f47ad8324dc4cbf9166a8fcdd33b9f6799553184",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/project_purpose(초안).md",
+    "bytes": 5155,
+    "sha256": "97bdd9d8f12d7925d78c05357c131214847a6743fc9cb35845e7ae088357071a",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/iterative_model_protocol_20261026.md",
+    "bytes": 7976,
+    "sha256": "be264c504c1b79104269308b3907f9fad46a574fb98bb04a71f02bea97c1bb86",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/initial_spec(초안 조건 분석).md",
+    "bytes": 26818,
+    "sha256": "85f23ba3a1cbcd833bdb7b8d7b1dc3d4d69cc3d712dc94900f2d85f13b3527ae",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/guided_baseline_protocol_20261026.md",
+    "bytes": 5621,
+    "sha256": "87388184b440b06a53f3e9d4b63d9341313ec0a3ee047b4e0b36133b3fd31509",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/fishing_verification.md",
+    "bytes": 8198,
+    "sha256": "131d9557c16048374fc00b47345064820dff518a169750d14f375467d79c7f3f",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/fishing_sample_verification.md",
+    "bytes": 7596,
+    "sha256": "a7b68ffcc796ea415206c3652ec2a1293cf088c7c5cb827f8e9bfaa74c4d089f",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/fishing_execution_plan.md",
+    "bytes": 49904,
+    "sha256": "c2ed16fdcff18c05a24a871b7a605331d8ce26d3c28f8f60cdb3340b9675c4b0",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/evaluation_cycle_supervision_20261028.md",
+    "bytes": 10791,
+    "sha256": "2e1c0ad6911257e682a9c97ac59144a367fb9fcb49f0910b4deb4637aa5ca6b8",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/cycle2_summary_audit_20261029.md",
+    "bytes": 9751,
+    "sha256": "192b0ab1f7c7e56e03f9c8bc125e7a1d3cd661142228b2b45b08012d1d85b50a",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "requirements-sample.txt",
+    "bytes": 14,
+    "sha256": "8f40ca44a22b1aa83e698b44fe63c246695b49eb7e4a12b9de93c2276c0d62f9",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "docs/2026학년도 가을 일반대학원 학과 및 연구실 탐방프로그램 사전신청 링크.txt",
+    "bytes": 99,
+    "sha256": "02e7c68f45832b2bfe16b0e351b14e9d861b1a9cb2228a2f3dca5f23079ab78d",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "outputs/iterative_models_20261026/protocol.md",
+    "bytes": 7976,
+    "sha256": "be264c504c1b79104269308b3907f9fad46a574fb98bb04a71f02bea97c1bb86",
+    "read_status": "full_text_read_in_tool_outputs"
+  },
+  {
+    "path": "outputs/guided_baseline_20261026/protocol.md",
+    "bytes": 5621,
+    "sha256": "87388184b440b06a53f3e9d4b63d9341313ec0a3ee047b4e0b36133b3fd31509",
+    "read_status": "full_text_read_in_tool_outputs"
+  }
+]

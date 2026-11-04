@@ -1,0 +1,57 @@
+{
+  "experiment": "S6_large_capacity_model",
+  "description": "305개 전체 특징 및 num_leaves=127, lr=0.01 대형 LightGBM 모델의 공정 평가 (선택은 INNER)",
+  "features_count": 305,
+  "seeds": [
+    42,
+    2026,
+    7,
+    1,
+    2024
+  ],
+  "avg_trees_used": 303.4,
+  "inner_selected_w": 2.0,
+  "inner_score": 0.53715,
+  "macro_mode_w_selected": {
+    "outer_macro_f1": 0.54843,
+    "outer_accuracy": 0.58436,
+    "outer_class_f1": [
+      0.68871,
+      0.4917,
+      0.34663,
+      0.66667
+    ],
+    "diff_vs_baseline_w15": 0.01658,
+    "ci_95": [
+      0.00274,
+      0.030396
+    ],
+    "p_gt_0": 0.9922,
+    "adoption_candidate_check": {
+      "passed": true,
+      "delta": 0.01658,
+      "ci_lower_gt_0": true,
+      "ci_95": [
+        0.00274,
+        0.030396
+      ],
+      "max_class_f1_drop": -0.01174
+    }
+  },
+  "acc_mode_w_1.0": {
+    "outer_accuracy": 0.59183,
+    "outer_macro_f1": 0.52179,
+    "outer_class_f1": [
+      0.69519,
+      0.50428,
+      0.21111,
+      0.67658
+    ],
+    "diff_vs_baseline_w10": 0.01391,
+    "ci_95": [
+      0.006779,
+      0.021371
+    ],
+    "p_gt_0": 1.0
+  }
+}
