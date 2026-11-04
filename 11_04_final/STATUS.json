@@ -1,11 +1,11 @@
 ﻿{
     "schema_version":  1,
-    "updated_at_utc":  "2026-11-04T18:36:09.9262417Z",
+    "updated_at_utc":  "2026-11-04T19:10:21.4881817Z",
     "objective":  "vessel-level four-class micro-F1 \u003e= 0.7 with development and independent evidence kept separate",
     "goal_status":  "in_progress_not_achieved",
-    "current_round":  "round_007",
-    "round_status":  "round_008_in_progress",
-    "manager_session":  "codex_e959665a_5b7a_4729_897c_f8de0d0a718d",
+    "current_round":  "round_009",
+    "round_status":  "in_progress_source_and_synthetic_gate",
+    "manager_session":  "codex_f8781e21_ce60_45bc_b218_028699479bf4",
     "manager_model_request":  {
                                   "model":  "gpt-6-astra",
                                   "reasoning_effort":  "high",
@@ -23,7 +23,7 @@
                   "raw_read_only":  "F:/문제 데이터_수정_1027",
                   "source_read_only":  "D:/repos/fishing-track-classification",
                   "prior_experiment":  "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
-                  "round":  "rounds/round_007"
+                  "round":  "rounds/round_009"
               },
     "scores":  {
                    "evaluation_population":  "repeatedly exposed development OUTER, 5897 vessels",
@@ -384,30 +384,42 @@
                                      "goal_070_achieved":  false,
                                      "historical_scores_unchanged":  true,
                                      "result":  "rounds/round_007/artifacts/result.json"
+                                 },
+                   "round_008":  {
+                                     "evaluation_kind":  "fixed_development_two_query_chunk16_replay",
+                                     "new_micro_f1":  null,
+                                     "new_macro_f1":  null,
+                                     "actual_replay_gate_pass":  false,
+                                     "predict_attempted":  1,
+                                     "predict_completed":  0,
+                                     "candidate_adopted":  false,
+                                     "historical_scores_unchanged":  true,
+                                     "result":  "rounds/round_008/artifacts/result.json"
                                  }
                },
     "budget":  {
                    "manager_minutes_max":  30,
-                   "started_utc":  "2026-11-04T18:36:10Z",
-                   "deadline_utc":  "2026-11-04T19:06:10Z",
-                   "mock_max_runs":  2,
+                   "started_utc":  "2026-11-04T19:04:46Z",
+                   "deadline_utc":  "2026-11-04T19:34:46Z",
                    "mock_first_allowed_runs":  1,
+                   "mock_max_runs":  2,
                    "mock_seconds_max_each":  30,
-                   "actual_pilot_max_runs":  1,
-                   "pilot_seconds_max_including_cleanup":  600,
+                   "synthetic_pair_max_runs":  1,
+                   "pair_seconds_max_including_cleanup":  300,
+                   "actual_pilot_max_runs":  0,
                    "threads_max":  3,
                    "parameter_training_fits":  0,
                    "new_f1_evaluations":  0
                },
     "decision_rules":  {
-                           "current_round":  "Source proof, corrected wrapper mock02 and one synthetic equivalence pair passed",
-                           "runtime_gate":  "Pair start4.787761688GiB; observed minimum4.139598846GiB; completed30.078s; no guard stop; no owned process remains",
-                           "next_gate":  "Explicit CPU COL configure before adapter install, source/mock review, then one full-context actual replay at historical probability tolerance1e-4",
+                           "current_round":  "Source independence then frozen source review then bounded mock then at most one synthetic pair",
+                           "runtime_gate":  "Start available RAM\u003e=3GiB and stop below1.5GiB; one compute process, threads\u003c=3",
+                           "next_gate":  "Actual replay only in a subsequent separately frozen round after tiny synthetic equivalence",
                            "holdout":  "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan",
                            "ram_policy":  "When RAM insufficient do other feasible independent work first, then recheck and proceed under resource and finite-attempt gates"
                        },
-    "current_task":  "Round007 complete: source/mock/synthetic equivalence and independent saved-artifact verification passed",
-    "next_task":  "Round008 configure-before-install mock and one bounded chunk16 FIT3144/two-query actual replay; no training or F1",
+    "current_task":  "Round009 in progress: independent ROW source proof passed; writing and reviewing adapter/mock/synthetic pair",
+    "next_task":  "Source-proven independent ROW batch chunk8; one tiny synthetic comparison column16 baseline vs column16+row8; no actual-data replay or M4",
     "blockers":  [
                      "Actual-vessel FIT3144 two-query CPU equivalence remains unmeasured",
                      "Full-context adapter total memory requirement remains unmeasured; row/ICL stages unchanged"
@@ -420,24 +432,24 @@
                        "No independent/official score and no actual F1\u003e=0.7 evidence"
                    ],
     "active_workers":  [
-                           "/root/round008_author",
-                           "/root/round008_reviewer"
+                           "author009",
+                           "review009"
                        ],
     "handoff":  {
                     "ready":  false,
                     "next_session_launched":  false,
-                    "launch_receipt":  "automation/receipts/round_007_launch.json",
+                    "launch_receipt":  "automation/receipts/round_008_launch.json",
                     "launcher":  "automation/Start-NextSession.ps1",
                     "launcher_owner":  "current manager",
-                    "next_round":  "round_008",
+                    "next_round":  "round_009",
                     "pause_reason":  null,
                     "authorization":  "User authorizes local experiments and fresh Astra high handoffs without repeated approval",
                     "close_completed_session_requested":  true,
-                    "completed_session_id":  "codex_3f5d6e5d_c588_43a3_9279_40d5d4f4edd6",
-                    "close_completed_session_status":  "No supported structured-chat close API or terminal handle found; end manager after accepted handoff, manually close only completed tab if desired",
+                    "completed_session_id":  "codex_e959665a_5b7a_4729_897c_f8de0d0a718d",
+                    "close_completed_session_status":  "No supported structured-chat close command in current orca agent help; end this manager after accepted handoff; manually close only completed session tab if needed",
                     "next_session_id":  null,
                     "accepted_at_utc":  null,
-                    "note":  "Canonical launch acceptance, when present, is the launch receipt. Shared STATUS is not mutated by the outgoing manager after recipient begins."
+                    "note":  "Canonical launch acceptance is automation receipt; outgoing manager does not mutate shared state after recipient begins"
                 },
     "learning_status":  {
                             "technical_goal":  "source/mock/tiny synthetic equivalence achieved",
@@ -454,51 +466,134 @@
                           },
     "next_round_budget":  {
                               "manager_minutes_max":  30,
-                              "actual_replay_max_runs":  1,
-                              "replay_seconds_max_including_cleanup":  600,
+                              "synthetic_pair_max_runs":  1,
+                              "synthetic_pair_seconds_max":  300,
                               "mock_max_runs":  2,
                               "mock_seconds_max":  30,
                               "threads_max":  3,
-                              "concurrent_compute_max":  1,
                               "start_available_ram_gib_min":  3,
                               "runtime_stop_available_ram_gib_below":  1.5,
+                              "actual_replay_runs":  0,
                               "checkpoint_loads_max":  1,
                               "context_fits_max":  1,
-                              "predict_proba_calls_max":  1,
+                              "predict_proba_calls_max":  2,
                               "parameter_training_fits":  0,
                               "F1_evaluations":  0
                           },
-    "latest_result_report":  "rounds/round_007/ROUND_REPORT.md",
-    "round_completed_at_utc":  "2026-11-04T18:34:49.349347+00:00",
+    "latest_result_report":  "rounds/round_008/ROUND_REPORT.md",
+    "round_completed_at_utc":  "2026-11-04T18:59:25.809879+00:00",
     "review":  {
-                   "precheck":  "rounds/round_007/review/precheck.json",
-                   "wrapper_correction":  "rounds/round_007/review/mock02_precheck.json",
-                   "synthetic_precheck":  "rounds/round_007/review/synthetic_precheck.json",
-                   "saved_artifact_verification":  "rounds/round_007/review/synthetic_artifact_verification.json",
-                   "saved_artifact_checks_passed":  50,
-                   "final_review":  "rounds/round_007/review/FINAL_REVIEW.md",
-                   "final_review_json":  "rounds/round_007/review/final_review.json",
-                   "final_review_pass":  true
+                   "source_review":  "rounds/round_008/review/SOURCE_REVIEW.md",
+                   "final_review":  "rounds/round_008/review/FINAL_REVIEW.md",
+                   "final_review_json":  "rounds/round_008/review/final_review.json",
+                   "saved_execution_consistent":  true,
+                   "actual_replay_gate_pass":  false,
+                   "new_F1":  false
                },
     "execution_summary":  {
-                              "mock_runs":  2,
-                              "mock_assertions_passed_both":  true,
-                              "first_wrapper_false_failure_corrected":  true,
-                              "synthetic_pair_runs":  1,
-                              "synthetic_pair_seconds":  30.078,
-                              "synthetic_predict_calls_completed":  2,
-                              "checkpoint_context_fit":  1,
-                              "new_parameter_fits":  0,
-                              "new_actual_data_predictions":  0,
-                              "new_f1_evaluations":  0,
-                              "synthetic_max_abs_probability_difference":  0.0,
-                              "synthetic_argmax_equal":  true,
-                              "source_snapshots_match":  true,
-                              "all_owned_compute_processes_finished":  true,
-                              "raw_data_read":  false,
-                              "holdout_individual_rows_read":  0,
-                              "new_independent_evaluation":  false,
-                              "hardware_validation":  false
+                              "schema":  "round008_manager_result.v1",
+                              "updated_at_utc":  "2026-11-04T18:59:25.809879+00:00",
+                              "status":  "completed_with_limitations_replay_not_passed",
+                              "mock":  {
+                                           "run_id":  "mock_02",
+                                           "status":  "completed",
+                                           "exit_code":  0,
+                                           "elapsed_seconds":  0.26599999999962165,
+                                           "owned_tree_remaining":  [
+
+                                                                    ]
+                                       },
+                              "pilot":  {
+                                            "status":  "failed_or_stopped",
+                                            "exit_code":  1,
+                                            "elapsed_seconds":  25.639999999999418,
+                                            "stop_reason":  "available_ram_below_1_5_gib",
+                                            "preflight_available_ram_gib":  4.144317626953125,
+                                            "minimum_observed_available_ram_gib":  1.3799629211425781,
+                                            "peak_sampled_tree_working_set_bytes":  3182952448,
+                                            "owned_tree_remaining":  [
+
+                                                                     ],
+                                            "termination_confirmed":  true
+                                        },
+                              "child_last_stage":  "predict_proba_start",
+                              "child_raw_status":  "STARTED",
+                              "predict_proba_attempted_count":  1,
+                              "predict_proba_completed_count":  0,
+                              "chunk_event_counts":  {
+                                                         "column_chunk_call_started":  1,
+                                                         "column_chunk_started":  14,
+                                                         "column_chunk_completed":  14,
+                                                         "column_chunk_call_completed":  1
+                                                     },
+                              "last_adapter_event":  {
+                                                         "event":  "column_chunk_call_completed",
+                                                         "call_id":  0,
+                                                         "input_shape":  [
+                                                                             1,
+                                                                             223,
+                                                                             3146,
+                                                                             3
+                                                                         ],
+                                                         "output_shape":  [
+                                                                              1,
+                                                                              223,
+                                                                              3146,
+                                                                              128
+                                                                          ],
+                                                         "column_axis":  1,
+                                                         "chunk_count":  14,
+                                                         "max_chunk_columns":  16,
+                                                         "sequence_length_preserved":  3146,
+                                                         "train_size_shared":  3144,
+                                                         "output_repeat_preserved":  1
+                                                     },
+                              "last_completed_chunk":  {
+                                                           "call_id":  0,
+                                                           "chunk_index":  13,
+                                                           "chunk_count":  14,
+                                                           "column_start":  208,
+                                                           "column_stop_exclusive":  223,
+                                                           "feature_shape":  [
+                                                                                 1,
+                                                                                 15,
+                                                                                 3146,
+                                                                                 3
+                                                                             ],
+                                                           "target_shape":  [
+                                                                                1,
+                                                                                15,
+                                                                                3144
+                                                                            ],
+                                                           "output_shape":  [
+                                                                                1,
+                                                                                15,
+                                                                                3146,
+                                                                                128
+                                                                            ]
+                                                       },
+                              "current_chunk":  null,
+                              "adapter_restored_recorded":  false,
+                              "probabilities":  null,
+                              "comparison":  null,
+                              "actual_replay_gate_pass":  false,
+                              "evaluation":  {
+                                                 "new_f1":  null,
+                                                 "new_f1_evaluations":  0,
+                                                 "new_parameter_training_fits":  0,
+                                                 "independent_f1":  null,
+                                                 "official_f1":  null,
+                                                 "goal_070_achieved":  false,
+                                                 "historical_scores_unchanged":  true
+                                             },
+                              "scope":  {
+                                            "holdout_rows_read":  0,
+                                            "raw_data_read":  false,
+                                            "reexports":  0,
+                                            "full_input_reverification_runs":  0,
+                                            "hardware_validation":  false,
+                                            "pilot_retries":  0
+                                        }
                           },
     "independent_evaluation_blockers":  [
                                             "No exposure-verified independent evaluation roster approved or opened"
@@ -542,7 +637,7 @@
                          "checkpoint_exact_sha256_found":  true,
                          "historical_cuda_runtime_reproduced":  false,
                          "ready_for_m4_training":  false,
-                         "next_step":  "Tiny synthetic chunk16 passed; one actual full-context replay after configure-before-install gate. M4 training remains gated."
+                         "next_step":  "Source-prove ROW independent batch axis and tiny col16 vs col16+row8 synthetic comparison; full actual replay still unpassed"
                      },
     "next_manager_session":  null,
     "latest_user_steering_previous":  {

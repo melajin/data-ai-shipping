@@ -1,0 +1,13 @@
+﻿{
+    "algorithm":  "SHA-256",
+    "created_local":  "2026-11-05T03:55:38+09:00",
+    "files":  {
+                  "environment.json":  "fe9b42c4d1cbb51d990dcc9e4f3e804ff8c68717c88f05d32396d07e252134d2",
+                  "inspection.log":  "8c9594c0dc42a00d50771236e572a35f568d06740b7ed0f67a26d7cda81eda62",
+                  "manifest.json":  "3db3c841f02b9eea6c04978f030c84085a583b81dd4805e2cc5f80b19932af1f",
+                  "new_testB_ids_100.csv":  "d7c5affc53473cc45a3372c9bc7b82eb0466cdb99a77e2f4996b6cc8325d3ec4",
+                  "parquet_schema_metadata.json":  "ef9135a60ccb76a3eff640f57b865c9adb3f98ef43940ad697eac52c1109a634",
+                  "preparation_report.md":  "ad083fa7571064c67bf8cbde93b179e83b3b950d165c8fc7d646f80c82de7fe8",
+                  "validation_summary.json":  "1337a7b0db393a4549a71f2dbba12be001afafe0f8242c9c0856c5336d0cc11d"
+              }
+}

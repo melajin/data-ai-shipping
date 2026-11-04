@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_008\logs\mock_01\source\test_configure_before_install.py", line 179, in <module>
+    run_mock()
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_008\logs\mock_01\source\test_configure_before_install.py", line 130, in run_mock
+    installation = install_column_chunk_adapter(estimator, on_event=events.append)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_008\logs\mock_01\source\column_chunk.py", line 259, in install_column_chunk_adapter
+    adapter = ColumnChunkManager(original, on_event=on_event)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\11_04_final\rounds\round_008\logs\mock_01\source\column_chunk.py", line 63, in __init__
+    raise TypeError("pinned manager is not callable")
+TypeError: pinned manager is not callable

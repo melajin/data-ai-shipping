@@ -1,0 +1,101 @@
+{
+  "schema": "round008_manager_result.v1",
+  "updated_at_utc": "2026-11-04T18:59:25.809879+00:00",
+  "status": "completed_with_limitations_replay_not_passed",
+  "mock": {
+    "run_id": "mock_02",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 0.26599999999962165,
+    "owned_tree_remaining": []
+  },
+  "pilot": {
+    "status": "failed_or_stopped",
+    "exit_code": 1,
+    "elapsed_seconds": 25.639999999999418,
+    "stop_reason": "available_ram_below_1_5_gib",
+    "preflight_available_ram_gib": 4.144317626953125,
+    "minimum_observed_available_ram_gib": 1.3799629211425781,
+    "peak_sampled_tree_working_set_bytes": 3182952448,
+    "owned_tree_remaining": [],
+    "termination_confirmed": true
+  },
+  "child_last_stage": "predict_proba_start",
+  "child_raw_status": "STARTED",
+  "predict_proba_attempted_count": 1,
+  "predict_proba_completed_count": 0,
+  "chunk_event_counts": {
+    "column_chunk_call_started": 1,
+    "column_chunk_started": 14,
+    "column_chunk_completed": 14,
+    "column_chunk_call_completed": 1
+  },
+  "last_adapter_event": {
+    "event": "column_chunk_call_completed",
+    "call_id": 0,
+    "input_shape": [
+      1,
+      223,
+      3146,
+      3
+    ],
+    "output_shape": [
+      1,
+      223,
+      3146,
+      128
+    ],
+    "column_axis": 1,
+    "chunk_count": 14,
+    "max_chunk_columns": 16,
+    "sequence_length_preserved": 3146,
+    "train_size_shared": 3144,
+    "output_repeat_preserved": 1
+  },
+  "last_completed_chunk": {
+    "call_id": 0,
+    "chunk_index": 13,
+    "chunk_count": 14,
+    "column_start": 208,
+    "column_stop_exclusive": 223,
+    "feature_shape": [
+      1,
+      15,
+      3146,
+      3
+    ],
+    "target_shape": [
+      1,
+      15,
+      3144
+    ],
+    "output_shape": [
+      1,
+      15,
+      3146,
+      128
+    ]
+  },
+  "current_chunk": null,
+  "adapter_restored_recorded": false,
+  "probabilities": null,
+  "comparison": null,
+  "actual_replay_gate_pass": false,
+  "evaluation": {
+    "new_f1": null,
+    "new_f1_evaluations": 0,
+    "new_parameter_training_fits": 0,
+    "independent_f1": null,
+    "official_f1": null,
+    "goal_070_achieved": false,
+    "historical_scores_unchanged": true
+  },
+  "scope": {
+    "holdout_rows_read": 0,
+    "raw_data_read": false,
+    "reexports": 0,
+    "full_input_reverification_runs": 0,
+    "hardware_validation": false,
+    "pilot_retries": 0
+  }
+}

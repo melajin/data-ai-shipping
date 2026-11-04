@@ -1,0 +1,88 @@
+{
+  "schema": "round008_independent_final_review.v1",
+  "reviewed_utc": "2026-11-04T19:02:58Z",
+  "decision": "pilot stopped at the configured RAM guard; no prediction result; no retry approved",
+  "reviewer": {
+    "requested_model": "gpt-6-luna",
+    "requested_effort": "xhigh",
+    "fork_turns": "none",
+    "host_evidence_file": "rounds/round_008/manager/assistant_host_evidence.json",
+    "host_evidence_note": "turn-context metadata, not internal model authentication"
+  },
+  "scope": {
+    "saved_output_review": true,
+    "model_or_mock_rerun": false,
+    "npz_array_reload": false,
+    "raw_outer_holdout_or_y_inner_access": false
+  },
+  "pilot_receipt": {
+    "path": "rounds/round_008/logs/pilot_01/receipt.json",
+    "sha256": "e5a1a8be6ffa8f9c52a9a099c147a211056228b10783577fc38f8fb979ae1c0a",
+    "status": "failed_or_stopped",
+    "exit_code": 1,
+    "stop_reason": "available_ram_below_1_5_gib",
+    "elapsed_seconds": 25.64,
+    "preflight_available_ram_gib": 4.144317626953125,
+    "minimum_observed_available_ram_gib": 1.3799629211425781,
+    "peak_sampled_owned_tree_working_set_bytes": 3182952448,
+    "termination_confirmed": true,
+    "owned_tree_remaining": [],
+    "source_unchanged": true,
+    "adapter_source_unchanged": true,
+    "source_snapshot_unchanged": true
+  },
+  "pilot_result": {
+    "path": "rounds/round_008/artifacts/pilot_attempt_001/pilot_result.json",
+    "sha256": "bb4b2b4b1ae3fd1c741eb2c43f47a162f98a0bc1a8b47bf64f438f6f01348547",
+    "status": "STARTED",
+    "stage": "predict_proba_start",
+    "context_sha256": "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+    "freeze_sha256": "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef",
+    "query_ids": ["36001915", "31703435"],
+    "predict_proba_attempted": 1,
+    "predict_proba_completed": 0,
+    "probabilities": null,
+    "comparison": null,
+    "f1_computed": false,
+    "adapter_restored": false,
+    "last_event": "column_chunk_call_completed",
+    "completed_column_calls": 1,
+    "chunk_started": 14,
+    "chunk_completed": 14,
+    "final_column_stop_exclusive": 223,
+    "call_input_shape": [1, 223, 3146, 3],
+    "call_output_shape": [1, 223, 3146, 128]
+  },
+  "mock02": {
+    "path": "rounds/round_008/logs/mock_02/receipt.json",
+    "status": "completed",
+    "exit_code": 0,
+    "stdout_assertion": "configure-before-install pure mock passed",
+    "stderr_empty": true,
+    "owned_tree_remaining": []
+  },
+  "executed_source_sha256": {
+    "rounds/round_008/code/replay_inner_pilot.py": "112ca09e7abba9c194421c22bd38771563636e2852c867c089cb27e985c39b0d",
+    "rounds/round_008/code/column_chunk.py": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+    "rounds/round_008/manager/run_bounded.py": "6962c94fa07a36cd7b3429eaeb27ac851aee3104e9b77758d7a99c0fc1a48e1d"
+  },
+  "result_schema_caveat": "pilot_result.json top-level source metadata was overwritten by the column configure-source label; wrapper receipt, manifest, and snapshot hashes remain available for execution identity",
+  "failure_localization": {
+    "established": "the wrapper's available-RAM guard stopped the owned process tree below 1.5 GiB",
+    "not_established": "which operation caused the memory rise; whether ROW execution began; whether the ROW path caused the guard"
+  },
+  "post_column_source_review": {
+    "tabicl_path": "TabICL._inference_forward calls ColEmbedding and then RowInteraction (tabicl.py:422-432)",
+    "row_path": "RowInteraction configures ROW and submits the full embeddings tensor to _aggregate_embeddings (interaction.py:215-250)",
+    "cpu_manager_path": "InferenceManager CPU branch directly runs _prepare_inputs/_run_forward without auto batching (inference.py:1291-1298)",
+    "candidate": "test T-axis row batching only inside RowInteraction with a tiny synthetic equivalence pair before any full-context replay; keep the ICL context axis whole",
+    "pinned_source_sha256": {
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py": "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/interaction.py": "6f35b5a70cd7b7ea44286faa8921b64c2cc83aca8ed49a4ad8b287abe54cbf27",
+      "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py": "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc"
+    }
+  },
+  "performance_claim": false,
+  "actual_probability_reproduction": false,
+  "hardware_validation": false
+}

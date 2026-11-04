@@ -85,7 +85,7 @@ def main():
     if not script.is_relative_to(ROUND) or not script.is_file():raise ValueError('script outside this round')
     expected_script=default_script.resolve()
     if script != expected_script:raise ValueError('script does not match the fixed script for this run kind')
-    limit=600 if a.kind=='pilot' else 30
+    limit=420 if a.kind=='pilot' else 30
     cleanup_seconds=10 if a.kind=='pilot' else 2
     compute_limit=limit-cleanup_seconds
     run=ROUND/'logs'/a.run_id;run.mkdir(parents=True,exist_ok=False)

@@ -1,0 +1,253 @@
+﻿{
+    "schema_version":  "round002_preparation_manifest_v1",
+    "task_id":  "task_baebf267fba2",
+    "dispatch_id":  "ctx_29391cebbe4a",
+    "created_local":  "2026-11-05",
+    "requested_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "provider_internal_model_effort":  "unknown",
+    "scope":  "read-only input/cache lineage and memory planning; preparation folder only",
+    "new_submission":  {
+                           "zip_path":  "C:/Users/dlehs/Downloads/문제 데이터_수정_1103_v2.zip",
+                           "member":  "테스트셋 및 결과제출 샘플/제출샘플.xlsx",
+                           "uncompressed_bytes":  12645,
+                           "member_sha256":  "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+                           "member_crc32":  "c1e072af",
+                           "intake_copy":  "testB/intake/1103_v2/inspection_001/reference_02_제출샘플.xlsx",
+                           "intake_copy_sha256":  "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+                           "archive_manifest_sha256":  "3916151773a3ad402a020889553bb1fe85c4bf5462f2cc794d526e5e0999e860",
+                           "direct_recheck_report":  "testB/round_001/audit/v2_id_recheck_001/recheck_report.md",
+                           "direct_recheck_summary":  "testB/round_001/audit/v2_id_recheck_001/summary.json",
+                           "direct_recheck_source_rows":  "testB/round_001/audit/v2_id_recheck_001/source_id_rows.csv",
+                           "direct_recheck_source_rows_sha256":  "7629cfc344d003e07bf85cc016e837b33fda3748a4a3e9685e524639a521db58",
+                           "ordered_ids_csv":  "new_testB_ids_100.csv",
+                           "ordered_ids_csv_sha256":  "d7c5affc53473cc45a3372c9bc7b82eb0466cdb99a77e2f4996b6cc8325d3ec4",
+                           "ordered_id_count":  100,
+                           "unique_id_count":  100,
+                           "source_value_type_counts":  {
+                                                            "str":  100
+                                                        },
+                           "order_source":  "new_zip_member / worksheet 테스트B / cells A2:A101 from prior direct recheck artifact",
+                           "prior_direct_check":  {
+                                                      "newB_vs_intakeB_intersection":  100,
+                                                      "oldB_vs_newB_intersection":  0,
+                                                      "same-row_raw_ID_match":  0,
+                                                      "same-row_safe_normalized_ID_match":  0
+                                                  },
+                           "reopened_or_rechecked_in_this_task":  false
+                       },
+    "v2_csv_to_cache_lineage":  {
+                                    "W0_report":  "testB/round_001/input_compatibility/comparison_report.md",
+                                    "W0_summary":  "testB/round_001/input_compatibility/summary.json",
+                                    "W0_status":  "succeeded",
+                                    "W0_actual_exit_code":  0,
+                                    "W0_v2_CSV_member_pairs":  12,
+                                    "W0_byte_identical_pairs":  12,
+                                    "W0_different_pairs":  0,
+                                    "W0_bytes_each_side":  13349258148,
+                                    "W0_all_CSV_member_CRC_checked_to_EOF":  true,
+                                    "W0_full_archive_SHA256":  "c3877b633262b987aabd8c9ca1882649b256c96cfa5bcdfa3ab457be0f9a7135",
+                                    "source_bytes_were_rehashed_this_task":  false,
+                                    "months":  [
+                                                   {
+                                                       "month":  1,
+                                                       "source_path":  "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
+                                                       "source_bytes":  1032427516,
+                                                       "source_sha256":  "eccecabdf141ec6856f0abc04119a610e6415ed2e2bf481898ff426d1c890a8b",
+                                                       "raw_rows":  592013,
+                                                       "parquet_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_test_1.parquet",
+                                                       "parquet_bytes":  22102228,
+                                                       "parse_manifest_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/parse_test_1.json",
+                                                       "parse_manifest_sha256":  "9515d2ba542b478db9e57cd6b715f31517165eafe4877c98112b89f2036e7c0b",
+                                                       "parse_manifest_hash_match_recorded":  true,
+                                                       "source_hash_recomputed_this_task":  false
+                                                   },
+                                                   {
+                                                       "month":  2,
+                                                       "source_path":  "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv",
+                                                       "source_bytes":  795028305,
+                                                       "source_sha256":  "7199c1925a080c132745d4b1960f27886d45720ed670f856bc34c4c4d0b92d8c",
+                                                       "raw_rows":  442715,
+                                                       "parquet_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_test_2.parquet",
+                                                       "parquet_bytes":  16393715,
+                                                       "parse_manifest_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/parse_test_2.json",
+                                                       "parse_manifest_sha256":  "75845e7d5921bf1646d4b6a3b3e7fc5f038a47e87b6f812032185457ad813c7b",
+                                                       "parse_manifest_hash_match_recorded":  true,
+                                                       "source_hash_recomputed_this_task":  false
+                                                   },
+                                                   {
+                                                       "month":  3,
+                                                       "source_path":  "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv",
+                                                       "source_bytes":  1115652054,
+                                                       "source_sha256":  "46cd53aed13db55f815730adf3b670681677b9491139410786ad1a58066c6762",
+                                                       "raw_rows":  624514,
+                                                       "parquet_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_test_3.parquet",
+                                                       "parquet_bytes":  23195070,
+                                                       "parse_manifest_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/parse_test_3.json",
+                                                       "parse_manifest_sha256":  "7d05780b3855cc5b76b5c5a0fc6381db06f1d62e6bb078ce73f98df6661fed92",
+                                                       "parse_manifest_hash_match_recorded":  true,
+                                                       "source_hash_recomputed_this_task":  false
+                                                   },
+                                                   {
+                                                       "month":  4,
+                                                       "source_path":  "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv",
+                                                       "source_bytes":  1339299305,
+                                                       "source_sha256":  "6d4e191676a1b8b7d5bbee10677ccd1be5e69c88117d6f2296e2383d5dc525bc",
+                                                       "raw_rows":  755491,
+                                                       "parquet_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_test_4.parquet",
+                                                       "parquet_bytes":  28452704,
+                                                       "parse_manifest_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/parse_test_4.json",
+                                                       "parse_manifest_sha256":  "bea02796b460b43b67b4f4b6974a9fd814eef94a310b8cb557e6769109befdfd",
+                                                       "parse_manifest_hash_match_recorded":  true,
+                                                       "source_hash_recomputed_this_task":  false
+                                                   },
+                                                   {
+                                                       "month":  5,
+                                                       "source_path":  "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv",
+                                                       "source_bytes":  1581199983,
+                                                       "source_sha256":  "82c5c4222b5ebe0f551f6b717730d80590aaec7e41750b49a463597645eadd08",
+                                                       "raw_rows":  888878,
+                                                       "parquet_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_test_5.parquet",
+                                                       "parquet_bytes":  33418976,
+                                                       "parse_manifest_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/parse_test_5.json",
+                                                       "parse_manifest_sha256":  "b71060423f4da052101f44527b91631fccebe8b22cc017674128e97a856d82df",
+                                                       "parse_manifest_hash_match_recorded":  true,
+                                                       "source_hash_recomputed_this_task":  false
+                                                   },
+                                                   {
+                                                       "month":  6,
+                                                       "source_path":  "F:\\문제 데이터_수정_1027\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv",
+                                                       "source_bytes":  1621873318,
+                                                       "source_sha256":  "009ac034a7acb8552fac6fe1d28b307d6df2339ea5a1845ec4314c306f97b88d",
+                                                       "raw_rows":  908778,
+                                                       "parquet_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_test_6.parquet",
+                                                       "parquet_bytes":  34195805,
+                                                       "parse_manifest_path":  "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/parse_test_6.json",
+                                                       "parse_manifest_sha256":  "63da305ed8bbbc0d954c308c725793911bddee3d61d343edccd711ef71670625",
+                                                       "parse_manifest_hash_match_recorded":  true,
+                                                       "source_hash_recomputed_this_task":  false
+                                                   }
+                                               ],
+                                    "legacy_cache_coverage":  {
+                                                                  "prior_recheck_status":  "100/100 target IDs found in rfid_id-only projected scan",
+                                                                  "rows_scanned":  4212389,
+                                                                  "source_scope":  "legacy rows_test Parquet parsed from 1027 CSVs; not a new v2 row-level check"
+                                                              },
+                                    "target_row_count_full_period_validity_duplicates_missingness":  "unknown; metadata-only and prior ID-only cache evidence do not provide per-ID rows"
+                                },
+    "cache_contract":  {
+                           "schema_path":  "parquet_schema_metadata.json",
+                           "schema_fields":  [
+                                                 "row_index:int64",
+                                                 "part_dt:string",
+                                                 "rfid_id:string",
+                                                 "rfid_time:int16",
+                                                 "fishing_code:string",
+                                                 "key_valid:bool",
+                                                 "wkt_valid:bool",
+                                                 "n_coords:int32",
+                                                 "len_m:double",
+                                                 "bbox_m:double",
+                                                 "cen_lon:double",
+                                                 "cen_lat:double"
+                                             ],
+                           "raw_source_header_test":  [
+                                                          "part_dt",
+                                                          "rfid_id",
+                                                          "rfid_time",
+                                                          "geom"
+                                                      ],
+                           "missing_raw_source_column_in_cache":  "geom WKT itself is discarded; summary columns persist",
+                           "source_row_identifier":  "row_index is zero-based original data-row ordinal in each monthly source CSV, resets per file; scorer path currently does not preserve it",
+                           "row_count_total":  4212389,
+                           "date_span_from_footer_stats":  [
+                                                               "2025-01-01",
+                                                               "2025-06-30"
+                                                           ],
+                           "rfid_time_footer_range":  [
+                                                          0,
+                                                          23
+                                                      ],
+                           "timezone":  "unknown; naive integer hour representation only",
+                           "coordinate_interpretation":  "parser reads WKT x as longitude and y as latitude; CRS/datum unknown",
+                           "partial_lines":  "separate MULTILINESTRING parts are not connected; original line completeness/coordinate sequence is not recoverable from Parquet",
+                           "test_fishing_code":  "not present in test raw header; common Parquet schema field is null for test"
+                       },
+    "fixed_scorer_reference":  {
+                                   "static_fit_scope_from_R_review":  "common harbor/density/gap-jump references built only from 2026 train; 2025 test rows score inputs and per-vessel causal history only; no test scaler/KDE/calibration/quantile/threshold fit call",
+                                   "code":  "D:/repos/fishing-track-classification/code/tools/run_008_testB_20261101.py",
+                                   "metadata":  "D:/repos/fishing-track-classification/results/work_008/scores_meta.json",
+                                   "legacy_target_cache":  "D:/repos/fishing-track-classification/results/work_008/scored_rows.pkl",
+                                   "harbor_metadata_artifact":  "D:/repos/fishing-track-classification/results/work_008/train_harbors.json",
+                                   "reference_metadata":  {
+                                                              "gap_reference_n":  3879693,
+                                                              "jump_reference_n":  3879693,
+                                                              "gap_p50_hours":  1.0,
+                                                              "jump_p50_m":  85.72352634799219,
+                                                              "density_fishing_rows":  1376741,
+                                                              "fine_cells":  102053,
+                                                              "coarse_cells":  9174
+                                                          },
+                                   "complete_reusable_frozen_reference_bundle":  "not confirmed; score code builders reconstruct reference arrays/maps from train; scored_rows.pkl is legacy per-target score output, not a reusable reference bundle",
+                                   "new_v2_target_rows_and_overlap_with_2026_reference":  "unknown",
+                                   "stock_cli_execution":  "prohibited for this preparation: it reads legacy 1027 workbook IDs and writes canonical results/work_008; source row ordinal does not reach output and timestamp-sort idxmax is not the existing-order first-max contract"
+                               },
+    "required_score_input_fields_from_R_static_review":  [
+                                                             "rfid_id",
+                                                             "part_dt",
+                                                             "rfid_time",
+                                                             "wkt_valid",
+                                                             "cen_lon",
+                                                             "cen_lat",
+                                                             "len_m",
+                                                             "bbox_m"
+                                                         ],
+    "additional_lineage_field_to_preserve":  "row_index plus month/file identity; existing score path omits it",
+    "ram":  {
+                "start_check_local":  "2026-11-05T03:42:13+09:00",
+                "start_available_mib":  4310.1,
+                "total_mib":  14140.9,
+                "research_increment_budget_mib":  256,
+                "session_overhead":  "uncertain; existing Orca/Codex/OS processes observed",
+                "schema_check_preflight":  {
+                                               "local":  "2026-11-05T03:43:53+09:00",
+                                               "available_mib":  4359.7,
+                                               "expected_peak_mib":  256
+                                           },
+                "footer_stats_preflight":  {
+                                               "local":  "2026-11-05T03:46:01+09:00",
+                                               "available_mib":  4399.3,
+                                               "expected_peak_mib":  256
+                                           },
+                "inference_peak_estimate":  {
+                                                "status":  "provisional only; not measured; requires new execution RAM check and independent scorer implementation plan",
+                                                "projected_train_rows":  3887069,
+                                                "rough_single_dataframe_bytes":  649000000,
+                                                "derived_two_float64_reference_arrays_mib":  59.2,
+                                                "lower_payload_estimate_mib":  219,
+                                                "additional_sort_and_concatenation_copies":  "one or more copies of the projected training frame, estimated 0.6-1.3 GiB depending on pandas string/object conversion; unknown without measured run",
+                                                "planning_peak_increment_mib":  2048,
+                                                "basis":  "For eight projected columns: two strings (RFID/date; approximate Arrow offsets+8-byte payload each), int16 hour, bool validity and four float64 fields ~=59 bytes/row * 3,887,069 = 229.3 MB / 218.7 MiB before Pandas objects/copies. Add approximately 0.62 GiB for one Pandas conversion, reference arrays/maps and sort scratch; reserve up to 2 GiB for retained frames/maps/temporary copies. This is a conservative planning envelope, not a guaranteed maximum."
+                                            },
+                "safe_proposed_strategy":  "Do not invoke stock CLI. Build/hold references only after 감독 gate. For approved separate runner, read one month parquet at a time with Arrow projection and iter_batches(16384), avoid global pandas concat; keep exact train-only reference arrays in arrays/mmap or scratch; sort gap/jump vectors separately and discard temp copies; build density maps by streaming/partitioning target ID-cell tuples; then read test files sequentially and retain only selected IDs, carrying row_index+month. Score one vessel at a time. If reference builders cannot be made equivalent with bounded streaming, gate on a separate fresh RAM check and keep at least 2 GiB process headroom; never terminate user processes.",
+                "new_target_per_vessel_rows":  "unknown from allowed metadata-only inspection"
+            },
+    "execution_constraints":  [
+                                  "No complete 13GB rehash/reparse",
+                                  "No parquet row scan in P",
+                                  "No pickle/DataFrame/full cache loading",
+                                  "No score, feature, model, thresholds, splits, incident performance, B/C, submission or external contact",
+                                  "No writes outside testB/round_002/preparation/"
+                              ],
+    "actual_checks":  {
+                          "prior_W0_csv_identity_exit":  0,
+                          "prior_ID_recheck_exit":  0,
+                          "local_parquet_schema_exit":  0,
+                          "local_footer_stats_exit":  0,
+                          "first_inline_metadata_attempt_exit":  1,
+                          "first_attempt_failure":  "PowerShell/Python quoting SyntaxError before any file access; corrected attempt succeeded",
+                          "actual_score_or_model_run":  false,
+                          "actual_data_row_scan":  false,
+                          "provider_internal_model_effort":  "unknown"
+                      }
+}

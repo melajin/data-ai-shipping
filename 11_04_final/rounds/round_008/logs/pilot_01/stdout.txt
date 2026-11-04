@@ -1,0 +1,43 @@
+{"stage": "inputs_hashed_and_query_freeze_ready", "elapsed_seconds": 0.11225810000178171}
+{"stage": "context_validated", "elapsed_seconds": 0.24452390000078594}
+{"stage": "fixed_reference_rows_verified", "elapsed_seconds": 0.2475215999984357}
+{"stage": "package_import_pending", "elapsed_seconds": 0.24930719999974826}
+{"stage": "package_imported", "elapsed_seconds": 9.074658199999249}
+{"stage": "checkpoint_fit_context_bind_start", "elapsed_seconds": 9.077295999999478}
+{"stage": "fit_returned", "elapsed_seconds": 11.538173000000825}
+{"stage": "checkpoint_fit_context_bind_complete", "elapsed_seconds": 11.54396909999923}
+{"stage": "column_manager_configure_start", "elapsed_seconds": 11.546346200000698}
+{"stage": "column_manager_configured_before_adapter_install", "elapsed_seconds": 11.548405800000182}
+{"stage": "column_adapter_install_start", "elapsed_seconds": 11.550203800001327}
+{"stage": "column_adapter_installed", "elapsed_seconds": 11.55192739999984}
+{"stage": "predict_proba_start", "elapsed_seconds": 11.556740799998806}
+{"event": "column_chunk_progress", "event_type": "column_chunk_call_started", "call_id": 0, "chunk_index": null, "column_start": null, "column_stop_exclusive": null}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 0, "column_start": 0, "column_stop_exclusive": 16}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 0, "column_start": 0, "column_stop_exclusive": 16}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 1, "column_start": 16, "column_stop_exclusive": 32}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 1, "column_start": 16, "column_stop_exclusive": 32}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 2, "column_start": 32, "column_stop_exclusive": 48}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 2, "column_start": 32, "column_stop_exclusive": 48}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 3, "column_start": 48, "column_stop_exclusive": 64}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 3, "column_start": 48, "column_stop_exclusive": 64}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 4, "column_start": 64, "column_stop_exclusive": 80}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 4, "column_start": 64, "column_stop_exclusive": 80}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 5, "column_start": 80, "column_stop_exclusive": 96}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 5, "column_start": 80, "column_stop_exclusive": 96}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 6, "column_start": 96, "column_stop_exclusive": 112}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 6, "column_start": 96, "column_stop_exclusive": 112}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 7, "column_start": 112, "column_stop_exclusive": 128}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 7, "column_start": 112, "column_stop_exclusive": 128}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 8, "column_start": 128, "column_stop_exclusive": 144}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 8, "column_start": 128, "column_stop_exclusive": 144}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 9, "column_start": 144, "column_stop_exclusive": 160}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 9, "column_start": 144, "column_stop_exclusive": 160}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 10, "column_start": 160, "column_stop_exclusive": 176}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 10, "column_start": 160, "column_stop_exclusive": 176}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 11, "column_start": 176, "column_stop_exclusive": 192}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 11, "column_start": 176, "column_stop_exclusive": 192}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 12, "column_start": 192, "column_stop_exclusive": 208}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 12, "column_start": 192, "column_stop_exclusive": 208}
+{"event": "column_chunk_progress", "event_type": "column_chunk_started", "call_id": 0, "chunk_index": 13, "column_start": 208, "column_stop_exclusive": 223}
+{"event": "column_chunk_progress", "event_type": "column_chunk_completed", "call_id": 0, "chunk_index": 13, "column_start": 208, "column_stop_exclusive": 223}
+{"event": "column_chunk_progress", "event_type": "column_chunk_call_completed", "call_id": 0, "chunk_index": null, "column_start": null, "column_stop_exclusive": null}

@@ -1,0 +1,17 @@
+﻿{
+  "task_id":"task_baebf267fba2","dispatch_id":"ctx_29391cebbe4a",
+  "worker_session":"orca_session_id:dc36a357-e788-45b7-89d0-6f92106d519e",
+  "coordinator_session":"orca_session_id:codex_5a0d6578_03b7_45e9_a0ae_0064ecb43bef",
+  "requested_model":"gpt-6-luna","requested_effort":"xhigh","provider_internal_model_effort":"unknown",
+  "platform":{"os":"Windows 11 10.0.26300","shell":"PowerShell","python":"3.13.3 x64","pyarrow":"24.0.0","orca_cli":"C:/Users/dlehs/AppData/Local/Programs/orca/resources/bin/orca.exe"},
+  "ram_checks":[
+    {"local":"2026-11-05T03:42:13+09:00","available_mib":4310.1,"total_mib":14140.9,"expected_peak_mib":256,"phase":"start","top_processes":["explorer 660.9","Orca 580.3","Orca 387.8","Orca 299.9","explorer 260.4","StartMenuExperienceHost 247.7","codex 222.4","codex 215.6"]},
+    {"local":"2026-11-05T03:43:53+09:00","available_mib":4359.7,"total_mib":14140.9,"expected_peak_mib":256,"phase":"before parquet schema metadata","top_processes":["explorer 660.9","Orca 584.2","Orca 383.1","Orca 299.9","explorer 260.5","StartMenuExperienceHost 247.7","codex 222.4","codex 217.0"]},
+    {"local":"2026-11-05T03:46:01+09:00","available_mib":4399.3,"total_mib":14140.9,"expected_peak_mib":256,"phase":"before parquet footer statistics","top_processes":["explorer 660.9","Orca 543.0","Orca 387.7","Orca 299.9","explorer 260.4","StartMenuExperienceHost 247.7","codex 222.5","codex 218.3"]}
+  ],
+  "concurrency":"Orca/Codex and OS processes observed; exact parallel task count/session overhead unknown; no process terminated.",
+  "actual_exit_codes":{"prior_W0":0,"prior_v2_ID_recheck":0,"local_schema_metadata":0,"local_footer_stats":0,"first_inline_attempt":1},
+  "first_attempt_failure":"Python quoting SyntaxError before data access; corrected invocation succeeded.",
+  "not_performed":{"xlsx_reopen":true,"full_zip_hash_this_task":true,"csv_hash_this_task":true,"parquet_row_scan":true,"pickle_load":true,"dataframe_load":true,"new_scores_features_models":true,"hardware_experiment":true},
+  "R_review":"testB/round_002/scorer_review/scorer_review.md; read-only static review only; production peak and new target row counts unknown."
+}

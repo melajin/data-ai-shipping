@@ -1,0 +1,7 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T19:12:03.2820451Z",
+    "session_to_close_after_handoff":  "codex_f8781e21_ce60_45bc_b218_028699479bf4",
+    "supported_structured_chat_close_command":  false,
+    "basis":  "agent --help lists hooks and launch only",
+    "remaining_action":  "After accepted next-session launch, this manager ends. If needed manually close only completed session tab; do not close app or unrelated sessions."
+}

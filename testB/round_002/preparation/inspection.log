@@ -1,0 +1,6 @@
+﻿2026-11-05 03:42:13+09:00 start RAM: available 4310.1 MiB / total 14140.9 MiB; expected research increment peak <=256 MiB; process observation in environment.json.
+2026-11-05 03:43:53+09:00 before Parquet schema/footer metadata: available 4359.7 MiB; expected <=256 MiB; Python 3.13.3 / PyArrow 24.0.0; no row groups read; actual exit=0.
+Attempt 1 inline metadata command: quoting/SyntaxError before file access; actual exit=1; no input read/written by failed command.
+2026-11-05 03:46:01+09:00 before Parquet row-group footer stats: available 4399.3 MiB; expected <=256 MiB; no row groups read; actual exit=0.
+ID CSV derived in source workbook order from prior direct-check source_id_rows.csv. No workbook re-open, no raw CSV rehash, no Parquet data scan, no cache/pickle/DataFrame load.
+Scorer code review message received from R: fixed reference builders use 2026 train only; default CLI must not be run; target per-ID counts remain unknown.

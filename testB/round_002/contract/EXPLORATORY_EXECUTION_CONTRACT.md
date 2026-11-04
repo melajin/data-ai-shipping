@@ -1,0 +1,13 @@
+# 새100척 탐색 추론 계약 v1 — 실행 전 고정
+
+2026-11-05 감독 판단. P msg_ef143e74f235와 R msg_0213d73be5d1 근거를 읽고 경량 실제 행 조사와 격리 runner 구현을 허용한다. 공용참조 재구성/전체점수 실행은 runner·예상peak 검토 뒤 별도 메시지로 기술 관문을 해제한다. 사용자 재승인은 필요하지 않다.
+
+1. 대상은 preparation/new_testB_ids_100.csv의 정확한 문자열100개/순서다. SHA d7c5affc53473cc45a3372c9bc7b82eb0466cdb99a77e2f4996b6cc8325d3ec4를 검사하고 prior ZIP member SHA 035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c의 명부와 계보를 연결한다. test 기간은 제공된2025 전체 월1~6이며 사고시간으로 자르지 않는다.
+2. 원행 key는 (partition=test, source_month 1..6, source_file, row_index)다. 원입력 ordinal은 월순서와 파일내 row_index 순서로 정의한다. 이것은 CSV line number와 구분하여 header 이후 zero-based data row임을 표기한다. parquet 원순서/row_index 유일성도 확인한다. raw WKT를 복원하거나 부분선 연결/좌표별 속력·가속도를 만들지 않는다.
+3. 유효 점수입력은 기존 scorer의 wkt_valid 규칙을 계승한다. 추가 임의 필터는 만들지 않는다. 키/시간/좌표/길이의 불능·비유한값은 관측·미계산 원인으로 남기며 그 행을 정상으로 만들지 않는다. 고정 함수를 안전하게 호출할 수 없으면 해당 선박 점수를 보류하고 감독에게 보고한다. 전체 raw/valid/scorable/제외 행수와 일치성, 날짜범위/월별/중복/결측을 분리한다. timezone·CRS는 unknown, timestamp는 source-naive hour이며 UTC/KST라고 주장하지 않는다.
+4. 점수식은 R manifest의 run008 source SHA cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8 및 의존코드 해시로 동결한다. score_vessel에 시간순(ts, rfid_time, source_ordinal) 행을 전달한다. source_ordinal은 같은 시간의 순서를 결정하며 원행을 삭제/합치지 않는다. 기존 정렬동점의 미명시 순서를 명시한 것임을 기록하고 소규모 중복 예를 검증한다. 함수를 복사/추출/안전 import하면 원본 AST/해시와 변경범위를 남긴다. stockCLI/main/stage_scores/stage_submit 호출 금지, canonical 생성/수정 금지.
+5. A는 모든 유한 score 중 최대값을 원입력 source_ordinal 순으로 처음 갖는 행이다. scoring 시간정렬과 A선정 원입력순서를 구분한다. 동일시각의 상충 유효점수 또는 valid/missing 점수 혼합은 data_conflict로 A를 공란 처리하고 원행/점수는 보존한다. 동일시각 동일점수는 원행을 모두 남기되 A 동점은 source_ordinal로 결정한다. 유한점수가 없으면 no_valid_score로 A 공란. 최대점수 floor=1e-6은 그대로 보존하며 사고판정/충분성 의미가 없음을 명시한다. A는 후보일 뿐이다.
+6. 공용참조는 기존2026 train의 항구/정박지/밀도/CDF 생성함수·상수·집합을 바꾸지 않는다. Test를 공용참조 생성/보정/임계값에 전달하지 않는다. 기존 label 역할과 target/reference membership은 다른 필드로 기록한다. 원본 builder 재사용을 우선하며 청크화로 알고리즘을 바꾸는 경우 동등성 근거와 독립검산 없이는 전체실행하지 않는다. stock summary와 참조 n/median/cell count의 비교는 일관성 점검이며 전체 수치동등성 증명으로 부르지 않는다.
+7. 새 파일은 execution/ 아래만. 원자료·기존cache·canonical·선행라운드 읽기전용, subprocess CWD도 격리한다. import가 폴더 생성/캐시쓰기 등 부작용을 일으키면 AST로 필요한 순수정의만 추출하거나 안전한 방법을 제안한다. 기존캐시 불변은 경로/stat 및 필요한 해시 표본/생산코드 읽기정책으로 검증하며 전체 불변을 입증하지 않았으면 범위를 한정한다.
+8. 이번 행 조사 예상 증분<=512MiB, iter_batches 16384·필수열만 투영하고100 ID 행만 순차 저장한다. one-vessel processing/partitioned scratch를 우선한다. 시작/메모리 작업 직전 가용RAM·병행작업·예상peak 근거를 기록한다. 예상보다 커지면 단계중단/보고. 큰 참조/점수는 아직 금지다. 큰 작업 계획은 각 원본 builder의 유지캐시/복사/임시/최대 DataFrame·배열·지도를 포함하고 미측정은 명시한다. 재개 직전 재확인, 부족시 작은작업 우선, polling/사용자프로세스종료 금지.
+9. 아직 임계값/B/C/사고여부/성능/제출/실제split을 생성하지 않는다. 산출물은 exploratory score/A 또는 구체 보류 사유다. 생산후 다른 실제Luna/xhigh의 계산검산과 감독통합이 필요하다.

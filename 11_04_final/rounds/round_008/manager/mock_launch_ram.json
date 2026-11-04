@@ -1,0 +1,7 @@
+﻿{
+    "observed_utc":  "2026-11-04T18:54:07.3271806Z",
+    "available_ram_gib":  4.3328971862792969,
+    "estimated_incremental_peak_gib":  0.1,
+    "other_model_compute":  0,
+    "basis":  "pure standard-library mock; source-only workers"
+}

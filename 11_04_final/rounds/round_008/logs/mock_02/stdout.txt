@@ -1,0 +1,1 @@
+configure-before-install pure mock passed

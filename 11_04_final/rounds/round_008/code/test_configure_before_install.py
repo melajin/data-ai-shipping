@@ -87,6 +87,9 @@ class FakeManager:
         self.forward_shapes.append(inputs["features"].shape)
         return forward_fn(**inputs)
 
+    def __call__(self, forward_fn, inputs, auto_batch=True, output_repeat=1):
+        return self._run_forward(forward_fn, self._prepare_inputs(inputs))
+
 
 def identity_forward(features, train_size, y_train, embed_with_test):
     assert train_size == 2

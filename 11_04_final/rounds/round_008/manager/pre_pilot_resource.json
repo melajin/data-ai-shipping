@@ -1,0 +1,15 @@
+﻿{
+    "observed_utc":  "2026-11-04T18:56:46.5015174Z",
+    "available_ram_gib":  4.3775138854980469,
+    "estimated_peak":  "1–4GiB or greater, unverified; see resource_reasoning.json",
+    "previous_raw_path_sampled_peak_bytes":  3160498176,
+    "new_path":  "column chunk16, no original-path prediction",
+    "other_compute":  [
+
+                      ],
+    "source_workers":  "author idle; reviewer text/metadata only",
+    "start_gate_gib":  3,
+    "runtime_stop_gib":  1.5,
+    "decision":  "execute single pilot after postmock source approval, wrapper rechecks immediately before Popen",
+    "budget_seconds":  420
+}

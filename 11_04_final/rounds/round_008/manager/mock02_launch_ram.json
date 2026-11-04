@@ -1,0 +1,7 @@
+﻿{
+    "observed_utc":  "2026-11-04T18:55:29.3644671Z",
+    "available_ram_gib":  4.3704071044921875,
+    "estimated_incremental_peak_gib":  0.1,
+    "basis":  "revised pure mock, first returned and no owned process remains",
+    "decision":  "mock02 only after source approval"
+}

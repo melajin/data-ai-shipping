@@ -1,0 +1,29 @@
+{
+  "schema": "round008_approved_sources.v1",
+  "approval_scope": "one bounded pilot attempt pilot_01 only; 420 seconds total, 410 seconds compute, 10 seconds cleanup; no retry",
+  "review": "rounds/round_008/review/SOURCE_REVIEW.md",
+  "sha256": {
+    "rounds/round_008/code/replay_inner_pilot.py": "112ca09e7abba9c194421c22bd38771563636e2852c867c089cb27e985c39b0d",
+    "rounds/round_008/code/column_chunk.py": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+    "rounds/round_008/code/test_configure_before_install.py": "470563dc44be46970f49c9142b393f5fd587dd96d3e57494e3b25e0d57a193b6",
+    "rounds/round_008/manager/run_bounded.py": "6962c94fa07a36cd7b3429eaeb27ac851aee3104e9b77758d7a99c0fc1a48e1d",
+    "rounds/round_008/artifacts/context_export_attempt_001/fold0_seed42_context.npz": "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+    "rounds/round_008/artifacts/context_export_attempt_001/query_freeze.json": "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef",
+    "rounds/round_008/logs/mock_02/receipt.json": "3d4f6bad0eb374d6edc903fdf339254d0f5ac3dafd95db247b985b6e16f06b7b",
+    "rounds/round_008/logs/mock_02/stdout.txt": "2da0fed1932037bdc81d3d8f365be6ec4621bc46b1b85acdca15938a910f5e4e",
+    "rounds/round_008/logs/mock_02/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rounds/round_008/logs/mock_02/resource_curve.csv": "37571ad95e84135ea3f2437e3cf56cffdb048bc51889eaf480ab7c0994f2feb2",
+    "rounds/round_006/code/replay_inner_pilot.py": "a4d10bba93f3fe07ea7188aba216c1211e13eba24cec334fc19d7b985d681505",
+    "rounds/round_007/code/column_chunk.py": "bf263ba75bef5ed9aab04364459e426f3a82be92da2ce642e89b06558fd9cded",
+    "rounds/round_004/runtime_author/replay_contract.json": "819e60fd2f05a655a86dc1cdaa5e52f5a4fd0486e78fdd5dc5a4ab140ad7e2f5",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl-2.2.0.dist-info/METADATA": "e429edbe64f243241e6425854643b0d4128de550121b9feb1598ef710b9941a2",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py": "64f5ef7ef88a920a3f7a5f6e2d9d8dc08769ec343e931f910acc2d9c4eaa5534",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/base.py": "7f8f284ca91bf1f5a016179834e508890b3f5368c4a48a7dcb6cb4b83a30051a",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference.py": "f9e3cf0d83047e06df7d6763bb8d8ee7a00ff1ba6708299a14635831f60ba4fc",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/embedding.py": "a0c562600fe22944f91b1b71b706198cb9a4c3d9d8aaba67a86f35a85493d322",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/encoders.py": "a3e0e9bde47e7f587c4a196d124ea631e25755d4f5ac5d6a8568618a4e299a4e",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/layers.py": "96cce2e84db33e176d872c7bb7c0df8c305de3eb7a02fcad9f1128f33d319d95",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/tabicl.py": "583786e5ffd70b9eb425bca8e52aed415dadcdf4254c908b3b6fa52026a56491",
+    "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_model/inference_config.py": "852abb9cf97e9c82ae42a92b034581f6e9131f3bec70efbd3ce068ac92a77a37"
+  }
+}

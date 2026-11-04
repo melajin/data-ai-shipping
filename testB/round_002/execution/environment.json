@@ -1,0 +1,18 @@
+{
+  "recorded_local": "2026-11-05T04:13:52.588989+09:00",
+  "requested_model": "gpt-6-luna",
+  "requested_effort": "xhigh",
+  "provider_internal_model_effort": "unknown",
+  "task_id": "task_7cded4a7ae2f",
+  "dispatch_id": "ctx_481024ae796f",
+  "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "pyarrow": "24.0.0",
+  "pandas": "2.2.3",
+  "numpy": "2.2.5",
+  "sqlite3": "3.49.1",
+  "ram_current_available_mib": 4590.2,
+  "ram_total_mib": 14140.9,
+  "disk_free_gib": 139.13
+}

@@ -1,0 +1,13 @@
+﻿{
+    "completed_utc":  "2026-11-04T19:04:40.5098573Z",
+    "current_round":  "round_008",
+    "ready":  true,
+    "active_workers":  [
+
+                       ],
+    "new_f1":  null,
+    "report_sha256":  "8D35C24EB93CF5892D9B162927C87516BEE3FA1702E144CBA4AA9A988269586B",
+    "next_sha256":  "E25792729E88990F4AAC412F0219D8C9F2E39E1DEE7A2A1C7F207480A6A793DA",
+    "review_sha256":  "A97066970018E3C89C7C0CBEDEF2C2E2D54CA697FCC499C696E361D5BABE7734",
+    "owned_compute_remaining":  0
+}

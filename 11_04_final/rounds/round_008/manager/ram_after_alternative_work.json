@@ -1,0 +1,9 @@
+﻿{
+    "observed_utc":  "2026-11-04T19:00:25.6000231Z",
+    "available_ram_gib":  4.3924942016601563,
+    "alternative_work_completed":  "Result aggregation, previous-vs-current resource comparison, ROUND_REPORT and learning/seasonal notes; independent source localization underway",
+    "owned_or_related_compute":  [
+
+                                 ],
+    "decision":  "No repeat: actual pilot attempt budget consumed; RAM recovery alone does not fix post-column allocation. Next round source+tiny synthetic changed-path gate only."
+}

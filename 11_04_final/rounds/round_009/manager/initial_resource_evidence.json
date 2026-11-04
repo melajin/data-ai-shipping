@@ -1,0 +1,12 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T19:08:26.2473140Z",
+    "available_ram_gib":  4.2515373229980469,
+    "total_ram_gib":  13.809436798095703,
+    "python_processes":  [
+
+                         ],
+    "planned_synthetic_peak_gib":  "1-2 unmeasured estimate; round007 sampled tree peak780906496 bytes",
+    "static_workers":  2,
+    "static_estimate":  "small source text only, no model/data imports",
+    "reason":  "Initial source work and independent delegation inventory; not execution preflight"
+}

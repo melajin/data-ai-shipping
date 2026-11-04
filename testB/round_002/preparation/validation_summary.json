@@ -1,0 +1,7 @@
+﻿{
+ "status":"artifact_generation_checks_passed",
+ "ids_csv_rows":100,"ids_csv_unique":100,"ids_source_types":{"str":100},
+ "source_direct_recheck_rows_used":100,"newB_vs_intakeB_prior_intersection":100,"oldB_vs_newB_prior_intersection":0,
+ "W0_csv_pairs":12,"W0_identical_pairs":12,"W0_exit_code":0,
+ "local_schema_metadata_exit":0,"local_footer_statistics_exit":0,"first_attempt_exit":1
+}
