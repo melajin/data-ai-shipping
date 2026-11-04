@@ -1,0 +1,30 @@
+{
+    "schema":  "round016_candidate_sources.v1",
+    "round":  "round_016",
+    "source_files_sha256":  {
+                                "rounds/round_016/code/saved_m4_audit.py":  "9d1ea2816a382b9c8134095543d504a1f21345b1decdbeff9692c13cf11edd18",
+                                "rounds/round_016/code/run_saved_m4_audit.ps1":  "f553e7aee06cd85acbc84cfc8a7c75a2e96f45b59c38c09837d383f5511752ac"
+                            },
+    "manifest_self_hash_excluded":  true,
+    "requested_execution_model":  "gpt-6-luna",
+    "requested_effort":  "xhigh",
+    "requested_fork_turns":  "none",
+    "execution_identity_attestation":  "not asserted; host turn evidence is recorded by manager separately",
+    "scope":  "MODEL-ZERO strict stdlib saved M4 JSON/provenance/numeric audit and bounded process-control probes; no model execution, checkpoint access, tensor replay, project-data access, F1, or hardware claim",
+    "python":  {
+                   "executable":  "C:/Users/dlehs/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+                   "flags":  "-B -S",
+                   "stdlib_only":  true
+               },
+    "author_static_checks":  {
+                                 "powershell_parser":  "passed; parser API only",
+                                 "python_ast":  "passed; base Python -B -S -X utf8 -c ast.parse only",
+                                 "module_imported":  false,
+                                 "tests_smoke_mock_audit_run":  false,
+                                 "torch_numpy_tabicl_imported":  false,
+                                 "checkpoint_read_hashed_or_loaded":  false,
+                                 "project_data_read":  false
+                             },
+    "outputs_and_temp":  "rounds/round_016 only",
+    "write_freeze_requested_after_ack":  true
+}

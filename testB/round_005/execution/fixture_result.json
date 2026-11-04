@@ -1,0 +1,323 @@
+{
+  "source": "D:\\repos\\fishing-track-classification\\code\\tools\\run_remeasure_20261031.py",
+  "source_sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "pandas": "2.2.3",
+  "numpy": "2.2.5",
+  "pyarrow": "24.0.0",
+  "started_unix": 1793830882.2174144,
+  "rss_before": {
+    "current_working_set_mib": 0.0,
+    "peak_working_set_mib": 0.0,
+    "pagefile_mib": 0.0,
+    "peak_pagefile_mib": 0.0
+  },
+  "frame_contract_cases": [
+    {
+      "case": "months_and_drops",
+      "pass": true,
+      "rows": 3,
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "rfid_time",
+        "wkt_valid",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "rfid_time": "int16",
+        "wkt_valid": "bool",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_class": "Index",
+      "index_values": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "case": "request_without_numeric",
+      "pass": true,
+      "rows": 6,
+      "columns": [
+        "wkt_valid",
+        "speed",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "wkt_valid": "bool",
+        "speed": "float64",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_class": "RangeIndex",
+      "index_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "case": "id_only",
+      "pass": true,
+      "rows": 2,
+      "columns": [
+        "rfid_id",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_class": "Index",
+      "index_values": [
+        0,
+        1
+      ]
+    },
+    {
+      "case": "date_only",
+      "pass": true,
+      "rows": 2,
+      "columns": [
+        "part_dt",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_class": "Index",
+      "index_values": [
+        0,
+        2
+      ]
+    },
+    {
+      "case": "no_filter",
+      "pass": true,
+      "rows": 3,
+      "columns": [
+        "rfid_id",
+        "part_dt",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_class": "Index",
+      "index_values": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "case": "empty_month",
+      "pass": true,
+      "stream_parts": 0,
+      "materialized_rows": 0,
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "wkt_valid",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "wkt_valid": "bool",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_class": "RangeIndex"
+    },
+    {
+      "case": "all_empty",
+      "pass": true,
+      "stream_parts": 0,
+      "materialized_rows": 0,
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "wkt_valid",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "wkt_valid": "bool",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_class": "RangeIndex"
+    },
+    {
+      "case": "no_drop_range_index",
+      "pass": true,
+      "index_class": "RangeIndex"
+    },
+    {
+      "case": "numeric_drop_hole",
+      "pass": true,
+      "index_class": "Index",
+      "index_values": [
+        0,
+        2
+      ]
+    },
+    {
+      "case": "empty_month_list_error",
+      "pass": true,
+      "error": [
+        "ValueError",
+        "No objects to concatenate"
+      ]
+    },
+    {
+      "case": "trace_bounded",
+      "pass": true,
+      "trace_records": 1,
+      "trace_fields": [
+        "batch",
+        "input_rows",
+        "admitted_rows",
+        "concat_offset_start",
+        "concat_offset_end",
+        "output_rows",
+        "index_type",
+        "index_dtype",
+        "index_first_last",
+        "columns",
+        "dtypes"
+      ]
+    }
+  ],
+  "atomic_cases": [
+    {
+      "case": "normal_commit",
+      "pass": true,
+      "published": true,
+      "parts": 2,
+      "manifest_sha256": "d4ab584446a1aa6f161c67eaa98f2c733ad4b46938b2057696b964b894748b60",
+      "reconstruction_strict_equal": true
+    },
+    {
+      "case": "late_unsupported",
+      "pass": true,
+      "final_absent": true,
+      "quarantine_receipt": "C:\\Users\\Public\\Documents\\ESTsoft\\CreatorTemp\\r005-fixture-o8q6uevj\\allowed\\quarantine\\0c0962c8012a44638094abd2001d3c77\\receipt.json",
+      "committed_batches_before_failure": 1
+    },
+    {
+      "case": "late_generic_error",
+      "pass": true,
+      "final_absent": true
+    },
+    {
+      "case": "commit_failure",
+      "pass": true,
+      "final_absent": true,
+      "quarantine_dirs": 3
+    },
+    {
+      "case": "commit_target_race_no_clobber",
+      "pass": true,
+      "sentinel": "untouched"
+    },
+    {
+      "case": "all_none_schema_denied",
+      "pass": true,
+      "final_absent": true
+    },
+    {
+      "case": "all_empty_canonical_template_commit",
+      "pass": true,
+      "rows": 0,
+      "columns": [
+        "row_index",
+        "rfid_id",
+        "part_dt",
+        "wkt_valid",
+        "key_valid",
+        "month"
+      ],
+      "dtypes": {
+        "row_index": "int64",
+        "rfid_id": "int64",
+        "part_dt": "int32",
+        "wkt_valid": "bool",
+        "key_valid": "bool",
+        "month": "int8"
+      },
+      "index_class": "RangeIndex"
+    },
+    {
+      "case": "scratch_write_failure",
+      "pass": true,
+      "final_absent": true
+    },
+    {
+      "case": "stage_create_failure_receipt",
+      "pass": true,
+      "final_absent": true
+    },
+    {
+      "case": "existing_final_unchanged",
+      "pass": true,
+      "sentinel": "preserve"
+    },
+    {
+      "case": "path_escape_denied_preflight",
+      "pass": true
+    },
+    {
+      "case": "non_testfit_denied_preflight",
+      "pass": true
+    },
+    {
+      "case": "duplicate_columns_denied",
+      "pass": true
+    },
+    {
+      "case": "reserved_index_column_denied",
+      "pass": true
+    },
+    {
+      "case": "root_final_denied",
+      "pass": true
+    }
+  ],
+  "rss_after": {
+    "current_working_set_mib": 0.0,
+    "peak_working_set_mib": 0.0,
+    "pagefile_mib": 0.0,
+    "peak_pagefile_mib": 0.0
+  },
+  "process_peak_rss_mib": 0.0
+}

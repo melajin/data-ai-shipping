@@ -1,0 +1,66 @@
+﻿{
+    "at_kst":  "2026-11-05T07:08:49.1302817+09:00",
+    "free_kib":  6009468,
+    "total_kib":  14480244,
+    "E_planned_process_mib":  512,
+    "V_static_planned_increment_mib":  256,
+    "reserve_per_session_mib":  512,
+    "combined_plan_mib":  1792,
+    "basis":  "Small fixtures; optional fixed projected 16384 rows, 10 columns, 4096 batch for E; static text only for V; estimates not bounds",
+    "other_processes":  [
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  19824,
+                                "rss_mib":  436.7
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  17216,
+                                "rss_mib":  387
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  5828,
+                                "rss_mib":  275.9
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  24012,
+                                "rss_mib":  223.9
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  22296,
+                                "rss_mib":  209
+                            },
+                            {
+                                "ProcessName":  "CrossDeviceService",
+                                "Id":  11432,
+                                "rss_mib":  193.6
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  19060,
+                                "rss_mib":  187.8
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  31192,
+                                "rss_mib":  186
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  4476,
+                                "rss_mib":  164.7
+                            },
+                            {
+                                "ProcessName":  "PhoneExperienceHost",
+                                "Id":  26916,
+                                "rss_mib":  155.5
+                            }
+                        ],
+    "attribution":  "unknown; no user processes terminated",
+    "activation_message":  "msg_9e2e1ac7e48e",
+    "ack_message":  "msg_36301489099a",
+    "run_id":  "run_6df8333350eb"
+}

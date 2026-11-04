@@ -11,3 +11,6 @@ Round001·002의 기술 준비와 해당 변경 검산은 완료됐고, Round003
 
 | round_004 | round003 numeric 반례·index차이 독립확인 | 실제새Sol/high감독 ACK 확인. 단일소유권 이전, 명시적 활성화 수신 뒤 시작 | round_003/NEXT_ROUND.md |
 | round_004 활성화 | ACK msg_a4a6dab10faf·활성화 msg_0c84a4c3fc9d·STATUS 소유권 확인 | Run run_a4759578d2ef, 별도 실제 Luna/xhigh E/V ready. 제한 도메인 구현·독립 정적검토 시작; 실제 전체 domain unknown | 작은 fixture와 실제 multi-batch 동등성 독립검산 후 전수 domain 기술관문 |
+| round_004 결과 | Round003 numeric 반례·index차이 | 제한정수 fixture/실제16384행4batch 값·dtype·index라벨 일치. Eexit0, V최종exit2/생산gateFAIL·감사succeeded. trace누적/부분yield/빈schema·indexclass미완성. Trainfooter3887069 확인, 초안Test행수오류 보존. 실제참조/점수/A없음 | round005 bounded trace·atomic caller·빈schema/index 수정·독립재검산 뒤 새Train domain관문 |
+| round_005 인수 | Round004 제한표본 일치·생산gateFAIL | 실제Sol/high감독 codex_3420efaa_9881_48b8_b7f4_4985bdf027b2 launch/journaled, ACK msg_36301489099a 수신. STATUS 단일소유권 전환·재읽기검증, 활성화메시지 발송 예정 | round_004/NEXT_ROUND.md; 새감독은 명시적활성화 수신 후만 시작 |
+| round_005 활성화 | ACK msg_36301489099a·활성화 msg_9e2e1ac7e48e·STATUS 단일소유권 확인 | 새감독 codex_3420efaa_9881_48b8_b7f4_4985bdf027b2/Run run_6df8333350eb. bounded trace·atomic caller·빈schema/exact index 수정과 별도 Luna 정적검토 시작 | 작은 수정·독립검산 후 새 Train domain 계약 관문 |

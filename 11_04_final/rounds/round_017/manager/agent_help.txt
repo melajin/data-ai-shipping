@@ -1,0 +1,12 @@
+﻿orca agent
+
+Usage: orca agent <command> [options]
+
+Commands:
+  hooks prepare-codex Prepare a WSL pane's Orca-managed Codex home before a shell launch
+  hooks status       Show whether Orca-managed agent status hooks are enabled
+  hooks off          Disable Orca-managed agent status hooks and remove local hook entries
+  hooks on           Enable Orca-managed agent status hooks
+  launch             Start an agent in an existing workspace, as a chat or a terminal
+
+Run `orca agent <command> --help` for command-specific usage.

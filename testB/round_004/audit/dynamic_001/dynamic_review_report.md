@@ -18,6 +18,7 @@
 
 - 원본 load_rows pinned AST, 독립 whole-column oracle, 명시 hand-expected 표, E adapter 세 가지가 두 달 합성 표에서 모두 일치했다. key_valid=True/False, ID/date 모두 요청·각각 단독·둘 다 생략, 명시적 key_valid/month, caller 열 순서 변경, 빈 batch, 2개월 경계, 변환 탈락 후 index hole을 포함했다. 출력 열 순서와 int64 ID, int32 date, bool flags, int8 month dtype도 같았다.
 - ID-only 호출에서 날짜의 비정수 토큰을, date-only 호출에서 ID 비정수 토큰을 확인하지 않는 경우와 key_valid=False인 malformed ID/date 행을 먼저 제외하는 경우가 합성 입력에서 일치했다. 두 numeric 열을 생략한 요청, key/month만 요청, 월 열을 명시한 요청, caller 열 순서 변경도 AST/oracle/adapter 결과가 같았다.
+- 두 달 핵심 fixture의 key_valid=True 행에 rfid_id=abc와 part_dt=1.5를 함께 넣었다. ID coercion/drop가 먼저 적용되므로 해당 행의 unsupported 날짜는 이후 검사에서 제외되고 세 결과가 일치했다. 이 fixture가 ID 제외 뒤 date 변환 순서를 직접 구별한다.
 - 합성 핵심표의 명시 index 결과는 key_valid=True에서 [0,3,4,5], False에서 [0,1,4,5,6,8]이며 세 구현이 그대로 보존했다. 이는 key filter 뒤의 월 간 concat ordinal을 전달하고 numeric drop 뒤의 index 구멍을 남기는 순서를 확인한다.
 - Python None과 IEEE NaN을 ID/date 각각에 넣은 제한 fixture에서 AST, oracle, adapter가 모두 같은 빈 결과와 dtype을 냈다. 단, 빈 결과를 실제 출력 chunk로 제공하는 동작은 별도 미확인이다.
 - 실제 16,384행 표본에서 AST와 독립 whole-column oracle의 엄격 비교는 통과했다. 네 adapter 호출은 물리 offset 및 concat ordinal [0,4096), [4096,8192), [8192,12288), [12288,16384)를 각각 처리했고, 모두 4,096행 admitted/output, 제외 0, index 라벨 구간도 각각 같았다. AST·adapter serialization SHA가 모두 0e70ea62112fc29e1feda89cb61e620c5b40e4558a99ae235a3fe08ad364c581이었다. 엄격한 pandas frame comparator는 전체 출력에서 RangeIndex 대 Index의 컨테이너 class 차이만 보고했다. 독립 비교로 columns/order, values, dtypes, NaN 배치, index dtype 및 라벨이 모두 같음을 확인했으며 index reset은 하지 않았다.

@@ -1,17 +1,11 @@
-# Test B 다음 감독 진입점 — Round004
+﻿# Test B 다음 감독 진입점 — Round005
 
-Round003의 단순 batch numeric loader는 동등성 실패로 기각됐다. 실패와 독립 검산을 보존한 뒤 새 실제 Sol/high 감독에 인계한다. 현재 단일 소유자는 STATUS.json의 active_supervisor_session이다. 새감독은 최초 인수ACK 후 턴을끝내고, 소유권변경과이전감독활성화메시지를모두확인한뒤 시작한다. worker생성·새계산·공통문서중복수정금지.
+먼저 round_004/HANDOFF_INSTRUCTIONS.md와 열거한 필수문서를 UTF-8로 전부 읽는다. ORCA_CLI_COMMAND/실제버전 skills get orchestration·orca-cli 안내/AGENTS RAM규칙을 먼저 확인한다. 토큰 testb_r004_to_r005_20261105_atomic_stream, 이전감독 codex_8df5a67b_34a4_4a72_b561_d45861870f6f다. 새감독은 자기ORCA_AGENT_SESSION_ID와 토큰으로 인수ACK를 이전감독에게 orchestration send --type handoff로 보낸 뒤 턴을 끝낸다. STATUS 소유권 변경과 명시적 활성화 메시지를 모두 받기 전 worker생성/새계산/공통문서 수정금지다. 사용자 재승인 절차가 아니다.
 
-먼저 round_003/HANDOFF_INSTRUCTIONS.md와 그안의 필수문서를 UTF-8로 전부 읽는다. 토큰 testb_r003_to_r004_20261105_numeric_domain, 이전감독 codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7이다. ORCA_CLI_COMMAND와 실제버전orchestration/Orca CLI 안내·AGENTS RAM규칙부터확인하고 자기ORCA_AGENT_SESSION_ID와토큰으로인수ACK를send한다. 사용자재승인을요구하지않는다.
+Round004는 제한 정수 도메인의 원본AST·독립oracle·adapter 및 실제16,384행 4회batch 비교에서 값/dtype/index라벨 일치를 확인했다. E최종exit0과 V생산gateFAIL/최종감사스크립트exit2·감사task succeeded를 구분한다. trace=None도 월별index목록을 보유했고 정상1행yield뒤unsupported에서 중단됐다. 전체단계 quarantine·atomic commit, 빈입력schema, RangeIndex/Index의 엄격동등성은 미완성이다. 전체Train domain은unknown, 실제참조/새점수/A/membership는없다. E초안4,212,389는Test총행수오류이며 V의Train6footer합3,887,069(497942/479290/657292/717294/761846/773405)으로 새계약을 고정한다.
 
-계승: 새100척46,705행은round002 source4,212,389행 독립전수대조완료이며 실제새점수/A는없다. 초기감사FAIL/exit1은stale해시구분문제였고 metadata-only deltaPASS10/exit0로정정검산했다. 역사44digest의최초의미/시점·원바이트복원은unknown이다. 같은전수Test스캔/26행합성을반복하지않는다.
+활성화 뒤 round_004/NEXT_ROUND.md를 새round_005/에서 실행한다. E/V는각각별도실제Orca gpt-6-luna/xhigh,worker_done이다. 먼저 bounded trace/안전caller 원자성/빈schema·index계약을 수정·독립검산한다. 작은관문뒤새Train key-only전수domain검사를 검토하고 미지원은임의제외하지않고중단,필요시원본키열전체전역변환A방식으로전환한다. 원본순서/값/dtype/제외/index구멍/정렬동점/라벨/상수를 보존한다. loader뒤 모든 새경로 중첩RAM/격리/고정train-onlyfit 관문후에만 조건부참조/탐색score/A를 허용한다. Round003생산runner는stub이다.
 
-Round003: 실제train첫16,384행은두batch를결합한표에transform_batch한번이므로batch별동등성증거가아니다. 전역Series에9007199254740993과1.5를같이넣으면원본정수결과가9007199254740992,한행batch면9007199254740993인합성반례를발견했다. E최종exit2/workerfailed와 V원본AST+독립oracle실패검산fixtureexit0/감사task succeeded를구분한다. key_valid후concat의global index도batch local index와달랐다. 현production runner는미구현defaultdeny stub이다. 실제train참조/새점수/A/membership는미생성이다.
+Round002새100척46,705행 독립전수대조/26행합성은반복하지않고 초기FAIL/deltaPASS10exit0/역사44해시unknown을 보존한다. 원자료/canonical/cache/선행round읽기전용이다. 임계값/B/C/사고여부/성능/제출/실제split/사고파일개발사용/외부수집·연락/push금지. 사고신원/정상근거/개발사용/공식수식부재를후보/합의로대체하지않는다. 부족한외부근거는blocked_external_evidence로기록하고유효로컬가설은계속진행한다.
 
-다음은round_003/NEXT_ROUND.md다. 새round_004/에서별도실제Luna/xhigh실행·독립검산으로 제한정수도메인fail-closed와global index보존을검증한다. 작은동등성/예산통과뒤2026train key-only전수domain검사를기술관문으로진행할수있고,미지원이면키열전체전역변환A방식으로전환한다. 실제domain은아직unknown이다. 동등성과새경로RAM/격리/고정train-onlyfit확인후조건부참조/탐색점수/A를생성·검산한다. stockCLI/stage/기존쓰기금지다.
-
-RAM은메모리작업직전가용량·예상peak·병행작업·추정근거/시각을확인한다. 부족하면다른가능작업후재개직전다시확인,청크/순차/동시수축소우선,polling/watch·사용자process종료금지. 원자료/canonical/cache/선행round읽기전용이며새파일은소유권별round004/뿐이다.
-
-사고신원·정상근거·개발사용·임계값·분할·공식수식은미확보다. 후보/합의/목록부재를정답으로만들지않는다. B/C·사고여부·성능·제출·실제split·외부수집/연락·push금지다. 사용자는조건충족까지실제새Sol/high감독/별도실행·검산/완료창정리·라운드보고와단일소유권인계를승인했다. 유효한로컬후속을지속하고외부근거부족은blocked_external_evidence로구체화한다.
-
-Round003 E와최신V는worker_done으로settled/released,worker-list exited다. 최신V는closed_agent_terminal응답도확인했다. 같은handle의옛dispatch와활성후속을혼동하지않는다. Round001 user_kept/identity_unproven창은강제종료하지않았다.
+RAM작업전현재가용량/예상peak/다른작업/근거·시각기록,부족시가능작업우선·재개직전재확인,청크/순차/동시수축소우선,polling/watch/사용자process종료금지. Round004 E최신ctx_94f3ac9fe789와V최신ctx_80f1e954bee2는settled/released/exited다. 같은handle의옛dispatch와최신활성후속을혼동하지않고Round001user_kept/identity_unproven창은강제종료하지않는다. 매round보고/쉬운설명/다음실제Solhigh감독ACK/단일소유권인계를 유지한다. 요청·Orca launch설정과provider내부unknown을 구분한다.

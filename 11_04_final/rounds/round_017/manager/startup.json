@@ -1,0 +1,15 @@
+﻿{
+    "requested_assistants":  2,
+    "incoming_sha_matches":  true,
+    "round017_preexisting_before_author_spawn":  false,
+    "utc":  "2026-11-04T22:15:51.0788189Z",
+    "expected_peak_mib":  200,
+    "receipt_matches_current_session":  true,
+    "other_python":  [
+
+                     ],
+    "estimate_basis":  "Sequential stdlib small JSON and streamed hashes plus PowerShell/Python; two text workers, not measured peak",
+    "host_slots":  4,
+    "total_gib":  13.809436798095703,
+    "available_gib":  5.1650733947753906
+}

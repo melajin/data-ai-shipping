@@ -1,0 +1,70 @@
+{
+  "request": {
+    "manager": {
+      "model": "gpt-6-astra",
+      "effort": "high"
+    },
+    "author": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "fork_turns": "none"
+    },
+    "reviewer": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "fork_turns": "none"
+    }
+  },
+  "orca_session_id": "codex_c67ed013_278d_4668_bf10_4ecf9f3542dc",
+  "thread_id": "01a1a8a0-9e26-7521-b3a7-6d1e1e78f8bb",
+  "evidence": [
+    {
+      "source": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T07-14-21-01a1a8a0-9e26-7521-b3a7-6d1e1e78f8bb.jsonl",
+      "session_id": "01a1a8a0-9e26-7521-b3a7-6d1e1e78f8bb",
+      "parent": "vscode",
+      "timestamp": "2026-11-04T22:14:22.115Z",
+      "host_model": "gpt-6-astra",
+      "host_effort": "high",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    },
+    {
+      "source": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T07-15-00-01a1a8a1-372b-76c2-82e3-63414785fd6d.jsonl",
+      "session_id": "01a1a8a1-372b-76c2-82e3-63414785fd6d",
+      "parent": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a1a8a0-9e26-7521-b3a7-6d1e1e78f8bb",
+            "depth": 1,
+            "agent_path": "/root/author",
+            "agent_nickname": "Bacon",
+            "agent_role": "luna_worker"
+          }
+        }
+      },
+      "timestamp": "2026-11-04T22:15:01.269Z",
+      "host_model": "gpt-6-luna",
+      "host_effort": "xhigh",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    },
+    {
+      "source": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T07-15-10-01a1a8a1-5d48-7312-9e00-6adf6221e565.jsonl",
+      "session_id": "01a1a8a1-5d48-7312-9e00-6adf6221e565",
+      "parent": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a1a8a0-9e26-7521-b3a7-6d1e1e78f8bb",
+            "depth": 1,
+            "agent_path": "/root/reviewer",
+            "agent_nickname": "Averroes",
+            "agent_role": "luna_worker"
+          }
+        }
+      },
+      "timestamp": "2026-11-04T22:15:10.940Z",
+      "host_model": "gpt-6-luna",
+      "host_effort": "xhigh",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    }
+  ],
+  "internal_model_authentication": false
+}

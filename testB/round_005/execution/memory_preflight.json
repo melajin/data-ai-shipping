@@ -1,0 +1,70 @@
+﻿{
+    "time":  "2026-11-05T07:18:39.3053590+09:00",
+    "free_MiB":  5505.2,
+    "total_MiB":  14140.9,
+    "planned_process_peak_MiB":  512,
+    "host_reserve_MiB":  512,
+    "other_processes":  [
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  19824,
+                                "RSS_MiB":  432.1
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  17216,
+                                "RSS_MiB":  384.7
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  5828,
+                                "RSS_MiB":  276.1
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  24012,
+                                "RSS_MiB":  230.5
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  24136,
+                                "RSS_MiB":  210.3
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  22296,
+                                "RSS_MiB":  209.1
+                            },
+                            {
+                                "ProcessName":  "CrossDeviceService",
+                                "Id":  11432,
+                                "RSS_MiB":  194.1
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  19060,
+                                "RSS_MiB":  189.9
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  1080,
+                                "RSS_MiB":  187.2
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  31192,
+                                "RSS_MiB":  177.4
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  4476,
+                                "RSS_MiB":  164.7
+                            },
+                            {
+                                "ProcessName":  "PhoneExperienceHost",
+                                "Id":  26916,
+                                "RSS_MiB":  154.6
+                            }
+                        ],
+    "basis":  "small pandas/Arrow fixtures; no source CSV/Parquet sample read"
+}

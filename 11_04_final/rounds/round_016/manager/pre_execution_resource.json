@@ -1,0 +1,9 @@
+﻿{
+    "utc":  "2026-11-04T22:11:03.7452251Z",
+    "available_gib":  5.4304771423339844,
+    "expected_peak_mib":  200,
+    "other_python":  [
+
+                     ],
+    "phase":  "post_source_work_pre_execution_decision"
+}

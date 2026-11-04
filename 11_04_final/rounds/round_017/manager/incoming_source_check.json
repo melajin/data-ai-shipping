@@ -1,0 +1,26 @@
+﻿[
+    {
+        "path":  "rounds/round_016/code/candidate_sources.json",
+        "expected":  "43443b8628b6cb6ce831f01bbd5a823bccfadbc0b0a1525b8a2de6221f078b5a",
+        "actual":  "43443b8628b6cb6ce831f01bbd5a823bccfadbc0b0a1525b8a2de6221f078b5a",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_016/code/author_freeze_ack.json",
+        "expected":  "45dc16fc164ae51869a2a8fcfd822d0f713296f38edd97a100e18c14c7971010",
+        "actual":  "45dc16fc164ae51869a2a8fcfd822d0f713296f38edd97a100e18c14c7971010",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_016/code/run_saved_m4_audit.ps1",
+        "expected":  "f553e7aee06cd85acbc84cfc8a7c75a2e96f45b59c38c09837d383f5511752ac",
+        "actual":  "f553e7aee06cd85acbc84cfc8a7c75a2e96f45b59c38c09837d383f5511752ac",
+        "match":  true
+    },
+    {
+        "path":  "rounds/round_016/code/saved_m4_audit.py",
+        "expected":  "9d1ea2816a382b9c8134095543d504a1f21345b1decdbeff9692c13cf11edd18",
+        "actual":  "9d1ea2816a382b9c8134095543d504a1f21345b1decdbeff9692c13cf11edd18",
+        "match":  true
+    }
+]

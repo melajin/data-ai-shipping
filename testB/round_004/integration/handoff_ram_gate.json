@@ -1,0 +1,52 @@
+﻿{
+    "observed_at":  "2026-11-05T07:04:09.2509141+09:00",
+    "free_kib":  6227212,
+    "total_kib":  14480244,
+    "expected_new_supervisor_increment_mib":  512,
+    "uncertainty_reserve_mib":  1024,
+    "estimate_basis":  "one new supervisor text intake/ACK only; worker launches forbidden until activation; process/session overhead unknown",
+    "latest_E_V":  "settled/released/exited",
+    "other_work":  "host/Orca/Codex attribution unknown",
+    "top_processes":  [
+                          {
+                              "ProcessName":  "Orca",
+                              "Id":  19824,
+                              "WorkingSet64":  430563328
+                          },
+                          {
+                              "ProcessName":  "Orca",
+                              "Id":  17216,
+                              "WorkingSet64":  398147584
+                          },
+                          {
+                              "ProcessName":  "explorer",
+                              "Id":  5828,
+                              "WorkingSet64":  289075200
+                          },
+                          {
+                              "ProcessName":  "codex",
+                              "Id":  24012,
+                              "WorkingSet64":  227627008
+                          },
+                          {
+                              "ProcessName":  "codex",
+                              "Id":  22296,
+                              "WorkingSet64":  219340800
+                          },
+                          {
+                              "ProcessName":  "CrossDeviceService",
+                              "Id":  11432,
+                              "WorkingSet64":  204398592
+                          },
+                          {
+                              "ProcessName":  "codex",
+                              "Id":  31192,
+                              "WorkingSet64":  197554176
+                          },
+                          {
+                              "ProcessName":  "explorer",
+                              "Id":  4476,
+                              "WorkingSet64":  172716032
+                          }
+                      ]
+}

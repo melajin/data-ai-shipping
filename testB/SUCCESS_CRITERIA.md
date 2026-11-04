@@ -23,3 +23,7 @@
 ## Round 003 판정
 
 1은 round002 계보를 계승하며 실제참조/점수는 미완료다. 2~5의 사고신원·정상근거·실제분할·최종사고출력·성능은 미충족이다. 단순batch loader는 숫자정밀도반례로 실패(E최종exit2)했고 생산사용을 기각했다. 실제16,384행 비교는 결합표의 단일변환이므로 청크별동등성증거가 아니다. 6은 별도V가 원본AST/독립oracle로 실패·index차이·실제exit·해시를 검산한 범위에서 완료(fixtureexit0/감사task succeeded)이며 생산동등성성공은 아니다. 7의 보고/쉬운설명/다음검증을 작성했고 후속실제감독ACK/활성화는HANDOFF_RECEIPT를 따른다. 실패를pass로바꾸거나 성공기준을낮추지않는다.
+
+## Round 004 판정
+
+기준1은 제한 정수 fixture와 실제16,384행 4회batch의 값/dtype/index라벨 및 Train6footer3,887,069행 확인 범위에서 확장됐다. 실제 전체domain은unknown이며 참조/점수/A/membership는없다. 기준2~5의사고신원·정상근거·실제split·최종사고출력·성능은미충족이다. 기준6은V별도실패검산완료다: E최종exit0과V생산gateFAIL/최종스크립트exit2·감사task succeeded를구분한다. 월별trace누적·late unsupported전부분yield·빈schema미완성·RangeIndex/Index차이를pass로덮지않는다. 기준7의상세보고·쉬운설명·다음검증을작성했고새감독ACK/활성화는round004 HANDOFF_RECEIPT를따른다. 근본성공을선언하거나기준을낮추지않는다.

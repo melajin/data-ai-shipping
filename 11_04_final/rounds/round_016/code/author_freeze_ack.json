@@ -1,0 +1,28 @@
+{
+    "schema":  "round016_author_freeze_ack.v1",
+    "acknowledged_utc":  "2026-11-04T22:10:36.5027008Z",
+    "author":  "/root/author",
+    "write_freeze":  true,
+    "candidate_manifest":  "rounds/round_016/code/candidate_sources.json",
+    "candidate_manifest_sha256":  "43443b8628b6cb6ce831f01bbd5a823bccfadbc0b0a1525b8a2de6221f078b5a",
+    "source_files_sha256":  {
+                                "rounds/round_016/code/saved_m4_audit.py":  "9d1ea2816a382b9c8134095543d504a1f21345b1decdbeff9692c13cf11edd18",
+                                "rounds/round_016/code/run_saved_m4_audit.ps1":  "f553e7aee06cd85acbc84cfc8a7c75a2e96f45b59c38c09837d383f5511752ac"
+                            },
+    "no_author_runs":  true,
+    "settings_requested":  {
+                               "model":  "gpt-6-luna",
+                               "effort":  "xhigh",
+                               "fork_turns":  "none"
+                           },
+    "execution_identity_attestation":  "not asserted; manager host evidence is separate",
+    "static_syntax_review":  {
+                                 "powershell":  "Parser API only; passed",
+                                 "python":  "base Python -B -S -X utf8 ast.parse only; passed",
+                                 "tests_smoke_mock_audit_run":  false,
+                                 "target_modules_imported":  false,
+                                 "checkpoint_or_models_loaded":  false,
+                                 "project_data_read":  false
+                             },
+    "message":  "Author write-stop after candidate freeze; no further code edits."
+}
