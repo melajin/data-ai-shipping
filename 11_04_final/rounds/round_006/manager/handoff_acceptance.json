@@ -1,0 +1,45 @@
+{
+  "from_round": "round_005",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "high",
+  "task_root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final",
+  "workspace": "path:D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+  "handoff_sha256": "1DFB2D2549EB145DECBD74501B5E0D80CAF9C7492161469571EDFEC6D93F5D0C",
+  "started_at_utc": "2026-11-04T17:51:42.9536512Z",
+  "accepted": true,
+  "status": "prompt_delivered",
+  "exit_code": 0,
+  "raw_stdout": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\receipts\\round_005_launch.stdout.json",
+  "raw_stderr": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\receipts\\round_005_launch.stderr.txt",
+  "host_response": {
+    "id": "d351401e-f5a6-4bfe-93d8-7803291e5d42",
+    "ok": true,
+    "result": {
+      "outcome": {
+        "kind": "structured",
+        "sessionId": "codex_192eb310_5ae3_440c_97ef_28aaef23603d",
+        "handle": "structured-agent-session-codex_192eb310_5ae3_440c_97ef_28aaef23603d",
+        "tabId": "structured-agent-session-codex_192eb310_5ae3_440c_97ef_28aaef23603d"
+      },
+      "worktreeId": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+      "receipt": {
+        "mode": "structured",
+        "preferred": "structured",
+        "reason": "user_default",
+        "detail": "Started a structured chat session, the default for new agent tabs in your settings."
+      },
+      "prompt": {
+        "delivery": "submit",
+        "outcome": "journaled",
+        "messageId": "1793814703999-eb39eb6b858942e7acc8c6d11e712a44"
+      },
+      "operationId": "1793814703988-b24410cce9f7412f93bfc2c25f3b3c1d"
+    },
+    "_meta": {
+      "runtimeId": "b4aa8510-0609-45a9-b7ba-e1cdeeab97f6"
+    }
+  },
+  "handoff_snapshot": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\receipts\\round_005_NEXT_SESSION.md",
+  "status_snapshot": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\automation\\receipts\\round_005_STATUS.json",
+  "completed_at_utc": "2026-11-04T17:51:44.1652641Z"
+}

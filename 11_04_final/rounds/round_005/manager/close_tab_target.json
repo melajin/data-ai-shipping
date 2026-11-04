@@ -1,0 +1,45 @@
+﻿{
+  "id": "ee67f7f2-d5af-4989-b7c3-1869e848cdcd",
+  "ok": true,
+  "result": {
+    "snapshot": {
+      "id": "5119cfd9-ac09-4ef5-9483-3c6e55991a81",
+      "app": {
+        "name": "Orca",
+        "bundleId": "Orca",
+        "pid": 17216
+      },
+      "window": {
+        "title": "Orca",
+        "id": 67850,
+        "index": null,
+        "x": -11,
+        "y": -11,
+        "width": 1942,
+        "height": 1150,
+        "isMinimized": null,
+        "isOffscreen": null,
+        "screenIndex": null
+      },
+      "coordinateSpace": "window",
+      "treeText": "App=Orca (pid 17216)\nWindow: \"Orca\", App: Orca.\n\n2 of 510 elements match \"탭 닫기 선박 조업 분류 반복\"; showing them with their ancestors.\n0 창 Orca\n\t2 영역 Orca\n\t\t3 영역\n\t\t\t4 영역\n\t\t\t\t5 영역\n\t\t\t\t\t6 영역\n\t\t\t\t\t\t7 영역\n\t\t\t\t\t\t\t8 영역\n\t\t\t\t\t\t\t\t9 문서 Orca, Value: file:///C:/Users/dlehs/AppData/Local/Programs/orca/resources/app.asar/out/renderer/index.html, Secondary Actions: SetValue, Scroll\n\t\t\t\t\t\t\t\t\t10 그룹\n\t\t\t\t\t\t\t\t\t\t11 그룹 root\n\t\t\t\t\t\t\t\t\t\t\t70 그룹\n\t\t\t\t\t\t\t\t\t\t\t\t71 그룹\n\t\t\t\t\t\t\t\t\t\t\t\t\t85 sortable 작업 중 선박 조업 분류 반복 실험 관리자 세션 탭 닫기 선박 조업 분류 반복 실험 관리자 세션\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t87 단추 탭 닫기 선박 조업 분류 반복 실험 관리자 세션",
+      "elementCount": 510,
+      "focusedElementId": null,
+      "truncation": {
+        "truncated": false,
+        "maxNodes": 1200,
+        "maxDepth": 64,
+        "maxDepthReached": false
+      }
+    },
+    "screenshot": null,
+    "screenshotStatus": {
+      "state": "skipped",
+      "reason": "no_screenshot_flag"
+    }
+  },
+  "_meta": {
+    "runtimeId": "b4aa8510-0609-45a9-b7ba-e1cdeeab97f6"
+  }
+}
+

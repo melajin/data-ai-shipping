@@ -1,0 +1,74 @@
+{
+  "schema": "round005_independent_context_check.v1",
+  "status": "PASS",
+  "checked_at_utc": "2026-11-04T17:38:35.693302+00:00",
+  "reviewer_script_sha256": "2ec490aeab947478601c2cee11d9bc9f3f3ab9fccb0ac6ced5f707e68324a5ae",
+  "scope": {
+    "source_rows": "fold0 development NPZ only",
+    "protected_feature_label_probability_rows_read": 0,
+    "holdout_id_metadata_used_only_for_disjointness": true,
+    "model_or_checkpoint_loaded": false,
+    "training_or_inference": false,
+    "F1_or_accuracy_computed": false
+  },
+  "source_sha256": {
+    "split_manifest": "b99a81c7573acbc65ab4b8780790dfc2377252893a0947ac760eedc510dae686",
+    "decision_rule": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+    "parent_fingerprint": "64b992fb807b4ada967d641279c625e5640865997234d38c003f179cb9b25475",
+    "fold0_vocabulary_state": "402f44fd2fe8bfef82709452b5678a17cea40d302d1eac61731f96a61665397d",
+    "seed42_fold0_preprocessor": "eea7d15bd4f0610450600502fcfb36d584a6f5324f26b6b325c3014d10065740",
+    "P_development_roles": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+    "exp01_development_roster": "9639abbeccf5335e8baa8f0c8c165c319da453615e410674d28e4410e355e29f",
+    "exp01_fold0_npz": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+    "P_feature_columns": "a6ac08c4cbec615cb1fc5b4cc1af434840915cf6e05e45c8b92a6e157b3a49a0",
+    "P_classes": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675"
+  },
+  "review_basis_sha256": {
+    "round004_context_precheck": "b012360af614eb8b830d0f48030ac4cbe8b0d4f94d899a49a4fecb3ed15addd3",
+    "round005_plan_amendment": "ef27ae0dd1664feb425105b68624efda9d5332865c6ebbb1c12ccfa488d55586",
+    "exporter_source": "08f4808238c3d613fd616c7d7b4d07a30cf20b806f8361828f3c7acaaace550d"
+  },
+  "split_and_order": {
+    "fit_count": 3144,
+    "inner_count": 787,
+    "development_holdout_id_sets_disjoint": true,
+    "fold0_fit_inner_outer_sets_pairwise_disjoint": true,
+    "fold0_roles_cover_development_ids": true,
+    "frozen_numeric_sorted_newline_fit_inner_membership_match": true,
+    "ordered_fit_json_digest": "bdfb86ec3c99bbc783a5f0e8d3a1524b789d3c7e1101293d42805f7ccacca3f0",
+    "ordered_inner_json_digest": "54beb55ee1b36073286821b22c848ce77a18567d40ff3287794e948fec45643d",
+    "ordered_inner_digest_vs_frozen_expected_mismatch": true,
+    "fit_vocabulary_membership_match": true,
+    "query_first2_digest": "7750db94f83f57a4e58b62f29b32ba2e737339108e0923a970f9a924bf9be969",
+    "query_first2_are_original_inner_prefix": true,
+    "ordered_ids_printed": false
+  },
+  "arrays": {
+    "X_fit": {
+      "shape": [
+        3144,
+        312
+      ],
+      "dtype": "float32",
+      "C_order_sha256": "ac254509d62c1ee0093941fe462c9539b0184e8a50d762dc8e9ba69c140869dd",
+      "exact_export_match": true
+    },
+    "X_inner": {
+      "shape": [
+        787,
+        312
+      ],
+      "dtype": "float32",
+      "C_order_sha256": "03949c49801d7ed6e609bc38eaa9702fca1343af8bed6eb3f2e9a2e0bb3be361",
+      "exact_export_match": true
+    },
+    "labels_and_roles_order_match": true,
+    "feature_name_and_class_order_match": true,
+    "max_abs_saved_median_delta": 2.842170943040401e-14,
+    "sampled_missing_cells_checked": 50,
+    "sampled_observed_cells_checked": 50,
+    "context_file_sha256": "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+    "query_freeze_sha256": "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef"
+  },
+  "export_result_sha256": "626a9a5edf77a828204a7cce92f5fb875f7a69cdc8c1ca68fd7ca7ad3080626c"
+}

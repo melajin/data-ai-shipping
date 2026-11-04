@@ -1,0 +1,19 @@
+{
+  "requested": {
+    "model": "gpt-6-astra",
+    "effort": "high"
+  },
+  "host_turn_context": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+  },
+  "evidence_source": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T02-51-45-01a1a7b0-332d-7000-adcd-1b9941344d77.jsonl",
+  "session_id": "codex_192eb310_5ae3_440c_97ef_28aaef23603d",
+  "thread_id": "01a1a7b0-332d-7000-adcd-1b9941344d77",
+  "interpretation": "Host configuration evidence, not internal model authentication",
+  "started_utc": "2026-11-04T17:53:09.777287+00:00",
+  "deadline_utc": "2026-11-04T18:23:09.777287+00:00",
+  "incoming_receipt_matched": true,
+  "duplicate_process_check": "No experiment process found; only own inspection shell matched"
+}

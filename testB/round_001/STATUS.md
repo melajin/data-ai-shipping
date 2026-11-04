@@ -9,6 +9,8 @@
 | W0 입력 호환성 | task_f483f7eb585c / ctx_39f0545dfa0b | input_compatibility/ | 실제 Luna xhigh ready, XLSX 의미·서식 및 12 CSV 스트리밍 해시 비교 |
 | W3 독립검산 | task_f3f5f3ac7814 / ctx_b471eddc1464 | audit/w1_w2_001/ | 실제 Luna xhigh ready. W1/W2 근거·코드·준비표·동점 manifest 정합성 검산 |
 
+완료 W2 창 정리 요청(msg_df6590aeb489)에 따라 settled 후속 dispatch ctx_8460e08f0123에 worker-release를 실행했다. Orca 응답은 retained / reason=user_kept / processAction=none이며 창 닫힘을 확인하지 못했다. 종료코드0을 닫기 성공으로 해석하지 않는다. 영수증 integration/runtime_receipts/W2_release.json. 다른 진행 중 workers는 그대로 유지한다.
+
 기존 준비·시작 영수증: ../../26_11_5/testb_next_experiment_20261105/. 새 결과는 이 라운드 아래에 기록한다. 현재 공통 계약은 기존 preparation_contract.md + contract/path_transition.md다. 원자료·canonical·기존 산출물은 읽기전용이다.
 
 부모가 기초 v2 intake를 완료하고 최종 인계(msg_18347d1bf4c5)했다. 이제 intake/운영계약을 포함한 모든 후속 관리권은 현재 감독에게 있다. 사고 XLSX 동일·12CSV 크기/헤더 동일 보고는 인수했으나 내용/제출샘플 의미 호환은 W0가 확인한다. 기존 캐시를 v2 검증 결과로 표시하지 않는다. 오늘 첫 보고는 W1/W2·입력 비교·검산·게이트 판정을 통합한다. 사고 놓침·오탐·시각오차의 독립 검증이 최종 목표이며 후보 매칭이나 A/B/C 합의는 성공 기준이 아니다.

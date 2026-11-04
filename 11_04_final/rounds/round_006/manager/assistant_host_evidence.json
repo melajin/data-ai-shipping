@@ -1,0 +1,32 @@
+[
+  {
+    "role": "author",
+    "requested": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "fork_turns": "none"
+    },
+    "host": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    },
+    "thread": "01a1a7b1-b022-7fb1-8b54-8c0cfb3c3d43",
+    "source": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T02-53-22-01a1a7b1-b022-7fb1-8b54-8c0cfb3c3d43.jsonl"
+  },
+  {
+    "role": "review",
+    "requested": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "fork_turns": "none"
+    },
+    "host": {
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+    },
+    "thread": "01a1a7b1-d620-7b72-87fd-a2383c6feaeb",
+    "source": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T02-53-32-01a1a7b1-d620-7b72-87fd-a2383c6feaeb.jsonl"
+  }
+]

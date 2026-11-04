@@ -20,6 +20,7 @@
   "new_evidence_root": "testB/round_001",
   "v2_intake_owner": "codex_929b2772_00d4_46cf_a9de_9001a4331c75",
   "final_parent_handoff_message": "msg_18347d1bf4c5",
+  "W2_cleanup": {"requested": true, "dispatch_id": "ctx_8460e08f0123", "release_state": "retained", "reason": "user_kept", "process_action": "none", "window_closed_verified": false, "receipt": "testB/round_001/integration/runtime_receipts/W2_release.json"},
   "v2_mixing_allowed": false,
   "performance_gate_passed": false,
   "round_closed": false,

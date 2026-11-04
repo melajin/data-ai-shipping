@@ -1,0 +1,40 @@
+{
+  "id": "0d7f3c32-934d-416e-91c5-ccabf8072cfb",
+  "ok": true,
+  "result": {
+    "terminals": [
+      {
+        "handle": "term_97190cca-261f-4c25-8155-e728516564d2",
+        "ptyId": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING@@acaf15cf",
+        "incarnationId": "7856452b-f3f5-41b4-aff6-52f385fcb80b",
+        "orphaned": false,
+        "worktreeId": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+        "worktreePath": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+        "branch": "refs/heads/main",
+        "tabId": "5d98fb8a-b217-4a43-9cf3-0d5a0eaf79e3",
+        "leafId": "c5b5ceb6-290e-43a5-a76e-decbca866a51",
+        "title": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "connected": true,
+        "writable": true,
+        "lastOutputAt": 1793814840277,
+        "preview": "• 상태: Ready (30분 주기 반복 실행)\n• 터미널이나 에이전트 세션의 종료 여부와 무관하게 백그라운드에서 상시 작동합니다.\n3. 에이전트 데몬 타이머:\n• 에이전트 세션 내에서도 30분 주기로 자동 점검하도록 데몬 cron(*/30 * * * *)을 등록했습니다.\n──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\n>",
+        "executionHostId": "local",
+        "agentIdentity": "antigravity"
+      }
+    ],
+    "hostScope": {
+      "hostIds": [
+        "local"
+      ],
+      "omittedHostIds": []
+    },
+    "topologyRevisions": {
+      "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING": 28
+    },
+    "totalCount": 1,
+    "truncated": false
+  },
+  "_meta": {
+    "runtimeId": "b4aa8510-0609-45a9-b7ba-e1cdeeab97f6"
+  }
+}

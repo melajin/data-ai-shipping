@@ -1,0 +1,566 @@
+{
+  "audit_status": "fail",
+  "product_validation_status": "not passed; preparation only, no actual evaluation or split",
+  "requested_model_effort": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "receipt": "testB/round_001/integration/runtime_receipts/W3_start.json"
+  },
+  "checks": [
+    {
+      "item": "W1 rows, priority union, nine conditions and aggregates",
+      "status": "pass",
+      "evidence": {
+        "row_count": 30,
+        "unique_ids": 30,
+        "priority_expected": [
+          "E0023",
+          "E0042",
+          "E0046",
+          "E0052",
+          "E0096",
+          "E0108",
+          "E0109",
+          "E0123",
+          "E0134",
+          "E0136"
+        ],
+        "priority_actual": [
+          "E0023",
+          "E0042",
+          "E0046",
+          "E0052",
+          "E0096",
+          "E0108",
+          "E0109",
+          "E0123",
+          "E0134",
+          "E0136"
+        ],
+        "priority_scope_counts": {
+          "remaining_single_candidate_review": 20,
+          "stable_single": 1,
+          "reported_2_vessels": 3,
+          "widens_to_multiple": 6
+        },
+        "stable": [
+          "E0023"
+        ],
+        "time_widened": [
+          "E0046",
+          "E0052",
+          "E0096",
+          "E0109",
+          "E0123",
+          "E0134",
+          "E0136"
+        ],
+        "multi_vessel": [
+          "E0042",
+          "E0108",
+          "E0123"
+        ],
+        "nine_condition_keys": true
+      }
+    },
+    {
+      "item": "W1 identity/use/normal claims bounded",
+      "status": "pass",
+      "evidence": {
+        "all_rows_false_identity_unknown_use_no_normal": true,
+        "summary": {
+          "priority_union_event_count": 10,
+          "priority_union_event_ids": [
+            "E0023",
+            "E0042",
+            "E0046",
+            "E0052",
+            "E0096",
+            "E0108",
+            "E0109",
+            "E0123",
+            "E0134",
+            "E0136"
+          ],
+          "all_existing_single_candidate_events_reviewed": 30,
+          "identity_confirmed_count": 0,
+          "direct_crosswalk_found": false,
+          "registry_found_in_audit": false,
+          "type_tonnage_filter_applied": false,
+          "development_use_allowed": "unknown",
+          "normal_label_evidence_available": false,
+          "recommended_gate": "아직 시각 비교 준비만 가능",
+          "recommendation_reason": "후보표는 항적 유사성을 보일 뿐 직접 신원 키가 없고, 사고 자료의 개발용 사용 허용에 대한 원문이 로컬에서 확인되지 않았으며, 독립적인 확인 정상 라벨/분모도 없다."
+        },
+        "scope_conclusion": "In the inspected local source inventory, accident workbook identifies time/location/type/count/tonnage but no RFID, vessel name, registration number, or vessel registry crosswalk. No primary original competition announcement/Q&A file was located; rule statements are repeated in local handoff/planning documents that attribute them to user-provided organizer replies. No universal absence claim."
+      }
+    },
+    {
+      "item": "W1 E0023 trace/units/sample cache summary",
+      "status": "pass",
+      "evidence": {
+        "rfid": "31005928",
+        "nine_relations": {
+          "h0_r1000m": [
+            "31005928"
+          ],
+          "h0_r3000m": [
+            "31005928"
+          ],
+          "h0_r5000m": [
+            "31005928"
+          ],
+          "h1_r1000m": [
+            "31005928"
+          ],
+          "h1_r3000m": [
+            "31005928"
+          ],
+          "h1_r5000m": [
+            "31005928"
+          ],
+          "h2_r1000m": [
+            "31005928"
+          ],
+          "h2_r3000m": [
+            "31005928"
+          ],
+          "h2_r5000m": [
+            "31005928"
+          ]
+        },
+        "distance_m": "435.891073839",
+        "time_start_minus_event_min": "-5",
+        "cache": {
+          "cache_file": "rows_train_6.parquet",
+          "cache_row_index": 97338,
+          "source_row_index": "97338",
+          "row_found": true,
+          "row_identity_matches": true,
+          "part_dt": "20260604",
+          "rfid_time_hour": 12,
+          "wkt_valid": true,
+          "n_coords": 91,
+          "len_m": 3068.6497048467127,
+          "bbox_m": 2353.5549217080475,
+          "cen_lon": 127.37959849816872,
+          "cen_lat": 34.070570732600736,
+          "source_geometry_shape_available_in_cache": false
+        },
+        "interpretation": "distance/time residual is linkage evidence, not detection error"
+      }
+    },
+    {
+      "item": "W1 E0023 direct accident row and selected cache row",
+      "status": "pass",
+      "evidence": {
+        "source_row_verified": true,
+        "selected_cache_row_verified": true,
+        "accident_source": {
+          "path": "F:\\문제 데이터_수정_1027\\26년 1~6월 어선 사고현황(테스트 데이터).xlsx",
+          "headers": [
+            "발생일시",
+            "관할해경서",
+            "발생해역",
+            "위도(변환)",
+            "경도(변환)",
+            "기상상태",
+            "발생원인",
+            "긴급/비긴급",
+            "발생유형",
+            "사고선박수",
+            "발생인원",
+            "구조",
+            "부상",
+            "사망",
+            "실종",
+            "선 종",
+            "어업면허",
+            "톤수"
+          ],
+          "excel_row_24": [
+            "2026-06-04 12:05:00",
+            "여수",
+            "영해",
+            34.066667,
+            127.379167,
+            "양호",
+            "정비불량",
+            "긴급",
+            "기관손상",
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            "어선",
+            "연안복합",
+            4.16
+          ]
+        },
+        "cache_source": {
+          "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_6.parquet",
+          "row_group": 0,
+          "absolute_row_index": 97338,
+          "row": {
+            "row_index": 97338,
+            "part_dt": "20260604",
+            "rfid_id": "31005928",
+            "rfid_time": 12,
+            "fishing_code": "연안복합",
+            "key_valid": true,
+            "wkt_valid": true,
+            "n_coords": 91,
+            "len_m": 3068.6497048467127,
+            "bbox_m": 2353.5549217080475,
+            "cen_lon": 127.37959849816872,
+            "cen_lat": 34.070570732600736
+          },
+          "independent_haversine_centroid_distance_m": 435.8910738390453,
+          "reported_centroid_distance_m": 435.891073839
+        },
+        "distance_method_note": "independent haversine compared with cached linkage distance; not detection error"
+      }
+    },
+    {
+      "item": "W1 listed input/code/output hashes, final exit, attempts and environment",
+      "status": "pass",
+      "evidence": {
+        "missing_paths": [],
+        "input_hash_mismatch": [],
+        "code_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\linkage_review\\run_linkage_review.py",
+        "code_sha256_current": "3fc83be9799d999a46425735583fb0a78aa84c09d8799aa46677d3cce8231283",
+        "code_pre_post_match": true,
+        "output_hash_mismatch": [],
+        "process_result_exit": 0,
+        "final_record_exit": 0,
+        "final_record_previous_attempts": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "attempt_exit_codes": {
+          "process_result_attempt1.json": 1,
+          "process_result_attempt2.json": 0,
+          "process_result_attempt3.json": 1,
+          "process_result_attempt4.json": 0,
+          "process_result_attempt5.json": 0,
+          "process_result_attempt6_pre_source_hashes.json": 0,
+          "process_result_attempt7.json": 1
+        },
+        "stdout_stderr_exist": true,
+        "environment": {
+          "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+          "python_executable": "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+          "platform": "Windows-11-10.0.26300-SP0",
+          "pyarrow": "24.0.0",
+          "openpyxl": "3.1.5"
+        },
+        "model_request": {
+          "dispatchId": "ctx_96e88ef698ce",
+          "taskId": "task_8ea9f23abf9d",
+          "runId": "run_131763108c81",
+          "runCreated": true,
+          "state": "ready",
+          "agent": "codex",
+          "model": "gpt-6-luna",
+          "effort": "xhigh",
+          "mode": "structured",
+          "terminal": "structworker_4b8c13c6-1915-4dd0-8018-165d721b9f71",
+          "workspace": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+          "next": "Orca wakes you when workers report; end your turn when you're done."
+        }
+      }
+    },
+    {
+      "item": "W2 ordered 100 unique IDs and A values vs canonical CSV",
+      "status": "pass",
+      "evidence": {
+        "table_rows": 100,
+        "canonical_rows": 100,
+        "unique_ids": 100,
+        "A_differing_rows": [],
+        "method": "submission CSV only; scored_rows.pkl not opened"
+      }
+    },
+    {
+      "item": "W2 B/C are blank and not computed, no normal label",
+      "status": "pass",
+      "evidence": {
+        "all_rows_consistent": true,
+        "summary": {
+          "status": "preparation_only_pending_supervisor_gate",
+          "input_version": "legacy; no 1103_v2 data loaded or verified",
+          "prepared_vessels": 100,
+          "A_source_status": "inherited_existing_baseline; prior validated A reproduction retained, not rerun",
+          "B_computed": 0,
+          "C_computed": 0,
+          "B_C_unavailable_reason": "2026 scores absent; threshold source, boundary, max gap, persistence minima and approved label/split evidence unresolved",
+          "synthetic_checks": {
+            "status": "passed",
+            "checks": 8,
+            "actual_exit_code": 0,
+            "log": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\round_001\\run_003\\stdout.log"
+          },
+          "inherited_table_step_exit_code": 0,
+          "score_cache": "2025 Test B only; 100 IDs; 82,626 rows; 16 columns",
+          "target_reference_id_overlap": {
+            "count": 95,
+            "of": 100,
+            "interpretation": "membership only; actual density/map contribution and score dilution unmeasured"
+          },
+          "model_effort": {
+            "requested": {
+              "model": "gpt-6-luna",
+              "effort": "xhigh"
+            },
+            "runtime_receipt": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\integration\\runtime_receipts\\W2_start.json",
+            "observed": "receipt reports model gpt-6-luna, effort xhigh; provider internal runtime not independently observable"
+          },
+          "actual_exit_code": 0,
+          "legacy_process_record": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_5\\testb_next_experiment_20261105\\timing\\run_001\\process_result.json",
+          "comparison_table": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\comparison_readiness_100.csv",
+          "manifest": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\input_split_manifest.json",
+          "round_output_hashes": {
+            "comparison_readiness_100.csv": "5e06a7c56b132ecdac291b0f967febb66b9faa53825147e5b5af2c64fa7721cb",
+            "input_split_manifest.json": "593a684dbc4db16c486b0fbd71d1792f8df18848625843b058168e11fd0cc85a",
+            "timing_interface.py": "167afb9c9e114f75edb07b7c8df02f8b718bea4f10e528e11adee9ce3c59788e",
+            "readiness_report.md": "7909b0db5eb69371af9fa0616ec74d9f5b438e80370b617a408187a685a7c384"
+          },
+          "tie_break_contract": "A = first maximum in original input order (idxmax); original order retained for A; time-sorted rows are used only for B/C segment search",
+          "timing_interface_sha256": "167afb9c9e114f75edb07b7c8df02f8b718bea4f10e528e11adee9ce3c59788e",
+          "tie_order_regression_exit_code": 0,
+          "A_tie_semantics": "first maximum in original input order (idxmax); preserve source order for A, sort by time only for B/C segment search"
+        }
+      }
+    },
+    {
+      "item": "W2 current tie contract, split pending, 95 overlap bounded",
+      "status": "fail",
+      "evidence": {
+        "manifest_tie_text": "stable sort by timestamp then original ordinal; earliest maximum wins; preserve duplicate rows and IDs; duplicates do not imply elapsed duration",
+        "stale_earliest_maximum": true,
+        "code_lineage_first_max": false,
+        "split_assignment": "pending; train/dev/calibration/eval memberships not fabricated",
+        "overlap_interpretation": "membership only; actual density/map contribution and score dilution unmeasured"
+      }
+    },
+    {
+      "item": "Independent synthetic timing checks (not self_check)",
+      "status": "pass",
+      "evidence": [
+        {
+          "case": "A original-order tie",
+          "expected": {
+            "a_source_row": "first",
+            "b_ts": 6,
+            "c_ts": 6
+          },
+          "observed": {
+            "a_source_row": "first",
+            "b_ts": 6,
+            "c_ts": 6
+          },
+          "pass": true
+        },
+        {
+          "case": "B/C same segment and C=B",
+          "expected": {
+            "b_ts": 1,
+            "c_ts": 1,
+            "status": "candidate_ready"
+          },
+          "observed": {
+            "b_ts": 1,
+            "c_ts": 1,
+            "status": "candidate_ready"
+          },
+          "pass": true
+        },
+        {
+          "case": "NaN breaks",
+          "expected": {
+            "b_ts": 2,
+            "segment_source_rows": [
+              "peak"
+            ]
+          },
+          "observed": {
+            "b_ts": 2,
+            "segment_source_rows": [
+              "peak"
+            ]
+          },
+          "pass": true
+        },
+        {
+          "case": "missing interval over max splits",
+          "expected": {
+            "b_ts": 2,
+            "segment_source_rows": [
+              "peak"
+            ]
+          },
+          "observed": {
+            "b_ts": 2,
+            "segment_source_rows": [
+              "peak"
+            ]
+          },
+          "pass": true
+        },
+        {
+          "case": "duplicate time not two persistence rows",
+          "expected": {
+            "status": "persistence_not_met",
+            "c_ts": null,
+            "duplicate_timestamp_rows": 1
+          },
+          "observed": {
+            "status": "persistence_not_met",
+            "c_ts": null,
+            "duplicate_timestamp_rows": 1
+          },
+          "pass": true
+        },
+        {
+          "case": "empty finite scores calculation unavailable",
+          "expected": {
+            "status": "insufficient_data",
+            "reason": "no_finite_scores"
+          },
+          "observed": {
+            "status": "insufficient_data",
+            "reason": "no_finite_scores"
+          },
+          "pass": true
+        },
+        {
+          "case": "parameter source required",
+          "pass": true
+        },
+        {
+          "case": "positive floor value remains ordinary finite score",
+          "pass": true,
+          "observed_status": "candidate_ready"
+        }
+      ]
+    },
+    {
+      "item": "max_gap parameter can bridge unobserved time",
+      "status": "fail",
+      "evidence": {
+        "timestamps": [
+          0,
+          2
+        ],
+        "max_gap_hours": 2,
+        "B": 0,
+        "interpretation": "when delta <= max_gap, a missing bin may be bridged"
+      }
+    },
+    {
+      "item": "W2 observed synthetic exit, environment, request receipt",
+      "status": "pass",
+      "evidence": {
+        "process": {
+          "started_at": "2026-11-05T02:46:03.726336+09:00",
+          "ended_at": "2026-11-05T02:46:03.884433+09:00",
+          "argv": [
+            "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+            "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\timing_interface.py",
+            "--self-check"
+          ],
+          "exit_code": 0,
+          "stdout": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\round_001\\run_003\\stdout.log",
+          "stderr": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\round_001\\run_003\\stderr.log",
+          "code": {
+            "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_001\\timing\\timing_interface.py",
+            "size_bytes": 9451,
+            "sha256": "167afb9c9e114f75edb07b7c8df02f8b718bea4f10e528e11adee9ce3c59788e"
+          },
+          "scope": "synthetic test rows only; no actual score/event inputs read"
+        },
+        "environment": {
+          "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+          "executable": "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+          "platform": "Windows-11-10.0.26300-SP0",
+          "requested_model": "gpt-6-luna",
+          "requested_effort": "xhigh",
+          "runtime_receipt": "26_11_5/testb_next_experiment_20261105/integration/runtime_receipts/W2_start.json",
+          "runtime_observation": "Orca start receipt reports gpt-6-luna/xhigh; provider internal runtime not independently introspected"
+        },
+        "requested": {
+          "dispatchId": "ctx_56089211395f",
+          "taskId": "task_885788d2f20f",
+          "runId": "run_131763108c81",
+          "state": "ready",
+          "agent": "codex",
+          "model": "gpt-6-luna",
+          "effort": "xhigh",
+          "mode": "structured",
+          "terminal": "structworker_d71f3e7d-ba2a-4925-9ecb-83114ff00a7b",
+          "workspace": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+          "next": "Orca wakes you when workers report; end your turn when you're done."
+        }
+      }
+    },
+    {
+      "item": "W3 model/effort request receipt and dispatch identity",
+      "status": "pass",
+      "evidence": {
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "run_id": "run_131763108c81",
+        "task_id": "task_f3f5f3ac7814",
+        "dispatch_id": "ctx_b471eddc1464"
+      }
+    },
+    {
+      "item": "Provider-internal actual runtime model independently observable",
+      "status": "unknown",
+      "evidence": "Orca receipt records requested gpt-6-luna/xhigh; provider internal runtime is not independently exposed in inspected artifacts."
+    },
+    {
+      "item": "W2 source manifest references resolve/hash-match",
+      "status": "pass",
+      "evidence": {
+        "mismatches": [],
+        "scope": "manifest-listed paths only; no raw/disk-wide certification"
+      }
+    },
+    {
+      "item": "Inspected W1/W2 target hashes unchanged during independent audit",
+      "status": "pass",
+      "evidence": {
+        "file_count": 75,
+        "changed_paths": []
+      }
+    }
+  ],
+  "actionable_issues": [
+    {
+      "severity": "blocking",
+      "file": "testB/round_001/timing/input_split_manifest.json",
+      "location": "method_states.ties_and_duplicates",
+      "reproduce": "Read current JSON field: says earliest maximum wins; code and lineage say first max in original input order.",
+      "impact": "Contract contradicts current A tie implementation and can select a different row.",
+      "suggested_fix": "Change to first maximum in original source order for A; stable timestamp+ordinal ordering is B/C only; retain duplicate rows and count unique timestamps for persistence."
+    },
+    {
+      "severity": "open_design_limit",
+      "file": "testB/round_001/timing/timing_interface.py",
+      "location": "estimate_vessel gap comparison; TimingParams.max_gap_hours",
+      "reproduce": "Synthetic ts=0 and ts=2 above threshold with max_gap_hours=2 yields one segment (B=0).",
+      "impact": "A configured tolerance above nominal cadence connects across unobserved bins; this is unresolved against a strict no-missing-time policy.",
+      "suggested_fix": "Supervisor must explicitly choose supported cadence/gap semantics. If missing bins always break, require adjacent expected cadence rather than a variable tolerance."
+    }
+  ],
+  "inspection_hashes": "inspection_hashes.json",
+  "scope": "legacy W1/W2 only; v2 excluded; scored_rows.pkl not opened; no threshold selection or actual evaluation"
+}

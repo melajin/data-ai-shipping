@@ -1,0 +1,14 @@
+{
+  "fold0_seed42_context.npz": {
+    "sha256": "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5",
+    "source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\artifacts\\context_export_attempt_001\\fold0_seed42_context.npz",
+    "destination": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_006\\artifacts\\context_export_attempt_001\\fold0_seed42_context.npz",
+    "byte_copy_verified": true
+  },
+  "query_freeze.json": {
+    "sha256": "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef",
+    "source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_005\\artifacts\\context_export_attempt_001\\query_freeze.json",
+    "destination": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_006\\artifacts\\context_export_attempt_001\\query_freeze.json",
+    "byte_copy_verified": true
+  }
+}

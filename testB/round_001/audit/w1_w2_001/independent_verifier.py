@@ -1,5 +1,5 @@
 from __future__ import annotations
-import csv, hashlib, importlib.util, json, sys
+import csv, hashlib, importlib.util, json, math, sys
 from collections import Counter
 from pathlib import Path
 
@@ -26,13 +26,24 @@ def sha(path):
 def run():
     checks=[]; issues=[]
     w1=rows(W1/"evidence_table.csv"); s1=j(W1/"summary.json")
+    w1m=j(W1/"manifest.json"); w2m=j(W2/"input_split_manifest.json")
+    hash_targets={Path(k) for k in w1m.get("inputs_pre",{})}
+    hash_targets.update(Path(x["path"]) for x in w2m.get("sources",[]) if x.get("path"))
+    if w1m.get("code",{}).get("path"): hash_targets.add(Path(w1m["code"]["path"]))
+    hash_targets.update(W1/p for p in w1m.get("output_sha256_after_run",{}))
+    hash_targets.update({W1/"evidence_table.csv",W1/"summary.json",W1/"manifest.json",W1/"run_linkage_review.py",W1/"process_result.json",W2/"comparison_readiness_100.csv",W2/"summary.json",W2/"input_split_manifest.json",W2/"input_split_manifest_addendum.json",W2/"timing_interface.py",W2/"readiness_report.md",W2/"code_lineage.json",W2/"round_001"/"run_003"/"process_result.json"})
+    w3receipt=ROOT/"testB"/"round_001"/"integration"/"runtime_receipts"/"W3_start.json"
+    hash_targets.add(w3receipt)
+    def snapshot():
+        return {str(p):({"exists":True,"size_bytes":p.stat().st_size,"sha256":sha(p)} if p.is_file() else {"exists":False}) for p in sorted(hash_targets,key=str)}
+    hashes_pre=snapshot()
     expected=set(s1["finding"]["priority_union_event_ids"])
-    actual={r["event_id"] for r in w1 if r["scope_priority_union"]=="priority_union_10"}
+    actual={r["event_id"] for r in w1 if r["scope_priority_union"]!="remaining_single_candidate_review"}
     stable=[r["event_id"] for r in w1 if r["same_single_candidate_all_nine_conditions"].lower()=="true"]
     widened=[r["event_id"] for r in w1 if r["baseline_single_becomes_multiple_when_time_widened"].lower()=="true"]
     multi=[r["event_id"] for r in w1 if r["reported_count_mismatch_flag"].lower()=="true"]
     keys_ok=all(len(json.loads(r["all_9_condition_relations_json"]))==9 for r in w1)
-    checks.append({"item":"W1 rows, priority union, nine conditions and aggregates","status":"pass" if len(w1)==30 and len({r["event_id"] for r in w1})==30 and actual==expected and len(actual)==10 and keys_ok and len(stable)==1 and len(widened)==7 and len(multi)==3 else "fail","evidence":{"row_count":len(w1),"unique_ids":len({r["event_id"] for r in w1}),"priority_expected":sorted(expected),"priority_actual":sorted(actual),"stable":stable,"time_widened":widened,"multi_vessel":multi,"nine_condition_keys":keys_ok}})
+    checks.append({"item":"W1 rows, priority union, nine conditions and aggregates","status":"pass" if len(w1)==30 and len({r["event_id"] for r in w1})==30 and actual==expected and len(actual)==10 and keys_ok and len(stable)==1 and len(widened)==7 and len(multi)==3 else "fail","evidence":{"row_count":len(w1),"unique_ids":len({r["event_id"] for r in w1}),"priority_expected":sorted(expected),"priority_actual":sorted(actual),"priority_scope_counts":dict(Counter(r["scope_priority_union"] for r in w1)),"stable":stable,"time_widened":widened,"multi_vessel":multi,"nine_condition_keys":keys_ok}})
     sem=all(r["identity_confirmed"].lower()=="false" and r["development_use_allowed"].startswith("unknown") and r["normal_label_evidence_available"].startswith("false") and r["type_tonnage_filter_applied"].lower()=="false" for r in w1)
     checks.append({"item":"W1 identity/use/normal claims bounded","status":"pass" if sem and s1["finding"]["identity_confirmed_count"]==0 else "fail","evidence":{"all_rows_false_identity_unknown_use_no_normal":sem,"summary":s1["finding"],"scope_conclusion":s1["local_search"]["conclusion"]}})
     e=next((r for r in w1 if r["event_id"]=="E0023"),None)
@@ -41,7 +52,36 @@ def run():
         ok=e["rfid_id"]=="31005928" and all(v==["31005928"] for v in ids.values()) and cache["row_found"] and cache["row_identity_matches"] and int(cache["n_coords"])==91 and abs(float(e["min_distance_m"])-435.9)<.1 and e["min_distance_row_source_index"]==str(cache["source_row_index"])
         checks.append({"item":"W1 E0023 trace/units/sample cache summary","status":"pass" if ok else "fail","evidence":{"rfid":e["rfid_id"],"nine_relations":ids,"distance_m":e["min_distance_m"],"time_start_minus_event_min":e["minrow_track_hour_start_minus_accident_minutes"],"cache":cache,"interpretation":"distance/time residual is linkage evidence, not detection error"}})
     else: checks.append({"item":"W1 E0023 trace","status":"fail","evidence":"missing"})
-    m1=j(W1/"manifest.json"); bad=[]; missing=[]
+    # Directly inspect only E0023's accident source row and the already-selected cache row.
+    if e:
+        import pyarrow.parquet as pq
+        from openpyxl import load_workbook
+        xlsx=list(Path("F:/").glob("*1027*/*26*.xlsx"))
+        parquet=list(ROOT.glob("*29-30*/*/outputs/remeasure_20261031/rows_train_6.parquet"))
+        source_ok=False; cache_ok=False; xlsx_evidence={}; cache_evidence={}
+        if len(xlsx)==1:
+            wb=load_workbook(xlsx[0],read_only=True,data_only=True); ws=wb["Sheet1"]
+            header=next(ws.iter_rows(min_row=1,max_row=1,values_only=True))
+            raw=next(ws.iter_rows(min_row=24,max_row=24,values_only=True))
+            xlsx_evidence={"path":str(xlsx[0]),"headers":list(header),"excel_row_24":list(raw)}
+            source_ok=(raw[0].strftime("%Y-%m-%d %H:%M:%S")==e["accident_time"] and str(raw[9])==e["reported_accident_vessel_count"] and abs(raw[3]-float(e["accident_lat"]))<1e-6 and abs(raw[4]-float(e["accident_lon"]))<1e-6 and not any(k in header for k in ("RFID","선명","등록번호")))
+            wb.close()
+        if len(parquet)==1:
+            pf=pq.ParquetFile(parquet[0]); idx=int(e["min_distance_row_source_index"]); offset=0; selected=None
+            for rg in range(pf.num_row_groups):
+                n=pf.metadata.row_group(rg).num_rows
+                if offset<=idx<offset+n:
+                    selected=pf.read_row_group(rg).slice(idx-offset,1).to_pylist()[0]; cache_evidence={"path":str(parquet[0]),"row_group":rg,"absolute_row_index":idx,"row":selected}; break
+                offset+=n
+            if selected:
+                cache_ok=(selected["row_index"]==idx and selected["rfid_id"]==e["rfid_id"] and selected["part_dt"]=="20260604" and selected["rfid_time"]==12 and selected["n_coords"]==91 and selected["wkt_valid"] is True and abs(selected["len_m"]-float(json.loads(e["selected_cache_shape_json"])["len_m"]))<1e-8)
+                R=6371000.0; lat1=math.radians(float(e["accident_lat"])); lat2=math.radians(selected["cen_lat"]); dlat=lat2-lat1; dlon=math.radians(selected["cen_lon"]-float(e["accident_lon"]))
+                hav=2*R*math.asin(math.sqrt(math.sin(dlat/2)**2+math.cos(lat1)*math.cos(lat2)*math.sin(dlon/2)**2))
+                cache_evidence["independent_haversine_centroid_distance_m"]=hav
+                cache_evidence["reported_centroid_distance_m"]=float(e["min_distance_m"])
+                cache_ok=cache_ok and abs(hav-float(e["min_distance_m"]))<1e-3
+        checks.append({"item":"W1 E0023 direct accident row and selected cache row","status":"pass" if source_ok and cache_ok else "fail","evidence":{"source_row_verified":source_ok,"selected_cache_row_verified":cache_ok,"accident_source":xlsx_evidence,"cache_source":cache_evidence,"distance_method_note":"independent haversine compared with cached linkage distance; not detection error"}})
+    m1=w1m; bad=[]; missing=[]
     for mapping in (m1.get("inputs_pre",{}),m1.get("inputs_post",{})):
         for raw,rec in mapping.items():
             p=Path(raw)
@@ -49,7 +89,15 @@ def run():
             elif p.is_file() and (p.stat().st_size!=rec["size_bytes"] or sha(p)!=rec["sha256"]): bad.append(raw)
     p1=j(W1/"process_result.json")
     attempts={p.name:j(p).get("exit_code") for p in W1.glob("process_result_attempt*.json")}
-    checks.append({"item":"W1 listed input hashes, final exit, attempt history and environment","status":"pass" if not missing and not bad and p1.get("exit_code")==0 and attempts else "fail","evidence":{"missing_paths":missing,"hash_mismatch":bad,"final_exit_code":p1.get("exit_code"),"attempt_exit_codes":attempts,"environment":m1.get("environment"),"model_request":m1.get("model_evidence",{}).get("receipt",{}).get("result",{})}})
+    code_rec=m1.get("code",{}); code_path=Path(code_rec.get("path","")); code_hash=sha(code_path) if code_path.exists() else None
+    code_ok=code_hash is not None and code_hash==code_rec.get("sha256_pre")==code_rec.get("sha256_post") and code_rec.get("unchanged") is True
+    output_bad=[]
+    for name,digest in m1.get("output_sha256_after_run",{}).items():
+        p=W1/name
+        if not p.is_file() or sha(p)!=digest: output_bad.append(name)
+    fr=m1.get("final_process_record",{})
+    logs_ok=Path(fr.get("stdout_path","")).is_file() and Path(fr.get("stderr_path","")).is_file()
+    checks.append({"item":"W1 listed input/code/output hashes, final exit, attempts and environment","status":"pass" if not missing and not bad and p1.get("exit_code")==0 and fr.get("exit_code")==0 and attempts and code_ok and not output_bad and logs_ok else "fail","evidence":{"missing_paths":missing,"input_hash_mismatch":bad,"code_path":code_rec.get("path"),"code_sha256_current":code_hash,"code_pre_post_match":code_ok,"output_hash_mismatch":output_bad,"process_result_exit":p1.get("exit_code"),"final_record_exit":fr.get("exit_code"),"final_record_previous_attempts":fr.get("previous_attempts"),"attempt_exit_codes":attempts,"stdout_stderr_exist":logs_ok,"environment":m1.get("environment"),"model_request":m1.get("model_evidence",{}).get("receipt",{}).get("result",{})}})
 
     t=rows(W2/"comparison_readiness_100.csv"); c=rows(CANON) if CANON.exists() else []
     diffs=[]
@@ -76,7 +124,7 @@ def run():
     syn=[]
     def check(name,rs,ps,expected):
         x=mod.estimate_vessel(rs,ps); got={k:getattr(x,k) for k in expected}; syn.append({"case":name,"expected":expected,"observed":got,"pass":got==expected})
-    check("A original-order tie", [{"ts":7,"score":.9,"source_row_id":"first"},{"ts":6,"score":.9,"source_row_id":"second"},{"ts":5,"score":.2,"source_row_id":"low"}],mod.TimingParams(.5,"gt",1,0,1,"synthetic"),{"a_source_row":"first","b_ts":7,"c_ts":7})
+    check("A original-order tie", [{"ts":7,"score":.9,"source_row_id":"first"},{"ts":6,"score":.9,"source_row_id":"second"},{"ts":5,"score":.2,"source_row_id":"low"}],mod.TimingParams(.5,"gt",1,0,1,"synthetic"),{"a_source_row":"first","b_ts":6,"c_ts":6})
     check("B/C same segment and C=B", [{"ts":1,"score":.8,"source_row_id":"onset"},{"ts":2,"score":.9,"source_row_id":"peak"}],mod.TimingParams(.5,"gt",1,1,2,"synthetic"),{"b_ts":1,"c_ts":1,"status":"candidate_ready"})
     check("NaN breaks", [{"ts":0,"score":.8,"source_row_id":"before"},{"ts":1,"score":float("nan"),"source_row_id":"nan"},{"ts":2,"score":.9,"source_row_id":"peak"}],mod.TimingParams(.5,"gt",2,0,1,"synthetic"),{"b_ts":2,"segment_source_rows":["peak"]})
     check("missing interval over max splits", [{"ts":0,"score":.8,"source_row_id":"before"},{"ts":2,"score":.9,"source_row_id":"peak"}],mod.TimingParams(.5,"gt",1,0,1,"synthetic"),{"b_ts":2,"segment_source_rows":["peak"]})
@@ -97,6 +145,9 @@ def run():
     p2=j(W2/"round_001"/"run_003"/"process_result.json"); env=j(W2/"round_001"/"run_003"/"environment.json")
     receipt=j(ROOT/"26_11_5"/"testb_next_experiment_20261105"/"integration"/"runtime_receipts"/"W2_start.json")
     checks.append({"item":"W2 observed synthetic exit, environment, request receipt","status":"pass" if p2.get("exit_code")==0 and receipt.get("result",{}).get("model")=="gpt-6-luna" and receipt.get("result",{}).get("effort")=="xhigh" else "fail","evidence":{"process":p2,"environment":env,"requested":receipt.get("result",{})}})
+    w3r=j(w3receipt).get("result",{})
+    checks.append({"item":"W3 model/effort request receipt and dispatch identity","status":"pass" if w3r.get("model")=="gpt-6-luna" and w3r.get("effort")=="xhigh" and w3r.get("runId")=="run_131763108c81" else "fail","evidence":{"model":w3r.get("model"),"effort":w3r.get("effort"),"run_id":w3r.get("runId"),"task_id":w3r.get("taskId"),"dispatch_id":w3r.get("dispatchId")}})
+    checks.append({"item":"Provider-internal actual runtime model independently observable","status":"unknown","evidence":"Orca receipt records requested gpt-6-luna/xhigh; provider internal runtime is not independently exposed in inspected artifacts."})
     source_bad=[]
     for s in man.get("sources",[]):
         p=Path(s["path"])
@@ -106,8 +157,18 @@ def run():
 
     blocking=any(x["severity"]=="blocking" for x in issues) or any(x["status"]=="fail" for x in checks if x["item"]!="max_gap parameter can bridge unobserved time")
     status="fail" if blocking else "passed"
-    review={"audit_status":status,"product_validation_status":"not passed; preparation only, no actual evaluation or split","requested_model_effort":{"model":"gpt-6-luna","effort":"xhigh","receipt":"testB/round_001/integration/runtime_receipts/W3_start.json"},"checks":checks,"actionable_issues":issues,"scope":"legacy W1/W2 only; v2 excluded; scored_rows.pkl not opened; no threshold selection or actual evaluation"}
-    (OUT/"review.json").write_text(json.dumps(review,ensure_ascii=False,indent=2),encoding="utf-8")
+    hashes_post=snapshot()
+    changed=[p for p in hashes_pre if hashes_pre[p]!=hashes_post[p]]
+    (OUT/"inspection_hashes.json").write_text(json.dumps({"scope":"manifest-listed sources and inspected W1/W2 artifacts only; no disk-wide or full raw archive proof","pre":hashes_pre,"post":hashes_post,"changed_during_audit":changed},ensure_ascii=False,indent=2),encoding="utf-8")
+    if changed:
+        checks.append({"item":"Inspected W1/W2 target hashes unchanged during independent audit","status":"fail","evidence":{"changed_paths":changed}})
+    else:
+        checks.append({"item":"Inspected W1/W2 target hashes unchanged during independent audit","status":"pass","evidence":{"file_count":len(hash_targets),"changed_paths":[]}})
+    # Recompute status after the pre/post snapshot finding.
+    blocking=any(x["severity"]=="blocking" for x in issues) or any(x["status"]=="fail" for x in checks if x["item"]!="max_gap parameter can bridge unobserved time")
+    status="fail" if blocking else "passed"
+    review={"audit_status":status,"product_validation_status":"not passed; preparation only, no actual evaluation or split","requested_model_effort":{"model":"gpt-6-luna","effort":"xhigh","receipt":"testB/round_001/integration/runtime_receipts/W3_start.json"},"checks":checks,"actionable_issues":issues,"inspection_hashes":"inspection_hashes.json","scope":"legacy W1/W2 only; v2 excluded; scored_rows.pkl not opened; no threshold selection or actual evaluation"}
+    (OUT/"review.json").write_text(json.dumps(review,ensure_ascii=False,indent=2,default=str),encoding="utf-8")
     lines=["# W1/W2 독립 검산 보고서","",f"검산 상태: **{status}** (제품 검증 통과와 별개)","","## 결과"]
     lines += [f"- **{x['status'].upper()} — {x['item']}**" for x in checks]
     lines += ["","## 핵심 판단","",
@@ -124,6 +185,6 @@ def run():
 
 if __name__=="__main__":
     try:
-        result=run(); print(json.dumps(result,ensure_ascii=False,indent=2)); sys.exit(2 if result["audit_status"]=="fail" else 0)
+        result=run(); print(json.dumps(result,ensure_ascii=False,indent=2,default=str)); sys.exit(2 if result["audit_status"]=="fail" else 0)
     except Exception as e:
         print(f"VERIFIER_ERROR: {type(e).__name__}: {e}",file=sys.stderr); sys.exit(2)

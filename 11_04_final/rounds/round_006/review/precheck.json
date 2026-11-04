@@ -1,0 +1,53 @@
+{
+  "schema": "round006_independent_precheck.v1",
+  "status": "STATIC_APPROVED_MOCK_AND_CONDITIONAL_PILOT",
+  "reviewed_at_utc": "2026-11-04T17:56:00Z",
+  "reviewer": {
+    "role": "independent source reviewer",
+    "requested_model": "gpt-6-luna",
+    "requested_effort": "xhigh",
+    "host_turn_context": "not independently available in this child review; no host model/effort claim"
+  },
+  "reviewed_scope": {
+    "round_plan": "rounds/round_006/ROUND_PLAN.md",
+    "prior_review": [
+      "rounds/round_005/review/FINAL_REVIEW.md",
+      "rounds/round_005/review/final_review.json"
+    ],
+    "prior_actual_run": [
+      "rounds/round_005/logs/pilot_01/receipt.json",
+      "rounds/round_005/logs/pilot_01/stderr.txt",
+      "rounds/round_005/logs/pilot_01/source/replay_inner_pilot.py",
+      "rounds/round_005/artifacts/pilot_attempt_001/pilot_result.json"
+    ],
+    "pinned_source": "environments/round_004_tabicl_cpu/Lib/site-packages/tabicl/_sklearn/classifier.py",
+    "round006_source": "rounds/round_006/code/replay_inner_pilot.py",
+    "mock_test": "rounds/round_006/code/test_validate_resolved_inference_state.py",
+    "bounded_wrapper": "rounds/round_006/manager/run_bounded.py",
+    "mock_runner": "rounds/round_006/manager/run_mock.py"
+  },
+  "source_hashes": {
+    "round005_executed_source_sha256": "b57f6c764d4b833451714d4dfcfa328ed3facecaf6f9a93a0198da8b17c4b860",
+    "round006_pilot_sha256": "a4d10bba93f3fe07ea7188aba216c1211e13eba24cec334fc19d7b985d681505",
+    "round006_mock_test_sha256": "237edc8867af5e1684d8ba99bd3cfd7c8d8aa1404e3956ecabaa10ef32a010b5",
+    "round006_bounded_wrapper_sha256": "864440b76311f93b3e3236fa0e636381a7dad8fe1e98aefe402b2591ea039f81",
+    "round006_mock_runner_sha256": "57001c63349ff104d5e0e20e6dab56323957b27505742fb7af52cfdd9491667b"
+  },
+  "findings": {
+    "prior_defect_confirmed": true,
+    "pinned_attribute_lifecycle": "fit initializes model_kv_cache_ to None and assigns cache_mode_ only when kv_cache is enabled; kv_cache=False therefore leaves cache_mode_ absent.",
+    "optional_attribute_handling": "round006 records cache_mode_ presence separately from its value and uses guarded access; absent and present-but-None states are accepted and distinguishable. model_kv_cache_ presence/value are also recorded.",
+    "fit_return_stage": "fit_returned is atomically persisted immediately after estimator.fit returns and before any post-fit validation; later checkpoint_fit_context_bind_complete remains separate.",
+    "schema_consistency": "initial recovery record and subsequent records both use round006_inner_pilot_result.v1; the historical query-freeze input correctly remains round005_frozen_inner_queries.v1.",
+    "scope_preserved": "The diff is limited to ROUND/error-path updates, round006 output schema, safe cache telemetry, and a fit-return stage. Estimator constructor/settings, fixed input/query scope, and probability comparison calculations match round005.",
+    "mock_scope": "The mock extracts only the reviewed diagnostic functions from the exact pilot source and uses fake objects. The runner verifies source/test hashes, snapshots inputs, uses sys._base_executable, has a 30-second timeout, and runs no model/checkpoint import."
+  },
+  "review_decision": {
+    "mock_invocation": "APPROVED_ONCE_FOR_THE_HASHED_PILOT_AND_TEST",
+    "pilot_invocation": "CONDITIONALLY_APPROVED_ONLY_AFTER_MOCK_PASS_AND_RECONFIRMING_THE_PILOT_SHA256",
+    "source_changes_after_approval": "Require a new exact-SHA review before any pilot invocation.",
+    "reviewer_executed_mock": false,
+    "reviewer_imported_model_or_loaded_checkpoint": false
+  },
+  "actual_round006_model_results": "NOT_YET_AVAILABLE"
+}
