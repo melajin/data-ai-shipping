@@ -1,0 +1,15 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T19:36:58.2792620Z",
+    "available_ram_gib":  4.2513923645019531,
+    "total_ram_gib":  13.809436798095703,
+    "python_processes":  [
+
+                         ],
+    "expected_static_work_mib":  20,
+    "expected_mock_mib":  50,
+    "actual_pilot_peak_unknown":  true,
+    "prior_sampled_peak_gib":  2.96,
+    "start_gate_gib":  4,
+    "stop_gate_gib":  1.5,
+    "decision":  "Proceed with independent source author/reviewer; recheck before runtime"
+}

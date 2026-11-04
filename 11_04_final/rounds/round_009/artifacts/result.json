@@ -1,0 +1,163 @@
+{
+  "schema": "round009_manager_result.v1",
+  "updated_at_utc": "2026-11-04T19:31:05.954160+00:00",
+  "status": "completed_synthetic_equivalence_pass",
+  "mock": {
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5320000000028813,
+    "stop_reason": null,
+    "owned_tree_remaining": [],
+    "owned_tree_status": "clear"
+  },
+  "pair": {
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 49.18699999999808,
+    "stop_reason": null,
+    "owned_tree_remaining": [],
+    "owned_tree_status": "clear",
+    "termination_confirmed": null,
+    "preflight_available_ram_gib": 4.441890716552734,
+    "minimum_observed_available_ram_gib": 3.934001922607422,
+    "peak_sampled_tree_working_set_bytes": 556965888,
+    "source_unchanged": true,
+    "source_snapshot_unchanged": true,
+    "timeout_seconds": 180
+  },
+  "child": {
+    "status": "SYNTHETIC_PAIR_COMPLETE",
+    "stage": "comparison_complete",
+    "error": null,
+    "fit_completed_count": 1,
+    "predict_proba_attempted_count": 2,
+    "predict_proba_completed_count": 2,
+    "column_adapter_restored": true,
+    "row_adapter_restored": true,
+    "comparison": {
+      "scope": "two synthetic query rows only; same fitted estimator and inputs; no F1",
+      "tolerance": 1e-05,
+      "baseline_probability_gate_pass": true,
+      "candidate_probability_gate_pass": true,
+      "max_abs_probability_difference": 0.0,
+      "exact_numeric_equal": true,
+      "argmax_equal": true,
+      "argmax_baseline": [
+        1,
+        2
+      ],
+      "argmax_candidate": [
+        1,
+        2
+      ],
+      "within_tolerance_and_argmax_gate_pass": true,
+      "input_and_shuffle_state_unchanged": true,
+      "runtime_manager_state_unchanged": true,
+      "all_managers_restored": true
+    },
+    "baseline_probability_check": {
+      "name": "baseline_col16_only",
+      "shape": [
+        2,
+        4
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "within_0_1": true,
+      "max_abs_row_sum_error": 1.1920928955078125e-07,
+      "row_sum_gate_pass": true,
+      "values": [
+        [
+          0.20490509271621704,
+          0.3307407796382904,
+          0.27529171109199524,
+          0.18906235694885254
+        ],
+        [
+          0.057841312140226364,
+          0.21634940803050995,
+          0.3749522268772125,
+          0.35085707902908325
+        ]
+      ],
+      "gate_pass": true
+    },
+    "candidate_probability_check": {
+      "name": "candidate_col16_row8",
+      "shape": [
+        2,
+        4
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "within_0_1": true,
+      "max_abs_row_sum_error": 1.1920928955078125e-07,
+      "row_sum_gate_pass": true,
+      "values": [
+        [
+          0.20490509271621704,
+          0.3307407796382904,
+          0.27529171109199524,
+          0.18906235694885254
+        ],
+        [
+          0.057841312140226364,
+          0.21634940803050995,
+          0.3749522268772125,
+          0.35085707902908325
+        ]
+      ],
+      "gate_pass": true
+    }
+  },
+  "event_counts": {
+    "column_chunk_call_started": 16,
+    "column_chunk_started": 320,
+    "column_chunk_completed": 320,
+    "column_chunk_call_completed": 16
+  },
+  "row_event_counts": {
+    "row_chunk_call_started": 8,
+    "row_chunk_started": 40,
+    "row_chunk_completed": 40,
+    "row_chunk_call_completed": 8
+  },
+  "last_row_event": {
+    "event": "row_chunk_call_completed",
+    "call_id": 7,
+    "input_shape": [
+      1,
+      34,
+      316,
+      128
+    ],
+    "output_shape": [
+      1,
+      34,
+      512
+    ],
+    "row_axis": 1,
+    "chunk_count": 5,
+    "max_chunk_rows": 8,
+    "feature_class_sequence_preserved": 316,
+    "embedding_width_preserved": 128,
+    "output_repeat_preserved": 1
+  },
+  "evaluation": {
+    "new_f1": null,
+    "new_f1_evaluations": 0,
+    "actual_data_replays": 0,
+    "parameter_training_fits": 0,
+    "independent_f1": null,
+    "official_f1": null,
+    "goal_070_achieved": false
+  },
+  "scope": {
+    "raw_data_read": false,
+    "holdout_read": false,
+    "hardware_validation": false,
+    "synthetic_pair_runs": 1,
+    "pair_retries": 0,
+    "mock_runs": 1
+  }
+}

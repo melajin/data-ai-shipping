@@ -1,0 +1,487 @@
+{
+  "schema_version": 1,
+  "overall_status": "fail",
+  "audit_scope": "Independent audit of Test B Round002 selected rows and modified runner only; no production reference rebuild or actual score generation.",
+  "run_id": "run_a0639d5ac36a",
+  "task_id": "task_8b98c91a7e20",
+  "dispatch_id": "ctx_f5235ff89d75",
+  "requested_model": "gpt-6-luna",
+  "requested_effort": "xhigh",
+  "provider_internal_model_effort": "unknown",
+  "checks": [
+    {
+      "id": "ordered_100_id_lineage",
+      "status": "pass",
+      "evidence": {
+        "ids": {
+          "count": 100,
+          "unique": 100,
+          "sha256": "d7c5affc53473cc45a3372c9bc7b82eb0466cdb99a77e2f4996b6cc8325d3ec4",
+          "ordered_match_prior_direct_rows": true,
+          "prior_direct_rows_matched_count": 100,
+          "direct_zip_member_sha256": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+          "intake_copy_sha256": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+          "workbook_metadata": {
+            "sheetnames": [
+              "테스트A",
+              "테스트B"
+            ],
+            "max_row": 101,
+            "max_column": 9,
+            "header": "rfid_id"
+          },
+          "zip_member": "테스트셋 및 결과제출 샘플/제출샘플.xlsx",
+          "archive_read": "selected member only; no full archive hash/extraction"
+        },
+        "preparation_artifact_hashes": [
+          {
+            "path": "testB\\round_002\\preparation\\environment.json",
+            "expected_sha256": "fe9b42c4d1cbb51d990dcc9e4f3e804ff8c68717c88f05d32396d07e252134d2",
+            "actual_sha256": "fe9b42c4d1cbb51d990dcc9e4f3e804ff8c68717c88f05d32396d07e252134d2",
+            "match": true
+          },
+          {
+            "path": "testB\\round_002\\preparation\\inspection.log",
+            "expected_sha256": "8c9594c0dc42a00d50771236e572a35f568d06740b7ed0f67a26d7cda81eda62",
+            "actual_sha256": "8c9594c0dc42a00d50771236e572a35f568d06740b7ed0f67a26d7cda81eda62",
+            "match": true
+          },
+          {
+            "path": "testB\\round_002\\preparation\\manifest.json",
+            "expected_sha256": "3db3c841f02b9eea6c04978f030c84085a583b81dd4805e2cc5f80b19932af1f",
+            "actual_sha256": "3db3c841f02b9eea6c04978f030c84085a583b81dd4805e2cc5f80b19932af1f",
+            "match": true
+          },
+          {
+            "path": "testB\\round_002\\preparation\\new_testB_ids_100.csv",
+            "expected_sha256": "d7c5affc53473cc45a3372c9bc7b82eb0466cdb99a77e2f4996b6cc8325d3ec4",
+            "actual_sha256": "d7c5affc53473cc45a3372c9bc7b82eb0466cdb99a77e2f4996b6cc8325d3ec4",
+            "match": true
+          },
+          {
+            "path": "testB\\round_002\\preparation\\parquet_schema_metadata.json",
+            "expected_sha256": "ef9135a60ccb76a3eff640f57b865c9adb3f98ef43940ad697eac52c1109a634",
+            "actual_sha256": "ef9135a60ccb76a3eff640f57b865c9adb3f98ef43940ad697eac52c1109a634",
+            "match": true
+          },
+          {
+            "path": "testB\\round_002\\preparation\\preparation_report.md",
+            "expected_sha256": "ad083fa7571064c67bf8cbde93b179e83b3b950d165c8fc7d646f80c82de7fe8",
+            "actual_sha256": "ad083fa7571064c67bf8cbde93b179e83b3b950d165c8fc7d646f80c82de7fe8",
+            "match": true
+          },
+          {
+            "path": "testB\\round_002\\preparation\\validation_summary.json",
+            "expected_sha256": "1337a7b0db393a4549a71f2dbba12be001afafe0f8242c9c0856c5336d0cc11d",
+            "actual_sha256": "1337a7b0db393a4549a71f2dbba12be001afafe0f8242c9c0856c5336d0cc11d",
+            "match": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "independent_full_parquet_scan_and_selected_rows",
+      "status": "pass",
+      "evidence": {
+        "batch_size": 16384,
+        "projection": [
+          "row_index",
+          "part_dt",
+          "rfid_id",
+          "rfid_time",
+          "key_valid",
+          "wkt_valid",
+          "n_coords",
+          "len_m",
+          "bbox_m",
+          "cen_lon",
+          "cen_lat"
+        ],
+        "rows_scanned": 4212389,
+        "selected_rows": 46705,
+        "per_month": [
+          {
+            "month": 1,
+            "source_rows_scanned": 592013,
+            "selected_in_source": 6258,
+            "selected_parquet_rows": 6258,
+            "row_index_sequential": true,
+            "source_selected_values_exact": true,
+            "selected_ordinals_exact": true,
+            "source_file_exact": true,
+            "source_file_values": {
+              "vpass_1월 데이터.csv": 6258
+            },
+            "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_1.parquet"
+          },
+          {
+            "month": 2,
+            "source_rows_scanned": 442715,
+            "selected_in_source": 5387,
+            "selected_parquet_rows": 5387,
+            "row_index_sequential": true,
+            "source_selected_values_exact": true,
+            "selected_ordinals_exact": true,
+            "source_file_exact": true,
+            "source_file_values": {
+              "vpass_2월 데이터.csv": 5387
+            },
+            "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_2.parquet"
+          },
+          {
+            "month": 3,
+            "source_rows_scanned": 624514,
+            "selected_in_source": 6625,
+            "selected_parquet_rows": 6625,
+            "row_index_sequential": true,
+            "source_selected_values_exact": true,
+            "selected_ordinals_exact": true,
+            "source_file_exact": true,
+            "source_file_values": {
+              "vpass_3월 데이터.csv": 6625
+            },
+            "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_3.parquet"
+          },
+          {
+            "month": 4,
+            "source_rows_scanned": 755491,
+            "selected_in_source": 7907,
+            "selected_parquet_rows": 7907,
+            "row_index_sequential": true,
+            "source_selected_values_exact": true,
+            "selected_ordinals_exact": true,
+            "source_file_exact": true,
+            "source_file_values": {
+              "vpass_4월 데이터.csv": 7907
+            },
+            "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_4.parquet"
+          },
+          {
+            "month": 5,
+            "source_rows_scanned": 888878,
+            "selected_in_source": 10099,
+            "selected_parquet_rows": 10099,
+            "row_index_sequential": true,
+            "source_selected_values_exact": true,
+            "selected_ordinals_exact": true,
+            "source_file_exact": true,
+            "source_file_values": {
+              "vpass_5월 데이터.csv": 10099
+            },
+            "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_5.parquet"
+          },
+          {
+            "month": 6,
+            "source_rows_scanned": 908778,
+            "selected_in_source": 10429,
+            "selected_parquet_rows": 10429,
+            "row_index_sequential": true,
+            "source_selected_values_exact": true,
+            "selected_ordinals_exact": true,
+            "source_file_exact": true,
+            "source_file_values": {
+              "vpass_6월 데이터.csv": 10429
+            },
+            "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_6.parquet"
+          }
+        ],
+        "row_index_errors": 0,
+        "source_selected_exact": true,
+        "selected_values_mismatch_count": 0,
+        "selected_missing_count": 0,
+        "selected_extra_count": 0,
+        "scorable_producer_total": 46705,
+        "scorable_contract_total": 46705,
+        "invalid_calendar_date_rows": 0,
+        "invalid_hour_rows": 0,
+        "key_valid_not_true_rows": 0,
+        "nonfinite_or_missing_numeric_cells": 0,
+        "summary_field_mismatch_count": 0,
+        "summary_mismatches": []
+      }
+    },
+    {
+      "id": "production_source_hash_and_runner_boundary_review",
+      "status": "pass",
+      "evidence": {
+        "source_code_hashes": {
+          "run008": {
+            "current_sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+            "expected_execution_sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+            "matches": true
+          },
+          "remeasure": {
+            "current_sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+            "expected_execution_sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+            "matches": true
+          },
+          "run005": {
+            "current_sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+            "expected_execution_sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+            "matches": true
+          },
+          "featAC": {
+            "current_sha256": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+            "expected_execution_sha256": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+            "matches": true
+          }
+        },
+        "runner_static_review": {
+          "runner_sha256": "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d",
+          "uses_explicit_source_hash_guard": true,
+          "shim_is_simple_namespace": true,
+          "AST_extracts_only_allowlisted_defs": true,
+          "build_gate_default_denies": true,
+          "test_fit_partition_fenced": true,
+          "load_inputs_manifest_unpack_fixed": true,
+          "scoring_order_includes_source_ordinal": true,
+          "A_source_order_selection": true,
+          "output_path_validation_present": true,
+          "main_entrypoint_guard": true
+        }
+      }
+    },
+    {
+      "id": "independent_synthetic_score_and_A_regression",
+      "status": "pass",
+      "evidence": {
+        "status": "pass",
+        "ram": {
+          "local_time": "2026-11-05T04:37:34.518577+09:00",
+          "available_mib": 4177.0,
+          "total_mib": 14140.9,
+          "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+          "platform": "Windows-11-10.0.26300-SP0"
+        },
+        "source_sha256": {
+          "run008": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+          "remeasure": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c"
+        },
+        "fixture_rows": 26,
+        "haversine_calls": 375,
+        "simple_namespace_haversine_is_bound_method": false,
+        "state_first_rows": [
+          "해상정지",
+          "이동",
+          "이동"
+        ],
+        "s_change_first_defined_row": 24,
+        "s_change_row24": 0.20473529888853115,
+        "independent_scalar_row24": {
+          "s_zone": 0.5367331739771644,
+          "s_change": 0.20473529888853115,
+          "s_gap": 0.06845159565536005,
+          "score": 0.2699733561736852
+        },
+        "production_ast_row24": {
+          "s_zone": 0.5367331739771644,
+          "s_change": 0.20473529888853115,
+          "s_gap": 0.06845159565536005,
+          "score": 0.2699733561736852
+        },
+        "floor_fixture_score": 1e-06,
+        "floor_fixture_preserved": true,
+        "actual_data_or_reference_loaded": false,
+        "started_local": "2026-11-05T04:37:34.518330+09:00"
+      }
+    },
+    {
+      "id": "production_scan_and_repair_exit_receipts",
+      "status": "pass",
+      "evidence": {
+        "manifest_execution": {
+          "clean_scan_attempt": "row_scan_attempt04",
+          "clean_scan_exit": 0,
+          "first_scan_exit": 1,
+          "first_failure": "ID CSV column mismatch before data access, preserved logs",
+          "invalidated_scratch_attempt": "attempt03 reused previous SQLite contents; superseded; logs preserved",
+          "syntax_final_exit": 0,
+          "synthetic_final_exit": 0,
+          "references_rebuilt": false,
+          "actual_scores_computed": false,
+          "stock_cli_called": false,
+          "csv_rehashed_or_reparsed": false
+        },
+        "actual_exit_code_files": {
+          "row_scan.exit_code.txt": "1",
+          "row_scan_attempt04.exit_code.txt": "0",
+          "syntax_final.exit_code.txt": "0",
+          "synthetic_checks_final.exit_code.txt": "0",
+          "syntax_repair.exit_code.txt": "0",
+          "synthetic_repair.exit_code.txt": "0",
+          "preflight_report_mojibake_legacy.md": {
+            "exists": true,
+            "sha256": "ad9466701dccde0d67288651b3103e986675e3f52e21acdefabe1ff08bfcfb5e"
+          },
+          "execution_manifest_mojibake_legacy.json": {
+            "exists": true,
+            "sha256": "b4857c22a9c38af0d946cb7c625b79ff93ce09f38626a05d636192aee056db03"
+          }
+        }
+      }
+    },
+    {
+      "id": "execution_manifest_latest_hash_map",
+      "status": "pass",
+      "evidence": {
+        "entry_count": 53,
+        "verified_match_count": 53,
+        "mismatch_count": 0,
+        "missing_count": 0,
+        "mismatches": [],
+        "missing": []
+      }
+    },
+    {
+      "id": "execution_manifest_secondary_artifacts_sha256_map",
+      "status": "fail",
+      "evidence": {
+        "interpretation": "present in the current manifest without an explicit historical/legacy label; therefore stale values are surfaced as a manifest integrity failure",
+        "verification": {
+          "entry_count": 44,
+          "verified_match_count": 40,
+          "mismatch_count": 4,
+          "missing_count": 0,
+          "mismatches": [
+            {
+              "path": "__pycache__/isolated_runner.cpython-313.pyc",
+              "expected_sha256": "e590b43f9e1d719f0557271a67af104ce71da2e454364cdafb5233a01f9df5e5",
+              "actual_sha256": "933c66d1fdc29b83fbce6a2a7999e63934249b6beb98b81dbd27b8b31b97a939"
+            },
+            {
+              "path": "isolated_runner.py",
+              "expected_sha256": "19cb07986dd94912bec3d026462ef9073eba368cdfbe9368ba5cef73169af573",
+              "actual_sha256": "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d"
+            },
+            {
+              "path": "preflight_report.md",
+              "expected_sha256": "ad9466701dccde0d67288651b3103e986675e3f52e21acdefabe1ff08bfcfb5e",
+              "actual_sha256": "8c69bb155702260d0f2b797bc51c621a242c5030e30392ae72dd321a5c8ca58d"
+            },
+            {
+              "path": "scan_result.json",
+              "expected_sha256": "307326e6fb125390e91d6fa464b4b14e9b582c89df00965967218838450c3cc3",
+              "actual_sha256": "f72f210de4f0535c0f17377343bfcdb43a6e0e498da2914dd24e719856c4bc4c"
+            }
+          ],
+          "missing": []
+        },
+        "notable_current_file_matches": {
+          "preflight_report_legacy_backup_sha256": "ad9466701dccde0d67288651b3103e986675e3f52e21acdefabe1ff08bfcfb5e",
+          "preflight_report_claimed_old_sha256": "ad9466701dccde0d67288651b3103e986675e3f52e21acdefabe1ff08bfcfb5e"
+        }
+      }
+    },
+    {
+      "id": "read_only_during_audit",
+      "status": "pass",
+      "evidence": {
+        "production_files_before_after": {
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\isolated_runner.py": {
+            "size_bytes": 29373,
+            "mtime_ns": 1793820024244012800,
+            "sha256": "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\preflight_report.md": {
+            "size_bytes": 11835,
+            "mtime_ns": 1793820293760745000,
+            "sha256": "8c69bb155702260d0f2b797bc51c621a242c5030e30392ae72dd321a5c8ca58d"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\execution_manifest.json": {
+            "size_bytes": 25133,
+            "mtime_ns": 1793820327729006700,
+            "sha256": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\scan_result.json": {
+            "size_bytes": 5065,
+            "mtime_ns": 1793820327704710700,
+            "sha256": "f72f210de4f0535c0f17377343bfcdb43a6e0e498da2914dd24e719856c4bc4c"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\target_row_summary.csv": {
+            "size_bytes": 25469,
+            "mtime_ns": 1793819187857106900,
+            "sha256": "5d90cdb5d107eced0a816674f0b7e9a18a967f64cda13860279faded87b4f583"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_01.parquet": {
+            "size_bytes": 359901,
+            "mtime_ns": 1793819185921641800,
+            "sha256": "9499b01d12bf408af02748a7cc8348dff3c572439bc29eca1232735d0a3a4dd4"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_02.parquet": {
+            "size_bytes": 290979,
+            "mtime_ns": 1793819186162034600,
+            "sha256": "eb33e2fba674803182845dff7419f62abe5e97b3e1b34c440ebeb11d5d11b10e"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_03.parquet": {
+            "size_bytes": 373962,
+            "mtime_ns": 1793819186509266500,
+            "sha256": "e7fcc2659e22280614b90e54f3be344bf982c22bb9e62bda5f5b8c320e5ddecb"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_04.parquet": {
+            "size_bytes": 454037,
+            "mtime_ns": 1793819186923602000,
+            "sha256": "601dd19f2e088d24f24921e360b93a77edf10cbbedbc1671006fb53b07cbcf12"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_05.parquet": {
+            "size_bytes": 557706,
+            "mtime_ns": 1793819187354770400,
+            "sha256": "62798147d55de451b9d2ee63ab2f9825b10ad8d5a291731f2874b6ceb41b1d31"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_06.parquet": {
+            "size_bytes": 583178,
+            "mtime_ns": 1793819187857106900,
+            "sha256": "fd036e93829e95112d78e78298d9cdf4300ecb66f0072313270bf4ed452b277b"
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\preparation\\manifest.json": {
+            "size_bytes": 24421,
+            "mtime_ns": 1793818538899993700,
+            "sha256": "3db3c841f02b9eea6c04978f030c84085a583b81dd4805e2cc5f80b19932af1f"
+          }
+        },
+        "source_parquet_stats_before_after": {
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_1.parquet": {
+            "size_bytes": 22102228,
+            "mtime_ns": 1793455808744372400
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_2.parquet": {
+            "size_bytes": 16393715,
+            "mtime_ns": 1793455876276994400
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_3.parquet": {
+            "size_bytes": 23195070,
+            "mtime_ns": 1793455948483100000
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_4.parquet": {
+            "size_bytes": 28452704,
+            "mtime_ns": 1793456050780258100
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_5.parquet": {
+            "size_bytes": 33418976,
+            "mtime_ns": 1793456180777086600
+          },
+          "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_6.parquet": {
+            "size_bytes": 34195805,
+            "mtime_ns": 1793456312387513800
+          }
+        },
+        "unchanged": true
+      }
+    },
+    {
+      "id": "actual_reference_score_and_operational_performance",
+      "status": "unknown",
+      "evidence": "No production reference rebuild or actual data scoring was run, by the active gate. Accident truth/normal basis, development use, thresholds, splits, model performance, and full production RAM peak remain unknown."
+    },
+    {
+      "id": "provider_internal_model_effort",
+      "status": "unknown",
+      "evidence": "Orca launch receipt records requested gpt-6-luna/xhigh; provider internal model and actual internal effort are not observable."
+    }
+  ],
+  "audit_process_exit_codes": {
+    "independent_validator": 0,
+    "independent_scorer_fixture": 0,
+    "aggregate_review": 1
+  },
+  "final_note": "The data selection and independent fixture checks pass. Overall audit is FAIL because the current execution manifest contains a secondary artifacts_sha256 map with four current-file hash mismatches, while its separate artifact_sha256 map verifies 53/53 entries; the ambiguous stale map requires owner correction."
+}

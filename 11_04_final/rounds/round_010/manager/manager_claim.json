@@ -1,0 +1,9 @@
+﻿{
+    "round":  "round_010",
+    "orca_session":  "codex_4a9e4942_60c6_472c_8d6c_9cfe5f78c72d",
+    "codex_session":  "01a1a80e-6fbb-7640-b3fe-a2eac2a7b59c",
+    "started_at_utc":  "2026-11-04T19:34:41Z",
+    "deadline_utc":  "2026-11-04T20:04:41Z",
+    "incoming_receipt":  "automation/receipts/round_009_launch.json",
+    "duplicate_experiment_detected":  false
+}

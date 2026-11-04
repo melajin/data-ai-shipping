@@ -58,6 +58,27 @@ def tree(root):
     while changed:
         new={pid for pid,parent in mapping.items() if parent in ids}; changed=not new.issubset(ids);ids|=new
     return sorted(ids & mapping.keys())
+
+def identity_from_handle(handle,pid):
+    wait_state=K.WaitForSingleObject(handle,0)
+    if wait_state==0xFFFFFFFF:return None
+    a,b,k,u=w.FILETIME(),w.FILETIME(),w.FILETIME(),w.FILETIME()
+    if not K.GetProcessTimes(handle,c.byref(a),c.byref(b),c.byref(k),c.byref(u)):return None
+    return {'pid':pid,'creation_ticks':(a.dwHighDateTime<<32)+a.dwLowDateTime,
+            'running':wait_state==258}
+
+def terminate_popen_handle(proc,deadline):
+    requested=False; error=None
+    try:
+        if proc.poll() is None:
+            proc.terminate();requested=True
+    except OSError as exc:error=repr(exc)
+    remaining=deadline-time.monotonic()
+    if proc.poll() is None and remaining>0:
+        try:proc.wait(timeout=remaining)
+        except subprocess.TimeoutExpired:error=error or 'Popen handle wait exceeded cleanup deadline'
+    return {'terminate_requested':requested,'root_exit_confirmed':proc.poll() is not None,'error':error}
+
 def counters(pid):
     h=K.OpenProcess(0x0400|0x0010|0x00100000,False,pid)
     if not h: return None
@@ -65,13 +86,16 @@ def counters(pid):
         wait_state=K.WaitForSingleObject(h,0)
         if wait_state==0xFFFFFFFF: raise c.WinError(c.get_last_error())
         running=wait_state==258
-        m=Counters();m.cb=c.sizeof(m)
-        if not P.GetProcessMemoryInfo(h,c.byref(m),c.sizeof(m)):return None
         a,b,k,u=w.FILETIME(),w.FILETIME(),w.FILETIME(),w.FILETIME()
         cpu=None
-        if K.GetProcessTimes(h,c.byref(a),c.byref(b),c.byref(k),c.byref(u)):
-            cpu=((k.dwHighDateTime<<32)+k.dwLowDateTime+(u.dwHighDateTime<<32)+u.dwLowDateTime)/1e7
-        return {'pid':pid,'creation_ticks':(a.dwHighDateTime<<32)+a.dwLowDateTime,'running':running,'working_set_bytes':m.ws,'peak_working_set_bytes':m.peak_ws,'private_bytes':m.private,'cpu_seconds':cpu}
+        if not K.GetProcessTimes(h,c.byref(a),c.byref(b),c.byref(k),c.byref(u)):return None
+        cpu=((k.dwHighDateTime<<32)+k.dwLowDateTime+(u.dwHighDateTime<<32)+u.dwLowDateTime)/1e7
+        m=Counters();m.cb=c.sizeof(m)
+        memory_ok=bool(P.GetProcessMemoryInfo(h,c.byref(m),c.sizeof(m)))
+        return {'pid':pid,'creation_ticks':(a.dwHighDateTime<<32)+a.dwLowDateTime,'running':running,
+                'working_set_bytes':m.ws if memory_ok else None,
+                'peak_working_set_bytes':m.peak_ws if memory_ok else None,
+                'private_bytes':m.private if memory_ok else None,'memory_sampled':memory_ok,'cpu_seconds':cpu}
     finally:K.CloseHandle(h)
 
 def owned_alive(identities):
@@ -87,7 +111,7 @@ def main():
     if not script.is_relative_to(ROUND) or not script.is_file():raise ValueError('script outside this round')
     expected_script=default_script.resolve()
     if script != expected_script:raise ValueError('script does not match the fixed script for this run kind')
-    limit=300 if a.kind=='synthetic_pair' else 30
+    limit=180 if a.kind=='synthetic_pair' else 30
     cleanup_seconds=10 if a.kind=='synthetic_pair' else 2
     compute_limit=limit-cleanup_seconds
     approved=json.loads((ROUND/'review'/'approved_sources.json').read_text(encoding='utf-8-sig'))
@@ -169,6 +193,7 @@ def main():
             receipt.update(status='not_launched_mock_attempt_already_claimed',finished_utc=now(),mock_attempt_claim=str(claim_path));save(receipt_path,receipt);print(json.dumps(receipt));return 5
         receipt['mock_attempt_claim']=str(claim_path);save(receipt_path,receipt)
     proc=None;t0=time.monotonic();cpu_max={};peak_ws={};peak_tree=0;min_ram=free;observed=set();identities={}
+    uninspectable_pids=set();resource_sampling_complete=True
     try:
         with (run/'stdout.txt').open('wb') as out,(run/'stderr.txt').open('wb') as err,(run/'resource_curve.csv').open('w',newline='',encoding='utf-8') as curve:
             writer=csv.DictWriter(curve,fieldnames=['elapsed_seconds','available_ram_gib','tree_working_set_bytes','processes']);writer.writeheader();curve.flush()
@@ -176,17 +201,51 @@ def main():
             proc=subprocess.Popen(cmd,cwd=ROOT,env=env,stdout=out,stderr=err,creationflags=subprocess.CREATE_NO_WINDOW)
             root_stats=counters(proc.pid)
             if root_stats is None:
-                raise RuntimeError('could not capture the just-launched root PID creation identity')
+                try: root_identity=identity_from_handle(w.HANDLE(int(proc._handle)),proc.pid)
+                except (AttributeError,TypeError,ValueError,OSError): root_identity=None
+                if root_identity is None:
+                    receipt.update(pid=proc.pid,launched=True,root_identity_capture_failed=True,
+                                   root_identity_capture_method='Popen process handle fallback failed')
+                    deadline=min(t0+limit,time.monotonic()+cleanup_seconds)
+                    receipt['popen_handle_fallback']=terminate_popen_handle(proc,deadline)
+                    receipt.update(status='root_identity_capture_failed',
+                                   owned_tree_status='unverified_after_root_identity_failure',
+                                   owned_tree_remaining={'root_exit_confirmed':receipt['popen_handle_fallback']['root_exit_confirmed'],
+                                                         'unverified_descendants':'unknown'},
+                                   finished_utc=now(),elapsed_seconds=time.monotonic()-t0)
+                    save(receipt_path,receipt);print(json.dumps(receipt,ensure_ascii=False));return 7
+                root_stats={**root_identity,'working_set_bytes':None,'peak_working_set_bytes':None,
+                            'private_bytes':None,'memory_sampled':False,'cpu_seconds':None}
+                receipt['root_resource_counters_unavailable']=True
+                resource_sampling_complete=False
             identities[proc.pid]=root_stats['creation_ticks'];observed.add(proc.pid)
-            cpu_max[str(proc.pid)]=root_stats['cpu_seconds'] or 0;peak_ws[str(proc.pid)]=root_stats['peak_working_set_bytes']
+            cpu_max[str(proc.pid)]=root_stats['cpu_seconds'] or 0
+            if root_stats['peak_working_set_bytes'] is not None:peak_ws[str(proc.pid)]=root_stats['peak_working_set_bytes']
             receipt.update(pid=proc.pid,launched=True,status='running');save(receipt_path,receipt)
             while True:
                 elapsed=time.monotonic()-t0;free=ram();min_ram=min(min_ram,free)
-                ids=tree(proc.pid);observed.update(ids);stats=[s for pid in ids if (s:=counters(pid))]
-                total=sum(s['working_set_bytes'] for s in stats);peak_tree=max(peak_tree,total)
+                ids=tree(proc.pid);observed.update(ids);stats=[]
+                for pid in ids:
+                    sample=counters(pid)
+                    if sample is None:
+                        if pid==proc.pid and pid in identities:
+                            resource_sampling_complete=False
+                            stats.append({'pid':pid,'creation_ticks':identities[pid],'running':proc.poll() is None,
+                                          'working_set_bytes':None,'peak_working_set_bytes':None,
+                                          'private_bytes':None,'memory_sampled':False,'cpu_seconds':None})
+                            continue
+                        uninspectable_pids.add(pid)
+                        resource_sampling_complete=False
+                        continue
+                    stats.append(sample)
+                    if not sample['memory_sampled']:resource_sampling_complete=False
+                if uninspectable_pids:receipt['uninspectable_tree_pids']=sorted(uninspectable_pids)
+                total=sum(s['working_set_bytes'] or 0 for s in stats)
+                if stats and all(s['memory_sampled'] for s in stats):peak_tree=max(peak_tree,total)
                 for s in stats:
                     identities[s['pid']]=s['creation_ticks']
-                    pid=str(s['pid']);cpu_max[pid]=max(cpu_max.get(pid,0),s['cpu_seconds'] or 0);peak_ws[pid]=max(peak_ws.get(pid,0),s['peak_working_set_bytes'])
+                    pid=str(s['pid']);cpu_max[pid]=max(cpu_max.get(pid,0),s['cpu_seconds'] or 0)
+                    if s['peak_working_set_bytes'] is not None:peak_ws[pid]=max(peak_ws.get(pid,0),s['peak_working_set_bytes'])
                 writer.writerow({'elapsed_seconds':elapsed,'available_ram_gib':free,'tree_working_set_bytes':total,'processes':json.dumps(stats,separators=(',',':'))});curve.flush()
                 rc=proc.poll()
                 descendants=[pid for pid in owned_alive(identities) if pid!=proc.pid]
@@ -208,7 +267,7 @@ def main():
                         time.sleep(min(.1,max(0,cleanup_deadline-time.monotonic())))
                     proc.poll()
                     receipt['termination_checked_utc']=now()
-                    receipt['termination_confirmed']=not owned_alive(identities)
+                    receipt['termination_confirmed']=not owned_alive(identities) and not uninspectable_pids
                     break
                 time.sleep(min(.25,max(.01,compute_limit-elapsed)))
             receipt['exit_code']=proc.returncode
@@ -219,14 +278,22 @@ def main():
         source_snapshot_unchanged=sha(snapshot)==receipt['source_sha256'] and all(
             sha(source/Path(name).name)==expected for name,expected in adapter_expected.items())
         completed=bool(proc.returncode==0 and not receipt['stop_reason'] and elapsed<=limit and not remaining
-                      and source_unchanged and adapter_source_unchanged and source_snapshot_unchanged)
+                      and not uninspectable_pids and source_unchanged and adapter_source_unchanged and source_snapshot_unchanged)
         receipt.update(status='completed' if completed else 'failed_or_stopped',elapsed_seconds=elapsed,finished_utc=now(),postexit_within_timeout=elapsed<=limit,minimum_observed_available_ram_gib=min_ram,peak_sampled_tree_working_set_bytes=peak_tree,process_peak_working_set_bytes=peak_ws,sampled_cpu_seconds_by_pid=cpu_max,observed_owned_pids=sorted(observed),owned_process_creation_ticks=identities,owned_tree_remaining=remaining,source_unchanged=source_unchanged,adapter_source_unchanged=adapter_source_unchanged,source_snapshot_unchanged=source_snapshot_unchanged)
+        receipt['uninspectable_tree_pids']=sorted(uninspectable_pids)
+        receipt['resource_sampling_complete']=resource_sampling_complete
+        receipt['owned_tree_status']='unverified_uninspectable_pids' if uninspectable_pids else ('clear' if not remaining else 'verified_owned_processes_remaining')
         save(receipt_path,receipt);print(json.dumps(receipt,ensure_ascii=False));return 0 if receipt['status']=='completed' else 4
     except BaseException as e:
         if proc:
             receipt['exception_cleanup_started_utc']=now()
             cleanup_deadline=min(t0+limit,time.monotonic()+cleanup_seconds)
-            for target in owned_alive(identities):
+            alive_owned=owned_alive(identities)
+            if proc.poll() is None and proc.pid not in alive_owned:
+                receipt['root_identity_capture_failed']=True
+                receipt['popen_handle_fallback']=terminate_popen_handle(proc,cleanup_deadline)
+            for target in alive_owned:
+                if target==proc.pid and receipt.get('popen_handle_fallback'):continue
                 remaining_seconds=cleanup_deadline-time.monotonic()
                 if remaining_seconds<=0: break
                 try:
@@ -237,7 +304,22 @@ def main():
             while owned_alive(identities) and time.monotonic()<cleanup_deadline:
                 time.sleep(min(.1,max(0,cleanup_deadline-time.monotonic())))
             proc.poll()
-            receipt['owned_tree_remaining']=owned_alive(identities)
+            verified_remaining=owned_alive(identities)
+            receipt['uninspectable_tree_pids']=sorted(uninspectable_pids)
+            if receipt.get('root_identity_capture_failed'):
+                receipt['owned_tree_status']='unverified_after_root_identity_failure'
+                receipt['owned_tree_remaining']={'verified_owned_pids':verified_remaining,
+                                                 'root_exit_confirmed':proc.poll() is not None,
+                                                 'unverified_descendants':'unknown'}
+            elif uninspectable_pids:
+                receipt['owned_tree_status']='unverified_uninspectable_pids'
+                receipt['owned_tree_remaining']={'verified_owned_pids':verified_remaining,
+                                                 'uninspectable_pids':sorted(uninspectable_pids)}
+            else:
+                receipt['owned_tree_status']='clear' if not verified_remaining else 'verified_owned_processes_remaining'
+                receipt['owned_tree_remaining']=verified_remaining
+            receipt['termination_confirmed']=bool(
+                not verified_remaining and not uninspectable_pids and not receipt.get('root_identity_capture_failed'))
             receipt['termination_checked_utc']=now()
         receipt.update(status='wrapper_error',error=repr(e),finished_utc=now(),elapsed_seconds=time.monotonic()-t0,exit_code=proc.returncode if proc else None);save(receipt_path,receipt);raise
 

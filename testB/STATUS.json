@@ -11,7 +11,7 @@
     "runtime_verification_note":  "Actual supervisor provider model/effort receipt not yet available; request is not execution proof.",
     "run_id":  "run_a0639d5ac36a",
     "previous_run_id":  "run_131763108c81",
-    "state":  "running_round002_local_runner_fixes_before_independent_audit",
+    "state":  "running_round002_manifest_delta_independent_audit",
     "workers":  [
                     {
                         "task":  "P",
@@ -38,13 +38,26 @@
                         "task":  "E",
                         "task_id":  "task_7cded4a7ae2f",
                         "dispatch_id":  "ctx_481024ae796f",
-                        "state":  "reported_scan_pending_runner_and_utf8_local_fixes",
+                        "state":  "manifest_only_correction_reported_pending_delta_audit",
                         "orca_launch_model":  "gpt-6-luna",
                         "orca_launch_effort":  "xhigh",
                         "provider_internal_runtime":  "unknown",
                         "owned_path":  "testB/round_002/execution",
-                        "latest_followup_dispatch_id":  "ctx_2cc8c85750d3",
-                        "latest_followup_task_id":  "task_0c15c0cae6ff"
+                        "latest_followup_dispatch_id":  "ctx_a048168a9f6c",
+                        "latest_followup_task_id":  "task_8d578b7ae26f",
+                        "release_state":  "released_closed_agent_terminal"
+                    },
+                    {
+                        "task":  "V",
+                        "task_id":  "task_8b98c91a7e20",
+                        "dispatch_id":  "ctx_f5235ff89d75",
+                        "state":  "independent_manifest_delta_audit_requested_previous_fail_preserved",
+                        "orca_launch_model":  "gpt-6-luna",
+                        "orca_launch_effort":  "xhigh",
+                        "provider_internal_runtime":  "unknown",
+                        "owned_path":  "testB/round_002/audit/preparation_001",
+                        "latest_followup_dispatch_id":  "ctx_069ff0f3f3bd",
+                        "latest_followup_task_id":  "task_42afebec8c97"
                     }
                 ],
     "round001_worker_history":  [

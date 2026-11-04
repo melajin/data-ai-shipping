@@ -67,6 +67,8 @@
 - 첫 scan exit 1은 명부 CSV 실제 열 `raw_value` 대신 `rfid_id`를 찾은 header lookup 오류이며 parquet 접근 전에 멈췄다. 코드 수정과 후속 run 로그를 보존했다.
 - 이전 attempt03은 scratch SQLite를 재사용하여 과거 run key가 중복처럼 계산될 수 있어 폐기했다. unique scratch DB를 쓰는 attempt04 결과만 채택한다(실제 중복 0).
 - 최초 synthetic fixture 오류 로그도 보존하며, 동시간 상충 fixture를 정정 후 검사했다.
+- 이번 수정 후 `py_compile` exit 0 및 synthetic regression exit 0이며, stdout/stderr/exit를 UTF-8 `logs/syntax_repair.*` 및 `logs/synthetic_repair.*`로 보존했다. 합성 두 행 경로에서 `haversine_m` 호출은 3회 이상이었다.
+- 이 보고서는 direct UTF-8 patch로 다시 썼다. legacy 손상본은 별도 보존했다. 새 report/JSON의 replacement character·치환 흔적을 검사하고 JSON parse를 재확인한다.
 - CSV 전체 재해시/파싱, 실제 reference fit/score, stock CLI, cache 생성, 모델·임계값·B/C·사고 판정·제출은 실행하지 않았다.
 
 ## 산출물 무결성

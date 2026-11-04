@@ -15,3 +15,9 @@ P에게 msg_7cf076862383으로 R 결과경로와 보존된 참조 artifact/원�
 P worker_done msg_ef143e74f235 및 후속확인 msg_853ec34e2f25를 읽었다. 감독은 preparation_report.md와 manifest.json을 읽었다. 명부100/순서/hash·schema/footer·월별parse계보를 채택한다. 선박별행/결측/중복·reference membership은 미확인이며 고정참조 전체bundle의 존재도 미확인이다. stockCLI 실행은 계속 금지다. P 예상2GiB는 원본builder의 유지캐시/반복load와 임시복사까지 보증한 peak가 아니다.
 
 contract/EXPLORATORY_EXECUTION_CONTRACT.md를 실행 전에 고정했다. source 월/file/row_index, 시간정렬과 원입력A선정 분리, 중복충돌 공란, floor한계·timezone미확인을 명시한다. E 실제Luna/xhigh ctx_481024ae796f에 batch16384·필수열투영/100척선별 실제행조사 및 격리runner구현·소규모경계검사만 위임했다. 전체참조/점수실행은 코드와 단계별RAM계획 검토 전 보류다. E 생성직전03:58:19 KST 가용4,603,300KiB, 예상조사증분512MiB+세션여유512MiB(추정)이며 큰작업은 병행하지 않는다.
+
+## 수정 보고 후 독립 준비검산 시작
+
+msg_ca0cc706b938 / E followup ctx_2cc8c85750d3의 수정보고와 최신UTF8보고서를 감독이 읽었다. shim/명부unpack/해시guard/UTF8 및 다행합성 경로 수정은 생산자보고로 확인했으며 독립검산은 아직이다. selected parquet 파일명6/6는 원문과일치·수정없음을 보고했다. 실제선별46,705행·100척/최소1행~최대3,413행이고 유효/finite 전수와중복0은 별도V가 검증한다.
+
+04:26:11 KST CIM 가용4,714,876KiB(약4.50GiB). 원본train loader의 월별object frame list/concat/후속numeric변환과 복수builder/전역배열cache 중첩으로 peak상한이 아직미확정이다. RAM이 이미 부족하다고 단정하지 않으며 안전예산미확정으로 큰참조는 계속보류한다. 그동안 V 실제Luna/xhigh ctx_f5235ff89d75에 <=512MiB 경량독립검산을 위임했다. 생산자self-check 재실행만으로 검산하지 않고 직접작성 fixture/원행선별전수대조를 요구했다. 이후 원본알고리즘을 유지하는 numeric 청크loader/순차참조단계로 예산을 명확히 하는 방안을 검토한다. 원자료/기존cache 생성·수정과Test적합은 계속금지다.

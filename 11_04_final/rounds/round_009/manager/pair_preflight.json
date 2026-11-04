@@ -1,0 +1,13 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T19:29:19.5728968Z",
+    "available_ram_gib":  4.430755615234375,
+    "other_python_processes":  [
+
+                               ],
+    "estimated_peak_gib":  "1-2 unmeasured, conservative against round007780906496byte sampled peak",
+    "source_review":  "approved 22-hash manifest",
+    "mock":  "mock_01 passed",
+    "pair_budget_seconds":  180,
+    "start_gate_gib":  3,
+    "runtime_stop_gib":  1.5
+}

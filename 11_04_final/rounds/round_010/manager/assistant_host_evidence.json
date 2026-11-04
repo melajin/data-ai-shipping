@@ -1,0 +1,94 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T19:37:22.6575892Z",
+    "host_total_slots":  4,
+    "active_manager":  1,
+    "requested_assistants":  2,
+    "records":  [
+                    {
+                        "role":  "author",
+                        "requested_model":  "gpt-6-luna",
+                        "requested_effort":  "xhigh",
+                        "fork_turns":  "none",
+                        "source_session_log":  "C:/Users/dlehs/.codex/sessions/2026/11/05/rollout-2026-11-05T04-35-36-01a1a80f-4a5b-73d1-b005-07365afe6fac.jsonl",
+                        "host_turn_context":  {
+                                                  "timestamp":  "2026-11-04T19:35:37.924Z",
+                                                  "ordinal":  9,
+                                                  "type":  "turn_context",
+                                                  "payload":  {
+                                                                  "turn_id":  "01a1a80f-4b67-79a3-9242-37c31fb622eb",
+                                                                  "root_turn_id":  "01a1a80e-71bd-7d43-a558-bf27a38c931d",
+                                                                  "disabled_plugin_ids":  [
+
+                                                                                          ],
+                                                                  "cwd":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+                                                                  "approval_policy":  "never",
+                                                                  "approvals_reviewer":  "user",
+                                                                  "sandbox_policy":  {
+                                                                                         "type":  "danger-full-access"
+                                                                                     },
+                                                                  "permission_profile":  {
+                                                                                             "type":  "disabled"
+                                                                                         },
+                                                                  "model":  "gpt-6-luna",
+                                                                  "comp_hash":  "3000",
+                                                                  "collaboration_mode":  {
+                                                                                             "mode":  "default",
+                                                                                             "settings":  {
+                                                                                                              "model":  "gpt-6-luna",
+                                                                                                              "reasoning_effort":  "xhigh",
+                                                                                                              "developer_instructions":  null
+                                                                                                          }
+                                                                                         },
+                                                                  "multi_agent_version":  "v2",
+                                                                  "realtime_active":  false,
+                                                                  "effort":  "xhigh",
+                                                                  "summary":  "none"
+                                                              }
+                                              },
+                        "note":  "Host reported settings, not internal attestation"
+                    },
+                    {
+                        "role":  "reviewer",
+                        "requested_model":  "gpt-6-luna",
+                        "requested_effort":  "xhigh",
+                        "fork_turns":  "none",
+                        "source_session_log":  "C:/Users/dlehs/.codex/sessions/2026/11/05/rollout-2026-11-05T04-35-48-01a1a80f-7758-71d1-925c-418e704bc8a6.jsonl",
+                        "host_turn_context":  {
+                                                  "timestamp":  "2026-11-04T19:35:49.407Z",
+                                                  "ordinal":  9,
+                                                  "type":  "turn_context",
+                                                  "payload":  {
+                                                                  "turn_id":  "01a1a80f-785c-7732-92d0-a3c7f3b23e10",
+                                                                  "root_turn_id":  "01a1a80e-71bd-7d43-a558-bf27a38c931d",
+                                                                  "disabled_plugin_ids":  [
+
+                                                                                          ],
+                                                                  "cwd":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+                                                                  "approval_policy":  "never",
+                                                                  "approvals_reviewer":  "user",
+                                                                  "sandbox_policy":  {
+                                                                                         "type":  "danger-full-access"
+                                                                                     },
+                                                                  "permission_profile":  {
+                                                                                             "type":  "disabled"
+                                                                                         },
+                                                                  "model":  "gpt-6-luna",
+                                                                  "comp_hash":  "3000",
+                                                                  "collaboration_mode":  {
+                                                                                             "mode":  "default",
+                                                                                             "settings":  {
+                                                                                                              "model":  "gpt-6-luna",
+                                                                                                              "reasoning_effort":  "xhigh",
+                                                                                                              "developer_instructions":  null
+                                                                                                          }
+                                                                                         },
+                                                                  "multi_agent_version":  "v2",
+                                                                  "realtime_active":  false,
+                                                                  "effort":  "xhigh",
+                                                                  "summary":  "none"
+                                                              }
+                                              },
+                        "note":  "Host reported settings, not internal attestation"
+                    }
+                ]
+}

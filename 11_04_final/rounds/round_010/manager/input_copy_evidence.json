@@ -1,0 +1,24 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T19:38:28.8717533Z",
+    "copy_source":  "rounds/round_008/artifacts/context_export_attempt_001",
+    "files":  [
+                  {
+                      "path":  "rounds/round_010/artifacts/context_export_attempt_001/fold0_seed42_context.npz",
+                      "bytes":  1916394,
+                      "sha256":  "9c6142974a2eb09baa8d4da3eebfde5d71fca40dd2fafbfe1bf21e22a08ea5c5"
+                  },
+                  {
+                      "path":  "rounds/round_010/artifacts/context_export_attempt_001/query_freeze.json",
+                      "bytes":  748,
+                      "sha256":  "6b5c5c7e3e13ad105e641bf8a442af0ae7d5b68ae81be865fd1fcfd99acb23ef"
+                  }
+              ],
+    "arrays_opened_by_manager":  false,
+    "query_metadata_checked":  true,
+    "ids":  [
+                "36001915",
+                "31703435"
+            ],
+    "reference_path_verified_in_source":  "rounds/round_008/code/replay_inner_pilot.py",
+    "note":  "P definition matched incoming path; no historical reference data read at this point"
+}

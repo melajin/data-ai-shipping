@@ -1,0 +1,2223 @@
+{
+  "status": "scan_complete",
+  "ram_start": {
+    "phase": "immediately_before_independent_scan",
+    "local_time": "2026-11-05T04:37:48.117349+09:00",
+    "available_mib": 4149.3,
+    "total_mib": 14140.9,
+    "process_count": 337,
+    "python_count": 1,
+    "top_relevant_processes": [
+      {
+        "name": "Orca.exe",
+        "pid": 19824,
+        "rss_mib": 575.5
+      },
+      {
+        "name": "Orca.exe",
+        "pid": 17216,
+        "rss_mib": 392.1
+      },
+      {
+        "name": "Orca.exe",
+        "pid": 18136,
+        "rss_mib": 307.8
+      },
+      {
+        "name": "codex.exe",
+        "pid": 15688,
+        "rss_mib": 217.6
+      },
+      {
+        "name": "codex.exe",
+        "pid": 23860,
+        "rss_mib": 217.3
+      },
+      {
+        "name": "codex.exe",
+        "pid": 5592,
+        "rss_mib": 215.1
+      },
+      {
+        "name": "codex.exe",
+        "pid": 15028,
+        "rss_mib": 193.1
+      },
+      {
+        "name": "codex.exe",
+        "pid": 28480,
+        "rss_mib": 176.4
+      },
+      {
+        "name": "Orca.exe",
+        "pid": 27864,
+        "rss_mib": 103.1
+      },
+      {
+        "name": "Orca.exe",
+        "pid": 22476,
+        "rss_mib": 93.1
+      },
+      {
+        "name": "Orca.exe",
+        "pid": 1528,
+        "rss_mib": 92.0
+      },
+      {
+        "name": "Orca.exe",
+        "pid": 27244,
+        "rss_mib": 80.3
+      }
+    ]
+  },
+  "ram_expected_peak_increment_mib": 256,
+  "ram_peak_basis": "conservative bound: bounded 16,384-row projected batches plus at most 10,429 selected-row map entries for one month; session reserve 512MiB retained; no other worker launched by this auditor",
+  "ram_measured_process_rss_start_mib": 54.6,
+  "ram_peak_rss_sampled_mib": 189.4,
+  "ram_peak_rss_sampled_delta_mib": 134.8,
+  "ram_peak_sampling": "sampled once per processed source batch, may miss within-batch transient peak",
+  "requested_model": "gpt-6-luna",
+  "requested_effort": "xhigh",
+  "provider_internal_model_effort": "unknown",
+  "ids": {
+    "count": 100,
+    "unique": 100,
+    "sha256": "d7c5affc53473cc45a3372c9bc7b82eb0466cdb99a77e2f4996b6cc8325d3ec4",
+    "ordered_match_prior_direct_rows": true,
+    "prior_direct_rows_matched_count": 100,
+    "direct_zip_member_sha256": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+    "intake_copy_sha256": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+    "workbook_metadata": {
+      "sheetnames": [
+        "테스트A",
+        "테스트B"
+      ],
+      "max_row": 101,
+      "max_column": 9,
+      "header": "rfid_id"
+    },
+    "zip_member": "테스트셋 및 결과제출 샘플/제출샘플.xlsx",
+    "archive_read": "selected member only; no full archive hash/extraction"
+  },
+  "full_source_scan": {
+    "batch_size": 16384,
+    "projection": [
+      "row_index",
+      "part_dt",
+      "rfid_id",
+      "rfid_time",
+      "key_valid",
+      "wkt_valid",
+      "n_coords",
+      "len_m",
+      "bbox_m",
+      "cen_lon",
+      "cen_lat"
+    ],
+    "rows_scanned": 4212389,
+    "selected_rows": 46705,
+    "per_month": [
+      {
+        "month": 1,
+        "source_rows_scanned": 592013,
+        "selected_in_source": 6258,
+        "selected_parquet_rows": 6258,
+        "row_index_sequential": true,
+        "source_selected_values_exact": true,
+        "selected_ordinals_exact": true,
+        "source_file_exact": true,
+        "source_file_values": {
+          "vpass_1월 데이터.csv": 6258
+        },
+        "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_1.parquet"
+      },
+      {
+        "month": 2,
+        "source_rows_scanned": 442715,
+        "selected_in_source": 5387,
+        "selected_parquet_rows": 5387,
+        "row_index_sequential": true,
+        "source_selected_values_exact": true,
+        "selected_ordinals_exact": true,
+        "source_file_exact": true,
+        "source_file_values": {
+          "vpass_2월 데이터.csv": 5387
+        },
+        "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_2.parquet"
+      },
+      {
+        "month": 3,
+        "source_rows_scanned": 624514,
+        "selected_in_source": 6625,
+        "selected_parquet_rows": 6625,
+        "row_index_sequential": true,
+        "source_selected_values_exact": true,
+        "selected_ordinals_exact": true,
+        "source_file_exact": true,
+        "source_file_values": {
+          "vpass_3월 데이터.csv": 6625
+        },
+        "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_3.parquet"
+      },
+      {
+        "month": 4,
+        "source_rows_scanned": 755491,
+        "selected_in_source": 7907,
+        "selected_parquet_rows": 7907,
+        "row_index_sequential": true,
+        "source_selected_values_exact": true,
+        "selected_ordinals_exact": true,
+        "source_file_exact": true,
+        "source_file_values": {
+          "vpass_4월 데이터.csv": 7907
+        },
+        "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_4.parquet"
+      },
+      {
+        "month": 5,
+        "source_rows_scanned": 888878,
+        "selected_in_source": 10099,
+        "selected_parquet_rows": 10099,
+        "row_index_sequential": true,
+        "source_selected_values_exact": true,
+        "selected_ordinals_exact": true,
+        "source_file_exact": true,
+        "source_file_values": {
+          "vpass_5월 데이터.csv": 10099
+        },
+        "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_5.parquet"
+      },
+      {
+        "month": 6,
+        "source_rows_scanned": 908778,
+        "selected_in_source": 10429,
+        "selected_parquet_rows": 10429,
+        "row_index_sequential": true,
+        "source_selected_values_exact": true,
+        "selected_ordinals_exact": true,
+        "source_file_exact": true,
+        "source_file_values": {
+          "vpass_6월 데이터.csv": 10429
+        },
+        "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_6.parquet"
+      }
+    ],
+    "row_index_errors": 0,
+    "source_selected_exact": true,
+    "selected_values_mismatch_count": 0,
+    "selected_missing_count": 0,
+    "selected_extra_count": 0,
+    "scorable_producer_total": 46705,
+    "scorable_contract_total": 46705,
+    "invalid_calendar_date_rows": 0,
+    "invalid_hour_rows": 0,
+    "key_valid_not_true_rows": 0,
+    "nonfinite_or_missing_numeric_cells": 0,
+    "summary_field_mismatch_count": 0,
+    "summary_mismatches": []
+  },
+  "summary_rows": [
+    {
+      "rfid_id": "34400012",
+      "raw_rows": 915,
+      "valid_wkt_rows": 915,
+      "production_scorable": 915,
+      "contract_scorable": 915,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 106,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 205,
+        "6": 604
+      },
+      "min_ordinal": 116938,
+      "max_ordinal": 4211437
+    },
+    {
+      "rfid_id": "36201616",
+      "raw_rows": 601,
+      "valid_wkt_rows": 601,
+      "production_scorable": 601,
+      "contract_scorable": 601,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 81,
+        "2": 5,
+        "3": 75,
+        "4": 87,
+        "5": 229,
+        "6": 124
+      },
+      "min_ordinal": 52836,
+      "max_ordinal": 4211660
+    },
+    {
+      "rfid_id": "36005234",
+      "raw_rows": 5,
+      "valid_wkt_rows": 5,
+      "production_scorable": 5,
+      "contract_scorable": 5,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 4,
+        "5": 1,
+        "6": 0
+      },
+      "min_ordinal": 1825878,
+      "max_ordinal": 3032486
+    },
+    {
+      "rfid_id": "36115656",
+      "raw_rows": 439,
+      "valid_wkt_rows": 439,
+      "production_scorable": 439,
+      "contract_scorable": 439,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 55,
+        "2": 147,
+        "3": 10,
+        "4": 0,
+        "5": 17,
+        "6": 210
+      },
+      "min_ordinal": 4950,
+      "max_ordinal": 3901694
+    },
+    {
+      "rfid_id": "32200379",
+      "raw_rows": 185,
+      "valid_wkt_rows": 185,
+      "production_scorable": 185,
+      "contract_scorable": 185,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 2,
+        "2": 45,
+        "3": 138,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 12683,
+      "max_ordinal": 1525222
+    },
+    {
+      "rfid_id": "36310482",
+      "raw_rows": 718,
+      "valid_wkt_rows": 718,
+      "production_scorable": 718,
+      "contract_scorable": 718,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 67,
+        "2": 246,
+        "3": 87,
+        "4": 61,
+        "5": 87,
+        "6": 170
+      },
+      "min_ordinal": 930,
+      "max_ordinal": 3944844
+    },
+    {
+      "rfid_id": "31003008",
+      "raw_rows": 21,
+      "valid_wkt_rows": 21,
+      "production_scorable": 21,
+      "contract_scorable": 21,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 16,
+        "2": 1,
+        "3": 2,
+        "4": 0,
+        "5": 0,
+        "6": 2
+      },
+      "min_ordinal": 275029,
+      "max_ordinal": 4204952
+    },
+    {
+      "rfid_id": "36010195",
+      "raw_rows": 1725,
+      "valid_wkt_rows": 1725,
+      "production_scorable": 1725,
+      "contract_scorable": 1725,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 372,
+        "2": 284,
+        "3": 259,
+        "4": 208,
+        "5": 82,
+        "6": 520
+      },
+      "min_ordinal": 689,
+      "max_ordinal": 4195103
+    },
+    {
+      "rfid_id": "31000380",
+      "raw_rows": 44,
+      "valid_wkt_rows": 44,
+      "production_scorable": 44,
+      "contract_scorable": 44,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 43,
+        "6": 1
+      },
+      "min_ordinal": 2440058,
+      "max_ordinal": 4003395
+    },
+    {
+      "rfid_id": "36002764",
+      "raw_rows": 3413,
+      "valid_wkt_rows": 3413,
+      "production_scorable": 3413,
+      "contract_scorable": 3413,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 573,
+        "2": 554,
+        "3": 538,
+        "4": 428,
+        "5": 664,
+        "6": 656
+      },
+      "min_ordinal": 1086,
+      "max_ordinal": 4212180
+    },
+    {
+      "rfid_id": "34400272",
+      "raw_rows": 3175,
+      "valid_wkt_rows": 3175,
+      "production_scorable": 3175,
+      "contract_scorable": 3175,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 532,
+        "2": 546,
+        "3": 518,
+        "4": 551,
+        "5": 473,
+        "6": 555
+      },
+      "min_ordinal": 2611,
+      "max_ordinal": 4212091
+    },
+    {
+      "rfid_id": "36013653",
+      "raw_rows": 255,
+      "valid_wkt_rows": 255,
+      "production_scorable": 255,
+      "contract_scorable": 255,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 11,
+        "2": 82,
+        "3": 72,
+        "4": 42,
+        "5": 43,
+        "6": 5
+      },
+      "min_ordinal": 313187,
+      "max_ordinal": 3495923
+    },
+    {
+      "rfid_id": "36007970",
+      "raw_rows": 1110,
+      "valid_wkt_rows": 1110,
+      "production_scorable": 1110,
+      "contract_scorable": 1110,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 207,
+        "2": 174,
+        "3": 120,
+        "4": 181,
+        "5": 206,
+        "6": 222
+      },
+      "min_ordinal": 10070,
+      "max_ordinal": 4207682
+    },
+    {
+      "rfid_id": "32000047",
+      "raw_rows": 1718,
+      "valid_wkt_rows": 1718,
+      "production_scorable": 1718,
+      "contract_scorable": 1718,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 318,
+        "2": 321,
+        "3": 347,
+        "4": 253,
+        "5": 267,
+        "6": 212
+      },
+      "min_ordinal": 1986,
+      "max_ordinal": 3894495
+    },
+    {
+      "rfid_id": "36305148",
+      "raw_rows": 32,
+      "valid_wkt_rows": 32,
+      "production_scorable": 32,
+      "contract_scorable": 32,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 16,
+        "6": 16
+      },
+      "min_ordinal": 2854515,
+      "max_ordinal": 4143035
+    },
+    {
+      "rfid_id": "32200526",
+      "raw_rows": 1089,
+      "valid_wkt_rows": 1089,
+      "production_scorable": 1089,
+      "contract_scorable": 1089,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 26,
+        "2": 0,
+        "3": 0,
+        "4": 40,
+        "5": 346,
+        "6": 677
+      },
+      "min_ordinal": 435376,
+      "max_ordinal": 4211941
+    },
+    {
+      "rfid_id": "31005675",
+      "raw_rows": 111,
+      "valid_wkt_rows": 111,
+      "production_scorable": 111,
+      "contract_scorable": 111,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 90,
+        "4": 18,
+        "5": 2,
+        "6": 1
+      },
+      "min_ordinal": 1090700,
+      "max_ordinal": 3897373
+    },
+    {
+      "rfid_id": "36103745",
+      "raw_rows": 42,
+      "valid_wkt_rows": 42,
+      "production_scorable": 42,
+      "contract_scorable": 42,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 4,
+        "2": 21,
+        "3": 9,
+        "4": 8,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 86834,
+      "max_ordinal": 2152974
+    },
+    {
+      "rfid_id": "36113223",
+      "raw_rows": 1,
+      "valid_wkt_rows": 1,
+      "production_scorable": 1,
+      "contract_scorable": 1,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 1,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 2228083,
+      "max_ordinal": 2228083
+    },
+    {
+      "rfid_id": "36115632",
+      "raw_rows": 902,
+      "valid_wkt_rows": 902,
+      "production_scorable": 902,
+      "contract_scorable": 902,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 128,
+        "2": 112,
+        "3": 131,
+        "4": 109,
+        "5": 205,
+        "6": 217
+      },
+      "min_ordinal": 24770,
+      "max_ordinal": 4212339
+    },
+    {
+      "rfid_id": "36013212",
+      "raw_rows": 624,
+      "valid_wkt_rows": 624,
+      "production_scorable": 624,
+      "contract_scorable": 624,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 170,
+        "2": 0,
+        "3": 201,
+        "4": 5,
+        "5": 164,
+        "6": 84
+      },
+      "min_ordinal": 1007,
+      "max_ordinal": 3417878
+    },
+    {
+      "rfid_id": "36107747",
+      "raw_rows": 3,
+      "valid_wkt_rows": 3,
+      "production_scorable": 3,
+      "contract_scorable": 3,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 3
+      },
+      "min_ordinal": 3413452,
+      "max_ordinal": 3451996
+    },
+    {
+      "rfid_id": "36101508",
+      "raw_rows": 16,
+      "valid_wkt_rows": 16,
+      "production_scorable": 16,
+      "contract_scorable": 16,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 1,
+        "5": 4,
+        "6": 11
+      },
+      "min_ordinal": 2389248,
+      "max_ordinal": 4087105
+    },
+    {
+      "rfid_id": "31010758",
+      "raw_rows": 1158,
+      "valid_wkt_rows": 1158,
+      "production_scorable": 1158,
+      "contract_scorable": 1158,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 154,
+        "2": 19,
+        "3": 0,
+        "4": 135,
+        "5": 407,
+        "6": 443
+      },
+      "min_ordinal": 1154,
+      "max_ordinal": 4179750
+    },
+    {
+      "rfid_id": "31010081",
+      "raw_rows": 371,
+      "valid_wkt_rows": 371,
+      "production_scorable": 371,
+      "contract_scorable": 371,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 2,
+        "5": 160,
+        "6": 209
+      },
+      "min_ordinal": 2265108,
+      "max_ordinal": 4206634
+    },
+    {
+      "rfid_id": "36110059",
+      "raw_rows": 61,
+      "valid_wkt_rows": 61,
+      "production_scorable": 61,
+      "contract_scorable": 61,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 7,
+        "4": 19,
+        "5": 20,
+        "6": 15
+      },
+      "min_ordinal": 1115499,
+      "max_ordinal": 3824205
+    },
+    {
+      "rfid_id": "31007149",
+      "raw_rows": 114,
+      "valid_wkt_rows": 114,
+      "production_scorable": 114,
+      "contract_scorable": 114,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 50,
+        "2": 6,
+        "3": 9,
+        "4": 4,
+        "5": 33,
+        "6": 12
+      },
+      "min_ordinal": 25069,
+      "max_ordinal": 3908856
+    },
+    {
+      "rfid_id": "32100061",
+      "raw_rows": 1837,
+      "valid_wkt_rows": 1837,
+      "production_scorable": 1837,
+      "contract_scorable": 1837,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 285,
+        "2": 3,
+        "3": 64,
+        "4": 414,
+        "5": 560,
+        "6": 511
+      },
+      "min_ordinal": 3057,
+      "max_ordinal": 4207567
+    },
+    {
+      "rfid_id": "36102355",
+      "raw_rows": 381,
+      "valid_wkt_rows": 381,
+      "production_scorable": 381,
+      "contract_scorable": 381,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 7,
+        "2": 0,
+        "3": 35,
+        "4": 120,
+        "5": 210,
+        "6": 9
+      },
+      "min_ordinal": 230304,
+      "max_ordinal": 3772128
+    },
+    {
+      "rfid_id": "31005921",
+      "raw_rows": 218,
+      "valid_wkt_rows": 218,
+      "production_scorable": 218,
+      "contract_scorable": 218,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 64,
+        "2": 42,
+        "3": 45,
+        "4": 41,
+        "5": 26,
+        "6": 0
+      },
+      "min_ordinal": 98650,
+      "max_ordinal": 3273620
+    },
+    {
+      "rfid_id": "36300654",
+      "raw_rows": 5,
+      "valid_wkt_rows": 5,
+      "production_scorable": 5,
+      "contract_scorable": 5,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 0,
+        "5": 2,
+        "6": 0
+      },
+      "min_ordinal": 1085320,
+      "max_ordinal": 2502861
+    },
+    {
+      "rfid_id": "36113881",
+      "raw_rows": 13,
+      "valid_wkt_rows": 13,
+      "production_scorable": 13,
+      "contract_scorable": 13,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 4,
+        "3": 6,
+        "4": 3,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 638392,
+      "max_ordinal": 2026608
+    },
+    {
+      "rfid_id": "31008938",
+      "raw_rows": 789,
+      "valid_wkt_rows": 789,
+      "production_scorable": 789,
+      "contract_scorable": 789,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 145,
+        "4": 123,
+        "5": 298,
+        "6": 223
+      },
+      "min_ordinal": 1102089,
+      "max_ordinal": 4211772
+    },
+    {
+      "rfid_id": "36110968",
+      "raw_rows": 46,
+      "valid_wkt_rows": 46,
+      "production_scorable": 46,
+      "contract_scorable": 46,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 7,
+        "2": 25,
+        "3": 0,
+        "4": 0,
+        "5": 2,
+        "6": 12
+      },
+      "min_ordinal": 24516,
+      "max_ordinal": 4000232
+    },
+    {
+      "rfid_id": "36102485",
+      "raw_rows": 545,
+      "valid_wkt_rows": 545,
+      "production_scorable": 545,
+      "contract_scorable": 545,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 24,
+        "2": 7,
+        "3": 29,
+        "4": 141,
+        "5": 178,
+        "6": 166
+      },
+      "min_ordinal": 73265,
+      "max_ordinal": 4199474
+    },
+    {
+      "rfid_id": "32100391",
+      "raw_rows": 2721,
+      "valid_wkt_rows": 2721,
+      "production_scorable": 2721,
+      "contract_scorable": 2721,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 214,
+        "2": 356,
+        "3": 414,
+        "4": 479,
+        "5": 654,
+        "6": 604
+      },
+      "min_ordinal": 73160,
+      "max_ordinal": 4211891
+    },
+    {
+      "rfid_id": "34200362",
+      "raw_rows": 1488,
+      "valid_wkt_rows": 1488,
+      "production_scorable": 1488,
+      "contract_scorable": 1488,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 248,
+        "2": 198,
+        "3": 178,
+        "4": 241,
+        "5": 282,
+        "6": 341
+      },
+      "min_ordinal": 28565,
+      "max_ordinal": 4212077
+    },
+    {
+      "rfid_id": "36305906",
+      "raw_rows": 1534,
+      "valid_wkt_rows": 1534,
+      "production_scorable": 1534,
+      "contract_scorable": 1534,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 4,
+        "2": 8,
+        "3": 215,
+        "4": 546,
+        "5": 369,
+        "6": 392
+      },
+      "min_ordinal": 325302,
+      "max_ordinal": 4202059
+    },
+    {
+      "rfid_id": "31704332",
+      "raw_rows": 177,
+      "valid_wkt_rows": 177,
+      "production_scorable": 177,
+      "contract_scorable": 177,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 41,
+        "2": 45,
+        "3": 44,
+        "4": 45,
+        "5": 2,
+        "6": 0
+      },
+      "min_ordinal": 32318,
+      "max_ordinal": 2607272
+    },
+    {
+      "rfid_id": "36010075",
+      "raw_rows": 7,
+      "valid_wkt_rows": 7,
+      "production_scorable": 7,
+      "contract_scorable": 7,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 1,
+        "2": 0,
+        "3": 0,
+        "4": 6,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 587663,
+      "max_ordinal": 1706508
+    },
+    {
+      "rfid_id": "36101003",
+      "raw_rows": 321,
+      "valid_wkt_rows": 321,
+      "production_scorable": 321,
+      "contract_scorable": 321,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 190,
+        "2": 6,
+        "3": 99,
+        "4": 1,
+        "5": 25,
+        "6": 0
+      },
+      "min_ordinal": 17201,
+      "max_ordinal": 2852136
+    },
+    {
+      "rfid_id": "36015072",
+      "raw_rows": 654,
+      "valid_wkt_rows": 654,
+      "production_scorable": 654,
+      "contract_scorable": 654,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 64,
+        "2": 28,
+        "3": 46,
+        "4": 168,
+        "5": 200,
+        "6": 148
+      },
+      "min_ordinal": 206962,
+      "max_ordinal": 4182285
+    },
+    {
+      "rfid_id": "36112405",
+      "raw_rows": 117,
+      "valid_wkt_rows": 117,
+      "production_scorable": 117,
+      "contract_scorable": 117,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 4,
+        "2": 0,
+        "3": 0,
+        "4": 18,
+        "5": 48,
+        "6": 47
+      },
+      "min_ordinal": 252776,
+      "max_ordinal": 4200871
+    },
+    {
+      "rfid_id": "36014044",
+      "raw_rows": 888,
+      "valid_wkt_rows": 888,
+      "production_scorable": 888,
+      "contract_scorable": 888,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 228,
+        "2": 172,
+        "3": 17,
+        "4": 15,
+        "5": 150,
+        "6": 306
+      },
+      "min_ordinal": 193,
+      "max_ordinal": 4212271
+    },
+    {
+      "rfid_id": "36009646",
+      "raw_rows": 121,
+      "valid_wkt_rows": 121,
+      "production_scorable": 121,
+      "contract_scorable": 121,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 79,
+        "2": 42,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 2630,
+      "max_ordinal": 841572
+    },
+    {
+      "rfid_id": "36003566",
+      "raw_rows": 6,
+      "valid_wkt_rows": 6,
+      "production_scorable": 6,
+      "contract_scorable": 6,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 2,
+        "5": 3,
+        "6": 1
+      },
+      "min_ordinal": 1869604,
+      "max_ordinal": 3696851
+    },
+    {
+      "rfid_id": "36008161",
+      "raw_rows": 276,
+      "valid_wkt_rows": 276,
+      "production_scorable": 276,
+      "contract_scorable": 276,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 6,
+        "3": 54,
+        "4": 37,
+        "5": 69,
+        "6": 110
+      },
+      "min_ordinal": 609680,
+      "max_ordinal": 4197992
+    },
+    {
+      "rfid_id": "31010956",
+      "raw_rows": 19,
+      "valid_wkt_rows": 19,
+      "production_scorable": 19,
+      "contract_scorable": 19,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 1,
+        "3": 18,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 964630,
+      "max_ordinal": 1501930
+    },
+    {
+      "rfid_id": "36012241",
+      "raw_rows": 102,
+      "valid_wkt_rows": 102,
+      "production_scorable": 102,
+      "contract_scorable": 102,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 92,
+        "2": 2,
+        "3": 1,
+        "4": 0,
+        "5": 2,
+        "6": 5
+      },
+      "min_ordinal": 9317,
+      "max_ordinal": 3697038
+    },
+    {
+      "rfid_id": "36112240",
+      "raw_rows": 244,
+      "valid_wkt_rows": 244,
+      "production_scorable": 244,
+      "contract_scorable": 244,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 4,
+        "2": 0,
+        "3": 53,
+        "4": 71,
+        "5": 0,
+        "6": 116
+      },
+      "min_ordinal": 458239,
+      "max_ordinal": 3701569
+    },
+    {
+      "rfid_id": "31703674",
+      "raw_rows": 787,
+      "valid_wkt_rows": 787,
+      "production_scorable": 787,
+      "contract_scorable": 787,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 248,
+        "2": 261,
+        "3": 234,
+        "4": 42,
+        "5": 0,
+        "6": 2
+      },
+      "min_ordinal": 12592,
+      "max_ordinal": 3825608
+    },
+    {
+      "rfid_id": "36107971",
+      "raw_rows": 31,
+      "valid_wkt_rows": 31,
+      "production_scorable": 31,
+      "contract_scorable": 31,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 18,
+        "2": 12,
+        "3": 0,
+        "4": 1,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 228998,
+      "max_ordinal": 2222590
+    },
+    {
+      "rfid_id": "31004023",
+      "raw_rows": 742,
+      "valid_wkt_rows": 742,
+      "production_scorable": 742,
+      "contract_scorable": 742,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 110,
+        "2": 126,
+        "3": 100,
+        "4": 142,
+        "5": 132,
+        "6": 132
+      },
+      "min_ordinal": 51370,
+      "max_ordinal": 4198532
+    },
+    {
+      "rfid_id": "31007091",
+      "raw_rows": 992,
+      "valid_wkt_rows": 992,
+      "production_scorable": 992,
+      "contract_scorable": 992,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 170,
+        "2": 163,
+        "3": 191,
+        "4": 153,
+        "5": 148,
+        "6": 167
+      },
+      "min_ordinal": 1499,
+      "max_ordinal": 4211746
+    },
+    {
+      "rfid_id": "32300037",
+      "raw_rows": 31,
+      "valid_wkt_rows": 31,
+      "production_scorable": 31,
+      "contract_scorable": 31,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 20,
+        "2": 11,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 354565,
+      "max_ordinal": 978351
+    },
+    {
+      "rfid_id": "32300322",
+      "raw_rows": 1742,
+      "valid_wkt_rows": 1742,
+      "production_scorable": 1742,
+      "contract_scorable": 1742,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 20,
+        "2": 153,
+        "3": 324,
+        "4": 481,
+        "5": 362,
+        "6": 402
+      },
+      "min_ordinal": 566298,
+      "max_ordinal": 4208399
+    },
+    {
+      "rfid_id": "36204924",
+      "raw_rows": 5,
+      "valid_wkt_rows": 5,
+      "production_scorable": 5,
+      "contract_scorable": 5,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 1,
+        "5": 1,
+        "6": 0
+      },
+      "min_ordinal": 1057027,
+      "max_ordinal": 2707592
+    },
+    {
+      "rfid_id": "36102374",
+      "raw_rows": 1019,
+      "valid_wkt_rows": 1019,
+      "production_scorable": 1019,
+      "contract_scorable": 1019,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 93,
+        "2": 188,
+        "3": 212,
+        "4": 276,
+        "5": 240,
+        "6": 10
+      },
+      "min_ordinal": 6440,
+      "max_ordinal": 4146726
+    },
+    {
+      "rfid_id": "36301648",
+      "raw_rows": 29,
+      "valid_wkt_rows": 29,
+      "production_scorable": 29,
+      "contract_scorable": 29,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 29
+      },
+      "min_ordinal": 3340201,
+      "max_ordinal": 4212094
+    },
+    {
+      "rfid_id": "36101167",
+      "raw_rows": 4,
+      "valid_wkt_rows": 4,
+      "production_scorable": 4,
+      "contract_scorable": 4,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 4,
+        "6": 0
+      },
+      "min_ordinal": 2880399,
+      "max_ordinal": 3034163
+    },
+    {
+      "rfid_id": "36010032",
+      "raw_rows": 8,
+      "valid_wkt_rows": 8,
+      "production_scorable": 8,
+      "contract_scorable": 8,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 8,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 308146,
+      "max_ordinal": 500994
+    },
+    {
+      "rfid_id": "31011905",
+      "raw_rows": 20,
+      "valid_wkt_rows": 20,
+      "production_scorable": 20,
+      "contract_scorable": 20,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 2,
+        "2": 2,
+        "3": 1,
+        "4": 12,
+        "5": 3,
+        "6": 0
+      },
+      "min_ordinal": 282547,
+      "max_ordinal": 3117660
+    },
+    {
+      "rfid_id": "31704203",
+      "raw_rows": 1,
+      "valid_wkt_rows": 1,
+      "production_scorable": 1,
+      "contract_scorable": 1,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 887719,
+      "max_ordinal": 887719
+    },
+    {
+      "rfid_id": "36108036",
+      "raw_rows": 1,
+      "valid_wkt_rows": 1,
+      "production_scorable": 1,
+      "contract_scorable": 1,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 1
+      },
+      "min_ordinal": 4067479,
+      "max_ordinal": 4067479
+    },
+    {
+      "rfid_id": "36104049",
+      "raw_rows": 2,
+      "valid_wkt_rows": 2,
+      "production_scorable": 2,
+      "contract_scorable": 2,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 1650795,
+      "max_ordinal": 1651516
+    },
+    {
+      "rfid_id": "31004138",
+      "raw_rows": 708,
+      "valid_wkt_rows": 708,
+      "production_scorable": 708,
+      "contract_scorable": 708,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 31,
+        "2": 45,
+        "3": 115,
+        "4": 167,
+        "5": 215,
+        "6": 135
+      },
+      "min_ordinal": 3763,
+      "max_ordinal": 4053306
+    },
+    {
+      "rfid_id": "31003191",
+      "raw_rows": 67,
+      "valid_wkt_rows": 67,
+      "production_scorable": 67,
+      "contract_scorable": 67,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 67,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 768318,
+      "max_ordinal": 978114
+    },
+    {
+      "rfid_id": "36305381",
+      "raw_rows": 43,
+      "valid_wkt_rows": 43,
+      "production_scorable": 43,
+      "contract_scorable": 43,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 1,
+        "4": 1,
+        "5": 3,
+        "6": 33
+      },
+      "min_ordinal": 301128,
+      "max_ordinal": 3752718
+    },
+    {
+      "rfid_id": "36010232",
+      "raw_rows": 451,
+      "valid_wkt_rows": 451,
+      "production_scorable": 451,
+      "contract_scorable": 451,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 115,
+        "2": 2,
+        "3": 13,
+        "4": 148,
+        "5": 66,
+        "6": 107
+      },
+      "min_ordinal": 3477,
+      "max_ordinal": 4203888
+    },
+    {
+      "rfid_id": "36005726",
+      "raw_rows": 14,
+      "valid_wkt_rows": 14,
+      "production_scorable": 14,
+      "contract_scorable": 14,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 2,
+        "2": 4,
+        "3": 2,
+        "4": 0,
+        "5": 2,
+        "6": 4
+      },
+      "min_ordinal": 399606,
+      "max_ordinal": 4035432
+    },
+    {
+      "rfid_id": "31011498",
+      "raw_rows": 190,
+      "valid_wkt_rows": 190,
+      "production_scorable": 190,
+      "contract_scorable": 190,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 30,
+        "2": 10,
+        "3": 51,
+        "4": 34,
+        "5": 26,
+        "6": 39
+      },
+      "min_ordinal": 184921,
+      "max_ordinal": 4055490
+    },
+    {
+      "rfid_id": "36011779",
+      "raw_rows": 336,
+      "valid_wkt_rows": 336,
+      "production_scorable": 336,
+      "contract_scorable": 336,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 39,
+        "2": 0,
+        "3": 23,
+        "4": 92,
+        "5": 130,
+        "6": 52
+      },
+      "min_ordinal": 1006,
+      "max_ordinal": 4113085
+    },
+    {
+      "rfid_id": "32300727",
+      "raw_rows": 1406,
+      "valid_wkt_rows": 1406,
+      "production_scorable": 1406,
+      "contract_scorable": 1406,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 113,
+        "2": 265,
+        "3": 323,
+        "4": 281,
+        "5": 393,
+        "6": 31
+      },
+      "min_ordinal": 976,
+      "max_ordinal": 3353849
+    },
+    {
+      "rfid_id": "36007075",
+      "raw_rows": 1430,
+      "valid_wkt_rows": 1430,
+      "production_scorable": 1430,
+      "contract_scorable": 1430,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 222,
+        "2": 215,
+        "3": 261,
+        "4": 256,
+        "5": 270,
+        "6": 206
+      },
+      "min_ordinal": 6400,
+      "max_ordinal": 4075741
+    },
+    {
+      "rfid_id": "31004809",
+      "raw_rows": 420,
+      "valid_wkt_rows": 420,
+      "production_scorable": 420,
+      "contract_scorable": 420,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 48,
+        "2": 48,
+        "3": 58,
+        "4": 97,
+        "5": 41,
+        "6": 128
+      },
+      "min_ordinal": 57767,
+      "max_ordinal": 4195617
+    },
+    {
+      "rfid_id": "31014234",
+      "raw_rows": 1294,
+      "valid_wkt_rows": 1294,
+      "production_scorable": 1294,
+      "contract_scorable": 1294,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 137,
+        "2": 0,
+        "3": 0,
+        "4": 539,
+        "5": 618,
+        "6": 0
+      },
+      "min_ordinal": 510,
+      "max_ordinal": 3135201
+    },
+    {
+      "rfid_id": "36303153",
+      "raw_rows": 2,
+      "valid_wkt_rows": 2,
+      "production_scorable": 2,
+      "contract_scorable": 2,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 2,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 1115555,
+      "max_ordinal": 1116232
+    },
+    {
+      "rfid_id": "36102781",
+      "raw_rows": 571,
+      "valid_wkt_rows": 571,
+      "production_scorable": 571,
+      "contract_scorable": 571,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 85,
+        "2": 54,
+        "3": 82,
+        "4": 55,
+        "5": 73,
+        "6": 222
+      },
+      "min_ordinal": 5236,
+      "max_ordinal": 3847574
+    },
+    {
+      "rfid_id": "36307165",
+      "raw_rows": 1,
+      "valid_wkt_rows": 1,
+      "production_scorable": 1,
+      "contract_scorable": 1,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 1427711,
+      "max_ordinal": 1427711
+    },
+    {
+      "rfid_id": "32200520",
+      "raw_rows": 490,
+      "valid_wkt_rows": 490,
+      "production_scorable": 490,
+      "contract_scorable": 490,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 61,
+        "2": 18,
+        "3": 0,
+        "4": 22,
+        "5": 114,
+        "6": 275
+      },
+      "min_ordinal": 81224,
+      "max_ordinal": 4211940
+    },
+    {
+      "rfid_id": "31012428",
+      "raw_rows": 153,
+      "valid_wkt_rows": 153,
+      "production_scorable": 153,
+      "contract_scorable": 153,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 1,
+        "2": 0,
+        "3": 150,
+        "4": 2,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 496223,
+      "max_ordinal": 2107130
+    },
+    {
+      "rfid_id": "36313688",
+      "raw_rows": 38,
+      "valid_wkt_rows": 38,
+      "production_scorable": 38,
+      "contract_scorable": 38,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 1,
+        "2": 0,
+        "3": 35,
+        "4": 2,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 179447,
+      "max_ordinal": 2205474
+    },
+    {
+      "rfid_id": "31000245",
+      "raw_rows": 66,
+      "valid_wkt_rows": 66,
+      "production_scorable": 66,
+      "contract_scorable": 66,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 2,
+        "2": 0,
+        "3": 0,
+        "4": 9,
+        "5": 4,
+        "6": 51
+      },
+      "min_ordinal": 458068,
+      "max_ordinal": 4116112
+    },
+    {
+      "rfid_id": "31001774",
+      "raw_rows": 37,
+      "valid_wkt_rows": 37,
+      "production_scorable": 37,
+      "contract_scorable": 37,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 5,
+        "2": 8,
+        "3": 20,
+        "4": 4,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 120257,
+      "max_ordinal": 1879978
+    },
+    {
+      "rfid_id": "36111087",
+      "raw_rows": 152,
+      "valid_wkt_rows": 152,
+      "production_scorable": 152,
+      "contract_scorable": 152,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 115,
+        "4": 14,
+        "5": 3,
+        "6": 20
+      },
+      "min_ordinal": 1189140,
+      "max_ordinal": 3416673
+    },
+    {
+      "rfid_id": "31002934",
+      "raw_rows": 135,
+      "valid_wkt_rows": 135,
+      "production_scorable": 135,
+      "contract_scorable": 135,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 27,
+        "2": 94,
+        "3": 3,
+        "4": 0,
+        "5": 8,
+        "6": 3
+      },
+      "min_ordinal": 841,
+      "max_ordinal": 4058793
+    },
+    {
+      "rfid_id": "36010827",
+      "raw_rows": 322,
+      "valid_wkt_rows": 322,
+      "production_scorable": 322,
+      "contract_scorable": 322,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 24,
+        "4": 75,
+        "5": 146,
+        "6": 77
+      },
+      "min_ordinal": 1163354,
+      "max_ordinal": 4118562
+    },
+    {
+      "rfid_id": "36301350",
+      "raw_rows": 286,
+      "valid_wkt_rows": 286,
+      "production_scorable": 286,
+      "contract_scorable": 286,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 27,
+        "4": 84,
+        "5": 118,
+        "6": 57
+      },
+      "min_ordinal": 1202477,
+      "max_ordinal": 3617618
+    },
+    {
+      "rfid_id": "31016034",
+      "raw_rows": 7,
+      "valid_wkt_rows": 7,
+      "production_scorable": 7,
+      "contract_scorable": 7,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 7
+      },
+      "min_ordinal": 3769882,
+      "max_ordinal": 3801333
+    },
+    {
+      "rfid_id": "31007829",
+      "raw_rows": 2,
+      "valid_wkt_rows": 2,
+      "production_scorable": 2,
+      "contract_scorable": 2,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 2,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 939074,
+      "max_ordinal": 955499
+    },
+    {
+      "rfid_id": "36007752",
+      "raw_rows": 196,
+      "valid_wkt_rows": 196,
+      "production_scorable": 196,
+      "contract_scorable": 196,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 5,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 107,
+        "6": 84
+      },
+      "min_ordinal": 13007,
+      "max_ordinal": 4180131
+    },
+    {
+      "rfid_id": "31704919",
+      "raw_rows": 102,
+      "valid_wkt_rows": 102,
+      "production_scorable": 102,
+      "contract_scorable": 102,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 7,
+        "4": 0,
+        "5": 3,
+        "6": 92
+      },
+      "min_ordinal": 1408439,
+      "max_ordinal": 4206739
+    },
+    {
+      "rfid_id": "31006665",
+      "raw_rows": 574,
+      "valid_wkt_rows": 574,
+      "production_scorable": 574,
+      "contract_scorable": 574,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 131,
+        "2": 115,
+        "3": 127,
+        "4": 201,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 31213,
+      "max_ordinal": 2300186
+    },
+    {
+      "rfid_id": "36114519",
+      "raw_rows": 35,
+      "valid_wkt_rows": 35,
+      "production_scorable": 35,
+      "contract_scorable": 35,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 3,
+        "2": 2,
+        "3": 7,
+        "4": 7,
+        "5": 5,
+        "6": 11
+      },
+      "min_ordinal": 442345,
+      "max_ordinal": 3663164
+    },
+    {
+      "rfid_id": "36011872",
+      "raw_rows": 9,
+      "valid_wkt_rows": 9,
+      "production_scorable": 9,
+      "contract_scorable": 9,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 3,
+        "4": 6,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 1454723,
+      "max_ordinal": 2224375
+    },
+    {
+      "rfid_id": "36008682",
+      "raw_rows": 120,
+      "valid_wkt_rows": 120,
+      "production_scorable": 120,
+      "contract_scorable": 120,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 11,
+        "4": 57,
+        "5": 47,
+        "6": 5
+      },
+      "min_ordinal": 1133277,
+      "max_ordinal": 4212217
+    },
+    {
+      "rfid_id": "36115199",
+      "raw_rows": 217,
+      "valid_wkt_rows": 217,
+      "production_scorable": 217,
+      "contract_scorable": 217,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 80,
+        "2": 6,
+        "3": 0,
+        "4": 10,
+        "5": 34,
+        "6": 87
+      },
+      "min_ordinal": 2136,
+      "max_ordinal": 4177248
+    },
+    {
+      "rfid_id": "31704696",
+      "raw_rows": 58,
+      "valid_wkt_rows": 58,
+      "production_scorable": 58,
+      "contract_scorable": 58,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 4,
+        "3": 18,
+        "4": 7,
+        "5": 29,
+        "6": 0
+      },
+      "min_ordinal": 1014172,
+      "max_ordinal": 2817637
+    },
+    {
+      "rfid_id": "36012931",
+      "raw_rows": 1,
+      "valid_wkt_rows": 1,
+      "production_scorable": 1,
+      "contract_scorable": 1,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 1,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 741749,
+      "max_ordinal": 741749
+    },
+    {
+      "rfid_id": "36100773",
+      "raw_rows": 1,
+      "valid_wkt_rows": 1,
+      "production_scorable": 1,
+      "contract_scorable": 1,
+      "strict_vs_production_delta": 0,
+      "month_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 1,
+        "5": 0,
+        "6": 0
+      },
+      "min_ordinal": 1799521,
+      "max_ordinal": 1799521
+    }
+  ],
+  "static_review": {
+    "runner_sha256": "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d",
+    "uses_explicit_source_hash_guard": true,
+    "shim_is_simple_namespace": true,
+    "AST_extracts_only_allowlisted_defs": true,
+    "build_gate_default_denies": true,
+    "test_fit_partition_fenced": true,
+    "load_inputs_manifest_unpack_fixed": true,
+    "scoring_order_includes_source_ordinal": true,
+    "A_source_order_selection": true,
+    "output_path_validation_present": true,
+    "main_entrypoint_guard": true
+  },
+  "source_code_hashes": {
+    "run008": {
+      "current_sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+      "expected_execution_sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+      "matches": true
+    },
+    "remeasure": {
+      "current_sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+      "expected_execution_sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+      "matches": true
+    },
+    "run005": {
+      "current_sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+      "expected_execution_sha256": "e14ddbae01864e4ae7bce0600e361aee0fbabb69cfe6d4ea4679db701d0c40a4",
+      "matches": true
+    },
+    "featAC": {
+      "current_sha256": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+      "expected_execution_sha256": "8c454a8c1f87014007b85609d0667ff1126f68b8f23bbe30d05890032a7b04f3",
+      "matches": true
+    }
+  },
+  "synthetic_independent_fixtures": {
+    "scalar": {
+      "synthetic_haversine_m_127_0_36_to_127_1_36": 8995.858139893151,
+      "formula": "2*R*asin(sqrt(sin²(dlat/2)+cos(lat1)cos(lat2)sin²(dlon/2)))",
+      "earth_radius_m": 6371000.0,
+      "synthetic_only": true
+    },
+    "A_policy": {
+      "two_rows_equal_max_input_order": [
+        "candidate",
+        {
+          "ts": 2,
+          "rfid_time": 2,
+          "score": 0.7,
+          "source_ordinal": 3
+        }
+      ],
+      "same_timestamp_conflicting": [
+        "data_conflict",
+        null
+      ],
+      "same_timestamp_valid_missing": [
+        "data_conflict",
+        null
+      ],
+      "all_missing": [
+        "no_valid_score",
+        null
+      ],
+      "floor_preserved": 1e-06
+    },
+    "reference/test_fit_gate_static_only": true,
+    "actual_score_or_reference_executed": false
+  },
+  "execution_evidence": {
+    "manifest_execution": {
+      "clean_scan_attempt": "row_scan_attempt04",
+      "clean_scan_exit": 0,
+      "first_scan_exit": 1,
+      "first_failure": "ID CSV column mismatch before data access, preserved logs",
+      "invalidated_scratch_attempt": "attempt03 reused previous SQLite contents; superseded; logs preserved",
+      "syntax_final_exit": 0,
+      "synthetic_final_exit": 0,
+      "references_rebuilt": false,
+      "actual_scores_computed": false,
+      "stock_cli_called": false,
+      "csv_rehashed_or_reparsed": false
+    },
+    "logged_exit_codes": {
+      "row_scan.exit_code.txt": "1",
+      "row_scan_attempt02.exit_code.txt": "0",
+      "row_scan_attempt03.exit_code.txt": "0",
+      "row_scan_attempt04.exit_code.txt": "0",
+      "syntax_attempt02.exit_code.txt": "0",
+      "syntax_attempt03.exit_code.txt": "0",
+      "syntax_final.exit_code.txt": "0",
+      "syntax_repair.exit_code.txt": "0",
+      "synthetic_checks.exit_code.txt": "1",
+      "synthetic_checks_attempt02.exit_code.txt": "0",
+      "synthetic_checks_final.exit_code.txt": "0",
+      "synthetic_repair.exit_code.txt": "0"
+    },
+    "repair_history_preserved": true,
+    "latest_manifest_hashes_recorded": true,
+    "legacy_hashes_distinguished": "legacy mojibake backups have independent artifact hashes; current UTF-8 report/manifest hashes differ"
+  },
+  "read_only_integrity": {
+    "production_files_before_after": {
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\isolated_runner.py": {
+        "size_bytes": 29373,
+        "mtime_ns": 1793820024244012800,
+        "sha256": "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\preflight_report.md": {
+        "size_bytes": 11835,
+        "mtime_ns": 1793820293760745000,
+        "sha256": "8c69bb155702260d0f2b797bc51c621a242c5030e30392ae72dd321a5c8ca58d"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\execution_manifest.json": {
+        "size_bytes": 25133,
+        "mtime_ns": 1793820327729006700,
+        "sha256": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\scan_result.json": {
+        "size_bytes": 5065,
+        "mtime_ns": 1793820327704710700,
+        "sha256": "f72f210de4f0535c0f17377343bfcdb43a6e0e498da2914dd24e719856c4bc4c"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\target_row_summary.csv": {
+        "size_bytes": 25469,
+        "mtime_ns": 1793819187857106900,
+        "sha256": "5d90cdb5d107eced0a816674f0b7e9a18a967f64cda13860279faded87b4f583"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_01.parquet": {
+        "size_bytes": 359901,
+        "mtime_ns": 1793819185921641800,
+        "sha256": "9499b01d12bf408af02748a7cc8348dff3c572439bc29eca1232735d0a3a4dd4"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_02.parquet": {
+        "size_bytes": 290979,
+        "mtime_ns": 1793819186162034600,
+        "sha256": "eb33e2fba674803182845dff7419f62abe5e97b3e1b34c440ebeb11d5d11b10e"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_03.parquet": {
+        "size_bytes": 373962,
+        "mtime_ns": 1793819186509266500,
+        "sha256": "e7fcc2659e22280614b90e54f3be344bf982c22bb9e62bda5f5b8c320e5ddecb"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_04.parquet": {
+        "size_bytes": 454037,
+        "mtime_ns": 1793819186923602000,
+        "sha256": "601dd19f2e088d24f24921e360b93a77edf10cbbedbc1671006fb53b07cbcf12"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_05.parquet": {
+        "size_bytes": 557706,
+        "mtime_ns": 1793819187354770400,
+        "sha256": "62798147d55de451b9d2ee63ab2f9825b10ad8d5a291731f2874b6ceb41b1d31"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\execution\\selected_rows\\month_06.parquet": {
+        "size_bytes": 583178,
+        "mtime_ns": 1793819187857106900,
+        "sha256": "fd036e93829e95112d78e78298d9cdf4300ecb66f0072313270bf4ed452b277b"
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_002\\preparation\\manifest.json": {
+        "size_bytes": 24421,
+        "mtime_ns": 1793818538899993700,
+        "sha256": "3db3c841f02b9eea6c04978f030c84085a583b81dd4805e2cc5f80b19932af1f"
+      }
+    },
+    "source_parquet_stats_before_after": {
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_1.parquet": {
+        "size_bytes": 22102228,
+        "mtime_ns": 1793455808744372400
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_2.parquet": {
+        "size_bytes": 16393715,
+        "mtime_ns": 1793455876276994400
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_3.parquet": {
+        "size_bytes": 23195070,
+        "mtime_ns": 1793455948483100000
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_4.parquet": {
+        "size_bytes": 28452704,
+        "mtime_ns": 1793456050780258100
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_5.parquet": {
+        "size_bytes": 33418976,
+        "mtime_ns": 1793456180777086600
+      },
+      "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_6.parquet": {
+        "size_bytes": 34195805,
+        "mtime_ns": 1793456312387513800
+      }
+    },
+    "unchanged": true
+  },
+  "environment": {
+    "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "pyarrow": "24.0.0",
+    "pandas": "2.2.3",
+    "numpy": "2.2.5",
+    "psutil": "7.0.0"
+  },
+  "audit_exit": 0,
+  "elapsed_seconds": 11.04
+}

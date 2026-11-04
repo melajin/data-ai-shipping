@@ -1,11 +1,11 @@
 ﻿{
     "schema_version":  1,
-    "updated_at_utc":  "2026-11-04T19:10:21.4881817Z",
+    "updated_at_utc":  "2026-11-04T19:52:08.5050603Z",
     "objective":  "vessel-level four-class micro-F1 \u003e= 0.7 with development and independent evidence kept separate",
     "goal_status":  "in_progress_not_achieved",
-    "current_round":  "round_009",
-    "round_status":  "in_progress_source_and_synthetic_gate",
-    "manager_session":  "codex_f8781e21_ce60_45bc_b218_028699479bf4",
+    "current_round":  "round_010",
+    "round_status":  "in_progress_source_review",
+    "manager_session":  "codex_4a9e4942_60c6_472c_8d6c_9cfe5f78c72d",
     "manager_model_request":  {
                                   "model":  "gpt-6-astra",
                                   "reasoning_effort":  "high",
@@ -23,7 +23,7 @@
                   "raw_read_only":  "F:/문제 데이터_수정_1027",
                   "source_read_only":  "D:/repos/fishing-track-classification",
                   "prior_experiment":  "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
-                  "round":  "rounds/round_009"
+                  "round":  "rounds/round_010"
               },
     "scores":  {
                    "evaluation_population":  "repeatedly exposed development OUTER, 5897 vessels",
@@ -399,30 +399,28 @@
                },
     "budget":  {
                    "manager_minutes_max":  30,
-                   "started_utc":  "2026-11-04T19:04:46Z",
-                   "deadline_utc":  "2026-11-04T19:34:46Z",
-                   "mock_first_allowed_runs":  1,
+                   "started_utc":  "2026-11-04T19:34:41Z",
+                   "deadline_utc":  "2026-11-04T20:04:41Z",
                    "mock_max_runs":  2,
                    "mock_seconds_max_each":  30,
-                   "synthetic_pair_max_runs":  1,
-                   "pair_seconds_max_including_cleanup":  300,
-                   "actual_pilot_max_runs":  0,
+                   "actual_pilot_max_runs":  1,
+                   "pilot_seconds_max_including_cleanup":  480,
                    "threads_max":  3,
                    "parameter_training_fits":  0,
                    "new_f1_evaluations":  0
                },
     "decision_rules":  {
-                           "current_round":  "Source independence then frozen source review then bounded mock then at most one synthetic pair",
-                           "runtime_gate":  "Start available RAM\u003e=3GiB and stop below1.5GiB; one compute process, threads\u003c=3",
-                           "next_gate":  "Actual replay only in a subsequent separately frozen round after tiny synthetic equivalence",
+                           "current_round":  "Source/mock/one tiny synthetic pair passed; exact numeric difference0",
+                           "runtime_gate":  "Completed49.187s; starting4.44189/min3.93400GiB; sampled peak556965888bytes; owned tree clear",
+                           "next_gate":  "Round010 configure original COL and ROW before install; mock then one fixed full context replay historical tolerance1e-4",
                            "holdout":  "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan",
                            "ram_policy":  "When RAM insufficient do other feasible independent work first, then recheck and proceed under resource and finite-attempt gates"
                        },
-    "current_task":  "Round009 in progress: independent ROW source proof passed; writing and reviewing adapter/mock/synthetic pair",
-    "next_task":  "Source-proven independent ROW batch chunk8; one tiny synthetic comparison column16 baseline vs column16+row8; no actual-data replay or M4",
+    "current_task":  "One fixed actual FIT3144/two-query replay with approved COL16+ROW8; source/mock gates before one pilot",
+    "next_task":  "Round010: one bounded same FIT3144/INNER2 historical-probability replay with verified col16+row8; no training/F1",
     "blockers":  [
-                     "Actual-vessel FIT3144 two-query CPU equivalence remains unmeasured",
-                     "Full-context adapter total memory requirement remains unmeasured; row/ICL stages unchanged"
+                     "Actual FIT3144/two-query probability reproduction unpassed",
+                     "Full-context total memory requirement remains unmeasured; ICL full context remains"
                  ],
     "unresolved":  [
                        "Actual-vessel CPU/CUDA probability equivalence remains unmeasured",
@@ -432,167 +430,230 @@
                        "No independent/official score and no actual F1\u003e=0.7 evidence"
                    ],
     "active_workers":  [
-                           "author009",
-                           "review009"
+                           "/root/author",
+                           "/root/reviewer"
                        ],
     "handoff":  {
                     "ready":  false,
                     "next_session_launched":  false,
-                    "launch_receipt":  "automation/receipts/round_008_launch.json",
+                    "launch_receipt":  "automation/receipts/round_009_launch.json",
                     "launcher":  "automation/Start-NextSession.ps1",
                     "launcher_owner":  "current manager",
-                    "next_round":  "round_009",
+                    "next_round":  "round_010",
                     "pause_reason":  null,
                     "authorization":  "User authorizes local experiments and fresh Astra high handoffs without repeated approval",
                     "close_completed_session_requested":  true,
-                    "completed_session_id":  "codex_e959665a_5b7a_4729_897c_f8de0d0a718d",
+                    "completed_session_id":  "codex_f8781e21_ce60_45bc_b218_028699479bf4",
                     "close_completed_session_status":  "No supported structured-chat close command in current orca agent help; end this manager after accepted handoff; manually close only completed session tab if needed",
                     "next_session_id":  null,
                     "accepted_at_utc":  null,
                     "note":  "Canonical launch acceptance is automation receipt; outgoing manager does not mutate shared state after recipient begins"
                 },
     "learning_status":  {
-                            "technical_goal":  "source/mock/tiny synthetic equivalence achieved",
+                            "technical_goal":  "ROW source/mock/synthetic final-probability equivalence passed",
                             "learner_understanding_assessed":  false,
                             "hardware_verified":  false,
-                            "notes":  "rounds/round_007/LEARNING_NOTES.md"
+                            "notes":  "rounds/round_009/LEARNING_NOTES.md"
                         },
     "diagnostic_result":  {
-                              "kind":  "synthetic_column_chunk_equivalence",
+                              "kind":  "synthetic_column16_plus_row8_equivalence",
                               "pass":  true,
-                              "max_abs_probability_difference":  0.0,
+                              "max_abs_probability_difference":  0,
                               "new_f1":  null,
-                              "limits":  "Only32FIT/2query synthetic inputs; no real vessel outputs or full-context memory claim"
+                              "limits":  "Only32FIT/2query synthetic; actual context/memory/F1 unverified"
                           },
     "next_round_budget":  {
                               "manager_minutes_max":  30,
-                              "synthetic_pair_max_runs":  1,
-                              "synthetic_pair_seconds_max":  300,
                               "mock_max_runs":  2,
                               "mock_seconds_max":  30,
+                              "actual_replay_runs_max":  1,
+                              "actual_replay_seconds_max":  600,
+                              "cleanup_seconds":  10,
                               "threads_max":  3,
-                              "start_available_ram_gib_min":  3,
+                              "start_available_ram_gib_min":  4,
                               "runtime_stop_available_ram_gib_below":  1.5,
-                              "actual_replay_runs":  0,
                               "checkpoint_loads_max":  1,
                               "context_fits_max":  1,
-                              "predict_proba_calls_max":  2,
+                              "predict_proba_calls_max":  1,
                               "parameter_training_fits":  0,
                               "F1_evaluations":  0
                           },
-    "latest_result_report":  "rounds/round_008/ROUND_REPORT.md",
-    "round_completed_at_utc":  "2026-11-04T18:59:25.809879+00:00",
+    "latest_result_report":  "rounds/round_009/ROUND_REPORT.md",
+    "round_completed_at_utc":  "2026-11-04T19:32:45.2528628Z",
     "review":  {
-                   "source_review":  "rounds/round_008/review/SOURCE_REVIEW.md",
-                   "final_review":  "rounds/round_008/review/FINAL_REVIEW.md",
-                   "final_review_json":  "rounds/round_008/review/final_review.json",
-                   "saved_execution_consistent":  true,
+                   "source_review":  "rounds/round_009/review/SOURCE_REVIEW.md",
+                   "mock_review":  "rounds/round_009/review/MOCK_REVIEW.md",
+                   "final_review":  "rounds/round_009/review/FINAL_REVIEW.md",
+                   "approved_sources":  "rounds/round_009/review/approved_sources.json",
+                   "synthetic_gate_pass":  true,
                    "actual_replay_gate_pass":  false,
                    "new_F1":  false
                },
     "execution_summary":  {
-                              "schema":  "round008_manager_result.v1",
-                              "updated_at_utc":  "2026-11-04T18:59:25.809879+00:00",
-                              "status":  "completed_with_limitations_replay_not_passed",
+                              "schema":  "round009_manager_result.v1",
+                              "updated_at_utc":  "2026-11-04T19:31:05.954160+00:00",
+                              "status":  "completed_synthetic_equivalence_pass",
                               "mock":  {
-                                           "run_id":  "mock_02",
                                            "status":  "completed",
                                            "exit_code":  0,
-                                           "elapsed_seconds":  0.26599999999962165,
+                                           "elapsed_seconds":  0.5320000000028813,
+                                           "stop_reason":  null,
                                            "owned_tree_remaining":  [
 
-                                                                    ]
+                                                                    ],
+                                           "owned_tree_status":  "clear"
                                        },
-                              "pilot":  {
-                                            "status":  "failed_or_stopped",
-                                            "exit_code":  1,
-                                            "elapsed_seconds":  25.639999999999418,
-                                            "stop_reason":  "available_ram_below_1_5_gib",
-                                            "preflight_available_ram_gib":  4.144317626953125,
-                                            "minimum_observed_available_ram_gib":  1.3799629211425781,
-                                            "peak_sampled_tree_working_set_bytes":  3182952448,
-                                            "owned_tree_remaining":  [
+                              "pair":  {
+                                           "status":  "completed",
+                                           "exit_code":  0,
+                                           "elapsed_seconds":  49.18699999999808,
+                                           "stop_reason":  null,
+                                           "owned_tree_remaining":  [
 
-                                                                     ],
-                                            "termination_confirmed":  true
+                                                                    ],
+                                           "owned_tree_status":  "clear",
+                                           "termination_confirmed":  null,
+                                           "preflight_available_ram_gib":  4.441890716552734,
+                                           "minimum_observed_available_ram_gib":  3.934001922607422,
+                                           "peak_sampled_tree_working_set_bytes":  556965888,
+                                           "source_unchanged":  true,
+                                           "source_snapshot_unchanged":  true,
+                                           "timeout_seconds":  180
+                                       },
+                              "child":  {
+                                            "status":  "SYNTHETIC_PAIR_COMPLETE",
+                                            "stage":  "comparison_complete",
+                                            "error":  null,
+                                            "fit_completed_count":  1,
+                                            "predict_proba_attempted_count":  2,
+                                            "predict_proba_completed_count":  2,
+                                            "column_adapter_restored":  true,
+                                            "row_adapter_restored":  true,
+                                            "comparison":  {
+                                                               "scope":  "two synthetic query rows only; same fitted estimator and inputs; no F1",
+                                                               "tolerance":  1E-05,
+                                                               "baseline_probability_gate_pass":  true,
+                                                               "candidate_probability_gate_pass":  true,
+                                                               "max_abs_probability_difference":  0.0,
+                                                               "exact_numeric_equal":  true,
+                                                               "argmax_equal":  true,
+                                                               "argmax_baseline":  [
+                                                                                       1,
+                                                                                       2
+                                                                                   ],
+                                                               "argmax_candidate":  [
+                                                                                        1,
+                                                                                        2
+                                                                                    ],
+                                                               "within_tolerance_and_argmax_gate_pass":  true,
+                                                               "input_and_shuffle_state_unchanged":  true,
+                                                               "runtime_manager_state_unchanged":  true,
+                                                               "all_managers_restored":  true
+                                                           },
+                                            "baseline_probability_check":  {
+                                                                               "name":  "baseline_col16_only",
+                                                                               "shape":  [
+                                                                                             2,
+                                                                                             4
+                                                                                         ],
+                                                                               "dtype":  "float32",
+                                                                               "finite":  true,
+                                                                               "within_0_1":  true,
+                                                                               "max_abs_row_sum_error":  1.1920928955078125E-07,
+                                                                               "row_sum_gate_pass":  true,
+                                                                               "values":  [
+                                                                                              [
+                                                                                                  0.20490509271621704,
+                                                                                                  0.3307407796382904,
+                                                                                                  0.27529171109199524,
+                                                                                                  0.18906235694885254
+                                                                                              ],
+                                                                                              [
+                                                                                                  0.057841312140226364,
+                                                                                                  0.21634940803050995,
+                                                                                                  0.3749522268772125,
+                                                                                                  0.35085707902908325
+                                                                                              ]
+                                                                                          ],
+                                                                               "gate_pass":  true
+                                                                           },
+                                            "candidate_probability_check":  {
+                                                                                "name":  "candidate_col16_row8",
+                                                                                "shape":  [
+                                                                                              2,
+                                                                                              4
+                                                                                          ],
+                                                                                "dtype":  "float32",
+                                                                                "finite":  true,
+                                                                                "within_0_1":  true,
+                                                                                "max_abs_row_sum_error":  1.1920928955078125E-07,
+                                                                                "row_sum_gate_pass":  true,
+                                                                                "values":  [
+                                                                                               [
+                                                                                                   0.20490509271621704,
+                                                                                                   0.3307407796382904,
+                                                                                                   0.27529171109199524,
+                                                                                                   0.18906235694885254
+                                                                                               ],
+                                                                                               [
+                                                                                                   0.057841312140226364,
+                                                                                                   0.21634940803050995,
+                                                                                                   0.3749522268772125,
+                                                                                                   0.35085707902908325
+                                                                                               ]
+                                                                                           ],
+                                                                                "gate_pass":  true
+                                                                            }
                                         },
-                              "child_last_stage":  "predict_proba_start",
-                              "child_raw_status":  "STARTED",
-                              "predict_proba_attempted_count":  1,
-                              "predict_proba_completed_count":  0,
-                              "chunk_event_counts":  {
-                                                         "column_chunk_call_started":  1,
-                                                         "column_chunk_started":  14,
-                                                         "column_chunk_completed":  14,
-                                                         "column_chunk_call_completed":  1
-                                                     },
-                              "last_adapter_event":  {
-                                                         "event":  "column_chunk_call_completed",
-                                                         "call_id":  0,
-                                                         "input_shape":  [
-                                                                             1,
-                                                                             223,
-                                                                             3146,
-                                                                             3
-                                                                         ],
-                                                         "output_shape":  [
-                                                                              1,
-                                                                              223,
-                                                                              3146,
-                                                                              128
-                                                                          ],
-                                                         "column_axis":  1,
-                                                         "chunk_count":  14,
-                                                         "max_chunk_columns":  16,
-                                                         "sequence_length_preserved":  3146,
-                                                         "train_size_shared":  3144,
-                                                         "output_repeat_preserved":  1
-                                                     },
-                              "last_completed_chunk":  {
-                                                           "call_id":  0,
-                                                           "chunk_index":  13,
-                                                           "chunk_count":  14,
-                                                           "column_start":  208,
-                                                           "column_stop_exclusive":  223,
-                                                           "feature_shape":  [
-                                                                                 1,
-                                                                                 15,
-                                                                                 3146,
-                                                                                 3
-                                                                             ],
-                                                           "target_shape":  [
-                                                                                1,
-                                                                                15,
-                                                                                3144
-                                                                            ],
-                                                           "output_shape":  [
-                                                                                1,
-                                                                                15,
-                                                                                3146,
-                                                                                128
-                                                                            ]
-                                                       },
-                              "current_chunk":  null,
-                              "adapter_restored_recorded":  false,
-                              "probabilities":  null,
-                              "comparison":  null,
-                              "actual_replay_gate_pass":  false,
+                              "event_counts":  {
+                                                   "column_chunk_call_started":  16,
+                                                   "column_chunk_started":  320,
+                                                   "column_chunk_completed":  320,
+                                                   "column_chunk_call_completed":  16
+                                               },
+                              "row_event_counts":  {
+                                                       "row_chunk_call_started":  8,
+                                                       "row_chunk_started":  40,
+                                                       "row_chunk_completed":  40,
+                                                       "row_chunk_call_completed":  8
+                                                   },
+                              "last_row_event":  {
+                                                     "event":  "row_chunk_call_completed",
+                                                     "call_id":  7,
+                                                     "input_shape":  [
+                                                                         1,
+                                                                         34,
+                                                                         316,
+                                                                         128
+                                                                     ],
+                                                     "output_shape":  [
+                                                                          1,
+                                                                          34,
+                                                                          512
+                                                                      ],
+                                                     "row_axis":  1,
+                                                     "chunk_count":  5,
+                                                     "max_chunk_rows":  8,
+                                                     "feature_class_sequence_preserved":  316,
+                                                     "embedding_width_preserved":  128,
+                                                     "output_repeat_preserved":  1
+                                                 },
                               "evaluation":  {
                                                  "new_f1":  null,
                                                  "new_f1_evaluations":  0,
-                                                 "new_parameter_training_fits":  0,
+                                                 "actual_data_replays":  0,
+                                                 "parameter_training_fits":  0,
                                                  "independent_f1":  null,
                                                  "official_f1":  null,
-                                                 "goal_070_achieved":  false,
-                                                 "historical_scores_unchanged":  true
+                                                 "goal_070_achieved":  false
                                              },
                               "scope":  {
-                                            "holdout_rows_read":  0,
                                             "raw_data_read":  false,
-                                            "reexports":  0,
-                                            "full_input_reverification_runs":  0,
+                                            "holdout_read":  false,
                                             "hardware_validation":  false,
-                                            "pilot_retries":  0
+                                            "synthetic_pair_runs":  1,
+                                            "pair_retries":  0,
+                                            "mock_runs":  1
                                         }
                           },
     "independent_evaluation_blockers":  [
@@ -637,7 +698,7 @@
                          "checkpoint_exact_sha256_found":  true,
                          "historical_cuda_runtime_reproduced":  false,
                          "ready_for_m4_training":  false,
-                         "next_step":  "Source-prove ROW independent batch axis and tiny col16 vs col16+row8 synthetic comparison; full actual replay still unpassed"
+                         "next_step":  "One bounded full-context replay using verified COL16+ROW8; no M4 until separately planned after replay"
                      },
     "next_manager_session":  null,
     "latest_user_steering_previous":  {

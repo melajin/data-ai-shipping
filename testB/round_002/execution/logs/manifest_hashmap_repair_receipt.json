@@ -1,0 +1,67 @@
+{
+  "schema_version": "execution_manifest_hashmap_repair_receipt_v1",
+  "operation": "metadata-only reclassify stale artifacts_sha256 as historical; establish one current canonical artifact_sha256",
+  "exit_code": 0,
+  "applied_at_local": "2026-11-05T04:47:52.979174+09:00",
+  "pre_change_manifest_sha256": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+  "post_change_manifest_sha256": "a8bb74a10936572ad152aabeacc5f741a036d922e3a86fdd2f0dbcb494117e42",
+  "backup_path": "logs/execution_manifest_before_hashmap_repair_20261105T044752909863p0900.json",
+  "backup_sha256": "8f4533ca1efa2a0a1ff8d8bb4d49151344cf1e9d4569c51ac0b8a3469f7b0c9a",
+  "backup_byte_identical_to_pre_change_manifest": true,
+  "legacy_map_entries": 44,
+  "legacy_map_mismatches_before_reclassification": 4,
+  "prior_current_map_entries": 53,
+  "prior_current_map_mismatches": 0,
+  "new_current_map_field": "artifact_sha256",
+  "new_current_map_entries": 56,
+  "new_current_map_all_match": true,
+  "canonical_map_includes_backup": true,
+  "canonical_map_excludes": [
+    "execution_manifest.json (self-reference)",
+    "logs/manifest_hashmap_repair_receipt.json (contains post-change manifest hash)"
+  ],
+  "historical_mismatch_evidence": [
+    {
+      "path": "__pycache__/isolated_runner.cpython-313.pyc",
+      "historical_sha256": "e590b43f9e1d719f0557271a67af104ce71da2e454364cdafb5233a01f9df5e5",
+      "current_sha256": "933c66d1fdc29b83fbce6a2a7999e63934249b6beb98b81dbd27b8b31b97a939"
+    },
+    {
+      "path": "isolated_runner.py",
+      "historical_sha256": "19cb07986dd94912bec3d026462ef9073eba368cdfbe9368ba5cef73169af573",
+      "current_sha256": "83ccc784e4b538b41199939420a516aa0c4cc644b8f06c344712ae8db3d91c1d"
+    },
+    {
+      "path": "preflight_report.md",
+      "historical_sha256": "ad9466701dccde0d67288651b3103e986675e3f52e21acdefabe1ff08bfcfb5e",
+      "current_sha256": "8c69bb155702260d0f2b797bc51c621a242c5030e30392ae72dd321a5c8ca58d"
+    },
+    {
+      "path": "scan_result.json",
+      "historical_sha256": "307326e6fb125390e91d6fa464b4b14e9b582c89df00965967218838450c3cc3",
+      "current_sha256": "f72f210de4f0535c0f17377343bfcdb43a6e0e498da2914dd24e719856c4bc4c"
+    }
+  ],
+  "historical_map_not_restored_or_validated_as_original_source_bytes": true,
+  "utf8": {
+    "new_manifest_utf8_json_parse": true,
+    "receipt_written_as_utf8": true
+  },
+  "work_not_run": [
+    "full parquet scan",
+    "synthetic fixture",
+    "reference rebuild",
+    "actual score"
+  ],
+  "prior_53_current_entries_preserved_unchanged": true,
+  "prior_current_entries_count": 53,
+  "current_canonical_entries_count": 56,
+  "current_canonical_entries_all_match": true,
+  "current_canonical_mismatch_paths": [],
+  "historical_map_44_values_match_pre_change_snapshot": true,
+  "preflight_report_utf8_decode": true,
+  "preflight_report_unicode_replacement_count": 0,
+  "execution_manifest_self_sha_excluded": true,
+  "snapshot_has_no_self_hash": true,
+  "metadata_repair_actual_exit_code": 0
+}

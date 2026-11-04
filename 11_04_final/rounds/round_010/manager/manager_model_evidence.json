@@ -1,0 +1,45 @@
+﻿{
+    "requested_model":  "gpt-6-astra",
+    "requested_effort":  "high",
+    "codex_session":  "01a1a80e-6fbb-7640-b3fe-a2eac2a7b59c",
+    "orca_session":  "codex_4a9e4942_60c6_472c_8d6c_9cfe5f78c72d",
+    "host_turn_context":  {
+                              "timestamp":  "2026-11-04T19:34:42.052Z",
+                              "ordinal":  9,
+                              "type":  "turn_context",
+                              "payload":  {
+                                              "turn_id":  "01a1a80e-71bd-7d43-a558-bf27a38c931d",
+                                              "root_turn_id":  "01a1a80e-71bd-7d43-a558-bf27a38c931d",
+                                              "disabled_plugin_ids":  [
+
+                                                                      ],
+                                              "cwd":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+                                              "approval_policy":  "never",
+                                              "approvals_reviewer":  "user",
+                                              "sandbox_policy":  {
+                                                                     "type":  "danger-full-access"
+                                                                 },
+                                              "permission_profile":  {
+                                                                         "type":  "disabled"
+                                                                     },
+                                              "model":  "gpt-6-astra",
+                                              "comp_hash":  "3000",
+                                              "collaboration_mode":  {
+                                                                         "mode":  "default",
+                                                                         "settings":  {
+                                                                                          "model":  "gpt-6-astra",
+                                                                                          "reasoning_effort":  "high",
+                                                                                          "developer_instructions":  null
+                                                                                      }
+                                                                     },
+                                              "multi_agent_version":  "v2",
+                                              "realtime_active":  false,
+                                              "effort":  "high",
+                                              "summary":  "none"
+                                          }
+                          },
+    "source_session_log":  "C:/Users/dlehs/.codex/sessions/2026/11/05\\rollout-2026-11-05T04-34-41-01a1a80e-6fbb-7640-b3fe-a2eac2a7b59c.jsonl",
+    "note":  "Host-reported metadata, not internal model attestation",
+    "incoming_sha":  "CB514B006B6030A84AB2ADC0275BF8DA73E14580926053ADAFA497E05925337E",
+    "checked_at_utc":  "2026-11-04T19:36:57.9031704Z"
+}

@@ -1,0 +1,11 @@
+﻿{
+    "checked_at_utc":  "2026-11-04T19:32:55.9907045Z",
+    "available_ram_gib":  4.4872665405273438,
+    "alternative_work_completed":  [
+                                       "result aggregation",
+                                       "ROUND_REPORT",
+                                       "next replay contract",
+                                       "STATUS and ledger reconciliation"
+                                   ],
+    "decision":  "one pair budget consumed successfully; no rerun; next separate actual-context gate"
+}

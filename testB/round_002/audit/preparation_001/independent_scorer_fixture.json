@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "ram": {
+    "local_time": "2026-11-05T04:37:34.518577+09:00",
+    "available_mib": 4177.0,
+    "total_mib": 14140.9,
+    "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0"
+  },
+  "source_sha256": {
+    "run008": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+    "remeasure": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c"
+  },
+  "fixture_rows": 26,
+  "haversine_calls": 375,
+  "simple_namespace_haversine_is_bound_method": false,
+  "state_first_rows": [
+    "해상정지",
+    "이동",
+    "이동"
+  ],
+  "s_change_first_defined_row": 24,
+  "s_change_row24": 0.20473529888853115,
+  "independent_scalar_row24": {
+    "s_zone": 0.5367331739771644,
+    "s_change": 0.20473529888853115,
+    "s_gap": 0.06845159565536005,
+    "score": 0.2699733561736852
+  },
+  "production_ast_row24": {
+    "s_zone": 0.5367331739771644,
+    "s_change": 0.20473529888853115,
+    "s_gap": 0.06845159565536005,
+    "score": 0.2699733561736852
+  },
+  "floor_fixture_score": 1e-06,
+  "floor_fixture_preserved": true,
+  "actual_data_or_reference_loaded": false,
+  "started_local": "2026-11-05T04:37:34.518330+09:00"
+}
