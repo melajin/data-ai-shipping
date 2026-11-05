@@ -1,0 +1,16 @@
+﻿{
+    "utc":  "2026-11-05T03:38:52.8961425Z",
+    "available_gib":  3.4223747253417969,
+    "minimum_entry_available_gib":  1.5,
+    "expected_owned_peak_gib":  0.5,
+    "expected_peak_basis":  "Frozen low-memory sequential FIT3144 pipeline; original full-run peak not measured",
+    "other_python":  [
+
+                     ],
+    "user_instruction":  "램 점유율 확보하고 실험 재개",
+    "recovery_receipt":  "automation/recovery/20261105_capture_working_set_recovery.json",
+    "successful_background_trims":  44,
+    "processes_terminated":  0,
+    "memory_not_reserved":  true,
+    "recheck_before_every_stage":  true
+}

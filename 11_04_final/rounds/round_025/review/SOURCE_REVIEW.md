@@ -1,0 +1,9 @@
+# Round025 independent source review
+
+**Decision:** Static source review pass for the fixed FIT internal 4-fold S1 gate. The fresh approval is `review/gate_approved_sources.json`; it does not inherit the Round024 approval.
+
+**Scope and evidence:** Reviewed the round plan, runtime contract, source-transfer and post-transfer patch records, syntax record, code-author review, and final Round025 files. The approval hashes all 15 transferred files plus the round plan, runtime contract, transfer record, patch record, and syntax record (20 unique paths, all under `rounds/round_025/`). Transferred code and cache hashes match the prepared source inventory. The two reviewer-path adaptations are limited to the Round025 round guard and approved-source prefix; remaining Round024 mentions in those scripts are error-message text. The manager launcher cap is 900 seconds, matching the runtime contract and patch record. The recorded syntax check covers 9 Python files with `ast.parse` only; it was read, not rerun.
+
+The static boundary is the fixed FIT 3,144-row, stratified 4-fold seed-42 paired baseline/candidate comparison with fold-local T5 labels and S1 training-only donors/self-exclusion, up to eight fits. The copied source documents the S1 geometry as a centroid proxy and explicitly does not claim it tests the original occupied-geometry hypothesis. No tuning, retry, full 3-fold, S2, or holdout/Test scoring is approved.
+
+**Limits:** No source arrays, raw files, holdout/Test labels, or cache contents were opened; the `.npz` and SQLite cache files were hashed only. No import, test, freeze, launch, training, scoring, or model calculation was run. Execution, resource behavior, gate result, and performance remain unknown. Requested reviewer metadata is GPT-6 Luna/xhigh; host-authenticated runtime evidence for this reviewer was unavailable, so no actual worker runtime is claimed.

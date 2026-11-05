@@ -1,0 +1,26 @@
+﻿{
+    "utc":  "2026-11-05T03:41:49.3774409Z",
+    "round":  "round_025",
+    "manager_session":  "codex_3e36ac23_5888_4421_872e_be626efc1fcf",
+    "thread":  "01a1a9ca-db32-7123-99cb-6b062e7dab85",
+    "from_receipt":  "automation/receipts/round_024_launch.json",
+    "handoff_sha256":  "4C650B366FDA88DAC4F9B1854867AC8FF4C5AF39F9376B548FF3F899F97FAFC7",
+    "owner_match":  true,
+    "duplicate_round_absent_at_intake":  true,
+    "preparation_runs":  1,
+    "requested_model":  "gpt-6.1-sol",
+    "requested_effort":  "high",
+    "available_gib_at_intake":  3.0642356872558594,
+    "previous_round_last_blocked_gib":  0.45926284790039063,
+    "other_python_at_intake":  [
+
+                               ],
+    "assistants":  {
+                       "effort":  "xhigh",
+                       "model":  "gpt-6-luna",
+                       "author":  "/root/code_author",
+                       "reviewer":  "/root/reviewer",
+                       "host_total_slots":  4
+                   },
+    "backend_authenticated":  false
+}

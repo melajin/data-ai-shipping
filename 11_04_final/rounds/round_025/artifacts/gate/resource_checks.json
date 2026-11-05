@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "timestamp_utc": "2026-11-05T03:53:19.220099+00:00",
+      "stage": "fold0_fit_input_load_and_t5_cache_load",
+      "available_bytes": 2751455232,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23498752,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4370432,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4362240,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    }
+  ]
+}

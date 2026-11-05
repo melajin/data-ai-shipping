@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-05T03:46:27.468516+00:00",
+  "syntax": "pass",
+  "count": 9,
+  "scope": "ast.parse only; no feature/model imports or data evaluation",
+  "files": [
+    "code\\prepare_t5_cache.py",
+    "code\\run_gate.py",
+    "code\\s1_features.py",
+    "code\\t5_rebuild.py",
+    "code_author\\supplement_metrics.py",
+    "manager\\freeze_stage.py",
+    "manager\\launch.py",
+    "review\\reinfer_saved.py",
+    "review\\verify_gate_result.py"
+  ]
+}

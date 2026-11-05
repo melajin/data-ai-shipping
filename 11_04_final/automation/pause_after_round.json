@@ -1,0 +1,10 @@
+﻿{
+    "enabled":  true,
+    "after_round":  "round_025",
+    "requested_at_utc":  "2026-11-05T03:44:38.4335670Z",
+    "user_instruction":  "이번 라운드 끝내고 전체 micro-F1수치 보고하고 정확하게 전체 상태, 현재 상태 설명하는 보고서 작성",
+    "finish_current_round":  true,
+    "launch_next_round":  false,
+    "required_report":  "reports/20261105_round025_FULL_STATUS_REPORT.md",
+    "requested_by_session":  "codex_dbda3b8b_fecf_4c6c_8629_42602b4f1cdb"
+}

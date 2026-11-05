@@ -1,0 +1,12 @@
+﻿{
+    "status":  "pass",
+    "method":  "small metadata consistency only, no data/model calculation",
+    "checked_utc":  "2026-11-05T03:30:36.0704040Z",
+    "current_round":  "round_024",
+    "ledger_rows":  1,
+    "fits":  0,
+    "handoff_ready":  true,
+    "fresh_manager_started":  false,
+    "current_budget_matches_low_memory_contract":  true,
+    "performance_measured":  false
+}

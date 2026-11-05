@@ -1,0 +1,8 @@
+﻿{
+    "utc":  "2026-11-05T03:40:03.9937297Z",
+    "available_gib":  3.2047920227050781,
+    "minimum_entry_gib":  1.5,
+    "expected_owned_peak_gib":  0.5,
+    "other_python_count":  0,
+    "decision":  "fresh_manager_admission"
+}

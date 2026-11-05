@@ -1,0 +1,11 @@
+﻿{
+    "message_id":  "msg_db47df46a954",
+    "next_round_launch":  false,
+    "finish_current8fit_contract":  true,
+    "manager":  "codex_3e36ac23_5888_4421_872e_be626efc1fcf",
+    "directive_sha256":  "9A99D3BDA2994C2F5ADDF5C29623A3802F21CD7D1F7FA4FBB91B40A7466DC6F1",
+    "utc":  "2026-11-05T03:46:26.8598636Z",
+    "required_report":  "reports/20261105_round025_FULL_STATUS_REPORT.md",
+    "directive":  "automation/recovery/round025_finish_then_report_directive.md",
+    "received":  true
+}

@@ -1,0 +1,21 @@
+﻿{
+    "math_features_seed_model_unchanged":  true,
+    "utc":  "2026-11-05T03:45:45.8009095Z",
+    "setup_record_preserved":  "source_transfer.json retains preparation-time hashes",
+    "patches":  [
+                    {
+                        "change":  "Executable approved source prefix rounds/round_024/ to rounds/round_025/",
+                        "before":  "7fa91d8153b0a1c260d9abcba51b2a929e8287d89a0a15e1b77dc746ebd8a3bd",
+                        "file":  "rounds/round_025/review/verify_gate_result.py",
+                        "owner":  "code_author",
+                        "after":  "e0bafcde7bc3135f29b5f4e66b5b8a3503d26609281cd8716d5a670d6ed43fe3"
+                    },
+                    {
+                        "change":  "CLI max seconds1200 to900 to match frozen round plan/runtime",
+                        "before":  "0be348fd06e7a7358a235fab0ce11cc0d958feccdb753137689bfe43b032ba6a",
+                        "file":  "rounds/round_025/manager/launch.py",
+                        "owner":  "manager",
+                        "after":  "0370a7811a3a6079a62e50d5634602917f78357e85683e2f13c1518184d535bf"
+                    }
+                ]
+}

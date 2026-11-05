@@ -1,0 +1,371 @@
+﻿{
+    "started_utc":  "2026-11-05T03:38:40.4724462Z",
+    "finished_utc":  "2026-11-05T03:38:43.3388766Z",
+    "authorization":  "User explicitly requested RAM recovery and experiment resumption",
+    "method":  "One-pass EmptyWorkingSet on path-verified background SnippingTool only",
+    "documentation":  "https://learn.microsoft.com/en-us/windows/win32/api/psapi/nf-psapi-emptyworkingset",
+    "expected_helper_peak_gib":  0.1,
+    "estimate_basis":  "Small PowerShell/PInvoke helper, metadata and 44 process handles; no dataset or model load",
+    "foreground_pid_excluded":  17216,
+    "observed_instances":  44,
+    "successful_trims":  44,
+    "processes_terminated":  0,
+    "initial_available_gib":  1.2201576232910156,
+    "final_available_gib":  3.2266273498535156,
+    "available_ram_is_not_reserved":  true,
+    "note":  "Working-set pages may return when apps are used. Process virtual state and private allocation are retained. No monitor or repeated trimming loop.",
+    "records":  [
+                    {
+                        "pid":  760,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  22786048,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  1856,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  144846848,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  2832,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  148066304,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  3220,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  148119552,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  4664,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146505728,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  4932,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146132992,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  5464,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  144969728,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  6064,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  147234816,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  6316,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  135749632,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  6444,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146337792,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  6464,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146239488,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  7640,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  135737344,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  8896,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  145358848,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  9756,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146993152,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  10652,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146108416,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  12844,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146128896,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  14788,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  148045824,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  16284,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  148021248,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  17040,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  148004864,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  17684,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146169856,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  18344,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146636800,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  21456,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146677760,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  21756,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  142786560,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  22456,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  149913600,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  22732,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  22794240,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  24240,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146698240,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  24680,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  147673088,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  25296,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  116662272,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  25792,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146731008,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  26328,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  138780672,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  26620,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146657280,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  26908,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146571264,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  27012,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146804736,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  28172,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  134717440,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  29764,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146677760,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  29872,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  145240064,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  30752,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  145805312,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  30936,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146243584,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  31240,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  145117184,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  31312,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  146329600,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  33232,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  134238208,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  33860,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  135831552,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  33940,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  133566464,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    },
+                    {
+                        "pid":  34496,
+                        "path":  "C:\\Program Files\\WindowsApps\\Microsoft.ScreenSketch_11.2608.41.0_x64__8wekyb3d8bbwe\\SnippingTool\\SnippingTool.exe",
+                        "before_rss_bytes":  135258112,
+                        "action":  "working_set_trimmed_once",
+                        "reason":  null,
+                        "after_rss_bytes":  0
+                    }
+                ]
+}

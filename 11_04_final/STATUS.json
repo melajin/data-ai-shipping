@@ -1,22 +1,25 @@
 ﻿{
     "schema_version":  1,
-    "updated_at_utc":  "2026-11-05T03:02:41.6601839Z",
+    "updated_at_utc":  "2026-11-05T03:53:33.0636264Z",
     "objective":  "vessel-level four-class micro-F1 \u003e= 0.7 with development and independent evidence kept separate",
     "goal_status":  "active_not_achieved",
-    "current_round":  "round_023",
-    "round_status":  "completed_resource_blocked_before_fit",
-    "manager_session":  "codex_dbda3b8b_fecf_4c6c_8629_42602b4f1cdb",
+    "current_round":  "round_024",
+    "round_status":  "round_025_running_s1_gate",
+    "manager_session":  "codex_3e36ac23_5888_4421_872e_be626efc1fcf",
     "manager_model_request":  {
                                   "model":  "gpt-6.1-sol",
                                   "effort":  "high",
-                                  "source":  "explicit user model change",
-                                  "actual_current_parent_switched":  false
+                                  "source":  "explicit user request",
+                                  "host_recorded_model":  "gpt-6.1-sol",
+                                  "host_recorded_effort":  "high",
+                                  "evidence":  "rounds/round_025/manager/host_turn_evidence.json",
+                                  "backend_authenticated":  false
                               },
     "assistant_model_policy":  {
                                    "model":  "gpt-6-luna",
                                    "reasoning_effort":  "xhigh",
                                    "max_assistants_user":  4,
-                                   "current_runtime_assistants":  0,
+                                   "current_runtime_assistants":  2,
                                    "host_total_slots":  4
                                },
     "paths":  {
@@ -24,7 +27,7 @@
                   "raw_read_only":  "F:/문제 데이터_수정_1027",
                   "source_read_only":  "D:/repos/fishing-track-classification",
                   "prior_experiment":  "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
-                  "round":  "rounds/round_023"
+                  "round":  "rounds/round_024"
               },
     "scores":  {
                    "evaluation_population":  "repeatedly exposed development OUTER, 5897 vessels",
@@ -630,26 +633,38 @@
                                      "gate_pass":  null,
                                      "reason":  "Resource stop before first fit",
                                      "candidate_adopted":  false
+                                 },
+                   "round_024":  {
+                                     "evaluation_population":  "No new evaluation; intended FIT3144 internal4fold",
+                                     "fits":  0,
+                                     "baseline_micro_f1":  null,
+                                     "candidate_micro_f1":  null,
+                                     "gate_pass":  null,
+                                     "candidate_adopted":  false
                                  }
                },
     "budget":  {
-                   "started_utc":  "2026-11-05T02:17:15.210209+00:00",
-                   "compute_deadline_utc":  "2026-11-05T02:57:15.210209+00:00",
-                   "manager_deadline_utc":  "2026-11-05T03:02:15.210209+00:00",
+                   "started_utc":  "2026-11-05T02:56:56.500389+00:00",
+                   "compute_deadline_utc":  "2026-11-05T03:36:56.500389+00:00",
+                   "manager_deadline_utc":  "2026-11-05T03:41:56.500389+00:00",
                    "compute_seconds_max":  1800,
                    "job_seconds_max":  900,
-                   "threads_max":  3,
+                   "threads_max":  1,
                    "concurrency":  1,
-                   "minimum_available_gib":  2.5,
-                   "expected_peak_gib":  1.5,
+                   "minimum_available_gib":  1.0,
+                   "minimum_entry_available_gib":  1.5,
+                   "expected_peak_gib":  0.5,
+                   "owned_rss_limit_gib":  0.75,
+                   "emergency_min_free_gib":  0.5,
+                   "below_normal_priority":  true,
                    "production_fits_max":  8,
                    "retries":  0,
                    "full3fold":  0,
                    "s2":  0,
-                   "procedure":  "Fixed8fit replay after round0222fit budget interruption; no model/feature/threshold search; no raw geometry rescan"
+                   "procedure":  "One fixed S1 8-fit replay in user-directed low-memory sequential background mode (threads=1, below-normal priority, immediate gc.collect() between steps); round022 2 fits and round023 0 fits preserved; no tuning/raw rescan"
                },
     "decision_rules":  {
-                           "current_round":  "One8fit attempt; resource blocked before first fit; no retry",
+                           "current_round":  "Round024 zero training launches; frozen source review complete; external RAM admission blocked; no score or numeric gate",
                            "next_gate":  "candidate\u003e=1833/3144 AND candidate-matched_baseline\u003e=16",
                            "diagnostic_protection":  {
                                                          "TP0":  2389,
@@ -663,8 +678,8 @@
                            "holdout":  "No new individual holdout/Test data access; prepared caches only",
                            "ram_policy":  "User-directed low-memory sequential background mode (del+gc.collect() after each step, threads=1, below-normal priority)"
                        },
-    "current_task":  "Round024 same-round Sol high recovery: separate Luna author/reviewer static review before single fixed8fit launch",
-    "next_task":  "Low-memory sequential fixed8fit S1 recovery in fresh Astra high round024",
+    "current_task":  "RAM recovered after user request; ready for fresh Sol high round025 manager",
+    "next_task":  "Fresh manager executes reviewed round025 preparation, independent Luna source review, freeze and one fixed8fit S1 comparison",
     "blockers":  [
 
                  ],
@@ -681,37 +696,37 @@
     "handoff":  {
                     "ready":  false,
                     "next_session_launched":  true,
-                    "launch_receipt":  "automation/receipts/round_024_model_switch_sol_high_launch.json",
+                    "launch_receipt":  "automation/receipts/round_024_launch.json",
                     "launcher":  "automation/Start-NextSession.ps1",
                     "launcher_owner":  "root",
-                    "next_round":  "round_024",
+                    "next_round":  "round_025",
                     "pause_reason":  null,
-                    "authorization":  "Local experiments and fresh Astra high handoffs authorized without repeated approval; user explicitly directed low-memory background execution (2026-11-05 11:42 KST)",
-                    "completed_session_id":  "codex_cc356a6e_0e20_4d61_bb90_0da2e9860e5a",
-                    "next_session_id":  "codex_dbda3b8b_fecf_4c6c_8629_42602b4f1cdb",
-                    "accepted_at_utc":  "2026-11-05T02:59:00.7389625Z",
-                    "status":  "same_round_model_switch_received_owner_verified",
+                    "authorization":  "Local bounded experiments and fresh Sol high manager handoffs user-authorized; resource gates remain binding",
+                    "completed_session_id":  "codex_dbda3b8b_fecf_4c6c_8629_42602b4f1cdb",
+                    "next_session_id":  "codex_3e36ac23_5888_4421_872e_be626efc1fcf",
+                    "accepted_at_utc":  "2026-11-05T03:40:05.5735877Z",
+                    "status":  "round025_received_owner_and_sha_verified",
                     "close_completed_session_requested":  true,
                     "close_completed_session_status":  "No confirmed supported structured-chat close; end this session work; do not close app/unrelated tabs",
-                    "note":  "round023 remains last completed; round024 setup only, 0 fits; model switch transfer is not round completion",
-                    "resume_command":  "\u0026 \u0027D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/automation/Start-NextSession.ps1\u0027 -FromRound \u0027round_023\u0027"
+                    "note":  "Fresh manager accepted NEXT_SESSION with SHA4C650B366FDA88DAC4F9B1854867AC8FF4C5AF39F9376B548FF3F899F97FAFC7; previous manager relinquishes execution now. No training score claimed by previous manager.",
+                    "resume_command":  "\u0026 \u0027D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/automation/Start-NextSession.ps1\u0027 -FromRound \u0027round_024\u0027"
                 },
     "learning_status":  {
                             "learner_understanding_assessed":  false,
-                            "technical_goal":  "Comparison incomplete; resource diagnosis and guarded recovery prepared",
+                            "technical_goal":  "Model comparison incomplete; source/freeze/resource/resumption controls completed",
                             "hardware_verified":  false
                         },
     "diagnostic_result":  {
-                              "round":  "round_023",
-                              "status":  "completed_resource_blocked_before_fit",
-                              "started_utc":  "2026-11-05T02:17:15.210209+00:00",
-                              "finished_utc":  "2026-11-05T02:35:02.145332+00:00",
-                              "stage_attempts":  1,
+                              "round":  "round_024",
+                              "status":  "completed_resource_blocked_before_launch",
+                              "started_utc":  "2026-11-05T02:56:56.500389+00:00",
+                              "finished_utc":  "2026-11-05T03:28:37.795723+00:00",
+                              "stage_attempts":  0,
                               "fit_attempts_started":  0,
                               "fits_completed":  0,
                               "fits_required":  8,
                               "training_retries":  0,
-                              "wall_seconds":  25.100306000000273,
+                              "wall_seconds":  0,
                               "gate_evaluated":  false,
                               "gate_pass":  null,
                               "baseline_cv_micro":  null,
@@ -724,13 +739,29 @@
                               "independent_micro_f1":  null,
                               "official_micro_f1":  null,
                               "goal_achieved":  false,
-                              "source_and_blocked_audit_pass":  true,
+                              "source_review_and_freeze_pass":  true,
                               "model_reinference_executed":  false,
-                              "failure_layer":  "resource admission before S1 feature build/first fit",
-                              "next_round":  "round_024",
-                              "next_action":  "Same fixed8fit comparison in user-directed low-memory sequential mode (1.5GiB entry / 1.0GiB stage / threads=1 / below-normal priority); no model change",
-                              "resource_decision":  "ready_for_fresh_manager",
-                              "resource_reason":  "Post-user-steering available RAM 2.311GiB; required1.5GiB; otherPythonJobs=0"
+                              "failure_layer":  "external system RAM admission before launcher claim or training",
+                              "next_round":  "round_025",
+                              "next_action":  "Resume only after current available RAM\u003e=1.5GiB and no independent Python; run reviewed preparation tool then separate source approval/freeze/single fixed8fit",
+                              "resource_decision":  "external_resource_constraint_no_fresh_launch",
+                              "resource_recheck":  {
+                                                       "utc":  "2026-11-05T03:22:56.5965156Z",
+                                                       "available_gib":  0.4592628479003906,
+                                                       "required_gib":  1.5,
+                                                       "expected_peak_gib":  0.5,
+                                                       "estimate_basis":  "Frozen single-thread sequential S1 with small FIT matrices and immediate T5/month/model release; full peak not measured",
+                                                       "independent_work":  [
+                                                                                "review/ADMISSION_BLOCK_AUDIT.json",
+                                                                                "manager/finalize_admission_block.py draft",
+                                                                                "review/RUN_OUTCOME_CHECKLIST.md",
+                                                                                "code_author/RESOURCE_RECOVERY_BRANCH.md"
+                                                                            ],
+                                                       "other_python":  [
+
+                                                                        ],
+                                                       "decision":  "final_stage_recheck_after_independent_work_no_polling"
+                                                   }
                           },
     "next_round_budget":  {
                               "manager_minutes_max":  45,
@@ -745,26 +776,28 @@
                               "full3fold":  0,
                               "s2":  0,
                               "per_stage_available_ram_gib_min":  1.0,
-                              "owned_rss_limit_gib":  0.75
+                              "owned_rss_limit_gib":  0.75,
+                              "emergency_min_free_gib":  0.5,
+                              "below_normal_priority":  true
                           },
-    "latest_result_report":  "rounds/round_023/ROUND_REPORT.md",
-    "round_completed_at_utc":  "2026-11-05T02:35:02.145332+00:00",
+    "latest_result_report":  "rounds/round_024/ROUND_REPORT.md",
+    "round_completed_at_utc":  "2026-11-05T03:28:37.795723+00:00",
     "review":  {
-                   "source":  "rounds/round_023/review/gate_approved_sources.json",
-                   "final":  "rounds/round_023/review/blocked_gate_audit.json",
-                   "scope":  "Zero-fit/source/freeze/runtime audit only; no score or model-reinference verification"
+                   "source":  "rounds/round_024/review/gate_approved_sources.json",
+                   "final":  "rounds/round_024/review/ADMISSION_BLOCK_AUDIT.json",
+                   "scope":  "Static source/cache/freeze/zero-launch audit; no model or performance validation"
                },
     "execution_summary":  {
-                              "round":  "round_023",
-                              "status":  "completed_resource_blocked_before_fit",
-                              "started_utc":  "2026-11-05T02:17:15.210209+00:00",
-                              "finished_utc":  "2026-11-05T02:35:02.145332+00:00",
-                              "stage_attempts":  1,
+                              "round":  "round_024",
+                              "status":  "completed_resource_blocked_before_launch",
+                              "started_utc":  "2026-11-05T02:56:56.500389+00:00",
+                              "finished_utc":  "2026-11-05T03:28:37.795723+00:00",
+                              "stage_attempts":  0,
                               "fit_attempts_started":  0,
                               "fits_completed":  0,
                               "fits_required":  8,
                               "training_retries":  0,
-                              "wall_seconds":  25.100306000000273,
+                              "wall_seconds":  0,
                               "gate_evaluated":  false,
                               "gate_pass":  null,
                               "baseline_cv_micro":  null,
@@ -777,13 +810,29 @@
                               "independent_micro_f1":  null,
                               "official_micro_f1":  null,
                               "goal_achieved":  false,
-                              "source_and_blocked_audit_pass":  true,
+                              "source_review_and_freeze_pass":  true,
                               "model_reinference_executed":  false,
-                              "failure_layer":  "resource admission before S1 feature build/first fit",
-                              "next_round":  "round_024",
-                              "next_action":  "Same fixed8fit comparison in user-directed low-memory sequential mode (1.5GiB entry / 1.0GiB stage / threads=1 / below-normal priority); no model change",
-                              "resource_decision":  "ready_for_fresh_manager",
-                              "resource_reason":  "Post-user-steering available RAM 2.311GiB; required1.5GiB; otherPythonJobs=0"
+                              "failure_layer":  "external system RAM admission before launcher claim or training",
+                              "next_round":  "round_025",
+                              "next_action":  "Resume only after current available RAM\u003e=1.5GiB and no independent Python; run reviewed preparation tool then separate source approval/freeze/single fixed8fit",
+                              "resource_decision":  "external_resource_constraint_no_fresh_launch",
+                              "resource_recheck":  {
+                                                       "utc":  "2026-11-05T03:22:56.5965156Z",
+                                                       "available_gib":  0.4592628479003906,
+                                                       "required_gib":  1.5,
+                                                       "expected_peak_gib":  0.5,
+                                                       "estimate_basis":  "Frozen single-thread sequential S1 with small FIT matrices and immediate T5/month/model release; full peak not measured",
+                                                       "independent_work":  [
+                                                                                "review/ADMISSION_BLOCK_AUDIT.json",
+                                                                                "manager/finalize_admission_block.py draft",
+                                                                                "review/RUN_OUTCOME_CHECKLIST.md",
+                                                                                "code_author/RESOURCE_RECOVERY_BRANCH.md"
+                                                                            ],
+                                                       "other_python":  [
+
+                                                                        ],
+                                                       "decision":  "final_stage_recheck_after_independent_work_no_polling"
+                                                   }
                           },
     "independent_evaluation_blockers":  [
                                             "No exposure-verified independent evaluation roster approved or opened"
@@ -794,15 +843,14 @@
                                  "scope":  "manager model; Luna xhigh workers unchanged"
                              },
     "user_pause":  {
-                       "requested":  false,
-                       "after_round":  "round_002",
-                       "instruction":  "Complete round_002 then pause; do not launch round_003",
-                       "requested_at_utc":  "2026-11-04T15:15:23.2336258Z",
-                       "resume_requires_explicit_user_instruction":  true,
+                       "requested":  true,
                        "effective":  false,
-                       "effective_at_utc":  "2026-11-04T15:30:56.5365856Z",
-                       "resumed_at_utc":  "2026-11-05T01:35:39.725320+00:00",
-                       "resume_instruction":  "User explicitly resumed approved rev1 S1 FIT internal4fold gate"
+                       "after_round":  "round_025",
+                       "requested_at_utc":  "2026-11-05T03:44:38.4335670Z",
+                       "instruction":  "Complete round025, full micro-F1/status report, then pause without round026 or fresh manager",
+                       "resume_requires_explicit_user_instruction":  true,
+                       "directive":  "automation/recovery/round025_finish_then_report_directive.md",
+                       "ack":  "rounds/round_025/manager/USER_FINAL_ROUND_ACK.json"
                    },
     "latest_user_steering_before_resume":  {
                                                "source":  "rounds/round_002/references/algorithm_variant_ideas.md",
@@ -876,12 +924,45 @@
                                            "ram_policy":  "When RAM insufficient do other feasible independent work first, then recheck and proceed under resource and finite-attempt gates"
                                        },
     "manager_intake":  {
-                           "round":  "round_024",
-                           "state":  "source_review_in_progress",
+                           "round":  "round_025",
+                           "state":  "source_approved_frozen_single_stage_running",
                            "fits_started":  0,
                            "fits_completed":  0,
                            "setup_completed":  true,
-                           "independent_review_complete":  false,
-                           "frozen":  false
-                       }
+                           "independent_review_complete":  true,
+                           "frozen":  true,
+                           "receipt":  "rounds/round_025/manager/intake_receipt.json"
+                       },
+    "budget_before_round024":  {
+                                   "started_utc":  "2026-11-05T02:17:15.210209+00:00",
+                                   "compute_deadline_utc":  "2026-11-05T02:57:15.210209+00:00",
+                                   "manager_deadline_utc":  "2026-11-05T03:02:15.210209+00:00",
+                                   "compute_seconds_max":  1800,
+                                   "job_seconds_max":  900,
+                                   "threads_max":  3,
+                                   "concurrency":  1,
+                                   "minimum_available_gib":  2.5,
+                                   "expected_peak_gib":  1.5,
+                                   "production_fits_max":  8,
+                                   "retries":  0,
+                                   "full3fold":  0,
+                                   "s2":  0,
+                                   "procedure":  "Fixed8fit replay after round0222fit budget interruption; no model/feature/threshold search; no raw geometry rescan"
+                               },
+    "resource_recovery":  {
+                              "utc":  "2026-11-05T03:38:52.8961425Z",
+                              "available_gib":  3.4223747253417969,
+                              "minimum_entry_available_gib":  1.5,
+                              "expected_owned_peak_gib":  0.5,
+                              "expected_peak_basis":  "Frozen low-memory sequential FIT3144 pipeline; original full-run peak not measured",
+                              "other_python":  [
+
+                                               ],
+                              "user_instruction":  "램 점유율 확보하고 실험 재개",
+                              "recovery_receipt":  "automation/recovery/20261105_capture_working_set_recovery.json",
+                              "successful_background_trims":  44,
+                              "processes_terminated":  0,
+                              "memory_not_reserved":  true,
+                              "recheck_before_every_stage":  true
+                          }
 }

@@ -58,6 +58,17 @@ if ($InspectOnly) {
     return
 }
 
+$pauseControlPath = Join-Path $PSScriptRoot 'pause_after_round.json'
+if (Test-Path -LiteralPath $pauseControlPath -PathType Leaf) {
+    $pauseControl = Get-Content -Raw -Encoding UTF8 -LiteralPath $pauseControlPath | ConvertFrom-Json
+    if ($pauseControl.enabled -eq $true -and $pauseControl.after_round -match '^round_([0-9]+)$') {
+        $pauseAfterNumber = [int]$Matches[1]
+        $fromRoundNumber = [int]($FromRound -replace '^round_', '')
+        if ($fromRoundNumber -ge $pauseAfterNumber) {
+            throw "User requested completion/report then pause after $($pauseControl.after_round). No next-session launch: $pauseControlPath"
+        }
+    }
+}
 New-Item -ItemType Directory -Path $receiptDirectory -Force | Out-Null
 if (Test-Path -LiteralPath $receiptPath) {
     $previous = Get-Content -LiteralPath $receiptPath -Raw -Encoding UTF8 | ConvertFrom-Json

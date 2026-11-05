@@ -1,0 +1,241 @@
+{
+  "status": "prepared_unreviewed_not_frozen_not_launched",
+  "created_utc": "2026-11-05T03:40:56.007187+00:00",
+  "source_round": "round_024",
+  "destination_round": "round_025",
+  "source_approval": {
+    "path": "rounds/round_024/review/gate_approved_sources.json",
+    "sha256": "8ed80f6a6fc23715cabc425d62815a64bd94d62c90c72d663380da9d853a7166",
+    "approved_source_count": 22
+  },
+  "source_freeze": {
+    "path": "rounds/round_024/manager/snapshot_s1_gate/freeze.json",
+    "sha256": "9afd801828cf6a2b2557e5a6d5c6b910fa0fc812bdd0b4b9af7c8c460c078b75",
+    "stage": "s1_gate",
+    "approval_sha256": "8ed80f6a6fc23715cabc425d62815a64bd94d62c90c72d663380da9d853a7166"
+  },
+  "round024_zero_fit_evidence": {
+    "admission_record": "rounds/round_024/manager/admission_deferred.json",
+    "resource_recheck_record": "rounds/round_024/manager/resource_recheck_after_independent_work.json",
+    "recorded_training_launches": 0,
+    "recorded_fits_started": 0,
+    "recorded_recheck_available_gib": 1.3285865783691406,
+    "recorded_recheck_required_gib": 1.5,
+    "recorded_other_python": [],
+    "stage_claim_receipt_gate_result_models_absent": true
+  },
+  "preparation_resource_preflight": {
+    "timestamp_utc": "2026-11-05T03:40:55.811233+00:00",
+    "available_bytes": 3200507904,
+    "available_gib": 2.9807052612304688,
+    "required_entry_bytes": 1610612736,
+    "required_entry_gib": 1.5,
+    "other_python_processes": [],
+    "identical_argv_bootstrap_parent_excluded": {
+      "pid": 32268,
+      "name": "python.exe",
+      "excluded_reason": "direct Python parent has identical script argv"
+    },
+    "allowed": true
+  },
+  "copied_files": [
+    {
+      "source_relative_path": "rounds/round_024/code/prepare_t5_cache.py",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/prepare_t5_cache.py",
+      "approved_source_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+      "destination_relative_path": "code/prepare_t5_cache.py",
+      "destination_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+      "destination_before_patch_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/code/run_gate.py",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/run_gate.py",
+      "approved_source_sha256": "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+      "destination_relative_path": "code/run_gate.py",
+      "destination_sha256": "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+      "destination_before_patch_sha256": "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/code/s1_features.py",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/s1_features.py",
+      "approved_source_sha256": "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+      "destination_relative_path": "code/s1_features.py",
+      "destination_sha256": "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+      "destination_before_patch_sha256": "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/code/t5_rebuild.py",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/t5_rebuild.py",
+      "approved_source_sha256": "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+      "destination_relative_path": "code/t5_rebuild.py",
+      "destination_sha256": "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+      "destination_before_patch_sha256": "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/review/reinfer_saved.py",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/reinfer_saved.py",
+      "approved_source_sha256": "7532090541886665fd30dfd871b3157452ef7d5f741ea5f7b91c505a1eb9a2c7",
+      "destination_relative_path": "review/reinfer_saved.py",
+      "destination_sha256": "424c7693ebccc4fc685f736648a25072f62616334d2652ae3e6bfc1d2ea4e71a",
+      "destination_before_patch_sha256": "7532090541886665fd30dfd871b3157452ef7d5f741ea5f7b91c505a1eb9a2c7",
+      "patches": [
+        {
+          "kind": "exact code guard path adaptation",
+          "old": "ROUND.name != \"round_024\"",
+          "new": "ROUND.name != \"round_025\""
+        }
+      ],
+      "unpatched_round024_text_references": [
+        {
+          "line": 1,
+          "text": "\"\"\"Sequential one-model-at-a-time reinference verification for Round024 FIT gate.\"\"\""
+        },
+        {
+          "line": 30,
+          "text": "raise SystemExit(\"reinference input must be rounds/round_024/artifacts/gate\")"
+        },
+        {
+          "line": 108,
+          "text": "errors.append(f\"fold {fold} {variant}: model path is outside round024 or missing\")"
+        }
+      ]
+    },
+    {
+      "source_relative_path": "rounds/round_024/review/verify_gate_result.py",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/verify_gate_result.py",
+      "approved_source_sha256": "349e14a58030fb523d11c7ae406c55a0bfbb3e2cb98479d314132655cfc8fd4d",
+      "destination_relative_path": "review/verify_gate_result.py",
+      "destination_sha256": "7fa91d8153b0a1c260d9abcba51b2a929e8287d89a0a15e1b77dc746ebd8a3bd",
+      "destination_before_patch_sha256": "349e14a58030fb523d11c7ae406c55a0bfbb3e2cb98479d314132655cfc8fd4d",
+      "patches": [
+        {
+          "kind": "exact code guard path adaptation",
+          "old": "root / \"rounds\" / \"round_024\"",
+          "new": "root / \"rounds\" / \"round_025\""
+        }
+      ],
+      "unpatched_round024_text_references": [
+        {
+          "line": 52,
+          "text": "raise SystemExit(\"verification input must be rounds/round_024/artifacts/gate\")"
+        },
+        {
+          "line": 78,
+          "text": "errors.append(\"round024 source approval is absent or not approved\")"
+        },
+        {
+          "line": 80,
+          "text": "if not rel.startswith(\"rounds/round_024/\"):"
+        },
+        {
+          "line": 81,
+          "text": "errors.append(f\"approved source is outside round024: {rel}\")"
+        },
+        {
+          "line": 85,
+          "text": "errors.append(f\"approved source escapes round024: {rel}\")"
+        }
+      ]
+    },
+    {
+      "source_relative_path": "rounds/round_024/configs/experiment.json",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/experiment.json",
+      "approved_source_sha256": "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77",
+      "destination_relative_path": "configs/experiment.json",
+      "destination_sha256": "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77",
+      "destination_before_patch_sha256": "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/artifacts/t5_fishing_profiles.npz",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/t5_fishing_profiles.npz",
+      "approved_source_sha256": "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+      "destination_relative_path": "artifacts/t5_fishing_profiles.npz",
+      "destination_sha256": "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+      "destination_before_patch_sha256": "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/artifacts/t5_fishing_profiles.manifest.json",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/t5_fishing_profiles.manifest.json",
+      "approved_source_sha256": "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+      "destination_relative_path": "artifacts/t5_fishing_profiles.manifest.json",
+      "destination_sha256": "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+      "destination_before_patch_sha256": "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/artifacts/t5_mask_equivalence.json",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/t5_mask_equivalence.json",
+      "approved_source_sha256": "1b2a70d3bd945bf0eafc8864146f703731078530940a5358812d2da8407ba695",
+      "destination_relative_path": "artifacts/t5_mask_equivalence.json",
+      "destination_sha256": "1b2a70d3bd945bf0eafc8864146f703731078530940a5358812d2da8407ba695",
+      "destination_before_patch_sha256": "1b2a70d3bd945bf0eafc8864146f703731078530940a5358812d2da8407ba695",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/tmp/s1_profiles.sqlite",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/s1_profiles.sqlite",
+      "approved_source_sha256": "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+      "destination_relative_path": "tmp/s1_profiles.sqlite",
+      "destination_sha256": "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+      "destination_before_patch_sha256": "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/tmp/s1_profiles.sqlite.manifest.json",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/s1_profiles.sqlite.manifest.json",
+      "approved_source_sha256": "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+      "destination_relative_path": "tmp/s1_profiles.sqlite.manifest.json",
+      "destination_sha256": "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+      "destination_before_patch_sha256": "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/code_author/supplement_metrics.py",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/supplement_metrics.py",
+      "approved_source_sha256": "f107c4929463502aa56dec4008b37ffcaec7ab1e099f3153b01df10884ed8ff1",
+      "destination_relative_path": "code_author/supplement_metrics.py",
+      "destination_sha256": "f107c4929463502aa56dec4008b37ffcaec7ab1e099f3153b01df10884ed8ff1",
+      "destination_before_patch_sha256": "f107c4929463502aa56dec4008b37ffcaec7ab1e099f3153b01df10884ed8ff1",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/manager/launch.py",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/launch.py",
+      "approved_source_sha256": "0be348fd06e7a7358a235fab0ce11cc0d958feccdb753137689bfe43b032ba6a",
+      "destination_relative_path": "manager/launch.py",
+      "destination_sha256": "0be348fd06e7a7358a235fab0ce11cc0d958feccdb753137689bfe43b032ba6a",
+      "destination_before_patch_sha256": "0be348fd06e7a7358a235fab0ce11cc0d958feccdb753137689bfe43b032ba6a",
+      "patches": []
+    },
+    {
+      "source_relative_path": "rounds/round_024/manager/freeze_stage.py",
+      "frozen_snapshot_relative_path": "rounds/round_024/manager/snapshot_s1_gate/freeze_stage.py",
+      "approved_source_sha256": "88c48a90a2d8bb22be18c7494f7472d8879fe6588f7d7ec292ed139d966bf45c",
+      "destination_relative_path": "manager/freeze_stage.py",
+      "destination_sha256": "88c48a90a2d8bb22be18c7494f7472d8879fe6588f7d7ec292ed139d966bf45c",
+      "destination_before_patch_sha256": "88c48a90a2d8bb22be18c7494f7472d8879fe6588f7d7ec292ed139d966bf45c",
+      "patches": []
+    }
+  ],
+  "intended_patches": [
+    {
+      "file": "review/reinfer_saved.py",
+      "scope": "only the ROUND.name guard changed to round_025"
+    },
+    {
+      "file": "review/verify_gate_result.py",
+      "scope": "only the expected_round code path changed to round_025"
+    },
+    {
+      "scope": "remaining simple usage/error/documentation strings mentioning round_024 are recorded per file and line, not broadly replaced"
+    }
+  ],
+  "approval_or_freeze_copied": false,
+  "training_or_calculation_run": false
+}

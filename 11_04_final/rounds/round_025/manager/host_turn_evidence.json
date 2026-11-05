@@ -1,0 +1,43 @@
+﻿{
+    "source":  "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T12-40-06-01a1a9ca-db32-7123-99cb-6b062e7dab85.jsonl",
+    "host_turn_context":  {
+                              "timestamp":  "2026-11-05T03:40:08.436Z",
+                              "ordinal":  9,
+                              "type":  "turn_context",
+                              "payload":  {
+                                              "turn_id":  "01a1a9ca-de16-7d53-ae7e-4ca87db63810",
+                                              "root_turn_id":  "01a1a9ca-de16-7d53-ae7e-4ca87db63810",
+                                              "disabled_plugin_ids":  [
+
+                                                                      ],
+                                              "cwd":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+                                              "approval_policy":  "never",
+                                              "approvals_reviewer":  "user",
+                                              "sandbox_policy":  {
+                                                                     "type":  "danger-full-access"
+                                                                 },
+                                              "permission_profile":  {
+                                                                         "type":  "disabled"
+                                                                     },
+                                              "model":  "gpt-6.1-sol",
+                                              "comp_hash":  "3000",
+                                              "collaboration_mode":  {
+                                                                         "mode":  "default",
+                                                                         "settings":  {
+                                                                                          "model":  "gpt-6.1-sol",
+                                                                                          "reasoning_effort":  "high",
+                                                                                          "developer_instructions":  null
+                                                                                      }
+                                                                     },
+                                              "multi_agent_version":  "v2",
+                                              "realtime_active":  false,
+                                              "effort":  "high",
+                                              "summary":  "none"
+                                          }
+                          },
+    "backend_authenticated":  false,
+    "requested":  {
+                      "model":  "gpt-6.1-sol",
+                      "effort":  "high"
+                  }
+}

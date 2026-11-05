@@ -15,8 +15,8 @@ assert not (R/'logs/s1_gate.claim').exists()
 assert not (R/'logs/s1_gate_receipt.json').exists()
 assert not (R/'artifacts/gate/gate_result.json').exists()
 audit=read(R/'review/ADMISSION_BLOCK_AUDIT.json')
-assert audit['approval']['all_current_files_match'] is True
-assert audit['freeze']['all_22_snapshot_copies_match'] is True
+assert audit['approval']['all_current_approved_files_match'] is True
+assert audit['freeze']['all_approved_snapshot_copies_match'] is True
 assert audit['execution_evidence']['fit_count_claimed']==0
 review=R/'review/RECOVERY_SETUP_REVIEW.md'
 assert review.exists() and (R/'code_author/prepare_round025.py').exists()
@@ -46,7 +46,7 @@ round023의 4.5GiB 진입/2.5GiB 단계 기준 대신 사용자 승인 저메모
 |---|---:|---|
 | 03:11:21.2001385 | 1.3446044921875 | 진입1.5 미달, Python 계산0, 학습 미시작 |
 | 03:12:41.3020331 | 1.3285865783691406 | 독립 작업 뒤 재확인, 계속 미달 |
-| {last['utc']} | {last['available_gib']:.6f} | 재개 도구·독립 감사 뒤 마지막 재확인, 미달 |
+| {last['utc']} | {last['available_gib']:.6f} | 결과 기록 도구 초안·독립 감사 뒤 마지막 재확인, 미달 |
 
 부족 시 즉시 회차를 끝내지 않고 결과 판정 체크리스트, 자원 복구 분기, 보고 계약, 무실행/동결 감사, 후속 준비 도구와 정적 검토를 완료했다. 마지막 확인 뒤 반복 polling을 하지 않았다. 사용자의 다른 프로세스 종료0, 학습·검산0, 자원 부족 상태의 새 관리자 생성0이다. 예상peak0.5GiB는 객체 수명과 작은 FIT 행렬에 근거한 추정이며 실제 전체 실행의 측정 peak가 아니다. 학습이 없어 owned peak/실행 중 최소 RAM은 미측정이다.
 
@@ -60,7 +60,7 @@ round023의 4.5GiB 진입/2.5GiB 단계 기준 대신 사용자 승인 저메모
 
 ## 다음 작업과 학습
 
-현재 외부 제약은 사용자 PC의 가용 RAM이다. NEXT_SESSION의 정확한 재개 명령은 자원>=1.5GiB와 독립 Python0을 다시 확인한 뒤에만 실행한다. 다음round025 준비 도구는 이번 무실행·승인/동결 해시를 확인하고 새 디렉터리로 복사하며, 새 소스 승인·동결·단1회8fit을 요구한다. 동결/학습 결과를 재사용해 완료로 위장하지 않는다. 같은 미달 상태에서 fresh 관리자를 반복 생성하지 않는다. S1 관문 미판정이므로 S2로 넘어가지 않는다. 향후 관문 미달이 실제 검증될 때만 S2 준비 전용 티켓을 연다.
+현재 외부 제약은 사용자 PC의 가용 RAM이다. NEXT_SESSION의 정확한 재개 명령은 자원>=1.5GiB와 독립 Python0을 다시 확인한 뒤에만 실행한다. 다음round025 준비 도구는 이번 무실행·승인/동결 해시를 확인하고 새 디렉터리로 복사하며, 새 소스 승인·동결·단1회8fit을 요구한다. 이 도구는 정적 검토만 했고 실행 검증은 하지 않았다. 동결/학습 결과를 재사용해 완료로 위장하지 않는다. 같은 미달 상태에서 fresh 관리자를 반복 생성하지 않는다. S1 관문 미판정이므로 S2로 넘어가지 않는다. 향후 관문 미달이 실제 검증될 때만 S2 준비 전용 티켓을 연다.
 
 기술 목표인8fit 비교는 미완료, 소스/자원/재개 통제 기록은 완료했다. 학습자 이해는 미평가이며 하드웨어 검증0이다. 설명할 질문: 사전 RAM 입장 실패와 owned RSS 초과 중단은 왜 다른가? 모델·특징을 유지하며 객체 수명만 바꾸면 어떤 효과를 기대하는가? fold-local 및 leave-self-out의 차이는 무엇인가? 저장모델 재추론을 독립 성능 평가로 부를 수 없는 이유는 무엇인가?
 
@@ -117,6 +117,10 @@ FIT3144/4CV/seed42,304열 vs328열,8fit단1회,재시도/튜닝/원자료재스�
 s=read(ROOT/'STATUS.json')
 s.update(updated_at_utc=now,current_round='round_024',round_status=summary['status'],manager_session=os.environ.get('ORCA_AGENT_SESSION_ID'),current_task='Round024 source review and freeze complete; external RAM admission blocked before launch',next_task=summary['next_action'],latest_result_report='rounds/round_024/ROUND_REPORT.md',round_completed_at_utc=now,execution_summary=summary,diagnostic_result=summary,active_workers=[],blockers=['External system RAM below1.5GiB entry after independent work; zero training launches'],review=dict(source='rounds/round_024/review/gate_approved_sources.json',final='rounds/round_024/review/ADMISSION_BLOCK_AUDIT.json',scope='Static source/cache/freeze/zero-launch audit; no model or performance validation'))
 s['paths']['round']='rounds/round_024'
+s['budget_before_round024']=s.get('budget')
+s['budget']=read(R/'manager/runtime_contract.json')
+s['decision_rules']['current_round']='Round024 zero training launches; frozen source review complete; external RAM admission blocked; no score or numeric gate'
+s['next_round_budget'].update(emergency_min_free_gib=0.5,below_normal_priority=True)
 s['manager_model_request']=dict(model='gpt-6.1-sol',effort='high',source='explicit user request',host_recorded_model='gpt-6.1-sol',host_recorded_effort='high',evidence='rounds/round_024/manager/host_turn_evidence.json',backend_authenticated=False)
 s['scores']['round_024']=dict(evaluation_population='No new evaluation; intended FIT3144 internal4fold',fits=0,baseline_micro_f1=None,candidate_micro_f1=None,gate_pass=None,candidate_adopted=False)
 s['manager_intake'].update(state=summary['status'],independent_review_complete=True,frozen=True)

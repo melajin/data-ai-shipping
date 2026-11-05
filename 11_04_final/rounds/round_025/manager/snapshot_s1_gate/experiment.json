@@ -1,0 +1,37 @@
+{
+  "stage": "S1_gate",
+  "cv_folds": 4,
+  "seed": 42,
+  "fit_population": 3144,
+  "fixed_reference_correct": 1817,
+  "min_delta_micro": 0.005,
+  "min_delta_correct": 16,
+  "resolutions": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "alpha": 5,
+  "threads": 1,
+  "gate_fits_max": 8,
+  "full_fits_max": 0,
+  "full_requires_gate_pass": true,
+  "s2_fits": 0,
+  "retries": 0,
+  "lgbm": {
+    "objective": "multiclass",
+    "num_class": 4,
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "colsample_bytree": 0.7,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "random_state": 42,
+    "n_jobs": 1,
+    "verbose": -1
+  },
+  "fixed_reference_min_candidate_correct": 1833,
+  "full_gate_logic": "candidate>=1833 AND candidate-matched_baseline>=16",
+  "current_round_scope": "precheck8fits_only_full3fold0_regardless_score"
+}
