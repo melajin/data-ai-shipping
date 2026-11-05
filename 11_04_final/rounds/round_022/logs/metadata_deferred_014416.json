@@ -1,0 +1,35 @@
+{
+  "utc": "2026-11-05T01:44:16.149904+00:00",
+  "available_bytes": 509521920,
+  "expected_peak_bytes": 268435456,
+  "basis": "pyarrow import + parquet footer only + streamed SHA256; no table materialization",
+  "other_python": [
+    {
+      "pid": 12504,
+      "argv": [
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\notebooklm-mcp.exe"
+      ],
+      "rss": 92348416
+    },
+    {
+      "pid": 29408,
+      "argv": [
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "rounds/round_022/manager/inspect_inputs.py"
+      ],
+      "rss": 21794816
+    },
+    {
+      "pid": 32684,
+      "argv": [
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "s4_score_dev.py"
+      ],
+      "rss": 840216576
+    }
+  ]
+}

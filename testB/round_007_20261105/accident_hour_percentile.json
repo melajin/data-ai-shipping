@@ -1,0 +1,42 @@
+{
+  "accident_window": {
+    "count": {
+      "s_change": 89,
+      "s_gap": 96,
+      "s_zone": 97,
+      "score": 97
+    },
+    "mean": {
+      "s_change": 0.8325,
+      "s_gap": 0.8748,
+      "s_zone": 0.9318,
+      "score": 0.8442
+    },
+    "median": {
+      "s_change": 0.9052,
+      "s_gap": 0.9232,
+      "s_zone": 0.9568,
+      "score": 0.9216
+    }
+  },
+  "random_window": {
+    "count": {
+      "s_change": 801,
+      "s_gap": 744,
+      "s_zone": 764,
+      "score": 731
+    },
+    "mean": {
+      "s_change": 0.8202,
+      "s_gap": 0.8232,
+      "s_zone": 0.916,
+      "score": 0.8128
+    },
+    "median": {
+      "s_change": 0.8846,
+      "s_gap": 0.8877,
+      "s_zone": 0.9516,
+      "score": 0.8758
+    }
+  }
+}

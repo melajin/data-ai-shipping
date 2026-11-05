@@ -1,0 +1,16 @@
+{
+  "fine": {
+    "n_cells_reconstructed": 102053,
+    "n_cells_saved": 102053,
+    "n_cells_mismatch": 0,
+    "examples": []
+  },
+  "coarse": {
+    "n_cells_reconstructed": 9174,
+    "n_cells_saved": 9174,
+    "n_cells_mismatch": 0,
+    "examples": []
+  },
+  "fishing_rows_reconstructed": 1376741,
+  "fishing_rows_saved_meta": 1376741
+}

@@ -1,0 +1,12 @@
+{
+  "auc_n_rows": 0.7239,
+  "auc_peak": 0.7255,
+  "auc_mean": 0.6147,
+  "auc_q95": 0.6636,
+  "median_rows_pos": 741.0,
+  "median_rows_neg": 252.0,
+  "matched_n": 85,
+  "median_rows_matched_neg": 741.0,
+  "auc_peak_rowcount_matched": 0.5904,
+  "auc_nrows_matched_check": 0.5012
+}

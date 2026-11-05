@@ -1,0 +1,9 @@
+{
+  "A_peak_hits": 4,
+  "n": 85,
+  "null_mean": 2.215415,
+  "null_sd": 1.3459908535257583,
+  "p_value_one_sided": 0.16382,
+  "any_rule_hits": 15,
+  "expected_union_14_random_rules": 0.19895608380216995
+}

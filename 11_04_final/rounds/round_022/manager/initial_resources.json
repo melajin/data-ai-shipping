@@ -1,0 +1,52 @@
+{
+  "utc": "2026-11-05T01:35:39.725320+00:00",
+  "available_bytes": 3439095808,
+  "other_python": [
+    {
+      "pid": 5164,
+      "argv": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "rounds/round_022/manager/startup.py"
+      ],
+      "rss": 4292608,
+      "create_time": 1793842539.5468404
+    },
+    {
+      "pid": 12504,
+      "argv": [
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\notebooklm-mcp.exe"
+      ],
+      "rss": 92344320,
+      "create_time": 1793842018.6929548
+    },
+    {
+      "pid": 19216,
+      "argv": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "rounds/round_022/manager/startup.py"
+      ],
+      "rss": 22654976,
+      "create_time": 1793842539.5633888
+    },
+    {
+      "pid": 32684,
+      "argv": [
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "s4_score_dev.py"
+      ],
+      "rss": 590901248,
+      "create_time": 1793842534.30134
+    }
+  ],
+  "expected_peak_bytes": 1610612736,
+  "estimate_status": "preliminary: small FIT matrices and sparse profiles plus imported libraries; exact cache needs source inspection",
+  "action": "source coding and review only; no data loading/training yet",
+  "prior_external_job": "Root identified s2_devset.py as separate Claude Test B task; do not terminate"
+}

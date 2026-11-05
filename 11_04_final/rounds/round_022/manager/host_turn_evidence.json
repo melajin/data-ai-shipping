@@ -1,0 +1,79 @@
+{
+  "utc": "2026-11-05T01:37:46.300059+00:00",
+  "manager_requested": {
+    "model": "gpt-6-astra",
+    "effort": "high"
+  },
+  "worker_requested": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none"
+  },
+  "host_turn_context": [
+    {
+      "path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T10-33-03-01a1a956-8845-7db1-ab01-34aac2261237.jsonl",
+      "session_id": "01a1a956-8845-7db1-ab01-34aac2261237",
+      "source": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a1a94e-2180-7581-b636-0df3d9aca82f",
+            "depth": 1,
+            "agent_path": "/root/round022_manager",
+            "agent_nickname": "Plato",
+            "agent_role": "astra_decision"
+          }
+        }
+      },
+      "context": {
+        "utc": "2026-11-05T01:33:05.311Z",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+      }
+    },
+    {
+      "path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T10-33-54-01a1a957-5048-7a73-92c2-ea852687c7a7.jsonl",
+      "session_id": "01a1a957-5048-7a73-92c2-ea852687c7a7",
+      "source": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a1a956-8845-7db1-ab01-34aac2261237",
+            "depth": 2,
+            "agent_path": "/root/round022_manager/s1_implementation",
+            "agent_nickname": "Huygens",
+            "agent_role": "luna_worker"
+          }
+        }
+      },
+      "context": {
+        "utc": "2026-11-05T01:33:56.068Z",
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+      }
+    },
+    {
+      "path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T10-34-07-01a1a957-84a1-7542-94d0-7cea07b9e6eb.jsonl",
+      "session_id": "01a1a957-84a1-7542-94d0-7cea07b9e6eb",
+      "source": {
+        "subagent": {
+          "thread_spawn": {
+            "parent_thread_id": "01a1a956-8845-7db1-ab01-34aac2261237",
+            "depth": 2,
+            "agent_path": "/root/round022_manager/s1_review",
+            "agent_nickname": "Boyle",
+            "agent_role": "luna_worker"
+          }
+        }
+      },
+      "context": {
+        "utc": "2026-11-05T01:34:09.128Z",
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+      }
+    }
+  ],
+  "internal_model_authentication": false,
+  "configuration_changes_runtime_model": false
+}

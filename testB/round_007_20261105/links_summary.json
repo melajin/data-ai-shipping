@@ -1,0 +1,259 @@
+{
+  "accidents_total": 167,
+  "accidents_single_vessel_record": 157,
+  "grid": {
+    "w0_r2": {
+      "events_with_candidate": 31,
+      "events_single_candidate": 25,
+      "median_candidates": 1.0
+    },
+    "w0_r2_gear": {
+      "events_with_candidate": 16,
+      "events_single_candidate": 16,
+      "median_candidates": 1.0
+    },
+    "w0_r5": {
+      "events_with_candidate": 53,
+      "events_single_candidate": 32,
+      "median_candidates": 1.0
+    },
+    "w0_r5_gear": {
+      "events_with_candidate": 30,
+      "events_single_candidate": 27,
+      "median_candidates": 1.0
+    },
+    "w0_r10": {
+      "events_with_candidate": 84,
+      "events_single_candidate": 43,
+      "median_candidates": 1.0
+    },
+    "w0_r10_gear": {
+      "events_with_candidate": 52,
+      "events_single_candidate": 34,
+      "median_candidates": 1.0
+    },
+    "w0_r20": {
+      "events_with_candidate": 122,
+      "events_single_candidate": 47,
+      "median_candidates": 2.0
+    },
+    "w0_r20_gear": {
+      "events_with_candidate": 82,
+      "events_single_candidate": 43,
+      "median_candidates": 1.0
+    },
+    "w1_r2": {
+      "events_with_candidate": 60,
+      "events_single_candidate": 31,
+      "median_candidates": 1.0
+    },
+    "w1_r2_gear": {
+      "events_with_candidate": 37,
+      "events_single_candidate": 27,
+      "median_candidates": 1.0
+    },
+    "w1_r5": {
+      "events_with_candidate": 95,
+      "events_single_candidate": 30,
+      "median_candidates": 2.0
+    },
+    "w1_r5_gear": {
+      "events_with_candidate": 66,
+      "events_single_candidate": 38,
+      "median_candidates": 1.0
+    },
+    "w1_r10": {
+      "events_with_candidate": 119,
+      "events_single_candidate": 26,
+      "median_candidates": 3.0
+    },
+    "w1_r10_gear": {
+      "events_with_candidate": 90,
+      "events_single_candidate": 42,
+      "median_candidates": 2.0
+    },
+    "w1_r20": {
+      "events_with_candidate": 149,
+      "events_single_candidate": 23,
+      "median_candidates": 5.0
+    },
+    "w1_r20_gear": {
+      "events_with_candidate": 116,
+      "events_single_candidate": 34,
+      "median_candidates": 3.0
+    },
+    "w2_r2": {
+      "events_with_candidate": 72,
+      "events_single_candidate": 30,
+      "median_candidates": 2.0
+    },
+    "w2_r2_gear": {
+      "events_with_candidate": 45,
+      "events_single_candidate": 29,
+      "median_candidates": 1.0
+    },
+    "w2_r5": {
+      "events_with_candidate": 109,
+      "events_single_candidate": 31,
+      "median_candidates": 3.0
+    },
+    "w2_r5_gear": {
+      "events_with_candidate": 80,
+      "events_single_candidate": 39,
+      "median_candidates": 2.0
+    },
+    "w2_r10": {
+      "events_with_candidate": 136,
+      "events_single_candidate": 28,
+      "median_candidates": 4.0
+    },
+    "w2_r10_gear": {
+      "events_with_candidate": 107,
+      "events_single_candidate": 38,
+      "median_candidates": 2.0
+    },
+    "w2_r20": {
+      "events_with_candidate": 156,
+      "events_single_candidate": 16,
+      "median_candidates": 7.0
+    },
+    "w2_r20_gear": {
+      "events_with_candidate": 132,
+      "events_single_candidate": 28,
+      "median_candidates": 3.0
+    },
+    "w3_r2": {
+      "events_with_candidate": 83,
+      "events_single_candidate": 37,
+      "median_candidates": 2.0
+    },
+    "w3_r2_gear": {
+      "events_with_candidate": 50,
+      "events_single_candidate": 30,
+      "median_candidates": 1.0
+    },
+    "w3_r5": {
+      "events_with_candidate": 118,
+      "events_single_candidate": 28,
+      "median_candidates": 3.0
+    },
+    "w3_r5_gear": {
+      "events_with_candidate": 86,
+      "events_single_candidate": 33,
+      "median_candidates": 2.0
+    },
+    "w3_r10": {
+      "events_with_candidate": 143,
+      "events_single_candidate": 21,
+      "median_candidates": 5.0
+    },
+    "w3_r10_gear": {
+      "events_with_candidate": 117,
+      "events_single_candidate": 39,
+      "median_candidates": 3.0
+    },
+    "w3_r20": {
+      "events_with_candidate": 162,
+      "events_single_candidate": 11,
+      "median_candidates": 9.0
+    },
+    "w3_r20_gear": {
+      "events_with_candidate": 142,
+      "events_single_candidate": 27,
+      "median_candidates": 4.0
+    },
+    "w6_r2": {
+      "events_with_candidate": 108,
+      "events_single_candidate": 38,
+      "median_candidates": 2.0
+    },
+    "w6_r2_gear": {
+      "events_with_candidate": 81,
+      "events_single_candidate": 44,
+      "median_candidates": 1.0
+    },
+    "w6_r5": {
+      "events_with_candidate": 134,
+      "events_single_candidate": 23,
+      "median_candidates": 5.5
+    },
+    "w6_r5_gear": {
+      "events_with_candidate": 109,
+      "events_single_candidate": 33,
+      "median_candidates": 2.0
+    },
+    "w6_r10": {
+      "events_with_candidate": 157,
+      "events_single_candidate": 17,
+      "median_candidates": 9.0
+    },
+    "w6_r10_gear": {
+      "events_with_candidate": 136,
+      "events_single_candidate": 29,
+      "median_candidates": 4.0
+    },
+    "w6_r20": {
+      "events_with_candidate": 165,
+      "events_single_candidate": 2,
+      "median_candidates": 20.0
+    },
+    "w6_r20_gear": {
+      "events_with_candidate": 158,
+      "events_single_candidate": 18,
+      "median_candidates": 7.5
+    }
+  },
+  "base_condition": {
+    "window_h": 1,
+    "radius_km": 5.0,
+    "gear_filter": true
+  },
+  "base_single_candidate_events": 38,
+  "base_single_candidate_map": {
+    "0": 32100488,
+    "13": 36115953,
+    "14": 36007269,
+    "18": 32300202,
+    "19": 36304593,
+    "21": 36008148,
+    "22": 31005928,
+    "24": 36001494,
+    "27": 36108086,
+    "29": 36001537,
+    "30": 31100492,
+    "36": 31815325,
+    "42": 36110424,
+    "43": 36110858,
+    "53": 36115953,
+    "56": 31014672,
+    "77": 36115953,
+    "84": 36100107,
+    "87": 35200316,
+    "88": 36010554,
+    "99": 31016197,
+    "100": 36200629,
+    "104": 36301063,
+    "115": 36100546,
+    "117": 36307233,
+    "121": 32200195,
+    "122": 36006776,
+    "125": 32300334,
+    "126": 36315252,
+    "127": 31703108,
+    "130": 31005917,
+    "133": 36313865,
+    "137": 35200486,
+    "146": 35200056,
+    "152": 31016197,
+    "156": 36015383,
+    "159": 31703108,
+    "161": 36000925
+  },
+  "grid_stable_single_events": [
+    30,
+    125,
+    137,
+    152
+  ],
+  "note": "후보 선택에 이상점수를 사용하지 않았다. 단일 후보는 신원 확정이 아니다. 어구 제약은 사고기록 어업면허와 항적 fishing_code의 1:1 대응을 사용한다."
+}

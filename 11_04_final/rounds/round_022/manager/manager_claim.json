@@ -1,0 +1,15 @@
+{
+  "round": "round_022",
+  "claimed_utc": "2026-11-05T01:35:39.725320+00:00",
+  "manager": "/root/round022_manager",
+  "provider_thread": "01a1a956-8845-7db1-ab01-34aac2261237",
+  "parent_orca_session": "codex_f1807b56_2615_44fd_bb39_3110d63343de",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "high",
+  "host_evidence": "Parent collaboration spawn assigned astra_decision; parent Orca worktree ps identifies live provider thread. Separate internal model attestation not available.",
+  "authorization": "Explicit user resume and rev1 approval relayed by root",
+  "manager_start_utc": "2026-11-05T01:30:00Z",
+  "manager_deadline_utc": "2026-11-05T02:15:00Z",
+  "compute_deadline_utc": "2026-11-05T02:10:00Z",
+  "aggregate_compute_seconds_max": 1800
+}

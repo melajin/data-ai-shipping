@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "updated_at_utc": "2026-11-05T00:46:27.160797+00:00",
+  "updated_at_utc": "2026-11-05T01:35:39.725320+00:00",
   "objective": "vessel-level four-class micro-F1 >= 0.7 with development and independent evidence kept separate",
-  "goal_status": "paused_by_user_not_achieved",
-  "current_round": "round_021",
-  "round_status": "completed_evaluated_rejected_protection_and_micro_failed",
-  "manager_session": "codex_ab0b4d8c_0ea3_4c23_a7b5_b98fba0b0e78",
+  "goal_status": "active_not_achieved",
+  "current_round": "round_022",
+  "round_status": "source_preparation",
+  "manager_session": "/root/round022_manager",
   "manager_model_request": {
     "model": "gpt-6-astra",
     "reasoning_effort": "high",
@@ -23,7 +23,7 @@
     "raw_read_only": "F:/문제 데이터_수정_1027",
     "source_read_only": "D:/repos/fishing-track-classification",
     "prior_experiment": "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
-    "round": "rounds/round_021"
+    "round": "rounds/round_022"
   },
   "scores": {
     "evaluation_population": "repeatedly exposed development OUTER, 5897 vessels",
@@ -664,22 +664,25 @@
     "Holdout known_holdout_reused=true; exposure audit unresolved; individual values not opened",
     "No independent/official score and no actual F1>=0.7 evidence"
   ],
-  "active_workers": [],
+  "active_workers": [
+    "/root/round022_manager/s1_implementation",
+    "/root/round022_manager/s1_review"
+  ],
   "handoff": {
     "ready": false,
     "next_session_launched": false,
     "launch_receipt": null,
     "launcher": "automation/Start-NextSession.ps1",
-    "launcher_owner": "current manager",
+    "launcher_owner": "root",
     "next_round": null,
-    "pause_reason": "User explicitly requested no next execution; explain current degradation only",
+    "pause_reason": null,
     "authorization": "User authorizes local experiments and fresh Astra high handoffs without repeated approval",
     "close_completed_session_requested": true,
     "completed_session_id": "codex_ab0b4d8c_0ea3_4c23_a7b5_b98fba0b0e78",
     "close_completed_session_status": "orca agent help exposes launch/hooks only; no structured-chat close. End current work after acceptance; manually close only completed tab if needed.",
     "next_session_id": null,
     "accepted_at_utc": null,
-    "note": "Do not launch any new manager or experiment. Round021 is complete; no round021 launch receipt was created."
+    "note": "Round022 active. Root coordinates next fresh Astra session only after this manager completes; no duplicate launches."
   },
   "learning_status": {
     "learner_understanding_assessed": false,
@@ -726,70 +729,45 @@
     "expected_peak_gib": 1.5,
     "retries": 0
   },
-  "latest_result_report": "rounds/round_020/ROUND_REPORT.md",
+  "latest_result_report": "rounds/round_021/ROUND_REPORT.md",
   "round_completed_at_utc": "2026-11-05T00:02:54.605965+00:00",
   "review": {
     "source": "rounds/round_020/review/SOURCE_REVIEW.md",
     "final": "rounds/round_020/review/FINAL_REVIEW.md"
   },
   "execution_summary": {
-    "round": "round_020",
-    "status": "completed_implementation_incomplete_budget_exhausted",
-    "finished_utc": "2026-11-05T00:02:54.605965+00:00",
-    "source_review_approved": false,
-    "prepare_runs": 0,
-    "base_fits": 0,
-    "meta_fits": 0,
-    "outer_probability_evaluations": 0,
-    "new_micro_f1": null,
-    "candidate_adopted": false,
-    "development_goal_reached": false,
-    "independent_micro_f1": null,
-    "official_micro_f1": null,
-    "reason": "Implementation and review did not complete before frozen compute cutoff23:58:09UTC; manager deadline00:03:09UTC. No runtime performance claim.",
-    "pending": [
-      "TabICL INNER787 must validate full INNER then subset SELECT394",
-      "Implement both-reference integer TP0>=2389/TP3>=92 and historical exact-key join plus class transitions",
-      "Per-fit120s hard timeout and convergence failure",
-      "Save keyed SELECT raw probabilities for spatial comparison"
-    ],
-    "outer_label_preload": true,
-    "outer_label_preload_scope": "Reviewer/author metadata alignment read original feature NPZ y array; no OUTER probability/features/score use or candidate tuning",
-    "manager_requested_model": "gpt-6-astra",
-    "manager_requested_effort": "high",
-    "host_turn_evidence": "manager/host_turn_evidence.json",
-    "hardware_verified": false
+    "round": "round_022",
+    "status": "source_preparation",
+    "fits": 0,
+    "outer_evaluations": 0,
+    "new_micro_f1": null
   },
   "independent_evaluation_blockers": [
     "No exposure-verified independent evaluation roster approved or opened"
   ],
   "latest_user_steering": {
-    "source": "rounds/round_020/manager/USER_PROTECTION_AMENDMENT.md",
-    "protected_classes": [
-      0,
-      3
-    ],
-    "allowed_recall_drop": 0,
-    "integer_tp_minimum": [
-      2389,
-      92
-    ],
-    "target_classes": [
-      1,
-      2
-    ],
-    "performance_guaranteed": false
+    "source": "docs/20261105_CODEX_인계_0.7_실행계획.md rev1 + explicit user resume",
+    "diagnostic_protection": {
+      "TP0": 2389,
+      "TP3": 90
+    },
+    "final_5seed_protection": {
+      "TP0": 2381,
+      "TP3": 92
+    },
+    "change_reason": "User approved policy; not a mathematical impossibility claim",
+    "scope": "S1 gate first, no S2 in round022"
   },
   "user_pause": {
-    "requested": true,
+    "requested": false,
     "after_round": "round_002",
     "instruction": "Complete round_002 then pause; do not launch round_003",
     "requested_at_utc": "2026-11-04T15:15:23.2336258Z",
     "resume_requires_explicit_user_instruction": true,
     "effective": false,
     "effective_at_utc": "2026-11-04T15:30:56.5365856Z",
-    "resumed_at_utc": "2026-11-04T16:13:16.344705+00:00",
-    "resume_instruction": "3차 돌려보자 일단 새 세션 오픈해서"
+    "resumed_at_utc": "2026-11-05T01:35:39.725320+00:00",
+    "resume_instruction": "User explicitly resumed approved rev1 S1 FIT internal4fold gate"
   },
   "latest_user_steering_before_resume": {
     "source": "rounds/round_002/references/algorithm_variant_ideas.md",

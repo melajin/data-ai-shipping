@@ -1,0 +1,28 @@
+{
+  "vessels_total_train": 7372,
+  "accidents_total": 167,
+  "events_with_identified_vessel": 98,
+  "events_by_tier": {
+    "(0, 2.0)": 16,
+    "(0, 5.0)": 13,
+    "(1, 2.0)": 15,
+    "(1, 5.0)": 13,
+    "(2, 5.0)": 12,
+    "(0, 10.0)": 10,
+    "(1, 10.0)": 9,
+    "(3, 5.0)": 3,
+    "(2, 10.0)": 7
+  },
+  "events_with_conflict": 10,
+  "distinct_vessels": 85,
+  "vessels_with_multiple_events": 9,
+  "accident_adjacent_vessels_loose": 1245,
+  "negative_pool": 6127,
+  "negative_sample": 1500,
+  "neg_condition": {
+    "window_h": 6,
+    "radius_km": 20.0,
+    "gear_filter": false
+  },
+  "caveat": "음성은 '사고 목록 근거 없음'이며 확정 정상이 아니다. 양성 신원은 시각·좌표·어구만으로 정했고 이상점수를 쓰지 않았다."
+}

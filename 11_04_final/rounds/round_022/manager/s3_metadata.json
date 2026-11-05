@@ -1,0 +1,45 @@
+{
+  "utc": "2026-11-05T01:49:09.657795+00:00",
+  "source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s3_hourly.parquet",
+  "bytes": 144565255,
+  "sha256": "7f1d433ce06963cdfa0ff131ba7bb21192846ed4b859a7d48ebc200bff81b1eb",
+  "schema": "id: int64\nyear: int64\nsplit: string\ndate: timestamp[ns]\nhour: int64\ncen_lon: double\ncen_lat: double\nstationary: double\ngap_hours: double\nn_points: int64\ncell_001: string\ncell_005: string\nn_parts: int64\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1557",
+  "row_count": 8099457,
+  "row_groups": [
+    {
+      "rows": 1048576,
+      "uncompressed_bytes": 23474022
+    },
+    {
+      "rows": 1048576,
+      "uncompressed_bytes": 23180670
+    },
+    {
+      "rows": 1048576,
+      "uncompressed_bytes": 23103519
+    },
+    {
+      "rows": 1048576,
+      "uncompressed_bytes": 23754667
+    },
+    {
+      "rows": 1048576,
+      "uncompressed_bytes": 23544115
+    },
+    {
+      "rows": 1048576,
+      "uncompressed_bytes": 23634469
+    },
+    {
+      "rows": 1048576,
+      "uncompressed_bytes": 22912577
+    },
+    {
+      "rows": 759425,
+      "uncompressed_bytes": 16570443
+    }
+  ],
+  "row_values_read": false,
+  "pyarrow_version": "24.0.0",
+  "rss_bytes": 46559232
+}

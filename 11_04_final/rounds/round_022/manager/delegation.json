@@ -1,0 +1,36 @@
+{
+  "utc": "2026-11-05T01:35:39.725320+00:00",
+  "workers": [
+    {
+      "task": "/root/round022_manager/s1_implementation",
+      "requested_model": "gpt-6-luna",
+      "requested_effort": "xhigh",
+      "fork_turns": "none",
+      "owns": [
+        "code/s1_features.py",
+        "code/run_gate.py"
+      ]
+    },
+    {
+      "task": "/root/round022_manager/s1_review",
+      "requested_model": "gpt-6-luna",
+      "requested_effort": "xhigh",
+      "fork_turns": "none",
+      "owns": [
+        "review/*"
+      ]
+    }
+  ],
+  "host_evidence": "collaboration.spawn_agent returned canonical task names; effective role policy luna_worker specifies model and effort; no separate model internals attestation",
+  "manager_owns": [
+    "manager/*",
+    "configs/*",
+    "ROUND_PLAN.md",
+    "ROUND_REPORT.md",
+    "STATUS.json",
+    "NEXT_SESSION.md",
+    "EXPERIMENT_LEDGER.csv"
+  ],
+  "total_slots": 4,
+  "do_not_revert_others": true
+}
