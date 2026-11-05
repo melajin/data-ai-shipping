@@ -1,0 +1,249 @@
+{
+    "audit_timestamp_utc":  "2026-11-05T03:15:54Z",
+    "method":  "Read-only path existence checks and streaming SHA256; no Python import, raw data load, model load, fit, score, or metric calculation.",
+    "approval":  {
+                     "path":  "rounds/round_024/review/gate_approved_sources.json",
+                     "approved_file_count":  22,
+                     "approval_sha256":  "8ed80f6a6fc23715cabc425d62815a64bd94d62c90c72d663380da9d853a7166",
+                     "all_current_approved_files_match":  true,
+                     "mismatches":  [
+
+                                    ]
+                 },
+    "freeze":  {
+                   "path":  "rounds/round_024/manager/snapshot_s1_gate/freeze.json",
+                   "stage":  "s1_gate",
+                   "approval_path":  "rounds\\round_024\\review\\gate_approved_sources.json",
+                   "approval_sha256_in_freeze":  "8ed80f6a6fc23715cabc425d62815a64bd94d62c90c72d663380da9d853a7166",
+                   "approval_sha256_matches":  true,
+                   "snapshot_approval_copy_sha256":  "8ed80f6a6fc23715cabc425d62815a64bd94d62c90c72d663380da9d853a7166",
+                   "snapshot_approval_copy_matches":  true,
+                   "source_hash_map_matches_approval":  true,
+                   "all_approved_snapshot_copies_match":  true,
+                   "snapshot_copy_mismatches":  [
+
+                                                ]
+               },
+    "approved_file_hashes":  [
+                                 {
+                                     "path":  "rounds/round_024/ROUND_PLAN.md",
+                                     "approved_sha256":  "98bf1b16fc93fc59f7982be5ec6954eabcd14d84ed6aa7f2690ea23f8a8b9819",
+                                     "current_sha256":  "98bf1b16fc93fc59f7982be5ec6954eabcd14d84ed6aa7f2690ea23f8a8b9819",
+                                     "snapshot_sha256":  "98bf1b16fc93fc59f7982be5ec6954eabcd14d84ed6aa7f2690ea23f8a8b9819",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/configs/experiment.json",
+                                     "approved_sha256":  "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77",
+                                     "current_sha256":  "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77",
+                                     "snapshot_sha256":  "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/code/prepare_t5_cache.py",
+                                     "approved_sha256":  "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+                                     "current_sha256":  "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+                                     "snapshot_sha256":  "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/code/t5_rebuild.py",
+                                     "approved_sha256":  "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+                                     "current_sha256":  "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+                                     "snapshot_sha256":  "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/code/s1_features.py",
+                                     "approved_sha256":  "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+                                     "current_sha256":  "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+                                     "snapshot_sha256":  "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/code/run_gate.py",
+                                     "approved_sha256":  "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+                                     "current_sha256":  "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+                                     "snapshot_sha256":  "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/artifacts/t5_fishing_profiles.npz",
+                                     "approved_sha256":  "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+                                     "current_sha256":  "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+                                     "snapshot_sha256":  "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/artifacts/t5_fishing_profiles.manifest.json",
+                                     "approved_sha256":  "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+                                     "current_sha256":  "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+                                     "snapshot_sha256":  "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/artifacts/t5_mask_equivalence.json",
+                                     "approved_sha256":  "1b2a70d3bd945bf0eafc8864146f703731078530940a5358812d2da8407ba695",
+                                     "current_sha256":  "1b2a70d3bd945bf0eafc8864146f703731078530940a5358812d2da8407ba695",
+                                     "snapshot_sha256":  "1b2a70d3bd945bf0eafc8864146f703731078530940a5358812d2da8407ba695",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/tmp/s1_profiles.sqlite",
+                                     "approved_sha256":  "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+                                     "current_sha256":  "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+                                     "snapshot_sha256":  "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/tmp/s1_profiles.sqlite.manifest.json",
+                                     "approved_sha256":  "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+                                     "current_sha256":  "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+                                     "snapshot_sha256":  "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/manager/runtime_contract.json",
+                                     "approved_sha256":  "cf5958550ea853582e4cb7db57424c4e28a6c31a67f2d145d1ba6163f5c3bbb1",
+                                     "current_sha256":  "cf5958550ea853582e4cb7db57424c4e28a6c31a67f2d145d1ba6163f5c3bbb1",
+                                     "snapshot_sha256":  "cf5958550ea853582e4cb7db57424c4e28a6c31a67f2d145d1ba6163f5c3bbb1",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/manager/launch.py",
+                                     "approved_sha256":  "0be348fd06e7a7358a235fab0ce11cc0d958feccdb753137689bfe43b032ba6a",
+                                     "current_sha256":  "0be348fd06e7a7358a235fab0ce11cc0d958feccdb753137689bfe43b032ba6a",
+                                     "snapshot_sha256":  "0be348fd06e7a7358a235fab0ce11cc0d958feccdb753137689bfe43b032ba6a",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/manager/freeze_stage.py",
+                                     "approved_sha256":  "88c48a90a2d8bb22be18c7494f7472d8879fe6588f7d7ec292ed139d966bf45c",
+                                     "current_sha256":  "88c48a90a2d8bb22be18c7494f7472d8879fe6588f7d7ec292ed139d966bf45c",
+                                     "snapshot_sha256":  "88c48a90a2d8bb22be18c7494f7472d8879fe6588f7d7ec292ed139d966bf45c",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/manager/copied_inputs.json",
+                                     "approved_sha256":  "76cb53ea6e6df7f5f90ac53b006673c08039b9d6a420da981b3b45e21629571f",
+                                     "current_sha256":  "76cb53ea6e6df7f5f90ac53b006673c08039b9d6a420da981b3b45e21629571f",
+                                     "snapshot_sha256":  "76cb53ea6e6df7f5f90ac53b006673c08039b9d6a420da981b3b45e21629571f",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/manager/MODEL_SWITCH_HANDOFF.md",
+                                     "approved_sha256":  "e819ce610afb518651b29550ac4b711cd81932f82d3fdc61521c975224ea06d2",
+                                     "current_sha256":  "e819ce610afb518651b29550ac4b711cd81932f82d3fdc61521c975224ea06d2",
+                                     "snapshot_sha256":  "e819ce610afb518651b29550ac4b711cd81932f82d3fdc61521c975224ea06d2",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/manager/MANAGER_ACTIONS.md",
+                                     "approved_sha256":  "6e26dc2dc25bff474c2480954794bf5a4b6d0b38bbedc205b02a8b6b5a6ff323",
+                                     "current_sha256":  "6e26dc2dc25bff474c2480954794bf5a4b6d0b38bbedc205b02a8b6b5a6ff323",
+                                     "snapshot_sha256":  "6e26dc2dc25bff474c2480954794bf5a4b6d0b38bbedc205b02a8b6b5a6ff323",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/manager/syntax_check.json",
+                                     "approved_sha256":  "c6757ca44baacda821edc4d2523576e01e0a90f0a17abfd720b131dba320ef3f",
+                                     "current_sha256":  "c6757ca44baacda821edc4d2523576e01e0a90f0a17abfd720b131dba320ef3f",
+                                     "snapshot_sha256":  "c6757ca44baacda821edc4d2523576e01e0a90f0a17abfd720b131dba320ef3f",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/review/verify_gate_result.py",
+                                     "approved_sha256":  "349e14a58030fb523d11c7ae406c55a0bfbb3e2cb98479d314132655cfc8fd4d",
+                                     "current_sha256":  "349e14a58030fb523d11c7ae406c55a0bfbb3e2cb98479d314132655cfc8fd4d",
+                                     "snapshot_sha256":  "349e14a58030fb523d11c7ae406c55a0bfbb3e2cb98479d314132655cfc8fd4d",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/review/reinfer_saved.py",
+                                     "approved_sha256":  "7532090541886665fd30dfd871b3157452ef7d5f741ea5f7b91c505a1eb9a2c7",
+                                     "current_sha256":  "7532090541886665fd30dfd871b3157452ef7d5f741ea5f7b91c505a1eb9a2c7",
+                                     "snapshot_sha256":  "7532090541886665fd30dfd871b3157452ef7d5f741ea5f7b91c505a1eb9a2c7",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/review/SOURCE_REVIEW.md",
+                                     "approved_sha256":  "472fcbffa08863314ed88a77aea84e67dd54f36e827634c8c7ad8d2e20dcdb83",
+                                     "current_sha256":  "472fcbffa08863314ed88a77aea84e67dd54f36e827634c8c7ad8d2e20dcdb83",
+                                     "snapshot_sha256":  "472fcbffa08863314ed88a77aea84e67dd54f36e827634c8c7ad8d2e20dcdb83",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 },
+                                 {
+                                     "path":  "rounds/round_024/code_author/supplement_metrics.py",
+                                     "approved_sha256":  "f107c4929463502aa56dec4008b37ffcaec7ab1e099f3153b01df10884ed8ff1",
+                                     "current_sha256":  "f107c4929463502aa56dec4008b37ffcaec7ab1e099f3153b01df10884ed8ff1",
+                                     "snapshot_sha256":  "f107c4929463502aa56dec4008b37ffcaec7ab1e099f3153b01df10884ed8ff1",
+                                     "current_match":  true,
+                                     "snapshot_match":  true
+                                 }
+                             ],
+    "execution_evidence":  {
+                               "checked_markers":  [
+                                                       {
+                                                           "path":  "rounds/round_024/logs/s1_gate.claim",
+                                                           "present":  false
+                                                       },
+                                                       {
+                                                           "path":  "rounds/round_024/logs/s1_gate_receipt.json",
+                                                           "present":  false
+                                                       },
+                                                       {
+                                                           "path":  "rounds/round_024/logs/s1_gate_preflight.json",
+                                                           "present":  false
+                                                       },
+                                                       {
+                                                           "path":  "rounds/round_024/logs/s1_gate_started.json",
+                                                           "present":  false
+                                                       },
+                                                       {
+                                                           "path":  "rounds/round_024/artifacts/gate/gate_result.json",
+                                                           "present":  false
+                                                       },
+                                                       {
+                                                           "path":  "rounds/round_024/artifacts/gate/fit_progress.json",
+                                                           "present":  false
+                                                       }
+                                                   ],
+                               "gate_directory_present":  false,
+                               "gate_file_count":  0,
+                               "model_file_count":  0,
+                               "feature_evidence_file_count":  0,
+                               "round_log_file_count":  0,
+                               "fit_count_claimed":  0,
+                               "fit_count_basis":  "No s1_gate claim, launch receipt, started/preflight record, gate_result, fit_progress, gate directory, model file, or feature_evidence file exists."
+                           },
+    "admission":  {
+                      "ram_snapshot_utc":  "2026-11-05T03:12:41Z",
+                      "available_gib":  1.3286,
+                      "entry_threshold_gib":  1.5,
+                      "other_python_processes":  0,
+                      "admitted":  false,
+                      "reason":  "Available RAM below entry threshold; no training claim or child launch."
+                  },
+    "scope_note":  "This audit records absence of a round024 training attempt at audit time. It does not verify model performance or access raw/holdout/Test rows."
+}

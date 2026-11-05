@@ -1,0 +1,11 @@
+{
+  "legacy_log1p_count_matches": true,
+  "max_abs_log_count_delta": 8.881784197001252e-16,
+  "finite_log_count_comparisons": 2835,
+  "current_fit_rows": 3144,
+  "fishing_rows": 567869,
+  "active_query_rows": 963056,
+  "shared_harbors": 129,
+  "shared_stop_records": 3229749,
+  "shared_ref_lat": 35.67933322716197
+}

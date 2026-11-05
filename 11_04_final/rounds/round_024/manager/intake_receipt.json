@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-05T03:01:08.140996+00:00",
+  "orca_session_id": "codex_dbda3b8b_fecf_4c6c_8629_42602b4f1cdb",
+  "thread_id": "01a1a9a5-3f10-7540-8e1d-ef3ff236742d",
+  "receipt_owner_matches": true,
+  "handoff_sha256": "ABB200887434F8299EE7B360AD2FEB54530862689133E1FC4BD14475DFEDED26",
+  "prepare_rerun": false,
+  "previous_manager_relinquished": true,
+  "training_not_started_at_intake": true
+}

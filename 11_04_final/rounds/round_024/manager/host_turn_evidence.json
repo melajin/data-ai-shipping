@@ -1,0 +1,44 @@
+{
+  "utc": "2026-11-05T03:01:08.140115+00:00",
+  "manager_request": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "worker_request": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "roles": [
+      "code_author",
+      "reviewer"
+    ],
+    "host_total_slots": 4
+  },
+  "host_turn_context": [
+    {
+      "role": "manager",
+      "thread_id": "01a1a9a5-3f10-7540-8e1d-ef3ff236742d",
+      "source_path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T11-59-01-01a1a9a5-3f10-7540-8e1d-ef3ff236742d.jsonl",
+      "utc": "2026-11-05T02:59:03.435Z",
+      "model": "gpt-6.1-sol",
+      "effort": "high"
+    },
+    {
+      "role": "/root/code_author",
+      "thread_id": "01a1a9a5-ee10-78b3-8699-3c600ddfef31",
+      "source_path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T11-59-46-01a1a9a5-ee10-78b3-8699-3c600ddfef31.jsonl",
+      "utc": "2026-11-05T02:59:47.822Z",
+      "model": "gpt-6-luna",
+      "effort": "xhigh"
+    },
+    {
+      "role": "/root/reviewer",
+      "thread_id": "01a1a9a6-1b01-7d41-bed8-a4a49cdce5d0",
+      "source_path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T11-59-58-01a1a9a6-1b01-7d41-bed8-a4a49cdce5d0.jsonl",
+      "utc": "2026-11-05T02:59:59.448Z",
+      "model": "gpt-6-luna",
+      "effort": "xhigh"
+    }
+  ],
+  "backend_authenticated": false,
+  "scope": "Host-recorded configuration, not backend model authentication"
+}

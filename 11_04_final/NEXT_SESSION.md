@@ -1,38 +1,59 @@
-# Round024 인계 — 메모리 여유 확보 후 고정 S1 선행 비교 복구
+# 최신 변경: round024를 새 GPT-6.1 Sol high 관리자가 계속 실행
 
-최종 재확인 2026-11-05T02:34:51.390442+00:00: RAM 2.822GiB / 필요4.5GiB; external_resource_constraint_no_fresh_launch.
+사용자 지시 `model 6.1 sol high로 변경`에 따른 관리자 교체이다. 보조는 Luna xhigh 유지.
+round024 디렉터리와 저메모리 소스/캐시 준비가 이미 완료되었다. **prepare_round024.py 재실행 금지**.
+현재 학습 0/8, 동결 0, 독립 검토 미완료. current_round=round_023은 직전 완료 회차를 뜻한다.
+새 관리자는 `rounds/round_024/manager/MODEL_SWITCH_HANDOFF.md`와 작성자 노트를 읽고 별도 작성/검토 담당자를 배정한다.
+기존 수학적 비교·8fit 단1회·재시도0·RAM/단일스레드/우선순위 제한을 유지한다.
+runtime_contract의 기존 남은 시간 안에 수행 가능하면 그대로 진행한다. 검토 전 사용자 모델 변경으로 시간이 소진됐으면
+학습이 시작되지 않았다는 증거와 새 관리자 시작 시각을 남기고 미실행 회차의 45분 관리/30분 계산/900초 단일 job 예산을 새 검토 전에 명시한다.
+이 인계 자체는 round024 완료나 새 점수가 아니다. 완료 후 정규 Start-NextSession.ps1은 이제 Sol high를 요청한다.
 
-직전 결과: `rounds/round_023/ROUND_REPORT.md`. Round023은 준비캐시와 승인 소스를 재사용하여1회 실행했으나 입력 준비 후 RAM2.465GiB<2.5GiB 검사에서25.10초 만에 중단됐다. **0/8fit, 새 점수·관문 모두 미판정**이다. 이전022의2fit을 보존한다. 성능 실패로 기각하지 않고S2로 건너뛰지 않는다.
+아래는 기존 실험 절차이며 Astra 관리자 표현은 위 사용자 변경으로 대체된다.
 
-현재 실제 자원 상태는 `rounds/round_023/manager/resource_recheck_after_independent_work.json`과STATUS의blockers/handoff를 먼저 읽는다. 자원 미달로 fresh 세션을 만들지 않은 경우, RAM여유가 확보된 뒤 다음 명령으로새Astra high를 시작한다. 반복 승인 불필요. 사용자의 다른 프로세스를 임의 종료하지 않는다.
+# Round024 인계 — 사용자 지시 기반 저메모리 순차 S1 선행 비교 복구
+
+최종 재확인 2026-11-05T02:52:34.363497+00:00: RAM 2.311GiB / 필요 1.5GiB (`allowed=true`, `other_python_jobs=0`).
+사용자 명시 지시(2026-11-05 11:42 KST): **“시간이 조금 걸려도 메모리 조금씩 써서 작업하는걸로 해 나 딴것도 해야함...”**
+
+직전 결과: `rounds/round_023/ROUND_REPORT.md`. Round023은 준비캐시와 승인 소스를 재사용하여 1회 실행했으나 기존 `2.5GiB` 단계 가드(`2.465GiB < 2.5GiB`)에서 25.10초 만에 중단됐다. **0/8fit, 새 점수·관문 모두 미판정**이다. 이전 022의 2fit을 보존한다. 성능 실패로 기각하지 않고 S2로 건너뛰지 않는다.
+
+사용자의 명시적 저메모리·백그라운드 병행 지시에 따라, 이전 `round_023`이 설정했던 과도한 `4.5GiB` 진입 / `2.5GiB` 단계별 가용 RAM 기준을 폐기하고 **단계별 메모리 즉시 해제(`del` + `gc.collect()`)·단일 스레드(`threads=1`, `n_jobs=1`)·낮은 프로세스 우선순위(`BELOW_NORMAL_PRIORITY_CLASS`)** 기반의 저메모리 순차 실행 계약(`rounds/round_023/manager/next_resource_contract.json`)으로 전환했다.
 
 ```powershell
 & 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/automation/Start-NextSession.ps1' -FromRound 'round_023'
 ```
 
-수락 영수증은 `automation/receipts/round_023_launch.json`이다. accepted=true인영수증이이미있으면다시launch하지않고해당owner를확인한다. 새관리자는 기존receipt/session/claim/livePython중복과round024존재부터확인한다. `round_024`가이미있으면setup을다시실행하지않는다. 이번현재관리자는다음실험을동시에수행하지않는다.
+수락 영수증은 `automation/receipts/round_023_launch.json`이다. `accepted=true`인 영수증이 이미 있으면 다시 launch하지 않고 해당 owner를 확인한다. 새 관리자는 기존 receipt/session/claim/livePython 중복과 `round_024` 존재부터 확인한다. `round_024`가 이미 있으면 setup을 다시 실행하지 않는다.
 
-## 시작 조건과 setup
+## 시작 조건과 저메모리 setup
 
-새회차입장·launch가용RAM>=**4.5GiB**. 근거는기존단계별여유2.5 + 보수적작업peak1.5 + 변동여유0.5. 이전부분peak0.427을전체상한으로보지않는다. 동시큰계산0상태에서시작하며학습은동시1/threads3. 예상peak1.5·각단계free2.5·실행중안전검사는유지한다.
+새 회차 입장·launch 가용 RAM >= **1.5GiB**, 각 단계 가용 RAM >= **1.0GiB**, 작업 예상 peak <= **0.5GiB**(강제 RSS 상한 **0.75GiB**, 시스템 비상 중단 하한 **0.5GiB**). 동시 큰 계산 0 상태에서 시작하며 학습은 동시 1 / `threads=1` (`n_jobs=1`) / `BELOW_NORMAL_PRIORITY_CLASS`다. 사용자의 다른 프로세스는 절대 종료하지 않는다.
 
-관리자는Luna xhigh작성담당과별도검토담당을둔다(호스트총4슬롯우선). 요청model/effort와hostturn_context를분리기록한다. 자원부족시먼저가능한독립검토/문서작업,그후실행직전1회재확인한다. 여전히미달이고독립작업이없으면외부자원대기를기록하고끝낸다. **RAM조회polling·RAM만기다리는fresh세션연쇄생성금지.**
+관리자는 Luna xhigh 작성 담당과 별도 검토 담당을 둔다(호스트 총 4슬롯 우선). 요청 model/effort와 host turn_context를 분리 기록한다.
 
-루트를작업디렉터리로설정후:
+루트를 작업 디렉터리로 설정 후:
 
 ```powershell
 & 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' -B -X utf8 rounds/round_023/manager/prepare_round024.py
 ```
 
-setup은먼저4.5GiB와다른Python작업을검사하고,부족하면round024를만들지않고중단한다. 성공하면승인된4개모델/특징소스·config·T5/S1cache/manifest·기존checker를복사하며새45분관리/40분계산벽시계/누적계산30분/job900초계약을생성한다. 모델소스변경0,rawrescan0. launcher변경은시작RAM조건을runtimecontract의4.5GiB에서읽도록한1줄이다. 기존내부2.5GiB검사는바꾸지않는다.
+`prepare_round024.py`는 먼저 `1.5GiB` 가용 RAM과 다른 Python 작업을 검사하고, 통과하면 `round_023`의 승인된 소스·캐시 해시를 검산한 뒤 `rounds/round_024`로 복사하고 아래 **사용자 지시 기반 저메모리 순차 패치**를 적용한다(수학적 특징 정의·분할·하이퍼파라미터·판정 기준 변경 0, 원자료 재스캔 0):
+1. `configs/experiment.json`: `threads=1`, `lgbm.n_jobs=1`로 설정하여 CPU 및 스레드별 히스토그램 버퍼 사용량 최소화.
+2. `code/t5_rebuild.py`: 중복 검사용 56.7만 건 `seen` 집합을 루프 직후 즉시 `del seen`으로 해제.
+3. `code/s1_features.py`: 각 기간(`month 0..6`) 계산 직후 `del period_profiles, counts_by_res` 및 `gc.collect()` 호출.
+4. `code/run_gate.py`: 4개 CV fold의 `t5_matrix`(`4×3144×10`, 약 1MB)만 먼저 계산한 뒤 약 100MB 규모의 `rebuild_t5` 클로저를 `del rebuild_t5; gc.collect()`로 즉시 해제하고, 이후 S1 특징 생성 및 각 단일 모델(`baseline`, `candidate`) 학습 직후마다 `del model, proba, pred; gc.collect()` 수행. 단계별 가용 RAM 검사는 `1.0GiB`(예상 peak `0.5GiB`).
+5. `manager/launch.py` & `manager/runtime_contract.json`: `OMP/OPENBLAS/MKL/NUMEXPR_NUM_THREADS=1`, `BELOW_NORMAL_PRIORITY_CLASS`, 진입 가용 RAM `1.5GiB`, 작업 RSS 상한 `0.75GiB`, 시스템 비상 가용 하한 `0.5GiB`.
+6. `review/verify_gate_result.py`: `round_022/` 접두사 하드코딩을 `f"{round_dir.name}/"`로 수정하여 `round_024` 승인 소스 해시를 직접 대조.
+7. `review/reinfer_saved.py`: 8개 저장 모델을 1개씩 순차 로드·재추론(`del model; gc.collect()`)하여 저장 확률(절대오차 `1e-7` 이하)·argmax·클래스 순서·모델 해시를 검산하는 스크립트 포함.
 
-새Luna검토담당이복사해시·launcher의한줄·새plan/runtime·checker경로를검토하고**새round024경로/hash로**`review/gate_approved_sources.json`을작성한다. setup은독립승인을위조하지않는다. 작성자와검토자파일소유분리,다른사람변경되돌리기금지. 다음단계는이전명령의성공을확인한별도호출로진행한다.
+새 Luna 검토 담당이 복사본과 저메모리 순차 패치 내용(`copied_inputs.json` 기록 포함), `ROUND_PLAN.md`, `runtime_contract.json`, `verify_gate_result.py`, `reinfer_saved.py`를 검토하고 **새 `round_024` 경로/hash로** `rounds/round_024/review/gate_approved_sources.json`을 작성한다. 작성자와 검토자 파일 소유 분리, 다른 사람 변경 되돌리기 금지. 다음 단계는 이전 명령의 성공을 확인한 별도 호출로 진행한다.
 
 ```powershell
 & 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' -B -X utf8 rounds/round_024/manager/freeze_stage.py --stage s1_gate --approval rounds/round_024/review/gate_approved_sources.json
 ```
 
-동결성공확인뒤:
+동결 성공 확인 뒤:
 
 ```powershell
 & 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' -B -X utf8 rounds/round_024/manager/launch.py --stage s1_gate --seconds 900 --python 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' --script rounds/round_024/code/run_gate.py -- --run-gate
@@ -40,26 +61,28 @@ setup은먼저4.5GiB와다른Python작업을검사하고,부족하면round024를
 
 ## 유한 범위·완료와 실패 분기
 
-동일3144FIT/4CV/seed42/304열vs328열,8fit단1회,튜닝0/재시도0/full3fold0/S2훈련0. 지도T5와S1은각CVtrain라벨로다시계산하고query자기라벨을counts/globalprior/fallback에서제외한다. 선행AND관문은후보>=1833/3144와후보−엄밀동일절차기준>=16. 고정1817참고와엄밀기준을별도로보고한다. 특징은centroid/record-timeproxy이며실제체류시간/원래모든geometry점유가아니다.
+동일 3144 FIT / 4CV / seed42 / 304열 vs 328열, 8fit 단 1회, 튜닝 0 / 재시도 0 / full 3fold 0 / S2 훈련 0. 지도 T5와 S1은 각 CV train 라벨로 다시 계산하고 query 자기 라벨을 counts/global prior/fallback에서 제외한다. 선행 AND 관문은 `후보 >= 1833/3144`와 `후보 − 엄밀동일절차기준 >= 16`. 고정 1817 참고와 엄밀 기준을 별도로 보고한다. 특징은 centroid/record-time proxy이며 실제 체류시간/원래 모든 geometry 점유가 아니다.
 
-정상종료8fit와gate_result가존재할때만:
+정상 종료 8fit와 `gate_result.json`이 존재할 때만 순차 검산을 실행한다(가용 RAM >= 1.0GiB 확인):
 
 ```powershell
 & 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' -B -X utf8 rounds/round_024/review/verify_gate_result.py rounds/round_024/artifacts/gate
 ```
 
-기존checker는재로드스키마확인까지이며실제재추론이아니다. 또한소스해시매핑에round022문구가남아있으므로검토담당이새경로의승인/동결/실행전후해시를별도로확인한다. 검토담당은`review/reinfer_saved.py`를작성해원래304열의FIT순서와각fold저장T5를복원하고후보는저장S1을추가한뒤,저장8모델을한개씩읽어valid행확률을float32로계산하여저장확률(절대오차1e-7이하)·argmax와비교한다. modelhash/validation분할완전성/클래스순서도확인하고`review/saved_output_verification.json`에결과를남긴다. 이도구는아직작성·실행되지않았다. 가용RAM과예상peak512MiB를확인하고순차실행한다.
+이어서 검토 담당이 `review/reinfer_saved.py`를 실행하여 8개 모델 순차 재추론(`max_abs_proba_diff <= 1e-7` 및 argmax 일치)을 검증하고 `rounds/round_024/review/saved_output_verification.json`에 결과를 남긴다:
 
-검산pass후에만setup이복사한보완도구를실행한다:
+```powershell
+& 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' -B -X utf8 rounds/round_024/review/reinfer_saved.py rounds/round_024/artifacts/gate
+```
+
+두 검산이 모두 pass한 후에만 setup이 복사한 보완 도구를 실행한다:
 
 ```powershell
 & 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' -B -X utf8 rounds/round_024/code_author/supplement_metrics.py rounds/round_024/artifacts/gate
 ```
 
-이도구의hash확인은원래NPZ+orderedFIT명부까지다. 전체소스·모델검산을대체하지않는다. 미실행도구를검증완료로표현하지않는다. pairedgain/loss/net,5000bootstrap(seed20261105),관측일구간,class1/2precision/F1/FP전이와class0/3손익을보고한다.
+paired gain/loss/net, 5000 bootstrap(seed 20261105), 관측일 구간, class 1/2 precision/F1/FP 전이와 class 0/3 손익을 보고한다.
 
-실패시부분산출과정확한fit수를보존하며같은명령을무작정다시실행하지않는다. 숫자관문통과시다음회차의제한된S1확장계획을검토하고,미달시승인로드맵S2의누출없는선박-일준비/중첩교차적합계약으로이동한다. S2readiness는자료경로준비일뿐학습실행이나효과증거가아니다. 원래geometry전체의이론적불가능또는0.7불가능을주장하지않는다.
+실패 시 부분 산출과 정확한 fit 수를 보존하며 같은 명령을 무작정 다시 실행하지 않는다. 숫자 관문 통과 시 다음 회차의 제한된 S1 확장(저메모리 순차 방식 유지)을 계획하고, 미달 시 승인 로드맵 S2의 누출 없는 선박-일 준비/중첩 교차적합 계약(역시 청크·순차·저메모리 방식)으로 이동한다.
 
-holdout/Test새읽기0,기존공용항구무라벨집계이력은manifest로보존. 원자료와이전repo읽기전용. 동일선박과거프로필·ID라벨승계·OUTER행별선별금지. 반복노출OUTER5897,독립평가,공식점수구분. 진단보호TP2389/90,최종5seed보호2381/92를각기평가하며FIT3144결과에5897절대TP관문을적용하지않는다. 공식제출/외부업로드/유료자원은제외한다.
-
-완료시ROUND_REPORT、STATUS、EXPERIMENT_LEDGER、NEXT_SESSION갱신; current_round는완료024, handoff.ready=true. 다음실행이가능하면사용자지정Start-NextSession으로freshAstrahigh수락영수증확인후종료한다. 자원제약이실재하면그근거와재개명령을남긴다.
+완료 시 `ROUND_REPORT.md`, `STATUS.json`, `EXPERIMENT_LEDGER.csv`, `NEXT_SESSION.md` 갱신; `current_round`는 완료 `round_024`, `handoff.ready=true`. 다음 실행이 가능하면 `Start-NextSession.ps1`로 fresh GPT-6.1 Sol high 수락 영수증 확인 후 종료한다.

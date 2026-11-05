@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-05T03:11:21.2001385Z",
+  "available_gib": 1.3446044921875,
+  "required_entry_available_gib": 1.5,
+  "expected_owned_peak_gib": 0.5,
+  "estimate_basis": "FIT3144 small matrices; T5 closure released before S1; sequential month maps and models; full-run peak not yet measured",
+  "other_python_processes": [],
+  "training_launches": 0,
+  "fits_started": 0,
+  "decision": "defer_before_training_launch_and_claim",
+  "independent_work": [
+    "review/RUN_OUTCOME_CHECKLIST.md",
+    "code_author/RESOURCE_RECOVERY_BRANCH.md",
+    "manager/REPORT_TEMPLATE.md"
+  ],
+  "resume_rule": "Recheck immediately after independent work; unchanged entry1.5GiB and existing cutoff; no polling or user-process termination"
+}

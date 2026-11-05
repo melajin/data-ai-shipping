@@ -1,0 +1,14 @@
+﻿{
+    "utc":  "2026-11-05T03:12:41.3020331Z",
+    "available_gib":  1.3285865783691406,
+    "required_gib":  1.5,
+    "expected_peak_gib":  0.5,
+    "independent_work":  [
+                             "code_author/RESOURCE_RECOVERY_BRANCH.md",
+                             "manager/REPORT_TEMPLATE.md"
+                         ],
+    "other_python":  [
+
+                     ],
+    "decision":  "recheck_after_completed_independent_work"
+}

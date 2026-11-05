@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "method": "ast.parse without imports or data reads",
+  "files": [
+    "rounds\\round_024\\code\\prepare_t5_cache.py",
+    "rounds\\round_024\\code\\run_gate.py",
+    "rounds\\round_024\\code\\s1_features.py",
+    "rounds\\round_024\\code\\t5_rebuild.py",
+    "rounds\\round_024\\review\\reinfer_saved.py",
+    "rounds\\round_024\\review\\verify_gate_result.py",
+    "rounds\\round_024\\manager\\launch.py",
+    "rounds\\round_024\\manager\\freeze_stage.py",
+    "rounds\\round_024\\code_author\\supplement_metrics.py"
+  ]
+}

@@ -1,0 +1,17 @@
+﻿{
+    "utc":  "2026-11-05T03:22:56.5965156Z",
+    "available_gib":  0.45926284790039063,
+    "required_gib":  1.5,
+    "expected_peak_gib":  0.5,
+    "estimate_basis":  "Frozen single-thread sequential S1 with small FIT matrices and immediate T5/month/model release; full peak not measured",
+    "independent_work":  [
+                             "review/ADMISSION_BLOCK_AUDIT.json",
+                             "manager/finalize_admission_block.py draft",
+                             "review/RUN_OUTCOME_CHECKLIST.md",
+                             "code_author/RESOURCE_RECOVERY_BRANCH.md"
+                         ],
+    "other_python":  [
+
+                     ],
+    "decision":  "final_stage_recheck_after_independent_work_no_polling"
+}

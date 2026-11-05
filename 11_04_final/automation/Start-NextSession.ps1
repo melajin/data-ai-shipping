@@ -27,7 +27,7 @@ $status = Get-Content -LiteralPath $statusPath -Raw -Encoding UTF8 | ConvertFrom
 $roundReport = Join-Path $taskRoot ("rounds\$FromRound\ROUND_REPORT.md")
 $handoffHash = (Get-FileHash -LiteralPath $handoffPath -Algorithm SHA256).Hash
 $launchPrompt = @"
-사용자가 승인한 새 회차 관리자 세션입니다. 모델은 gpt-6-astra, effort high로 요청되었습니다. 먼저 작업 디렉터리를 아래 루트로 설정하고 해당 루트의 AGENTS.md, STATUS.json, CYCLE_PROTOCOL.md, NEXT_SESSION.md, 직전 회차 결과 보고서를 읽으세요.
+사용자가 승인한 새 회차 관리자 세션입니다. 모델은 gpt-6.1-sol, effort high로 요청되었습니다. 먼저 작업 디렉터리를 아래 루트로 설정하고 해당 루트의 AGENTS.md, STATUS.json, CYCLE_PROTOCOL.md, NEXT_SESSION.md, 직전 회차 결과 보고서를 읽으세요.
 
 작업 루트: $taskRoot
 원자료 읽기 전용: F:\문제 데이터_수정_1027
@@ -37,7 +37,7 @@ $launchPrompt = @"
 이 인계의 보존 사본: $handoffSnapshotPath
 전달 당시 인계 문서 SHA256: $handoffHash
 
-목표: 선박 조업 분류 micro-F1 0.7 이상을 추구하며 회차별 결과 문서 저장 → 구체적인 다음 작업 작성 → 새로운 Astra high 세션에서 다음 회차 실행을 반복합니다. 이 모델 요청을 실제 모델 검증이라고 과장하지 말고, 실행 환경이 제공하는 모델/effort 증거를 남기세요. 보조 에이전트는 gpt-6-luna / xhigh만, 사용자 상한 최대 4명이며 호스트 동시성 제한을 우선합니다. 모델을 바꾸지 말고 별도 코드 작성 담당/검토 담당을 두세요. 모든 출력은 작업 루트 아래에 저장하며 원자료와 이전 저장소를 수정하지 마세요. 학습·국소 실험·인계는 사용자에게 반복 승인을 받을 필요 없이 허용되어 있습니다.
+목표: 선박 조업 분류 micro-F1 0.7 이상을 추구하며 회차별 결과 문서 저장 → 구체적인 다음 작업 작성 → 새로운 GPT-6.1 Sol high 세션에서 다음 회차 실행을 반복합니다. 이 모델 요청을 실제 모델 검증이라고 과장하지 말고, 실행 환경이 제공하는 모델/effort 증거를 남기세요. 보조 에이전트는 gpt-6-luna / xhigh만, 사용자 상한 최대 4명이며 호스트 동시성 제한을 우선합니다. 모델을 바꾸지 말고 별도 코드 작성 담당/검토 담당을 두세요. 모든 출력은 작업 루트 아래에 저장하며 원자료와 이전 저장소를 수정하지 마세요. 학습·국소 실험·인계는 사용자에게 반복 승인을 받을 필요 없이 허용되어 있습니다.
 
 현재 이미 다른 관리자가 같은 회차를 실행 중인 증거가 있으면 중복 실행하지 말고 인계 영수증을 확인하세요. 이 실행은 새로운 관리자이므로 직전 관리자는 같은 실험을 계속 수행하지 않습니다. 개발 OUTER 5897척은 반복 노출됐습니다. 독립 평가·공식 제출·개발 점수를 구분하고 holdout 이력 확인 없이 읽지 마세요. 공식 제출·외부 업로드·유료 자원 신규 사용은 기본 범위에서 제외합니다.
 
@@ -49,7 +49,7 @@ NEXT_SESSION.md의 작업을 실제로 수행하고 결과를 저장하세요. �
 if ($InspectOnly) {
     [ordered]@{
         mode = 'inspect_only_no_launch'; from_round = $FromRound; task_root = $taskRoot
-        workspace = "path:$workspaceRoot"; model = 'gpt-6-astra'; effort = 'high'
+        workspace = "path:$workspaceRoot"; model = 'gpt-6.1-sol'; effort = 'high'
         handoff_sha256 = $handoffHash; receipt_path = $receiptPath
         existing_receipt = (Test-Path -LiteralPath $receiptPath)
         existing_claim = (Test-Path -LiteralPath $claimPath)
@@ -83,14 +83,14 @@ if ((Get-FileHash -LiteralPath $handoffSnapshotPath -Algorithm SHA256).Hash -ne 
 }
 $startedAt = [DateTime]::UtcNow.ToString('o')
 $receipt = [ordered]@{
-    from_round = $FromRound; requested_model = 'gpt-6-astra'; requested_effort = 'high'
+    from_round = $FromRound; requested_model = 'gpt-6.1-sol'; requested_effort = 'high'
     task_root = $taskRoot; workspace = "path:$workspaceRoot"; handoff_sha256 = $handoffHash
     started_at_utc = $startedAt; accepted = $false; status = 'unknown'; exit_code = $null
     raw_stdout = $stdoutPath; raw_stderr = $stderrPath; host_response = $null
     handoff_snapshot = $handoffSnapshotPath; status_snapshot = $statusSnapshotPath
 }
 try {
-    $rawOutput = (& $cliPath agent launch --agent codex --worktree "path:$workspaceRoot" --model gpt-6-astra --effort high --prompt $launchPrompt --json 2> $stderrPath | Out-String)
+    $rawOutput = (& $cliPath agent launch --agent codex --worktree "path:$workspaceRoot" --model gpt-6.1-sol --effort high --prompt $launchPrompt --json 2> $stderrPath | Out-String)
     $receipt.exit_code = $LASTEXITCODE
     [IO.File]::WriteAllText($stdoutPath, $rawOutput, (New-Object Text.UTF8Encoding($false)))
     $response = $rawOutput | ConvertFrom-Json

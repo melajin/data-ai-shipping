@@ -1,0 +1,59 @@
+{
+  "status": "round022_s1_profiles_written",
+  "source_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s3_hourly.parquet",
+  "source_sha256": "7f1d433ce06963cdfa0ff131ba7bb21192846ed4b859a7d48ebc200bff81b1eb",
+  "source_bytes": 144565255,
+  "source_schema": "id: int64\nyear: int64\nsplit: string\ndate: timestamp[ns]\nhour: int64\ncen_lon: double\ncen_lat: double\nstationary: double\ngap_hours: double\nn_points: int64\ncell_001: string\ncell_005: string\nn_parts: int64\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1557",
+  "predicate": "year == 2026 AND id IN exact fold0 FIT roster",
+  "projected_columns": [
+    "id",
+    "year",
+    "date",
+    "cen_lon",
+    "cen_lat"
+  ],
+  "materialized_rows_returned_by_scanner": 1655397,
+  "returned_year_mismatches": 0,
+  "returned_id_mismatches": 0,
+  "valid_coordinate_timebin_rows": 1655395,
+  "missing_coordinate_or_date_rows": 2,
+  "invalid_coordinate_rows": 0,
+  "profile_rows": 606004,
+  "ordered_fit_roster_sha256": "6fe0892d85ef7aa0b574708d2c0517fdcbb82671aa0cb696a3a222447ad65e66",
+  "fit_roster_size": 3144,
+  "resolutions_deg": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "profile_weight_semantics": "observed 2026 record/time-bin counts normalized per vessel-period; proxy only, not dwell time",
+  "cell_definition": "floor(longitude/resolution_deg), floor(latitude/resolution_deg)",
+  "stored_identity": "row index only; raw vessel IDs are not written to the profile cache",
+  "physical_rowgroup_decode_of_unmatched_rows": "not measured; scanner predicate is applied before batch materialization",
+  "sqlite_bytes": 36286464,
+  "sqlite_sha256": "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+  "elapsed_seconds": 22.775020799999766,
+  "resource_preflight": {
+    "timestamp_utc": "2026-11-05T02:07:47.103560+00:00",
+    "stage": "s1_profile_build",
+    "available_bytes": 3703947264,
+    "expected_peak_bytes": 1610612736,
+    "minimum_free_bytes": 2684354560,
+    "other_python_processes": [
+      {
+        "pid": 5676,
+        "name": "python.exe",
+        "rss_bytes": 23789568,
+        "create_time": 1793844462.6792996
+      },
+      {
+        "pid": 30616,
+        "name": "python.exe",
+        "rss_bytes": 4292608,
+        "create_time": 1793844462.6452632
+      }
+    ],
+    "allowed": true,
+    "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+  }
+}

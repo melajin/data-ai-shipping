@@ -1,0 +1,24 @@
+{
+  "utc": "2026-11-05T02:58:41.784949+00:00",
+  "old_orca_session": "codex_cc356a6e_0e20_4d61_bb90_0da2e9860e5a",
+  "old_thread": "01a1a9a2-a070-7303-8264-717e7342f0a6",
+  "requested_next_manager": {
+    "model": "gpt-6.1-sol",
+    "effort": "high"
+  },
+  "old_host_turn_context": [
+    {
+      "source_path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T11-56-10-01a1a9a2-a070-7303-8264-717e7342f0a6.jsonl",
+      "utc": "2026-11-05T02:56:11.858Z",
+      "model": "gpt-6-astra",
+      "effort": "high"
+    }
+  ],
+  "worker_request": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "task": "/root/code_author"
+  },
+  "backend_authenticated": false,
+  "training_started": false
+}

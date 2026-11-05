@@ -1,0 +1,1 @@
+﻿Luna code_author stopped before static review. No files edited, no compute/training. New manager must assign separate author and reviewer. Read Korean files with explicit UTF8.

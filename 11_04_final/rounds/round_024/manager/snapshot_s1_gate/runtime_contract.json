@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-11-05T02:56:56.500389+00:00",
+  "compute_deadline_utc": "2026-11-05T03:36:56.500389+00:00",
+  "manager_deadline_utc": "2026-11-05T03:41:56.500389+00:00",
+  "compute_seconds_max": 1800,
+  "job_seconds_max": 900,
+  "threads_max": 1,
+  "concurrency": 1,
+  "minimum_available_gib": 1.0,
+  "minimum_entry_available_gib": 1.5,
+  "expected_peak_gib": 0.5,
+  "owned_rss_limit_gib": 0.75,
+  "emergency_min_free_gib": 0.5,
+  "below_normal_priority": true,
+  "production_fits_max": 8,
+  "retries": 0,
+  "full3fold": 0,
+  "s2": 0,
+  "procedure": "One fixed S1 8-fit replay in user-directed low-memory sequential background mode (threads=1, below-normal priority, immediate gc.collect() between steps); round022 2 fits and round023 0 fits preserved; no tuning/raw rescan"
+}
