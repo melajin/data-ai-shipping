@@ -1,0 +1,20 @@
+{
+  "utc": "2026-11-05T00:19:56.023847+00:00",
+  "pid": 7948,
+  "launcher_pid": 23432,
+  "argv": [
+    "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\extract_spatial_profiles.py",
+    "--parquet",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s6_fingerprint_grid.parquet",
+    "--feature-root",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01",
+    "--output",
+    "rounds\\round_021\\tmp\\spatial_profiles.csv",
+    "--expected-sha256",
+    "b732e2d87f795885426abbc805381e29bcad466e8be7abf37fc4c361bd853131"
+  ]
+}

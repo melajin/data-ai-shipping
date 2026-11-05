@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-05T00:10:24.802670+00:00",
+  "current_session": "codex_ab0b4d8c_0ea3_4c23_a7b5_b98fba0b0e78",
+  "incoming_accepted": true,
+  "incoming_session_matches": true,
+  "incoming_sha256_matches": true,
+  "round021_directory_preexisted": false,
+  "exclusive_claim": "manager_claim.json",
+  "previous_manager_state": "done",
+  "previous_manager_id": "codex_f1a96a7f_dd68_42ac_a9fd_6781cc48a6e3",
+  "other_active_sessions": "analysis supervisor and unrelated Test B work; no duplicate round021 training",
+  "evidence": "orca_sessions.json",
+  "matching_computation_processes": []
+}

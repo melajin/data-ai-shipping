@@ -1,0 +1,292 @@
+{
+  "folds": {
+    "0": {
+      "counts": {
+        "FIT": 3144,
+        "INNER_ES": 393,
+        "INNER_SELECT": 394,
+        "OUTER": 1966
+      },
+      "source_role_codes": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "role_id_sets_disjoint": true,
+      "inner_partition_matches_source_inner": true,
+      "labels_match_round002_source_and_split_manifest": true,
+      "TabICL_inner_source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\inner_predictions.csv",
+      "TabICL_inner_max_probability_row_sum_error": 2.220446049250313e-16,
+      "round002_select_probability_max_sum_error": {
+        "LightGBM_sqrt_macro_INNER_SELECT": 3.3306690738754696e-16,
+        "CatBoost_INNER_SELECT": 2.220446049250313e-16
+      },
+      "OUTER_probability_values_loaded": false,
+      "FIT_feature_matrix_loaded": false
+    },
+    "1": {
+      "counts": {
+        "FIT": 3144,
+        "INNER_ES": 393,
+        "INNER_SELECT": 394,
+        "OUTER": 1966
+      },
+      "source_role_codes": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "role_id_sets_disjoint": true,
+      "inner_partition_matches_source_inner": true,
+      "labels_match_round002_source_and_split_manifest": true,
+      "TabICL_inner_source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_1\\inner_predictions.csv",
+      "TabICL_inner_max_probability_row_sum_error": 2.220446049250313e-16,
+      "round002_select_probability_max_sum_error": {
+        "LightGBM_sqrt_macro_INNER_SELECT": 2.220446049250313e-16,
+        "CatBoost_INNER_SELECT": 3.3306690738754696e-16
+      },
+      "OUTER_probability_values_loaded": false,
+      "FIT_feature_matrix_loaded": false
+    },
+    "2": {
+      "counts": {
+        "FIT": 3145,
+        "INNER_ES": 393,
+        "INNER_SELECT": 394,
+        "OUTER": 1965
+      },
+      "source_role_codes": {
+        "FIT": 3145,
+        "INNER": 787,
+        "OUTER": 1965
+      },
+      "role_id_sets_disjoint": true,
+      "inner_partition_matches_source_inner": true,
+      "labels_match_round002_source_and_split_manifest": true,
+      "TabICL_inner_source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_2\\inner_predictions.csv",
+      "TabICL_inner_max_probability_row_sum_error": 2.220446049250313e-16,
+      "round002_select_probability_max_sum_error": {
+        "LightGBM_sqrt_macro_INNER_SELECT": 2.220446049250313e-16,
+        "CatBoost_INNER_SELECT": 3.3306690738754696e-16
+      },
+      "OUTER_probability_values_loaded": false,
+      "FIT_feature_matrix_loaded": false
+    }
+  },
+  "fits": 0,
+  "base_fits": 0,
+  "meta_fits": 0,
+  "grid_searches": 0,
+  "retries": 0,
+  "outer_probability_values_loaded": false,
+  "outer_label_values_read": true,
+  "outer_label_source": "round002 fold NPZ y vector; used only for exact role/label alignment before freeze",
+  "feature_matrices_loaded": false,
+  "select_diagnostics": {
+    "0": {
+      "n": 394,
+      "models": {
+        "LightGBM_sqrt_macro": {
+          "correct": 224,
+          "micro_f1": 0.5685279187817259
+        },
+        "CatBoost": {
+          "correct": 230,
+          "micro_f1": 0.583756345177665
+        },
+        "TabICL_A_raw": {
+          "correct": 235,
+          "micro_f1": 0.5964467005076142
+        }
+      },
+      "pairwise_complementarity": {
+        "LightGBM_sqrt_macro_to_CatBoost": {
+          "left_wrong_right_correct": 17,
+          "left_correct_right_wrong": 11
+        },
+        "LightGBM_sqrt_macro_to_TabICL_A_raw": {
+          "left_wrong_right_correct": 28,
+          "left_correct_right_wrong": 17
+        },
+        "CatBoost_to_TabICL_A_raw": {
+          "left_wrong_right_correct": 21,
+          "left_correct_right_wrong": 16
+        }
+      },
+      "all_three_correct": 202,
+      "all_three_wrong": 137,
+      "top1_correct_union": 257,
+      "top1_union_note": "Hard-selector descriptive ceiling on INNER_SELECT, not a logistic-stack generalization bound."
+    },
+    "1": {
+      "n": 394,
+      "models": {
+        "LightGBM_sqrt_macro": {
+          "correct": 229,
+          "micro_f1": 0.5812182741116751
+        },
+        "CatBoost": {
+          "correct": 219,
+          "micro_f1": 0.5558375634517766
+        },
+        "TabICL_A_raw": {
+          "correct": 228,
+          "micro_f1": 0.5786802030456852
+        }
+      },
+      "pairwise_complementarity": {
+        "LightGBM_sqrt_macro_to_CatBoost": {
+          "left_wrong_right_correct": 15,
+          "left_correct_right_wrong": 25
+        },
+        "LightGBM_sqrt_macro_to_TabICL_A_raw": {
+          "left_wrong_right_correct": 32,
+          "left_correct_right_wrong": 33
+        },
+        "CatBoost_to_TabICL_A_raw": {
+          "left_wrong_right_correct": 41,
+          "left_correct_right_wrong": 32
+        }
+      },
+      "all_three_correct": 180,
+      "all_three_wrong": 125,
+      "top1_correct_union": 269,
+      "top1_union_note": "Hard-selector descriptive ceiling on INNER_SELECT, not a logistic-stack generalization bound."
+    },
+    "2": {
+      "n": 394,
+      "models": {
+        "LightGBM_sqrt_macro": {
+          "correct": 222,
+          "micro_f1": 0.5634517766497462
+        },
+        "CatBoost": {
+          "correct": 223,
+          "micro_f1": 0.565989847715736
+        },
+        "TabICL_A_raw": {
+          "correct": 223,
+          "micro_f1": 0.565989847715736
+        }
+      },
+      "pairwise_complementarity": {
+        "LightGBM_sqrt_macro_to_CatBoost": {
+          "left_wrong_right_correct": 23,
+          "left_correct_right_wrong": 22
+        },
+        "LightGBM_sqrt_macro_to_TabICL_A_raw": {
+          "left_wrong_right_correct": 24,
+          "left_correct_right_wrong": 23
+        },
+        "CatBoost_to_TabICL_A_raw": {
+          "left_wrong_right_correct": 24,
+          "left_correct_right_wrong": 24
+        }
+      },
+      "all_three_correct": 188,
+      "all_three_wrong": 136,
+      "top1_correct_union": 258,
+      "top1_union_note": "Hard-selector descriptive ceiling on INNER_SELECT, not a logistic-stack generalization bound."
+    }
+  },
+  "alignment": {
+    "0": {
+      "selected_ids_sha256": "4a47dfb71f13be5e6858570ab75cc55793cc33e49558efe68f55b192732ecfcb",
+      "selected_label_sha256": "e8c09b83564c133108e982ffd1157c1ce13f50b470cd1e7edb63120528612d69",
+      "selected_rows": 394,
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "cohort_year": 2026,
+      "year_source": "Train2026 preprocessing default in fishing_tiny_tabm.py; cohort provenance only, no rowwise year field in saved probability schemas",
+      "year_is_rowwise_measured": false
+    },
+    "1": {
+      "selected_ids_sha256": "2e22894d0bd1f64ca06a804b9152a16742d756d1a2a9191e1891cca3691ccb8f",
+      "selected_label_sha256": "7556e79f6f705710b44d9955ae3851980e12c2f279dcb0b99a94dfad0eb80225",
+      "selected_rows": 394,
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "cohort_year": 2026,
+      "year_source": "Train2026 preprocessing default in fishing_tiny_tabm.py; cohort provenance only, no rowwise year field in saved probability schemas",
+      "year_is_rowwise_measured": false
+    },
+    "2": {
+      "selected_ids_sha256": "c4688a1c7e01969aa0a335ec7fa6cb14dfe12af85f16f03ea67f75e486adbe24",
+      "selected_label_sha256": "b5441495ff57a2bc13cfb759c01483acdc4493bc99d840f5ec3fa3492d468a23",
+      "selected_rows": 394,
+      "class_order": [
+        "연안복합",
+        "자망",
+        "통발",
+        "채낚기연승낚시"
+      ],
+      "cohort_year": 2026,
+      "year_source": "Train2026 preprocessing default in fishing_tiny_tabm.py; cohort provenance only, no rowwise year field in saved probability schemas",
+      "year_is_rowwise_measured": false
+    }
+  },
+  "round": "round_021",
+  "status": "SELECT_ONLY_PREPARED",
+  "prepared_at_utc": "2026-11-05T00:11:17+00:00",
+  "input_manifest_fingerprint_sha256": "ae4416166bd788ec879a5b3cd5a6e5327811d1575b2638e8fa180c25081629d4",
+  "runner_sha256": "998284ffd917caaf6026ca0f2a7fa4f55e092703cdcb9ad0d0dac9f4a2636735",
+  "config_sha256": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+  "source_hashes": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\run_performance.py": "998284ffd917caaf6026ca0f2a7fa4f55e092703cdcb9ad0d0dac9f4a2636735",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\configs\\experiment.json": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\configs\\experiment.json": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\result.json": "38bfdc81016d2b136e3c3509c089823b32d0b79860edfe8848b9876f13960295",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\inner_split_roster.csv": "a73d9b65ae402befb7d5ba134bfc382f7edc71ab22a5c081d443c66f3b8525ec",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\inner_split_manifest.json": "9e4e791199f7a29604adfe10ca3df74a4761faa94891945f9604f6b96b15dce5",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\artifacts\\source_hash_manifest.json": "81bc8e27b5f08d5920f4f59c2c6e2f693bad1e64d20bec95f9a42d74c66f4189",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\artifacts\\preflight_validation.json": "eeeb030d609fb63f927705bc3e55356c3429b06e65d8663acc0caa7fd168c562",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\code\\run_round003.py": "9f333f7f4be7ed81ef8296f36b4474f8a6730f99f306c8e4f586c9d031bea6a2",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\code\\historical\\TinyTabM\\TinyTabM_구현_20261029\\fishing_tiny_tabm.py": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\MANIFEST_SHA256.json": "9acfd2f121168745bd5d7658ae33f83c18a321cef44bb5689fb49dda9b5ec1c6",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\SOURCE_SHA256.json": "c7ae17c798541cba1e77a637bc06a59f0d16a3fa3d527586a1109ae029d50532",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\splits\\development_roles_long.csv": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\classes.json": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\run_settings.json": "e951067a229cf41056bd1d5d73bc46fa688430b84bae255ed79950e3ea6cb85f",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\package_validation.json": "05f0cd8c71aefbe87ea7f2ac90bf5c92ca8fe8c2041b0c8cd71971a23308e1af",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\final_fixed_decision_rule.json": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\original_oof_predictions.csv": "ff1b7788547efc40f0810af511a6f1e6939aa54ff6c1959c7a7e9af6ee598d89",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\outer_predictions.csv": "dfdf805f5c60cff019400e3b16f57f5d03aa6d24277e31c3cdfb2c5b2f4992a4",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_020\\manager\\historical_protection_reference.json": "43d0a9a14d15d7474b551d950657c1f00c7218df619b898ab7413565f9f55a7e",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s6_fingerprint_grid.parquet": "b732e2d87f795885426abbc805381e29bcad466e8be7abf37fc4c361bd853131",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\inner_predictions.csv": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\training.json": "adf22319dcda21029baa279dbbeb60669c55f3b1c222a5cc5864cb1e9912eba4",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_baseline_lightgbm_inner_es.npz": "a3b53cad3d9378376144ef88f384b3ecd046f920d4664983c4c69ccf5f74e769",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_baseline_lightgbm_inner_select.npz": "14cd19c245dd5b070f06dbfcb3aeee4101976c5e4940e0411fc75622c00a42b3",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_baseline_lightgbm_outer.npz": "61e9dc14ee377f0092eb254b24a4ea8f708228aa345f56e10a6aaa288e7648e9",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_candidate_catboost_inner_es.npz": "450d2af8eddcf99866f30e383d2a478c63ccbf36da92a599da80a1fc46ca1668",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_candidate_catboost_inner_select.npz": "760b48f84df29c5a3803dc41d01a1cd1ef3be5e20145fa057cee194b3db27b9f",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_candidate_catboost_outer.npz": "1e52db4c74018c5fc9ac2ad7f70f85634fbf6b84268703a069e3c1604223b74f",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_1\\inner_predictions.csv": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_1\\training.json": "00e5dec930467abbf37e779d99aebb0601bbb92c5306c3070326960db6ee203f",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_baseline_lightgbm_inner_es.npz": "3b36e17b70c6ae7500d2cd987d69ebde92d70f44d95367d3c0658050a364f063",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_baseline_lightgbm_inner_select.npz": "ffe30afdb3c17333f25a29ef895429c759b5d48fc896266d22b5f578baec99f3",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_baseline_lightgbm_outer.npz": "243fe81ce11a0190b5eb4a10664e757db064c398e0f909952b885ebdde3fcb8f",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_candidate_catboost_inner_es.npz": "b1bc6e20e8836341b5048d406440bbc2eba92dd4256875dfd5ef87cc88e544d5",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_candidate_catboost_inner_select.npz": "9b959a559a3cc20e983967f5df07d531876e6260bcb90eaff61a1d7f3828aa33",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_candidate_catboost_outer.npz": "c8320e5c6c89af14d01cb404970fb5660a1498ddafa7cafd14f68bf730b6324b",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_2\\inner_predictions.csv": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_2\\training.json": "b34474e1b183401aeebd94b6bf54791b8098efcbefb685a87bb42eedd1be65a7",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_baseline_lightgbm_inner_es.npz": "44268a1bc97557d914b45427c1045b9297dc897916ce998b686898347cc72cd6",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_baseline_lightgbm_inner_select.npz": "f35332ac13720ca360f7addff9097b5e7d8e2ba03c9ce30f3a8af0cba38f5a27",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_baseline_lightgbm_outer.npz": "e918a12eb3370d80d7615b9aa58c8370abc221284d41c5b4e10e32948a8bd0e5",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_candidate_catboost_inner_es.npz": "03744935256cf6998097b2c2de31b4eb99bf7e5901a50d605dfc31ba2e8fc267",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_candidate_catboost_inner_select.npz": "58ee58f7f227eb3ac54e8f79384552d9a4a12676be9d0b1c21222a2cb1158d91",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_candidate_catboost_outer.npz": "e85b50c2d3567cb78d3466d4601a5c7a130b25816815825b9053bb2d533e8ac0"
+  }
+}

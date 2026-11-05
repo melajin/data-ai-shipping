@@ -1,0 +1,48 @@
+{
+  "utc": "2026-11-05T00:11:10.082656+00:00",
+  "stage": "prepare",
+  "argv": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\run_performance.py",
+    "--prepare",
+    "--config",
+    "rounds\\round_021\\configs\\experiment.json"
+  ],
+  "hashes": {
+    "rounds/round_021/code/run_performance.py": "998284ffd917caaf6026ca0f2a7fa4f55e092703cdcb9ad0d0dac9f4a2636735",
+    "rounds/round_021/configs/experiment.json": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+    "rounds/round_021/ROUND_PLAN.md": "f52f64a5cb616f7e07ebd9060d8643e066fa78a9e3d04ef1b6146d6edc1f070d",
+    "rounds/round_021/manager/launch.py": "4a221f280c07641badf4bcc1e03fbcafc2deb59c10be9a0f4a80e925c33d6171"
+  },
+  "available_bytes": 4634415104,
+  "expected_peak_bytes": 1610612736,
+  "estimate_basis": "8.35MB parquet, 17.9MB decoded full rowgroup, sparse profiles and small sklearn models plus import reserve; estimate not measured",
+  "other_python": [
+    {
+      "pid": 21532,
+      "cmdline": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "rounds\\round_021\\manager\\launch.py",
+        "--stage",
+        "prepare",
+        "--seconds",
+        "120",
+        "--",
+        "--prepare",
+        "--config",
+        "rounds\\round_021\\configs\\experiment.json"
+      ],
+      "rss": 4292608,
+      "create_time": 1793837468.7039528
+    }
+  ],
+  "timeout_seconds": 120,
+  "compute_cutoff": "2026-11-05T00:43:07+00:00",
+  "prior_compute_seconds": 0
+}

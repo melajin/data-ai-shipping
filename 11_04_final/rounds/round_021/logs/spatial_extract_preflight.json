@@ -1,0 +1,65 @@
+{
+  "utc": "2026-11-05T00:19:56.007542+00:00",
+  "stage": "spatial_extract",
+  "argv": [
+    "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\extract_spatial_profiles.py",
+    "--parquet",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s6_fingerprint_grid.parquet",
+    "--feature-root",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01",
+    "--output",
+    "rounds\\round_021\\tmp\\spatial_profiles.csv",
+    "--expected-sha256",
+    "b732e2d87f795885426abbc805381e29bcad466e8be7abf37fc4c361bd853131"
+  ],
+  "hashes": {
+    "rounds/round_021/code/build_spatial_features.py": "10c567cbea7823efa1c2c52510a562e3c701551cb83b872aa1842bb3f9f40d7b",
+    "rounds/round_021/code/extract_spatial_profiles.py": "1e3ef3e47ceccf15721d324665b4436410522c6e79a9ac62163784a714b3e8bd",
+    "rounds/round_021/code/fit_meta_worker.py": "eacbb986fa8c11fa710c4bb31e0520308b6bc95d1a54a87945cc0bfb4ca52ed6",
+    "rounds/round_021/code/run_performance.py": "1329b5ee7152d04310bf15d5f37cee05098b11aec90ad8118361035d413200da",
+    "rounds/round_021/configs/experiment.json": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+    "rounds/round_021/ROUND_PLAN.md": "f52f64a5cb616f7e07ebd9060d8643e066fa78a9e3d04ef1b6146d6edc1f070d",
+    "rounds/round_021/manager/launch.py": "4a221f280c07641badf4bcc1e03fbcafc2deb59c10be9a0f4a80e925c33d6171"
+  },
+  "available_bytes": 4993826816,
+  "expected_peak_bytes": 1610612736,
+  "estimate_basis": "8.35MB parquet, 17.9MB decoded full rowgroup, sparse profiles and small sklearn models plus import reserve; estimate not measured",
+  "other_python": [
+    {
+      "pid": 14116,
+      "cmdline": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "rounds\\round_021\\manager\\launch.py",
+        "--stage",
+        "spatial_extract",
+        "--seconds",
+        "600",
+        "--python",
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "--script",
+        "rounds\\round_021\\code\\extract_spatial_profiles.py",
+        "--",
+        "--parquet",
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s6_fingerprint_grid.parquet",
+        "--feature-root",
+        "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01",
+        "--output",
+        "rounds\\round_021\\tmp\\spatial_profiles.csv",
+        "--expected-sha256",
+        "b732e2d87f795885426abbc805381e29bcad466e8be7abf37fc4c361bd853131"
+      ],
+      "rss": 4313088,
+      "create_time": 1793837994.4773228
+    }
+  ],
+  "timeout_seconds": 600,
+  "compute_cutoff": "2026-11-05T00:43:07+00:00",
+  "prior_compute_seconds": 32.698644899996
+}

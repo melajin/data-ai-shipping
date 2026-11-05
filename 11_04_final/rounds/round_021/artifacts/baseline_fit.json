@@ -1,0 +1,470 @@
+{
+  "round": "round_021",
+  "status": "baseline_12_fit_reloaded_select_only",
+  "fits": {
+    "base_fits": 0,
+    "meta_fits": 3,
+    "candidate_fits": 0,
+    "grid_searches": 0,
+    "retries": 0
+  },
+  "scope": "INNER_SELECT only; spatial extraction and all OUTER probability values excluded",
+  "input_manifest_fingerprint_sha256": "bd026f4093cdf63a7837eb2ce1d9270d6bcef1ef6d13a79c7c629ffcd256c49a",
+  "runner_sha256": "1329b5ee7152d04310bf15d5f37cee05098b11aec90ad8118361035d413200da",
+  "config_sha256": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+  "approval": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\manager\\outer_read_approval.json",
+    "sha256": "3fa6bc956e4f2f7cade379a17fd9507ebaef93cae15ebf332cca8247e06b247c",
+    "fields": {
+      "round": "round_021",
+      "status": "approved",
+      "runner_sha256": "1329b5ee7152d04310bf15d5f37cee05098b11aec90ad8118361035d413200da",
+      "config_sha256": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+      "input_manifest_sha256": "bd026f4093cdf63a7837eb2ce1d9270d6bcef1ef6d13a79c7c629ffcd256c49a"
+    }
+  },
+  "fit_records": [
+    {
+      "fold": 0,
+      "fit_role": "INNER_SELECT",
+      "fit_rows": 394,
+      "features": 12,
+      "base_fits": 0,
+      "meta_fits": 1,
+      "fit_seconds": 0.09723800000210758,
+      "fit_process_wall_seconds": 6.291384600001038,
+      "threads": 3,
+      "pre_fit_resource": {
+        "time_utc": "2026-11-05T00:17:42+00:00",
+        "stage": "meta_fit_fold_0",
+        "available_ram_bytes": 4469952512,
+        "process_rss_bytes": 162603008,
+        "pid": 11052
+      },
+      "model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_0_baseline12_stackerc1.joblib",
+      "model_sha256": "290ef31b97a8d9633ef01b7715d562de845d7ea13f12e0c8083dee630cee7550",
+      "reload_max_abs_select_probability_delta": 0.0,
+      "reload_check_pass": true,
+      "classes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "coef": [
+        [
+          -0.6336616090478182,
+          -0.3981313519558806,
+          -0.4360178700604755,
+          -0.00973873752261157,
+          0.1330692332204883,
+          0.0658996360461755,
+          0.2928978734844632,
+          -0.30396755707379836,
+          0.6166976571359074,
+          -0.14217909848755805,
+          -0.3128456765719474,
+          -0.11117813839407549
+        ],
+        [
+          0.39468967240979014,
+          0.24804334381141407,
+          -0.049567002062381786,
+          -0.08740985137144858,
+          -0.6850827815883686,
+          -0.24447847704710055,
+          0.1203023304439952,
+          -0.19814971757590696,
+          -0.11417874862520586,
+          0.29196188844625326,
+          -0.06099181307100396,
+          -0.03545469935276826
+        ],
+        [
+          0.2579690733026562,
+          0.11773528962815882,
+          0.3612435205584442,
+          -0.027651161274692308,
+          0.5817236189342404,
+          0.2676667476627532,
+          0.2848067872504703,
+          0.2268841448046697,
+          -0.13301588254115165,
+          0.05065716008667169,
+          0.2494638274395613,
+          -0.5044178733192416
+        ],
+        [
+          -0.018997136664630935,
+          0.03235271851630835,
+          0.1243413515644109,
+          0.12479975016875247,
+          -0.02971007056635975,
+          -0.08908790666182205,
+          -0.6980069911789271,
+          0.27523312984503523,
+          -0.36950302596955004,
+          -0.20043995004536358,
+          0.12437366220338893,
+          0.6510507110660864
+        ]
+      ],
+      "intercept": [
+        1.7077442604851336,
+        1.3641679826884938,
+        0.26030364962864344,
+        -3.332215892802248
+      ],
+      "scaler_mean": [
+        -0.8576660757625523,
+        -1.1529392093379456,
+        -1.860772929585376,
+        -3.2606564770931343,
+        -0.7818965968030941,
+        -1.1391570797624981,
+        -2.1312317049708813,
+        -5.15584400740531,
+        -0.8234662437940006,
+        -1.1678233781329592,
+        -2.4499258392254117,
+        -6.726258516291665
+      ],
+      "scaler_scale": [
+        0.365170481308306,
+        0.35305163548551455,
+        0.3794555098487478,
+        0.4019527532192733,
+        0.46400777042941704,
+        0.42922385980738953,
+        0.4948937286885694,
+        0.8704434718578707,
+        0.6842688893746748,
+        0.5051484155152495,
+        0.9174309351268362,
+        1.3537616767647505
+      ],
+      "scaler_fit_role": "INNER_SELECT only"
+    },
+    {
+      "fold": 1,
+      "fit_role": "INNER_SELECT",
+      "fit_rows": 394,
+      "features": 12,
+      "base_fits": 0,
+      "meta_fits": 1,
+      "fit_seconds": 0.08047149999765679,
+      "fit_process_wall_seconds": 6.208196899999166,
+      "threads": 3,
+      "pre_fit_resource": {
+        "time_utc": "2026-11-05T00:17:49+00:00",
+        "stage": "meta_fit_fold_1",
+        "available_ram_bytes": 4495048704,
+        "process_rss_bytes": 162951168,
+        "pid": 11052
+      },
+      "model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_1_baseline12_stackerc1.joblib",
+      "model_sha256": "4023b3cc80365ec5f4ec46a0950a16b06cf9fd3f60bc064627e1fc9987d333a9",
+      "reload_max_abs_select_probability_delta": 0.0,
+      "reload_check_pass": true,
+      "classes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "coef": [
+        [
+          0.34310305020210285,
+          0.5450673664154432,
+          0.060946634990654565,
+          -0.6961168512048463,
+          -0.16500321313266372,
+          -0.5809854721435964,
+          0.34546463126110133,
+          0.19295271961881866,
+          0.420963482960736,
+          0.1022489534884163,
+          -0.2717457394635258,
+          -0.06009904958710789
+        ],
+        [
+          -0.5620161676013457,
+          -0.06751386604081328,
+          -0.2690410407687994,
+          -0.22932433872793545,
+          0.6574330179704524,
+          0.4399692209047174,
+          0.5626030710866943,
+          0.2023821145072263,
+          -0.27988830473018805,
+          0.055696548171965635,
+          -0.5465872929818048,
+          -0.39153147510631797
+        ],
+        [
+          -0.18472899904222456,
+          0.1241946210357037,
+          0.5427401684329374,
+          0.5579816647792033,
+          -0.16028701096008277,
+          -0.3416211019694345,
+          -0.24135048772880785,
+          -0.6575812403566599,
+          -0.1506908373930645,
+          0.17008843210512953,
+          0.6468498582225799,
+          -0.10286778406059884
+        ],
+        [
+          0.40364211644146564,
+          -0.6017481214103332,
+          -0.33464576265479196,
+          0.3674595251535792,
+          -0.3321427938777062,
+          0.4826373532083147,
+          -0.6667172146189881,
+          0.2622464062306131,
+          0.009615659162514875,
+          -0.3280339337655119,
+          0.17148317422275128,
+          0.5544983087540248
+        ]
+      ],
+      "intercept": [
+        1.8413300514776103,
+        1.607733364798008,
+        0.3155456877072876,
+        -3.7646091039828957
+      ],
+      "scaler_mean": [
+        -0.8747221949406443,
+        -1.1949511043738321,
+        -1.976289225170981,
+        -3.520861622370129,
+        -0.7949332692324028,
+        -1.1323013051968742,
+        -1.9861099162600182,
+        -3.605159753446697,
+        -0.8444181711247789,
+        -1.2032326380960523,
+        -2.4151182408966743,
+        -8.251238846150304
+      ],
+      "scaler_scale": [
+        0.47554062053176877,
+        0.46042416374709927,
+        0.48965798473122024,
+        0.6555111069824597,
+        0.3560624037489572,
+        0.33582545082684445,
+        0.24972079682986084,
+        0.5950230477820775,
+        0.7553081256605585,
+        0.5280419832626176,
+        0.8766670041833157,
+        2.384234645464659
+      ],
+      "scaler_fit_role": "INNER_SELECT only"
+    },
+    {
+      "fold": 2,
+      "fit_role": "INNER_SELECT",
+      "fit_rows": 394,
+      "features": 12,
+      "base_fits": 0,
+      "meta_fits": 1,
+      "fit_seconds": 0.08275309999589808,
+      "fit_process_wall_seconds": 6.227641900004528,
+      "threads": 3,
+      "pre_fit_resource": {
+        "time_utc": "2026-11-05T00:17:55+00:00",
+        "stage": "meta_fit_fold_2",
+        "available_ram_bytes": 4451622912,
+        "process_rss_bytes": 162983936,
+        "pid": 11052
+      },
+      "model_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_2_baseline12_stackerc1.joblib",
+      "model_sha256": "d3fe1d0324b7b110e10f72611bc1087d39683f1d6bc5c2503d8edca48bf98687",
+      "reload_max_abs_select_probability_delta": 0.0,
+      "reload_check_pass": true,
+      "classes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "coef": [
+        [
+          0.34113318953232846,
+          0.011435984166393008,
+          -0.1606358722063247,
+          0.11151118855855022,
+          -0.21680077919581517,
+          -0.1991685432151868,
+          -0.04629402133978425,
+          -0.10638939383979763,
+          0.20479354509744901,
+          -0.2491482948141803,
+          -0.05788053026627524,
+          -0.46031203290740047
+        ],
+        [
+          -0.236883701459582,
+          -0.4224894161364416,
+          -0.3219776559036755,
+          0.14274372595955007,
+          0.13805123559143825,
+          0.36147258895128537,
+          0.33650269029181795,
+          -0.24765796944308277,
+          0.12744961174408967,
+          0.4235365269101419,
+          -0.3730930720277203,
+          -0.24632921800994856
+        ],
+        [
+          -0.022820395670690666,
+          -0.619396720376759,
+          0.20845146449065985,
+          -0.2303859159348094,
+          -0.026864570292340142,
+          0.2613945722416884,
+          -0.08564623975875699,
+          -0.048827467742694336,
+          -0.21584454215114776,
+          0.2165115058121531,
+          0.19423549502515886,
+          -0.3311479408507504
+        ],
+        [
+          -0.0814290924020547,
+          1.0304501523468084,
+          0.2741620636193408,
+          -0.02386899858329157,
+          0.10561411389671647,
+          -0.4236986179777895,
+          -0.20456242919327927,
+          0.40287483102556876,
+          -0.11639861469038788,
+          -0.39089973790811505,
+          0.23673810726883432,
+          1.0377891917681024
+        ]
+      ],
+      "intercept": [
+        1.9604847925174924,
+        1.6092348859976617,
+        0.602747257017634,
+        -4.172466935532787
+      ],
+      "scaler_mean": [
+        -0.825584751698318,
+        -1.2755299402448745,
+        -2.0626256492939383,
+        -3.885158555247075,
+        -0.8792504994584132,
+        -1.2206214769047437,
+        -1.7245524470253888,
+        -2.343755225466895,
+        -0.8109459776923561,
+        -1.224834494232818,
+        -2.395747707360217,
+        -7.2360375745901075
+      ],
+      "scaler_scale": [
+        0.5459341653060318,
+        0.5035420960271065,
+        0.628032072737219,
+        0.6212423062377649,
+        0.18456403364061041,
+        0.17829747071586502,
+        0.09263056024659691,
+        0.21460138068639348,
+        0.7459515005783247,
+        0.52393553949008,
+        0.935441897604416,
+        1.4947619389337892
+      ],
+      "scaler_fit_role": "INNER_SELECT only"
+    }
+  ],
+  "select_rows": 1182,
+  "select_raw_probability_csv": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\select_raw_probabilities.csv",
+  "select_audit": {
+    "0": {
+      "counts": {
+        "FIT": 3144,
+        "INNER_ES": 393,
+        "INNER_SELECT": 394,
+        "OUTER": 1966
+      },
+      "source_role_codes": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "role_id_sets_disjoint": true,
+      "inner_partition_matches_source_inner": true,
+      "labels_match_round002_source_and_split_manifest": true,
+      "TabICL_inner_source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\inner_predictions.csv",
+      "TabICL_inner_max_probability_row_sum_error": 2.220446049250313e-16,
+      "round002_select_probability_max_sum_error": {
+        "LightGBM_sqrt_macro_INNER_SELECT": 3.3306690738754696e-16,
+        "CatBoost_INNER_SELECT": 2.220446049250313e-16
+      },
+      "OUTER_probability_values_loaded": false,
+      "FIT_feature_matrix_loaded": false
+    },
+    "1": {
+      "counts": {
+        "FIT": 3144,
+        "INNER_ES": 393,
+        "INNER_SELECT": 394,
+        "OUTER": 1966
+      },
+      "source_role_codes": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "role_id_sets_disjoint": true,
+      "inner_partition_matches_source_inner": true,
+      "labels_match_round002_source_and_split_manifest": true,
+      "TabICL_inner_source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_1\\inner_predictions.csv",
+      "TabICL_inner_max_probability_row_sum_error": 2.220446049250313e-16,
+      "round002_select_probability_max_sum_error": {
+        "LightGBM_sqrt_macro_INNER_SELECT": 2.220446049250313e-16,
+        "CatBoost_INNER_SELECT": 3.3306690738754696e-16
+      },
+      "OUTER_probability_values_loaded": false,
+      "FIT_feature_matrix_loaded": false
+    },
+    "2": {
+      "counts": {
+        "FIT": 3145,
+        "INNER_ES": 393,
+        "INNER_SELECT": 394,
+        "OUTER": 1965
+      },
+      "source_role_codes": {
+        "FIT": 3145,
+        "INNER": 787,
+        "OUTER": 1965
+      },
+      "role_id_sets_disjoint": true,
+      "inner_partition_matches_source_inner": true,
+      "labels_match_round002_source_and_split_manifest": true,
+      "TabICL_inner_source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_2\\inner_predictions.csv",
+      "TabICL_inner_max_probability_row_sum_error": 2.220446049250313e-16,
+      "round002_select_probability_max_sum_error": {
+        "LightGBM_sqrt_macro_INNER_SELECT": 2.220446049250313e-16,
+        "CatBoost_INNER_SELECT": 3.3306690738754696e-16
+      },
+      "OUTER_probability_values_loaded": false,
+      "FIT_feature_matrix_loaded": false
+    }
+  },
+  "elapsed_seconds": 19.22254370000155,
+  "outer_probability_values_loaded": false,
+  "historical_rows_loaded": false
+}

@@ -1,0 +1,191 @@
+{
+  "experiment": "round_021_seed42_stacker12_vs_spatial20",
+  "frozen_hypothesis": {
+    "baseline": "round020 three-source 12-column log-probability stacker, frozen C=1/lbfgs/max_iter=1000/seed42",
+    "candidate": "same 12 columns plus eight FIT-only spatial Bhattacharyya features; same scaler and logistic settings",
+    "base_fits": 0,
+    "meta_fits_max": 6,
+    "grid_searches": 0,
+    "retries": 0
+  },
+  "paths": {
+    "round002_config": "rounds/round_002/configs/experiment.json",
+    "round002_result": "rounds/round_002/artifacts/result.json",
+    "round002_roster": "rounds/round_002/artifacts/inner_split_roster.csv",
+    "round002_split_manifest": "rounds/round_002/artifacts/inner_split_manifest.json",
+    "round002_probability_dir": "rounds/round_002/artifacts/probabilities",
+    "round002_feature_root": "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104/artifacts/exp01",
+    "tabicl_package_root": "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료",
+    "tabicl_source_hash_manifest": "rounds/round_003/artifacts/source_hash_manifest.json",
+    "tabicl_preflight_validation": "rounds/round_003/artifacts/preflight_validation.json",
+    "tabicl_runner": "rounds/round_003/code/run_round003.py",
+    "year_provenance_source": "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/29-30일 모델 심층 분석/31일/팀원자료/TabICLv2_F156_공유자료/code/historical/TinyTabM/TinyTabM_구현_20261029/fishing_tiny_tabm.py",
+    "historical_predictions": "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104/artifacts/exp01/sqrt_macro/outer_predictions.csv",
+    "historical_reference": "rounds/round_020/manager/historical_protection_reference.json",
+    "output_dir": "rounds/round_021/artifacts",
+    "approval_file": "rounds/round_021/manager/outer_read_approval.json",
+    "round021_output_dir": "rounds/round_021/artifacts",
+    "historical_protection_reference": "rounds/round_020/manager/historical_protection_reference.json",
+    "spatial_parquet": "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/26_11_2/work/재식별_투트랙_001r1/s6_fingerprint_grid.parquet",
+    "spatial_profiles": "rounds/round_021/tmp/spatial_profiles.csv",
+    "spatial_features": "rounds/round_021/artifacts/spatial_features_select_outer.npz",
+    "spatial_source_root": "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/26_11_2/work/재식별_투트랙_001r1"
+  },
+  "dataset": {
+    "development_rows": 5897,
+    "class_order": [
+      "연안복합",
+      "자망",
+      "통발",
+      "채낚기연승낚시"
+    ],
+    "numeric_labels": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "cohort_year": 2026,
+    "cohort_year_source": "Train2026 preprocessing default in fishing_tiny_tabm.py; cohort provenance only, no rowwise year field in saved probability schemas",
+    "folds": {
+      "0": {
+        "FIT": 3144,
+        "INNER_ES": 393,
+        "INNER_SELECT": 394,
+        "OUTER": 1966
+      },
+      "1": {
+        "FIT": 3144,
+        "INNER_ES": 393,
+        "INNER_SELECT": 394,
+        "OUTER": 1966
+      },
+      "2": {
+        "FIT": 3145,
+        "INNER_ES": 393,
+        "INNER_SELECT": 394,
+        "OUTER": 1965
+      }
+    }
+  },
+  "probabilities": {
+    "class_columns": [
+      "p0",
+      "p1",
+      "p2",
+      "p3"
+    ],
+    "round002_npz_columns": [
+      "ids",
+      "y_true",
+      "probabilities",
+      "fold",
+      "role"
+    ],
+    "tabicl_inner_csv_columns": [
+      "rfid_id",
+      "p0",
+      "p1",
+      "p2",
+      "p3",
+      "y_true",
+      "observed_days"
+    ],
+    "tabicl_oof_csv_columns": [
+      "rfid_id",
+      "p0",
+      "p1",
+      "p2",
+      "p3",
+      "y_true",
+      "observed_days",
+      "fold"
+    ],
+    "sum_tolerance_round002": 1e-06,
+    "sum_tolerance_tabicl": 1e-12,
+    "clip_min": 1e-06,
+    "clip_max": 1.0
+  },
+  "stacker": {
+    "scaler": "StandardScaler",
+    "scaler_fit_role": "INNER_SELECT",
+    "logistic_regression": {
+      "C": 1.0,
+      "solver": "lbfgs",
+      "multi_class": "multinomial",
+      "max_iter": 1000,
+      "class_weight": null,
+      "random_state": 42
+    },
+    "expected_features": 12,
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reload_tolerance_abs": 1e-12
+  },
+  "evaluation": {
+    "baseline": "Stacker12_Logistic_C1",
+    "candidate": "Stacker20_Spatial_Logistic_C1",
+    "fixed_mean": "Fixed_mean_3model",
+    "bootstrap": {
+      "unit": "vessel",
+      "repetitions": 5000,
+      "seed": 20261105,
+      "confidence": 0.95
+    },
+    "gate": {
+      "candidate_micro_delta_min": 0.005,
+      "paired_ci_lower_gt": 0.0,
+      "macro_f1_delta_min": -0.03,
+      "each_class_recall_delta_min": -0.03,
+      "each_class_f1_delta_min": -0.03,
+      "each_observed_days_micro_delta_min": -0.03,
+      "protected_classes": {
+        "0": {
+          "min_true_positives": 2389
+        },
+        "3": {
+          "min_true_positives": 92
+        }
+      },
+      "same_condition_baseline_true_positives": {
+        "0": 2389,
+        "3": 90
+      },
+      "historical_true_positives": [
+        2381,
+        908,
+        116,
+        92
+      ],
+      "historical_support": [
+        2920,
+        2016,
+        835,
+        126
+      ],
+      "historical_prediction_sha256": "dfdf805f5c60cff019400e3b16f57f5d03aa6d24277e31c3cdfb2c5b2f4992a4"
+    },
+    "development_goal_micro_f1": 0.7,
+    "baseline_expected": {
+      "correct": 3476,
+      "micro_f1": 0.5894522638629812,
+      "macro_f1": 0.519210304310862
+    },
+    "independent_verified_performance": null,
+    "official_score": null
+  },
+  "execution": {
+    "max_fit_seconds_each": 120,
+    "max_job_seconds": 1200,
+    "max_concurrent_fits": 1,
+    "max_threads": 3,
+    "minimum_free_ram_before_fit_bytes": 2684354560,
+    "max_owned_process_rss_bytes": 1610612736,
+    "stop_owned_process_if_free_ram_below_bytes": 536870912,
+    "max_feature_seconds": 600
+  }
+}

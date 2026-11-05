@@ -1,0 +1,37 @@
+{
+  "utc": "2026-11-05T00:02:54.605965+00:00",
+  "approved": false,
+  "author_ack": "Author explicitly acknowledged incomplete source and no prepare/fit/OUTER run; stopped on deadline",
+  "files": [
+    {
+      "path": "rounds\\round_020\\code\\run_performance.py",
+      "bytes": 58896,
+      "sha256": "281b3fd93be0da6d278bf4b1c03e4ab9f1faeef19c47f422e5f1daec56585d05"
+    },
+    {
+      "path": "rounds\\round_020\\configs\\experiment.json",
+      "bytes": 5004,
+      "sha256": "7ebd3902347e510d623c053c113e8e491c6b8a0d8d36eaa41b72960680d07378"
+    },
+    {
+      "path": "rounds\\round_020\\manager\\launch.py",
+      "bytes": 4748,
+      "sha256": "2b6035bafd234d07344c497bdd2b6bffe7cf7da41cae70d3e2d20d024089b320"
+    },
+    {
+      "path": "rounds\\round_020\\ROUND_PLAN.md",
+      "bytes": 4704,
+      "sha256": "187bf48bd63773de42bbe880bf0a456fad2de44f228b09028b5da3b709c307ec"
+    },
+    {
+      "path": "rounds\\round_020\\manager\\USER_PROTECTION_AMENDMENT.md",
+      "bytes": 2454,
+      "sha256": "f7cf8923f3ed574ae8fcc66a2669200624a8240d269d0412a10b9b0dbd58f8b6"
+    },
+    {
+      "path": "rounds\\round_020\\manager\\ROUND021_FIXED_BRANCH.md",
+      "bytes": 4054,
+      "sha256": "5ae49425e03a6315d7f34b4431dca8691fa2cc4e0b9ee48d37e9849f92aae073"
+    }
+  ]
+}

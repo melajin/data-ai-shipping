@@ -1,0 +1,39 @@
+{
+  "completed_local": "2026-11-05T09:16:24+09:00",
+  "completed_utc": "2026-11-05T00:16:24+00:00",
+  "status": "succeeded",
+  "input_rows": 46705,
+  "input_vessels": 100,
+  "output_rows": 100,
+  "preflight": {
+    "recorded_local": "2026-11-05T09:16:21+09:00",
+    "psutil_available_ram_mib": 4344.7,
+    "estimated_process_peak_mib": 512,
+    "reserve_mib": 640,
+    "adequate_for_estimate_plus_reserve": true,
+    "concurrent_large_process_count": 18
+  },
+  "verification": {
+    "persisted_csv_read_once": true,
+    "100_rows": true,
+    "unique_ids": true,
+    "candidate_id_order_preserved": true,
+    "A_score_floor_boolean_column_present": true,
+    "A_score_floor_vessels": 5,
+    "representative_A_row_component_consistency": "passed for named examples and four requested vessel records",
+    "summary_arithmetic_identities": "passed for each component and fixed denominators",
+    "candidate_A_row_score_match_count": 100
+  },
+  "measured_process_peak_mib": 121.9,
+  "elapsed_seconds": 2.433,
+  "execution": "single sequential python -B aggregation process; reused only hourly_scores.parquet, candidate_A.csv, results.json; run.py was not executed/imported",
+  "outputs": [
+    "analyze_components.py",
+    "component_time_comparison.csv",
+    "analysis_summary.json",
+    "worker_facts.md",
+    "aggregation_preflight.json",
+    "aggregation_receipt.json"
+  ],
+  "notes": "Fresh RAM preflight was recorded before loading candidate_A.csv or hourly_scores.parquet. No rescoring, labels, thresholds, references, model work, external data, or baseline edits. Descriptive timing only."
+}

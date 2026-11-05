@@ -1,39 +1,24 @@
-# 다음 Astra high 관리자 — Round020: 저장확률 결합으로 실제 F1 비교
+# 다음 Astra high 관리자 — Round021 실제 확률+공간 통제비교
 
-최우선은 사용자가 다시 강조한 다음020·021 두 회차의 실제 성능실험이다. 제어·재현 검증의 누적을0.7목표 달성으로 대체하지 않는다. 채택된성능개선0, 역사개발baseline micro.5930133966423605/macro.5252719738966167, 미채택탐색.5933525521451586, 독립/공식null이다. 개발5897척은반복노출이며 새독립평가가아니다.0.7은최소4128정답이고미측정도달을주장하지않는다.
+020은학습0/점수0/코드미완료로45분예산마감했다. 새F1없으며역사baseline.5930133966423605유지,독립/공식null이다. 제어수리반복으로돌아가지말고이번021에서실제동일조건성능비교를수행한다. 원본및020미완료소스는보존한다.
 
-## 시작과필수읽기
+## 시작과입력
+AGENTS/STATUS/CYCLE_PROTOCOL, 본문, round020 ROUND_REPORT, artifacts/result.json, review/*, manager/USER_PROTECTION_AMENDMENT.md, historical_protection_reference.json, ROUND021_FIXED_BRANCH.md, round021_source_evidence.json, round021_parquet_metadata.json, host_turn_evidence.json을읽는다. incomingreceipt accepted/session/SHA와중복021claim/process확인후배타claim. 관리자Astra high와작성/독립검토Luna xhigh/forknone, root+2≤host4, 파일별단독소유,추가child금지. 모델요청과host증거를분리한다.
 
-root AGENTS/STATUS/CYCLE_PROTOCOL, 본문, round019 ROUND_REPORT·review/SOURCE_REVIEW·FINAL_REVIEW·artifacts/result.json·manager/host_turn_evidence/PRIORITY_CORRECTION/PERFORMANCE_NEXT_PLAN 및 orchestration_message_01~06을읽는다.019 제어실패나미실행은M4경로의국소제약이며 기존성능경로의필수관문이아니다. M4 전체estimator/제어수리 후속은보류하고020에서실제개발F1을산출한다.
+## 고정실험과수정할부분
+round020/code/run_performance.py(미승인)와configs를021로필요부분복사한다. 알려진결함: TabICLINNER787행파일의전체INNERID/label/day를검사한후SELECT394만추출해야한다. 현재394개를전체CSV와비교하는버그가있다. source/config보호규칙일치, ConvergenceWarning실패, fit당120초실제상한, SELECT/OUTER rowkey원확률저장을완성한다. M4/제어framework확장금지. 020은prepare도실행하지않았다. metadata/SELECT무학습preflight와소스검토후동결한다.
 
-수신launch receipt의accepted/newsession/SHA와현재세션일치를확인하고020폴더/claim/계산프로세스확인후배타claim한다. 동일회차관리자있으면중복실행금지.019동결소스/실패receipt는보존한다. 요청관리자gpt-6-astra/high, 보조작성·독립검토각gpt-6-luna/xhigh/fork_turns=none 명시, root+2≤host4와사용자보조4상한. 파일단독소유/추가child금지. model/effort요청과host turn_context를분리기록.
+baseline은020에서정의한seed42 LGBM/CatBoost/TabICL원확률12열clip1e-6→log→SELECT-onlyStandardScaler→L2multinomial LogisticRegression C1/lbfgs/maxiter1000/classweightNone/seed42다. 후보는동일12열+현재2026공간prototype8열(20열)이며나머지동일하다. 020저장모델이없으므로baseline3+candidate3=최대6meta fit, 새basefit0/TabICL추론0/grid0/재시도0. 모든모델저장/reload후OUTER1회평가하며사후threshold조정없음.
 
-## 성능가설·입력·실행
+기본입력: round002/artifacts/probabilities/fold_{f}_{baseline_lightgbm|candidate_catboost}_{inner_select|outer}.npz 및inner_split_roster/manifest; readonly TabICLv2_F156_공유자료의seed42/fold별inner_predictions.csv와original_oof_predictions.csv. 정확경로는020config. INNER는해당fold파일만사용하고globalOOF대체금지. 각foldFIT3144/3144/3145,ES393,SELECT394,OUTER1966/1966/1965와라벨/ID/class순서검사. 확률year가없어2026출처가정임을표기하고공간자료year2026와정확key대조.
 
-정확계약은 **round019/manager/PERFORMANCE_NEXT_PLAN.md의Round020전체**다. round002 ROUND_REPORT/configs/experiment.json/code/run_round002_resume.py/artifacts의split·모델·확률manifest, round003 ROUND_REPORT/code/run_round003.py/configs 및 provenance/review를읽는다. 원본code를 import해서역사출력경로에쓰지말고 필요한함수만020/code로옮긴다.
+공간입력은 D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/26_11_2/work/재식별_투트랙_001r1/s6_fingerprint_grid.parquet (SHA b732e2d87f795885426abbc805381e29bcad466e8be7abf37fc4c361bd853131). 020manager/ROUND021_FIXED_BRANCH.md의정확계약: year2026/blockfull/res.01,.05/개발5897ID predicate와필요열projection을적용후materialize,2025/holdout1475행노출금지. 기존system C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe에pyarrow24.0.0이있다. 이환경에서필터추출만하고round002환경에서sklearn학습가능;전역환경변경금지. 각선박비음수finiteweight합1,각foldFIT만의class별동일선박가중prototype q, Bhat=sum sqrt(pq)8열(spatial_bhat_r001_c0..c3,r005_c0..c3). SELECT/OUTER는FIT와disjoint,querylabel사용금지. 누락profile은NaN→constant0 imputer(add_indicatorFalse),SELECT-onlyscaler,분모5897유지. 전체dense행렬금지,sparse/순차fold. 생성소스import/top-level실행및S3재스캔금지.
 
-고정후보: seed42의 round002 LGBM sqrt_macro 및CatBoost, round003 TabICL A 원확률. 각fold의동일INNER_SELECT394ID만사용해logclip1e-6확률12열→SELECT-onlyStandardScaler→L2다항LogisticRegression(C1,lbfgs,max_iter1000,class_weightNone,seed42)적합. basefit0/metafit3/grid0/재시도0. ES/OUTER로메타fit·선택금지. 원확률만사용하고통발배수·decision_score제외. SELECT에서만상보성진단;top1oracle은hardselector설명용이며전체메타모델상한/예상성능이아니다.후보변경을위한무제한탐색금지.
+## 사용자보호와채택
+자망1·통발2개선에집중. 역사5seedTP=[2381,908,116,92],sameconditionround002TP=[2389,889,108,90],support=[2920,2016,835,126]. 보호0/3각각정수TP비감소를두reference모두에요구해최소TP0≥2389,TP3≥92다. 020stacker는미채택이므로021baseline은증분효과비교용이며사용자보호reference를대체하지않는다. 각reference별protected gain/loss/net,전체/trueclass별예측전이,표적1/2TP recall precision F1 FP출처를보고한다. baselineprediction0/3전체잠금이나OUTER정답별예측골라끼우기금지.
+historical prediction CSV는 D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104/artifacts/exp01/sqrt_macro/outer_predictions.csv SHA dfdf805f5c60cff019400e3b16f57f5d03aa6d24277e31c3cdfb2c5b2f4992a4. bytes/header만동결전에확인,행은모든meta적합/reload뒤읽어같은5897ID/y/fold검산과보호gainloss보고에만사용한다.
+기존진행관문micro+.005/paired95%CI하한>0/macro·각classF1·나머지recall·일수구간micro하락≤.03는유지하고보호classrecall은0으로강화한다. 후보대baseline12열의증분관문과역사/seed42절대보호를모두보고. .7도달과채택/독립/공식을분리한다. 개발평가반복노출,holdout미개방,독립/공식null. 실제correct/micro/macro/class/1–7,8–30,31–90,91+일/fold 및gainloss,선박bootstrap5000seed20261105,확률행합1e-6/reload1e-12.
 
-비교기준은동일round002seed42LGBM(3476/5897=.5894522638629812,macro.519210304310862),보조대조는동일3모델고정동일가중평균. 역사5seedbaseline과분리한다. 사전source/config·입력명부·021분기동결→3foldmetafit/저장/reload→OUTER 1회 평가→독립저장확률검산. 비교후다시가중치고르지않는다. 기존6source평균·통발배수탐색과다른규칙임을기록한다.
-
-LightGBM/CatBoost 입력은round002/artifacts/probabilities의fold_{f}_{baseline_lightgbm|candidate_catboost}_{inner_select|outer}.npz,명부inner_split_roster.csv/inner_split_manifest.json. TabICLpackage는round003 INPUT_ROOT가가리키는읽기전용공유패키지에서seed42fold별inner_predictions.csv와original_oof_predictions.csv만허용한다. 원자료F:와holdout개별행/2025Test를읽지않는다. 패키지allowlist/hash·FIT/ES/SELECT/OUTER·ID/year/label/확률4열순서를먼저확인한다. OUTERbytes hash확인은가능하나개별값해석/점수는동결후다.
-
-기존모델들의학습정보범위와동일선박명부를확인한다. 다른feature수(F304/F156)를동일특징이라고하지않는다. T5/local_rel population조건, TabICL전처리문서한계/기존저장확률검증범위는보고한다. 입력없음/정합성실패시없는OOF를만들려고전체TabICL재추론하지않는다. 기존학습경로로실행가능한대안성능실험을선택하되점수노출전새가설·변경변수·총fit예산을계획에고정한다. 제어실행기개발회차로돌아가지않는다.
-
-`round020/code/run_performance.py`와config를작성·독립검토하고계획에실제Python환경/argv를확정한다. 기존environments/round_002_catboost에NumPy/sklearn/LightGBM/CatBoost가있다. 새패키지설치나M4체크포인트는필요없다. 실행예시형식: `& '<확인한 round002환경 Python>' -B './rounds/round_020/code/run_performance.py' --config './rounds/round_020/configs/experiment.json'`. stdout/stderr/OSexit/시각/PID·소유/해시/RAM/결과를남기는작은실행경로를재사용하고검증기기능확장금지.
-
-## 예산·인수조건
-
-관리45분중마지막5분문서,계산≤30분/실제020job≤600초,meta각≤120초/3fit,동시1/threads≤3. 예상peak≤1GiB(약1만행×12확률+소형모델+라이브러리여유)로계산전가용≥2GiB·다른작업확인. RSS>1GiB또는가용<.5GiB시소유작업중단. 부족하면코드/명부metadata/문서후직전재확인,RAMpolling/사용자프로세스종료금지. 출력/temp/cache/모델/확률은020아래만.
-
-명부5897고유척/OUTER중복0/라벨0~3/finite/[0,1]/행합1e-6,저장reload확률 차이≤1e-12. baseline/candidate/fixedmean의correct/micro/macro/클래스recall/F1/통발/관측일1–7·8–30·31–90·91+/fold 및 gain/loss/net, 선박bootstrap5000(seed20261105)95%CI를남긴다. 조건progress는micro+.005·pairedCI하한>0·macro/각classrecall/F1/각구간micro하락≤.03·계보/reload통과. .7실제도달/이진행관문/독립·공식도달을따로기록한다. fallback예외·미평가값은null,새학습자이해/하드웨어실측을꾸미지않는다.
-
-##021분기와마감
-
-020micro≥.7이면서보호·계보통과면021seed2026확인(새LGBM3/CatBoost3/meta3최대9fit,기존TabICLseed2026확률,관리45/계산30분,동시1/threads3).0.7미달이면소폭개선확인seed만으로021을소진하지말고더풍부한형태/지역/시간표현의한가설+동일조건baseline비교최대6fit로전환한다.021표현후보는현재미확정이며분석세션정적근거가추가전달될수있다.020관리자는SELECT진단과캐시계보/가용성/기존실험노출을확인하여 **020OUTER를열기전에** 정확열목록/loader/모델/예산을사전분기표에고정한다. monthly35는과거+26/INNER음수,exp04/08은큰악화라기본재실행후보가아니다. sqrt_micro도이미실행되어핵심에서제외한다.
-
-완료round020 REPORT/STATUS(current_round=round_020,handoff.ready=true,active_workers=[])/LEDGER/NEXT에실제F1·채택여부·미달최대병목·다음근거를저장하고 Start-NextSession.ps1 -FromRound round_020으로freshAstra high021에인계수락확인즉시중지. 승인반복질문불필요. 새session+prompt수락은receipt로확인하고공유상태사후수정금지. structuredchat닫기지원없으면완료탭만수동닫기제한을남긴다.
-
-## 최종 사전분기 정정
-반드시 rounds/round_019/manager/ROUND021_FIXED_BRANCH.md를 추가로 읽는다. 이 문서가 위의021미확정/6basefit 문단을대체한다. .7미달시같은12열stacker 대12+현재2026공간prototype8열stacker,basefit0/meta최대6fit로고정했다. 반영근거는orchestration_message_07~10이며 정확절대경로와현재기간/누락/자기기여분리계약을그대로따른다. TabICLINNER는해당foldCSV만사용하고globalOOF대체금지.020행키별원확률/라벨/관측일/hash보존. 분석세션회신주소orca_session_id:codex_6b307c5a_55da_483c_b425_0031c6f730b8에020/021완료점수와새세션수락을회신하고다음인계에도주소를보존한다.
-019결과:정적수정미승인,동적0. rawExitTime-validity일관성결함은보류하며020성능실험을차단하지않는다.
+## 예산·실패·마감
+관리45분중마지막5분문서,계산30분중job1200초,feature600초/meta각120초/6fit최대,동시1/threads3. 예상peak≤1.5GiB,실행직전가용≥2.5GiB확인. RAM부족시코드/문서/검토후재확인,메모리대기polling/사용자process종료금지. 모든출력/tmp/cache021안. feature不가용시원인과baseline계산여부를정직하게보존하고무제한추가모델/전체TabICL우회금지. 성능미달시실제오류/보호손실을근거로다음한가설을유한계획으로고정한다;samefailure반복금지.
+완료REPORT/STATUS(current_round021,handoff.readytrue,activeworkers[])/LEDGER/NEXT갱신후 Start-NextSession.ps1 -FromRound round_021로freshAstra high인계하고accepted영수증확인즉시종료. structuredchat닫기CLI없으면완료탭수동닫기제한기록. 분석회신주소 orca_session_id:codex_6b307c5a_55da_483c_b425_0031c6f730b8에실제correct/micro/net/보호/.7여부/다음세션ID+receipt회신. 반복승인질문불필요.

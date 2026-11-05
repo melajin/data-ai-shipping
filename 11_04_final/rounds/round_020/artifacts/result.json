@@ -1,0 +1,28 @@
+{
+  "round": "round_020",
+  "status": "completed_implementation_incomplete_budget_exhausted",
+  "finished_utc": "2026-11-05T00:02:54.605965+00:00",
+  "source_review_approved": false,
+  "prepare_runs": 0,
+  "base_fits": 0,
+  "meta_fits": 0,
+  "outer_probability_evaluations": 0,
+  "new_micro_f1": null,
+  "candidate_adopted": false,
+  "development_goal_reached": false,
+  "independent_micro_f1": null,
+  "official_micro_f1": null,
+  "reason": "Implementation and review did not complete before frozen compute cutoff23:58:09UTC; manager deadline00:03:09UTC. No runtime performance claim.",
+  "pending": [
+    "TabICL INNER787 must validate full INNER then subset SELECT394",
+    "Implement both-reference integer TP0>=2389/TP3>=92 and historical exact-key join plus class transitions",
+    "Per-fit120s hard timeout and convergence failure",
+    "Save keyed SELECT raw probabilities for spatial comparison"
+  ],
+  "outer_label_preload": true,
+  "outer_label_preload_scope": "Reviewer/author metadata alignment read original feature NPZ y array; no OUTER probability/features/score use or candidate tuning",
+  "manager_requested_model": "gpt-6-astra",
+  "manager_requested_effort": "high",
+  "host_turn_evidence": "manager/host_turn_evidence.json",
+  "hardware_verified": false
+}

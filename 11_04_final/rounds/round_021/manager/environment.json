@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-05T00:14:20.949172+00:00",
+  "executable": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.2.5",
+  "sklearn": "1.6.1",
+  "scipy": "1.18.1",
+  "joblib": "1.6.0",
+  "psutil": "7.2.2",
+  "available_ram_bytes": 4481404928,
+  "scope": "environment import only; no model fitting or data loading"
+}

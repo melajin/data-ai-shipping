@@ -1,0 +1,17 @@
+{
+  "approved": true,
+  "stage": "extract_spatial_profiles",
+  "hashes": {
+    "rounds/round_021/code/extract_spatial_profiles.py": "1E3EF3E47CECCF15721D324665B4436410522C6E79A9AC62163784A714B3E8BD",
+    "rounds/round_021/configs/experiment.json": "07F4B526D6EFDCF6E2E0CECF80B9D27C7AAC09BF3F56147951A48322685A5245",
+    "rounds/round_021/manager/launch.py": "4A221F280C07641BADF4BCC1E03FBCAFC2DEB59C10BE9A0F4A80E925C33D6171",
+    "rounds/round_021/ROUND_PLAN.md": "F52F64A5CB616F7E07EBD9060D8643E066FA78A9E3D04EF1B6146D6EDC1F070D"
+  },
+  "scope": "Filtered 2026 development spatial profile extraction only; does not approve prototype generation, candidate fitting, OUTER probability access, historical prediction rows, or evaluation.",
+  "invocation_constraints": {
+    "python": "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe with pyarrow 24.0.0",
+    "parquet_path": "from round_021/configs/experiment.json paths.spatial_parquet",
+    "feature_root": "from round_021/configs/experiment.json paths.round002_feature_root; verify fold_0_features.npz path/hash against the frozen input manifest",
+    "output_path": "from round_021/configs/experiment.json paths.spatial_profiles"
+  }
+}

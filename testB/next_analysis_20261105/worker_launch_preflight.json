@@ -1,0 +1,51 @@
+﻿{
+    "at":  "2026-11-05T09:03:29.8757972+09:00",
+    "available_mib":  4317.2,
+    "estimated_aggregation_process_peak_mib":  512,
+    "estimated_worker_session_increment_mib":  512,
+    "reserve_mib":  640,
+    "basis":  "46705 x 20 scores, 3.77 MB parquet, pandas/Arrow overhead and bounded copies; one sequential worker, no score/reference recomputation; estimates not measured upper bounds",
+    "supervisor_request":  {
+                               "internal_provider_model_authenticated":  false,
+                               "effort":  "high",
+                               "model":  "gpt-6.1-sol",
+                               "prior_launch_receipt":  "../first_results/next_session_launch_receipt.json"
+                           },
+    "worker_request":  {
+                           "model":  "gpt-6-luna",
+                           "effort":  "xhigh"
+                       },
+    "concurrency":  "One new Luna worker with one aggregation process; supervisor has no numeric computation. Other Orca classification supervisor active according to worktree ps, no confirmed concurrent training.",
+    "other_large_processes":  [
+                                  {
+                                      "Id":  6656,
+                                      "ProcessName":  "codex",
+                                      "rss_mib":  247.6
+                                  },
+                                  {
+                                      "Id":  24432,
+                                      "ProcessName":  "codex",
+                                      "rss_mib":  212.5
+                                  },
+                                  {
+                                      "Id":  11432,
+                                      "ProcessName":  "CrossDeviceService",
+                                      "rss_mib":  219.7
+                                  },
+                                  {
+                                      "Id":  5828,
+                                      "ProcessName":  "explorer",
+                                      "rss_mib":  478.9
+                                  },
+                                  {
+                                      "Id":  17216,
+                                      "ProcessName":  "Orca",
+                                      "rss_mib":  366.6
+                                  },
+                                  {
+                                      "Id":  19824,
+                                      "ProcessName":  "Orca",
+                                      "rss_mib":  445.2
+                                  }
+                              ]
+}

@@ -1,0 +1,49 @@
+﻿{
+    "observed_at":  "2026-11-05T09:02:03.3973729+09:00",
+    "available_mib":  4313.6,
+    "planned_additional_mib":  512,
+    "reserve_mib":  640,
+    "basis":  "One new supervisor session; no data loading in this handoff. New session must recheck before worker launches.",
+    "other_large_processes":  [
+                                  {
+                                      "ProcessName":  "ASDSvc",
+                                      "Id":  6940,
+                                      "rss_mib":  243.7
+                                  },
+                                  {
+                                      "ProcessName":  "codex",
+                                      "Id":  6656,
+                                      "rss_mib":  240
+                                  },
+                                  {
+                                      "ProcessName":  "codex",
+                                      "Id":  15880,
+                                      "rss_mib":  233.1
+                                  },
+                                  {
+                                      "ProcessName":  "codex",
+                                      "Id":  24432,
+                                      "rss_mib":  229.3
+                                  },
+                                  {
+                                      "ProcessName":  "CrossDeviceService",
+                                      "Id":  11432,
+                                      "rss_mib":  220.1
+                                  },
+                                  {
+                                      "ProcessName":  "explorer",
+                                      "Id":  5828,
+                                      "rss_mib":  488.1
+                                  },
+                                  {
+                                      "ProcessName":  "Orca",
+                                      "Id":  17216,
+                                      "rss_mib":  356.5
+                                  },
+                                  {
+                                      "ProcessName":  "Orca",
+                                      "Id":  19824,
+                                      "rss_mib":  488.7
+                                  }
+                              ]
+}

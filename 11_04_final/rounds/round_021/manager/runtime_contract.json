@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-05T00:10:58.975971+00:00",
+  "stage_caps_seconds": {
+    "prepare": 120,
+    "fit_baseline": 120,
+    "spatial_extract": 600,
+    "spatial_features": 600,
+    "fit_candidate": 120,
+    "evaluate": 1200
+  },
+  "aggregate_compute_seconds_max": 1800,
+  "manager_compute_cutoff_utc": "2026-11-05T00:43:07Z",
+  "note": "Each separately launched job <=1200s and total computation <=1800s. Fit stage120s hard bound is stronger than each individual fit120s; source may additionally use per-fit subprocess120s.",
+  "python_sklearn": "environments/round_002_catboost/Scripts/python.exe",
+  "python_arrow": "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe",
+  "approval": "Manager verifies exact approved source/config and input fingerprint before running fitting/evaluation; launcher is bounded process runner, not approval authority."
+}

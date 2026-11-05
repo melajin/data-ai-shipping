@@ -1,0 +1,10 @@
+{
+    "round":  "round_021",
+    "orca_session_id":  "codex_ab0b4d8c_0ea3_4c23_a7b5_b98fba0b0e78",
+    "thread_id":  "01a1a904-3328-7ab0-95fd-3dae530f4c74",
+    "claimed_utc":  "2026-11-05T00:04:11.8725976Z",
+    "manager_model_requested":  "gpt-6-astra",
+    "effort_requested":  "high",
+    "incoming_receipt":  "automation/receipts/round_020_launch.json",
+    "incoming_hash":  "8CAC3689CF7B44D0B703C97AEB47194EB4CE9CC063CE46D63C57ECA399764D9B"
+}

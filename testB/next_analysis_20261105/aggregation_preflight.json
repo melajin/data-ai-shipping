@@ -1,0 +1,226 @@
+{
+  "recorded_local": "2026-11-05T09:16:21+09:00",
+  "recorded_utc": "2026-11-05T00:16:21+00:00",
+  "psutil_available_ram_mib": 4344.7,
+  "estimated_process_peak_mib": 512,
+  "reserve_mib": 640,
+  "adequate_for_estimate_plus_reserve": true,
+  "estimate_basis": "Task estimate for pandas/Arrow and copies aggregating 46,705 x 20; 640 MiB reserve follows the existing Test B preflight convention.",
+  "concurrent_large_processes_threshold_mib": 128,
+  "concurrent_large_processes": [
+    {
+      "pid": 5828,
+      "name": "explorer.exe",
+      "rss_mib": 478.6
+    },
+    {
+      "pid": 19824,
+      "name": "Orca.exe",
+      "rss_mib": 420.6
+    },
+    {
+      "pid": 17216,
+      "name": "Orca.exe",
+      "rss_mib": 369.4
+    },
+    {
+      "pid": 6656,
+      "name": "codex.exe",
+      "rss_mib": 267.8
+    },
+    {
+      "pid": 10716,
+      "name": "codex.exe",
+      "rss_mib": 227.0
+    },
+    {
+      "pid": 11432,
+      "name": "CrossDeviceService.exe",
+      "rss_mib": 219.4
+    },
+    {
+      "pid": 24432,
+      "name": "codex.exe",
+      "rss_mib": 208.7
+    },
+    {
+      "pid": 876,
+      "name": "codex.exe",
+      "rss_mib": 184.2
+    },
+    {
+      "pid": 22588,
+      "name": "codex.exe",
+      "rss_mib": 184.1
+    },
+    {
+      "pid": 15880,
+      "name": "codex.exe",
+      "rss_mib": 170.0
+    },
+    {
+      "pid": 4476,
+      "name": "explorer.exe",
+      "rss_mib": 167.7
+    },
+    {
+      "pid": 18136,
+      "name": "Orca.exe",
+      "rss_mib": 164.5
+    },
+    {
+      "pid": 2476,
+      "name": "Notepad.exe",
+      "rss_mib": 161.4
+    },
+    {
+      "pid": 10992,
+      "name": "StartMenuExperienceHost.exe",
+      "rss_mib": 158.4
+    },
+    {
+      "pid": 17128,
+      "name": "logioptionsplus_agent.exe",
+      "rss_mib": 157.3
+    },
+    {
+      "pid": 26916,
+      "name": "PhoneExperienceHost.exe",
+      "rss_mib": 156.7
+    },
+    {
+      "pid": 11000,
+      "name": "SearchHost.exe",
+      "rss_mib": 140.1
+    },
+    {
+      "pid": 25296,
+      "name": "SnippingTool.exe",
+      "rss_mib": 135.3
+    }
+  ],
+  "inputs_expected": [
+    "testB/first_results/hourly_scores.parquet",
+    "testB/first_results/candidate_A.csv",
+    "testB/first_results/results.json"
+  ],
+  "execution_policy": "Single sequential aggregation process; no run.py execution or import.",
+  "initial_preparation_check": {
+    "recorded_local": "2026-11-05T09:04:08+09:00",
+    "recorded_utc": "2026-11-05T00:04:10+00:00",
+    "psutil_available_ram_mib": 4158.9,
+    "estimated_process_peak_mib": 512,
+    "reserve_mib": 640,
+    "adequate_for_estimate_plus_reserve": true,
+    "estimate_basis": "Initial estimate supplied by task for pandas/Arrow and copies while aggregating 46,705 x 20; reserve 640 MiB follows existing Test B preflight convention.",
+    "concurrent_large_processes_threshold_mib": 128,
+    "concurrent_large_processes": [
+      {
+        "pid": 5828,
+        "name": "explorer.exe",
+        "rss_mib": 479.0
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 455.4
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 357.9
+      },
+      {
+        "pid": 6656,
+        "name": "codex.exe",
+        "rss_mib": 252.0
+      },
+      {
+        "pid": 10716,
+        "name": "codex.exe",
+        "rss_mib": 231.9
+      },
+      {
+        "pid": 11432,
+        "name": "CrossDeviceService.exe",
+        "rss_mib": 219.7
+      },
+      {
+        "pid": 24432,
+        "name": "codex.exe",
+        "rss_mib": 214.8
+      },
+      {
+        "pid": 22588,
+        "name": "codex.exe",
+        "rss_mib": 206.9
+      },
+      {
+        "pid": 876,
+        "name": "codex.exe",
+        "rss_mib": 173.7
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 172.6
+      },
+      {
+        "pid": 15880,
+        "name": "codex.exe",
+        "rss_mib": 170.5
+      },
+      {
+        "pid": 4476,
+        "name": "explorer.exe",
+        "rss_mib": 167.7
+      },
+      {
+        "pid": 10436,
+        "name": "ShellHost.exe",
+        "rss_mib": 167.5
+      },
+      {
+        "pid": 17128,
+        "name": "logioptionsplus_agent.exe",
+        "rss_mib": 162.6
+      },
+      {
+        "pid": 2476,
+        "name": "Notepad.exe",
+        "rss_mib": 161.4
+      },
+      {
+        "pid": 10992,
+        "name": "StartMenuExperienceHost.exe",
+        "rss_mib": 158.4
+      },
+      {
+        "pid": 26916,
+        "name": "PhoneExperienceHost.exe",
+        "rss_mib": 156.8
+      },
+      {
+        "pid": 6940,
+        "name": "ASDSvc.exe",
+        "rss_mib": 155.7
+      },
+      {
+        "pid": 11000,
+        "name": "SearchHost.exe",
+        "rss_mib": 140.0
+      },
+      {
+        "pid": 25296,
+        "name": "SnippingTool.exe",
+        "rss_mib": 135.3
+      }
+    ],
+    "inputs_expected": [
+      "testB/first_results/hourly_scores.parquet",
+      "testB/first_results/candidate_A.csv",
+      "testB/first_results/results.json"
+    ],
+    "execution_policy": "One sequential aggregation process; no run.py execution or import."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "round": "round_021",
+  "status": "approved",
+  "utc": "2026-11-05T00:17:28.379388+00:00",
+  "allowed_stage": "fit_baseline",
+  "runner_sha256": "1329b5ee7152d04310bf15d5f37cee05098b11aec90ad8118361035d413200da",
+  "config_sha256": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+  "input_manifest_sha256": "bd026f4093cdf63a7837eb2ce1d9270d6bcef1ef6d13a79c7c629ffcd256c49a",
+  "independent_review_sha256": "5679844aaf6dd78d50b0bf6b8ce32491add9e96101d475a02bc201c469eecbb9",
+  "condition": "Baseline/candidate fitting stages do not authorize OUTER. Evaluation only after final independent review and all six save/reload records; no post-OUTER tuning."
+}

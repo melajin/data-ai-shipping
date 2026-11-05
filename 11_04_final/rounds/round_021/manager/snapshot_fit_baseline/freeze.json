@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-05T00:17:28.379388+00:00",
+  "stage": "fit_baseline",
+  "source_hashes": {
+    "rounds/round_021/code/extract_spatial_profiles.py": "1e3ef3e47ceccf15721d324665b4436410522c6e79a9ac62163784a714b3e8bd",
+    "rounds/round_021/code/fit_meta_worker.py": "eacbb986fa8c11fa710c4bb31e0520308b6bc95d1a54a87945cc0bfb4ca52ed6",
+    "rounds/round_021/code/run_performance.py": "1329b5ee7152d04310bf15d5f37cee05098b11aec90ad8118361035d413200da",
+    "rounds/round_021/configs/experiment.json": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+    "rounds/round_021/ROUND_PLAN.md": "f52f64a5cb616f7e07ebd9060d8643e066fa78a9e3d04ef1b6146d6edc1f070d",
+    "rounds/round_021/manager/launch.py": "4a221f280c07641badf4bcc1e03fbcafc2deb59c10be9a0f4a80e925c33d6171",
+    "rounds/round_021/review/baseline_approved_sources.json": "5679844aaf6dd78d50b0bf6b8ce32491add9e96101d475a02bc201c469eecbb9"
+  },
+  "input_fingerprint": "bd026f4093cdf63a7837eb2ce1d9270d6bcef1ef6d13a79c7c629ffcd256c49a",
+  "review": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\review\\baseline_approved_sources.json",
+  "outer_probability_values_read": false
+}
