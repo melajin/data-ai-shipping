@@ -1,0 +1,14 @@
+{
+  "round": "round_021",
+  "status": "outer_evaluation_started_no_retry",
+  "started_at_utc": "2026-11-05T00:36:05+00:00",
+  "pid": 14748,
+  "approval_sha256": "67a42fb6a2192048e301af8bc6215b6a364e89c6232573def8a6aa7941c810e2",
+  "evaluator_sha256": "60c1b85fe5124a3f18d4baaeb3440e687d42231ee6c9d426907f77e5df18eb30",
+  "outer_spatial_features_sha256": "3011dfe34f2f7ec0f1aef6c594001022aab1a949c67369e580fdccdbae704fc5",
+  "outer_spatial_manifest_sha256": "f60047ab329f026ddec11f97baa43bbf54fde8c579be6d18aee51c68184051ba",
+  "baseline_fit_sha256": "005ecd50eaad2091fe294112cca76069a08bdb86b89975361c2bda4a80feb6d8",
+  "candidate_fit_sha256": "5eafb06326491f36b60e7b26be52c71857fa7363bb5229fbf2de12773fea16d5",
+  "all_six_models_reload_verified": true,
+  "outer_probability_values_read_yet": false
+}

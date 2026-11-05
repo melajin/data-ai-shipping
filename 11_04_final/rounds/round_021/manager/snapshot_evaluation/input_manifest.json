@@ -1,0 +1,291 @@
+{
+  "round": "round_021",
+  "runner_sha256": "e1660df8d858ba34f36bdf267d25e92eff900370d80e9703a14fb18584b9214e",
+  "config_sha256": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+  "files": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\run_performance.py",
+      "bytes": 77011,
+      "sha256": "e1660df8d858ba34f36bdf267d25e92eff900370d80e9703a14fb18584b9214e"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\fit_meta_worker.py",
+      "bytes": 2425,
+      "sha256": "eacbb986fa8c11fa710c4bb31e0520308b6bc95d1a54a87945cc0bfb4ca52ed6"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\extract_spatial_profiles.py",
+      "bytes": 6087,
+      "sha256": "1e3ef3e47ceccf15721d324665b4436410522c6e79a9ac62163784a714b3e8bd"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\build_spatial_features.py",
+      "bytes": 11695,
+      "sha256": "24265ecdd609b53ae3de1574678a3e87c42a5977a2dbf11495f49c5bf9d4f2dc"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\configs\\experiment.json",
+      "bytes": 6197,
+      "sha256": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\configs\\experiment.json",
+      "bytes": 5185,
+      "sha256": "04993014836b851bf6b7b933287e16fcd21b9ecbc232bbf6936fc2655e115c94"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\result.json",
+      "bytes": 88706,
+      "sha256": "38bfdc81016d2b136e3c3509c089823b32d0b79860edfe8848b9876f13960295"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\inner_split_roster.csv",
+      "bytes": 59057,
+      "sha256": "a73d9b65ae402befb7d5ba134bfc382f7edc71ab22a5c081d443c66f3b8525ec"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\inner_split_manifest.json",
+      "bytes": 2754,
+      "sha256": "9e4e791199f7a29604adfe10ca3df74a4761faa94891945f9604f6b96b15dce5"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\artifacts\\source_hash_manifest.json",
+      "bytes": 16405,
+      "sha256": "81bc8e27b5f08d5920f4f59c2c6e2f693bad1e64d20bec95f9a42d74c66f4189"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\artifacts\\preflight_validation.json",
+      "bytes": 8912,
+      "sha256": "eeeb030d609fb63f927705bc3e55356c3429b06e65d8663acc0caa7fd168c562"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_003\\code\\run_round003.py",
+      "bytes": 68388,
+      "sha256": "9f333f7f4be7ed81ef8296f36b4474f8a6730f99f306c8e4f586c9d031bea6a2"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\code\\historical\\TinyTabM\\TinyTabM_구현_20261029\\fishing_tiny_tabm.py",
+      "bytes": 103671,
+      "sha256": "d9054e929ad67ea11d32b8c4dab59ee63b2896320efdcb65557d888a46a6c381"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz",
+      "bytes": 8187401,
+      "sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_1_features.npz",
+      "bytes": 8237632,
+      "sha256": "9f9d582bedaae5e4b6ae13877e70ff467e25459c3aee25916d0fed8c3ff8d992"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_2_features.npz",
+      "bytes": 8236813,
+      "sha256": "f8e4c29ff7605efa4373f2514fd1933ceac57510f0d7939aa800564ff3fca633"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\MANIFEST_SHA256.json",
+      "bytes": 10773,
+      "sha256": "9acfd2f121168745bd5d7658ae33f83c18a321cef44bb5689fb49dda9b5ec1c6"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\SOURCE_SHA256.json",
+      "bytes": 12290,
+      "sha256": "c7ae17c798541cba1e77a637bc06a59f0d16a3fa3d527586a1109ae029d50532"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\splits\\development_roles_long.csv",
+      "bytes": 299600,
+      "sha256": "4c27dc2d3591c864cc9db8cf1defdc38540e68cd404fbbfe118be73f01efef00"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\classes.json",
+      "bytes": 96,
+      "sha256": "9c7dea7d9c73e2f8b0f4cbc602f77bab9277f1404400fd7156f1a0120db34675"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\run_settings.json",
+      "bytes": 1077,
+      "sha256": "e951067a229cf41056bd1d5d73bc46fa688430b84bae255ed79950e3ea6cb85f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\metadata\\package_validation.json",
+      "bytes": 892,
+      "sha256": "05f0cd8c71aefbe87ea7f2ac90bf5c92ca8fe8c2041b0c8cd71971a23308e1af"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\final_fixed_decision_rule.json",
+      "bytes": 4375,
+      "sha256": "ce491771be71327d6ba18388e55828c6f153a374bd4c8fb6b91b0cf6f019557f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\original_oof_predictions.csv",
+      "bytes": 574152,
+      "sha256": "ff1b7788547efc40f0810af511a6f1e6939aa54ff6c1959c7a7e9af6ee598d89"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\sqrt_macro\\outer_predictions.csv",
+      "bytes": 595704,
+      "sha256": "dfdf805f5c60cff019400e3b16f57f5d03aa6d24277e31c3cdfb2c5b2f4992a4"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_020\\manager\\historical_protection_reference.json",
+      "bytes": 1830,
+      "sha256": "43d0a9a14d15d7474b551d950657c1f00c7218df619b898ab7413565f9f55a7e"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s6_fingerprint_grid.parquet",
+      "bytes": 8353532,
+      "sha256": "b732e2d87f795885426abbc805381e29bcad466e8be7abf37fc4c361bd853131"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\tmp\\spatial_profiles.csv",
+      "bytes": 17570984,
+      "sha256": "ba98cb185db2af58cf5f16c26605b6310b4063da373e4f96906e27696071f4ab"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\spatial_features_select_outer.npz",
+      "bytes": 203114,
+      "sha256": "8308177f51206a07ae82c81197d105f3dd19fa6e1f7aae97ff54d0f12b7d8148"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\tmp\\spatial_profiles.csv.manifest.json",
+      "bytes": 1043,
+      "sha256": "86ab2e50ad0a4adcf69bedf6ed1ca9a0bee1f6ed0fbfb74af7cec7248e15ac7e"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\spatial_features_select_outer.npz.manifest.json",
+      "bytes": 2549,
+      "sha256": "a0dcc9b31749785082733f5572ad79be6cbce38151b3f85af787f11226855a07"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\inner_predictions.csv",
+      "bytes": 74992,
+      "sha256": "5b0aa9743f1c3a813b2eb6e780c21b5877dd1947feb2bee47aaa4dcf2bdd6968"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\training.json",
+      "bytes": 1321,
+      "sha256": "adf22319dcda21029baa279dbbeb60669c55f3b1c222a5cc5864cb1e9912eba4"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_baseline_lightgbm_inner_es.npz",
+      "bytes": 15349,
+      "sha256": "a3b53cad3d9378376144ef88f384b3ecd046f920d4664983c4c69ccf5f74e769"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_baseline_lightgbm_inner_select.npz",
+      "bytes": 15410,
+      "sha256": "14cd19c245dd5b070f06dbfcb3aeee4101976c5e4940e0411fc75622c00a42b3"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_baseline_lightgbm_outer.npz",
+      "bytes": 69048,
+      "sha256": "61e9dc14ee377f0092eb254b24a4ea8f708228aa345f56e10a6aaa288e7648e9"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_candidate_catboost_inner_es.npz",
+      "bytes": 15368,
+      "sha256": "450d2af8eddcf99866f30e383d2a478c63ccbf36da92a599da80a1fc46ca1668"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_candidate_catboost_inner_select.npz",
+      "bytes": 15414,
+      "sha256": "760b48f84df29c5a3803dc41d01a1cd1ef3be5e20145fa057cee194b3db27b9f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_0_candidate_catboost_outer.npz",
+      "bytes": 68922,
+      "sha256": "1e52db4c74018c5fc9ac2ad7f70f85634fbf6b84268703a069e3c1604223b74f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_1\\inner_predictions.csv",
+      "bytes": 75200,
+      "sha256": "00ae6ab0908b0b33049fff5e213d51987dfd08b825c1b6af4366af127c022617"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_1\\training.json",
+      "bytes": 1322,
+      "sha256": "00e5dec930467abbf37e779d99aebb0601bbb92c5306c3070326960db6ee203f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_baseline_lightgbm_inner_es.npz",
+      "bytes": 15395,
+      "sha256": "3b36e17b70c6ae7500d2cd987d69ebde92d70f44d95367d3c0658050a364f063"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_baseline_lightgbm_inner_select.npz",
+      "bytes": 15432,
+      "sha256": "ffe30afdb3c17333f25a29ef895429c759b5d48fc896266d22b5f578baec99f3"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_baseline_lightgbm_outer.npz",
+      "bytes": 69140,
+      "sha256": "243fe81ce11a0190b5eb4a10664e757db064c398e0f909952b885ebdde3fcb8f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_candidate_catboost_inner_es.npz",
+      "bytes": 15342,
+      "sha256": "b1bc6e20e8836341b5048d406440bbc2eba92dd4256875dfd5ef87cc88e544d5"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_candidate_catboost_inner_select.npz",
+      "bytes": 15380,
+      "sha256": "9b959a559a3cc20e983967f5df07d531876e6260bcb90eaff61a1d7f3828aa33"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_1_candidate_catboost_outer.npz",
+      "bytes": 68686,
+      "sha256": "c8320e5c6c89af14d01cb404970fb5660a1498ddafa7cafd14f68bf730b6324b"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_2\\inner_predictions.csv",
+      "bytes": 75157,
+      "sha256": "1233ccd69f24f268524e62930118a8ae11bbf8c6ee401306130888d6f62a6e0b"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_2\\training.json",
+      "bytes": 1321,
+      "sha256": "b34474e1b183401aeebd94b6bf54791b8098efcbefb685a87bb42eedd1be65a7"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_baseline_lightgbm_inner_es.npz",
+      "bytes": 15369,
+      "sha256": "44268a1bc97557d914b45427c1045b9297dc897916ce998b686898347cc72cd6"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_baseline_lightgbm_inner_select.npz",
+      "bytes": 15363,
+      "sha256": "f35332ac13720ca360f7addff9097b5e7d8e2ba03c9ce30f3a8af0cba38f5a27"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_baseline_lightgbm_outer.npz",
+      "bytes": 69162,
+      "sha256": "e918a12eb3370d80d7615b9aa58c8370abc221284d41c5b4e10e32948a8bd0e5"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_candidate_catboost_inner_es.npz",
+      "bytes": 15231,
+      "sha256": "03744935256cf6998097b2c2de31b4eb99bf7e5901a50d605dfc31ba2e8fc267"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_candidate_catboost_inner_select.npz",
+      "bytes": 15219,
+      "sha256": "58ee58f7f227eb3ac54e8f79384552d9a4a12676be9d0b1c21222a2cb1158d91"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_002\\artifacts\\probabilities\\fold_2_candidate_catboost_outer.npz",
+      "bytes": 68084,
+      "sha256": "e85b50c2d3567cb78d3466d4601a5c7a130b25816815825b9053bb2d533e8ac0"
+    }
+  ],
+  "outer_probability_file_policy": "byte hashes recorded; no OUTER probability arrays loaded in prepare",
+  "excluded": [
+    "raw F drive files",
+    "holdout individual rows",
+    "Test2025",
+    "OUTER probability values during prepare"
+  ],
+  "fingerprint_sha256": "1b0e88dce16696debad7ecbbb4eb9eb8c8afb15ff3f8370316401b2ef3ac643b",
+  "created_at_utc": "2026-11-05T00:35:47+00:00"
+}

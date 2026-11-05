@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "updated_at_utc": "2026-11-05T00:09:00.994571+00:00",
+  "updated_at_utc": "2026-11-05T00:46:27.160797+00:00",
   "objective": "vessel-level four-class micro-F1 >= 0.7 with development and independent evidence kept separate",
-  "goal_status": "in_progress_not_achieved",
+  "goal_status": "paused_by_user_not_achieved",
   "current_round": "round_021",
-  "round_status": "in_progress_baseline3_fit_complete_spatial_pending",
+  "round_status": "completed_evaluated_rejected_protection_and_micro_failed",
   "manager_session": "codex_ab0b4d8c_0ea3_4c23_a7b5_b98fba0b0e78",
   "manager_model_request": {
     "model": "gpt-6-astra",
@@ -15,7 +15,7 @@
     "model": "gpt-6-luna",
     "reasoning_effort": "xhigh",
     "max_assistants_user": 4,
-    "current_runtime_assistants": 2,
+    "current_runtime_assistants": 0,
     "host_total_slots": 4
   },
   "paths": {
@@ -441,6 +441,186 @@
         "0": 2389,
         "3": 92
       }
+    },
+    "round_021": {
+      "evaluation_population": "repeatedly exposed development OUTER5897; not independent",
+      "baseline12": {
+        "n": 5897,
+        "correct": 3407,
+        "micro_f1": 0.577751399016449,
+        "macro_f1": 0.48160258572385106,
+        "classes": [
+          {
+            "label": 0,
+            "precision": 0.5921951219512195,
+            "recall": 0.8315068493150685,
+            "f1": 0.6917378917378917,
+            "support": 2920,
+            "predicted": 4100
+          },
+          {
+            "label": 1,
+            "precision": 0.5722460658082976,
+            "recall": 0.3968253968253968,
+            "f1": 0.4686584651435266,
+            "support": 2016,
+            "predicted": 1398
+          },
+          {
+            "label": 2,
+            "precision": 0.39245283018867927,
+            "recall": 0.12455089820359282,
+            "f1": 0.1890909090909091,
+            "support": 835,
+            "predicted": 265
+          },
+          {
+            "label": 3,
+            "precision": 0.5597014925373134,
+            "recall": 0.5952380952380952,
+            "f1": 0.576923076923077,
+            "support": 126,
+            "predicted": 134
+          }
+        ],
+        "confusion_matrix": [
+          [
+            2428,
+            402,
+            80,
+            10
+          ],
+          [
+            1116,
+            800,
+            75,
+            25
+          ],
+          [
+            543,
+            164,
+            104,
+            24
+          ],
+          [
+            13,
+            32,
+            6,
+            75
+          ]
+        ]
+      },
+      "candidate20": {
+        "n": 5897,
+        "correct": 3363,
+        "micro_f1": 0.5702899779548923,
+        "macro_f1": 0.49707758228621124,
+        "classes": [
+          {
+            "label": 0,
+            "precision": 0.5967035797064125,
+            "recall": 0.7934931506849315,
+            "f1": 0.6811700720270468,
+            "support": 2920,
+            "predicted": 3883
+          },
+          {
+            "label": 1,
+            "precision": 0.5427652733118971,
+            "recall": 0.41865079365079366,
+            "f1": 0.4726967236068328,
+            "support": 2016,
+            "predicted": 1555
+          },
+          {
+            "label": 2,
+            "precision": 0.3706070287539936,
+            "recall": 0.13892215568862276,
+            "f1": 0.20209059233449475,
+            "support": 835,
+            "predicted": 313
+          },
+          {
+            "label": 3,
+            "precision": 0.589041095890411,
+            "recall": 0.6825396825396826,
+            "f1": 0.6323529411764707,
+            "support": 126,
+            "predicted": 146
+          }
+        ],
+        "confusion_matrix": [
+          [
+            2317,
+            495,
+            97,
+            11
+          ],
+          [
+            1049,
+            844,
+            97,
+            26
+          ],
+          [
+            506,
+            190,
+            116,
+            23
+          ],
+          [
+            11,
+            26,
+            3,
+            86
+          ]
+        ]
+      },
+      "paired": {
+        "n": 5897,
+        "reference_correct": 3407,
+        "candidate_correct": 3363,
+        "newly_correct": 245,
+        "newly_incorrect": 289,
+        "net_additional_correct": -44,
+        "micro_delta": -0.007461421061556672
+      },
+      "paired_ci95": [
+        -0.015266237069696454,
+        0.00016957775139901646
+      ],
+      "protected_true_positive_counts": {
+        "baseline12": [
+          2428,
+          800,
+          104,
+          75
+        ],
+        "candidate20": [
+          2317,
+          844,
+          116,
+          86
+        ],
+        "historical5seed": [
+          2381,
+          908,
+          116,
+          92
+        ],
+        "round002_seed42": [
+          2389,
+          889,
+          108,
+          90
+        ]
+      },
+      "candidate_adopted": false,
+      "baseline12_adopted": false,
+      "new_meta_fits": 6,
+      "outer_evaluations": 1,
+      "independent_numerical_verification": true,
+      "result": "rounds/round_021/artifacts/result.json"
     }
   },
   "budget": {
@@ -458,7 +638,12 @@
     "compute_cutoff_utc": "2026-11-05T00:43:07Z",
     "manager_cutoff_utc": "2026-11-05T00:48:07Z",
     "max_stage_job_seconds": 1200,
-    "feature_seconds_max": 600
+    "feature_seconds_max": 600,
+    "actual_new_meta_fits": 6,
+    "actual_outer_evaluations": 1,
+    "actual_compute_stage_wall_seconds": 80.89952550000453,
+    "sampled_peak_family_rss_bytes": 501809152,
+    "sampled_min_available_bytes": 4358266880
   },
   "decision_rules": {
     "current_round": "Round019 static control repair completed; Python raw ExitTime consistency gap blocked approval; no dynamic runs; actual performance priority restored",
@@ -467,9 +652,11 @@
     "holdout": "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan",
     "ram_policy": "When RAM insufficient do other feasible independent work first, then recheck and proceed under resource and finite-attempt gates"
   },
-  "current_task": "Baseline3fit completed; next filtered current2026 spatial8 and candidate3fit, OUTER evaluation pending",
-  "next_task": "Choose one new finite hypothesis from actual class1/2 errors and protected class0/3 losses after round021",
-  "blockers": [],
+  "current_task": "Completed6fits/one development evaluation/independent numerical verification; bothnewmodelsrejected",
+  "next_task": "No next execution: summarize why current performance decreased; resume only on new explicit user instruction",
+  "blockers": [
+    "User stopped further execution; not a resource or technical failure"
+  ],
   "unresolved": [
     "Actual-vessel CPU/CUDA probability equivalence remains unmeasured",
     "Small synthetic equality/memory observations do not prove full-context memory reduction",
@@ -477,25 +664,22 @@
     "Holdout known_holdout_reused=true; exposure audit unresolved; individual values not opened",
     "No independent/official score and no actual F1>=0.7 evidence"
   ],
-  "active_workers": [
-    "/root/author",
-    "/root/reviewer"
-  ],
+  "active_workers": [],
   "handoff": {
     "ready": false,
     "next_session_launched": false,
-    "launch_receipt": "automation/receipts/round_021_launch.json",
+    "launch_receipt": null,
     "launcher": "automation/Start-NextSession.ps1",
     "launcher_owner": "current manager",
-    "next_round": "round_022",
-    "pause_reason": null,
+    "next_round": null,
+    "pause_reason": "User explicitly requested no next execution; explain current degradation only",
     "authorization": "User authorizes local experiments and fresh Astra high handoffs without repeated approval",
     "close_completed_session_requested": true,
     "completed_session_id": "codex_ab0b4d8c_0ea3_4c23_a7b5_b98fba0b0e78",
-    "close_completed_session_status": "Current orca agent help has no structured-chat close command; end this manager after accepted handoff; manually close only completed session tab if needed",
+    "close_completed_session_status": "orca agent help exposes launch/hooks only; no structured-chat close. End current work after acceptance; manually close only completed tab if needed.",
     "next_session_id": null,
     "accepted_at_utc": null,
-    "note": "Acceptance authority is round_020_launch.json; current manager stops and does not modify shared state after acceptance."
+    "note": "Do not launch any new manager or experiment. Round021 is complete; no round021 launch receipt was created."
   },
   "learning_status": {
     "learner_understanding_assessed": false,

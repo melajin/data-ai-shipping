@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-05T00:35:58.741615+00:00",
+  "pid": 31232,
+  "launcher_pid": 21924,
+  "argv": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\evaluate_round021.py",
+    "--config",
+    "rounds\\round_021\\configs\\experiment.json",
+    "--outer-spatial",
+    "rounds\\round_021\\artifacts\\spatial_features_OUTER.csv"
+  ]
+}

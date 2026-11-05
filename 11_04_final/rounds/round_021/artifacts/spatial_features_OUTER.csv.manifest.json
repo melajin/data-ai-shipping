@@ -1,0 +1,81 @@
+{
+  "status": "outer_spatial_features_written",
+  "role": "OUTER",
+  "columns": [
+    "spatial_bhat_r001_c0",
+    "spatial_bhat_r001_c1",
+    "spatial_bhat_r001_c2",
+    "spatial_bhat_r001_c3",
+    "spatial_bhat_r005_c0",
+    "spatial_bhat_r005_c1",
+    "spatial_bhat_r005_c2",
+    "spatial_bhat_r005_c3"
+  ],
+  "rows": 5897,
+  "folds": {
+    "0": {
+      "fit_rows": 3144,
+      "query_rows": 1966,
+      "query_profile_missing_rows": 0,
+      "fit_profiles_by_resolution_class": {
+        "r0.01_c0": 1556,
+        "r0.01_c1": 1075,
+        "r0.01_c2": 446,
+        "r0.01_c3": 67,
+        "r0.05_c0": 1556,
+        "r0.05_c1": 1075,
+        "r0.05_c2": 446,
+        "r0.05_c3": 67
+      },
+      "fit_query_disjoint": true,
+      "query_labels_used_for_features": false,
+      "prototype_construction": "equal-vessel mean of normalized FIT profiles, class-specific and resolution-specific"
+    },
+    "1": {
+      "fit_rows": 3144,
+      "query_rows": 1966,
+      "query_profile_missing_rows": 0,
+      "fit_profiles_by_resolution_class": {
+        "r0.01_c0": 1557,
+        "r0.01_c1": 1075,
+        "r0.01_c2": 445,
+        "r0.01_c3": 67,
+        "r0.05_c0": 1557,
+        "r0.05_c1": 1075,
+        "r0.05_c2": 445,
+        "r0.05_c3": 67
+      },
+      "fit_query_disjoint": true,
+      "query_labels_used_for_features": false,
+      "prototype_construction": "equal-vessel mean of normalized FIT profiles, class-specific and resolution-specific"
+    },
+    "2": {
+      "fit_rows": 3145,
+      "query_rows": 1965,
+      "query_profile_missing_rows": 0,
+      "fit_profiles_by_resolution_class": {
+        "r0.01_c0": 1557,
+        "r0.01_c1": 1075,
+        "r0.01_c2": 446,
+        "r0.01_c3": 67,
+        "r0.05_c0": 1557,
+        "r0.05_c1": 1075,
+        "r0.05_c2": 446,
+        "r0.05_c3": 67
+      },
+      "fit_query_disjoint": true,
+      "query_labels_used_for_features": false,
+      "prototype_construction": "equal-vessel mean of normalized FIT profiles, class-specific and resolution-specific"
+    }
+  },
+  "profile_csv_sha256": "ba98cb185db2af58cf5f16c26605b6310b4063da373e4f96906e27696071f4ab",
+  "output_sha256": "3011dfe34f2f7ec0f1aef6c594001022aab1a949c67369e580fdccdbae704fc5",
+  "output_bytes": 966220,
+  "fit_artifact_proof": {
+    "baseline_fit_sha256": "005ecd50eaad2091fe294112cca76069a08bdb86b89975361c2bda4a80feb6d8",
+    "candidate_fit_sha256": "5eafb06326491f36b60e7b26be52c71857fa7363bb5229fbf2de12773fea16d5"
+  },
+  "query_labels_used_for_features": false,
+  "elapsed_seconds": 1.8832150000016554,
+  "imputation": "NaN is intentionally preserved for downstream constant-zero imputer; no missingness indicators"
+}

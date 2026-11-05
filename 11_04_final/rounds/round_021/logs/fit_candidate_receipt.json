@@ -1,0 +1,44 @@
+{
+  "started_at_utc": "2026-11-05T00:27:34.915462+00:00",
+  "finished_at_utc": "2026-11-05T00:28:00.286997+00:00",
+  "stage": "fit_candidate",
+  "pid": 1164,
+  "launcher_pid": 13556,
+  "argv": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\run_performance.py",
+    "--fit-candidate",
+    "--config",
+    "rounds\\round_021\\configs\\experiment.json"
+  ],
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 25.369534600002225,
+  "sampled_peak_family_rss_bytes": 332591104,
+  "sampled_min_available_bytes": 4715503616,
+  "memory_sample_count": 25,
+  "stdout": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\logs\\fit_candidate.stdout.txt",
+  "stderr": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\logs\\fit_candidate.stderr.txt",
+  "hashes_before": {
+    "rounds/round_021/code/build_spatial_features.py": "24265ecdd609b53ae3de1574678a3e87c42a5977a2dbf11495f49c5bf9d4f2dc",
+    "rounds/round_021/code/extract_spatial_profiles.py": "1e3ef3e47ceccf15721d324665b4436410522c6e79a9ac62163784a714b3e8bd",
+    "rounds/round_021/code/fit_meta_worker.py": "eacbb986fa8c11fa710c4bb31e0520308b6bc95d1a54a87945cc0bfb4ca52ed6",
+    "rounds/round_021/code/run_performance.py": "e1660df8d858ba34f36bdf267d25e92eff900370d80e9703a14fb18584b9214e",
+    "rounds/round_021/configs/experiment.json": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+    "rounds/round_021/ROUND_PLAN.md": "f52f64a5cb616f7e07ebd9060d8643e066fa78a9e3d04ef1b6146d6edc1f070d",
+    "rounds/round_021/manager/launch.py": "4a221f280c07641badf4bcc1e03fbcafc2deb59c10be9a0f4a80e925c33d6171"
+  },
+  "hashes_after": {
+    "rounds/round_021/code/build_spatial_features.py": "24265ecdd609b53ae3de1574678a3e87c42a5977a2dbf11495f49c5bf9d4f2dc",
+    "rounds/round_021/code/extract_spatial_profiles.py": "1e3ef3e47ceccf15721d324665b4436410522c6e79a9ac62163784a714b3e8bd",
+    "rounds/round_021/code/fit_meta_worker.py": "eacbb986fa8c11fa710c4bb31e0520308b6bc95d1a54a87945cc0bfb4ca52ed6",
+    "rounds/round_021/code/run_performance.py": "e1660df8d858ba34f36bdf267d25e92eff900370d80e9703a14fb18584b9214e",
+    "rounds/round_021/configs/experiment.json": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+    "rounds/round_021/ROUND_PLAN.md": "f52f64a5cb616f7e07ebd9060d8643e066fa78a9e3d04ef1b6146d6edc1f070d",
+    "rounds/round_021/manager/launch.py": "4a221f280c07641badf4bcc1e03fbcafc2deb59c10be9a0f4a80e925c33d6171"
+  },
+  "hardware_verified": false
+}

@@ -1,0 +1,162 @@
+{
+  "round": "round_021",
+  "status": "core_outer_metrics_saved",
+  "evaluated_at_utc": "2026-11-05T00:36:10+00:00",
+  "rows": 5897,
+  "baseline12": {
+    "n": 5897,
+    "correct": 3407,
+    "micro_f1": 0.577751399016449,
+    "macro_f1": 0.48160258572385106,
+    "classes": [
+      {
+        "label": 0,
+        "precision": 0.5921951219512195,
+        "recall": 0.8315068493150685,
+        "f1": 0.6917378917378917,
+        "support": 2920,
+        "predicted": 4100
+      },
+      {
+        "label": 1,
+        "precision": 0.5722460658082976,
+        "recall": 0.3968253968253968,
+        "f1": 0.4686584651435266,
+        "support": 2016,
+        "predicted": 1398
+      },
+      {
+        "label": 2,
+        "precision": 0.39245283018867927,
+        "recall": 0.12455089820359282,
+        "f1": 0.1890909090909091,
+        "support": 835,
+        "predicted": 265
+      },
+      {
+        "label": 3,
+        "precision": 0.5597014925373134,
+        "recall": 0.5952380952380952,
+        "f1": 0.576923076923077,
+        "support": 126,
+        "predicted": 134
+      }
+    ],
+    "confusion_matrix": [
+      [
+        2428,
+        402,
+        80,
+        10
+      ],
+      [
+        1116,
+        800,
+        75,
+        25
+      ],
+      [
+        543,
+        164,
+        104,
+        24
+      ],
+      [
+        13,
+        32,
+        6,
+        75
+      ]
+    ]
+  },
+  "candidate20": {
+    "n": 5897,
+    "correct": 3363,
+    "micro_f1": 0.5702899779548923,
+    "macro_f1": 0.49707758228621124,
+    "classes": [
+      {
+        "label": 0,
+        "precision": 0.5967035797064125,
+        "recall": 0.7934931506849315,
+        "f1": 0.6811700720270468,
+        "support": 2920,
+        "predicted": 3883
+      },
+      {
+        "label": 1,
+        "precision": 0.5427652733118971,
+        "recall": 0.41865079365079366,
+        "f1": 0.4726967236068328,
+        "support": 2016,
+        "predicted": 1555
+      },
+      {
+        "label": 2,
+        "precision": 0.3706070287539936,
+        "recall": 0.13892215568862276,
+        "f1": 0.20209059233449475,
+        "support": 835,
+        "predicted": 313
+      },
+      {
+        "label": 3,
+        "precision": 0.589041095890411,
+        "recall": 0.6825396825396826,
+        "f1": 0.6323529411764707,
+        "support": 126,
+        "predicted": 146
+      }
+    ],
+    "confusion_matrix": [
+      [
+        2317,
+        495,
+        97,
+        11
+      ],
+      [
+        1049,
+        844,
+        97,
+        26
+      ],
+      [
+        506,
+        190,
+        116,
+        23
+      ],
+      [
+        11,
+        26,
+        3,
+        86
+      ]
+    ]
+  },
+  "paired": {
+    "n": 5897,
+    "reference_correct": 3407,
+    "candidate_correct": 3363,
+    "newly_correct": 245,
+    "newly_incorrect": 289,
+    "net_additional_correct": -44,
+    "micro_delta": -0.007461421061556672
+  },
+  "paired_bootstrap95": {
+    "unit": "vessel",
+    "repetitions": 5000,
+    "seed": 20261105,
+    "confidence": 0.95,
+    "point_delta_micro_f1": -0.0074614210615567235,
+    "ci95_percentile": [
+      -0.015266237069696454,
+      0.00016957775139901646
+    ],
+    "limitation": "Repeated development OUTER rows do not establish independent performance."
+  },
+  "outer_predictions_long_csv": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\outer_predictions_round021_long.csv",
+  "independent_verified_performance": null,
+  "official_score": null
+}

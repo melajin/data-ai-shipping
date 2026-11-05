@@ -1,0 +1,64 @@
+"""Single owned stage; bounded runtime, source hashes, and memory evidence."""
+import argparse, datetime, hashlib, json, os, subprocess, sys, time
+from pathlib import Path
+import psutil
+R=Path(__file__).resolve().parents[1]; ROOT=R.parents[1]
+def utc(): return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def sha(p):
+    with p.open('rb') as f: return hashlib.file_digest(f,'sha256').hexdigest()
+def save(p,v): p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+p=argparse.ArgumentParser();p.add_argument('--stage',required=True);p.add_argument('--seconds',type=int,required=True);p.add_argument('--python',default=sys.executable);p.add_argument('--script',default=str(R/'code/run_performance.py'));p.add_argument('args',nargs=argparse.REMAINDER);a=p.parse_args()
+assert a.stage.replace('_','').isalnum() and 0<a.seconds<=1200
+deadline=datetime.datetime(2026,11,5,0,43,7,tzinfo=datetime.timezone.utc)
+remaining=(deadline-datetime.datetime.now(datetime.timezone.utc)).total_seconds()
+assert remaining>0,'Compute cutoff reached'
+limit=min(a.seconds,remaining)
+log=R/'logs';claim=log/(a.stage+'.claim')
+assert not claim.exists(),'Stage already attempted: inspect receipt; no blind retry'
+env=os.environ.copy()
+for k in ['TEMP','TMP','TMPDIR']:env[k]=str(R/'tmp')
+env.update(PYTHONDONTWRITEBYTECODE='1',PYTHONPYCACHEPREFIX=str(R/'tmp/pycache'),OMP_NUM_THREADS='3',OPENBLAS_NUM_THREADS='3',MKL_NUM_THREADS='3',NUMEXPR_NUM_THREADS='3',PYTHONUNBUFFERED='1')
+extra=a.args[1:] if a.args[:1]==['--'] else a.args
+script=Path(a.script).resolve();assert script.is_relative_to(R)
+argv=[a.python,'-B','-X','utf8',str(script)]+extra
+sources=list((R/'code').glob('*.py'))+[R/'configs/experiment.json',R/'ROUND_PLAN.md',Path(__file__).resolve()]
+hashes={str(x.relative_to(ROOT)).replace('\\','/'):sha(x) for x in sources}
+memory=psutil.virtual_memory();other=[]
+for proc in psutil.process_iter(['pid','name','cmdline','memory_info','create_time']):
+    try:
+        d=proc.info
+        if d['pid']!=os.getpid() and 'python' in (d['name'] or '').lower():
+            other.append(dict(pid=d['pid'],cmdline=d['cmdline'],rss=d['memory_info'].rss,create_time=d['create_time']))
+    except (psutil.NoSuchProcess,psutil.AccessDenied):pass
+prior_seconds=sum(json.loads(x.read_text(encoding='utf-8'))['wall_seconds'] for x in log.glob('*_receipt.json'))
+limit=min(limit,1800-prior_seconds);assert limit>0,'Compute budget exhausted'
+pre=dict(utc=utc(),stage=a.stage,argv=argv,hashes=hashes,available_bytes=memory.available,expected_peak_bytes=int(1.5*2**30),estimate_basis='8.35MB parquet, 17.9MB decoded full rowgroup, sparse profiles and small sklearn models plus import reserve; estimate not measured',other_python=other,timeout_seconds=limit,compute_cutoff=deadline.isoformat(),prior_compute_seconds=prior_seconds)
+save(log/(a.stage+'_preflight.json'),pre)
+if memory.available<2.5*2**30:raise RuntimeError('RAM gate: defer stage and do independent work before recheck')
+claim.open('x').write(utc())
+start=time.monotonic();stdout=log/(a.stage+'.stdout.txt');stderr=log/(a.stage+'.stderr.txt');stop=None;peak=0;minfree=memory.available;samples=0
+with stdout.open('w',encoding='utf-8') as out,stderr.open('w',encoding='utf-8') as err:
+    child=subprocess.Popen(argv,cwd=ROOT,env=env,stdout=out,stderr=err,creationflags=subprocess.CREATE_NO_WINDOW)
+    owner=psutil.Process(child.pid)
+    save(log/(a.stage+'_started.json'),dict(utc=utc(),pid=child.pid,launcher_pid=os.getpid(),argv=argv))
+    while child.poll() is None:
+        # Runtime safety sampling while owned job works, not polling to await RAM.
+        try: family=[owner]+owner.children(recursive=True)
+        except psutil.NoSuchProcess:family=[]
+        rss=0
+        for proc in family:
+            try:rss+=proc.memory_info().rss
+            except psutil.NoSuchProcess:pass
+        free=psutil.virtual_memory().available;peak=max(peak,rss);minfree=min(minfree,free);samples+=1
+        if rss>1.5*2**30 or free<.5*2**30:stop='memory_stop'
+        elif time.monotonic()-start>limit:stop='deadline_stop'
+        if stop:
+            for proc in reversed(family):
+                try:proc.kill()
+                except psutil.NoSuchProcess:pass
+            child.wait(timeout=10);break
+        try:child.wait(timeout=1)
+        except subprocess.TimeoutExpired:pass
+    rc=child.wait(timeout=10)
+receipt=dict(started_at_utc=pre['utc'],finished_at_utc=utc(),stage=a.stage,pid=child.pid,launcher_pid=os.getpid(),argv=argv,exit_code=rc,stop_reason=stop,wall_seconds=time.monotonic()-start,sampled_peak_family_rss_bytes=peak,sampled_min_available_bytes=minfree,memory_sample_count=samples,stdout=str(stdout),stderr=str(stderr),hashes_before=hashes,hashes_after={n:sha(ROOT/n) for n in hashes},hardware_verified=False)
+save(log/(a.stage+'_receipt.json'),receipt);print(json.dumps(receipt));sys.exit(rc if not stop else 2)

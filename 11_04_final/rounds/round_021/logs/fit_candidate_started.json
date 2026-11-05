@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-05T00:27:34.927285+00:00",
+  "pid": 1164,
+  "launcher_pid": 13556,
+  "argv": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\run_performance.py",
+    "--fit-candidate",
+    "--config",
+    "rounds\\round_021\\configs\\experiment.json"
+  ]
+}

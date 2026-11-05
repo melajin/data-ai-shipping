@@ -1,0 +1,16 @@
+{
+  "round": "round_021",
+  "decided_at_utc": "2026-11-05T00:46:27.160797+00:00",
+  "baseline12_adopted": false,
+  "candidate20_adopted": false,
+  "reason": "Both below historical adopted baseline; baseline12 TP3=75<92; candidate20 TP0=2317<2389 and TP3=86<92; candidate loses44 vessels vs12 and CI includes0",
+  "historical_adopted_baseline_unchanged": true,
+  "independent_saved_prediction_verification": "review/verification.json",
+  "next_hypothesis": "Replace raw spatial Bhat8 by within-resolution centered log affinities; same20 columns and fixed meta model;3 new fits only",
+  "hypothesis_is_unproven": true,
+  "learning_understanding_assessed": false,
+  "hardware_verified": false,
+  "user_stop_next_execution": true,
+  "next_hypothesis_status": "unexecuted_proposal_only_cancelled_as_next_action",
+  "next_action": "Explain current degradation only; no new round, experiment or fresh-manager launch"
+}

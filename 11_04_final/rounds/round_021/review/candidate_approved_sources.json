@@ -1,0 +1,14 @@
+{
+  "approved": true,
+  "stage": "fit_candidate",
+  "hashes": {
+    "rounds/round_021/code/run_performance.py": "E1660DF8D858BA34F36BDF267D25E92EFF900370D80E9703A14FB18584B9214E",
+    "rounds/round_021/code/fit_meta_worker.py": "EACBB986FA8C11FA710C4BB31E0520308B6BC95D1A54A87945CC0BFB4CA52ED6",
+    "rounds/round_021/code/build_spatial_features.py": "24265ECDD609B53AE3DE1574678A3E87C42A5977A2DBF11495F49C5BF9D4F2DC",
+    "rounds/round_021/code/extract_spatial_profiles.py": "1E3EF3E47CECCF15721D324665B4436410522C6E79A9AC62163784A714B3E8BD",
+    "rounds/round_021/configs/experiment.json": "07F4B526D6EFDCF6E2E0CECF80B9D27C7AAC09BF3F56147951A48322685A5245",
+    "rounds/round_021/manager/launch.py": "4A221F280C07641BADF4BCC1E03FBCAFC2DEB59C10BE9A0F4A80E925C33D6171",
+    "rounds/round_021/ROUND_PLAN.md": "F52F64A5CB616F7E07EBD9060D8643E066FA78A9E3D04EF1B6146D6EDC1F070D"
+  },
+  "scope": "Three candidate20 SELECT-only fits/save/reload after the approved baseline12 stage and approved spatial SELECT features. Does not approve OUTER feature/probability access, historical prediction rows, or evaluation."
+}

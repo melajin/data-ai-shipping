@@ -1125,7 +1125,7 @@ def verify_baseline_and_select_inputs(cfg: dict, state: dict, output_dir: Path, 
     for fold in FOLDS:
         d = state["select"][fold]
         record = next((r for r in baseline["fit_records"] if int(r["fold"]) == fold), None)
-        if record is None or record.get("variant") != "baseline12" or record.get("features") != 12 or not record.get("reload_check_pass"):
+        if record is None or record.get("variant", "baseline12") != "baseline12" or record.get("features") != 12 or not record.get("reload_check_pass"):
             raise ValueError(f"Baseline fold model record is missing/incompatible: {fold}")
         model_path = Path(record["model_path"])
         if not model_path.is_file() or sha256_file(model_path) != record["model_sha256"]:

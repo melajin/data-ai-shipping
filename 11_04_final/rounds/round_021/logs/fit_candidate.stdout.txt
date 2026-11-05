@@ -1,0 +1,1 @@
+{"status": "candidate_20_fit_reloaded_select_only", "meta_fits": 3, "all_reload_checks_pass": true, "outer_probability_values_loaded": false, "result": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\candidate_fit.json"}

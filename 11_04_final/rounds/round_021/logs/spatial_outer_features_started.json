@@ -1,0 +1,26 @@
+{
+  "utc": "2026-11-05T00:28:30.217486+00:00",
+  "pid": 25748,
+  "launcher_pid": 18060,
+  "argv": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\build_spatial_features.py",
+    "--feature-root",
+    "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01",
+    "--profiles",
+    "rounds\\round_021\\tmp\\spatial_profiles.csv",
+    "--profile-manifest",
+    "rounds\\round_021\\tmp\\spatial_profiles.csv.manifest.json",
+    "--output",
+    "rounds\\round_021\\artifacts\\spatial_features_OUTER.csv",
+    "--role",
+    "OUTER",
+    "--baseline-fit",
+    "rounds\\round_021\\artifacts\\baseline_fit.json",
+    "--candidate-fit",
+    "rounds\\round_021\\artifacts\\candidate_fit.json"
+  ]
+}

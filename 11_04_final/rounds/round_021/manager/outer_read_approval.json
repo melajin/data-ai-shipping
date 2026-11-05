@@ -1,11 +1,24 @@
 {
   "round": "round_021",
   "status": "approved",
-  "utc": "2026-11-05T00:17:28.379388+00:00",
-  "allowed_stage": "fit_baseline",
-  "runner_sha256": "1329b5ee7152d04310bf15d5f37cee05098b11aec90ad8118361035d413200da",
+  "allowed_stage": "evaluation",
+  "utc": "2026-11-05T00:35:48.047993+00:00",
+  "runner_sha256": "e1660df8d858ba34f36bdf267d25e92eff900370d80e9703a14fb18584b9214e",
+  "evaluation_sha256": "60c1b85fe5124a3f18d4baaeb3440e687d42231ee6c9d426907f77e5df18eb30",
   "config_sha256": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
-  "input_manifest_sha256": "bd026f4093cdf63a7837eb2ce1d9270d6bcef1ef6d13a79c7c629ffcd256c49a",
-  "independent_review_sha256": "5679844aaf6dd78d50b0bf6b8ce32491add9e96101d475a02bc201c469eecbb9",
-  "condition": "Baseline/candidate fitting stages do not authorize OUTER. Evaluation only after final independent review and all six save/reload records; no post-OUTER tuning."
+  "input_manifest_sha256": "1b0e88dce16696debad7ecbbb4eb9eb8c8afb15ff3f8370316401b2ef3ac643b",
+  "independent_review_sha256": "93c7a933ed4c35e8123131f6e295a4c8ddaf686f28acaad6643ce1bf8b0e885a",
+  "additional_input_hashes": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\baseline_fit.json": "005ecd50eaad2091fe294112cca76069a08bdb86b89975361c2bda4a80feb6d8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\candidate_fit.json": "5eafb06326491f36b60e7b26be52c71857fa7363bb5229fbf2de12773fea16d5",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\spatial_features_OUTER.csv": "3011dfe34f2f7ec0f1aef6c594001022aab1a949c67369e580fdccdbae704fc5",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\spatial_features_OUTER.csv.manifest.json": "f60047ab329f026ddec11f97baa43bbf54fde8c579be6d18aee51c68184051ba",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_0_baseline12_stackerc1.joblib": "290ef31b97a8d9633ef01b7715d562de845d7ea13f12e0c8083dee630cee7550",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_1_baseline12_stackerc1.joblib": "4023b3cc80365ec5f4ec46a0950a16b06cf9fd3f60bc064627e1fc9987d333a9",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_2_baseline12_stackerc1.joblib": "d3fe1d0324b7b110e10f72611bc1087d39683f1d6bc5c2503d8edca48bf98687",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_0_candidate20_stackerc1.joblib": "f2bd460fbff715498cbdf128532a17e892e683cbfa6613c684b91a0a88ac7266",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_1_candidate20_stackerc1.joblib": "2f19db7aa28fd2e2a43fea56f059b2d62b2247a759a8d1b9af4bb196b9ab005d",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_2_candidate20_stackerc1.joblib": "0a6ff253a7ebe21e1093dfbf1844c1773739273bb1f011ff2fbe190c01b2ceff"
+  },
+  "condition": "All6 models verified/reloaded; one OUTER evaluation; no fitting or parameter/rowwise selection after reading scores"
 }

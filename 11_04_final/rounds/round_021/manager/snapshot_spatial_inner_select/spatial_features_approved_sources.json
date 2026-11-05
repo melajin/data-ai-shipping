@@ -1,0 +1,16 @@
+{
+  "approved": true,
+  "stage": "build_spatial_features",
+  "hashes": {
+    "rounds/round_021/code/build_spatial_features.py": "24265ECDD609B53AE3DE1574678A3E87C42A5977A2DBF11495F49C5BF9D4F2DC",
+    "rounds/round_021/configs/experiment.json": "07F4B526D6EFDCF6E2E0CECF80B9D27C7AAC09BF3F56147951A48322685A5245",
+    "rounds/round_021/manager/launch.py": "4A221F280C07641BADF4BCC1E03FBCAFC2DEB59C10BE9A0F4A80E925C33D6171",
+    "rounds/round_021/ROUND_PLAN.md": "F52F64A5CB616F7E07EBD9060D8643E066FA78A9E3D04EF1B6146D6EDC1F070D"
+  },
+  "scope": "Fold-local FIT-only spatial Bhattacharyya features for INNER_SELECT; OUTER features only after both baseline and candidate three-fold fit artifacts pass reload checks, before evaluation. This does not approve OUTER probabilities, historical prediction rows, or scoring.",
+  "required_inputs": {
+    "round002_fold_feature_metadata": "Verify all three fold NPZ path/hash against the frozen fit-stage input manifest.",
+    "select_roster": "Verify the round002 INNER_SELECT roster path/hash against the frozen fit-stage input manifest.",
+    "filtered_profiles": "Verify CSV and sidecar manifest hashes from the approved extraction receipt."
+  }
+}

@@ -1,17 +1,27 @@
 {
   "round": "round_021",
-  "runner_sha256": "1329b5ee7152d04310bf15d5f37cee05098b11aec90ad8118361035d413200da",
+  "runner_sha256": "e1660df8d858ba34f36bdf267d25e92eff900370d80e9703a14fb18584b9214e",
   "config_sha256": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
   "files": [
     {
       "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\run_performance.py",
-      "bytes": 65328,
-      "sha256": "1329b5ee7152d04310bf15d5f37cee05098b11aec90ad8118361035d413200da"
+      "bytes": 77011,
+      "sha256": "e1660df8d858ba34f36bdf267d25e92eff900370d80e9703a14fb18584b9214e"
     },
     {
       "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\fit_meta_worker.py",
       "bytes": 2425,
       "sha256": "eacbb986fa8c11fa710c4bb31e0520308b6bc95d1a54a87945cc0bfb4ca52ed6"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\extract_spatial_profiles.py",
+      "bytes": 6087,
+      "sha256": "1e3ef3e47ceccf15721d324665b4436410522c6e79a9ac62163784a714b3e8bd"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\code\\build_spatial_features.py",
+      "bytes": 11695,
+      "sha256": "24265ecdd609b53ae3de1574678a3e87c42a5977a2dbf11495f49c5bf9d4f2dc"
     },
     {
       "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\configs\\experiment.json",
@@ -127,6 +137,26 @@
       "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\26_11_2\\work\\재식별_투트랙_001r1\\s6_fingerprint_grid.parquet",
       "bytes": 8353532,
       "sha256": "b732e2d87f795885426abbc805381e29bcad466e8be7abf37fc4c361bd853131"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\tmp\\spatial_profiles.csv",
+      "bytes": 17570984,
+      "sha256": "ba98cb185db2af58cf5f16c26605b6310b4063da373e4f96906e27696071f4ab"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\spatial_features_select_outer.npz",
+      "bytes": 203114,
+      "sha256": "8308177f51206a07ae82c81197d105f3dd19fa6e1f7aae97ff54d0f12b7d8148"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\tmp\\spatial_profiles.csv.manifest.json",
+      "bytes": 1043,
+      "sha256": "86ab2e50ad0a4adcf69bedf6ed1ca9a0bee1f6ed0fbfb74af7cec7248e15ac7e"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\spatial_features_select_outer.npz.manifest.json",
+      "bytes": 2549,
+      "sha256": "a0dcc9b31749785082733f5572ad79be6cbce38151b3f85af787f11226855a07"
     },
     {
       "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\31일\\팀원자료\\TabICLv2_F156_공유자료\\evaluation\\seed_42\\fold_0\\inner_predictions.csv",
@@ -256,6 +286,6 @@
     "Test2025",
     "OUTER probability values during prepare"
   ],
-  "fingerprint_sha256": "bd026f4093cdf63a7837eb2ce1d9270d6bcef1ef6d13a79c7c629ffcd256c49a",
-  "created_at_utc": "2026-11-05T00:17:28+00:00"
+  "fingerprint_sha256": "1b0e88dce16696debad7ecbbb4eb9eb8c8afb15ff3f8370316401b2ef3ac643b",
+  "created_at_utc": "2026-11-05T00:35:47+00:00"
 }

@@ -1,0 +1,28 @@
+{
+  "utc": "2026-11-05T00:35:48.047993+00:00",
+  "hashes": {
+    "rounds/round_021/code/build_spatial_features.py": "24265ecdd609b53ae3de1574678a3e87c42a5977a2dbf11495f49c5bf9d4f2dc",
+    "rounds/round_021/code/evaluate_round021.py": "60c1b85fe5124a3f18d4baaeb3440e687d42231ee6c9d426907f77e5df18eb30",
+    "rounds/round_021/code/extract_spatial_profiles.py": "1e3ef3e47ceccf15721d324665b4436410522c6e79a9ac62163784a714b3e8bd",
+    "rounds/round_021/code/fit_meta_worker.py": "eacbb986fa8c11fa710c4bb31e0520308b6bc95d1a54a87945cc0bfb4ca52ed6",
+    "rounds/round_021/code/run_performance.py": "e1660df8d858ba34f36bdf267d25e92eff900370d80e9703a14fb18584b9214e",
+    "rounds/round_021/configs/experiment.json": "07f4b526d6efdcf6e2e0cecf80b9d27c7aac09bf3f56147951a48322685a5245",
+    "rounds/round_021/ROUND_PLAN.md": "f52f64a5cb616f7e07ebd9060d8643e066fa78a9e3d04ef1b6146d6edc1f070d",
+    "rounds/round_021/manager/launch.py": "4a221f280c07641badf4bcc1e03fbcafc2deb59c10be9a0f4a80e925c33d6171",
+    "rounds/round_021/review/evaluation_approved_sources.json": "93c7a933ed4c35e8123131f6e295a4c8ddaf686f28acaad6643ce1bf8b0e885a"
+  },
+  "input_hashes": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\baseline_fit.json": "005ecd50eaad2091fe294112cca76069a08bdb86b89975361c2bda4a80feb6d8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\candidate_fit.json": "5eafb06326491f36b60e7b26be52c71857fa7363bb5229fbf2de12773fea16d5",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\spatial_features_OUTER.csv": "3011dfe34f2f7ec0f1aef6c594001022aab1a949c67369e580fdccdbae704fc5",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\spatial_features_OUTER.csv.manifest.json": "f60047ab329f026ddec11f97baa43bbf54fde8c579be6d18aee51c68184051ba",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_0_baseline12_stackerc1.joblib": "290ef31b97a8d9633ef01b7715d562de845d7ea13f12e0c8083dee630cee7550",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_1_baseline12_stackerc1.joblib": "4023b3cc80365ec5f4ec46a0950a16b06cf9fd3f60bc064627e1fc9987d333a9",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_2_baseline12_stackerc1.joblib": "d3fe1d0324b7b110e10f72611bc1087d39683f1d6bc5c2503d8edca48bf98687",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_0_candidate20_stackerc1.joblib": "f2bd460fbff715498cbdf128532a17e892e683cbfa6613c684b91a0a88ac7266",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_1_candidate20_stackerc1.joblib": "2f19db7aa28fd2e2a43fea56f059b2d62b2247a759a8d1b9af4bb196b9ab005d",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_021\\artifacts\\models\\fold_2_candidate20_stackerc1.joblib": "0a6ff253a7ebe21e1093dfbf1844c1773739273bb1f011ff2fbe190c01b2ceff"
+  },
+  "meta_fits": 6,
+  "prior_outer_probability_scoring": 0
+}
