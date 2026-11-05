@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-11-05T11:09:29.236317+09:00",
+  "available_mib": 2961.6,
+  "estimated_additional_peak_mib": 768,
+  "reserve_mib": 1024,
+  "estimate_basis": "65,536 row sequential batches, numeric arrays, small nearby candidate table; no full train concat",
+  "active_python_processes": [
+    {
+      "pid": 19620,
+      "name": "python.exe",
+      "rss_mib": 81.7
+    },
+    {
+      "pid": 20744,
+      "name": "python.exe",
+      "rss_mib": 23.2
+    },
+    {
+      "pid": 26064,
+      "name": "python.exe",
+      "rss_mib": 4.1
+    },
+    {
+      "pid": 28680,
+      "name": "python.exe",
+      "rss_mib": 4.1
+    },
+    {
+      "pid": 32552,
+      "name": "python.exe",
+      "rss_mib": 327.7
+    }
+  ],
+  "agent_work": "independent reviewers read small source/documents only",
+  "allowed": true
+}

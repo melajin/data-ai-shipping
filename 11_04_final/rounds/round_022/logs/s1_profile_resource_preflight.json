@@ -1,0 +1,23 @@
+{
+  "timestamp_utc": "2026-11-05T02:07:47.103560+00:00",
+  "stage": "s1_profile_build",
+  "available_bytes": 3703947264,
+  "expected_peak_bytes": 1610612736,
+  "minimum_free_bytes": 2684354560,
+  "other_python_processes": [
+    {
+      "pid": 5676,
+      "name": "python.exe",
+      "rss_bytes": 23789568,
+      "create_time": 1793844462.6792996
+    },
+    {
+      "pid": 30616,
+      "name": "python.exe",
+      "rss_bytes": 4292608,
+      "create_time": 1793844462.6452632
+    }
+  ],
+  "allowed": true,
+  "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+}

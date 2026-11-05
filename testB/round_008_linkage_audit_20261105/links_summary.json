@@ -1,0 +1,208 @@
+{
+  "accidents_total": 167,
+  "observation_rows": 25600,
+  "event_vessel_pairs": 4200,
+  "grid": {
+    "w0_r2": {
+      "events_with_candidate": 71,
+      "events_single_candidate": 38,
+      "median_candidates": 1.0
+    },
+    "w0_r2_gear": {
+      "events_with_candidate": 47,
+      "events_single_candidate": 36,
+      "median_candidates": 1.0
+    },
+    "w0_r5": {
+      "events_with_candidate": 105,
+      "events_single_candidate": 32,
+      "median_candidates": 3.0
+    },
+    "w0_r5_gear": {
+      "events_with_candidate": 81,
+      "events_single_candidate": 42,
+      "median_candidates": 1.0
+    },
+    "w0_r10": {
+      "events_with_candidate": 137,
+      "events_single_candidate": 23,
+      "median_candidates": 5.0
+    },
+    "w0_r10_gear": {
+      "events_with_candidate": 113,
+      "events_single_candidate": 41,
+      "median_candidates": 2.0
+    },
+    "w0_r20": {
+      "events_with_candidate": 160,
+      "events_single_candidate": 10,
+      "median_candidates": 10.0
+    },
+    "w0_r20_gear": {
+      "events_with_candidate": 143,
+      "events_single_candidate": 22,
+      "median_candidates": 4.0
+    },
+    "w1_r2": {
+      "events_with_candidate": 82,
+      "events_single_candidate": 37,
+      "median_candidates": 2.0
+    },
+    "w1_r2_gear": {
+      "events_with_candidate": 57,
+      "events_single_candidate": 40,
+      "median_candidates": 1.0
+    },
+    "w1_r5": {
+      "events_with_candidate": 118,
+      "events_single_candidate": 30,
+      "median_candidates": 3.0
+    },
+    "w1_r5_gear": {
+      "events_with_candidate": 93,
+      "events_single_candidate": 40,
+      "median_candidates": 2.0
+    },
+    "w1_r10": {
+      "events_with_candidate": 143,
+      "events_single_candidate": 19,
+      "median_candidates": 6.0
+    },
+    "w1_r10_gear": {
+      "events_with_candidate": 124,
+      "events_single_candidate": 33,
+      "median_candidates": 2.0
+    },
+    "w1_r20": {
+      "events_with_candidate": 161,
+      "events_single_candidate": 5,
+      "median_candidates": 12.0
+    },
+    "w1_r20_gear": {
+      "events_with_candidate": 147,
+      "events_single_candidate": 22,
+      "median_candidates": 5.0
+    },
+    "w2_r2": {
+      "events_with_candidate": 87,
+      "events_single_candidate": 36,
+      "median_candidates": 2.0
+    },
+    "w2_r2_gear": {
+      "events_with_candidate": 62,
+      "events_single_candidate": 41,
+      "median_candidates": 1.0
+    },
+    "w2_r5": {
+      "events_with_candidate": 122,
+      "events_single_candidate": 27,
+      "median_candidates": 4.0
+    },
+    "w2_r5_gear": {
+      "events_with_candidate": 100,
+      "events_single_candidate": 38,
+      "median_candidates": 2.0
+    },
+    "w2_r10": {
+      "events_with_candidate": 146,
+      "events_single_candidate": 14,
+      "median_candidates": 7.0
+    },
+    "w2_r10_gear": {
+      "events_with_candidate": 127,
+      "events_single_candidate": 32,
+      "median_candidates": 3.0
+    },
+    "w2_r20": {
+      "events_with_candidate": 162,
+      "events_single_candidate": 6,
+      "median_candidates": 14.0
+    },
+    "w2_r20_gear": {
+      "events_with_candidate": 148,
+      "events_single_candidate": 21,
+      "median_candidates": 6.0
+    },
+    "w3_r2": {
+      "events_with_candidate": 92,
+      "events_single_candidate": 33,
+      "median_candidates": 2.0
+    },
+    "w3_r2_gear": {
+      "events_with_candidate": 66,
+      "events_single_candidate": 41,
+      "median_candidates": 1.0
+    },
+    "w3_r5": {
+      "events_with_candidate": 127,
+      "events_single_candidate": 24,
+      "median_candidates": 4.0
+    },
+    "w3_r5_gear": {
+      "events_with_candidate": 102,
+      "events_single_candidate": 35,
+      "median_candidates": 2.0
+    },
+    "w3_r10": {
+      "events_with_candidate": 149,
+      "events_single_candidate": 13,
+      "median_candidates": 7.0
+    },
+    "w3_r10_gear": {
+      "events_with_candidate": 130,
+      "events_single_candidate": 31,
+      "median_candidates": 3.0
+    },
+    "w3_r20": {
+      "events_with_candidate": 164,
+      "events_single_candidate": 3,
+      "median_candidates": 15.0
+    },
+    "w3_r20_gear": {
+      "events_with_candidate": 152,
+      "events_single_candidate": 23,
+      "median_candidates": 6.0
+    },
+    "w6_r2": {
+      "events_with_candidate": 108,
+      "events_single_candidate": 38,
+      "median_candidates": 2.0
+    },
+    "w6_r2_gear": {
+      "events_with_candidate": 81,
+      "events_single_candidate": 44,
+      "median_candidates": 1.0
+    },
+    "w6_r5": {
+      "events_with_candidate": 134,
+      "events_single_candidate": 23,
+      "median_candidates": 5.5
+    },
+    "w6_r5_gear": {
+      "events_with_candidate": 109,
+      "events_single_candidate": 33,
+      "median_candidates": 2.0
+    },
+    "w6_r10": {
+      "events_with_candidate": 157,
+      "events_single_candidate": 17,
+      "median_candidates": 9.0
+    },
+    "w6_r10_gear": {
+      "events_with_candidate": 136,
+      "events_single_candidate": 29,
+      "median_candidates": 4.0
+    },
+    "w6_r20": {
+      "events_with_candidate": 165,
+      "events_single_candidate": 2,
+      "median_candidates": 20.0
+    },
+    "w6_r20_gear": {
+      "events_with_candidate": 158,
+      "events_single_candidate": 18,
+      "median_candidates": 7.5
+    }
+  },
+  "candidate_set_invariants_passed": true
+}

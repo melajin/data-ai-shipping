@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-05T02:02:33.450347+00:00",
+  "available_bytes": 3835756544,
+  "expected_peak_bytes": 134217728,
+  "basis": "NumPy and tiny six-vessel fixtures only; no data files, models or training",
+  "other_python": [
+    {
+      "pid": 11188,
+      "name": "python.exe"
+    },
+    {
+      "pid": 29452,
+      "name": "python.exe"
+    }
+  ]
+}

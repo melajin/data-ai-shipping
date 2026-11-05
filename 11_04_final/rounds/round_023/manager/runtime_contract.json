@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-11-05T02:17:15.210209+00:00",
+  "compute_deadline_utc": "2026-11-05T02:57:15.210209+00:00",
+  "manager_deadline_utc": "2026-11-05T03:02:15.210209+00:00",
+  "compute_seconds_max": 1800,
+  "job_seconds_max": 900,
+  "threads_max": 3,
+  "concurrency": 1,
+  "minimum_available_gib": 2.5,
+  "expected_peak_gib": 1.5,
+  "production_fits_max": 8,
+  "retries": 0,
+  "full3fold": 0,
+  "s2": 0,
+  "procedure": "Fixed8fit replay after round0222fit budget interruption; no model/feature/threshold search; no raw geometry rescan"
+}

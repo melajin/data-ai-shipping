@@ -1,0 +1,23 @@
+{
+  "status": "running",
+  "fit_attempts_started": 2,
+  "fits_completed": 2,
+  "fit_records": [
+    {
+      "fold": 0,
+      "variant": "baseline",
+      "fit_seconds": 14.599845800003095,
+      "model_path": "rounds\\round_022\\artifacts\\gate\\models\\fold_0_baseline.joblib",
+      "model_sha256": "78a8a1303aedc00888cbe4f42a384bcb9164de184667828db1570a7dbfbc5f53",
+      "feature_count": 304
+    },
+    {
+      "fold": 0,
+      "variant": "candidate",
+      "fit_seconds": 15.209341499998118,
+      "model_path": "rounds\\round_022\\artifacts\\gate\\models\\fold_0_candidate.joblib",
+      "model_sha256": "c13f3110bec01b60b077e2ef8ad7d2cbda287c1654d5b5999a367f01fbd71beb",
+      "feature_count": 328
+    }
+  ]
+}

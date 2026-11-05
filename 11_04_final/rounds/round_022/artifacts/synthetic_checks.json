@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "scope": "synthetic six-vessel fixtures; no real score",
+  "checks": [
+    "S1 own-label change invariance including coarse/global fallback",
+    "T5 own-label change invariance including smoothing prior",
+    "validation label permutation invariance with fixed CV-train indices",
+    "donor-label change positive control",
+    "donor order invariance"
+  ],
+  "s1_shape": [
+    6,
+    24
+  ],
+  "t5_shape": [
+    6,
+    10
+  ],
+  "real_data_used": false,
+  "training_fits": 0,
+  "utc": "2026-11-05T02:02:33.791185+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-05T01:59:16.283637+00:00",
+  "stage": "prepare_t5",
+  "approval": "rounds\\round_022\\review\\prepare_approved_sources.json",
+  "approval_sha256": "6c1b06db7ff365da524e6f28c64a11bbc923d89b578edaf97f4342fc19aa7be8",
+  "source_hashes": {
+    "rounds/round_022/code/prepare_t5_cache.py": "98C4C52A36DD9BB6F289AAC0705E9F031D12FF4463E193153B98844A8AB3876E",
+    "rounds/round_022/code/t5_rebuild.py": "D2B41263D8AFA6273173B36665780EE433CF4CFE80348975109C0D45407CF01F",
+    "rounds/round_022/configs/experiment.json": "8EC1D5D3539739AD75E72B7F70F4C7BABA3A0639BEDADA8D8F3774FB25BD491C",
+    "rounds/round_022/ROUND_PLAN.md": "7ED8D8063B5AE0F9479CEF5F9E4011DBD927C45C086C64923F49A9968446CC96",
+    "rounds/round_022/manager/launch.py": "FE460460957D4056DB4FF7A79786289A82FC6B7686C9200F8BD7EC9C51FB4F1E"
+  }
+}

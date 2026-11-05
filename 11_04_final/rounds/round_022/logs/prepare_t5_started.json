@@ -1,0 +1,12 @@
+{
+  "utc": "2026-11-05T01:58:29.248737+00:00",
+  "pid": 17456,
+  "launcher_pid": 17100,
+  "argv": [
+    "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_022\\code\\prepare_t5_cache.py"
+  ]
+}

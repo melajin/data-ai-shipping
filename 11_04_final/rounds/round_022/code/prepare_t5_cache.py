@@ -32,6 +32,7 @@ def save(path,obj):path.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'
 def main():
  start=time.monotonic();artifact=R/'artifacts/t5_fishing_profiles.npz'
  assert not artifact.exists(),'No overwrite/retry of completed cache'
+ base_hash_before=sha(BASE)
  with np.load(BASE,allow_pickle=False) as z:
   assert str(z['feature_names'][165])=='t5_log1p_fishing_rows'
   fit=z['roles'].astype(str)=='FIT';ids=z['rfid_ids'].astype(str)[fit];target=z['X'][fit,165].astype(float)
@@ -108,16 +109,19 @@ def main():
   con.commit();print(json.dumps(dict(stage='FIT2026_fishing_profiles',month=month)),flush=True)
  expected=np.where(counts>0,np.log1p(counts),np.nan)
  match=np.array_equal(np.isnan(expected),np.isnan(target)) and np.allclose(expected,target,rtol=0,atol=1e-6,equal_nan=True)
- audit=dict(legacy_log1p_count_matches=bool(match),max_abs_log_count_delta=float(np.nanmax(np.abs(expected-target))),current_fit_rows=len(ids),fishing_rows=int(counts.sum()),active_query_rows=queried_rows,shared_harbors=len(centers),shared_stop_records=nstop,shared_ref_lat=ref_lat)
+ differences=np.abs(expected-target);finite_diff=differences[np.isfinite(differences)]
+ audit=dict(legacy_log1p_count_matches=bool(match),max_abs_log_count_delta=float(finite_diff.max()) if len(finite_diff) else None,finite_log_count_comparisons=int(len(finite_diff)),current_fit_rows=len(ids),fishing_rows=int(counts.sum()),active_query_rows=queried_rows,shared_harbors=len(centers),shared_stop_records=nstop,shared_ref_lat=ref_lat)
  save(R/'artifacts/t5_mask_equivalence.json',audit)
  if not match:raise RuntimeError('Legacy T5 fishing-row count equivalence failed: no training allowed')
  nprofiles=con.execute('SELECT COUNT(*) FROM profiles').fetchone()[0]
  columns=[np.empty(nprofiles,dtype=np.int64) for _ in FIELDS]
  for i,row in enumerate(con.execute('SELECT r,m,fx,fy,cx,cy,n FROM profiles ORDER BY r,m,fx,fy,cx,cy')):
   for j,x in enumerate(row):columns[j][i]=x
- con.close();np.savez_compressed(artifact,**dict(zip(FIELDS,columns)))
+ con.close()
  for entry in input_manifest:
   if sha(Path(entry['path']))!=entry['sha256']:raise RuntimeError('Input source changed during preparation')
- save(artifact.with_suffix('.manifest.json'),dict(roster_sha256=roster_hash(ids),year=2026,fishing_row_count_equivalence_verified=True,pointwise_mask_equivalence_verified=False,equivalence_basis='same legacy algorithm plus all3144 log1p_fishing_rows equality within1e-6; not pointwise independently saved mask comparison',test2025_query_rows_materialized=0,test2025_geometry_rows_read_for_harbor_reference=True,test2025_labels_read=False,test2025_individual_outputs_retained=False,holdout_geometry_scope='shared stop-location aggregate only; own-mooring and active query scanners filter FIT before materialization',labels_used=False,sha256=sha(artifact),input_files=input_manifest,baseline_sha256=sha(BASE),nprofiles=nprofiles,elapsed_seconds=time.monotonic()-start,query_scope='fold0 FIT 2026 only',test_scope='unlabeled shared-harbor aggregate only; no individual test outputs',projected_test_columns=['rfid_id','cen_lon','cen_lat'],test_filter_columns=['key_valid','wkt_valid','len_m','bbox_m'],**audit))
+ if sha(BASE)!=base_hash_before:raise RuntimeError('Baseline source changed during preparation')
+ np.savez_compressed(artifact,**dict(zip(FIELDS,columns)))
+ save(artifact.with_suffix('.manifest.json'),dict(roster_sha256=roster_hash(ids),year=2026,fishing_row_count_equivalence_verified=True,pointwise_mask_equivalence_verified=False,equivalence_basis='same legacy algorithm plus all3144 log1p_fishing_rows equality within1e-6; not pointwise independently saved mask comparison',test2025_query_rows_materialized=0,test2025_geometry_rows_read_for_harbor_reference=True,test2025_labels_read=False,test2025_individual_outputs_retained=False,holdout_geometry_scope='shared stop-location aggregate only; own-mooring and active query scanners filter FIT before materialization',labels_used=False,sha256=sha(artifact),input_files=input_manifest,baseline_sha256=base_hash_before,nprofiles=nprofiles,elapsed_seconds=time.monotonic()-start,query_scope='fold0 FIT 2026 only',test_scope='unlabeled shared-harbor aggregate only; no individual test outputs',projected_test_columns=['rfid_id','cen_lon','cen_lat'],test_filter_columns=['key_valid','wkt_valid','len_m','bbox_m'],**audit))
  print(json.dumps(dict(status='ready',profiles=nprofiles,elapsed_seconds=time.monotonic()-start)),flush=True)
 if __name__=='__main__':main()

@@ -1,0 +1,113 @@
+{
+  "roster_sha256": "e84ad1082b5639769f723a5ff10154ab29a0789d7ec89576caa155e2826bb9ae",
+  "year": 2026,
+  "fishing_row_count_equivalence_verified": true,
+  "pointwise_mask_equivalence_verified": false,
+  "equivalence_basis": "same legacy algorithm plus all3144 log1p_fishing_rows equality within1e-6; not pointwise independently saved mask comparison",
+  "test2025_query_rows_materialized": 0,
+  "test2025_geometry_rows_read_for_harbor_reference": true,
+  "test2025_labels_read": false,
+  "test2025_individual_outputs_retained": false,
+  "holdout_geometry_scope": "shared stop-location aggregate only; own-mooring and active query scanners filter FIT before materialization",
+  "labels_used": false,
+  "sha256": "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+  "input_files": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_1.parquet",
+      "bytes": 18817327,
+      "mtime_ns": 1793455250079052200,
+      "sha256": "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_2.parquet",
+      "bytes": 18009625,
+      "mtime_ns": 1793455327815027600,
+      "sha256": "748692493429823c116e204871d57920991c0c6d62d8a46a2b793ac1a80f356f"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_3.parquet",
+      "bytes": 24848272,
+      "mtime_ns": 1793455415105532600,
+      "sha256": "a2333ffee0aa491d1b450395b94a49c77f79084651b4101e31de37c573e2f2bd"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_4.parquet",
+      "bytes": 27340845,
+      "mtime_ns": 1793455510538186100,
+      "sha256": "256498c7a97daf930678c0fb138c89f4081052cd333f030ac2d78e62ba11972a"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_5.parquet",
+      "bytes": 29009998,
+      "mtime_ns": 1793455616585271800,
+      "sha256": "264957261a27d0a4b77336523fcd95d0483fce1399ca42cdf0e960f184131217"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_train_6.parquet",
+      "bytes": 29470852,
+      "mtime_ns": 1793455720555103600,
+      "sha256": "b4cd5e6805ff9431fb5ba861205b962af17603a83dee6ac2dd0fe26195e17078"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_1.parquet",
+      "bytes": 22102228,
+      "mtime_ns": 1793455808744372400,
+      "sha256": "bf2270d2de89c3d9395e871a4a1a5e97a01f86f30002bc3ffbd5d6b5e1208100"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_2.parquet",
+      "bytes": 16393715,
+      "mtime_ns": 1793455876276994400,
+      "sha256": "254d3c1ef54b9554b3da525325a41a361a7807ca70434690bcd8b9cacbe1843e"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_3.parquet",
+      "bytes": 23195070,
+      "mtime_ns": 1793455948483100000,
+      "sha256": "01ecb3a05cb1c2c78fa47b969c74d427bdf94962742f287fa0a80e0dcb12ecf7"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_4.parquet",
+      "bytes": 28452704,
+      "mtime_ns": 1793456050780258100,
+      "sha256": "453977a26d59511573bb188b1807a7360b09f4561f45acd20309e1d287e34e03"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_5.parquet",
+      "bytes": 33418976,
+      "mtime_ns": 1793456180777086600,
+      "sha256": "96a2cb9b1acc18a71a95b46a4bf6051bd99593f0b69af4cfb7cb929aa48311f6"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\outputs\\remeasure_20261031\\rows_test_6.parquet",
+      "bytes": 34195805,
+      "mtime_ns": 1793456312387513800,
+      "sha256": "0a0bdac3d17f97bbca7bec9274afc2f54ba27647aba9b50c18c317e8c3fcbd96"
+    }
+  ],
+  "baseline_sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+  "nprofiles": 223352,
+  "elapsed_seconds": 31.89079689999926,
+  "query_scope": "fold0 FIT 2026 only",
+  "test_scope": "unlabeled shared-harbor aggregate only; no individual test outputs",
+  "projected_test_columns": [
+    "rfid_id",
+    "cen_lon",
+    "cen_lat"
+  ],
+  "test_filter_columns": [
+    "key_valid",
+    "wkt_valid",
+    "len_m",
+    "bbox_m"
+  ],
+  "legacy_log1p_count_matches": true,
+  "max_abs_log_count_delta": 8.881784197001252e-16,
+  "finite_log_count_comparisons": 2835,
+  "current_fit_rows": 3144,
+  "fishing_rows": 567869,
+  "active_query_rows": 963056,
+  "shared_harbors": 129,
+  "shared_stop_records": 3229749,
+  "shared_ref_lat": 35.67933322716197
+}

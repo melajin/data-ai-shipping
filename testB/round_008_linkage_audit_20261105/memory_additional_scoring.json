@@ -1,0 +1,15 @@
+{
+  "stage": "additional_scoring",
+  "checked_at": "2026-11-05T11:10:19.805393+09:00",
+  "available_mib": 3333.4,
+  "estimated_additional_peak_mib": 1024,
+  "reserve_mib": 1024,
+  "active_python_processes": [
+    {
+      "pid": 7028,
+      "rss_mib": 111.1
+    }
+  ],
+  "estimate_basis": "sequential 65,536-row source batches; 34 missing vessels; score parquet approximately 50MiB compressed; one evaluation at a time",
+  "allowed": true
+}

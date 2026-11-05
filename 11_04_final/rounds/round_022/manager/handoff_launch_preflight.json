@@ -1,0 +1,9 @@
+﻿{
+    "checked_at":  "2026-11-05T11:16:12.9764966+09:00",
+    "available_gib":  3.353,
+    "expected_additional_launch_gib":  0.3,
+    "estimate_basis":  "New agent/session initialization and read-only startup; subsequent compute has separate required preflight",
+    "other_python":  [
+
+                     ]
+}

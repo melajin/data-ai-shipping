@@ -1,0 +1,53 @@
+{
+  "method": "available-window pooled means of maxima percentiles, right empirical CDF, uniform integer centers min(ts)..max(ts), 10 per event, seed20261105; empty windows omitted with counts; explicitly specified rerun, not original RNG reconstruction",
+  "table": [
+    {
+      "component": "s_change",
+      "accident_count": 94,
+      "random_count": 501,
+      "accident_expected_count": 100,
+      "random_expected_count": 1000,
+      "accident_empty_or_nonfinite": 6,
+      "random_empty_or_nonfinite": 499,
+      "accident_mean": 0.8460992980820717,
+      "random_mean": 0.8286798828398438,
+      "difference": 0.017419415242227898
+    },
+    {
+      "component": "s_gap",
+      "accident_count": 100,
+      "random_count": 518,
+      "accident_expected_count": 100,
+      "random_expected_count": 1000,
+      "accident_empty_or_nonfinite": 0,
+      "random_empty_or_nonfinite": 482,
+      "accident_mean": 0.8334725655837175,
+      "random_mean": 0.8254114022877591,
+      "difference": 0.008061163295958407
+    },
+    {
+      "component": "s_zone",
+      "accident_count": 100,
+      "random_count": 518,
+      "accident_expected_count": 100,
+      "random_expected_count": 1000,
+      "accident_empty_or_nonfinite": 0,
+      "random_empty_or_nonfinite": 482,
+      "accident_mean": 0.9280695002439994,
+      "random_mean": 0.9282420560510327,
+      "difference": -0.00017255580703334772
+    },
+    {
+      "component": "score",
+      "accident_count": 100,
+      "random_count": 518,
+      "accident_expected_count": 100,
+      "random_expected_count": 1000,
+      "accident_empty_or_nonfinite": 0,
+      "random_empty_or_nonfinite": 482,
+      "accident_mean": 0.8400789307826183,
+      "random_mean": 0.832009965800785,
+      "difference": 0.008068964981833293
+    }
+  ]
+}

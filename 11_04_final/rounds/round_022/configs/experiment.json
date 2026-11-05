@@ -14,7 +14,7 @@
     "alpha":  5,
     "threads":  3,
     "gate_fits_max":  8,
-    "full_fits_max":  6,
+    "full_fits_max":  0,
     "full_requires_gate_pass":  true,
     "s2_fits":  0,
     "retries":  0,
@@ -32,5 +32,6 @@
                  "verbose":  -1
              },
     "fixed_reference_min_candidate_correct":  1833,
-    "full_gate_logic":  "candidate\u003e=1833 AND candidate-matched_baseline\u003e=16"
+    "full_gate_logic":  "candidate\u003e=1833 AND candidate-matched_baseline\u003e=16",
+    "current_round_scope":  "precheck8fits_only_full3fold0_regardless_score"
 }

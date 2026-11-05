@@ -1,0 +1,28 @@
+{
+  "approved": true,
+  "stage": "prepare_t5_cache",
+  "scope": "Generate only the row-index-only FIT profile cache and its manifest after the manager's RAM preflight. This approval does not authorize CV fitting, score calculation, S1 gate execution, or full 3-fold execution.",
+  "source_hashes": {
+    "rounds/round_022/code/prepare_t5_cache.py": "98C4C52A36DD9BB6F289AAC0705E9F031D12FF4463E193153B98844A8AB3876E",
+    "rounds/round_022/code/t5_rebuild.py": "D2B41263D8AFA6273173B36665780EE433CF4CFE80348975109C0D45407CF01F",
+    "rounds/round_022/configs/experiment.json": "8EC1D5D3539739AD75E72B7F70F4C7BABA3A0639BEDADA8D8F3774FB25BD491C",
+    "rounds/round_022/ROUND_PLAN.md": "7ED8D8063B5AE0F9479CEF5F9E4011DBD927C45C086C64923F49A9968446CC96",
+    "rounds/round_022/manager/launch.py": "FE460460957D4056DB4FF7A79786289A82FC6B7686C9200F8BD7EC9C51FB4F1E"
+  },
+  "review_findings": {
+    "t5_leave_self_out_engine": "Static review: local cell counts, global prior, smoothing, and coarse/global fallback remove the querying FIT vessel's own label.",
+    "geometry_boundary": "Train2026 and Test2025 stop-location geometry is used only for shared harbor aggregation. FIT own-mooring and active query profile scanners filter to fold0 FIT before row materialization. No labels, predictions, evaluation, or individual Test2025 output are projected.",
+    "equivalence_limit": "3144 FIT vessels' log1p fishing-row counts are compared within 1e-6. Manifest explicitly records pointwise_mask_equivalence_verified=false; no pointwise mask comparison is claimed.",
+    "temporary_data": "The SQLite harbor distinct-key table is dropped and vacuumed on normal completion; the stage launcher removes its exact owned SQLite and sidecar paths after success, failure, deadline, or memory stop.",
+    "input_integrity": "The builder hashes all 12 source parquet inputs before use and rechecks them afterward; it also hashes and rechecks the baseline fold0 feature archive and validates feature_names[165]."
+  },
+  "execution_constraints": {
+    "preflight_required": true,
+    "compute_processes_max": 1,
+    "threads_max": 3,
+    "test_labels_predictions_evaluation": false,
+    "cv_fits_authorized": false,
+    "full_3fold_authorized": false,
+    "s2_authorized": false
+  }
+}

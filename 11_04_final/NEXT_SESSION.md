@@ -1,15 +1,24 @@
-﻿# Round022 진행 중 — S1 선행 관문
+# Round023 인계 — 준비캐시 재사용, S1 선행8fit만
 
-사용자는 2026-11-05 실행계획 rev.1을 승인하고 S1 FIT 내부4-fold 선행 검증부터 명시 재개했다. 이전 중지 지시는 해제됐다. 이 파일의 이전 전문은 `rounds/round_022/manager/incoming_NEXT_SESSION.md`에 보존했다.
+Round022는2/8fit에서고정02:10UTC계산마감으로종료했다. 성능실패아님,전체점수/관문미판정. reports/ROUND_REPORT는 rounds/round_022/ROUND_REPORT.md. 2개모델과fold0feature증거는보존하며 현재runner에resume기능없으므로 **동일고정8fit한번 replay**를절차복구로사전고정한다. 이전2fit중복을숨기지않으며튜닝/새변형/원자료재수집0.
 
-현재 유일 관리자 `/root/round022_manager` (Astra high 요청), live provider thread `01a1a956-8845-7db1-ab01-34aac2261237`. `rounds/round_022/manager/manager_claim.json`, `ROUND_PLAN.md`, `STATUS.json`을 확인하고 중복 실행하지 않는다. Root가 사용자 소통과 향후 새 Orca 세션 launch를 담당한다. 현 관리자는 완료 후 root에게 인계를 보내며 세션을 직접 중복 생성하지 않는다.
+새관리자Astrahigh는기존claim/liveprocess중복확인후다음setup을1회실행한다(이미round023있으면중단하고owner확인). Root만새Orca세션launch한다. 아직다음세션수락전이다.
 
-기준선은 LightGBM sqrt_macro seed42 3476/5897=.589452264, TP2389/889/108/90. S0는 보호실패로 기각됐다. 사용자 승인 정책은 단일seed 진단 TP0>=2389/TP3>=90, 최종5seed TP0>=2381/TP3>=92이다. 두 판정을 별도 보고한다. 과거 두 모델이2389/92를 못 달성했다는 사실은 모든 새후보의 불가능을 뜻하지 않는다.
+```powershell
+& 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' -B -X utf8 rounds/round_022/manager/prepare_next_round.py
+```
 
-이번 scope는 S1 24열, fold0 FIT3144 내부4fold에서 T5 포함 모든 지도 전처리를 분할별로 재계산한 기준선/후보 비교다. 1817/3144는 이전절차 고정참고이며 엄밀 재계산 기준선과 구별한다. 같은절차 기준선 대비 최소+.005(+16정답) 미달이면 S1 전체3fold 실행0 및 축종료. 통과하면 사전고정 예산내에서만 다음단계에 진입한다. **S2 학습은 round022에서 자동 시작하지 않는다.**
+setup은reviewedcode4개+config+T5cache/manifest+S1SQLite/manifest+checker를round023로복사하고해시동일성을확인한다. 기존gate승인해시를재사용하며새로운모델코드고치지않는다. 새manager/runtime_contract.json은현재시각기준45분관리/40분벽시계계산마감(누적계산30분),job900초,동시1/threads3/free>=2.5GiB/peak추정1.5GiB,8fit1회/탐색0을고정한다. 새launcher차이는hardcoded과거deadline을새runtimecontract에서읽는1줄뿐이다. 코드재조사대신이차이와복사해시,새plan을검토하고gate승인/동결을새경로로기록한다.
 
-회차 시작01:30UTC, 관리마감02:15UTC, 계산마감02:10UTC, 누적계산1800초, 학습동시1 threads<=3, 재시도/탐색0. RAM은 매무거운단계 직전 timestamp·가용량·예상peak근거·다른작업을 기록한다. 부족시 다른독립작업후 재확인하며 조회만반복하지 않는다. 다른사용자프로세스는종료하지 않는다. 테스트2025/holdout은 열지않는다.
+검산checker의원래round_dir은round022로하드코딩되어있다. **복사된round023 checker에서만 `round_dir = root / "rounds" / "round_022"`를 `round_dir = out.parents[1]`로변경**, 새review/gate_approved_sources.json의경로/현재hash를확정하고독립검산담당자가검토한다. 원본022는수정하지않는다. 정확한실행명령:
 
-진행중 파일은 작성/검토중이므로 실행승인으로해석하지 않는다. 소스검토→동결→실행→독립저장결과검산을 따른다. 완료후 이문서에 정확한결과/다음회차명령/예산/조건을 갱신한다.
+```powershell
+& 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' -B -X utf8 rounds/round_023/manager/launch.py --stage s1_gate --seconds 900 --python 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' --script rounds/round_023/code/run_gate.py -- --run-gate
+& 'D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/environments/round_002_catboost/Scripts/python.exe' -B -X utf8 rounds/round_023/review/verify_gate_result.py rounds/round_023/artifacts/gate
+```
 
-점수 전 추가 고정: 전체실행은 후보>=1833(고정1817+16)과 후보−동일절차기준>=16을 모두 충족해야 한다. 한조건만 통과하면 전체실행0으로 보류한다.
+검산명령은성공8fit+gate_result존재를확인한뒤실행한다. source→freeze→execution 순서를각tool결과성공확인으로분리하며PowerShell오류뒤다음줄을실행하지않는다. pytest나새단계코드를추가하지않고기존independentchecker로저장metrics/확률/8modelreload를확인한다. 완료후paired/관측일/FP전이보완지표를보고한다. 저장결과검산은독립데이터평가가아니다.
+
+gate기준은동일3144명부 후보>=1833(고정1817+16) AND 후보−엄밀동일절차baseline>=16. 304열T5는각CVtrain에서재계산,selfcounts/prior/fallback제외. S1은centroid/record-time-binproxy임을유지하고원래모든geometryS1/0.7의이론적상한으로확대하지않는다. 023의전체3fold/S2는0회; 숫자관문결과로다음사전로드맵단계를정한다.
+
+사용자의공용항구집계무라벨자료승인은유지되지만다음은이미준비캐시를쓰므로새Test/holdout읽기불필요. 진단보호TP2389/90,최종5seed2381/92정책과RAM보류→독립작업→실행직전재확인,사용자프로세스종료금지를계승한다. 중단시부분산출보존/실제fit수기록,동일오류무작정재실행금지. 목표0.7미달/독립공식null.

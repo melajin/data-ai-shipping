@@ -1,0 +1,19 @@
+{"stage": "shared_harbor_aggregate", "dataset": "train", "month": 1}
+{"stage": "shared_harbor_aggregate", "dataset": "train", "month": 2}
+{"stage": "shared_harbor_aggregate", "dataset": "train", "month": 3}
+{"stage": "shared_harbor_aggregate", "dataset": "train", "month": 4}
+{"stage": "shared_harbor_aggregate", "dataset": "train", "month": 5}
+{"stage": "shared_harbor_aggregate", "dataset": "train", "month": 6}
+{"stage": "shared_harbor_aggregate", "dataset": "test", "month": 1}
+{"stage": "shared_harbor_aggregate", "dataset": "test", "month": 2}
+{"stage": "shared_harbor_aggregate", "dataset": "test", "month": 3}
+{"stage": "shared_harbor_aggregate", "dataset": "test", "month": 4}
+{"stage": "shared_harbor_aggregate", "dataset": "test", "month": 5}
+{"stage": "shared_harbor_aggregate", "dataset": "test", "month": 6}
+{"stage": "FIT2026_fishing_profiles", "month": 1}
+{"stage": "FIT2026_fishing_profiles", "month": 2}
+{"stage": "FIT2026_fishing_profiles", "month": 3}
+{"stage": "FIT2026_fishing_profiles", "month": 4}
+{"stage": "FIT2026_fishing_profiles", "month": 5}
+{"stage": "FIT2026_fishing_profiles", "month": 6}
+{"status": "ready", "profiles": 223352, "elapsed_seconds": 31.891852399996424}

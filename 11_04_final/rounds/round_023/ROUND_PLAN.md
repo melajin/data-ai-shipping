@@ -1,0 +1,3 @@
+# Round023 — fixed S1 gate procedural recovery
+
+Reuse round022 reviewed code and prepared caches unchanged. Previous round completed2/8 fits before its deadline; current runner has no resume API. Preregister one full8fit replay, no tuning and no preparation rescan. Preserve previous2models/evidence in round022. Same3144FIT, StratifiedKFold4/seed42, same T5 strict leave-self-out and centroid S1 proxy, same1817reference and BOTH candidate>=1833 AND delta>=16 numeric gate. No full3fold orS2 in this round. Follow manager/runtime_contract.json. Independent saved-output verification is required; proxy failure is not an impossibility proof.

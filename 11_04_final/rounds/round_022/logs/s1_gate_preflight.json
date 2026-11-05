@@ -1,0 +1,51 @@
+{
+  "utc": "2026-11-05T02:08:19.458342+00:00",
+  "stage": "s1_gate",
+  "argv": [
+    "environments/round_002_catboost/Scripts/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_022\\code\\run_gate.py",
+    "--run-gate"
+  ],
+  "hashes": {
+    "rounds/round_022/code/prepare_t5_cache.py": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+    "rounds/round_022/code/run_gate.py": "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+    "rounds/round_022/code/s1_features.py": "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+    "rounds/round_022/code/t5_rebuild.py": "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+    "rounds/round_022/configs/experiment.json": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+    "rounds/round_022/ROUND_PLAN.md": "7ed8d8063b5ae0f9479cef5f9e4011dbd927c45c086c64923f49a9968446cc96",
+    "rounds/round_022/manager/launch.py": "fe460460957d4056db4ff7a79786289a82fc6b7686c9200f8bd7ec9c51fb4f1e"
+  },
+  "available_bytes": 3737948160,
+  "expected_peak_bytes": 1610612736,
+  "estimate_basis": "FIT3144 x304 float32 ~3.65MiB; candidate +24 ~0.29MiB; 4fold sequential LightGBM plus sparse grid maps and library overhead budgeted1.5GiB. Cache materialization must be reviewed separately before launch; estimate not measured",
+  "other_python": [
+    {
+      "pid": 29532,
+      "cmdline": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "rounds/round_022/manager/launch.py",
+        "--stage",
+        "s1_gate",
+        "--seconds",
+        "120",
+        "--python",
+        "environments/round_002_catboost/Scripts/python.exe",
+        "--script",
+        "rounds/round_022/code/run_gate.py",
+        "--",
+        "--run-gate"
+      ],
+      "rss": 4296704,
+      "create_time": 1793844497.611976
+    }
+  ],
+  "timeout_seconds": 102.183441,
+  "compute_cutoff": "2026-11-05T02:10:00+00:00",
+  "prior_compute_seconds": 67.70563239999319
+}

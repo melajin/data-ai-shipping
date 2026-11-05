@@ -1,0 +1,197 @@
+{
+  "timestamp_utc": "2026-11-05T02:12:18.465918+00:00",
+  "available_bytes": 3651522560,
+  "other_python_processes": [],
+  "launcher": {
+    "exit_code": 15,
+    "stop_reason": "deadline_stop",
+    "wall_seconds": 82.69032429999788,
+    "hash_sets_equal": true,
+    "owned_temporary_files_removed": []
+  },
+  "approved_hashes_match_before_and_after": true,
+  "source_hash_checks": {
+    "rounds/round_022/code/prepare_t5_cache.py": {
+      "approved": "98C4C52A36DD9BB6F289AAC0705E9F031D12FF4463E193153B98844A8AB3876E",
+      "before": "98C4C52A36DD9BB6F289AAC0705E9F031D12FF4463E193153B98844A8AB3876E",
+      "after": "98C4C52A36DD9BB6F289AAC0705E9F031D12FF4463E193153B98844A8AB3876E"
+    },
+    "rounds/round_022/code/t5_rebuild.py": {
+      "approved": "F3E339B44038CAE22EF5A996D63D6516FD68F0F938347A02C7990F7437DD8FFB",
+      "before": "F3E339B44038CAE22EF5A996D63D6516FD68F0F938347A02C7990F7437DD8FFB",
+      "after": "F3E339B44038CAE22EF5A996D63D6516FD68F0F938347A02C7990F7437DD8FFB"
+    },
+    "rounds/round_022/code/s1_features.py": {
+      "approved": "D260BBB45253CFF9E38A1A96F956AC1EEB29CE2E060F5C7DB0B3E08AC743462B",
+      "before": "D260BBB45253CFF9E38A1A96F956AC1EEB29CE2E060F5C7DB0B3E08AC743462B",
+      "after": "D260BBB45253CFF9E38A1A96F956AC1EEB29CE2E060F5C7DB0B3E08AC743462B"
+    },
+    "rounds/round_022/code/run_gate.py": {
+      "approved": "7A5C4B6051EFC927CBCCE7070CF47DEFC1E66448A84823F4CEC8BA2C9AB8A44F",
+      "before": "7A5C4B6051EFC927CBCCE7070CF47DEFC1E66448A84823F4CEC8BA2C9AB8A44F",
+      "after": "7A5C4B6051EFC927CBCCE7070CF47DEFC1E66448A84823F4CEC8BA2C9AB8A44F"
+    },
+    "rounds/round_022/configs/experiment.json": {
+      "approved": "8EC1D5D3539739AD75E72B7F70F4C7BABA3A0639BEDADA8D8F3774FB25BD491C",
+      "before": "8EC1D5D3539739AD75E72B7F70F4C7BABA3A0639BEDADA8D8F3774FB25BD491C",
+      "after": "8EC1D5D3539739AD75E72B7F70F4C7BABA3A0639BEDADA8D8F3774FB25BD491C"
+    },
+    "rounds/round_022/ROUND_PLAN.md": {
+      "approved": "7ED8D8063B5AE0F9479CEF5F9E4011DBD927C45C086C64923F49A9968446CC96",
+      "before": "7ED8D8063B5AE0F9479CEF5F9E4011DBD927C45C086C64923F49A9968446CC96",
+      "after": "7ED8D8063B5AE0F9479CEF5F9E4011DBD927C45C086C64923F49A9968446CC96"
+    },
+    "rounds/round_022/manager/launch.py": {
+      "approved": "FE460460957D4056DB4FF7A79786289A82FC6B7686C9200F8BD7EC9C51FB4F1E",
+      "before": "FE460460957D4056DB4FF7A79786289A82FC6B7686C9200F8BD7EC9C51FB4F1E",
+      "after": "FE460460957D4056DB4FF7A79786289A82FC6B7686C9200F8BD7EC9C51FB4F1E"
+    }
+  },
+  "fit_progress": {
+    "status": "running",
+    "fit_attempts_started": 2,
+    "fits_completed": 2,
+    "fit_records": [
+      {
+        "fold": 0,
+        "variant": "baseline",
+        "recorded_hash": "78A8A1303AEDC00888CBE4F42A384BCB9164DE184667828DB1570A7DBFBC5F53",
+        "actual_hash": "78A8A1303AEDC00888CBE4F42A384BCB9164DE184667828DB1570A7DBFBC5F53",
+        "feature_count": 304
+      },
+      {
+        "fold": 0,
+        "variant": "candidate",
+        "recorded_hash": "C13F3110BEC01B60B077E2EF8AD7D2CBDA287C1654D5B5999A367F01FBD71BEB",
+        "actual_hash": "C13F3110BEC01B60B077E2EF8AD7D2CBDA287C1654D5B5999A367F01FBD71BEB",
+        "feature_count": 328
+      }
+    ]
+  },
+  "model_files": [
+    {
+      "name": "fold_0_baseline.joblib",
+      "bytes": 4156148,
+      "sha256": "78A8A1303AEDC00888CBE4F42A384BCB9164DE184667828DB1570A7DBFBC5F53"
+    },
+    {
+      "name": "fold_0_candidate.joblib",
+      "bytes": 4152132,
+      "sha256": "C13F3110BEC01B60B077E2EF8AD7D2CBDA287C1654D5B5999A367F01FBD71BEB"
+    }
+  ],
+  "feature_evidence": {
+    "exists": true,
+    "bytes": 438624,
+    "archive_members": {
+      "train_indices.npy": {
+        "shape": [
+          2358
+        ],
+        "dtype": "int32",
+        "fortran_order": false
+      },
+      "valid_indices.npy": {
+        "shape": [
+          786
+        ],
+        "dtype": "int32",
+        "fortran_order": false
+      },
+      "train_labels.npy": {
+        "shape": [
+          2358
+        ],
+        "dtype": "int8",
+        "fortran_order": false
+      },
+      "t5_matrix.npy": {
+        "shape": [
+          3144,
+          10
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "s1_matrix.npy": {
+        "shape": [
+          3144,
+          24
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      }
+    },
+    "metadata_read_utc": "2026-11-05T02:12:57.074095+00:00",
+    "ram_available_bytes_before_header_read": 3654144000,
+    "expected_peak_bytes": 67108864,
+    "other_python_pids": []
+  },
+  "output_names": [
+    "feature_evidence",
+    "fit_progress.json",
+    "models",
+    "resource_checks.json"
+  ],
+  "aggregate_result_exists": false,
+  "prediction_files_exist": [
+    false,
+    false
+  ],
+  "t5_preparation_source_drift": {
+    "receipt_exit_code": 0,
+    "wall_seconds": 41.736584599995695,
+    "hash_sets_equal": false,
+    "changed_sources": [
+      {
+        "path": "rounds/round_022/code/run_gate.py",
+        "before": "dd5cdab6f550d9a2b3a0c3c5b99601bad9b95275a1af0888b15f8e3ada262ac1",
+        "after": "ec8632f97c476fe06a689fdd43653d1888699657b2e9fe20905cd28885148d16"
+      }
+    ],
+    "interpretation": "run_gate.py changed during T5 preparation according to launcher receipt; the T5 cache producer was not changed; investigate/record concurrent edit timing. This was not gate execution and is outside the frozen gate stage."
+  },
+  "cache_metadata_audit": {
+    "s1_manifest": {
+      "status": "round022_s1_profiles_written",
+      "predicate": "year == 2026 AND id IN exact fold0 FIT roster",
+      "projected_columns": [
+        "id",
+        "year",
+        "date",
+        "cen_lon",
+        "cen_lat"
+      ],
+      "valid_coordinate_timebin_rows": 1655395,
+      "profile_rows": 606004,
+      "fit_roster_size": 3144,
+      "resolutions_deg": [
+        0.01,
+        0.05,
+        0.1
+      ],
+      "profile_weight_semantics": "observed 2026 record/time-bin counts normalized per vessel-period; proxy only, not dwell time"
+    },
+    "t5_manifest": {
+      "year": 2026,
+      "query_scope": "fold0 FIT 2026 only",
+      "test_scope": "unlabeled shared-harbor aggregate only; no individual test outputs",
+      "test2025_geometry_rows_read_for_harbor_reference": true,
+      "test2025_query_rows_materialized": 0,
+      "test2025_labels_read": false,
+      "test2025_individual_outputs_retained": false,
+      "labels_used": false,
+      "pointwise_mask_equivalence_verified": false
+    },
+    "observed_count_audit": {
+      "legacy_log1p_count_matches": true,
+      "max_abs_log_count_delta": 8.881784197001252e-16,
+      "finite_log_count_comparisons": 2835,
+      "current_fit_rows": 3144,
+      "fishing_rows": 567869,
+      "active_query_rows": 963056,
+      "shared_harbors": 129,
+      "shared_stop_records": 3229749
+    }
+  }
+}

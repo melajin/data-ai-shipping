@@ -1,0 +1,10 @@
+{
+  "finished_at": "2026-11-05T11:11:23.701427+09:00",
+  "elapsed_seconds": 65.38,
+  "vessels": 1582,
+  "positive_vessels": 82,
+  "newly_scored_vessels": 34,
+  "rows": 822000,
+  "peak_rss_mib": 760.2,
+  "original_s5_note": "Numerical S5 implementation unchanged; its hardcoded prose mentions 85 positives. Actual n_pos and this receipt are authoritative. Pool6127 unchanged."
+}

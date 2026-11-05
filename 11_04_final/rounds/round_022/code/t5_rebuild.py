@@ -77,7 +77,7 @@ def prepare_t5(ids):
     data=R/'artifacts/t5_fishing_profiles.npz';manifest=data.with_suffix('.manifest.json')
     if not data.exists() or not manifest.exists():
         raise RuntimeError('T5 prerequisite missing: vetted exact current2026 fishing-cell profile cache. Legacy producer would read2025; cached aggregate T5 cannot substitute.')
-    meta=json.loads(manifest.read_text(encoding='utf8-sig'))
+    meta=json.loads(manifest.read_text(encoding='utf-8-sig'))
     required={'roster_sha256':roster_hash(ids),'year':2026,'fishing_row_count_equivalence_verified':True,'pointwise_mask_equivalence_verified':False,'test2025_query_rows_materialized':0,'test2025_labels_read':False,'test2025_individual_outputs_retained':False,'labels_used':False}
     if any(meta.get(k)!=v for k,v in required.items()):raise ValueError('T5 profile provenance contract failed')
     with data.open('rb') as f:actual=hashlib.file_digest(f,'sha256').hexdigest()

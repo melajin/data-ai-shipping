@@ -1,0 +1,44 @@
+{
+  "all": {
+    "events": 100,
+    "vessels": 82,
+    "oracle_vessels": 82,
+    "A_peak_hits": 3,
+    "A_peak_hit_rate": 0.036585365853658534,
+    "any_rule_hits": 10,
+    "any_rule_hit_rate": 0.12195121951219512,
+    "random_row_hit_rate": 0.022689423625140513,
+    "random_expected_hits": 1.860532737261522,
+    "p_value_one_sided_exact_poisson_binomial": 0.2755427190697729,
+    "auc_peak": 0.7557560975609756,
+    "auc_n_rows": 0.795910569105691
+  },
+  "exclude_conflict_events": {
+    "events": 95,
+    "vessels": 78,
+    "oracle_vessels": 78,
+    "A_peak_hits": 3,
+    "A_peak_hit_rate": 0.038461538461538464,
+    "any_rule_hits": 10,
+    "any_rule_hit_rate": 0.1282051282051282,
+    "random_row_hit_rate": 0.023325366429766847,
+    "random_expected_hits": 1.819378581521814,
+    "p_value_one_sided_exact_poisson_binomial": 0.26307095855051077,
+    "auc_peak": 0.7503589743589744,
+    "auc_n_rows": 0.7947307692307692
+  },
+  "exclude_multiple_event_vessels": {
+    "events": 71,
+    "vessels": 71,
+    "oracle_vessels": 71,
+    "A_peak_hits": 2,
+    "A_peak_hit_rate": 0.028169014084507043,
+    "any_rule_hits": 8,
+    "any_rule_hit_rate": 0.11267605633802817,
+    "random_row_hit_rate": 0.023620442091244833,
+    "random_expected_hits": 1.677051388478383,
+    "p_value_one_sided_exact_poisson_binomial": 0.5206447877467018,
+    "auc_peak": 0.7447323943661972,
+    "auc_n_rows": 0.776
+  }
+}

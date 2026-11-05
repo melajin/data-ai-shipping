@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-05T02:18:23.529067+00:00",
+  "available_gib": 3.006244659423828,
+  "expected_training_peak_gib": 1.5,
+  "estimate_basis": "inherited conservative budget; previous sampled peak0.427GiB, sequential4CV/8fits; matrices under5MiB plus sparse maps/library",
+  "active_heavy_jobs": 0,
+  "worker_tasks": "small source edits/read-only review",
+  "action": "preparation and review; launch independently rechecks >=2.5GiB"
+}

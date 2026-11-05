@@ -1,0 +1,12 @@
+{
+  "finished_at": "2026-11-05T11:13:17.534562+09:00",
+  "elapsed_seconds": 14.59,
+  "vessels": 1582,
+  "positive_vessels": 82,
+  "additional_score_vessels": 34,
+  "additional_score_cache_reused": true,
+  "rows": 822000,
+  "peak_rss_mib": 711.4,
+  "original_s5_note": "Numerical S5 unchanged; inherited curve prose updated to actual n_pos. Pool6127 unchanged.",
+  "full_corrected_score_evaluation_ready": true
+}

@@ -127,6 +127,7 @@ def build_profile_cache(
     returned_rows = valid_coordinate_rows = invalid_coordinate_rows = 0
     missing_coordinate_rows = 0
     returned_year_mismatches = returned_id_mismatches = 0
+    profile_rows = 0
     try:
         connection.execute("PRAGMA journal_mode=DELETE")
         connection.execute("PRAGMA synchronous=NORMAL")
@@ -187,6 +188,7 @@ def build_profile_cache(
         connection.commit()
         connection.execute("ANALYZE")
         connection.commit()
+        profile_rows = int(connection.execute("SELECT COUNT(*) FROM profile_count").fetchone()[0])
     except Exception:
         connection.rollback()
         connection.close()
@@ -223,6 +225,7 @@ def build_profile_cache(
         "valid_coordinate_timebin_rows": valid_coordinate_rows,
         "missing_coordinate_or_date_rows": missing_coordinate_rows,
         "invalid_coordinate_rows": invalid_coordinate_rows,
+        "profile_rows": profile_rows,
         "ordered_fit_roster_sha256": hash_ordered_ids(ids),
         "fit_roster_size": len(ids),
         "resolutions_deg": list(RESOLUTIONS),
@@ -256,50 +259,47 @@ class S1ProfileStore:
             raise ValueError("S1 profile cache is bound to a different spatial source")
         if self.manifest.get("resolutions_deg") != list(RESOLUTIONS):
             raise ValueError("S1 cache resolution order differs from the frozen S1 schema")
-        self.profiles: list[dict[tuple[int, int], dict[tuple[int, int], int]]] = [dict() for _ in range(int(self.manifest["fit_roster_size"]))]
-        self.totals: list[dict[tuple[int, int], int]] = [defaultdict(int) for _ in range(len(self.profiles))]
+        self.n_rows = int(self.manifest["fit_roster_size"])
+        with sqlite3.connect(str(self.path)) as connection:
+            self.profile_count_rows = int(connection.execute("SELECT COUNT(*) FROM profile_count").fetchone()[0])
+
+    def period_profiles(self, month: int) -> list[list[dict[tuple[int, int], float]]]:
+        """Load one full/month period, then release it before the next period."""
+        if month not in (0, 1, 2, 3, 4, 5, 6):
+            raise ValueError("Period must be full(0) or Jan-Jun(1..6)")
+        profiles = [[{} for _ in range(self.n_rows)] for _ in RESOLUTIONS]
+        totals = [np.zeros(self.n_rows, dtype=np.float64) for _ in RESOLUTIONS]
         with sqlite3.connect(str(self.path)) as connection:
             cursor = connection.execute(
-                "SELECT vessel_idx,month,res_idx,cell_x,cell_y,observations "
-                "FROM profile_count ORDER BY vessel_idx,month,res_idx,cell_x,cell_y"
+                "SELECT vessel_idx,res_idx,cell_x,cell_y,observations FROM profile_count "
+                "WHERE month=? ORDER BY res_idx,vessel_idx,cell_x,cell_y", (month,)
             )
-            for vessel_idx, month, res_idx, cell_x, cell_y, observations in cursor:
-                key = (int(month), int(res_idx))
-                cells = self.profiles[int(vessel_idx)].setdefault(key, {})
+            for vessel_idx, res_idx, cell_x, cell_y, observations in cursor:
+                idx, resolution = int(vessel_idx), int(res_idx)
+                if not (0 <= idx < self.n_rows and 0 <= resolution < len(RESOLUTIONS)):
+                    raise ValueError("Profile cache has an index outside the frozen S1 schema")
                 cell = (int(cell_x), int(cell_y))
-                cells[cell] = int(observations)
-                self.totals[int(vessel_idx)][key] += int(observations)
-
-    def normalized(self, vessel_idx: int, month: int, res_idx: int) -> dict[tuple[int, int], float]:
-        key = (month, res_idx)
-        cells = self.profiles[vessel_idx].get(key)
-        total = self.totals[vessel_idx].get(key, 0)
-        if not cells or total <= 0:
-            return {}
-        return {cell: count / total for cell, count in cells.items()}
-
-    def normalized_weight(self, vessel_idx: int, month: int, res_idx: int, cell: tuple[int, int]) -> float:
-        key = (month, res_idx)
-        total = self.totals[vessel_idx].get(key, 0)
-        if total <= 0:
-            return 0.0
-        count = self.profiles[vessel_idx].get(key, {}).get(cell, 0)
-        return count / total
-
-    def occupied(self, vessel_idx: int, month: int, res_idx: int, cell: tuple[int, int]) -> bool:
-        return cell in self.profiles[vessel_idx].get((month, res_idx), {})
+                count = float(observations)
+                profiles[resolution][idx][cell] = count
+                totals[resolution][idx] += count
+        for res_idx in range(len(RESOLUTIONS)):
+            for vessel_idx, cells in enumerate(profiles[res_idx]):
+                total = totals[res_idx][vessel_idx]
+                if total > 0:
+                    for cell in list(cells):
+                        cells[cell] /= total
+        return profiles
 
 
 def _build_counts(
-    store: S1ProfileStore,
+    period_profiles: list[list[dict[tuple[int, int], float]]],
     train_indices: np.ndarray,
     train_labels: np.ndarray,
-    month: int,
     res_idx: int,
 ) -> dict[tuple[int, int], list[float]]:
     counts: dict[tuple[int, int], list[float]] = {}
     for vessel_idx, cls in zip(train_indices.tolist(), train_labels.tolist()):
-        profile = store.normalized(int(vessel_idx), month, res_idx)
+        profile = period_profiles[res_idx][int(vessel_idx)]
         for cell in profile:
             entry = counts.get(cell)
             if entry is None:
@@ -311,6 +311,7 @@ def _build_counts(
 
 def _cell_posterior(
     store: S1ProfileStore,
+    period_profiles: list[list[dict[tuple[int, int], float]]],
     counts_by_res: Sequence[dict[tuple[int, int], list[float]]],
     train_label_by_index: dict[int, int],
     global_counts: np.ndarray,
@@ -320,7 +321,7 @@ def _cell_posterior(
     requested_cell: tuple[int, int],
 ) -> np.ndarray:
     return _posterior_for_cell(
-        store, counts_by_res, train_label_by_index, global_counts,
+        store, period_profiles, counts_by_res, train_label_by_index, global_counts,
         query_idx, month, requested_res_idx, requested_cell,
     )
 
@@ -347,9 +348,9 @@ def build_features(
         raise ValueError("CV training labels fall outside the frozen four-class order")
     if len(np.unique(train_indices)) != len(train_indices):
         raise ValueError("CV training indices are not unique")
-    if np.any(query_indices < 0) or np.any(query_indices >= len(store.profiles)):
+    if np.any(query_indices < 0) or np.any(query_indices >= store.n_rows):
         raise ValueError("Query index is outside the cached FIT roster")
-    if np.any(train_indices < 0) or np.any(train_indices >= len(store.profiles)):
+    if np.any(train_indices < 0) or np.any(train_indices >= store.n_rows):
         raise ValueError("Training index is outside the cached FIT roster")
     train_label_by_index = {int(i): int(y) for i, y in zip(train_indices.tolist(), train_labels.tolist())}
     global_counts = np.bincount(train_labels, minlength=N_CLASSES).astype(np.float64)
@@ -361,18 +362,19 @@ def build_features(
     month_min: dict[tuple[int, int], np.ndarray] = {}
     month_max: dict[tuple[int, int], np.ndarray] = {}
     for month in periods:
-        counts_by_res = [_build_counts(store, train_indices, train_labels, month, r) for r in range(len(RESOLUTIONS))]
+        period_profiles = store.period_profiles(month)
+        counts_by_res = [_build_counts(period_profiles, train_indices, train_labels, r) for r in range(len(RESOLUTIONS))]
         for res_idx in range(len(RESOLUTIONS)):
             full_feature_start = res_idx * 8
             if month == 0:
                 for query_idx in query_indices.tolist():
-                    profile = store.normalized(int(query_idx), 0, res_idx)
+                    profile = period_profiles[res_idx][int(query_idx)]
                     if not profile:
                         continue
                     value = np.zeros(N_CLASSES, dtype=np.float64)
                     for cell, weight in profile.items():
                         posterior = _cell_posterior(
-                            store, counts_by_res, train_label_by_index, global_counts,
+                            store, period_profiles, counts_by_res, train_label_by_index, global_counts,
                             int(query_idx), 0, res_idx, cell,
                         )
                         value += weight * posterior
@@ -380,13 +382,13 @@ def build_features(
             else:
                 month_values: dict[int, np.ndarray] = {}
                 for query_idx in query_indices.tolist():
-                    profile = store.normalized(int(query_idx), month, res_idx)
+                    profile = period_profiles[res_idx][int(query_idx)]
                     if not profile:
                         continue
                     value = np.zeros(N_CLASSES, dtype=np.float64)
                     for cell, weight in profile.items():
                         value += weight * _cell_posterior(
-                            store, counts_by_res, train_label_by_index, global_counts,
+                            store, period_profiles, counts_by_res, train_label_by_index, global_counts,
                             int(query_idx), month, res_idx, cell,
                         )
                     month_values[int(query_idx)] = value
@@ -412,6 +414,7 @@ def build_features(
 
 def _posterior_for_cell(
     store: S1ProfileStore,
+    period_profiles: list[list[dict[tuple[int, int], float]]],
     counts_by_res: Sequence[dict[tuple[int, int], list[float]]],
     train_label_by_index: dict[int, int],
     global_counts: np.ndarray,
@@ -432,7 +435,7 @@ def _posterior_for_cell(
         counts = counts_by_res[res_idx].get((cell_x, cell_y))
         adjusted = np.asarray(counts if counts is not None else [0.0] * N_CLASSES, dtype=np.float64)
         if query_is_fit:
-            if store.occupied(query_idx, month, res_idx, (cell_x, cell_y)):
+            if period_profiles[res_idx][query_idx].get((cell_x, cell_y), 0.0) > 0:
                 adjusted[train_label_by_index[query_idx]] -= 1.0
         adjusted = np.maximum(adjusted, 0.0)
         total = float(adjusted.sum())

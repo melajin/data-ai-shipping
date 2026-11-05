@@ -1,0 +1,57 @@
+{
+  "utc": "2026-11-05T01:58:29.226261+00:00",
+  "stage": "prepare_t5",
+  "argv": [
+    "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_022\\code\\prepare_t5_cache.py"
+  ],
+  "hashes": {
+    "rounds/round_022/code/prepare_t5_cache.py": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+    "rounds/round_022/code/run_gate.py": "dd5cdab6f550d9a2b3a0c3c5b99601bad9b95275a1af0888b15f8e3ada262ac1",
+    "rounds/round_022/code/s1_features.py": "61aa437179f75ed28d8ba5b2323c1b79b468fc532ce5025723c804635efe5ad0",
+    "rounds/round_022/code/t5_rebuild.py": "d2b41263d8afa6273173b36665780ee433cf4cfe80348975109c0d45407cf01f",
+    "rounds/round_022/configs/experiment.json": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+    "rounds/round_022/ROUND_PLAN.md": "7ed8d8063b5ae0f9479cef5f9e4011dbd927c45c086c64923f49a9968446cc96",
+    "rounds/round_022/manager/launch.py": "fe460460957d4056db4ff7a79786289a82fc6b7686c9200f8bd7ec9c51fb4f1e"
+  },
+  "available_bytes": 3648876544,
+  "expected_peak_bytes": 1610612736,
+  "estimate_basis": "FIT3144 x304 float32 ~3.65MiB; candidate +24 ~0.29MiB; 4fold sequential LightGBM plus sparse grid maps and library overhead budgeted1.5GiB. Cache materialization must be reviewed separately before launch; estimate not measured",
+  "other_python": [
+    {
+      "pid": 12504,
+      "cmdline": [
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\notebooklm-mcp.exe"
+      ],
+      "rss": 92348416,
+      "create_time": 1793842018.6929548
+    },
+    {
+      "pid": 22148,
+      "cmdline": [
+        "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "rounds/round_022/manager/launch.py",
+        "--stage",
+        "prepare_t5",
+        "--seconds",
+        "480",
+        "--python",
+        "C:/Users/dlehs/AppData/Local/Programs/Python/Python313/python.exe",
+        "--script",
+        "rounds/round_022/code/prepare_t5_cache.py"
+      ],
+      "rss": 4292608,
+      "create_time": 1793843907.5576785
+    }
+  ],
+  "timeout_seconds": 480,
+  "compute_cutoff": "2026-11-05T02:10:00+00:00",
+  "prior_compute_seconds": 0
+}

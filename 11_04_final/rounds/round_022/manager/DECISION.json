@@ -1,0 +1,20 @@
+{
+  "round": "round_022",
+  "status": "completed_partial_gate_budget_stop",
+  "fits_completed": 2,
+  "fits_required": 8,
+  "gate_evaluated": false,
+  "gate_pass": null,
+  "baseline_cv_micro": null,
+  "candidate_cv_micro": null,
+  "full3fold_fits": 0,
+  "s2_fits": 0,
+  "axis_rejected": false,
+  "goal_achieved": false,
+  "reason": "Fixed wall-clock cutoff before all4CV folds; not a performance rejection",
+  "next_round": "round_023",
+  "next_action": "Reuse prepared caches and reviewed source for one fixed8fit procedural replay; current runner has no resume API",
+  "prior_two_fits_preserved": true,
+  "independent_partial_audit_pass": true,
+  "finished_utc": "2026-11-05T02:15:00.030047+00:00"
+}

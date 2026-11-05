@@ -1,11 +1,11 @@
 # Round022 S1 선행 CV — 입력 계보 사전 검토
 
-상태: **전체 게이트 소스 승인 보류**. 이 검토는 소스·메타데이터와 합성 엔진의 정적 코드만 조사했다. 현재 S1 공간 프로필 입력 캐시와 생성 manifest가 없고, `run_gate.py` 및 실행 입력의 해시 동결도 완료되지 않았다. 학습·평가·합성 검사는 실행하지 않았다.
+상태: **전체 게이트 승인 없음; cache-builder source review 중**. 입력 cache와 manifest는 아직 생성되지 않았고, `run_gate.py` 및 합성 checker 해시도 동결되지 않았다. 학습·평가·합성 검사는 실행하지 않았다.
 
 ## 범위와 결과
 
 - 읽은 작업 기준: `AGENTS.md`, `CYCLE_PROTOCOL.md`, `docs/20261105_CODEX_인계_0.7_실행계획.md`, `rounds/round_022/ROUND_PLAN.md`, `rounds/round_022/configs/experiment.json`.
-- 원본 코드와 생성 스크립트는 읽기 전용으로 조사했다. 학습 라벨·NPZ 값·개별 ID·원자료 행은 출력하지 않았다. 2025/holdout 원자료 행은 읽지 않았다. `testB/first_results/harbors.json`은 train-only 산출물임을 생성 코드로 확인하고 점 개수·메타 키만 확인했으며 좌표는 열람·출력하지 않았다.
+- 원본 코드와 생성 스크립트는 읽기 전용으로 조사했다. 학습 라벨·NPZ 값·개별 ID·원자료 행은 출력하지 않았다. 2025/holdout 원자료 행은 읽지 않았다. `testB/first_results/harbors.json`은 train-only 산출물임을 생성 코드로 확인하고 점 개수·메타 키만 확인했으며 좌표는 열람·출력하지 않았다. 이후 사용자는 기존 CYCLE#5와 같은 **Train2026+Test2025 정박기하의 공용 항구 aggregate만** 명시 허용했다. 이는 2025/holdout 라벨·예측·평가·개별 출력 허용으로 확대하지 않는다.
 - 독립 T5 엔진은 코드만 정적으로 검토했다. 라벨 자기제외는 전역 카운트, 스무딩 prior, fine/coarse 셀 카운트, 전역 폴백에 적용되어 있다. 의미 있는 합성 불변 검사는 아직 실행되지 않았다.
 - 관리자 메시지 기준 2026-11-05 01:44 UTC 가용 RAM은 0.475 GiB이며 `s4_score_dev.py`가 실행 중이었다. 이 리뷰는 읽기 전용 문서·코드 조사로 제한했고 실행하지 않았다. 이는 관리자가 제공한 자원 증거이며 이 리뷰의 호스트 재측정값이 아니다.
 
@@ -42,6 +42,34 @@
 6. score gate는 계획의 최신 고정값을 따른다: 전체 진행은 `candidate >= 1833/3144` **그리고** 같은 절차 기준선 대비 `candidate_correct - baseline_correct >= 16`을 모두 만족해야 한다. 한 조건만 통과하면 full run은 0회다. 이 리뷰에서 점수를 계산하지 않았다.
 7. 전체 gate 승인 해시는 `code/t5_rebuild.py`, 입력 cache builder, CV runner, `configs/experiment.json`, `ROUND_PLAN.md`, `manager/launch.py`를 모두 포함해야 한다. 입력 cache builder가 완성되기 전 승인 JSON은 만들지 않는다.
 
+## 01:52 UTC 사용자 경계 갱신 및 cache-builder 정적 검토
+
+사용자 승인 경계는 Train2026 전체와 Test2025의 정박(stop) 기하를 기존 공용 항구 aggregate에만 사용하도록 한정한다. Train2026+Test2025의 `key_valid`, `wkt_valid`, `len_m`, `bbox_m`, 좌표, 항구 distinct-vessel 집계 목적의 ID만 허용 범위에 들어간다. query/T5 profile은 2026 fold0 FIT에 한정한다. Test2025 label·prediction·evaluation·개별 출력과 동일 선박 라벨 승계는 계속 금지다.
+
+`prepare_t5_cache.py` 정적 검토 결과:
+
+- source는 `rows_train_1..6.parquet`와 `rows_test_1..6.parquet`를 32,768행 batch, `use_threads=False`로 스캔한다. 항구 집계 projection은 train에 `rfid_id, cen_lon, cen_lat, rfid_time`, test에 `rfid_id, cen_lon, cen_lat`만 요청하며, stop predicate는 `key_valid && wkt_valid && len_m<=50 && bbox_m<=100`이다. Label이나 output/probability input은 참조하지 않는다.
+- SQLite primary key `(cell_x,cell_y,vessel)`로 동일 격자·선박 중복을 제거하고 cell별 unique vessel 수≥20을 유지한다. 8방 연결, cell-center 평균, 모든 stop row를 가중한 기준 위도, cKDTree 및 haversine 검산은 기존 helper의 정적 알고리즘과 맞는다.
+- train의 FIT 3,144 ID만 own-mooring 및 query profile 용도로 제한한다. own mooring은 동일 FIT vessel의 night stop rows에서 상위 3개 셀을 사용한다. query filter는 Train2026 `len_m>50` + validity이며, 결과 profile에는 FIT row index·월·fine/coarse grid·record count만 적재한다.
+- 3144 FIT 행의 기존 `t5_log1p_fishing_rows`와 새 fishing-row count를 비교하는 것은 검증 가능한 count equivalence다. 행별 mask pointwise equivalence는 검증하지 않는다. `fishing_mask_equivalence_verified=true`라는 이름은 evidence보다 넓으므로 `fishing_row_count_equivalence_verified=true`, `pointwise_mask_equivalence_verified=false`로 바꾸고 `t5_rebuild.prepare_t5` 계약도 맞춰야 한다.
+- `harbor_distinct.sqlite`에 train/test의 raw vessel key와 spatial cells를 임시 저장한다. 정상 성공 경로는 `DROP TABLE`+`VACUUM`을 해 aggregate table을 버린 뒤 FIT-only profile table을 남긴다. 예외·deadline kill에서는 정리가 보장되지 않으므로 owned-stage launcher의 실패 후 exact-path/sidecar cleanup을 추가해야 한다.
+- source parquet/BASE NPZ hash는 현재 scan 이후 기록되며 before/after 일치 검사가 없다. scan 전후 source SHA 재검증을 더한다. `BASE` feature index 165의 이름도 NPZ `feature_names`에서 `t5_log1p_fishing_rows`인지 확인한다. `np.nanmax`는 비교값 전체가 NaN일 때를 별도로 처리한다.
+
+parent의 01:52 UTC 경계 update에 따라 기존 “Test2025/holdout 범위 불명” 문장은 superseded다. 전체 gate 승인 여부와 별개로, cache-builder의 위 blocking issues가 해결될 때까지 source approval을 보류한다. 수정을 확인한 뒤 이 단계만 `prepare_approved_sources.json`으로 hash-bound 승인할 수 있다. 이 승인은 cache generation만 허용하며 CV score run이나 전체 gate를 승인하지 않는다.
+
 ## 현재 판정
 
 `t5_rebuild.py` 정적 검토상 global prior를 포함한 leave-self-out 흐름은 타당해 보인다. 다만 입력 cache가 없고 Test2025/holdout 범위와 cache 생성 규칙이 미확정이며, S1 runner 및 synthetic assertion 소스가 아직 동결되지 않아 **전체 게이트 실행 승인 없음**이다. 다음 검토는 manager의 cache builder와 writer의 CV runner/synthetic check가 준비된 후, 소스 해시와 입력 manifest를 읽기 전용 검증하는 것이다.
+
+
+## 02:10 UTC ?? ? ????? ????? ??? ??
+
+? ??? ?? ?cache ?? / source approval ?? / ?? ?? ???? ?? ??? ????. ?? ?? ??? ?? ?? ??? ???.
+
+- ???? Train2026 ? Test2025? ?? ?? ?? ?? ??? ????. ? ??? ????????, Test/holdout ?? query/profiles? ???? ???. ??3fold? S2? ?? ???? ??? ???? 0??.
+- ?? ??? ???? review/s1_prepare_approved_sources.json?? --prepare-s1 ???, review/gate_approved_sources.json?? FIT 3,144??? ?? 4-fold 8-fit gate? ????. ??3fold/S2 ?? ??. run_gate.py? T5 class literals? UTF-8? ???? ?? ?? 4? class-name codepoint? ???? ????. ? PowerShell ??? mojibake? ANSI ?? ????? ?? defect? ????; ?? writer? ?? ??? ???? ?? ???? Unicode escape? ????.
+- T5 cache preparation receipt? exit 0, 41.74?, sampled peak family RSS 0.301 GiB, sampled minimum available RAM 3.04 GiB? ????. ?? audit? 3,144 FIT ?? log1p_fishing_rows ??, ?? ??? 8.88e-16; pointwise_mask_equivalence_verified=false??? ?? mask ???? ???? ???. ?, launcher? T5 ?? receipt?? run_gate.py ??? ?? ??/?? ?? ???? (dd5c... ? ec863...). T5 producer ??? ??? ???? ?? ??? ????? receipt ??? ????. ? ??? gate ?? ?? ?????, ?? gate ??? ?? ??? ??? ?? ????.
+- S1 cache preparation receipt? exit 0, 25.97?, sampled peak family RSS 0.427 GiB, sampled minimum available RAM 3.07 GiB?? ?? ?? ?? source hash ???? ????.
+- manager/synthetic_checks.py? ?? JSON? ???? ????. ??? ?? ??? 6-vessel synthetic fixture?? T5/S1 self-label change ??, fixed-train validation-label permutation ??, donor-label positive control, donor ?? ??? ???? real data/fits? 0??. ? ???? ?? checker? ?? ????? ???.
+- ??? gate launcher? 02:10 UTC cutoff? ????. receipt? deadline_stop, exit 15, 82.69?, ??/?? ?? source hash ?? ? ?? hash? ????. fit_progress.json?? 2? ??/??? ???? ?? fold 0 baseline/candidate ?? ? ??? ??? progress ??? ???. fold 0 private evidence archive? header? ??? (2026-11-05 ?? ?? ? RAM available 3.65 GB, ?? Python ?? 0): train 2,358, validation 786, train labels 2,358, T5 3,144?10, S1 3,144?24. ?? ?????ID? ???? ???.
+- gate_result.json? ? prediction NPZ? ??. ??? ?? cutoff? ?? ??? ???? score ??? ??? ?? ???paired delta?numeric gate ??? ????. ??? 6 fits, ?? reload, aggregate/per-fold score ?? ??? ???? ???. ?? ??? review/partial_gate_audit.json??.

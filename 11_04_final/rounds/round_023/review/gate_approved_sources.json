@@ -1,0 +1,17 @@
+{
+    "approved":  true,
+    "stage":  "s1_fit_internal_4fold_gate_only",
+    "scope":  "Approve the preregistered paired 8-fit fold0 FIT diagnostic in round023 only; no full 3-fold, S2, retries, threshold/model search, or raw geometry rescan.",
+    "synthetic_review":  "Inherited round022 manager synthetic checker source and saved summary review; this approval does not independently rerun the synthetic checker.",
+    "independent_saved_result_review":  "pending after execution",
+    "source_hashes":  {
+                          "rounds/round_023/code/prepare_t5_cache.py":  "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+                          "rounds/round_023/code/t5_rebuild.py":  "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+                          "rounds/round_023/code/s1_features.py":  "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+                          "rounds/round_023/code/run_gate.py":  "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+                          "rounds/round_023/configs/experiment.json":  "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+                          "rounds/round_023/ROUND_PLAN.md":  "be7c8ecb2d918642abc7d2654602547ce8d2425dc90ccad5c1f57ec10ff5cf97",
+                          "rounds/round_023/manager/launch.py":  "d14df6e640932458b6531de9fb800ed71404c8f6edef5e9b4e538b009663c886",
+                          "rounds/round_023/manager/runtime_contract.json":  "fa9c54f8490fec775910212db4f92f907f9b2de4fd215bb3348b65920040c1a2"
+                      }
+}

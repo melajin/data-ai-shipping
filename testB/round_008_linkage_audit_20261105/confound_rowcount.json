@@ -1,0 +1,10 @@
+{
+  "auc_n_rows": 0.795910569105691,
+  "auc_peak": 0.7557560975609756,
+  "auc_mean": 0.5729837398373984,
+  "auc_q95": 0.6800406504065041,
+  "matched_n": 82,
+  "auc_peak_rowcount_matched": 0.5801606186793575,
+  "auc_nrows_matched_check": 0.5008179654967282,
+  "method": "greedy nearest absolute row count, positive ID order, unique negative, ties by ID; original matching code unavailable"
+}

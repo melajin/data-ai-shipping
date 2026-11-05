@@ -5,10 +5,10 @@ def sha(p):
  with p.open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 p=argparse.ArgumentParser();p.add_argument('--stage',required=True);p.add_argument('--approval',required=True);a=p.parse_args()
 approval=Path(a.approval).resolve();assert approval.is_relative_to(R/'review')
-j=json.loads(approval.read_text(encoding='utf8-sig'));assert j.get('approved') is True
+j=json.loads(approval.read_text(encoding='utf-8-sig'));assert j.get('approved') is True
 paths=j['source_hashes'];assert paths
 for name,h in paths.items():
- path=(ROOT/name).resolve();assert path.is_relative_to(ROOT);assert sha(path)==h,(name,'Source changed since approval')
+ path=(ROOT/name).resolve();assert path.is_relative_to(ROOT);assert sha(path).lower()==h.lower(),(name,'Source changed since approval')
 snap=R/'manager'/('snapshot_'+a.stage);snap.mkdir(exist_ok=False)
 for name,h in paths.items():
  dest=snap/Path(name).name;assert not dest.exists(),'Duplicate basenames';shutil.copyfile(ROOT/name,dest)

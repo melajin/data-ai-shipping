@@ -1,0 +1,9 @@
+{
+  "stage": "s1_gate",
+  "error": "WinError2 CreateProcess relative Python executable",
+  "child_created": false,
+  "fits_started": 0,
+  "correction": "absolute Python executable used for s1_gate_absolute",
+  "model_search_retry": false,
+  "claim_preserved": true
+}

@@ -1,0 +1,21 @@
+{
+  "source_round": "round022",
+  "copied_sha256": {
+    "code/run_gate.py": "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+    "code/s1_features.py": "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+    "code/t5_rebuild.py": "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+    "code/prepare_t5_cache.py": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+    "configs/experiment.json": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+    "artifacts/t5_fishing_profiles.npz": "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+    "artifacts/t5_fishing_profiles.manifest.json": "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+    "artifacts/t5_mask_equivalence.json": "1b2a70d3bd945bf0eafc8864146f703731078530940a5358812d2da8407ba695",
+    "tmp/s1_profiles.sqlite": "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+    "tmp/s1_profiles.sqlite.manifest.json": "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+    "review/verify_gate_result.py": "b184765e3092595e4121865e85aaa4cb23695243f19bc9301ef954b415210ff1"
+  },
+  "prior_fits_completed": 2,
+  "new_fits_limit": 8,
+  "training_started": false,
+  "approved_model_sources_unchanged": true,
+  "launcher_change": "deadline read from new runtime contract only"
+}

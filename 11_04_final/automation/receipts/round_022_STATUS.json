@@ -1,0 +1,820 @@
+{
+  "schema_version": 1,
+  "updated_at_utc": "2026-11-05T02:15:00.030047+00:00",
+  "objective": "vessel-level four-class micro-F1 >= 0.7 with development and independent evidence kept separate",
+  "goal_status": "active_not_achieved",
+  "current_round": "round_022",
+  "round_status": "completed_partial_gate_budget_stop",
+  "manager_session": "/root/round022_manager",
+  "manager_model_request": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "role": "astra_decision"
+  },
+  "assistant_model_policy": {
+    "model": "gpt-6-luna",
+    "reasoning_effort": "xhigh",
+    "max_assistants_user": 4,
+    "current_runtime_assistants": 0,
+    "host_total_slots": 4
+  },
+  "paths": {
+    "work": "D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final",
+    "raw_read_only": "F:/문제 데이터_수정_1027",
+    "source_read_only": "D:/repos/fishing-track-classification",
+    "prior_experiment": "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
+    "round": "rounds/round_022"
+  },
+  "scores": {
+    "evaluation_population": "repeatedly exposed development OUTER, 5897 vessels",
+    "baseline": {
+      "name": "sqrt_macro_5seed",
+      "micro_f1": 0.5930133966423605,
+      "macro_f1": 0.5252719738966167,
+      "correct": 3497,
+      "n": 5897,
+      "source": "Replayed in round001 on all 5897 development OUTER vessels; stored seed probabilities exact and ensemble within1e-12"
+    },
+    "exploratory_best": {
+      "name": "six_source_mean",
+      "micro_f1": 0.5933525521451586,
+      "correct": 3499,
+      "n": 5897,
+      "adopted": false,
+      "reason": "net+2; macro declined; paired CI includes zero"
+    },
+    "historical_s6_aggregate": 0.59183,
+    "independent_micro_f1": null,
+    "official_micro_f1": null,
+    "development_observed_ge_070": false,
+    "independently_verified_ge_070": false,
+    "official_score_ge_070": false,
+    "round_002": {
+      "evaluation_population": "Repeatedly exposed development OUTER, 5897 vessels",
+      "same_condition_baseline": {
+        "n": 5897,
+        "correct": 3476,
+        "micro_f1": 0.5894522638629812,
+        "macro_f1": 0.519210304310862,
+        "class_recall": [
+          0.8181506849315069,
+          0.4409722222222222,
+          0.12934131736526946,
+          0.7142857142857143
+        ],
+        "class_f1": [
+          0.6945777002471291,
+          0.4974818130945719,
+          0.20037105751391468,
+          0.6844106463878327
+        ],
+        "confusion_matrix": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ]
+      },
+      "candidate": {
+        "n": 5897,
+        "correct": 3424,
+        "micro_f1": 0.5806342207902323,
+        "macro_f1": 0.4689224222226287,
+        "class_recall": [
+          0.8613013698630136,
+          0.39732142857142855,
+          0.033532934131736525,
+          0.6349206349206349
+        ],
+        "class_f1": [
+          0.6904598490048044,
+          0.47396449704142013,
+          0.06349206349206349,
+          0.6477732793522267
+        ],
+        "confusion_matrix": [
+          [
+            2515,
+            389,
+            11,
+            5
+          ],
+          [
+            1190,
+            801,
+            7,
+            18
+          ],
+          [
+            635,
+            154,
+            28,
+            18
+          ],
+          [
+            25,
+            20,
+            1,
+            80
+          ]
+        ]
+      },
+      "blend": {
+        "n": 5897,
+        "correct": 3474,
+        "micro_f1": 0.5891131083601832,
+        "macro_f1": 0.5061678493519742,
+        "class_recall": [
+          0.8383561643835616,
+          0.4270833333333333,
+          0.09221556886227544,
+          0.6984126984126984
+        ],
+        "class_f1": [
+          0.6950596252129472,
+          0.49045855881515243,
+          0.1569826707441386,
+          0.6821705426356589
+        ],
+        "confusion_matrix": [
+          [
+            2448,
+            434,
+            30,
+            8
+          ],
+          [
+            1096,
+            861,
+            36,
+            23
+          ],
+          [
+            563,
+            182,
+            77,
+            13
+          ],
+          [
+            17,
+            18,
+            3,
+            88
+          ]
+        ]
+      },
+      "candidate_adopted": false,
+      "blend_adopted": false,
+      "reason": "micro improvement gate failed; class2 recall drops exceed .03",
+      "result": "rounds/round_002/artifacts/result.json"
+    },
+    "round_003": {
+      "evaluation_population": "repeatedly exposed development OUTER, 5,897 unique vessels",
+      "seeds": [
+        42,
+        2026
+      ],
+      "aggregation": "arithmetic mean of seed metrics; not probability ensemble and not 11794 independent vessels",
+      "mean_metrics": {
+        "A_raw": {
+          "vessels_per_seed": 5897.0,
+          "not_summed_across_seeds": true,
+          "micro_f1": 0.5930133966423605,
+          "macro_f1": 0.5155580319500959,
+          "weighted_f1": 0.5539843909787947,
+          "mean_assigned_class_original_probability": 0.6023470809961545,
+          "class_precision": [
+            0.5921765705366602,
+            0.6092231826027811,
+            0.4940156169994879,
+            0.6563804412641622
+          ],
+          "class_recall": [
+            0.8657534246575342,
+            0.37723214285714285,
+            0.1479041916167665,
+            0.6746031746031746
+          ],
+          "class_f1": [
+            0.7032946144231786,
+            0.4659240858591347,
+            0.22764884418473677,
+            0.6653645833333333
+          ]
+        },
+        "A_old": {
+          "vessels_per_seed": 5897.0,
+          "not_summed_across_seeds": true,
+          "micro_f1": 0.5748685772426658,
+          "macro_f1": 0.5372271285505399,
+          "weighted_f1": 0.558096720517929,
+          "mean_assigned_class_original_probability": 0.5807682080078466,
+          "class_precision": [
+            0.6122071914782623,
+            0.6400725655613055,
+            0.3335479063368777,
+            0.7041029766693483
+          ],
+          "class_recall": [
+            0.7917808219178082,
+            0.3412698412698413,
+            0.37305389221556884,
+            0.623015873015873
+          ],
+          "class_f1": [
+            0.6905091849259105,
+            0.4451585588273005,
+            0.3521883628182841,
+            0.6610524076306645
+          ]
+        },
+        "A_micro_select": {
+          "vessels_per_seed": 5897.0,
+          "not_summed_across_seeds": true,
+          "micro_f1": 0.5933525521451586,
+          "macro_f1": 0.520562845334023,
+          "weighted_f1": 0.5564218565926311,
+          "mean_assigned_class_original_probability": 0.6017685797336274,
+          "class_precision": [
+            0.5934874770596876,
+            0.6122470021146091,
+            0.48303480413572153,
+            0.6589543269230769
+          ],
+          "class_recall": [
+            0.8626712328767123,
+            0.37475198412698413,
+            0.16706586826347306,
+            0.6746031746031746
+          ],
+          "class_f1": [
+            0.7031834020996556,
+            0.46492491728271496,
+            0.247466142662383,
+            0.6666769192913387
+          ]
+        }
+      },
+      "correct_by_seed": {
+        "42": {
+          "A_raw": 3491,
+          "A_old": 3391,
+          "A_micro_select": 3495
+        },
+        "2026": {
+          "A_raw": 3503,
+          "A_old": 3389,
+          "A_micro_select": 3503
+        }
+      },
+      "selected_factors": {
+        "42": [
+          1,
+          1.5,
+          1
+        ],
+        "2026": [
+          1,
+          1,
+          1
+        ]
+      },
+      "progress_gate": {
+        "criteria": {
+          "mean_micro_delta_at_least_0_005": false,
+          "both_seed_micro_deltas_positive": false,
+          "paired_5000_vessel_bootstrap_ci_lower_above_zero": false,
+          "mean_macro_f1_not_decreased": true,
+          "each_seed_class_f1_drop_no_more_than_0_01": true,
+          "each_seed_natural_1_7_macro_f1_drop_no_more_than_0_01": true
+        },
+        "all_criteria_met": false,
+        "micro_delta_by_seed": {
+          "42": 0.0006783110055960107,
+          "2026": 0.0
+        },
+        "macro_delta_mean": 0.005004813383927109,
+        "class_f1_delta_by_seed": {
+          "42": [
+            -0.00022242464704613774,
+            -0.00199833715283948,
+            0.03963459695529248,
+            0.002624671916010568
+          ],
+          "2026": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "natural_1_7_macro_delta_by_seed": {
+          "42": 0.0002550475946557218,
+          "2026": 0.0
+        },
+        "paired_ci95_mean_micro_delta_vs_raw": [
+          -0.0009326776326945563,
+          0.001610988638290678
+        ],
+        "interpretation": "development confirmation candidate gate only; not independent or official performance"
+      },
+      "candidate_adopted": false,
+      "result": "rounds/round_003/artifacts/result.json",
+      "historical_baseline_unchanged": true
+    },
+    "round_004": {
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "new_f1_evaluations": 0,
+      "candidate_adopted": false,
+      "historical_scores_unchanged": true,
+      "result": "rounds/round_004/artifacts/result.json"
+    },
+    "round_005": {
+      "evaluation_kind": "input_reconstruction_and_pre_inference_diagnostic",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "model_probability_comparison": null,
+      "actual_prediction_calls": 0,
+      "goal_070_achieved": false
+    },
+    "round_006": {
+      "evaluation_kind": "fixed_development_two_query_replay_interrupted_by_resource_guard",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "actual_prediction_calls_attempted": 1,
+      "actual_prediction_calls_completed": 0,
+      "model_probability_comparison": null,
+      "candidate_adopted": false,
+      "goal_070_achieved": false,
+      "historical_scores_unchanged": true,
+      "result": "rounds/round_006/artifacts/result.json"
+    },
+    "round_007": {
+      "evaluation_kind": "tiny_synthetic_equivalence_only",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "actual_data_prediction_calls": 0,
+      "synthetic_predict_attempted": 2,
+      "synthetic_predict_completed": 2,
+      "synthetic_max_abs_probability_difference": 0.0,
+      "synthetic_argmax_equal": true,
+      "synthetic_exact_numeric_equal": true,
+      "candidate_adopted": false,
+      "goal_070_achieved": false,
+      "historical_scores_unchanged": true,
+      "result": "rounds/round_007/artifacts/result.json"
+    },
+    "round_008": {
+      "evaluation_kind": "fixed_development_two_query_chunk16_replay",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "actual_replay_gate_pass": false,
+      "predict_attempted": 1,
+      "predict_completed": 0,
+      "candidate_adopted": false,
+      "historical_scores_unchanged": true,
+      "result": "rounds/round_008/artifacts/result.json"
+    },
+    "round_016": {
+      "evaluation_kind": "source_repair_static_review_only",
+      "new_micro_f1": null,
+      "new_f1_evaluations": 0,
+      "candidate_adopted": false,
+      "historical_scores_unchanged": true
+    },
+    "round_017": {
+      "evaluation_kind": "model_zero_wrapper_runtime_failure_before_children",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "candidate_adopted": false,
+      "historical_scores_unchanged": true,
+      "smoke_wrapper_attempts": 1,
+      "probe_children": 0,
+      "auditor_calls": 0,
+      "model_calls": 0
+    },
+    "round_018": {
+      "evaluation_kind": "model_zero_process_control_smoke",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "new_f1_evaluations": 0,
+      "candidate_adopted": false,
+      "historical_scores_unchanged": true,
+      "result": "rounds/round_018/artifacts/result.json"
+    },
+    "round_019": {
+      "evaluation_kind": "model_zero_control_and_saved_evidence_audit",
+      "new_micro_f1": null,
+      "new_macro_f1": null,
+      "new_f1_evaluations": 0,
+      "candidate_adopted": false,
+      "historical_scores_unchanged": true,
+      "result": "rounds/round_019/artifacts/result.json"
+    },
+    "round_020": {
+      "candidate_micro_f1": null,
+      "candidate_adopted": false,
+      "new_fits": 0,
+      "evaluation_kind": "not_executed",
+      "protected_tp_minimum": {
+        "0": 2389,
+        "3": 92
+      }
+    },
+    "round_021": {
+      "evaluation_population": "repeatedly exposed development OUTER5897; not independent",
+      "baseline12": {
+        "n": 5897,
+        "correct": 3407,
+        "micro_f1": 0.577751399016449,
+        "macro_f1": 0.48160258572385106,
+        "classes": [
+          {
+            "label": 0,
+            "precision": 0.5921951219512195,
+            "recall": 0.8315068493150685,
+            "f1": 0.6917378917378917,
+            "support": 2920,
+            "predicted": 4100
+          },
+          {
+            "label": 1,
+            "precision": 0.5722460658082976,
+            "recall": 0.3968253968253968,
+            "f1": 0.4686584651435266,
+            "support": 2016,
+            "predicted": 1398
+          },
+          {
+            "label": 2,
+            "precision": 0.39245283018867927,
+            "recall": 0.12455089820359282,
+            "f1": 0.1890909090909091,
+            "support": 835,
+            "predicted": 265
+          },
+          {
+            "label": 3,
+            "precision": 0.5597014925373134,
+            "recall": 0.5952380952380952,
+            "f1": 0.576923076923077,
+            "support": 126,
+            "predicted": 134
+          }
+        ],
+        "confusion_matrix": [
+          [
+            2428,
+            402,
+            80,
+            10
+          ],
+          [
+            1116,
+            800,
+            75,
+            25
+          ],
+          [
+            543,
+            164,
+            104,
+            24
+          ],
+          [
+            13,
+            32,
+            6,
+            75
+          ]
+        ]
+      },
+      "candidate20": {
+        "n": 5897,
+        "correct": 3363,
+        "micro_f1": 0.5702899779548923,
+        "macro_f1": 0.49707758228621124,
+        "classes": [
+          {
+            "label": 0,
+            "precision": 0.5967035797064125,
+            "recall": 0.7934931506849315,
+            "f1": 0.6811700720270468,
+            "support": 2920,
+            "predicted": 3883
+          },
+          {
+            "label": 1,
+            "precision": 0.5427652733118971,
+            "recall": 0.41865079365079366,
+            "f1": 0.4726967236068328,
+            "support": 2016,
+            "predicted": 1555
+          },
+          {
+            "label": 2,
+            "precision": 0.3706070287539936,
+            "recall": 0.13892215568862276,
+            "f1": 0.20209059233449475,
+            "support": 835,
+            "predicted": 313
+          },
+          {
+            "label": 3,
+            "precision": 0.589041095890411,
+            "recall": 0.6825396825396826,
+            "f1": 0.6323529411764707,
+            "support": 126,
+            "predicted": 146
+          }
+        ],
+        "confusion_matrix": [
+          [
+            2317,
+            495,
+            97,
+            11
+          ],
+          [
+            1049,
+            844,
+            97,
+            26
+          ],
+          [
+            506,
+            190,
+            116,
+            23
+          ],
+          [
+            11,
+            26,
+            3,
+            86
+          ]
+        ]
+      },
+      "paired": {
+        "n": 5897,
+        "reference_correct": 3407,
+        "candidate_correct": 3363,
+        "newly_correct": 245,
+        "newly_incorrect": 289,
+        "net_additional_correct": -44,
+        "micro_delta": -0.007461421061556672
+      },
+      "paired_ci95": [
+        -0.015266237069696454,
+        0.00016957775139901646
+      ],
+      "protected_true_positive_counts": {
+        "baseline12": [
+          2428,
+          800,
+          104,
+          75
+        ],
+        "candidate20": [
+          2317,
+          844,
+          116,
+          86
+        ],
+        "historical5seed": [
+          2381,
+          908,
+          116,
+          92
+        ],
+        "round002_seed42": [
+          2389,
+          889,
+          108,
+          90
+        ]
+      },
+      "candidate_adopted": false,
+      "baseline12_adopted": false,
+      "new_meta_fits": 6,
+      "outer_evaluations": 1,
+      "independent_numerical_verification": true,
+      "result": "rounds/round_021/artifacts/result.json"
+    }
+  },
+  "budget": {
+    "manager_minutes_max": 45,
+    "started_utc": "2026-11-05T00:03:09.189Z",
+    "compute_seconds_max": 1800,
+    "base_fits": 0,
+    "meta_fits_max": 6,
+    "fit_seconds_max": 120,
+    "retries": 0,
+    "threads_max": 3,
+    "compute_concurrency": 1,
+    "expected_peak_gib": 1.5,
+    "start_available_gib_min": 2.5,
+    "compute_cutoff_utc": "2026-11-05T00:43:07Z",
+    "manager_cutoff_utc": "2026-11-05T00:48:07Z",
+    "max_stage_job_seconds": 1200,
+    "feature_seconds_max": 600,
+    "actual_new_meta_fits": 6,
+    "actual_outer_evaluations": 1,
+    "actual_compute_stage_wall_seconds": 80.89952550000453,
+    "sampled_peak_family_rss_bytes": 501809152,
+    "sampled_min_available_bytes": 4358266880
+  },
+  "decision_rules": {
+    "current_round": "Round019 static control repair completed; Python raw ExitTime consistency gap blocked approval; no dynamic runs; actual performance priority restored",
+    "runtime_gate": "Model-zero only; RAM>=0.5GiB per launch; 1 sequential compute; all same-map gates required",
+    "next_gate": "Round020 SELECT-only fixed logistic fusion of saved LGBM/CatBoost/TabICL raw probabilities; Round021 confirmation if >=0.7 otherwise add current-period spatial prototype8 to same stacker",
+    "holdout": "No individual feature/label/prediction reads before exposure audit and frozen evaluation plan",
+    "ram_policy": "When RAM insufficient do other feasible independent work first, then recheck and proceed under resource and finite-attempt gates"
+  },
+  "current_task": "Completed6fits/one development evaluation/independent numerical verification; bothnewmodelsrejected",
+  "next_task": "No next execution: summarize why current performance decreased; resume only on new explicit user instruction",
+  "blockers": [
+    "User stopped further execution; not a resource or technical failure"
+  ],
+  "unresolved": [
+    "Actual-vessel CPU/CUDA probability equivalence remains unmeasured",
+    "Small synthetic equality/memory observations do not prove full-context memory reduction",
+    "Complete historical F156 pointwise equivalence remains limited to approved development lineage",
+    "Holdout known_holdout_reused=true; exposure audit unresolved; individual values not opened",
+    "No independent/official score and no actual F1>=0.7 evidence"
+  ],
+  "active_workers": [],
+  "handoff": {
+    "ready": true,
+    "next_session_launched": false,
+    "launch_receipt": "automation/receipts/round_022_launch.json",
+    "launcher": "automation/Start-NextSession.ps1",
+    "launcher_owner": "root",
+    "next_round": "round_023",
+    "pause_reason": null,
+    "authorization": "User authorizes local experiments and fresh Astra high handoffs without repeated approval",
+    "close_completed_session_requested": true,
+    "completed_session_id": "codex_ab0b4d8c_0ea3_4c23_a7b5_b98fba0b0e78",
+    "close_completed_session_status": "orca agent help exposes launch/hooks only; no structured-chat close. End current work after acceptance; manually close only completed tab if needed.",
+    "next_session_id": null,
+    "accepted_at_utc": null,
+    "note": "Ready for root-only fresh Astra launch. Receipt path pending; next manager records acceptance. No new session claimed yet."
+  },
+  "learning_status": {
+    "learner_understanding_assessed": false,
+    "technical_goal": "Static deadline/termination repair partial; dynamic and saved evidence gates unexecuted; performance next plan concretely fixed",
+    "hardware_verified": false
+  },
+  "diagnostic_result": {
+    "round": "round_020",
+    "status": "completed_implementation_incomplete_budget_exhausted",
+    "finished_utc": "2026-11-05T00:02:54.605965+00:00",
+    "source_review_approved": false,
+    "prepare_runs": 0,
+    "base_fits": 0,
+    "meta_fits": 0,
+    "outer_probability_evaluations": 0,
+    "new_micro_f1": null,
+    "candidate_adopted": false,
+    "development_goal_reached": false,
+    "independent_micro_f1": null,
+    "official_micro_f1": null,
+    "reason": "Implementation and review did not complete before frozen compute cutoff23:58:09UTC; manager deadline00:03:09UTC. No runtime performance claim.",
+    "pending": [
+      "TabICL INNER787 must validate full INNER then subset SELECT394",
+      "Implement both-reference integer TP0>=2389/TP3>=92 and historical exact-key join plus class transitions",
+      "Per-fit120s hard timeout and convergence failure",
+      "Save keyed SELECT raw probabilities for spatial comparison"
+    ],
+    "outer_label_preload": true,
+    "outer_label_preload_scope": "Reviewer/author metadata alignment read original feature NPZ y array; no OUTER probability/features/score use or candidate tuning",
+    "manager_requested_model": "gpt-6-astra",
+    "manager_requested_effort": "high",
+    "host_turn_evidence": "manager/host_turn_evidence.json",
+    "hardware_verified": false
+  },
+  "next_round_budget": {
+    "manager_minutes_max": 45,
+    "compute_minutes_max": 30,
+    "job_seconds_max": 900,
+    "production_fits_max": 8,
+    "threads_max": 3,
+    "concurrency": 1,
+    "available_ram_gib_min": 2.5,
+    "expected_peak_gib": 1.5,
+    "retries": 0,
+    "full3fold": 0,
+    "s2": 0
+  },
+  "latest_result_report": "rounds/round_022/ROUND_REPORT.md",
+  "round_completed_at_utc": "2026-11-05T02:15:00.030047+00:00",
+  "review": {
+    "source": "rounds/round_022/review/gate_approved_sources.json",
+    "final": "rounds/round_022/review/partial_gate_audit.json",
+    "scope": "partial source/model hash audit; complete saved-output score verification pending"
+  },
+  "execution_summary": {
+    "round": "round_022",
+    "status": "completed_partial_gate_budget_stop",
+    "fits_completed": 2,
+    "fits_required": 8,
+    "gate_evaluated": false,
+    "gate_pass": null,
+    "baseline_cv_micro": null,
+    "candidate_cv_micro": null,
+    "full3fold_fits": 0,
+    "s2_fits": 0,
+    "axis_rejected": false,
+    "goal_achieved": false,
+    "reason": "Fixed wall-clock cutoff before all4CV folds; not a performance rejection",
+    "next_round": "round_023",
+    "next_action": "Reuse prepared caches and reviewed source for one fixed8fit procedural replay; current runner has no resume API",
+    "prior_two_fits_preserved": true,
+    "independent_partial_audit_pass": true,
+    "finished_utc": "2026-11-05T02:15:00.030047+00:00"
+  },
+  "independent_evaluation_blockers": [
+    "No exposure-verified independent evaluation roster approved or opened"
+  ],
+  "latest_user_steering": {
+    "source": "docs/20261105_CODEX_인계_0.7_실행계획.md rev1 + explicit user resume",
+    "diagnostic_protection": {
+      "TP0": 2389,
+      "TP3": 90
+    },
+    "final_5seed_protection": {
+      "TP0": 2381,
+      "TP3": 92
+    },
+    "change_reason": "User approved policy; not a mathematical impossibility claim",
+    "scope": "S1 gate first, no S2 in round022"
+  },
+  "user_pause": {
+    "requested": false,
+    "after_round": "round_002",
+    "instruction": "Complete round_002 then pause; do not launch round_003",
+    "requested_at_utc": "2026-11-04T15:15:23.2336258Z",
+    "resume_requires_explicit_user_instruction": true,
+    "effective": false,
+    "effective_at_utc": "2026-11-04T15:30:56.5365856Z",
+    "resumed_at_utc": "2026-11-05T01:35:39.725320+00:00",
+    "resume_instruction": "User explicitly resumed approved rev1 S1 FIT internal4fold gate"
+  },
+  "latest_user_steering_before_resume": {
+    "source": "rounds/round_002/references/algorithm_variant_ideas.md",
+    "source_sha256": "75BE0FD2F451B9E4215EC2F02A8F200B8084F26145E4FE845A22C2CBA6BE91BC",
+    "review": "rounds/round_002/IDEA_REVIEW_AND_ROUND003.md",
+    "plan_explained_before_round003": true,
+    "round002_contract_unchanged": true
+  },
+  "m4_readiness": {
+    "source": "rounds/round_003/m4_readiness/readiness.json",
+    "checkpoint_exact_sha256_found": true,
+    "historical_cuda_runtime_reproduced": false,
+    "ready_for_m4_training": false,
+    "next_step": "Round020 SELECT-only fixed logistic fusion of saved LGBM/CatBoost/TabICL raw probabilities; Round021 confirmation if >=0.7 otherwise add current-period spatial prototype8 to same stacker",
+    "ready_for_bounded_synthetic_head_gate": false,
+    "actual_m4_training_executed": false,
+    "synthetic_head_numerical_checks_recorded": true,
+    "synthetic_wrapper_gate_pass": false,
+    "model_zero_saved_audit_pass": false
+  },
+  "next_manager_session": null,
+  "latest_user_steering_previous": {
+    "recorded_at_utc": "2026-11-04T17:50:55.064868+00:00",
+    "instruction": "Every round record changes from previous, current progress/improvements, next changes; launch fresh manager, confirm acceptance, close completed session and stop; repeat toward0.7",
+    "performance_guaranteed": false
+  },
+  "comparison_reference": {
+    "name": "LightGBM sqrt_macro seed42",
+    "correct": 3476,
+    "n": 5897,
+    "tp": [
+      2389,
+      889,
+      108,
+      90
+    ]
+  }
+}

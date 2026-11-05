@@ -1,0 +1,84 @@
+{
+  "utc": "2026-11-05T02:18:23.529067+00:00",
+  "manager_requested": {
+    "model": "gpt-6-astra",
+    "effort": "high"
+  },
+  "workers_requested": {
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "fork_turns": "none",
+    "tasks": [
+      "/root/round023_code",
+      "/root/round023_review"
+    ]
+  },
+  "host_turn_context": [
+    {
+      "path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T11-17-39-01a1a97f-604b-76f0-978d-3226808e5251.jsonl",
+      "session_meta": {
+        "id": "01a1a97f-604b-76f0-978d-3226808e5251",
+        "source": {
+          "subagent": {
+            "thread_spawn": {
+              "parent_thread_id": "01a1a97e-2281-7610-b1d0-ea767b333128",
+              "depth": 1,
+              "agent_path": "/root/round023_review",
+              "agent_nickname": "Socrates",
+              "agent_role": "luna_worker"
+            }
+          }
+        },
+        "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+      },
+      "utc": "2026-11-05T02:17:41.673Z",
+      "context": {
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+      }
+    },
+    {
+      "path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T11-17-27-01a1a97f-3022-79d0-89a0-c2c71f9aedf3.jsonl",
+      "session_meta": {
+        "id": "01a1a97f-3022-79d0-89a0-c2c71f9aedf3",
+        "source": {
+          "subagent": {
+            "thread_spawn": {
+              "parent_thread_id": "01a1a97e-2281-7610-b1d0-ea767b333128",
+              "depth": 1,
+              "agent_path": "/root/round023_code",
+              "agent_nickname": "Mendel",
+              "agent_role": "luna_worker"
+            }
+          }
+        },
+        "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+      },
+      "utc": "2026-11-05T02:17:28.869Z",
+      "context": {
+        "model": "gpt-6-luna",
+        "effort": "xhigh",
+        "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+      }
+    },
+    {
+      "path": "C:\\Users\\dlehs\\.codex\\sessions\\2026\\11\\05\\rollout-2026-11-05T11-16-18-01a1a97e-2281-7610-b1d0-ea767b333128.jsonl",
+      "session_meta": {
+        "id": "01a1a97e-2281-7610-b1d0-ea767b333128",
+        "source": "vscode",
+        "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+      },
+      "utc": "2026-11-05T02:16:20.425Z",
+      "context": {
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "cwd": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING"
+      }
+    }
+  ],
+  "internal_model_authentication": false,
+  "configuration_changes_runtime_model": false,
+  "host_total_slots": 4,
+  "active_workers": 2
+}
