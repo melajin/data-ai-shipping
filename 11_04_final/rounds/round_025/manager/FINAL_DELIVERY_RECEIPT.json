@@ -1,0 +1,17 @@
+﻿{
+    "audit":  "rounds/round_025/review/final_result_audit.json",
+    "review":  "rounds/round_025/review/FINAL_RESULT_REVIEW.md",
+    "utc":  "2026-11-05T04:17:11.3433224Z",
+    "final_report":  "reports/20261105_round025_FULL_STATUS_REPORT.md",
+    "completion":  "Deliver final report directly in current user chat and end work",
+    "pause_effective":  true,
+    "next_session_launched":  false,
+    "notification_to_previous_manager":  {
+                                             "request_id":  "8568757e-c78c-4864-ac5a-c6714d53cdfd",
+                                             "sent":  false,
+                                             "code":  "session_caller_not_live",
+                                             "reason":  "Previous manager chat codex_dbda3b8b_fecf_4c6c_8629_42602b4f1cdb was closed; no message sent",
+                                             "retry_attempted":  false
+                                         },
+    "audit_pass":  true
+}

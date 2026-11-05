@@ -1,0 +1,1 @@
+{"status": "paired_proxy_diagnostic_complete", "baseline_correct": 1811, "candidate_correct": 1781, "delta_correct": -30, "numeric_gate_pass": false, "full_3fold_execution_allowed": false}

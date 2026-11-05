@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-05T04:00:44.901688+00:00",
+  "stage": "supplement",
+  "argv": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_025\\code_author\\supplement_metrics.py",
+    "rounds/round_025/artifacts/gate"
+  ],
+  "hashes": {
+    "rounds/round_025/code/prepare_t5_cache.py": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+    "rounds/round_025/code/run_gate.py": "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+    "rounds/round_025/code/s1_features.py": "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+    "rounds/round_025/code/t5_rebuild.py": "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+    "rounds/round_025/configs/experiment.json": "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77",
+    "rounds/round_025/ROUND_PLAN.md": "8317be20bb81efa301cec44a29a7ad99be2d9c54c7b0115758547004501bfb1e",
+    "rounds/round_025/manager/runtime_contract.json": "d21071cfef5496e2247adc1d65b641634c1d7bca9738b3c4f0482fcc4a34831f",
+    "rounds/round_025/manager/launch.py": "0370a7811a3a6079a62e50d5634602917f78357e85683e2f13c1518184d535bf"
+  },
+  "available_bytes": 1872384000,
+  "expected_peak_bytes": 536870912,
+  "estimate_basis": "FIT3144 x304 float32 ~3.65MiB; candidate +24 ~0.29MiB; T5 closure released before S1; monthly sparse maps released; single-thread models released per fit. Expected0.5GiB is an estimate, not a measured full-run peak; hard owned RSS cap0.75GiB.",
+  "other_python": [],
+  "timeout_seconds": 180,
+  "compute_cutoff": "2026-11-05T04:20:56.007187+00:00",
+  "prior_compute_seconds": 430.9796545999998
+}

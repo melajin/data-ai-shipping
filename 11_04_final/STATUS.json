@@ -1,10 +1,10 @@
 ﻿{
     "schema_version":  1,
-    "updated_at_utc":  "2026-11-05T03:53:33.0636264Z",
+    "updated_at_utc":  "2026-11-05T04:05:20.231030+00:00",
     "objective":  "vessel-level four-class micro-F1 \u003e= 0.7 with development and independent evidence kept separate",
     "goal_status":  "active_not_achieved",
-    "current_round":  "round_024",
-    "round_status":  "round_025_running_s1_gate",
+    "current_round":  "round_025",
+    "round_status":  "completed_verified_numeric_gate_failed",
     "manager_session":  "codex_3e36ac23_5888_4421_872e_be626efc1fcf",
     "manager_model_request":  {
                                   "model":  "gpt-6.1-sol",
@@ -19,7 +19,7 @@
                                    "model":  "gpt-6-luna",
                                    "reasoning_effort":  "xhigh",
                                    "max_assistants_user":  4,
-                                   "current_runtime_assistants":  2,
+                                   "current_runtime_assistants":  0,
                                    "host_total_slots":  4
                                },
     "paths":  {
@@ -27,7 +27,7 @@
                   "raw_read_only":  "F:/문제 데이터_수정_1027",
                   "source_read_only":  "D:/repos/fishing-track-classification",
                   "prior_experiment":  "D:/repos/fishing-track-classification/coach/gpt/rank1_experiments_20261104",
-                  "round":  "rounds/round_024"
+                  "round":  "rounds/round_025"
               },
     "scores":  {
                    "evaluation_population":  "repeatedly exposed development OUTER, 5897 vessels",
@@ -40,12 +40,13 @@
                                     "source":  "Replayed in round001 on all 5897 development OUTER vessels; stored seed probabilities exact and ensemble within1e-12"
                                 },
                    "exploratory_best":  {
-                                            "name":  "six_source_mean",
-                                            "micro_f1":  0.5933525521451586,
-                                            "correct":  3499,
+                                            "name":  "documented_S0_LightGBM_plus_TabICL_equal_mean",
+                                            "micro_f1":  0.59827030693573,
+                                            "correct":  3528,
                                             "n":  5897,
                                             "adopted":  false,
-                                            "reason":  "net+2; macro declined; paired CI includes zero"
+                                            "reason":  "TP3=86\u003c90; higher documented exploratory observation, not exhaustive all-history maximum audit",
+                                            "source":  "docs/20261105_CODEX_인계_0.7_실행계획.md; reports/round025_status_context/WHOLE_SCORE_CONTEXT.md"
                                         },
                    "historical_s6_aggregate":  0.59183,
                    "independent_micro_f1":  null,
@@ -641,12 +642,70 @@
                                      "candidate_micro_f1":  null,
                                      "gate_pass":  null,
                                      "candidate_adopted":  false
-                                 }
+                                 },
+                   "round_025":  {
+                                     "round":  "round_025",
+                                     "status":  "completed_verified_numeric_gate_failed",
+                                     "started_utc":  "2026-11-05T03:40:56.007187+00:00",
+                                     "finished_utc":  "2026-11-05T04:05:20.231030+00:00",
+                                     "stage_attempts":  4,
+                                     "fit_attempts_started":  8,
+                                     "fits_completed":  8,
+                                     "fits_required":  8,
+                                     "training_retries":  0,
+                                     "wall_seconds":  432.7083778000015,
+                                     "gate_evaluated":  true,
+                                     "gate_pass":  false,
+                                     "baseline_cv_micro":  0.5760178117048346,
+                                     "candidate_cv_micro":  0.5664758269720102,
+                                     "baseline_correct":  1811,
+                                     "candidate_correct":  1781,
+                                     "n":  3144,
+                                     "paired_gain":  175,
+                                     "paired_loss":  205,
+                                     "paired_net":  -30,
+                                     "bootstrap_net_95_ci":  [
+                                                                 -69.0,
+                                                                 8.0
+                                                             ],
+                                     "full3fold_fits":  0,
+                                     "s2_fits":  0,
+                                     "new_outer_evaluations":  0,
+                                     "candidate_adopted":  false,
+                                     "independent_micro_f1":  null,
+                                     "official_micro_f1":  null,
+                                     "goal_achieved":  false,
+                                     "source_review_and_freeze_pass":  true,
+                                     "stored_result_verification":  "pass",
+                                     "model_reinference_executed":  true,
+                                     "reinference_models":  8,
+                                     "max_abs_probability_difference":  0,
+                                     "sampled_peak_family_rss_gib":  0.3064727783203125,
+                                     "sampled_min_available_gib":  1.4832534790039062,
+                                     "failure_layer":  "S1 centroid-proxy diagnostic numeric performance gate; no execution failure",
+                                     "next_action":  "User pause after round025; explicit resume required before S2 preparation or any new round"
+                                 },
+                   "historical_six_source_mean":  {
+                                                      "name":  "six_source_mean",
+                                                      "micro_f1":  0.5933525521451586,
+                                                      "correct":  3499,
+                                                      "n":  5897,
+                                                      "adopted":  false,
+                                                      "reason":  "net+2; macro declined; paired CI includes zero"
+                                                  },
+                   "latest_full_outer_training_experiment":  {
+                                                                 "round":  "round_021",
+                                                                 "candidate_correct":  3363,
+                                                                 "n":  5897,
+                                                                 "candidate_micro_f1":  0.5702899779548923,
+                                                                 "adopted":  false,
+                                                                 "source":  "rounds/round_021/ROUND_REPORT.md"
+                                                             }
                },
     "budget":  {
-                   "started_utc":  "2026-11-05T02:56:56.500389+00:00",
-                   "compute_deadline_utc":  "2026-11-05T03:36:56.500389+00:00",
-                   "manager_deadline_utc":  "2026-11-05T03:41:56.500389+00:00",
+                   "started_utc":  "2026-11-05T03:40:56.007187+00:00",
+                   "compute_deadline_utc":  "2026-11-05T04:20:56.007187+00:00",
+                   "manager_deadline_utc":  "2026-11-05T04:25:56.007187+00:00",
                    "compute_seconds_max":  1800,
                    "job_seconds_max":  900,
                    "threads_max":  1,
@@ -661,11 +720,11 @@
                    "retries":  0,
                    "full3fold":  0,
                    "s2":  0,
-                   "procedure":  "One fixed S1 8-fit replay in user-directed low-memory sequential background mode (threads=1, below-normal priority, immediate gc.collect() between steps); round022 2 fits and round023 0 fits preserved; no tuning/raw rescan"
+                   "procedure":  "One fixed Round025 replay of the Round024 S1 gate; no tuning, retry, raw rescan, full3fold, or S2"
                },
     "decision_rules":  {
-                           "current_round":  "Round024 zero training launches; frozen source review complete; external RAM admission blocked; no score or numeric gate",
-                           "next_gate":  "candidate\u003e=1833/3144 AND candidate-matched_baseline\u003e=16",
+                           "current_round":  "Round025 verified8fit; ANDnumeric gate failed; candidate not adopted",
+                           "next_gate":  "No next run while user paused; any S2 gate requires explicit resume and new frozen plan",
                            "diagnostic_protection":  {
                                                          "TP0":  2389,
                                                          "TP3":  90
@@ -678,179 +737,151 @@
                            "holdout":  "No new individual holdout/Test data access; prepared caches only",
                            "ram_policy":  "User-directed low-memory sequential background mode (del+gc.collect() after each step, threads=1, below-normal priority)"
                        },
-    "current_task":  "RAM recovered after user request; ready for fresh Sol high round025 manager",
-    "next_task":  "Fresh manager executes reviewed round025 preparation, independent Luna source review, freeze and one fixed8fit S1 comparison",
+    "current_task":  "Round025 fixed8fit and all verification completed; full Korean status report saved; user paused",
+    "next_task":  "Unexecuted proposal only: S2 preparation after explicit user resume; no automatic launch",
     "blockers":  [
-
+                     "User explicitly paused after round025; no next manager or next-round execution",
+                     "No exposure-verified independent evaluation roster approved/opened"
                  ],
     "unresolved":  [
-                       "Actual-vessel CPU/CUDA probability equivalence remains unmeasured",
-                       "Small synthetic equality/memory observations do not prove full-context memory reduction",
-                       "Complete historical F156 pointwise equivalence remains limited to approved development lineage",
-                       "Holdout known_holdout_reused=true; exposure audit unresolved; individual values not opened",
-                       "No independent/official score and no actual F1\u003e=0.7 evidence"
+                       "0.7 not achieved",
+                       "Original full-geometry S1 untested by this centroid proxy",
+                       "S2, final5seed, independent evaluation and official submission unexecuted"
                    ],
     "active_workers":  [
 
                        ],
     "handoff":  {
-                    "ready":  false,
-                    "next_session_launched":  true,
-                    "launch_receipt":  "automation/receipts/round_024_launch.json",
+                    "ready":  true,
+                    "next_session_launched":  false,
+                    "status":  "user_paused_after_round025",
+                    "next_round":  null,
+                    "launch_receipt":  null,
+                    "pause_reason":  "Explicit user stop after completed round025",
+                    "resume_requires_explicit_user_instruction":  true,
                     "launcher":  "automation/Start-NextSession.ps1",
-                    "launcher_owner":  "root",
-                    "next_round":  "round_025",
-                    "pause_reason":  null,
-                    "authorization":  "Local bounded experiments and fresh Sol high manager handoffs user-authorized; resource gates remain binding",
-                    "completed_session_id":  "codex_dbda3b8b_fecf_4c6c_8629_42602b4f1cdb",
-                    "next_session_id":  "codex_3e36ac23_5888_4421_872e_be626efc1fcf",
-                    "accepted_at_utc":  "2026-11-05T03:40:05.5735877Z",
-                    "status":  "round025_received_owner_and_sha_verified",
-                    "close_completed_session_requested":  true,
-                    "close_completed_session_status":  "No confirmed supported structured-chat close; end this session work; do not close app/unrelated tabs",
-                    "note":  "Fresh manager accepted NEXT_SESSION with SHA4C650B366FDA88DAC4F9B1854867AC8FF4C5AF39F9376B548FF3F899F97FAFC7; previous manager relinquishes execution now. No training score claimed by previous manager.",
-                    "resume_command":  "\u0026 \u0027D:/obsidian/claude/obsidian_export/DATA AI SHIPPING/11_04_final/automation/Start-NextSession.ps1\u0027 -FromRound \u0027round_024\u0027"
+                    "completed_session_id":  "codex_3e36ac23_5888_4421_872e_be626efc1fcf",
+                    "authorization":  "Previous automatic handoff overridden by latest user pause; launcher guard remains enabled"
                 },
     "learning_status":  {
+                            "technical_comparison_complete":  true,
+                            "performance_improved":  false,
                             "learner_understanding_assessed":  false,
-                            "technical_goal":  "Model comparison incomplete; source/freeze/resource/resumption controls completed",
-                            "hardware_verified":  false
+                            "hardware_verified":  false,
+                            "questions_in_report":  true
                         },
     "diagnostic_result":  {
-                              "round":  "round_024",
-                              "status":  "completed_resource_blocked_before_launch",
-                              "started_utc":  "2026-11-05T02:56:56.500389+00:00",
-                              "finished_utc":  "2026-11-05T03:28:37.795723+00:00",
-                              "stage_attempts":  0,
-                              "fit_attempts_started":  0,
-                              "fits_completed":  0,
+                              "round":  "round_025",
+                              "status":  "completed_verified_numeric_gate_failed",
+                              "started_utc":  "2026-11-05T03:40:56.007187+00:00",
+                              "finished_utc":  "2026-11-05T04:05:20.231030+00:00",
+                              "stage_attempts":  4,
+                              "fit_attempts_started":  8,
+                              "fits_completed":  8,
                               "fits_required":  8,
                               "training_retries":  0,
-                              "wall_seconds":  0,
-                              "gate_evaluated":  false,
-                              "gate_pass":  null,
-                              "baseline_cv_micro":  null,
-                              "candidate_cv_micro":  null,
+                              "wall_seconds":  432.7083778000015,
+                              "gate_evaluated":  true,
+                              "gate_pass":  false,
+                              "baseline_cv_micro":  0.5760178117048346,
+                              "candidate_cv_micro":  0.5664758269720102,
+                              "baseline_correct":  1811,
+                              "candidate_correct":  1781,
+                              "n":  3144,
+                              "paired_gain":  175,
+                              "paired_loss":  205,
+                              "paired_net":  -30,
+                              "bootstrap_net_95_ci":  [
+                                                          -69.0,
+                                                          8.0
+                                                      ],
                               "full3fold_fits":  0,
                               "s2_fits":  0,
                               "new_outer_evaluations":  0,
                               "candidate_adopted":  false,
-                              "axis_rejected":  false,
                               "independent_micro_f1":  null,
                               "official_micro_f1":  null,
                               "goal_achieved":  false,
                               "source_review_and_freeze_pass":  true,
-                              "model_reinference_executed":  false,
-                              "failure_layer":  "external system RAM admission before launcher claim or training",
-                              "next_round":  "round_025",
-                              "next_action":  "Resume only after current available RAM\u003e=1.5GiB and no independent Python; run reviewed preparation tool then separate source approval/freeze/single fixed8fit",
-                              "resource_decision":  "external_resource_constraint_no_fresh_launch",
-                              "resource_recheck":  {
-                                                       "utc":  "2026-11-05T03:22:56.5965156Z",
-                                                       "available_gib":  0.4592628479003906,
-                                                       "required_gib":  1.5,
-                                                       "expected_peak_gib":  0.5,
-                                                       "estimate_basis":  "Frozen single-thread sequential S1 with small FIT matrices and immediate T5/month/model release; full peak not measured",
-                                                       "independent_work":  [
-                                                                                "review/ADMISSION_BLOCK_AUDIT.json",
-                                                                                "manager/finalize_admission_block.py draft",
-                                                                                "review/RUN_OUTCOME_CHECKLIST.md",
-                                                                                "code_author/RESOURCE_RECOVERY_BRANCH.md"
-                                                                            ],
-                                                       "other_python":  [
-
-                                                                        ],
-                                                       "decision":  "final_stage_recheck_after_independent_work_no_polling"
-                                                   }
+                              "stored_result_verification":  "pass",
+                              "model_reinference_executed":  true,
+                              "reinference_models":  8,
+                              "max_abs_probability_difference":  0,
+                              "sampled_peak_family_rss_gib":  0.3064727783203125,
+                              "sampled_min_available_gib":  1.4832534790039062,
+                              "failure_layer":  "S1 centroid-proxy diagnostic numeric performance gate; no execution failure",
+                              "next_action":  "User pause after round025; explicit resume required before S2 preparation or any new round"
                           },
-    "next_round_budget":  {
-                              "manager_minutes_max":  45,
-                              "compute_minutes_max":  30,
-                              "job_seconds_max":  900,
-                              "production_fits_max":  8,
-                              "threads_max":  1,
-                              "concurrency":  1,
-                              "available_ram_gib_min":  1.5,
-                              "expected_peak_gib":  0.5,
-                              "retries":  0,
-                              "full3fold":  0,
-                              "s2":  0,
-                              "per_stage_available_ram_gib_min":  1.0,
-                              "owned_rss_limit_gib":  0.75,
-                              "emergency_min_free_gib":  0.5,
-                              "below_normal_priority":  true
-                          },
-    "latest_result_report":  "rounds/round_024/ROUND_REPORT.md",
-    "round_completed_at_utc":  "2026-11-05T03:28:37.795723+00:00",
+    "next_round_budget":  null,
+    "latest_result_report":  "rounds/round_025/ROUND_REPORT.md",
+    "round_completed_at_utc":  "2026-11-05T04:05:20.231030+00:00",
     "review":  {
-                   "source":  "rounds/round_024/review/gate_approved_sources.json",
-                   "final":  "rounds/round_024/review/ADMISSION_BLOCK_AUDIT.json",
-                   "scope":  "Static source/cache/freeze/zero-launch audit; no model or performance validation"
+                   "source":  "rounds/round_025/review/gate_approved_sources.json",
+                   "saved_arrays":  "rounds/round_025/logs/verify_gate.stdout.txt",
+                   "saved_models":  "rounds/round_025/review/saved_output_verification.json",
+                   "final":  "rounds/round_025/review/final_result_audit.json",
+                   "scope":  "source review and saved FIT output/reinference audit; not independent-data evaluation"
                },
     "execution_summary":  {
-                              "round":  "round_024",
-                              "status":  "completed_resource_blocked_before_launch",
-                              "started_utc":  "2026-11-05T02:56:56.500389+00:00",
-                              "finished_utc":  "2026-11-05T03:28:37.795723+00:00",
-                              "stage_attempts":  0,
-                              "fit_attempts_started":  0,
-                              "fits_completed":  0,
+                              "round":  "round_025",
+                              "status":  "completed_verified_numeric_gate_failed",
+                              "started_utc":  "2026-11-05T03:40:56.007187+00:00",
+                              "finished_utc":  "2026-11-05T04:05:20.231030+00:00",
+                              "stage_attempts":  4,
+                              "fit_attempts_started":  8,
+                              "fits_completed":  8,
                               "fits_required":  8,
                               "training_retries":  0,
-                              "wall_seconds":  0,
-                              "gate_evaluated":  false,
-                              "gate_pass":  null,
-                              "baseline_cv_micro":  null,
-                              "candidate_cv_micro":  null,
+                              "wall_seconds":  432.7083778000015,
+                              "gate_evaluated":  true,
+                              "gate_pass":  false,
+                              "baseline_cv_micro":  0.5760178117048346,
+                              "candidate_cv_micro":  0.5664758269720102,
+                              "baseline_correct":  1811,
+                              "candidate_correct":  1781,
+                              "n":  3144,
+                              "paired_gain":  175,
+                              "paired_loss":  205,
+                              "paired_net":  -30,
+                              "bootstrap_net_95_ci":  [
+                                                          -69.0,
+                                                          8.0
+                                                      ],
                               "full3fold_fits":  0,
                               "s2_fits":  0,
                               "new_outer_evaluations":  0,
                               "candidate_adopted":  false,
-                              "axis_rejected":  false,
                               "independent_micro_f1":  null,
                               "official_micro_f1":  null,
                               "goal_achieved":  false,
                               "source_review_and_freeze_pass":  true,
-                              "model_reinference_executed":  false,
-                              "failure_layer":  "external system RAM admission before launcher claim or training",
-                              "next_round":  "round_025",
-                              "next_action":  "Resume only after current available RAM\u003e=1.5GiB and no independent Python; run reviewed preparation tool then separate source approval/freeze/single fixed8fit",
-                              "resource_decision":  "external_resource_constraint_no_fresh_launch",
-                              "resource_recheck":  {
-                                                       "utc":  "2026-11-05T03:22:56.5965156Z",
-                                                       "available_gib":  0.4592628479003906,
-                                                       "required_gib":  1.5,
-                                                       "expected_peak_gib":  0.5,
-                                                       "estimate_basis":  "Frozen single-thread sequential S1 with small FIT matrices and immediate T5/month/model release; full peak not measured",
-                                                       "independent_work":  [
-                                                                                "review/ADMISSION_BLOCK_AUDIT.json",
-                                                                                "manager/finalize_admission_block.py draft",
-                                                                                "review/RUN_OUTCOME_CHECKLIST.md",
-                                                                                "code_author/RESOURCE_RECOVERY_BRANCH.md"
-                                                                            ],
-                                                       "other_python":  [
-
-                                                                        ],
-                                                       "decision":  "final_stage_recheck_after_independent_work_no_polling"
-                                                   }
+                              "stored_result_verification":  "pass",
+                              "model_reinference_executed":  true,
+                              "reinference_models":  8,
+                              "max_abs_probability_difference":  0,
+                              "sampled_peak_family_rss_gib":  0.3064727783203125,
+                              "sampled_min_available_gib":  1.4832534790039062,
+                              "failure_layer":  "S1 centroid-proxy diagnostic numeric performance gate; no execution failure",
+                              "next_action":  "User pause after round025; explicit resume required before S2 preparation or any new round"
                           },
     "independent_evaluation_blockers":  [
                                             "No exposure-verified independent evaluation roster approved or opened"
                                         ],
     "latest_user_steering":  {
-                                 "utc":  "2026-11-05T02:58:41.784949+00:00",
-                                 "text":  "model 6.1 sol high로 변경",
-                                 "scope":  "manager model; Luna xhigh workers unchanged"
+                                 "instruction":  "Finish round025, report full micro-F1/status, then pause",
+                                 "source":  "automation/recovery/round025_finish_then_report_directive.md",
+                                 "ack":  "rounds/round_025/manager/USER_FINAL_ROUND_ACK.json"
                              },
     "user_pause":  {
                        "requested":  true,
-                       "effective":  false,
+                       "effective":  true,
                        "after_round":  "round_025",
                        "requested_at_utc":  "2026-11-05T03:44:38.4335670Z",
                        "instruction":  "Complete round025, full micro-F1/status report, then pause without round026 or fresh manager",
                        "resume_requires_explicit_user_instruction":  true,
                        "directive":  "automation/recovery/round025_finish_then_report_directive.md",
-                       "ack":  "rounds/round_025/manager/USER_FINAL_ROUND_ACK.json"
+                       "ack":  "rounds/round_025/manager/USER_FINAL_ROUND_ACK.json",
+                       "effective_at_utc":  "2026-11-05T04:05:20.231030+00:00"
                    },
     "latest_user_steering_before_resume":  {
                                                "source":  "rounds/round_002/references/algorithm_variant_ideas.md",
@@ -925,9 +956,9 @@
                                        },
     "manager_intake":  {
                            "round":  "round_025",
-                           "state":  "source_approved_frozen_single_stage_running",
-                           "fits_started":  0,
-                           "fits_completed":  0,
+                           "state":  "completed_verified_numeric_gate_failed",
+                           "fits_started":  8,
+                           "fits_completed":  8,
                            "setup_completed":  true,
                            "independent_review_complete":  true,
                            "frozen":  true,
@@ -951,7 +982,7 @@
                                },
     "resource_recovery":  {
                               "utc":  "2026-11-05T03:38:52.8961425Z",
-                              "available_gib":  3.4223747253417969,
+                              "available_gib":  3.422374725341797,
                               "minimum_entry_available_gib":  1.5,
                               "expected_owned_peak_gib":  0.5,
                               "expected_peak_basis":  "Frozen low-memory sequential FIT3144 pipeline; original full-run peak not measured",
@@ -964,5 +995,12 @@
                               "processes_terminated":  0,
                               "memory_not_reserved":  true,
                               "recheck_before_every_stage":  true
-                          }
+                          },
+    "full_status_report":  "reports/20261105_round025_FULL_STATUS_REPORT.md",
+    "documentation_revision":  {
+                                   "utc":  "2026-11-05T04:10:45.0470494Z",
+                                   "instruction":  "보고 쉽고 자세하게",
+                                   "result":  "Readable Korean overview and detailed explanation; measured metrics unchanged",
+                                   "technical_preserved":  "reports/round025_status_context/TECHNICAL_DETAIL_20261105.md"
+                               }
 }

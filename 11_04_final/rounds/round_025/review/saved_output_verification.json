@@ -1,0 +1,85 @@
+{
+  "status": "pass",
+  "verified_utc": "2026-11-05T04:00:32.832851+00:00",
+  "fold0_feature_input_sha256_match": true,
+  "fit_rows_used": 3144,
+  "models_reloaded_and_reinferred": 8,
+  "max_abs_proba_diff": 0.0,
+  "tolerance": 1e-07,
+  "validation_partition_complete": true,
+  "fold_checks": [
+    {
+      "fold": 0,
+      "variant": "baseline",
+      "validation_rows": 786,
+      "feature_columns": 304,
+      "model_sha256_match": true,
+      "max_abs_proba_diff": 0.0,
+      "argmax_exact_match": true
+    },
+    {
+      "fold": 0,
+      "variant": "candidate",
+      "validation_rows": 786,
+      "feature_columns": 328,
+      "model_sha256_match": true,
+      "max_abs_proba_diff": 0.0,
+      "argmax_exact_match": true
+    },
+    {
+      "fold": 1,
+      "variant": "baseline",
+      "validation_rows": 786,
+      "feature_columns": 304,
+      "model_sha256_match": true,
+      "max_abs_proba_diff": 0.0,
+      "argmax_exact_match": true
+    },
+    {
+      "fold": 1,
+      "variant": "candidate",
+      "validation_rows": 786,
+      "feature_columns": 328,
+      "model_sha256_match": true,
+      "max_abs_proba_diff": 0.0,
+      "argmax_exact_match": true
+    },
+    {
+      "fold": 2,
+      "variant": "baseline",
+      "validation_rows": 786,
+      "feature_columns": 304,
+      "model_sha256_match": true,
+      "max_abs_proba_diff": 0.0,
+      "argmax_exact_match": true
+    },
+    {
+      "fold": 2,
+      "variant": "candidate",
+      "validation_rows": 786,
+      "feature_columns": 328,
+      "model_sha256_match": true,
+      "max_abs_proba_diff": 0.0,
+      "argmax_exact_match": true
+    },
+    {
+      "fold": 3,
+      "variant": "baseline",
+      "validation_rows": 786,
+      "feature_columns": 304,
+      "model_sha256_match": true,
+      "max_abs_proba_diff": 0.0,
+      "argmax_exact_match": true
+    },
+    {
+      "fold": 3,
+      "variant": "candidate",
+      "validation_rows": 786,
+      "feature_columns": 328,
+      "model_sha256_match": true,
+      "max_abs_proba_diff": 0.0,
+      "argmax_exact_match": true
+    }
+  ],
+  "errors": []
+}

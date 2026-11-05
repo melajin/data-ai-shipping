@@ -1,0 +1,1334 @@
+{
+  "status": "paired_proxy_diagnostic_complete",
+  "scope": "fold0 FIT internal 4-fold CV; reconstructed label-based T5 and centroid-based S1 profiles from current 2026 only",
+  "exact_original_s1_gate": false,
+  "scope_change": "S1 positions are hourly centroid proxies rather than original occupied-geometry cells; do not claim the original S1 hypothesis was tested exactly",
+  "full_3fold_execution_allowed": false,
+  "full_execution_block_reason": "source representation is a bounded centroid proxy; this diagnostic does not authorize the exact original full S1 run",
+  "cv": {
+    "folds": 4,
+    "seed": 42,
+    "shuffle": true,
+    "fit_rows": 3144,
+    "fold_metrics": [
+      {
+        "fold": 0,
+        "train_rows": 2358,
+        "validation_rows": 786,
+        "validation_labels_passed_to_feature_builders": false,
+        "t5_rebuilt_from_cv_train_labels": true,
+        "s1_grid_counts_cv_train_only": true,
+        "s1_fit_queries_leave_self_out": true,
+        "models": {
+          "baseline": {
+            "n": 786,
+            "correct": 461,
+            "micro_f1": 0.5865139949109415,
+            "macro_f1": 0.5223603574835681,
+            "support": [
+              389,
+              269,
+              112,
+              16
+            ],
+            "tp": [
+              331,
+              104,
+              14,
+              12
+            ],
+            "fp": [
+              231,
+              79,
+              10,
+              5
+            ],
+            "fn": [
+              58,
+              165,
+              98,
+              4
+            ],
+            "precision": [
+              0.5889679715302492,
+              0.5683060109289617,
+              0.5833333333333334,
+              0.7058823529411765
+            ],
+            "recall": [
+              0.8508997429305912,
+              0.38661710037174724,
+              0.125,
+              0.75
+            ],
+            "class_f1": [
+              0.6961093585699264,
+              0.46017699115044247,
+              0.20588235294117646,
+              0.7272727272727272
+            ],
+            "confusion": [
+              [
+                331,
+                54,
+                3,
+                1
+              ],
+              [
+                155,
+                104,
+                7,
+                3
+              ],
+              [
+                75,
+                22,
+                14,
+                1
+              ],
+              [
+                1,
+                3,
+                0,
+                12
+              ]
+            ]
+          },
+          "candidate": {
+            "n": 786,
+            "correct": 446,
+            "micro_f1": 0.5674300254452926,
+            "macro_f1": 0.5158221491078222,
+            "support": [
+              389,
+              269,
+              112,
+              16
+            ],
+            "tp": [
+              315,
+              104,
+              15,
+              12
+            ],
+            "fp": [
+              227,
+              96,
+              12,
+              5
+            ],
+            "fn": [
+              74,
+              165,
+              97,
+              4
+            ],
+            "precision": [
+              0.5811808118081181,
+              0.52,
+              0.5555555555555556,
+              0.7058823529411765
+            ],
+            "recall": [
+              0.8097686375321337,
+              0.38661710037174724,
+              0.13392857142857142,
+              0.75
+            ],
+            "class_f1": [
+              0.6766917293233083,
+              0.44349680170575695,
+              0.2158273381294964,
+              0.7272727272727272
+            ],
+            "confusion": [
+              [
+                315,
+                68,
+                5,
+                1
+              ],
+              [
+                155,
+                104,
+                7,
+                3
+              ],
+              [
+                71,
+                25,
+                15,
+                1
+              ],
+              [
+                1,
+                3,
+                0,
+                12
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "fold": 1,
+        "train_rows": 2358,
+        "validation_rows": 786,
+        "validation_labels_passed_to_feature_builders": false,
+        "t5_rebuilt_from_cv_train_labels": true,
+        "s1_grid_counts_cv_train_only": true,
+        "s1_fit_queries_leave_self_out": true,
+        "models": {
+          "baseline": {
+            "n": 786,
+            "correct": 449,
+            "micro_f1": 0.5712468193384224,
+            "macro_f1": 0.44467932598929677,
+            "support": [
+              389,
+              269,
+              111,
+              17
+            ],
+            "tp": [
+              304,
+              127,
+              12,
+              6
+            ],
+            "fp": [
+              198,
+              121,
+              13,
+              5
+            ],
+            "fn": [
+              85,
+              142,
+              99,
+              11
+            ],
+            "precision": [
+              0.6055776892430279,
+              0.5120967741935484,
+              0.48,
+              0.5454545454545454
+            ],
+            "recall": [
+              0.781491002570694,
+              0.4721189591078067,
+              0.10810810810810811,
+              0.35294117647058826
+            ],
+            "class_f1": [
+              0.6823793490460156,
+              0.49129593810444877,
+              0.17647058823529413,
+              0.42857142857142855
+            ],
+            "confusion": [
+              [
+                304,
+                79,
+                6,
+                0
+              ],
+              [
+                133,
+                127,
+                7,
+                2
+              ],
+              [
+                64,
+                32,
+                12,
+                3
+              ],
+              [
+                1,
+                10,
+                0,
+                6
+              ]
+            ]
+          },
+          "candidate": {
+            "n": 786,
+            "correct": 445,
+            "micro_f1": 0.5661577608142494,
+            "macro_f1": 0.46106264036914535,
+            "support": [
+              389,
+              269,
+              111,
+              17
+            ],
+            "tp": [
+              305,
+              117,
+              16,
+              7
+            ],
+            "fp": [
+              213,
+              114,
+              8,
+              6
+            ],
+            "fn": [
+              84,
+              152,
+              95,
+              10
+            ],
+            "precision": [
+              0.5888030888030888,
+              0.5064935064935064,
+              0.6666666666666666,
+              0.5384615384615384
+            ],
+            "recall": [
+              0.7840616966580977,
+              0.4349442379182156,
+              0.14414414414414414,
+              0.4117647058823529
+            ],
+            "class_f1": [
+              0.6725468577728776,
+              0.46799999999999997,
+              0.23703703703703705,
+              0.4666666666666667
+            ],
+            "confusion": [
+              [
+                305,
+                80,
+                4,
+                0
+              ],
+              [
+                146,
+                117,
+                3,
+                3
+              ],
+              [
+                66,
+                26,
+                16,
+                3
+              ],
+              [
+                1,
+                8,
+                1,
+                7
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_rows": 2358,
+        "validation_rows": 786,
+        "validation_labels_passed_to_feature_builders": false,
+        "t5_rebuilt_from_cv_train_labels": true,
+        "s1_grid_counts_cv_train_only": true,
+        "s1_fit_queries_leave_self_out": true,
+        "models": {
+          "baseline": {
+            "n": 786,
+            "correct": 453,
+            "micro_f1": 0.5763358778625954,
+            "macro_f1": 0.4854161863292118,
+            "support": [
+              389,
+              269,
+              111,
+              17
+            ],
+            "tp": [
+              311,
+              122,
+              12,
+              8
+            ],
+            "fp": [
+              209,
+              110,
+              12,
+              2
+            ],
+            "fn": [
+              78,
+              147,
+              99,
+              9
+            ],
+            "precision": [
+              0.5980769230769231,
+              0.5258620689655172,
+              0.5,
+              0.8
+            ],
+            "recall": [
+              0.7994858611825193,
+              0.45353159851301117,
+              0.10810810810810811,
+              0.47058823529411764
+            ],
+            "class_f1": [
+              0.6842684268426842,
+              0.48702594810379246,
+              0.17777777777777778,
+              0.5925925925925927
+            ],
+            "confusion": [
+              [
+                311,
+                73,
+                5,
+                0
+              ],
+              [
+                140,
+                122,
+                6,
+                1
+              ],
+              [
+                64,
+                34,
+                12,
+                1
+              ],
+              [
+                5,
+                3,
+                1,
+                8
+              ]
+            ]
+          },
+          "candidate": {
+            "n": 786,
+            "correct": 459,
+            "micro_f1": 0.583969465648855,
+            "macro_f1": 0.4995009487535558,
+            "support": [
+              389,
+              269,
+              111,
+              17
+            ],
+            "tp": [
+              307,
+              129,
+              15,
+              8
+            ],
+            "fp": [
+              200,
+              109,
+              16,
+              2
+            ],
+            "fn": [
+              82,
+              140,
+              96,
+              9
+            ],
+            "precision": [
+              0.6055226824457594,
+              0.542016806722689,
+              0.4838709677419355,
+              0.8
+            ],
+            "recall": [
+              0.7892030848329049,
+              0.4795539033457249,
+              0.13513513513513514,
+              0.47058823529411764
+            ],
+            "class_f1": [
+              0.6852678571428571,
+              0.5088757396449705,
+              0.21126760563380287,
+              0.5925925925925927
+            ],
+            "confusion": [
+              [
+                307,
+                76,
+                6,
+                0
+              ],
+              [
+                130,
+                129,
+                9,
+                1
+              ],
+              [
+                66,
+                29,
+                15,
+                1
+              ],
+              [
+                4,
+                4,
+                1,
+                8
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_rows": 2358,
+        "validation_rows": 786,
+        "validation_labels_passed_to_feature_builders": false,
+        "t5_rebuilt_from_cv_train_labels": true,
+        "s1_grid_counts_cv_train_only": true,
+        "s1_fit_queries_leave_self_out": true,
+        "models": {
+          "baseline": {
+            "n": 786,
+            "correct": 448,
+            "micro_f1": 0.5699745547073791,
+            "macro_f1": 0.5047727553443128,
+            "support": [
+              389,
+              268,
+              112,
+              17
+            ],
+            "tp": [
+              302,
+              120,
+              16,
+              10
+            ],
+            "fp": [
+              210,
+              103,
+              21,
+              4
+            ],
+            "fn": [
+              87,
+              148,
+              96,
+              7
+            ],
+            "precision": [
+              0.58984375,
+              0.5381165919282511,
+              0.43243243243243246,
+              0.7142857142857143
+            ],
+            "recall": [
+              0.7763496143958869,
+              0.44776119402985076,
+              0.14285714285714285,
+              0.5882352941176471
+            ],
+            "class_f1": [
+              0.6703662597114318,
+              0.4887983706720978,
+              0.21476510067114096,
+              0.6451612903225806
+            ],
+            "confusion": [
+              [
+                302,
+                76,
+                9,
+                2
+              ],
+              [
+                135,
+                120,
+                11,
+                2
+              ],
+              [
+                74,
+                22,
+                16,
+                0
+              ],
+              [
+                1,
+                5,
+                1,
+                10
+              ]
+            ]
+          },
+          "candidate": {
+            "n": 786,
+            "correct": 431,
+            "micro_f1": 0.5483460559796438,
+            "macro_f1": 0.49195679828907923,
+            "support": [
+              389,
+              268,
+              112,
+              17
+            ],
+            "tp": [
+              283,
+              123,
+              15,
+              10
+            ],
+            "fp": [
+              204,
+              121,
+              26,
+              4
+            ],
+            "fn": [
+              106,
+              145,
+              97,
+              7
+            ],
+            "precision": [
+              0.5811088295687885,
+              0.5040983606557377,
+              0.36585365853658536,
+              0.7142857142857143
+            ],
+            "recall": [
+              0.7275064267352185,
+              0.458955223880597,
+              0.13392857142857142,
+              0.5882352941176471
+            ],
+            "class_f1": [
+              0.6461187214611872,
+              0.48046875,
+              0.19607843137254904,
+              0.6451612903225806
+            ],
+            "confusion": [
+              [
+                283,
+                89,
+                15,
+                2
+              ],
+              [
+                133,
+                123,
+                10,
+                2
+              ],
+              [
+                70,
+                27,
+                15,
+                0
+              ],
+              [
+                1,
+                5,
+                1,
+                10
+              ]
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "aggregate": {
+    "baseline": {
+      "n": 3144,
+      "correct": 1811,
+      "micro_f1": 0.5760178117048346,
+      "macro_f1": 0.49128866838911256,
+      "support": [
+        1556,
+        1075,
+        446,
+        67
+      ],
+      "tp": [
+        1248,
+        473,
+        54,
+        36
+      ],
+      "fp": [
+        848,
+        413,
+        56,
+        16
+      ],
+      "fn": [
+        308,
+        602,
+        392,
+        31
+      ],
+      "precision": [
+        0.5954198473282443,
+        0.5338600451467269,
+        0.4909090909090909,
+        0.6923076923076923
+      ],
+      "recall": [
+        0.8020565552699229,
+        0.44,
+        0.1210762331838565,
+        0.5373134328358209
+      ],
+      "class_f1": [
+        0.683461117196057,
+        0.4824069352371239,
+        0.19424460431654678,
+        0.6050420168067226
+      ],
+      "confusion": [
+        [
+          1248,
+          282,
+          23,
+          3
+        ],
+        [
+          563,
+          473,
+          31,
+          8
+        ],
+        [
+          277,
+          110,
+          54,
+          5
+        ],
+        [
+          8,
+          21,
+          2,
+          36
+        ]
+      ]
+    },
+    "candidate": {
+      "n": 3144,
+      "correct": 1781,
+      "micro_f1": 0.5664758269720102,
+      "macro_f1": 0.4930491843312701,
+      "support": [
+        1556,
+        1075,
+        446,
+        67
+      ],
+      "tp": [
+        1210,
+        473,
+        61,
+        37
+      ],
+      "fp": [
+        844,
+        440,
+        62,
+        17
+      ],
+      "fn": [
+        346,
+        602,
+        385,
+        30
+      ],
+      "precision": [
+        0.5890944498539435,
+        0.5180722891566265,
+        0.4959349593495935,
+        0.6851851851851852
+      ],
+      "recall": [
+        0.7776349614395887,
+        0.44,
+        0.1367713004484305,
+        0.5522388059701493
+      ],
+      "class_f1": [
+        0.6703601108033241,
+        0.4758551307847083,
+        0.21441124780316345,
+        0.6115702479338844
+      ],
+      "confusion": [
+        [
+          1210,
+          313,
+          30,
+          3
+        ],
+        [
+          564,
+          473,
+          29,
+          9
+        ],
+        [
+          273,
+          107,
+          61,
+          5
+        ],
+        [
+          7,
+          20,
+          3,
+          37
+        ]
+      ]
+    }
+  },
+  "candidate_minus_matched_baseline_correct": -30,
+  "candidate_minus_fixed_1817_correct": -36,
+  "gate_thresholds": {
+    "fixed_reference_correct": 1817,
+    "minimum_candidate_correct": 1833,
+    "minimum_gain_over_matched_baseline": 16,
+    "diagnostic_numeric_gate_pass": false
+  },
+  "feature_schema": {
+    "baseline_columns": 304,
+    "candidate_columns": 328,
+    "s1_columns": [
+      "s1_full_r001_c0",
+      "s1_full_r001_c1",
+      "s1_full_r001_c2",
+      "s1_full_r001_c3",
+      "s1_month_range_r001_c0",
+      "s1_month_range_r001_c1",
+      "s1_month_range_r001_c2",
+      "s1_month_range_r001_c3",
+      "s1_full_r005_c0",
+      "s1_full_r005_c1",
+      "s1_full_r005_c2",
+      "s1_full_r005_c3",
+      "s1_month_range_r005_c0",
+      "s1_month_range_r005_c1",
+      "s1_month_range_r005_c2",
+      "s1_month_range_r005_c3",
+      "s1_full_r010_c0",
+      "s1_full_r010_c1",
+      "s1_full_r010_c2",
+      "s1_full_r010_c3",
+      "s1_month_range_r010_c0",
+      "s1_month_range_r010_c1",
+      "s1_month_range_r010_c2",
+      "s1_month_range_r010_c3"
+    ],
+    "s1_alpha": 5.0,
+    "resolutions_deg": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "s1_donor_count_semantics": "one vote per FIT vessel per occupied cell and period",
+    "s1_query_weight_semantics": "observed record/time-bin profile weight; not dwell time",
+    "s1_laplace": "(cell class votes + 5)/(cell votes total + 4*5)",
+    "s1_empty_cell_fallback": "coarser cell posterior, then leave-self-out CV-train global prior",
+    "s1_t5_columns_replaced": [
+      "t5_main_연안복합",
+      "t5_main_자망",
+      "t5_main_통발",
+      "t5_main_채낚기연승낚시",
+      "t5_month_연안복합",
+      "t5_month_자망",
+      "t5_month_통발",
+      "t5_month_채낚기연승낚시",
+      "t5_fine_grid_ok_ratio",
+      "t5_log1p_fishing_rows"
+    ]
+  },
+  "fit_records": [
+    {
+      "fold": 0,
+      "variant": "baseline",
+      "fit_seconds": 28.528708200006804,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_0_baseline.joblib",
+      "model_sha256": "b0434267175b8c0ce5106b218d36ec30a41318de81a99dc24321474276b94f57",
+      "feature_count": 304
+    },
+    {
+      "fold": 0,
+      "variant": "candidate",
+      "fit_seconds": 35.53191109999898,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_0_candidate.joblib",
+      "model_sha256": "8d562f0f5c2ab1fd3bc0f151930f8ce610bef922a407c682c53d0d7e9623f11b",
+      "feature_count": 328
+    },
+    {
+      "fold": 1,
+      "variant": "baseline",
+      "fit_seconds": 31.021995099996275,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_1_baseline.joblib",
+      "model_sha256": "4dcc27ad2383336a6616b5b2f544ac7a7f4296ca3aff638e7541a5695794ceed",
+      "feature_count": 304
+    },
+    {
+      "fold": 1,
+      "variant": "candidate",
+      "fit_seconds": 30.26237250000122,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_1_candidate.joblib",
+      "model_sha256": "eb0273eb46249b18b0fdc633cb4e462424a438ac1ad1a5eea469603871ac339b",
+      "feature_count": 328
+    },
+    {
+      "fold": 2,
+      "variant": "baseline",
+      "fit_seconds": 29.65757890000532,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_2_baseline.joblib",
+      "model_sha256": "96f067a09a615fde188cb74c1e4319f0dab536fc167452afe58c1685bd795f1d",
+      "feature_count": 304
+    },
+    {
+      "fold": 2,
+      "variant": "candidate",
+      "fit_seconds": 30.40861369999766,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_2_candidate.joblib",
+      "model_sha256": "f2f5e6c0dd7d8ac7f65a6d63f2fd7ef5340559cc3d1f39ccc94f359d3087d63c",
+      "feature_count": 328
+    },
+    {
+      "fold": 3,
+      "variant": "baseline",
+      "fit_seconds": 29.17877900000167,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_3_baseline.joblib",
+      "model_sha256": "47132e2c1b5182a8f4c6739300f980a813ec9c8a19f0ac541abe0c626c49a3be",
+      "feature_count": 304
+    },
+    {
+      "fold": 3,
+      "variant": "candidate",
+      "fit_seconds": 32.14250140000513,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_3_candidate.joblib",
+      "model_sha256": "478ff099908afa914e47230251cf708b2ec6715b7c514af2bba37fbb7ee42a22",
+      "feature_count": 328
+    }
+  ],
+  "resource_checks": [
+    {
+      "timestamp_utc": "2026-11-05T03:53:19.220099+00:00",
+      "stage": "fold0_fit_input_load_and_t5_cache_load",
+      "available_bytes": 2751455232,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23498752,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4370432,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4362240,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:54:16.758979+00:00",
+      "stage": "cv0_s1_feature_build",
+      "available_bytes": 2427842560,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23486464,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4358144,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4349952,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:54:33.449546+00:00",
+      "stage": "cv0_baseline_fit",
+      "available_bytes": 2540015616,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23486464,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4358144,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4349952,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:55:04.299444+00:00",
+      "stage": "cv0_candidate_fit",
+      "available_bytes": 2288246784,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23486464,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4358144,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4349952,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:55:42.026545+00:00",
+      "stage": "cv1_s1_feature_build",
+      "available_bytes": 2353905664,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23461888,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4358144,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4349952,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:55:57.270544+00:00",
+      "stage": "cv1_baseline_fit",
+      "available_bytes": 2209173504,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23461888,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4358144,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4349952,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:56:30.248071+00:00",
+      "stage": "cv1_candidate_fit",
+      "available_bytes": 2131206144,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23461888,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4358144,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4349952,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:57:02.628430+00:00",
+      "stage": "cv2_s1_feature_build",
+      "available_bytes": 1955606528,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23461888,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4358144,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4349952,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:57:19.633303+00:00",
+      "stage": "cv2_baseline_fit",
+      "available_bytes": 1615585280,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23461888,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4358144,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4349952,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:57:51.347689+00:00",
+      "stage": "cv2_candidate_fit",
+      "available_bytes": 1965539328,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23461888,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4358144,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4349952,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:58:23.576722+00:00",
+      "stage": "cv3_s1_feature_build",
+      "available_bytes": 2028994560,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23592960,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4481024,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4452352,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:58:38.186205+00:00",
+      "stage": "cv3_baseline_fit",
+      "available_bytes": 2072477696,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23592960,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4481024,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4452352,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T03:59:09.275469+00:00",
+      "stage": "cv3_candidate_fit",
+      "available_bytes": 2026512384,
+      "expected_peak_bytes": 536870912,
+      "minimum_free_bytes": 1073741824,
+      "other_python_processes": [
+        {
+          "pid": 12264,
+          "name": "python.exe",
+          "rss_bytes": 23592960,
+          "create_time": 1793850773.70446
+        },
+        {
+          "pid": 17716,
+          "name": "python.exe",
+          "rss_bytes": 4481024,
+          "create_time": 1793850776.0369267
+        },
+        {
+          "pid": 34000,
+          "name": "python.exe",
+          "rss_bytes": 4452352,
+          "create_time": 1793850773.687296
+        }
+      ],
+      "allowed": true,
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    }
+  ],
+  "input_hashes": {
+    "fold0_features_npz": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+    "s3_hourly_parquet": "7f1d433ce06963cdfa0ff131ba7bb21192846ed4b859a7d48ebc200bff81b1eb",
+    "s1_profile_cache": "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+    "s1_profile_manifest": "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+    "t5_profile_cache": "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+    "t5_profile_manifest": "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+    "t5_rebuild_code": "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+    "s1_feature_code": "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+    "run_gate_code": "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+    "config": "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77"
+  },
+  "environment": {
+    "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.2.5",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0",
+    "pyarrow": null
+  },
+  "ordered_fit_roster_sha256": "6fe0892d85ef7aa0b574708d2c0517fdcbb82671aa0cb696a3a222447ad65e66",
+  "independent_data_evaluation": false,
+  "official_score": null,
+  "hardware_verified": false,
+  "learning_understanding_assessed": false,
+  "finished_at_utc": "2026-11-05T03:59:42.185533+00:00"
+}

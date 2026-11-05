@@ -1,0 +1,77 @@
+{
+  "audit_date": "2026-11-05",
+  "result": "pass_with_scope_limits",
+  "blocking_findings": [],
+  "report_metrics_match_saved_records": true,
+  "findings": {
+    "round": "round_025",
+    "scope": "FIT 3144 internal 4-fold CV; centroid-based S1 proxy diagnostic",
+    "baseline": {"correct": 1811, "n": 3144, "micro_f1": 0.5760178117048346},
+    "candidate": {"correct": 1781, "n": 3144, "micro_f1": 0.5664758269720102},
+    "paired_gain": 175,
+    "paired_loss": 205,
+    "paired_net": -30,
+    "bootstrap_net_95_ci": [-69, 8],
+    "numeric_gate": {"candidate_minimum": 1833, "minimum_gain": 16, "passed": false},
+    "class_tp_delta": [-38, 0, 7, 1],
+    "fits_completed_required": [8, 8],
+    "saved_output_verification": {"status": "pass", "models_reloaded": 8, "max_abs_probability_difference": 0.0},
+    "launch_stages_exit_zero": ["s1_gate", "verify_gate", "reinfer", "supplement"],
+    "wall_seconds": 432.7083778000015,
+    "peak_family_rss_bytes": 329072640,
+    "minimum_available_ram_bytes": 1592631296,
+    "whole_outer_new_evaluations": 0,
+    "current_adopted_whole_score": {"correct": 3497, "n": 5897, "micro_f1": 0.5930133966423605},
+    "unadopted_historical_candidate": {"correct": 3528, "n": 5897, "micro_f1": 0.59827030693573, "protected_class_3_tp": 86, "minimum_protected_class_3_tp": 90},
+    "latest_round021_candidate": {"correct": 3363, "n": 5897, "micro_f1": 0.5702899779548923},
+    "independent_score": null,
+    "official_score": null,
+    "cause_or_global_impossibility_claim": false
+  },
+  "source_freeze": {
+    "approved": true,
+    "frozen_path_count": 20,
+    "approval_sha256_matches_freeze_record": true,
+    "freeze_map_matches_approval": true,
+    "binary_artifact_rehash_performed": false
+  },
+  "process_count_qualification": {
+    "preflight_independent_python_lists_empty": true,
+    "verifier_stdout_total_python_process_count": 3,
+    "interpreted_as_three_independent_jobs": false
+  },
+  "pause_state": {
+    "current_round": "round_025",
+    "round_status": "completed_verified_numeric_gate_failed",
+    "handoff_ready": true,
+    "next_session_launched": false,
+    "user_pause_effective": true,
+    "explicit_resume_required": true
+  },
+  "hashes_sha256": {
+    "reports/20261105_round025_FULL_STATUS_REPORT.md": "CB8A5389998987EA3F1AE81C89495AA55B61EB4AA1829CD82AF2666BF37624E3",
+    "STATUS.json": "38ED45C1886435D6A2B09AEDADEF567ED77ADE4C546D50CCF04BBA1637AC8AC6",
+    "rounds/round_025/ROUND_REPORT.md": "964722AF26BE85450D0DEDEA8FDCC53452F8092AB60B80C563B9E5317FA4D1B6",
+    "reports/round025_status_context/TECHNICAL_DETAIL_20261105.md": "898A1015A5E67DBBA64E2038FF9DBBFAAF2605907A3E1B590D62BB664B320215"
+  },
+  "scope_limits": [
+    "No model or prediction arrays were loaded or evaluated during this audit.",
+    "No training, simulation, device experiment, independent-data evaluation, or official scoring was performed.",
+    "The freeze approval hash/map linkage was checked; frozen binary artifacts were not rehashed.",
+    "Hardware performance and learner understanding remain unassessed."
+  ],
+  "evidence": [
+    "rounds/round_025/artifacts/gate/gate_result.json",
+    "rounds/round_025/artifacts/gate/fit_progress.json",
+    "rounds/round_025/artifacts/gate/supplemental_metrics.json",
+    "rounds/round_025/review/saved_output_verification.json",
+    "rounds/round_025/review/gate_approved_sources.json",
+    "rounds/round_025/manager/snapshot_s1_gate/freeze.json",
+    "rounds/round_025/logs/*_preflight.json, *_receipt.json, *.stdout.txt",
+    "STATUS.json",
+    "NEXT_SESSION.md",
+    "EXPERIMENT_LEDGER.csv",
+    "reports/round025_status_context/WHOLE_SCORE_CONTEXT.md",
+    "reports/20261105_round025_FULL_STATUS_REPORT.md"
+  ]
+}

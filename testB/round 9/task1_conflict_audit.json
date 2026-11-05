@@ -1,0 +1,564 @@
+{
+  "6": {
+    "acc_id": 6,
+    "accident_time": "2026-06-21 09:15:00",
+    "station": "목포",
+    "sea_area": "항계 내",
+    "lat": 34.802778,
+    "lon": 126.356667,
+    "accident_type": "기타",
+    "gear": "자망",
+    "tonnage": 9.77,
+    "selected_vessel": 31009538,
+    "selected_tier": 5,
+    "selected_cond": "(0, 10.0)",
+    "rep_dt_h": 0.0,
+    "rep_dist_km": 5.929119239267847,
+    "conflicting_tiers": [
+      {
+        "tier": 7,
+        "cond": "(3, 5.0)",
+        "vid": 31015646
+      }
+    ],
+    "all_tier_details": {
+      "0": {
+        "tier": 0,
+        "window_h": 0,
+        "radius_km": 2.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "1": {
+        "tier": 1,
+        "window_h": 0,
+        "radius_km": 5.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "2": {
+        "tier": 2,
+        "window_h": 1,
+        "radius_km": 2.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "3": {
+        "tier": 3,
+        "window_h": 1,
+        "radius_km": 5.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "4": {
+        "tier": 4,
+        "window_h": 2,
+        "radius_km": 5.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "5": {
+        "tier": 5,
+        "window_h": 0,
+        "radius_km": 10.0,
+        "n_candidates": 1,
+        "candidates": [
+          31009538
+        ],
+        "is_single": true
+      },
+      "6": {
+        "tier": 6,
+        "window_h": 1,
+        "radius_km": 10.0,
+        "n_candidates": 1,
+        "candidates": [
+          31009538
+        ],
+        "is_single": true
+      },
+      "7": {
+        "tier": 7,
+        "window_h": 3,
+        "radius_km": 5.0,
+        "n_candidates": 1,
+        "candidates": [
+          31015646
+        ],
+        "is_single": true
+      },
+      "8": {
+        "tier": 8,
+        "window_h": 2,
+        "radius_km": 10.0,
+        "n_candidates": 2,
+        "candidates": [
+          31009538,
+          31815325
+        ],
+        "is_single": false
+      }
+    },
+    "diagnosis": "Tier 7 (3, 5.0)에서 선박 31015646(최근접 dt=2h, dist=0.82km)가 단일 후보로 출현하여, Tier 5 (0, 10.0)에서 우선 선정된 선박 31009538(dt=0h, dist=5.92km)과 신원 충돌 발생"
+  },
+  "48": {
+    "acc_id": 48,
+    "accident_time": "2026-05-12 14:49:00",
+    "station": "목포",
+    "sea_area": "영해",
+    "lat": 34.530833,
+    "lon": 125.898889,
+    "accident_type": "부유물감김",
+    "gear": "자망",
+    "tonnage": 9.77,
+    "selected_vessel": 32300267,
+    "selected_tier": 4,
+    "selected_cond": "(2, 5.0)",
+    "rep_dt_h": 2.0,
+    "rep_dist_km": 4.513461733477975,
+    "conflicting_tiers": [
+      {
+        "tier": 5,
+        "cond": "(0, 10.0)",
+        "vid": 32100391
+      }
+    ],
+    "all_tier_details": {
+      "0": {
+        "tier": 0,
+        "window_h": 0,
+        "radius_km": 2.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "1": {
+        "tier": 1,
+        "window_h": 0,
+        "radius_km": 5.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "2": {
+        "tier": 2,
+        "window_h": 1,
+        "radius_km": 2.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "3": {
+        "tier": 3,
+        "window_h": 1,
+        "radius_km": 5.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "4": {
+        "tier": 4,
+        "window_h": 2,
+        "radius_km": 5.0,
+        "n_candidates": 1,
+        "candidates": [
+          32300267
+        ],
+        "is_single": true
+      },
+      "5": {
+        "tier": 5,
+        "window_h": 0,
+        "radius_km": 10.0,
+        "n_candidates": 1,
+        "candidates": [
+          32100391
+        ],
+        "is_single": true
+      },
+      "6": {
+        "tier": 6,
+        "window_h": 1,
+        "radius_km": 10.0,
+        "n_candidates": 2,
+        "candidates": [
+          32100391,
+          32300267
+        ],
+        "is_single": false
+      },
+      "7": {
+        "tier": 7,
+        "window_h": 3,
+        "radius_km": 5.0,
+        "n_candidates": 1,
+        "candidates": [
+          32300267
+        ],
+        "is_single": true
+      },
+      "8": {
+        "tier": 8,
+        "window_h": 2,
+        "radius_km": 10.0,
+        "n_candidates": 2,
+        "candidates": [
+          32100391,
+          32300267
+        ],
+        "is_single": false
+      }
+    },
+    "diagnosis": "Tier 5 (0, 10.0)에서 선박 32100391(최근접 dt=0h, dist=7.06km)가 단일 후보로 출현하여, Tier 4 (2, 5.0)에서 우선 선정된 선박 32300267(dt=1h, dist=3.58km)과 신원 충돌 발생"
+  },
+  "56": {
+    "acc_id": 56,
+    "accident_time": "2026-05-07 19:00:00",
+    "station": "완도",
+    "sea_area": "항계 내",
+    "lat": 34.288611,
+    "lon": 126.780556,
+    "accident_type": "기관손상",
+    "gear": "연안복합",
+    "tonnage": 4.27,
+    "selected_vessel": 31014672,
+    "selected_tier": 2,
+    "selected_cond": "(1, 2.0)",
+    "rep_dt_h": 1.0,
+    "rep_dist_km": 1.8303084150854467,
+    "conflicting_tiers": [
+      {
+        "tier": 5,
+        "cond": "(0, 10.0)",
+        "vid": 31014681
+      }
+    ],
+    "all_tier_details": {
+      "0": {
+        "tier": 0,
+        "window_h": 0,
+        "radius_km": 2.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "1": {
+        "tier": 1,
+        "window_h": 0,
+        "radius_km": 5.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "2": {
+        "tier": 2,
+        "window_h": 1,
+        "radius_km": 2.0,
+        "n_candidates": 1,
+        "candidates": [
+          31014672
+        ],
+        "is_single": true
+      },
+      "3": {
+        "tier": 3,
+        "window_h": 1,
+        "radius_km": 5.0,
+        "n_candidates": 1,
+        "candidates": [
+          31014672
+        ],
+        "is_single": true
+      },
+      "4": {
+        "tier": 4,
+        "window_h": 2,
+        "radius_km": 5.0,
+        "n_candidates": 3,
+        "candidates": [
+          31014499,
+          31014672,
+          31014681
+        ],
+        "is_single": false
+      },
+      "5": {
+        "tier": 5,
+        "window_h": 0,
+        "radius_km": 10.0,
+        "n_candidates": 1,
+        "candidates": [
+          31014681
+        ],
+        "is_single": true
+      },
+      "6": {
+        "tier": 6,
+        "window_h": 1,
+        "radius_km": 10.0,
+        "n_candidates": 2,
+        "candidates": [
+          31014672,
+          31014681
+        ],
+        "is_single": false
+      },
+      "7": {
+        "tier": 7,
+        "window_h": 3,
+        "radius_km": 5.0,
+        "n_candidates": 3,
+        "candidates": [
+          31014499,
+          31014672,
+          31014681
+        ],
+        "is_single": false
+      },
+      "8": {
+        "tier": 8,
+        "window_h": 2,
+        "radius_km": 10.0,
+        "n_candidates": 3,
+        "candidates": [
+          31014499,
+          31014672,
+          31014681
+        ],
+        "is_single": false
+      }
+    },
+    "diagnosis": "Tier 5 (0, 10.0)에서 선박 31014681(최근접 dt=0h, dist=3.28km)가 단일 후보로 출현하여, Tier 2 (1, 2.0)에서 우선 선정된 선박 31014672(dt=0h, dist=1.83km)과 신원 충돌 발생"
+  },
+  "95": {
+    "acc_id": 95,
+    "accident_time": "2026-04-01 12:20:00",
+    "station": "목포",
+    "sea_area": "항계 내",
+    "lat": 34.754167,
+    "lon": 126.199167,
+    "accident_type": "기관손상",
+    "gear": "연안복합",
+    "tonnage": 1.57,
+    "selected_vessel": 36315137,
+    "selected_tier": 3,
+    "selected_cond": "(1, 5.0)",
+    "rep_dt_h": 1.0,
+    "rep_dist_km": 4.181304956212773,
+    "conflicting_tiers": [
+      {
+        "tier": 5,
+        "cond": "(0, 10.0)",
+        "vid": 36306575
+      }
+    ],
+    "all_tier_details": {
+      "0": {
+        "tier": 0,
+        "window_h": 0,
+        "radius_km": 2.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "1": {
+        "tier": 1,
+        "window_h": 0,
+        "radius_km": 5.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "2": {
+        "tier": 2,
+        "window_h": 1,
+        "radius_km": 2.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "3": {
+        "tier": 3,
+        "window_h": 1,
+        "radius_km": 5.0,
+        "n_candidates": 1,
+        "candidates": [
+          36315137
+        ],
+        "is_single": true
+      },
+      "4": {
+        "tier": 4,
+        "window_h": 2,
+        "radius_km": 5.0,
+        "n_candidates": 1,
+        "candidates": [
+          36315137
+        ],
+        "is_single": true
+      },
+      "5": {
+        "tier": 5,
+        "window_h": 0,
+        "radius_km": 10.0,
+        "n_candidates": 1,
+        "candidates": [
+          36306575
+        ],
+        "is_single": true
+      },
+      "6": {
+        "tier": 6,
+        "window_h": 1,
+        "radius_km": 10.0,
+        "n_candidates": 2,
+        "candidates": [
+          36306575,
+          36315137
+        ],
+        "is_single": false
+      },
+      "7": {
+        "tier": 7,
+        "window_h": 3,
+        "radius_km": 5.0,
+        "n_candidates": 1,
+        "candidates": [
+          36315137
+        ],
+        "is_single": true
+      },
+      "8": {
+        "tier": 8,
+        "window_h": 2,
+        "radius_km": 10.0,
+        "n_candidates": 2,
+        "candidates": [
+          36306575,
+          36315137
+        ],
+        "is_single": false
+      }
+    },
+    "diagnosis": "Tier 5 (0, 10.0)에서 선박 36306575(최근접 dt=0h, dist=7.82km)가 단일 후보로 출현하여, Tier 3 (1, 5.0)에서 우선 선정된 선박 36315137(dt=1h, dist=2.63km)과 신원 충돌 발생"
+  },
+  "108": {
+    "acc_id": 108,
+    "accident_time": "2026-03-23 18:43:00",
+    "station": "여수",
+    "sea_area": "영해",
+    "lat": 34.455556,
+    "lon": 127.822222,
+    "accident_type": "침몰",
+    "gear": "연안복합",
+    "tonnage": 3.38,
+    "selected_vessel": 36010190,
+    "selected_tier": 4,
+    "selected_cond": "(2, 5.0)",
+    "rep_dt_h": 2.0,
+    "rep_dist_km": 4.818749309718241,
+    "conflicting_tiers": [
+      {
+        "tier": 5,
+        "cond": "(0, 10.0)",
+        "vid": 33300415
+      },
+      {
+        "tier": 6,
+        "cond": "(1, 10.0)",
+        "vid": 33300415
+      }
+    ],
+    "all_tier_details": {
+      "0": {
+        "tier": 0,
+        "window_h": 0,
+        "radius_km": 2.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "1": {
+        "tier": 1,
+        "window_h": 0,
+        "radius_km": 5.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "2": {
+        "tier": 2,
+        "window_h": 1,
+        "radius_km": 2.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "3": {
+        "tier": 3,
+        "window_h": 1,
+        "radius_km": 5.0,
+        "n_candidates": 0,
+        "candidates": [],
+        "is_single": false
+      },
+      "4": {
+        "tier": 4,
+        "window_h": 2,
+        "radius_km": 5.0,
+        "n_candidates": 1,
+        "candidates": [
+          36010190
+        ],
+        "is_single": true
+      },
+      "5": {
+        "tier": 5,
+        "window_h": 0,
+        "radius_km": 10.0,
+        "n_candidates": 1,
+        "candidates": [
+          33300415
+        ],
+        "is_single": true
+      },
+      "6": {
+        "tier": 6,
+        "window_h": 1,
+        "radius_km": 10.0,
+        "n_candidates": 1,
+        "candidates": [
+          33300415
+        ],
+        "is_single": true
+      },
+      "7": {
+        "tier": 7,
+        "window_h": 3,
+        "radius_km": 5.0,
+        "n_candidates": 1,
+        "candidates": [
+          36010190
+        ],
+        "is_single": true
+      },
+      "8": {
+        "tier": 8,
+        "window_h": 2,
+        "radius_km": 10.0,
+        "n_candidates": 2,
+        "candidates": [
+          33300415,
+          36010190
+        ],
+        "is_single": false
+      }
+    },
+    "diagnosis": "Tier 5 (0, 10.0)에서 선박 33300415(최근접 dt=0h, dist=9.61km)가 단일 후보로 출현하여, Tier 4 (2, 5.0)에서 우선 선정된 선박 36010190(dt=0h, dist=4.82km)과 신원 충돌 발생 / Tier 6 (1, 10.0)에서 선박 33300415(최근접 dt=0h, dist=9.61km)가 단일 후보로 출현하여, Tier 4 (2, 5.0)에서 우선 선정된 선박 36010190(dt=0h, dist=4.82km)과 신원 충돌 발생"
+  }
+}

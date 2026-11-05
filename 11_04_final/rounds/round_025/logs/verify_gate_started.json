@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-05T03:59:59.743071+00:00",
+  "pid": 16764,
+  "launcher_pid": 2212,
+  "argv": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_025\\review\\verify_gate_result.py",
+    "rounds/round_025/artifacts/gate"
+  ]
+}

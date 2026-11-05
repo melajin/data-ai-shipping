@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "created_at": "2026-11-05T13:18:12.299512",
+    "description": "Decomposition of Raw Difference into Behavioral Effect (row-matched) and Observation Confounding (row count elevation)."
+  },
+  "subsets": {
+    "all_vessels": {
+      "row_count": {
+        "acc_n_rows_mean": 5.512,
+        "ctrl_unconstrained_n_rows_mean": 5.073,
+        "ctrl_matched_n_rows_mean": 5.5,
+        "row_count_elevation_raw": 0.44,
+        "row_count_matching_residual": 0.0122
+      },
+      "score_mean": {
+        "delta_raw": 0.023174,
+        "delta_behavior": 0.022062,
+        "delta_observation": 0.001112,
+        "pct_observation_confounding": 4.8,
+        "pct_behavioral_effect": 95.2
+      }
+    },
+    "non_conflict_vessels": {
+      "row_count": {
+        "acc_n_rows_mean": 5.585,
+        "ctrl_unconstrained_n_rows_mean": 5.025,
+        "ctrl_matched_n_rows_mean": 5.572,
+        "row_count_elevation_raw": 0.559,
+        "row_count_matching_residual": 0.013
+      },
+      "score_mean": {
+        "delta_raw": 0.021966,
+        "delta_behavior": 0.023267,
+        "delta_observation": -0.001301,
+        "pct_observation_confounding": -5.92,
+        "pct_behavioral_effect": 105.92
+      }
+    },
+    "tier_0_1_vessels": {
+      "row_count": {
+        "acc_n_rows_mean": 5.709,
+        "ctrl_unconstrained_n_rows_mean": 5.018,
+        "ctrl_matched_n_rows_mean": 5.691,
+        "row_count_elevation_raw": 0.691,
+        "row_count_matching_residual": 0.0182
+      },
+      "score_mean": {
+        "delta_raw": 0.015957,
+        "delta_behavior": 0.017012,
+        "delta_observation": -0.001056,
+        "pct_observation_confounding": -6.62,
+        "pct_behavioral_effect": 106.62
+      }
+    },
+    "retained_identity_vessels": {
+      "row_count": {
+        "acc_n_rows_mean": 5.245,
+        "ctrl_unconstrained_n_rows_mean": 4.963,
+        "ctrl_matched_n_rows_mean": 5.222,
+        "row_count_elevation_raw": 0.282,
+        "row_count_matching_residual": 0.0222
+      },
+      "score_mean": {
+        "delta_raw": 0.052349,
+        "delta_behavior": 0.034491,
+        "delta_observation": 0.017858,
+        "pct_observation_confounding": 34.11,
+        "pct_behavioral_effect": 65.89
+      }
+    },
+    "single_accident_vessels": {
+      "row_count": {
+        "acc_n_rows_mean": 5.408,
+        "ctrl_unconstrained_n_rows_mean": 4.932,
+        "ctrl_matched_n_rows_mean": 5.394,
+        "row_count_elevation_raw": 0.476,
+        "row_count_matching_residual": 0.0141
+      },
+      "score_mean": {
+        "delta_raw": 0.026902,
+        "delta_behavior": 0.025206,
+        "delta_observation": 0.001695,
+        "pct_observation_confounding": 6.3,
+        "pct_behavioral_effect": 93.7
+      }
+    }
+  }
+}

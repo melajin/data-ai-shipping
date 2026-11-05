@@ -1,0 +1,1303 @@
+{
+  "status": "complete",
+  "scope": "saved-output analysis of the completed fold0 FIT internal 4-fold diagnostic only",
+  "source_provenance": {
+    "fold0_features_npz_sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95",
+    "ordered_fit_roster_sha256": "6fe0892d85ef7aa0b574708d2c0517fdcbb82671aa0cb696a3a222447ad65e66",
+    "hash_scope": [
+      "fold0_features_npz bytes",
+      "ordered FIT vessel ID sequence"
+    ],
+    "full_source_code_cache_checker_hashes_verified": false,
+    "fit_roster_rows": 3144,
+    "observation_day_values_read": true,
+    "other_arrays_read_from_fold0_npz": [
+      "rfid_ids",
+      "roles",
+      "obs_days"
+    ]
+  },
+  "diagnostic_only": true,
+  "independent_data_evaluation": false,
+  "official_score": null,
+  "fit_vessels": 3144,
+  "class_order": [
+    "연안복합",
+    "자망",
+    "통발",
+    "채낚기연승낚시"
+  ],
+  "baseline_metrics": {
+    "n": 3144,
+    "correct": 1811,
+    "micro_f1": 0.5760178117048346,
+    "confusion": [
+      [
+        1248,
+        282,
+        23,
+        3
+      ],
+      [
+        563,
+        473,
+        31,
+        8
+      ],
+      [
+        277,
+        110,
+        54,
+        5
+      ],
+      [
+        8,
+        21,
+        2,
+        36
+      ]
+    ],
+    "classes": [
+      {
+        "class_id": 0,
+        "class_name": "연안복합",
+        "support": 1556,
+        "tp": 1248,
+        "fp": 848,
+        "fn": 308,
+        "precision": 0.5954198473282443,
+        "recall": 0.8020565552699229,
+        "f1": 0.683461117196057
+      },
+      {
+        "class_id": 1,
+        "class_name": "자망",
+        "support": 1075,
+        "tp": 473,
+        "fp": 413,
+        "fn": 602,
+        "precision": 0.5338600451467269,
+        "recall": 0.44,
+        "f1": 0.4824069352371239
+      },
+      {
+        "class_id": 2,
+        "class_name": "통발",
+        "support": 446,
+        "tp": 54,
+        "fp": 56,
+        "fn": 392,
+        "precision": 0.4909090909090909,
+        "recall": 0.1210762331838565,
+        "f1": 0.19424460431654678
+      },
+      {
+        "class_id": 3,
+        "class_name": "채낚기연승낚시",
+        "support": 67,
+        "tp": 36,
+        "fp": 16,
+        "fn": 31,
+        "precision": 0.6923076923076923,
+        "recall": 0.5373134328358209,
+        "f1": 0.6050420168067226
+      }
+    ]
+  },
+  "candidate_metrics": {
+    "n": 3144,
+    "correct": 1781,
+    "micro_f1": 0.5664758269720102,
+    "confusion": [
+      [
+        1210,
+        313,
+        30,
+        3
+      ],
+      [
+        564,
+        473,
+        29,
+        9
+      ],
+      [
+        273,
+        107,
+        61,
+        5
+      ],
+      [
+        7,
+        20,
+        3,
+        37
+      ]
+    ],
+    "classes": [
+      {
+        "class_id": 0,
+        "class_name": "연안복합",
+        "support": 1556,
+        "tp": 1210,
+        "fp": 844,
+        "fn": 346,
+        "precision": 0.5890944498539435,
+        "recall": 0.7776349614395887,
+        "f1": 0.6703601108033241
+      },
+      {
+        "class_id": 1,
+        "class_name": "자망",
+        "support": 1075,
+        "tp": 473,
+        "fp": 440,
+        "fn": 602,
+        "precision": 0.5180722891566265,
+        "recall": 0.44,
+        "f1": 0.4758551307847083
+      },
+      {
+        "class_id": 2,
+        "class_name": "통발",
+        "support": 446,
+        "tp": 61,
+        "fp": 62,
+        "fn": 385,
+        "precision": 0.4959349593495935,
+        "recall": 0.1367713004484305,
+        "f1": 0.21441124780316345
+      },
+      {
+        "class_id": 3,
+        "class_name": "채낚기연승낚시",
+        "support": 67,
+        "tp": 37,
+        "fp": 17,
+        "fn": 30,
+        "precision": 0.6851851851851852,
+        "recall": 0.5522388059701493,
+        "f1": 0.6115702479338844
+      }
+    ]
+  },
+  "paired_gain_loss_net": {
+    "gain": 175,
+    "loss": 205,
+    "net": -30,
+    "by_true_class": [
+      {
+        "class_id": 0,
+        "class_name": "연안복합",
+        "baseline_tp": 1248,
+        "candidate_tp": 1210,
+        "gain": 75,
+        "loss": 113,
+        "net": -38
+      },
+      {
+        "class_id": 1,
+        "class_name": "자망",
+        "baseline_tp": 473,
+        "candidate_tp": 473,
+        "gain": 74,
+        "loss": 74,
+        "net": 0
+      },
+      {
+        "class_id": 2,
+        "class_name": "통발",
+        "baseline_tp": 54,
+        "candidate_tp": 61,
+        "gain": 25,
+        "loss": 18,
+        "net": 7
+      },
+      {
+        "class_id": 3,
+        "class_name": "채낚기연승낚시",
+        "baseline_tp": 36,
+        "candidate_tp": 37,
+        "gain": 1,
+        "loss": 0,
+        "net": 1
+      }
+    ]
+  },
+  "class_transition_and_false_positive_sources": {
+    "per_true_class_prediction_transitions": [
+      {
+        "true_class_id": 0,
+        "true_class_name": "연안복합",
+        "baseline_prediction_to_candidate_prediction": [
+          [
+            1135,
+            102,
+            11,
+            0
+          ],
+          [
+            71,
+            207,
+            4,
+            0
+          ],
+          [
+            4,
+            4,
+            15,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "true_class_id": 1,
+        "true_class_name": "자망",
+        "baseline_prediction_to_candidate_prediction": [
+          [
+            489,
+            63,
+            10,
+            1
+          ],
+          [
+            67,
+            399,
+            7,
+            0
+          ],
+          [
+            8,
+            11,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            8
+          ]
+        ]
+      },
+      {
+        "true_class_id": 2,
+        "true_class_name": "통발",
+        "baseline_prediction_to_candidate_prediction": [
+          [
+            242,
+            17,
+            17,
+            1
+          ],
+          [
+            22,
+            80,
+            8,
+            0
+          ],
+          [
+            9,
+            9,
+            36,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4
+          ]
+        ]
+      },
+      {
+        "true_class_id": 3,
+        "true_class_name": "채낚기연승낚시",
+        "baseline_prediction_to_candidate_prediction": [
+          [
+            7,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            19,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            36
+          ]
+        ]
+      }
+    ],
+    "false_positive_sources_by_predicted_class": [
+      {
+        "predicted_class_id": 0,
+        "predicted_class_name": "연안복합",
+        "source_counts": {
+          "1:자망": {
+            "baseline": 563,
+            "candidate": 564
+          },
+          "2:통발": {
+            "baseline": 277,
+            "candidate": 273
+          },
+          "3:채낚기연승낚시": {
+            "baseline": 8,
+            "candidate": 7
+          }
+        },
+        "candidate_minus_baseline": {
+          "1:자망": 1,
+          "2:통발": -4,
+          "3:채낚기연승낚시": -1
+        }
+      },
+      {
+        "predicted_class_id": 1,
+        "predicted_class_name": "자망",
+        "source_counts": {
+          "0:연안복합": {
+            "baseline": 282,
+            "candidate": 313
+          },
+          "2:통발": {
+            "baseline": 110,
+            "candidate": 107
+          },
+          "3:채낚기연승낚시": {
+            "baseline": 21,
+            "candidate": 20
+          }
+        },
+        "candidate_minus_baseline": {
+          "0:연안복합": 31,
+          "2:통발": -3,
+          "3:채낚기연승낚시": -1
+        }
+      },
+      {
+        "predicted_class_id": 2,
+        "predicted_class_name": "통발",
+        "source_counts": {
+          "0:연안복합": {
+            "baseline": 23,
+            "candidate": 30
+          },
+          "1:자망": {
+            "baseline": 31,
+            "candidate": 29
+          },
+          "3:채낚기연승낚시": {
+            "baseline": 2,
+            "candidate": 3
+          }
+        },
+        "candidate_minus_baseline": {
+          "0:연안복합": 7,
+          "1:자망": -2,
+          "3:채낚기연승낚시": 1
+        }
+      },
+      {
+        "predicted_class_id": 3,
+        "predicted_class_name": "채낚기연승낚시",
+        "source_counts": {
+          "0:연안복합": {
+            "baseline": 3,
+            "candidate": 3
+          },
+          "1:자망": {
+            "baseline": 8,
+            "candidate": 9
+          },
+          "2:통발": {
+            "baseline": 5,
+            "candidate": 5
+          }
+        },
+        "candidate_minus_baseline": {
+          "0:연안복합": 0,
+          "1:자망": 1,
+          "2:통발": 0
+        }
+      }
+    ]
+  },
+  "observation_days": {
+    "bins": {
+      "1-7": {
+        "n_vessels": 516,
+        "baseline": {
+          "n": 516,
+          "correct": 278,
+          "micro_f1": 0.5387596899224806,
+          "confusion": [
+            [
+              220,
+              52,
+              5,
+              1
+            ],
+            [
+              115,
+              58,
+              3,
+              0
+            ],
+            [
+              42,
+              12,
+              0,
+              2
+            ],
+            [
+              4,
+              1,
+              1,
+              0
+            ]
+          ],
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "support": 278,
+              "tp": 220,
+              "fp": 161,
+              "fn": 58,
+              "precision": 0.5774278215223098,
+              "recall": 0.7913669064748201,
+              "f1": 0.6676783004552351
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "support": 176,
+              "tp": 58,
+              "fp": 65,
+              "fn": 118,
+              "precision": 0.4715447154471545,
+              "recall": 0.32954545454545453,
+              "f1": 0.3879598662207358
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "support": 56,
+              "tp": 0,
+              "fp": 9,
+              "fn": 56,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "support": 6,
+              "tp": 0,
+              "fp": 3,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          ]
+        },
+        "candidate": {
+          "n": 516,
+          "correct": 270,
+          "micro_f1": 0.5232558139534884,
+          "confusion": [
+            [
+              211,
+              63,
+              3,
+              1
+            ],
+            [
+              111,
+              59,
+              5,
+              1
+            ],
+            [
+              46,
+              8,
+              0,
+              2
+            ],
+            [
+              3,
+              2,
+              1,
+              0
+            ]
+          ],
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "support": 278,
+              "tp": 211,
+              "fp": 160,
+              "fn": 67,
+              "precision": 0.568733153638814,
+              "recall": 0.7589928057553957,
+              "f1": 0.650231124807396
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "support": 176,
+              "tp": 59,
+              "fp": 73,
+              "fn": 117,
+              "precision": 0.44696969696969696,
+              "recall": 0.3352272727272727,
+              "f1": 0.3831168831168831
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "support": 56,
+              "tp": 0,
+              "fp": 9,
+              "fn": 56,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "support": 6,
+              "tp": 0,
+              "fp": 4,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          ]
+        },
+        "paired_gain_loss_net": {
+          "gain": 30,
+          "loss": 38,
+          "net": -8,
+          "by_true_class": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "baseline_tp": 220,
+              "candidate_tp": 211,
+              "gain": 15,
+              "loss": 24,
+              "net": -9
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "baseline_tp": 58,
+              "candidate_tp": 59,
+              "gain": 15,
+              "loss": 14,
+              "net": 1
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "baseline_tp": 0,
+              "candidate_tp": 0,
+              "gain": 0,
+              "loss": 0,
+              "net": 0
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "baseline_tp": 0,
+              "candidate_tp": 0,
+              "gain": 0,
+              "loss": 0,
+              "net": 0
+            }
+          ]
+        }
+      },
+      "8-30": {
+        "n_vessels": 717,
+        "baseline": {
+          "n": 717,
+          "correct": 435,
+          "micro_f1": 0.606694560669456,
+          "confusion": [
+            [
+              357,
+              52,
+              1,
+              1
+            ],
+            [
+              137,
+              75,
+              2,
+              0
+            ],
+            [
+              75,
+              11,
+              2,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              1
+            ]
+          ],
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "support": 411,
+              "tp": 357,
+              "fp": 213,
+              "fn": 54,
+              "precision": 0.6263157894736842,
+              "recall": 0.8686131386861314,
+              "f1": 0.72782874617737
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "support": 214,
+              "tp": 75,
+              "fp": 65,
+              "fn": 139,
+              "precision": 0.5357142857142857,
+              "recall": 0.35046728971962615,
+              "f1": 0.423728813559322
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "support": 88,
+              "tp": 2,
+              "fp": 3,
+              "fn": 86,
+              "precision": 0.4,
+              "recall": 0.022727272727272728,
+              "f1": 0.043010752688172046
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "support": 4,
+              "tp": 1,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1": 0.3333333333333333
+            }
+          ]
+        },
+        "candidate": {
+          "n": 717,
+          "correct": 423,
+          "micro_f1": 0.5899581589958159,
+          "confusion": [
+            [
+              345,
+              61,
+              4,
+              1
+            ],
+            [
+              139,
+              73,
+              2,
+              0
+            ],
+            [
+              70,
+              14,
+              4,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              1
+            ]
+          ],
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "support": 411,
+              "tp": 345,
+              "fp": 210,
+              "fn": 66,
+              "precision": 0.6216216216216216,
+              "recall": 0.8394160583941606,
+              "f1": 0.7142857142857142
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "support": 214,
+              "tp": 73,
+              "fp": 77,
+              "fn": 141,
+              "precision": 0.4866666666666667,
+              "recall": 0.3411214953271028,
+              "f1": 0.4010989010989011
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "support": 88,
+              "tp": 4,
+              "fp": 6,
+              "fn": 84,
+              "precision": 0.4,
+              "recall": 0.045454545454545456,
+              "f1": 0.0816326530612245
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "support": 4,
+              "tp": 1,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1": 0.3333333333333333
+            }
+          ]
+        },
+        "paired_gain_loss_net": {
+          "gain": 31,
+          "loss": 43,
+          "net": -12,
+          "by_true_class": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "baseline_tp": 357,
+              "candidate_tp": 345,
+              "gain": 18,
+              "loss": 30,
+              "net": -12
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "baseline_tp": 75,
+              "candidate_tp": 73,
+              "gain": 10,
+              "loss": 12,
+              "net": -2
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "baseline_tp": 2,
+              "candidate_tp": 4,
+              "gain": 3,
+              "loss": 1,
+              "net": 2
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "baseline_tp": 1,
+              "candidate_tp": 1,
+              "gain": 0,
+              "loss": 0,
+              "net": 0
+            }
+          ]
+        }
+      },
+      "31-90": {
+        "n_vessels": 1244,
+        "baseline": {
+          "n": 1244,
+          "correct": 703,
+          "micro_f1": 0.565112540192926,
+          "confusion": [
+            [
+              475,
+              116,
+              12,
+              1
+            ],
+            [
+              218,
+              179,
+              17,
+              5
+            ],
+            [
+              111,
+              50,
+              22,
+              1
+            ],
+            [
+              3,
+              7,
+              0,
+              27
+            ]
+          ],
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "support": 604,
+              "tp": 475,
+              "fp": 332,
+              "fn": 129,
+              "precision": 0.5885997521685254,
+              "recall": 0.7864238410596026,
+              "f1": 0.6732813607370659
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "support": 419,
+              "tp": 179,
+              "fp": 173,
+              "fn": 240,
+              "precision": 0.5085227272727273,
+              "recall": 0.42720763723150357,
+              "f1": 0.46433203631647213
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "support": 184,
+              "tp": 22,
+              "fp": 29,
+              "fn": 162,
+              "precision": 0.43137254901960786,
+              "recall": 0.11956521739130435,
+              "f1": 0.1872340425531915
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "support": 37,
+              "tp": 27,
+              "fp": 7,
+              "fn": 10,
+              "precision": 0.7941176470588235,
+              "recall": 0.7297297297297297,
+              "f1": 0.7605633802816901
+            }
+          ]
+        },
+        "candidate": {
+          "n": 1244,
+          "correct": 700,
+          "micro_f1": 0.5627009646302251,
+          "confusion": [
+            [
+              464,
+              123,
+              16,
+              1
+            ],
+            [
+              220,
+              184,
+              10,
+              5
+            ],
+            [
+              111,
+              47,
+              25,
+              1
+            ],
+            [
+              3,
+              7,
+              0,
+              27
+            ]
+          ],
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "support": 604,
+              "tp": 464,
+              "fp": 334,
+              "fn": 140,
+              "precision": 0.581453634085213,
+              "recall": 0.7682119205298014,
+              "f1": 0.6619115549215407
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "support": 419,
+              "tp": 184,
+              "fp": 177,
+              "fn": 235,
+              "precision": 0.5096952908587258,
+              "recall": 0.43914081145584727,
+              "f1": 0.4717948717948718
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "support": 184,
+              "tp": 25,
+              "fp": 26,
+              "fn": 159,
+              "precision": 0.49019607843137253,
+              "recall": 0.1358695652173913,
+              "f1": 0.21276595744680848
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "support": 37,
+              "tp": 27,
+              "fp": 7,
+              "fn": 10,
+              "precision": 0.7941176470588235,
+              "recall": 0.7297297297297297,
+              "f1": 0.7605633802816901
+            }
+          ]
+        },
+        "paired_gain_loss_net": {
+          "gain": 77,
+          "loss": 80,
+          "net": -3,
+          "by_true_class": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "baseline_tp": 475,
+              "candidate_tp": 464,
+              "gain": 31,
+              "loss": 42,
+              "net": -11
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "baseline_tp": 179,
+              "candidate_tp": 184,
+              "gain": 33,
+              "loss": 28,
+              "net": 5
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "baseline_tp": 22,
+              "candidate_tp": 25,
+              "gain": 13,
+              "loss": 10,
+              "net": 3
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "baseline_tp": 27,
+              "candidate_tp": 27,
+              "gain": 0,
+              "loss": 0,
+              "net": 0
+            }
+          ]
+        }
+      },
+      "91+": {
+        "n_vessels": 667,
+        "baseline": {
+          "n": 667,
+          "correct": 395,
+          "micro_f1": 0.5922038980509745,
+          "confusion": [
+            [
+              196,
+              62,
+              5,
+              0
+            ],
+            [
+              93,
+              161,
+              9,
+              3
+            ],
+            [
+              49,
+              37,
+              30,
+              2
+            ],
+            [
+              0,
+              11,
+              1,
+              8
+            ]
+          ],
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "support": 263,
+              "tp": 196,
+              "fp": 142,
+              "fn": 67,
+              "precision": 0.5798816568047337,
+              "recall": 0.7452471482889734,
+              "f1": 0.6522462562396006
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "support": 266,
+              "tp": 161,
+              "fp": 110,
+              "fn": 105,
+              "precision": 0.5940959409594095,
+              "recall": 0.6052631578947368,
+              "f1": 0.5996275605214152
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "support": 118,
+              "tp": 30,
+              "fp": 15,
+              "fn": 88,
+              "precision": 0.6666666666666666,
+              "recall": 0.2542372881355932,
+              "f1": 0.36809815950920244
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "support": 20,
+              "tp": 8,
+              "fp": 5,
+              "fn": 12,
+              "precision": 0.6153846153846154,
+              "recall": 0.4,
+              "f1": 0.4848484848484849
+            }
+          ]
+        },
+        "candidate": {
+          "n": 667,
+          "correct": 388,
+          "micro_f1": 0.5817091454272864,
+          "confusion": [
+            [
+              190,
+              66,
+              7,
+              0
+            ],
+            [
+              94,
+              157,
+              12,
+              3
+            ],
+            [
+              46,
+              38,
+              32,
+              2
+            ],
+            [
+              0,
+              9,
+              2,
+              9
+            ]
+          ],
+          "classes": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "support": 263,
+              "tp": 190,
+              "fp": 140,
+              "fn": 73,
+              "precision": 0.5757575757575758,
+              "recall": 0.7224334600760456,
+              "f1": 0.6408094435075885
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "support": 266,
+              "tp": 157,
+              "fp": 113,
+              "fn": 109,
+              "precision": 0.5814814814814815,
+              "recall": 0.5902255639097744,
+              "f1": 0.585820895522388
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "support": 118,
+              "tp": 32,
+              "fp": 21,
+              "fn": 86,
+              "precision": 0.6037735849056604,
+              "recall": 0.2711864406779661,
+              "f1": 0.37426900584795314
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "support": 20,
+              "tp": 9,
+              "fp": 5,
+              "fn": 11,
+              "precision": 0.6428571428571429,
+              "recall": 0.45,
+              "f1": 0.5294117647058824
+            }
+          ]
+        },
+        "paired_gain_loss_net": {
+          "gain": 37,
+          "loss": 44,
+          "net": -7,
+          "by_true_class": [
+            {
+              "class_id": 0,
+              "class_name": "연안복합",
+              "baseline_tp": 196,
+              "candidate_tp": 190,
+              "gain": 11,
+              "loss": 17,
+              "net": -6
+            },
+            {
+              "class_id": 1,
+              "class_name": "자망",
+              "baseline_tp": 161,
+              "candidate_tp": 157,
+              "gain": 16,
+              "loss": 20,
+              "net": -4
+            },
+            {
+              "class_id": 2,
+              "class_name": "통발",
+              "baseline_tp": 30,
+              "candidate_tp": 32,
+              "gain": 9,
+              "loss": 7,
+              "net": 2
+            },
+            {
+              "class_id": 3,
+              "class_name": "채낚기연승낚시",
+              "baseline_tp": 8,
+              "candidate_tp": 9,
+              "gain": 1,
+              "loss": 0,
+              "net": 1
+            }
+          ]
+        }
+      }
+    },
+    "unbinned_vessels": 0,
+    "unbinned_reason": "obs_days is non-finite, below 1, or outside the declared positive-day bins"
+  },
+  "vessel_bootstrap": {
+    "unit": "FIT vessel; paired baseline/candidate row kept together",
+    "replicates": 5000,
+    "seed": 20261105,
+    "interval_method": "percentile 2.5th and 97.5th percentiles",
+    "net_correct_count": {
+      "percentile_95_ci": [
+        -69.0,
+        8.0
+      ],
+      "median": -30.0
+    },
+    "net_tp_by_true_class": {
+      "연안복합": {
+        "percentile_95_ci": [
+          -64.0,
+          -11.0
+        ],
+        "median": -38.0
+      },
+      "자망": {
+        "percentile_95_ci": [
+          -23.02499999999999,
+          24.0
+        ],
+        "median": 0.0
+      },
+      "통발": {
+        "percentile_95_ci": [
+          -6.0,
+          20.0
+        ],
+        "median": 7.0
+      },
+      "채낚기연승낚시": {
+        "percentile_95_ci": [
+          0.0,
+          3.0
+        ],
+        "median": 1.0
+      }
+    },
+    "scope_note": "resampling uncertainty within this diagnostic FIT roster; not independent-data or OUTER performance"
+  },
+  "verification_memory": {
+    "timestamp_utc": "2026-11-05T04:00:45.417041+00:00",
+    "available_bytes": 1678417920,
+    "minimum_available_bytes": 1073741824,
+    "expected_peak_bytes": 134217728,
+    "allowed": true
+  },
+  "protection_gate_note": "FIT diagnostic counts do not adjudicate OUTER or final 5-seed protections"
+}

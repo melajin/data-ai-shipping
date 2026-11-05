@@ -1,6 +1,72 @@
 {
-  "status": "running",
-  "fit_attempts_started": 0,
-  "fits_completed": 0,
-  "fit_records": []
+  "status": "complete",
+  "fit_attempts_started": 8,
+  "fits_completed": 8,
+  "fit_records": [
+    {
+      "fold": 0,
+      "variant": "baseline",
+      "fit_seconds": 28.528708200006804,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_0_baseline.joblib",
+      "model_sha256": "b0434267175b8c0ce5106b218d36ec30a41318de81a99dc24321474276b94f57",
+      "feature_count": 304
+    },
+    {
+      "fold": 0,
+      "variant": "candidate",
+      "fit_seconds": 35.53191109999898,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_0_candidate.joblib",
+      "model_sha256": "8d562f0f5c2ab1fd3bc0f151930f8ce610bef922a407c682c53d0d7e9623f11b",
+      "feature_count": 328
+    },
+    {
+      "fold": 1,
+      "variant": "baseline",
+      "fit_seconds": 31.021995099996275,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_1_baseline.joblib",
+      "model_sha256": "4dcc27ad2383336a6616b5b2f544ac7a7f4296ca3aff638e7541a5695794ceed",
+      "feature_count": 304
+    },
+    {
+      "fold": 1,
+      "variant": "candidate",
+      "fit_seconds": 30.26237250000122,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_1_candidate.joblib",
+      "model_sha256": "eb0273eb46249b18b0fdc633cb4e462424a438ac1ad1a5eea469603871ac339b",
+      "feature_count": 328
+    },
+    {
+      "fold": 2,
+      "variant": "baseline",
+      "fit_seconds": 29.65757890000532,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_2_baseline.joblib",
+      "model_sha256": "96f067a09a615fde188cb74c1e4319f0dab536fc167452afe58c1685bd795f1d",
+      "feature_count": 304
+    },
+    {
+      "fold": 2,
+      "variant": "candidate",
+      "fit_seconds": 30.40861369999766,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_2_candidate.joblib",
+      "model_sha256": "f2f5e6c0dd7d8ac7f65a6d63f2fd7ef5340559cc3d1f39ccc94f359d3087d63c",
+      "feature_count": 328
+    },
+    {
+      "fold": 3,
+      "variant": "baseline",
+      "fit_seconds": 29.17877900000167,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_3_baseline.joblib",
+      "model_sha256": "47132e2c1b5182a8f4c6739300f980a813ec9c8a19f0ac541abe0c626c49a3be",
+      "feature_count": 304
+    },
+    {
+      "fold": 3,
+      "variant": "candidate",
+      "fit_seconds": 32.14250140000513,
+      "model_path": "rounds\\round_025\\artifacts\\gate\\models\\fold_3_candidate.joblib",
+      "model_sha256": "478ff099908afa914e47230251cf708b2ec6715b7c514af2bba37fbb7ee42a22",
+      "feature_count": 328
+    }
+  ],
+  "finished_at_utc": "2026-11-05T03:59:42.185533+00:00"
 }

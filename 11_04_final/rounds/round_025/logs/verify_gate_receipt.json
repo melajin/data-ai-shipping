@@ -1,0 +1,45 @@
+{
+  "started_at_utc": "2026-11-05T03:59:59.728553+00:00",
+  "finished_at_utc": "2026-11-05T04:00:12.455126+00:00",
+  "stage": "verify_gate",
+  "pid": 16764,
+  "launcher_pid": 2212,
+  "argv": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_025\\review\\verify_gate_result.py",
+    "rounds/round_025/artifacts/gate"
+  ],
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 12.724516599999333,
+  "sampled_peak_family_rss_bytes": 167333888,
+  "sampled_min_available_bytes": 1956302848,
+  "memory_sample_count": 13,
+  "stdout": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_025\\logs\\verify_gate.stdout.txt",
+  "stderr": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_025\\logs\\verify_gate.stderr.txt",
+  "hashes_before": {
+    "rounds/round_025/code/prepare_t5_cache.py": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+    "rounds/round_025/code/run_gate.py": "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+    "rounds/round_025/code/s1_features.py": "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+    "rounds/round_025/code/t5_rebuild.py": "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+    "rounds/round_025/configs/experiment.json": "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77",
+    "rounds/round_025/ROUND_PLAN.md": "8317be20bb81efa301cec44a29a7ad99be2d9c54c7b0115758547004501bfb1e",
+    "rounds/round_025/manager/runtime_contract.json": "d21071cfef5496e2247adc1d65b641634c1d7bca9738b3c4f0482fcc4a34831f",
+    "rounds/round_025/manager/launch.py": "0370a7811a3a6079a62e50d5634602917f78357e85683e2f13c1518184d535bf"
+  },
+  "hashes_after": {
+    "rounds/round_025/code/prepare_t5_cache.py": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+    "rounds/round_025/code/run_gate.py": "1179e95cf81314be9d686a894c633c1f26592013c79970614597b36811848737",
+    "rounds/round_025/code/s1_features.py": "6ea7177382a2151508364f8fa14bbe0c087483e42373b98fc362065b0dd14c0a",
+    "rounds/round_025/code/t5_rebuild.py": "6b1e252928d4174f569b4225299fa7a62094f1f0f1ac6a9d92708d2fae418a16",
+    "rounds/round_025/configs/experiment.json": "d6f8aa667a4a9d77e672e6d96997d535b91a8bb2e8491e7586b01cc14381ab77",
+    "rounds/round_025/ROUND_PLAN.md": "8317be20bb81efa301cec44a29a7ad99be2d9c54c7b0115758547004501bfb1e",
+    "rounds/round_025/manager/runtime_contract.json": "d21071cfef5496e2247adc1d65b641634c1d7bca9738b3c4f0482fcc4a34831f",
+    "rounds/round_025/manager/launch.py": "0370a7811a3a6079a62e50d5634602917f78357e85683e2f13c1518184d535bf"
+  },
+  "owned_temporary_files_removed": [],
+  "hardware_verified": false
+}

@@ -1,0 +1,11 @@
+﻿{
+    "technical_report":  "rounds/round_025/ROUND_REPORT.md",
+    "experiments_added":  0,
+    "utc":  "2026-11-05T04:10:45.0906314Z",
+    "preserved_detail":  "reports/round025_status_context/TECHNICAL_DETAIL_20261105.md",
+    "metrics_changed":  false,
+    "readable_report":  "reports/20261105_round025_FULL_STATUS_REPORT.md",
+    "sha256":  "CB8A5389998987EA3F1AE81C89495AA55B61EB4AA1829CD82AF2666BF37624E3",
+    "requested":  "보고 쉽고 자세하게",
+    "note":  "manager/finalize_round.py is prior generation tool; do not rerun to overwrite the subsequent readable report revision"
+}

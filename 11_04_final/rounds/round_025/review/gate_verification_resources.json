@@ -1,0 +1,23 @@
+{
+  "timestamp_utc": "2026-11-05T04:00:02.851115+00:00",
+  "available_bytes": 2185814016,
+  "expected_peak_bytes": 536870912,
+  "minimum_free_bytes": 1073741824,
+  "other_python_processes": [
+    {
+      "pid": 2212,
+      "name": "python.exe",
+      "rss_bytes": 24485888
+    },
+    {
+      "pid": 16764,
+      "name": "python.exe",
+      "rss_bytes": 4370432
+    },
+    {
+      "pid": 19480,
+      "name": "python.exe",
+      "rss_bytes": 4362240
+    }
+  ]
+}

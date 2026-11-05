@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-05T04:00:21.417125+00:00",
+  "pid": 35724,
+  "launcher_pid": 35392,
+  "argv": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\environments\\round_002_catboost\\Scripts\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_025\\review\\reinfer_saved.py",
+    "rounds/round_025/artifacts/gate"
+  ]
+}
