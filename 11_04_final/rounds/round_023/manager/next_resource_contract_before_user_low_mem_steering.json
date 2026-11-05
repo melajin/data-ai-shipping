@@ -1,0 +1,10 @@
+{
+  "minimum_entry_available_gib": 4.5,
+  "per_stage_free_guard_gib": 2.5,
+  "owned_job_peak_limit_gib": 1.5,
+  "reserve_gib": 0.5,
+  "basis": "Conservative admission = unchanged per-stage free guard 2.5GiB + unchanged expected/maximum owned-job RSS 1.5GiB + external variability reserve0.5GiB. Round023 started at2.689GiB but fell to2.465GiB before any fit. Full8fit peak is unmeasured; do not treat partial observed0.427GiB from round022 as full-run bound. Entry threshold does not guarantee future system availability.",
+  "model_or_feature_changes": false,
+  "same_round_retry": false,
+  "recheck_policy": "After independent source/document work and immediately before next heavy operation. No polling loop, no terminating user processes, no repeated fresh sessions solely to wait for RAM. If unavailable after useful independent work, preserve ready handoff and record exact resource-conditioned resume command."
+}

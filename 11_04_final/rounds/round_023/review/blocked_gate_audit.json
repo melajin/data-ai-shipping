@@ -1,0 +1,257 @@
+{
+  "status": "pass_zero_fit_block_confirmed",
+  "audited_utc": "2026-11-05T02:30:13.270093+00:00",
+  "round": "round_023",
+  "execution": {
+    "stage": "s1_gate",
+    "started_at_utc": "2026-11-05T02:20:11.689116+00:00",
+    "finished_at_utc": "2026-11-05T02:20:36.790957+00:00",
+    "exit_code": 3,
+    "stop_reason": null,
+    "wall_seconds": 25.100306000000273,
+    "sampled_peak_family_rss_bytes": 329039872,
+    "sampled_min_available_bytes": 2559500288
+  },
+  "resource_boundary": {
+    "first_available_bytes": 2886963200,
+    "prefit_second_check_available_bytes": 2646290432,
+    "required_free_bytes": 2684354560,
+    "shortfall_bytes": 38064128,
+    "reported_expected_peak_bytes": 1610612736,
+    "current_audit_available_bytes": 2917302272,
+    "audit_expected_peak_bytes": 67108864,
+    "next_round_entry_threshold_gib": 4.5,
+    "round023_full_fit_peak_measured": false,
+    "active_round023_processes": [],
+    "known_owner_pid_matches": []
+  },
+  "fit_state": {
+    "gate_blocked_status": "blocked_before_fit",
+    "training_fits_started": 0,
+    "fits_completed": 0,
+    "progress_status": "running",
+    "progress_fit_attempts_started": 0,
+    "progress_fits_completed": 0,
+    "model_file_count": 0,
+    "feature_evidence_file_count": 0,
+    "missing_fit_outputs": [
+      "rounds/round_023/artifacts/gate/gate_result.json",
+      "rounds/round_023/artifacts/gate/predictions_baseline.npz",
+      "rounds/round_023/artifacts/gate/predictions_candidate.npz"
+    ],
+    "existing_checker_run": false,
+    "full_model_reinference_possible": false
+  },
+  "source_audit": {
+    "approval_sha256": "a60e239ecf5731d1a011ec1dd689c566bed7a511708f272044d4966904bf5d9b",
+    "freeze_approval_sha256": "a60e239ecf5731d1a011ec1dd689c566bed7a511708f272044d4966904bf5d9b",
+    "audit_script_sha256": "36d868a499acd4652f3e3964f4c7aa2e4f79db1b46ec23aa2964e966f2ad5863",
+    "sources": [
+      {
+        "path": "rounds/round_023/code/prepare_t5_cache.py",
+        "approved_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+        "current_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+        "frozen_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+        "execution_before_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+        "execution_after_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+        "approved_matches_current": true,
+        "approved_matches_freeze": true,
+        "execution_hashes_match_approval": true
+      },
+      {
+        "path": "rounds/round_023/code/t5_rebuild.py",
+        "approved_sha256": "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+        "current_sha256": "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+        "frozen_sha256": "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+        "execution_before_sha256": "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+        "execution_after_sha256": "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+        "approved_matches_current": true,
+        "approved_matches_freeze": true,
+        "execution_hashes_match_approval": true
+      },
+      {
+        "path": "rounds/round_023/code/s1_features.py",
+        "approved_sha256": "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+        "current_sha256": "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+        "frozen_sha256": "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+        "execution_before_sha256": "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+        "execution_after_sha256": "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+        "approved_matches_current": true,
+        "approved_matches_freeze": true,
+        "execution_hashes_match_approval": true
+      },
+      {
+        "path": "rounds/round_023/code/run_gate.py",
+        "approved_sha256": "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+        "current_sha256": "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+        "frozen_sha256": "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+        "execution_before_sha256": "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+        "execution_after_sha256": "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+        "approved_matches_current": true,
+        "approved_matches_freeze": true,
+        "execution_hashes_match_approval": true
+      },
+      {
+        "path": "rounds/round_023/configs/experiment.json",
+        "approved_sha256": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+        "current_sha256": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+        "frozen_sha256": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+        "execution_before_sha256": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+        "execution_after_sha256": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+        "approved_matches_current": true,
+        "approved_matches_freeze": true,
+        "execution_hashes_match_approval": true
+      },
+      {
+        "path": "rounds/round_023/ROUND_PLAN.md",
+        "approved_sha256": "be7c8ecb2d918642abc7d2654602547ce8d2425dc90ccad5c1f57ec10ff5cf97",
+        "current_sha256": "be7c8ecb2d918642abc7d2654602547ce8d2425dc90ccad5c1f57ec10ff5cf97",
+        "frozen_sha256": "be7c8ecb2d918642abc7d2654602547ce8d2425dc90ccad5c1f57ec10ff5cf97",
+        "execution_before_sha256": "be7c8ecb2d918642abc7d2654602547ce8d2425dc90ccad5c1f57ec10ff5cf97",
+        "execution_after_sha256": "be7c8ecb2d918642abc7d2654602547ce8d2425dc90ccad5c1f57ec10ff5cf97",
+        "approved_matches_current": true,
+        "approved_matches_freeze": true,
+        "execution_hashes_match_approval": true
+      },
+      {
+        "path": "rounds/round_023/manager/launch.py",
+        "approved_sha256": "d14df6e640932458b6531de9fb800ed71404c8f6edef5e9b4e538b009663c886",
+        "current_sha256": "d14df6e640932458b6531de9fb800ed71404c8f6edef5e9b4e538b009663c886",
+        "frozen_sha256": "d14df6e640932458b6531de9fb800ed71404c8f6edef5e9b4e538b009663c886",
+        "execution_before_sha256": "d14df6e640932458b6531de9fb800ed71404c8f6edef5e9b4e538b009663c886",
+        "execution_after_sha256": "d14df6e640932458b6531de9fb800ed71404c8f6edef5e9b4e538b009663c886",
+        "approved_matches_current": true,
+        "approved_matches_freeze": true,
+        "execution_hashes_match_approval": true
+      },
+      {
+        "path": "rounds/round_023/manager/runtime_contract.json",
+        "approved_sha256": "fa9c54f8490fec775910212db4f92f907f9b2de4fd215bb3348b65920040c1a2",
+        "current_sha256": "fa9c54f8490fec775910212db4f92f907f9b2de4fd215bb3348b65920040c1a2",
+        "frozen_sha256": "fa9c54f8490fec775910212db4f92f907f9b2de4fd215bb3348b65920040c1a2",
+        "execution_before_sha256": null,
+        "execution_after_sha256": null,
+        "approved_matches_current": true,
+        "approved_matches_freeze": true,
+        "execution_hashes_match_approval": null
+      }
+    ],
+    "runtime_contract": {
+      "path": "rounds/round_023/manager/runtime_contract.json",
+      "current_sha256": "fa9c54f8490fec775910212db4f92f907f9b2de4fd215bb3348b65920040c1a2",
+      "approved_sha256": "fa9c54f8490fec775910212db4f92f907f9b2de4fd215bb3348b65920040c1a2",
+      "frozen_sha256": "fa9c54f8490fec775910212db4f92f907f9b2de4fd215bb3348b65920040c1a2",
+      "execution_deadline_matches_contract": true,
+      "receipt_hashes_contract": false
+    },
+    "copied_inputs": [
+      {
+        "path": "code/run_gate.py",
+        "copied_sha256": "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+        "current_sha256": "7a5c4b6051efc927cbcce7070cf47defc1e66448a84823f4cec8ba2c9ab8a44f",
+        "matches": true
+      },
+      {
+        "path": "code/s1_features.py",
+        "copied_sha256": "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+        "current_sha256": "d260bbb45253cff9e38a1a96f956ac1eeb29ce2e060f5c7db0b3e08ac743462b",
+        "matches": true
+      },
+      {
+        "path": "code/t5_rebuild.py",
+        "copied_sha256": "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+        "current_sha256": "f3e339b44038cae22ef5a996d63d6516fd68f0f938347a02c7990f7437dd8ffb",
+        "matches": true
+      },
+      {
+        "path": "code/prepare_t5_cache.py",
+        "copied_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+        "current_sha256": "98c4c52a36dd9bb6f289aac0705e9f031d12ff4463e193153b98844a8ab3876e",
+        "matches": true
+      },
+      {
+        "path": "configs/experiment.json",
+        "copied_sha256": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+        "current_sha256": "8ec1d5d3539739ad75e72b7f70f4c7baba3a0639bedada8d8f3774fb25bd491c",
+        "matches": true
+      },
+      {
+        "path": "artifacts/t5_fishing_profiles.npz",
+        "copied_sha256": "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+        "current_sha256": "a21d74c5d644af19ae41f09ad4383e6a3992fd368cd30842c473fcc7163f3818",
+        "matches": true
+      },
+      {
+        "path": "artifacts/t5_fishing_profiles.manifest.json",
+        "copied_sha256": "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+        "current_sha256": "6fbfe1e6593f11c38255801e0d72ee3ee9c00fc83811b1dc68c425614d321f78",
+        "matches": true
+      },
+      {
+        "path": "artifacts/t5_mask_equivalence.json",
+        "copied_sha256": "1b2a70d3bd945bf0eafc8864146f703731078530940a5358812d2da8407ba695",
+        "current_sha256": "1b2a70d3bd945bf0eafc8864146f703731078530940a5358812d2da8407ba695",
+        "matches": true
+      },
+      {
+        "path": "tmp/s1_profiles.sqlite",
+        "copied_sha256": "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+        "current_sha256": "c4588e2c82613449e3be1ab1e149f26b4d0e78d22c84b93417e5ae9abc471efa",
+        "matches": true
+      },
+      {
+        "path": "tmp/s1_profiles.sqlite.manifest.json",
+        "copied_sha256": "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+        "current_sha256": "ba0823d27b44c1d3b809c81c59be63a26381142842095d0bfef58bf50ab21d20",
+        "matches": true
+      },
+      {
+        "path": "review/verify_gate_result.py",
+        "copied_sha256": "b184765e3092595e4121865e85aaa4cb23695243f19bc9301ef954b415210ff1",
+        "current_sha256": "0bdcd79a712d74df86079cc6d4c26ed1dd66f2ea8f431ae8ee46f613db16aaca",
+        "matches": false
+      }
+    ],
+    "checker_authorized_diff": [
+      "-    round_dir = root / \"rounds\" / \"round_022\"",
+      "+    round_dir = out.parents[1]"
+    ],
+    "checker_approval_hash_mapping_skipped_keys": 5,
+    "fold0_feature_sha256": "858688c0bd690eb82612a1d940b6cc002a31ee33d3acb2c322f176e28152de95"
+  },
+  "checks": {
+    "approval_hash_matches_freeze": true,
+    "all_approved_sources_match_current_freeze_and_execution_records": true,
+    "runtime_contract_unchanged_since_freeze": true,
+    "copied_inputs_match_except_authorized_checker_edit": true,
+    "checker_diff_is_exactly_authorized_path_fix": true,
+    "fold0_feature_hash_matches_blocked_record": true,
+    "blocked_record_confirms_zero_fit": true,
+    "progress_and_outputs_confirm_zero_models": true,
+    "launcher_exit_code_is_blocked_exit": true,
+    "normal_ram_guard_failed_at_cv0_feature_precheck": true,
+    "owned_round023_launcher_not_still_running": true
+  },
+  "findings": [
+    {
+      "severity": "note",
+      "finding": "Progress file status remains 'running' even though gate_blocked.json and launch receipt document a zero-fit exit-3 RAM block; its two fit counters remain zero."
+    },
+    {
+      "severity": "limitation",
+      "finding": "The saved-output checker was not invoked because gate_result.json and model/prediction artifacts do not exist."
+    },
+    {
+      "severity": "limitation",
+      "finding": "The saved-output checker approval-key mapping skips 5 round023 source keys; this audit verifies their hashes against the approval, freeze and execution records directly."
+    },
+    {
+      "severity": "limitation",
+      "finding": "No model was fitted or serialized, so saved-model reload, prediction-probability and argmax reinference checks cannot be performed for round023."
+    },
+    {
+      "severity": "limitation",
+      "finding": "The launcher receipt does not hash manager/runtime_contract.json; this audit verifies its current and frozen hashes and confirms the recorded compute cutoff equals its approved deadline, but the receipt does not contain a direct contract hash."
+    }
+  ]
+}

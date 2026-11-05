@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-05T02:35:19.866096+00:00",
+  "status": "pass",
+  "current_round": "round_023",
+  "handoff_ready": true,
+  "next_session_launched": false,
+  "next_round_directory_created": false,
+  "new_fits": 0,
+  "file_sha256": {
+    "STATUS.json": "fafd3bf00552ef82ccd53c300e1aa3bf4c377ef1ccad8b27e5e1916656f71be1",
+    "NEXT_SESSION.md": "571b70be1dff8fdbc7275b66600b046acc0df206e6e030afcf508c02ab167e5e",
+    "EXPERIMENT_LEDGER.csv": "4a281b2a5953d572af9e40608e73b97ab644c94d89327746aeb3cffbdedc1b6c",
+    "rounds/round_023/ROUND_REPORT.md": "77543e7673b4957c0866edfdab7c4eb1c9df5dd270d95810782c2f40028fe6a7",
+    "rounds/round_023/review/blocked_gate_audit.json": "d1ee6280bc97fb23c250d3017d2ef896967b910bc9713af3710fafb56514c853",
+    "rounds/round_023/review/REVIEW_REPORT.md": "b5943dd01eebfa038fe8a0e5ba49fb7c05a96c6f4f7986eb11cd5d0b84aed80c"
+  }
+}

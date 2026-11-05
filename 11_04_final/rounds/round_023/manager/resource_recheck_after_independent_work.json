@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-05T02:52:34.363497+00:00",
+  "available_gib": 2.3107376098632812,
+  "required_entry_gib": 1.5,
+  "expected_peak_gib": 0.5,
+  "other_python_jobs": [],
+  "allowed": true,
+  "independent_work_since_deferral": [
+    "blocked execution/source audit",
+    "portable saved-metric analysis preparation",
+    "S2 source/readiness documentation only",
+    "user-directed low-memory sequential setup and resource contract update"
+  ],
+  "estimate_basis": "User explicit steering (2026-11-05 11:42 KST): '시간이 조금 걸려도 메모리 조금씩 써서 작업하는걸로 해 나 딴것도 해야함...'. Switched Round024 to sequential low-memory step-by-step execution: (1) T5 fold-local matrices computed first then T5 rebuilder immediately freed via del+gc.collect() before S1/LightGBM; (2) S1 features built one period at a time with per-period del+gc.collect(); (3) LightGBM fits executed sequentially one variant at a time with threads=1 (n_jobs=1), BELOW_NORMAL_PRIORITY_CLASS, and immediate del+gc.collect() after each model save. Expected owned-process peak <= 0.5 GiB (hard RSS ceiling 0.75 GiB), per-stage free RAM guard 1.0 GiB, entry available RAM threshold 1.5 GiB (matching CYCLE_PROTOCOL.md baseline), emergency system free RAM floor 0.5 GiB.",
+  "user_processes_terminated": 0,
+  "training_retries": 0
+}
