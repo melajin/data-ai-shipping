@@ -1,0 +1,113 @@
+{
+  "suite": "round_004_evaluation_and_runner_verification",
+  "timestamp_local": "2026-11-06T00:26:05+0900",
+  "overall_status": "succeeded",
+  "total_checks": 5,
+  "passed_checks": 5,
+  "elapsed_seconds": 3.3941111999993154,
+  "checks": {
+    "random_hit_probabilities_exact": {
+      "status": "passed",
+      "tested_cases": [
+        {
+          "n": 4,
+          "h": 1,
+          "k": 2,
+          "prob": 0.5
+        },
+        {
+          "n": 3,
+          "h": 2,
+          "k": 1,
+          "prob": 0.6666666666666667
+        },
+        {
+          "n": 1,
+          "h": 1,
+          "k": 1,
+          "prob": 1.0
+        },
+        {
+          "n": 0,
+          "h": 0,
+          "k": 4,
+          "prob": 0.0
+        },
+        {
+          "n": 5,
+          "h": 0,
+          "k": 3,
+          "prob": 0.0
+        },
+        {
+          "n": 5,
+          "h": 5,
+          "k": 1,
+          "prob": 1.0
+        }
+      ]
+    },
+    "paired_rfid_cluster_bootstrap": {
+      "status": "passed",
+      "n_events": 4,
+      "n_rfid": 3,
+      "mean_diff": 0.25,
+      "ci95": [
+        -1.0,
+        1.0
+      ]
+    },
+    "distinct_method_predictions_and_fallbacks": {
+      "status": "passed",
+      "distinct_winners": {
+        "B0_ts": 110,
+        "S_ts": 125,
+        "G_ts": 120
+      },
+      "fallbacks": {
+        "G2_fallback": "no_gear_eligible_candidates",
+        "G3_S_fallback": "no_common_transitions",
+        "G3_G_fallback": "no_common_transitions"
+      },
+      "output_files": {
+        "predictions.csv": 3880,
+        "pool_manifest.csv": 708,
+        "candidate_ledger.parquet": 28692,
+        "stage_counts.csv": 3002,
+        "stage_event_coverage.csv": 1126,
+        "event_results.csv": 2643,
+        "metrics.json": 20359,
+        "diagnostics.json": 966
+      }
+    },
+    "fixed_denominators_and_gate_evaluation": {
+      "status": "passed",
+      "denominators": {
+        "all_events": 4,
+        "tier01_events": 4
+      },
+      "probability_outputs": false,
+      "gate_overall_passed": false,
+      "gate_failures_count": 1
+    },
+    "runner_preflight_and_overwrite_protection": {
+      "status": "passed",
+      "available_ram_bytes": 4109811712,
+      "total_ram_bytes": 14827769856,
+      "preflight_requirement_bytes": 1476395008,
+      "process_count": 15,
+      "overwrite_protection": "verified"
+    }
+  },
+  "spec_compliance": {
+    "method_pools_B0_S_G": "verified distinct pools and rankings",
+    "shared_cap_rule": "min(4, len(actual G pool)) verified",
+    "fallback_hierarchy": "stage3 -> stage2 -> stage0 -> empty verified",
+    "random_expectation": "exact combinatorial formula over actual pool and cap verified",
+    "paired_rfid_bootstrap": "4000 repetitions, seed 20261105 verified",
+    "fixed_denominators": "whole 100 / Tier01 60 preserved without dropping unobserved events",
+    "ledger_emission": "stage_counts.csv, stage_event_coverage.csv, candidate_ledger.parquet verified",
+    "runner_preflight": "768MiB extra + 640MiB reserve preflight and overwrite guard verified",
+    "probability_claims": "probability_outputs: false strictly enforced"
+  }
+}

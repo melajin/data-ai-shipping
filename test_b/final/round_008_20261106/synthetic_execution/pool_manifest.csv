@@ -1,0 +1,13 @@
+rfid_id,method,pool_stage,actual_pool_n,cap,fallback_reason
+rfid_1,B0,s0,10,4,
+rfid_1,S,s3,10,4,
+rfid_1,G,s4,10,4,
+rfid_2,B0,s0,6,3,
+rfid_2,S,s3,6,3,
+rfid_2,G,s3,6,3,s4_pool_empty_fallback_to_S
+rfid_3,B0,s0,4,1,
+rfid_3,S,s0,4,1,s3_pool_empty_fallback_to_s0
+rfid_3,G,s0,4,1,s4_pool_empty_fallback_to_s0
+rfid_4,B0,s0,0,0,no_observations
+rfid_4,S,s0,0,0,no_observations
+rfid_4,G,s0,0,0,no_observations

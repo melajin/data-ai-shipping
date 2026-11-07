@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "requested_model": "GPT-6 Luna",
+  "requested_effort": "xhigh",
+  "checks": [
+    "strict history window includes exact t-720 row and meets 24-row/3-date boundary",
+    "current-hour row is excluded at t and enters history at t+1 while the exact 720-hour boundary rolls out",
+    "six same-code histories qualify at common t, including peers without a current row; peer rarity is equally vessel-weighted",
+    "synthetic fixture yields distinct B0/S/G winners: later highest legacy baseline, S legacy tie, and G peer-only self tie-break",
+    "all methods share cap=min(4,G actual pool n), with exact B0/S/G masks",
+    "empty S/G uses documented fallback; B0/S/G legacy-only paths rank descending as [.9,.5,.1]",
+    "invalid base defers, observed-small rejects, and missing geometry defers without violating mask hierarchy",
+    "appending a future row leaves every existing score and stage unchanged",
+    "duplicate RFID/hour and fractional source-clock hours are rejected"
+  ],
+  "check_count": 9,
+  "synthetic_rows": 183,
+  "distinct_top1_ordinals": {
+    "B0": 26,
+    "S": 24,
+    "G": 25
+  },
+  "peer_mean_at_t721": 0.060833333333333295,
+  "diagnostics_peer_ties": {
+    "definition": "exact self_rarity tie groups (size>=2) among each RFID's actual s4 candidates; peer values vary if tied rows have >1 exact peer_rarity_mean",
+    "rfids_with_actual_s4_pool": 7,
+    "tie_groups": 1,
+    "tied_candidates": 2,
+    "groups_with_differing_peer_values": 1,
+    "rfids_rank1_changed_by_peer_within_same_pool": 1,
+    "rfids_top4_set_changed_by_peer_within_same_pool": 0,
+    "denominator": "RFIDs whose G actual pool is s4; comparison ranks same s4 candidates with self_rarity, legacy, ts, ordinal versus contract G self_rarity, peer_rarity, legacy, ts, ordinal"
+  },
+  "ram_preflight": {
+    "checked_at": "2026-11-06T02:41:52.502243+09:00",
+    "available_mib": 4117.5,
+    "expected_extra_mib": 768,
+    "reserve_mib": 640,
+    "active_python_jobs": [],
+    "allowed": true,
+    "estimate_basis": "synthetic 183-row pandas fixture; conservative project 768 MiB implementation ceiling plus 640 MiB reserve"
+  },
+  "scope": "synthetic in-memory fixture only; no production data, labels, extraction, scoring evaluation or model training"
+}

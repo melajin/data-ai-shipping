@@ -1,0 +1,24 @@
+{
+  "round": "019",
+  "protocol_frozen_at": "2026-11-06T14:22:23+09:00",
+  "protocol_sha256": "10fe34978e36774f7a63ed12c889871a2b2a0edeeec77e9380d7f50b016645f0a",
+  "protocol_scope": "Frozen before any Round019 score-label outcome inspection; historical results and user h=0.0366 known",
+  "roles_requested": [
+    {"task": "/root/round019_design", "role": "astra_decision", "model": "gpt-6-astra", "effort": "high", "spawn_confirmed": true, "ownership": "read-only design"},
+    {"task": "/root/round019_scoring", "role": "sol_complex", "model": "gpt-6.1-sol", "effort": "max", "spawn_confirmed": true, "ownership": "score_fleet.py and scoring outputs"},
+    {"task": "/root/round019_evaluation", "role": "sol_module", "model": "gpt-6.1-sol", "effort": "xhigh", "spawn_confirmed": true, "ownership": "evaluate.py, test_evaluate.py and evaluation outputs"},
+    {"task": "/root/round019_review", "role": "sol_review", "model": "gpt-6.1-sol", "effort": "high", "spawn_confirmed": true, "ownership": "AUDIT.md"}
+  ],
+  "runtime_claim_boundary": "Requested model/effort and tool-created task names recorded; provider internal runtime model not independently verified; parent model unchanged claim not made",
+  "design_review": {
+    "accepted": "Approximate observation-count-controlled association only; weighted SMD support gate and finite-score exposure diagnostic retained",
+    "primary_statistical_reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mannwhitneyu.html",
+    "permutation_reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.permutation_test.html"
+  },
+  "initial_memory_observation": {
+    "checked_at": null,
+    "available_mib": 4172.11328125,
+    "source": "Initial session Win32_OperatingSystem.FreePhysicalMemory=4272244 KiB; exact timestamp not retained, informational only, launch needs fresh timestamped check",
+    "next_stage": "bounded stream/partition scoring, agent must record fresh preflight"
+  }
+}

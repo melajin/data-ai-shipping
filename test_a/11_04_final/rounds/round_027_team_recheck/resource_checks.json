@@ -1,0 +1,65 @@
+[
+  {
+    "time": "2026-11-05T07:10:43.407279+00:00",
+    "stage": "entry_before_numeric_import",
+    "available_gib": 1.5304031372070312,
+    "rss_gib": 0.021572113037109375,
+    "expected_peak_gib": 0.35,
+    "estimate": "small probability arrays + sklearn/scipy imports + <=394x16 logistic fits",
+    "other_python": []
+  },
+  {
+    "time": "2026-11-05T07:10:47.096702+00:00",
+    "stage": "load_small_probabilities",
+    "available_gib": 1.4051399230957031,
+    "rss_gib": 0.14563369750976562,
+    "expected_peak_gib": 0.35,
+    "estimate": "small probability arrays + sklearn/scipy imports + <=394x16 logistic fits",
+    "other_python": []
+  },
+  {
+    "time": "2026-11-05T07:10:47.287169+00:00",
+    "stage": "fold0_select_crossfit",
+    "available_gib": 1.3960494995117188,
+    "rss_gib": 0.1531982421875,
+    "expected_peak_gib": 0.35,
+    "estimate": "small probability arrays + sklearn/scipy imports + <=394x16 logistic fits",
+    "other_python": []
+  },
+  {
+    "time": "2026-11-05T07:10:47.484192+00:00",
+    "stage": "fold1_select_crossfit",
+    "available_gib": 1.4126358032226562,
+    "rss_gib": 0.15508651733398438,
+    "expected_peak_gib": 0.35,
+    "estimate": "small probability arrays + sklearn/scipy imports + <=394x16 logistic fits",
+    "other_python": []
+  },
+  {
+    "time": "2026-11-05T07:10:47.625869+00:00",
+    "stage": "fold2_select_crossfit",
+    "available_gib": 1.4120025634765625,
+    "rss_gib": 0.15546035766601562,
+    "expected_peak_gib": 0.35,
+    "estimate": "small probability arrays + sklearn/scipy imports + <=394x16 logistic fits",
+    "other_python": []
+  },
+  {
+    "time": "2026-11-05T07:10:47.855338+00:00",
+    "stage": "evaluate_after_predictions_frozen",
+    "available_gib": 1.4119911193847656,
+    "rss_gib": 0.15601730346679688,
+    "expected_peak_gib": 0.35,
+    "estimate": "small probability arrays + sklearn/scipy imports + <=394x16 logistic fits",
+    "other_python": []
+  },
+  {
+    "time": "2026-11-05T07:10:48.072058+00:00",
+    "stage": "complete",
+    "available_gib": 1.4115371704101562,
+    "rss_gib": 0.15619277954101562,
+    "expected_peak_gib": 0.35,
+    "estimate": "small probability arrays + sklearn/scipy imports + <=394x16 logistic fits",
+    "other_python": []
+  }
+]

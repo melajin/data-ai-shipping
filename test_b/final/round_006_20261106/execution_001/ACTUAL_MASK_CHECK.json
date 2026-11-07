@@ -1,0 +1,15 @@
+{
+  "rows": 99677,
+  "finite_legacy_scores": 99677,
+  "d0_true": 99677,
+  "subset_violations": {
+    "d1_outside_d0": 0,
+    "d2_outside_d1": 0,
+    "d3_outside_d2": 0,
+    "d4_outside_d3": 0
+  },
+  "prediction_rows": 966,
+  "all_primary_prediction_scores_finite": true,
+  "scope": "fixed execution_001 only; does not prove API safe for invalid-score inputs",
+  "fixed_input_warning_manifested": false
+}

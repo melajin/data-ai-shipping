@@ -1,0 +1,212 @@
+{
+  "round": "Round013",
+  "description": "Local collapse lin_min_w and self-reference argmin evaluation",
+  "primary_endpoint_tier01_eligible": {
+    "cohort_name": "PRIMARY_Tier0-1_Eligible_ge11",
+    "n_events": 49,
+    "n_vessels": 47,
+    "w7": {
+      "n_eval": 49,
+      "hits_collapse": 1,
+      "hit_rate_collapse": 0.0204,
+      "hits_mid": 1,
+      "hit_rate_mid": 0.0204,
+      "hits_end": 0,
+      "hit_rate_end": 0.0,
+      "baseline_random_in_voyage": 0.0117,
+      "baseline_random_voyage_vessel": 0.0102,
+      "p_binom_raw_vs_in_voyage": 0.43920527642967233,
+      "p_binom_bonf_vs_in_voyage": 0.8784105528593447,
+      "p_binom_raw_vs_vessel": 0.39544218918014207,
+      "p_binom_bonf_vs_vessel": 0.7908843783602841,
+      "bootstrap_ci_97_5": [
+        0.0,
+        0.08
+      ],
+      "bootstrap_se": 0.01988,
+      "mde_target_rate": 0.0548,
+      "passed_protocol_gate": false
+    },
+    "w3": {
+      "n_eval": 49,
+      "hits_collapse": 0,
+      "hit_rate_collapse": 0.0,
+      "hits_mid": 1,
+      "hit_rate_mid": 0.0204,
+      "hits_end": 0,
+      "hit_rate_end": 0.0,
+      "baseline_random_in_voyage": 0.0066,
+      "baseline_random_voyage_vessel": 0.0102,
+      "p_binom_raw_vs_in_voyage": 1.0,
+      "p_binom_bonf_vs_in_voyage": 1.0,
+      "p_binom_raw_vs_vessel": 1.0,
+      "p_binom_bonf_vs_vessel": 1.0,
+      "bootstrap_ci_97_5": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_se": 0.0,
+      "mde_target_rate": 0.0391,
+      "passed_protocol_gate": false
+    }
+  },
+  "secondary_tier01_all": {
+    "cohort_name": "SECONDARY_Tier0-1_ALL",
+    "n_events": 60,
+    "n_vessels": 55,
+    "w7": {
+      "n_eval": 59,
+      "hits_collapse": 2,
+      "hit_rate_collapse": 0.0339,
+      "hits_mid": 2,
+      "hit_rate_mid": 0.0339,
+      "hits_end": 0,
+      "hit_rate_end": 0.0,
+      "baseline_random_in_voyage": 0.0255,
+      "baseline_random_voyage_vessel": 0.0158,
+      "p_binom_raw_vs_in_voyage": 0.44495464688702,
+      "p_binom_bonf_vs_in_voyage": 0.88990929377404,
+      "p_binom_raw_vs_vessel": 0.23978271402379753,
+      "p_binom_bonf_vs_vessel": 0.47956542804759505,
+      "bootstrap_ci_97_5": [
+        0.0,
+        0.09836
+      ],
+      "bootstrap_se": 0.02384,
+      "mde_target_rate": 0.0829,
+      "passed_protocol_gate": false
+    },
+    "w3": {
+      "n_eval": 59,
+      "hits_collapse": 1,
+      "hit_rate_collapse": 0.0169,
+      "hits_mid": 2,
+      "hit_rate_mid": 0.0339,
+      "hits_end": 0,
+      "hit_rate_end": 0.0,
+      "baseline_random_in_voyage": 0.0212,
+      "baseline_random_voyage_vessel": 0.0158,
+      "p_binom_raw_vs_in_voyage": 0.7178507172653024,
+      "p_binom_bonf_vs_in_voyage": 1.0,
+      "p_binom_raw_vs_vessel": 0.6099529184649883,
+      "p_binom_bonf_vs_vessel": 1.0,
+      "bootstrap_ci_97_5": [
+        0.0,
+        0.06667
+      ],
+      "bootstrap_se": 0.01697,
+      "mde_target_rate": 0.0738,
+      "passed_protocol_gate": false
+    }
+  },
+  "secondary_all_eligible": {
+    "cohort_name": "SECONDARY_ALL_Eligible_ge11",
+    "n_events": 81,
+    "n_vessels": 71,
+    "w7": {
+      "n_eval": 80,
+      "hits_collapse": 1,
+      "hit_rate_collapse": 0.0125,
+      "hits_mid": 1,
+      "hit_rate_mid": 0.0125,
+      "hits_end": 0,
+      "hit_rate_end": 0.0,
+      "baseline_random_in_voyage": 0.0096,
+      "baseline_random_voyage_vessel": 0.009,
+      "p_binom_raw_vs_in_voyage": 0.5396270881614842,
+      "p_binom_bonf_vs_in_voyage": 1.0,
+      "p_binom_raw_vs_vessel": 0.5162662820288786,
+      "p_binom_bonf_vs_vessel": 1.0,
+      "bootstrap_ci_97_5": [
+        0.0,
+        0.04878
+      ],
+      "bootstrap_se": 0.01252,
+      "mde_target_rate": 0.0403,
+      "passed_protocol_gate": false
+    },
+    "w3": {
+      "n_eval": 81,
+      "hits_collapse": 0,
+      "hit_rate_collapse": 0.0,
+      "hits_mid": 1,
+      "hit_rate_mid": 0.0123,
+      "hits_end": 0,
+      "hit_rate_end": 0.0,
+      "baseline_random_in_voyage": 0.0064,
+      "baseline_random_voyage_vessel": 0.0091,
+      "p_binom_raw_vs_in_voyage": 1.0,
+      "p_binom_bonf_vs_in_voyage": 1.0,
+      "p_binom_raw_vs_vessel": 1.0,
+      "p_binom_bonf_vs_vessel": 1.0,
+      "bootstrap_ci_97_5": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_se": 0.0,
+      "mde_target_rate": 0.0314,
+      "passed_protocol_gate": false
+    }
+  },
+  "secondary_all_100": {
+    "cohort_name": "SECONDARY_ALL_100_Events",
+    "n_events": 100,
+    "n_vessels": 82,
+    "w7": {
+      "n_eval": 98,
+      "hits_collapse": 2,
+      "hit_rate_collapse": 0.0204,
+      "hits_mid": 2,
+      "hit_rate_mid": 0.0204,
+      "hits_end": 0,
+      "hit_rate_end": 0.0,
+      "baseline_random_in_voyage": 0.0176,
+      "baseline_random_voyage_vessel": 0.0118,
+      "p_binom_raw_vs_in_voyage": 0.5164166166933338,
+      "p_binom_bonf_vs_in_voyage": 1.0,
+      "p_binom_raw_vs_vessel": 0.32184693715951174,
+      "p_binom_bonf_vs_vessel": 0.6436938743190235,
+      "bootstrap_ci_97_5": [
+        0.0,
+        0.06
+      ],
+      "bootstrap_se": 0.01474,
+      "mde_target_rate": 0.0548,
+      "passed_protocol_gate": false
+    },
+    "w3": {
+      "n_eval": 99,
+      "hits_collapse": 1,
+      "hit_rate_collapse": 0.0101,
+      "hits_mid": 2,
+      "hit_rate_mid": 0.0202,
+      "hits_end": 0,
+      "hit_rate_end": 0.0,
+      "baseline_random_in_voyage": 0.0152,
+      "baseline_random_voyage_vessel": 0.0119,
+      "p_binom_raw_vs_in_voyage": 0.7793878108812875,
+      "p_binom_bonf_vs_in_voyage": 1.0,
+      "p_binom_raw_vs_vessel": 0.6928809296470979,
+      "p_binom_bonf_vs_vessel": 1.0,
+      "bootstrap_ci_97_5": [
+        0.0,
+        0.03961
+      ],
+      "bootstrap_se": 0.01011,
+      "mde_target_rate": 0.0495,
+      "passed_protocol_gate": false
+    }
+  },
+  "ineligible_events_profile": {
+    "n_ineligible_events": 19,
+    "n_ineligible_vessels": 11,
+    "tier01_ineligible_events": 11,
+    "ineligible_event_fraction_total": 0.19
+  },
+  "protocol_criteria": {
+    "family_size": 2,
+    "bonferroni_alpha": 0.025,
+    "pass_threshold_hit_rate": 0.12,
+    "pass_threshold_p_value": 0.05
+  }
+}

@@ -1,0 +1,26 @@
+category_type,stage,status,reason,row_count,rfid_count,description
+candidate_transition,s0,input,canonical_input_rows,99677,82,Total canonical hourly observations presented for s0
+candidate_transition,s0,keep,s0_admitted,99677,82,Rows meeting stage condition: valid current geometry and finite legacy score
+candidate_transition,s1,input,s0_ok,99677,82,Input rows admitted from s0
+candidate_transition,s1,keep,s1_admitted,88036,81,Rows meeting stage condition: exact previous two valid geometry hours
+candidate_transition,s1,defer,missing_or_invalid_exact_t_minus_2_or_t_minus_1_geometry,11641,82,Stage s1 defer: missing_or_invalid_exact_t_minus_2_or_t_minus_1_geometry
+candidate_transition,s2,input,s1_ok,88036,81,Input rows admitted from s1
+candidate_transition,s2,keep,s2_admitted,3807,77,Rows meeting stage condition: small-small-non-small current transition
+candidate_transition,s2,reject,current_triplet_is_not_small_small_non_small,84229,81,Stage s2 reject: current_triplet_is_not_small_small_non_small
+candidate_transition,s3,input,s2_ok,3807,77,Input rows admitted from s2
+candidate_transition,s3,keep,s3_admitted,3702,76,Rows meeting stage condition: own strict-past transition history
+candidate_transition,s3,defer,insufficient_24_valid_reference_triples_or_3_end_dates,105,46,Stage s3 defer: insufficient_24_valid_reference_triples_or_3_end_dates
+candidate_transition,s4,input,s3_ok,3702,76,Input rows admitted from s3
+candidate_transition,s4,keep,s4_admitted,3634,75,Rows meeting stage condition: same-gear peer transition rates
+candidate_transition,s4,defer,fewer_than_5_other_same_gear_history_eligible_vessels,68,12,Stage s4 defer: fewer_than_5_other_same_gear_history_eligible_vessels
+rfid_candidate_presence,s0,presence,vessels_with_ge_1_s0_candidate,99677,82,Number of distinct vessels with at least one s0 candidate (valid current geometry and finite legacy score)
+rfid_candidate_presence,s1,presence,vessels_with_ge_1_s1_candidate,88036,81,Number of distinct vessels with at least one s1 candidate (exact previous two valid geometry hours)
+rfid_candidate_presence,s2,presence,vessels_with_ge_1_s2_candidate,3807,77,Number of distinct vessels with at least one s2 candidate (small-small-non-small current transition)
+rfid_candidate_presence,s3,presence,vessels_with_ge_1_s3_candidate,3702,76,Number of distinct vessels with at least one s3 candidate (own strict-past transition history)
+rfid_candidate_presence,s4,presence,vessels_with_ge_1_s4_candidate,3634,75,Number of distinct vessels with at least one s4 candidate (same-gear peer transition rates)
+method_actual_pool_coverage,s0,strict,strict_stage,99677,82,Method B0 actual pool assigned: s0 (fallback: strict_stage)
+method_actual_pool_coverage,s0,fallback,s2_empty_use_s0,1690,5,Method S actual pool assigned: s0 (fallback: s2_empty_use_s0)
+method_actual_pool_coverage,s2,strict,strict_stage,3807,77,Method S actual pool assigned: s2 (fallback: strict_stage)
+method_actual_pool_coverage,s0,fallback,s4_empty_use_s0,1690,5,Method G actual pool assigned: s0 (fallback: s4_empty_use_s0)
+method_actual_pool_coverage,s2,fallback,s4_empty_use_s2,41,2,Method G actual pool assigned: s2 (fallback: s4_empty_use_s2)
+method_actual_pool_coverage,s4,strict,strict_stage,3634,75,Method G actual pool assigned: s4 (fallback: strict_stage)

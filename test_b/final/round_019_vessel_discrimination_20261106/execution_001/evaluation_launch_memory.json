@@ -1,0 +1,49 @@
+﻿{
+    "reserve_mib":  640,
+    "available_mib":  3951.11328125,
+    "expected_peak_mib":  512,
+    "basis":  "7372 vessel rows and sequential six-metric bootstrap; no hourly input",
+    "checked_at":  "2026-11-06T14:47:37.0088855+09:00",
+    "other_processes":  [
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  9940,
+                                "WorkingSet64":  687931392
+                            },
+                            {
+                                "ProcessName":  "Obsidian",
+                                "Id":  23364,
+                                "WorkingSet64":  587526144
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  27636,
+                                "WorkingSet64":  340934656
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  28540,
+                                "WorkingSet64":  322424832
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  3352,
+                                "WorkingSet64":  309186560
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  5260,
+                                "WorkingSet64":  265609216
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  3096,
+                                "WorkingSet64":  251822080
+                            },
+                            {
+                                "ProcessName":  "chrome",
+                                "Id":  27692,
+                                "WorkingSet64":  250769408
+                            }
+                        ]
+}

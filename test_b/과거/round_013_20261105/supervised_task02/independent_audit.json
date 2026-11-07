@@ -1,0 +1,82 @@
+{
+  "g4_voyages": 3615,
+  "status_rows": 164,
+  "selection_rows": 126,
+  "confidence_rows": 126,
+  "event_rows": 200,
+  "w": {
+    "3": {
+      "vessel_status_counts": {
+        "eligible": 68,
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 3
+      },
+      "event_rows": 100,
+      "eligible_events_all": 78,
+      "eligible_events_tier01": 46
+    },
+    "7": {
+      "vessel_status_counts": {
+        "eligible": 58,
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 12,
+        "no_valid_voyage": 1
+      },
+      "event_rows": 100,
+      "eligible_events_all": 68,
+      "eligible_events_tier01": 41
+    }
+  },
+  "independent_bootstrap": {
+    "w7_Tier0-1": {
+      "clusters": 39,
+      "replicates": 4000,
+      "lower": 0.0,
+      "upper": 0.0,
+      "match": true
+    },
+    "w7_ALL": {
+      "clusters": 58,
+      "replicates": 4000,
+      "lower": 0.0,
+      "upper": 0.0,
+      "match": true
+    },
+    "w3_Tier0-1": {
+      "clusters": 44,
+      "replicates": 4000,
+      "lower": 0.0,
+      "upper": 0.0,
+      "match": true
+    },
+    "w3_ALL": {
+      "clusters": 68,
+      "replicates": 4000,
+      "lower": 0.0,
+      "upper": 0.0,
+      "match": true
+    }
+  },
+  "independent_mde": {
+    "7": {
+      "n": 41,
+      "p0": 0.007926829268292683,
+      "defined": true,
+      "critical_k": 3,
+      "minimum_alternative_p": 0.10149400788461026,
+      "mde_absolute": 0.09356717861631758,
+      "match": true
+    },
+    "3": {
+      "n": 46,
+      "p0": 0.007065217391304348,
+      "defined": true,
+      "critical_k": 3,
+      "minimum_alternative_p": 0.09073797119498005,
+      "mde_absolute": 0.0836727538036757,
+      "match": true
+    }
+  },
+  "all_checks_passed": true,
+  "errors": []
+}

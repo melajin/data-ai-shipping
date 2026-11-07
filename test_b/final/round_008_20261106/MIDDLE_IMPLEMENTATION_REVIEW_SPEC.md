@@ -1,0 +1,13 @@
+# Competing middle review of lower-worker implementation evidence
+
+Both lower worker initial outputs are now available: Luna msg_9ef8574aa27a (extractor10/rules9synthetics), Gemini msg_11247e020b6d (fixed integration10suites). Root found/fixed-requested two integration sets documented INTEGRATION_FIXES_01.md and INTEGRATION_FIXES_02_LEGACY_DIRECTION.md. Luna followup ctx_5ed1e01120d7 is correcting DESC legacy direction and has permission for ONE boundedactualgeometry extraction only. Actual scoring/evaluation NOTreleased yet.
+
+Both reviewers must assess lower results independently, state own conclusion/reasons and a competing-risk view, and return root. Read CONTRACT.md, TIME_INTERFACE_ADDENDUM.md, bothnotes/checkreceipts and relevant code. Do not rely on freehandclaims. Record actual reviewed sourcehashes because Luna may stillbe fixingrule direction; distinguish code revision from actualexecutedrevision. PriorB0 R4 sequence_rules sorts legacy DESC. Alllegacy ties and within-s4 counterfactual mustkeepthat direction. No baseline replacement allowed.
+
+Terra primaryfocus: run_shape/evaluate_shape numericalmerge/sourceclock/receiptmanifests/priorlabelpersistence/sharedcap/methodactualpoolrandom with Tier01gate/RFID pairedbootstrap/full denominators. Also inspect extraction/rules interface and assess design's core coverage. Own REVIEW_IMPLEMENTATION_TERRA.md only.
+
+Sonnet primaryfocus: extraction selection result-independentall82/all99677, nullableexact-once writer/ordinal/rawkey/cache/hashscope, per-partvaliddistinctpoints/longestselection, rule strictpast+ownpeerwindowcommon t/fallback/hierarchy/legacyDESC. Also inspect evaluator gate interface and make own overall assessment. Own REVIEW_IMPLEMENTATION_SONNET.md only.
+
+No actualdata reading/execution; rawextractmayberunning, do notcompeteRAM. Text/sourceinspection only; ifasmallsyntheticchecknecessary estimate<=512MiB andcheckcurrentRAM accounting extraction768+reserve640 plusother reviewer. No polling, no wholecacheloads. Don'teditworker sources orrootcontracts. Actualextractionreceipt ifalreadyfinished canberead as smallJSON; do notwait/poll ifnotpresent.
+
+Report blocking concretebug vs limitation, release/conditionalrelease,5core checks and learning/evaluationdistinction. Oneboundedissueclarification ifnecessary. Mathematicalunitchecks do notproveaccidentutility. R7casesselectedusinganswersare onlydiagnostic; actualmethodmustuseallobservedhours. Rolemodel/effort inherited from documenteddispatches Terrahigh/Sonnethigh; don'tclaimproviderinternalverification. Rootcollectsopinions then makesactualscore release.

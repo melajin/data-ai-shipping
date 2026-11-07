@@ -1,0 +1,102 @@
+{
+  "events_total": 100,
+  "events_tier01": 60,
+  "rfids_total": 82,
+  "rfids_tier01": 55,
+  "ledger_rows": 99677,
+  "predictions_rows": 966,
+  "pool_manifest_rows": 246,
+  "run_registry_rows": 9974,
+  "event_result_rows": 600,
+  "stage_event_coverage_rows": 100,
+  "unresolved_positive_rfids": [],
+  "rule_diagnostics": {
+    "input_rows": 99677,
+    "run_count": 9974,
+    "completed_run_count": 5860,
+    "candidate_counts": {
+      "d0_ok": 99677,
+      "d1_ok": 42242,
+      "d2_ok": 32268,
+      "d3_ok": 16558,
+      "d4_ok": 13723
+    },
+    "stage_status_counts": {
+      "d0": {
+        "keep": 99677
+      },
+      "d1": {
+        "reject": 57435,
+        "keep": 42242
+      },
+      "d2": {
+        "not_applicable": 57435,
+        "keep": 32268,
+        "reject": 7758,
+        "defer": 2216
+      },
+      "d3": {
+        "not_applicable": 67409,
+        "keep": 16558,
+        "defer": 15710
+      },
+      "d4": {
+        "not_applicable": 83119,
+        "keep": 13723,
+        "defer": 2835
+      }
+    }
+  },
+  "gate_evaluation_summary": {
+    "overall_passed": false,
+    "failures": [
+      "tier01_top1_diff (-0.0167) < +0.05 requirement",
+      "tier01_top1 paired bootstrap 95% CI lower bound (-0.05357142857142857) <= 0.0",
+      "whole100_top1 difference (-0.0200) < 0.0 (worsened vs B0)",
+      "tier01_top1 hit rate (0.0167) does not exceed Tier01 random expectation (0.0205)"
+    ]
+  },
+  "explanatory_duration_and_runs": {
+    "disclaimer_no_normal_truth_claims": "Observed duration, continuation, and peer CDFs are ranking statistics and computational filter conditions only. They do not constitute ground truth of normal waiting or accident occurrence.",
+    "current_run_lower_bounds": {
+      "total_small_observations": 42242,
+      "lower_bound_observations": 7723,
+      "lower_bound_fraction": 0.18282751763647553,
+      "interpretation": "Observations without confirmed left boundary represent lower bounds on run length, not exact completed durations."
+    },
+    "run_registry_censoring": {
+      "total_runs": 9974,
+      "left_confirmed_runs": 7758,
+      "right_confirmed_runs": 6680,
+      "both_confirmed_completed_runs": 5860,
+      "left_censor_reasons": {
+        "None": 7758,
+        "gap_or_previous_small": 2187,
+        "no_previous_observation": 29
+      },
+      "right_censor_reasons": {
+        "None": 6680,
+        "gap_or_next_small": 3256,
+        "end_of_data": 38
+      },
+      "interpretation": "Only runs with both boundaries confirmed by non-small observations qualify as completed references. Gaps and end-of-data censor runs."
+    },
+    "top4_prediction_characteristics": {
+      "B0": {
+        "vessel_count": 82,
+        "mean_distinct_runs": 0.5,
+        "mean_time_span_hours": 1445.1707317073171
+      },
+      "S": {
+        "vessel_count": 82,
+        "mean_distinct_runs": 2.182926829268293,
+        "mean_time_span_hours": 734.4024390243902
+      },
+      "G": {
+        "vessel_count": 82,
+        "mean_distinct_runs": 1.9268292682926829,
+        "mean_time_span_hours": 525.829268292683
+      }
+    }
+  }
+}

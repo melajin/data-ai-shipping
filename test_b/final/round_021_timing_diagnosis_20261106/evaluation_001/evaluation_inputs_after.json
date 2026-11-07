@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-11-06T06:48:33.587394+00:00",
+  "files": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\PROTOCOL.md": {
+      "sha256": "092242f52c29c828cde4604df9b3671b015a30748f8c14520b33baee008bfba2",
+      "bytes": 8877
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\freeze.json": {
+      "sha256": "7d836a7df919ebacad4c80f83fbced83e2289628aae66228d1ac433893e7cdd7",
+      "bytes": 814
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\evaluate_round021.py": {
+      "sha256": "a3598b63c340b78d94b0232ee9dfb23c9421419f18767d126b1d8db3ae4d3da0",
+      "bytes": 33859
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\test_evaluate_round021.py": {
+      "sha256": "8f2ede0dad46a8b1d384996df0e3e2ef7a9d8bb66a71d2f97a8ccf35d840d685",
+      "bytes": 15544
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\score_fleet_timing.py": {
+      "sha256": "ffd913ad90146923a78a1e7552f68fcb02b9b373661e2d1feb38b418269f0efc",
+      "bytes": 35764
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\round_008_linkage_audit_20261105\\devset_positives.csv": {
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "bytes": 15646
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106\\execution_001\\vessel_peaks.csv": {
+      "sha256": "1dd3c52cf6293c0d62793fd68f29dfb6d471bd80189ed03c5464280f6472df44",
+      "bytes": 894244
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\execution_001\\score_seal.json": {
+      "sha256": "f101c8373a619a43ecde6667fff8ac57c080a867635eebc144eca37d50e7c89d",
+      "bytes": 1120
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\execution_001\\labelblind_score_summary.json": {
+      "sha256": "d1bb10bb7ed0fa1118a81dfe3e76001c3055fccf6cc7e4a4f48a706b37838f24",
+      "bytes": 1296
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\execution_001\\score_metadata.json": {
+      "sha256": "12d54d4ada48742760d8a784c1b265f0f6a2c618bc71f435697bbf7f002e3288",
+      "bytes": 84399
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\execution_001\\hourly_score_manifest.json": {
+      "sha256": "ed9827249e989c8c856b4472b295c5337bade4d3d39c04d2131ca6c25b5fe7f4",
+      "bytes": 57971
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\execution_001\\fleet_policy_predictions.csv": {
+      "sha256": "1dcd1c78453dd9cc4f26c480e86020f6c7de7cfb6131f78fc05445f2cf0146a8",
+      "bytes": 1709048
+    }
+  },
+  "unchanged": true
+}

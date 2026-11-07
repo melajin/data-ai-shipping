@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scalar_oracle_metric_window_comparisons": 462,
+  "guard_h_actual": 76,
+  "midrank_tie_checked": true,
+  "McNemar_pairings_enumerated": 8,
+  "exact_p_mixture_matches_enumeration": true,
+  "scope": "small synthetic mathematical verification only; not actual dev evaluation or separate T3"
+}

@@ -1,0 +1,51 @@
+{
+  "checked_at_utc": "2026-11-06T05:32:22.143905+00:00",
+  "stage": "external_preflight_before_synthetic_validation",
+  "available_mib": 3507.59375,
+  "estimated_peak_mib": 384,
+  "reserve_mib": 640,
+  "estimate_basis": "One sequential Python unittest process imports numpy/pandas/scipy and evaluates tiny synthetic arrays only; no fleet input",
+  "top_processes": [
+    {
+      "rss_mib": 655.65625,
+      "pid": 9940,
+      "name": "explorer.exe"
+    },
+    {
+      "rss_mib": 568.3359375,
+      "pid": 23364,
+      "name": "Obsidian.exe"
+    },
+    {
+      "rss_mib": 316.03515625,
+      "pid": 27636,
+      "name": "Orca.exe"
+    },
+    {
+      "rss_mib": 310.546875,
+      "pid": 28540,
+      "name": "Orca.exe"
+    },
+    {
+      "rss_mib": 304.90234375,
+      "pid": 22884,
+      "name": "claude.exe"
+    },
+    {
+      "rss_mib": 294.859375,
+      "pid": 3352,
+      "name": "explorer.exe"
+    },
+    {
+      "rss_mib": 246.296875,
+      "pid": 5260,
+      "name": "codex.exe"
+    },
+    {
+      "rss_mib": 234.6484375,
+      "pid": 26540,
+      "name": "Orca.exe"
+    }
+  ],
+  "sufficient": true
+}

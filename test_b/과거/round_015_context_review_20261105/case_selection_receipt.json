@@ -1,0 +1,1017 @@
+{
+  "round": "Round015 T0 fixed case selection",
+  "created_at_local": "2026-11-05T22:18:03.558934+09:00",
+  "execution": {
+    "requested_model": "GPT-6 Luna",
+    "requested_effort": "xhigh",
+    "actual_model_effort_evidence": "This worker was dispatched by the coordinator with requested model GPT-6 Luna and effort xhigh; no independent runtime model attestation is available in this environment.",
+    "scope": "T0 metadata-only selection; no raw extraction",
+    "selection_implementation": "testB/round_015_context_review_20261105/case_selection.py",
+    "selection_implementation_sha256": "b65b1db4580c61a17d91c94f20b20e8e1977a573c22e8ec90fe9772172c885af"
+  },
+  "inputs": {
+    "devset": {
+      "path": "testB/round_008_linkage_audit_20261105/devset_positives.csv",
+      "bytes": 15646,
+      "mtime_local": "2026-11-05T11:10:02.998033+09:00",
+      "mtime_ns": 1793844602998032800,
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "rows_parsed": 100,
+      "whitelisted_columns_parsed": [
+        "acc_id",
+        "rfid_id",
+        "tier",
+        "conflict",
+        "row_ts",
+        "source_month",
+        "source_row_index",
+        "acc_ts",
+        "발생일시",
+        "발생유형",
+        "어업면허",
+        "톤수",
+        "사고선박수",
+        "dt_h",
+        "dist_km"
+      ]
+    },
+    "voyages": {
+      "path": "testB/round_012_20261105/g2v2_voyages.csv",
+      "bytes": 673992,
+      "mtime_local": "2026-11-05T18:45:48.162163+09:00",
+      "mtime_ns": 1793871948162162600,
+      "sha256": "3c1c65222102d25a93939b43b3b38e752019da0c506375b9d505c061dd7e8968",
+      "rows_parsed": 3615,
+      "whitelisted_columns_parsed": [
+        "rfid_id",
+        "voy",
+        "n_voyages",
+        "t_start",
+        "t_end"
+      ]
+    }
+  },
+  "slot_rules": {
+    "A": "conflict=False, tier<=1, valid consistent n_voyages>=3; up to 3 distinct RFID",
+    "B": "first unused RFID with conflict=True; n_voyages not required",
+    "C": "first unused RFID with conflict=False and tier>=2; n_voyages not required",
+    "D": "first unused RFID with valid consistent n_voyages<3"
+  },
+  "slots": {
+    "A": {
+      "rule": "conflict=False, tier<=1, valid consistent n_voyages>=3; up to 3 distinct RFID",
+      "selected_acc_ids": [
+        "2",
+        "3",
+        "10"
+      ],
+      "selected_rfids": [
+        "36314611",
+        "36100073",
+        "32300353"
+      ],
+      "selected_count": 3,
+      "empty_reason": null
+    },
+    "B": {
+      "rule": "first unused RFID with conflict=True; n_voyages not required",
+      "selected_acc_ids": [
+        "6"
+      ],
+      "selected_rfids": [
+        "31009538"
+      ],
+      "selected_count": 1,
+      "empty_reason": null
+    },
+    "C": {
+      "rule": "first unused RFID with conflict=False and tier>=2; n_voyages not required",
+      "selected_acc_ids": [
+        "18"
+      ],
+      "selected_rfids": [
+        "32300202"
+      ],
+      "selected_count": 1,
+      "empty_reason": null
+    },
+    "D": {
+      "rule": "first unused RFID with valid consistent n_voyages<3",
+      "selected_acc_ids": [
+        "125"
+      ],
+      "selected_rfids": [
+        "32300334"
+      ],
+      "selected_count": 1,
+      "empty_reason": null
+    }
+  },
+  "diagnostics": {
+    "devset_rows": 100,
+    "voyage_rows": 3615,
+    "unique_devset_acc_ids": 100,
+    "unique_devset_rfids": 82,
+    "missing_selection_fields": {
+      "acc_id": 0,
+      "rfid_id": 0,
+      "tier": 0,
+      "conflict": 0
+    },
+    "missing_anchor_fields": {
+      "row_ts": 0,
+      "source_month": 0,
+      "source_row_index": 0
+    },
+    "duplicate_acc_id_row_counts": {},
+    "conflicting_acc_ids_excluded_from_slot_scans": [],
+    "duplicate_source_row_refs": {},
+    "conflicting_source_row_refs_excluded_from_slot_scans": [],
+    "rfids_with_missing_or_inconsistent_n_voyages": [],
+    "n_voyages_by_rfid_diagnostics": {
+      "31001758": {
+        "rows": 41,
+        "distinct_raw_values": [
+          "41"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 41,
+        "status": "valid"
+      },
+      "31005917": {
+        "rows": 3,
+        "distinct_raw_values": [
+          "3"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 3,
+        "status": "valid"
+      },
+      "31005928": {
+        "rows": 95,
+        "distinct_raw_values": [
+          "95"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 95,
+        "status": "valid"
+      },
+      "31007124": {
+        "rows": 105,
+        "distinct_raw_values": [
+          "105"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 105,
+        "status": "valid"
+      },
+      "31007500": {
+        "rows": 60,
+        "distinct_raw_values": [
+          "60"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 60,
+        "status": "valid"
+      },
+      "31008085": {
+        "rows": 34,
+        "distinct_raw_values": [
+          "34"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 34,
+        "status": "valid"
+      },
+      "31008933": {
+        "rows": 28,
+        "distinct_raw_values": [
+          "28"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 28,
+        "status": "valid"
+      },
+      "31009538": {
+        "rows": 4,
+        "distinct_raw_values": [
+          "4"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 4,
+        "status": "valid"
+      },
+      "31012971": {
+        "rows": 36,
+        "distinct_raw_values": [
+          "36"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 36,
+        "status": "valid"
+      },
+      "31013760": {
+        "rows": 54,
+        "distinct_raw_values": [
+          "54"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 54,
+        "status": "valid"
+      },
+      "31014032": {
+        "rows": 45,
+        "distinct_raw_values": [
+          "45"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 45,
+        "status": "valid"
+      },
+      "31014672": {
+        "rows": 13,
+        "distinct_raw_values": [
+          "13"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 13,
+        "status": "valid"
+      },
+      "31016197": {
+        "rows": 43,
+        "distinct_raw_values": [
+          "43"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 43,
+        "status": "valid"
+      },
+      "31100492": {
+        "rows": 9,
+        "distinct_raw_values": [
+          "9"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 9,
+        "status": "valid"
+      },
+      "31703108": {
+        "rows": 38,
+        "distinct_raw_values": [
+          "38"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 38,
+        "status": "valid"
+      },
+      "31704073": {
+        "rows": 13,
+        "distinct_raw_values": [
+          "13"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 13,
+        "status": "valid"
+      },
+      "31704782": {
+        "rows": 33,
+        "distinct_raw_values": [
+          "33"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 33,
+        "status": "valid"
+      },
+      "31815412": {
+        "rows": 66,
+        "distinct_raw_values": [
+          "66"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 66,
+        "status": "valid"
+      },
+      "32300169": {
+        "rows": 4,
+        "distinct_raw_values": [
+          "4"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 4,
+        "status": "valid"
+      },
+      "32300202": {
+        "rows": 20,
+        "distinct_raw_values": [
+          "20"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 20,
+        "status": "valid"
+      },
+      "32300267": {
+        "rows": 68,
+        "distinct_raw_values": [
+          "68"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 68,
+        "status": "valid"
+      },
+      "32300334": {
+        "rows": 2,
+        "distinct_raw_values": [
+          "2"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 2,
+        "status": "valid"
+      },
+      "32300353": {
+        "rows": 7,
+        "distinct_raw_values": [
+          "7"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 7,
+        "status": "valid"
+      },
+      "32300717": {
+        "rows": 30,
+        "distinct_raw_values": [
+          "30"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 30,
+        "status": "valid"
+      },
+      "32301131": {
+        "rows": 54,
+        "distinct_raw_values": [
+          "54"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 54,
+        "status": "valid"
+      },
+      "33200664": {
+        "rows": 16,
+        "distinct_raw_values": [
+          "16"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 16,
+        "status": "valid"
+      },
+      "33200829": {
+        "rows": 38,
+        "distinct_raw_values": [
+          "38"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 38,
+        "status": "valid"
+      },
+      "33201019": {
+        "rows": 44,
+        "distinct_raw_values": [
+          "44"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 44,
+        "status": "valid"
+      },
+      "33201506": {
+        "rows": 19,
+        "distinct_raw_values": [
+          "19"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 19,
+        "status": "valid"
+      },
+      "34200580": {
+        "rows": 53,
+        "distinct_raw_values": [
+          "53"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 53,
+        "status": "valid"
+      },
+      "34200731": {
+        "rows": 27,
+        "distinct_raw_values": [
+          "27"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 27,
+        "status": "valid"
+      },
+      "34400535": {
+        "rows": 51,
+        "distinct_raw_values": [
+          "51"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 51,
+        "status": "valid"
+      },
+      "34400601": {
+        "rows": 47,
+        "distinct_raw_values": [
+          "47"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 47,
+        "status": "valid"
+      },
+      "35100289": {
+        "rows": 85,
+        "distinct_raw_values": [
+          "85"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 85,
+        "status": "valid"
+      },
+      "35200056": {
+        "rows": 54,
+        "distinct_raw_values": [
+          "54"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 54,
+        "status": "valid"
+      },
+      "35200311": {
+        "rows": 36,
+        "distinct_raw_values": [
+          "36"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 36,
+        "status": "valid"
+      },
+      "35200486": {
+        "rows": 136,
+        "distinct_raw_values": [
+          "136"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 136,
+        "status": "valid"
+      },
+      "36000925": {
+        "rows": 4,
+        "distinct_raw_values": [
+          "4"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 4,
+        "status": "valid"
+      },
+      "36001358": {
+        "rows": 48,
+        "distinct_raw_values": [
+          "48"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 48,
+        "status": "valid"
+      },
+      "36001411": {
+        "rows": 44,
+        "distinct_raw_values": [
+          "44"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 44,
+        "status": "valid"
+      },
+      "36001494": {
+        "rows": 52,
+        "distinct_raw_values": [
+          "52"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 52,
+        "status": "valid"
+      },
+      "36003960": {
+        "rows": 57,
+        "distinct_raw_values": [
+          "57"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 57,
+        "status": "valid"
+      },
+      "36004693": {
+        "rows": 54,
+        "distinct_raw_values": [
+          "54"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 54,
+        "status": "valid"
+      },
+      "36006776": {
+        "rows": 61,
+        "distinct_raw_values": [
+          "61"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 61,
+        "status": "valid"
+      },
+      "36007269": {
+        "rows": 47,
+        "distinct_raw_values": [
+          "47"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 47,
+        "status": "valid"
+      },
+      "36007909": {
+        "rows": 46,
+        "distinct_raw_values": [
+          "46"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 46,
+        "status": "valid"
+      },
+      "36008148": {
+        "rows": 44,
+        "distinct_raw_values": [
+          "44"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 44,
+        "status": "valid"
+      },
+      "36008988": {
+        "rows": 64,
+        "distinct_raw_values": [
+          "64"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 64,
+        "status": "valid"
+      },
+      "36010190": {
+        "rows": 51,
+        "distinct_raw_values": [
+          "51"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 51,
+        "status": "valid"
+      },
+      "36010554": {
+        "rows": 91,
+        "distinct_raw_values": [
+          "91"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 91,
+        "status": "valid"
+      },
+      "36011749": {
+        "rows": 95,
+        "distinct_raw_values": [
+          "95"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 95,
+        "status": "valid"
+      },
+      "36011845": {
+        "rows": 76,
+        "distinct_raw_values": [
+          "76"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 76,
+        "status": "valid"
+      },
+      "36015383": {
+        "rows": 51,
+        "distinct_raw_values": [
+          "51"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 51,
+        "status": "valid"
+      },
+      "36015515": {
+        "rows": 46,
+        "distinct_raw_values": [
+          "46"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 46,
+        "status": "valid"
+      },
+      "36100073": {
+        "rows": 61,
+        "distinct_raw_values": [
+          "61"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 61,
+        "status": "valid"
+      },
+      "36101547": {
+        "rows": 19,
+        "distinct_raw_values": [
+          "19"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 19,
+        "status": "valid"
+      },
+      "36102425": {
+        "rows": 16,
+        "distinct_raw_values": [
+          "16"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 16,
+        "status": "valid"
+      },
+      "36108086": {
+        "rows": 70,
+        "distinct_raw_values": [
+          "70"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 70,
+        "status": "valid"
+      },
+      "36110858": {
+        "rows": 41,
+        "distinct_raw_values": [
+          "41"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 41,
+        "status": "valid"
+      },
+      "36113617": {
+        "rows": 58,
+        "distinct_raw_values": [
+          "58"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 58,
+        "status": "valid"
+      },
+      "36113654": {
+        "rows": 7,
+        "distinct_raw_values": [
+          "7"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 7,
+        "status": "valid"
+      },
+      "36115953": {
+        "rows": 36,
+        "distinct_raw_values": [
+          "36"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 36,
+        "status": "valid"
+      },
+      "36200918": {
+        "rows": 97,
+        "distinct_raw_values": [
+          "97"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 97,
+        "status": "valid"
+      },
+      "36212188": {
+        "rows": 7,
+        "distinct_raw_values": [
+          "7"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 7,
+        "status": "valid"
+      },
+      "36212203": {
+        "rows": 39,
+        "distinct_raw_values": [
+          "39"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 39,
+        "status": "valid"
+      },
+      "36301063": {
+        "rows": 46,
+        "distinct_raw_values": [
+          "46"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 46,
+        "status": "valid"
+      },
+      "36301579": {
+        "rows": 56,
+        "distinct_raw_values": [
+          "56"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 56,
+        "status": "valid"
+      },
+      "36301995": {
+        "rows": 40,
+        "distinct_raw_values": [
+          "40"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 40,
+        "status": "valid"
+      },
+      "36304593": {
+        "rows": 10,
+        "distinct_raw_values": [
+          "10"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 10,
+        "status": "valid"
+      },
+      "36304898": {
+        "rows": 46,
+        "distinct_raw_values": [
+          "46"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 46,
+        "status": "valid"
+      },
+      "36307233": {
+        "rows": 43,
+        "distinct_raw_values": [
+          "43"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 43,
+        "status": "valid"
+      },
+      "36307839": {
+        "rows": 23,
+        "distinct_raw_values": [
+          "23"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 23,
+        "status": "valid"
+      },
+      "36311633": {
+        "rows": 47,
+        "distinct_raw_values": [
+          "47"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 47,
+        "status": "valid"
+      },
+      "36313865": {
+        "rows": 27,
+        "distinct_raw_values": [
+          "27"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 27,
+        "status": "valid"
+      },
+      "36314076": {
+        "rows": 61,
+        "distinct_raw_values": [
+          "61"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 61,
+        "status": "valid"
+      },
+      "36314346": {
+        "rows": 63,
+        "distinct_raw_values": [
+          "63"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 63,
+        "status": "valid"
+      },
+      "36314611": {
+        "rows": 107,
+        "distinct_raw_values": [
+          "107"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 107,
+        "status": "valid"
+      },
+      "36314887": {
+        "rows": 63,
+        "distinct_raw_values": [
+          "63"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 63,
+        "status": "valid"
+      },
+      "36314895": {
+        "rows": 21,
+        "distinct_raw_values": [
+          "21"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 21,
+        "status": "valid"
+      },
+      "36315137": {
+        "rows": 10,
+        "distinct_raw_values": [
+          "10"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 10,
+        "status": "valid"
+      },
+      "36315252": {
+        "rows": 48,
+        "distinct_raw_values": [
+          "48"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 48,
+        "status": "valid"
+      },
+      "36316040": {
+        "rows": 11,
+        "distinct_raw_values": [
+          "11"
+        ],
+        "missing_rows": 0,
+        "invalid_rows": 0,
+        "consistent_valid_count": 11,
+        "status": "valid"
+      }
+    },
+    "comparison_window_diagnostics_by_acc_id": {
+      "2": {
+        "candidate_rows": 107,
+        "invalid_rows": 0,
+        "duplicate_voy_ids": [],
+        "conflicting_voy_ids": [],
+        "eligible_rows": 102
+      },
+      "3": {
+        "candidate_rows": 61,
+        "invalid_rows": 0,
+        "duplicate_voy_ids": [],
+        "conflicting_voy_ids": [],
+        "eligible_rows": 59
+      },
+      "10": {
+        "candidate_rows": 7,
+        "invalid_rows": 0,
+        "duplicate_voy_ids": [],
+        "conflicting_voy_ids": [],
+        "eligible_rows": 6
+      },
+      "6": {
+        "candidate_rows": 4,
+        "invalid_rows": 0,
+        "duplicate_voy_ids": [],
+        "conflicting_voy_ids": [],
+        "eligible_rows": 3
+      },
+      "18": {
+        "candidate_rows": 20,
+        "invalid_rows": 0,
+        "duplicate_voy_ids": [],
+        "conflicting_voy_ids": [],
+        "eligible_rows": 16
+      },
+      "125": {
+        "candidate_rows": 2,
+        "invalid_rows": 0,
+        "duplicate_voy_ids": [],
+        "conflicting_voy_ids": [],
+        "eligible_rows": 0
+      }
+    },
+    "selected_anchor_keys_missing_or_invalid": []
+  },
+  "outputs": {
+    "case_register": {
+      "path": "testB/round_015_context_review_20261105/case_register.csv",
+      "bytes": 2408,
+      "sha256": "b77f33134898502c71c17184d40e49904199f354f0944f949bac49c01582f798",
+      "rows_excluding_header": 6
+    }
+  },
+  "limitations": [
+    "RFID denotes a candidate data-group key, not confirmed vessel identity or accident attribution.",
+    "Voyage rows are six-hour-gap-derived analysis segments, not proof of actual departures or arrivals.",
+    "The target is the stored-key interval [H-12,H+12]; incident timestamps are overlay-only and did not affect selection or windows.",
+    "Comparison windows are unlabeled; absence of an incident record does not establish normal behavior.",
+    "The deterministic cases are a convenience sample and support no population representativeness or performance estimate.",
+    "Source-row lineage was recorded from Round008 metadata but not traced against raw monthly files; raw extraction remains NO-GO pending separate T1 ticket, independent review, and fresh G0-G3 gates.",
+    "No existing SHA baseline evidence was opened or compared in this T0-only run; hashes below identify the exact input bytes processed.",
+    "No score, state, coordinate, geometry, raw monthly CSV, parquet, XLSX, 2025 Test B, external data, model training, or candidate output was read."
+  ]
+}

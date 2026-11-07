@@ -1,0 +1,4 @@
+﻿stratum,n,gemini_positive_events,codex_positive_events,gemini_acc_rate,codex_acc_rate,gemini_ctrl_rate,codex_ctrl_rate,directly_comparable,reasons
+ALL,76,0,3,0.0,0.039473684210526314,0.0151,0.01724642278460806,False,"['anchor definition differs', 'two hourly samples versus >=2h elapsed (three samples)', 'within-window detection versus globally sustained rows']"
+Tier0_1,48,0,2,0.0,0.041666666666666664,0.0065,0.01875384832065469,False,"['anchor definition differs', 'two hourly samples versus >=2h elapsed (three samples)', 'within-window detection versus globally sustained rows']"
+기관손상,28,0,2,0.0,0.07142857142857142,0.0213,0.026085568965033567,False,"['anchor definition differs', 'two hourly samples versus >=2h elapsed (three samples)', 'within-window detection versus globally sustained rows']"

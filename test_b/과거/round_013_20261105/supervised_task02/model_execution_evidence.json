@@ -1,0 +1,24 @@
+{
+  "requested_model": "GPT-6 Luna xhigh, inherited task assignment",
+  "supervisor_task_instruction": "Maintain original dispatch model GPT-6 Luna xhigh",
+  "repository_agent_profile": {
+    "path": ".codex\\agents\\luna_worker.toml",
+    "sha256": "fcea4331b6c5e2fedfb10e8dc5b25470bd24f69b37a832c65aa9d9a38e344645",
+    "configured_model": "gpt-6-luna",
+    "configured_effort": "xhigh"
+  },
+  "dispatch_receipt_model_field": "Not included in the worker preamble or reply returned by the orchestration check; no receipt field was independently available in this session.",
+  "actual_runtime_model_telemetry": "Not exposed to the Python/OS process; actual runtime model is therefore not independently asserted.",
+  "environment_session_id": "5751071d-fb06-431a-8ba9-6aa17550f74c",
+  "supervisor_confirmed_initial_dispatch_receipt": {
+    "dispatchId": "ctx_5bc067f5479b",
+    "model": "gpt-6-luna",
+    "effort": "xhigh",
+    "evidence_source": "supervisor review instruction; separate from runtime telemetry"
+  },
+  "followup_dispatch": {
+    "dispatchId": "ctx_e1f790dfe8b5",
+    "instruction": "Maintain GPT-6 Luna xhigh",
+    "actual_runtime_telemetry": "not provided"
+  }
+}

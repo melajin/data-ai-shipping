@@ -1,0 +1,90 @@
+{
+  "at": "2026-11-06T15:32:11.713492+09:00",
+  "available_mib": 4338.5625,
+  "expected_parent_peak_mib": 256,
+  "expected_each_worker_peak_mib": 512,
+  "desired_workers": 4,
+  "reserve_mib": 640,
+  "aggregate_expected_peak_plus_reserve_mib": 2944,
+  "estimate_basis": "Round019 observed355.12MiB; bounded one partition and vessel plus frozen references;512MiBworker; parent stdlib256MiB",
+  "other_processes": [
+    {
+      "pid": 9940,
+      "name": "explorer.exe",
+      "rss_mib": 652.62
+    },
+    {
+      "pid": 23364,
+      "name": "Obsidian.exe",
+      "rss_mib": 544.99
+    },
+    {
+      "pid": 27636,
+      "name": "Orca.exe",
+      "rss_mib": 350.86
+    },
+    {
+      "pid": 28540,
+      "name": "Orca.exe",
+      "rss_mib": 333.53
+    },
+    {
+      "pid": 3352,
+      "name": "explorer.exe",
+      "rss_mib": 286.54
+    },
+    {
+      "pid": 5260,
+      "name": "codex.exe",
+      "rss_mib": 263.8
+    },
+    {
+      "pid": 3096,
+      "name": "codex.exe",
+      "rss_mib": 250.06
+    },
+    {
+      "pid": 26540,
+      "name": "Orca.exe",
+      "rss_mib": 239.17
+    },
+    {
+      "pid": 1992,
+      "name": "CrossDeviceService.exe",
+      "rss_mib": 212.27
+    },
+    {
+      "pid": 7492,
+      "name": "ASDSvc.exe",
+      "rss_mib": 193.11
+    },
+    {
+      "pid": 2832,
+      "name": "PhoneExperienceHost.exe",
+      "rss_mib": 186.05
+    },
+    {
+      "pid": 20808,
+      "name": "msedgewebview2.exe",
+      "rss_mib": 168.29
+    }
+  ],
+  "tests": "engine_synthetic_validation/stderr_attempt02.log 14 passed; prior Windows read-only fsync failure preserved and corrected",
+  "allowed": true,
+  "code_and_freeze_hashes": {
+    "score_fleet_timing.py": "ffd913ad90146923a78a1e7552f68fcb02b9b373661e2d1feb38b418269f0efc",
+    "test_score_fleet_timing.py": "c3c8055100e7195b942945c60cd4ae35c00e602e43b73fc60c7e30eb4098f598",
+    "freeze.json": "7d836a7df919ebacad4c80f83fbced83e2289628aae66228d1ac433893e7cdd7",
+    "PROTOCOL.md": "092242f52c29c828cde4604df9b3671b015a30748f8c14520b33baee008bfba2"
+  },
+  "pid": 20176,
+  "process_create_time": 1793946731.7185693,
+  "command": [
+    "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "-u",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\score_fleet_timing.py",
+    "--workers",
+    "4"
+  ]
+}

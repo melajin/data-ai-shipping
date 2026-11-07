@@ -1,0 +1,30 @@
+{
+  "saved_at": "2026-11-06T15:00:14.324034+09:00",
+  "predictions": 82,
+  "hit_metrics_evaluated": false,
+  "accident_times_read": false,
+  "sha256": "58c3d223a41d3ab1967b27eb4a723cdabf58c6ff915ff8b360e3de11d70f4ce3",
+  "artifacts": {
+    "predictions.csv": {
+      "sha256": "58c3d223a41d3ab1967b27eb4a723cdabf58c6ff915ff8b360e3de11d70f4ce3",
+      "bytes": 14904
+    },
+    "hourly_scores.csv": {
+      "sha256": "acc6ec18a16f91bb7d7a2adcee85fce16c31000a9f2d6e0f57804ea8f574702e",
+      "bytes": 24794828
+    },
+    "hourly_max_provenance.csv": {
+      "sha256": "a75bacc0ee3deedc910d3646d1ded91aab93afe4ea889acbddc700a06bdce56c",
+      "bytes": 6845334
+    },
+    "fold_reuse_audit.jsonl": {
+      "sha256": "c2f3f2313d3c8275eec5c9ab12aa8e7f357fe71f3751642fbdc557b07dff675a",
+      "bytes": 132806
+    },
+    "old_top_reconstruction.json": {
+      "sha256": "5ce6406aaae491c8f4f7b2e8db609f036cec68c25d8fda5f275d9c5fbc00b585",
+      "bytes": 21884
+    }
+  },
+  "score_semantics": "relative model support share; not calibrated accident probability"
+}

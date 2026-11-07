@@ -1,0 +1,289 @@
+{
+  "schema_version": "testb_frozen_reproduction_v1",
+  "mode": "frozen_baseline_reproduction",
+  "status": "complete",
+  "counts": {
+    "observations": 46705,
+    "vessels": 100,
+    "candidates": 100
+  },
+  "parity": {
+    "rows_compared": 46705,
+    "numeric_max_abs_diff": {
+      "s_zone": 0.0,
+      "s_change": 0.0,
+      "s_gap": 0.0,
+      "score": 0.0
+    },
+    "nan_mask_mismatches": {
+      "s_zone": 0,
+      "s_change": 0,
+      "s_gap": 0,
+      "score": 0
+    },
+    "numeric_exact": {
+      "s_zone": true,
+      "s_change": true,
+      "s_gap": true,
+      "score": true
+    },
+    "state_mismatches": 0,
+    "all_row_checks_passed": true,
+    "candidate_time_mismatches": 0,
+    "candidate_source_ordinal_mismatches": 0,
+    "candidate_score_max_abs_diff": 0.0,
+    "all_checks_passed": true
+  },
+  "score_distribution": {
+    "count": 46705,
+    "min": 1e-06,
+    "p25": 0.29470499517112975,
+    "median": 0.3496028884990195,
+    "p75": 0.42175518446497423,
+    "max": 0.9228469233797589,
+    "mean": 0.3610691582916507,
+    "std": 0.09331164058672112
+  },
+  "candidate_score_distribution": {
+    "count": 100,
+    "min": 1e-06,
+    "p25": 0.4985106872103257,
+    "median": 0.5488236560453433,
+    "p75": 0.6317378137053137,
+    "max": 0.9228469233797589,
+    "mean": 0.5444452108134868,
+    "std": 0.17271233671560357
+  },
+  "coverage": {
+    "first_observed_label": "20250101 0",
+    "last_observed_label": "20250630 23",
+    "time_unit": "original integer epoch hours; naive source label",
+    "timezone_status": "unconfirmed",
+    "availability_status": "unconfirmed",
+    "n_rows_min": 1,
+    "n_rows_max": 3413,
+    "prior_history_min": 0,
+    "prior_history_max": 3037,
+    "exact_preceding_hours": {
+      "3": 33,
+      "2": 38,
+      "1": 58
+    },
+    "component_missing_counts": {
+      "s_zone": 0,
+      "s_change": 1974,
+      "s_gap": 100
+    },
+    "state_counts": {
+      "저속굴곡": 28284,
+      "정박정지": 13873,
+      "이동": 2313,
+      "해상정지": 2024,
+      "연안정지": 211
+    }
+  },
+  "selection": {
+    "mode": "retrospective_full_period_maximum",
+    "tie_policy": "maximum score then minimum original source_ordinal",
+    "vessels_with_peak_ties": 0,
+    "maximum_peak_tie_count": 1,
+    "reference_hours_policy": "exact t-3/t-2/t-1 if observed; last source ordinal within identical hour"
+  },
+  "component_description": {
+    "s_zone": "prior visited cells plus frozen training density",
+    "s_change": "prior >=24 observations: robust length/extent ratio and heuristic state surprise",
+    "s_gap": "frozen training quantiles of inter-observation hour gap and centroid separation",
+    "score": "arithmetic mean of finite components clipped to [1e-6,1]",
+    "dominance_caution": "largest component is descriptive, not causal attribution or an accident explanation"
+  },
+  "sample_cases": [
+    {
+      "case_type": "highest_score",
+      "rfid_id": "32300727",
+      "lead_ts": 482158,
+      "lead_label": "20250101 22",
+      "score": 0.9228469233797589,
+      "prior_observation_count": 9
+    },
+    {
+      "case_type": "median_peak_rank",
+      "rfid_id": "36009646",
+      "lead_ts": 482886,
+      "lead_label": "20250201 6",
+      "score": 0.5542566126917833,
+      "prior_observation_count": 85
+    },
+    {
+      "case_type": "least_prior_history",
+      "rfid_id": "31704203",
+      "lead_ts": 483369,
+      "lead_label": "20250221 9",
+      "score": 0.5,
+      "prior_observation_count": 0
+    }
+  ],
+  "reference_meta": {
+    "gap": {
+      "n_ref": 3879693,
+      "p50": 1.0
+    },
+    "jump": {
+      "n_ref": 3879693,
+      "p50": 85.72352634799219
+    },
+    "harbor_count": 77
+  },
+  "memory_preflight": {
+    "checked_at": "2026-11-06T13:06:57.680751+00:00",
+    "available_mib": 3993.6328125,
+    "expected_peak_mib": 512,
+    "reserve_mib": 640,
+    "passed": true,
+    "estimate_basis": "Sequential 46705x9 projection, ~62MB frozen arrays, numpy/pandas/scipy; no training",
+    "other_processes": "Their use is reflected in fresh OS available RAM; no process intervention"
+  },
+  "telemetry": {
+    "elapsed_seconds": 41.207714600001054,
+    "process_peak_mib": 298.6875,
+    "python": "3.13.3",
+    "dependencies": {
+      "numpy": "2.2.5",
+      "pandas": "2.2.3",
+      "pyarrow": "24.0.0",
+      "scipy": "1.15.3"
+    }
+  },
+  "source_provenance": {
+    "purpose": "Frozen original unsupervised baseline reproduction; no training or new model",
+    "scorer": {
+      "original_filename": "run_008_testB_20261101.py",
+      "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8",
+      "line_ranges_inclusive": {
+        "grid_constants": [
+          44,
+          50
+        ],
+        "state_constants": [
+          178,
+          185
+        ],
+        "haversine_vec": [
+          188,
+          194
+        ],
+        "quantile_normalizer": [
+          350,
+          359
+        ],
+        "density_lookup": [
+          389,
+          398
+        ],
+        "robust_z_squash": [
+          420,
+          433
+        ],
+        "score_vessel": [
+          436,
+          530
+        ]
+      }
+    },
+    "scalar_distance": {
+      "original_filename": "run_remeasure_20261031.py",
+      "sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+      "line_ranges_inclusive": {
+        "earth_radius": [
+          41,
+          41
+        ],
+        "haversine_m": [
+          123,
+          129
+        ]
+      }
+    },
+    "execution_wrapper": {
+      "original_filename": "first_results/run.py",
+      "sha256": "d57a59e1e035e39367acd9ace53511267a548b95fb1236ccc539d652b05d1c1b",
+      "semantics": "Timestamp/rfid_time/source_ordinal stable order; peak maximum score then source_ordinal"
+    },
+    "adaptations": [
+      "Source aliases remeasure.haversine_m and remeasure.EARTH_R replaced by explicit local identical helpers",
+      "Original first_results nearest-harbor cKDTree wrapper retained",
+      "Trusted local density pickle converted to portable JSON; no runtime pickle/source imports",
+      "Old cached output columns separated from projected score inputs; never used by scorer"
+    ],
+    "frozen_original_assets": {
+      "hourly_scores.parquet": {
+        "sha256": "ab2230ef83aa6a3dec28fae03000294f581da6e0ee069f8210e3598a96549d14",
+        "bytes": 3765001
+      },
+      "candidate_A.csv": {
+        "sha256": "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9",
+        "bytes": 10730
+      },
+      "harbors.json": {
+        "sha256": "3c1888f9714f675110be5181dc053398f955a23c7f68989c9c223bb77ab09309",
+        "bytes": 4020
+      },
+      "density.pkl": {
+        "sha256": "ee59282ea8dc1bafc5e835961840c9683f99bd581acb99c12dbcc08ae2e22d3d",
+        "bytes": 1891355
+      },
+      "gap_reference.npy": {
+        "sha256": "08145272419ec53837074f5602e34a9be36e5b1311952e4b0c637e64716daa9f",
+        "bytes": 31037672
+      },
+      "jump_reference.npy": {
+        "sha256": "a9d303efa85c06d6d3a75e622f0b76af2c64ca585228a177c4e95d8f21d87b0c",
+        "bytes": 31037672
+      },
+      "run.py": {
+        "sha256": "d57a59e1e035e39367acd9ace53511267a548b95fb1236ccc539d652b05d1c1b",
+        "bytes": 10651
+      }
+    },
+    "density_conversion": {
+      "fine_cells": 102053,
+      "coarse_cells": 9174,
+      "format": "lists of integer grid x,y and float count; lookup semantics unchanged"
+    },
+    "preparation_memory_preflight": {
+      "checked_at": "2026-11-05T22:06:30.458935+00:00",
+      "available_mib": 3432.140625,
+      "expected_peak_mib": 512,
+      "reserve_mib": 640,
+      "passed": true,
+      "estimate_basis": "Sequential 46705x9 projection, ~62MB frozen arrays, numpy/pandas/scipy; no training",
+      "other_processes": "Their use is reflected in fresh OS available RAM; no process intervention"
+    },
+    "originals_unchanged": true
+  },
+  "verified_artifact_hashes": {
+    "data/observations.parquet": "5e8efbabfa3ca2e47e53c35977bb96c4a64a74b2e0ec1f774db6c630d86ec0e2",
+    "data/roster.csv": "250237d223f0b1739c67859c410e22f1dfbcfcbea4208960358ae7949e2eafd2",
+    "data/stored_candidates.csv": "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9",
+    "data/stored_expected.parquet": "7d60b531da008482e5be9c98a52ef730ed382c5b8b00e688a230b3d0e2fc3578",
+    "model/density.json": "c122b827fb0b9fe480434f821162035702e34b0fc465762bdbeca0aeeadb1328",
+    "model/gap_reference.npy": "08145272419ec53837074f5602e34a9be36e5b1311952e4b0c637e64716daa9f",
+    "model/harbors.json": "3c1888f9714f675110be5181dc053398f955a23c7f68989c9c223bb77ab09309",
+    "model/jump_reference.npy": "a9d303efa85c06d6d3a75e622f0b76af2c64ca585228a177c4e95d8f21d87b0c",
+    "model/provenance.json": "052f39d4dc69c9a622a654885248f2509c385c2760c578f73cc98a3633e38986",
+    "src/frozen_baseline.py": "1975009bb0b99c740f9c1c9ddc3e7b37cf212bfdf998b22186882b3d9dd4947c",
+    "src/run_analysis.py": "086083fee14efbb2631ff6e91d76d6805bec49dcf77d0d60fc4ce0edf4b4cd1f"
+  },
+  "config_sha256": "5f07247c4c25bd4ae1cf8835e8d11c8400d2382ff30f5b4fd3d83c325dfd397c",
+  "output_sha256": {
+    "scored_rows.parquet": "4e2059febfc3e8e031ba0f11848fa82ce7ca8318cbd50e3fbc85a9ab5b636b65",
+    "candidates.csv": "9aff8191df3abb889110aa8a825ee2a1e634f56cc0756fdd84dd64e75f10e43b"
+  },
+  "limitations": [
+    "Frozen old baseline reproduced; no improved model or confirmed Test B accident accuracy",
+    "Heuristic state names are not verified operation labels",
+    "Centroids/length/extent are supplied geometry summaries, not timestamped GPS or speed",
+    "Availability and timezone unconfirmed: this retrospective run is not live causal validation",
+    "No training, threshold calibration, external delivery, or submission workbook created",
+    "Prior references preserve old behavior; official auxiliary-column meaning remains unconfirmed"
+  ]
+}

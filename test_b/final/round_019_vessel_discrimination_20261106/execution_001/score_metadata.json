@@ -1,0 +1,525 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-06T14:32:19.723148+09:00",
+  "pid": 16436,
+  "training_performed": false,
+  "labels_read": false,
+  "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+  "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+  "score_definition_changed": false,
+  "expected_peak_process_mib": 1024,
+  "reserve_mib": 640,
+  "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+  "timestamp_contract": {
+    "unit": "epoch hours",
+    "start_inclusive": 490896,
+    "end_exclusive": 495240,
+    "period": "2026 Jan-Jun"
+  },
+  "tie_break": "score DESC, source_ordinal ASC, stable",
+  "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+  "last_memory_preflight": {
+    "at": "2026-11-06T14:46:54.254102+09:00",
+    "stage": "merge_disjoint_worker_checkpoints",
+    "available_mib": 3941.9,
+    "process_rss_mib": 25.85,
+    "expected_peak_process_mib": 1024,
+    "expected_additional_mib": 998.15,
+    "reserve_mib": 640,
+    "passed": true,
+    "other_processes": [
+      {
+        "pid": 9940,
+        "name": "explorer.exe",
+        "rss_mib": 656.06
+      },
+      {
+        "pid": 23364,
+        "name": "Obsidian.exe",
+        "rss_mib": 564.67
+      },
+      {
+        "pid": 28540,
+        "name": "Orca.exe",
+        "rss_mib": 314.6
+      },
+      {
+        "pid": 27636,
+        "name": "Orca.exe",
+        "rss_mib": 309.65
+      },
+      {
+        "pid": 3352,
+        "name": "explorer.exe",
+        "rss_mib": 294.86
+      },
+      {
+        "pid": 5260,
+        "name": "codex.exe",
+        "rss_mib": 253.24
+      },
+      {
+        "pid": 27692,
+        "name": "chrome.exe",
+        "rss_mib": 242.6
+      },
+      {
+        "pid": 3096,
+        "name": "codex.exe",
+        "rss_mib": 239.21
+      }
+    ]
+  },
+  "stage": "finished",
+  "worker_count": 4,
+  "rows": 3887065,
+  "vessels": 7372,
+  "original_checkpoint_vessels": 827,
+  "original_sources_sha256_verified": true,
+  "parallel_helper_sha256": "c8ae4cc6fc69f8285c01376233d470984b0c61ece94b04dae287c53eb2698872",
+  "aggregate_memory_plan": {
+    "parent_peak_mib": 512,
+    "each_worker_peak_mib": 512,
+    "reserve_mib": 640
+  },
+  "updated_at": "2026-11-06T14:46:54.695239+09:00",
+  "elapsed_seconds": 874.972,
+  "observed_peak_process_mib": 39.434,
+  "vessels_completed": 7372,
+  "rows_completed": 3887065,
+  "workers": [
+    {
+      "worker_index": 0,
+      "pid": 24852,
+      "exit_code": 0,
+      "status": "complete",
+      "vessels_completed": 1852,
+      "rows_completed": 981369
+    },
+    {
+      "worker_index": 1,
+      "pid": 1596,
+      "exit_code": 0,
+      "status": "complete",
+      "vessels_completed": 1870,
+      "rows_completed": 954193
+    },
+    {
+      "worker_index": 2,
+      "pid": 16272,
+      "exit_code": 0,
+      "status": "complete",
+      "vessels_completed": 1796,
+      "rows_completed": 933701
+    },
+    {
+      "worker_index": 3,
+      "pid": 22368,
+      "exit_code": null,
+      "status": "running",
+      "vessels_completed": 1800,
+      "rows_completed": 980294
+    }
+  ],
+  "completed_at": "2026-11-06T14:46:54.684550+09:00",
+  "vessel_error_records": 0,
+  "n_finite_scores": 3887065,
+  "vessels_without_finite_scores": 0,
+  "source_checksums_match": true,
+  "parallel_helper_checksums_match": true,
+  "output_sha256": "1dd3c52cf6293c0d62793fd68f29dfb6d471bd80189ed03c5464280f6472df44",
+  "invalid_centroid_rows": 0,
+  "min_ts": 490896,
+  "max_ts": 495239,
+  "worker_summaries": [
+    {
+      "status": "complete",
+      "started_at": "2026-11-06T14:32:22.574259+09:00",
+      "pid": 24852,
+      "training_performed": false,
+      "labels_read": false,
+      "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+      "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+      "score_definition_changed": false,
+      "expected_peak_process_mib": 1024,
+      "reserve_mib": 640,
+      "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+      "timestamp_contract": {
+        "unit": "epoch hours",
+        "start_inclusive": 490896,
+        "end_exclusive": 495240,
+        "period": "2026 Jan-Jun"
+      },
+      "tie_break": "score DESC, source_ordinal ASC, stable",
+      "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+      "last_memory_preflight": {
+        "at": "2026-11-06T14:45:27.613821+09:00",
+        "stage": "score_partition_032",
+        "available_mib": 3345.88,
+        "process_rss_mib": 239.02,
+        "expected_peak_process_mib": 1024,
+        "expected_additional_mib": 784.98,
+        "reserve_mib": 640,
+        "passed": true,
+        "other_processes": [
+          {
+            "pid": 9940,
+            "name": "explorer.exe",
+            "rss_mib": 656.07
+          },
+          {
+            "pid": 23364,
+            "name": "Obsidian.exe",
+            "rss_mib": 563.59
+          },
+          {
+            "pid": 27636,
+            "name": "Orca.exe",
+            "rss_mib": 341.66
+          },
+          {
+            "pid": 28540,
+            "name": "Orca.exe",
+            "rss_mib": 302.63
+          },
+          {
+            "pid": 3352,
+            "name": "explorer.exe",
+            "rss_mib": 294.88
+          },
+          {
+            "pid": 5260,
+            "name": "codex.exe",
+            "rss_mib": 252.88
+          },
+          {
+            "pid": 27692,
+            "name": "chrome.exe",
+            "rss_mib": 242.59
+          },
+          {
+            "pid": 26540,
+            "name": "Orca.exe",
+            "rss_mib": 236.46
+          }
+        ]
+      },
+      "stage": "finished",
+      "worker_index": 0,
+      "worker_count": 4,
+      "rows": 981369,
+      "vessels": 1852,
+      "updated_at": "2026-11-06T14:46:08.386311+09:00",
+      "elapsed_seconds": 825.812,
+      "observed_peak_process_mib": 278.746,
+      "vessels_completed": 1852,
+      "rows_completed": 981369,
+      "completed_at": "2026-11-06T14:46:08.385811+09:00",
+      "resumed_vessels": 227,
+      "vessel_error_records": 0,
+      "reference_summary": {
+        "gap": {
+          "n_ref": 3879693,
+          "p50": 1.0
+        },
+        "jump": {
+          "n_ref": 3879693,
+          "p50": 85.72352634799219
+        },
+        "harbor_count": 77
+      }
+    },
+    {
+      "status": "complete",
+      "started_at": "2026-11-06T14:32:22.596612+09:00",
+      "pid": 1596,
+      "training_performed": false,
+      "labels_read": false,
+      "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+      "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+      "score_definition_changed": false,
+      "expected_peak_process_mib": 1024,
+      "reserve_mib": 640,
+      "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+      "timestamp_contract": {
+        "unit": "epoch hours",
+        "start_inclusive": 490896,
+        "end_exclusive": 495240,
+        "period": "2026 Jan-Jun"
+      },
+      "tie_break": "score DESC, source_ordinal ASC, stable",
+      "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+      "last_memory_preflight": {
+        "at": "2026-11-06T14:44:44.907778+09:00",
+        "stage": "score_partition_032",
+        "available_mib": 3179.12,
+        "process_rss_mib": 223.79,
+        "expected_peak_process_mib": 1024,
+        "expected_additional_mib": 800.21,
+        "reserve_mib": 640,
+        "passed": true,
+        "other_processes": [
+          {
+            "pid": 9940,
+            "name": "explorer.exe",
+            "rss_mib": 656.09
+          },
+          {
+            "pid": 23364,
+            "name": "Obsidian.exe",
+            "rss_mib": 555.28
+          },
+          {
+            "pid": 27636,
+            "name": "Orca.exe",
+            "rss_mib": 323.41
+          },
+          {
+            "pid": 28540,
+            "name": "Orca.exe",
+            "rss_mib": 302.05
+          },
+          {
+            "pid": 3352,
+            "name": "explorer.exe",
+            "rss_mib": 294.86
+          },
+          {
+            "pid": 5260,
+            "name": "codex.exe",
+            "rss_mib": 252.71
+          },
+          {
+            "pid": 27692,
+            "name": "chrome.exe",
+            "rss_mib": 242.52
+          },
+          {
+            "pid": 24852,
+            "name": "python.exe",
+            "rss_mib": 240.46
+          }
+        ]
+      },
+      "stage": "finished",
+      "worker_index": 1,
+      "worker_count": 4,
+      "rows": 954193,
+      "vessels": 1870,
+      "updated_at": "2026-11-06T14:45:18.085665+09:00",
+      "elapsed_seconds": 775.489,
+      "observed_peak_process_mib": 278.133,
+      "vessels_completed": 1870,
+      "rows_completed": 954193,
+      "completed_at": "2026-11-06T14:45:18.085185+09:00",
+      "resumed_vessels": 230,
+      "vessel_error_records": 0,
+      "reference_summary": {
+        "gap": {
+          "n_ref": 3879693,
+          "p50": 1.0
+        },
+        "jump": {
+          "n_ref": 3879693,
+          "p50": 85.72352634799219
+        },
+        "harbor_count": 77
+      }
+    },
+    {
+      "status": "complete",
+      "started_at": "2026-11-06T14:32:22.614599+09:00",
+      "pid": 16272,
+      "training_performed": false,
+      "labels_read": false,
+      "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+      "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+      "score_definition_changed": false,
+      "expected_peak_process_mib": 1024,
+      "reserve_mib": 640,
+      "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+      "timestamp_contract": {
+        "unit": "epoch hours",
+        "start_inclusive": 490896,
+        "end_exclusive": 495240,
+        "period": "2026 Jan-Jun"
+      },
+      "tie_break": "score DESC, source_ordinal ASC, stable",
+      "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+      "last_memory_preflight": {
+        "at": "2026-11-06T14:45:12.143074+09:00",
+        "stage": "score_partition_032",
+        "available_mib": 3162.84,
+        "process_rss_mib": 227.94,
+        "expected_peak_process_mib": 1024,
+        "expected_additional_mib": 796.06,
+        "reserve_mib": 640,
+        "passed": true,
+        "other_processes": [
+          {
+            "pid": 9940,
+            "name": "explorer.exe",
+            "rss_mib": 656.07
+          },
+          {
+            "pid": 23364,
+            "name": "Obsidian.exe",
+            "rss_mib": 555.28
+          },
+          {
+            "pid": 27636,
+            "name": "Orca.exe",
+            "rss_mib": 328.86
+          },
+          {
+            "pid": 28540,
+            "name": "Orca.exe",
+            "rss_mib": 301.23
+          },
+          {
+            "pid": 3352,
+            "name": "explorer.exe",
+            "rss_mib": 294.86
+          },
+          {
+            "pid": 5260,
+            "name": "codex.exe",
+            "rss_mib": 252.86
+          },
+          {
+            "pid": 27692,
+            "name": "chrome.exe",
+            "rss_mib": 242.58
+          },
+          {
+            "pid": 24852,
+            "name": "python.exe",
+            "rss_mib": 239.02
+          }
+        ]
+      },
+      "stage": "finished",
+      "worker_index": 2,
+      "worker_count": 4,
+      "rows": 933701,
+      "vessels": 1796,
+      "updated_at": "2026-11-06T14:45:29.640835+09:00",
+      "elapsed_seconds": 787.026,
+      "observed_peak_process_mib": 278.523,
+      "vessels_completed": 1796,
+      "rows_completed": 933701,
+      "completed_at": "2026-11-06T14:45:29.640364+09:00",
+      "resumed_vessels": 191,
+      "vessel_error_records": 0,
+      "reference_summary": {
+        "gap": {
+          "n_ref": 3879693,
+          "p50": 1.0
+        },
+        "jump": {
+          "n_ref": 3879693,
+          "p50": 85.72352634799219
+        },
+        "harbor_count": 77
+      }
+    },
+    {
+      "status": "complete",
+      "started_at": "2026-11-06T14:32:22.645734+09:00",
+      "pid": 22368,
+      "training_performed": false,
+      "labels_read": false,
+      "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+      "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+      "score_definition_changed": false,
+      "expected_peak_process_mib": 1024,
+      "reserve_mib": 640,
+      "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+      "timestamp_contract": {
+        "unit": "epoch hours",
+        "start_inclusive": 490896,
+        "end_exclusive": 495240,
+        "period": "2026 Jan-Jun"
+      },
+      "tie_break": "score DESC, source_ordinal ASC, stable",
+      "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+      "last_memory_preflight": {
+        "at": "2026-11-06T14:46:18.477861+09:00",
+        "stage": "score_partition_032",
+        "available_mib": 3701.59,
+        "process_rss_mib": 227.71,
+        "expected_peak_process_mib": 1024,
+        "expected_additional_mib": 796.29,
+        "reserve_mib": 640,
+        "passed": true,
+        "other_processes": [
+          {
+            "pid": 9940,
+            "name": "explorer.exe",
+            "rss_mib": 656.08
+          },
+          {
+            "pid": 23364,
+            "name": "Obsidian.exe",
+            "rss_mib": 564.11
+          },
+          {
+            "pid": 27636,
+            "name": "Orca.exe",
+            "rss_mib": 333.47
+          },
+          {
+            "pid": 28540,
+            "name": "Orca.exe",
+            "rss_mib": 300.17
+          },
+          {
+            "pid": 3352,
+            "name": "explorer.exe",
+            "rss_mib": 294.88
+          },
+          {
+            "pid": 5260,
+            "name": "codex.exe",
+            "rss_mib": 252.89
+          },
+          {
+            "pid": 27692,
+            "name": "chrome.exe",
+            "rss_mib": 242.61
+          },
+          {
+            "pid": 3096,
+            "name": "codex.exe",
+            "rss_mib": 239.02
+          }
+        ]
+      },
+      "stage": "finished",
+      "worker_index": 3,
+      "worker_count": 4,
+      "rows": 1017802,
+      "vessels": 1854,
+      "updated_at": "2026-11-06T14:46:52.150219+09:00",
+      "elapsed_seconds": 869.505,
+      "observed_peak_process_mib": 278.312,
+      "vessels_completed": 1854,
+      "rows_completed": 1017802,
+      "completed_at": "2026-11-06T14:46:52.149538+09:00",
+      "resumed_vessels": 179,
+      "vessel_error_records": 0,
+      "reference_summary": {
+        "gap": {
+          "n_ref": 3879693,
+          "p50": 1.0
+        },
+        "jump": {
+          "n_ref": 3879693,
+          "p50": 85.72352634799219
+        },
+        "harbor_count": 77
+      }
+    }
+  ],
+  "sum_of_worker_process_peak_mib": 1113.714
+}

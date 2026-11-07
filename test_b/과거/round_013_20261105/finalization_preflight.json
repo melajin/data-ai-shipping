@@ -1,0 +1,75 @@
+﻿{
+    "stage":  "before final audit and documentation",
+    "checked_at":  "2026-11-05T19:49:19.5647426+09:00",
+    "available_ram_mib":  4379.9,
+    "total_ram_mib":  14140.9,
+    "estimated_additional_peak_mib":  120,
+    "estimate_basis":  "Small JSON/CSV audit, nine synthetic unit tests, and Markdown documentation; data arrays already persisted; no parquet reload",
+    "active_relevant_processes":  [
+                                      {
+                                          "pid":  6904,
+                                          "name":  "codex-windows-sandbox-service.exe",
+                                          "working_set_mib":  21.4
+                                      },
+                                      {
+                                          "pid":  23268,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  352.5
+                                      },
+                                      {
+                                          "pid":  17012,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  45.8
+                                      },
+                                      {
+                                          "pid":  16048,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  242.6
+                                      },
+                                      {
+                                          "pid":  23204,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  65.1
+                                      },
+                                      {
+                                          "pid":  24708,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  87.5
+                                      },
+                                      {
+                                          "pid":  18876,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  401.7
+                                      },
+                                      {
+                                          "pid":  24084,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  89.6
+                                      },
+                                      {
+                                          "pid":  23992,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  93.2
+                                      },
+                                      {
+                                          "pid":  22296,
+                                          "name":  "codex.exe",
+                                          "working_set_mib":  167.8
+                                      },
+                                      {
+                                          "pid":  15424,
+                                          "name":  "codex-code-mode-host.exe",
+                                          "working_set_mib":  19.3
+                                      },
+                                      {
+                                          "pid":  9528,
+                                          "name":  "codex.exe",
+                                          "working_set_mib":  173.8
+                                      },
+                                      {
+                                          "pid":  19144,
+                                          "name":  "codex-code-mode-host.exe",
+                                          "working_set_mib":  22.2
+                                      }
+                                  ]
+}

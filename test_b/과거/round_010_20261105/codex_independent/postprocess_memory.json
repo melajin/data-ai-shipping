@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-11-05T14:37:38.938913+09:00",
+  "available_mib": 1182.671875,
+  "stage": "small JSON report editing; no experiment data loading",
+  "estimated_maximum_increment_mib": 64,
+  "reserve_mib": 0,
+  "estimate_basis": "standard library only; summary JSONs; exact small binomial sums; no scientific imports, parquet or bootstrap",
+  "concurrent_work": "no own experiment running",
+  "gate_scope": "low-memory report editing allowed while large-memory jobs remain deferred; does not relax T1/T2 512MiB+1GiB experiment gates",
+  "allowed": true
+}

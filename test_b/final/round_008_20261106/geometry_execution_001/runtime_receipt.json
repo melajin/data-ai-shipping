@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "rows_written": 99677,
+  "canonical_rows_expected": 99677,
+  "mismatch_count": 0,
+  "error_count": 0,
+  "error_samples_first_100": [],
+  "ram_preflight": {
+    "checked_at": "2026-11-06T02:38:26.496989+09:00",
+    "available_mib": 3418.68,
+    "expected_extra_mib": 768,
+    "reserve_mib": 640,
+    "active_python_jobs": [
+      {
+        "pid": 27428,
+        "name": "python.exe",
+        "cmdline": "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\notebooklm-mcp.exe"
+      }
+    ],
+    "concurrent_job_reserve_mib": 768,
+    "required_available_mib": 2176,
+    "allowed": true,
+    "estimate_basis": "bounded projected parquet batches, <=99,677 scalar target keys, one month of parsed records, and bounded parquet output batches; R7 observed process peak 334MiB; conservatively reserve 768MiB per active external Python job"
+  },
+  "process_rss_mib_at_end": 287.24,
+  "process_peak_working_set_mib": 293.72,
+  "elapsed_sec": 123.408,
+  "timezone": "unknown; source-clock integer hours only; no localization",
+  "cache_month_rows": {
+    "1": 497942,
+    "2": 479290,
+    "3": 657292,
+    "4": 717294,
+    "5": 761846,
+    "6": 773405
+  },
+  "monthly_offsets": {
+    "1": 0,
+    "2": 497942,
+    "3": 977232,
+    "4": 1634524,
+    "5": 2351818,
+    "6": 3113664
+  },
+  "input_sha256_bytes": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001\\candidate_ledger.parquet": {
+      "sha256": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+      "bytes": 6433671
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_003_20261105\\gear_registry.csv": {
+      "sha256": "0a94249ad364500132d70521134fc493e836ec63d7d8734cc412e33c3adb73dd",
+      "bytes": 4474
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv": {
+      "sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "bytes": 669416109
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv": {
+      "sha256": "8eb284e7b9c374c2b679376652535eecf898e9241a668cae1d61c63a2b41b422",
+      "bytes": 635512252
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv": {
+      "sha256": "2765008e34544590c4692c125f92ba611c548a55f7816a866fb8df1f658550c0",
+      "bytes": 987693693
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv": {
+      "sha256": "013964713caf1cb9db2765e27f3205746748264236047f5a8cb14fc38fc9f3f1",
+      "bytes": 1113299125
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv": {
+      "sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "bytes": 1201889964
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv": {
+      "sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "bytes": 1255966524
+    }
+  },
+  "extractor_sha256": "a7a6ffed1319b8c75155df2935e11e3ab1c9f1de73f384563d5c6e99f1d1ffdb",
+  "haversine_radius_m": 6371000.0,
+  "tolerances": {
+    "len_m": 0.0001,
+    "bbox_m": 0.0001,
+    "cen_lon": 1e-07,
+    "cen_lat": 1e-07
+  },
+  "release_ready_for_scoring": true
+}

@@ -1,0 +1,26 @@
+[2026-11-05T19:46:27.100390+09:00] Starting §4 Local Collapse Feature Calculation (Task 1).
+[2026-11-05T19:46:27.102662+09:00] [RAM CHECK] [g4_local_collapse_start] Available: 4789.82 MiB (Total: 14140.86 MiB, Process RSS: 80.86 MiB). Est. peak: 256.0 MiB. Sufficient: True
+[2026-11-05T19:46:27.174078+09:00] Input hashes verified: {"devset_positives.csv": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1", "dev_hourly_scores.parquet": "44e960c100fcb29806711b42045bd4ae1a37f542ffd639eff0aff7b1f2b1c5b4", "additional_hourly_scores.parquet": "31a80050d15930fb21b000fb8627a9941a8e11f412f601d0600716962bcf81be", "PROTOCOL.md": "096df27963509e1402e0e7b8194615cba7bcb2cca6a29e7fc9affb68eaf7b566", "SUPERVISOR_TASK_01.md": "8533fc7b53b6747785d50a40a70104980ba20ddae2c048ec566b43867315f5dd"}
+[2026-11-05T19:46:27.207438+09:00] Target vessels: 82, Tier 0-1 vessels: 55, Total accidents: 100
+[2026-11-05T19:46:27.503685+09:00] Parquet loaded: raw_rows=145427, dropped_duplicates=45750, dedup_rows=99677
+[2026-11-05T19:46:27.514559+09:00] Audit results: {"n_raw_rows": 145427, "n_dup_rows": 91500, "n_dropped_duplicates": 45750, "n_dedup_rows": 99677, "ts_is_strictly_int": true, "neg_bbox_count": 0, "neg_len_count": 0, "nan_counts": {"rfid_id": 0, "ts": 0, "len_m": 0, "bbox_m": 0, "cen_lon": 0, "cen_lat": 0, "state": 0}}
+[2026-11-05T19:46:27.515514+09:00] Starting voyage splitting and §4 local collapse computation.
+[2026-11-05T19:46:33.338452+09:00] Saved 3615 voyages to testB/round_013_20261105/g4_voyages.csv
+[2026-11-05T19:46:33.341251+09:00] Saved summary to testB/round_013_20261105/g4_summary.json
+[2026-11-05T19:47:12.694350+09:00] Starting §3 Voyage Count Coverage & Eligibility Analysis.
+[2026-11-05T19:47:12.696192+09:00] [RAM CHECK] [g3_coverage_start] Available: 4829.0 MiB (Total: 14140.86 MiB, Process RSS: 80.45 MiB). Est. peak: 128.0 MiB. Sufficient: True
+[2026-11-05T19:47:12.784614+09:00] Loading 2025 Test B from testB/first_results/hourly_scores.parquet
+[2026-11-05T19:47:12.856304+09:00] Saved vessel-level coverage to testB/round_013_20261105/g3_vessel_level_coverage.csv
+[2026-11-05T19:47:12.863217+09:00] Saved coverage summary table to testB/round_013_20261105/g3_voyage_count_coverage.csv
+[2026-11-05T19:48:00.270569+09:00] Starting §5 Hour-of-Day Confounder Check.
+[2026-11-05T19:48:00.271651+09:00] [RAM CHECK] [g5_confound_check_start] Available: 4768.33 MiB (Total: 14140.86 MiB, Process RSS: 131.08 MiB). Est. peak: 128.0 MiB. Sufficient: True
+[2026-11-05T19:48:00.319595+09:00] Saved confound summary CSV to testB/round_013_20261105/g5_confound_summary.csv
+[2026-11-05T19:48:00.321880+09:00] Saved full confound results JSON to testB/round_013_20261105/g5_confound_result.json
+[2026-11-05T20:00:28.436298+09:00] Starting §6 Voyage Selection & Confidence Calculation.
+[2026-11-05T20:00:28.437892+09:00] [RAM CHECK] [g6_selection_start] Available: 4709.19 MiB (Total: 14140.86 MiB, Process RSS: 78.72 MiB). Est. peak: 128.0 MiB. Sufficient: True
+[2026-11-05T20:00:28.629835+09:00] Saved selections for 82 vessels to testB/round_013_20261105/g6_selection.csv
+[2026-11-05T20:00:28.632556+09:00] Saved confidence scores to testB/round_013_20261105/g3_confidence.csv
+[2026-11-05T20:01:13.675828+09:00] Starting §7 Primary & Secondary Endpoint Evaluation.
+[2026-11-05T20:01:13.676663+09:00] [RAM CHECK] [g7_evaluate_start] Available: 4672.96 MiB (Total: 14140.86 MiB, Process RSS: 131.43 MiB). Est. peak: 128.0 MiB. Sufficient: True
+[2026-11-05T20:01:13.720026+09:00] Saved event evaluations to testB/round_013_20261105/g7_event_evaluation.csv
+[2026-11-05T20:01:19.675627+09:00] Saved complete evaluation summary to testB/round_013_20261105/summary.json

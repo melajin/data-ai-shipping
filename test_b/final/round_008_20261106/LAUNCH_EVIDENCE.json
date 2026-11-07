@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-11-06T02:07+09:00",
+  "scope": "implementation/synthetic checks and competing design review only",
+  "workers": [
+    {
+      "role": "luna",
+      "dispatchId": "ctx_5c5e3c1f31c9",
+      "taskId": "task_d0eec015582b",
+      "runId": "run_a2b0e4f8b7cc",
+      "state": "ready",
+      "agent": "codex",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "mode": "structured",
+      "terminal": "structworker_1906f472-f746-453b-ad26-490b67f4daf1",
+      "workspace": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+      "next": "Orca wakes you when workers report; end your turn when you're done."
+    },
+    {
+      "role": "terra",
+      "delivery": "reopened",
+      "followUpOf": "ctx_780a190a2001",
+      "dispatchId": "ctx_4b5bd78214aa",
+      "taskId": "task_58aca741ed96",
+      "runId": "run_a2b0e4f8b7cc",
+      "state": "ready",
+      "agent": "codex",
+      "terminal": "structworker_a04ca097-675e-4485-94ed-b8d8645ebfd9",
+      "workspace": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+      "next": "Orca wakes you when workers report; end your turn when you're done."
+    },
+    {
+      "role": "sonnet",
+      "delivery": "reopened",
+      "followUpOf": "ctx_d9425f48940b",
+      "dispatchId": "ctx_c5cad59f7683",
+      "taskId": "task_484abf79a35e",
+      "runId": "run_a2b0e4f8b7cc",
+      "state": "ready",
+      "agent": "claude",
+      "terminal": "structworker_b29602b8-1bf7-4ae0-960f-b6ca9d1650d1",
+      "workspace": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+      "next": "Orca wakes you when workers report; end your turn when you're done."
+    }
+  ]
+}

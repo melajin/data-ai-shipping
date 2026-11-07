@@ -1,0 +1,75 @@
+﻿{
+    "stage":  "pre-run external RAM check",
+    "checked_at":  "2026-11-05T19:48:23.0197278+09:00",
+    "available_ram_mib":  4882,
+    "total_ram_mib":  14140.9,
+    "estimated_additional_peak_mib":  350,
+    "estimate_basis":  "65,536-row parquet batches; 99,677-row dev cap; Python records and sort working copy plus Arrow/NumPy/pandas/SciPy buffers; sequential vessel calculation; no parallel data process",
+    "active_relevant_processes":  [
+                                      {
+                                          "pid":  6904,
+                                          "name":  "codex-windows-sandbox-service.exe",
+                                          "working_set_mib":  21.4
+                                      },
+                                      {
+                                          "pid":  23268,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  326.7
+                                      },
+                                      {
+                                          "pid":  17012,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  45.8
+                                      },
+                                      {
+                                          "pid":  16048,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  241.9
+                                      },
+                                      {
+                                          "pid":  23204,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  65
+                                      },
+                                      {
+                                          "pid":  24708,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  87.5
+                                      },
+                                      {
+                                          "pid":  18876,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  399.2
+                                      },
+                                      {
+                                          "pid":  24084,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  89.2
+                                      },
+                                      {
+                                          "pid":  23992,
+                                          "name":  "Orca.exe",
+                                          "working_set_mib":  93.1
+                                      },
+                                      {
+                                          "pid":  22296,
+                                          "name":  "codex.exe",
+                                          "working_set_mib":  167.9
+                                      },
+                                      {
+                                          "pid":  15424,
+                                          "name":  "codex-code-mode-host.exe",
+                                          "working_set_mib":  19.3
+                                      },
+                                      {
+                                          "pid":  9528,
+                                          "name":  "codex.exe",
+                                          "working_set_mib":  173.8
+                                      },
+                                      {
+                                          "pid":  19144,
+                                          "name":  "codex-code-mode-host.exe",
+                                          "working_set_mib":  22.2
+                                      }
+                                  ]
+}

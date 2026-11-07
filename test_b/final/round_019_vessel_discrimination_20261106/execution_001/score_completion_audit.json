@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "audited_at": "2026-11-06T14:47:16.386636+09:00",
+  "rows": 3887065,
+  "vessels": 7372,
+  "n_finite_scores": 3887065,
+  "vessels_without_finite_scores": 0,
+  "source_reference_scorer_helper_hashes_match_live_files": true,
+  "final_csv_equals_all_worker_checkpoints": true,
+  "all_128_partitions_owned_exactly_once": true,
+  "all_original_seeded_checkpoints_equal_final": true,
+  "original_seeded_vessels": 827,
+  "original_seeded_error_records": 0,
+  "active_parallel_worker_pids": [],
+  "active_original_scorer_pids": [],
+  "active_orchestrator_pids": [],
+  "runtime_single_orchestrator_guard_passed": true,
+  "worker_process_peaks_mib": [
+    278.746,
+    278.133,
+    278.523,
+    278.312
+  ],
+  "sum_worker_process_peaks_mib": 1113.714,
+  "memory_preflight": {
+    "at": "2026-11-06T14:47:16.389026+09:00",
+    "available_mib": 3936.23,
+    "expected_audit_peak_mib": 128,
+    "reserve_mib": 640
+  },
+  "output_sha256": "1dd3c52cf6293c0d62793fd68f29dfb6d471bd80189ed03c5464280f6472df44",
+  "audit_script_sha256": "e729aff8ad09644b0ac232300b4e91267525d5bcd47d6ffca3af2d30b258c30a",
+  "labels_read": false,
+  "training_performed": false,
+  "overall_first_launch_to_completion_seconds": 1249.298
+}

@@ -1,0 +1,12 @@
+{
+  "duration_seconds": 128.0,
+  "bytes": 636424,
+  "resolution": "1280x720",
+  "fps": 10,
+  "codec": "H.264 / yuv420p",
+  "audio": false,
+  "decode_exit_code": 0,
+  "decode_errors": "",
+  "recorded_commands": 6,
+  "all_command_exit_codes_zero": true
+}

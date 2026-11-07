@@ -1,0 +1,2973 @@
+{
+  "dataset_scope": "OUTER N=5,897 (Fold 0: 1966, Fold 1: 1966, Fold 2: 1965)",
+  "protection_criteria": {
+    "TP0_min": 2389,
+    "TP3_min": 92
+  },
+  "baselines": {
+    "LightGBM_seed42": {
+      "n": 5897,
+      "correct": 3476,
+      "micro_f1": 0.5894522638629812,
+      "macro_f1": 0.519210304310862,
+      "tp": [
+        2389,
+        889,
+        108,
+        90
+      ],
+      "support": [
+        2920,
+        2016,
+        835,
+        126
+      ],
+      "predicted": [
+        3959,
+        1558,
+        243,
+        137
+      ],
+      "precision": [
+        0.6034352109118464,
+        0.5706033376123235,
+        0.4444444444444444,
+        0.656934306569343
+      ],
+      "recall": [
+        0.8181506849315069,
+        0.4409722222222222,
+        0.12934131736526946,
+        0.7142857142857143
+      ],
+      "f1": [
+        0.6945777002471291,
+        0.4974818130945719,
+        0.20037105751391468,
+        0.6844106463878327
+      ],
+      "confusion_matrix": [
+        [
+          2389,
+          464,
+          58,
+          9
+        ],
+        [
+          1028,
+          889,
+          73,
+          26
+        ],
+        [
+          525,
+          190,
+          108,
+          12
+        ],
+        [
+          17,
+          15,
+          4,
+          90
+        ]
+      ]
+    },
+    "LightGBM_5seed_sqrt_macro": {
+      "n": 5897,
+      "correct": 3497,
+      "micro_f1": 0.5930133966423605,
+      "macro_f1": 0.5252719738966167,
+      "tp": [
+        2381,
+        908,
+        116,
+        92
+      ],
+      "support": [
+        2920,
+        2016,
+        835,
+        126
+      ],
+      "predicted": [
+        3925,
+        1580,
+        250,
+        142
+      ],
+      "precision": [
+        0.606624203821656,
+        0.5746835443037974,
+        0.464,
+        0.647887323943662
+      ],
+      "recall": [
+        0.8154109589041096,
+        0.4503968253968254,
+        0.13892215568862276,
+        0.7301587301587301
+      ],
+      "f1": [
+        0.695690284879474,
+        0.5050055617352615,
+        0.21382488479262673,
+        0.6865671641791045
+      ],
+      "confusion_matrix": [
+        [
+          2381,
+          468,
+          60,
+          11
+        ],
+        [
+          1010,
+          908,
+          71,
+          27
+        ],
+        [
+          516,
+          191,
+          116,
+          12
+        ],
+        [
+          18,
+          13,
+          3,
+          92
+        ]
+      ]
+    }
+  },
+  "candidates": {
+    "T3_B1_S0_Raw": {
+      "name": "B1 [LGB5 + TabICL42 (50:50)] Raw Argmax (Round 017 S0)",
+      "metrics": {
+        "n": 5897,
+        "correct": 3534,
+        "micro_f1": 0.5992877734441241,
+        "macro_f1": 0.5232214555529091,
+        "tp": [
+          2503,
+          828,
+          116,
+          87
+        ],
+        "support": [
+          2920,
+          2016,
+          835,
+          126
+        ],
+        "predicted": [
+          4173,
+          1358,
+          236,
+          130
+        ],
+        "precision": [
+          0.5998082913970765,
+          0.6097201767304861,
+          0.4915254237288136,
+          0.6692307692307692
+        ],
+        "recall": [
+          0.8571917808219178,
+          0.4107142857142857,
+          0.13892215568862276,
+          0.6904761904761905
+        ],
+        "f1": [
+          0.7057662484139292,
+          0.4908120924718436,
+          0.21661998132586371,
+          0.6796874999999999
+        ],
+        "confusion_matrix": [
+          [
+            2503,
+            361,
+            47,
+            9
+          ],
+          [
+            1101,
+            828,
+            67,
+            20
+          ],
+          [
+            551,
+            154,
+            116,
+            14
+          ],
+          [
+            18,
+            15,
+            6,
+            87
+          ]
+        ]
+      },
+      "passed_protection": false,
+      "bootstrap_vs_seed42": {
+        "point_delta_micro_f1": 0.009835509581142954,
+        "net_gain_ships": 58,
+        "newly_correct": 261,
+        "newly_incorrect": 203,
+        "ci95_lower": 0.002539426827200272,
+        "ci95_upper": 0.01712735289130066,
+        "ci95_str": "[+0.002539, +0.017127]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "bootstrap_vs_base5": {
+        "point_delta_micro_f1": 0.0062743768017636085,
+        "net_gain_ships": 37,
+        "newly_correct": 235,
+        "newly_incorrect": 198,
+        "ci95_lower": -0.0005129726979820245,
+        "ci95_upper": 0.013566220111921316,
+        "ci95_str": "[-0.000513, +0.013566]",
+        "statistically_significant": false,
+        "repetitions": 2000
+      },
+      "transition_vs_seed42": {
+        "cm_base": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ],
+        "cm_cand": [
+          [
+            2503,
+            361,
+            47,
+            9
+          ],
+          [
+            1101,
+            828,
+            67,
+            20
+          ],
+          [
+            551,
+            154,
+            116,
+            14
+          ],
+          [
+            18,
+            15,
+            6,
+            87
+          ]
+        ],
+        "diff_cm": [
+          [
+            114,
+            -103,
+            -11,
+            0
+          ],
+          [
+            73,
+            -61,
+            -6,
+            -6
+          ],
+          [
+            26,
+            -36,
+            8,
+            2
+          ],
+          [
+            1,
+            0,
+            2,
+            -3
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2389,
+            "cand_tp": 2503,
+            "delta_tp": 114,
+            "newly_correct": 172,
+            "newly_incorrect": 58
+          },
+          "class_1": {
+            "base_tp": 889,
+            "cand_tp": 828,
+            "delta_tp": -61,
+            "newly_correct": 58,
+            "newly_incorrect": 119
+          },
+          "class_2": {
+            "base_tp": 108,
+            "cand_tp": 116,
+            "delta_tp": 8,
+            "newly_correct": 30,
+            "newly_incorrect": 22
+          },
+          "class_3": {
+            "base_tp": 90,
+            "cand_tp": 87,
+            "delta_tp": -3,
+            "newly_correct": 1,
+            "newly_incorrect": 4
+          }
+        }
+      },
+      "transition_vs_base5": {
+        "cm_base": [
+          [
+            2381,
+            468,
+            60,
+            11
+          ],
+          [
+            1010,
+            908,
+            71,
+            27
+          ],
+          [
+            516,
+            191,
+            116,
+            12
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "cm_cand": [
+          [
+            2503,
+            361,
+            47,
+            9
+          ],
+          [
+            1101,
+            828,
+            67,
+            20
+          ],
+          [
+            551,
+            154,
+            116,
+            14
+          ],
+          [
+            18,
+            15,
+            6,
+            87
+          ]
+        ],
+        "diff_cm": [
+          [
+            122,
+            -107,
+            -13,
+            -2
+          ],
+          [
+            91,
+            -80,
+            -4,
+            -7
+          ],
+          [
+            35,
+            -37,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            3,
+            -5
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2381,
+            "cand_tp": 2503,
+            "delta_tp": 122,
+            "newly_correct": 165,
+            "newly_incorrect": 43
+          },
+          "class_1": {
+            "base_tp": 908,
+            "cand_tp": 828,
+            "delta_tp": -80,
+            "newly_correct": 45,
+            "newly_incorrect": 125
+          },
+          "class_2": {
+            "base_tp": 116,
+            "cand_tp": 116,
+            "delta_tp": 0,
+            "newly_correct": 24,
+            "newly_incorrect": 24
+          },
+          "class_3": {
+            "base_tp": 92,
+            "cand_tp": 87,
+            "delta_tp": -5,
+            "newly_correct": 1,
+            "newly_incorrect": 6
+          }
+        }
+      }
+    },
+    "T3_B1_PriorShift_Pooled": {
+      "name": "B1 [LGB5 + TabICL42 (50:50)] Prior-Shift Multiplier (Pooled Mean)",
+      "metrics": {
+        "n": 5897,
+        "correct": 3531,
+        "micro_f1": 0.5987790401899271,
+        "macro_f1": 0.5168276305937873,
+        "tp": [
+          2520,
+          805,
+          114,
+          92
+        ],
+        "support": [
+          2920,
+          2016,
+          835,
+          126
+        ],
+        "predicted": [
+          4208,
+          1303,
+          234,
+          152
+        ],
+        "precision": [
+          0.5988593155893536,
+          0.6178050652340752,
+          0.48717948717948717,
+          0.6052631578947368
+        ],
+        "recall": [
+          0.863013698630137,
+          0.3993055555555556,
+          0.13652694610778443,
+          0.7301587301587301
+        ],
+        "f1": [
+          0.707070707070707,
+          0.48508586923772223,
+          0.21328344246959777,
+          0.6618705035971223
+        ],
+        "confusion_matrix": [
+          [
+            2520,
+            341,
+            49,
+            10
+          ],
+          [
+            1115,
+            805,
+            67,
+            29
+          ],
+          [
+            555,
+            145,
+            114,
+            21
+          ],
+          [
+            18,
+            12,
+            4,
+            92
+          ]
+        ]
+      },
+      "passed_protection": true,
+      "bootstrap_vs_seed42": {
+        "point_delta_micro_f1": 0.009326776326945905,
+        "net_gain_ships": 55,
+        "newly_correct": 264,
+        "newly_incorrect": 209,
+        "ci95_lower": 0.0023698490758012553,
+        "ci95_upper": 0.016788197388502627,
+        "ci95_str": "[+0.002370, +0.016788]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "bootstrap_vs_base5": {
+        "point_delta_micro_f1": 0.005765643547566559,
+        "net_gain_ships": 34,
+        "newly_correct": 241,
+        "newly_incorrect": 207,
+        "ci95_lower": -0.0010174665083940986,
+        "ci95_upper": 0.013057486857724267,
+        "ci95_str": "[-0.001017, +0.013057]",
+        "statistically_significant": false,
+        "repetitions": 2000
+      },
+      "transition_vs_seed42": {
+        "cm_base": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ],
+        "cm_cand": [
+          [
+            2520,
+            341,
+            49,
+            10
+          ],
+          [
+            1115,
+            805,
+            67,
+            29
+          ],
+          [
+            555,
+            145,
+            114,
+            21
+          ],
+          [
+            18,
+            12,
+            4,
+            92
+          ]
+        ],
+        "diff_cm": [
+          [
+            131,
+            -123,
+            -9,
+            1
+          ],
+          [
+            87,
+            -84,
+            -6,
+            3
+          ],
+          [
+            30,
+            -45,
+            6,
+            9
+          ],
+          [
+            1,
+            -3,
+            0,
+            2
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2389,
+            "cand_tp": 2520,
+            "delta_tp": 131,
+            "newly_correct": 182,
+            "newly_incorrect": 51
+          },
+          "class_1": {
+            "base_tp": 889,
+            "cand_tp": 805,
+            "delta_tp": -84,
+            "newly_correct": 50,
+            "newly_incorrect": 134
+          },
+          "class_2": {
+            "base_tp": 108,
+            "cand_tp": 114,
+            "delta_tp": 6,
+            "newly_correct": 30,
+            "newly_incorrect": 24
+          },
+          "class_3": {
+            "base_tp": 90,
+            "cand_tp": 92,
+            "delta_tp": 2,
+            "newly_correct": 2,
+            "newly_incorrect": 0
+          }
+        }
+      },
+      "transition_vs_base5": {
+        "cm_base": [
+          [
+            2381,
+            468,
+            60,
+            11
+          ],
+          [
+            1010,
+            908,
+            71,
+            27
+          ],
+          [
+            516,
+            191,
+            116,
+            12
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "cm_cand": [
+          [
+            2520,
+            341,
+            49,
+            10
+          ],
+          [
+            1115,
+            805,
+            67,
+            29
+          ],
+          [
+            555,
+            145,
+            114,
+            21
+          ],
+          [
+            18,
+            12,
+            4,
+            92
+          ]
+        ],
+        "diff_cm": [
+          [
+            139,
+            -127,
+            -11,
+            -1
+          ],
+          [
+            105,
+            -103,
+            -4,
+            2
+          ],
+          [
+            39,
+            -46,
+            -2,
+            9
+          ],
+          [
+            0,
+            -1,
+            1,
+            0
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2381,
+            "cand_tp": 2520,
+            "delta_tp": 139,
+            "newly_correct": 176,
+            "newly_incorrect": 37
+          },
+          "class_1": {
+            "base_tp": 908,
+            "cand_tp": 805,
+            "delta_tp": -103,
+            "newly_correct": 39,
+            "newly_incorrect": 142
+          },
+          "class_2": {
+            "base_tp": 116,
+            "cand_tp": 114,
+            "delta_tp": -2,
+            "newly_correct": 25,
+            "newly_incorrect": 27
+          },
+          "class_3": {
+            "base_tp": 92,
+            "cand_tp": 92,
+            "delta_tp": 0,
+            "newly_correct": 1,
+            "newly_incorrect": 1
+          }
+        }
+      }
+    },
+    "T3_B1_PriorShift_Local": {
+      "name": "B1 [LGB5 + TabICL42 (50:50)] Prior-Shift Multiplier (Fold-Local)",
+      "metrics": {
+        "n": 5897,
+        "correct": 3529,
+        "micro_f1": 0.598439884687129,
+        "macro_f1": 0.5200430764190529,
+        "tp": [
+          2514,
+          806,
+          117,
+          92
+        ],
+        "support": [
+          2920,
+          2016,
+          835,
+          126
+        ],
+        "predicted": [
+          4203,
+          1303,
+          243,
+          148
+        ],
+        "precision": [
+          0.5981441827266238,
+          0.6185725249424405,
+          0.48148148148148145,
+          0.6216216216216216
+        ],
+        "recall": [
+          0.8609589041095891,
+          0.3998015873015873,
+          0.14011976047904193,
+          0.7301587301587301
+        ],
+        "f1": [
+          0.7058823529411765,
+          0.4856884603796324,
+          0.21706864564007425,
+          0.6715328467153284
+        ],
+        "confusion_matrix": [
+          [
+            2514,
+            342,
+            54,
+            10
+          ],
+          [
+            1114,
+            806,
+            68,
+            28
+          ],
+          [
+            557,
+            143,
+            117,
+            18
+          ],
+          [
+            18,
+            12,
+            4,
+            92
+          ]
+        ]
+      },
+      "passed_protection": true,
+      "bootstrap_vs_seed42": {
+        "point_delta_micro_f1": 0.008987620824147871,
+        "net_gain_ships": 53,
+        "newly_correct": 262,
+        "newly_incorrect": 209,
+        "ci95_lower": 0.0018653552653891809,
+        "ci95_upper": 0.01661861963710361,
+        "ci95_str": "[+0.001865, +0.016619]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "bootstrap_vs_base5": {
+        "point_delta_micro_f1": 0.005426488044768527,
+        "net_gain_ships": 32,
+        "newly_correct": 239,
+        "newly_incorrect": 207,
+        "ci95_lower": -0.0013566220111921317,
+        "ci95_upper": 0.012718331354926234,
+        "ci95_str": "[-0.001357, +0.012718]",
+        "statistically_significant": false,
+        "repetitions": 2000
+      },
+      "transition_vs_seed42": {
+        "cm_base": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ],
+        "cm_cand": [
+          [
+            2514,
+            342,
+            54,
+            10
+          ],
+          [
+            1114,
+            806,
+            68,
+            28
+          ],
+          [
+            557,
+            143,
+            117,
+            18
+          ],
+          [
+            18,
+            12,
+            4,
+            92
+          ]
+        ],
+        "diff_cm": [
+          [
+            125,
+            -122,
+            -4,
+            1
+          ],
+          [
+            86,
+            -83,
+            -5,
+            2
+          ],
+          [
+            32,
+            -47,
+            9,
+            6
+          ],
+          [
+            1,
+            -3,
+            0,
+            2
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2389,
+            "cand_tp": 2514,
+            "delta_tp": 125,
+            "newly_correct": 177,
+            "newly_incorrect": 52
+          },
+          "class_1": {
+            "base_tp": 889,
+            "cand_tp": 806,
+            "delta_tp": -83,
+            "newly_correct": 51,
+            "newly_incorrect": 134
+          },
+          "class_2": {
+            "base_tp": 108,
+            "cand_tp": 117,
+            "delta_tp": 9,
+            "newly_correct": 32,
+            "newly_incorrect": 23
+          },
+          "class_3": {
+            "base_tp": 90,
+            "cand_tp": 92,
+            "delta_tp": 2,
+            "newly_correct": 2,
+            "newly_incorrect": 0
+          }
+        }
+      },
+      "transition_vs_base5": {
+        "cm_base": [
+          [
+            2381,
+            468,
+            60,
+            11
+          ],
+          [
+            1010,
+            908,
+            71,
+            27
+          ],
+          [
+            516,
+            191,
+            116,
+            12
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "cm_cand": [
+          [
+            2514,
+            342,
+            54,
+            10
+          ],
+          [
+            1114,
+            806,
+            68,
+            28
+          ],
+          [
+            557,
+            143,
+            117,
+            18
+          ],
+          [
+            18,
+            12,
+            4,
+            92
+          ]
+        ],
+        "diff_cm": [
+          [
+            133,
+            -126,
+            -6,
+            -1
+          ],
+          [
+            104,
+            -102,
+            -3,
+            1
+          ],
+          [
+            41,
+            -48,
+            1,
+            6
+          ],
+          [
+            0,
+            -1,
+            1,
+            0
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2381,
+            "cand_tp": 2514,
+            "delta_tp": 133,
+            "newly_correct": 171,
+            "newly_incorrect": 38
+          },
+          "class_1": {
+            "base_tp": 908,
+            "cand_tp": 806,
+            "delta_tp": -102,
+            "newly_correct": 40,
+            "newly_incorrect": 142
+          },
+          "class_2": {
+            "base_tp": 116,
+            "cand_tp": 117,
+            "delta_tp": 1,
+            "newly_correct": 26,
+            "newly_incorrect": 25
+          },
+          "class_3": {
+            "base_tp": 92,
+            "cand_tp": 92,
+            "delta_tp": 0,
+            "newly_correct": 2,
+            "newly_incorrect": 2
+          }
+        }
+      }
+    },
+    "T3_B1_DualGate": {
+      "name": "B1 [LGB5 + TabICL42 (50:50)] Dual Gate (INNER CV)",
+      "metrics": {
+        "n": 5897,
+        "correct": 3522,
+        "micro_f1": 0.597252840427336,
+        "macro_f1": 0.5120719325381241,
+        "tp": [
+          2508,
+          799,
+          118,
+          97
+        ],
+        "support": [
+          2920,
+          2016,
+          835,
+          126
+        ],
+        "predicted": [
+          4186,
+          1291,
+          243,
+          177
+        ],
+        "precision": [
+          0.5991399904443383,
+          0.6189000774593338,
+          0.48559670781893005,
+          0.5480225988700564
+        ],
+        "recall": [
+          0.8589041095890411,
+          0.39632936507936506,
+          0.14131736526946106,
+          0.7698412698412699
+        ],
+        "f1": [
+          0.7058823529411764,
+          0.4832174175990323,
+          0.2189239332096475,
+          0.6402640264026401
+        ],
+        "confusion_matrix": [
+          [
+            2508,
+            339,
+            54,
+            19
+          ],
+          [
+            1111,
+            799,
+            68,
+            38
+          ],
+          [
+            551,
+            143,
+            118,
+            23
+          ],
+          [
+            16,
+            10,
+            3,
+            97
+          ]
+        ]
+      },
+      "passed_protection": true,
+      "bootstrap_vs_seed42": {
+        "point_delta_micro_f1": 0.0078005765643547565,
+        "net_gain_ships": 46,
+        "newly_correct": 264,
+        "newly_incorrect": 218,
+        "ci95_lower": 0.0003391555027980329,
+        "ci95_upper": 0.015096659318297416,
+        "ci95_str": "[+0.000339, +0.015097]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "bootstrap_vs_base5": {
+        "point_delta_micro_f1": 0.004239443784975411,
+        "net_gain_ships": 25,
+        "newly_correct": 239,
+        "newly_incorrect": 214,
+        "ci95_lower": -0.0028828217737832795,
+        "ci95_upper": 0.011531287095133118,
+        "ci95_str": "[-0.002883, +0.011531]",
+        "statistically_significant": false,
+        "repetitions": 2000
+      },
+      "transition_vs_seed42": {
+        "cm_base": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ],
+        "cm_cand": [
+          [
+            2508,
+            339,
+            54,
+            19
+          ],
+          [
+            1111,
+            799,
+            68,
+            38
+          ],
+          [
+            551,
+            143,
+            118,
+            23
+          ],
+          [
+            16,
+            10,
+            3,
+            97
+          ]
+        ],
+        "diff_cm": [
+          [
+            119,
+            -125,
+            -4,
+            10
+          ],
+          [
+            83,
+            -90,
+            -5,
+            12
+          ],
+          [
+            26,
+            -47,
+            10,
+            11
+          ],
+          [
+            -1,
+            -5,
+            -1,
+            7
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2389,
+            "cand_tp": 2508,
+            "delta_tp": 119,
+            "newly_correct": 175,
+            "newly_incorrect": 56
+          },
+          "class_1": {
+            "base_tp": 889,
+            "cand_tp": 799,
+            "delta_tp": -90,
+            "newly_correct": 49,
+            "newly_incorrect": 139
+          },
+          "class_2": {
+            "base_tp": 108,
+            "cand_tp": 118,
+            "delta_tp": 10,
+            "newly_correct": 33,
+            "newly_incorrect": 23
+          },
+          "class_3": {
+            "base_tp": 90,
+            "cand_tp": 97,
+            "delta_tp": 7,
+            "newly_correct": 7,
+            "newly_incorrect": 0
+          }
+        }
+      },
+      "transition_vs_base5": {
+        "cm_base": [
+          [
+            2381,
+            468,
+            60,
+            11
+          ],
+          [
+            1010,
+            908,
+            71,
+            27
+          ],
+          [
+            516,
+            191,
+            116,
+            12
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "cm_cand": [
+          [
+            2508,
+            339,
+            54,
+            19
+          ],
+          [
+            1111,
+            799,
+            68,
+            38
+          ],
+          [
+            551,
+            143,
+            118,
+            23
+          ],
+          [
+            16,
+            10,
+            3,
+            97
+          ]
+        ],
+        "diff_cm": [
+          [
+            127,
+            -129,
+            -6,
+            8
+          ],
+          [
+            101,
+            -109,
+            -3,
+            11
+          ],
+          [
+            35,
+            -48,
+            2,
+            11
+          ],
+          [
+            -2,
+            -3,
+            0,
+            5
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2381,
+            "cand_tp": 2508,
+            "delta_tp": 127,
+            "newly_correct": 168,
+            "newly_incorrect": 41
+          },
+          "class_1": {
+            "base_tp": 908,
+            "cand_tp": 799,
+            "delta_tp": -109,
+            "newly_correct": 38,
+            "newly_incorrect": 147
+          },
+          "class_2": {
+            "base_tp": 116,
+            "cand_tp": 118,
+            "delta_tp": 2,
+            "newly_correct": 28,
+            "newly_incorrect": 26
+          },
+          "class_3": {
+            "base_tp": 92,
+            "cand_tp": 97,
+            "delta_tp": 5,
+            "newly_correct": 5,
+            "newly_incorrect": 0
+          }
+        }
+      }
+    },
+    "T3_B2_Trio_PriorShift_Pooled": {
+      "name": "B2 [LGB5(45%) + Cat(10%) + Tab42(45%)] Prior-Shift Multiplier (Pooled Mean)",
+      "metrics": {
+        "n": 5897,
+        "correct": 3538,
+        "micro_f1": 0.5999660844497202,
+        "macro_f1": 0.5174847814344017,
+        "tp": [
+          2538,
+          801,
+          106,
+          93
+        ],
+        "support": [
+          2920,
+          2016,
+          835,
+          126
+        ],
+        "predicted": [
+          4251,
+          1289,
+          207,
+          150
+        ],
+        "precision": [
+          0.5970359915314044,
+          0.6214119472459271,
+          0.5120772946859904,
+          0.62
+        ],
+        "recall": [
+          0.8691780821917808,
+          0.39732142857142855,
+          0.12694610778443113,
+          0.7380952380952381
+        ],
+        "f1": [
+          0.7078510667968206,
+          0.48472012102874434,
+          0.20345489443378117,
+          0.6739130434782609
+        ],
+        "confusion_matrix": [
+          [
+            2538,
+            331,
+            41,
+            10
+          ],
+          [
+            1130,
+            801,
+            57,
+            28
+          ],
+          [
+            565,
+            145,
+            106,
+            19
+          ],
+          [
+            18,
+            12,
+            3,
+            93
+          ]
+        ]
+      },
+      "passed_protection": true,
+      "bootstrap_vs_seed42": {
+        "point_delta_micro_f1": 0.01051382058673902,
+        "net_gain_ships": 62,
+        "newly_correct": 263,
+        "newly_incorrect": 201,
+        "ci95_lower": 0.003391555027980329,
+        "ci95_upper": 0.017805663896896726,
+        "ci95_str": "[+0.003392, +0.017806]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "bootstrap_vs_base5": {
+        "point_delta_micro_f1": 0.006952687807359675,
+        "net_gain_ships": 41,
+        "newly_correct": 242,
+        "newly_incorrect": 201,
+        "ci95_lower": 0.00016957775139901646,
+        "ci95_upper": 0.013909615058504302,
+        "ci95_str": "[+0.000170, +0.013910]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "transition_vs_seed42": {
+        "cm_base": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ],
+        "cm_cand": [
+          [
+            2538,
+            331,
+            41,
+            10
+          ],
+          [
+            1130,
+            801,
+            57,
+            28
+          ],
+          [
+            565,
+            145,
+            106,
+            19
+          ],
+          [
+            18,
+            12,
+            3,
+            93
+          ]
+        ],
+        "diff_cm": [
+          [
+            149,
+            -133,
+            -17,
+            1
+          ],
+          [
+            102,
+            -88,
+            -16,
+            2
+          ],
+          [
+            40,
+            -45,
+            -2,
+            7
+          ],
+          [
+            1,
+            -3,
+            -1,
+            3
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2389,
+            "cand_tp": 2538,
+            "delta_tp": 149,
+            "newly_correct": 187,
+            "newly_incorrect": 38
+          },
+          "class_1": {
+            "base_tp": 889,
+            "cand_tp": 801,
+            "delta_tp": -88,
+            "newly_correct": 48,
+            "newly_incorrect": 136
+          },
+          "class_2": {
+            "base_tp": 108,
+            "cand_tp": 106,
+            "delta_tp": -2,
+            "newly_correct": 25,
+            "newly_incorrect": 27
+          },
+          "class_3": {
+            "base_tp": 90,
+            "cand_tp": 93,
+            "delta_tp": 3,
+            "newly_correct": 3,
+            "newly_incorrect": 0
+          }
+        }
+      },
+      "transition_vs_base5": {
+        "cm_base": [
+          [
+            2381,
+            468,
+            60,
+            11
+          ],
+          [
+            1010,
+            908,
+            71,
+            27
+          ],
+          [
+            516,
+            191,
+            116,
+            12
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "cm_cand": [
+          [
+            2538,
+            331,
+            41,
+            10
+          ],
+          [
+            1130,
+            801,
+            57,
+            28
+          ],
+          [
+            565,
+            145,
+            106,
+            19
+          ],
+          [
+            18,
+            12,
+            3,
+            93
+          ]
+        ],
+        "diff_cm": [
+          [
+            157,
+            -137,
+            -19,
+            -1
+          ],
+          [
+            120,
+            -107,
+            -14,
+            1
+          ],
+          [
+            49,
+            -46,
+            -10,
+            7
+          ],
+          [
+            0,
+            -1,
+            0,
+            1
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2381,
+            "cand_tp": 2538,
+            "delta_tp": 157,
+            "newly_correct": 183,
+            "newly_incorrect": 26
+          },
+          "class_1": {
+            "base_tp": 908,
+            "cand_tp": 801,
+            "delta_tp": -107,
+            "newly_correct": 37,
+            "newly_incorrect": 144
+          },
+          "class_2": {
+            "base_tp": 116,
+            "cand_tp": 106,
+            "delta_tp": -10,
+            "newly_correct": 21,
+            "newly_incorrect": 31
+          },
+          "class_3": {
+            "base_tp": 92,
+            "cand_tp": 93,
+            "delta_tp": 1,
+            "newly_correct": 1,
+            "newly_incorrect": 0
+          }
+        }
+      }
+    },
+    "T3_B2_Trio_PriorShift_Local": {
+      "name": "B2 [LGB5(45%) + Cat(10%) + Tab42(45%)] Prior-Shift Multiplier (Fold-Local)",
+      "metrics": {
+        "n": 5897,
+        "correct": 3538,
+        "micro_f1": 0.5999660844497202,
+        "macro_f1": 0.5166197196501241,
+        "tp": [
+          2542,
+          799,
+          104,
+          93
+        ],
+        "support": [
+          2920,
+          2016,
+          835,
+          126
+        ],
+        "predicted": [
+          4259,
+          1283,
+          205,
+          150
+        ],
+        "precision": [
+          0.5968537215308758,
+          0.622759158222915,
+          0.5073170731707317,
+          0.62
+        ],
+        "recall": [
+          0.8705479452054794,
+          0.39632936507936506,
+          0.12455089820359282,
+          0.7380952380952381
+        ],
+        "f1": [
+          0.7081766262710684,
+          0.484389208851167,
+          0.20000000000000004,
+          0.6739130434782609
+        ],
+        "confusion_matrix": [
+          [
+            2542,
+            330,
+            38,
+            10
+          ],
+          [
+            1130,
+            799,
+            60,
+            27
+          ],
+          [
+            569,
+            142,
+            104,
+            20
+          ],
+          [
+            18,
+            12,
+            3,
+            93
+          ]
+        ]
+      },
+      "passed_protection": true,
+      "bootstrap_vs_seed42": {
+        "point_delta_micro_f1": 0.01051382058673902,
+        "net_gain_ships": 62,
+        "newly_correct": 262,
+        "newly_incorrect": 200,
+        "ci95_lower": 0.003387315584195354,
+        "ci95_upper": 0.017805663896896726,
+        "ci95_str": "[+0.003387, +0.017806]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "bootstrap_vs_base5": {
+        "point_delta_micro_f1": 0.006952687807359675,
+        "net_gain_ships": 41,
+        "newly_correct": 246,
+        "newly_incorrect": 205,
+        "ci95_lower": 0.0003391555027980329,
+        "ci95_upper": 0.014074953366118366,
+        "ci95_str": "[+0.000339, +0.014075]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "transition_vs_seed42": {
+        "cm_base": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ],
+        "cm_cand": [
+          [
+            2542,
+            330,
+            38,
+            10
+          ],
+          [
+            1130,
+            799,
+            60,
+            27
+          ],
+          [
+            569,
+            142,
+            104,
+            20
+          ],
+          [
+            18,
+            12,
+            3,
+            93
+          ]
+        ],
+        "diff_cm": [
+          [
+            153,
+            -134,
+            -20,
+            1
+          ],
+          [
+            102,
+            -90,
+            -13,
+            1
+          ],
+          [
+            44,
+            -48,
+            -4,
+            8
+          ],
+          [
+            1,
+            -3,
+            -1,
+            3
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2389,
+            "cand_tp": 2542,
+            "delta_tp": 153,
+            "newly_correct": 187,
+            "newly_incorrect": 34
+          },
+          "class_1": {
+            "base_tp": 889,
+            "cand_tp": 799,
+            "delta_tp": -90,
+            "newly_correct": 48,
+            "newly_incorrect": 138
+          },
+          "class_2": {
+            "base_tp": 108,
+            "cand_tp": 104,
+            "delta_tp": -4,
+            "newly_correct": 24,
+            "newly_incorrect": 28
+          },
+          "class_3": {
+            "base_tp": 90,
+            "cand_tp": 93,
+            "delta_tp": 3,
+            "newly_correct": 3,
+            "newly_incorrect": 0
+          }
+        }
+      },
+      "transition_vs_base5": {
+        "cm_base": [
+          [
+            2381,
+            468,
+            60,
+            11
+          ],
+          [
+            1010,
+            908,
+            71,
+            27
+          ],
+          [
+            516,
+            191,
+            116,
+            12
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "cm_cand": [
+          [
+            2542,
+            330,
+            38,
+            10
+          ],
+          [
+            1130,
+            799,
+            60,
+            27
+          ],
+          [
+            569,
+            142,
+            104,
+            20
+          ],
+          [
+            18,
+            12,
+            3,
+            93
+          ]
+        ],
+        "diff_cm": [
+          [
+            161,
+            -138,
+            -22,
+            -1
+          ],
+          [
+            120,
+            -109,
+            -11,
+            0
+          ],
+          [
+            53,
+            -49,
+            -12,
+            8
+          ],
+          [
+            0,
+            -1,
+            0,
+            1
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2381,
+            "cand_tp": 2542,
+            "delta_tp": 161,
+            "newly_correct": 186,
+            "newly_incorrect": 25
+          },
+          "class_1": {
+            "base_tp": 908,
+            "cand_tp": 799,
+            "delta_tp": -109,
+            "newly_correct": 38,
+            "newly_incorrect": 147
+          },
+          "class_2": {
+            "base_tp": 116,
+            "cand_tp": 104,
+            "delta_tp": -12,
+            "newly_correct": 20,
+            "newly_incorrect": 32
+          },
+          "class_3": {
+            "base_tp": 92,
+            "cand_tp": 93,
+            "delta_tp": 1,
+            "newly_correct": 2,
+            "newly_incorrect": 1
+          }
+        }
+      }
+    },
+    "T3_B2_Trio_DualGate": {
+      "name": "B2 [LGB5(45%) + Cat(10%) + Tab42(45%)] Dual Gate (INNER CV)",
+      "metrics": {
+        "n": 5897,
+        "correct": 3528,
+        "micro_f1": 0.59827030693573,
+        "macro_f1": 0.5105674219809105,
+        "tp": [
+          2523,
+          797,
+          111,
+          97
+        ],
+        "support": [
+          2920,
+          2016,
+          835,
+          126
+        ],
+        "predicted": [
+          4210,
+          1286,
+          225,
+          176
+        ],
+        "precision": [
+          0.5992874109263658,
+          0.619751166407465,
+          0.49333333333333335,
+          0.5511363636363636
+        ],
+        "recall": [
+          0.864041095890411,
+          0.39533730158730157,
+          0.13293413173652693,
+          0.7698412698412699
+        ],
+        "f1": [
+          0.7077138849929876,
+          0.48273773470623865,
+          0.20943396226415092,
+          0.642384105960265
+        ],
+        "confusion_matrix": [
+          [
+            2523,
+            334,
+            45,
+            18
+          ],
+          [
+            1115,
+            797,
+            66,
+            38
+          ],
+          [
+            556,
+            145,
+            111,
+            23
+          ],
+          [
+            16,
+            10,
+            3,
+            97
+          ]
+        ]
+      },
+      "passed_protection": true,
+      "bootstrap_vs_seed42": {
+        "point_delta_micro_f1": 0.008818043072748855,
+        "net_gain_ships": 52,
+        "newly_correct": 261,
+        "newly_incorrect": 209,
+        "ci95_lower": 0.0016915380702051893,
+        "ci95_upper": 0.01610988638290656,
+        "ci95_str": "[+0.001692, +0.016110]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "bootstrap_vs_base5": {
+        "point_delta_micro_f1": 0.00525691029336951,
+        "net_gain_ships": 31,
+        "newly_correct": 239,
+        "newly_incorrect": 208,
+        "ci95_lower": -0.0016957775139901645,
+        "ci95_upper": 0.012383415295913153,
+        "ci95_str": "[-0.001696, +0.012383]",
+        "statistically_significant": false,
+        "repetitions": 2000
+      },
+      "transition_vs_seed42": {
+        "cm_base": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ],
+        "cm_cand": [
+          [
+            2523,
+            334,
+            45,
+            18
+          ],
+          [
+            1115,
+            797,
+            66,
+            38
+          ],
+          [
+            556,
+            145,
+            111,
+            23
+          ],
+          [
+            16,
+            10,
+            3,
+            97
+          ]
+        ],
+        "diff_cm": [
+          [
+            134,
+            -130,
+            -13,
+            9
+          ],
+          [
+            87,
+            -92,
+            -7,
+            12
+          ],
+          [
+            31,
+            -45,
+            3,
+            11
+          ],
+          [
+            -1,
+            -5,
+            -1,
+            7
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2389,
+            "cand_tp": 2523,
+            "delta_tp": 134,
+            "newly_correct": 180,
+            "newly_incorrect": 46
+          },
+          "class_1": {
+            "base_tp": 889,
+            "cand_tp": 797,
+            "delta_tp": -92,
+            "newly_correct": 47,
+            "newly_incorrect": 139
+          },
+          "class_2": {
+            "base_tp": 108,
+            "cand_tp": 111,
+            "delta_tp": 3,
+            "newly_correct": 27,
+            "newly_incorrect": 24
+          },
+          "class_3": {
+            "base_tp": 90,
+            "cand_tp": 97,
+            "delta_tp": 7,
+            "newly_correct": 7,
+            "newly_incorrect": 0
+          }
+        }
+      },
+      "transition_vs_base5": {
+        "cm_base": [
+          [
+            2381,
+            468,
+            60,
+            11
+          ],
+          [
+            1010,
+            908,
+            71,
+            27
+          ],
+          [
+            516,
+            191,
+            116,
+            12
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "cm_cand": [
+          [
+            2523,
+            334,
+            45,
+            18
+          ],
+          [
+            1115,
+            797,
+            66,
+            38
+          ],
+          [
+            556,
+            145,
+            111,
+            23
+          ],
+          [
+            16,
+            10,
+            3,
+            97
+          ]
+        ],
+        "diff_cm": [
+          [
+            142,
+            -134,
+            -15,
+            7
+          ],
+          [
+            105,
+            -111,
+            -5,
+            11
+          ],
+          [
+            40,
+            -46,
+            -5,
+            11
+          ],
+          [
+            -2,
+            -3,
+            0,
+            5
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2381,
+            "cand_tp": 2523,
+            "delta_tp": 142,
+            "newly_correct": 175,
+            "newly_incorrect": 33
+          },
+          "class_1": {
+            "base_tp": 908,
+            "cand_tp": 797,
+            "delta_tp": -111,
+            "newly_correct": 37,
+            "newly_incorrect": 148
+          },
+          "class_2": {
+            "base_tp": 116,
+            "cand_tp": 111,
+            "delta_tp": -5,
+            "newly_correct": 22,
+            "newly_incorrect": 27
+          },
+          "class_3": {
+            "base_tp": 92,
+            "cand_tp": 97,
+            "delta_tp": 5,
+            "newly_correct": 5,
+            "newly_incorrect": 0
+          }
+        }
+      }
+    },
+    "T3_Grand_Fusion_BothTab_T1_w10": {
+      "name": "Grand Fusion [LGB5(35%) + Tab42(22.5%) + Tab26(22.5%) + Cat(10%) + Track1(10%)] (Pooled Mean)",
+      "metrics": {
+        "n": 5897,
+        "correct": 3552,
+        "micro_f1": 0.6023401729693064,
+        "macro_f1": 0.5215519485053668,
+        "tp": [
+          2541,
+          814,
+          105,
+          92
+        ],
+        "support": [
+          2920,
+          2016,
+          835,
+          126
+        ],
+        "predicted": [
+          4252,
+          1303,
+          199,
+          143
+        ],
+        "precision": [
+          0.5976011288805269,
+          0.624712202609363,
+          0.5276381909547738,
+          0.6433566433566433
+        ],
+        "recall": [
+          0.8702054794520548,
+          0.4037698412698413,
+          0.12574850299401197,
+          0.7301587301587301
+        ],
+        "f1": [
+          0.7085889570552147,
+          0.4905091895149142,
+          0.20309477756286265,
+          0.6840148698884757
+        ],
+        "confusion_matrix": [
+          [
+            2541,
+            332,
+            37,
+            10
+          ],
+          [
+            1125,
+            814,
+            54,
+            23
+          ],
+          [
+            568,
+            144,
+            105,
+            18
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ]
+      },
+      "passed_protection": true,
+      "bootstrap_vs_seed42": {
+        "point_delta_micro_f1": 0.01288790910632525,
+        "net_gain_ships": 76,
+        "newly_correct": 269,
+        "newly_incorrect": 193,
+        "ci95_lower": 0.005596065796167543,
+        "ci95_upper": 0.020014414108868894,
+        "ci95_str": "[+0.005596, +0.020014]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "bootstrap_vs_base5": {
+        "point_delta_micro_f1": 0.009326776326945905,
+        "net_gain_ships": 55,
+        "newly_correct": 246,
+        "newly_incorrect": 191,
+        "ci95_lower": 0.0027090045785992884,
+        "ci95_upper": 0.01661861963710361,
+        "ci95_str": "[+0.002709, +0.016619]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "transition_vs_seed42": {
+        "cm_base": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ],
+        "cm_cand": [
+          [
+            2541,
+            332,
+            37,
+            10
+          ],
+          [
+            1125,
+            814,
+            54,
+            23
+          ],
+          [
+            568,
+            144,
+            105,
+            18
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "diff_cm": [
+          [
+            152,
+            -132,
+            -21,
+            1
+          ],
+          [
+            97,
+            -75,
+            -19,
+            -3
+          ],
+          [
+            43,
+            -46,
+            -3,
+            6
+          ],
+          [
+            1,
+            -2,
+            -1,
+            2
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2389,
+            "cand_tp": 2541,
+            "delta_tp": 152,
+            "newly_correct": 187,
+            "newly_incorrect": 35
+          },
+          "class_1": {
+            "base_tp": 889,
+            "cand_tp": 814,
+            "delta_tp": -75,
+            "newly_correct": 55,
+            "newly_incorrect": 130
+          },
+          "class_2": {
+            "base_tp": 108,
+            "cand_tp": 105,
+            "delta_tp": -3,
+            "newly_correct": 25,
+            "newly_incorrect": 28
+          },
+          "class_3": {
+            "base_tp": 90,
+            "cand_tp": 92,
+            "delta_tp": 2,
+            "newly_correct": 2,
+            "newly_incorrect": 0
+          }
+        }
+      },
+      "transition_vs_base5": {
+        "cm_base": [
+          [
+            2381,
+            468,
+            60,
+            11
+          ],
+          [
+            1010,
+            908,
+            71,
+            27
+          ],
+          [
+            516,
+            191,
+            116,
+            12
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "cm_cand": [
+          [
+            2541,
+            332,
+            37,
+            10
+          ],
+          [
+            1125,
+            814,
+            54,
+            23
+          ],
+          [
+            568,
+            144,
+            105,
+            18
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "diff_cm": [
+          [
+            160,
+            -136,
+            -23,
+            -1
+          ],
+          [
+            115,
+            -94,
+            -17,
+            -4
+          ],
+          [
+            52,
+            -47,
+            -11,
+            6
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2381,
+            "cand_tp": 2541,
+            "delta_tp": 160,
+            "newly_correct": 183,
+            "newly_incorrect": 23
+          },
+          "class_1": {
+            "base_tp": 908,
+            "cand_tp": 814,
+            "delta_tp": -94,
+            "newly_correct": 43,
+            "newly_incorrect": 137
+          },
+          "class_2": {
+            "base_tp": 116,
+            "cand_tp": 105,
+            "delta_tp": -11,
+            "newly_correct": 19,
+            "newly_incorrect": 30
+          },
+          "class_3": {
+            "base_tp": 92,
+            "cand_tp": 92,
+            "delta_tp": 0,
+            "newly_correct": 1,
+            "newly_incorrect": 1
+          }
+        }
+      }
+    },
+    "T3_Grand_Fusion_BothTab_T1_w05": {
+      "name": "Grand Fusion [LGB5(35%) + Tab42(25%) + Tab26(25%) + Cat(10%) + Track1(5%)] (Pooled Mean)",
+      "metrics": {
+        "n": 5897,
+        "correct": 3538,
+        "micro_f1": 0.5999660844497202,
+        "macro_f1": 0.519457395154362,
+        "tp": [
+          2529,
+          807,
+          109,
+          93
+        ],
+        "support": [
+          2920,
+          2016,
+          835,
+          126
+        ],
+        "predicted": [
+          4233,
+          1300,
+          215,
+          149
+        ],
+        "precision": [
+          0.5974486180014175,
+          0.6207692307692307,
+          0.5069767441860465,
+          0.6241610738255033
+        ],
+        "recall": [
+          0.8660958904109589,
+          0.40029761904761907,
+          0.13053892215568863,
+          0.7380952380952381
+        ],
+        "f1": [
+          0.7071158954284916,
+          0.4867310012062726,
+          0.20761904761904762,
+          0.6763636363636363
+        ],
+        "confusion_matrix": [
+          [
+            2529,
+            337,
+            44,
+            10
+          ],
+          [
+            1123,
+            807,
+            59,
+            27
+          ],
+          [
+            563,
+            144,
+            109,
+            19
+          ],
+          [
+            18,
+            12,
+            3,
+            93
+          ]
+        ]
+      },
+      "passed_protection": true,
+      "bootstrap_vs_seed42": {
+        "point_delta_micro_f1": 0.01051382058673902,
+        "net_gain_ships": 62,
+        "newly_correct": 273,
+        "newly_incorrect": 211,
+        "ci95_lower": 0.003048160081397321,
+        "ci95_upper": 0.017640325589282663,
+        "ci95_str": "[+0.003048, +0.017640]",
+        "statistically_significant": true,
+        "repetitions": 2000
+      },
+      "bootstrap_vs_base5": {
+        "point_delta_micro_f1": 0.006952687807359675,
+        "net_gain_ships": 41,
+        "newly_correct": 251,
+        "newly_incorrect": 210,
+        "ci95_lower": -0.00016957775139901646,
+        "ci95_upper": 0.014414108868916399,
+        "ci95_str": "[-0.000170, +0.014414]",
+        "statistically_significant": false,
+        "repetitions": 2000
+      },
+      "transition_vs_seed42": {
+        "cm_base": [
+          [
+            2389,
+            464,
+            58,
+            9
+          ],
+          [
+            1028,
+            889,
+            73,
+            26
+          ],
+          [
+            525,
+            190,
+            108,
+            12
+          ],
+          [
+            17,
+            15,
+            4,
+            90
+          ]
+        ],
+        "cm_cand": [
+          [
+            2529,
+            337,
+            44,
+            10
+          ],
+          [
+            1123,
+            807,
+            59,
+            27
+          ],
+          [
+            563,
+            144,
+            109,
+            19
+          ],
+          [
+            18,
+            12,
+            3,
+            93
+          ]
+        ],
+        "diff_cm": [
+          [
+            140,
+            -127,
+            -14,
+            1
+          ],
+          [
+            95,
+            -82,
+            -14,
+            1
+          ],
+          [
+            38,
+            -46,
+            1,
+            7
+          ],
+          [
+            1,
+            -3,
+            -1,
+            3
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2389,
+            "cand_tp": 2529,
+            "delta_tp": 140,
+            "newly_correct": 187,
+            "newly_incorrect": 47
+          },
+          "class_1": {
+            "base_tp": 889,
+            "cand_tp": 807,
+            "delta_tp": -82,
+            "newly_correct": 56,
+            "newly_incorrect": 138
+          },
+          "class_2": {
+            "base_tp": 108,
+            "cand_tp": 109,
+            "delta_tp": 1,
+            "newly_correct": 27,
+            "newly_incorrect": 26
+          },
+          "class_3": {
+            "base_tp": 90,
+            "cand_tp": 93,
+            "delta_tp": 3,
+            "newly_correct": 3,
+            "newly_incorrect": 0
+          }
+        }
+      },
+      "transition_vs_base5": {
+        "cm_base": [
+          [
+            2381,
+            468,
+            60,
+            11
+          ],
+          [
+            1010,
+            908,
+            71,
+            27
+          ],
+          [
+            516,
+            191,
+            116,
+            12
+          ],
+          [
+            18,
+            13,
+            3,
+            92
+          ]
+        ],
+        "cm_cand": [
+          [
+            2529,
+            337,
+            44,
+            10
+          ],
+          [
+            1123,
+            807,
+            59,
+            27
+          ],
+          [
+            563,
+            144,
+            109,
+            19
+          ],
+          [
+            18,
+            12,
+            3,
+            93
+          ]
+        ],
+        "diff_cm": [
+          [
+            148,
+            -131,
+            -16,
+            -1
+          ],
+          [
+            113,
+            -101,
+            -12,
+            0
+          ],
+          [
+            47,
+            -47,
+            -7,
+            7
+          ],
+          [
+            0,
+            -1,
+            0,
+            1
+          ]
+        ],
+        "per_class_flips": {
+          "class_0": {
+            "base_tp": 2381,
+            "cand_tp": 2529,
+            "delta_tp": 148,
+            "newly_correct": 182,
+            "newly_incorrect": 34
+          },
+          "class_1": {
+            "base_tp": 908,
+            "cand_tp": 807,
+            "delta_tp": -101,
+            "newly_correct": 46,
+            "newly_incorrect": 147
+          },
+          "class_2": {
+            "base_tp": 116,
+            "cand_tp": 109,
+            "delta_tp": -7,
+            "newly_correct": 22,
+            "newly_incorrect": 29
+          },
+          "class_3": {
+            "base_tp": 92,
+            "cand_tp": 93,
+            "delta_tp": 1,
+            "newly_correct": 1,
+            "newly_incorrect": 0
+          }
+        }
+      }
+    }
+  }
+}

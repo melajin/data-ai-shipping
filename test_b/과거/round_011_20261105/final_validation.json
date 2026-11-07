@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-05T17:05:05.870139+09:00",
+  "checks": {
+    "execution_complete_exit0": true,
+    "independent_audit_pass": true,
+    "prior_sources_and_protocol_preserved": true,
+    "no_active_experiment_lock": true,
+    "synthetic17pass": true,
+    "final_report_exists": true,
+    "status_latest_round11": true,
+    "status_report_resolves": true,
+    "decision_report_resolves": true,
+    "stable_code_run_experiment.py": true,
+    "stable_code_test_experiment.py": true
+  },
+  "errors": [],
+  "passed": true,
+  "note": "artifact/status consistency check; no new statistical tests or repeated dataset experiment"
+}

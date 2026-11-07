@@ -1,0 +1,16 @@
+{
+  "sources": [
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\round_008_linkage_audit_20261105\\dev_hourly_scores.parquet",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\round_008_linkage_audit_20261105\\additional_hourly_scores.parquet"
+  ],
+  "positive_event_count": 100,
+  "positive_rfid_count": 82,
+  "filtered_rows_before_dedup": 145427,
+  "exact_duplicate_rows_removed": 45750,
+  "source_ordinal_conflict_count": 0,
+  "source_ordinal_conflicts": [],
+  "hourly_duplicate_rows_removed": 0,
+  "canonical_rows": 99677,
+  "canonical_rfid_count": 82,
+  "geometry_valid_rows": 99677
+}

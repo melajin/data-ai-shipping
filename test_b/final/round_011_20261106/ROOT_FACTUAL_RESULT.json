@@ -1,0 +1,1674 @@
+﻿{
+    "denominators":  {
+                         "all":  {
+                                     "events":  100,
+                                     "unique_rfids":  82,
+                                     "B0_top1":  {
+                                                     "events":  100,
+                                                     "hits":  3,
+                                                     "hit_rate":  0.03
+                                                 },
+                                     "B0_top4":  {
+                                                     "events":  100,
+                                                     "hits":  7,
+                                                     "hit_rate":  0.07
+                                                 },
+                                     "S_top1":  {
+                                                    "events":  100,
+                                                    "hits":  2,
+                                                    "hit_rate":  0.02
+                                                },
+                                     "S_top4":  {
+                                                    "events":  100,
+                                                    "hits":  10,
+                                                    "hit_rate":  0.1
+                                                },
+                                     "G_top1":  {
+                                                    "events":  100,
+                                                    "hits":  2,
+                                                    "hit_rate":  0.02
+                                                },
+                                     "G_top4":  {
+                                                    "events":  100,
+                                                    "hits":  9,
+                                                    "hit_rate":  0.09
+                                                }
+                                 },
+                         "tier01":  {
+                                        "events":  60,
+                                        "unique_rfids":  55,
+                                        "B0_top1":  {
+                                                        "events":  60,
+                                                        "hits":  2,
+                                                        "hit_rate":  0.03333333333333333
+                                                    },
+                                        "B0_top4":  {
+                                                        "events":  60,
+                                                        "hits":  5,
+                                                        "hit_rate":  0.08333333333333333
+                                                    },
+                                        "S_top1":  {
+                                                       "events":  60,
+                                                       "hits":  1,
+                                                       "hit_rate":  0.016666666666666666
+                                                   },
+                                        "S_top4":  {
+                                                       "events":  60,
+                                                       "hits":  7,
+                                                       "hit_rate":  0.11666666666666667
+                                                   },
+                                        "G_top1":  {
+                                                       "events":  60,
+                                                       "hits":  1,
+                                                       "hit_rate":  0.016666666666666666
+                                                   },
+                                        "G_top4":  {
+                                                       "events":  60,
+                                                       "hits":  6,
+                                                       "hit_rate":  0.1
+                                                   }
+                                    },
+                         "gear_strata":  {
+                                             "연안복합":  {
+                                                          "events":  39,
+                                                          "tier01_events":  29,
+                                                          "unique_rfids":  37,
+                                                          "B0_top1":  {
+                                                                          "events":  39,
+                                                                          "hits":  2,
+                                                                          "hit_rate":  0.05128205128205128
+                                                                      },
+                                                          "B0_top4":  {
+                                                                          "events":  39,
+                                                                          "hits":  5,
+                                                                          "hit_rate":  0.1282051282051282
+                                                                      },
+                                                          "S_top1":  {
+                                                                         "events":  39,
+                                                                         "hits":  1,
+                                                                         "hit_rate":  0.02564102564102564
+                                                                     },
+                                                          "S_top4":  {
+                                                                         "events":  39,
+                                                                         "hits":  6,
+                                                                         "hit_rate":  0.15384615384615385
+                                                                     },
+                                                          "G_top1":  {
+                                                                         "events":  39,
+                                                                         "hits":  1,
+                                                                         "hit_rate":  0.02564102564102564
+                                                                     },
+                                                          "G_top4":  {
+                                                                         "events":  39,
+                                                                         "hits":  6,
+                                                                         "hit_rate":  0.15384615384615385
+                                                                     }
+                                                      },
+                                             "자망":  {
+                                                        "events":  39,
+                                                        "tier01_events":  21,
+                                                        "unique_rfids":  31,
+                                                        "B0_top1":  {
+                                                                        "events":  39,
+                                                                        "hits":  1,
+                                                                        "hit_rate":  0.02564102564102564
+                                                                    },
+                                                        "B0_top4":  {
+                                                                        "events":  39,
+                                                                        "hits":  2,
+                                                                        "hit_rate":  0.05128205128205128
+                                                                    },
+                                                        "S_top1":  {
+                                                                       "events":  39,
+                                                                       "hits":  1,
+                                                                       "hit_rate":  0.02564102564102564
+                                                                   },
+                                                        "S_top4":  {
+                                                                       "events":  39,
+                                                                       "hits":  4,
+                                                                       "hit_rate":  0.10256410256410256
+                                                                   },
+                                                        "G_top1":  {
+                                                                       "events":  39,
+                                                                       "hits":  1,
+                                                                       "hit_rate":  0.02564102564102564
+                                                                   },
+                                                        "G_top4":  {
+                                                                       "events":  39,
+                                                                       "hits":  3,
+                                                                       "hit_rate":  0.07692307692307693
+                                                                   }
+                                                    },
+                                             "채낚기연승낚시":  {
+                                                             "events":  1,
+                                                             "tier01_events":  0,
+                                                             "unique_rfids":  1,
+                                                             "B0_top1":  {
+                                                                             "events":  1,
+                                                                             "hits":  0,
+                                                                             "hit_rate":  0.0
+                                                                         },
+                                                             "B0_top4":  {
+                                                                             "events":  1,
+                                                                             "hits":  0,
+                                                                             "hit_rate":  0.0
+                                                                         },
+                                                             "S_top1":  {
+                                                                            "events":  1,
+                                                                            "hits":  0,
+                                                                            "hit_rate":  0.0
+                                                                        },
+                                                             "S_top4":  {
+                                                                            "events":  1,
+                                                                            "hits":  0,
+                                                                            "hit_rate":  0.0
+                                                                        },
+                                                             "G_top1":  {
+                                                                            "events":  1,
+                                                                            "hits":  0,
+                                                                            "hit_rate":  0.0
+                                                                        },
+                                                             "G_top4":  {
+                                                                            "events":  1,
+                                                                            "hits":  0,
+                                                                            "hit_rate":  0.0
+                                                                        }
+                                                         },
+                                             "통발":  {
+                                                        "events":  21,
+                                                        "tier01_events":  10,
+                                                        "unique_rfids":  13,
+                                                        "B0_top1":  {
+                                                                        "events":  21,
+                                                                        "hits":  0,
+                                                                        "hit_rate":  0.0
+                                                                    },
+                                                        "B0_top4":  {
+                                                                        "events":  21,
+                                                                        "hits":  0,
+                                                                        "hit_rate":  0.0
+                                                                    },
+                                                        "S_top1":  {
+                                                                       "events":  21,
+                                                                       "hits":  0,
+                                                                       "hit_rate":  0.0
+                                                                   },
+                                                        "S_top4":  {
+                                                                       "events":  21,
+                                                                       "hits":  0,
+                                                                       "hit_rate":  0.0
+                                                                   },
+                                                        "G_top1":  {
+                                                                       "events":  21,
+                                                                       "hits":  0,
+                                                                       "hit_rate":  0.0
+                                                                   },
+                                                        "G_top4":  {
+                                                                       "events":  21,
+                                                                       "hits":  0,
+                                                                       "hit_rate":  0.0
+                                                                   }
+                                                    }
+                                         }
+                     },
+    "gate":  {
+                 "tier01_top1_diff_g_vs_b0":  {
+                                                  "target":  "\u003e= +0.05 (+5.0 percentage points, exact count 20 * (G_hits - B0_hits) \u003e= n)",
+                                                  "threshold":  0.05,
+                                                  "observed":  -0.016666666666666666,
+                                                  "observed_hits_g":  1,
+                                                  "observed_hits_b0":  2,
+                                                  "observed_n":  60,
+                                                  "passed":  false
+                                              },
+                 "tier01_top1_ci95_lower_positive":  {
+                                                         "target":  "\u003e 0.0 (paired cluster bootstrap 95% CI lower bound)",
+                                                         "threshold":  0.0,
+                                                         "observed_ci95":  [
+                                                                               -0.05357142857142857,
+                                                                               0.0
+                                                                           ],
+                                                         "observed_lower":  -0.05357142857142857,
+                                                         "passed":  false
+                                                     },
+                 "whole100_non_worsening":  {
+                                                "target":  "\u003e= 0.0 (all100 top1 difference G vs B0, exact count G_hits \u003e= B0_hits)",
+                                                "threshold":  0.0,
+                                                "observed":  -0.01,
+                                                "observed_hits_g":  2,
+                                                "observed_hits_b0":  3,
+                                                "observed_n":  100,
+                                                "passed":  false
+                                            },
+                 "tier01_top1_exceeds_random":  {
+                                                    "target":  "Tier01 G top1 hit rate \u003e Tier01 G actual-pool random expectation",
+                                                    "observed_hit_rate":  0.016666666666666666,
+                                                    "observed_random_expectation":  0.02336716445258704,
+                                                    "passed":  false
+                                                },
+                 "overall_passed":  false,
+                 "gate_failures":  [
+                                       "tier01_top1 exact count 20 * (G - B0) (-20) \u003c n (60) [diff=-0.0167]",
+                                       "tier01_top1 paired bootstrap 95% CI lower bound (-0.05357142857142857) \u003c= 0.0",
+                                       "whole100_top1 hit delta (-1) \u003c 0 (worsened vs B0) [diff=-0.0100]",
+                                       "tier01_top1 hit rate (0.0167) does not exceed Tier01 random expectation (0.0234)"
+                                   ]
+             },
+    "rule_diagnostics":  {
+                             "row_count":  99677,
+                             "rfid_count":  82,
+                             "counts":  {
+                                            "observed_n":  99677,
+                                            "raw_distance_available_n":  96976,
+                                            "self_distribution_eligible_n":  94290,
+                                            "peer_distribution_eligible_n":  91307
+                                        },
+                             "per_vessel_distance_history":  [
+                                                                 {
+                                                                     "rfid_id":  "31001758",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  916,
+                                                                     "raw_distance_available_n":  892,
+                                                                     "self_distribution_eligible_n":  868,
+                                                                     "peer_distribution_eligible_n":  868
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31005917",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  18,
+                                                                     "raw_distance_available_n":  0,
+                                                                     "self_distribution_eligible_n":  0,
+                                                                     "peer_distribution_eligible_n":  0
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31005928",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  809,
+                                                                     "raw_distance_available_n":  772,
+                                                                     "self_distribution_eligible_n":  731,
+                                                                     "peer_distribution_eligible_n":  731
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31007124",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  765,
+                                                                     "raw_distance_available_n":  741,
+                                                                     "self_distribution_eligible_n":  717,
+                                                                     "peer_distribution_eligible_n":  717
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31007500",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1431,
+                                                                     "raw_distance_available_n":  1407,
+                                                                     "self_distribution_eligible_n":  1383,
+                                                                     "peer_distribution_eligible_n":  1383
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31008085",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  2938,
+                                                                     "raw_distance_available_n":  2914,
+                                                                     "self_distribution_eligible_n":  2881,
+                                                                     "peer_distribution_eligible_n":  2751
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31008933",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  1313,
+                                                                     "raw_distance_available_n":  1270,
+                                                                     "self_distribution_eligible_n":  1222,
+                                                                     "peer_distribution_eligible_n":  1222
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31009538",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  4273,
+                                                                     "raw_distance_available_n":  4224,
+                                                                     "self_distribution_eligible_n":  4176,
+                                                                     "peer_distribution_eligible_n":  4004
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31012971",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  808,
+                                                                     "raw_distance_available_n":  784,
+                                                                     "self_distribution_eligible_n":  760,
+                                                                     "peer_distribution_eligible_n":  760
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31013760",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  565,
+                                                                     "raw_distance_available_n":  518,
+                                                                     "self_distribution_eligible_n":  472,
+                                                                     "peer_distribution_eligible_n":  472
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31014032",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  811,
+                                                                     "raw_distance_available_n":  787,
+                                                                     "self_distribution_eligible_n":  746,
+                                                                     "peer_distribution_eligible_n":  746
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31014672",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  306,
+                                                                     "raw_distance_available_n":  281,
+                                                                     "self_distribution_eligible_n":  257,
+                                                                     "peer_distribution_eligible_n":  257
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31016197",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  1183,
+                                                                     "raw_distance_available_n":  1159,
+                                                                     "self_distribution_eligible_n":  1129,
+                                                                     "peer_distribution_eligible_n":  1129
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31100492",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  3092,
+                                                                     "raw_distance_available_n":  3025,
+                                                                     "self_distribution_eligible_n":  2959,
+                                                                     "peer_distribution_eligible_n":  2783
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31703108",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  1442,
+                                                                     "raw_distance_available_n":  1375,
+                                                                     "self_distribution_eligible_n":  1310,
+                                                                     "peer_distribution_eligible_n":  1310
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31704073",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  2005,
+                                                                     "raw_distance_available_n":  1975,
+                                                                     "self_distribution_eligible_n":  1951,
+                                                                     "peer_distribution_eligible_n":  1951
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31704782",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  2279,
+                                                                     "raw_distance_available_n":  2255,
+                                                                     "self_distribution_eligible_n":  2225,
+                                                                     "peer_distribution_eligible_n":  2225
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "31815412",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  3264,
+                                                                     "raw_distance_available_n":  3240,
+                                                                     "self_distribution_eligible_n":  3216,
+                                                                     "peer_distribution_eligible_n":  3154
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "32300169",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  3394,
+                                                                     "raw_distance_available_n":  3359,
+                                                                     "self_distribution_eligible_n":  3311,
+                                                                     "peer_distribution_eligible_n":  3311
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "32300202",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  777,
+                                                                     "raw_distance_available_n":  751,
+                                                                     "self_distribution_eligible_n":  717,
+                                                                     "peer_distribution_eligible_n":  717
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "32300267",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1197,
+                                                                     "raw_distance_available_n":  1141,
+                                                                     "self_distribution_eligible_n":  1107,
+                                                                     "peer_distribution_eligible_n":  1107
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "32300334",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  3106,
+                                                                     "raw_distance_available_n":  3067,
+                                                                     "self_distribution_eligible_n":  3019,
+                                                                     "peer_distribution_eligible_n":  3019
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "32300353",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  2851,
+                                                                     "raw_distance_available_n":  2785,
+                                                                     "self_distribution_eligible_n":  2720,
+                                                                     "peer_distribution_eligible_n":  2720
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "32300717",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1824,
+                                                                     "raw_distance_available_n":  1800,
+                                                                     "self_distribution_eligible_n":  1769,
+                                                                     "peer_distribution_eligible_n":  1769
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "32301131",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  310,
+                                                                     "raw_distance_available_n":  282,
+                                                                     "self_distribution_eligible_n":  258,
+                                                                     "peer_distribution_eligible_n":  258
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "33200664",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1328,
+                                                                     "raw_distance_available_n":  1304,
+                                                                     "self_distribution_eligible_n":  1274,
+                                                                     "peer_distribution_eligible_n":  1274
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "33200829",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  2335,
+                                                                     "raw_distance_available_n":  2295,
+                                                                     "self_distribution_eligible_n":  2271,
+                                                                     "peer_distribution_eligible_n":  2271
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "33201019",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  523,
+                                                                     "raw_distance_available_n":  489,
+                                                                     "self_distribution_eligible_n":  465,
+                                                                     "peer_distribution_eligible_n":  465
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "33201506",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  841,
+                                                                     "raw_distance_available_n":  809,
+                                                                     "self_distribution_eligible_n":  761,
+                                                                     "peer_distribution_eligible_n":  761
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "34200580",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  574,
+                                                                     "raw_distance_available_n":  550,
+                                                                     "self_distribution_eligible_n":  526,
+                                                                     "peer_distribution_eligible_n":  526
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "34200731",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  3059,
+                                                                     "raw_distance_available_n":  3035,
+                                                                     "self_distribution_eligible_n":  3009,
+                                                                     "peer_distribution_eligible_n":  2928
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "34400535",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1208,
+                                                                     "raw_distance_available_n":  1182,
+                                                                     "self_distribution_eligible_n":  1149,
+                                                                     "peer_distribution_eligible_n":  1149
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "34400601",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  671,
+                                                                     "raw_distance_available_n":  638,
+                                                                     "self_distribution_eligible_n":  614,
+                                                                     "peer_distribution_eligible_n":  614
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "35100289",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1582,
+                                                                     "raw_distance_available_n":  1544,
+                                                                     "self_distribution_eligible_n":  1513,
+                                                                     "peer_distribution_eligible_n":  1513
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "35200056",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1101,
+                                                                     "raw_distance_available_n":  1058,
+                                                                     "self_distribution_eligible_n":  998,
+                                                                     "peer_distribution_eligible_n":  998
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "35200311",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  2428,
+                                                                     "raw_distance_available_n":  2394,
+                                                                     "self_distribution_eligible_n":  2352,
+                                                                     "peer_distribution_eligible_n":  2272
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "35200486",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  1756,
+                                                                     "raw_distance_available_n":  1732,
+                                                                     "self_distribution_eligible_n":  1704,
+                                                                     "peer_distribution_eligible_n":  1668
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36000925",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  5,
+                                                                     "raw_distance_available_n":  0,
+                                                                     "self_distribution_eligible_n":  0,
+                                                                     "peer_distribution_eligible_n":  0
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36001358",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  932,
+                                                                     "raw_distance_available_n":  884,
+                                                                     "self_distribution_eligible_n":  836,
+                                                                     "peer_distribution_eligible_n":  811
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36001411",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  480,
+                                                                     "raw_distance_available_n":  432,
+                                                                     "self_distribution_eligible_n":  384,
+                                                                     "peer_distribution_eligible_n":  384
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36001494",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  548,
+                                                                     "raw_distance_available_n":  524,
+                                                                     "self_distribution_eligible_n":  498,
+                                                                     "peer_distribution_eligible_n":  498
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36003960",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  424,
+                                                                     "raw_distance_available_n":  378,
+                                                                     "self_distribution_eligible_n":  354,
+                                                                     "peer_distribution_eligible_n":  354
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36004693",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  1243,
+                                                                     "raw_distance_available_n":  1188,
+                                                                     "self_distribution_eligible_n":  1140,
+                                                                     "peer_distribution_eligible_n":  1140
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36006776",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  2614,
+                                                                     "raw_distance_available_n":  2590,
+                                                                     "self_distribution_eligible_n":  2566,
+                                                                     "peer_distribution_eligible_n":  2566
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36007269",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  401,
+                                                                     "raw_distance_available_n":  373,
+                                                                     "self_distribution_eligible_n":  349,
+                                                                     "peer_distribution_eligible_n":  349
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36007909",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  756,
+                                                                     "raw_distance_available_n":  732,
+                                                                     "self_distribution_eligible_n":  708,
+                                                                     "peer_distribution_eligible_n":  708
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36008148",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  839,
+                                                                     "raw_distance_available_n":  815,
+                                                                     "self_distribution_eligible_n":  791,
+                                                                     "peer_distribution_eligible_n":  791
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36008988",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  733,
+                                                                     "raw_distance_available_n":  685,
+                                                                     "self_distribution_eligible_n":  644,
+                                                                     "peer_distribution_eligible_n":  644
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36010190",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  1406,
+                                                                     "raw_distance_available_n":  1371,
+                                                                     "self_distribution_eligible_n":  1335,
+                                                                     "peer_distribution_eligible_n":  1335
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36010554",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  1092,
+                                                                     "raw_distance_available_n":  1068,
+                                                                     "self_distribution_eligible_n":  1042,
+                                                                     "peer_distribution_eligible_n":  1042
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36011749",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1326,
+                                                                     "raw_distance_available_n":  1299,
+                                                                     "self_distribution_eligible_n":  1275,
+                                                                     "peer_distribution_eligible_n":  1275
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36011845",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  741,
+                                                                     "raw_distance_available_n":  709,
+                                                                     "self_distribution_eligible_n":  680,
+                                                                     "peer_distribution_eligible_n":  655
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36015383",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1711,
+                                                                     "raw_distance_available_n":  1667,
+                                                                     "self_distribution_eligible_n":  1632,
+                                                                     "peer_distribution_eligible_n":  1632
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36015515",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  1861,
+                                                                     "raw_distance_available_n":  1837,
+                                                                     "self_distribution_eligible_n":  1813,
+                                                                     "peer_distribution_eligible_n":  1813
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36100073",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  626,
+                                                                     "raw_distance_available_n":  578,
+                                                                     "self_distribution_eligible_n":  509,
+                                                                     "peer_distribution_eligible_n":  509
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36101547",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  91,
+                                                                     "raw_distance_available_n":  56,
+                                                                     "self_distribution_eligible_n":  32,
+                                                                     "peer_distribution_eligible_n":  32
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36102425",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  261,
+                                                                     "raw_distance_available_n":  237,
+                                                                     "self_distribution_eligible_n":  213,
+                                                                     "peer_distribution_eligible_n":  213
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36108086",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  788,
+                                                                     "raw_distance_available_n":  746,
+                                                                     "self_distribution_eligible_n":  722,
+                                                                     "peer_distribution_eligible_n":  722
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36110858",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  549,
+                                                                     "raw_distance_available_n":  505,
+                                                                     "self_distribution_eligible_n":  458,
+                                                                     "peer_distribution_eligible_n":  458
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36113617",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  199,
+                                                                     "raw_distance_available_n":  175,
+                                                                     "self_distribution_eligible_n":  151,
+                                                                     "peer_distribution_eligible_n":  151
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36113654",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  1479,
+                                                                     "raw_distance_available_n":  1453,
+                                                                     "self_distribution_eligible_n":  1429,
+                                                                     "peer_distribution_eligible_n":  1429
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36115953",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  754,
+                                                                     "raw_distance_available_n":  725,
+                                                                     "self_distribution_eligible_n":  701,
+                                                                     "peer_distribution_eligible_n":  701
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36200918",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  505,
+                                                                     "raw_distance_available_n":  481,
+                                                                     "self_distribution_eligible_n":  457,
+                                                                     "peer_distribution_eligible_n":  457
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36212188",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  222,
+                                                                     "raw_distance_available_n":  196,
+                                                                     "self_distribution_eligible_n":  172,
+                                                                     "peer_distribution_eligible_n":  172
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36212203",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  904,
+                                                                     "raw_distance_available_n":  880,
+                                                                     "self_distribution_eligible_n":  856,
+                                                                     "peer_distribution_eligible_n":  856
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36301063",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  272,
+                                                                     "raw_distance_available_n":  230,
+                                                                     "self_distribution_eligible_n":  191,
+                                                                     "peer_distribution_eligible_n":  191
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36301579",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  494,
+                                                                     "raw_distance_available_n":  470,
+                                                                     "self_distribution_eligible_n":  446,
+                                                                     "peer_distribution_eligible_n":  446
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36301995",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  807,
+                                                                     "raw_distance_available_n":  776,
+                                                                     "self_distribution_eligible_n":  730,
+                                                                     "peer_distribution_eligible_n":  730
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36304593",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  368,
+                                                                     "raw_distance_available_n":  342,
+                                                                     "self_distribution_eligible_n":  307,
+                                                                     "peer_distribution_eligible_n":  307
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36304898",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  718,
+                                                                     "raw_distance_available_n":  682,
+                                                                     "self_distribution_eligible_n":  646,
+                                                                     "peer_distribution_eligible_n":  624
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36307233",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  182,
+                                                                     "raw_distance_available_n":  158,
+                                                                     "self_distribution_eligible_n":  134,
+                                                                     "peer_distribution_eligible_n":  134
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36307839",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  122,
+                                                                     "raw_distance_available_n":  98,
+                                                                     "self_distribution_eligible_n":  74,
+                                                                     "peer_distribution_eligible_n":  74
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36311633",
+                                                                     "primary_gear":  "통발",
+                                                                     "observed_n":  1847,
+                                                                     "raw_distance_available_n":  1821,
+                                                                     "self_distribution_eligible_n":  1786,
+                                                                     "peer_distribution_eligible_n":  1770
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36313865",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  1316,
+                                                                     "raw_distance_available_n":  1292,
+                                                                     "self_distribution_eligible_n":  1268,
+                                                                     "peer_distribution_eligible_n":  1268
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36314076",
+                                                                     "primary_gear":  "채낚기연승낚시",
+                                                                     "observed_n":  2110,
+                                                                     "raw_distance_available_n":  2061,
+                                                                     "self_distribution_eligible_n":  2033,
+                                                                     "peer_distribution_eligible_n":  0
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36314346",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1856,
+                                                                     "raw_distance_available_n":  1819,
+                                                                     "self_distribution_eligible_n":  1795,
+                                                                     "peer_distribution_eligible_n":  1777
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36314611",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  1237,
+                                                                     "raw_distance_available_n":  1205,
+                                                                     "self_distribution_eligible_n":  1181,
+                                                                     "peer_distribution_eligible_n":  1159
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36314887",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  825,
+                                                                     "raw_distance_available_n":  801,
+                                                                     "self_distribution_eligible_n":  777,
+                                                                     "peer_distribution_eligible_n":  777
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36314895",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  1651,
+                                                                     "raw_distance_available_n":  1579,
+                                                                     "self_distribution_eligible_n":  1518,
+                                                                     "peer_distribution_eligible_n":  1484
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36315137",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  1446,
+                                                                     "raw_distance_available_n":  1419,
+                                                                     "self_distribution_eligible_n":  1383,
+                                                                     "peer_distribution_eligible_n":  1383
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36315252",
+                                                                     "primary_gear":  "자망",
+                                                                     "observed_n":  676,
+                                                                     "raw_distance_available_n":  652,
+                                                                     "self_distribution_eligible_n":  628,
+                                                                     "peer_distribution_eligible_n":  628
+                                                                 },
+                                                                 {
+                                                                     "rfid_id":  "36316040",
+                                                                     "primary_gear":  "연안복합",
+                                                                     "observed_n":  1177,
+                                                                     "raw_distance_available_n":  1153,
+                                                                     "self_distribution_eligible_n":  1106,
+                                                                     "peer_distribution_eligible_n":  1055
+                                                                 }
+                                                             ],
+                             "per_gear_distance_history":  {
+                                                               "연안복합":  {
+                                                                            "rfid_n":  37,
+                                                                            "observed_n":  30226,
+                                                                            "raw_distance_available_n":  29055,
+                                                                            "self_distribution_eligible_n":  27909,
+                                                                            "peer_distribution_eligible_n":  27764
+                                                                        },
+                                                               "자망":  {
+                                                                          "rfid_n":  31,
+                                                                          "observed_n":  47447,
+                                                                          "raw_distance_available_n":  46411,
+                                                                          "self_distribution_eligible_n":  45352,
+                                                                          "peer_distribution_eligible_n":  44986
+                                                                      },
+                                                               "통발":  {
+                                                                          "rfid_n":  13,
+                                                                          "observed_n":  19894,
+                                                                          "raw_distance_available_n":  19449,
+                                                                          "self_distribution_eligible_n":  18996,
+                                                                          "peer_distribution_eligible_n":  18557
+                                                                      },
+                                                               "채낚기연승낚시":  {
+                                                                               "rfid_n":  1,
+                                                                               "observed_n":  2110,
+                                                                               "raw_distance_available_n":  2061,
+                                                                               "self_distribution_eligible_n":  2033,
+                                                                               "peer_distribution_eligible_n":  0
+                                                                           }
+                                                           },
+                             "per_gear_stage_counts":  {
+                                                           "연안복합":  {
+                                                                        "s0_n":  30226,
+                                                                        "s1_n":  29055,
+                                                                        "s2_n":  27909,
+                                                                        "s3_n":  27909,
+                                                                        "s4_n":  27764
+                                                                    },
+                                                           "자망":  {
+                                                                      "s0_n":  47447,
+                                                                      "s1_n":  46411,
+                                                                      "s2_n":  45352,
+                                                                      "s3_n":  45352,
+                                                                      "s4_n":  44986
+                                                                  },
+                                                           "채낚기연승낚시":  {
+                                                                           "s0_n":  2110,
+                                                                           "s1_n":  2061,
+                                                                           "s2_n":  2033,
+                                                                           "s3_n":  0,
+                                                                           "s4_n":  0
+                                                                       },
+                                                           "통발":  {
+                                                                      "s0_n":  19894,
+                                                                      "s1_n":  19449,
+                                                                      "s2_n":  18996,
+                                                                      "s3_n":  18996,
+                                                                      "s4_n":  18557
+                                                                  }
+                                                       },
+                             "distance_history_definition":  "all raw_distance_available values in strict past [t-720,t), independent of legacy score/geometry; at least 24 values and 3 floor(ts/24) dates",
+                             "raw_distance_available_definition":  "R10 own_distance_eligible AND finite nearest_distance_m \u003e= 0",
+                             "self_cdf_definition":  "(#past distances \u003c current + 0.5 * #exact-equal) / n; one-tail high CDF, no 1-CDF or two-tail rarity",
+                             "peer_cdf_definition":  "equal-vessel mean of each eligible other same-known-single-gear peer\u0027s one-tail CDF at current distance and same query t",
+                             "reference_window":  "[t-720,t); current and future excluded; each historical distance value may itself use coordinate history reaching back to t-1440",
+                             "fallback_counts_by_method":  {
+                                                               "B0":  {
+
+                                                                      },
+                                                               "S":  {
+                                                                         "s2_empty_use_s0":  2
+                                                                     },
+                                                               "G":  {
+                                                                         "s4_empty_use_s0":  2,
+                                                                         "s4_empty_use_s2":  1
+                                                                     }
+                                                           },
+                             "G_vs_S_selected_changes":  {
+                                                             "top1_rfids_changed":  32,
+                                                             "top4_rfids_changed":  59,
+                                                             "denominator_rfids":  82
+                                                         },
+                             "G_self_tie_diagnostics":  {
+                                                            "rfid_with_any_self_cdf_ties":  78,
+                                                            "rfid_with_top_self_cdf_ties":  69,
+                                                            "peer_changed_top1_within_fixed_s4_pool":  31,
+                                                            "peer_changed_top4_within_fixed_s4_pool":  58,
+                                                            "rfid_denominator_with_nonempty_s4_pool":  79,
+                                                            "by_rfid":  [
+                                                                            {
+                                                                                "rfid_id":  "31001758",
+                                                                                "s4_pool_n":  868,
+                                                                                "self_cdf_duplicate_excess_n":  60,
+                                                                                "top_self_cdf_group_n":  4,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31005928",
+                                                                                "s4_pool_n":  731,
+                                                                                "self_cdf_duplicate_excess_n":  67,
+                                                                                "top_self_cdf_group_n":  10,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31007124",
+                                                                                "s4_pool_n":  717,
+                                                                                "self_cdf_duplicate_excess_n":  58,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31007500",
+                                                                                "s4_pool_n":  1383,
+                                                                                "self_cdf_duplicate_excess_n":  108,
+                                                                                "top_self_cdf_group_n":  4,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31008085",
+                                                                                "s4_pool_n":  2751,
+                                                                                "self_cdf_duplicate_excess_n":  212,
+                                                                                "top_self_cdf_group_n":  7,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31008933",
+                                                                                "s4_pool_n":  1222,
+                                                                                "self_cdf_duplicate_excess_n":  104,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31009538",
+                                                                                "s4_pool_n":  4004,
+                                                                                "self_cdf_duplicate_excess_n":  1591,
+                                                                                "top_self_cdf_group_n":  9,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31012971",
+                                                                                "s4_pool_n":  760,
+                                                                                "self_cdf_duplicate_excess_n":  37,
+                                                                                "top_self_cdf_group_n":  4,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31013760",
+                                                                                "s4_pool_n":  472,
+                                                                                "self_cdf_duplicate_excess_n":  16,
+                                                                                "top_self_cdf_group_n":  3,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31014032",
+                                                                                "s4_pool_n":  746,
+                                                                                "self_cdf_duplicate_excess_n":  70,
+                                                                                "top_self_cdf_group_n":  8,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31014672",
+                                                                                "s4_pool_n":  257,
+                                                                                "self_cdf_duplicate_excess_n":  14,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31016197",
+                                                                                "s4_pool_n":  1129,
+                                                                                "self_cdf_duplicate_excess_n":  77,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31100492",
+                                                                                "s4_pool_n":  2783,
+                                                                                "self_cdf_duplicate_excess_n":  214,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31703108",
+                                                                                "s4_pool_n":  1310,
+                                                                                "self_cdf_duplicate_excess_n":  65,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31704073",
+                                                                                "s4_pool_n":  1951,
+                                                                                "self_cdf_duplicate_excess_n":  246,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31704782",
+                                                                                "s4_pool_n":  2225,
+                                                                                "self_cdf_duplicate_excess_n":  175,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "31815412",
+                                                                                "s4_pool_n":  3154,
+                                                                                "self_cdf_duplicate_excess_n":  189,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "32300169",
+                                                                                "s4_pool_n":  3311,
+                                                                                "self_cdf_duplicate_excess_n":  204,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "32300202",
+                                                                                "s4_pool_n":  717,
+                                                                                "self_cdf_duplicate_excess_n":  41,
+                                                                                "top_self_cdf_group_n":  4,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "32300267",
+                                                                                "s4_pool_n":  1107,
+                                                                                "self_cdf_duplicate_excess_n":  51,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "32300334",
+                                                                                "s4_pool_n":  3019,
+                                                                                "self_cdf_duplicate_excess_n":  1205,
+                                                                                "top_self_cdf_group_n":  14,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "32300353",
+                                                                                "s4_pool_n":  2720,
+                                                                                "self_cdf_duplicate_excess_n":  448,
+                                                                                "top_self_cdf_group_n":  3,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "32300717",
+                                                                                "s4_pool_n":  1769,
+                                                                                "self_cdf_duplicate_excess_n":  96,
+                                                                                "top_self_cdf_group_n":  3,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "32301131",
+                                                                                "s4_pool_n":  258,
+                                                                                "self_cdf_duplicate_excess_n":  30,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "33200664",
+                                                                                "s4_pool_n":  1274,
+                                                                                "self_cdf_duplicate_excess_n":  86,
+                                                                                "top_self_cdf_group_n":  3,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "33200829",
+                                                                                "s4_pool_n":  2271,
+                                                                                "self_cdf_duplicate_excess_n":  129,
+                                                                                "top_self_cdf_group_n":  4,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "33201019",
+                                                                                "s4_pool_n":  465,
+                                                                                "self_cdf_duplicate_excess_n":  56,
+                                                                                "top_self_cdf_group_n":  7,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "33201506",
+                                                                                "s4_pool_n":  761,
+                                                                                "self_cdf_duplicate_excess_n":  33,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "34200580",
+                                                                                "s4_pool_n":  526,
+                                                                                "self_cdf_duplicate_excess_n":  18,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "34200731",
+                                                                                "s4_pool_n":  2928,
+                                                                                "self_cdf_duplicate_excess_n":  201,
+                                                                                "top_self_cdf_group_n":  7,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "34400535",
+                                                                                "s4_pool_n":  1149,
+                                                                                "self_cdf_duplicate_excess_n":  65,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "34400601",
+                                                                                "s4_pool_n":  614,
+                                                                                "self_cdf_duplicate_excess_n":  55,
+                                                                                "top_self_cdf_group_n":  3,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "35100289",
+                                                                                "s4_pool_n":  1513,
+                                                                                "self_cdf_duplicate_excess_n":  82,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "35200056",
+                                                                                "s4_pool_n":  998,
+                                                                                "self_cdf_duplicate_excess_n":  78,
+                                                                                "top_self_cdf_group_n":  7,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "35200311",
+                                                                                "s4_pool_n":  2272,
+                                                                                "self_cdf_duplicate_excess_n":  144,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "35200486",
+                                                                                "s4_pool_n":  1668,
+                                                                                "self_cdf_duplicate_excess_n":  87,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36001358",
+                                                                                "s4_pool_n":  811,
+                                                                                "self_cdf_duplicate_excess_n":  68,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36001411",
+                                                                                "s4_pool_n":  384,
+                                                                                "self_cdf_duplicate_excess_n":  42,
+                                                                                "top_self_cdf_group_n":  7,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36001494",
+                                                                                "s4_pool_n":  498,
+                                                                                "self_cdf_duplicate_excess_n":  21,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36003960",
+                                                                                "s4_pool_n":  354,
+                                                                                "self_cdf_duplicate_excess_n":  19,
+                                                                                "top_self_cdf_group_n":  4,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36004693",
+                                                                                "s4_pool_n":  1140,
+                                                                                "self_cdf_duplicate_excess_n":  51,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36006776",
+                                                                                "s4_pool_n":  2566,
+                                                                                "self_cdf_duplicate_excess_n":  205,
+                                                                                "top_self_cdf_group_n":  8,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36007269",
+                                                                                "s4_pool_n":  349,
+                                                                                "self_cdf_duplicate_excess_n":  22,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36007909",
+                                                                                "s4_pool_n":  708,
+                                                                                "self_cdf_duplicate_excess_n":  39,
+                                                                                "top_self_cdf_group_n":  3,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36008148",
+                                                                                "s4_pool_n":  791,
+                                                                                "self_cdf_duplicate_excess_n":  69,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36008988",
+                                                                                "s4_pool_n":  644,
+                                                                                "self_cdf_duplicate_excess_n":  42,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36010190",
+                                                                                "s4_pool_n":  1335,
+                                                                                "self_cdf_duplicate_excess_n":  81,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36010554",
+                                                                                "s4_pool_n":  1042,
+                                                                                "self_cdf_duplicate_excess_n":  78,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36011749",
+                                                                                "s4_pool_n":  1275,
+                                                                                "self_cdf_duplicate_excess_n":  87,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36011845",
+                                                                                "s4_pool_n":  655,
+                                                                                "self_cdf_duplicate_excess_n":  45,
+                                                                                "top_self_cdf_group_n":  9,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36015383",
+                                                                                "s4_pool_n":  1632,
+                                                                                "self_cdf_duplicate_excess_n":  93,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36015515",
+                                                                                "s4_pool_n":  1813,
+                                                                                "self_cdf_duplicate_excess_n":  79,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36100073",
+                                                                                "s4_pool_n":  509,
+                                                                                "self_cdf_duplicate_excess_n":  65,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36101547",
+                                                                                "s4_pool_n":  32,
+                                                                                "self_cdf_duplicate_excess_n":  0,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36102425",
+                                                                                "s4_pool_n":  213,
+                                                                                "self_cdf_duplicate_excess_n":  13,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36108086",
+                                                                                "s4_pool_n":  722,
+                                                                                "self_cdf_duplicate_excess_n":  44,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36110858",
+                                                                                "s4_pool_n":  458,
+                                                                                "self_cdf_duplicate_excess_n":  50,
+                                                                                "top_self_cdf_group_n":  7,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36113617",
+                                                                                "s4_pool_n":  151,
+                                                                                "self_cdf_duplicate_excess_n":  16,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36113654",
+                                                                                "s4_pool_n":  1429,
+                                                                                "self_cdf_duplicate_excess_n":  305,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36115953",
+                                                                                "s4_pool_n":  701,
+                                                                                "self_cdf_duplicate_excess_n":  28,
+                                                                                "top_self_cdf_group_n":  3,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36200918",
+                                                                                "s4_pool_n":  457,
+                                                                                "self_cdf_duplicate_excess_n":  55,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36212188",
+                                                                                "s4_pool_n":  172,
+                                                                                "self_cdf_duplicate_excess_n":  7,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36212203",
+                                                                                "s4_pool_n":  856,
+                                                                                "self_cdf_duplicate_excess_n":  99,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36301063",
+                                                                                "s4_pool_n":  191,
+                                                                                "self_cdf_duplicate_excess_n":  9,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36301579",
+                                                                                "s4_pool_n":  446,
+                                                                                "self_cdf_duplicate_excess_n":  30,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36301995",
+                                                                                "s4_pool_n":  730,
+                                                                                "self_cdf_duplicate_excess_n":  48,
+                                                                                "top_self_cdf_group_n":  7,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36304593",
+                                                                                "s4_pool_n":  307,
+                                                                                "self_cdf_duplicate_excess_n":  15,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36304898",
+                                                                                "s4_pool_n":  624,
+                                                                                "self_cdf_duplicate_excess_n":  36,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36307233",
+                                                                                "s4_pool_n":  134,
+                                                                                "self_cdf_duplicate_excess_n":  15,
+                                                                                "top_self_cdf_group_n":  3,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36307839",
+                                                                                "s4_pool_n":  74,
+                                                                                "self_cdf_duplicate_excess_n":  5,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36311633",
+                                                                                "s4_pool_n":  1770,
+                                                                                "self_cdf_duplicate_excess_n":  144,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36313865",
+                                                                                "s4_pool_n":  1268,
+                                                                                "self_cdf_duplicate_excess_n":  108,
+                                                                                "top_self_cdf_group_n":  2,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36314346",
+                                                                                "s4_pool_n":  1777,
+                                                                                "self_cdf_duplicate_excess_n":  114,
+                                                                                "top_self_cdf_group_n":  4,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36314611",
+                                                                                "s4_pool_n":  1159,
+                                                                                "self_cdf_duplicate_excess_n":  81,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36314887",
+                                                                                "s4_pool_n":  777,
+                                                                                "self_cdf_duplicate_excess_n":  43,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36314895",
+                                                                                "s4_pool_n":  1484,
+                                                                                "self_cdf_duplicate_excess_n":  59,
+                                                                                "top_self_cdf_group_n":  6,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36315137",
+                                                                                "s4_pool_n":  1383,
+                                                                                "self_cdf_duplicate_excess_n":  72,
+                                                                                "top_self_cdf_group_n":  7,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  true,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36315252",
+                                                                                "s4_pool_n":  628,
+                                                                                "self_cdf_duplicate_excess_n":  32,
+                                                                                "top_self_cdf_group_n":  5,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  true
+                                                                            },
+                                                                            {
+                                                                                "rfid_id":  "36316040",
+                                                                                "s4_pool_n":  1055,
+                                                                                "self_cdf_duplicate_excess_n":  63,
+                                                                                "top_self_cdf_group_n":  1,
+                                                                                "peer_changed_top1_within_fixed_s4_pool":  false,
+                                                                                "peer_changed_top4_within_fixed_s4_pool":  false
+                                                                            }
+                                                                        ],
+                                                            "comparison":  "same s4 pool; self_distance_cdf remains primary; compare with peer secondary enabled vs omitted"
+                                                        },
+                             "read_only_R8_history_sweep":  {
+                                                                "path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\shape_rules.py",
+                                                                "sha256":  "6eb571aef12dc881b78dc4c93fd77683ba4068d22be654ee46c208eab78e4472",
+                                                                "used_method":  "HistorySweep.cdf",
+                                                                "old_rarity_method_called":  false,
+                                                                "shape_features_used":  false
+                                                            }
+                         },
+    "execution":  {
+                      "elapsed_seconds":  20.438439099998504,
+                      "independent_concordance":  {
+                                                      "all_82_counts_match":  true,
+                                                      "scalar_cdf_queries_match":  12,
+                                                      "counts":  {
+                                                                     "observed_n":  99677,
+                                                                     "raw_distance_available_n":  96976,
+                                                                     "self_distribution_eligible_n":  94290,
+                                                                     "peer_distribution_eligible_n":  91307
+                                                                 },
+                                                      "verified_before_event_parse":  true
+                                                  },
+                      "peak_mib":  343.14,
+                      "frozen_post_eval_unchanged":  true,
+                      "status":  "complete",
+                      "source_and_input_hashes_unchanged":  true
+                  }
+}

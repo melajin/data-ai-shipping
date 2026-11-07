@@ -1,0 +1,84 @@
+[
+  {
+    "script": "t3_recompute.py",
+    "args": [
+      "--evidence-only"
+    ],
+    "started_at": "2026-11-05T14:55:33.579785+09:00",
+    "ended_at": "2026-11-05T14:55:35.463481+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\t3_recompute_20261105_145533_579857.log"
+  },
+  {
+    "script": "write_final_reports.py",
+    "args": [],
+    "started_at": "2026-11-05T15:01:59.754099+09:00",
+    "ended_at": "2026-11-05T15:02:00.055173+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\write_final_reports_20261105_150159_754174.log"
+  },
+  {
+    "script": "t3_recompute.py",
+    "args": [],
+    "started_at": "2026-11-05T15:02:40.933592+09:00",
+    "ended_at": "2026-11-05T15:02:59.751303+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\t3_recompute_20261105_150240_933660.log"
+  },
+  {
+    "script": "write_final_reports.py",
+    "args": [],
+    "started_at": "2026-11-05T15:05:15.580983+09:00",
+    "ended_at": "2026-11-05T15:05:15.886279+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\write_final_reports_20261105_150515_581076.log"
+  },
+  {
+    "script": "closeout_round.py",
+    "args": [],
+    "started_at": "2026-11-05T15:07:09.524943+09:00",
+    "ended_at": "2026-11-05T15:07:09.867033+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\closeout_round_20261105_150709_525008.log"
+  },
+  {
+    "script": "closeout_round.py",
+    "args": [],
+    "started_at": "2026-11-05T15:08:20.316083+09:00",
+    "ended_at": "2026-11-05T15:08:20.636933+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\closeout_round_20261105_150820_316148.log"
+  },
+  {
+    "script": "validate_final_artifacts.py",
+    "args": [],
+    "started_at": "2026-11-05T15:08:20.785438+09:00",
+    "ended_at": "2026-11-05T15:08:21.547735+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\validate_final_artifacts_20261105_150820_785508.log"
+  },
+  {
+    "script": "write_final_reports.py",
+    "args": [],
+    "started_at": "2026-11-05T15:09:41.399269+09:00",
+    "ended_at": "2026-11-05T15:09:41.675649+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\write_final_reports_20261105_150941_399337.log"
+  },
+  {
+    "script": "closeout_round.py",
+    "args": [],
+    "started_at": "2026-11-05T15:09:41.810635+09:00",
+    "ended_at": "2026-11-05T15:09:42.153597+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\closeout_round_20261105_150941_810700.log"
+  },
+  {
+    "script": "validate_final_artifacts.py",
+    "args": [],
+    "started_at": "2026-11-05T15:09:42.301395+09:00",
+    "ended_at": "2026-11-05T15:09:43.036273+09:00",
+    "actual_exit_code": 0,
+    "log_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\comparison_20261105\\validate_final_artifacts_20261105_150942_301475.log"
+  }
+]

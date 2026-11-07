@@ -1,0 +1,104 @@
+[
+  {
+    "stage": "before recorder setup",
+    "checked_at": "2026-11-06T11:44:43.740372+09:00",
+    "available_mib": 4045.86328125,
+    "expected_combined_peak_mib": 1024,
+    "reserve_mib": 640,
+    "estimate_basis": "Analysis prior measured 299 MiB, budget 512; FFmpeg 2 threads + Tk budget 512; 10 fps streaming, no frame accumulation",
+    "other_processes": [
+      {
+        "ProcessName": "explorer",
+        "WorkingSet64": 685789184
+      },
+      {
+        "ProcessName": "Obsidian",
+        "WorkingSet64": 625618944
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 392679424
+      },
+      {
+        "ProcessName": "claude",
+        "WorkingSet64": 358916096
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 345149440
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 334155776
+      }
+    ]
+  },
+  {
+    "stage": "immediately before capture and analysis",
+    "checked_at": "2026-11-06T11:44:45.950216+09:00",
+    "available_mib": 4003.46875,
+    "expected_combined_peak_mib": 1024,
+    "reserve_mib": 640,
+    "estimate_basis": "Analysis prior measured 299 MiB, budget 512; FFmpeg 2 threads + Tk budget 512; 10 fps streaming, no frame accumulation",
+    "other_processes": [
+      {
+        "ProcessName": "explorer",
+        "WorkingSet64": 685907968
+      },
+      {
+        "ProcessName": "Obsidian",
+        "WorkingSet64": 633954304
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 392687616
+      },
+      {
+        "ProcessName": "claude",
+        "WorkingSet64": 359006208
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 345137152
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 332517376
+      }
+    ]
+  },
+  {
+    "stage": "immediately before unit tests; analysis finished",
+    "checked_at": "2026-11-06T11:46:38.181888+09:00",
+    "available_mib": 4738.5078125,
+    "expected_combined_peak_mib": 1024,
+    "reserve_mib": 640,
+    "estimate_basis": "Analysis prior measured 299 MiB, budget 512; FFmpeg 2 threads + Tk budget 512; 10 fps streaming, no frame accumulation",
+    "other_processes": [
+      {
+        "ProcessName": "explorer",
+        "WorkingSet64": 676032512
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 410386432
+      },
+      {
+        "ProcessName": "claude",
+        "WorkingSet64": 360157184
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 345612288
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 329191424
+      },
+      {
+        "ProcessName": "python",
+        "WorkingSet64": 286638080
+      }
+    ]
+  }
+]

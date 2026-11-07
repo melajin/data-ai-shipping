@@ -1,0 +1,11 @@
+[
+  {
+    "time": "2026-11-05T07:09:32.684801+00:00",
+    "stage": "entry_before_numeric_import",
+    "available_gib": 1.4930686950683594,
+    "rss_gib": 0.02188873291015625,
+    "expected_peak_gib": 0.35,
+    "estimate": "small probability arrays + sklearn/scipy imports + <=394x16 logistic fits",
+    "other_python": []
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "total_events": 100,
+  "tier01_events": 60,
+  "rfid_count": 82,
+  "canonical_ledger_rows": 99677,
+  "prediction_rows": 984,
+  "pool_manifest_rows": 246,
+  "event_result_rows": 600,
+  "coverage_rows": 100,
+  "operational_gate_passed": false,
+  "operational_gate_failures": [
+    "tier01_top1 exact count 20 * (G - B0) (-40) < n (60) [diff=-0.0333]",
+    "tier01_top1 paired bootstrap 95% CI lower bound (-0.08620689655172414) <= 0.0",
+    "whole100_top1 hit delta (-2) < 0 (worsened vs B0) [diff=-0.0200]",
+    "tier01_top1 hit rate (0.0000) does not exceed Tier01 random expectation (0.0223)"
+  ],
+  "rule_diagnostics": {
+    "per_gear_stage_counts": {
+      "연안복합": {
+        "s0_keep": 30226,
+        "s1_keep": 14779,
+        "s2_keep": 14167,
+        "s3_keep": 12968,
+        "s4_keep": 12908
+      },
+      "자망": {
+        "s0_keep": 47447,
+        "s1_keep": 27778,
+        "s2_keep": 26450,
+        "s3_keep": 25559,
+        "s4_keep": 25479
+      },
+      "채낚기연승낚시": {
+        "s0_keep": 2110,
+        "s1_keep": 1525,
+        "s2_keep": 1434,
+        "s3_keep": 1410,
+        "s4_keep": 0
+      },
+      "통발": {
+        "s0_keep": 19894,
+        "s1_keep": 13353,
+        "s2_keep": 12962,
+        "s3_keep": 12549,
+        "s4_keep": 12325
+      }
+    },
+    "G_vs_S_selected_changes": {
+      "top1_rfids_changed": 63,
+      "top4_rfids_changed": 73,
+      "denominator_rfids": 82
+    },
+    "peer_tie_activation_within_same_G_s4_pools": {
+      "definition": "exact self_rarity tie groups (size>=2) among each RFID's actual s4 candidates; peer values vary if tied rows have >1 exact peer_rarity_mean",
+      "rfids_with_actual_s4_pool": 79,
+      "tie_groups": 3264,
+      "tied_candidates": 7755,
+      "groups_with_differing_peer_values": 3261,
+      "rfids_rank1_changed_by_peer_within_same_pool": 63,
+      "rfids_top4_set_changed_by_peer_within_same_pool": 61,
+      "denominator": "RFIDs whose G actual pool is s4; comparison ranks same s4 candidates with self_rarity, legacy, ts, ordinal versus contract G self_rarity, peer_rarity, legacy, ts, ordinal"
+    },
+    "row_count": 99677,
+    "rfid_count": 82,
+    "history_definition": "strict prior source-clock hours [t-720,t); 24 valid s2 rows and >=3 floor(ts/24) dates"
+  }
+}

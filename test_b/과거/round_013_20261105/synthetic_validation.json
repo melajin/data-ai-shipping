@@ -1,0 +1,20 @@
+{
+  "validation_type": "synthetic helper/unit validation; not actual-data validation",
+  "command": "python -B -m unittest discover -s testB/round_013_20261105 -p validate_round013.py -v",
+  "exit_code": 0,
+  "test_count": 9,
+  "result": "passed",
+  "cases": [
+    "time-range windows differ from last observed rows when there are gaps",
+    "6-hour voyage split boundary (5h stays; 6h splits)",
+    "window does not borrow observations from preceding voyage",
+    "w=3/w=7 finite/good-row quality thresholds",
+    "NaN and len_m<1 handling",
+    "earliest hour wins tied minimum",
+    "10 vs 11 raw-voyage eligibility",
+    "hour modulo 24 and day/night boundaries",
+    "first duplicate retained and payload conflict counted"
+  ],
+  "actual_data_validation_separate": "real_direct_sum_audit.csv records independent direct row summation for 30 voyages per w; all 60 comparisons matched.",
+  "hardware_experiment": "none; computations use saved parquet input only"
+}

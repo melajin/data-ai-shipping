@@ -1,0 +1,240 @@
+{
+  "voy_hours|max": {
+    "n": 100,
+    "hits": 1,
+    "hit_rate": 0.01,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.7615839950227961,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "voy_hours|min": {
+    "n": 100,
+    "hits": 0,
+    "hit_rate": 0.0,
+    "baseline": 0.014235091292208119,
+    "p_binom": 1.0,
+    "n_t01": 60,
+    "hit_rate_t01": 0.0
+  },
+  "voy_span|max": {
+    "n": 100,
+    "hits": 1,
+    "hit_rate": 0.01,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.7615839950227961,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "voy_span|min": {
+    "n": 100,
+    "hits": 0,
+    "hit_rate": 0.0,
+    "baseline": 0.014235091292208119,
+    "p_binom": 1.0,
+    "n_t01": 60,
+    "hit_rate_t01": 0.0
+  },
+  "len_sum|max": {
+    "n": 100,
+    "hits": 3,
+    "hit_rate": 0.03,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.17119407456150504,
+    "n_t01": 60,
+    "hit_rate_t01": 0.03333333333333333
+  },
+  "len_sum|min": {
+    "n": 100,
+    "hits": 1,
+    "hit_rate": 0.01,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.7615839950227961,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "len_mean|max": {
+    "n": 100,
+    "hits": 3,
+    "hit_rate": 0.03,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.17119407456150504,
+    "n_t01": 60,
+    "hit_rate_t01": 0.03333333333333333
+  },
+  "len_mean|min": {
+    "n": 100,
+    "hits": 1,
+    "hit_rate": 0.01,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.7615839950227961,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "len_last3|max": {
+    "n": 100,
+    "hits": 2,
+    "hit_rate": 0.02,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.41729565949835884,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "len_last3|min": {
+    "n": 100,
+    "hits": 0,
+    "hit_rate": 0.0,
+    "baseline": 0.014235091292208119,
+    "p_binom": 1.0,
+    "n_t01": 60,
+    "hit_rate_t01": 0.0
+  },
+  "lin_voy|max": {
+    "n": 100,
+    "hits": 1,
+    "hit_rate": 0.01,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.7615839950227961,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "lin_voy|min": {
+    "n": 100,
+    "hits": 4,
+    "hit_rate": 0.04,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.05510104778838201,
+    "n_t01": 60,
+    "hit_rate_t01": 0.05
+  },
+  "lin_last3|max": {
+    "n": 100,
+    "hits": 1,
+    "hit_rate": 0.01,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.7615839950227961,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "lin_last3|min": {
+    "n": 100,
+    "hits": 3,
+    "hit_rate": 0.03,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.17119407456150504,
+    "n_t01": 60,
+    "hit_rate_t01": 0.05
+  },
+  "disp_max|max": {
+    "n": 100,
+    "hits": 2,
+    "hit_rate": 0.02,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.41729565949835884,
+    "n_t01": 60,
+    "hit_rate_t01": 0.03333333333333333
+  },
+  "disp_max|min": {
+    "n": 100,
+    "hits": 0,
+    "hit_rate": 0.0,
+    "baseline": 0.014235091292208119,
+    "p_binom": 1.0,
+    "n_t01": 60,
+    "hit_rate_t01": 0.0
+  },
+  "frac_sea_stop|max": {
+    "n": 100,
+    "hits": 0,
+    "hit_rate": 0.0,
+    "baseline": 0.014235091292208119,
+    "p_binom": 1.0,
+    "n_t01": 60,
+    "hit_rate_t01": 0.0
+  },
+  "frac_sea_stop|min": {
+    "n": 100,
+    "hits": 1,
+    "hit_rate": 0.01,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.7615839950227961,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "frac_slowturn|max": {
+    "n": 100,
+    "hits": 0,
+    "hit_rate": 0.0,
+    "baseline": 0.014235091292208119,
+    "p_binom": 1.0,
+    "n_t01": 60,
+    "hit_rate_t01": 0.0
+  },
+  "frac_slowturn|min": {
+    "n": 100,
+    "hits": 0,
+    "hit_rate": 0.0,
+    "baseline": 0.014235091292208119,
+    "p_binom": 1.0,
+    "n_t01": 60,
+    "hit_rate_t01": 0.0
+  },
+  "frac_move|max": {
+    "n": 100,
+    "hits": 2,
+    "hit_rate": 0.02,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.41729565949835884,
+    "n_t01": 60,
+    "hit_rate_t01": 0.03333333333333333
+  },
+  "frac_move|min": {
+    "n": 100,
+    "hits": 1,
+    "hit_rate": 0.01,
+    "baseline": 0.014235091292208119,
+    "p_binom": 0.7615839950227961,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "gap_after|max": {
+    "n": 99,
+    "hits": 2,
+    "hit_rate": 0.020202020202020204,
+    "baseline": 0.01610583357481178,
+    "p_binom": 0.47484522997712664,
+    "n_t01": 60,
+    "hit_rate_t01": 0.016666666666666666
+  },
+  "gap_after|min": {
+    "n": 99,
+    "hits": 0,
+    "hit_rate": 0.0,
+    "baseline": 0.01610583357481178,
+    "p_binom": 1.0,
+    "n_t01": 60,
+    "hit_rate_t01": 0.0
+  },
+  "_g1": {
+    "n_events": 100,
+    "n_tier01": 60,
+    "median_voyages": 43.0,
+    "acc_in_a_voyage": 1.0,
+    "ceiling_mid_ALL": 0.38,
+    "ceiling_mid_T01": 0.45,
+    "ceiling_end_ALL": 0.4,
+    "ceiling_end_T01": 0.45,
+    "baseline_random_voyage_ALL": 0.014235091292208119,
+    "baseline_random_voyage_T01": 0.019733596071813807,
+    "acc_voy_is_last_frac": 0.04,
+    "median_gap_after_acc_voy": 28.0,
+    "median_gap_after_other": 27.75
+  },
+  "_meta": {
+    "thr": 6,
+    "linkage": "round_008 (100 events / 82 vessels)",
+    "n_tests": 24,
+    "min_p": 0.05510104778838201,
+    "bonferroni_alpha": 0.0020833333333333333
+  }
+}

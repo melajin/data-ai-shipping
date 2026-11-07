@@ -1,0 +1,90 @@
+{
+  "observed_n": 99677,
+  "valid_position_n": 99677,
+  "own_eligible_n": 96976,
+  "peer_eligible_n": 94525,
+  "total_rfids": 82,
+  "per_gear": [
+    {
+      "primary_gear": "연안복합",
+      "vessels": 37,
+      "observed_n": 30226,
+      "valid_position_n": 30226,
+      "own_eligible_n": 29055,
+      "peer_eligible_n": 28918
+    },
+    {
+      "primary_gear": "자망",
+      "vessels": 31,
+      "observed_n": 47447,
+      "valid_position_n": 47447,
+      "own_eligible_n": 46411,
+      "peer_eligible_n": 46251
+    },
+    {
+      "primary_gear": "채낚기연승낚시",
+      "vessels": 1,
+      "observed_n": 2110,
+      "valid_position_n": 2110,
+      "own_eligible_n": 2061,
+      "peer_eligible_n": 0
+    },
+    {
+      "primary_gear": "통발",
+      "vessels": 13,
+      "observed_n": 19894,
+      "valid_position_n": 19894,
+      "own_eligible_n": 19449,
+      "peer_eligible_n": 19356
+    }
+  ],
+  "gear_case_summary": {
+    "연안복합": {
+      "eligible_vessels_count": 36,
+      "chosen_vessel": "31001758"
+    },
+    "자망": {
+      "eligible_vessels_count": 30,
+      "chosen_vessel": "31007500"
+    },
+    "채낚기연승낚시": {
+      "eligible_vessels_count": 1,
+      "chosen_vessel": "36314076"
+    },
+    "통발": {
+      "eligible_vessels_count": 13,
+      "chosen_vessel": "31008085"
+    }
+  },
+  "cases_n": 12,
+  "notes": "4 vessels x 3 queries = 12 queries not 12 cases of accidents",
+  "generated_at": "2026-11-06T03:44:32+0900",
+  "ram_preflight": {
+    "checked_at": "2026-11-06T03:44:29+0900",
+    "available_bytes": 4257964032,
+    "available_mib": 4060.71,
+    "gemini_extra_mib": 512,
+    "luna_probe_mib": 768,
+    "reserve_mib": 640,
+    "total_required_mib": 1920,
+    "allowed": true,
+    "active_python_processes": [
+      {
+        "pid": 7260,
+        "name": "python.exe",
+        "rss_bytes": 86732800,
+        "rss_mib": 82.71
+      }
+    ]
+  },
+  "inputs": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001\\candidate_ledger.parquet": {
+      "sha256": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+      "bytes": 6433671
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_003_20261105\\gear_registry.csv": {
+      "sha256": "0a94249ad364500132d70521134fc493e836ec63d7d8734cc412e33c3adb73dd",
+      "bytes": 4474
+    }
+  }
+}

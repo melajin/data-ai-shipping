@@ -1,0 +1,395 @@
+[
+  {
+    "tag": "Hypothesis_A",
+    "hypothesis_id": "hyp_A_offshore_sea_stop",
+    "description": "Offshore-only Sea Stop Streak",
+    "t01_eligible": {
+      "cohort": "PRIMARY_Tier0-1_Eligible (N=49)",
+      "n_events": 49,
+      "voyage_capture_count": 4,
+      "voyage_capture_rate": 0.0816,
+      "hits": 1,
+      "hit_rate": 0.0204,
+      "baseline_random_voyage": 0.0102,
+      "p_binom_vs_baseline": 0.39544218918014207,
+      "ci_95": [
+        0.0,
+        0.0625
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "all_100": {
+      "cohort": "SECONDARY_ALL_100 (N=100)",
+      "n_events": 100,
+      "voyage_capture_count": 8,
+      "voyage_capture_rate": 0.08,
+      "hits": 1,
+      "hit_rate": 0.01,
+      "baseline_random_voyage": 0.0142,
+      "p_binom_vs_baseline": 0.7615839950227961,
+      "ci_95": [
+        0.0,
+        0.0323
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "diagnostics": {
+      "n_events": 49,
+      "n_hits": 1,
+      "hit_rate_pct": 2.04,
+      "n_timing_misses": 3,
+      "timing_miss_pct": 6.12,
+      "n_voyage_misses": 45,
+      "voyage_miss_pct": 91.84,
+      "hits_by_accident_type": {
+        "기관손상": 1
+      },
+      "timing_miss_sample_errors_hours": [
+        11,
+        8,
+        -487
+      ],
+      "primary_bottleneck": "TIMING_LOCALIZATION"
+    },
+    "elapsed_seconds": 3.192
+  },
+  {
+    "tag": "Hypothesis_B",
+    "hypothesis_id": "hyp_B_hierarchical_cascade",
+    "description": "Hierarchical Priority Cascade (Stop -> Drop -> Tow)",
+    "t01_eligible": {
+      "cohort": "PRIMARY_Tier0-1_Eligible (N=49)",
+      "n_events": 49,
+      "voyage_capture_count": 4,
+      "voyage_capture_rate": 0.0816,
+      "hits": 2,
+      "hit_rate": 0.0408,
+      "baseline_random_voyage": 0.0102,
+      "p_binom_vs_baseline": 0.08962588106755527,
+      "ci_95": [
+        0.0,
+        0.1042
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "all_100": {
+      "cohort": "SECONDARY_ALL_100 (N=100)",
+      "n_events": 100,
+      "voyage_capture_count": 10,
+      "voyage_capture_rate": 0.1,
+      "hits": 3,
+      "hit_rate": 0.03,
+      "baseline_random_voyage": 0.0142,
+      "p_binom_vs_baseline": 0.17119407456150504,
+      "ci_95": [
+        0.0,
+        0.0693
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "diagnostics": {
+      "n_events": 49,
+      "n_hits": 2,
+      "hit_rate_pct": 4.08,
+      "n_timing_misses": 2,
+      "timing_miss_pct": 4.08,
+      "n_voyage_misses": 45,
+      "voyage_miss_pct": 91.84,
+      "hits_by_accident_type": {
+        "기관손상": 2
+      },
+      "timing_miss_sample_errors_hours": [
+        8,
+        -487
+      ],
+      "primary_bottleneck": "TIMING_LOCALIZATION"
+    },
+    "elapsed_seconds": 3.254
+  },
+  {
+    "tag": "Hypothesis_C",
+    "hypothesis_id": "hyp_C_speed_drop_steepness",
+    "description": "Cruising Speed Drop Steepness Ratio",
+    "t01_eligible": {
+      "cohort": "PRIMARY_Tier0-1_Eligible (N=49)",
+      "n_events": 49,
+      "voyage_capture_count": 2,
+      "voyage_capture_rate": 0.0408,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "baseline_random_voyage": 0.0102,
+      "p_binom_vs_baseline": 1.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "all_100": {
+      "cohort": "SECONDARY_ALL_100 (N=100)",
+      "n_events": 100,
+      "voyage_capture_count": 9,
+      "voyage_capture_rate": 0.09,
+      "hits": 1,
+      "hit_rate": 0.01,
+      "baseline_random_voyage": 0.0142,
+      "p_binom_vs_baseline": 0.7615839950227961,
+      "ci_95": [
+        0.0,
+        0.0326
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "diagnostics": {
+      "n_events": 49,
+      "n_hits": 0,
+      "hit_rate_pct": 0.0,
+      "n_timing_misses": 2,
+      "timing_miss_pct": 4.08,
+      "n_voyage_misses": 47,
+      "voyage_miss_pct": 95.92,
+      "hits_by_accident_type": {},
+      "timing_miss_sample_errors_hours": [
+        -367,
+        -40
+      ],
+      "primary_bottleneck": "TIMING_LOCALIZATION"
+    },
+    "elapsed_seconds": 1.724
+  },
+  {
+    "tag": "Hypothesis_D",
+    "hypothesis_id": "hyp_D_towing_straightness",
+    "description": "Post-incident Towing Return Straightness",
+    "t01_eligible": {
+      "cohort": "PRIMARY_Tier0-1_Eligible (N=49)",
+      "n_events": 49,
+      "voyage_capture_count": 0,
+      "voyage_capture_rate": 0.0,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "baseline_random_voyage": 0.0102,
+      "p_binom_vs_baseline": 1.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "all_100": {
+      "cohort": "SECONDARY_ALL_100 (N=100)",
+      "n_events": 100,
+      "voyage_capture_count": 3,
+      "voyage_capture_rate": 0.03,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "baseline_random_voyage": 0.0142,
+      "p_binom_vs_baseline": 1.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "diagnostics": {
+      "n_events": 49,
+      "n_hits": 0,
+      "hit_rate_pct": 0.0,
+      "n_timing_misses": 0,
+      "timing_miss_pct": 0.0,
+      "n_voyage_misses": 49,
+      "voyage_miss_pct": 100.0,
+      "hits_by_accident_type": {},
+      "timing_miss_sample_errors_hours": [],
+      "primary_bottleneck": "TIMING_LOCALIZATION"
+    },
+    "elapsed_seconds": 0.082
+  },
+  {
+    "tag": "Hypothesis_E",
+    "hypothesis_id": "hyp_E_borda_ensemble",
+    "description": "Multi-Hypothesis Borda Count Ensemble",
+    "t01_eligible": {
+      "cohort": "PRIMARY_Tier0-1_Eligible (N=49)",
+      "n_events": 49,
+      "voyage_capture_count": 2,
+      "voyage_capture_rate": 0.0408,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "baseline_random_voyage": 0.0102,
+      "p_binom_vs_baseline": 1.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "all_100": {
+      "cohort": "SECONDARY_ALL_100 (N=100)",
+      "n_events": 100,
+      "voyage_capture_count": 7,
+      "voyage_capture_rate": 0.07,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "baseline_random_voyage": 0.0142,
+      "p_binom_vs_baseline": 1.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "diagnostics": {
+      "n_events": 49,
+      "n_hits": 0,
+      "hit_rate_pct": 0.0,
+      "n_timing_misses": 2,
+      "timing_miss_pct": 4.08,
+      "n_voyage_misses": 47,
+      "voyage_miss_pct": 95.92,
+      "hits_by_accident_type": {},
+      "timing_miss_sample_errors_hours": [
+        -63,
+        -487
+      ],
+      "primary_bottleneck": "TIMING_LOCALIZATION"
+    },
+    "elapsed_seconds": 0.096
+  },
+  {
+    "tag": "Hypothesis_F",
+    "hypothesis_id": "hyp_F_score_fusion",
+    "description": "Fused Multi-Feature Ranking (Drop + Score + Span + Stop)",
+    "t01_eligible": {
+      "cohort": "PRIMARY_Tier0-1_Eligible (N=49)",
+      "n_events": 49,
+      "voyage_capture_count": 5,
+      "voyage_capture_rate": 0.102,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "baseline_random_voyage": 0.0102,
+      "p_binom_vs_baseline": 1.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "all_100": {
+      "cohort": "SECONDARY_ALL_100 (N=100)",
+      "n_events": 100,
+      "voyage_capture_count": 13,
+      "voyage_capture_rate": 0.13,
+      "hits": 1,
+      "hit_rate": 0.01,
+      "baseline_random_voyage": 0.0142,
+      "p_binom_vs_baseline": 0.7615839950227961,
+      "ci_95": [
+        0.0,
+        0.0326
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "diagnostics": {
+      "n_events": 49,
+      "n_hits": 0,
+      "hit_rate_pct": 0.0,
+      "n_timing_misses": 5,
+      "timing_miss_pct": 10.2,
+      "n_voyage_misses": 44,
+      "voyage_miss_pct": 89.8,
+      "hits_by_accident_type": {},
+      "timing_miss_sample_errors_hours": [
+        -63,
+        -28,
+        -367,
+        -10,
+        17
+      ],
+      "primary_bottleneck": "TIMING_LOCALIZATION"
+    },
+    "elapsed_seconds": 1.748
+  },
+  {
+    "tag": "Hypothesis_G",
+    "hypothesis_id": "hyp_G_multislot_ensemble",
+    "description": "Multi-Slot Candidate Weighted Ensemble",
+    "t01_eligible": {
+      "cohort": "PRIMARY_Tier0-1_Eligible (N=49)",
+      "n_events": 49,
+      "voyage_capture_count": 5,
+      "voyage_capture_rate": 0.102,
+      "hits": 0,
+      "hit_rate": 0.0,
+      "baseline_random_voyage": 0.0102,
+      "p_binom_vs_baseline": 1.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "all_100": {
+      "cohort": "SECONDARY_ALL_100 (N=100)",
+      "n_events": 100,
+      "voyage_capture_count": 12,
+      "voyage_capture_rate": 0.12,
+      "hits": 1,
+      "hit_rate": 0.01,
+      "baseline_random_voyage": 0.0142,
+      "p_binom_vs_baseline": 0.7615839950227961,
+      "ci_95": [
+        0.0,
+        0.0326
+      ],
+      "passed_level_1_12pct": false,
+      "passed_level_2_20pct": false,
+      "passed_level_3_30pct": false
+    },
+    "diagnostics": {
+      "n_events": 49,
+      "n_hits": 0,
+      "hit_rate_pct": 0.0,
+      "n_timing_misses": 5,
+      "timing_miss_pct": 10.2,
+      "n_voyage_misses": 44,
+      "voyage_miss_pct": 89.8,
+      "hits_by_accident_type": {},
+      "timing_miss_sample_errors_hours": [
+        -63,
+        -28,
+        -367,
+        -10,
+        17
+      ],
+      "primary_bottleneck": "TIMING_LOCALIZATION"
+    },
+    "elapsed_seconds": 1.719
+  }
+]

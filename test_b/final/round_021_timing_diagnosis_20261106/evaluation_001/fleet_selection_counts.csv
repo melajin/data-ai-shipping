@@ -1,0 +1,10 @@
+﻿subset,policy,gate,n_fleet,n_linked,n_unlinked,C_selected,A_linked_selected,H_linked_selected_timehit,U_unlinked_selected,conditional_timing_H_over_A,joint_recall_H_over_nlinked,selection_recall_A_over_nlinked,unlinked_selection_rate_U_over_nunlinked,unlinked_are_confirmed_false_positives
+all,B,all_submit,7372,82,7290,7372,82,3,7290,0.036585365853658534,0.036585365853658534,1.0,1.0,False
+all,B,peak_ge_0_75,7372,82,7290,183,7,0,176,0.0,0.0,0.08536585365853659,0.024142661179698217,False
+all,B,radius_ge_q95,7372,82,7290,369,12,0,357,0.0,0.0,0.14634146341463414,0.04897119341563786,False
+dev,B,all_submit,3686,50,3636,3686,50,2,3636,0.04,0.04,1.0,1.0,False
+dev,B,peak_ge_0_75,3686,50,3636,89,3,0,86,0.0,0.0,0.06,0.023652365236523653,False
+dev,B,radius_ge_q95,3686,50,3636,181,8,0,173,0.0,0.0,0.16,0.04757975797579758,False
+validation,B,all_submit,3686,32,3654,3686,32,1,3654,0.03125,0.03125,1.0,1.0,False
+validation,B,peak_ge_0_75,3686,32,3654,94,4,0,90,0.0,0.0,0.125,0.024630541871921183,False
+validation,B,radius_ge_q95,3686,32,3654,188,4,0,184,0.0,0.0,0.125,0.05035577449370553,False

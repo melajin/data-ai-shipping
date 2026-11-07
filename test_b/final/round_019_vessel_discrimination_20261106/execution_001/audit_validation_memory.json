@@ -1,0 +1,51 @@
+{
+    "checked_at_utc":  "2026-11-06T05:48:23.1847171Z",
+    "stage":  "external_preflight_before_independent_audit",
+    "available_mib":  3825.38,
+    "expected_peak_mib":  512,
+    "reserve_mib":  640,
+    "estimate_basis":  "stdlib vessel tables and scalar direct pairwise comparisons; streamed source hashing; no hourly frame loading",
+    "other_processes":  [
+                            {
+                                "pid":  9940,
+                                "name":  "explorer",
+                                "rss_mib":  656.06
+                            },
+                            {
+                                "pid":  23364,
+                                "name":  "Obsidian",
+                                "rss_mib":  565.82
+                            },
+                            {
+                                "pid":  27636,
+                                "name":  "Orca",
+                                "rss_mib":  339.59
+                            },
+                            {
+                                "pid":  28540,
+                                "name":  "Orca",
+                                "rss_mib":  306.98
+                            },
+                            {
+                                "pid":  3352,
+                                "name":  "explorer",
+                                "rss_mib":  294.88
+                            },
+                            {
+                                "pid":  5260,
+                                "name":  "codex",
+                                "rss_mib":  249.7
+                            },
+                            {
+                                "pid":  27692,
+                                "name":  "chrome",
+                                "rss_mib":  239.18
+                            },
+                            {
+                                "pid":  26540,
+                                "name":  "Orca",
+                                "rss_mib":  236.62
+                            }
+                        ],
+    "sufficient":  true
+}

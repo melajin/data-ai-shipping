@@ -1,0 +1,24 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "role": "terra",
+      "chunk_id": "246e07",
+      "wall_time_seconds": 3.8420107,
+      "exit_code": 0,
+      "original_token_count": 112,
+      "output": "{\"ok\":true,\"result\":{\"delivery\":\"reopened\",\"followUpOf\":\"ctx_4fcc8c6d702a\",\"dispatchId\":\"ctx_f8f8ca99211d\",\"taskId\":\"task_94ffe841e4bc\",\"runId\":\"run_a2b0e4f8b7cc\",\"state\":\"ready\",\"agent\":\"codex\",\"terminal\":\"structworker_a04ca097-675e-4485-94ed-b8d8645ebfd9\",\"workspace\":\"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\",\"next\":\"Orca wakes you when workers report; end your turn when you're done.\"}}\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "role": "sonnet",
+      "chunk_id": "6aab47",
+      "wall_time_seconds": 6.3727955,
+      "exit_code": 0,
+      "original_token_count": 112,
+      "output": "{\"ok\":true,\"result\":{\"delivery\":\"reopened\",\"followUpOf\":\"ctx_d09c11886964\",\"dispatchId\":\"ctx_95718cc7d4d8\",\"taskId\":\"task_833d83660d57\",\"runId\":\"run_a2b0e4f8b7cc\",\"state\":\"ready\",\"agent\":\"claude\",\"terminal\":\"structworker_b29602b8-1bf7-4ae0-960f-b6ca9d1650d1\",\"workspace\":\"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\",\"next\":\"Orca wakes you when workers report; end your turn when you're done.\"}}\n"
+    }
+  }
+]

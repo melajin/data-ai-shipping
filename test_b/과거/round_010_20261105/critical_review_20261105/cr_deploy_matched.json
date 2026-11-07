@@ -1,0 +1,1338 @@
+[
+  {
+    "acc_id": 45,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1069,
+    "acc_score": 0.543859649122807,
+    "acc_rank_among_candidates": 574,
+    "argmin_err_h": 1569,
+    "topk_err": {
+      "1": 1569,
+      "5": 1564,
+      "10": 471,
+      "20": 45,
+      "50": 45
+    }
+  },
+  {
+    "acc_id": 130,
+    "tier": 0,
+    "scored": false
+  },
+  {
+    "acc_id": 22,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1291,
+    "acc_score": 0.9545454545454546,
+    "acc_rank_among_candidates": 1218,
+    "argmin_err_h": 3120,
+    "topk_err": {
+      "1": 3120,
+      "5": 3102,
+      "10": 2887,
+      "20": 1677,
+      "50": 1222
+    }
+  },
+  {
+    "acc_id": 52,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1163,
+    "acc_score": 0.13333333333333333,
+    "acc_rank_among_candidates": 167,
+    "argmin_err_h": 3035,
+    "topk_err": {
+      "1": 3035,
+      "5": 2970,
+      "10": 2130,
+      "20": 50,
+      "50": 50
+    }
+  },
+  {
+    "acc_id": 28,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1525,
+    "acc_score": 0.1223021582733813,
+    "acc_rank_among_candidates": 184,
+    "argmin_err_h": 3167,
+    "topk_err": {
+      "1": 3167,
+      "5": 1111,
+      "10": 422,
+      "20": 113,
+      "50": 33
+    }
+  },
+  {
+    "acc_id": 20,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 2719,
+    "acc_score": 0.5,
+    "acc_rank_among_candidates": 1377,
+    "argmin_err_h": 1951,
+    "topk_err": {
+      "1": 1951,
+      "5": 1432,
+      "10": 774,
+      "20": 683,
+      "50": 14
+    }
+  },
+  {
+    "acc_id": 29,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 1193,
+    "acc_score": 0.17880794701986755,
+    "acc_rank_among_candidates": 219,
+    "argmin_err_h": 3320,
+    "topk_err": {
+      "1": 3320,
+      "5": 3302,
+      "10": 3297,
+      "20": 3287,
+      "50": 3248
+    }
+  },
+  {
+    "acc_id": 6,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 4249,
+    "acc_score": 0.650887573964497,
+    "acc_rank_among_candidates": 2749,
+    "argmin_err_h": 2231,
+    "topk_err": {
+      "1": 2231,
+      "5": 2218,
+      "10": 2189,
+      "20": 1504,
+      "50": 11
+    }
+  },
+  {
+    "acc_id": 91,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 4249,
+    "acc_score": 0.1893491124260355,
+    "acc_rank_among_candidates": 816,
+    "argmin_err_h": 384,
+    "topk_err": {
+      "1": 384,
+      "5": 371,
+      "10": 342,
+      "20": 335,
+      "50": 333
+    }
+  },
+  {
+    "acc_id": 111,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 4249,
+    "acc_score": 0.001949317738791423,
+    "acc_rank_among_candidates": 25,
+    "argmin_err_h": 18,
+    "topk_err": {
+      "1": 18,
+      "5": 5,
+      "10": 1,
+      "20": 1,
+      "50": 0
+    }
+  },
+  {
+    "acc_id": 132,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 4249,
+    "acc_score": 0.8943248532289628,
+    "acc_rank_among_candidates": 3784,
+    "argmin_err_h": 426,
+    "topk_err": {
+      "1": 426,
+      "5": 426,
+      "10": 426,
+      "20": 426,
+      "50": 407
+    }
+  },
+  {
+    "acc_id": 147,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 4249,
+    "acc_score": 0.35700197238658776,
+    "acc_rank_among_candidates": 1528,
+    "argmin_err_h": 937,
+    "topk_err": {
+      "1": 937,
+      "5": 937,
+      "10": 937,
+      "20": 937,
+      "50": 918
+    }
+  },
+  {
+    "acc_id": 156,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 4249,
+    "acc_score": 0.7120315581854043,
+    "acc_rank_among_candidates": 3012,
+    "argmin_err_h": 1176,
+    "topk_err": {
+      "1": 1176,
+      "5": 1176,
+      "10": 1176,
+      "20": 1176,
+      "50": 1157
+    }
+  },
+  {
+    "acc_id": 34,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1110,
+    "acc_score": 0.1891891891891892,
+    "acc_rank_among_candidates": 228,
+    "argmin_err_h": 1379,
+    "topk_err": {
+      "1": 1379,
+      "5": 569,
+      "10": 468,
+      "20": 336,
+      "50": 48
+    }
+  },
+  {
+    "acc_id": 63,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 545,
+    "acc_score": 0.0,
+    "acc_rank_among_candidates": 0,
+    "argmin_err_h": 633,
+    "topk_err": {
+      "1": 633,
+      "5": 458,
+      "10": 402,
+      "20": 51,
+      "50": 0
+    }
+  },
+  {
+    "acc_id": 128,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 961,
+    "acc_score": 0.5892857142857143,
+    "acc_rank_among_candidates": 557,
+    "argmin_err_h": 301,
+    "topk_err": {
+      "1": 301,
+      "5": 41,
+      "10": 41,
+      "20": 41,
+      "50": 41
+    }
+  },
+  {
+    "acc_id": 56,
+    "tier": 2,
+    "scored": false
+  },
+  {
+    "acc_id": 99,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1265,
+    "acc_score": 0.8238636363636364,
+    "acc_rank_among_candidates": 1007,
+    "argmin_err_h": 1503,
+    "topk_err": {
+      "1": 1503,
+      "5": 471,
+      "10": 471,
+      "20": 471,
+      "50": 8
+    }
+  },
+  {
+    "acc_id": 152,
+    "tier": 2,
+    "scored": false
+  },
+  {
+    "acc_id": 26,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 2965,
+    "acc_score": 0.22686567164179106,
+    "acc_rank_among_candidates": 675,
+    "argmin_err_h": 3377,
+    "topk_err": {
+      "1": 3377,
+      "5": 3348,
+      "10": 3300,
+      "20": 1627,
+      "50": 283
+    }
+  },
+  {
+    "acc_id": 30,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 2965,
+    "acc_score": 0.19940476190476192,
+    "acc_rank_among_candidates": 587,
+    "argmin_err_h": 3279,
+    "topk_err": {
+      "1": 3279,
+      "5": 3250,
+      "10": 3202,
+      "20": 1529,
+      "50": 381
+    }
+  },
+  {
+    "acc_id": 97,
+    "tier": 3,
+    "scored": false
+  },
+  {
+    "acc_id": 102,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 1302,
+    "acc_score": 0.3883495145631068,
+    "acc_rank_among_candidates": 521,
+    "argmin_err_h": 29,
+    "topk_err": {
+      "1": 29,
+      "5": 29,
+      "10": 29,
+      "20": 29,
+      "50": 6
+    }
+  },
+  {
+    "acc_id": 127,
+    "tier": 1,
+    "scored": false
+  },
+  {
+    "acc_id": 159,
+    "tier": 2,
+    "scored": false
+  },
+  {
+    "acc_id": 68,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1947,
+    "acc_score": 0.8526785714285714,
+    "acc_rank_among_candidates": 1653,
+    "argmin_err_h": 70,
+    "topk_err": {
+      "1": 70,
+      "5": 70,
+      "10": 70,
+      "20": 68,
+      "50": 20
+    }
+  },
+  {
+    "acc_id": 113,
+    "tier": 0,
+    "scored": false
+  },
+  {
+    "acc_id": 123,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 3575,
+    "acc_score": 1.0,
+    "acc_rank_among_candidates": 3534,
+    "argmin_err_h": 1651,
+    "topk_err": {
+      "1": 1651,
+      "5": 1324,
+      "10": 1120,
+      "20": 65,
+      "50": 65
+    }
+  },
+  {
+    "acc_id": 131,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 3320,
+    "acc_score": 0.2404692082111437,
+    "acc_rank_among_candidates": 816,
+    "argmin_err_h": 713,
+    "topk_err": {
+      "1": 713,
+      "5": 444,
+      "10": 439,
+      "20": 329,
+      "50": 228
+    }
+  },
+  {
+    "acc_id": 150,
+    "tier": 4,
+    "scored": true,
+    "n_scored_candidates": 3320,
+    "acc_score": 0.30687830687830686,
+    "acc_rank_among_candidates": 1034,
+    "argmin_err_h": 50,
+    "topk_err": {
+      "1": 50,
+      "5": 50,
+      "10": 50,
+      "20": 50,
+      "50": 50
+    }
+  },
+  {
+    "acc_id": 18,
+    "tier": 3,
+    "scored": true,
+    "n_scored_candidates": 660,
+    "acc_score": 0.12790697674418605,
+    "acc_rank_among_candidates": 91,
+    "argmin_err_h": 1057,
+    "topk_err": {
+      "1": 1057,
+      "5": 71,
+      "10": 71,
+      "20": 71,
+      "50": 1
+    }
+  },
+  {
+    "acc_id": 48,
+    "tier": 4,
+    "scored": true,
+    "n_scored_candidates": 1600,
+    "acc_score": 0.9642857142857143,
+    "acc_rank_among_candidates": 1505,
+    "argmin_err_h": 3076,
+    "topk_err": {
+      "1": 3076,
+      "5": 3072,
+      "10": 1107,
+      "20": 1062,
+      "50": 100
+    }
+  },
+  {
+    "acc_id": 125,
+    "tier": 3,
+    "scored": true,
+    "n_scored_candidates": 2734,
+    "acc_score": 0.7098591549295775,
+    "acc_rank_among_candidates": 1925,
+    "argmin_err_h": 427,
+    "topk_err": {
+      "1": 427,
+      "5": 427,
+      "10": 427,
+      "20": 427,
+      "50": 414
+    }
+  },
+  {
+    "acc_id": 10,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 2685,
+    "acc_score": 0.4790996784565916,
+    "acc_rank_among_candidates": 1291,
+    "argmin_err_h": 3989,
+    "topk_err": {
+      "1": 3989,
+      "5": 2362,
+      "10": 1920,
+      "20": 36,
+      "50": 36
+    }
+  },
+  {
+    "acc_id": 23,
+    "tier": 3,
+    "scored": true,
+    "n_scored_candidates": 1671,
+    "acc_score": 0.478494623655914,
+    "acc_rank_among_candidates": 794,
+    "argmin_err_h": 1513,
+    "topk_err": {
+      "1": 1513,
+      "5": 992,
+      "10": 842,
+      "20": 285,
+      "50": 129
+    }
+  },
+  {
+    "acc_id": 144,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 361,
+    "acc_score": 0.0,
+    "acc_rank_among_candidates": 0,
+    "argmin_err_h": 932,
+    "topk_err": {
+      "1": 932,
+      "5": 0,
+      "10": 0,
+      "20": 0,
+      "50": 0
+    }
+  },
+  {
+    "acc_id": 60,
+    "tier": 5,
+    "scored": false
+  },
+  {
+    "acc_id": 65,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 2372,
+    "acc_score": 0.3063583815028902,
+    "acc_rank_among_candidates": 751,
+    "argmin_err_h": 2805,
+    "topk_err": {
+      "1": 2805,
+      "5": 2702,
+      "10": 2360,
+      "20": 1054,
+      "50": 121
+    }
+  },
+  {
+    "acc_id": 71,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 458,
+    "acc_score": 0.3103448275862069,
+    "acc_rank_among_candidates": 147,
+    "argmin_err_h": 2714,
+    "topk_err": {
+      "1": 2714,
+      "5": 718,
+      "10": 676,
+      "20": 4,
+      "50": 4
+    }
+  },
+  {
+    "acc_id": 12,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 714,
+    "acc_score": 0.3333333333333333,
+    "acc_rank_among_candidates": 253,
+    "argmin_err_h": 2183,
+    "topk_err": {
+      "1": 2183,
+      "5": 1809,
+      "10": 1609,
+      "20": 901,
+      "50": 841
+    }
+  },
+  {
+    "acc_id": 50,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 495,
+    "acc_score": 0.7272727272727273,
+    "acc_rank_among_candidates": 351,
+    "argmin_err_h": 1412,
+    "topk_err": {
+      "1": 1412,
+      "5": 1066,
+      "10": 372,
+      "20": 335,
+      "50": 29
+    }
+  },
+  {
+    "acc_id": 142,
+    "tier": 8,
+    "scored": true,
+    "n_scored_candidates": 3026,
+    "acc_score": 0.9554896142433235,
+    "acc_rank_among_candidates": 2866,
+    "argmin_err_h": 625,
+    "topk_err": {
+      "1": 625,
+      "5": 297,
+      "10": 297,
+      "20": 297,
+      "50": 297
+    }
+  },
+  {
+    "acc_id": 154,
+    "tier": 4,
+    "scored": true,
+    "n_scored_candidates": 3026,
+    "acc_score": 0.7850162866449512,
+    "acc_rank_among_candidates": 2357,
+    "argmin_err_h": 306,
+    "topk_err": {
+      "1": 306,
+      "5": 21,
+      "10": 21,
+      "20": 21,
+      "50": 21
+    }
+  },
+  {
+    "acc_id": 42,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1304,
+    "acc_score": 0.12727272727272726,
+    "acc_rank_among_candidates": 185,
+    "argmin_err_h": 1132,
+    "topk_err": {
+      "1": 1132,
+      "5": 575,
+      "10": 570,
+      "20": 555,
+      "50": 46
+    }
+  },
+  {
+    "acc_id": 109,
+    "tier": 5,
+    "scored": false
+  },
+  {
+    "acc_id": 80,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 1949,
+    "acc_score": 0.18775510204081633,
+    "acc_rank_among_candidates": 367,
+    "argmin_err_h": 1685,
+    "topk_err": {
+      "1": 1685,
+      "5": 670,
+      "10": 664,
+      "20": 174,
+      "50": 135
+    }
+  },
+  {
+    "acc_id": 146,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1209,
+    "acc_score": 0.16666666666666666,
+    "acc_rank_among_candidates": 214,
+    "argmin_err_h": 889,
+    "topk_err": {
+      "1": 889,
+      "5": 636,
+      "10": 2,
+      "20": 2,
+      "50": 2
+    }
+  },
+  {
+    "acc_id": 100,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 2254,
+    "acc_score": 0.630901287553648,
+    "acc_rank_among_candidates": 1427,
+    "argmin_err_h": 2050,
+    "topk_err": {
+      "1": 2050,
+      "5": 1979,
+      "10": 1406,
+      "20": 300,
+      "50": 215
+    }
+  },
+  {
+    "acc_id": 137,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 2402,
+    "acc_score": 0.964968152866242,
+    "acc_rank_among_candidates": 2301,
+    "argmin_err_h": 1028,
+    "topk_err": {
+      "1": 1028,
+      "5": 96,
+      "10": 96,
+      "20": 96,
+      "50": 95
+    }
+  },
+  {
+    "acc_id": 161,
+    "tier": 1,
+    "scored": false
+  },
+  {
+    "acc_id": 164,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 1033,
+    "acc_score": 0.7333333333333333,
+    "acc_rank_among_candidates": 747,
+    "argmin_err_h": 180,
+    "topk_err": {
+      "1": 180,
+      "5": 176,
+      "10": 172,
+      "20": 172,
+      "50": 172
+    }
+  },
+  {
+    "acc_id": 98,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 416,
+    "acc_score": 0.23529411764705882,
+    "acc_rank_among_candidates": 108,
+    "argmin_err_h": 124,
+    "topk_err": {
+      "1": 124,
+      "5": 100,
+      "10": 80,
+      "20": 31,
+      "50": 29
+    }
+  },
+  {
+    "acc_id": 24,
+    "tier": 0,
+    "scored": false
+  },
+  {
+    "acc_id": 70,
+    "tier": 0,
+    "scored": false
+  },
+  {
+    "acc_id": 151,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 1243,
+    "acc_score": 0.22580645161290322,
+    "acc_rank_among_candidates": 284,
+    "argmin_err_h": 602,
+    "topk_err": {
+      "1": 602,
+      "5": 217,
+      "10": 23,
+      "20": 23,
+      "50": 23
+    }
+  },
+  {
+    "acc_id": 122,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 2764,
+    "acc_score": 0.12195121951219512,
+    "acc_rank_among_candidates": 337,
+    "argmin_err_h": 1372,
+    "topk_err": {
+      "1": 1372,
+      "5": 852,
+      "10": 81,
+      "20": 81,
+      "50": 81
+    }
+  },
+  {
+    "acc_id": 14,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 498,
+    "acc_score": 0.14285714285714285,
+    "acc_rank_among_candidates": 80,
+    "argmin_err_h": 2707,
+    "topk_err": {
+      "1": 2707,
+      "5": 475,
+      "10": 47,
+      "20": 44,
+      "50": 43
+    }
+  },
+  {
+    "acc_id": 84,
+    "tier": 2,
+    "scored": false
+  },
+  {
+    "acc_id": 21,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 828,
+    "acc_score": 0.0,
+    "acc_rank_among_candidates": 0,
+    "argmin_err_h": 3423,
+    "topk_err": {
+      "1": 3423,
+      "5": 3418,
+      "10": 3326,
+      "20": 304,
+      "50": 0
+    }
+  },
+  {
+    "acc_id": 85,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 828,
+    "acc_score": 0.02727272727272727,
+    "acc_rank_among_candidates": 38,
+    "argmin_err_h": 2110,
+    "topk_err": {
+      "1": 2110,
+      "5": 2105,
+      "10": 2013,
+      "20": 393,
+      "50": 0
+    }
+  },
+  {
+    "acc_id": 78,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 986,
+    "acc_score": 0.06666666666666667,
+    "acc_rank_among_candidates": 88,
+    "argmin_err_h": 476,
+    "topk_err": {
+      "1": 476,
+      "5": 34,
+      "10": 33,
+      "20": 33,
+      "50": 32
+    }
+  },
+  {
+    "acc_id": 108,
+    "tier": 4,
+    "scored": true,
+    "n_scored_candidates": 1519,
+    "acc_score": 0.5333333333333333,
+    "acc_rank_among_candidates": 821,
+    "argmin_err_h": 1886,
+    "topk_err": {
+      "1": 1886,
+      "5": 32,
+      "10": 32,
+      "20": 32,
+      "50": 32
+    }
+  },
+  {
+    "acc_id": 88,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1500,
+    "acc_score": 0.19298245614035087,
+    "acc_rank_among_candidates": 278,
+    "argmin_err_h": 1893,
+    "topk_err": {
+      "1": 1893,
+      "5": 1459,
+      "10": 675,
+      "20": 26,
+      "50": 26
+    }
+  },
+  {
+    "acc_id": 140,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 1500,
+    "acc_score": 0.25,
+    "acc_rank_among_candidates": 362,
+    "argmin_err_h": 739,
+    "topk_err": {
+      "1": 739,
+      "5": 305,
+      "10": 163,
+      "20": 163,
+      "50": 4
+    }
+  },
+  {
+    "acc_id": 37,
+    "tier": 8,
+    "scored": true,
+    "n_scored_candidates": 1755,
+    "acc_score": 1.0,
+    "acc_rank_among_candidates": 1707,
+    "argmin_err_h": 1301,
+    "topk_err": {
+      "1": 1301,
+      "5": 871,
+      "10": 731,
+      "20": 437,
+      "50": 48
+    }
+  },
+  {
+    "acc_id": 129,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 1137,
+    "acc_score": 0.4772727272727273,
+    "acc_rank_among_candidates": 543,
+    "argmin_err_h": 1513,
+    "topk_err": {
+      "1": 1513,
+      "5": 1444,
+      "10": 507,
+      "20": 4,
+      "50": 4
+    }
+  },
+  {
+    "acc_id": 55,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1930,
+    "acc_score": 0.075,
+    "acc_rank_among_candidates": 181,
+    "argmin_err_h": 2180,
+    "topk_err": {
+      "1": 2180,
+      "5": 2176,
+      "10": 1639,
+      "20": 7,
+      "50": 3
+    }
+  },
+  {
+    "acc_id": 112,
+    "tier": 3,
+    "scored": true,
+    "n_scored_candidates": 1838,
+    "acc_score": 0.10328638497652583,
+    "acc_rank_among_candidates": 213,
+    "argmin_err_h": 1468,
+    "topk_err": {
+      "1": 1468,
+      "5": 1113,
+      "10": 1058,
+      "20": 860,
+      "50": 296
+    }
+  },
+  {
+    "acc_id": 135,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1838,
+    "acc_score": 0.23529411764705882,
+    "acc_rank_among_candidates": 462,
+    "argmin_err_h": 956,
+    "topk_err": {
+      "1": 956,
+      "5": 601,
+      "10": 546,
+      "20": 348,
+      "50": 139
+    }
+  },
+  {
+    "acc_id": 3,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 885,
+    "acc_score": 0.5454545454545454,
+    "acc_rank_among_candidates": 457,
+    "argmin_err_h": 4177,
+    "topk_err": {
+      "1": 4177,
+      "5": 3637,
+      "10": 2375,
+      "20": 2230,
+      "50": 49
+    }
+  },
+  {
+    "acc_id": 79,
+    "tier": 0,
+    "scored": false
+  },
+  {
+    "acc_id": 33,
+    "tier": 4,
+    "scored": false
+  },
+  {
+    "acc_id": 27,
+    "tier": 1,
+    "scored": false
+  },
+  {
+    "acc_id": 43,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 535,
+    "acc_score": 0.16666666666666666,
+    "acc_rank_among_candidates": 92,
+    "argmin_err_h": 2046,
+    "topk_err": {
+      "1": 2046,
+      "5": 115,
+      "10": 115,
+      "20": 115,
+      "50": 2
+    }
+  },
+  {
+    "acc_id": 94,
+    "tier": 6,
+    "scored": true,
+    "n_scored_candidates": 460,
+    "acc_score": 0.5660377358490566,
+    "acc_rank_among_candidates": 253,
+    "argmin_err_h": 457,
+    "topk_err": {
+      "1": 457,
+      "5": 457,
+      "10": 457,
+      "20": 457,
+      "50": 41
+    }
+  },
+  {
+    "acc_id": 86,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1446,
+    "acc_score": 0.54375,
+    "acc_rank_among_candidates": 792,
+    "argmin_err_h": 648,
+    "topk_err": {
+      "1": 648,
+      "5": 60,
+      "10": 60,
+      "20": 60,
+      "50": 9
+    }
+  },
+  {
+    "acc_id": 13,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 592,
+    "acc_score": 0.07894736842105263,
+    "acc_rank_among_candidates": 56,
+    "argmin_err_h": 1407,
+    "topk_err": {
+      "1": 1407,
+      "5": 1140,
+      "10": 306,
+      "20": 214,
+      "50": 26
+    }
+  },
+  {
+    "acc_id": 53,
+    "tier": 3,
+    "scored": false
+  },
+  {
+    "acc_id": 77,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 592,
+    "acc_score": 0.018867924528301886,
+    "acc_rank_among_candidates": 24,
+    "argmin_err_h": 26,
+    "topk_err": {
+      "1": 26,
+      "5": 1,
+      "10": 1,
+      "20": 1,
+      "50": 0
+    }
+  },
+  {
+    "acc_id": 160,
+    "tier": 3,
+    "scored": true,
+    "n_scored_candidates": 985,
+    "acc_score": 0.1724137931034483,
+    "acc_rank_among_candidates": 163,
+    "argmin_err_h": 2,
+    "topk_err": {
+      "1": 2,
+      "5": 2,
+      "10": 2,
+      "20": 2,
+      "50": 2
+    }
+  },
+  {
+    "acc_id": 124,
+    "tier": 2,
+    "scored": false
+  },
+  {
+    "acc_id": 54,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 1563,
+    "acc_score": 0.7439024390243902,
+    "acc_rank_among_candidates": 1110,
+    "argmin_err_h": 1624,
+    "topk_err": {
+      "1": 1624,
+      "5": 1156,
+      "10": 1077,
+      "20": 880,
+      "50": 46
+    }
+  },
+  {
+    "acc_id": 104,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 283,
+    "acc_score": 0.0,
+    "acc_rank_among_candidates": 0,
+    "argmin_err_h": 320,
+    "topk_err": {
+      "1": 320,
+      "5": 121,
+      "10": 0,
+      "20": 0,
+      "50": 0
+    }
+  },
+  {
+    "acc_id": 89,
+    "tier": 0,
+    "scored": false
+  },
+  {
+    "acc_id": 82,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 792,
+    "acc_score": 0.5526315789473685,
+    "acc_rank_among_candidates": 440,
+    "argmin_err_h": 1621,
+    "topk_err": {
+      "1": 1621,
+      "5": 441,
+      "10": 45,
+      "20": 45,
+      "50": 45
+    }
+  },
+  {
+    "acc_id": 19,
+    "tier": 1,
+    "scored": false
+  },
+  {
+    "acc_id": 114,
+    "tier": 2,
+    "scored": true,
+    "n_scored_candidates": 877,
+    "acc_score": 0.25,
+    "acc_rank_among_candidates": 230,
+    "argmin_err_h": 1675,
+    "topk_err": {
+      "1": 1675,
+      "5": 1036,
+      "10": 376,
+      "20": 316,
+      "50": 7
+    }
+  },
+  {
+    "acc_id": 117,
+    "tier": 1,
+    "scored": true,
+    "n_scored_candidates": 249,
+    "acc_score": 0.0,
+    "acc_rank_among_candidates": 0,
+    "argmin_err_h": 532,
+    "topk_err": {
+      "1": 532,
+      "5": 2,
+      "10": 0,
+      "20": 0,
+      "50": 0
+    }
+  },
+  {
+    "acc_id": 75,
+    "tier": 0,
+    "scored": false
+  },
+  {
+    "acc_id": 11,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1809,
+    "acc_score": 0.1902439024390244,
+    "acc_rank_among_candidates": 345,
+    "argmin_err_h": 3531,
+    "topk_err": {
+      "1": 3531,
+      "5": 1762,
+      "10": 437,
+      "20": 135,
+      "50": 135
+    }
+  },
+  {
+    "acc_id": 139,
+    "tier": 5,
+    "scored": false
+  },
+  {
+    "acc_id": 133,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1221,
+    "acc_score": 0.9746835443037974,
+    "acc_rank_among_candidates": 1184,
+    "argmin_err_h": 348,
+    "topk_err": {
+      "1": 348,
+      "5": 348,
+      "10": 348,
+      "20": 348,
+      "50": 276
+    }
+  },
+  {
+    "acc_id": 31,
+    "tier": 4,
+    "scored": true,
+    "n_scored_candidates": 2583,
+    "acc_score": 0.30158730158730157,
+    "acc_rank_among_candidates": 804,
+    "argmin_err_h": 3293,
+    "topk_err": {
+      "1": 3293,
+      "5": 2882,
+      "10": 2422,
+      "20": 1954,
+      "50": 201
+    }
+  },
+  {
+    "acc_id": 83,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 2109,
+    "acc_score": 0.4503311258278146,
+    "acc_rank_among_candidates": 958,
+    "argmin_err_h": 2132,
+    "topk_err": {
+      "1": 2132,
+      "5": 784,
+      "10": 300,
+      "20": 14,
+      "50": 14
+    }
+  },
+  {
+    "acc_id": 2,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 1809,
+    "acc_score": 0.9649122807017544,
+    "acc_rank_among_candidates": 1711,
+    "argmin_err_h": 3832,
+    "topk_err": {
+      "1": 3832,
+      "5": 2907,
+      "10": 2837,
+      "20": 1521,
+      "50": 270
+    }
+  },
+  {
+    "acc_id": 134,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 855,
+    "acc_score": 0.45454545454545453,
+    "acc_rank_among_candidates": 386,
+    "argmin_err_h": 1098,
+    "topk_err": {
+      "1": 1098,
+      "5": 337,
+      "10": 39,
+      "20": 39,
+      "50": 39
+    }
+  },
+  {
+    "acc_id": 67,
+    "tier": 5,
+    "scored": true,
+    "n_scored_candidates": 1939,
+    "acc_score": 0.890625,
+    "acc_rank_among_candidates": 1699,
+    "argmin_err_h": 2718,
+    "topk_err": {
+      "1": 2718,
+      "5": 810,
+      "10": 729,
+      "20": 24,
+      "50": 24
+    }
+  },
+  {
+    "acc_id": 95,
+    "tier": 3,
+    "scored": false
+  },
+  {
+    "acc_id": 126,
+    "tier": 0,
+    "scored": false
+  },
+  {
+    "acc_id": 138,
+    "tier": 0,
+    "scored": true,
+    "n_scored_candidates": 965,
+    "acc_score": 0.646551724137931,
+    "acc_rank_among_candidates": 621,
+    "argmin_err_h": 1120,
+    "topk_err": {
+      "1": 1120,
+      "5": 133,
+      "10": 133,
+      "20": 10,
+      "50": 8
+    }
+  }
+]

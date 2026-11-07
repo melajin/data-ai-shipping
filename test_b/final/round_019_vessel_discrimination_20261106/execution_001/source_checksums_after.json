@@ -1,0 +1,54 @@
+{
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_01.parquet": {
+    "sha256": "4dfd4dac39805874f46c701a65fb705698923d5d757a550cb75a04c31d17c871",
+    "bytes": 16564885
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_02.parquet": {
+    "sha256": "aa09e5b989de86f5911885c2926382061dd1b2afed7d2035e9de79e2a0c0c20f",
+    "bytes": 15957874
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_03.parquet": {
+    "sha256": "351fbae98054962046da0a364d12173090cc823c295910893cc9cf23789f6304",
+    "bytes": 21699918
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_04.parquet": {
+    "sha256": "75d3ac451b4d20ead7eaa0467bb6a394e014e552f05fa9282261361a08a84ba8",
+    "bytes": 23598660
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_05.parquet": {
+    "sha256": "08eb9aed48e045f7c22a5062a3c2f72278ce239e44a4f4c897bf2b208a32b8bf",
+    "bytes": 25048144
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_06.parquet": {
+    "sha256": "69090e150c4fdfb5931e6e717e834c0c01c604bfbae2de5994c6327aa11d0827",
+    "bytes": 25492577
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py": {
+    "sha256": "41152a907e47ca1b3c18478c0d77d791f3a1c880f2d46fc7a982ebe66ff7c43c",
+    "bytes": 8296
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106\\score_fleet.py": {
+    "sha256": "711368f65e7c92fc853ae6acdad2607bd9d5adb957712f49cd5fbc8a3d3ff47b",
+    "bytes": 22699
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\density.json": {
+    "sha256": "c122b827fb0b9fe480434f821162035702e34b0fc465762bdbeca0aeeadb1328",
+    "bytes": 1882448
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\gap_reference.npy": {
+    "sha256": "08145272419ec53837074f5602e34a9be36e5b1311952e4b0c637e64716daa9f",
+    "bytes": 31037672
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\harbors.json": {
+    "sha256": "3c1888f9714f675110be5181dc053398f955a23c7f68989c9c223bb77ab09309",
+    "bytes": 4020
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\jump_reference.npy": {
+    "sha256": "a9d303efa85c06d6d3a75e622f0b76af2c64ca585228a177c4e95d8f21d87b0c",
+    "bytes": 31037672
+  },
+  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\provenance.json": {
+    "sha256": "052f39d4dc69c9a622a654885248f2509c385c2760c578f73cc98a3633e38986",
+    "bytes": 3397
+  }
+}

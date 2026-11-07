@@ -1,0 +1,15 @@
+# Root release: one fixed observed-transition comparison
+
+Bothlowerreportsreceived:Luna msg_6e356456c1d5/ctx_d4391959c8d3 with11syntheticchecks517rows/codehashbeforeafter80da2314...matching; Gemini msg_c5983a2b7fbb/ctx_a5737b7ae5b9 actualindependentinventory88036validtriples/3807patterns/82RFIDs. Rootqualifiedunsupportedinventoryheadline/manualgearrowcounts/recursivehash; primaryCSV/JSONcountsremainusable. Noaccidentlabelsusedbylowerworkers.
+
+Rootinspectedrawmasks,stagehierarchy,fulltriplestartwindowimplementedend[t-718,t),currentexcluded,exactrationalpeercomparison,DESClegacyandpoolfallbackAPI. MinorrawSELF_DEFINITIONtextabbreviatesendwindowas[t-720,t); actualcode+tests+windowdiagnosticareauthoritativefulltriplewindow[t-718,t). Noalgorithmchange. RootrunnerreusesREADONLYverifiedR8genericnumericalevaluator/providedstage_spec, notshape scoring. Rootrunnercompiles; patterncountsforeach82RFIDsandglobalMUSTmatchindependentinventoryBEFORElabels, otherwisefailedreceiptretainedandnoscoring.
+
+CurrentRAM2026-11-06 03:25:35+09:00available4521.5MiB,nootherPythonjobs,conservativeadditional1280+reserve640=1920MiB; runnerrechecksmediatelybeforeimports/data. Nootheractuallargejobs. Sourcesnapshotsexecution_sources_001andruntimebefore/afterhashespreserveactualrevision.
+
+AuthorizedcommandONEfreshoutput:
+
+```powershell
+python 'testB/final/round_009_20261106/run_transition.py' --output-dir 'testB/final/round_009_20261106/execution_001'
+```
+
+Fixedfull100/82,Tier0160/55,±6hinclusive,sameRFIDcap/top1ofsametop4,exact+5ppgate/pairedRFIDbootstrap4000seed20261105/cohortmethodmatchedrandom unchanged. Neveradjustpatternlength/distance/window/gearafterresult. NoTestBinference/newmodels/externalcollection/submissionchanges. Bothmiddlemanagersgetactualresultstocompareafterrootrun.

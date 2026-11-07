@@ -1,0 +1,84 @@
+{
+  "suite": "Round 8 shape evaluation independent verification",
+  "timestamp": "2026-11-06T02:46:14+0900",
+  "all_passed": true,
+  "total_tests": 14,
+  "passed_tests": 14,
+  "results": {
+    "epoch_hour_conversion": {
+      "status": "pass",
+      "details": "Epoch-hour conversions, fractional/nanosecond rejections, and NaT rules verified",
+      "elapsed_seconds": 0.0003
+    },
+    "combinatorial_random_hit": {
+      "status": "pass",
+      "details": "Combinatorial hypergeometric probabilities matched exact hand-calculated ground truths",
+      "cases_checked": {
+        "n10_h2_k1": 0.19999999999999996,
+        "n10_h2_k2": 0.37777777777777777,
+        "n10_h2_k4": 0.6666666666666667
+      },
+      "elapsed_seconds": 0.0003
+    },
+    "paired_rfid_bootstrap": {
+      "status": "pass",
+      "details": "Paired cluster bootstrap correctly clusters by RFID and produces exact deterministic CIs",
+      "elapsed_seconds": 0.0466
+    },
+    "stage_counts_ledger": {
+      "status": "pass",
+      "details": "Generic stage counts correctly track input, keep, reject, defer, presence, and fallback coverage",
+      "elapsed_seconds": 0.0074
+    },
+    "evaluator_end_to_end": {
+      "status": "pass",
+      "details": "Full synthetic evaluation executed cleanly, emitted all 8 required artifacts, and validated cohort gate logic",
+      "elapsed_seconds": 1.1527
+    },
+    "gate_cohort_boundaries": {
+      "status": "pass",
+      "details": "Operational gate formulation verified for both passing and failing condition boundaries",
+      "elapsed_seconds": 2.2055
+    },
+    "actual_schema_merge_and_keys": {
+      "status": "pass",
+      "details": "Actual schema merge with duplicated numerics and null geometry succeeded without suffixing; duplicate keys, fractional hours, and discrepancies rejected",
+      "elapsed_seconds": 0.0202
+    },
+    "raw_key_validation_and_runner_fractional": {
+      "status": "pass",
+      "details": "Original uncasted key validation strictly verified for fractional, boolean, negative, and duplicate values",
+      "elapsed_seconds": 0.0103
+    },
+    "shared_numeric_missingness_infinity": {
+      "status": "pass",
+      "details": "Shared numeric missingness and finite/infinite state comparisons verified; NaN-skipping false matches prevented",
+      "elapsed_seconds": 0.0416
+    },
+    "exact_5pp_gate_boundary": {
+      "status": "pass",
+      "details": "Exact integer count +5%p threshold (20 * delta >= n) verified; 5/60 vs 2/60 passes, 4/60 vs 2/60 fails",
+      "elapsed_seconds": 0.0
+    },
+    "frozen_hashes_post_eval": {
+      "status": "pass",
+      "details": "Pre-label frozen predictions and pool_manifest hashes verified byte-identical post-evaluation",
+      "elapsed_seconds": 2.0587
+    },
+    "extractor_receipt_validation": {
+      "status": "pass",
+      "details": "Mandatory receipt fields, explicit zero counts, release_ready, and manifest hash verified with strict failure branches",
+      "elapsed_seconds": 0.0247
+    },
+    "strict_fresh_dir_and_traceback": {
+      "status": "pass",
+      "details": "Strict fresh directory refusal and EXECUTION.json traceback preservation verified without NameError",
+      "elapsed_seconds": 0.7852
+    },
+    "runner_preflight_isolation": {
+      "status": "pass",
+      "details": "Runner memory preflight, round isolation, and synthetic execution verified",
+      "elapsed_seconds": 1.8442
+    }
+  }
+}

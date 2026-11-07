@@ -1,0 +1,801 @@
+acc_id,rfid_id,tier,conflict,acc_ts,method,k,predicted_times,abs_error,hit,coverage_base,coverage_common,coverage_observable,coverage_common_observable,fallback,candidate_count
+2,36314611,0,False,495159,B0_full,1,[490906],4253.0,False,True,True,True,True,False,1237
+2,36314611,0,False,495159,B0_full,4,"[490906, 491168, 490931, 490905]",3991.0,False,True,True,True,True,False,1237
+2,36314611,0,False,495159,B0_common,1,[491168],3991.0,False,True,True,True,True,False,1205
+2,36314611,0,False,495159,B0_common,4,"[491168, 491216, 491197, 491167]",3943.0,False,True,True,True,True,False,1205
+2,36314611,0,False,495159,U,1,[490958],4201.0,False,True,True,True,True,False,1205
+2,36314611,0,False,495159,U,4,"[490958, 491602, 492565, 494488]",671.0,False,True,True,True,True,False,1205
+2,36314611,0,False,495159,C,1,[490958],4201.0,False,True,True,True,True,False,1205
+2,36314611,0,False,495159,C,4,"[490958, 490961, 490985, 491197]",3962.0,False,True,True,True,True,False,1205
+3,36100073,0,False,495152,B0_full,1,[492175],2977.0,False,True,True,True,True,False,626
+3,36100073,0,False,495152,B0_full,4,"[492175, 493397, 493733, 491697]",1419.0,False,True,True,True,True,False,626
+3,36100073,0,False,495152,B0_common,1,[492175],2977.0,False,True,True,True,True,False,578
+3,36100073,0,False,495152,B0_common,4,"[492175, 493397, 493733, 491697]",1419.0,False,True,True,True,True,False,578
+3,36100073,0,False,495152,U,1,[491507],3645.0,False,True,True,True,True,False,578
+3,36100073,0,False,495152,U,4,"[491507, 491516, 491520, 491535]",3617.0,False,True,True,True,True,False,578
+3,36100073,0,False,495152,C,1,[491507],3645.0,False,True,True,True,True,False,578
+3,36100073,0,False,495152,C,4,"[491507, 491516, 491520, 491535]",3617.0,False,True,True,True,True,False,578
+6,31009538,5,True,495009,B0_full,1,[491098],3911.0,False,True,True,True,True,False,4273
+6,31009538,5,True,495009,B0_full,4,"[491098, 491097, 494647, 491267]",362.0,False,True,True,True,True,False,4273
+6,31009538,5,True,495009,B0_common,1,[491098],3911.0,False,True,True,True,True,False,4224
+6,31009538,5,True,495009,B0_common,4,"[491098, 491097, 494647, 491267]",362.0,False,True,True,True,True,False,4224
+6,31009538,5,True,495009,U,1,[490949],4060.0,False,True,True,True,True,False,4224
+6,31009538,5,True,495009,U,4,"[490949, 491029, 491030, 491036]",3973.0,False,True,True,True,True,False,4224
+6,31009538,5,True,495009,C,1,[490949],4060.0,False,True,True,True,True,False,4224
+6,31009538,5,True,495009,C,4,"[490949, 491029, 491030, 491036]",3973.0,False,True,True,True,True,False,4224
+10,32300353,0,False,494893,B0_full,1,[492492],2401.0,False,True,True,True,True,False,2851
+10,32300353,0,False,494893,B0_full,4,"[492492, 492327, 492326, 492491]",2401.0,False,True,True,True,True,False,2851
+10,32300353,0,False,494893,B0_common,1,[492492],2401.0,False,True,True,True,True,False,2785
+10,32300353,0,False,494893,B0_common,4,"[492492, 492491, 493023, 493185]",1708.0,False,True,True,True,True,False,2785
+10,32300353,0,False,494893,U,1,[494941],48.0,False,True,True,True,True,False,2785
+10,32300353,0,False,494893,U,4,"[494941, 494196, 492921, 494056]",48.0,False,True,True,True,True,False,2785
+10,32300353,0,False,494893,C,1,[492402],2491.0,False,True,True,True,True,False,2785
+10,32300353,0,False,494893,C,4,"[492402, 492447, 492487, 492538]",2355.0,False,True,True,True,True,False,2785
+11,36311633,0,False,494870,B0_full,1,[494076],794.0,False,True,True,True,True,False,1847
+11,36311633,0,False,494870,B0_full,4,"[494076, 494075, 492995, 491457]",794.0,False,True,True,True,True,False,1847
+11,36311633,0,False,494870,B0_common,1,[494076],794.0,False,True,True,True,True,False,1821
+11,36311633,0,False,494870,B0_common,4,"[494076, 494075, 492995, 491457]",794.0,False,True,True,True,True,False,1821
+11,36311633,0,False,494870,U,1,[491234],3636.0,False,True,True,True,True,False,1821
+11,36311633,0,False,494870,U,4,"[491234, 491284, 491457, 491936]",2934.0,False,True,True,True,True,False,1821
+11,36311633,0,False,494870,C,1,[491173],3697.0,False,True,True,True,True,False,1821
+11,36311633,0,False,494870,C,4,"[491173, 491211, 491234, 491243]",3627.0,False,True,True,True,True,False,1821
+12,33201506,0,False,494844,B0_full,1,[495092],248.0,False,True,True,True,True,False,841
+12,33201506,0,False,494844,B0_full,4,"[495092, 494121, 493927, 492922]",248.0,False,True,True,True,True,False,841
+12,33201506,0,False,494844,B0_common,1,[495092],248.0,False,True,True,True,True,False,809
+12,33201506,0,False,494844,B0_common,4,"[495092, 494121, 493927, 492922]",248.0,False,True,True,True,True,False,809
+12,33201506,0,False,494844,U,1,[492617],2227.0,False,True,True,True,True,False,809
+12,33201506,0,False,494844,U,4,"[492617, 492657, 493924, 494123]",721.0,False,True,True,True,True,False,809
+12,33201506,0,False,494844,C,1,[492617],2227.0,False,True,True,True,True,False,809
+12,33201506,0,False,494844,C,4,"[492617, 492657, 493924, 493927]",917.0,False,True,True,True,True,False,809
+13,36115953,0,False,494818,B0_full,1,[493974],844.0,False,True,True,True,True,False,754
+13,36115953,0,False,494818,B0_full,4,"[493974, 493775, 493191, 493161]",844.0,False,True,True,True,True,False,754
+13,36115953,0,False,494818,B0_common,1,[493974],844.0,False,True,True,True,True,False,725
+13,36115953,0,False,494818,B0_common,4,"[493974, 493775, 493191, 493652]",844.0,False,True,True,True,True,False,725
+13,36115953,0,False,494818,U,1,[494150],668.0,False,True,True,True,True,False,725
+13,36115953,0,False,494818,U,4,"[494150, 494894, 494911, 493974]",76.0,False,True,True,True,True,False,725
+13,36115953,0,False,494818,C,1,[493223],1595.0,False,True,True,True,True,False,725
+13,36115953,0,False,494818,C,4,"[493223, 493228, 493232, 493413]",1405.0,False,True,True,True,True,False,725
+14,36007269,1,False,494791,B0_full,1,[494646],145.0,False,True,True,True,True,False,401
+14,36007269,1,False,494791,B0_full,4,"[494646, 493691, 494363, 493326]",145.0,False,True,True,True,True,False,401
+14,36007269,1,False,494791,B0_common,1,[494646],145.0,False,True,True,True,True,False,373
+14,36007269,1,False,494791,B0_common,4,"[494646, 493691, 494363, 494673]",118.0,False,True,True,True,True,False,373
+14,36007269,1,False,494791,U,1,[493691],1100.0,False,True,True,True,True,False,373
+14,36007269,1,False,494791,U,4,"[493691, 495108, 495156, 495200]",317.0,False,True,True,True,True,False,373
+14,36007269,1,False,494791,C,1,[493691],1100.0,False,True,True,True,True,False,373
+14,36007269,1,False,494791,C,4,"[493691, 494023, 494576, 494744]",47.0,False,True,True,True,True,False,373
+18,32300202,3,False,494747,B0_full,1,[495006],259.0,False,True,True,True,True,False,777
+18,32300202,3,False,494747,B0_full,4,"[495006, 495007, 493543, 493545]",259.0,False,True,True,True,True,False,777
+18,32300202,3,False,494747,B0_common,1,[495006],259.0,False,True,True,True,True,False,751
+18,32300202,3,False,494747,B0_common,4,"[495006, 495007, 494287, 495005]",258.0,False,True,True,True,True,False,751
+18,32300202,3,False,494747,U,1,[494443],304.0,False,True,True,True,True,False,751
+18,32300202,3,False,494747,U,4,"[494443, 494573, 494749, 493698]",2.0,True,True,True,True,True,False,751
+18,32300202,3,False,494747,C,1,[493565],1182.0,False,True,True,True,True,False,751
+18,32300202,3,False,494747,C,4,"[493565, 493586, 493590, 493690]",1057.0,False,True,True,True,True,False,751
+19,36304593,1,False,494720,B0_full,1,[493933],787.0,False,True,True,True,True,False,368
+19,36304593,1,False,494720,B0_full,4,"[493933, 494313, 493693, 493935]",407.0,False,True,True,True,True,False,368
+19,36304593,1,False,494720,B0_common,1,[493933],787.0,False,True,True,True,True,False,342
+19,36304593,1,False,494720,B0_common,4,"[493933, 494313, 493693, 493935]",407.0,False,True,True,True,True,False,342
+19,36304593,1,False,494720,U,1,[494001],719.0,False,True,True,True,True,False,342
+19,36304593,1,False,494720,U,4,"[494001, 494434, 493999, 494187]",286.0,False,True,True,True,True,False,342
+19,36304593,1,False,494720,C,1,[494001],719.0,False,True,True,True,True,False,342
+19,36304593,1,False,494720,C,4,"[494001, 494434, 493999, 494022]",286.0,False,True,True,True,True,False,342
+20,31008085,1,False,494654,B0_full,1,[492420],2234.0,False,True,True,True,True,False,2938
+20,31008085,1,False,494654,B0_full,4,"[492420, 490974, 492692, 491102]",1962.0,False,True,True,True,True,False,2938
+20,31008085,1,False,494654,B0_common,1,[492420],2234.0,False,True,True,True,True,False,2914
+20,31008085,1,False,494654,B0_common,4,"[492420, 492692, 491102, 491095]",1962.0,False,True,True,True,True,False,2914
+20,31008085,1,False,494654,U,1,[491021],3633.0,False,True,True,True,True,False,2914
+20,31008085,1,False,494654,U,4,"[491021, 491094, 492420, 492868]",1786.0,False,True,True,True,True,False,2914
+20,31008085,1,False,494654,C,1,[491021],3633.0,False,True,True,True,True,False,2914
+20,31008085,1,False,494654,C,4,"[491021, 491094, 491264, 491509]",3145.0,False,True,True,True,True,False,2914
+21,36008148,1,False,494646,B0_full,1,[492560],2086.0,False,True,True,True,True,False,839
+21,36008148,1,False,494646,B0_full,4,"[492560, 492564, 492561, 491095]",2082.0,False,True,True,True,True,False,839
+21,36008148,1,False,494646,B0_common,1,[492560],2086.0,False,True,True,True,True,False,815
+21,36008148,1,False,494646,B0_common,4,"[492560, 492564, 492561, 492569]",2077.0,False,True,True,True,True,False,815
+21,36008148,1,False,494646,U,1,[491847],2799.0,False,True,True,True,True,False,815
+21,36008148,1,False,494646,U,4,"[491847, 491853, 492235, 492237]",2409.0,False,True,True,True,True,False,815
+21,36008148,1,False,494646,C,1,[491319],3327.0,False,True,True,True,True,False,815
+21,36008148,1,False,494646,C,4,"[491319, 491488, 491583, 491585]",3061.0,False,True,True,True,True,False,815
+22,31005928,0,False,494604,B0_full,1,[494608],4.0,True,True,True,True,True,False,809
+22,31005928,0,False,494604,B0_full,4,"[494608, 494607, 491970, 492761]",3.0,True,True,True,True,True,False,809
+22,31005928,0,False,494604,B0_common,1,[494608],4.0,True,True,True,True,True,False,772
+22,31005928,0,False,494604,B0_common,4,"[494608, 494607, 491970, 492761]",3.0,True,True,True,True,True,False,772
+22,31005928,0,False,494604,U,1,[492582],2022.0,False,True,True,True,True,False,772
+22,31005928,0,False,494604,U,4,"[492582, 494606, 494607, 491945]",2.0,True,True,True,True,True,False,772
+22,31005928,0,False,494604,C,1,[491625],2979.0,False,True,True,True,True,False,772
+22,31005928,0,False,494604,C,4,"[491625, 491726, 492567, 492582]",2022.0,False,True,True,True,True,False,772
+23,32300717,3,False,494562,B0_full,1,[492561],2001.0,False,True,True,True,True,False,1824
+23,32300717,3,False,494562,B0_full,4,"[492561, 493429, 494477, 494217]",85.0,False,True,True,True,True,False,1824
+23,32300717,3,False,494562,B0_common,1,[493429],1133.0,False,True,True,True,True,False,1800
+23,32300717,3,False,494562,B0_common,4,"[493429, 494477, 494217, 494918]",85.0,False,True,True,True,True,False,1800
+23,32300717,3,False,494562,U,1,[494564],2.0,True,True,True,True,True,False,1800
+23,32300717,3,False,494562,U,4,"[494564, 494911, 492972, 493507]",2.0,True,True,True,True,True,False,1800
+23,32300717,3,False,494562,C,1,[492823],1739.0,False,True,True,True,True,False,1800
+23,32300717,3,False,494562,C,4,"[492823, 492847, 492851, 492876]",1686.0,False,True,True,True,True,False,1800
+24,36001494,0,False,494529,B0_full,1,[493208],1321.0,False,True,True,True,True,False,548
+24,36001494,0,False,494529,B0_full,4,"[493208, 495180, 493563, 493325]",651.0,False,True,True,True,True,False,548
+24,36001494,0,False,494529,B0_common,1,[495180],651.0,False,True,True,True,True,False,524
+24,36001494,0,False,494529,B0_common,4,"[495180, 493563, 493325, 494750]",221.0,False,True,True,True,True,False,524
+24,36001494,0,False,494529,U,1,[493308],1221.0,False,True,True,True,True,False,524
+24,36001494,0,False,494529,U,4,"[493308, 494049, 494750, 495180]",221.0,False,True,True,True,True,False,524
+24,36001494,0,False,494529,C,1,[493301],1228.0,False,True,True,True,True,False,524
+24,36001494,0,False,494529,C,4,"[493301, 493308, 493563, 494049]",480.0,False,True,True,True,True,False,524
+26,31100492,5,False,494497,B0_full,1,[490980],3517.0,False,True,True,True,True,False,3092
+26,31100492,5,False,494497,B0_full,4,"[490980, 490956, 490955, 492274]",2223.0,False,True,True,True,True,False,3092
+26,31100492,5,False,494497,B0_common,1,[490980],3517.0,False,True,True,True,True,False,3025
+26,31100492,5,False,494497,B0_common,4,"[490980, 490956, 490955, 490968]",3517.0,False,True,True,True,True,False,3025
+26,31100492,5,False,494497,U,1,[490954],3543.0,False,True,True,True,True,False,3025
+26,31100492,5,False,494497,U,4,"[490954, 490955, 491001, 492550]",1947.0,False,True,True,True,True,False,3025
+26,31100492,5,False,494497,C,1,[490954],3543.0,False,True,True,True,True,False,3025
+26,31100492,5,False,494497,C,4,"[490954, 490955, 490979, 491001]",3496.0,False,True,True,True,True,False,3025
+27,36108086,1,False,494481,B0_full,1,[493770],711.0,False,True,True,True,True,False,788
+27,36108086,1,False,494481,B0_full,4,"[493770, 493123, 492895, 492747]",711.0,False,True,True,True,True,False,788
+27,36108086,1,False,494481,B0_common,1,[493770],711.0,False,True,True,True,True,False,746
+27,36108086,1,False,494481,B0_common,4,"[493770, 493123, 492895, 492747]",711.0,False,True,True,True,True,False,746
+27,36108086,1,False,494481,U,1,[492716],1765.0,False,True,True,True,True,False,746
+27,36108086,1,False,494481,U,4,"[492716, 493591, 493803, 492717]",678.0,False,True,True,True,True,False,746
+27,36108086,1,False,494481,C,1,[492107],2374.0,False,True,True,True,True,False,746
+27,36108086,1,False,494481,C,4,"[492107, 492191, 492479, 492716]",1765.0,False,True,True,True,True,False,746
+28,31007500,0,False,494444,B0_full,1,[491094],3350.0,False,True,True,True,True,False,1431
+28,31007500,0,False,494444,B0_full,4,"[491094, 493614, 492156, 492845]",830.0,False,True,True,True,True,False,1431
+28,31007500,0,False,494444,B0_common,1,[493614],830.0,False,True,True,True,True,False,1407
+28,31007500,0,False,494444,B0_common,4,"[493614, 492156, 492845, 494577]",133.0,False,True,True,True,True,False,1407
+28,31007500,0,False,494444,U,1,[491183],3261.0,False,True,True,True,True,False,1407
+28,31007500,0,False,494444,U,4,"[491183, 491262, 491974, 492845]",1599.0,False,True,True,True,True,False,1407
+28,31007500,0,False,494444,C,1,[491172],3272.0,False,True,True,True,True,False,1407
+28,31007500,0,False,494444,C,4,"[491172, 491183, 491262, 491508]",2936.0,False,True,True,True,True,False,1407
+29,31008933,1,False,494433,B0_full,1,[491895],2538.0,False,True,True,True,True,False,1313
+29,31008933,1,False,494433,B0_full,4,"[491895, 491893, 491894, 492225]",2208.0,False,True,True,True,True,False,1313
+29,31008933,1,False,494433,B0_common,1,[491895],2538.0,False,True,True,True,True,False,1270
+29,31008933,1,False,494433,B0_common,4,"[491895, 491893, 491894, 492225]",2208.0,False,True,True,True,True,False,1270
+29,31008933,1,False,494433,U,1,[494646],213.0,False,True,True,True,True,False,1270
+29,31008933,1,False,494433,U,4,"[494646, 491864, 491216, 494022]",213.0,False,True,True,True,True,False,1270
+29,31008933,1,False,494433,C,1,[492565],1868.0,False,True,True,True,True,False,1270
+29,31008933,1,False,494433,C,4,"[492565, 492569, 492613, 492617]",1816.0,False,True,True,True,True,False,1270
+30,31100492,1,False,494399,B0_full,1,[490980],3419.0,False,True,True,True,True,False,3092
+30,31100492,1,False,494399,B0_full,4,"[490980, 490956, 490955, 492274]",2125.0,False,True,True,True,True,False,3092
+30,31100492,1,False,494399,B0_common,1,[490980],3419.0,False,True,True,True,True,False,3025
+30,31100492,1,False,494399,B0_common,4,"[490980, 490956, 490955, 490968]",3419.0,False,True,True,True,True,False,3025
+30,31100492,1,False,494399,U,1,[490954],3445.0,False,True,True,True,True,False,3025
+30,31100492,1,False,494399,U,4,"[490954, 490955, 491001, 492550]",1849.0,False,True,True,True,True,False,3025
+30,31100492,1,False,494399,C,1,[490954],3445.0,False,True,True,True,True,False,3025
+30,31100492,1,False,494399,C,4,"[490954, 490955, 490979, 491001]",3398.0,False,True,True,True,True,False,3025
+31,36314076,4,False,494394,B0_full,1,[493661],733.0,False,True,True,True,True,False,2110
+31,36314076,4,False,494394,B0_full,4,"[493661, 490994, 493954, 494754]",360.0,False,True,True,True,True,False,2110
+31,36314076,4,False,494394,B0_common,1,[493661],733.0,False,True,True,True,True,False,2061
+31,36314076,4,False,494394,B0_common,4,"[493661, 490994, 493954, 494754]",360.0,False,True,True,True,True,False,2061
+31,36314076,4,False,494394,U,1,[490948],3446.0,False,True,True,True,True,False,2061
+31,36314076,4,False,494394,U,4,"[490948, 490949, 490950, 493654]",740.0,False,True,True,True,True,False,2061
+31,36314076,4,False,494394,C,1,[490948],3446.0,False,True,True,True,True,False,2061
+31,36314076,4,False,494394,C,4,"[490948, 490949, 490950, 491340]",3054.0,False,True,True,True,True,False,2061
+33,36102425,4,False,494293,B0_full,1,[493230],1063.0,False,True,True,True,True,False,261
+33,36102425,4,False,494293,B0_full,4,"[493230, 494295, 494311, 494289]",2.0,True,True,True,True,True,False,261
+33,36102425,4,False,494293,B0_common,1,[494295],2.0,True,True,True,True,True,False,237
+33,36102425,4,False,494293,B0_common,4,"[494295, 494311, 494289, 494093]",2.0,True,True,True,True,True,False,237
+33,36102425,4,False,494293,U,1,[493764],529.0,False,True,True,True,True,False,237
+33,36102425,4,False,494293,U,4,"[493764, 494294, 494098, 494290]",1.0,True,True,True,True,True,False,237
+33,36102425,4,False,494293,C,1,[493695],598.0,False,True,True,True,True,False,237
+33,36102425,4,False,494293,C,4,"[493695, 493757, 493764, 493804]",489.0,False,True,True,True,True,False,237
+34,31012971,0,False,494273,B0_full,1,[494431],158.0,False,True,True,True,True,False,808
+34,31012971,0,False,494273,B0_full,4,"[494431, 493687, 494072, 494365]",92.0,False,True,True,True,True,False,808
+34,31012971,0,False,494273,B0_common,1,[494431],158.0,False,True,True,True,True,False,784
+34,31012971,0,False,494273,B0_common,4,"[494431, 493687, 494072, 494365]",92.0,False,True,True,True,True,False,784
+34,31012971,0,False,494273,U,1,[493134],1139.0,False,True,True,True,True,False,784
+34,31012971,0,False,494273,U,4,"[493134, 493687, 493688, 493712]",561.0,False,True,True,True,True,False,784
+34,31012971,0,False,494273,C,1,[493134],1139.0,False,True,True,True,True,False,784
+34,31012971,0,False,494273,C,4,"[493134, 493687, 493688, 493689]",584.0,False,True,True,True,True,False,784
+37,36011749,8,False,494237,B0_full,1,[490979],3258.0,False,True,True,True,True,False,1326
+37,36011749,8,False,494237,B0_full,4,"[490979, 490981, 490980, 491098]",3139.0,False,True,True,True,True,False,1326
+37,36011749,8,False,494237,B0_common,1,[491098],3139.0,False,True,True,True,True,False,1299
+37,36011749,8,False,494237,B0_common,4,"[491098, 491267, 491100, 491224]",2970.0,False,True,True,True,True,False,1299
+37,36011749,8,False,494237,U,1,[491168],3069.0,False,True,True,True,True,False,1299
+37,36011749,8,False,494237,U,4,"[491168, 491262, 491264, 491756]",2481.0,False,True,True,True,True,False,1299
+37,36011749,8,False,494237,C,1,[491168],3069.0,False,True,True,True,True,False,1299
+37,36011749,8,False,494237,C,4,"[491168, 491174, 491262, 491264]",2973.0,False,True,True,True,True,False,1299
+42,34400535,0,False,494194,B0_full,1,[492254],1940.0,False,True,True,True,True,False,1208
+42,34400535,0,False,494194,B0_full,4,"[492254, 492279, 492256, 493905]",289.0,False,True,True,True,True,False,1208
+42,34400535,0,False,494194,B0_common,1,[493905],289.0,False,True,True,True,True,False,1182
+42,34400535,0,False,494194,B0_common,4,"[493905, 493050, 492969, 493002]",289.0,False,True,True,True,True,False,1182
+42,34400535,0,False,494194,U,1,[492972],1222.0,False,True,True,True,True,False,1182
+42,34400535,0,False,494194,U,4,"[492972, 494821, 493808, 494062]",132.0,False,True,True,True,True,False,1182
+42,34400535,0,False,494194,C,1,[492972],1222.0,False,True,True,True,True,False,1182
+42,34400535,0,False,494194,C,4,"[492972, 492998, 493083, 493105]",1089.0,False,True,True,True,True,False,1182
+43,36110858,1,False,494175,B0_full,1,[491937],2238.0,False,True,True,True,True,False,549
+43,36110858,1,False,494175,B0_full,4,"[491937, 494651, 494336, 494652]",161.0,False,True,True,True,True,False,549
+43,36110858,1,False,494175,B0_common,1,[494651],476.0,False,True,True,True,True,False,505
+43,36110858,1,False,494175,B0_common,4,"[494651, 494336, 494652, 491631]",161.0,False,True,True,True,True,False,505
+43,36110858,1,False,494175,U,1,[491105],3070.0,False,True,True,True,True,False,505
+43,36110858,1,False,494175,U,4,"[491105, 492969, 492970, 493476]",699.0,False,True,True,True,True,False,505
+43,36110858,1,False,494175,C,1,[491105],3070.0,False,True,True,True,True,False,505
+43,36110858,1,False,494175,C,4,"[491105, 492969, 492970, 493476]",699.0,False,True,True,True,True,False,505
+45,31001758,0,False,494143,B0_full,1,[494466],323.0,False,True,True,True,True,False,916
+45,31001758,0,False,494143,B0_full,4,"[494466, 491282, 491953, 494347]",204.0,False,True,True,True,True,False,916
+45,31001758,0,False,494143,B0_common,1,[494466],323.0,False,True,True,True,True,False,892
+45,31001758,0,False,494143,B0_common,4,"[494466, 491282, 491953, 494347]",204.0,False,True,True,True,True,False,892
+45,31001758,0,False,494143,U,1,[491279],2864.0,False,True,True,True,True,False,892
+45,31001758,0,False,494143,U,4,"[491279, 491282, 491283, 491286]",2857.0,False,True,True,True,True,False,892
+45,31001758,0,False,494143,C,1,[491279],2864.0,False,True,True,True,True,False,892
+45,31001758,0,False,494143,C,4,"[491279, 491282, 491283, 491286]",2857.0,False,True,True,True,True,False,892
+48,32300267,4,True,494054,B0_full,1,[490974],3080.0,False,True,True,True,True,False,1197
+48,32300267,4,True,494054,B0_full,4,"[490974, 494864, 491437, 493771]",283.0,False,True,True,True,True,False,1197
+48,32300267,4,True,494054,B0_common,1,[494864],810.0,False,True,True,True,True,False,1141
+48,32300267,4,True,494054,B0_common,4,"[494864, 491437, 493771, 494865]",283.0,False,True,True,True,True,False,1141
+48,32300267,4,True,494054,U,1,[492549],1505.0,False,True,True,True,True,False,1141
+48,32300267,4,True,494054,U,4,"[492549, 492820, 493101, 493223]",831.0,False,True,True,True,True,False,1141
+48,32300267,4,True,494054,C,1,[492549],1505.0,False,True,True,True,True,False,1141
+48,32300267,4,True,494054,C,4,"[492549, 492555, 492820, 492831]",1223.0,False,True,True,True,True,False,1141
+50,34200580,5,False,494027,B0_full,1,[492900],1127.0,False,True,True,True,True,False,574
+50,34200580,5,False,494027,B0_full,4,"[492900, 492930, 492971, 492931]",1056.0,False,True,True,True,True,False,574
+50,34200580,5,False,494027,B0_common,1,[492930],1097.0,False,True,True,True,True,False,550
+50,34200580,5,False,494027,B0_common,4,"[492930, 492971, 492931, 494024]",3.0,True,True,True,True,True,False,550
+50,34200580,5,False,494027,U,1,[492942],1085.0,False,True,True,True,True,False,550
+50,34200580,5,False,494027,U,4,"[492942, 493008, 493253, 492949]",774.0,False,True,True,True,True,False,550
+50,34200580,5,False,494027,C,1,[492942],1085.0,False,True,True,True,True,False,550
+50,34200580,5,False,494027,C,4,"[492942, 492943, 492992, 493008]",1019.0,False,True,True,True,True,False,550
+52,31007124,0,False,493994,B0_full,1,[493712],282.0,False,True,True,True,True,False,765
+52,31007124,0,False,493994,B0_full,4,"[493712, 493807, 494719, 492391]",187.0,False,True,True,True,True,False,765
+52,31007124,0,False,493994,B0_common,1,[493712],282.0,False,True,True,True,True,False,741
+52,31007124,0,False,493994,B0_common,4,"[493712, 493807, 494719, 492391]",187.0,False,True,True,True,True,False,741
+52,31007124,0,False,493994,U,1,[491960],2034.0,False,True,True,True,True,False,741
+52,31007124,0,False,493994,U,4,"[491960, 492151, 493807, 494063]",69.0,False,True,True,True,True,False,741
+52,31007124,0,False,493994,C,1,[491434],2560.0,False,True,True,True,True,False,741
+52,31007124,0,False,493994,C,4,"[491434, 491437, 491506, 491507]",2487.0,False,True,True,True,True,False,741
+53,36115953,3,False,493975,B0_full,1,[493974],1.0,True,True,True,True,True,False,754
+53,36115953,3,False,493975,B0_full,4,"[493974, 493775, 493191, 493161]",1.0,True,True,True,True,True,False,754
+53,36115953,3,False,493975,B0_common,1,[493974],1.0,True,True,True,True,True,False,725
+53,36115953,3,False,493975,B0_common,4,"[493974, 493775, 493191, 493652]",1.0,True,True,True,True,True,False,725
+53,36115953,3,False,493975,U,1,[494150],175.0,False,True,True,True,True,False,725
+53,36115953,3,False,493975,U,4,"[494150, 494894, 494911, 493974]",1.0,True,True,True,True,True,False,725
+53,36115953,3,False,493975,C,1,[493223],752.0,False,True,True,True,True,False,725
+53,36115953,3,False,493975,C,4,"[493223, 493228, 493232, 493413]",562.0,False,True,True,True,True,False,725
+54,36212203,5,False,493968,B0_full,1,[492397],1571.0,False,True,True,True,True,False,904
+54,36212203,5,False,493968,B0_full,4,"[492397, 492827, 492824, 494142]",174.0,False,True,True,True,True,False,904
+54,36212203,5,False,493968,B0_common,1,[492397],1571.0,False,True,True,True,True,False,880
+54,36212203,5,False,493968,B0_common,4,"[492397, 492827, 492824, 494142]",174.0,False,True,True,True,True,False,880
+54,36212203,5,False,493968,U,1,[492397],1571.0,False,True,True,True,True,False,880
+54,36212203,5,False,493968,U,4,"[492397, 492827, 493233, 494147]",179.0,False,True,True,True,True,False,880
+54,36212203,5,False,493968,C,1,[492397],1571.0,False,True,True,True,True,False,880
+54,36212203,5,False,493968,C,4,"[492397, 492827, 493233, 494147]",179.0,False,True,True,True,True,False,880
+55,36015383,0,False,493953,B0_full,1,[490948],3005.0,False,True,True,True,True,False,1711
+55,36015383,0,False,493953,B0_full,4,"[490948, 493990, 491836, 493320]",37.0,False,True,True,True,True,False,1711
+55,36015383,0,False,493953,B0_common,1,[493990],37.0,False,True,True,True,True,False,1667
+55,36015383,0,False,493953,B0_common,4,"[493990, 491836, 493320, 493487]",37.0,False,True,True,True,True,False,1667
+55,36015383,0,False,493953,U,1,[491829],2124.0,False,True,True,True,True,False,1667
+55,36015383,0,False,493953,U,4,"[491829, 491830, 491996, 494274]",321.0,False,True,True,True,True,False,1667
+55,36015383,0,False,493953,C,1,[491829],2124.0,False,True,True,True,True,False,1667
+55,36015383,0,False,493953,C,4,"[491829, 491830, 491996, 492211]",1742.0,False,True,True,True,True,False,1667
+56,31014672,2,True,493939,B0_full,1,[493618],321.0,False,True,True,True,True,False,306
+56,31014672,2,True,493939,B0_full,4,"[493618, 493619, 493976, 494694]",37.0,False,True,True,True,True,False,306
+56,31014672,2,True,493939,B0_common,1,[493976],37.0,False,True,True,True,True,False,281
+56,31014672,2,True,493939,B0_common,4,"[493976, 494694, 494672, 494696]",37.0,False,True,True,True,True,False,281
+56,31014672,2,True,493939,U,1,[494730],791.0,False,True,True,True,True,False,281
+56,31014672,2,True,493939,U,4,"[494730, 494748, 494671, 494425]",486.0,False,True,True,True,True,False,281
+56,31014672,2,True,493939,C,1,[494414],475.0,False,True,True,True,True,False,281
+56,31014672,2,True,493939,C,4,"[494414, 494718, 494721, 494723]",475.0,False,True,True,True,True,False,281
+60,33200664,5,False,493906,B0_full,1,[493807],99.0,False,True,True,True,True,False,1328
+60,33200664,5,False,493906,B0_full,4,"[493807, 493806, 493805, 494322]",99.0,False,True,True,True,True,False,1328
+60,33200664,5,False,493906,B0_common,1,[493807],99.0,False,True,True,True,True,False,1304
+60,33200664,5,False,493906,B0_common,4,"[493807, 493806, 493805, 494322]",99.0,False,True,True,True,True,False,1304
+60,33200664,5,False,493906,U,1,[493848],58.0,False,True,True,True,True,False,1304
+60,33200664,5,False,493906,U,4,"[493848, 494555, 494583, 494585]",58.0,False,True,True,True,True,False,1304
+60,33200664,5,False,493906,C,1,[493848],58.0,False,True,True,True,True,False,1304
+60,33200664,5,False,493906,C,4,"[493848, 493996, 494050, 494054]",58.0,False,True,True,True,True,False,1304
+63,31013760,1,False,493823,B0_full,1,[493939],116.0,False,True,True,True,True,False,565
+63,31013760,1,False,493823,B0_full,4,"[493939, 493803, 494187, 494126]",20.0,False,True,True,True,True,False,565
+63,31013760,1,False,493823,B0_common,1,[493939],116.0,False,True,True,True,True,False,518
+63,31013760,1,False,493823,B0_common,4,"[493939, 493803, 494187, 494126]",20.0,False,True,True,True,True,False,518
+63,31013760,1,False,493823,U,1,[493549],274.0,False,True,True,True,True,False,518
+63,31013760,1,False,493823,U,4,"[493549, 494895, 494509, 493367]",274.0,False,True,True,True,True,False,518
+63,31013760,1,False,493823,C,1,[492305],1518.0,False,True,True,True,True,False,518
+63,31013760,1,False,493823,C,4,"[492305, 493362, 493549, 494509]",274.0,False,True,True,True,True,False,518
+65,33200829,0,False,493758,B0_full,1,[490965],2793.0,False,True,True,True,True,False,2335
+65,33200829,0,False,493758,B0_full,4,"[490965, 491040, 491257, 490963]",2501.0,False,True,True,True,True,False,2335
+65,33200829,0,False,493758,B0_common,1,[491257],2501.0,False,True,True,True,True,False,2295
+65,33200829,0,False,493758,B0_common,4,"[491257, 491659, 491261, 491278]",2099.0,False,True,True,True,True,False,2295
+65,33200829,0,False,493758,U,1,[493089],669.0,False,True,True,True,True,False,2295
+65,33200829,0,False,493758,U,4,"[493089, 494483, 493157, 494481]",601.0,False,True,True,True,True,False,2295
+65,33200829,0,False,493758,C,1,[491534],2224.0,False,True,True,True,True,False,2295
+65,33200829,0,False,493758,C,4,"[491534, 491652, 491737, 491738]",2020.0,False,True,True,True,True,False,2295
+67,36314895,5,False,493721,B0_full,1,[492876],845.0,False,True,True,True,True,False,1651
+67,36314895,5,False,493721,B0_full,4,"[492876, 492897, 494078, 494647]",357.0,False,True,True,True,True,False,1651
+67,36314895,5,False,493721,B0_common,1,[492876],845.0,False,True,True,True,True,False,1579
+67,36314895,5,False,493721,B0_common,4,"[492876, 492897, 494078, 494647]",357.0,False,True,True,True,True,False,1579
+67,36314895,5,False,493721,U,1,[490958],2763.0,False,True,True,True,True,False,1579
+67,36314895,5,False,493721,U,4,"[490958, 490960, 490975, 490976]",2745.0,False,True,True,True,True,False,1579
+67,36314895,5,False,493721,C,1,[490958],2763.0,False,True,True,True,True,False,1579
+67,36314895,5,False,493721,C,4,"[490958, 490960, 490975, 490976]",2745.0,False,True,True,True,True,False,1579
+68,31704073,0,False,493717,B0_full,1,[493645],72.0,False,True,True,True,True,False,2005
+68,31704073,0,False,493717,B0_full,4,"[493645, 494820, 494821, 493733]",16.0,False,True,True,True,True,False,2005
+68,31704073,0,False,493717,B0_common,1,[493645],72.0,False,True,True,True,True,False,1975
+68,31704073,0,False,493717,B0_common,4,"[493645, 494820, 494821, 493733]",16.0,False,True,True,True,True,False,1975
+68,31704073,0,False,493717,U,1,[492904],813.0,False,True,True,True,True,False,1975
+68,31704073,0,False,493717,U,4,"[492904, 493286, 493684, 495108]",33.0,False,True,True,True,True,False,1975
+68,31704073,0,False,493717,C,1,[492904],813.0,False,True,True,True,True,False,1975
+68,31704073,0,False,493717,C,4,"[492904, 493237, 493286, 493684]",33.0,False,True,True,True,True,False,1975
+70,36003960,0,False,493649,B0_full,1,[493905],256.0,False,True,True,True,True,False,424
+70,36003960,0,False,493649,B0_full,4,"[493905, 494054, 494289, 492872]",256.0,False,True,True,True,True,False,424
+70,36003960,0,False,493649,B0_common,1,[493905],256.0,False,True,True,True,True,False,378
+70,36003960,0,False,493649,B0_common,4,"[493905, 494054, 494289, 492872]",256.0,False,True,True,True,True,False,378
+70,36003960,0,False,493649,U,1,[492848],801.0,False,True,True,True,True,False,378
+70,36003960,0,False,493649,U,4,"[492848, 492849, 493401, 494888]",248.0,False,True,True,True,True,False,378
+70,36003960,0,False,493649,C,1,[492848],801.0,False,True,True,True,True,False,378
+70,36003960,0,False,493649,C,4,"[492848, 492849, 493401, 494888]",248.0,False,True,True,True,True,False,378
+71,33201019,0,False,493643,B0_full,1,[491092],2551.0,False,True,True,True,True,False,523
+71,33201019,0,False,493643,B0_full,4,"[491092, 492087, 494639, 492269]",996.0,False,True,True,True,True,False,523
+71,33201019,0,False,493643,B0_common,1,[492087],1556.0,False,True,True,True,True,False,489
+71,33201019,0,False,493643,B0_common,4,"[492087, 494639, 492269, 492271]",996.0,False,True,True,True,True,False,489
+71,33201019,0,False,493643,U,1,[491093],2550.0,False,True,True,True,True,False,489
+71,33201019,0,False,493643,U,4,"[491093, 491323, 492267, 492268]",1375.0,False,True,True,True,True,False,489
+71,33201019,0,False,493643,C,1,[491093],2550.0,False,True,True,True,True,False,489
+71,33201019,0,False,493643,C,4,"[491093, 491320, 491323, 491791]",1852.0,False,True,True,True,True,False,489
+75,36307839,0,False,493502,B0_full,1,[493308],194.0,False,True,True,True,False,False,122
+75,36307839,0,False,493502,B0_full,4,"[493308, 493781, 493638, 493304]",136.0,False,True,True,True,False,False,122
+75,36307839,0,False,493502,B0_common,1,[493781],279.0,False,True,True,True,False,False,98
+75,36307839,0,False,493502,B0_common,4,"[493781, 494308, 494845, 493789]",279.0,False,True,True,True,False,False,98
+75,36307839,0,False,493502,U,1,[494845],1343.0,False,True,True,True,False,False,98
+75,36307839,0,False,493502,U,4,"[494845, 494477, 495180, 495174]",975.0,False,True,True,True,False,False,98
+75,36307839,0,False,493502,C,1,[493809],307.0,False,True,True,True,False,False,98
+75,36307839,0,False,493502,C,4,"[493809, 494845, 494477, 493807]",305.0,False,True,True,True,False,False,98
+77,36115953,0,False,493437,B0_full,1,[493974],537.0,False,True,True,True,True,False,754
+77,36115953,0,False,493437,B0_full,4,"[493974, 493775, 493191, 493161]",246.0,False,True,True,True,True,False,754
+77,36115953,0,False,493437,B0_common,1,[493974],537.0,False,True,True,True,True,False,725
+77,36115953,0,False,493437,B0_common,4,"[493974, 493775, 493191, 493652]",215.0,False,True,True,True,True,False,725
+77,36115953,0,False,493437,U,1,[494150],713.0,False,True,True,True,True,False,725
+77,36115953,0,False,493437,U,4,"[494150, 494894, 494911, 493974]",537.0,False,True,True,True,True,False,725
+77,36115953,0,False,493437,C,1,[493223],214.0,False,True,True,True,True,False,725
+77,36115953,0,False,493437,C,4,"[493223, 493228, 493232, 493413]",24.0,False,True,True,True,True,False,725
+78,36008988,5,False,493427,B0_full,1,[493215],212.0,False,True,True,True,True,False,733
+78,36008988,5,False,493427,B0_full,4,"[493215, 492965, 491913, 493257]",170.0,False,True,True,True,True,False,733
+78,36008988,5,False,493427,B0_common,1,[493215],212.0,False,True,True,True,True,False,685
+78,36008988,5,False,493427,B0_common,4,"[493215, 491913, 493257, 493311]",116.0,False,True,True,True,True,False,685
+78,36008988,5,False,493427,U,1,[494812],1385.0,False,True,True,True,True,False,685
+78,36008988,5,False,493427,U,4,"[494812, 493395, 495199, 493189]",32.0,False,True,True,True,True,False,685
+78,36008988,5,False,493427,C,1,[493301],126.0,False,True,True,True,True,False,685
+78,36008988,5,False,493427,C,4,"[493301, 493395, 493905, 493984]",32.0,False,True,True,True,True,False,685
+79,36101547,0,False,493402,B0_full,1,[493398],4.0,True,True,True,True,False,False,91
+79,36101547,0,False,493402,B0_full,4,"[493398, 491865, 493526, 492775]",4.0,True,True,True,True,False,False,91
+79,36101547,0,False,493402,B0_common,1,[493526],124.0,False,True,True,True,False,False,56
+79,36101547,0,False,493402,B0_common,4,"[493526, 493501, 493668, 493643]",99.0,False,True,True,True,False,False,56
+79,36101547,0,False,493402,U,1,[493495],93.0,False,True,True,True,False,False,56
+79,36101547,0,False,493402,U,4,"[493495, 493643, 493667, 493475]",73.0,False,True,True,True,False,False,56
+79,36101547,0,False,493402,C,1,[493525],123.0,False,True,True,True,False,False,56
+79,36101547,0,False,493402,C,4,"[493525, 493526, 493667, 493495]",93.0,False,True,True,True,False,False,56
+80,35100289,5,False,493381,B0_full,1,[493734],353.0,False,True,True,True,True,False,1582
+80,35100289,5,False,493381,B0_full,4,"[493734, 493733, 493748, 493923]",352.0,False,True,True,True,True,False,1582
+80,35100289,5,False,493381,B0_common,1,[493734],353.0,False,True,True,True,True,False,1544
+80,35100289,5,False,493381,B0_common,4,"[493734, 493733, 493748, 493923]",352.0,False,True,True,True,True,False,1544
+80,35100289,5,False,493381,U,1,[491514],1867.0,False,True,True,True,True,False,1544
+80,35100289,5,False,493381,U,4,"[491514, 492874, 493661, 494514]",280.0,False,True,True,True,True,False,1544
+80,35100289,5,False,493381,C,1,[491514],1867.0,False,True,True,True,True,False,1544
+80,35100289,5,False,493381,C,4,"[491514, 491922, 491943, 492186]",1195.0,False,True,True,True,True,False,1544
+82,36301995,1,False,493373,B0_full,1,[491095],2278.0,False,True,True,True,True,False,807
+82,36301995,1,False,493373,B0_full,4,"[491095, 493352, 492928, 491936]",21.0,False,True,True,True,True,False,807
+82,36301995,1,False,493373,B0_common,1,[493352],21.0,False,True,True,True,True,False,776
+82,36301995,1,False,493373,B0_common,4,"[493352, 492928, 491936, 493615]",21.0,False,True,True,True,True,False,776
+82,36301995,1,False,493373,U,1,[491724],1649.0,False,True,True,True,True,False,776
+82,36301995,1,False,493373,U,4,"[491724, 491734, 491951, 492927]",446.0,False,True,True,True,True,False,776
+82,36301995,1,False,493373,C,1,[491724],1649.0,False,True,True,True,True,False,776
+82,36301995,1,False,493373,C,4,"[491724, 491725, 491734, 491951]",1422.0,False,True,True,True,True,False,776
+83,36314346,5,False,493363,B0_full,1,[490955],2408.0,False,True,True,True,True,False,1856
+83,36314346,5,False,493363,B0_full,4,"[490955, 490954, 490956, 493499]",136.0,False,True,True,True,True,False,1856
+83,36314346,5,False,493363,B0_common,1,[493499],136.0,False,True,True,True,True,False,1819
+83,36314346,5,False,493363,B0_common,4,"[493499, 491002, 491001, 493488]",125.0,False,True,True,True,True,False,1819
+83,36314346,5,False,493363,U,1,[494405],1042.0,False,True,True,True,True,False,1819
+83,36314346,5,False,493363,U,4,"[494405, 494512, 494831, 495013]",1042.0,False,True,True,True,True,False,1819
+83,36314346,5,False,493363,C,1,[491486],1877.0,False,True,True,True,True,False,1819
+83,36314346,5,False,493363,C,4,"[491486, 491751, 491752, 491755]",1608.0,False,True,True,True,True,False,1819
+84,36007909,2,False,493358,B0_full,1,[494069],711.0,False,True,True,True,True,False,756
+84,36007909,2,False,493358,B0_full,4,"[494069, 493997, 494261, 493949]",591.0,False,True,True,True,True,False,756
+84,36007909,2,False,493358,B0_common,1,[494069],711.0,False,True,True,True,True,False,732
+84,36007909,2,False,493358,B0_common,4,"[494069, 493997, 494261, 493949]",591.0,False,True,True,True,True,False,732
+84,36007909,2,False,493358,U,1,[492944],414.0,False,True,True,True,True,False,732
+84,36007909,2,False,493358,U,4,"[492944, 493382, 493689, 493664]",24.0,False,True,True,True,True,False,732
+84,36007909,2,False,493358,C,1,[492944],414.0,False,True,True,True,True,False,732
+84,36007909,2,False,493358,C,4,"[492944, 493375, 493382, 493401]",17.0,False,True,True,True,True,False,732
+85,36008148,5,False,493333,B0_full,1,[492560],773.0,False,True,True,True,True,False,839
+85,36008148,5,False,493333,B0_full,4,"[492560, 492564, 492561, 491095]",769.0,False,True,True,True,True,False,839
+85,36008148,5,False,493333,B0_common,1,[492560],773.0,False,True,True,True,True,False,815
+85,36008148,5,False,493333,B0_common,4,"[492560, 492564, 492561, 492569]",764.0,False,True,True,True,True,False,815
+85,36008148,5,False,493333,U,1,[491847],1486.0,False,True,True,True,True,False,815
+85,36008148,5,False,493333,U,4,"[491847, 491853, 492235, 492237]",1096.0,False,True,True,True,True,False,815
+85,36008148,5,False,493333,C,1,[491319],2014.0,False,True,True,True,True,False,815
+85,36008148,5,False,493333,C,4,"[491319, 491488, 491583, 491585]",1748.0,False,True,True,True,True,False,815
+86,36113654,0,False,493307,B0_full,1,[492914],393.0,False,True,True,True,True,False,1479
+86,36113654,0,False,493307,B0_full,4,"[492914, 493595, 493520, 493057]",213.0,False,True,True,True,True,False,1479
+86,36113654,0,False,493307,B0_common,1,[492914],393.0,False,True,True,True,True,False,1453
+86,36113654,0,False,493307,B0_common,4,"[492914, 493595, 493520, 493057]",213.0,False,True,True,True,True,False,1453
+86,36113654,0,False,493307,U,1,[492130],1177.0,False,True,True,True,True,False,1453
+86,36113654,0,False,493307,U,4,"[492130, 492688, 493355, 493379]",48.0,False,True,True,True,True,False,1453
+86,36113654,0,False,493307,C,1,[492130],1177.0,False,True,True,True,True,False,1453
+86,36113654,0,False,493307,C,4,"[492130, 492276, 492367, 492589]",718.0,False,True,True,True,True,False,1453
+88,36010554,0,False,493211,B0_full,1,[490954],2257.0,False,True,True,True,True,False,1092
+88,36010554,0,False,493211,B0_full,4,"[490954, 491262, 491269, 491582]",1629.0,False,True,True,True,True,False,1092
+88,36010554,0,False,493211,B0_common,1,[491262],1949.0,False,True,True,True,True,False,1068
+88,36010554,0,False,493211,B0_common,4,"[491262, 491269, 491582, 491195]",1629.0,False,True,True,True,True,False,1068
+88,36010554,0,False,493211,U,1,[491195],2016.0,False,True,True,True,True,False,1068
+88,36010554,0,False,493211,U,4,"[491195, 491293, 494197, 494198]",986.0,False,True,True,True,True,False,1068
+88,36010554,0,False,493211,C,1,[491171],2040.0,False,True,True,True,True,False,1068
+88,36010554,0,False,493211,C,4,"[491171, 491190, 491195, 491286]",1925.0,False,True,True,True,True,False,1068
+89,36301579,0,False,493180,B0_full,1,[494415],1235.0,False,True,True,True,True,False,494
+89,36301579,0,False,493180,B0_full,4,"[494415, 494439, 494798, 494424]",1235.0,False,True,True,True,True,False,494
+89,36301579,0,False,493180,B0_common,1,[494415],1235.0,False,True,True,True,True,False,470
+89,36301579,0,False,493180,B0_common,4,"[494415, 494439, 494798, 494424]",1235.0,False,True,True,True,True,False,470
+89,36301579,0,False,493180,U,1,[494414],1234.0,False,True,True,True,True,False,470
+89,36301579,0,False,493180,U,4,"[494414, 493698, 494669, 494620]",518.0,False,True,True,True,True,False,470
+89,36301579,0,False,493180,C,1,[492584],596.0,False,True,True,True,True,False,470
+89,36301579,0,False,493180,C,4,"[492584, 492703, 492838, 493698]",342.0,False,True,True,True,True,False,470
+91,31009538,1,False,493162,B0_full,1,[491098],2064.0,False,True,True,True,True,False,4273
+91,31009538,1,False,493162,B0_full,4,"[491098, 491097, 494647, 491267]",1485.0,False,True,True,True,True,False,4273
+91,31009538,1,False,493162,B0_common,1,[491098],2064.0,False,True,True,True,True,False,4224
+91,31009538,1,False,493162,B0_common,4,"[491098, 491097, 494647, 491267]",1485.0,False,True,True,True,True,False,4224
+91,31009538,1,False,493162,U,1,[490949],2213.0,False,True,True,True,True,False,4224
+91,31009538,1,False,493162,U,4,"[490949, 491029, 491030, 491036]",2126.0,False,True,True,True,True,False,4224
+91,31009538,1,False,493162,C,1,[490949],2213.0,False,True,True,True,True,False,4224
+91,31009538,1,False,493162,C,4,"[490949, 491029, 491030, 491036]",2126.0,False,True,True,True,True,False,4224
+94,36113617,6,False,493110,B0_full,1,[493399],289.0,False,True,True,True,True,False,199
+94,36113617,6,False,493110,B0_full,4,"[493399, 492871, 492823, 493068]",42.0,False,True,True,True,True,False,199
+94,36113617,6,False,493110,B0_common,1,[493399],289.0,False,True,True,True,True,False,175
+94,36113617,6,False,493110,B0_common,4,"[493399, 493569, 493614, 493615]",289.0,False,True,True,True,True,False,175
+94,36113617,6,False,493110,U,1,[493593],483.0,False,True,True,True,True,False,175
+94,36113617,6,False,493110,U,4,"[493593, 494025, 494481, 495106]",483.0,False,True,True,True,True,False,175
+94,36113617,6,False,493110,C,1,[493502],392.0,False,True,True,True,True,False,175
+94,36113617,6,False,493110,C,4,"[493502, 493570, 493593, 493928]",392.0,False,True,True,True,True,False,175
+95,36315137,3,True,493068,B0_full,1,[495174],2106.0,False,True,True,True,True,False,1446
+95,36315137,3,True,493068,B0_full,4,"[495174, 495178, 495137, 495125]",2057.0,False,True,True,True,True,False,1446
+95,36315137,3,True,493068,B0_common,1,[495174],2106.0,False,True,True,True,True,False,1419
+95,36315137,3,True,493068,B0_common,4,"[495174, 495178, 495137, 495125]",2057.0,False,True,True,True,True,False,1419
+95,36315137,3,True,493068,U,1,[492846],222.0,False,True,True,True,True,False,1419
+95,36315137,3,True,493068,U,4,"[492846, 494130, 494502, 494550]",222.0,False,True,True,True,True,False,1419
+95,36315137,3,True,493068,C,1,[492735],333.0,False,True,True,True,True,False,1419
+95,36315137,3,True,493068,C,4,"[492735, 492746, 492770, 492846]",222.0,False,True,True,True,True,False,1419
+97,31100492,3,False,493029,B0_full,1,[490980],2049.0,False,True,True,True,True,False,3092
+97,31100492,3,False,493029,B0_full,4,"[490980, 490956, 490955, 492274]",755.0,False,True,True,True,True,False,3092
+97,31100492,3,False,493029,B0_common,1,[490980],2049.0,False,True,True,True,True,False,3025
+97,31100492,3,False,493029,B0_common,4,"[490980, 490956, 490955, 490968]",2049.0,False,True,True,True,True,False,3025
+97,31100492,3,False,493029,U,1,[490954],2075.0,False,True,True,True,True,False,3025
+97,31100492,3,False,493029,U,4,"[490954, 490955, 491001, 492550]",479.0,False,True,True,True,True,False,3025
+97,31100492,3,False,493029,C,1,[490954],2075.0,False,True,True,True,True,False,3025
+97,31100492,3,False,493029,C,4,"[490954, 490955, 490979, 491001]",2028.0,False,True,True,True,True,False,3025
+98,36001411,0,False,493023,B0_full,1,[495037],2014.0,False,True,True,True,True,False,480
+98,36001411,0,False,493023,B0_full,4,"[495037, 495036, 494340, 495105]",1317.0,False,True,True,True,True,False,480
+98,36001411,0,False,493023,B0_common,1,[495037],2014.0,False,True,True,True,True,False,432
+98,36001411,0,False,493023,B0_common,4,"[495037, 495036, 495105, 493306]",283.0,False,True,True,True,True,False,432
+98,36001411,0,False,493023,U,1,[491841],1182.0,False,True,True,True,True,False,432
+98,36001411,0,False,493023,U,4,"[491841, 492245, 492660, 492927]",96.0,False,True,True,True,True,False,432
+98,36001411,0,False,493023,C,1,[491841],1182.0,False,True,True,True,True,False,432
+98,36001411,0,False,493023,C,4,"[491841, 491870, 491893, 491910]",1113.0,False,True,True,True,True,False,432
+99,31016197,0,False,493018,B0_full,1,[490975],2043.0,False,True,True,True,True,False,1183
+99,31016197,0,False,493018,B0_full,4,"[490975, 490974, 491720, 492176]",842.0,False,True,True,True,True,False,1183
+99,31016197,0,False,493018,B0_common,1,[491720],1298.0,False,True,True,True,True,False,1159
+99,31016197,0,False,493018,B0_common,4,"[491720, 492176, 491718, 492296]",722.0,False,True,True,True,True,False,1159
+99,31016197,0,False,493018,U,1,[491104],1914.0,False,True,True,True,True,False,1159
+99,31016197,0,False,493018,U,4,"[491104, 491224, 491225, 491226]",1792.0,False,True,True,True,True,False,1159
+99,31016197,0,False,493018,C,1,[491100],1918.0,False,True,True,True,True,False,1159
+99,31016197,0,False,493018,C,4,"[491100, 491104, 491221, 491224]",1794.0,False,True,True,True,True,False,1159
+100,35200311,1,False,493004,B0_full,1,[491095],1909.0,False,True,True,True,True,False,2428
+100,35200311,1,False,493004,B0_full,4,"[491095, 491208, 491337, 491232]",1667.0,False,True,True,True,True,False,2428
+100,35200311,1,False,493004,B0_common,1,[491095],1909.0,False,True,True,True,True,False,2394
+100,35200311,1,False,493004,B0_common,4,"[491095, 491208, 491337, 491232]",1667.0,False,True,True,True,True,False,2394
+100,35200311,1,False,493004,U,1,[491094],1910.0,False,True,True,True,True,False,2394
+100,35200311,1,False,493004,U,4,"[491094, 491095, 492394, 492802]",202.0,False,True,True,True,True,False,2394
+100,35200311,1,False,493004,C,1,[491032],1972.0,False,True,True,True,True,False,2394
+100,35200311,1,False,493004,C,4,"[491032, 491094, 491095, 491216]",1788.0,False,True,True,True,True,False,2394
+102,31703108,5,False,492983,B0_full,1,[490974],2009.0,False,True,True,True,True,False,1442
+102,31703108,5,False,492983,B0_full,4,"[490974, 490973, 490978, 491091]",1892.0,False,True,True,True,True,False,1442
+102,31703108,5,False,492983,B0_common,1,[491091],1892.0,False,True,True,True,True,False,1375
+102,31703108,5,False,492983,B0_common,4,"[491091, 491209, 491222, 491225]",1758.0,False,True,True,True,True,False,1375
+102,31703108,5,False,492983,U,1,[492632],351.0,False,True,True,True,True,False,1375
+102,31703108,5,False,492983,U,4,"[492632, 492824, 492828, 494159]",155.0,False,True,True,True,True,False,1375
+102,31703108,5,False,492983,C,1,[491104],1879.0,False,True,True,True,True,False,1375
+102,31703108,5,False,492983,C,4,"[491104, 491269, 492562, 492631]",352.0,False,True,True,True,True,False,1375
+104,36301063,0,False,492952,B0_full,1,[493996],1044.0,False,True,True,True,False,False,272
+104,36301063,0,False,492952,B0_full,4,"[493996, 494100, 491744, 493980]",1028.0,False,True,True,True,False,False,272
+104,36301063,0,False,492952,B0_common,1,[493996],1044.0,False,True,True,True,False,False,230
+104,36301063,0,False,492952,B0_common,4,"[493996, 494100, 493980, 493739]",787.0,False,True,True,True,False,False,230
+104,36301063,0,False,492952,U,1,[493646],694.0,False,True,True,True,False,False,230
+104,36301063,0,False,492952,U,4,"[493646, 493567, 493648, 493374]",422.0,False,True,True,True,False,False,230
+104,36301063,0,False,492952,C,1,[493646],694.0,False,True,True,True,False,False,230
+104,36301063,0,False,492952,C,4,"[493646, 494077, 494100, 493567]",615.0,False,True,True,True,False,False,230
+108,36010190,4,True,492858,B0_full,1,[494675],1817.0,False,True,True,True,True,False,1406
+108,36010190,4,True,492858,B0_full,4,"[494675, 490959, 491216, 494122]",1264.0,False,True,True,True,True,False,1406
+108,36010190,4,True,492858,B0_common,1,[494675],1817.0,False,True,True,True,True,False,1371
+108,36010190,4,True,492858,B0_common,4,"[494675, 491216, 494122, 494869]",1264.0,False,True,True,True,True,False,1371
+108,36010190,4,True,492858,U,1,[491030],1828.0,False,True,True,True,True,False,1371
+108,36010190,4,True,492858,U,4,"[491030, 492588, 492826, 492874]",16.0,False,True,True,True,True,False,1371
+108,36010190,4,True,492858,C,1,[491030],1828.0,False,True,True,True,True,False,1371
+108,36010190,4,True,492858,C,4,"[491030, 491311, 491744, 491996]",862.0,False,True,True,True,True,False,1371
+109,34400601,5,False,492810,B0_full,1,[491023],1787.0,False,True,True,True,True,False,671
+109,34400601,5,False,492810,B0_full,4,"[491023, 491095, 492135, 493333]",523.0,False,True,True,True,True,False,671
+109,34400601,5,False,492810,B0_common,1,[492135],675.0,False,True,True,True,True,False,638
+109,34400601,5,False,492810,B0_common,4,"[492135, 493333, 492319, 491218]",491.0,False,True,True,True,True,False,638
+109,34400601,5,False,492810,U,1,[491218],1592.0,False,True,True,True,True,False,638
+109,34400601,5,False,492810,U,4,"[491218, 491720, 492397, 493308]",413.0,False,True,True,True,True,False,638
+109,34400601,5,False,492810,C,1,[491174],1636.0,False,True,True,True,True,False,638
+109,34400601,5,False,492810,C,4,"[491174, 491218, 491720, 491721]",1089.0,False,True,True,True,True,False,638
+111,31009538,1,False,492796,B0_full,1,[491098],1698.0,False,True,True,True,True,False,4273
+111,31009538,1,False,492796,B0_full,4,"[491098, 491097, 494647, 491267]",1529.0,False,True,True,True,True,False,4273
+111,31009538,1,False,492796,B0_common,1,[491098],1698.0,False,True,True,True,True,False,4224
+111,31009538,1,False,492796,B0_common,4,"[491098, 491097, 494647, 491267]",1529.0,False,True,True,True,True,False,4224
+111,31009538,1,False,492796,U,1,[490949],1847.0,False,True,True,True,True,False,4224
+111,31009538,1,False,492796,U,4,"[490949, 491029, 491030, 491036]",1760.0,False,True,True,True,True,False,4224
+111,31009538,1,False,492796,C,1,[490949],1847.0,False,True,True,True,True,False,4224
+111,31009538,1,False,492796,C,4,"[490949, 491029, 491030, 491036]",1760.0,False,True,True,True,True,False,4224
+112,36015515,3,False,492779,B0_full,1,[493056],277.0,False,True,True,True,True,False,1861
+112,36015515,3,False,492779,B0_full,4,"[493056, 493615, 493176, 493608]",277.0,False,True,True,True,True,False,1861
+112,36015515,3,False,492779,B0_common,1,[493056],277.0,False,True,True,True,True,False,1837
+112,36015515,3,False,492779,B0_common,4,"[493056, 493615, 493176, 493608]",277.0,False,True,True,True,True,False,1837
+112,36015515,3,False,492779,U,1,[491244],1535.0,False,True,True,True,True,False,1837
+112,36015515,3,False,492779,U,4,"[491244, 491249, 491255, 491274]",1505.0,False,True,True,True,True,False,1837
+112,36015515,3,False,492779,C,1,[491244],1535.0,False,True,True,True,True,False,1837
+112,36015515,3,False,492779,C,4,"[491244, 491249, 491255, 491274]",1505.0,False,True,True,True,True,False,1837
+113,31704782,0,False,492778,B0_full,1,[492753],25.0,False,True,True,True,True,False,2279
+113,31704782,0,False,492778,B0_full,4,"[492753, 494749, 493308, 495197]",25.0,False,True,True,True,True,False,2279
+113,31704782,0,False,492778,B0_common,1,[492753],25.0,False,True,True,True,True,False,2255
+113,31704782,0,False,492778,B0_common,4,"[492753, 494749, 493308, 495197]",25.0,False,True,True,True,True,False,2255
+113,31704782,0,False,492778,U,1,[491504],1274.0,False,True,True,True,True,False,2255
+113,31704782,0,False,492778,U,4,"[491504, 491547, 492752, 492802]",24.0,False,True,True,True,True,False,2255
+113,31704782,0,False,492778,C,1,[491270],1508.0,False,True,True,True,True,False,2255
+113,31704782,0,False,492778,C,4,"[491270, 491504, 491547, 491695]",1083.0,False,True,True,True,True,False,2255
+114,36304898,2,False,492776,B0_full,1,[490951],1825.0,False,True,True,True,True,False,718
+114,36304898,2,False,492776,B0_full,4,"[490951, 490956, 490999, 490953]",1777.0,False,True,True,True,True,False,718
+114,36304898,2,False,492776,B0_common,1,[490951],1825.0,False,True,True,True,True,False,682
+114,36304898,2,False,492776,B0_common,4,"[490951, 490956, 490999, 490953]",1777.0,False,True,True,True,True,False,682
+114,36304898,2,False,492776,U,1,[490951],1825.0,False,True,True,True,True,False,682
+114,36304898,2,False,492776,U,4,"[490951, 490956, 491031, 492896]",120.0,False,True,True,True,True,False,682
+114,36304898,2,False,492776,C,1,[490951],1825.0,False,True,True,True,True,False,682
+114,36304898,2,False,492776,C,4,"[490951, 490953, 490956, 490957]",1819.0,False,True,True,True,True,False,682
+117,36307233,1,False,492758,B0_full,1,[493112],354.0,False,True,True,True,True,False,182
+117,36307233,1,False,492758,B0_full,4,"[493112, 491749, 492894, 493237]",136.0,False,True,True,True,True,False,182
+117,36307233,1,False,492758,B0_common,1,[493112],354.0,False,True,True,True,True,False,158
+117,36307233,1,False,492758,B0_common,4,"[493112, 491749, 492894, 493237]",136.0,False,True,True,True,True,False,158
+117,36307233,1,False,492758,U,1,[491870],888.0,False,True,True,True,True,False,158
+117,36307233,1,False,492758,U,4,"[491870, 492901, 492922, 492903]",143.0,False,True,True,True,True,False,158
+117,36307233,1,False,492758,C,1,[491870],888.0,False,True,True,True,True,False,158
+117,36307233,1,False,492758,C,4,"[491870, 492901, 492922, 492903]",143.0,False,True,True,True,True,False,158
+122,36006776,1,False,492573,B0_full,1,[492541],32.0,False,True,True,True,True,False,2614
+122,36006776,1,False,492573,B0_full,4,"[492541, 494458, 492542, 494503]",31.0,False,True,True,True,True,False,2614
+122,36006776,1,False,492573,B0_common,1,[492541],32.0,False,True,True,True,True,False,2590
+122,36006776,1,False,492573,B0_common,4,"[492541, 494458, 492542, 494503]",31.0,False,True,True,True,True,False,2590
+122,36006776,1,False,492573,U,1,[491037],1536.0,False,True,True,True,True,False,2590
+122,36006776,1,False,492573,U,4,"[491037, 491073, 491098, 491217]",1356.0,False,True,True,True,True,False,2590
+122,36006776,1,False,492573,C,1,[491037],1536.0,False,True,True,True,True,False,2590
+122,36006776,1,False,492573,C,4,"[491037, 491073, 491098, 491217]",1356.0,False,True,True,True,True,False,2590
+123,31815412,5,False,492566,B0_full,1,[493916],1350.0,False,True,True,True,True,False,3264
+123,31815412,5,False,492566,B0_full,4,"[493916, 494420, 491512, 494327]",1054.0,False,True,True,True,True,False,3264
+123,31815412,5,False,492566,B0_common,1,[493916],1350.0,False,True,True,True,True,False,3240
+123,31815412,5,False,492566,B0_common,4,"[493916, 494420, 491512, 494327]",1054.0,False,True,True,True,True,False,3240
+123,31815412,5,False,492566,U,1,[491030],1536.0,False,True,True,True,True,False,3240
+123,31815412,5,False,492566,U,4,"[491030, 492707, 494295, 493523]",141.0,False,True,True,True,True,False,3240
+123,31815412,5,False,492566,C,1,[491005],1561.0,False,True,True,True,True,False,3240
+123,31815412,5,False,492566,C,4,"[491005, 491028, 491029, 491030]",1536.0,False,True,True,True,True,False,3240
+124,36212188,2,False,492542,B0_full,1,[492614],72.0,False,True,True,True,False,False,222
+124,36212188,2,False,492542,B0_full,4,"[492614, 492879, 492615, 492878]",72.0,False,True,True,True,False,False,222
+124,36212188,2,False,492542,B0_common,1,[492614],72.0,False,True,True,True,False,False,196
+124,36212188,2,False,492542,B0_common,4,"[492614, 492879, 492615, 492878]",72.0,False,True,True,True,False,False,196
+124,36212188,2,False,492542,U,1,[492879],337.0,False,True,True,True,False,False,196
+124,36212188,2,False,492542,U,4,"[492879, 492877, 492878, 492684]",142.0,False,True,True,True,False,False,196
+124,36212188,2,False,492542,C,1,[492756],214.0,False,True,True,True,False,False,196
+124,36212188,2,False,492542,C,4,"[492756, 492776, 492877, 492879]",214.0,False,True,True,True,False,False,196
+125,32300334,3,False,492520,B0_full,1,[494458],1938.0,False,True,True,True,True,False,3106
+125,32300334,3,False,492520,B0_full,4,"[494458, 493020, 492592, 494457]",72.0,False,True,True,True,True,False,3106
+125,32300334,3,False,492520,B0_common,1,[494458],1938.0,False,True,True,True,True,False,3067
+125,32300334,3,False,492520,B0_common,4,"[494458, 493020, 492592, 494457]",72.0,False,True,True,True,True,False,3067
+125,32300334,3,False,492520,U,1,[492591],71.0,False,True,True,True,True,False,3067
+125,32300334,3,False,492520,U,4,"[492591, 494457, 493017, 495201]",71.0,False,True,True,True,True,False,3067
+125,32300334,3,False,492520,C,1,[492538],18.0,False,True,True,True,True,False,3067
+125,32300334,3,False,492520,C,4,"[492538, 492591, 493044, 493301]",18.0,False,True,True,True,True,False,3067
+126,36315252,0,False,492517,B0_full,1,[493647],1130.0,False,True,True,True,False,False,676
+126,36315252,0,False,492517,B0_full,4,"[493647, 493689, 493662, 493685]",1130.0,False,True,True,True,False,False,676
+126,36315252,0,False,492517,B0_common,1,[493647],1130.0,False,True,True,True,False,False,652
+126,36315252,0,False,492517,B0_common,4,"[493647, 493689, 493662, 493685]",1130.0,False,True,True,True,False,False,652
+126,36315252,0,False,492517,U,1,[492559],42.0,False,True,True,True,False,False,652
+126,36315252,0,False,492517,U,4,"[492559, 492895, 493094, 493115]",42.0,False,True,True,True,False,False,652
+126,36315252,0,False,492517,C,1,[492559],42.0,False,True,True,True,False,False,652
+126,36315252,0,False,492517,C,4,"[492559, 492895, 492941, 492943]",42.0,False,True,True,True,False,False,652
+127,31703108,1,False,492484,B0_full,1,[490974],1510.0,False,True,True,True,False,False,1442
+127,31703108,1,False,492484,B0_full,4,"[490974, 490973, 490978, 491091]",1393.0,False,True,True,True,False,False,1442
+127,31703108,1,False,492484,B0_common,1,[491091],1393.0,False,True,True,True,False,False,1375
+127,31703108,1,False,492484,B0_common,4,"[491091, 491209, 491222, 491225]",1259.0,False,True,True,True,False,False,1375
+127,31703108,1,False,492484,U,1,[492632],148.0,False,True,True,True,False,False,1375
+127,31703108,1,False,492484,U,4,"[492632, 492824, 492828, 494159]",148.0,False,True,True,True,False,False,1375
+127,31703108,1,False,492484,C,1,[491104],1380.0,False,True,True,True,False,False,1375
+127,31703108,1,False,492484,C,4,"[491104, 491269, 492562, 492631]",78.0,False,True,True,True,False,False,1375
+128,31014032,1,False,492452,B0_full,1,[494263],1811.0,False,True,True,True,True,False,811
+128,31014032,1,False,492452,B0_full,4,"[494263, 493541, 492872, 494262]",420.0,False,True,True,True,True,False,811
+128,31014032,1,False,492452,B0_common,1,[494263],1811.0,False,True,True,True,True,False,787
+128,31014032,1,False,492452,B0_common,4,"[494263, 493541, 492872, 494262]",420.0,False,True,True,True,True,False,787
+128,31014032,1,False,492452,U,1,[492205],247.0,False,True,True,True,True,False,787
+128,31014032,1,False,492452,U,4,"[492205, 492416, 492433, 492446]",6.0,True,True,True,True,True,False,787
+128,31014032,1,False,492452,C,1,[492205],247.0,False,True,True,True,True,False,787
+128,31014032,1,False,492452,C,4,"[492205, 492416, 492433, 492446]",6.0,True,True,True,True,True,False,787
+129,36011845,1,False,492422,B0_full,1,[491222],1200.0,False,True,True,True,True,False,741
+129,36011845,1,False,492422,B0_full,4,"[491222, 491217, 491292, 491267]",1130.0,False,True,True,True,True,False,741
+129,36011845,1,False,492422,B0_common,1,[491222],1200.0,False,True,True,True,True,False,709
+129,36011845,1,False,492422,B0_common,4,"[491222, 491217, 491292, 491267]",1130.0,False,True,True,True,True,False,709
+129,36011845,1,False,492422,U,1,[490989],1433.0,False,True,True,True,True,False,709
+129,36011845,1,False,492422,U,4,"[490989, 490992, 491038, 491247]",1175.0,False,True,True,True,True,False,709
+129,36011845,1,False,492422,C,1,[490989],1433.0,False,True,True,True,True,False,709
+129,36011845,1,False,492422,C,4,"[490989, 490992, 491038, 491247]",1175.0,False,True,True,True,True,False,709
+130,31005917,0,False,492417,B0_full,1,[491437],980.0,False,True,False,True,False,True,18
+130,31005917,0,False,492417,B0_full,4,"[491437, 491436, 491435, 492417]",0.0,True,True,False,True,False,True,18
+130,31005917,0,False,492417,B0_common,1,[],,False,True,False,True,False,True,0
+130,31005917,0,False,492417,B0_common,4,[],,False,True,False,True,False,True,0
+130,31005917,0,False,492417,U,1,[491437],980.0,False,True,False,True,False,True,18
+130,31005917,0,False,492417,U,4,"[491437, 491436, 491435, 492417]",0.0,True,True,False,True,False,True,18
+130,31005917,0,False,492417,C,1,[491437],980.0,False,True,False,True,False,True,18
+130,31005917,0,False,492417,C,4,"[491437, 491436, 491435, 492417]",0.0,True,True,False,True,False,True,18
+131,32300169,1,False,492393,B0_full,1,[492426],33.0,False,True,True,True,True,False,3394
+131,32300169,1,False,492393,B0_full,4,"[492426, 492254, 492331, 492253]",33.0,False,True,True,True,True,False,3394
+131,32300169,1,False,492393,B0_common,1,[492426],33.0,False,True,True,True,True,False,3359
+131,32300169,1,False,492393,B0_common,4,"[492426, 492254, 492331, 492253]",33.0,False,True,True,True,True,False,3359
+131,32300169,1,False,492393,U,1,[491724],669.0,False,True,True,True,True,False,3359
+131,32300169,1,False,492393,U,4,"[491724, 491728, 491747, 493397]",646.0,False,True,True,True,True,False,3359
+131,32300169,1,False,492393,C,1,[491724],669.0,False,True,True,True,True,False,3359
+131,32300169,1,False,492393,C,4,"[491724, 491728, 491747, 492080]",313.0,False,True,True,True,True,False,3359
+132,31009538,5,False,492352,B0_full,1,[491098],1254.0,False,True,True,True,True,False,4273
+132,31009538,5,False,492352,B0_full,4,"[491098, 491097, 494647, 491267]",1085.0,False,True,True,True,True,False,4273
+132,31009538,5,False,492352,B0_common,1,[491098],1254.0,False,True,True,True,True,False,4224
+132,31009538,5,False,492352,B0_common,4,"[491098, 491097, 494647, 491267]",1085.0,False,True,True,True,True,False,4224
+132,31009538,5,False,492352,U,1,[490949],1403.0,False,True,True,True,True,False,4224
+132,31009538,5,False,492352,U,4,"[490949, 491029, 491030, 491036]",1316.0,False,True,True,True,True,False,4224
+132,31009538,5,False,492352,C,1,[490949],1403.0,False,True,True,True,True,False,4224
+132,31009538,5,False,492352,C,4,"[490949, 491029, 491030, 491036]",1316.0,False,True,True,True,True,False,4224
+133,36313865,0,False,492287,B0_full,1,[491726],561.0,False,True,True,True,True,False,1316
+133,36313865,0,False,492287,B0_full,4,"[491726, 492379, 492234, 492851]",53.0,False,True,True,True,True,False,1316
+133,36313865,0,False,492287,B0_common,1,[492379],92.0,False,True,True,True,True,False,1292
+133,36313865,0,False,492287,B0_common,4,"[492379, 492234, 492851, 494316]",53.0,False,True,True,True,True,False,1292
+133,36313865,0,False,492287,U,1,[492252],35.0,False,True,True,True,True,False,1292
+133,36313865,0,False,492287,U,4,"[492252, 492378, 492397, 492405]",35.0,False,True,True,True,True,False,1292
+133,36313865,0,False,492287,C,1,[492233],54.0,False,True,True,True,True,False,1292
+133,36313865,0,False,492287,C,4,"[492233, 492240, 492250, 492252]",35.0,False,True,True,True,True,False,1292
+134,36314887,0,False,492278,B0_full,1,[492926],648.0,False,True,True,True,True,False,825
+134,36314887,0,False,492278,B0_full,4,"[492926, 492992, 492609, 493618]",331.0,False,True,True,True,True,False,825
+134,36314887,0,False,492278,B0_common,1,[492926],648.0,False,True,True,True,True,False,801
+134,36314887,0,False,492278,B0_common,4,"[492926, 492992, 492609, 493618]",331.0,False,True,True,True,True,False,801
+134,36314887,0,False,492278,U,1,[494697],2419.0,False,True,True,True,True,False,801
+134,36314887,0,False,492278,U,4,"[494697, 494695, 492320, 494816]",42.0,False,True,True,True,True,False,801
+134,36314887,0,False,492278,C,1,[492657],379.0,False,True,True,True,True,False,801
+134,36314887,0,False,492278,C,4,"[492657, 492879, 492954, 492991]",379.0,False,True,True,True,True,False,801
+135,36015515,0,False,492267,B0_full,1,[493056],789.0,False,True,True,True,True,False,1861
+135,36015515,0,False,492267,B0_full,4,"[493056, 493615, 493176, 493608]",789.0,False,True,True,True,True,False,1861
+135,36015515,0,False,492267,B0_common,1,[493056],789.0,False,True,True,True,True,False,1837
+135,36015515,0,False,492267,B0_common,4,"[493056, 493615, 493176, 493608]",789.0,False,True,True,True,True,False,1837
+135,36015515,0,False,492267,U,1,[491244],1023.0,False,True,True,True,True,False,1837
+135,36015515,0,False,492267,U,4,"[491244, 491249, 491255, 491274]",993.0,False,True,True,True,True,False,1837
+135,36015515,0,False,492267,C,1,[491244],1023.0,False,True,True,True,True,False,1837
+135,36015515,0,False,492267,C,4,"[491244, 491249, 491255, 491274]",993.0,False,True,True,True,True,False,1837
+137,35200486,1,False,492127,B0_full,1,[490970],1157.0,False,True,True,True,True,False,1756
+137,35200486,1,False,492127,B0_full,4,"[490970, 491951, 494053, 492949]",176.0,False,True,True,True,True,False,1756
+137,35200486,1,False,492127,B0_common,1,[491951],176.0,False,True,True,True,True,False,1732
+137,35200486,1,False,492127,B0_common,4,"[491951, 494053, 492949, 493621]",176.0,False,True,True,True,True,False,1732
+137,35200486,1,False,492127,U,1,[491104],1023.0,False,True,True,True,True,False,1732
+137,35200486,1,False,492127,U,4,"[491104, 492996, 494188, 492419]",292.0,False,True,True,True,True,False,1732
+137,35200486,1,False,492127,C,1,[491104],1023.0,False,True,True,True,True,False,1732
+137,35200486,1,False,492127,C,4,"[491104, 491334, 491337, 491430]",697.0,False,True,True,True,True,False,1732
+138,36316040,0,False,492085,B0_full,1,[490959],1126.0,False,True,True,True,True,False,1177
+138,36316040,0,False,492085,B0_full,4,"[490959, 492089, 492209, 491944]",4.0,True,True,True,True,True,False,1177
+138,36316040,0,False,492085,B0_common,1,[490959],1126.0,False,True,True,True,True,False,1153
+138,36316040,0,False,492085,B0_common,4,"[490959, 492089, 492209, 491944]",4.0,True,True,True,True,True,False,1153
+138,36316040,0,False,492085,U,1,[490950],1135.0,False,True,True,True,True,False,1153
+138,36316040,0,False,492085,U,4,"[490950, 490951, 490958, 490959]",1126.0,False,True,True,True,True,False,1153
+138,36316040,0,False,492085,C,1,[490950],1135.0,False,True,True,True,True,False,1153
+138,36316040,0,False,492085,C,4,"[490950, 490951, 490958, 490959]",1126.0,False,True,True,True,True,False,1153
+139,36311633,5,False,492082,B0_full,1,[494076],1994.0,False,True,True,True,True,False,1847
+139,36311633,5,False,492082,B0_full,4,"[494076, 494075, 492995, 491457]",625.0,False,True,True,True,True,False,1847
+139,36311633,5,False,492082,B0_common,1,[494076],1994.0,False,True,True,True,True,False,1821
+139,36311633,5,False,492082,B0_common,4,"[494076, 494075, 492995, 491457]",625.0,False,True,True,True,True,False,1821
+139,36311633,5,False,492082,U,1,[491234],848.0,False,True,True,True,True,False,1821
+139,36311633,5,False,492082,U,4,"[491234, 491284, 491457, 491936]",146.0,False,True,True,True,True,False,1821
+139,36311633,5,False,492082,C,1,[491173],909.0,False,True,True,True,True,False,1821
+139,36311633,5,False,492082,C,4,"[491173, 491211, 491234, 491243]",839.0,False,True,True,True,True,False,1821
+140,36010554,1,False,492057,B0_full,1,[490954],1103.0,False,True,True,True,True,False,1092
+140,36010554,1,False,492057,B0_full,4,"[490954, 491262, 491269, 491582]",475.0,False,True,True,True,True,False,1092
+140,36010554,1,False,492057,B0_common,1,[491262],795.0,False,True,True,True,True,False,1068
+140,36010554,1,False,492057,B0_common,4,"[491262, 491269, 491582, 491195]",475.0,False,True,True,True,True,False,1068
+140,36010554,1,False,492057,U,1,[491195],862.0,False,True,True,True,True,False,1068
+140,36010554,1,False,492057,U,4,"[491195, 491293, 494197, 494198]",764.0,False,True,True,True,True,False,1068
+140,36010554,1,False,492057,C,1,[491171],886.0,False,True,True,True,True,False,1068
+140,36010554,1,False,492057,C,4,"[491171, 491190, 491195, 491286]",771.0,False,True,True,True,True,False,1068
+142,34200731,8,False,491968,B0_full,1,[490928],1040.0,False,True,True,True,True,False,3059
+142,34200731,8,False,491968,B0_full,4,"[490928, 491246, 491339, 490926]",629.0,False,True,True,True,True,False,3059
+142,34200731,8,False,491968,B0_common,1,[491246],722.0,False,True,True,True,True,False,3035
+142,34200731,8,False,491968,B0_common,4,"[491246, 491339, 494763, 491336]",629.0,False,True,True,True,True,False,3035
+142,34200731,8,False,491968,U,1,[490965],1003.0,False,True,True,True,True,False,3035
+142,34200731,8,False,491968,U,4,"[490965, 491864, 491936, 491937]",31.0,False,True,True,True,True,False,3035
+142,34200731,8,False,491968,C,1,[490965],1003.0,False,True,True,True,True,False,3035
+142,34200731,8,False,491968,C,4,"[490965, 491054, 491080, 491513]",455.0,False,True,True,True,True,False,3035
+144,32301131,1,False,491912,B0_full,1,[491845],67.0,False,True,True,True,True,False,310
+144,32301131,1,False,491912,B0_full,4,"[491845, 491938, 491506, 491697]",26.0,False,True,True,True,True,False,310
+144,32301131,1,False,491912,B0_common,1,[491845],67.0,False,True,True,True,True,False,282
+144,32301131,1,False,491912,B0_common,4,"[491845, 491938, 491506, 491697]",26.0,False,True,True,True,True,False,282
+144,32301131,1,False,491912,U,1,[491506],406.0,False,True,True,True,True,False,282
+144,32301131,1,False,491912,U,4,"[491506, 493712, 491697, 492296]",215.0,False,True,True,True,True,False,282
+144,32301131,1,False,491912,C,1,[491480],432.0,False,True,True,True,True,False,282
+144,32301131,1,False,491912,C,4,"[491480, 491482, 491506, 491691]",221.0,False,True,True,True,True,False,282
+146,35200056,0,False,491862,B0_full,1,[492876],1014.0,False,True,True,True,True,False,1101
+146,35200056,0,False,491862,B0_full,4,"[492876, 490986, 490977, 490976]",876.0,False,True,True,True,True,False,1101
+146,35200056,0,False,491862,B0_common,1,[494360],2498.0,False,True,True,True,True,False,1058
+146,35200056,0,False,491862,B0_common,4,"[494360, 493243, 491699, 491983]",121.0,False,True,True,True,True,False,1058
+146,35200056,0,False,491862,U,1,[491106],756.0,False,True,True,True,True,False,1058
+146,35200056,0,False,491862,U,4,"[491106, 493316, 493402, 494215]",756.0,False,True,True,True,True,False,1058
+146,35200056,0,False,491862,C,1,[491106],756.0,False,True,True,True,True,False,1058
+146,35200056,0,False,491862,C,4,"[491106, 491209, 491259, 491272]",590.0,False,True,True,True,True,False,1058
+147,31009538,1,False,491841,B0_full,1,[491098],743.0,False,True,True,True,True,False,4273
+147,31009538,1,False,491841,B0_full,4,"[491098, 491097, 494647, 491267]",574.0,False,True,True,True,True,False,4273
+147,31009538,1,False,491841,B0_common,1,[491098],743.0,False,True,True,True,True,False,4224
+147,31009538,1,False,491841,B0_common,4,"[491098, 491097, 494647, 491267]",574.0,False,True,True,True,True,False,4224
+147,31009538,1,False,491841,U,1,[490949],892.0,False,True,True,True,True,False,4224
+147,31009538,1,False,491841,U,4,"[490949, 491029, 491030, 491036]",805.0,False,True,True,True,True,False,4224
+147,31009538,1,False,491841,C,1,[490949],892.0,False,True,True,True,True,False,4224
+147,31009538,1,False,491841,C,4,"[490949, 491029, 491030, 491036]",805.0,False,True,True,True,True,False,4224
+150,32300169,4,False,491730,B0_full,1,[492426],696.0,False,True,True,True,True,False,3394
+150,32300169,4,False,491730,B0_full,4,"[492426, 492254, 492331, 492253]",523.0,False,True,True,True,True,False,3394
+150,32300169,4,False,491730,B0_common,1,[492426],696.0,False,True,True,True,True,False,3359
+150,32300169,4,False,491730,B0_common,4,"[492426, 492254, 492331, 492253]",523.0,False,True,True,True,True,False,3359
+150,32300169,4,False,491730,U,1,[491724],6.0,True,True,True,True,True,False,3359
+150,32300169,4,False,491730,U,4,"[491724, 491728, 491747, 493397]",2.0,True,True,True,True,True,False,3359
+150,32300169,4,False,491730,C,1,[491724],6.0,True,True,True,True,True,False,3359
+150,32300169,4,False,491730,C,4,"[491724, 491728, 491747, 492080]",2.0,True,True,True,True,True,False,3359
+151,36004693,5,False,491696,B0_full,1,[491025],671.0,False,True,True,True,True,False,1243
+151,36004693,5,False,491696,B0_full,4,"[491025, 495129, 491026, 491080]",616.0,False,True,True,True,True,False,1243
+151,36004693,5,False,491696,B0_common,1,[491025],671.0,False,True,True,True,True,False,1188
+151,36004693,5,False,491696,B0_common,4,"[491025, 491026, 491080, 491840]",144.0,False,True,True,True,True,False,1188
+151,36004693,5,False,491696,U,1,[491025],671.0,False,True,True,True,True,False,1188
+151,36004693,5,False,491696,U,4,"[491025, 491358, 495139, 495142]",338.0,False,True,True,True,True,False,1188
+151,36004693,5,False,491696,C,1,[491025],671.0,False,True,True,True,True,False,1188
+151,36004693,5,False,491696,C,4,"[491025, 491168, 491216, 491272]",424.0,False,True,True,True,True,False,1188
+152,31016197,2,False,491681,B0_full,1,[490975],706.0,False,True,True,True,True,False,1183
+152,31016197,2,False,491681,B0_full,4,"[490975, 490974, 491720, 492176]",39.0,False,True,True,True,True,False,1183
+152,31016197,2,False,491681,B0_common,1,[491720],39.0,False,True,True,True,True,False,1159
+152,31016197,2,False,491681,B0_common,4,"[491720, 492176, 491718, 492296]",37.0,False,True,True,True,True,False,1159
+152,31016197,2,False,491681,U,1,[491104],577.0,False,True,True,True,True,False,1159
+152,31016197,2,False,491681,U,4,"[491104, 491224, 491225, 491226]",455.0,False,True,True,True,True,False,1159
+152,31016197,2,False,491681,C,1,[491100],581.0,False,True,True,True,True,False,1159
+152,31016197,2,False,491681,C,4,"[491100, 491104, 491221, 491224]",457.0,False,True,True,True,True,False,1159
+154,34200731,4,False,491649,B0_full,1,[490928],721.0,False,True,True,True,True,False,3059
+154,34200731,4,False,491649,B0_full,4,"[490928, 491246, 491339, 490926]",310.0,False,True,True,True,True,False,3059
+154,34200731,4,False,491649,B0_common,1,[491246],403.0,False,True,True,True,True,False,3035
+154,34200731,4,False,491649,B0_common,4,"[491246, 491339, 494763, 491336]",310.0,False,True,True,True,True,False,3035
+154,34200731,4,False,491649,U,1,[490965],684.0,False,True,True,True,True,False,3035
+154,34200731,4,False,491649,U,4,"[490965, 491864, 491936, 491937]",215.0,False,True,True,True,True,False,3035
+154,34200731,4,False,491649,C,1,[490965],684.0,False,True,True,True,True,False,3035
+154,34200731,4,False,491649,C,4,"[490965, 491054, 491080, 491513]",136.0,False,True,True,True,True,False,3035
+156,31009538,0,False,491602,B0_full,1,[491098],504.0,False,True,True,True,True,False,4273
+156,31009538,0,False,491602,B0_full,4,"[491098, 491097, 494647, 491267]",335.0,False,True,True,True,True,False,4273
+156,31009538,0,False,491602,B0_common,1,[491098],504.0,False,True,True,True,True,False,4224
+156,31009538,0,False,491602,B0_common,4,"[491098, 491097, 494647, 491267]",335.0,False,True,True,True,True,False,4224
+156,31009538,0,False,491602,U,1,[490949],653.0,False,True,True,True,True,False,4224
+156,31009538,0,False,491602,U,4,"[490949, 491029, 491030, 491036]",566.0,False,True,True,True,True,False,4224
+156,31009538,0,False,491602,C,1,[490949],653.0,False,True,True,True,True,False,4224
+156,31009538,0,False,491602,C,4,"[490949, 491029, 491030, 491036]",566.0,False,True,True,True,True,False,4224
+159,31703108,2,False,491304,B0_full,1,[490974],330.0,False,True,True,True,True,False,1442
+159,31703108,2,False,491304,B0_full,4,"[490974, 490973, 490978, 491091]",213.0,False,True,True,True,True,False,1442
+159,31703108,2,False,491304,B0_common,1,[491091],213.0,False,True,True,True,True,False,1375
+159,31703108,2,False,491304,B0_common,4,"[491091, 491209, 491222, 491225]",79.0,False,True,True,True,True,False,1375
+159,31703108,2,False,491304,U,1,[492632],1328.0,False,True,True,True,True,False,1375
+159,31703108,2,False,491304,U,4,"[492632, 492824, 492828, 494159]",1328.0,False,True,True,True,True,False,1375
+159,31703108,2,False,491304,C,1,[491104],200.0,False,True,True,True,True,False,1375
+159,31703108,2,False,491304,C,4,"[491104, 491269, 492562, 492631]",35.0,False,True,True,True,True,False,1375
+160,36200918,3,False,491267,B0_full,1,[494557],3290.0,False,True,True,True,True,False,505
+160,36200918,3,False,491267,B0_full,4,"[494557, 493306, 493565, 491291]",24.0,False,True,True,True,True,False,505
+160,36200918,3,False,491267,B0_common,1,[494557],3290.0,False,True,True,True,True,False,481
+160,36200918,3,False,491267,B0_common,4,"[494557, 493306, 493565, 491291]",24.0,False,True,True,True,True,False,481
+160,36200918,3,False,491267,U,1,[491266],1.0,True,True,True,True,True,False,481
+160,36200918,3,False,491267,U,4,"[491266, 491291, 491556, 493473]",1.0,True,True,True,True,True,False,481
+160,36200918,3,False,491267,C,1,[491266],1.0,True,True,True,True,True,False,481
+160,36200918,3,False,491267,C,4,"[491266, 491291, 491556, 492198]",1.0,True,True,True,True,True,False,481
+161,36000925,1,False,491197,B0_full,1,[494918],3721.0,False,True,False,True,False,True,5
+161,36000925,1,False,491197,B0_full,4,"[494918, 491198, 491197, 491750]",0.0,True,True,False,True,False,True,5
+161,36000925,1,False,491197,B0_common,1,[],,False,True,False,True,False,True,0
+161,36000925,1,False,491197,B0_common,4,[],,False,True,False,True,False,True,0
+161,36000925,1,False,491197,U,1,[494918],3721.0,False,True,False,True,False,True,5
+161,36000925,1,False,491197,U,4,"[494918, 491198, 491197, 491750]",0.0,True,True,False,True,False,True,5
+161,36000925,1,False,491197,C,1,[494918],3721.0,False,True,False,True,False,True,5
+161,36000925,1,False,491197,C,4,"[494918, 491198, 491197, 491750]",0.0,True,True,False,True,False,True,5
+164,36001358,5,False,491095,B0_full,1,[491260],165.0,False,True,True,True,True,False,932
+164,36001358,5,False,491095,B0_full,4,"[491260, 490972, 491261, 490971]",123.0,False,True,True,True,True,False,932
+164,36001358,5,False,491095,B0_common,1,[491260],165.0,False,True,True,True,True,False,884
+164,36001358,5,False,491095,B0_common,4,"[491260, 490972, 491261, 490971]",123.0,False,True,True,True,True,False,884
+164,36001358,5,False,491095,U,1,[490957],138.0,False,True,True,True,True,False,884
+164,36001358,5,False,491095,U,4,"[490957, 490958, 490971, 494699]",124.0,False,True,True,True,True,False,884
+164,36001358,5,False,491095,C,1,[490957],138.0,False,True,True,True,True,False,884
+164,36001358,5,False,491095,C,4,"[490957, 490958, 490971, 491286]",124.0,False,True,True,True,True,False,884

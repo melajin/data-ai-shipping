@@ -1,0 +1,228 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-06T01:18:04+0900",
+  "root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+  "output_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_006_20261106\\execution_001",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "command": [
+    "testB\\final\\round_006_20261106\\run_duration.py",
+    "--output-dir",
+    "testB\\final\\round_006_20261106\\execution_001"
+  ],
+  "memory_requirement_bytes": 1476395008,
+  "estimated_extra_peak_bytes": 805306368,
+  "reserve_bytes": 671088640,
+  "stages": {
+    "data_read": {
+      "seconds": 0.7177893999978551,
+      "rows_frame": 99677,
+      "rows_gear": 82,
+      "peak_working_set_bytes": 152817664
+    },
+    "build_rules": {
+      "seconds": 246.20308600000135,
+      "ledger_rows": 99677,
+      "candidate_counts": {
+        "d0_ok": 99677,
+        "d1_ok": 42242,
+        "d2_ok": 32268,
+        "d3_ok": 16558,
+        "d4_ok": 13723
+      },
+      "prediction_rows": 966,
+      "run_registry_rows": 9974,
+      "peak_working_set_bytes": 357191680
+    },
+    "evaluate_duration": {
+      "seconds": 4.119658399999025,
+      "rows_positives": 100,
+      "gate_overall_passed": false,
+      "peak_working_set_bytes": 357191680
+    }
+  },
+  "other_processes": [
+    {
+      "pid": 7960,
+      "name": "explorer.exe",
+      "rss_bytes": 778158080
+    },
+    {
+      "pid": 18876,
+      "name": "Orca.exe",
+      "rss_bytes": 514121728
+    },
+    {
+      "pid": 23268,
+      "name": "Orca.exe",
+      "rss_bytes": 384483328
+    },
+    {
+      "pid": 22240,
+      "name": "agy.exe",
+      "rss_bytes": 306872320
+    },
+    {
+      "pid": 8764,
+      "name": "PhoneExperienceHost.exe",
+      "rss_bytes": 288915456
+    },
+    {
+      "pid": 21888,
+      "name": "Microsoft.CmdPal.UI.exe",
+      "rss_bytes": 280911872
+    },
+    {
+      "pid": 16048,
+      "name": "Orca.exe",
+      "rss_bytes": 277213184
+    },
+    {
+      "pid": 11272,
+      "name": "StartMenuExperienceHost.exe",
+      "rss_bytes": 207069184
+    },
+    {
+      "pid": 12048,
+      "name": "CrossDeviceService.exe",
+      "rss_bytes": 200720384
+    },
+    {
+      "pid": 20560,
+      "name": "codex.exe",
+      "rss_bytes": 198270976
+    },
+    {
+      "pid": 16496,
+      "name": "logioptionsplus_agent.exe",
+      "rss_bytes": 190169088
+    },
+    {
+      "pid": 2528,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 186302464
+    },
+    {
+      "pid": 21156,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 180473856
+    },
+    {
+      "pid": 21120,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 179064832
+    },
+    {
+      "pid": 15812,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 177238016
+    }
+  ],
+  "ram_preflight": {
+    "checked_at": "2026-11-06T01:18:05+0900",
+    "available_bytes": 3820298240,
+    "total_bytes": 14827769856,
+    "allowed": true,
+    "simultaneous_dataset_jobs_authorized": false
+  },
+  "peak_working_set_bytes": 357191680,
+  "inputs": {
+    "candidate_ledger.parquet": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001\\candidate_ledger.parquet",
+      "sha256": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+      "bytes": 6433671
+    },
+    "gear_registry.csv": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_003_20261105\\gear_registry.csv",
+      "sha256": "0a94249ad364500132d70521134fc493e836ec63d7d8734cc412e33c3adb73dd",
+      "bytes": 4474
+    },
+    "devset_positives.csv": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\round_008_linkage_audit_20261105\\devset_positives.csv",
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "bytes": 15646
+    },
+    "data_eval.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_002_20261105\\data_eval.py",
+      "sha256": "9d2b7882dc0e370050aa09f681e6053593f045e7f46a7edf3223faedf45817d0",
+      "bytes": 20896
+    }
+  },
+  "sources": {
+    "duration_rules.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_006_20261106\\duration_rules.py",
+      "sha256": "60cb570c95899ef1c7054982057dce27e33347bf637f4d2c6bd932337c132dc7"
+    },
+    "evaluate_duration.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_006_20261106\\evaluate_duration.py",
+      "sha256": "9bee4e270527e0ee227bb7d5eacd0dc946a9c85025762eb073eb5ef8f299dd78"
+    },
+    "run_duration.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_006_20261106\\run_duration.py",
+      "sha256": "c214482be3a5b8b3fbac8092bf9b1a1ad18a3eb86f98f79a1d7a1b4944832448"
+    },
+    "PROTOCOL.md": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_006_20261106\\PROTOCOL.md",
+      "sha256": "dec3f4ae3cb350e467622f8f2033346629ee529cfb88b34e3a862dba76b4d776"
+    },
+    "CONTRACT.md": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_006_20261106\\CONTRACT.md",
+      "sha256": "6158384861af884911e246c42e859b0c6f896777cd59b051ef89a57398ebf23a"
+    }
+  },
+  "versions": {
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pyarrow": "24.0.0",
+    "psutil": "7.0.0"
+  },
+  "frozen_predictions": {
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_006_20261106\\execution_001\\predictions.csv",
+    "sha256": "5a65dc808c85bd85992b296cb97002ba457819e164b724b041331daa94ede0e3",
+    "bytes": 116752,
+    "persisted_at": "2026-11-06T01:22:12+0900",
+    "seconds": 0.3602620999990904,
+    "verified_prior_to_label_parse": true
+  },
+  "outputs": {
+    "predictions.csv": {
+      "sha256": "5a65dc808c85bd85992b296cb97002ba457819e164b724b041331daa94ede0e3",
+      "bytes": 116752
+    },
+    "pool_manifest.csv": {
+      "sha256": "c2e653677df35be5093729da1d757e855d6a29c690cf7ea1c06a43cc4cac3f24",
+      "bytes": 6635
+    },
+    "run_registry.csv": {
+      "sha256": "4b73377aaf3c0e49493fec098bd73ee517f5083fd19452a02bc9127047b39fe7",
+      "bytes": 2095554
+    },
+    "candidate_ledger.parquet": {
+      "sha256": "f51058b917eded1de3619278f5238f01d73cfc1f9c941ec35d8debb9a5d2f8cd",
+      "bytes": 6242917
+    },
+    "stage_counts.csv": {
+      "sha256": "22078fa9dc30c7fccea23ab8e0f22b21edaf806c5f67f5497bf1d33aade75305",
+      "bytes": 3651
+    },
+    "stage_event_coverage.csv": {
+      "sha256": "ea74360e60f3d986f0296e4e65212291faba9c105b2cfe6b7f3b3477d3d6a774",
+      "bytes": 19754
+    },
+    "event_results.csv": {
+      "sha256": "1612681217cca1072c2856b4efad3d2c02340c7850d7f0a37c2807304bba82bd",
+      "bytes": 82580
+    },
+    "metrics.json": {
+      "sha256": "de920297468f0b8d35eccd83956db8767d2152dc90a9963e41c70226e6346d00",
+      "bytes": 196664
+    },
+    "diagnostics.json": {
+      "sha256": "173e2565f38bfd477d12f1899c63b275862c37933c024b63eab1688c10f60e6e",
+      "bytes": 3193
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-06T01:22:16+0900",
+  "elapsed_seconds": 252.46929900000032
+}

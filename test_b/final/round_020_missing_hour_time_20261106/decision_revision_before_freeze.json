@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-11-06T14:56:42.168876+09:00",
+  "source": "user instruction in this conversation",
+  "request": [
+    "판정을 조금 러프하게 잡아 지금 너무 빡빡한거같음",
+    "판정 기준"
+  ],
+  "request_text_repair_note": "Only Korean quotation encoding was repaired after execution on 2026-11-06; recorded_at, decision formulas and all frozen artifacts remain unchanged. Original correctly encoded user direction is preserved in the pre-execution frozen PROTOCOL.md.",
+  "original_lossy_request_text": ["??? ?? ???? ?? ?? ?? ??????", "?? ??"],
+  "before_freeze": true,
+  "before_actual_prediction_or_evaluation": true,
+  "new_decision": {
+    "improvement_candidate": "H>=5 and H>sum(q_i)",
+    "hold": "H==4 and H>sum(q_i)",
+    "reject": "H<=3 or H<=sum(q_i)",
+    "integrity_failure": "invalid execution"
+  },
+  "p_values": "report only, not decision gates",
+  "statistical_significance_claimed": false,
+  "unchanged": [
+    "selector",
+    "model parameters",
+    "tolerance6h",
+    "denominator82",
+    "truth",
+    "single evaluation",
+    "memory and leakage checks"
+  ]
+}

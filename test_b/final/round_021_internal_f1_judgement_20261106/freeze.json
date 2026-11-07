@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-11-06T15:32:36.092442+09:00",
+  "files": {
+    "testB\\final\\round_021_internal_f1_judgement_20261106\\PROTOCOL.md": "2f484412947dddeb835c58fb330c3704b6aafc540312c5b24883ffeb7fbd0782",
+    "testB\\final\\round_021_internal_f1_judgement_20261106\\compute.py": "2878c8c1e4ce43c4ad7b87d410f4e2d43cab5a271266e0c1b4cfeb2c894ebed9",
+    "testB\\final\\round_019_vessel_discrimination_20261106\\execution_001\\vessel_peaks.csv": "1dd3c52cf6293c0d62793fd68f29dfb6d471bd80189ed03c5464280f6472df44",
+    "testB\\과거\\round_008_linkage_audit_20261105\\devset_positives.csv": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+    "testB\\final\\round_019_vessel_discrimination_20261106\\PROTOCOL.md": "10fe34978e36774f7a63ed12c889871a2b2a0edeec77e9380d7f50b016645f0a",
+    "testB\\final\\round_019_vessel_discrimination_20261106\\execution_001\\score_metadata.json": "35c437f60a69c5b34d43fef6ef0d1d1ab2319804d1f5b7ffd24d3ce6d7192dcb",
+    "testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_01.parquet": "4dfd4dac39805874f46c701a65fb705698923d5d757a550cb75a04c31d17c871",
+    "testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_02.parquet": "aa09e5b989de86f5911885c2926382061dd1b2afed7d2035e9de79e2a0c0c20f",
+    "testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_03.parquet": "351fbae98054962046da0a364d12173090cc823c295910893cc9cf23789f6304",
+    "testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_04.parquet": "75d3ac451b4d20ead7eaa0467bb6a394e014e552f05fa9282261361a08a84ba8",
+    "testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_05.parquet": "08eb9aed48e045f7c22a5062a3c2f72278ce239e44a4f4c897bf2b208a32b8bf",
+    "testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_06.parquet": "69090e150c4fdfb5931e6e717e834c0c01c604bfbae2de5994c6327aa11d0827"
+  },
+  "new_fit": false
+}

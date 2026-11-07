@@ -1,0 +1,1109 @@
+{
+  "round": 7,
+  "round_title": "Provided Raw Source Small Part Trajectory and Non-Small Behavior Observation",
+  "generated_at": "2026-11-06T01:46:49.082994+09:00",
+  "citation": {
+    "source_script": "ROOT/29-30일 모델 심층 분석/분석 결과/tools/run_remeasure_20261031.py",
+    "source_script_sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+    "functions_copied": [
+      "haversine_m",
+      "parse_multilinestring",
+      "row_geometry"
+    ],
+    "haversine_radius_m": 6371000.0,
+    "discontinuous_line_joining_rule": "NEVER JOIN DISCONNECTED PARTS. Each part is evaluated independently."
+  },
+  "source_ordinal_proof": {
+    "principle": "offset = sum of previous monthly cache num_rows; source_ordinal = offset + zero-based raw row_index; idx in CSV reader after header equals row_index",
+    "archived_source": "testB/과거/round_008_linkage_audit_20261105/rescore_evaluate.py",
+    "archived_source_sha256": "2444c6fa38196a8c86e955838b168ecad04b81fe24493d36bf3e4ed49a3f84ac",
+    "monthly_offsets": {
+      "1": 0,
+      "2": 497942,
+      "3": 977232,
+      "4": 1634524,
+      "5": 2351818,
+      "6": 3113664
+    },
+    "monthly_num_rows": {
+      "1": 497942,
+      "2": 479290,
+      "3": 657292,
+      "4": 717294,
+      "5": 761846,
+      "6": 773405
+    }
+  },
+  "raw_source_file_audits": {
+    "1": {
+      "month": 1,
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+      "bytes_before": 669416109,
+      "mtime_before": 1790557016.0,
+      "bytes_after": 669416109,
+      "mtime_after": 1790557016.0,
+      "full_sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "expected_sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "hash_match": true,
+      "stream_scope": "streamed csv rows through reader up to row_index 149,857; full byte-stream sha256 verified",
+      "stream_elapsed_sec": 2.21,
+      "hash_elapsed_sec": 0.61,
+      "max_row_index_extracted": 149856,
+      "target_records_count": 10
+    },
+    "5": {
+      "month": 5,
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv",
+      "bytes_before": 1201889964,
+      "mtime_before": 1789436196.0,
+      "bytes_after": 1201889964,
+      "mtime_after": 1789436196.0,
+      "full_sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "expected_sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "hash_match": true,
+      "stream_scope": "streamed csv rows through reader up to row_index 741,125; full byte-stream sha256 verified",
+      "stream_elapsed_sec": 12.42,
+      "hash_elapsed_sec": 1.14,
+      "max_row_index_extracted": 741124,
+      "target_records_count": 6
+    },
+    "6": {
+      "month": 6,
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv",
+      "bytes_before": 1255966524,
+      "mtime_before": 1789436342.0,
+      "bytes_after": 1255966524,
+      "mtime_after": 1789436342.0,
+      "full_sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "expected_sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "hash_match": true,
+      "stream_scope": "streamed csv rows through reader up to row_index 355,140; full byte-stream sha256 verified",
+      "stream_elapsed_sec": 6.72,
+      "hash_elapsed_sec": 1.28,
+      "max_row_index_extracted": 355139,
+      "target_records_count": 6
+    }
+  },
+  "validation_tolerances": {
+    "len_m": 0.0001,
+    "bbox_m": 0.0001,
+    "cen_lon": 1e-07,
+    "cen_lat": 1e-07
+  },
+  "all_records_validated": true,
+  "total_selected_records": 22,
+  "records_audit": [
+    {
+      "source_ordinal": 149262,
+      "selection_group": "A",
+      "selection_reason": "Selection A: earliest valid non-small observation (len>100 or bbox>100) for 연안복합 vessel 31001758",
+      "acc_id": null,
+      "rfid_id": "31001758",
+      "gear_label": "연안복합",
+      "role": "target_earliest_non_small",
+      "month": 1,
+      "row_index": 149262,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 149262 == 149262",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260109",
+        "rfid_time": 17,
+        "ts": 491105,
+        "cache_part_dt": "20260109",
+        "cache_rfid_time": 17,
+        "keys_match": true
+      },
+      "raw_record_sha256": "90a3ff0f2cccd717b4dd1504f830aa2a71baffac8486f18467d21881f01276ad",
+      "reconstructed_geometry": {
+        "n_parts": 4,
+        "n_coords": 46,
+        "len_m": 1150.9413697671164,
+        "bbox_m": 274.29254038564954,
+        "cen_lon": 127.47674025362323,
+        "cen_lat": 34.662584021739136
+      },
+      "cache_geometry": {
+        "n_coords": 46,
+        "len_m": 1150.9413697671164,
+        "bbox_m": 274.29254038564954,
+        "cen_lon": 127.47674025362323,
+        "cen_lat": 34.662584021739136
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 149856,
+      "selection_group": "A",
+      "selection_reason": "Selection A: post observation to earliest non-small observation for 연안복합 vessel 31001758",
+      "acc_id": null,
+      "rfid_id": "31001758",
+      "gear_label": "연안복합",
+      "role": "post_adjacent",
+      "month": 1,
+      "row_index": 149856,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 149856 == 149856",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260109",
+        "rfid_time": 18,
+        "ts": 491106,
+        "cache_part_dt": "20260109",
+        "cache_rfid_time": 18,
+        "keys_match": true
+      },
+      "raw_record_sha256": "2391e60b13f95fca27f74e9f8b448e3d50de0e6de39943c399185d53661b6764",
+      "reconstructed_geometry": {
+        "n_parts": 3,
+        "n_coords": 61,
+        "len_m": 2065.9590548623332,
+        "bbox_m": 323.5795162007431,
+        "cen_lon": 127.47602844262295,
+        "cen_lat": 34.66307480874317
+      },
+      "cache_geometry": {
+        "n_coords": 61,
+        "len_m": 2065.9590548623332,
+        "bbox_m": 323.5795162007431,
+        "cen_lon": 127.47602844262295,
+        "cen_lat": 34.66307480874317
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 138211,
+      "selection_group": "A",
+      "selection_reason": "Selection A: earliest valid non-small observation (len>100 or bbox>100) for 자망 vessel 31007500",
+      "acc_id": null,
+      "rfid_id": "31007500",
+      "gear_label": "자망",
+      "role": "target_earliest_non_small",
+      "month": 1,
+      "row_index": 138211,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 138211 == 138211",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260109",
+        "rfid_time": 5,
+        "ts": 491093,
+        "cache_part_dt": "20260109",
+        "cache_rfid_time": 5,
+        "keys_match": true
+      },
+      "raw_record_sha256": "4e73ba95cda5548bed11a14a708f7093c8769edc39b2148ef0f96d7f6288f679",
+      "reconstructed_geometry": {
+        "n_parts": 7,
+        "n_coords": 60,
+        "len_m": 16274.838037864149,
+        "bbox_m": 4012.2560406856946,
+        "cen_lon": 127.11682930555551,
+        "cen_lat": 34.524462805555586
+      },
+      "cache_geometry": {
+        "n_coords": 60,
+        "len_m": 16274.838037864149,
+        "bbox_m": 4012.2560406856946,
+        "cen_lon": 127.11682930555551,
+        "cen_lat": 34.524462805555586
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 138843,
+      "selection_group": "A",
+      "selection_reason": "Selection A: post observation to earliest non-small observation for 자망 vessel 31007500",
+      "acc_id": null,
+      "rfid_id": "31007500",
+      "gear_label": "자망",
+      "role": "post_adjacent",
+      "month": 1,
+      "row_index": 138843,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 138843 == 138843",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260109",
+        "rfid_time": 6,
+        "ts": 491094,
+        "cache_part_dt": "20260109",
+        "cache_rfid_time": 6,
+        "keys_match": true
+      },
+      "raw_record_sha256": "c4fb4a666e77a5cd9ddfef6eb18ba89fe12ac33bc10891bfa844dd7e76646455",
+      "reconstructed_geometry": {
+        "n_parts": 9,
+        "n_coords": 102,
+        "len_m": 52016.84475276757,
+        "bbox_m": 10346.819023344488,
+        "cen_lon": 127.10829477124182,
+        "cen_lat": 34.44184251633987
+      },
+      "cache_geometry": {
+        "n_coords": 102,
+        "len_m": 52016.84475276757,
+        "bbox_m": 10346.819023344488,
+        "cen_lon": 127.10829477124182,
+        "cen_lat": 34.44184251633987
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 24337,
+      "selection_group": "A",
+      "selection_reason": "Selection A: prior observation to earliest non-small observation for 채낚기연승낚시 vessel 36314076",
+      "acc_id": null,
+      "rfid_id": "36314076",
+      "gear_label": "채낚기연승낚시",
+      "role": "prior_adjacent",
+      "month": 1,
+      "row_index": 24337,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 24337 == 24337",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260103",
+        "rfid_time": 3,
+        "ts": 490947,
+        "cache_part_dt": "20260103",
+        "cache_rfid_time": 3,
+        "keys_match": true
+      },
+      "raw_record_sha256": "71640573a26859b3f9b15f87b559b347c2e7b64338f52bfae9397d37195597c3",
+      "reconstructed_geometry": {
+        "n_parts": 1,
+        "n_coords": 50,
+        "len_m": 7.188688998976797,
+        "bbox_m": 4.20983914050574,
+        "cen_lon": 125.12878450000012,
+        "cen_lat": 34.050364299999984
+      },
+      "cache_geometry": {
+        "n_coords": 50,
+        "len_m": 7.188688998976797,
+        "bbox_m": 4.20983914050574,
+        "cen_lon": 125.12878450000012,
+        "cen_lat": 34.050364299999984
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 24575,
+      "selection_group": "A",
+      "selection_reason": "Selection A: earliest valid non-small observation (len>100 or bbox>100) for 채낚기연승낚시 vessel 36314076",
+      "acc_id": null,
+      "rfid_id": "36314076",
+      "gear_label": "채낚기연승낚시",
+      "role": "target_earliest_non_small",
+      "month": 1,
+      "row_index": 24575,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 24575 == 24575",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260103",
+        "rfid_time": 4,
+        "ts": 490948,
+        "cache_part_dt": "20260103",
+        "cache_rfid_time": 4,
+        "keys_match": true
+      },
+      "raw_record_sha256": "165c882161c4663327d6fa517b2c44b0c88f24311eac8d7d37c91100e9b1424e",
+      "reconstructed_geometry": {
+        "n_parts": 1,
+        "n_coords": 59,
+        "len_m": 201.79382937142867,
+        "bbox_m": 172.08610013798335,
+        "cen_lon": 125.12869711864393,
+        "cen_lat": 34.05034101694917
+      },
+      "cache_geometry": {
+        "n_coords": 59,
+        "len_m": 201.79382937142867,
+        "bbox_m": 172.08610013798335,
+        "cen_lon": 125.12869711864393,
+        "cen_lat": 34.05034101694917
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 24894,
+      "selection_group": "A",
+      "selection_reason": "Selection A: post observation to earliest non-small observation for 채낚기연승낚시 vessel 36314076",
+      "acc_id": null,
+      "rfid_id": "36314076",
+      "gear_label": "채낚기연승낚시",
+      "role": "post_adjacent",
+      "month": 1,
+      "row_index": 24894,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 24894 == 24894",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260103",
+        "rfid_time": 5,
+        "ts": 490949,
+        "cache_part_dt": "20260103",
+        "cache_rfid_time": 5,
+        "keys_match": true
+      },
+      "raw_record_sha256": "1c65fee9a6a57b503eb71a2b4e41c509c7216b6d8ac7f58751deb0b347f389a1",
+      "reconstructed_geometry": {
+        "n_parts": 4,
+        "n_coords": 84,
+        "len_m": 37032.961046223194,
+        "bbox_m": 12524.542953678809,
+        "cen_lon": 125.07850375000005,
+        "cen_lat": 34.023278095238105
+      },
+      "cache_geometry": {
+        "n_coords": 84,
+        "len_m": 37032.961046223194,
+        "bbox_m": 12524.542953678809,
+        "cen_lon": 125.07850375000005,
+        "cen_lat": 34.023278095238105
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 25873,
+      "selection_group": "A",
+      "selection_reason": "Selection A: prior observation to earliest non-small observation for 통발 vessel 31008085",
+      "acc_id": null,
+      "rfid_id": "31008085",
+      "gear_label": "통발",
+      "role": "prior_adjacent",
+      "month": 1,
+      "row_index": 25873,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 25873 == 25873",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260103",
+        "rfid_time": 8,
+        "ts": 490952,
+        "cache_part_dt": "20260103",
+        "cache_rfid_time": 8,
+        "keys_match": true
+      },
+      "raw_record_sha256": "d8311c03098030c8c7db4db56bcd55ff9a6c2970e3bf9785f575f476e986d4b8",
+      "reconstructed_geometry": {
+        "n_parts": 1,
+        "n_coords": 2,
+        "len_m": 1.8532487771922845,
+        "bbox_m": 1.8532487771922845,
+        "cen_lon": 127.71411666666667,
+        "cen_lat": 34.72415
+      },
+      "cache_geometry": {
+        "n_coords": 2,
+        "len_m": 1.8532487771922845,
+        "bbox_m": 1.8532487771922845,
+        "cen_lon": 127.71411666666667,
+        "cen_lat": 34.72415
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 26048,
+      "selection_group": "A",
+      "selection_reason": "Selection A: earliest valid non-small observation (len>100 or bbox>100) for 통발 vessel 31008085",
+      "acc_id": null,
+      "rfid_id": "31008085",
+      "gear_label": "통발",
+      "role": "target_earliest_non_small",
+      "month": 1,
+      "row_index": 26048,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 26048 == 26048",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260103",
+        "rfid_time": 9,
+        "ts": 490953,
+        "cache_part_dt": "20260103",
+        "cache_rfid_time": 9,
+        "keys_match": true
+      },
+      "raw_record_sha256": "9a64709bd348101d3a0d8530789193be6a5fb24798d7565ae00d6ed38db7a983",
+      "reconstructed_geometry": {
+        "n_parts": 1,
+        "n_coords": 8,
+        "len_m": 200.12503023213094,
+        "bbox_m": 168.7240305469698,
+        "cen_lon": 127.714758125,
+        "cen_lat": 34.725025208333335
+      },
+      "cache_geometry": {
+        "n_coords": 8,
+        "len_m": 200.12503023213094,
+        "bbox_m": 168.7240305469698,
+        "cen_lon": 127.714758125,
+        "cen_lat": 34.725025208333335
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 27942,
+      "selection_group": "A",
+      "selection_reason": "Selection A: post observation to earliest non-small observation for 통발 vessel 31008085",
+      "acc_id": null,
+      "rfid_id": "31008085",
+      "gear_label": "통발",
+      "role": "post_adjacent",
+      "month": 1,
+      "row_index": 27942,
+      "cache_offset": 0,
+      "ordinal_mapping_formula": "0 + 27942 == 27942",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260103",
+        "rfid_time": 11,
+        "ts": 490955,
+        "cache_part_dt": "20260103",
+        "cache_rfid_time": 11,
+        "keys_match": true
+      },
+      "raw_record_sha256": "c3d03121b37550a9bb1d999218621d430d1b62bc1e45243574c04d2e5de6b203",
+      "reconstructed_geometry": {
+        "n_parts": 2,
+        "n_coords": 15,
+        "len_m": 8511.615637311968,
+        "bbox_m": 4405.7158438148645,
+        "cen_lon": 127.7041807777778,
+        "cen_lat": 34.71289422222222
+      },
+      "cache_geometry": {
+        "n_coords": 15,
+        "len_m": 8511.615637311968,
+        "bbox_m": 4405.7158438148645,
+        "cen_lon": 127.7041807777778,
+        "cen_lat": 34.71289422222222
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 3431538,
+      "selection_group": "B",
+      "selection_reason": "Selection B: prior observation to closest-to-accident observation for 연안복합 acc_id 14 vessel 36007269",
+      "acc_id": 14,
+      "rfid_id": "36007269",
+      "gear_label": "연안복합",
+      "role": "prior_adjacent",
+      "month": 6,
+      "row_index": 317874,
+      "cache_offset": 3113664,
+      "ordinal_mapping_formula": "3113664 + 317874 == 3431538",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260612",
+        "rfid_time": 6,
+        "ts": 494790,
+        "cache_part_dt": "20260612",
+        "cache_rfid_time": 6,
+        "keys_match": true
+      },
+      "raw_record_sha256": "e7b48cec9e457c4f54c152cb5a56c8aeb15968a6554cf7a9555729c65c4dd236",
+      "reconstructed_geometry": {
+        "n_parts": 5,
+        "n_coords": 73,
+        "len_m": 9155.012528517527,
+        "bbox_m": 2054.9128420124816,
+        "cen_lon": 127.09985970319639,
+        "cen_lat": 34.484257945205464
+      },
+      "cache_geometry": {
+        "n_coords": 73,
+        "len_m": 9155.012528517527,
+        "bbox_m": 2054.9128420124816,
+        "cen_lon": 127.09985970319639,
+        "cen_lat": 34.484257945205464
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 3433039,
+      "selection_group": "B",
+      "selection_reason": "Selection B: closest-to-accident observation for 연안복합 acc_id 14 vessel 36007269 (acc_ts=494791)",
+      "acc_id": 14,
+      "rfid_id": "36007269",
+      "gear_label": "연안복합",
+      "role": "target_closest_to_accident",
+      "month": 6,
+      "row_index": 319375,
+      "cache_offset": 3113664,
+      "ordinal_mapping_formula": "3113664 + 319375 == 3433039",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260612",
+        "rfid_time": 7,
+        "ts": 494791,
+        "cache_part_dt": "20260612",
+        "cache_rfid_time": 7,
+        "keys_match": true
+      },
+      "raw_record_sha256": "b79c90ebf9c53259fc245f4ce0cb622076d461077a8d6704bf0b77a6bf5310ad",
+      "reconstructed_geometry": {
+        "n_parts": 6,
+        "n_coords": 65,
+        "len_m": 4872.2397876704845,
+        "bbox_m": 1075.8293885806766,
+        "cen_lon": 127.09053089743588,
+        "cen_lat": 34.48038700000001
+      },
+      "cache_geometry": {
+        "n_coords": 65,
+        "len_m": 4872.2397876704845,
+        "bbox_m": 1075.8293885806766,
+        "cen_lon": 127.09053089743588,
+        "cen_lat": 34.48038700000001
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 3434617,
+      "selection_group": "B",
+      "selection_reason": "Selection B: post observation to closest-to-accident observation for 연안복합 acc_id 14 vessel 36007269",
+      "acc_id": 14,
+      "rfid_id": "36007269",
+      "gear_label": "연안복합",
+      "role": "post_adjacent",
+      "month": 6,
+      "row_index": 320953,
+      "cache_offset": 3113664,
+      "ordinal_mapping_formula": "3113664 + 320953 == 3434617",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260612",
+        "rfid_time": 8,
+        "ts": 494792,
+        "cache_part_dt": "20260612",
+        "cache_rfid_time": 8,
+        "keys_match": true
+      },
+      "raw_record_sha256": "8157760570a385b24ddd2d54821941162bf5849527f07514c60a3a1e21cfa81c",
+      "reconstructed_geometry": {
+        "n_parts": 7,
+        "n_coords": 67,
+        "len_m": 8689.128364893326,
+        "bbox_m": 1921.9804616344745,
+        "cen_lon": 127.07519203980095,
+        "cen_lat": 34.48853176616914
+      },
+      "cache_geometry": {
+        "n_coords": 67,
+        "len_m": 8689.128364893326,
+        "bbox_m": 1921.9804616344745,
+        "cen_lon": 127.07519203980095,
+        "cen_lat": 34.48853176616914
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 3466315,
+      "selection_group": "B",
+      "selection_reason": "Selection B: prior observation to closest-to-accident observation for 자망 acc_id 13 vessel 36115953",
+      "acc_id": 13,
+      "rfid_id": "36115953",
+      "gear_label": "자망",
+      "role": "prior_adjacent",
+      "month": 6,
+      "row_index": 352651,
+      "cache_offset": 3113664,
+      "ordinal_mapping_formula": "3113664 + 352651 == 3466315",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260613",
+        "rfid_time": 9,
+        "ts": 494817,
+        "cache_part_dt": "20260613",
+        "cache_rfid_time": 9,
+        "keys_match": true
+      },
+      "raw_record_sha256": "ff408805b332c0aa4fd51cf76a06bc21b8a645db499768fa40d2bf1382c8555c",
+      "reconstructed_geometry": {
+        "n_parts": 8,
+        "n_coords": 94,
+        "len_m": 24808.918129670397,
+        "bbox_m": 2883.0184368829196,
+        "cen_lon": 126.24299726950352,
+        "cen_lat": 34.775667322695035
+      },
+      "cache_geometry": {
+        "n_coords": 94,
+        "len_m": 24808.918129670397,
+        "bbox_m": 2883.0184368829196,
+        "cen_lon": 126.24299726950352,
+        "cen_lat": 34.775667322695035
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 3467631,
+      "selection_group": "B",
+      "selection_reason": "Selection B: closest-to-accident observation for 자망 acc_id 13 vessel 36115953 (acc_ts=494818)",
+      "acc_id": 13,
+      "rfid_id": "36115953",
+      "gear_label": "자망",
+      "role": "target_closest_to_accident",
+      "month": 6,
+      "row_index": 353967,
+      "cache_offset": 3113664,
+      "ordinal_mapping_formula": "3113664 + 353967 == 3467631",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260613",
+        "rfid_time": 10,
+        "ts": 494818,
+        "cache_part_dt": "20260613",
+        "cache_rfid_time": 10,
+        "keys_match": true
+      },
+      "raw_record_sha256": "fb2d30dd2960938ffeb2afda8b3e242f7afadeaf1564f4085c5d92360c400c51",
+      "reconstructed_geometry": {
+        "n_parts": 8,
+        "n_coords": 101,
+        "len_m": 12022.71142200198,
+        "bbox_m": 1259.096398742936,
+        "cen_lon": 126.25597783828387,
+        "cen_lat": 34.77876181518154
+      },
+      "cache_geometry": {
+        "n_coords": 101,
+        "len_m": 12022.71142200198,
+        "bbox_m": 1259.096398742936,
+        "cen_lon": 126.25597783828387,
+        "cen_lat": 34.77876181518154
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 3468803,
+      "selection_group": "B",
+      "selection_reason": "Selection B: post observation to closest-to-accident observation for 자망 acc_id 13 vessel 36115953",
+      "acc_id": 13,
+      "rfid_id": "36115953",
+      "gear_label": "자망",
+      "role": "post_adjacent",
+      "month": 6,
+      "row_index": 355139,
+      "cache_offset": 3113664,
+      "ordinal_mapping_formula": "3113664 + 355139 == 3468803",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260613",
+        "rfid_time": 11,
+        "ts": 494819,
+        "cache_part_dt": "20260613",
+        "cache_rfid_time": 11,
+        "keys_match": true
+      },
+      "raw_record_sha256": "9fd6b73c8e937a80242675c98a095c3ece35618a8f4906583135683ca2463ec3",
+      "reconstructed_geometry": {
+        "n_parts": 8,
+        "n_coords": 100,
+        "len_m": 8276.462919820842,
+        "bbox_m": 1445.8710070970399,
+        "cen_lon": 126.26102833333333,
+        "cen_lat": 34.78330500000003
+      },
+      "cache_geometry": {
+        "n_coords": 100,
+        "len_m": 8276.462919820842,
+        "bbox_m": 1445.8710070970399,
+        "cen_lon": 126.26102833333333,
+        "cen_lat": 34.78330500000003
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 2973989,
+      "selection_group": "B",
+      "selection_reason": "Selection B: prior observation to closest-to-accident observation for 채낚기연승낚시 acc_id 31 vessel 36314076",
+      "acc_id": 31,
+      "rfid_id": "36314076",
+      "gear_label": "채낚기연승낚시",
+      "role": "prior_adjacent",
+      "month": 5,
+      "row_index": 622171,
+      "cache_offset": 2351818,
+      "ordinal_mapping_formula": "2351818 + 622171 == 2973989",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260526",
+        "rfid_time": 17,
+        "ts": 494393,
+        "cache_part_dt": "20260526",
+        "cache_rfid_time": 17,
+        "keys_match": true
+      },
+      "raw_record_sha256": "41a599a7d828b54b6c71f7dd3cc5dd4cabec8c4d78eaa245447fd67012137b08",
+      "reconstructed_geometry": {
+        "n_parts": 1,
+        "n_coords": 7,
+        "len_m": 7625.4690951350985,
+        "bbox_m": 7565.073131103647,
+        "cen_lon": 125.86513047619049,
+        "cen_lat": 34.306666428571425
+      },
+      "cache_geometry": {
+        "n_coords": 7,
+        "len_m": 7625.4690951350985,
+        "bbox_m": 7565.073131103647,
+        "cen_lon": 125.86513047619049,
+        "cen_lat": 34.306666428571425
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 2974447,
+      "selection_group": "B",
+      "selection_reason": "Selection B: closest-to-accident observation for 채낚기연승낚시 acc_id 31 vessel 36314076 (acc_ts=494394)",
+      "acc_id": 31,
+      "rfid_id": "36314076",
+      "gear_label": "채낚기연승낚시",
+      "role": "target_closest_to_accident",
+      "month": 5,
+      "row_index": 622629,
+      "cache_offset": 2351818,
+      "ordinal_mapping_formula": "2351818 + 622629 == 2974447",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260526",
+        "rfid_time": 18,
+        "ts": 494394,
+        "cache_part_dt": "20260526",
+        "cache_rfid_time": 18,
+        "keys_match": true
+      },
+      "raw_record_sha256": "897fb0a80a38df3ab817409998cb5b5c69d0cb5fd8c8a3e0c5e5cc04d773af05",
+      "reconstructed_geometry": {
+        "n_parts": 3,
+        "n_coords": 41,
+        "len_m": 9843.608054489674,
+        "bbox_m": 8338.002835999312,
+        "cen_lon": 126.04796845528456,
+        "cen_lat": 34.36071268292683
+      },
+      "cache_geometry": {
+        "n_coords": 41,
+        "len_m": 9843.608054489674,
+        "bbox_m": 8338.002835999312,
+        "cen_lon": 126.04796845528456,
+        "cen_lat": 34.36071268292683
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 2974975,
+      "selection_group": "B",
+      "selection_reason": "Selection B: post observation to closest-to-accident observation for 채낚기연승낚시 acc_id 31 vessel 36314076",
+      "acc_id": 31,
+      "rfid_id": "36314076",
+      "gear_label": "채낚기연승낚시",
+      "role": "post_adjacent",
+      "month": 5,
+      "row_index": 623157,
+      "cache_offset": 2351818,
+      "ordinal_mapping_formula": "2351818 + 623157 == 2974975",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260526",
+        "rfid_time": 19,
+        "ts": 494395,
+        "cache_part_dt": "20260526",
+        "cache_rfid_time": 19,
+        "keys_match": true
+      },
+      "raw_record_sha256": "4daef6f913a8f2c61c64400d40574b33854f043dc8f2b8d1c3f23a1b89f9faab",
+      "reconstructed_geometry": {
+        "n_parts": 2,
+        "n_coords": 56,
+        "len_m": 12550.033131495751,
+        "bbox_m": 6973.019752659436,
+        "cen_lon": 126.09987970238095,
+        "cen_lat": 34.330541130952376
+      },
+      "cache_geometry": {
+        "n_coords": 56,
+        "len_m": 12550.033131495751,
+        "bbox_m": 6973.019752659436,
+        "cen_lon": 126.09987970238095,
+        "cen_lat": 34.330541130952376
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 3091599,
+      "selection_group": "B",
+      "selection_reason": "Selection B: prior observation to closest-to-accident observation for 통발 acc_id 26 vessel 31100492",
+      "acc_id": 26,
+      "rfid_id": "31100492",
+      "gear_label": "통발",
+      "role": "prior_adjacent",
+      "month": 5,
+      "row_index": 739781,
+      "cache_offset": 2351818,
+      "ordinal_mapping_formula": "2351818 + 739781 == 3091599",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260531",
+        "rfid_time": 0,
+        "ts": 494496,
+        "cache_part_dt": "20260531",
+        "cache_rfid_time": 0,
+        "keys_match": true
+      },
+      "raw_record_sha256": "86388a03f4947657bee5bb38088df0a6a07122fe07b1055d2a9d64939bb3e5fb",
+      "reconstructed_geometry": {
+        "n_parts": 6,
+        "n_coords": 75,
+        "len_m": 218.32190893579238,
+        "bbox_m": 35.862842633328135,
+        "cen_lon": 125.86698731111123,
+        "cen_lat": 34.378505577777794
+      },
+      "cache_geometry": {
+        "n_coords": 75,
+        "len_m": 218.32190893579238,
+        "bbox_m": 35.862842633328135,
+        "cen_lon": 125.86698731111123,
+        "cen_lat": 34.378505577777794
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 3092266,
+      "selection_group": "B",
+      "selection_reason": "Selection B: closest-to-accident observation for 통발 acc_id 26 vessel 31100492 (acc_ts=494497)",
+      "acc_id": 26,
+      "rfid_id": "31100492",
+      "gear_label": "통발",
+      "role": "target_closest_to_accident",
+      "month": 5,
+      "row_index": 740448,
+      "cache_offset": 2351818,
+      "ordinal_mapping_formula": "2351818 + 740448 == 3092266",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260531",
+        "rfid_time": 1,
+        "ts": 494497,
+        "cache_part_dt": "20260531",
+        "cache_rfid_time": 1,
+        "keys_match": true
+      },
+      "raw_record_sha256": "e86227b8556780e352ac323189d4e2a622a497d1a300224e3f440f1bacac3bf8",
+      "reconstructed_geometry": {
+        "n_parts": 8,
+        "n_coords": 72,
+        "len_m": 750.3190668372057,
+        "bbox_m": 113.50671388878112,
+        "cen_lon": 125.86619807870352,
+        "cen_lat": 34.37843636574074
+      },
+      "cache_geometry": {
+        "n_coords": 72,
+        "len_m": 750.3190668372057,
+        "bbox_m": 113.50671388878112,
+        "cen_lon": 125.86619807870352,
+        "cen_lat": 34.37843636574074
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    },
+    {
+      "source_ordinal": 3092942,
+      "selection_group": "B",
+      "selection_reason": "Selection B: post observation to closest-to-accident observation for 통발 acc_id 26 vessel 31100492",
+      "acc_id": 26,
+      "rfid_id": "31100492",
+      "gear_label": "통발",
+      "role": "post_adjacent",
+      "month": 5,
+      "row_index": 741124,
+      "cache_offset": 2351818,
+      "ordinal_mapping_formula": "2351818 + 741124 == 3092942",
+      "ordinal_verified": true,
+      "key_verification": {
+        "part_dt": "20260531",
+        "rfid_time": 2,
+        "ts": 494498,
+        "cache_part_dt": "20260531",
+        "cache_rfid_time": 2,
+        "keys_match": true
+      },
+      "raw_record_sha256": "727467b9a9112745d11e53ef0e2e547603f1c0114831a8552be094a40d39be2f",
+      "reconstructed_geometry": {
+        "n_parts": 6,
+        "n_coords": 95,
+        "len_m": 472.54649223685556,
+        "bbox_m": 97.58138009563064,
+        "cen_lon": 125.86587387719291,
+        "cen_lat": 34.378328263157904
+      },
+      "cache_geometry": {
+        "n_coords": 95,
+        "len_m": 472.54649223685556,
+        "bbox_m": 97.58138009563064,
+        "cen_lon": 125.86587387719291,
+        "cen_lat": 34.378328263157904
+      },
+      "tolerances": {
+        "len_m": 0.0001,
+        "bbox_m": 0.0001,
+        "cen_lon": 1e-07,
+        "cen_lat": 1e-07
+      },
+      "discrepancies": {},
+      "validation_passed": true
+    }
+  ]
+}

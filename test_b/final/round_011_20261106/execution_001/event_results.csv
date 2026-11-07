@@ -1,0 +1,601 @@
+acc_id,rfid_id,tier,conflict,acc_ts,primary_gear,is_single_code,gear_stratum,method,k,predicted_times,abs_error,hit,pool_stage,fallback_reason,actual_pool_n,cap,top4_count,top4_time_span_hours,window_observable_s0,window_observable_s1,window_observable_s2,window_observable_s3,window_observable_s4
+2,36314611,0,False,495159,연안복합,True,연안복합,B0,1,[490906],4253,False,s0,,1237,4,4,263.0,True,True,True,True,True
+2,36314611,0,False,495159,연안복합,True,연안복합,B0,4,"[490906, 491168, 490931, 490905]",3991,False,s0,,1237,4,4,263.0,True,True,True,True,True
+2,36314611,0,False,495159,연안복합,True,연안복합,S,1,[491168],3991,False,s2,,1181,4,4,3528.0,True,True,True,True,True
+2,36314611,0,False,495159,연안복합,True,연안복합,S,4,"[491168, 494696, 492223, 494531]",463,False,s2,,1181,4,4,3528.0,True,True,True,True,True
+2,36314611,0,False,495159,연안복합,True,연안복합,G,1,[491168],3991,False,s4,,1159,4,4,3528.0,True,True,True,True,True
+2,36314611,0,False,495159,연안복합,True,연안복합,G,4,"[491168, 494696, 494531, 492223]",463,False,s4,,1159,4,4,3528.0,True,True,True,True,True
+3,36100073,0,False,495152,연안복합,True,연안복합,B0,1,[492175],2977,False,s0,,626,4,4,2036.0,True,True,True,True,True
+3,36100073,0,False,495152,연안복합,True,연안복합,B0,4,"[492175, 493397, 493733, 491697]",1419,False,s0,,626,4,4,2036.0,True,True,True,True,True
+3,36100073,0,False,495152,연안복합,True,연안복합,S,1,[492918],2234,False,s2,,509,4,4,3503.0,True,True,True,True,True
+3,36100073,0,False,495152,연안복합,True,연안복합,S,4,"[492918, 491695, 495198, 495197]",45,False,s2,,509,4,4,3503.0,True,True,True,True,True
+3,36100073,0,False,495152,연안복합,True,연안복합,G,1,[491935],3217,False,s4,,509,4,4,3503.0,True,True,True,True,True
+3,36100073,0,False,495152,연안복합,True,연안복합,G,4,"[491935, 492918, 491695, 495198]",46,False,s4,,509,4,4,3503.0,True,True,True,True,True
+6,31009538,5,True,495009,자망,True,자망,B0,1,[491098],3911,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+6,31009538,5,True,495009,자망,True,자망,B0,4,"[491098, 491097, 494647, 491267]",362,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+6,31009538,5,True,495009,자망,True,자망,S,1,[491098],3911,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+6,31009538,5,True,495009,자망,True,자망,S,4,"[491098, 491097, 494647, 494646]",362,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+6,31009538,5,True,495009,자망,True,자망,G,1,[494647],362,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+6,31009538,5,True,495009,자망,True,자망,G,4,"[494647, 494646, 493930, 493046]",362,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+10,32300353,0,False,494893,자망,True,자망,B0,1,[492492],2401,False,s0,,2851,4,4,166.0,True,True,True,True,True
+10,32300353,0,False,494893,자망,True,자망,B0,4,"[492492, 492327, 492326, 492491]",2401,False,s0,,2851,4,4,166.0,True,True,True,True,True
+10,32300353,0,False,494893,자망,True,자망,S,1,[492491],2402,False,s2,,2720,4,4,2477.0,True,True,True,True,True
+10,32300353,0,False,494893,자망,True,자망,S,4,"[492491, 492488, 494965, 494225]",72,False,s2,,2720,4,4,2477.0,True,True,True,True,True
+10,32300353,0,False,494893,자망,True,자망,G,1,[492491],2402,False,s4,,2720,4,4,2477.0,True,True,True,True,True
+10,32300353,0,False,494893,자망,True,자망,G,4,"[492491, 494965, 492488, 494226]",72,False,s4,,2720,4,4,2477.0,True,True,True,True,True
+11,36311633,0,False,494870,통발,True,통발,B0,1,[494076],794,False,s0,,1847,4,4,2619.0,True,True,True,True,True
+11,36311633,0,False,494870,통발,True,통발,B0,4,"[494076, 494075, 492995, 491457]",794,False,s0,,1847,4,4,2619.0,True,True,True,True,True
+11,36311633,0,False,494870,통발,True,통발,S,1,[494076],794,False,s2,,1786,4,4,2619.0,True,True,True,True,True
+11,36311633,0,False,494870,통발,True,통발,S,4,"[494076, 494075, 492995, 491457]",794,False,s2,,1786,4,4,2619.0,True,True,True,True,True
+11,36311633,0,False,494870,통발,True,통발,G,1,[492995],1875,False,s4,,1770,4,4,2619.0,True,True,True,True,True
+11,36311633,0,False,494870,통발,True,통발,G,4,"[492995, 494076, 494075, 491457]",794,False,s4,,1770,4,4,2619.0,True,True,True,True,True
+12,33201506,0,False,494844,자망,True,자망,B0,1,[495092],248,False,s0,,841,4,4,2170.0,True,True,True,True,True
+12,33201506,0,False,494844,자망,True,자망,B0,4,"[495092, 494121, 493927, 492922]",248,False,s0,,841,4,4,2170.0,True,True,True,True,True
+12,33201506,0,False,494844,자망,True,자망,S,1,[494769],75,False,s2,,761,4,4,864.0,True,True,True,True,True
+12,33201506,0,False,494844,자망,True,자망,S,4,"[494769, 493905, 493924, 493925]",75,False,s2,,761,4,4,864.0,True,True,True,True,True
+12,33201506,0,False,494844,자망,True,자망,G,1,[494769],75,False,s4,,761,4,4,2086.0,True,True,True,True,True
+12,33201506,0,False,494844,자망,True,자망,G,4,"[494769, 493925, 493924, 492683]",75,False,s4,,761,4,4,2086.0,True,True,True,True,True
+13,36115953,0,False,494818,자망,True,자망,B0,1,[493974],844,False,s0,,754,4,4,813.0,True,True,True,True,True
+13,36115953,0,False,494818,자망,True,자망,B0,4,"[493974, 493775, 493191, 493161]",844,False,s0,,754,4,4,813.0,True,True,True,True,True
+13,36115953,0,False,494818,자망,True,자망,S,1,[493974],844,False,s2,,701,4,4,3.0,True,True,True,True,True
+13,36115953,0,False,494818,자망,True,자망,S,4,"[493974, 493975, 493973, 493976]",842,False,s2,,701,4,4,3.0,True,True,True,True,True
+13,36115953,0,False,494818,자망,True,자망,G,1,[493975],843,False,s4,,701,4,4,3.0,True,True,True,True,True
+13,36115953,0,False,494818,자망,True,자망,G,4,"[493975, 493974, 493973, 493976]",842,False,s4,,701,4,4,3.0,True,True,True,True,True
+14,36007269,1,False,494791,연안복합,True,연안복합,B0,1,[494646],145,False,s0,,401,4,4,1320.0,True,True,True,True,True
+14,36007269,1,False,494791,연안복합,True,연안복합,B0,4,"[494646, 493691, 494363, 493326]",145,False,s0,,401,4,4,1320.0,True,True,True,True,True
+14,36007269,1,False,494791,연안복합,True,연안복합,S,1,[494646],145,False,s2,,349,4,4,554.0,True,True,True,True,True
+14,36007269,1,False,494791,연안복합,True,연안복합,S,4,"[494646, 495155, 495200, 494747]",44,False,s2,,349,4,4,554.0,True,True,True,True,True
+14,36007269,1,False,494791,연안복합,True,연안복합,G,1,[494646],145,False,s4,,349,4,4,554.0,True,True,True,True,True
+14,36007269,1,False,494791,연안복합,True,연안복합,G,4,"[494646, 495155, 495200, 494747]",44,False,s4,,349,4,4,554.0,True,True,True,True,True
+18,32300202,3,False,494747,자망,True,자망,B0,1,[495006],259,False,s0,,777,4,4,1464.0,True,True,True,True,True
+18,32300202,3,False,494747,자망,True,자망,B0,4,"[495006, 495007, 493543, 493545]",259,False,s0,,777,4,4,1464.0,True,True,True,True,True
+18,32300202,3,False,494747,자망,True,자망,S,1,[495006],259,False,s2,,717,4,4,1307.0,True,True,True,True,True
+18,32300202,3,False,494747,자망,True,자망,S,4,"[495006, 493700, 493699, 493905]",259,False,s2,,717,4,4,1307.0,True,True,True,True,True
+18,32300202,3,False,494747,자망,True,자망,G,1,[495006],259,False,s4,,717,4,4,1307.0,True,True,True,True,True
+18,32300202,3,False,494747,자망,True,자망,G,4,"[495006, 493905, 493700, 493699]",259,False,s4,,717,4,4,1307.0,True,True,True,True,True
+19,36304593,1,False,494720,자망,True,자망,B0,1,[493933],787,False,s0,,368,4,4,620.0,True,True,True,True,True
+19,36304593,1,False,494720,자망,True,자망,B0,4,"[493933, 494313, 493693, 493935]",407,False,s0,,368,4,4,620.0,True,True,True,True,True
+19,36304593,1,False,494720,자망,True,자망,S,1,[493933],787,False,s2,,307,4,4,1026.0,True,True,True,True,True
+19,36304593,1,False,494720,자망,True,자망,S,4,"[493933, 493693, 494719, 493951]",1,True,s2,,307,4,4,1026.0,True,True,True,True,True
+19,36304593,1,False,494720,자망,True,자망,G,1,[493951],769,False,s4,,307,4,4,258.0,True,True,True,True,True
+19,36304593,1,False,494720,자망,True,자망,G,4,"[493951, 493933, 493714, 493693]",769,False,s4,,307,4,4,258.0,True,True,True,True,True
+20,31008085,1,False,494654,통발,True,통발,B0,1,[492420],2234,False,s0,,2938,4,4,1718.0,True,True,True,True,True
+20,31008085,1,False,494654,통발,True,통발,B0,4,"[492420, 490974, 492692, 491102]",1962,False,s0,,2938,4,4,1718.0,True,True,True,True,True
+20,31008085,1,False,494654,통발,True,통발,S,1,[492420],2234,False,s2,,2881,4,4,2938.0,True,True,True,True,True
+20,31008085,1,False,494654,통발,True,통발,S,4,"[492420, 492692, 493960, 491022]",694,False,s2,,2881,4,4,2938.0,True,True,True,True,True
+20,31008085,1,False,494654,통발,True,통발,G,1,[492692],1962,False,s4,,2751,4,4,388.0,True,True,True,True,True
+20,31008085,1,False,494654,통발,True,통발,G,4,"[492692, 492420, 492418, 492304]",1962,False,s4,,2751,4,4,388.0,True,True,True,True,True
+21,36008148,1,False,494646,연안복합,True,연안복합,B0,1,[492560],2086,False,s0,,839,4,4,1469.0,True,True,True,True,True
+21,36008148,1,False,494646,연안복합,True,연안복합,B0,4,"[492560, 492564, 492561, 491095]",2082,False,s0,,839,4,4,1469.0,True,True,True,True,True
+21,36008148,1,False,494646,연안복합,True,연안복합,S,1,[492560],2086,False,s2,,791,4,4,2065.0,True,True,True,True,True
+21,36008148,1,False,494646,연안복합,True,연안복합,S,4,"[492560, 492563, 493905, 491840]",741,False,s2,,791,4,4,2065.0,True,True,True,True,True
+21,36008148,1,False,494646,연안복합,True,연안복합,G,1,[493905],741,False,s4,,791,4,4,2066.0,True,True,True,True,True
+21,36008148,1,False,494646,연안복합,True,연안복합,G,4,"[493905, 491840, 491839, 492563]",741,False,s4,,791,4,4,2066.0,True,True,True,True,True
+22,31005928,0,False,494604,연안복합,True,연안복합,B0,1,[494608],4,True,s0,,809,4,4,2638.0,True,True,True,True,True
+22,31005928,0,False,494604,연안복합,True,연안복합,B0,4,"[494608, 494607, 491970, 492761]",3,True,s0,,809,4,4,2638.0,True,True,True,True,True
+22,31005928,0,False,494604,연안복합,True,연안복합,S,1,[494607],3,True,s2,,731,4,4,407.0,True,True,True,True,True
+22,31005928,0,False,494604,연안복합,True,연안복합,S,4,"[494607, 494606, 494605, 494200]",1,True,s2,,731,4,4,407.0,True,True,True,True,True
+22,31005928,0,False,494604,연안복합,True,연안복합,G,1,[494607],3,True,s4,,731,4,4,2024.0,True,True,True,True,True
+22,31005928,0,False,494604,연안복합,True,연안복합,G,4,"[494607, 494606, 494605, 492583]",1,True,s4,,731,4,4,2024.0,True,True,True,True,True
+23,32300717,3,False,494562,자망,True,자망,B0,1,[492561],2001,False,s0,,1824,4,4,1916.0,True,True,True,True,True
+23,32300717,3,False,494562,자망,True,자망,B0,4,"[492561, 493429, 494477, 494217]",85,False,s0,,1824,4,4,1916.0,True,True,True,True,True
+23,32300717,3,False,494562,자망,True,자망,S,1,[494121],441,False,s2,,1769,4,4,899.0,True,True,True,True,True
+23,32300717,3,False,494562,자망,True,자망,S,4,"[494121, 494208, 494702, 493803]",140,False,s2,,1769,4,4,899.0,True,True,True,True,True
+23,32300717,3,False,494562,자망,True,자망,G,1,[494702],140,False,s4,,1769,4,4,899.0,True,True,True,True,True
+23,32300717,3,False,494562,자망,True,자망,G,4,"[494702, 494208, 494121, 493803]",140,False,s4,,1769,4,4,899.0,True,True,True,True,True
+24,36001494,0,False,494529,연안복합,True,연안복합,B0,1,[493208],1321,False,s0,,548,4,4,1972.0,True,True,True,True,True
+24,36001494,0,False,494529,연안복합,True,연안복합,B0,4,"[493208, 495180, 493563, 493325]",651,False,s0,,548,4,4,1972.0,True,True,True,True,True
+24,36001494,0,False,494529,연안복합,True,연안복합,S,1,[494724],195,False,s2,,498,4,4,579.0,True,True,True,True,True
+24,36001494,0,False,494529,연안복합,True,연안복합,S,4,"[494724, 494529, 495108, 495026]",0,True,s2,,498,4,4,579.0,True,True,True,True,True
+24,36001494,0,False,494529,연안복합,True,연안복합,G,1,[494724],195,False,s4,,498,4,4,579.0,True,True,True,True,True
+24,36001494,0,False,494529,연안복합,True,연안복합,G,4,"[494724, 494529, 495108, 495026]",0,True,s4,,498,4,4,579.0,True,True,True,True,True
+26,31100492,5,False,494497,통발,True,통발,B0,1,[490980],3517,False,s0,,3092,4,4,1319.0,True,True,True,True,True
+26,31100492,5,False,494497,통발,True,통발,B0,4,"[490980, 490956, 490955, 492274]",2223,False,s0,,3092,4,4,1319.0,True,True,True,True,True
+26,31100492,5,False,494497,통발,True,통발,S,1,[492081],2416,False,s2,,2959,4,4,1573.0,True,True,True,True,True
+26,31100492,5,False,494497,통발,True,통발,S,4,"[492081, 493653, 493651, 492080]",844,False,s2,,2959,4,4,1573.0,True,True,True,True,True
+26,31100492,5,False,494497,통발,True,통발,G,1,[492081],2416,False,s4,,2783,4,4,1573.0,True,True,True,True,True
+26,31100492,5,False,494497,통발,True,통발,G,4,"[492081, 493653, 493651, 492080]",844,False,s4,,2783,4,4,1573.0,True,True,True,True,True
+27,36108086,1,False,494481,연안복합,True,연안복합,B0,1,[493770],711,False,s0,,788,4,4,1023.0,True,True,True,True,True
+27,36108086,1,False,494481,연안복합,True,연안복합,B0,4,"[493770, 493123, 492895, 492747]",711,False,s0,,788,4,4,1023.0,True,True,True,True,True
+27,36108086,1,False,494481,연안복합,True,연안복합,S,1,[493754],727,False,s2,,722,4,4,1371.0,True,True,True,True,True
+27,36108086,1,False,494481,연안복합,True,연안복합,S,4,"[493754, 493729, 492716, 494087]",394,False,s2,,722,4,4,1371.0,True,True,True,True,True
+27,36108086,1,False,494481,연안복합,True,연안복합,G,1,[493754],727,False,s4,,722,4,4,1371.0,True,True,True,True,True
+27,36108086,1,False,494481,연안복합,True,연안복합,G,4,"[493754, 493729, 492716, 494087]",394,False,s4,,722,4,4,1371.0,True,True,True,True,True
+28,31007500,0,False,494444,자망,True,자망,B0,1,[491094],3350,False,s0,,1431,4,4,2520.0,True,True,True,True,True
+28,31007500,0,False,494444,자망,True,자망,B0,4,"[491094, 493614, 492156, 492845]",830,False,s0,,1431,4,4,2520.0,True,True,True,True,True
+28,31007500,0,False,494444,자망,True,자망,S,1,[493614],830,False,s2,,1383,4,4,3315.0,True,True,True,True,True
+28,31007500,0,False,494444,자망,True,자망,S,4,"[493614, 492156, 494577, 491262]",133,False,s2,,1383,4,4,3315.0,True,True,True,True,True
+28,31007500,0,False,494444,자망,True,자망,G,1,[494577],133,False,s4,,1383,4,4,3315.0,True,True,True,True,True
+28,31007500,0,False,494444,자망,True,자망,G,4,"[494577, 493614, 492156, 491262]",133,False,s4,,1383,4,4,3315.0,True,True,True,True,True
+29,31008933,1,False,494433,연안복합,True,연안복합,B0,1,[491895],2538,False,s0,,1313,4,4,332.0,True,True,True,True,True
+29,31008933,1,False,494433,연안복합,True,연안복합,B0,4,"[491895, 491893, 491894, 492225]",2208,False,s0,,1313,4,4,332.0,True,True,True,True,True
+29,31008933,1,False,494433,연안복합,True,연안복합,S,1,[491893],2540,False,s2,,1222,4,4,3435.0,True,True,True,True,True
+29,31008933,1,False,494433,연안복합,True,연안복합,S,4,"[491893, 491215, 491217, 494650]",217,False,s2,,1222,4,4,3435.0,True,True,True,True,True
+29,31008933,1,False,494433,연안복합,True,연안복합,G,1,[494650],217,False,s4,,1222,4,4,2757.0,True,True,True,True,True
+29,31008933,1,False,494433,연안복합,True,연안복합,G,4,"[494650, 493974, 491893, 494648]",215,False,s4,,1222,4,4,2757.0,True,True,True,True,True
+30,31100492,1,False,494399,통발,True,통발,B0,1,[490980],3419,False,s0,,3092,4,4,1319.0,True,True,True,True,True
+30,31100492,1,False,494399,통발,True,통발,B0,4,"[490980, 490956, 490955, 492274]",2125,False,s0,,3092,4,4,1319.0,True,True,True,True,True
+30,31100492,1,False,494399,통발,True,통발,S,1,[492081],2318,False,s2,,2959,4,4,1573.0,True,True,True,True,True
+30,31100492,1,False,494399,통발,True,통발,S,4,"[492081, 493653, 493651, 492080]",746,False,s2,,2959,4,4,1573.0,True,True,True,True,True
+30,31100492,1,False,494399,통발,True,통발,G,1,[492081],2318,False,s4,,2783,4,4,1573.0,True,True,True,True,True
+30,31100492,1,False,494399,통발,True,통발,G,4,"[492081, 493653, 493651, 492080]",746,False,s4,,2783,4,4,1573.0,True,True,True,True,True
+31,36314076,4,False,494394,채낚기연승낚시,True,채낚기연승낚시,B0,1,[493661],733,False,s0,,2110,4,4,3760.0,True,True,True,False,False
+31,36314076,4,False,494394,채낚기연승낚시,True,채낚기연승낚시,B0,4,"[493661, 490994, 493954, 494754]",360,False,s0,,2110,4,4,3760.0,True,True,True,False,False
+31,36314076,4,False,494394,채낚기연승낚시,True,채낚기연승낚시,S,1,[490994],3400,False,s2,,2033,4,4,1873.0,True,True,True,False,False
+31,36314076,4,False,494394,채낚기연승낚시,True,채낚기연승낚시,S,4,"[490994, 491093, 492867, 492400]",1527,False,s2,,2033,4,4,1873.0,True,True,True,False,False
+31,36314076,4,False,494394,채낚기연승낚시,True,채낚기연승낚시,G,1,[490994],3400,False,s2,s4_empty_use_s2,2033,4,4,1873.0,True,True,True,False,False
+31,36314076,4,False,494394,채낚기연승낚시,True,채낚기연승낚시,G,4,"[490994, 491093, 492867, 492400]",1527,False,s2,s4_empty_use_s2,2033,4,4,1873.0,True,True,True,False,False
+33,36102425,4,False,494293,연안복합,True,연안복합,B0,1,[493230],1063,False,s0,,261,4,4,1081.0,True,True,True,True,True
+33,36102425,4,False,494293,연안복합,True,연안복합,B0,4,"[493230, 494295, 494311, 494289]",2,True,s0,,261,4,4,1081.0,True,True,True,True,True
+33,36102425,4,False,494293,연안복합,True,연안복합,S,1,[494170],123,False,s2,,213,4,4,141.0,True,True,True,True,True
+33,36102425,4,False,494293,연안복합,True,연안복합,S,4,"[494170, 494311, 494171, 494289]",4,True,s2,,213,4,4,141.0,True,True,True,True,True
+33,36102425,4,False,494293,연안복합,True,연안복합,G,1,[494170],123,False,s4,,213,4,4,141.0,True,True,True,True,True
+33,36102425,4,False,494293,연안복합,True,연안복합,G,4,"[494170, 494311, 494171, 494289]",4,True,s4,,213,4,4,141.0,True,True,True,True,True
+34,31012971,0,False,494273,자망,True,자망,B0,1,[494431],158,False,s0,,808,4,4,744.0,True,True,True,True,True
+34,31012971,0,False,494273,자망,True,자망,B0,4,"[494431, 493687, 494072, 494365]",92,False,s0,,808,4,4,744.0,True,True,True,True,True
+34,31012971,0,False,494273,자망,True,자망,S,1,[494431],158,False,s2,,760,4,4,745.0,True,True,True,True,True
+34,31012971,0,False,494273,자망,True,자망,S,4,"[494431, 493687, 494072, 493686]",158,False,s2,,760,4,4,745.0,True,True,True,True,True
+34,31012971,0,False,494273,자망,True,자망,G,1,[494431],158,False,s4,,760,4,4,745.0,True,True,True,True,True
+34,31012971,0,False,494273,자망,True,자망,G,4,"[494431, 494072, 493687, 493686]",158,False,s4,,760,4,4,745.0,True,True,True,True,True
+37,36011749,8,False,494237,자망,True,자망,B0,1,[490979],3258,False,s0,,1326,4,4,119.0,True,True,True,True,True
+37,36011749,8,False,494237,자망,True,자망,B0,4,"[490979, 490981, 490980, 491098]",3139,False,s0,,1326,4,4,119.0,True,True,True,True,True
+37,36011749,8,False,494237,자망,True,자망,S,1,[493355],882,False,s2,,1275,4,4,939.0,True,True,True,True,True
+37,36011749,8,False,494237,자망,True,자망,S,4,"[493355, 492416, 492709, 492417]",882,False,s2,,1275,4,4,939.0,True,True,True,True,True
+37,36011749,8,False,494237,자망,True,자망,G,1,[493355],882,False,s4,,1275,4,4,806.0,True,True,True,True,True
+37,36011749,8,False,494237,자망,True,자망,G,4,"[493355, 493354, 492709, 492549]",882,False,s4,,1275,4,4,806.0,True,True,True,True,True
+42,34400535,0,False,494194,자망,True,자망,B0,1,[492254],1940,False,s0,,1208,4,4,1651.0,True,True,True,True,True
+42,34400535,0,False,494194,자망,True,자망,B0,4,"[492254, 492279, 492256, 493905]",289,False,s0,,1208,4,4,1651.0,True,True,True,True,True
+42,34400535,0,False,494194,자망,True,자망,S,1,[492969],1225,False,s2,,1149,4,4,1833.0,True,True,True,True,True
+42,34400535,0,False,494194,자망,True,자망,S,4,"[492969, 494298, 494802, 494641]",104,False,s2,,1149,4,4,1833.0,True,True,True,True,True
+42,34400535,0,False,494194,자망,True,자망,G,1,[492969],1225,False,s4,,1149,4,4,1833.0,True,True,True,True,True
+42,34400535,0,False,494194,자망,True,자망,G,4,"[492969, 494298, 494802, 494641]",104,False,s4,,1149,4,4,1833.0,True,True,True,True,True
+43,36110858,1,False,494175,연안복합,True,연안복합,B0,1,[491937],2238,False,s0,,549,4,4,2715.0,True,True,True,True,True
+43,36110858,1,False,494175,연안복합,True,연안복합,B0,4,"[491937, 494651, 494336, 494652]",161,False,s0,,549,4,4,2715.0,True,True,True,True,True
+43,36110858,1,False,494175,연안복합,True,연안복합,S,1,[494651],476,False,s2,,458,4,4,3549.0,True,True,True,True,True
+43,36110858,1,False,494175,연안복합,True,연안복합,S,4,"[494651, 491631, 491102, 494650]",475,False,s2,,458,4,4,3549.0,True,True,True,True,True
+43,36110858,1,False,494175,연안복합,True,연안복합,G,1,[494651],476,False,s4,,458,4,4,1682.0,True,True,True,True,True
+43,36110858,1,False,494175,연안복합,True,연안복합,G,4,"[494651, 494650, 492969, 494080]",95,False,s4,,458,4,4,1682.0,True,True,True,True,True
+45,31001758,0,False,494143,연안복합,True,연안복합,B0,1,[494466],323,False,s0,,916,4,4,3184.0,True,True,True,True,True
+45,31001758,0,False,494143,연안복합,True,연안복합,B0,4,"[494466, 491282, 491953, 494347]",204,False,s0,,916,4,4,3184.0,True,True,True,True,True
+45,31001758,0,False,494143,연안복합,True,연안복합,S,1,[494347],204,False,s2,,868,4,4,1775.0,True,True,True,True,True
+45,31001758,0,False,494143,연안복합,True,연안복합,S,4,"[494347, 492572, 493387, 493987]",156,False,s2,,868,4,4,1775.0,True,True,True,True,True
+45,31001758,0,False,494143,연안복합,True,연안복합,G,1,[494347],204,False,s4,,868,4,4,1775.0,True,True,True,True,True
+45,31001758,0,False,494143,연안복합,True,연안복합,G,4,"[494347, 493987, 493387, 492572]",156,False,s4,,868,4,4,1775.0,True,True,True,True,True
+48,32300267,4,True,494054,자망,True,자망,B0,1,[490974],3080,False,s0,,1197,4,4,3890.0,True,True,True,True,True
+48,32300267,4,True,494054,자망,True,자망,B0,4,"[490974, 494864, 491437, 493771]",283,False,s0,,1197,4,4,3890.0,True,True,True,True,True
+48,32300267,4,True,494054,자망,True,자망,S,1,[494489],435,False,s2,,1107,4,4,1883.0,True,True,True,True,True
+48,32300267,4,True,494054,자망,True,자망,S,4,"[494489, 493489, 492967, 492606]",435,False,s2,,1107,4,4,1883.0,True,True,True,True,True
+48,32300267,4,True,494054,자망,True,자망,G,1,[494866],812,False,s4,,1107,4,4,1899.0,True,True,True,True,True
+48,32300267,4,True,494054,자망,True,자망,G,4,"[494866, 493489, 494489, 492967]",435,False,s4,,1107,4,4,1899.0,True,True,True,True,True
+50,34200580,5,False,494027,자망,True,자망,B0,1,[492900],1127,False,s0,,574,4,4,71.0,True,True,True,True,True
+50,34200580,5,False,494027,자망,True,자망,B0,4,"[492900, 492930, 492971, 492931]",1056,False,s0,,574,4,4,71.0,True,True,True,True,True
+50,34200580,5,False,494027,자망,True,자망,S,1,[494105],78,False,s2,,526,4,4,273.0,True,True,True,True,True
+50,34200580,5,False,494027,자망,True,자망,S,4,"[494105, 494049, 494024, 494297]",3,True,s2,,526,4,4,273.0,True,True,True,True,True
+50,34200580,5,False,494027,자망,True,자망,G,1,[494105],78,False,s4,,526,4,4,273.0,True,True,True,True,True
+50,34200580,5,False,494027,자망,True,자망,G,4,"[494105, 494049, 494024, 494297]",3,True,s4,,526,4,4,273.0,True,True,True,True,True
+52,31007124,0,False,493994,연안복합,True,연안복합,B0,1,[493712],282,False,s0,,765,4,4,2328.0,True,True,True,True,True
+52,31007124,0,False,493994,연안복합,True,연안복합,B0,4,"[493712, 493807, 494719, 492391]",187,False,s0,,765,4,4,2328.0,True,True,True,True,True
+52,31007124,0,False,493994,연안복합,True,연안복합,S,1,[492554],1440,False,s2,,717,4,4,3766.0,True,True,True,True,True
+52,31007124,0,False,493994,연안복합,True,연안복합,S,4,"[492554, 495199, 492224, 491433]",1205,False,s2,,717,4,4,3766.0,True,True,True,True,True
+52,31007124,0,False,493994,연안복합,True,연안복합,G,1,[495199],1205,False,s4,,717,4,4,3766.0,True,True,True,True,True
+52,31007124,0,False,493994,연안복합,True,연안복합,G,4,"[495199, 493495, 492554, 491433]",499,False,s4,,717,4,4,3766.0,True,True,True,True,True
+53,36115953,3,False,493975,자망,True,자망,B0,1,[493974],1,True,s0,,754,4,4,813.0,True,True,True,True,True
+53,36115953,3,False,493975,자망,True,자망,B0,4,"[493974, 493775, 493191, 493161]",1,True,s0,,754,4,4,813.0,True,True,True,True,True
+53,36115953,3,False,493975,자망,True,자망,S,1,[493974],1,True,s2,,701,4,4,3.0,True,True,True,True,True
+53,36115953,3,False,493975,자망,True,자망,S,4,"[493974, 493975, 493973, 493976]",0,True,s2,,701,4,4,3.0,True,True,True,True,True
+53,36115953,3,False,493975,자망,True,자망,G,1,[493975],0,True,s4,,701,4,4,3.0,True,True,True,True,True
+53,36115953,3,False,493975,자망,True,자망,G,4,"[493975, 493974, 493973, 493976]",0,True,s4,,701,4,4,3.0,True,True,True,True,True
+54,36212203,5,False,493968,통발,True,통발,B0,1,[492397],1571,False,s0,,904,4,4,1745.0,True,True,True,True,True
+54,36212203,5,False,493968,통발,True,통발,B0,4,"[492397, 492827, 492824, 494142]",174,False,s0,,904,4,4,1745.0,True,True,True,True,True
+54,36212203,5,False,493968,통발,True,통발,S,1,[493522],446,False,s2,,856,4,4,1056.0,True,True,True,True,True
+54,36212203,5,False,493968,통발,True,통발,S,4,"[493522, 493688, 494574, 494578]",280,False,s2,,856,4,4,1056.0,True,True,True,True,True
+54,36212203,5,False,493968,통발,True,통발,G,1,[493688],280,False,s4,,856,4,4,1056.0,True,True,True,True,True
+54,36212203,5,False,493968,통발,True,통발,G,4,"[493688, 493522, 494574, 494578]",280,False,s4,,856,4,4,1056.0,True,True,True,True,True
+55,36015383,0,False,493953,자망,True,자망,B0,1,[490948],3005,False,s0,,1711,4,4,3042.0,True,True,True,True,True
+55,36015383,0,False,493953,자망,True,자망,B0,4,"[490948, 493990, 491836, 493320]",37,False,s0,,1711,4,4,3042.0,True,True,True,True,True
+55,36015383,0,False,493953,자망,True,자망,S,1,[491834],2119,False,s2,,1632,4,4,1615.0,True,True,True,True,True
+55,36015383,0,False,493953,자망,True,자망,S,4,"[491834, 493449, 491863, 491878]",504,False,s2,,1632,4,4,1615.0,True,True,True,True,True
+55,36015383,0,False,493953,자망,True,자망,G,1,[493449],504,False,s4,,1632,4,4,1586.0,True,True,True,True,True
+55,36015383,0,False,493953,자망,True,자망,G,4,"[493449, 491863, 491878, 492708]",504,False,s4,,1632,4,4,1586.0,True,True,True,True,True
+56,31014672,2,True,493939,연안복합,True,연안복합,B0,1,[493618],321,False,s0,,306,4,4,1076.0,True,True,False,False,False
+56,31014672,2,True,493939,연안복합,True,연안복합,B0,4,"[493618, 493619, 493976, 494694]",37,False,s0,,306,4,4,1076.0,True,True,False,False,False
+56,31014672,2,True,493939,연안복합,True,연안복합,S,1,[493976],37,False,s2,,257,4,4,698.0,True,True,False,False,False
+56,31014672,2,True,493939,연안복합,True,연안복합,S,4,"[493976, 493975, 494673, 494672]",36,False,s2,,257,4,4,698.0,True,True,False,False,False
+56,31014672,2,True,493939,연안복합,True,연안복합,G,1,[493976],37,False,s4,,257,4,4,698.0,True,True,False,False,False
+56,31014672,2,True,493939,연안복합,True,연안복합,G,4,"[493976, 493975, 494673, 494672]",36,False,s4,,257,4,4,698.0,True,True,False,False,False
+60,33200664,5,False,493906,자망,True,자망,B0,1,[493807],99,False,s0,,1328,4,4,517.0,True,True,True,True,True
+60,33200664,5,False,493906,자망,True,자망,B0,4,"[493807, 493806, 493805, 494322]",99,False,s0,,1328,4,4,517.0,True,True,True,True,True
+60,33200664,5,False,493906,자망,True,자망,S,1,[493806],100,False,s2,,1274,4,4,1431.0,True,True,True,True,True
+60,33200664,5,False,493906,자망,True,자망,S,4,"[493806, 493805, 495236, 495062]",100,False,s2,,1274,4,4,1431.0,True,True,True,True,True
+60,33200664,5,False,493906,자망,True,자망,G,1,[493806],100,False,s4,,1274,4,4,1431.0,True,True,True,True,True
+60,33200664,5,False,493906,자망,True,자망,G,4,"[493806, 493805, 495236, 495062]",100,False,s4,,1274,4,4,1431.0,True,True,True,True,True
+63,31013760,1,False,493823,연안복합,True,연안복합,B0,1,[493939],116,False,s0,,565,4,4,384.0,True,True,True,True,True
+63,31013760,1,False,493823,연안복합,True,연안복합,B0,4,"[493939, 493803, 494187, 494126]",20,False,s0,,565,4,4,384.0,True,True,True,True,True
+63,31013760,1,False,493823,연안복합,True,연안복합,S,1,[494908],1085,False,s2,,472,4,4,2579.0,True,True,True,True,True
+63,31013760,1,False,493823,연안복합,True,연안복합,S,4,"[494908, 494412, 492329, 494438]",589,False,s2,,472,4,4,2579.0,True,True,True,True,True
+63,31013760,1,False,493823,연안복합,True,연안복합,G,1,[492329],1494,False,s4,,472,4,4,2579.0,True,True,True,True,True
+63,31013760,1,False,493823,연안복합,True,연안복합,G,4,"[492329, 494908, 494412, 494438]",589,False,s4,,472,4,4,2579.0,True,True,True,True,True
+65,33200829,0,False,493758,자망,True,자망,B0,1,[490965],2793,False,s0,,2335,4,4,294.0,True,True,True,True,True
+65,33200829,0,False,493758,자망,True,자망,B0,4,"[490965, 491040, 491257, 490963]",2501,False,s0,,2335,4,4,294.0,True,True,True,True,True
+65,33200829,0,False,493758,자망,True,자망,S,1,[491257],2501,False,s2,,2271,4,4,1906.0,True,True,True,True,True
+65,33200829,0,False,493758,자망,True,자망,S,4,"[491257, 492325, 493163, 493157]",595,False,s2,,2271,4,4,1906.0,True,True,True,True,True
+65,33200829,0,False,493758,자망,True,자망,G,1,[491257],2501,False,s4,,2271,4,4,1906.0,True,True,True,True,True
+65,33200829,0,False,493758,자망,True,자망,G,4,"[491257, 492325, 493163, 493157]",595,False,s4,,2271,4,4,1906.0,True,True,True,True,True
+67,36314895,5,False,493721,자망,True,자망,B0,1,[492876],845,False,s0,,1651,4,4,1771.0,True,True,True,True,True
+67,36314895,5,False,493721,자망,True,자망,B0,4,"[492876, 492897, 494078, 494647]",357,False,s0,,1651,4,4,1771.0,True,True,True,True,True
+67,36314895,5,False,493721,자망,True,자망,S,1,[492876],845,False,s2,,1518,4,4,4098.0,True,True,True,True,True
+67,36314895,5,False,493721,자망,True,자망,S,4,"[492876, 491031, 495129, 492875]",845,False,s2,,1518,4,4,4098.0,True,True,True,True,True
+67,36314895,5,False,493721,자망,True,자망,G,1,[495129],1408,False,s4,,1484,4,4,2257.0,True,True,True,True,True
+67,36314895,5,False,493721,자망,True,자망,G,4,"[495129, 492876, 492875, 492872]",845,False,s4,,1484,4,4,2257.0,True,True,True,True,True
+68,31704073,0,False,493717,연안복합,True,연안복합,B0,1,[493645],72,False,s0,,2005,4,4,1176.0,True,True,True,True,True
+68,31704073,0,False,493717,연안복합,True,연안복합,B0,4,"[493645, 494820, 494821, 493733]",16,False,s0,,2005,4,4,1176.0,True,True,True,True,True
+68,31704073,0,False,493717,연안복합,True,연안복합,S,1,[494219],502,False,s2,,1951,4,4,826.0,True,True,True,True,True
+68,31704073,0,False,493717,연안복합,True,연안복합,S,4,"[494219, 494968, 494142, 494337]",425,False,s2,,1951,4,4,826.0,True,True,True,True,True
+68,31704073,0,False,493717,연안복합,True,연안복합,G,1,[494219],502,False,s4,,1951,4,4,826.0,True,True,True,True,True
+68,31704073,0,False,493717,연안복합,True,연안복합,G,4,"[494219, 494968, 494142, 494220]",425,False,s4,,1951,4,4,826.0,True,True,True,True,True
+70,36003960,0,False,493649,연안복합,True,연안복합,B0,1,[493905],256,False,s0,,424,4,4,1417.0,True,True,True,True,True
+70,36003960,0,False,493649,연안복합,True,연안복합,B0,4,"[493905, 494054, 494289, 492872]",256,False,s0,,424,4,4,1417.0,True,True,True,True,True
+70,36003960,0,False,493649,연안복합,True,연안복합,S,1,[493905],256,False,s2,,354,4,4,2069.0,True,True,True,True,True
+70,36003960,0,False,493649,연안복합,True,연안복합,S,4,"[493905, 492991, 493065, 495060]",256,False,s2,,354,4,4,2069.0,True,True,True,True,True
+70,36003960,0,False,493649,연안복합,True,연안복합,G,1,[493905],256,False,s4,,354,4,4,2069.0,True,True,True,True,True
+70,36003960,0,False,493649,연안복합,True,연안복합,G,4,"[493905, 493065, 492991, 495060]",256,False,s4,,354,4,4,2069.0,True,True,True,True,True
+71,33201019,0,False,493643,통발,True,통발,B0,1,[491092],2551,False,s0,,523,4,4,3547.0,True,True,True,True,True
+71,33201019,0,False,493643,통발,True,통발,B0,4,"[491092, 492087, 494639, 492269]",996,False,s0,,523,4,4,3547.0,True,True,True,True,True
+71,33201019,0,False,493643,통발,True,통발,S,1,[492087],1556,False,s2,,465,4,4,1305.0,True,True,True,True,True
+71,33201019,0,False,493643,통발,True,통발,S,4,"[492087, 492965, 491954, 493259]",384,False,s2,,465,4,4,1305.0,True,True,True,True,True
+71,33201019,0,False,493643,통발,True,통발,G,1,[492087],1556,False,s4,,465,4,4,2017.0,True,True,True,True,True
+71,33201019,0,False,493643,통발,True,통발,G,4,"[492087, 491956, 493973, 493686]",43,False,s4,,465,4,4,2017.0,True,True,True,True,True
+75,36307839,0,False,493502,연안복합,True,연안복합,B0,1,[493308],194,False,s0,,122,4,4,477.0,True,False,False,False,False
+75,36307839,0,False,493502,연안복합,True,연안복합,B0,4,"[493308, 493781, 493638, 493304]",136,False,s0,,122,4,4,477.0,True,False,False,False,False
+75,36307839,0,False,493502,연안복합,True,연안복합,S,1,[495012],1510,False,s2,,74,4,4,863.0,True,False,False,False,False
+75,36307839,0,False,493502,연안복합,True,연안복합,S,4,"[495012, 494580, 495180, 494317]",815,False,s2,,74,4,4,863.0,True,False,False,False,False
+75,36307839,0,False,493502,연안복합,True,연안복합,G,1,[495012],1510,False,s4,,74,4,4,863.0,True,False,False,False,False
+75,36307839,0,False,493502,연안복합,True,연안복합,G,4,"[495012, 494580, 495180, 494317]",815,False,s4,,74,4,4,863.0,True,False,False,False,False
+77,36115953,0,False,493437,자망,True,자망,B0,1,[493974],537,False,s0,,754,4,4,813.0,True,True,True,True,True
+77,36115953,0,False,493437,자망,True,자망,B0,4,"[493974, 493775, 493191, 493161]",246,False,s0,,754,4,4,813.0,True,True,True,True,True
+77,36115953,0,False,493437,자망,True,자망,S,1,[493974],537,False,s2,,701,4,4,3.0,True,True,True,True,True
+77,36115953,0,False,493437,자망,True,자망,S,4,"[493974, 493975, 493973, 493976]",536,False,s2,,701,4,4,3.0,True,True,True,True,True
+77,36115953,0,False,493437,자망,True,자망,G,1,[493975],538,False,s4,,701,4,4,3.0,True,True,True,True,True
+77,36115953,0,False,493437,자망,True,자망,G,4,"[493975, 493974, 493973, 493976]",536,False,s4,,701,4,4,3.0,True,True,True,True,True
+78,36008988,5,False,493427,자망,True,자망,B0,1,[493215],212,False,s0,,733,4,4,1344.0,True,True,True,True,True
+78,36008988,5,False,493427,자망,True,자망,B0,4,"[493215, 492965, 491913, 493257]",170,False,s0,,733,4,4,1344.0,True,True,True,True,True
+78,36008988,5,False,493427,자망,True,자망,S,1,[493215],212,False,s2,,644,4,4,1461.0,True,True,True,True,True
+78,36008988,5,False,493427,자망,True,자망,S,4,"[493215, 494605, 494676, 493351]",76,False,s2,,644,4,4,1461.0,True,True,True,True,True
+78,36008988,5,False,493427,자망,True,자망,G,1,[493215],212,False,s4,,644,4,4,1461.0,True,True,True,True,True
+78,36008988,5,False,493427,자망,True,자망,G,4,"[493215, 494605, 494676, 493351]",76,False,s4,,644,4,4,1461.0,True,True,True,True,True
+79,36101547,0,False,493402,연안복합,True,연안복합,B0,1,[493398],4,True,s0,,91,4,4,1661.0,True,False,False,False,False
+79,36101547,0,False,493402,연안복합,True,연안복합,B0,4,"[493398, 491865, 493526, 492775]",4,True,s0,,91,4,4,1661.0,True,False,False,False,False
+79,36101547,0,False,493402,연안복합,True,연안복합,S,1,[493643],241,False,s2,,32,4,4,91.0,True,False,False,False,False
+79,36101547,0,False,493402,연안복합,True,연안복합,S,4,"[493643, 493689, 493667, 493734]",241,False,s2,,32,4,4,91.0,True,False,False,False,False
+79,36101547,0,False,493402,연안복합,True,연안복합,G,1,[493643],241,False,s4,,32,4,4,91.0,True,False,False,False,False
+79,36101547,0,False,493402,연안복합,True,연안복합,G,4,"[493643, 493689, 493667, 493734]",241,False,s4,,32,4,4,91.0,True,False,False,False,False
+80,35100289,5,False,493381,자망,True,자망,B0,1,[493734],353,False,s0,,1582,4,4,190.0,True,True,True,True,True
+80,35100289,5,False,493381,자망,True,자망,B0,4,"[493734, 493733, 493748, 493923]",352,False,s0,,1582,4,4,190.0,True,True,True,True,True
+80,35100289,5,False,493381,자망,True,자망,S,1,[493734],353,False,s2,,1513,4,4,1849.0,True,True,True,True,True
+80,35100289,5,False,493381,자망,True,자망,S,4,"[493734, 493733, 491886, 491885]",352,False,s2,,1513,4,4,1849.0,True,True,True,True,True
+80,35100289,5,False,493381,자망,True,자망,G,1,[493734],353,False,s4,,1513,4,4,1848.0,True,True,True,True,True
+80,35100289,5,False,493381,자망,True,자망,G,4,"[493734, 493733, 493496, 491886]",115,False,s4,,1513,4,4,1848.0,True,True,True,True,True
+82,36301995,1,False,493373,연안복합,True,연안복합,B0,1,[491095],2278,False,s0,,807,4,4,2257.0,True,True,True,True,True
+82,36301995,1,False,493373,연안복합,True,연안복합,B0,4,"[491095, 493352, 492928, 491936]",21,False,s0,,807,4,4,2257.0,True,True,True,True,True
+82,36301995,1,False,493373,연안복합,True,연안복합,S,1,[493352],21,False,s2,,730,4,4,2696.0,True,True,True,True,True
+82,36301995,1,False,493373,연안복합,True,연안복합,S,4,"[493352, 492928, 491936, 494632]",21,False,s2,,730,4,4,2696.0,True,True,True,True,True
+82,36301995,1,False,493373,연안복합,True,연안복합,G,1,[493352],21,False,s4,,730,4,4,2695.0,True,True,True,True,True
+82,36301995,1,False,493373,연안복합,True,연안복합,G,4,"[493352, 491937, 492928, 494632]",21,False,s4,,730,4,4,2695.0,True,True,True,True,True
+83,36314346,5,False,493363,자망,True,자망,B0,1,[490955],2408,False,s0,,1856,4,4,2545.0,True,True,True,True,True
+83,36314346,5,False,493363,자망,True,자망,B0,4,"[490955, 490954, 490956, 493499]",136,False,s0,,1856,4,4,2545.0,True,True,True,True,True
+83,36314346,5,False,493363,자망,True,자망,S,1,[493499],136,False,s2,,1795,4,4,1002.0,True,True,True,True,True
+83,36314346,5,False,493363,자망,True,자망,S,4,"[493499, 493488, 493487, 492497]",124,False,s2,,1795,4,4,1002.0,True,True,True,True,True
+83,36314346,5,False,493363,자망,True,자망,G,1,[493499],136,False,s4,,1777,4,4,1002.0,True,True,True,True,True
+83,36314346,5,False,493363,자망,True,자망,G,4,"[493499, 493488, 493487, 492497]",124,False,s4,,1777,4,4,1002.0,True,True,True,True,True
+84,36007909,2,False,493358,자망,True,자망,B0,1,[494069],711,False,s0,,756,4,4,312.0,True,True,True,True,True
+84,36007909,2,False,493358,자망,True,자망,B0,4,"[494069, 493997, 494261, 493949]",591,False,s0,,756,4,4,312.0,True,True,True,True,True
+84,36007909,2,False,493358,자망,True,자망,S,1,[494454],1096,False,s2,,708,4,4,1511.0,True,True,True,True,True
+84,36007909,2,False,493358,자망,True,자망,S,4,"[494454, 494455, 492992, 494503]",366,False,s2,,708,4,4,1511.0,True,True,True,True,True
+84,36007909,2,False,493358,자망,True,자망,G,1,[494455],1097,False,s4,,708,4,4,1511.0,True,True,True,True,True
+84,36007909,2,False,493358,자망,True,자망,G,4,"[494455, 492992, 494454, 494503]",366,False,s4,,708,4,4,1511.0,True,True,True,True,True
+85,36008148,5,False,493333,연안복합,True,연안복합,B0,1,[492560],773,False,s0,,839,4,4,1469.0,True,True,True,True,True
+85,36008148,5,False,493333,연안복합,True,연안복합,B0,4,"[492560, 492564, 492561, 491095]",769,False,s0,,839,4,4,1469.0,True,True,True,True,True
+85,36008148,5,False,493333,연안복합,True,연안복합,S,1,[492560],773,False,s2,,791,4,4,2065.0,True,True,True,True,True
+85,36008148,5,False,493333,연안복합,True,연안복합,S,4,"[492560, 492563, 493905, 491840]",572,False,s2,,791,4,4,2065.0,True,True,True,True,True
+85,36008148,5,False,493333,연안복합,True,연안복합,G,1,[493905],572,False,s4,,791,4,4,2066.0,True,True,True,True,True
+85,36008148,5,False,493333,연안복합,True,연안복합,G,4,"[493905, 491840, 491839, 492563]",572,False,s4,,791,4,4,2066.0,True,True,True,True,True
+86,36113654,0,False,493307,연안복합,True,연안복합,B0,1,[492914],393,False,s0,,1479,4,4,681.0,True,True,True,True,True
+86,36113654,0,False,493307,연안복합,True,연안복합,B0,4,"[492914, 493595, 493520, 493057]",213,False,s0,,1479,4,4,681.0,True,True,True,True,True
+86,36113654,0,False,493307,연안복합,True,연안복합,S,1,[493058],249,False,s2,,1429,4,4,648.0,True,True,True,True,True
+86,36113654,0,False,493307,연안복합,True,연안복합,S,4,"[493058, 493057, 493690, 493042]",249,False,s2,,1429,4,4,648.0,True,True,True,True,True
+86,36113654,0,False,493307,연안복합,True,연안복합,G,1,[493058],249,False,s4,,1429,4,4,648.0,True,True,True,True,True
+86,36113654,0,False,493307,연안복합,True,연안복합,G,4,"[493058, 493690, 493057, 493042]",249,False,s4,,1429,4,4,648.0,True,True,True,True,True
+88,36010554,0,False,493211,통발,True,통발,B0,1,[490954],2257,False,s0,,1092,4,4,628.0,True,True,True,True,True
+88,36010554,0,False,493211,통발,True,통발,B0,4,"[490954, 491262, 491269, 491582]",1629,False,s0,,1092,4,4,628.0,True,True,True,True,True
+88,36010554,0,False,493211,통발,True,통발,S,1,[491241],1970,False,s2,,1042,4,4,2448.0,True,True,True,True,True
+88,36010554,0,False,493211,통발,True,통발,S,4,"[491241, 493572, 492372, 493689]",361,False,s2,,1042,4,4,2448.0,True,True,True,True,True
+88,36010554,0,False,493211,통발,True,통발,G,1,[493689],478,False,s4,,1042,4,4,2061.0,True,True,True,True,True
+88,36010554,0,False,493211,통발,True,통발,G,4,"[493689, 493572, 494960, 492899]",312,False,s4,,1042,4,4,2061.0,True,True,True,True,True
+89,36301579,0,False,493180,연안복합,True,연안복합,B0,1,[494415],1235,False,s0,,494,4,4,383.0,True,True,True,True,True
+89,36301579,0,False,493180,연안복합,True,연안복합,B0,4,"[494415, 494439, 494798, 494424]",1235,False,s0,,494,4,4,383.0,True,True,True,True,True
+89,36301579,0,False,493180,연안복합,True,연안복합,S,1,[494415],1235,False,s2,,446,4,4,1813.0,True,True,True,True,True
+89,36301579,0,False,493180,연안복합,True,연안복합,S,4,"[494415, 494414, 492602, 493907]",578,False,s2,,446,4,4,1813.0,True,True,True,True,True
+89,36301579,0,False,493180,연안복합,True,연안복합,G,1,[494415],1235,False,s4,,446,4,4,1254.0,True,True,True,True,True
+89,36301579,0,False,493180,연안복합,True,연안복합,G,4,"[494415, 494414, 493161, 493908]",19,False,s4,,446,4,4,1254.0,True,True,True,True,True
+91,31009538,1,False,493162,자망,True,자망,B0,1,[491098],2064,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+91,31009538,1,False,493162,자망,True,자망,B0,4,"[491098, 491097, 494647, 491267]",1485,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+91,31009538,1,False,493162,자망,True,자망,S,1,[491098],2064,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+91,31009538,1,False,493162,자망,True,자망,S,4,"[491098, 491097, 494647, 494646]",1484,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+91,31009538,1,False,493162,자망,True,자망,G,1,[494647],1485,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+91,31009538,1,False,493162,자망,True,자망,G,4,"[494647, 494646, 493930, 493046]",116,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+94,36113617,6,False,493110,자망,True,자망,B0,1,[493399],289,False,s0,,199,4,4,576.0,True,True,False,False,False
+94,36113617,6,False,493110,자망,True,자망,B0,4,"[493399, 492871, 492823, 493068]",42,False,s0,,199,4,4,576.0,True,True,False,False,False
+94,36113617,6,False,493110,자망,True,자망,S,1,[494671],1561,False,s2,,151,4,4,745.0,True,True,False,False,False
+94,36113617,6,False,493110,자망,True,자망,S,4,"[494671, 493926, 494025, 494646]",816,False,s2,,151,4,4,745.0,True,True,False,False,False
+94,36113617,6,False,493110,자망,True,자망,G,1,[493926],816,False,s4,,151,4,4,745.0,True,True,False,False,False
+94,36113617,6,False,493110,자망,True,자망,G,4,"[493926, 494671, 494025, 494646]",816,False,s4,,151,4,4,745.0,True,True,False,False,False
+95,36315137,3,True,493068,연안복합,True,연안복합,B0,1,[495174],2106,False,s0,,1446,4,4,53.0,True,True,True,True,True
+95,36315137,3,True,493068,연안복합,True,연안복합,B0,4,"[495174, 495178, 495137, 495125]",2057,False,s0,,1446,4,4,53.0,True,True,True,True,True
+95,36315137,3,True,493068,연안복합,True,연안복합,S,1,[495082],2014,False,s2,,1383,4,4,2163.0,True,True,True,True,True
+95,36315137,3,True,493068,연안복합,True,연안복합,S,4,"[495082, 494119, 492919, 493093]",25,False,s2,,1383,4,4,2163.0,True,True,True,True,True
+95,36315137,3,True,493068,연안복합,True,연안복합,G,1,[494119],1051,False,s4,,1383,4,4,2162.0,True,True,True,True,True
+95,36315137,3,True,493068,연안복합,True,연안복합,G,4,"[494119, 495082, 493093, 492920]",25,False,s4,,1383,4,4,2162.0,True,True,True,True,True
+97,31100492,3,False,493029,통발,True,통발,B0,1,[490980],2049,False,s0,,3092,4,4,1319.0,True,True,True,True,True
+97,31100492,3,False,493029,통발,True,통발,B0,4,"[490980, 490956, 490955, 492274]",755,False,s0,,3092,4,4,1319.0,True,True,True,True,True
+97,31100492,3,False,493029,통발,True,통발,S,1,[492081],948,False,s2,,2959,4,4,1573.0,True,True,True,True,True
+97,31100492,3,False,493029,통발,True,통발,S,4,"[492081, 493653, 493651, 492080]",622,False,s2,,2959,4,4,1573.0,True,True,True,True,True
+97,31100492,3,False,493029,통발,True,통발,G,1,[492081],948,False,s4,,2783,4,4,1573.0,True,True,True,True,True
+97,31100492,3,False,493029,통발,True,통발,G,4,"[492081, 493653, 493651, 492080]",622,False,s4,,2783,4,4,1573.0,True,True,True,True,True
+98,36001411,0,False,493023,연안복합,True,연안복합,B0,1,[495037],2014,False,s0,,480,4,4,765.0,True,True,True,True,True
+98,36001411,0,False,493023,연안복합,True,연안복합,B0,4,"[495037, 495036, 494340, 495105]",1317,False,s0,,480,4,4,765.0,True,True,True,True,True
+98,36001411,0,False,493023,연안복합,True,연안복합,S,1,[495037],2014,False,s2,,384,4,4,2454.0,True,True,True,True,True
+98,36001411,0,False,493023,연안복합,True,연안복합,S,4,"[495037, 495036, 493306, 492583]",283,False,s2,,384,4,4,2454.0,True,True,True,True,True
+98,36001411,0,False,493023,연안복합,True,연안복합,G,1,[495037],2014,False,s4,,384,4,4,2453.0,True,True,True,True,True
+98,36001411,0,False,493023,연안복합,True,연안복합,G,4,"[495037, 495036, 493306, 492584]",283,False,s4,,384,4,4,2453.0,True,True,True,True,True
+99,31016197,0,False,493018,통발,True,통발,B0,1,[490975],2043,False,s0,,1183,4,4,1202.0,True,True,True,True,True
+99,31016197,0,False,493018,통발,True,통발,B0,4,"[490975, 490974, 491720, 492176]",842,False,s0,,1183,4,4,1202.0,True,True,True,True,True
+99,31016197,0,False,493018,통발,True,통발,S,1,[492495],523,False,s2,,1129,4,4,2155.0,True,True,True,True,True
+99,31016197,0,False,493018,통발,True,통발,S,4,"[492495, 494650, 492897, 494169]",121,False,s2,,1129,4,4,2155.0,True,True,True,True,True
+99,31016197,0,False,493018,통발,True,통발,G,1,[492897],121,False,s4,,1129,4,4,1674.0,True,True,True,True,True
+99,31016197,0,False,493018,통발,True,통발,G,4,"[492897, 492495, 494169, 492778]",121,False,s4,,1129,4,4,1674.0,True,True,True,True,True
+100,35200311,1,False,493004,자망,True,자망,B0,1,[491095],1909,False,s0,,2428,4,4,242.0,True,True,True,True,True
+100,35200311,1,False,493004,자망,True,자망,B0,4,"[491095, 491208, 491337, 491232]",1667,False,s0,,2428,4,4,242.0,True,True,True,True,True
+100,35200311,1,False,493004,자망,True,자망,S,1,[491095],1909,False,s2,,2352,4,4,3554.0,True,True,True,True,True
+100,35200311,1,False,493004,자망,True,자망,S,4,"[491095, 492844, 494649, 491096]",160,False,s2,,2352,4,4,3554.0,True,True,True,True,True
+100,35200311,1,False,493004,자망,True,자망,G,1,[492845],159,False,s4,,2272,4,4,1805.0,True,True,True,True,True
+100,35200311,1,False,493004,자망,True,자망,G,4,"[492845, 492844, 493761, 494649]",159,False,s4,,2272,4,4,1805.0,True,True,True,True,True
+102,31703108,5,False,492983,통발,True,통발,B0,1,[490974],2009,False,s0,,1442,4,4,118.0,True,True,True,True,True
+102,31703108,5,False,492983,통발,True,통발,B0,4,"[490974, 490973, 490978, 491091]",1892,False,s0,,1442,4,4,118.0,True,True,True,True,True
+102,31703108,5,False,492983,통발,True,통발,S,1,[494077],1094,False,s2,,1310,4,4,699.0,True,True,True,True,True
+102,31703108,5,False,492983,통발,True,통발,S,4,"[494077, 494775, 494487, 494076]",1093,False,s2,,1310,4,4,699.0,True,True,True,True,True
+102,31703108,5,False,492983,통발,True,통발,G,1,[494077],1094,False,s4,,1310,4,4,699.0,True,True,True,True,True
+102,31703108,5,False,492983,통발,True,통발,G,4,"[494077, 494775, 494487, 494076]",1093,False,s4,,1310,4,4,699.0,True,True,True,True,True
+104,36301063,0,False,492952,연안복합,True,연안복합,B0,1,[493996],1044,False,s0,,272,4,4,2356.0,True,False,False,False,False
+104,36301063,0,False,492952,연안복합,True,연안복합,B0,4,"[493996, 494100, 491744, 493980]",1028,False,s0,,272,4,4,2356.0,True,False,False,False,False
+104,36301063,0,False,492952,연안복합,True,연안복합,S,1,[493980],1028,False,s2,,191,4,4,334.0,True,False,False,False,False
+104,36301063,0,False,492952,연안복합,True,연안복합,S,4,"[493980, 493739, 493646, 493668]",694,False,s2,,191,4,4,334.0,True,False,False,False,False
+104,36301063,0,False,492952,연안복합,True,연안복합,G,1,[493739],787,False,s4,,191,4,4,334.0,True,False,False,False,False
+104,36301063,0,False,492952,연안복합,True,연안복합,G,4,"[493739, 493668, 493980, 493646]",694,False,s4,,191,4,4,334.0,True,False,False,False,False
+108,36010190,4,True,492858,연안복합,True,연안복합,B0,1,[494675],1817,False,s0,,1406,4,4,3716.0,True,True,True,True,True
+108,36010190,4,True,492858,연안복합,True,연안복합,B0,4,"[494675, 490959, 491216, 494122]",1264,False,s0,,1406,4,4,3716.0,True,True,True,True,True
+108,36010190,4,True,492858,연안복합,True,연안복합,S,1,[492777],81,False,s2,,1335,4,4,3597.0,True,True,True,True,True
+108,36010190,4,True,492858,연안복합,True,연안복합,S,4,"[492777, 491217, 492776, 494814]",81,False,s2,,1335,4,4,3597.0,True,True,True,True,True
+108,36010190,4,True,492858,연안복합,True,연안복합,G,1,[492777],81,False,s4,,1335,4,4,2412.0,True,True,True,True,True
+108,36010190,4,True,492858,연안복합,True,연안복합,G,4,"[492777, 494814, 492776, 492402]",81,False,s4,,1335,4,4,2412.0,True,True,True,True,True
+109,34400601,5,False,492810,연안복합,True,연안복합,B0,1,[491023],1787,False,s0,,671,4,4,2310.0,True,True,True,True,True
+109,34400601,5,False,492810,연안복합,True,연안복합,B0,4,"[491023, 491095, 492135, 493333]",523,False,s0,,671,4,4,2310.0,True,True,True,True,True
+109,34400601,5,False,492810,연안복합,True,연안복합,S,1,[492079],731,False,s2,,614,4,4,1844.0,True,True,True,True,True
+109,34400601,5,False,492810,연안복합,True,연안복합,S,4,"[492079, 493757, 491913, 492855]",45,False,s2,,614,4,4,1844.0,True,True,True,True,True
+109,34400601,5,False,492810,연안복합,True,연안복합,G,1,[492079],731,False,s4,,614,4,4,1844.0,True,True,True,True,True
+109,34400601,5,False,492810,연안복합,True,연안복합,G,4,"[492079, 491913, 493757, 492855]",45,False,s4,,614,4,4,1844.0,True,True,True,True,True
+111,31009538,1,False,492796,자망,True,자망,B0,1,[491098],1698,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+111,31009538,1,False,492796,자망,True,자망,B0,4,"[491098, 491097, 494647, 491267]",1529,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+111,31009538,1,False,492796,자망,True,자망,S,1,[491098],1698,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+111,31009538,1,False,492796,자망,True,자망,S,4,"[491098, 491097, 494647, 494646]",1698,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+111,31009538,1,False,492796,자망,True,자망,G,1,[494647],1851,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+111,31009538,1,False,492796,자망,True,자망,G,4,"[494647, 494646, 493930, 493046]",250,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+112,36015515,3,False,492779,연안복합,True,연안복합,B0,1,[493056],277,False,s0,,1861,4,4,559.0,True,True,True,True,True
+112,36015515,3,False,492779,연안복합,True,연안복합,B0,4,"[493056, 493615, 493176, 493608]",277,False,s0,,1861,4,4,559.0,True,True,True,True,True
+112,36015515,3,False,492779,연안복합,True,연안복합,S,1,[492629],150,False,s2,,1813,4,4,530.0,True,True,True,True,True
+112,36015515,3,False,492779,연안복합,True,연안복합,S,4,"[492629, 492183, 492099, 492266]",150,False,s2,,1813,4,4,530.0,True,True,True,True,True
+112,36015515,3,False,492779,연안복합,True,연안복합,G,1,[493254],475,False,s4,,1813,4,4,988.0,True,True,True,True,True
+112,36015515,3,False,492779,연안복합,True,연안복합,G,4,"[493254, 492792, 492266, 492629]",13,False,s4,,1813,4,4,988.0,True,True,True,True,True
+113,31704782,0,False,492778,자망,True,자망,B0,1,[492753],25,False,s0,,2279,4,4,2444.0,True,True,True,True,True
+113,31704782,0,False,492778,자망,True,자망,B0,4,"[492753, 494749, 493308, 495197]",25,False,s0,,2279,4,4,2444.0,True,True,True,True,True
+113,31704782,0,False,492778,자망,True,자망,S,1,[492753],25,False,s2,,2225,4,4,1537.0,True,True,True,True,True
+113,31704782,0,False,492778,자망,True,자망,S,4,"[492753, 492752, 491216, 492399]",25,False,s2,,2225,4,4,1537.0,True,True,True,True,True
+113,31704782,0,False,492778,자망,True,자망,G,1,[492753],25,False,s4,,2225,4,4,1535.0,True,True,True,True,True
+113,31704782,0,False,492778,자망,True,자망,G,4,"[492753, 492752, 492399, 491218]",25,False,s4,,2225,4,4,1535.0,True,True,True,True,True
+114,36304898,2,False,492776,연안복합,True,연안복합,B0,1,[490951],1825,False,s0,,718,4,4,48.0,True,True,True,True,True
+114,36304898,2,False,492776,연안복합,True,연안복합,B0,4,"[490951, 490956, 490999, 490953]",1777,False,s0,,718,4,4,48.0,True,True,True,True,True
+114,36304898,2,False,492776,연안복합,True,연안복합,S,1,[492398],378,False,s2,,646,4,4,1336.0,True,True,True,True,True
+114,36304898,2,False,492776,연안복합,True,연안복합,S,4,"[492398, 492606, 492559, 493734]",170,False,s2,,646,4,4,1336.0,True,True,True,True,True
+114,36304898,2,False,492776,연안복합,True,연안복합,G,1,[492606],170,False,s4,,624,4,4,1336.0,True,True,True,True,True
+114,36304898,2,False,492776,연안복합,True,연안복합,G,4,"[492606, 492398, 492559, 493734]",170,False,s4,,624,4,4,1336.0,True,True,True,True,True
+117,36307233,1,False,492758,연안복합,True,연안복합,B0,1,[493112],354,False,s0,,182,4,4,1488.0,True,True,True,True,True
+117,36307233,1,False,492758,연안복합,True,연안복합,B0,4,"[493112, 491749, 492894, 493237]",136,False,s0,,182,4,4,1488.0,True,True,True,True,True
+117,36307233,1,False,492758,연안복합,True,연안복합,S,1,[492855],97,False,s2,,134,4,4,966.0,True,True,True,True,True
+117,36307233,1,False,492758,연안복합,True,연안복합,S,4,"[492855, 491937, 491935, 492901]",97,False,s2,,134,4,4,966.0,True,True,True,True,True
+117,36307233,1,False,492758,연안복합,True,연안복합,G,1,[492855],97,False,s4,,134,4,4,966.0,True,True,True,True,True
+117,36307233,1,False,492758,연안복합,True,연안복합,G,4,"[492855, 491937, 491935, 492901]",97,False,s4,,134,4,4,966.0,True,True,True,True,True
+122,36006776,1,False,492573,연안복합,True,연안복합,B0,1,[492541],32,False,s0,,2614,4,4,1962.0,True,True,True,True,True
+122,36006776,1,False,492573,연안복합,True,연안복합,B0,4,"[492541, 494458, 492542, 494503]",31,False,s0,,2614,4,4,1962.0,True,True,True,True,True
+122,36006776,1,False,492573,연안복합,True,연안복합,S,1,[492541],32,False,s2,,2566,4,4,2903.0,True,True,True,True,True
+122,36006776,1,False,492573,연안복합,True,연안복합,S,4,"[492541, 494458, 491555, 494030]",32,False,s2,,2566,4,4,2903.0,True,True,True,True,True
+122,36006776,1,False,492573,연안복합,True,연안복합,G,1,[494458],1885,False,s4,,2566,4,4,2903.0,True,True,True,True,True
+122,36006776,1,False,492573,연안복합,True,연안복합,G,4,"[494458, 492541, 494457, 491555]",32,False,s4,,2566,4,4,2903.0,True,True,True,True,True
+123,31815412,5,False,492566,자망,True,자망,B0,1,[493916],1350,False,s0,,3264,4,4,2908.0,True,True,True,True,True
+123,31815412,5,False,492566,자망,True,자망,B0,4,"[493916, 494420, 491512, 494327]",1054,False,s0,,3264,4,4,2908.0,True,True,True,True,True
+123,31815412,5,False,492566,자망,True,자망,S,1,[493916],1350,False,s2,,3216,4,4,1399.0,True,True,True,True,True
+123,31815412,5,False,492566,자망,True,자망,S,4,"[493916, 493646, 492517, 492642]",49,False,s2,,3216,4,4,1399.0,True,True,True,True,True
+123,31815412,5,False,492566,자망,True,자망,G,1,[493916],1350,False,s4,,3154,4,4,2672.0,True,True,True,True,True
+123,31815412,5,False,492566,자망,True,자망,G,4,"[493916, 491244, 492642, 493646]",76,False,s4,,3154,4,4,2672.0,True,True,True,True,True
+124,36212188,2,False,492542,연안복합,True,연안복합,B0,1,[492614],72,False,s0,,222,4,4,265.0,True,False,False,False,False
+124,36212188,2,False,492542,연안복합,True,연안복합,B0,4,"[492614, 492879, 492615, 492878]",72,False,s0,,222,4,4,265.0,True,False,False,False,False
+124,36212188,2,False,492542,연안복합,True,연안복합,S,1,[492844],302,False,s2,,172,4,4,35.0,True,False,False,False,False
+124,36212188,2,False,492542,연안복합,True,연안복합,S,4,"[492844, 492879, 492856, 492845]",302,False,s2,,172,4,4,35.0,True,False,False,False,False
+124,36212188,2,False,492542,연안복합,True,연안복합,G,1,[492844],302,False,s4,,172,4,4,35.0,True,False,False,False,False
+124,36212188,2,False,492542,연안복합,True,연안복합,G,4,"[492844, 492879, 492856, 492845]",302,False,s4,,172,4,4,35.0,True,False,False,False,False
+125,32300334,3,False,492520,자망,True,자망,B0,1,[494458],1938,False,s0,,3106,4,4,1866.0,True,True,True,True,True
+125,32300334,3,False,492520,자망,True,자망,B0,4,"[494458, 493020, 492592, 494457]",72,False,s0,,3106,4,4,1866.0,True,True,True,True,True
+125,32300334,3,False,492520,자망,True,자망,S,1,[494458],1938,False,s2,,3019,4,4,1866.0,True,True,True,True,True
+125,32300334,3,False,492520,자망,True,자망,S,4,"[494458, 492592, 494457, 493019]",72,False,s2,,3019,4,4,1866.0,True,True,True,True,True
+125,32300334,3,False,492520,자망,True,자망,G,1,[494458],1938,False,s4,,3019,4,4,1440.0,True,True,True,True,True
+125,32300334,3,False,492520,자망,True,자망,G,4,"[494458, 494457, 493019, 493018]",498,False,s4,,3019,4,4,1440.0,True,True,True,True,True
+126,36315252,0,False,492517,자망,True,자망,B0,1,[493647],1130,False,s0,,676,4,4,42.0,True,False,False,False,False
+126,36315252,0,False,492517,자망,True,자망,B0,4,"[493647, 493689, 493662, 493685]",1130,False,s0,,676,4,4,42.0,True,False,False,False,False
+126,36315252,0,False,492517,자망,True,자망,S,1,[493647],1130,False,s2,,628,4,4,966.0,True,False,False,False,False
+126,36315252,0,False,492517,자망,True,자망,S,4,"[493647, 493646, 492896, 492681]",164,False,s2,,628,4,4,966.0,True,False,False,False,False
+126,36315252,0,False,492517,자망,True,자망,G,1,[493647],1130,False,s4,,628,4,4,793.0,True,False,False,False,False
+126,36315252,0,False,492517,자망,True,자망,G,4,"[493647, 492896, 493646, 492854]",337,False,s4,,628,4,4,793.0,True,False,False,False,False
+127,31703108,1,False,492484,통발,True,통발,B0,1,[490974],1510,False,s0,,1442,4,4,118.0,True,False,False,False,False
+127,31703108,1,False,492484,통발,True,통발,B0,4,"[490974, 490973, 490978, 491091]",1393,False,s0,,1442,4,4,118.0,True,False,False,False,False
+127,31703108,1,False,492484,통발,True,통발,S,1,[494077],1593,False,s2,,1310,4,4,699.0,True,False,False,False,False
+127,31703108,1,False,492484,통발,True,통발,S,4,"[494077, 494775, 494487, 494076]",1592,False,s2,,1310,4,4,699.0,True,False,False,False,False
+127,31703108,1,False,492484,통발,True,통발,G,1,[494077],1593,False,s4,,1310,4,4,699.0,True,False,False,False,False
+127,31703108,1,False,492484,통발,True,통발,G,4,"[494077, 494775, 494487, 494076]",1592,False,s4,,1310,4,4,699.0,True,False,False,False,False
+128,31014032,1,False,492452,자망,True,자망,B0,1,[494263],1811,False,s0,,811,4,4,1391.0,True,True,True,True,True
+128,31014032,1,False,492452,자망,True,자망,B0,4,"[494263, 493541, 492872, 494262]",420,False,s0,,811,4,4,1391.0,True,True,True,True,True
+128,31014032,1,False,492452,자망,True,자망,S,1,[494263],1811,False,s2,,746,4,4,1146.0,True,True,True,True,True
+128,31014032,1,False,492452,자망,True,자망,S,4,"[494263, 494262, 493117, 493925]",665,False,s2,,746,4,4,1146.0,True,True,True,True,True
+128,31014032,1,False,492452,자망,True,자망,G,1,[494263],1811,False,s4,,746,4,4,1146.0,True,True,True,True,True
+128,31014032,1,False,492452,자망,True,자망,G,4,"[494263, 494262, 493925, 493117]",665,False,s4,,746,4,4,1146.0,True,True,True,True,True
+129,36011845,1,False,492422,연안복합,True,연안복합,B0,1,[491222],1200,False,s0,,741,4,4,75.0,True,True,True,True,True
+129,36011845,1,False,492422,연안복합,True,연안복합,B0,4,"[491222, 491217, 491292, 491267]",1130,False,s0,,741,4,4,75.0,True,True,True,True,True
+129,36011845,1,False,492422,연안복합,True,연안복합,S,1,[492535],113,False,s2,,680,4,4,2809.0,True,True,True,True,True
+129,36011845,1,False,492422,연안복합,True,연안복합,S,4,"[492535, 493858, 491050, 493859]",113,False,s2,,680,4,4,2809.0,True,True,True,True,True
+129,36011845,1,False,492422,연안복합,True,연안복합,G,1,[493859],1437,False,s4,,655,4,4,1324.0,True,True,True,True,True
+129,36011845,1,False,492422,연안복합,True,연안복합,G,4,"[493859, 493858, 492536, 492535]",113,False,s4,,655,4,4,1324.0,True,True,True,True,True
+130,31005917,0,False,492417,연안복합,True,연안복합,B0,1,[491437],980,False,s0,,18,4,4,982.0,True,False,False,False,False
+130,31005917,0,False,492417,연안복합,True,연안복합,B0,4,"[491437, 491436, 491435, 492417]",0,True,s0,,18,4,4,982.0,True,False,False,False,False
+130,31005917,0,False,492417,연안복합,True,연안복합,S,1,[491437],980,False,s0,s2_empty_use_s0,18,4,4,982.0,True,False,False,False,False
+130,31005917,0,False,492417,연안복합,True,연안복합,S,4,"[491437, 491436, 491435, 492417]",0,True,s0,s2_empty_use_s0,18,4,4,982.0,True,False,False,False,False
+130,31005917,0,False,492417,연안복합,True,연안복합,G,1,[491437],980,False,s0,s4_empty_use_s0,18,4,4,982.0,True,False,False,False,False
+130,31005917,0,False,492417,연안복합,True,연안복합,G,4,"[491437, 491436, 491435, 492417]",0,True,s0,s4_empty_use_s0,18,4,4,982.0,True,False,False,False,False
+131,32300169,1,False,492393,자망,True,자망,B0,1,[492426],33,False,s0,,3394,4,4,173.0,True,True,True,True,True
+131,32300169,1,False,492393,자망,True,자망,B0,4,"[492426, 492254, 492331, 492253]",33,False,s0,,3394,4,4,173.0,True,True,True,True,True
+131,32300169,1,False,492393,자망,True,자망,S,1,[494895],2502,False,s2,,3311,4,4,1498.0,True,True,True,True,True
+131,32300169,1,False,492393,자망,True,자망,S,4,"[494895, 493398, 493399, 493397]",1004,False,s2,,3311,4,4,1498.0,True,True,True,True,True
+131,32300169,1,False,492393,자망,True,자망,G,1,[493399],1006,False,s4,,3311,4,4,1498.0,True,True,True,True,True
+131,32300169,1,False,492393,자망,True,자망,G,4,"[493399, 493398, 493397, 494895]",1004,False,s4,,3311,4,4,1498.0,True,True,True,True,True
+132,31009538,5,False,492352,자망,True,자망,B0,1,[491098],1254,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+132,31009538,5,False,492352,자망,True,자망,B0,4,"[491098, 491097, 494647, 491267]",1085,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+132,31009538,5,False,492352,자망,True,자망,S,1,[491098],1254,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+132,31009538,5,False,492352,자망,True,자망,S,4,"[491098, 491097, 494647, 494646]",1254,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+132,31009538,5,False,492352,자망,True,자망,G,1,[494647],2295,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+132,31009538,5,False,492352,자망,True,자망,G,4,"[494647, 494646, 493930, 493046]",694,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+133,36313865,0,False,492287,연안복합,True,연안복합,B0,1,[491726],561,False,s0,,1316,4,4,1125.0,True,True,True,True,True
+133,36313865,0,False,492287,연안복합,True,연안복합,B0,4,"[491726, 492379, 492234, 492851]",53,False,s0,,1316,4,4,1125.0,True,True,True,True,True
+133,36313865,0,False,492287,연안복합,True,연안복합,S,1,[492234],53,False,s2,,1268,4,4,1440.0,True,True,True,True,True
+133,36313865,0,False,492287,연안복합,True,연안복합,S,4,"[492234, 493674, 493242, 493609]",53,False,s2,,1268,4,4,1440.0,True,True,True,True,True
+133,36313865,0,False,492287,연안복합,True,연안복합,G,1,[493674],1387,False,s4,,1268,4,4,1440.0,True,True,True,True,True
+133,36313865,0,False,492287,연안복합,True,연안복합,G,4,"[493674, 492234, 493242, 493629]",53,False,s4,,1268,4,4,1440.0,True,True,True,True,True
+134,36314887,0,False,492278,연안복합,True,연안복합,B0,1,[492926],648,False,s0,,825,4,4,1009.0,True,True,True,True,True
+134,36314887,0,False,492278,연안복합,True,연안복합,B0,4,"[492926, 492992, 492609, 493618]",331,False,s0,,825,4,4,1009.0,True,True,True,True,True
+134,36314887,0,False,492278,연안복합,True,연안복합,S,1,[494695],2417,False,s2,,777,4,4,2805.0,True,True,True,True,True
+134,36314887,0,False,492278,연안복합,True,연안복합,S,4,"[494695, 491890, 494198, 492877]",388,False,s2,,777,4,4,2805.0,True,True,True,True,True
+134,36314887,0,False,492278,연안복합,True,연안복합,G,1,[494695],2417,False,s4,,777,4,4,2805.0,True,True,True,True,True
+134,36314887,0,False,492278,연안복합,True,연안복합,G,4,"[494695, 491890, 494198, 492877]",388,False,s4,,777,4,4,2805.0,True,True,True,True,True
+135,36015515,0,False,492267,연안복합,True,연안복합,B0,1,[493056],789,False,s0,,1861,4,4,559.0,True,True,True,True,True
+135,36015515,0,False,492267,연안복합,True,연안복합,B0,4,"[493056, 493615, 493176, 493608]",789,False,s0,,1861,4,4,559.0,True,True,True,True,True
+135,36015515,0,False,492267,연안복합,True,연안복합,S,1,[492629],362,False,s2,,1813,4,4,530.0,True,True,True,True,True
+135,36015515,0,False,492267,연안복합,True,연안복합,S,4,"[492629, 492183, 492099, 492266]",1,True,s2,,1813,4,4,530.0,True,True,True,True,True
+135,36015515,0,False,492267,연안복합,True,연안복합,G,1,[493254],987,False,s4,,1813,4,4,988.0,True,True,True,True,True
+135,36015515,0,False,492267,연안복합,True,연안복합,G,4,"[493254, 492792, 492266, 492629]",1,True,s4,,1813,4,4,988.0,True,True,True,True,True
+137,35200486,1,False,492127,통발,True,통발,B0,1,[490970],1157,False,s0,,1756,4,4,3083.0,True,True,True,True,True
+137,35200486,1,False,492127,통발,True,통발,B0,4,"[490970, 491951, 494053, 492949]",176,False,s0,,1756,4,4,3083.0,True,True,True,True,True
+137,35200486,1,False,492127,통발,True,통발,S,1,[492559],432,False,s2,,1704,4,4,2257.0,True,True,True,True,True
+137,35200486,1,False,492127,통발,True,통발,S,4,"[492559, 492410, 493759, 491502]",283,False,s2,,1704,4,4,2257.0,True,True,True,True,True
+137,35200486,1,False,492127,통발,True,통발,G,1,[491502],625,False,s4,,1668,4,4,2257.0,True,True,True,True,True
+137,35200486,1,False,492127,통발,True,통발,G,4,"[491502, 492410, 493759, 492559]",283,False,s4,,1668,4,4,2257.0,True,True,True,True,True
+138,36316040,0,False,492085,연안복합,True,연안복합,B0,1,[490959],1126,False,s0,,1177,4,4,1250.0,True,True,True,True,True
+138,36316040,0,False,492085,연안복합,True,연안복합,B0,4,"[490959, 492089, 492209, 491944]",4,True,s0,,1177,4,4,1250.0,True,True,True,True,True
+138,36316040,0,False,492085,연안복합,True,연안복합,S,1,[492464],379,False,s2,,1106,4,4,622.0,True,True,True,True,True
+138,36316040,0,False,492085,연안복합,True,연안복합,S,4,"[492464, 492463, 492086, 492708]",1,True,s2,,1106,4,4,622.0,True,True,True,True,True
+138,36316040,0,False,492085,연안복합,True,연안복합,G,1,[492464],379,False,s4,,1055,4,4,622.0,True,True,True,True,True
+138,36316040,0,False,492085,연안복합,True,연안복합,G,4,"[492464, 492463, 492086, 492708]",1,True,s4,,1055,4,4,622.0,True,True,True,True,True
+139,36311633,5,False,492082,통발,True,통발,B0,1,[494076],1994,False,s0,,1847,4,4,2619.0,True,True,True,True,True
+139,36311633,5,False,492082,통발,True,통발,B0,4,"[494076, 494075, 492995, 491457]",625,False,s0,,1847,4,4,2619.0,True,True,True,True,True
+139,36311633,5,False,492082,통발,True,통발,S,1,[494076],1994,False,s2,,1786,4,4,2619.0,True,True,True,True,True
+139,36311633,5,False,492082,통발,True,통발,S,4,"[494076, 494075, 492995, 491457]",625,False,s2,,1786,4,4,2619.0,True,True,True,True,True
+139,36311633,5,False,492082,통발,True,통발,G,1,[492995],913,False,s4,,1770,4,4,2619.0,True,True,True,True,True
+139,36311633,5,False,492082,통발,True,통발,G,4,"[492995, 494076, 494075, 491457]",625,False,s4,,1770,4,4,2619.0,True,True,True,True,True
+140,36010554,1,False,492057,통발,True,통발,B0,1,[490954],1103,False,s0,,1092,4,4,628.0,True,True,True,True,True
+140,36010554,1,False,492057,통발,True,통발,B0,4,"[490954, 491262, 491269, 491582]",475,False,s0,,1092,4,4,628.0,True,True,True,True,True
+140,36010554,1,False,492057,통발,True,통발,S,1,[491241],816,False,s2,,1042,4,4,2448.0,True,True,True,True,True
+140,36010554,1,False,492057,통발,True,통발,S,4,"[491241, 493572, 492372, 493689]",315,False,s2,,1042,4,4,2448.0,True,True,True,True,True
+140,36010554,1,False,492057,통발,True,통발,G,1,[493689],1632,False,s4,,1042,4,4,2061.0,True,True,True,True,True
+140,36010554,1,False,492057,통발,True,통발,G,4,"[493689, 493572, 494960, 492899]",842,False,s4,,1042,4,4,2061.0,True,True,True,True,True
+142,34200731,8,False,491968,통발,True,통발,B0,1,[490928],1040,False,s0,,3059,4,4,413.0,True,True,True,True,True
+142,34200731,8,False,491968,통발,True,통발,B0,4,"[490928, 491246, 491339, 490926]",629,False,s0,,3059,4,4,413.0,True,True,True,True,True
+142,34200731,8,False,491968,통발,True,통발,S,1,[491246],722,False,s2,,3009,4,4,3749.0,True,True,True,True,True
+142,34200731,8,False,491968,통발,True,통발,S,4,"[491246, 493452, 494751, 491002]",722,False,s2,,3009,4,4,3749.0,True,True,True,True,True
+142,34200731,8,False,491968,통발,True,통발,G,1,[491246],722,False,s4,,2928,4,4,3505.0,True,True,True,True,True
+142,34200731,8,False,491968,통발,True,통발,G,4,"[491246, 493452, 494751, 494750]",722,False,s4,,2928,4,4,3505.0,True,True,True,True,True
+144,32301131,1,False,491912,통발,True,통발,B0,1,[491845],67,False,s0,,310,4,4,432.0,True,True,True,True,True
+144,32301131,1,False,491912,통발,True,통발,B0,4,"[491845, 491938, 491506, 491697]",26,False,s0,,310,4,4,432.0,True,True,True,True,True
+144,32301131,1,False,491912,통발,True,통발,S,1,[491744],168,False,s2,,258,4,4,889.0,True,True,True,True,True
+144,32301131,1,False,491912,통발,True,통발,S,4,"[491744, 491742, 492631, 491743]",168,False,s2,,258,4,4,889.0,True,True,True,True,True
+144,32301131,1,False,491912,통발,True,통발,G,1,[493711],1799,False,s4,,258,4,4,1968.0,True,True,True,True,True
+144,32301131,1,False,491912,통발,True,통발,G,4,"[493711, 492631, 491743, 491744]",168,False,s4,,258,4,4,1968.0,True,True,True,True,True
+146,35200056,0,False,491862,자망,True,자망,B0,1,[492876],1014,False,s0,,1101,4,4,1900.0,True,True,True,True,True
+146,35200056,0,False,491862,자망,True,자망,B0,4,"[492876, 490986, 490977, 490976]",876,False,s0,,1101,4,4,1900.0,True,True,True,True,True
+146,35200056,0,False,491862,자망,True,자망,S,1,[493243],1381,False,s2,,998,4,4,1657.0,True,True,True,True,True
+146,35200056,0,False,491862,자망,True,자망,S,4,"[493243, 491699, 491702, 493356]",160,False,s2,,998,4,4,1657.0,True,True,True,True,True
+146,35200056,0,False,491862,자망,True,자망,G,1,[491702],160,False,s4,,998,4,4,2517.0,True,True,True,True,True
+146,35200056,0,False,491862,자망,True,자망,G,4,"[491702, 494216, 491699, 493356]",160,False,s4,,998,4,4,2517.0,True,True,True,True,True
+147,31009538,1,False,491841,자망,True,자망,B0,1,[491098],743,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+147,31009538,1,False,491841,자망,True,자망,B0,4,"[491098, 491097, 494647, 491267]",574,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+147,31009538,1,False,491841,자망,True,자망,S,1,[491098],743,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+147,31009538,1,False,491841,자망,True,자망,S,4,"[491098, 491097, 494647, 494646]",743,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+147,31009538,1,False,491841,자망,True,자망,G,1,[494647],2806,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+147,31009538,1,False,491841,자망,True,자망,G,4,"[494647, 494646, 493930, 493046]",1205,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+150,32300169,4,False,491730,자망,True,자망,B0,1,[492426],696,False,s0,,3394,4,4,173.0,True,True,False,False,False
+150,32300169,4,False,491730,자망,True,자망,B0,4,"[492426, 492254, 492331, 492253]",523,False,s0,,3394,4,4,173.0,True,True,False,False,False
+150,32300169,4,False,491730,자망,True,자망,S,1,[494895],3165,False,s2,,3311,4,4,1498.0,True,True,False,False,False
+150,32300169,4,False,491730,자망,True,자망,S,4,"[494895, 493398, 493399, 493397]",1667,False,s2,,3311,4,4,1498.0,True,True,False,False,False
+150,32300169,4,False,491730,자망,True,자망,G,1,[493399],1669,False,s4,,3311,4,4,1498.0,True,True,False,False,False
+150,32300169,4,False,491730,자망,True,자망,G,4,"[493399, 493398, 493397, 494895]",1667,False,s4,,3311,4,4,1498.0,True,True,False,False,False
+151,36004693,5,False,491696,통발,True,통발,B0,1,[491025],671,False,s0,,1243,4,4,4104.0,True,True,True,True,True
+151,36004693,5,False,491696,통발,True,통발,B0,4,"[491025, 495129, 491026, 491080]",616,False,s0,,1243,4,4,4104.0,True,True,True,True,True
+151,36004693,5,False,491696,통발,True,통발,S,1,[495228],3532,False,s2,,1140,4,4,2955.0,True,True,True,True,True
+151,36004693,5,False,491696,통발,True,통발,S,4,"[495228, 492322, 492273, 492633]",577,False,s2,,1140,4,4,2955.0,True,True,True,True,True
+151,36004693,5,False,491696,통발,True,통발,G,1,[495228],3532,False,s4,,1140,4,4,2955.0,True,True,True,True,True
+151,36004693,5,False,491696,통발,True,통발,G,4,"[495228, 492322, 492273, 492633]",577,False,s4,,1140,4,4,2955.0,True,True,True,True,True
+152,31016197,2,False,491681,통발,True,통발,B0,1,[490975],706,False,s0,,1183,4,4,1202.0,True,True,True,True,True
+152,31016197,2,False,491681,통발,True,통발,B0,4,"[490975, 490974, 491720, 492176]",39,False,s0,,1183,4,4,1202.0,True,True,True,True,True
+152,31016197,2,False,491681,통발,True,통발,S,1,[492495],814,False,s2,,1129,4,4,2155.0,True,True,True,True,True
+152,31016197,2,False,491681,통발,True,통발,S,4,"[492495, 494650, 492897, 494169]",814,False,s2,,1129,4,4,2155.0,True,True,True,True,True
+152,31016197,2,False,491681,통발,True,통발,G,1,[492897],1216,False,s4,,1129,4,4,1674.0,True,True,True,True,True
+152,31016197,2,False,491681,통발,True,통발,G,4,"[492897, 492495, 494169, 492778]",814,False,s4,,1129,4,4,1674.0,True,True,True,True,True
+154,34200731,4,False,491649,통발,True,통발,B0,1,[490928],721,False,s0,,3059,4,4,413.0,True,True,True,True,True
+154,34200731,4,False,491649,통발,True,통발,B0,4,"[490928, 491246, 491339, 490926]",310,False,s0,,3059,4,4,413.0,True,True,True,True,True
+154,34200731,4,False,491649,통발,True,통발,S,1,[491246],403,False,s2,,3009,4,4,3749.0,True,True,True,True,True
+154,34200731,4,False,491649,통발,True,통발,S,4,"[491246, 493452, 494751, 491002]",403,False,s2,,3009,4,4,3749.0,True,True,True,True,True
+154,34200731,4,False,491649,통발,True,통발,G,1,[491246],403,False,s4,,2928,4,4,3505.0,True,True,True,True,True
+154,34200731,4,False,491649,통발,True,통발,G,4,"[491246, 493452, 494751, 494750]",403,False,s4,,2928,4,4,3505.0,True,True,True,True,True
+156,31009538,0,False,491602,자망,True,자망,B0,1,[491098],504,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+156,31009538,0,False,491602,자망,True,자망,B0,4,"[491098, 491097, 494647, 491267]",335,False,s0,,4273,4,4,3550.0,True,True,True,True,True
+156,31009538,0,False,491602,자망,True,자망,S,1,[491098],504,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+156,31009538,0,False,491602,자망,True,자망,S,4,"[491098, 491097, 494647, 494646]",504,False,s2,,4176,4,4,3550.0,True,True,True,True,True
+156,31009538,0,False,491602,자망,True,자망,G,1,[494647],3045,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+156,31009538,0,False,491602,자망,True,자망,G,4,"[494647, 494646, 493930, 493046]",1444,False,s4,,4004,4,4,1601.0,True,True,True,True,True
+159,31703108,2,False,491304,통발,True,통발,B0,1,[490974],330,False,s0,,1442,4,4,118.0,True,True,True,True,True
+159,31703108,2,False,491304,통발,True,통발,B0,4,"[490974, 490973, 490978, 491091]",213,False,s0,,1442,4,4,118.0,True,True,True,True,True
+159,31703108,2,False,491304,통발,True,통발,S,1,[494077],2773,False,s2,,1310,4,4,699.0,True,True,True,True,True
+159,31703108,2,False,491304,통발,True,통발,S,4,"[494077, 494775, 494487, 494076]",2772,False,s2,,1310,4,4,699.0,True,True,True,True,True
+159,31703108,2,False,491304,통발,True,통발,G,1,[494077],2773,False,s4,,1310,4,4,699.0,True,True,True,True,True
+159,31703108,2,False,491304,통발,True,통발,G,4,"[494077, 494775, 494487, 494076]",2772,False,s4,,1310,4,4,699.0,True,True,True,True,True
+160,36200918,3,False,491267,통발,True,통발,B0,1,[494557],3290,False,s0,,505,4,4,3266.0,True,True,False,False,False
+160,36200918,3,False,491267,통발,True,통발,B0,4,"[494557, 493306, 493565, 491291]",24,False,s0,,505,4,4,3266.0,True,True,False,False,False
+160,36200918,3,False,491267,통발,True,통발,S,1,[493565],2298,False,s2,,457,4,4,1171.0,True,True,False,False,False
+160,36200918,3,False,491267,통발,True,통발,S,4,"[493565, 492394, 493090, 492702]",1127,False,s2,,457,4,4,1171.0,True,True,False,False,False
+160,36200918,3,False,491267,통발,True,통발,G,1,[493565],2298,False,s4,,457,4,4,2134.0,True,True,False,False,False
+160,36200918,3,False,491267,통발,True,통발,G,4,"[493565, 493090, 494836, 492702]",1435,False,s4,,457,4,4,2134.0,True,True,False,False,False
+161,36000925,1,False,491197,자망,True,자망,B0,1,[494918],3721,False,s0,,5,4,4,3721.0,True,False,False,False,False
+161,36000925,1,False,491197,자망,True,자망,B0,4,"[494918, 491198, 491197, 491750]",0,True,s0,,5,4,4,3721.0,True,False,False,False,False
+161,36000925,1,False,491197,자망,True,자망,S,1,[494918],3721,False,s0,s2_empty_use_s0,5,4,4,3721.0,True,False,False,False,False
+161,36000925,1,False,491197,자망,True,자망,S,4,"[494918, 491198, 491197, 491750]",0,True,s0,s2_empty_use_s0,5,4,4,3721.0,True,False,False,False,False
+161,36000925,1,False,491197,자망,True,자망,G,1,[494918],3721,False,s0,s4_empty_use_s0,5,4,4,3721.0,True,False,False,False,False
+161,36000925,1,False,491197,자망,True,자망,G,4,"[494918, 491198, 491197, 491750]",0,True,s0,s4_empty_use_s0,5,4,4,3721.0,True,False,False,False,False
+164,36001358,5,False,491095,연안복합,True,연안복합,B0,1,[491260],165,False,s0,,932,4,4,290.0,True,True,True,True,True
+164,36001358,5,False,491095,연안복합,True,연안복합,B0,4,"[491260, 490972, 491261, 490971]",123,False,s0,,932,4,4,290.0,True,True,True,True,True
+164,36001358,5,False,491095,연안복합,True,연안복합,S,1,[491956],861,False,s2,,836,4,4,2743.0,True,True,True,True,True
+164,36001358,5,False,491095,연안복합,True,연안복합,S,4,"[491956, 494220, 493450, 494699]",861,False,s2,,836,4,4,2743.0,True,True,True,True,True
+164,36001358,5,False,491095,연안복합,True,연안복합,G,1,[491956],861,False,s4,,811,4,4,2743.0,True,True,True,True,True
+164,36001358,5,False,491095,연안복합,True,연안복합,G,4,"[491956, 493450, 494699, 494221]",861,False,s4,,811,4,4,2743.0,True,True,True,True,True

@@ -1,0 +1,12 @@
+{
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.2.5",
+  "scipy": "1.15.3",
+  "sklearn": "1.6.1",
+  "pid": 33852,
+  "threads": 1,
+  "priority": "16384",
+  "actual_parent_model": "not asserted; session model not changed by config",
+  "auxiliary_request": "gpt-6-luna/xhigh; collaboration spawn_agent task team_label_evidence"
+}

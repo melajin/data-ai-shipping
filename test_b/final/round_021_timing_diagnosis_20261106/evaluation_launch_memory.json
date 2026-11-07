@@ -1,0 +1,48 @@
+﻿{
+    "reserve_mib":  640,
+    "checked_at":  "2026-11-06T15:48:27.4282357+09:00",
+    "expected_peak_mib":  512,
+    "available_mib":  4493.3828125,
+    "other_processes":  [
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  9940,
+                                "WorkingSet64":  685576192
+                            },
+                            {
+                                "ProcessName":  "Obsidian",
+                                "Id":  23364,
+                                "WorkingSet64":  591314944
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  27636,
+                                "WorkingSet64":  358744064
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  28540,
+                                "WorkingSet64":  320270336
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  3352,
+                                "WorkingSet64":  300457984
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  5260,
+                                "WorkingSet64":  291868672
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  3096,
+                                "WorkingSet64":  262684672
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  26540,
+                                "WorkingSet64":  249970688
+                            }
+                        ]
+}

@@ -1,0 +1,7 @@
+﻿subset,category,vessels
+all,B_hit,3
+all,finite_in_window_but_no_global_max_ranking_failure,79
+dev,B_hit,2
+dev,finite_in_window_but_no_global_max_ranking_failure,48
+validation,B_hit,1
+validation,finite_in_window_but_no_global_max_ranking_failure,31

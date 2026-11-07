@@ -1,0 +1,12 @@
+{
+  "built_at": "2026-11-06T22:22:48.910460+09:00",
+  "input_summary": "results\\reproduction_001\\summary.json",
+  "available_ram_bytes": 3948937216,
+  "estimated_peak_mib": 512,
+  "source": "frozen baseline rescore plus prior saved research",
+  "case_vessels": [
+    "32300727",
+    "36009646",
+    "31704203"
+  ]
+}

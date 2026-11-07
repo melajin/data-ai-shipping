@@ -1,0 +1,38 @@
+{
+  "note": "Initial Luna send was rejected at CLI parsing because unescaped English apostrophes broke PowerShell single quoting; no Luna task receipt was created. Corrected send below names actual dispatch. Gemini launch succeeded once.",
+  "results": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "role": "luna",
+        "chunk_id": "6aec3c",
+        "wall_time_seconds": 0.6494957,
+        "exit_code": 1,
+        "original_token_count": 176,
+        "output": "error: invalid_argument: Unknown command: orchestration send renotalone\ndonteditothers. : 'donteditothers.' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경\r\n로가 올바른지 검증한 다음 다시 시도하십시오.\r\n위치 줄:2 문자:880\r\n+ ... erve andreport,noblindrerun. You'renotalone;don'teditothers.' --run r ...\r\n+                                                 ~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (donteditothers.:String) [], CommandNotFoundException\r\n    + FullyQualifiedErrorId : CommandNotFoundException\r\n \r\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "role": "gemini",
+        "chunk_id": "3e7df7",
+        "wall_time_seconds": 5.7050587,
+        "exit_code": 0,
+        "original_token_count": 110,
+        "output": "{\"ok\":true,\"result\":{\"delivery\":\"reopened\",\"followUpOf\":\"ctx_a5737b7ae5b9\",\"dispatchId\":\"ctx_8433c01a5b6e\",\"taskId\":\"task_2aed70026611\",\"runId\":\"run_a2b0e4f8b7cc\",\"state\":\"ready\",\"agent\":\"antigravity\",\"terminal\":\"term_ab814d4ef7000504fd5dc255bd315490\",\"workspace\":\"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\",\"next\":\"Orca wakes you when workers report; end your turn when you're done.\"}}\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "role": "luna_corrected_send",
+        "chunk_id": "8829d0",
+        "wall_time_seconds": 3.5393131,
+        "exit_code": 0,
+        "original_token_count": 112,
+        "output": "{\"ok\":true,\"result\":{\"delivery\":\"reopened\",\"followUpOf\":\"ctx_d4391959c8d3\",\"dispatchId\":\"ctx_6e4a0b5291e1\",\"taskId\":\"task_3bc2845b3700\",\"runId\":\"run_a2b0e4f8b7cc\",\"state\":\"ready\",\"agent\":\"codex\",\"terminal\":\"structworker_1906f472-f746-453b-ad26-490b67f4daf1\",\"workspace\":\"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\",\"next\":\"Orca wakes you when workers report; end your turn when you're done.\"}}\n"
+      }
+    }
+  ]
+}

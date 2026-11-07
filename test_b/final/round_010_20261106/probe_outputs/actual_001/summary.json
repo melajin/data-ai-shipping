@@ -1,0 +1,14 @@
+{
+  "row_n": 99677,
+  "rfid_n": 82,
+  "observed_n": 99677,
+  "valid_position_n": 99677,
+  "own_eligible_n": 96976,
+  "peer_eligible_n": 94525,
+  "definitions": {
+    "history_window": "valid finite/range-checked centroid rows in [t-720,t); current/future excluded",
+    "history_gate": "at least 24 valid positions and 3 distinct floor(ts/24) source-clock dates",
+    "distance": "minimum haversine distance to past centroid rows, Earth radius 6371000 m; proxy only",
+    "peer_gate": "own distance eligible and at least 5 other history-eligible vessels in same known single-code gear at query t"
+  }
+}

@@ -1,0 +1,1342 @@
+{
+  "created_at_utc": "2026-11-06T05:47:46.502040+00:00",
+  "stage": "evaluation_complete",
+  "seed": 19019,
+  "metric_order": [
+    "peak_score",
+    "p95_score",
+    "median_score",
+    "n_rows",
+    "gap_total_h",
+    "activity_radius_km"
+  ],
+  "bootstrap_repetitions": 5000,
+  "permutation_repetitions": 9999,
+  "cohort": {
+    "vessels": 7372,
+    "rows": 3887065,
+    "supplied_event_rows": 100,
+    "provisional_linked_vessels": 82,
+    "provisional_unlinked_comparators": 7290
+  },
+  "label_caveats": [
+    "Supplied linkage membership is provisional; absence is not confirmed nonaccident.",
+    "100 supplied event rows collapse to 82 IDs; the requested 167/7372 approximation is not measured prevalence.",
+    "Only existing supplied 2026 RFID membership is used; no new identity join or reidentification.",
+    "Only 82 linked vessels: wide intervals and failure to detect associations remain possible."
+  ],
+  "matching": {
+    "method": "greedy sorted positive(n_rows,rfid_id), nearest log-count controls, no reuse",
+    "max_controls": 5,
+    "caliper_log": 0.09531017980432493,
+    "coverage": 1.0,
+    "n_sets": 82,
+    "n_controls": 410,
+    "unmatched_positive_ids": [],
+    "log_n_rows_balance": {
+      "column": "n_rows",
+      "log_count_smd": -0.0006532754741246227,
+      "smd_definition": "equal set weights; control 1/k weights; population variances",
+      "n_sets": 82,
+      "n_controls": 410,
+      "excluded_nonpositive_or_nonfinite_sets": 0,
+      "control_positive_ratio_min": 0.9929286977018268,
+      "control_positive_ratio_median": 1.0,
+      "control_positive_ratio_max": 1.0093367675466838,
+      "control_positive_ratio_weighted_mean": 1.0006965675523174
+    },
+    "finite_score_exposure_balance": {
+      "column": "n_finite_scores",
+      "log_count_smd": -0.0006532754741246227,
+      "smd_definition": "equal set weights; control 1/k weights; population variances",
+      "n_sets": 82,
+      "n_controls": 410,
+      "excluded_nonpositive_or_nonfinite_sets": 0,
+      "control_positive_ratio_min": 0.9929286977018268,
+      "control_positive_ratio_median": 1.0,
+      "control_positive_ratio_max": 1.0093367675466838,
+      "control_positive_ratio_weighted_mean": 1.0006965675523174
+    },
+    "finite_metric_rule": "Drop nonfinite members only inside fixed base sets; retain finite positive with >=1 finite control; coverage denominator all82.",
+    "uncertainty_caveat": "Matched CI conditions on fixed matched sets, not uncertain linkage or matching selection; permutation is approximate under assumed near-match exchangeability."
+  },
+  "quality": {
+    "n_vessels_finite_scores_differs_from_rows": 0,
+    "n_linked_mismatch": 0,
+    "n_comparator_mismatch": 0,
+    "total_n_rows": 3887065,
+    "total_n_finite_scores": 3887065,
+    "residual_exposure_confounding": false,
+    "interpretation": "If counts differ, n_rows matching leaves residual finite-score exposure confounding; no new candidate test."
+  },
+  "distributions": [
+    {
+      "metric": "peak_score",
+      "group": "pooled_unlabeled_quantiles",
+      "n_total": 7372,
+      "n_finite": 7372,
+      "n_nonfinite": 0,
+      "mean": 0.5431478069592327,
+      "std_population": 0.1222493337269115,
+      "min": 1e-06,
+      "max": 0.9255584390574616,
+      "p05": 0.3839397456082546,
+      "p25": 0.5011785347676959,
+      "median": 0.5464899953579285,
+      "p75": 0.5994528736410034,
+      "p95": 0.7242870151066076
+    },
+    {
+      "metric": "peak_score",
+      "group": "provisional_linked",
+      "n_total": 82,
+      "n_finite": 82,
+      "n_nonfinite": 0,
+      "mean": 0.6253978363901241,
+      "std_population": 0.08020712209687293,
+      "min": 0.4661975087217397,
+      "max": 0.8285564927738797,
+      "p05": 0.5079482025854954,
+      "p25": 0.5773476953080752,
+      "median": 0.6116837308968923,
+      "p75": 0.6832046080750964,
+      "p95": 0.7719636994428393
+    },
+    {
+      "metric": "peak_score",
+      "group": "provisional_unlinked_comparator",
+      "n_total": 7290,
+      "n_finite": 7290,
+      "n_nonfinite": 0,
+      "mean": 0.5422226351604216,
+      "std_population": 0.12232616428774608,
+      "min": 1e-06,
+      "max": 0.9255584390574616,
+      "p05": 0.38323884653900264,
+      "p25": 0.5005283143508072,
+      "median": 0.545943405220275,
+      "p75": 0.5988868290997097,
+      "p95": 0.724210414329175
+    },
+    {
+      "metric": "p95_score",
+      "group": "pooled_unlabeled_quantiles",
+      "n_total": 7372,
+      "n_finite": 7372,
+      "n_nonfinite": 0,
+      "mean": 0.468131202090127,
+      "std_population": 0.09037857734229511,
+      "min": 1e-06,
+      "max": 0.7443133387100473,
+      "p05": 0.3668991304531054,
+      "p25": 0.4471513756264711,
+      "median": 0.47677527612126647,
+      "p75": 0.5079637109730037,
+      "p95": 0.5632041072337132
+    },
+    {
+      "metric": "p95_score",
+      "group": "provisional_linked",
+      "n_total": 82,
+      "n_finite": 82,
+      "n_nonfinite": 0,
+      "mean": 0.5036703659766993,
+      "std_population": 0.04670231988556261,
+      "min": 0.3447298252852358,
+      "max": 0.6449790684275805,
+      "p05": 0.44273158305097027,
+      "p25": 0.48039529639548595,
+      "median": 0.5013353614214897,
+      "p75": 0.5273418845060245,
+      "p95": 0.5854368585095069
+    },
+    {
+      "metric": "p95_score",
+      "group": "provisional_unlinked_comparator",
+      "n_total": 7290,
+      "n_finite": 7290,
+      "n_nonfinite": 0,
+      "mean": 0.46773144743461265,
+      "std_population": 0.09067119723279342,
+      "min": 1e-06,
+      "max": 0.7443133387100473,
+      "p05": 0.3667184428030005,
+      "p25": 0.4468764420441094,
+      "median": 0.47646467627841893,
+      "p75": 0.5075441251752502,
+      "p95": 0.5629969442616035
+    },
+    {
+      "metric": "median_score",
+      "group": "pooled_unlabeled_quantiles",
+      "n_total": 7372,
+      "n_finite": 7372,
+      "n_nonfinite": 0,
+      "mean": 0.33497845082450756,
+      "std_population": 0.07108571843149271,
+      "min": 1e-06,
+      "max": 0.6725679529933228,
+      "p05": 0.2280813198363891,
+      "p25": 0.3158211244524507,
+      "median": 0.3481585881924162,
+      "p75": 0.36995785253527447,
+      "p95": 0.40981227500715894
+    },
+    {
+      "metric": "median_score",
+      "group": "provisional_linked",
+      "n_total": 82,
+      "n_finite": 82,
+      "n_nonfinite": 0,
+      "mean": 0.3413835007702237,
+      "std_population": 0.04173240417497153,
+      "min": 0.2524225799385852,
+      "max": 0.4991382423849196,
+      "p05": 0.2798039391117159,
+      "p25": 0.3097021430158599,
+      "median": 0.3470827766012181,
+      "p75": 0.3668509043264484,
+      "p95": 0.3980633997647359
+    },
+    {
+      "metric": "median_score",
+      "group": "provisional_unlinked_comparator",
+      "n_total": 7290,
+      "n_finite": 7290,
+      "n_nonfinite": 0,
+      "mean": 0.3349064049952142,
+      "std_population": 0.07134397226961894,
+      "min": 1e-06,
+      "max": 0.6725679529933228,
+      "p05": 0.2280813198363891,
+      "p25": 0.31596414199262857,
+      "median": 0.3481983574327596,
+      "p75": 0.3700311306848248,
+      "p95": 0.4098563082182017
+    },
+    {
+      "metric": "n_rows",
+      "group": "pooled_unlabeled_quantiles",
+      "n_total": 7372,
+      "n_finite": 7372,
+      "n_nonfinite": 0,
+      "mean": 527.2741454150841,
+      "std_population": 681.6067318998972,
+      "min": 1.0,
+      "max": 4317.0,
+      "p05": 3.0,
+      "p25": 76.0,
+      "median": 281.0,
+      "p75": 690.0,
+      "p95": 2048.0
+    },
+    {
+      "metric": "n_rows",
+      "group": "provisional_linked",
+      "n_total": 82,
+      "n_finite": 82,
+      "n_nonfinite": 0,
+      "mean": 1215.5731707317073,
+      "std_population": 898.0460364983714,
+      "min": 5.0,
+      "max": 4273.0,
+      "p05": 182.85,
+      "p25": 567.25,
+      "median": 910.0,
+      "p75": 1633.75,
+      "p95": 3090.35
+    },
+    {
+      "metric": "n_rows",
+      "group": "provisional_unlinked_comparator",
+      "n_total": 7290,
+      "n_finite": 7290,
+      "n_nonfinite": 0,
+      "mean": 519.5319615912208,
+      "std_population": 674.7985485144601,
+      "min": 1.0,
+      "max": 4317.0,
+      "p05": 3.0,
+      "p25": 75.0,
+      "median": 277.0,
+      "p75": 677.0,
+      "p95": 2040.0
+    },
+    {
+      "metric": "gap_total_h",
+      "group": "pooled_unlabeled_quantiles",
+      "n_total": 7372,
+      "n_finite": 7372,
+      "n_nonfinite": 0,
+      "mean": 2631.573385784048,
+      "std_population": 1224.548802225227,
+      "min": 0.0,
+      "max": 4283.0,
+      "p05": 5.550000000000011,
+      "p25": 1833.75,
+      "median": 3013.5,
+      "p75": 3649.0,
+      "p95": 4018.45
+    },
+    {
+      "metric": "gap_total_h",
+      "group": "provisional_linked",
+      "n_total": 82,
+      "n_finite": 82,
+      "n_nonfinite": 0,
+      "mean": 2362.2804878048782,
+      "std_population": 993.1843254166976,
+      "min": 28.0,
+      "max": 4006.0,
+      "p05": 803.65,
+      "p25": 1594.25,
+      "median": 2561.0,
+      "p75": 3198.25,
+      "p95": 3731.9500000000003
+    },
+    {
+      "metric": "gap_total_h",
+      "group": "provisional_unlinked_comparator",
+      "n_total": 7290,
+      "n_finite": 7290,
+      "n_nonfinite": 0,
+      "mean": 2634.6024691358025,
+      "std_population": 1226.566928757223,
+      "min": 0.0,
+      "max": 4283.0,
+      "p05": 4.0,
+      "p25": 1839.75,
+      "median": 3019.0,
+      "p75": 3652.75,
+      "p95": 4019.0
+    },
+    {
+      "metric": "activity_radius_km",
+      "group": "pooled_unlabeled_quantiles",
+      "n_total": 7372,
+      "n_finite": 7372,
+      "n_nonfinite": 0,
+      "mean": 19.263825510963635,
+      "std_population": 50.98335158221998,
+      "min": 0.0,
+      "max": 652.1530296317425,
+      "p05": 0.17160110899354591,
+      "p25": 1.8922165194190725,
+      "median": 5.14462076195217,
+      "p75": 13.258080217250306,
+      "p95": 81.99355308264168
+    },
+    {
+      "metric": "activity_radius_km",
+      "group": "provisional_linked",
+      "n_total": 82,
+      "n_finite": 82,
+      "n_nonfinite": 0,
+      "mean": 47.07909478844198,
+      "std_population": 67.98542143305497,
+      "min": 1.3412605472867491,
+      "max": 308.8616890023572,
+      "p05": 3.265233486382869,
+      "p25": 8.070102747658503,
+      "median": 20.40530830976426,
+      "p75": 48.76688041289008,
+      "p95": 188.94723286965706
+    },
+    {
+      "metric": "activity_radius_km",
+      "group": "provisional_unlinked_comparator",
+      "n_total": 7290,
+      "n_finite": 7290,
+      "n_nonfinite": 0,
+      "mean": 18.950951425812303,
+      "std_population": 50.6729660826627,
+      "min": 0.0,
+      "max": 652.1530296317425,
+      "p05": 0.16542514352905935,
+      "p25": 1.8721568668807607,
+      "median": 5.031438542506604,
+      "p75": 12.97444341500913,
+      "p95": 80.49673522022088
+    }
+  ],
+  "uncontrolled": {
+    "peak_score": {
+      "auc": 0.7388905617451236,
+      "p_greater": 4.616814447490834e-14,
+      "ci_low": 0.6901984007494396,
+      "ci_high": 0.7842112482853223,
+      "n_positive_finite": 82,
+      "n_control_finite": 7290,
+      "n_positive_nonfinite": 0,
+      "n_control_nonfinite": 0,
+      "interpretation": "교란 미통제"
+    },
+    "p95_score": {
+      "auc": 0.6596724547492389,
+      "p_greater": 3.1716233929228156e-07,
+      "ci_low": 0.6070246160794942,
+      "ci_high": 0.7106150674161062,
+      "n_positive_finite": 82,
+      "n_control_finite": 7290,
+      "n_positive_nonfinite": 0,
+      "n_control_nonfinite": 0,
+      "interpretation": "교란 미통제"
+    },
+    "median_score": {
+      "auc": 0.4790491485161765,
+      "p_greater": 0.7432904643526632,
+      "ci_low": 0.4195189701897019,
+      "ci_high": 0.5384458747365252,
+      "n_positive_finite": 82,
+      "n_control_finite": 7290,
+      "n_positive_nonfinite": 0,
+      "n_control_nonfinite": 0,
+      "interpretation": "교란 미통제"
+    },
+    "n_rows": {
+      "auc": 0.7831058248854094,
+      "p_greater": 5.204185234198317e-19,
+      "ci_low": 0.7368062037873465,
+      "ci_high": 0.8234560373381511,
+      "n_positive_finite": 82,
+      "n_control_finite": 7290,
+      "n_positive_nonfinite": 0,
+      "n_control_nonfinite": 0,
+      "interpretation": "교란 미통제"
+    },
+    "gap_total_h": {
+      "auc": 0.39941533674596,
+      "p_greater": 0.9991482876300793,
+      "ci_low": 0.35181598999631974,
+      "ci_high": 0.44720310983974026,
+      "n_positive_finite": 82,
+      "n_control_finite": 7290,
+      "n_positive_nonfinite": 0,
+      "n_control_nonfinite": 0,
+      "interpretation": "교란 미통제"
+    },
+    "activity_radius_km": {
+      "auc": 0.7659991970290073,
+      "p_greater": 5.338382537289579e-17,
+      "ci_low": 0.7198024356786777,
+      "ci_high": 0.8085014553849242,
+      "n_positive_finite": 82,
+      "n_control_finite": 7290,
+      "n_positive_nonfinite": 0,
+      "n_control_nonfinite": 0,
+      "interpretation": "교란 미통제"
+    }
+  },
+  "controlled_conditional": {
+    "peak_score": {
+      "auc": 0.5756097560975609,
+      "ci_low": 0.5097560975609756,
+      "ci_high": 0.6414634146341462,
+      "p_greater": 0.0247,
+      "permutation_exceedances": 246,
+      "n_sets": 82,
+      "n_controls": 410,
+      "positive_coverage": 1.0,
+      "log_n_rows_balance": {
+        "column": "n_rows",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "finite_score_exposure_balance": {
+        "column": "n_finite_scores",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "p_holm": 0.0988,
+      "diagnostic_only": false,
+      "gate_checks": {
+        "auc_at_least_060": false,
+        "ci_low_above_050": true,
+        "holm_p_below_005": false,
+        "positive_coverage_at_least_090": true,
+        "abs_log_count_smd_at_most_010": true
+      },
+      "gate_passed": false,
+      "decision": "판정력 입증 못함"
+    },
+    "p95_score": {
+      "auc": 0.524390243902439,
+      "ci_low": 0.448780487804878,
+      "ci_high": 0.5975609756097562,
+      "p_greater": 0.2693,
+      "permutation_exceedances": 2692,
+      "n_sets": 82,
+      "n_controls": 410,
+      "positive_coverage": 1.0,
+      "log_n_rows_balance": {
+        "column": "n_rows",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "finite_score_exposure_balance": {
+        "column": "n_finite_scores",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "p_holm": 0.5386,
+      "diagnostic_only": false,
+      "gate_checks": {
+        "auc_at_least_060": false,
+        "ci_low_above_050": false,
+        "holm_p_below_005": false,
+        "positive_coverage_at_least_090": true,
+        "abs_log_count_smd_at_most_010": true
+      },
+      "gate_passed": false,
+      "decision": "판정 불가"
+    },
+    "median_score": {
+      "auc": 0.5585365853658536,
+      "ci_low": 0.4878048780487805,
+      "ci_high": 0.6244512195121942,
+      "p_greater": 0.0649,
+      "permutation_exceedances": 648,
+      "n_sets": 82,
+      "n_controls": 410,
+      "positive_coverage": 1.0,
+      "log_n_rows_balance": {
+        "column": "n_rows",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "finite_score_exposure_balance": {
+        "column": "n_finite_scores",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "p_holm": 0.19469999999999998,
+      "diagnostic_only": false,
+      "gate_checks": {
+        "auc_at_least_060": false,
+        "ci_low_above_050": false,
+        "holm_p_below_005": false,
+        "positive_coverage_at_least_090": true,
+        "abs_log_count_smd_at_most_010": true
+      },
+      "gate_passed": false,
+      "decision": "판정력 입증 못함"
+    },
+    "n_rows": {
+      "auc": 0.37804878048780494,
+      "ci_low": 0.33658536585365856,
+      "ci_high": 0.4195121951219512,
+      "p_greater": 1.0,
+      "permutation_exceedances": 9999,
+      "n_sets": 82,
+      "n_controls": 410,
+      "positive_coverage": 1.0,
+      "log_n_rows_balance": {
+        "column": "n_rows",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "finite_score_exposure_balance": {
+        "column": "n_finite_scores",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "diagnostic_only": true,
+      "gate_checks": {
+        "auc_at_least_060": false,
+        "ci_low_above_050": false,
+        "holm_p_below_005": false,
+        "positive_coverage_at_least_090": true,
+        "abs_log_count_smd_at_most_010": true
+      },
+      "gate_passed": false,
+      "decision": "관측 편향 진단 전용; 판정 후보 제외"
+    },
+    "gap_total_h": {
+      "auc": 0.4073170731707317,
+      "ci_low": 0.3341463414634146,
+      "ci_high": 0.48048780487804876,
+      "p_greater": 0.9923,
+      "permutation_exceedances": 9922,
+      "n_sets": 82,
+      "n_controls": 410,
+      "positive_coverage": 1.0,
+      "log_n_rows_balance": {
+        "column": "n_rows",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "finite_score_exposure_balance": {
+        "column": "n_finite_scores",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "p_holm": 0.9923,
+      "diagnostic_only": false,
+      "gate_checks": {
+        "auc_at_least_060": false,
+        "ci_low_above_050": false,
+        "holm_p_below_005": false,
+        "positive_coverage_at_least_090": true,
+        "abs_log_count_smd_at_most_010": true
+      },
+      "gate_passed": false,
+      "decision": "판정력 입증 못함"
+    },
+    "activity_radius_km": {
+      "auc": 0.6073170731707317,
+      "ci_low": 0.5414634146341464,
+      "ci_high": 0.6707317073170732,
+      "p_greater": 0.0033,
+      "permutation_exceedances": 32,
+      "n_sets": 82,
+      "n_controls": 410,
+      "positive_coverage": 1.0,
+      "log_n_rows_balance": {
+        "column": "n_rows",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "finite_score_exposure_balance": {
+        "column": "n_finite_scores",
+        "log_count_smd": -0.0006532754741246227,
+        "smd_definition": "equal set weights; control 1/k weights; population variances",
+        "n_sets": 82,
+        "n_controls": 410,
+        "excluded_nonpositive_or_nonfinite_sets": 0,
+        "control_positive_ratio_min": 0.9929286977018268,
+        "control_positive_ratio_median": 1.0,
+        "control_positive_ratio_max": 1.0093367675466838,
+        "control_positive_ratio_weighted_mean": 1.0006965675523174
+      },
+      "p_holm": 0.0165,
+      "diagnostic_only": false,
+      "gate_checks": {
+        "auc_at_least_060": true,
+        "ci_low_above_050": true,
+        "holm_p_below_005": true,
+        "positive_coverage_at_least_090": true,
+        "abs_log_count_smd_at_most_010": true
+      },
+      "gate_passed": true,
+      "decision": "잠정 연결과의 조건부 연관 기준 통과"
+    }
+  },
+  "holm": {
+    "family": [
+      "peak_score",
+      "p95_score",
+      "median_score",
+      "gap_total_h",
+      "activity_radius_km"
+    ],
+    "family_size": 5,
+    "diagnostic_excluded": "n_rows",
+    "missing_p_rule": "Unavailable tests retained as p=1 in family; reported adjusted p remains null."
+  },
+  "decision": {
+    "passing_candidates": [
+      "activity_radius_km"
+    ],
+    "adopted_threshold": null,
+    "conclusion": "잠정 연결과의 조건부 연관 기준 통과 후보 있음",
+    "no_threshold_optimization": true,
+    "scope": "Conditional association with provisional linkage; not confirmed accident detection or external validation."
+  },
+  "expected_f1_assumptions": {
+    "prevalences": [
+      0.0227,
+      0.1,
+      0.5,
+      1.0
+    ],
+    "h": 0.0366,
+    "per_100": true,
+    "formula": "2*p*a*h / (p*(1+a)+(1-p)*b)",
+    "k_formula": "100*(p*a+(1-p)*b)",
+    "q_formula": "p*a/(p*a+(1-p)*b)",
+    "perfect_selection_upper_bound": 0.0366,
+    "p1_is_no_comparator_scenario": true,
+    "interpretation": "Ratios of expected counts, not exact expected finite-sample F1; explanatory sensitivity, not official F1.",
+    "transport_assumption": "Conditional score distributions and selected-vessel timing hit rate h would have to remain unchanged; unverified.",
+    "matched_fpr_scope": "Standardized to linked-vessel observation-count distribution, not fleet FPR."
+  },
+  "memory_before_evaluation": {
+    "checked_at_utc": "2026-11-06T05:47:40.522850+00:00",
+    "available_mib": 3801.7734375,
+    "total_mib": 14140.86328125,
+    "top_processes": [
+      {
+        "pid": 9940,
+        "name": "explorer.exe",
+        "rss_mib": 656.0625
+      },
+      {
+        "pid": 23364,
+        "name": "Obsidian.exe",
+        "rss_mib": 566.75
+      },
+      {
+        "pid": 27636,
+        "name": "Orca.exe",
+        "rss_mib": 323.296875
+      },
+      {
+        "pid": 28540,
+        "name": "Orca.exe",
+        "rss_mib": 307.7734375
+      },
+      {
+        "pid": 3352,
+        "name": "explorer.exe",
+        "rss_mib": 294.86328125
+      },
+      {
+        "pid": 5260,
+        "name": "codex.exe",
+        "rss_mib": 253.3046875
+      },
+      {
+        "pid": 3096,
+        "name": "codex.exe",
+        "rss_mib": 240.13671875
+      },
+      {
+        "pid": 27692,
+        "name": "chrome.exe",
+        "rss_mib": 239.15234375
+      }
+    ],
+    "source": "psutil.virtual_memory/process_iter",
+    "stage": "before_evaluation",
+    "estimated_peak_mib": 512,
+    "reserve_mib": 640,
+    "estimate_basis": "7372 vessel rows; six sequential metrics; raw bootstrap uses one rank-frequency vector per replicate; matched arrays <=9999x82; no fleet-hour rows or 5000x7290 resampling matrix loaded",
+    "sufficient": true
+  },
+  "provenance": {
+    "paths": {
+      "protocol": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106\\PROTOCOL.md",
+      "scores": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106\\execution_001\\vessel_peaks.csv",
+      "score_metadata": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106\\execution_001\\score_metadata.json",
+      "supplied_positive_membership": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\round_008_linkage_audit_20261105\\devset_positives.csv",
+      "evaluation_code": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106\\evaluate.py"
+    },
+    "sha256_before": {
+      "protocol": "10fe34978e36774f7a63ed12c889871a2b2a0edeec77e9380d7f50b016645f0a",
+      "score_metadata": "35c437f60a69c5b34d43fef6ef0d1d1ab2319804d1f5b7ffd24d3ce6d7192dcb",
+      "supplied_positive_membership": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "evaluation_code": "956e95ac7d0a0817bccbb8cbfebd859273ebe4d8cba2455d40e6f81573788225",
+      "scores": "1dd3c52cf6293c0d62793fd68f29dfb6d471bd80189ed03c5464280f6472df44"
+    },
+    "sha256_after": {
+      "protocol": "10fe34978e36774f7a63ed12c889871a2b2a0edeec77e9380d7f50b016645f0a",
+      "scores": "1dd3c52cf6293c0d62793fd68f29dfb6d471bd80189ed03c5464280f6472df44",
+      "score_metadata": "35c437f60a69c5b34d43fef6ef0d1d1ab2319804d1f5b7ffd24d3ce6d7192dcb",
+      "supplied_positive_membership": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "evaluation_code": "956e95ac7d0a0817bccbb8cbfebd859273ebe4d8cba2455d40e6f81573788225"
+    },
+    "checksums_match": true,
+    "score_metadata": {
+      "status": "complete",
+      "started_at": "2026-11-06T14:32:19.723148+09:00",
+      "pid": 16436,
+      "training_performed": false,
+      "labels_read": false,
+      "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+      "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+      "score_definition_changed": false,
+      "expected_peak_process_mib": 1024,
+      "reserve_mib": 640,
+      "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+      "timestamp_contract": {
+        "unit": "epoch hours",
+        "start_inclusive": 490896,
+        "end_exclusive": 495240,
+        "period": "2026 Jan-Jun"
+      },
+      "tie_break": "score DESC, source_ordinal ASC, stable",
+      "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+      "last_memory_preflight": {
+        "at": "2026-11-06T14:46:54.254102+09:00",
+        "stage": "merge_disjoint_worker_checkpoints",
+        "available_mib": 3941.9,
+        "process_rss_mib": 25.85,
+        "expected_peak_process_mib": 1024,
+        "expected_additional_mib": 998.15,
+        "reserve_mib": 640,
+        "passed": true,
+        "other_processes": [
+          {
+            "pid": 9940,
+            "name": "explorer.exe",
+            "rss_mib": 656.06
+          },
+          {
+            "pid": 23364,
+            "name": "Obsidian.exe",
+            "rss_mib": 564.67
+          },
+          {
+            "pid": 28540,
+            "name": "Orca.exe",
+            "rss_mib": 314.6
+          },
+          {
+            "pid": 27636,
+            "name": "Orca.exe",
+            "rss_mib": 309.65
+          },
+          {
+            "pid": 3352,
+            "name": "explorer.exe",
+            "rss_mib": 294.86
+          },
+          {
+            "pid": 5260,
+            "name": "codex.exe",
+            "rss_mib": 253.24
+          },
+          {
+            "pid": 27692,
+            "name": "chrome.exe",
+            "rss_mib": 242.6
+          },
+          {
+            "pid": 3096,
+            "name": "codex.exe",
+            "rss_mib": 239.21
+          }
+        ]
+      },
+      "stage": "finished",
+      "worker_count": 4,
+      "rows": 3887065,
+      "vessels": 7372,
+      "original_checkpoint_vessels": 827,
+      "original_sources_sha256_verified": true,
+      "parallel_helper_sha256": "c8ae4cc6fc69f8285c01376233d470984b0c61ece94b04dae287c53eb2698872",
+      "aggregate_memory_plan": {
+        "parent_peak_mib": 512,
+        "each_worker_peak_mib": 512,
+        "reserve_mib": 640
+      },
+      "updated_at": "2026-11-06T14:46:54.695239+09:00",
+      "elapsed_seconds": 874.972,
+      "observed_peak_process_mib": 39.434,
+      "vessels_completed": 7372,
+      "rows_completed": 3887065,
+      "workers": [
+        {
+          "worker_index": 0,
+          "pid": 24852,
+          "exit_code": 0,
+          "status": "complete",
+          "vessels_completed": 1852,
+          "rows_completed": 981369
+        },
+        {
+          "worker_index": 1,
+          "pid": 1596,
+          "exit_code": 0,
+          "status": "complete",
+          "vessels_completed": 1870,
+          "rows_completed": 954193
+        },
+        {
+          "worker_index": 2,
+          "pid": 16272,
+          "exit_code": 0,
+          "status": "complete",
+          "vessels_completed": 1796,
+          "rows_completed": 933701
+        },
+        {
+          "worker_index": 3,
+          "pid": 22368,
+          "exit_code": null,
+          "status": "running",
+          "vessels_completed": 1800,
+          "rows_completed": 980294
+        }
+      ],
+      "completed_at": "2026-11-06T14:46:54.684550+09:00",
+      "vessel_error_records": 0,
+      "n_finite_scores": 3887065,
+      "vessels_without_finite_scores": 0,
+      "source_checksums_match": true,
+      "parallel_helper_checksums_match": true,
+      "output_sha256": "1dd3c52cf6293c0d62793fd68f29dfb6d471bd80189ed03c5464280f6472df44",
+      "invalid_centroid_rows": 0,
+      "min_ts": 490896,
+      "max_ts": 495239,
+      "worker_summaries": [
+        {
+          "status": "complete",
+          "started_at": "2026-11-06T14:32:22.574259+09:00",
+          "pid": 24852,
+          "training_performed": false,
+          "labels_read": false,
+          "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+          "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+          "score_definition_changed": false,
+          "expected_peak_process_mib": 1024,
+          "reserve_mib": 640,
+          "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+          "timestamp_contract": {
+            "unit": "epoch hours",
+            "start_inclusive": 490896,
+            "end_exclusive": 495240,
+            "period": "2026 Jan-Jun"
+          },
+          "tie_break": "score DESC, source_ordinal ASC, stable",
+          "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+          "last_memory_preflight": {
+            "at": "2026-11-06T14:45:27.613821+09:00",
+            "stage": "score_partition_032",
+            "available_mib": 3345.88,
+            "process_rss_mib": 239.02,
+            "expected_peak_process_mib": 1024,
+            "expected_additional_mib": 784.98,
+            "reserve_mib": 640,
+            "passed": true,
+            "other_processes": [
+              {
+                "pid": 9940,
+                "name": "explorer.exe",
+                "rss_mib": 656.07
+              },
+              {
+                "pid": 23364,
+                "name": "Obsidian.exe",
+                "rss_mib": 563.59
+              },
+              {
+                "pid": 27636,
+                "name": "Orca.exe",
+                "rss_mib": 341.66
+              },
+              {
+                "pid": 28540,
+                "name": "Orca.exe",
+                "rss_mib": 302.63
+              },
+              {
+                "pid": 3352,
+                "name": "explorer.exe",
+                "rss_mib": 294.88
+              },
+              {
+                "pid": 5260,
+                "name": "codex.exe",
+                "rss_mib": 252.88
+              },
+              {
+                "pid": 27692,
+                "name": "chrome.exe",
+                "rss_mib": 242.59
+              },
+              {
+                "pid": 26540,
+                "name": "Orca.exe",
+                "rss_mib": 236.46
+              }
+            ]
+          },
+          "stage": "finished",
+          "worker_index": 0,
+          "worker_count": 4,
+          "rows": 981369,
+          "vessels": 1852,
+          "updated_at": "2026-11-06T14:46:08.386311+09:00",
+          "elapsed_seconds": 825.812,
+          "observed_peak_process_mib": 278.746,
+          "vessels_completed": 1852,
+          "rows_completed": 981369,
+          "completed_at": "2026-11-06T14:46:08.385811+09:00",
+          "resumed_vessels": 227,
+          "vessel_error_records": 0,
+          "reference_summary": {
+            "gap": {
+              "n_ref": 3879693,
+              "p50": 1.0
+            },
+            "jump": {
+              "n_ref": 3879693,
+              "p50": 85.72352634799219
+            },
+            "harbor_count": 77
+          }
+        },
+        {
+          "status": "complete",
+          "started_at": "2026-11-06T14:32:22.596612+09:00",
+          "pid": 1596,
+          "training_performed": false,
+          "labels_read": false,
+          "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+          "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+          "score_definition_changed": false,
+          "expected_peak_process_mib": 1024,
+          "reserve_mib": 640,
+          "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+          "timestamp_contract": {
+            "unit": "epoch hours",
+            "start_inclusive": 490896,
+            "end_exclusive": 495240,
+            "period": "2026 Jan-Jun"
+          },
+          "tie_break": "score DESC, source_ordinal ASC, stable",
+          "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+          "last_memory_preflight": {
+            "at": "2026-11-06T14:44:44.907778+09:00",
+            "stage": "score_partition_032",
+            "available_mib": 3179.12,
+            "process_rss_mib": 223.79,
+            "expected_peak_process_mib": 1024,
+            "expected_additional_mib": 800.21,
+            "reserve_mib": 640,
+            "passed": true,
+            "other_processes": [
+              {
+                "pid": 9940,
+                "name": "explorer.exe",
+                "rss_mib": 656.09
+              },
+              {
+                "pid": 23364,
+                "name": "Obsidian.exe",
+                "rss_mib": 555.28
+              },
+              {
+                "pid": 27636,
+                "name": "Orca.exe",
+                "rss_mib": 323.41
+              },
+              {
+                "pid": 28540,
+                "name": "Orca.exe",
+                "rss_mib": 302.05
+              },
+              {
+                "pid": 3352,
+                "name": "explorer.exe",
+                "rss_mib": 294.86
+              },
+              {
+                "pid": 5260,
+                "name": "codex.exe",
+                "rss_mib": 252.71
+              },
+              {
+                "pid": 27692,
+                "name": "chrome.exe",
+                "rss_mib": 242.52
+              },
+              {
+                "pid": 24852,
+                "name": "python.exe",
+                "rss_mib": 240.46
+              }
+            ]
+          },
+          "stage": "finished",
+          "worker_index": 1,
+          "worker_count": 4,
+          "rows": 954193,
+          "vessels": 1870,
+          "updated_at": "2026-11-06T14:45:18.085665+09:00",
+          "elapsed_seconds": 775.489,
+          "observed_peak_process_mib": 278.133,
+          "vessels_completed": 1870,
+          "rows_completed": 954193,
+          "completed_at": "2026-11-06T14:45:18.085185+09:00",
+          "resumed_vessels": 230,
+          "vessel_error_records": 0,
+          "reference_summary": {
+            "gap": {
+              "n_ref": 3879693,
+              "p50": 1.0
+            },
+            "jump": {
+              "n_ref": 3879693,
+              "p50": 85.72352634799219
+            },
+            "harbor_count": 77
+          }
+        },
+        {
+          "status": "complete",
+          "started_at": "2026-11-06T14:32:22.614599+09:00",
+          "pid": 16272,
+          "training_performed": false,
+          "labels_read": false,
+          "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+          "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+          "score_definition_changed": false,
+          "expected_peak_process_mib": 1024,
+          "reserve_mib": 640,
+          "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+          "timestamp_contract": {
+            "unit": "epoch hours",
+            "start_inclusive": 490896,
+            "end_exclusive": 495240,
+            "period": "2026 Jan-Jun"
+          },
+          "tie_break": "score DESC, source_ordinal ASC, stable",
+          "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+          "last_memory_preflight": {
+            "at": "2026-11-06T14:45:12.143074+09:00",
+            "stage": "score_partition_032",
+            "available_mib": 3162.84,
+            "process_rss_mib": 227.94,
+            "expected_peak_process_mib": 1024,
+            "expected_additional_mib": 796.06,
+            "reserve_mib": 640,
+            "passed": true,
+            "other_processes": [
+              {
+                "pid": 9940,
+                "name": "explorer.exe",
+                "rss_mib": 656.07
+              },
+              {
+                "pid": 23364,
+                "name": "Obsidian.exe",
+                "rss_mib": 555.28
+              },
+              {
+                "pid": 27636,
+                "name": "Orca.exe",
+                "rss_mib": 328.86
+              },
+              {
+                "pid": 28540,
+                "name": "Orca.exe",
+                "rss_mib": 301.23
+              },
+              {
+                "pid": 3352,
+                "name": "explorer.exe",
+                "rss_mib": 294.86
+              },
+              {
+                "pid": 5260,
+                "name": "codex.exe",
+                "rss_mib": 252.86
+              },
+              {
+                "pid": 27692,
+                "name": "chrome.exe",
+                "rss_mib": 242.58
+              },
+              {
+                "pid": 24852,
+                "name": "python.exe",
+                "rss_mib": 239.02
+              }
+            ]
+          },
+          "stage": "finished",
+          "worker_index": 2,
+          "worker_count": 4,
+          "rows": 933701,
+          "vessels": 1796,
+          "updated_at": "2026-11-06T14:45:29.640835+09:00",
+          "elapsed_seconds": 787.026,
+          "observed_peak_process_mib": 278.523,
+          "vessels_completed": 1796,
+          "rows_completed": 933701,
+          "completed_at": "2026-11-06T14:45:29.640364+09:00",
+          "resumed_vessels": 191,
+          "vessel_error_records": 0,
+          "reference_summary": {
+            "gap": {
+              "n_ref": 3879693,
+              "p50": 1.0
+            },
+            "jump": {
+              "n_ref": 3879693,
+              "p50": 85.72352634799219
+            },
+            "harbor_count": 77
+          }
+        },
+        {
+          "status": "complete",
+          "started_at": "2026-11-06T14:32:22.645734+09:00",
+          "pid": 22368,
+          "training_performed": false,
+          "labels_read": false,
+          "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+          "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+          "score_definition_changed": false,
+          "expected_peak_process_mib": 1024,
+          "reserve_mib": 640,
+          "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+          "timestamp_contract": {
+            "unit": "epoch hours",
+            "start_inclusive": 490896,
+            "end_exclusive": 495240,
+            "period": "2026 Jan-Jun"
+          },
+          "tie_break": "score DESC, source_ordinal ASC, stable",
+          "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+          "last_memory_preflight": {
+            "at": "2026-11-06T14:46:18.477861+09:00",
+            "stage": "score_partition_032",
+            "available_mib": 3701.59,
+            "process_rss_mib": 227.71,
+            "expected_peak_process_mib": 1024,
+            "expected_additional_mib": 796.29,
+            "reserve_mib": 640,
+            "passed": true,
+            "other_processes": [
+              {
+                "pid": 9940,
+                "name": "explorer.exe",
+                "rss_mib": 656.08
+              },
+              {
+                "pid": 23364,
+                "name": "Obsidian.exe",
+                "rss_mib": 564.11
+              },
+              {
+                "pid": 27636,
+                "name": "Orca.exe",
+                "rss_mib": 333.47
+              },
+              {
+                "pid": 28540,
+                "name": "Orca.exe",
+                "rss_mib": 300.17
+              },
+              {
+                "pid": 3352,
+                "name": "explorer.exe",
+                "rss_mib": 294.88
+              },
+              {
+                "pid": 5260,
+                "name": "codex.exe",
+                "rss_mib": 252.89
+              },
+              {
+                "pid": 27692,
+                "name": "chrome.exe",
+                "rss_mib": 242.61
+              },
+              {
+                "pid": 3096,
+                "name": "codex.exe",
+                "rss_mib": 239.02
+              }
+            ]
+          },
+          "stage": "finished",
+          "worker_index": 3,
+          "worker_count": 4,
+          "rows": 1017802,
+          "vessels": 1854,
+          "updated_at": "2026-11-06T14:46:52.150219+09:00",
+          "elapsed_seconds": 869.505,
+          "observed_peak_process_mib": 278.312,
+          "vessels_completed": 1854,
+          "rows_completed": 1017802,
+          "completed_at": "2026-11-06T14:46:52.149538+09:00",
+          "resumed_vessels": 179,
+          "vessel_error_records": 0,
+          "reference_summary": {
+            "gap": {
+              "n_ref": 3879693,
+              "p50": 1.0
+            },
+            "jump": {
+              "n_ref": 3879693,
+              "p50": 85.72352634799219
+            },
+            "harbor_count": 77
+          }
+        }
+      ],
+      "sum_of_worker_process_peak_mib": 1113.714
+    }
+  }
+}

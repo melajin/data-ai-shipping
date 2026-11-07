@@ -1,0 +1,114 @@
+{
+  "inputs": {
+    "testB\\final\\round_004_20261105\\execution_001\\candidate_ledger.parquet": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+    "testB\\final\\round_004_20261105\\execution_001\\pool_manifest.csv": "f53b8026e4b79a261f224a2dfe1e9d92f4cd5727424d2ab6ff6b2cd5045276f3",
+    "testB\\final\\round_004_20261105\\execution_001\\predictions.csv": "95a2e5edf680b72a0ea09f9a722674addd02505c774922404a869853ea027576",
+    "testB\\final\\round_004_20261105\\execution_001\\event_results.csv": "1e4450ce3205997e3f73972cb12408f2c74f2ecc478817cfb26a0b07e5c6dbcb",
+    "testB\\final\\round_004_20261105\\execution_001\\metrics.json": "6fc2ff20b34db073c2b2179d156382f01331c93b57bb45c43df6feb69bda3e01"
+  },
+  "numerical_helper": {
+    "path": "testB\\final\\round_002_20261105\\data_eval.py",
+    "sha256": "9d2b7882dc0e370050aa09f681e6053593f045e7f46a7edf3223faedf45817d0",
+    "functions": [
+      "_bootstrap_diff",
+      "_random_hit_probability"
+    ]
+  },
+  "reference_predictions_sha256": "95a2e5edf680b72a0ea09f9a722674addd02505c774922404a869853ea027576",
+  "reference_copy_sha256": "95a2e5edf680b72a0ea09f9a722674addd02505c774922404a869853ea027576",
+  "prediction_order": "saved reference predictions loaded then S1 appended; labels read only after predictions.csv persisted",
+  "ram_snapshot_before_data": {
+    "captured_at_local": "2026-11-06 00:28:23 대한민국 표준시",
+    "available_ram_mib": 3652,
+    "total_ram_mib": 14141,
+    "process_rss_mib": 80,
+    "largest_processes_mib": [
+      {
+        "name": "explorer.exe",
+        "pid": 7960,
+        "rss_mib": 742
+      },
+      {
+        "name": "Orca.exe",
+        "pid": 18876,
+        "rss_mib": 479
+      },
+      {
+        "name": "Orca.exe",
+        "pid": 23268,
+        "rss_mib": 372
+      },
+      {
+        "name": "agy.exe",
+        "pid": 12892,
+        "rss_mib": 293
+      },
+      {
+        "name": "PhoneExperienceHost.exe",
+        "pid": 8764,
+        "rss_mib": 276
+      },
+      {
+        "name": "Microsoft.CmdPal.UI.exe",
+        "pid": 21888,
+        "rss_mib": 268
+      },
+      {
+        "name": "Orca.exe",
+        "pid": 16048,
+        "rss_mib": 264
+      },
+      {
+        "name": "StartMenuExperienceHost.exe",
+        "pid": 11272,
+        "rss_mib": 197
+      },
+      {
+        "name": "ASDSvc.exe",
+        "pid": 6744,
+        "rss_mib": 195
+      },
+      {
+        "name": "CrossDeviceService.exe",
+        "pid": 12048,
+        "rss_mib": 191
+      },
+      {
+        "name": "logioptionsplus_agent.exe",
+        "pid": 16496,
+        "rss_mib": 180
+      },
+      {
+        "name": "codex.exe",
+        "pid": 20560,
+        "rss_mib": 174
+      }
+    ],
+    "other_bounded_metadata_job_allowance_mib": 384,
+    "analysis_increment_estimate_mib": 384,
+    "required_reserve_mib": 640
+  },
+  "process_peak_working_set_mib": 155,
+  "elapsed_seconds": 3.727,
+  "outputs": {
+    "event_results.csv": "ffd3064872842ae4a5c04c9250b1bb96d80f9ad67c341c58417a5fda0752f98a",
+    "failure_window_observations.csv": "32a58bb84ca0b3774ee97c1b732edff5b86c21073acca4ac271d5efa563bd3e6",
+    "loss_flags.csv": "9d3740364f2d98c61dcb156e4de1f68b13e0c38c8b5f8bfd8cc14641a5232465",
+    "loss_summary.csv": "ce532d5ce130a8ae048650fa11908c2b00463d12e8ac804789fdd7abd83d03f8",
+    "metrics.json": "36843c0564aa5d5c2862a209f8b468c984035962e4ceb99e54080c7c75c4959a",
+    "predictions.csv": "bba90e6b2c9e8be87bf363c49ab96df1081cac9d792c50f5a078bccff7802b1b",
+    "reference_predictions.csv": "95a2e5edf680b72a0ea09f9a722674addd02505c774922404a869853ea027576",
+    "report.md": "0bc6817a16bce11e73a6c003e0018b8a9e65b6aaa6e5ddc4a5e0c0e928289cdd"
+  },
+  "limitations": [
+    "No raw source data, feature rebuilding, model training, or TestB inference",
+    "Outcome-linked loss diagnostic is evaluator-only",
+    "No hardware experiment or generalization claim"
+  ],
+  "code_sources_sha256": {
+    "analyze_round5.py": "58fa86ad601129b94a1d89cc4630b2ec5256d85c74e34fa1f9c810536e2e1e54",
+    "check_round5.py": "3c3d8e68972e9cefea9948a9227d2356c46555db95236169b72ddad20bf02611",
+    "checks.json": "9b91da13d983067099bd9fc6e8b5ddc3e6a93eb5d9488b598770d495ed852719"
+  },
+  "small_check_status": "passed"
+}

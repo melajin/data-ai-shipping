@@ -1,0 +1,5 @@
+{
+ "checked_at":"2026-11-06T00:14:30+09:00","free_mib":4428.3,"estimated_extra_mib":1792,"reserve_mib":640,"data_jobs":0,
+ "terra":{"dispatch":"ctx_d4fe84d06963","task":"task_189663aff2aa","agent":"codex","state":"ready","requested_inherited_model":"gpt-6.1-terra","requested_inherited_effort":"high"},
+ "sonnet":{"dispatch":"ctx_acc0e5112fdc","task":"task_ef38595bd2e6","agent":"claude","state":"ready","requested_inherited_model":"claude-sonnet-5","requested_inherited_effort":"high"}
+}

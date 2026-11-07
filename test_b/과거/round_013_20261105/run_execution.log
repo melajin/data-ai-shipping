@@ -1,0 +1,10 @@
+Run: python -B testB/round_013_20261105/run_round013.py
+Exit code: 0
+Started UTC: 2026-11-05T10:48:25+00:00
+Ended UTC: 2026-11-05T10:48:34+00:00
+Dev: 145427 source rows; 99677 unique; 3615 voyages; 82 linked vessels.
+2025 Test B: 46705 ID/ts rows; 3258 voyages across 100 vessels; no feature or score calculation.
+Duplicates: dev 45750 extra keys, 0 conflicting groups; 2025 0 extra keys.
+Input quality: dev len/bbox nonfinite or negative counts all zero; timestamps finite, nonnegative integers. 2025 timestamps finite, nonnegative integers.
+Window audit: 60 direct-sum checks; mismatches 0.
+Protected source hashes unchanged: True.

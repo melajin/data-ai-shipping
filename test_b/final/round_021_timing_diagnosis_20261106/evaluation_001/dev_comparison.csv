@@ -1,0 +1,4 @@
+﻿subset,policy,n_linked,hits,timing_hit_rate,wilson95_low,wilson95_high,n_missing_predictions,median_abs_error_h,paired_wins_vs_B,paired_losses_vs_B,exact_mcnemar_two_sided_nominal_p,improvement_candidate,p_value_is_decision_gate
+dev,B,50,2,0.04,0.011038884327619805,0.1346009068750702,0,760.0,0,0,1.0,False,False
+dev,T,50,2,0.04,0.011038884327619805,0.1346009068750702,0,760.0,0,0,1.0,False,False
+dev,G,50,2,0.04,0.011038884327619805,0.1346009068750702,0,764.0,0,0,1.0,False,False

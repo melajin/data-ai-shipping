@@ -1,0 +1,28 @@
+test_baseline_exact_max_source_ordinal (test_score_fleet_timing.EngineChecks.test_baseline_exact_max_source_ordinal) ... ok
+test_checkpoint_hash_and_row_mismatch_rejected (test_score_fleet_timing.EngineChecks.test_checkpoint_hash_and_row_mismatch_rejected) ... ERROR
+test_duplicate_hours_not_multiple_votes (test_score_fleet_timing.EngineChecks.test_duplicate_hours_not_multiple_votes) ... ok
+test_first_row_and_adjacent_gap_fallback (test_score_fleet_timing.EngineChecks.test_first_row_and_adjacent_gap_fallback) ... ok
+test_fixed_assignments_cover_each_partition_once (test_score_fleet_timing.EngineChecks.test_fixed_assignments_cover_each_partition_once) ... ok
+test_fleet_split_all_ids_without_labels_or_times (test_score_fleet_timing.EngineChecks.test_fleet_split_all_ids_without_labels_or_times) ... ok
+test_frozen_scorer_and_original_summarizer_match (test_score_fleet_timing.EngineChecks.test_frozen_scorer_and_original_summarizer_match) ... ok
+test_gap_floor_midpoint (test_score_fleet_timing.EngineChecks.test_gap_floor_midpoint) ... ok
+test_gap_uses_immediate_row_even_if_same_hour (test_score_fleet_timing.EngineChecks.test_gap_uses_immediate_row_even_if_same_hour) ... ok
+test_longest_run_lower_middle (test_score_fleet_timing.EngineChecks.test_longest_run_lower_middle) ... ok
+test_near_tie_is_not_exact_tie (test_score_fleet_timing.EngineChecks.test_near_tie_is_not_exact_tie) ... ok
+test_no_finite_score_preserves_unknown (test_score_fleet_timing.EngineChecks.test_no_finite_score_preserves_unknown) ... ok
+test_scoring_error_keeps_rows_explicit (test_score_fleet_timing.EngineChecks.test_scoring_error_keeps_rows_explicit) ... ok
+test_tie_run_earliest_start (test_score_fleet_timing.EngineChecks.test_tie_run_earliest_start) ... ok
+
+======================================================================
+ERROR: test_checkpoint_hash_and_row_mismatch_rejected (test_score_fleet_timing.EngineChecks.test_checkpoint_hash_and_row_mismatch_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\testB\final\round_021_timing_diagnosis_20261106\test_score_fleet_timing.py", line 123, in test_checkpoint_hash_and_row_mismatch_rejected
+    os.fsync(handle.fileno())
+    ~~~~~~~~^^^^^^^^^^^^^^^^^
+OSError: [Errno 9] Bad file descriptor
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.132s
+
+FAILED (errors=1)

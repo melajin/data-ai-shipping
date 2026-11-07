@@ -1,0 +1,85 @@
+{
+  "execution_meta": {
+    "task_id": "task_08043a3d31b2",
+    "dispatch_id": "ctx_d9b85151783d",
+    "coordinator_session": "codex_a55fd2e5_500d_4503_925f_12df6a69b424",
+    "agent_model": "Gemini 3.8 Flash (High)",
+    "execution_date": "2026-11-05 23:30:25+0900",
+    "elapsed_seconds": 12.2
+  },
+  "preflight_ram_check": {
+    "checked_at": "2026-11-05T23:30:13+0900",
+    "total_system_ram_mib": 14140.9,
+    "available_ram_before_mib": 3578.7,
+    "percent_used_before": 74.7,
+    "required_extra_mib": 512,
+    "reserve_mib": 640,
+    "threshold_required_mib": 1152,
+    "headroom_confirmed": true,
+    "other_python_processes_running": 1
+  },
+  "memory_during_run": {
+    "tracemalloc_peak_mib": 46.33,
+    "process_rss_before_mib": 85.8,
+    "process_rss_after_mib": 366.14,
+    "delta_rss_mib": 280.34,
+    "available_ram_after_mib": 3358.0
+  },
+  "source_hashes": {
+    "devset_positives.csv": {
+      "relative_path": "testB/과거/round_008_linkage_audit_20261105/devset_positives.csv",
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "size_bytes": 15646
+    },
+    "dev_hourly_scores.parquet": {
+      "relative_path": "testB/과거/round_008_linkage_audit_20261105/dev_hourly_scores.parquet",
+      "sha256": "44e960c100fcb29806711b42045bd4ae1a37f542ffd639eff0aff7b1f2b1c5b4",
+      "size_bytes": 51584418
+    },
+    "additional_hourly_scores.parquet": {
+      "relative_path": "testB/과거/round_008_linkage_audit_20261105/additional_hourly_scores.parquet",
+      "sha256": "31a80050d15930fb21b000fb8627a9941a8e11f412f601d0600716962bcf81be",
+      "size_bytes": 3373601
+    },
+    "rows_train_1.parquet": {
+      "relative_path": "29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_train_1.parquet",
+      "sha256": "7f1b4d82970e5214f9c1cd45b860175578a94ae3974aa3a69a790c9842bc6140",
+      "size_bytes": 18817327
+    },
+    "rows_train_2.parquet": {
+      "relative_path": "29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_train_2.parquet",
+      "sha256": "748692493429823c116e204871d57920991c0c6d62d8a46a2b793ac1a80f356f",
+      "size_bytes": 18009625
+    },
+    "rows_train_3.parquet": {
+      "relative_path": "29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_train_3.parquet",
+      "sha256": "a2333ffee0aa491d1b450395b94a49c77f79084651b4101e31de37c573e2f2bd",
+      "size_bytes": 24848272
+    },
+    "rows_train_4.parquet": {
+      "relative_path": "29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_train_4.parquet",
+      "sha256": "256498c7a97daf930678c0fb138c89f4081052cd333f030ac2d78e62ba11972a",
+      "size_bytes": 27340845
+    },
+    "rows_train_5.parquet": {
+      "relative_path": "29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_train_5.parquet",
+      "sha256": "264957261a27d0a4b77336523fcd95d0483fce1399ca42cdf0e960f184131217",
+      "size_bytes": 29009998
+    },
+    "rows_train_6.parquet": {
+      "relative_path": "29-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031/rows_train_6.parquet",
+      "sha256": "b4cd5e6805ff9431fb5ba861205b962af17603a83dee6ac2dd0fe26195e17078",
+      "size_bytes": 29470852
+    }
+  },
+  "data_assertions": {
+    "target_rfid_count": 82,
+    "verified_rfid_count": 82,
+    "raw_train_matched_rows": 99677,
+    "canonical_rows_target": 99677,
+    "canonical_rows_verified": 99677,
+    "exact_duplicates_removed": 45750,
+    "hourly_duplicates_removed": 0,
+    "assertion_canonical_rows_exact_99677": true
+  }
+}

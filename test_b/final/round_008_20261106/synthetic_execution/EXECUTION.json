@@ -1,0 +1,167 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-06T02:20:47+0900",
+  "root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+  "output_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\synthetic_execution",
+  "synthetic_mode": true,
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "command": [
+    "testB/final/round_008_20261106/run_shape.py",
+    "--synthetic"
+  ],
+  "memory_requirement_bytes": 1476395008,
+  "estimated_extra_peak_bytes": 805306368,
+  "reserve_bytes": 671088640,
+  "stages": {},
+  "other_processes": [
+    {
+      "pid": 7960,
+      "name": "explorer.exe",
+      "rss_bytes": 779202560
+    },
+    {
+      "pid": 18876,
+      "name": "Orca.exe",
+      "rss_bytes": 507363328
+    },
+    {
+      "pid": 23268,
+      "name": "Orca.exe",
+      "rss_bytes": 385978368
+    },
+    {
+      "pid": 16048,
+      "name": "Orca.exe",
+      "rss_bytes": 299524096
+    },
+    {
+      "pid": 18100,
+      "name": "agy.exe",
+      "rss_bytes": 298508288
+    },
+    {
+      "pid": 8764,
+      "name": "PhoneExperienceHost.exe",
+      "rss_bytes": 288899072
+    },
+    {
+      "pid": 21888,
+      "name": "Microsoft.CmdPal.UI.exe",
+      "rss_bytes": 281829376
+    },
+    {
+      "pid": 11272,
+      "name": "StartMenuExperienceHost.exe",
+      "rss_bytes": 206663680
+    },
+    {
+      "pid": 12048,
+      "name": "CrossDeviceService.exe",
+      "rss_bytes": 200884224
+    },
+    {
+      "pid": 29468,
+      "name": "codex.exe",
+      "rss_bytes": 195878912
+    },
+    {
+      "pid": 16496,
+      "name": "logioptionsplus_agent.exe",
+      "rss_bytes": 190832640
+    },
+    {
+      "pid": 20560,
+      "name": "codex.exe",
+      "rss_bytes": 179425280
+    },
+    {
+      "pid": 21156,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 179073024
+    },
+    {
+      "pid": 21120,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 178995200
+    },
+    {
+      "pid": 4008,
+      "name": "SearchHost.exe",
+      "rss_bytes": 153559040
+    }
+  ],
+  "ram_preflight": {
+    "checked_at": "2026-11-06T02:20:48+0900",
+    "available_bytes": 4330987520,
+    "total_bytes": 14827769856,
+    "allowed": true,
+    "simultaneous_dataset_jobs_authorized": false
+  },
+  "peak_working_set_bytes": 99319808,
+  "sources": {
+    "evaluate_shape.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\evaluate_shape.py",
+      "sha256": "9d9448b34f1934e1d1627d6d412453ad21031548dd2c25b7baa241ec41da73de"
+    },
+    "run_shape.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\run_shape.py",
+      "sha256": "b21e3c0c6281fb7643a2b13a805cc576a9520e228fbf77ed8a419614ac46d1be"
+    },
+    "check_shape_eval.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\check_shape_eval.py",
+      "sha256": "74bc9f1406a0e5b71536ecf1dc93a28763c07b601f8f4c7411f29b8a062e3e56"
+    },
+    "PROTOCOL.md": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\PROTOCOL.md",
+      "sha256": "f5e676b7f7a5710934abae8e648043479ff4e13c93ccba94aef50f4aea8dc1f8"
+    },
+    "CONTRACT.md": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\CONTRACT.md",
+      "sha256": "2b422c443962a787d7c7e877c8a3cfc188a39f7c2a28fce956256bb02a4ca4c7"
+    }
+  },
+  "versions": {
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pyarrow": "24.0.0",
+    "psutil": "7.0.0"
+  },
+  "outputs": {
+    "predictions.csv": {
+      "sha256": "6c337bf936cbd58c311e13abc24fbb56b62f674060b53e9d294a68b1ef1369bb",
+      "bytes": 1547
+    },
+    "pool_manifest.csv": {
+      "sha256": "17de0c6d5714e051bd9036824b303c893af6d2789e18a8bb45ce3175a4e1ce27",
+      "bytes": 412
+    },
+    "candidate_ledger.parquet": {
+      "sha256": "a0cebcc1eb48036206408173f36c1a00b8298f03b5fe2c7b4146502192abbbeb",
+      "bytes": 19320
+    },
+    "stage_counts.csv": {
+      "sha256": "70465741fbfa02e5ebaf680c29e1098fd1e9152f227d4997806d749e5dab9bc9",
+      "bytes": 3310
+    },
+    "stage_event_coverage.csv": {
+      "sha256": "40e96a65cecb7f12551856b134ce9f222c4c4ce372a025782e891f7b4f54dd05",
+      "bytes": 1507
+    },
+    "event_results.csv": {
+      "sha256": "f12cd6f5fdea12877d2f4d5e20a60490e3e4eb45a15863fc21e29ffa5c3aeefe",
+      "bytes": 4246
+    },
+    "metrics.json": {
+      "sha256": "86a4a9959a8cdc185f4e4b85912f73ec50171236cea4507dfd76d6d5992b05ab",
+      "bytes": 19032
+    },
+    "diagnostics.json": {
+      "sha256": "8bb32becfd2737fe327dbd022ea526937001b2a8ca16d3ea20700fd0dacc6b3d",
+      "bytes": 429
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-06T02:20:50+0900",
+  "elapsed_seconds": 2.5841411000001244
+}

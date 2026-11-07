@@ -1,0 +1,20 @@
+{
+  "before": {
+    "n": 100,
+    "median_error_h": 1053.5,
+    "hit6h": 3,
+    "null_median_h": 1369.5,
+    "permutation_p": 0.005
+  },
+  "after": {
+    "n": 100,
+    "median_error_h": 998.5,
+    "hit6h": 4,
+    "null_median_h": 1297.75,
+    "permutation_p": 0.0085
+  },
+  "changed_events": 69,
+  "reference": "same vessel observed candidate hours, excluding candidate day; full-period retrospective",
+  "weight": "2 - count(hour)/max_24_hour_count; 1 when no other day",
+  "permutation": "2000 shuffles of selected timestamps across events, seed 20261106, proportion null median <= observed median"
+}

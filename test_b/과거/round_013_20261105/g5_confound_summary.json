@@ -1,0 +1,737 @@
+{
+  "population": "ALL dev vessels; each unique voyage counted once",
+  "hour_definition": "stored integer epoch-hour modulo 24, not asserted local time",
+  "day_bucket": "[06,18)",
+  "night_bucket": "[18,06)",
+  "accident_related_definition": "same vessel has >=1 acc_ts in [t_start-6,t_end+6]",
+  "control_definition": "all remaining voyages; not confirmed normal",
+  "ks_test": "two-sided two-sample KS on collapse_hour modulo 24",
+  "family_size": 2,
+  "bonferroni_alpha": 0.05,
+  "windows": {
+    "3": {
+      "ALL": {
+        "n_valid_voyages": 3138,
+        "n_vessels": 81,
+        "spearman_rho_min_lin_vs_collapse_hour": 0.051934033619479736,
+        "spearman_p_descriptive": 0.003613850005120594,
+        "confound_rho_abs_ge_0_2": false
+      },
+      "Tier0-1_vessels": {
+        "n_valid_voyages": 2066,
+        "n_vessels": 54,
+        "spearman_rho_min_lin_vs_collapse_hour": 0.09481356898527687,
+        "spearman_p_descriptive": 1.583747559698352e-05,
+        "confound_rho_abs_ge_0_2": false
+      },
+      "accident_vs_control_ks": {
+        "n_accident_related_voyages": 93,
+        "n_control_voyages": 3045,
+        "statistic": 0.07429418931087452,
+        "p_raw": 0.6728248553064886,
+        "p_bonferroni_family2": 1.0,
+        "confound_ks_adjusted_p_lt_0_05": false,
+        "confound_present": false
+      }
+    },
+    "7": {
+      "ALL": {
+        "n_valid_voyages": 2386,
+        "n_vessels": 80,
+        "spearman_rho_min_lin_vs_collapse_hour": 0.06401380517560805,
+        "spearman_p_descriptive": 0.0017574083648714087,
+        "confound_rho_abs_ge_0_2": false
+      },
+      "Tier0-1_vessels": {
+        "n_valid_voyages": 1591,
+        "n_vessels": 54,
+        "spearman_rho_min_lin_vs_collapse_hour": 0.08448955551038935,
+        "spearman_p_descriptive": 0.000742329975498566,
+        "confound_rho_abs_ge_0_2": false
+      },
+      "accident_vs_control_ks": {
+        "n_accident_related_voyages": 86,
+        "n_control_voyages": 2300,
+        "statistic": 0.11485338725985844,
+        "p_raw": 0.20704978014543163,
+        "p_bonferroni_family2": 0.41409956029086326,
+        "confound_ks_adjusted_p_lt_0_05": false,
+        "confound_present": false
+      }
+    }
+  },
+  "hour_distributions": [
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 0,
+      "voyage_count": 52,
+      "fraction": 0.0165710643722116
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 1,
+      "voyage_count": 42,
+      "fraction": 0.01338432122370937
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 2,
+      "voyage_count": 58,
+      "fraction": 0.018483110261312937
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 3,
+      "voyage_count": 60,
+      "fraction": 0.019120458891013385
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 4,
+      "voyage_count": 59,
+      "fraction": 0.01880178457616316
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 5,
+      "voyage_count": 105,
+      "fraction": 0.033460803059273424
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 6,
+      "voyage_count": 112,
+      "fraction": 0.035691523263224986
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 7,
+      "voyage_count": 177,
+      "fraction": 0.05640535372848948
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 8,
+      "voyage_count": 237,
+      "fraction": 0.07552581261950286
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 9,
+      "voyage_count": 310,
+      "fraction": 0.09878903760356915
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 10,
+      "voyage_count": 310,
+      "fraction": 0.09878903760356915
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 11,
+      "voyage_count": 261,
+      "fraction": 0.08317399617590822
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 12,
+      "voyage_count": 184,
+      "fraction": 0.058636073932441045
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 13,
+      "voyage_count": 208,
+      "fraction": 0.0662842574888464
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 14,
+      "voyage_count": 178,
+      "fraction": 0.05672402804333971
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 15,
+      "voyage_count": 136,
+      "fraction": 0.043339706819630335
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 16,
+      "voyage_count": 140,
+      "fraction": 0.04461440407903123
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 17,
+      "voyage_count": 115,
+      "fraction": 0.036647546207775654
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 18,
+      "voyage_count": 71,
+      "fraction": 0.02262587635436584
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 19,
+      "voyage_count": 71,
+      "fraction": 0.02262587635436584
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 20,
+      "voyage_count": 62,
+      "fraction": 0.019757807520713832
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 21,
+      "voyage_count": 53,
+      "fraction": 0.016889738687061822
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 22,
+      "voyage_count": 70,
+      "fraction": 0.022307202039515615
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "hour_mod24": 23,
+      "voyage_count": 67,
+      "fraction": 0.021351179094964947
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 0,
+      "voyage_count": 34,
+      "fraction": 0.016456921587608905
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 1,
+      "voyage_count": 34,
+      "fraction": 0.016456921587608905
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 2,
+      "voyage_count": 42,
+      "fraction": 0.02032913843175218
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 3,
+      "voyage_count": 45,
+      "fraction": 0.021781219748305904
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 4,
+      "voyage_count": 45,
+      "fraction": 0.021781219748305904
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 5,
+      "voyage_count": 82,
+      "fraction": 0.03969022265246854
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 6,
+      "voyage_count": 86,
+      "fraction": 0.041626331074540175
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 7,
+      "voyage_count": 125,
+      "fraction": 0.060503388189738626
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 8,
+      "voyage_count": 146,
+      "fraction": 0.07066795740561471
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 9,
+      "voyage_count": 186,
+      "fraction": 0.09002904162633107
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 10,
+      "voyage_count": 217,
+      "fraction": 0.10503388189738626
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 11,
+      "voyage_count": 174,
+      "fraction": 0.08422071636011616
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 12,
+      "voyage_count": 118,
+      "fraction": 0.057115198451113264
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 13,
+      "voyage_count": 152,
+      "fraction": 0.07357212003872217
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 14,
+      "voyage_count": 108,
+      "fraction": 0.05227492739593417
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 15,
+      "voyage_count": 84,
+      "fraction": 0.04065827686350436
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 16,
+      "voyage_count": 94,
+      "fraction": 0.04549854791868345
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 17,
+      "voyage_count": 78,
+      "fraction": 0.0377541142303969
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 18,
+      "voyage_count": 33,
+      "fraction": 0.015972894482090997
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 19,
+      "voyage_count": 32,
+      "fraction": 0.015488867376573089
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 20,
+      "voyage_count": 35,
+      "fraction": 0.016940948693126814
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 21,
+      "voyage_count": 32,
+      "fraction": 0.015488867376573089
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 22,
+      "voyage_count": 43,
+      "fraction": 0.020813165537270088
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 23,
+      "voyage_count": 41,
+      "fraction": 0.01984511132623427
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 0,
+      "voyage_count": 70,
+      "fraction": 0.02933780385582565
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 1,
+      "voyage_count": 56,
+      "fraction": 0.02347024308466052
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 2,
+      "voyage_count": 51,
+      "fraction": 0.02137468566638726
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 3,
+      "voyage_count": 34,
+      "fraction": 0.014249790444258172
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 4,
+      "voyage_count": 44,
+      "fraction": 0.018440905280804692
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 5,
+      "voyage_count": 62,
+      "fraction": 0.025984911986588432
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 6,
+      "voyage_count": 93,
+      "fraction": 0.038977367979882646
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 7,
+      "voyage_count": 100,
+      "fraction": 0.041911148365465216
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 8,
+      "voyage_count": 65,
+      "fraction": 0.027242246437552388
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 9,
+      "voyage_count": 81,
+      "fraction": 0.03394803017602682
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 10,
+      "voyage_count": 103,
+      "fraction": 0.04316848281642917
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 11,
+      "voyage_count": 159,
+      "fraction": 0.06663872590108968
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 12,
+      "voyage_count": 182,
+      "fraction": 0.07627829002514669
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 13,
+      "voyage_count": 245,
+      "fraction": 0.10268231349538977
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 14,
+      "voyage_count": 198,
+      "fraction": 0.08298407376362113
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 15,
+      "voyage_count": 162,
+      "fraction": 0.06789606035205364
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 16,
+      "voyage_count": 147,
+      "fraction": 0.06160938809723386
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 17,
+      "voyage_count": 120,
+      "fraction": 0.050293378038558254
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 18,
+      "voyage_count": 97,
+      "fraction": 0.040653813914501256
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 19,
+      "voyage_count": 66,
+      "fraction": 0.027661357921207042
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 20,
+      "voyage_count": 69,
+      "fraction": 0.028918692372170998
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 21,
+      "voyage_count": 59,
+      "fraction": 0.024727577535624476
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 22,
+      "voyage_count": 51,
+      "fraction": 0.02137468566638726
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "hour_mod24": 23,
+      "voyage_count": 72,
+      "fraction": 0.030176026823134954
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 0,
+      "voyage_count": 50,
+      "fraction": 0.03142677561282212
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 1,
+      "voyage_count": 38,
+      "fraction": 0.023884349465744813
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 2,
+      "voyage_count": 34,
+      "fraction": 0.021370207416719043
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 3,
+      "voyage_count": 21,
+      "fraction": 0.013199245757385292
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 4,
+      "voyage_count": 27,
+      "fraction": 0.01697045883092395
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 5,
+      "voyage_count": 53,
+      "fraction": 0.03331238214959145
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 6,
+      "voyage_count": 78,
+      "fraction": 0.04902576995600252
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 7,
+      "voyage_count": 86,
+      "fraction": 0.05405405405405406
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 8,
+      "voyage_count": 45,
+      "fraction": 0.028284098051539912
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 9,
+      "voyage_count": 58,
+      "fraction": 0.036455059710873663
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 10,
+      "voyage_count": 76,
+      "fraction": 0.04776869893148963
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 11,
+      "voyage_count": 118,
+      "fraction": 0.07416719044626022
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 12,
+      "voyage_count": 123,
+      "fraction": 0.07730986800754243
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 13,
+      "voyage_count": 165,
+      "fraction": 0.10370835952231301
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 14,
+      "voyage_count": 122,
+      "fraction": 0.07668133249528598
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 15,
+      "voyage_count": 107,
+      "fraction": 0.06725329981143935
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 16,
+      "voyage_count": 93,
+      "fraction": 0.05845380263984915
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 17,
+      "voyage_count": 65,
+      "fraction": 0.04085480829666876
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 18,
+      "voyage_count": 63,
+      "fraction": 0.039597737272155875
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 19,
+      "voyage_count": 38,
+      "fraction": 0.023884349465744813
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 20,
+      "voyage_count": 33,
+      "fraction": 0.020741671904462602
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 21,
+      "voyage_count": 31,
+      "fraction": 0.01948460087994972
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 22,
+      "voyage_count": 26,
+      "fraction": 0.016341923318667503
+    },
+    {
+      "w": 7,
+      "population": "Tier0-1_vessels",
+      "hour_mod24": 23,
+      "voyage_count": 41,
+      "fraction": 0.025769956002514142
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+﻿{
+    "created_at":  "2026-11-06T02:41:53.5073486+09:00",
+    "requested_model":  "GPT-6 Luna",
+    "requested_effort":  "xhigh",
+    "actual_extraction":  "geometry_execution_001",
+    "actual_extractor_sha256":  "a7a6ffed1319b8c75155df2935e11e3ab1c9f1de73f384563d5c6e99f1d1ffdb",
+    "source_hashes_before":  {
+                                 "extract_geometry_py":  "a7a6ffed1319b8c75155df2935e11e3ab1c9f1de73f384563d5c6e99f1d1ffdb",
+                                 "shape_rules_py":  "6eb571aef12dc881b78dc4c93fd77683ba4068d22be654ee46c208eab78e4472"
+                             },
+    "source_hashes_after":  {
+                                "extract_geometry_py":  "a7a6ffed1319b8c75155df2935e11e3ab1c9f1de73f384563d5c6e99f1d1ffdb",
+                                "shape_rules_py":  "6eb571aef12dc881b78dc4c93fd77683ba4068d22be654ee46c208eab78e4472"
+                            },
+    "synthetic_check_receipts":  {
+                                     "extract_checks_json":  "08c4c2c7f516b4ca431cca1b364df4b3eaeb67ae3510caa52e4b538bf2971d4d",
+                                     "shape_checks_json":  "d5a36814dc34653dc00a97e9578a9835a016ee7272cccf6e842873191c655943"
+                                 },
+    "actual_geometry_ledger_sha256":  "2af19410a858dbc36f7b816c00b93adc19b8b33d5042cfa5a7c81fc82f756c9f",
+    "ram_preflight":  {
+                          "checked_at":  "2026-11-06T02:41:51.0869287+09:00",
+                          "available_mib":  4131.61,
+                          "synthetic_check_extra_mib":  768,
+                          "concurrent_job_reserve_mib":  0,
+                          "other_python_jobs":  [
+
+                                                ],
+                          "reserve_mib":  640,
+                          "required_available_mib":  1408,
+                          "allowed":  true
+                      },
+    "final_direction_checks":  "passed; B0 later highest legacy score, S higher legacy on self-rarity tie, G peer wins only on self-rarity tie; independent B0/S/G fallback order [.9,.5,.1]",
+    "actual_extraction_command":  "python \u0027testB/final/round_008_20261106/extract_geometry.py\u0027 --canonical \u0027testB/final/round_004_20261105/execution_001/candidate_ledger.parquet\u0027 --registry \u0027testB/final/round_003_20261105/gear_registry.csv\u0027 --cache-dir \u002729-30일 모델 심층 분석/분석 결과/outputs/remeasure_20261031\u0027 --raw-dir \u0027F:/문제 데이터_수정_1027/vpass_26년(1월_6월) 데이터/vpass_1월_6월 데이터\u0027 --output-dir \u0027testB/final/round_008_20261106/geometry_execution_001\u0027",
+    "actual_receipt_summary":  {
+                                   "status":  "complete",
+                                   "rows_written":  99677,
+                                   "canonical_rows_expected":  99677,
+                                   "canonical_rfids_validated":  82,
+                                   "month_cache_and_raw_record_counts":  {
+                                                                             "1":  497942,
+                                                                             "2":  479290,
+                                                                             "3":  657292,
+                                                                             "4":  717294,
+                                                                             "5":  761846,
+                                                                             "6":  773405
+                                                                         },
+                                   "mismatch_count":  0,
+                                   "error_count":  0,
+                                   "release_ready_for_scoring":  true,
+                                   "elapsed_sec":  123.408,
+                                   "process_rss_mib_at_end":  287.24,
+                                   "process_peak_working_set_mib":  293.72,
+                                   "extractor_sha256":  "a7a6ffed1319b8c75155df2935e11e3ab1c9f1de73f384563d5c6e99f1d1ffdb",
+                                   "geometry_ledger_sha256":  "2af19410a858dbc36f7b816c00b93adc19b8b33d5042cfa5a7c81fc82f756c9f",
+                                   "raw_hash_scope":  "months 1/5/6 matched R7 expected hashes; months 2/3/4 newly observed full-file hashes only",
+                                   "raw_files":  {
+                                                     "1":  {
+                                                               "sha256":  "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+                                                               "bytes":  669416109,
+                                                               "expected_r7_sha256":  "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+                                                               "observed":  true
+                                                           },
+                                                     "2":  {
+                                                               "sha256":  "8eb284e7b9c374c2b679376652535eecf898e9241a668cae1d61c63a2b41b422",
+                                                               "bytes":  635512252,
+                                                               "expected_r7_sha256":  null,
+                                                               "observed":  true
+                                                           },
+                                                     "3":  {
+                                                               "sha256":  "2765008e34544590c4692c125f92ba611c548a55f7816a866fb8df1f658550c0",
+                                                               "bytes":  987693693,
+                                                               "expected_r7_sha256":  null,
+                                                               "observed":  true
+                                                           },
+                                                     "4":  {
+                                                               "sha256":  "013964713caf1cb9db2765e27f3205746748264236047f5a8cb14fc38fc9f3f1",
+                                                               "bytes":  1113299125,
+                                                               "expected_r7_sha256":  null,
+                                                               "observed":  true
+                                                           },
+                                                     "5":  {
+                                                               "sha256":  "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+                                                               "bytes":  1201889964,
+                                                               "expected_r7_sha256":  "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+                                                               "observed":  true
+                                                           },
+                                                     "6":  {
+                                                               "sha256":  "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+                                                               "bytes":  1255966524,
+                                                               "expected_r7_sha256":  "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+                                                               "observed":  true
+                                                           }
+                                                 }
+                               },
+    "preflight_wrapper_initial_failure":  "An initial inline Python PowerShell preflight wrapper exited 75 on a quoting SyntaxError before invoking extract_geometry.py; the output directory was absent. It was replaced by a native PowerShell RAM/process check, and exactly one extraction invocation then ran."
+}

@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "finished_at": "2026-11-06T15:49:18.192167+09:00",
+  "audit_code_sha256": "26d0499caee0a41d4a613baa4059ff86c6163809f10b1d683778ea6053f0647c",
+  "selected_policy": "B",
+  "validation_alternatives_evaluated": [
+    "B"
+  ],
+  "unselected_validation_outcomes_computed": false,
+  "rows_checked": 3887065,
+  "vessels_checked": 7372,
+  "linked_diagnoses_checked": 82,
+  "events_checked": 100,
+  "checks": {
+    "selected_policy_valid": 1,
+    "selection_seal": 1,
+    "score_complete_labelblind": 1,
+    "prediction_seal": 1,
+    "protocol_seal": 1,
+    "score_source_receipt_seal": 2,
+    "score_sources_unchanged": 1,
+    "score_input_current_digest": 148,
+    "baseline_parity_seal": 1,
+    "baseline_parity_receipt": 1,
+    "evaluation_inputs_unchanged": 1,
+    "evaluation_input_current_digest": 12,
+    "evaluation_output_current_digest": 17,
+    "fleet_row_counts": 1,
+    "independent_split_counts": 1,
+    "independent_split_exact": 7372,
+    "linked_membership": 1,
+    "independent_development_choice": 1,
+    "validation_selected_only": 1,
+    "no_unchosen_validation_computation": 5,
+    "timing_paired_counts": 5,
+    "independent_statistics": 5,
+    "independent_median_error": 5,
+    "validation_decision_flag": 1,
+    "seal_audit_order": 1,
+    "validation_parse_after_choice": 1,
+    "hourly_manifest_seal": 1,
+    "hourly_partition_hash": 128,
+    "approved_2026_hour_range": 3887065,
+    "hourly_partition_rows": 128,
+    "vessel_single_partition": 7372,
+    "history_indices_contiguous": 7372,
+    "history_timestamp_ordinal_order": 7372,
+    "independent_all_fleet_policy_reconstruction": 7372,
+    "hourly_fleet_conservation": 1,
+    "diagnosis_82_coverage": 1,
+    "independent_failure_taxonomy": 82,
+    "diagnostic_counts_exact": 1,
+    "event_rows_100": 1,
+    "canonical_boolean": 1000,
+    "independent_one_event_assignment": 200,
+    "independent_event_raw_flag": 200,
+    "independent_event_min_errors": 300,
+    "independent_event_inside_gap": 100,
+    "independent_event_gap_intersection": 100,
+    "event_summary_and_vessel_hits_agree": 2,
+    "round019_exact_fleet_keys": 1,
+    "independent_round019_summary_exact_parity": 58976,
+    "independent_round019_peak_time_state_exact_parity": 7372,
+    "independent_full_fleet_q95": 1,
+    "gate_selected_policy_only": 9,
+    "independent_joint_counts": 9,
+    "independent_joint_rates": 36,
+    "independent_joint_scenario": 45
+  },
+  "total_checks": 3992835,
+  "memory": {
+    "checked_at": "2026-11-06T15:48:55.283323+09:00",
+    "available_mib": 4453.9140625,
+    "estimated_peak_mib": 512,
+    "reserve_mib": 640,
+    "basis": "one score partition of tuples; 7372 CSV records; 82 linked hour sets; no all-fleet hourly retention or rescoring",
+    "top_processes": [
+      {
+        "pid": 9940,
+        "name": "explorer.exe",
+        "rss_mib": 653.87890625
+      },
+      {
+        "pid": 23364,
+        "name": "Obsidian.exe",
+        "rss_mib": 564.72265625
+      },
+      {
+        "pid": 27636,
+        "name": "Orca.exe",
+        "rss_mib": 339.10546875
+      },
+      {
+        "pid": 28540,
+        "name": "Orca.exe",
+        "rss_mib": 306.39453125
+      },
+      {
+        "pid": 3352,
+        "name": "explorer.exe",
+        "rss_mib": 286.5390625
+      },
+      {
+        "pid": 5260,
+        "name": "codex.exe",
+        "rss_mib": 283.13671875
+      },
+      {
+        "pid": 3096,
+        "name": "codex.exe",
+        "rss_mib": 250.46484375
+      },
+      {
+        "pid": 26540,
+        "name": "Orca.exe",
+        "rss_mib": 238.390625
+      },
+      {
+        "pid": 1992,
+        "name": "CrossDeviceService.exe",
+        "rss_mib": 212.23828125
+      },
+      {
+        "pid": 2832,
+        "name": "PhoneExperienceHost.exe",
+        "rss_mib": 186.54296875
+      },
+      {
+        "pid": 20808,
+        "name": "msedgewebview2.exe",
+        "rss_mib": 168.6171875
+      },
+      {
+        "pid": 20268,
+        "name": "msedgewebview2.exe",
+        "rss_mib": 164.69921875
+      }
+    ],
+    "python_processes": [
+      {
+        "pid": 24880,
+        "name": "python.exe",
+        "rss_mib": 22.80078125
+      }
+    ],
+    "allowed": true,
+    "before_streaming": {
+      "checked_at": "2026-11-06T15:48:57.686624+09:00",
+      "stage": "before_arrow_streaming_import",
+      "available_mib": 4378.8515625,
+      "estimated_peak_mib": 512,
+      "reserve_mib": 640,
+      "top_processes": [
+        {
+          "pid": 9940,
+          "name": "explorer.exe",
+          "rss_mib": 653.87890625
+        },
+        {
+          "pid": 23364,
+          "name": "Obsidian.exe",
+          "rss_mib": 565.2890625
+        },
+        {
+          "pid": 27636,
+          "name": "Orca.exe",
+          "rss_mib": 340.48046875
+        },
+        {
+          "pid": 28540,
+          "name": "Orca.exe",
+          "rss_mib": 306.7578125
+        },
+        {
+          "pid": 3352,
+          "name": "explorer.exe",
+          "rss_mib": 286.5390625
+        },
+        {
+          "pid": 5260,
+          "name": "codex.exe",
+          "rss_mib": 283.13671875
+        },
+        {
+          "pid": 3096,
+          "name": "codex.exe",
+          "rss_mib": 250.46484375
+        },
+        {
+          "pid": 26540,
+          "name": "Orca.exe",
+          "rss_mib": 238.390625
+        },
+        {
+          "pid": 1992,
+          "name": "CrossDeviceService.exe",
+          "rss_mib": 212.234375
+        },
+        {
+          "pid": 2832,
+          "name": "PhoneExperienceHost.exe",
+          "rss_mib": 186.54296875
+        },
+        {
+          "pid": 20808,
+          "name": "msedgewebview2.exe",
+          "rss_mib": 168.62890625
+        },
+        {
+          "pid": 20268,
+          "name": "msedgewebview2.exe",
+          "rss_mib": 164.69921875
+        }
+      ],
+      "python_processes": [
+        {
+          "pid": 24880,
+          "name": "python.exe",
+          "rss_mib": 43.49609375
+        }
+      ],
+      "allowed": true
+    }
+  }
+}

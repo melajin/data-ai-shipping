@@ -1,0 +1,17 @@
+﻿{
+    "at":  "2026-11-06T14:32:19.4349047+09:00",
+    "original_pid":  1708,
+    "original_command_line":  "\"C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" -B -u score_fleet.py ",
+    "stop_requested_at":  "2026-11-06T14:32:19.1650311+09:00",
+    "reason":  "Parent authorized bounded parallel scoring with durable checkpoints",
+    "parallel_orchestrator_pid":  16436,
+    "available_mib_after_stop":  3529.51,
+    "requested_workers":  4,
+    "expected_parent_peak_mib":  512,
+    "expected_each_worker_peak_mib":  512,
+    "reserve_mib":  640,
+    "original_source_preserved":  true,
+    "original_scorer_sha256":  "711368F65E7C92FC853AE6ACDAD2607BD9D5ADB957712F49CD5FBC8A3D3FF47B",
+    "parallel_helper_sha256":  "C8AE4CC6FC69F8285C01376233D470984B0C61ECE94B04DAE287C53EB2698872",
+    "smoke_test":  "108 synthetic rows/3vessels worker wrapper passed"
+}

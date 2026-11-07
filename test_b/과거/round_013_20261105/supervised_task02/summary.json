@@ -1,0 +1,332 @@
+{
+  "round": "Round013",
+  "scope": "?6-7 only; selection and evaluation use saved ?3-5 outputs; no changes to protocol/older rounds/raw data",
+  "supervisor_branch": "approved all-voyage reference pool without day/night restriction for both w; confound not detected, not proven absent",
+  "selection": "per vessel/w minimum lin_min among valid voyages after raw-history n>=11 and valid-history n>=11 gates; exact ties earliest t_start then voyage_no",
+  "shared_prediction": "multiple events on one vessel share the vessel selected voyage; acc_ts used only after selection for evaluation",
+  "confidence": "P=(less + 0.5*equal)/n_reference; confidence=1-P; descriptive rank diagnostic only, no filtering/submission",
+  "baseline": "uniform integer hour from selected [t_start,t_end], inclusive; p0 is overlap with inclusive [acc_ts-6,acc_ts+6] divided by voyage integer-hour count",
+  "binomial": "one-sided exact binomtest against mean event p0; event-specific p0 and within-vessel dependence make this an approximation",
+  "primary_order": "Tier0-1, w=7 first and w=3 second; per-window alpha .025; pass requires rate>=.12 and Bonferroni-adjusted p<.05",
+  "all_population": "descriptive only; no additional confirmatory test family",
+  "bootstrap": {
+    "B": 4000,
+    "seed": 11052026,
+    "unit": "vessel cluster",
+    "CI": "97.5% percentile [1.25%,98.75%]",
+    "event_weighted": true
+  },
+  "mde": {
+    "method": "independent binomial approximation using eligible Tier0-1 n, mean event p0, alpha=.025, power=.8",
+    "not_cluster_adjusted": true
+  },
+  "coverage_by_w": {
+    "7": {
+      "vessels_total": 82,
+      "vessels_by_status": {
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 12,
+        "no_valid_voyage": 1,
+        "eligible": 58
+      },
+      "events_by_status_all": {
+        "raw_history_insufficient": 19,
+        "valid_history_insufficient": 12,
+        "no_valid_voyage": 1,
+        "eligible": 68
+      },
+      "events_by_status_tier01": {
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 8,
+        "no_valid_voyage": 0,
+        "eligible": 41
+      }
+    },
+    "3": {
+      "vessels_total": 82,
+      "vessels_by_status": {
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 3,
+        "no_valid_voyage": 0,
+        "eligible": 68
+      },
+      "events_by_status_all": {
+        "raw_history_insufficient": 19,
+        "valid_history_insufficient": 3,
+        "no_valid_voyage": 0,
+        "eligible": 78
+      },
+      "events_by_status_tier01": {
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 3,
+        "no_valid_voyage": 0,
+        "eligible": 46
+      }
+    }
+  },
+  "metrics": [
+    {
+      "w": 7,
+      "population": "Tier0-1",
+      "role": "primary_first",
+      "total_events": 60,
+      "eligible_events": 41,
+      "excluded_events": 19,
+      "n_eligible_vessels": 39,
+      "eligible_vessel_status_counts": {
+        "raw_history_insufficient": 8,
+        "valid_history_insufficient": 8,
+        "no_valid_voyage": 0,
+        "eligible": 39
+      },
+      "excluded_event_status_counts": {
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 8,
+        "no_valid_voyage": 0
+      },
+      "collapse_hits": 0,
+      "collapse_hit_rate_conditional": 0.0,
+      "collapse_hits_over_all_target_events_service_rate": 0.0,
+      "baseline_p0_mean_event_probability": 0.007926829268292683,
+      "baseline_expected_hits": 0.325,
+      "binomial_p_raw_one_sided": 1.0,
+      "binomial_p_bonferroni_family2": 1.0,
+      "pre_registered_pass": false,
+      "mid_hits_same_eligible_denominator": 1,
+      "mid_rate_same_eligible_denominator": 0.024390243902439025,
+      "end_hits_same_eligible_denominator": 0,
+      "end_rate_same_eligible_denominator": 0.0,
+      "midpoint_definition": "sorted voyage observed row at zero-based index len(rows)//2",
+      "pvalue_approximation_caveat": "binomtest uses the mean of event-specific baseline probabilities; heterogeneous event p0 and within-vessel event dependence mean this is not exact independent-event confirmation."
+    },
+    {
+      "w": 7,
+      "population": "ALL",
+      "role": "descriptive_only",
+      "total_events": 100,
+      "eligible_events": 68,
+      "excluded_events": 32,
+      "n_eligible_vessels": 58,
+      "eligible_vessel_status_counts": {
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 12,
+        "no_valid_voyage": 1,
+        "eligible": 58
+      },
+      "excluded_event_status_counts": {
+        "raw_history_insufficient": 19,
+        "valid_history_insufficient": 12,
+        "no_valid_voyage": 1
+      },
+      "collapse_hits": 0,
+      "collapse_hit_rate_conditional": 0.0,
+      "collapse_hits_over_all_target_events_service_rate": 0.0,
+      "baseline_p0_mean_event_probability": 0.00767602495543672,
+      "baseline_expected_hits": 0.521969696969697,
+      "binomial_p_raw_one_sided": 1.0,
+      "binomial_p_bonferroni_family2": null,
+      "pre_registered_pass": null,
+      "mid_hits_same_eligible_denominator": 1,
+      "mid_rate_same_eligible_denominator": 0.014705882352941176,
+      "end_hits_same_eligible_denominator": 0,
+      "end_rate_same_eligible_denominator": 0.0,
+      "midpoint_definition": "sorted voyage observed row at zero-based index len(rows)//2",
+      "pvalue_approximation_caveat": "binomtest uses the mean of event-specific baseline probabilities; heterogeneous event p0 and within-vessel event dependence mean this is not exact independent-event confirmation."
+    },
+    {
+      "w": 3,
+      "population": "Tier0-1",
+      "role": "primary_second",
+      "total_events": 60,
+      "eligible_events": 46,
+      "excluded_events": 14,
+      "n_eligible_vessels": 44,
+      "eligible_vessel_status_counts": {
+        "raw_history_insufficient": 8,
+        "valid_history_insufficient": 3,
+        "no_valid_voyage": 0,
+        "eligible": 44
+      },
+      "excluded_event_status_counts": {
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 3,
+        "no_valid_voyage": 0
+      },
+      "collapse_hits": 0,
+      "collapse_hit_rate_conditional": 0.0,
+      "collapse_hits_over_all_target_events_service_rate": 0.0,
+      "baseline_p0_mean_event_probability": 0.007065217391304348,
+      "baseline_expected_hits": 0.325,
+      "binomial_p_raw_one_sided": 1.0,
+      "binomial_p_bonferroni_family2": 1.0,
+      "pre_registered_pass": false,
+      "mid_hits_same_eligible_denominator": 1,
+      "mid_rate_same_eligible_denominator": 0.021739130434782608,
+      "end_hits_same_eligible_denominator": 0,
+      "end_rate_same_eligible_denominator": 0.0,
+      "midpoint_definition": "sorted voyage observed row at zero-based index len(rows)//2",
+      "pvalue_approximation_caveat": "binomtest uses the mean of event-specific baseline probabilities; heterogeneous event p0 and within-vessel event dependence mean this is not exact independent-event confirmation."
+    },
+    {
+      "w": 3,
+      "population": "ALL",
+      "role": "descriptive_only",
+      "total_events": 100,
+      "eligible_events": 78,
+      "excluded_events": 22,
+      "n_eligible_vessels": 68,
+      "eligible_vessel_status_counts": {
+        "raw_history_insufficient": 11,
+        "valid_history_insufficient": 3,
+        "no_valid_voyage": 0,
+        "eligible": 68
+      },
+      "excluded_event_status_counts": {
+        "raw_history_insufficient": 19,
+        "valid_history_insufficient": 3,
+        "no_valid_voyage": 0
+      },
+      "collapse_hits": 0,
+      "collapse_hit_rate_conditional": 0.0,
+      "collapse_hits_over_all_target_events_service_rate": 0.0,
+      "baseline_p0_mean_event_probability": 0.006691919191919192,
+      "baseline_expected_hits": 0.521969696969697,
+      "binomial_p_raw_one_sided": 1.0,
+      "binomial_p_bonferroni_family2": null,
+      "pre_registered_pass": null,
+      "mid_hits_same_eligible_denominator": 1,
+      "mid_rate_same_eligible_denominator": 0.01282051282051282,
+      "end_hits_same_eligible_denominator": 0,
+      "end_rate_same_eligible_denominator": 0.0,
+      "midpoint_definition": "sorted voyage observed row at zero-based index len(rows)//2",
+      "pvalue_approximation_caveat": "binomtest uses the mean of event-specific baseline probabilities; heterogeneous event p0 and within-vessel event dependence mean this is not exact independent-event confirmation."
+    }
+  ],
+  "bootstrap_ci": {
+    "w7_Tier0-1": {
+      "defined": true,
+      "cluster_count": 39,
+      "replicates_requested": 4000,
+      "replicates_used": 4000,
+      "seed": 11052026,
+      "ci_level": 0.975,
+      "lower": 0.0,
+      "upper": 0.0,
+      "degenerate_fraction": 1.0,
+      "bootstrap_order": "w=7 then w=3; Tier0-1 then ALL, one Random(SEED) stream"
+    },
+    "w7_ALL": {
+      "defined": true,
+      "cluster_count": 58,
+      "replicates_requested": 4000,
+      "replicates_used": 4000,
+      "seed": 11052026,
+      "ci_level": 0.975,
+      "lower": 0.0,
+      "upper": 0.0,
+      "degenerate_fraction": 1.0,
+      "bootstrap_order": "w=7 then w=3; Tier0-1 then ALL, one Random(SEED) stream"
+    },
+    "w3_Tier0-1": {
+      "defined": true,
+      "cluster_count": 44,
+      "replicates_requested": 4000,
+      "replicates_used": 4000,
+      "seed": 11052026,
+      "ci_level": 0.975,
+      "lower": 0.0,
+      "upper": 0.0,
+      "degenerate_fraction": 1.0,
+      "bootstrap_order": "w=7 then w=3; Tier0-1 then ALL, one Random(SEED) stream"
+    },
+    "w3_ALL": {
+      "defined": true,
+      "cluster_count": 68,
+      "replicates_requested": 4000,
+      "replicates_used": 4000,
+      "seed": 11052026,
+      "ci_level": 0.975,
+      "lower": 0.0,
+      "upper": 0.0,
+      "degenerate_fraction": 1.0,
+      "bootstrap_order": "w=7 then w=3; Tier0-1 then ALL, one Random(SEED) stream"
+    }
+  },
+  "mde_by_w": {
+    "7": {
+      "defined": true,
+      "n": 41,
+      "p0": 0.007926829268292683,
+      "alpha": 0.025,
+      "power_target": 0.8,
+      "critical_k": 3,
+      "minimum_alternative_p": 0.10149400788461012,
+      "mde_absolute": 0.09356717861631744,
+      "achieved_power": 0.8000000000000003
+    },
+    "3": {
+      "defined": true,
+      "n": 46,
+      "p0": 0.007065217391304348,
+      "alpha": 0.025,
+      "power_target": 0.8,
+      "critical_k": 3,
+      "minimum_alternative_p": 0.09073797119497991,
+      "mde_absolute": 0.08367275380367556,
+      "achieved_power": 0.8000000000000003
+    }
+  },
+  "confidence_diagnostics": {
+    "7": {
+      "selected_vessels": 58,
+      "confidence_min": 1.0,
+      "confidence_median": 1.0,
+      "confidence_max": 1.0,
+      "fraction_confidence_exactly_one": 1.0,
+      "fraction_confidence_ge_0_95": 1.0,
+      "distinct_confidence_values": 1,
+      "rank_percentile_median": 0.0,
+      "warning": "rank-based confidence is not calibrated probability; selected raw minima make confidence concentrate near 1."
+    },
+    "3": {
+      "selected_vessels": 68,
+      "confidence_min": 1.0,
+      "confidence_median": 1.0,
+      "confidence_max": 1.0,
+      "fraction_confidence_exactly_one": 1.0,
+      "fraction_confidence_ge_0_95": 1.0,
+      "distinct_confidence_values": 1,
+      "rank_percentile_median": 0.0,
+      "warning": "rank-based confidence is not calibrated probability; selected raw minima make confidence concentrate near 1."
+    }
+  },
+  "source_paths": {
+    "section4": "g4_voyage_local_collapse.csv",
+    "section5": "g5_confound_summary.json",
+    "section3_coverage": "g3_coverage_summary.json"
+  },
+  "limits": [
+    "Dev labels are provisional linked positives, not independently confirmed incident truth.",
+    "This is batch, post-hoc localization, not early warning.",
+    "R009?R010?R012?R013 prior lin-family selection is not fully corrected within the capped dev set.",
+    "No 2025 feature/inference/scoring, model training, submission, or Round014 work.",
+    "Learner understanding was not assessed."
+  ],
+  "raw_history_coverage_reference": {
+    "source": "SUPERVISOR_TASK_02.md supervisor-confirmed Task01 counts, fixed before ?6?7 outcome review",
+    "dev": {
+      "vessels": 82,
+      "raw_other_voyages_ge10_eligible": 71,
+      "table_voyages_lt10": 9,
+      "exactly_10_voyages_nonqualifying": 2
+    },
+    "2025_Test_B_voyage_counts_only": {
+      "vessels": 100,
+      "raw_other_voyages_ge10_eligible": 63,
+      "insufficient_fraction": 0.37,
+      "table_voyages_lt10": 36,
+      "exactly_10_voyages_nonqualifying": 1
+    },
+    "2025_feature_inference_or_scores_generated": false
+  }
+}

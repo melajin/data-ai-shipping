@@ -1,0 +1,183 @@
+﻿dataset,rfid_id,is_tier01_vessel,has_accident_related_voyage,n_voyages_raw,eligible_raw_rem_ge_10,ineligible_raw_reason,raw_lt_10,raw_lt_5,n_valid_voyages_w7,eligible_w7_rem_ge_10,ineligible_w7_reason,n_valid_voyages_w3,eligible_w3_rem_ge_10,ineligible_w3_reason,n_valid_day_w7,n_valid_night_w7,n_valid_day_w3,n_valid_night_w3
+dev_82,31001758,True,True,41,True,eligible,False,False,34.0,1.0,eligible,39.0,1.0,eligible,2.0,32.0,1.0,38.0
+dev_82,31005917,True,True,3,False,insufficient_history (<11),True,True,2.0,0.0,insufficient_history (<11),2.0,0.0,insufficient_history (<11),2.0,0.0,2.0,0.0
+dev_82,31005928,True,True,95,True,eligible,False,False,63.0,1.0,eligible,89.0,1.0,eligible,61.0,2.0,87.0,2.0
+dev_82,31007124,True,True,105,True,eligible,False,False,76.0,1.0,eligible,97.0,1.0,eligible,65.0,11.0,47.0,50.0
+dev_82,31007500,True,True,60,True,eligible,False,False,53.0,1.0,eligible,58.0,1.0,eligible,40.0,13.0,57.0,1.0
+dev_82,31008085,True,True,34,True,eligible,False,False,27.0,1.0,eligible,28.0,1.0,eligible,9.0,18.0,17.0,11.0
+dev_82,31008933,True,True,28,True,eligible,False,False,24.0,1.0,eligible,26.0,1.0,eligible,14.0,10.0,17.0,9.0
+dev_82,31009538,True,True,4,False,insufficient_history (<11),True,True,4.0,0.0,insufficient_history (<11),4.0,0.0,insufficient_history (<11),3.0,1.0,2.0,2.0
+dev_82,31012971,True,True,36,True,eligible,False,False,15.0,1.0,eligible,28.0,1.0,eligible,13.0,2.0,27.0,1.0
+dev_82,31013760,True,True,54,True,eligible,False,False,35.0,1.0,eligible,44.0,1.0,eligible,14.0,21.0,21.0,23.0
+dev_82,31014032,True,True,45,True,eligible,False,False,9.0,0.0,insufficient_history (<11),33.0,1.0,eligible,8.0,1.0,32.0,1.0
+dev_82,31014672,False,True,13,True,eligible,False,False,10.0,0.0,insufficient_history (<11),11.0,1.0,eligible,10.0,0.0,10.0,1.0
+dev_82,31016197,True,True,43,True,eligible,False,False,41.0,1.0,eligible,41.0,1.0,eligible,39.0,2.0,41.0,0.0
+dev_82,31100492,True,True,9,False,insufficient_history (<11),True,False,6.0,0.0,insufficient_history (<11),9.0,0.0,insufficient_history (<11),4.0,2.0,6.0,3.0
+dev_82,31703108,True,True,38,True,eligible,False,False,35.0,1.0,eligible,35.0,1.0,eligible,24.0,11.0,27.0,8.0
+dev_82,31704073,True,True,13,True,eligible,False,False,5.0,0.0,insufficient_history (<11),7.0,0.0,insufficient_history (<11),5.0,0.0,6.0,1.0
+dev_82,31704782,True,True,33,True,eligible,False,False,29.0,1.0,eligible,30.0,1.0,eligible,20.0,9.0,18.0,12.0
+dev_82,31815412,False,True,66,True,eligible,False,False,63.0,1.0,eligible,64.0,1.0,eligible,14.0,49.0,26.0,38.0
+dev_82,32300169,True,True,4,False,insufficient_history (<11),True,True,4.0,0.0,insufficient_history (<11),4.0,0.0,insufficient_history (<11),1.0,3.0,2.0,2.0
+dev_82,32300202,False,True,20,True,eligible,False,False,10.0,0.0,insufficient_history (<11),17.0,1.0,eligible,3.0,7.0,13.0,4.0
+dev_82,32300267,False,True,68,True,eligible,False,False,40.0,1.0,eligible,54.0,1.0,eligible,26.0,14.0,36.0,18.0
+dev_82,32300334,False,True,2,False,insufficient_history (<11),True,True,2.0,0.0,insufficient_history (<11),2.0,0.0,insufficient_history (<11),1.0,1.0,1.0,1.0
+dev_82,32300353,True,True,7,False,insufficient_history (<11),True,False,5.0,0.0,insufficient_history (<11),7.0,0.0,insufficient_history (<11),1.0,4.0,4.0,3.0
+dev_82,32300717,False,True,30,True,eligible,False,False,28.0,1.0,eligible,30.0,1.0,eligible,9.0,19.0,14.0,16.0
+dev_82,32301131,True,True,54,True,eligible,False,False,19.0,1.0,eligible,49.0,1.0,eligible,17.0,2.0,41.0,8.0
+dev_82,33200664,False,True,16,True,eligible,False,False,13.0,1.0,eligible,15.0,1.0,eligible,9.0,4.0,11.0,4.0
+dev_82,33200829,True,True,38,True,eligible,False,False,34.0,1.0,eligible,36.0,1.0,eligible,19.0,15.0,24.0,12.0
+dev_82,33201019,True,True,44,True,eligible,False,False,18.0,1.0,eligible,33.0,1.0,eligible,10.0,8.0,19.0,14.0
+dev_82,33201506,True,True,19,True,eligible,False,False,16.0,1.0,eligible,18.0,1.0,eligible,9.0,7.0,9.0,9.0
+dev_82,34200580,False,True,53,True,eligible,False,False,30.0,1.0,eligible,36.0,1.0,eligible,5.0,25.0,12.0,24.0
+dev_82,34200731,False,True,27,True,eligible,False,False,25.0,1.0,eligible,25.0,1.0,eligible,16.0,9.0,8.0,17.0
+dev_82,34400535,True,True,51,True,eligible,False,False,48.0,1.0,eligible,51.0,1.0,eligible,20.0,28.0,31.0,20.0
+dev_82,34400601,False,True,47,True,eligible,False,False,38.0,1.0,eligible,45.0,1.0,eligible,37.0,1.0,45.0,0.0
+dev_82,35100289,False,True,85,True,eligible,False,False,83.0,1.0,eligible,84.0,1.0,eligible,76.0,7.0,81.0,3.0
+dev_82,35200056,True,True,54,True,eligible,False,False,45.0,1.0,eligible,52.0,1.0,eligible,32.0,13.0,43.0,9.0
+dev_82,35200311,True,True,36,True,eligible,False,False,32.0,1.0,eligible,34.0,1.0,eligible,29.0,3.0,25.0,9.0
+dev_82,35200486,True,True,136,True,eligible,False,False,125.0,1.0,eligible,134.0,1.0,eligible,117.0,8.0,101.0,33.0
+dev_82,36000925,True,True,4,False,insufficient_history (<11),True,True,0.0,0.0,insufficient_history (<11),0.0,0.0,insufficient_history (<11),0.0,0.0,0.0,0.0
+dev_82,36001358,False,True,48,True,eligible,False,False,21.0,1.0,eligible,39.0,1.0,eligible,15.0,6.0,27.0,12.0
+dev_82,36001411,True,True,44,True,eligible,False,False,30.0,1.0,eligible,35.0,1.0,eligible,27.0,3.0,34.0,1.0
+dev_82,36001494,True,True,52,True,eligible,False,False,44.0,1.0,eligible,47.0,1.0,eligible,44.0,0.0,40.0,7.0
+dev_82,36003960,True,True,57,True,eligible,False,False,13.0,1.0,eligible,17.0,1.0,eligible,11.0,2.0,14.0,3.0
+dev_82,36004693,False,True,54,True,eligible,False,False,37.0,1.0,eligible,46.0,1.0,eligible,11.0,26.0,29.0,17.0
+dev_82,36006776,True,True,61,True,eligible,False,False,33.0,1.0,eligible,44.0,1.0,eligible,19.0,14.0,33.0,11.0
+dev_82,36007269,True,True,47,True,eligible,False,False,22.0,1.0,eligible,43.0,1.0,eligible,22.0,0.0,43.0,0.0
+dev_82,36007909,False,True,46,True,eligible,False,False,36.0,1.0,eligible,41.0,1.0,eligible,32.0,4.0,39.0,2.0
+dev_82,36008148,True,True,44,True,eligible,False,False,42.0,1.0,eligible,42.0,1.0,eligible,41.0,1.0,41.0,1.0
+dev_82,36008988,False,True,64,True,eligible,False,False,45.0,1.0,eligible,62.0,1.0,eligible,36.0,9.0,50.0,12.0
+dev_82,36010190,False,True,51,True,eligible,False,False,44.0,1.0,eligible,48.0,1.0,eligible,28.0,16.0,38.0,10.0
+dev_82,36010554,True,True,91,True,eligible,False,False,71.0,1.0,eligible,87.0,1.0,eligible,70.0,1.0,85.0,2.0
+dev_82,36011749,False,True,95,True,eligible,False,False,76.0,1.0,eligible,95.0,1.0,eligible,59.0,17.0,74.0,21.0
+dev_82,36011845,True,True,76,True,eligible,False,False,40.0,1.0,eligible,68.0,1.0,eligible,33.0,7.0,66.0,2.0
+dev_82,36015383,True,True,51,True,eligible,False,False,33.0,1.0,eligible,42.0,1.0,eligible,20.0,13.0,25.0,17.0
+dev_82,36015515,True,True,46,True,eligible,False,False,34.0,1.0,eligible,40.0,1.0,eligible,21.0,13.0,23.0,17.0
+dev_82,36100073,True,True,61,True,eligible,False,False,7.0,0.0,insufficient_history (<11),44.0,1.0,eligible,7.0,0.0,44.0,0.0
+dev_82,36101547,True,True,19,True,eligible,False,False,8.0,0.0,insufficient_history (<11),11.0,1.0,eligible,8.0,0.0,11.0,0.0
+dev_82,36102425,False,True,16,True,eligible,False,False,10.0,0.0,insufficient_history (<11),12.0,1.0,eligible,8.0,2.0,10.0,2.0
+dev_82,36108086,True,True,70,True,eligible,False,False,56.0,1.0,eligible,68.0,1.0,eligible,11.0,45.0,19.0,49.0
+dev_82,36110858,True,True,41,True,eligible,False,False,20.0,1.0,eligible,37.0,1.0,eligible,16.0,4.0,36.0,1.0
+dev_82,36113617,False,True,58,True,eligible,False,False,0.0,0.0,insufficient_history (<11),48.0,1.0,eligible,0.0,0.0,48.0,0.0
+dev_82,36113654,True,True,7,False,insufficient_history (<11),True,False,4.0,0.0,insufficient_history (<11),4.0,0.0,insufficient_history (<11),4.0,0.0,4.0,0.0
+dev_82,36115953,True,True,36,True,eligible,False,False,25.0,1.0,eligible,29.0,1.0,eligible,15.0,10.0,22.0,7.0
+dev_82,36200918,False,True,97,True,eligible,False,False,3.0,0.0,insufficient_history (<11),91.0,1.0,eligible,3.0,0.0,91.0,0.0
+dev_82,36212188,False,True,7,False,insufficient_history (<11),True,False,5.0,0.0,insufficient_history (<11),5.0,0.0,insufficient_history (<11),4.0,1.0,4.0,1.0
+dev_82,36212203,False,True,39,True,eligible,False,False,31.0,1.0,eligible,35.0,1.0,eligible,27.0,4.0,29.0,6.0
+dev_82,36301063,True,True,46,True,eligible,False,False,2.0,0.0,insufficient_history (<11),9.0,0.0,insufficient_history (<11),1.0,1.0,9.0,0.0
+dev_82,36301579,True,True,56,True,eligible,False,False,43.0,1.0,eligible,54.0,1.0,eligible,12.0,31.0,15.0,39.0
+dev_82,36301995,True,True,40,True,eligible,False,False,30.0,1.0,eligible,35.0,1.0,eligible,3.0,27.0,17.0,18.0
+dev_82,36304593,True,True,10,False,insufficient_history (<11),False,False,4.0,0.0,insufficient_history (<11),5.0,0.0,insufficient_history (<11),2.0,2.0,4.0,1.0
+dev_82,36304898,False,True,46,True,eligible,False,False,26.0,1.0,eligible,29.0,1.0,eligible,24.0,2.0,29.0,0.0
+dev_82,36307233,True,True,43,True,eligible,False,False,6.0,0.0,insufficient_history (<11),32.0,1.0,eligible,5.0,1.0,32.0,0.0
+dev_82,36307839,True,True,23,True,eligible,False,False,10.0,0.0,insufficient_history (<11),12.0,1.0,eligible,9.0,1.0,12.0,0.0
+dev_82,36311633,True,True,47,True,eligible,False,False,27.0,1.0,eligible,41.0,1.0,eligible,13.0,14.0,33.0,8.0
+dev_82,36313865,True,True,27,True,eligible,False,False,23.0,1.0,eligible,25.0,1.0,eligible,17.0,6.0,15.0,10.0
+dev_82,36314076,False,True,61,True,eligible,False,False,42.0,1.0,eligible,51.0,1.0,eligible,25.0,17.0,29.0,22.0
+dev_82,36314346,False,True,63,True,eligible,False,False,55.0,1.0,eligible,61.0,1.0,eligible,27.0,28.0,30.0,31.0
+dev_82,36314611,True,True,107,True,eligible,False,False,102.0,1.0,eligible,106.0,1.0,eligible,85.0,17.0,102.0,4.0
+dev_82,36314887,True,True,63,True,eligible,False,False,29.0,1.0,eligible,47.0,1.0,eligible,22.0,7.0,42.0,5.0
+dev_82,36314895,False,True,21,True,eligible,False,False,17.0,1.0,eligible,19.0,1.0,eligible,10.0,7.0,12.0,7.0
+dev_82,36315137,False,True,10,False,insufficient_history (<11),False,False,5.0,0.0,insufficient_history (<11),7.0,0.0,insufficient_history (<11),4.0,1.0,4.0,3.0
+dev_82,36315252,True,True,48,True,eligible,False,False,21.0,1.0,eligible,44.0,1.0,eligible,16.0,5.0,35.0,9.0
+dev_82,36316040,True,True,11,True,eligible,False,False,8.0,0.0,insufficient_history (<11),10.0,0.0,insufficient_history (<11),4.0,4.0,5.0,5.0
+2025_TestB_100,31000245,False,False,22,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31000380,False,False,3,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31001774,False,False,18,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31002934,False,False,19,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31003008,False,False,7,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31003191,False,False,5,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31004023,False,False,133,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31004138,False,False,84,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31004809,False,False,105,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31005675,False,False,36,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31005921,False,False,74,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31006665,False,False,78,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31007091,False,False,96,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31007149,False,False,40,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31007829,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31008938,False,False,37,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31010081,False,False,33,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31010758,False,False,37,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31010956,False,False,3,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31011498,False,False,44,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31011905,False,False,7,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31012428,False,False,6,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31014234,False,False,6,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31016034,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31703674,False,False,27,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31704203,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31704332,False,False,34,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31704696,False,False,5,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,31704919,False,False,5,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,32000047,False,False,65,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,32100061,False,False,17,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,32100391,False,False,49,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,32200379,False,False,23,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,32200520,False,False,51,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,32200526,False,False,11,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,32300037,False,False,6,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,32300322,False,False,70,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,32300727,False,False,53,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,34200362,False,False,90,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,34400012,False,False,21,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,34400272,False,False,46,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36002764,False,False,34,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36003566,False,False,5,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36005234,False,False,5,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36005726,False,False,7,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36007075,False,False,134,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36007752,False,False,24,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36007970,False,False,142,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36008161,False,False,52,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36008682,False,False,14,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36009646,False,False,19,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36010032,False,False,4,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36010075,False,False,2,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36010195,False,False,80,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36010232,False,False,52,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36010827,False,False,65,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36011779,False,False,82,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36011872,False,False,4,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36012241,False,False,22,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36012931,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36013212,False,False,19,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36013653,False,False,43,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36014044,False,False,55,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36015072,False,False,50,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36100773,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36101003,False,False,29,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36101167,False,False,3,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36101508,False,False,10,False,insufficient_history (<11),False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36102355,False,False,42,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36102374,False,False,59,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36102485,False,False,81,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36102781,False,False,90,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36103745,False,False,13,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36104049,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36107747,False,False,2,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36107971,False,False,4,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36108036,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36110059,False,False,38,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36110968,False,False,8,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36111087,False,False,7,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36112240,False,False,17,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36112405,False,False,49,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36113223,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36113881,False,False,6,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36114519,False,False,14,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36115199,False,False,31,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36115632,False,False,72,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36115656,False,False,22,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36201616,False,False,52,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36204924,False,False,3,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36300654,False,False,3,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36301350,False,False,36,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36301648,False,False,2,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36303153,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36305148,False,False,15,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36305381,False,False,15,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36305906,False,False,15,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36307165,False,False,1,False,insufficient_history (<11),True,True,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36310482,False,False,121,True,eligible,False,False,,,not_computed,,,not_computed,,,,
+2025_TestB_100,36313688,False,False,9,False,insufficient_history (<11),True,False,,,not_computed,,,not_computed,,,,

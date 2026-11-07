@@ -1,0 +1,4 @@
+reportlab==5.1.0
+matplotlib==3.10.3
+pillow==13.0.0
+psutil==7.0.0

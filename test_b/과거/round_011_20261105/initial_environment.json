@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-11-05T16:45:54.589549+09:00",
+  "available_GiB": 2.86,
+  "total_GiB": 13.809,
+  "running_large_processes": [
+    {
+      "pid": 1172,
+      "name": "dwm.exe",
+      "rss_MiB": 190.5
+    },
+    {
+      "pid": 4460,
+      "name": "ctfmon.exe",
+      "rss_MiB": 286.4
+    },
+    {
+      "pid": 5828,
+      "name": "explorer.exe",
+      "rss_MiB": 641.6
+    },
+    {
+      "pid": 6940,
+      "name": "ASDSvc.exe",
+      "rss_MiB": 224.7
+    },
+    {
+      "pid": 10992,
+      "name": "StartMenuExperienceHost.exe",
+      "rss_MiB": 154.2
+    },
+    {
+      "pid": 11432,
+      "name": "CrossDeviceService.exe",
+      "rss_MiB": 202.6
+    },
+    {
+      "pid": 17128,
+      "name": "logioptionsplus_agent.exe",
+      "rss_MiB": 161.2
+    },
+    {
+      "pid": 17216,
+      "name": "Orca.exe",
+      "rss_MiB": 383.1
+    },
+    {
+      "pid": 17872,
+      "name": "msedge.exe",
+      "rss_MiB": 166.5
+    },
+    {
+      "pid": 18136,
+      "name": "Orca.exe",
+      "rss_MiB": 209.2
+    },
+    {
+      "pid": 19112,
+      "name": "codex.exe",
+      "rss_MiB": 230.1
+    },
+    {
+      "pid": 19824,
+      "name": "Orca.exe",
+      "rss_MiB": 557.7
+    },
+    {
+      "pid": 31304,
+      "name": "agy.exe",
+      "rss_MiB": 273.8
+    },
+    {
+      "pid": 34028,
+      "name": "codex.exe",
+      "rss_MiB": 234.8
+    }
+  ],
+  "initial_plan_peak_GiB": 1.5,
+  "initial_plan_status": "deferred_at_available1.512GiB",
+  "reduced_plan_peak_MiB": 512,
+  "reduced_plan_basis": "6 numeric columns,8192-row Arrow batches,target82 filtered arrays and per-vessel <=720h reference ranges,no global pair matrix; includes interpreter+Arrow+NumPy allowance",
+  "no_concurrent_real_data_calculation": true,
+  "protocol_sha256": "133da14c225fa4e1e1c9829a26fdeba1014bd64043b9d4ef9b71c3d91d158084"
+}

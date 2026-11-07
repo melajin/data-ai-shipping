@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "requested_model": "GPT-6 Luna",
+  "requested_effort": "xhigh",
+  "check_count": 13,
+  "checks": [
+    "all canonical/R10 rows and coordinate metadata are preserved; per-vessel count inventory includes registry-only zeroes",
+    "API keys, exact ledger additions, generic stages, prediction/manifest fields, and independent count field names match the contract",
+    "24 past DIST values/3 dates pass; raw history includes a NaN-score/invalid-geometry point and exact ties count one-half",
+    "R10 coordinate-history counts are not reused: 23 distance values defer, and 24 values on two dates defer",
+    "strict [t-720,t) includes the left boundary, excludes t-721/current/future, and uses source-clock dates",
+    "raw distance/history masks are score-independent, while raw distance availability requires R10 flag and finite nonnegative distance",
+    "five other same-gear DIST histories qualify at the same t without peer current rows; peer CDF is equal-vessel, not pooled",
+    "known singleton and unknown gear defer before distance-peer stage; distance-peer counts exclude self",
+    "s0-s4 masks are monotone and all new distance-history availability is separate from R10 flags",
+    "B0/S/G have distinct winners; S uses legacy DESC only after self-CDF, G uses peer CDF only inside an exact self-CDF tie, and self priority beats peer",
+    "shared cap is 3/1/0 for G pool sizes 3/1/0; explicit S/G fallback and legacy DESC order pass",
+    "appending a future raw distance leaves all prior self/peer CDFs, counts, masks, and stages unchanged",
+    "duplicate RFID/hour/ordinal and fractional source-clock keys are rejected"
+  ],
+  "synthetic_rows": 378,
+  "synthetic_rfids": 17,
+  "V_t720_self_cdf": 0.7916666666666666,
+  "V_t720_peer_cdf_mean_low": 0.4958333333333333,
+  "V_t720_peer_cdf_mean_high": 0.5013888888888889,
+  "distinct_winners": {
+    "B0": [
+      719,
+      24
+    ],
+    "S": [
+      720,
+      25
+    ],
+    "G": [
+      720,
+      26
+    ]
+  },
+  "source_hashes_before": {
+    "position_rules.py": "8ecee18232a1978ac8559ed8f630404528625b96df1b7fc6bfe64f8e00fda759",
+    "check_position_rules.py": "a41200d9fc9b7915a3e0c92f88a207f822f9bae2f793618f3838c408907c0bbc",
+    "shape_rules.py": "6eb571aef12dc881b78dc4c93fd77683ba4068d22be654ee46c208eab78e4472"
+  },
+  "source_hashes_after": {
+    "position_rules.py": "8ecee18232a1978ac8559ed8f630404528625b96df1b7fc6bfe64f8e00fda759",
+    "check_position_rules.py": "a41200d9fc9b7915a3e0c92f88a207f822f9bae2f793618f3838c408907c0bbc",
+    "shape_rules.py": "6eb571aef12dc881b78dc4c93fd77683ba4068d22be654ee46c208eab78e4472"
+  },
+  "code_hashes_before": {
+    "position_rules.py": "8ecee18232a1978ac8559ed8f630404528625b96df1b7fc6bfe64f8e00fda759",
+    "check_position_rules.py": "a41200d9fc9b7915a3e0c92f88a207f822f9bae2f793618f3838c408907c0bbc"
+  },
+  "code_hashes_after": {
+    "position_rules.py": "8ecee18232a1978ac8559ed8f630404528625b96df1b7fc6bfe64f8e00fda759",
+    "check_position_rules.py": "a41200d9fc9b7915a3e0c92f88a207f822f9bae2f793618f3838c408907c0bbc"
+  },
+  "r8_history_sweep_sha256": "6eb571aef12dc881b78dc4c93fd77683ba4068d22be654ee46c208eab78e4472",
+  "ram_preflight": {
+    "checked_at": "2026-11-06T04:23:59.399757+09:00",
+    "available_mib": 4471.43,
+    "luna_synthetic_extra_mib": 768,
+    "gemini_reserve_mib": 512,
+    "other_python_jobs": [],
+    "other_job_reserve_mib": 0,
+    "reserve_mib": 640,
+    "required_available_mib": 1920,
+    "allowed": true,
+    "basis": "synthetic fixture only; 768 Luna + 512 Gemini + 640 reserve + 512 per other visible Python job"
+  },
+  "scope": "synthetic-only in-memory rows; no R10 actual ledger, R4 numeric source, events, labels, scores, or model training read"
+}

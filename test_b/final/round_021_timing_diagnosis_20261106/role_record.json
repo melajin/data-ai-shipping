@@ -1,0 +1,14 @@
+{
+  "round": "021",
+  "authorization": "User approved timing-error diagnosis and fixed timing-rule comparison with 해봐",
+  "existing_work_observed": "Round020 already completed in workspace; preserve it and avoid duplicate number/rule",
+  "protocol_sha256": "092242f52c29c828cde4604df9b3671b015a30748f8c14520b33baee008bfba2",
+  "protocol_frozen_at": "2026-11-06T15:27:45.9676007+09:00",
+  "requested_agents": [
+    {"task": "/root/round021_design", "role": "astra_decision", "model": "gpt-6-astra", "effort": "high", "spawn_confirmed": true, "ownership": "read-only design"},
+    {"task": "/root/round021_engine", "role": "sol_complex", "model": "gpt-6.1-sol", "effort": "max", "spawn_confirmed": true, "ownership": "engine and scoring artifacts"},
+    {"task": "/root/round021_evaluation", "role": "sol_module", "model": "gpt-6.1-sol", "effort": "xhigh", "spawn_confirmed": true, "ownership": "evaluation and tests"},
+    {"task": "/root/round021_review", "role": "sol_review", "model": "gpt-6.1-sol", "effort": "high", "spawn_confirmed": true, "ownership": "independent audit"}
+  ],
+  "runtime_evidence_boundary": "Tool-created task names and requested settings recorded; provider internal models not independently verified, parent model not claimed changed"
+}

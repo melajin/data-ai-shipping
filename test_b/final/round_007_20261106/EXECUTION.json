@@ -1,0 +1,136 @@
+{
+  "task_id": "task_80ff88997dfd",
+  "dispatch_id": "ctx_44a1a49f9a42",
+  "agent": "antigravity",
+  "model": "gemini-3.8-flash",
+  "effort": "high",
+  "start_time": "2026-11-06T01:46:23.391886+09:00",
+  "end_time": "2026-11-06T01:46:50.428283+09:00",
+  "runtime_seconds": 27.04,
+  "preflight_ram": {
+    "checked_at": "2026-11-06T01:46:24.204984+09:00",
+    "available_mib": 4121.35,
+    "required_extra_mib": 768,
+    "reserve_mib": 640,
+    "threshold_mib": 1408,
+    "allowed": true,
+    "active_python_processes": [],
+    "estimate_basis": "streaming single csv lines with 10MiB bounded fieldsize; target 22 records; peak memory under 200MiB"
+  },
+  "ram_start_snap": {
+    "timestamp": "2026-11-06T01:46:24.206880+09:00",
+    "total_ram_mib": 14140.86,
+    "available_ram_mib": 4117.81,
+    "used_ram_mib": 10023.05,
+    "percent_used": 70.9,
+    "process_rss_mib": 111.31,
+    "process_vms_mib": 563.2
+  },
+  "ram_end_snap": {
+    "timestamp": "2026-11-06T01:46:50.428487+09:00",
+    "total_ram_mib": 14140.86,
+    "available_ram_mib": 3895.37,
+    "used_ram_mib": 10245.49,
+    "percent_used": 72.5,
+    "process_rss_mib": 334.06,
+    "process_vms_mib": 985.82
+  },
+  "actual_process_peak_rss_mib": 334.06,
+  "input_hashes": {
+    "summary_json": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_003_20261105\\summary.json",
+      "sha256": "2a5fc8e238117d409551e841433df9ad71134d8c8a2a8f913ffd0544d353bf4d",
+      "bytes": 2932
+    },
+    "candidate_ledger_parquet": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001\\candidate_ledger.parquet",
+      "sha256": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+      "bytes": 6433671
+    },
+    "loss_flags_csv": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_005_20261106\\execution_002\\loss_flags.csv",
+      "sha256": "9d3740364f2d98c61dcb156e4de1f68b13e0c38c8b5f8bfd8cc14641a5232465",
+      "bytes": 6801
+    },
+    "rescore_evaluate_py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\round_008_linkage_audit_20261105\\rescore_evaluate.py",
+      "sha256": "2444c6fa38196a8c86e955838b168ecad04b81fe24493d36bf3e4ed49a3f84ac",
+      "bytes": 14884
+    },
+    "original_parser_py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\29-30일 모델 심층 분석\\분석 결과\\tools\\run_remeasure_20261031.py",
+      "sha256": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c",
+      "bytes": 76643
+    }
+  },
+  "raw_source_file_audits": {
+    "1": {
+      "month": 1,
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+      "bytes_before": 669416109,
+      "mtime_before": 1790557016.0,
+      "bytes_after": 669416109,
+      "mtime_after": 1790557016.0,
+      "full_sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "expected_sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "hash_match": true,
+      "stream_scope": "streamed csv rows through reader up to row_index 149,857; full byte-stream sha256 verified",
+      "stream_elapsed_sec": 2.21,
+      "hash_elapsed_sec": 0.61,
+      "max_row_index_extracted": 149856,
+      "target_records_count": 10
+    },
+    "5": {
+      "month": 5,
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv",
+      "bytes_before": 1201889964,
+      "mtime_before": 1789436196.0,
+      "bytes_after": 1201889964,
+      "mtime_after": 1789436196.0,
+      "full_sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "expected_sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "hash_match": true,
+      "stream_scope": "streamed csv rows through reader up to row_index 741,125; full byte-stream sha256 verified",
+      "stream_elapsed_sec": 12.42,
+      "hash_elapsed_sec": 1.14,
+      "max_row_index_extracted": 741124,
+      "target_records_count": 6
+    },
+    "6": {
+      "month": 6,
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv",
+      "bytes_before": 1255966524,
+      "mtime_before": 1789436342.0,
+      "bytes_after": 1255966524,
+      "mtime_after": 1789436342.0,
+      "full_sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "expected_sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "hash_match": true,
+      "stream_scope": "streamed csv rows through reader up to row_index 355,140; full byte-stream sha256 verified",
+      "stream_elapsed_sec": 6.72,
+      "hash_elapsed_sec": 1.28,
+      "max_row_index_extracted": 355139,
+      "target_records_count": 6
+    }
+  },
+  "total_selected_records": 22,
+  "total_parts_analyzed": 101,
+  "output_artifacts": {
+    "selection_register_csv": "selection_register.csv",
+    "lineage_audit_json": "lineage_audit.json",
+    "part_features_csv": "part_features.csv",
+    "parts_json": "parts.json",
+    "report_md": "report.md",
+    "plots": [
+      "case_A1_rfid_31001758_연안복합.png",
+      "case_A2_rfid_31007500_자망.png",
+      "case_A3_rfid_31008085_통발.png",
+      "case_A4_rfid_36314076_채낚기연승낚시.png",
+      "case_B1_acc_13_rfid_36115953_자망.png",
+      "case_B2_acc_14_rfid_36007269_연안복합.png",
+      "case_B3_acc_26_rfid_31100492_통발.png",
+      "case_B4_acc_31_rfid_36314076_채낚기연승낚시.png"
+    ]
+  },
+  "all_validations_passed": true
+}

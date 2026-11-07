@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "created_at": "2026-11-06T15:47:29.117341+09:00",
+  "rows_completed": 3887065,
+  "vessels_completed": 7372,
+  "vessel_error_records": 0,
+  "labels_read": false,
+  "accident_times_parsed": false,
+  "training_performed": false,
+  "score_definition_changed": false,
+  "source_checksums_match": true,
+  "freeze_sha256": "7d836a7df919ebacad4c80f83fbced83e2289628aae66228d1ac433893e7cdd7",
+  "engine_sha256": "ffd913ad90146923a78a1e7552f68fcb02b9b373661e2d1feb38b418269f0efc",
+  "prediction_file": "execution_001\\fleet_policy_predictions.csv",
+  "policy_prediction_sha256": "1dcd1c78453dd9cc4f26c480e86020f6c7de7cfb6131f78fc05445f2cf0146a8",
+  "hourly_manifest_sha256": "ed9827249e989c8c856b4472b295c5337bade4d3d39c04d2131ca6c25b5fe7f4",
+  "sources_before_sha256": "bb6e737187bd4d14d3deff8d0a58c4cfe17ee60ef0daafa45a59b0e31c1b1c87",
+  "sources_after_sha256": "bb6e737187bd4d14d3deff8d0a58c4cfe17ee60ef0daafa45a59b0e31c1b1c87",
+  "baseline_parity_sha256": "96878f5724274e38f3400b226f6821da5759ce919e2a4e419ff3b1665ebec383",
+  "split_counts": {
+    "development": 3686,
+    "validation": 3686
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "requested_model": "GPT-6 Luna",
+  "requested_effort": "xhigh",
+  "check_count": 12,
+  "checks": [
+    "all input rows and ordinals are preserved, including registry-only zero-count vessels",
+    "valid coordinate, 25-position/3-date history, and known one-degree haversine distance pass",
+    "exact nearest-distance ties choose earliest timestamp, then lowest ordinal at that timestamp",
+    "a repeated past centroid yields zero distance; same-time/current and future rows are excluded",
+    "t-720 is included while t-721 is excluded; resulting 24/23 position gate is exact",
+    "24 past positions on only two distinct source-clock dates defer",
+    "NaN and out-of-range current coordinates are retained and explicitly deferred",
+    "peer count excludes own vessel and accepts five history-qualified peers without current observations",
+    "known singleton and unknown gear keep own distance eligibility but defer at the peer stage",
+    "availability stages are monotone: valid current coordinate, own history, then peer history",
+    "appending a future row leaves existing reference counts, distances, peers, and eligibility unchanged",
+    "duplicate RFID/hour/ordinal and fractional source-clock keys are rejected"
+  ],
+  "synthetic_rows": 275,
+  "synthetic_rfid_n": 11,
+  "summary": {
+    "row_n": 275,
+    "rfid_n": 12,
+    "observed_n": 275,
+    "valid_position_n": 272,
+    "own_eligible_n": 6,
+    "peer_eligible_n": 2,
+    "definitions": {
+      "history_window": "valid finite/range-checked centroid rows in [t-720,t); current/future excluded",
+      "history_gate": "at least 24 valid positions and 3 distinct floor(ts/24) source-clock dates",
+      "distance": "minimum haversine distance to past centroid rows, Earth radius 6371000 m; proxy only",
+      "peer_gate": "own distance eligible and at least 5 other history-eligible vessels in same known single-code gear at query t"
+    }
+  },
+  "known_haversine_distance_m": 111194.92664455874,
+  "source_hashes_before": {
+    "position_probe.py": "efb6f3c1b9a8256dcd5c7773b43f3c7f740705e649f15a7e365579729b0a1ddb",
+    "check_position_probe.py": "c87d58e63f7d67b2ce9ffc0cf167ee9f21d9f5cbbb2e670e7326f5dab6e6fdcf"
+  },
+  "source_hashes_after": {
+    "position_probe.py": "efb6f3c1b9a8256dcd5c7773b43f3c7f740705e649f15a7e365579729b0a1ddb",
+    "check_position_probe.py": "c87d58e63f7d67b2ce9ffc0cf167ee9f21d9f5cbbb2e670e7326f5dab6e6fdcf"
+  },
+  "code_hashes_before": {
+    "position_probe.py": "efb6f3c1b9a8256dcd5c7773b43f3c7f740705e649f15a7e365579729b0a1ddb",
+    "check_position_probe.py": "c87d58e63f7d67b2ce9ffc0cf167ee9f21d9f5cbbb2e670e7326f5dab6e6fdcf"
+  },
+  "code_hashes_after": {
+    "position_probe.py": "efb6f3c1b9a8256dcd5c7773b43f3c7f740705e649f15a7e365579729b0a1ddb",
+    "check_position_probe.py": "c87d58e63f7d67b2ce9ffc0cf167ee9f21d9f5cbbb2e670e7326f5dab6e6fdcf"
+  },
+  "ram_preflight": {
+    "checked_at": "2026-11-06T03:52:26.971714+09:00",
+    "available_mib": 4445.2,
+    "luna_probe_extra_mib": 768,
+    "gemini_synthetic_reserve_mib": 512,
+    "additional_visible_python_jobs": [],
+    "additional_job_reserve_mib": 0,
+    "reserve_mib": 640,
+    "required_available_mib": 1920,
+    "allowed": true,
+    "basis": "bounded 720-hour histories and per-row distance vector; fixed Luna 768 + Gemini 512 + 640 reserve, plus 512 per other visible Python job"
+  },
+  "scope": "synthetic in-memory coordinates only; no actual source, labels, events, scoring, or training accessed"
+}

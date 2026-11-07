@@ -1,0 +1,703 @@
+{
+  "checks": [
+    {
+      "available_bytes": 3027886080,
+      "available_gib": 2.8199386596679688,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "set_failed"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.5,
+      "other_python_processes": [],
+      "passed": false,
+      "priority_ok": false,
+      "process_rss_bytes": 25985024,
+      "process_rss_gib": 0.024200439453125,
+      "rss_limit_gib": 0.75,
+      "stage": "entry_preflight_before_roster_or_scan",
+      "timestamp_local": "2026-11-05T16:46:42.050083+09:00",
+      "timestamp_utc": "2026-11-05T07:46:42.050067+00:00"
+    },
+    {
+      "available_bytes": 3141697536,
+      "available_gib": 2.925933837890625,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.5,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 26427392,
+      "process_rss_gib": 0.0246124267578125,
+      "rss_limit_gib": 0.75,
+      "stage": "entry_preflight_before_roster_or_scan",
+      "timestamp_local": "2026-11-05T16:48:21.635694+09:00",
+      "timestamp_utc": "2026-11-05T07:48:21.635679+00:00"
+    },
+    {
+      "available_bytes": 3128016896,
+      "available_gib": 2.9131927490234375,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 37683200,
+      "process_rss_gib": 0.03509521484375,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_1",
+      "timestamp_local": "2026-11-05T16:48:23.523563+09:00",
+      "timestamp_utc": "2026-11-05T07:48:23.523550+00:00"
+    },
+    {
+      "available_bytes": 3117641728,
+      "available_gib": 2.9035301208496094,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 38567936,
+      "process_rss_gib": 0.035919189453125,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_1",
+      "timestamp_local": "2026-11-05T16:48:25.257615+09:00",
+      "timestamp_utc": "2026-11-05T07:48:25.257602+00:00"
+    },
+    {
+      "available_bytes": 3215646720,
+      "available_gib": 2.9948043823242188,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.5,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 26525696,
+      "process_rss_gib": 0.0247039794921875,
+      "rss_limit_gib": 0.75,
+      "stage": "entry_preflight_before_roster_or_scan",
+      "timestamp_local": "2026-11-05T16:49:06.113502+09:00",
+      "timestamp_utc": "2026-11-05T07:49:06.113487+00:00"
+    },
+    {
+      "available_bytes": 3223977984,
+      "available_gib": 3.0025634765625,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 37756928,
+      "process_rss_gib": 0.03516387939453125,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_1",
+      "timestamp_local": "2026-11-05T16:49:07.675002+09:00",
+      "timestamp_utc": "2026-11-05T07:49:07.674990+00:00"
+    },
+    {
+      "available_bytes": 3179192320,
+      "available_gib": 2.9608535766601562,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 38936576,
+      "process_rss_gib": 0.03626251220703125,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_1",
+      "timestamp_local": "2026-11-05T16:50:15.099189+09:00",
+      "timestamp_utc": "2026-11-05T07:50:15.099176+00:00"
+    },
+    {
+      "available_bytes": 3184984064,
+      "available_gib": 2.96624755859375,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 39493632,
+      "process_rss_gib": 0.03678131103515625,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_2",
+      "timestamp_local": "2026-11-05T16:50:16.927887+09:00",
+      "timestamp_utc": "2026-11-05T07:50:16.927875+00:00"
+    },
+    {
+      "available_bytes": 3142455296,
+      "available_gib": 2.9266395568847656,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 39604224,
+      "process_rss_gib": 0.036884307861328125,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_2",
+      "timestamp_local": "2026-11-05T16:51:20.371144+09:00",
+      "timestamp_utc": "2026-11-05T07:51:20.371124+00:00"
+    },
+    {
+      "available_bytes": 3150974976,
+      "available_gib": 2.9345741271972656,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 40001536,
+      "process_rss_gib": 0.03725433349609375,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_3",
+      "timestamp_local": "2026-11-05T16:51:21.842611+09:00",
+      "timestamp_utc": "2026-11-05T07:51:21.842594+00:00"
+    },
+    {
+      "available_bytes": 3125239808,
+      "available_gib": 2.9106063842773438,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 40058880,
+      "process_rss_gib": 0.0373077392578125,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_3",
+      "timestamp_local": "2026-11-05T16:52:59.291503+09:00",
+      "timestamp_utc": "2026-11-05T07:52:59.291485+00:00"
+    },
+    {
+      "available_bytes": 3128995840,
+      "available_gib": 2.914104461669922,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 40321024,
+      "process_rss_gib": 0.0375518798828125,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_4",
+      "timestamp_local": "2026-11-05T16:53:00.671469+09:00",
+      "timestamp_utc": "2026-11-05T07:53:00.671457+00:00"
+    },
+    {
+      "available_bytes": 3095949312,
+      "available_gib": 2.8833274841308594,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.5,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 26320896,
+      "process_rss_gib": 0.02451324462890625,
+      "rss_limit_gib": 0.75,
+      "stage": "entry_preflight_before_roster_or_scan",
+      "timestamp_local": "2026-11-05T16:54:36.796216+09:00",
+      "timestamp_utc": "2026-11-05T07:54:36.796189+00:00"
+    },
+    {
+      "available_bytes": 3097669632,
+      "available_gib": 2.884929656982422,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 37605376,
+      "process_rss_gib": 0.035022735595703125,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_1",
+      "timestamp_local": "2026-11-05T16:54:39.109239+09:00",
+      "timestamp_utc": "2026-11-05T07:54:39.109226+00:00"
+    },
+    {
+      "available_bytes": 3076820992,
+      "available_gib": 2.8655128479003906,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [
+        {
+          "name": "python.exe",
+          "pid": 6200,
+          "rss_bytes": 143523840
+        }
+      ],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 38936576,
+      "process_rss_gib": 0.03626251220703125,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_1",
+      "timestamp_local": "2026-11-05T16:55:48.394851+09:00",
+      "timestamp_utc": "2026-11-05T07:55:48.394842+00:00"
+    },
+    {
+      "available_bytes": 3111886848,
+      "available_gib": 2.8981704711914062,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [
+        {
+          "name": "python.exe",
+          "pid": 6200,
+          "rss_bytes": 143589376
+        }
+      ],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 39329792,
+      "process_rss_gib": 0.03662872314453125,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_2",
+      "timestamp_local": "2026-11-05T16:55:50.987512+09:00",
+      "timestamp_utc": "2026-11-05T07:55:50.987494+00:00"
+    },
+    {
+      "available_bytes": 2999767040,
+      "available_gib": 2.793750762939453,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [
+        {
+          "name": "python.exe",
+          "pid": 6200,
+          "rss_bytes": 145162240
+        }
+      ],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 39206912,
+      "process_rss_gib": 0.0365142822265625,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_2",
+      "timestamp_local": "2026-11-05T16:56:58.022896+09:00",
+      "timestamp_utc": "2026-11-05T07:56:58.022880+00:00"
+    },
+    {
+      "available_bytes": 3047272448,
+      "available_gib": 2.837993621826172,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [
+        {
+          "name": "python.exe",
+          "pid": 6200,
+          "rss_bytes": 145137664
+        }
+      ],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 39583744,
+      "process_rss_gib": 0.036865234375,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_3",
+      "timestamp_local": "2026-11-05T16:56:59.765852+09:00",
+      "timestamp_utc": "2026-11-05T07:56:59.765511+00:00"
+    },
+    {
+      "available_bytes": 3232006144,
+      "available_gib": 3.010040283203125,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 38760448,
+      "process_rss_gib": 0.036098480224609375,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_3",
+      "timestamp_local": "2026-11-05T16:58:37.061578+09:00",
+      "timestamp_utc": "2026-11-05T07:58:37.061565+00:00"
+    },
+    {
+      "available_bytes": 3224547328,
+      "available_gib": 3.003093719482422,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 39432192,
+      "process_rss_gib": 0.036724090576171875,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_4",
+      "timestamp_local": "2026-11-05T16:58:38.898388+09:00",
+      "timestamp_utc": "2026-11-05T07:58:38.898373+00:00"
+    },
+    {
+      "available_bytes": 3216642048,
+      "available_gib": 2.9957313537597656,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 40247296,
+      "process_rss_gib": 0.03748321533203125,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_4",
+      "timestamp_local": "2026-11-05T17:00:26.276291+09:00",
+      "timestamp_utc": "2026-11-05T08:00:26.276278+00:00"
+    },
+    {
+      "available_bytes": 3247124480,
+      "available_gib": 3.024120330810547,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 39571456,
+      "process_rss_gib": 0.036853790283203125,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_5",
+      "timestamp_local": "2026-11-05T17:00:28.423115+09:00",
+      "timestamp_utc": "2026-11-05T08:00:28.423095+00:00"
+    },
+    {
+      "available_bytes": 3050692608,
+      "available_gib": 2.8411788940429688,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 39665664,
+      "process_rss_gib": 0.0369415283203125,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_5",
+      "timestamp_local": "2026-11-05T17:02:23.778310+09:00",
+      "timestamp_utc": "2026-11-05T08:02:23.778298+00:00"
+    },
+    {
+      "available_bytes": 3051159552,
+      "available_gib": 2.84161376953125,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 40075264,
+      "process_rss_gib": 0.037322998046875,
+      "rss_limit_gib": 0.75,
+      "stage": "before_month_6",
+      "timestamp_local": "2026-11-05T17:02:25.509707+09:00",
+      "timestamp_utc": "2026-11-05T08:02:25.509695+00:00"
+    },
+    {
+      "available_bytes": 3249721344,
+      "available_gib": 3.026538848876953,
+      "estimate_basis": "single CSV row capped at 16 MiB WKT/100,000 points; only 3,144 FIT accumulators; streaming rows, no DataFrame/model arrays. 0.50 GiB is a planning estimate, not measured.",
+      "execution_controls": {
+        "thread_environment": {
+          "BLIS_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1"
+        },
+        "windows_priority": "BELOW_NORMAL_PRIORITY_CLASS"
+      },
+      "expected_peak_gib": 0.5,
+      "minimum_available_gib": 1.0,
+      "other_python_processes": [],
+      "passed": true,
+      "priority_ok": true,
+      "process_rss_bytes": 39628800,
+      "process_rss_gib": 0.036907196044921875,
+      "rss_limit_gib": 0.75,
+      "stage": "after_month_6",
+      "timestamp_local": "2026-11-05T17:04:15.949102+09:00",
+      "timestamp_utc": "2026-11-05T08:04:15.949088+00:00"
+    }
+  ]
+}

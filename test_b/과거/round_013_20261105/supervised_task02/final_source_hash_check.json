@@ -1,0 +1,143 @@
+{
+  "stage": "final_source_and_contract_hash_check",
+  "checked_at": "2026-11-05T20:38:17+09:00",
+  "input_count": 12,
+  "all_fixed_input_hashes_match": true,
+  "checks": [
+    {
+      "path": "testB/round_008_linkage_audit_20261105/dev_hourly_scores.parquet",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 51584418,
+      "actual_bytes": 51584418,
+      "expected_sha256": "44e960c100fcb29806711b42045bd4ae1a37f542ffd639eff0aff7b1f2b1c5b4",
+      "actual_sha256": "44e960c100fcb29806711b42045bd4ae1a37f542ffd639eff0aff7b1f2b1c5b4"
+    },
+    {
+      "path": "testB/round_008_linkage_audit_20261105/additional_hourly_scores.parquet",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 3373601,
+      "actual_bytes": 3373601,
+      "expected_sha256": "31a80050d15930fb21b000fb8627a9941a8e11f412f601d0600716962bcf81be",
+      "actual_sha256": "31a80050d15930fb21b000fb8627a9941a8e11f412f601d0600716962bcf81be"
+    },
+    {
+      "path": "testB/round_008_linkage_audit_20261105/devset_positives.csv",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 15646,
+      "actual_bytes": 15646,
+      "expected_sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "actual_sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1"
+    },
+    {
+      "path": "testB/round_013_20261105/g4_voyage_local_collapse.csv",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 567698,
+      "actual_bytes": 567698,
+      "expected_sha256": "0a221a5298db9d35637b5b331a20816b1552e031a9145d018afffa38c67bf5ff",
+      "actual_sha256": "0a221a5298db9d35637b5b331a20816b1552e031a9145d018afffa38c67bf5ff"
+    },
+    {
+      "path": "testB/round_013_20261105/g5_confound_summary.json",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 17225,
+      "actual_bytes": 17225,
+      "expected_sha256": "6cb681984439851071e91c58b89d9158633847bf73d6cd9019665a5d37587d69",
+      "actual_sha256": "6cb681984439851071e91c58b89d9158633847bf73d6cd9019665a5d37587d69"
+    },
+    {
+      "path": "testB/round_013_20261105/PROTOCOL.md",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 13186,
+      "actual_bytes": 13186,
+      "expected_sha256": "096df27963509e1402e0e7b8194615cba7bcb2cca6a29e7fc9affb68eaf7b566",
+      "actual_sha256": "096df27963509e1402e0e7b8194615cba7bcb2cca6a29e7fc9affb68eaf7b566"
+    },
+    {
+      "path": "testB/round_013_20261105/SUPERVISOR_TASK_01.md",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 5633,
+      "actual_bytes": 5633,
+      "expected_sha256": "8533fc7b53b6747785d50a40a70104980ba20ddae2c048ec566b43867315f5dd",
+      "actual_sha256": "8533fc7b53b6747785d50a40a70104980ba20ddae2c048ec566b43867315f5dd"
+    },
+    {
+      "path": "testB/round_013_20261105/SUPERVISOR_TASK_02.md",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 7653,
+      "actual_bytes": 7653,
+      "expected_sha256": "1ab73e9bfb6c558605a684b320d7f7996c03323f06f7bda05477e9c8d222be31",
+      "actual_sha256": "1ab73e9bfb6c558605a684b320d7f7996c03323f06f7bda05477e9c8d222be31"
+    },
+    {
+      "path": "testB/round_011_20261105/PROTOCOL.md",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 9390,
+      "actual_bytes": 9390,
+      "expected_sha256": "133da14c225fa4e1e1c9829a26fdeba1014bd64043b9d4ef9b71c3d91d158084",
+      "actual_sha256": "133da14c225fa4e1e1c9829a26fdeba1014bd64043b9d4ef9b71c3d91d158084"
+    },
+    {
+      "path": "testB/round_012_20261105/g_gate_v2.py",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 7701,
+      "actual_bytes": 7701,
+      "expected_sha256": "ee1c90953458e30dc155bb06690d8baf01c87d5325a9e9f608bbce48ca60f6a9",
+      "actual_sha256": "ee1c90953458e30dc155bb06690d8baf01c87d5325a9e9f608bbce48ca60f6a9"
+    },
+    {
+      "path": "AGENTS.md",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 5134,
+      "actual_bytes": 5134,
+      "expected_sha256": "e8a6fcc73d695b5ea8bbd3c6e8a8da1f62093c2c40d921a12d24d377d04ac356",
+      "actual_sha256": "e8a6fcc73d695b5ea8bbd3c6e8a8da1f62093c2c40d921a12d24d377d04ac356"
+    },
+    {
+      "path": ".codex/agents/luna_worker.toml",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true,
+      "expected_bytes": 561,
+      "actual_bytes": 561,
+      "expected_sha256": "fcea4331b6c5e2fedfb10e8dc5b25470bd24f69b37a832c65aa9d9a38e344645",
+      "actual_sha256": "fcea4331b6c5e2fedfb10e8dc5b25470bd24f69b37a832c65aa9d9a38e344645"
+    }
+  ],
+  "command_string_only_code_checks": [
+    {
+      "file": "g6_selection_and_confidence.py",
+      "historical_hash_restored_by_replacing_command": true,
+      "corrected_command_occurrences": 1,
+      "historical_command_occurrences": 0
+    },
+    {
+      "file": "g7_evaluate.py",
+      "historical_hash_restored_by_replacing_command": true,
+      "corrected_command_occurrences": 1,
+      "historical_command_occurrences": 0
+    }
+  ],
+  "calculation_rerun": false
+}

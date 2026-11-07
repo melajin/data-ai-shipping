@@ -1,0 +1,41 @@
+{
+    "events":  100,
+    "vessels":  82,
+    "tier01_events":  60,
+    "tier01_vessels":  55,
+    "by_tier":  [
+                    {
+                        "tier":  "0",
+                        "n":  36
+                    },
+                    {
+                        "tier":  "5",
+                        "n":  17
+                    },
+                    {
+                        "tier":  "1",
+                        "n":  24
+                    },
+                    {
+                        "tier":  "3",
+                        "n":  8
+                    },
+                    {
+                        "tier":  "4",
+                        "n":  6
+                    },
+                    {
+                        "tier":  "8",
+                        "n":  2
+                    },
+                    {
+                        "tier":  "2",
+                        "n":  6
+                    },
+                    {
+                        "tier":  "6",
+                        "n":  1
+                    }
+                ],
+    "conflict_true":  5
+}

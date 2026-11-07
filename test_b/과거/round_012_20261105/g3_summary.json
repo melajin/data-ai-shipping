@@ -1,0 +1,40 @@
+{
+  "n_rows": 46705,
+  "n_vessels": 100,
+  "voy_first_frac": 0.06975698533347607,
+  "components": {
+    "s_zone": {
+      "mean_voy_first": 0.01690682509733782,
+      "mean_other": 0.02706401075622282,
+      "delta": -0.010157185658885001
+    },
+    "s_change": {
+      "mean_voy_first": 0.39190277132922346,
+      "mean_other": 0.33594163212964034,
+      "delta": 0.05596113919958312
+    },
+    "s_gap": {
+      "mean_voy_first": 0.8376768030779828,
+      "mean_other": 0.7088675891412825,
+      "delta": 0.1288092139367003
+    },
+    "score": {
+      "mean_voy_first": 0.4040602114674036,
+      "mean_other": 0.35784534879394997,
+      "delta": 0.04621486267345365
+    }
+  },
+  "A_peak": {
+    "n": 100,
+    "voy_first_count": 38,
+    "voy_first_frac": 0.38,
+    "enrichment_vs_random": 5.447483118477594,
+    "mean_s_gap_at_A": 0.8834045385176917,
+    "A_is_vessel_first_row": 6
+  },
+  "global_top1pct": {
+    "threshold": 0.6152947077503556,
+    "n": 468,
+    "voy_first_frac": 0.07692307692307693
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "coordinate_order_confirmed_by_caller": true,
+  "created_utc": "2026-11-05T07:48:25.261307+00:00",
+  "cross_row_or_cross_part_pairs": false,
+  "crs_epsg_datum": "unconfirmed; distances use declared spherical/local approximations",
+  "csv_columns_used": [
+    "rfid_id",
+    "geom"
+  ],
+  "feature_names": [
+    "turn_sign_reversal_fraction",
+    "nonlocal_return_vertex_fraction"
+  ],
+  "feature_parameters": {
+    "aggregation": "sum row/part numerators and denominators per vessel, then divide",
+    "limits": {
+      "limit_behavior": "reject entire row and count reason; never use a prefix",
+      "max_candidate_haversine_checks_per_row": 1000000,
+      "max_points_per_row": 100000,
+      "max_wkt_characters_per_row": 16777216
+    },
+    "nonlocal_return": {
+      "maximum_adjacent_segment_m": 10000.0,
+      "maximum_haversine_distance_m_inclusive": 100.0,
+      "minimum_prior_along_part_path_lag_m": 500.0
+    },
+    "turn_sign_reversal": {
+      "exact_adjacent_duplicate_coordinates_collapsed": true,
+      "minimum_absolute_turn_degrees_inclusive": 15.0,
+      "other_distance_simplification": false
+    },
+    "zero_denominator": "blank value with denominator 0; never impute zero"
+  },
+  "file_metadata": [
+    {
+      "mtime_ns": 1790557016000000000,
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+      "size_bytes": 669416109
+    }
+  ],
+  "files": [
+    {
+      "data_rows_read": 99,
+      "path": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv",
+      "physical_lines_read": 100,
+      "pilot_incomplete_record": false,
+      "pilot_physical_line_limit": 100,
+      "pilot_source_complete": false
+    }
+  ],
+  "input_mode": "Train2026_geom_only",
+  "label_values_read": false,
+  "mode": "pilot",
+  "output_columns": [
+    "rfid_id",
+    "turn_sign_reversal_fraction",
+    "nonlocal_return_vertex_fraction",
+    "turn_sign_reversal_numerator",
+    "turn_sign_reversal_denominator",
+    "nonlocal_return_vertex_numerator",
+    "nonlocal_return_vertex_denominator",
+    "rows_seen",
+    "geometry_valid_rows",
+    "geometry_missing_rows",
+    "geometry_empty_rows",
+    "geometry_invalid_rows",
+    "geometry_truncated_rows",
+    "geometry_error_reasons_json"
+  ],
+  "output_csv": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\11_04_final\\rounds\\round_028_domain_features\\worker\\pilot_100_features.csv",
+  "output_rows": 3144,
+  "output_vessel_count": 3144,
+  "part_boundaries_preserved": true,
+  "physical_line_limit": 100,
+  "physical_line_pilot": true,
+  "predictions_read": false,
+  "roster_count": 3144,
+  "roster_key_read": "rfid_ids",
+  "roster_source": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fold_0_features.npz",
+  "test_or_holdout_read": false,
+  "totals": {
+    "files_read": 1,
+    "logical_data_rows": 99,
+    "non_roster_rows_skipped": 49,
+    "roster_matched_rows": 50
+  }
+}

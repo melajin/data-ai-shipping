@@ -1,0 +1,26 @@
+{
+  "id": "8c2dc3f1-37a0-45a2-b360-e1b13f45fd60",
+  "ok": true,
+  "result": {
+    "outcome": {
+      "kind": "terminal",
+      "handle": "term_f2f5887a-661b-45c4-925c-e585a28a102a",
+      "paneKey": "80e3c44f-1e8c-4f7b-b6eb-ba3131fe0735:1737f27f-60dd-4042-811a-ca0e06673235"
+    },
+    "worktreeId": "694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+    "receipt": {
+      "mode": "terminal",
+      "preferred": "structured",
+      "reason": "structured_unsupported_on_host",
+      "detail": "Your default is a structured chat session, but the execution host cannot create one here; started a terminal agent instead."
+    },
+    "prompt": {
+      "delivery": "submit",
+      "outcome": "handed-to-terminal"
+    },
+    "operationId": "1793856436609-88c885b1d21b4e508db85915179125ea"
+  },
+  "_meta": {
+    "runtimeId": "b4aa8510-0609-45a9-b7ba-e1cdeeab97f6"
+  }
+}

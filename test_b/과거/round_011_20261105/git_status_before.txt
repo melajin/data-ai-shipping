@@ -1,0 +1,32 @@
+ M 11_04_final/EXPERIMENT_LEDGER.csv
+ M 11_04_final/NEXT_SESSION.md
+ M 11_04_final/STATUS.json
+ M testB/LEDGER.md
+ M testB/NEXT_SESSION.md
+ M testB/STATUS.json
+ M tools/auto_sync.log
+?? 11_04_final/reports/20261105_round026_FULL_STATUS_REPORT.md
+?? 11_04_final/rounds/round_026.zip
+?? 11_04_final/rounds/round_026/
+?? 11_04_final/rounds/round_027_fallback_ovr/
+?? 11_04_final/rounds/round_027_team_recheck/
+?? 11_04_final/rounds/round_028_domain_features/
+?? "testB/round 9/NEXT_ROUND_인계_20261105.md"
+?? "testB/round 9/REVIEW_ROUND009_검증비판_20261105.md"
+?? "testB/round 9/ROUND009_종합보고서_20261105.md"
+?? "testB/round 9/ROUND010_위임스펙_20261105.md"
+?? "testB/round 9/ROUND010_위임지시서_20261105.md"
+?? "testB/round 9/ROUND010_위임프롬프트_20261105.md"
+?? "testB/round 9/SESSION_CLOSE_20261105.md"
+?? "testB/round 9/review_round9_metrics.json"
+?? "testB/round 9/review_round9_metrics2.json"
+?? "testB/round 9/review_round9_metrics3.json"
+?? "testB/round 9/review_v1_conflict_detectability.csv"
+?? "testB/round 9/review_v3_control_proximity.csv"
+?? "testB/round 9/review_v4_event_percentiles.csv"
+?? "testB/round 9/review_v9v10_percentiles.csv"
+?? "testB/round 9/verify_round9_review.py"
+?? "testB/round 9/verify_round9_review2.py"
+?? "testB/round 9/verify_round9_review3.py"
+?? testB/round_010_20261105/
+?? testB/round_011_20261105/

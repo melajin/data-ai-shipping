@@ -1,0 +1,24 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "role": "luna",
+      "chunk_id": "168724",
+      "wall_time_seconds": 0.8320055,
+      "exit_code": 0,
+      "original_token_count": 14,
+      "output": "{\"ok\":true,\"result\":{\"messageId\":\"msg_6a97be82e0be\"}}\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "role": "gemini",
+      "chunk_id": "22630e",
+      "wall_time_seconds": 3.5599361,
+      "exit_code": 0,
+      "original_token_count": 105,
+      "output": "{\"ok\":true,\"result\":{\"delivery\":\"follow_up\",\"followUpOf\":\"ctx_0b86797c7561\",\"dispatchId\":\"ctx_e74dc03ee7f3\",\"taskId\":\"task_0b9d47929c46\",\"runId\":\"run_a2b0e4f8b7cc\",\"state\":\"ready\",\"terminal\":\"term_d77e6bf4b8e4c838f9185720ab1232e5\",\"workspace\":\"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\",\"next\":\"Orca wakes you when workers report; end your turn when you're done.\"}}\n"
+    }
+  }
+]

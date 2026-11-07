@@ -1,0 +1,749 @@
+{
+  "status": "deterministic_shape_evaluation",
+  "description": "Round 8 shape-based candidate rules and event evaluation",
+  "methods": [
+    "B0",
+    "S",
+    "G"
+  ],
+  "budgets": [
+    1,
+    4
+  ],
+  "tolerance_hours_inclusive": 6,
+  "operational_gate": {
+    "tier01_top1_diff_g_vs_b0": {
+      "target": ">= +0.05 (+5.0 percentage points)",
+      "threshold": 0.05,
+      "observed": 1.0,
+      "passed": true
+    },
+    "tier01_top1_ci95_lower_positive": {
+      "target": "> 0.0 (paired cluster bootstrap 95% CI lower bound)",
+      "threshold": 0.0,
+      "observed_ci95": [
+        1.0,
+        1.0
+      ],
+      "observed_lower": 1.0,
+      "passed": true
+    },
+    "whole100_non_worsening": {
+      "target": ">= 0.0 (all100 top1 difference G vs B0)",
+      "threshold": 0.0,
+      "observed": 0.6000000000000001,
+      "passed": true
+    },
+    "tier01_top1_exceeds_random": {
+      "target": "Tier01 G top1 hit rate > Tier01 G actual-pool random expectation",
+      "observed_hit_rate": 1.0,
+      "observed_random_expectation": 0.7222222222222222,
+      "passed": true
+    },
+    "overall_passed": true,
+    "gate_failures": []
+  },
+  "denominators": {
+    "all": {
+      "events": 5,
+      "unique_rfids": 4,
+      "B0_top1": {
+        "events": 5,
+        "hits": 1,
+        "hit_rate": 0.2
+      },
+      "B0_top4": {
+        "events": 5,
+        "hits": 4,
+        "hit_rate": 0.8
+      },
+      "S_top1": {
+        "events": 5,
+        "hits": 4,
+        "hit_rate": 0.8
+      },
+      "S_top4": {
+        "events": 5,
+        "hits": 4,
+        "hit_rate": 0.8
+      },
+      "G_top1": {
+        "events": 5,
+        "hits": 4,
+        "hit_rate": 0.8
+      },
+      "G_top4": {
+        "events": 5,
+        "hits": 4,
+        "hit_rate": 0.8
+      }
+    },
+    "tier01": {
+      "events": 3,
+      "unique_rfids": 2,
+      "B0_top1": {
+        "events": 3,
+        "hits": 0,
+        "hit_rate": 0.0
+      },
+      "B0_top4": {
+        "events": 3,
+        "hits": 3,
+        "hit_rate": 1.0
+      },
+      "S_top1": {
+        "events": 3,
+        "hits": 3,
+        "hit_rate": 1.0
+      },
+      "S_top4": {
+        "events": 3,
+        "hits": 3,
+        "hit_rate": 1.0
+      },
+      "G_top1": {
+        "events": 3,
+        "hits": 3,
+        "hit_rate": 1.0
+      },
+      "G_top4": {
+        "events": 3,
+        "hits": 3,
+        "hit_rate": 1.0
+      }
+    },
+    "gear_strata": {
+      "연안복합": {
+        "events": 2,
+        "tier01_events": 2,
+        "unique_rfids": 1,
+        "B0_top1": {
+          "events": 2,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "B0_top4": {
+          "events": 2,
+          "hits": 2,
+          "hit_rate": 1.0
+        },
+        "S_top1": {
+          "events": 2,
+          "hits": 2,
+          "hit_rate": 1.0
+        },
+        "S_top4": {
+          "events": 2,
+          "hits": 2,
+          "hit_rate": 1.0
+        },
+        "G_top1": {
+          "events": 2,
+          "hits": 2,
+          "hit_rate": 1.0
+        },
+        "G_top4": {
+          "events": 2,
+          "hits": 2,
+          "hit_rate": 1.0
+        }
+      },
+      "자망": {
+        "events": 1,
+        "tier01_events": 1,
+        "unique_rfids": 1,
+        "B0_top1": {
+          "events": 1,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "B0_top4": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        },
+        "S_top1": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        },
+        "S_top4": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        },
+        "G_top1": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        },
+        "G_top4": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        }
+      },
+      "채낚기연승낚시": {
+        "events": 1,
+        "tier01_events": 0,
+        "unique_rfids": 1,
+        "B0_top1": {
+          "events": 1,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "B0_top4": {
+          "events": 1,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "S_top1": {
+          "events": 1,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "S_top4": {
+          "events": 1,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "G_top1": {
+          "events": 1,
+          "hits": 0,
+          "hit_rate": 0.0
+        },
+        "G_top4": {
+          "events": 1,
+          "hits": 0,
+          "hit_rate": 0.0
+        }
+      },
+      "통발": {
+        "events": 1,
+        "tier01_events": 0,
+        "unique_rfids": 1,
+        "B0_top1": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        },
+        "B0_top4": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        },
+        "S_top1": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        },
+        "S_top4": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        },
+        "G_top1": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        },
+        "G_top4": {
+          "events": 1,
+          "hits": 1,
+          "hit_rate": 1.0
+        }
+      }
+    }
+  },
+  "random_expectations": {
+    "all": {
+      "denominator_events": 5,
+      "unique_rfids": 4,
+      "pools": {
+        "B0": {
+          "denominator_events": 5,
+          "mean_top1_expected": 0.6333333333333333,
+          "mean_top4_hit_probability": 0.8,
+          "event_probabilities": [
+            {
+              "acc_id": "acc_1",
+              "rfid_id": "rfid_1",
+              "method": "B0",
+              "pool_stage": "s0",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 7,
+              "kcap": 4,
+              "top1_expected": 0.7,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_2",
+              "rfid_id": "rfid_1",
+              "method": "B0",
+              "pool_stage": "s0",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 8,
+              "kcap": 4,
+              "top1_expected": 0.8,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_3",
+              "rfid_id": "rfid_2",
+              "method": "B0",
+              "pool_stage": "s0",
+              "fallback_reason": null,
+              "n": 6,
+              "h": 4,
+              "kcap": 3,
+              "top1_expected": 0.6666666666666666,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_4",
+              "rfid_id": "rfid_3",
+              "method": "B0",
+              "pool_stage": "s0",
+              "fallback_reason": null,
+              "n": 4,
+              "h": 4,
+              "kcap": 1,
+              "top1_expected": 1.0,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_5",
+              "rfid_id": "rfid_4",
+              "method": "B0",
+              "pool_stage": "s0",
+              "fallback_reason": "no_observations",
+              "n": 0,
+              "h": 0,
+              "kcap": 0,
+              "top1_expected": 0.0,
+              "top4_hit_probability": 0.0
+            }
+          ]
+        },
+        "S": {
+          "denominator_events": 5,
+          "mean_top1_expected": 0.6333333333333333,
+          "mean_top4_hit_probability": 0.8,
+          "event_probabilities": [
+            {
+              "acc_id": "acc_1",
+              "rfid_id": "rfid_1",
+              "method": "S",
+              "pool_stage": "s3",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 7,
+              "kcap": 4,
+              "top1_expected": 0.7,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_2",
+              "rfid_id": "rfid_1",
+              "method": "S",
+              "pool_stage": "s3",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 8,
+              "kcap": 4,
+              "top1_expected": 0.8,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_3",
+              "rfid_id": "rfid_2",
+              "method": "S",
+              "pool_stage": "s3",
+              "fallback_reason": null,
+              "n": 6,
+              "h": 4,
+              "kcap": 3,
+              "top1_expected": 0.6666666666666666,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_4",
+              "rfid_id": "rfid_3",
+              "method": "S",
+              "pool_stage": "s0",
+              "fallback_reason": "s3_pool_empty_fallback_to_s0",
+              "n": 4,
+              "h": 4,
+              "kcap": 1,
+              "top1_expected": 1.0,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_5",
+              "rfid_id": "rfid_4",
+              "method": "S",
+              "pool_stage": "s0",
+              "fallback_reason": "no_observations",
+              "n": 0,
+              "h": 0,
+              "kcap": 0,
+              "top1_expected": 0.0,
+              "top4_hit_probability": 0.0
+            }
+          ]
+        },
+        "G": {
+          "denominator_events": 5,
+          "mean_top1_expected": 0.6333333333333333,
+          "mean_top4_hit_probability": 0.8,
+          "event_probabilities": [
+            {
+              "acc_id": "acc_1",
+              "rfid_id": "rfid_1",
+              "method": "G",
+              "pool_stage": "s4",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 7,
+              "kcap": 4,
+              "top1_expected": 0.7,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_2",
+              "rfid_id": "rfid_1",
+              "method": "G",
+              "pool_stage": "s4",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 8,
+              "kcap": 4,
+              "top1_expected": 0.8,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_3",
+              "rfid_id": "rfid_2",
+              "method": "G",
+              "pool_stage": "s3",
+              "fallback_reason": "s4_pool_empty_fallback_to_S",
+              "n": 6,
+              "h": 4,
+              "kcap": 3,
+              "top1_expected": 0.6666666666666666,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_4",
+              "rfid_id": "rfid_3",
+              "method": "G",
+              "pool_stage": "s0",
+              "fallback_reason": "s4_pool_empty_fallback_to_s0",
+              "n": 4,
+              "h": 4,
+              "kcap": 1,
+              "top1_expected": 1.0,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_5",
+              "rfid_id": "rfid_4",
+              "method": "G",
+              "pool_stage": "s0",
+              "fallback_reason": "no_observations",
+              "n": 0,
+              "h": 0,
+              "kcap": 0,
+              "top1_expected": 0.0,
+              "top4_hit_probability": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "tier01": {
+      "denominator_events": 3,
+      "unique_rfids": 2,
+      "pools": {
+        "B0": {
+          "denominator_events": 3,
+          "mean_top1_expected": 0.7222222222222222,
+          "mean_top4_hit_probability": 1.0,
+          "event_probabilities": [
+            {
+              "acc_id": "acc_1",
+              "rfid_id": "rfid_1",
+              "method": "B0",
+              "pool_stage": "s0",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 7,
+              "kcap": 4,
+              "top1_expected": 0.7,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_2",
+              "rfid_id": "rfid_1",
+              "method": "B0",
+              "pool_stage": "s0",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 8,
+              "kcap": 4,
+              "top1_expected": 0.8,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_3",
+              "rfid_id": "rfid_2",
+              "method": "B0",
+              "pool_stage": "s0",
+              "fallback_reason": null,
+              "n": 6,
+              "h": 4,
+              "kcap": 3,
+              "top1_expected": 0.6666666666666666,
+              "top4_hit_probability": 1.0
+            }
+          ]
+        },
+        "S": {
+          "denominator_events": 3,
+          "mean_top1_expected": 0.7222222222222222,
+          "mean_top4_hit_probability": 1.0,
+          "event_probabilities": [
+            {
+              "acc_id": "acc_1",
+              "rfid_id": "rfid_1",
+              "method": "S",
+              "pool_stage": "s3",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 7,
+              "kcap": 4,
+              "top1_expected": 0.7,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_2",
+              "rfid_id": "rfid_1",
+              "method": "S",
+              "pool_stage": "s3",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 8,
+              "kcap": 4,
+              "top1_expected": 0.8,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_3",
+              "rfid_id": "rfid_2",
+              "method": "S",
+              "pool_stage": "s3",
+              "fallback_reason": null,
+              "n": 6,
+              "h": 4,
+              "kcap": 3,
+              "top1_expected": 0.6666666666666666,
+              "top4_hit_probability": 1.0
+            }
+          ]
+        },
+        "G": {
+          "denominator_events": 3,
+          "mean_top1_expected": 0.7222222222222222,
+          "mean_top4_hit_probability": 1.0,
+          "event_probabilities": [
+            {
+              "acc_id": "acc_1",
+              "rfid_id": "rfid_1",
+              "method": "G",
+              "pool_stage": "s4",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 7,
+              "kcap": 4,
+              "top1_expected": 0.7,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_2",
+              "rfid_id": "rfid_1",
+              "method": "G",
+              "pool_stage": "s4",
+              "fallback_reason": null,
+              "n": 10,
+              "h": 8,
+              "kcap": 4,
+              "top1_expected": 0.8,
+              "top4_hit_probability": 1.0
+            },
+            {
+              "acc_id": "acc_3",
+              "rfid_id": "rfid_2",
+              "method": "G",
+              "pool_stage": "s3",
+              "fallback_reason": "s4_pool_empty_fallback_to_S",
+              "n": 6,
+              "h": 4,
+              "kcap": 3,
+              "top1_expected": 0.6666666666666666,
+              "top4_hit_probability": 1.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rfid_cluster_bootstrap": {
+    "all": {
+      "G-vs-B0-top1": {
+        "n_events": 5,
+        "n_rfid": 4,
+        "mean_difference": 0.6,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "G-vs-B0-top4": {
+        "n_events": 5,
+        "n_rfid": 4,
+        "mean_difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "G-vs-S-top1": {
+        "n_events": 5,
+        "n_rfid": 4,
+        "mean_difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "G-vs-S-top4": {
+        "n_events": 5,
+        "n_rfid": 4,
+        "mean_difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "S-vs-B0-top1": {
+        "n_events": 5,
+        "n_rfid": 4,
+        "mean_difference": 0.6,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "S-vs-B0-top4": {
+        "n_events": 5,
+        "n_rfid": 4,
+        "mean_difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      }
+    },
+    "tier01": {
+      "G-vs-B0-top1": {
+        "n_events": 3,
+        "n_rfid": 2,
+        "mean_difference": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "G-vs-B0-top4": {
+        "n_events": 3,
+        "n_rfid": 2,
+        "mean_difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "G-vs-S-top1": {
+        "n_events": 3,
+        "n_rfid": 2,
+        "mean_difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "G-vs-S-top4": {
+        "n_events": 3,
+        "n_rfid": 2,
+        "mean_difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "S-vs-B0-top1": {
+        "n_events": 3,
+        "n_rfid": 2,
+        "mean_difference": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      },
+      "S-vs-B0-top4": {
+        "n_events": 3,
+        "n_rfid": 2,
+        "mean_difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_repetitions": 4000,
+        "seed": 20261105
+      }
+    }
+  },
+  "rule_diagnostics": {
+    "candidate_counts": {
+      "s0": 20,
+      "s1": 16,
+      "s2": 16,
+      "s3": 16,
+      "s4": 10
+    }
+  }
+}

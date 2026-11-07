@@ -1,0 +1,17 @@
+{
+  "files": {
+    "position_ledger.parquet": {
+      "bytes": 5527080,
+      "sha256": "c3943c953143a4f71335bfa8cceadac6c96b30287f40a935e41b375a429b63b8"
+    },
+    "per_vessel.csv": {
+      "bytes": 3157,
+      "sha256": "82f7e07bb43aa04fc662912e3ee7662d0d08d39be16a3e96e311306f9d75685c"
+    },
+    "summary.json": {
+      "bytes": 617,
+      "sha256": "15e9862f04ab335514f7bad79a1aa47eb59c1e419362beee5b198077eab082b6"
+    }
+  },
+  "note": "EXECUTION.json and OUTPUT_HASHES.json are excluded from this file's own file list"
+}

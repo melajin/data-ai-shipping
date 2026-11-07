@@ -1,0 +1,22 @@
+test_dev_reader_does_not_access_validation_timestamp (test_evaluate_round021.EvaluationTests.test_dev_reader_does_not_access_validation_timestamp) ... ok
+test_event_gap_intersection_and_minimum_timing_errors (test_evaluate_round021.EvaluationTests.test_event_gap_intersection_and_minimum_timing_errors) ... ok
+test_exclusive_failure_taxonomy_order_and_own_union_windows (test_evaluate_round021.EvaluationTests.test_exclusive_failure_taxonomy_order_and_own_union_windows) ... ok
+test_fleet_gate_counts_keep_unknowns_and_conditional_joint_distinct (test_evaluate_round021.EvaluationTests.test_fleet_gate_counts_keep_unknowns_and_conditional_joint_distinct) ... ok
+test_joint_scenario_uses_actual_H_instead_of_fixed_h (test_evaluate_round021.EvaluationTests.test_joint_scenario_uses_actual_H_instead_of_fixed_h) ... ok
+test_manifest_hash_tampering_rejected (test_evaluate_round021.EvaluationTests.test_manifest_hash_tampering_rejected) ... ok
+test_nearest_event_tie_uses_acc_id_not_timestamp (test_evaluate_round021.EvaluationTests.test_nearest_event_tie_uses_acc_id_not_timestamp) ... ok
+test_one_prediction_matches_at_most_one_event (test_evaluate_round021.EvaluationTests.test_one_prediction_matches_at_most_one_event) ... ok
+test_policy_max_hits_precedes_change_count_then_T_precedes_G (test_evaluate_round021.EvaluationTests.test_policy_max_hits_precedes_change_count_then_T_precedes_G) ... ok
+test_policy_requires_strict_development_gain (test_evaluate_round021.EvaluationTests.test_policy_requires_strict_development_gain) ... ok
+test_policy_tiebreak_uses_changes_in_all_dev_including_unlinked (test_evaluate_round021.EvaluationTests.test_policy_tiebreak_uses_changes_in_all_dev_including_unlinked) ... ok
+test_sealed_pipeline_never_evaluates_unselected_validation_alternative (test_evaluate_round021.EvaluationTests.test_sealed_pipeline_never_evaluates_unselected_validation_alternative) ... ok
+test_selector_rejects_validation_outcome (test_evaluate_round021.EvaluationTests.test_selector_rejects_validation_outcome) ... ok
+test_split_disjoint_balanced_and_input_order_independent (test_evaluate_round021.EvaluationTests.test_split_disjoint_balanced_and_input_order_independent) ... ok
+test_stream_retains_linked_only_and_exact_maxima_with_duplicate_hours (test_evaluate_round021.EvaluationTests.test_stream_retains_linked_only_and_exact_maxima_with_duplicate_hours) ... ok
+test_tolerance_is_inclusive_and_missing_is_miss (test_evaluate_round021.EvaluationTests.test_tolerance_is_inclusive_and_missing_is_miss) ... ok
+test_wilson_and_paired_wins_losses_nominal_only (test_evaluate_round021.EvaluationTests.test_wilson_and_paired_wins_losses_nominal_only) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 1.187s
+
+OK

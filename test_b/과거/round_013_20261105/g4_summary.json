@@ -1,0 +1,46 @@
+{
+  "timestamp_kst": "2026-11-05T19:46:33.339552+09:00",
+  "elapsed_seconds": 6.239,
+  "audit": {
+    "n_raw_rows": 145427,
+    "n_dup_rows": 91500,
+    "n_dropped_duplicates": 45750,
+    "n_dedup_rows": 99677,
+    "ts_is_strictly_int": true,
+    "neg_bbox_count": 0,
+    "neg_len_count": 0,
+    "nan_counts": {
+      "rfid_id": 0,
+      "ts": 0,
+      "len_m": 0,
+      "bbox_m": 0,
+      "cen_lon": 0,
+      "cen_lat": 0,
+      "state": 0
+    }
+  },
+  "n_vessels": 82,
+  "n_voyages_total": 3615,
+  "n_accident_related_voyages": 97,
+  "n_control_voyages": 3518,
+  "w7_valid_voyages": 2386,
+  "w7_invalid_voyages": 1229,
+  "w3_valid_voyages": 3138,
+  "w3_invalid_voyages": 477,
+  "ram_before": {
+    "timestamp_kst": "2026-11-05T19:46:27.102608+09:00",
+    "available_mib": 4789.82,
+    "total_mib": 14140.86,
+    "process_rss_mib": 80.86,
+    "threshold_mib": 768.0,
+    "is_sufficient": true
+  },
+  "ram_after": {
+    "timestamp_kst": "2026-11-05T19:46:33.339552+09:00",
+    "available_mib": 4718.35,
+    "total_mib": 14140.86,
+    "process_rss_mib": 193.5,
+    "threshold_mib": 768.0,
+    "is_sufficient": true
+  }
+}

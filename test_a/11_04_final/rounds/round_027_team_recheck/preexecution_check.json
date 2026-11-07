@@ -1,0 +1,11 @@
+{
+  "time": "2026-11-05T16:06:20.113161+09:00",
+  "available_gib": 1.4259452819824219,
+  "expected_peak_gib": 0.35,
+  "tasks_completed_since_prior_check": [
+    "independent verifier implementation",
+    "Korean report generator implementation",
+    "all scripts AST parsing"
+  ],
+  "entry_minimum_gib": 1.5
+}

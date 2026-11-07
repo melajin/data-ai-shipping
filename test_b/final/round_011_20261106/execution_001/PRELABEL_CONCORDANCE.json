@@ -1,0 +1,11 @@
+{
+  "all_82_counts_match": true,
+  "scalar_cdf_queries_match": 12,
+  "counts": {
+    "observed_n": 99677,
+    "raw_distance_available_n": 96976,
+    "self_distribution_eligible_n": 94290,
+    "peer_distribution_eligible_n": 91307
+  },
+  "verified_before_event_parse": true
+}

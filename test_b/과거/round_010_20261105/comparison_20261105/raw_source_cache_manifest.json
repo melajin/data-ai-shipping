@@ -1,0 +1,9 @@
+{
+  "fingerprint": {
+    "size_bytes": 51584418,
+    "mtime_ns": 1793844786954949300,
+    "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_008_linkage_audit_20261105\\dev_hourly_scores.parquet"
+  },
+  "reader": "independent PyArrow scan; no producer features imported",
+  "n_rows": 99677
+}

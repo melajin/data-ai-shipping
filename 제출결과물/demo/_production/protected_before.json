@@ -1,0 +1,23 @@
+{
+  "inputs/observations.parquet": "5e8efbabfa3ca2e47e53c35977bb96c4a64a74b2e0ec1f774db6c630d86ec0e2",
+  "inputs/roster.csv": "250237d223f0b1739c67859c410e22f1dfbcfcbea4208960358ae7949e2eafd2",
+  "inputs/stored_candidates.csv": "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9",
+  "inputs/stored_expected.parquet": "7d60b531da008482e5be9c98a52ef730ed382c5b8b00e688a230b3d0e2fc3578",
+  "references/density.json": "c122b827fb0b9fe480434f821162035702e34b0fc465762bdbeca0aeeadb1328",
+  "references/gap_reference.npy": "08145272419ec53837074f5602e34a9be36e5b1311952e4b0c637e64716daa9f",
+  "references/harbors.json": "3c1888f9714f675110be5181dc053398f955a23c7f68989c9c223bb77ab09309",
+  "references/jump_reference.npy": "a9d303efa85c06d6d3a75e622f0b76af2c64ca585228a177c4e95d8f21d87b0c",
+  "references/provenance.json": "052f39d4dc69c9a622a654885248f2509c385c2760c578f73cc98a3633e38986",
+  "results/reproduction_001/candidates.csv": "9aff8191df3abb889110aa8a825ee2a1e634f56cc0756fdd84dd64e75f10e43b",
+  "results/reproduction_001/execution_config.json": "fe7331b64b78ef8843ab45ffcfc949820e9baac7cded1ec562e3e06d574d4d83",
+  "results/reproduction_001/execution_provenance.json": "178cb60e7d87b0bb51314d318adca166fec215d8205601eef03934d0e21508b1",
+  "results/reproduction_001/scored_rows.parquet": "4e2059febfc3e8e031ba0f11848fa82ce7ca8318cbd50e3fbc85a9ab5b636b65",
+  "results/reproduction_001/summary.json": "493772c96cd1ca10cd405ff9261d727ec8f73c149fbf11d07888ff3a15885f53",
+  "reports/build_report.py": "718a6cf8517069579076b57bae3e95e4f89dbc8c886d20b617059f1c98fd4d6e",
+  "reports/report_build.json": "0fd277e78573cfbe8897e64aa641f30312586e7e56fc9977b92ac381f6318b2e",
+  "reports/requirements.txt": "5fd074bf14c543683755a77229fffd7708978fde83a80526f9d448531fb1e073",
+  "reports/TestB_\uc885\ud569\uac80\ud1a0\ubcf4\uace0\uc11c_20261106.md": "4413d10a2fdd512aeca97072ff98b617271f40649005b885a49fc6bdd86a14f0",
+  "reports/verification.json": "6f0e319b6bfe3d146390961c40c1e9ce5c1dffbf32a2594ee2e699988370b15e",
+  "reports/\uc5b4\uc120_\uc774\uc0c1\ud56d\uc801_\uc2dc\uc2a4\ud15c_\uacb0\uacfc\ubcf4\uace0\uc11c.md": "34a2febb70c3c4d981b868e7ea7377067fdbd1823bcf88308b7c310a9cd04b87",
+  "reports/\uc5b4\uc120_\uc774\uc0c1\ud56d\uc801_\uc2dc\uc2a4\ud15c_\uacb0\uacfc\ubcf4\uace0\uc11c.pdf": "093b71d80f549cca31c8b3b98dab1828f6c4d498ea3ef7490e7de086a135fd06"
+}

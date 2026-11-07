@@ -1,0 +1,8 @@
+﻿{
+    "stage":  "before supervised Task02 g6 calculation",
+    "checked_at":  "2026-11-05T20:10:24.5185647+09:00",
+    "available_ram_mib":  3521.2,
+    "total_ram_mib":  14140.9,
+    "estimated_additional_peak_mib":  250,
+    "estimate_basis":  "65,536-row batches; only rfid_id_int and ts; \u003c=145,427 target pairs, Python tuple/index/sort \u003c=60 MiB and imports/buffers \u003c=150 MiB, conservatively 250 MiB; one process"
+}

@@ -1,0 +1,30 @@
+{
+  "round": "Round021",
+  "purpose": "Fixed whole-fleet internal F1 accounting and evidence-based judgement report",
+  "new_training": false,
+  "new_threshold_search": false,
+  "commands": [
+    "python -B compute.py selftest",
+    "python -B compute.py freeze",
+    "python -B compute.py run"
+  ],
+  "agents": [
+    {
+      "task": "/root/round021_design",
+      "role": "astra_decision",
+      "requested_model": "gpt-6-astra",
+      "requested_effort": "high",
+      "evidence": "spawn_agent returned task_name; design response accepted event-denominator100 primary F1"
+    },
+    {
+      "task": "/root/round021_review",
+      "role": "sol_review",
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "high",
+      "evidence": "spawn_agent returned task_name; pre-run and stored-output reviews saved"
+    }
+  ],
+  "parent_responsibility": "Protocol, counting integration, execution, judgement report and project plan",
+  "provider_internal_model_independently_attested": false,
+  "parent_model_changed_by_configuration": false
+}

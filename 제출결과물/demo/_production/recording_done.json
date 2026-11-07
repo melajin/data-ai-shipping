@@ -1,0 +1,54 @@
+{
+  "video": "TestB_demo_20261106.mp4",
+  "timeline": [
+    {
+      "stage": "1 / 6  환경 확인  ·  requirements.txt와 설치 버전 대조",
+      "command": "python results/demo_tools/inspect_result.py environment",
+      "start_seconds": 1.0003914999997505,
+      "exit_code": 0,
+      "output": "Python 3.13.3\nCompute: CPU (numpy / pandas / scipy); no GPU runtime\n\nrequirements.txt / installed version\n  numpy      required=2.2.5    installed=2.2.5    match=True\n  pandas     required=2.2.3    installed=2.2.3    match=True\n  pyarrow    required=24.0.0   installed=24.0.0   match=True\n  scipy      required=1.15.3   installed=1.15.3   match=True\n\nFrozen baseline reproduction / no training\n",
+      "completed_seconds": 2.273997899999813
+    },
+    {
+      "stage": "2 / 6  본 실행  ·  재계산과 저장 기준 결과 전수 대조",
+      "command": "python src/run_analysis.py --output results/demo_run",
+      "start_seconds": 12.274827600000208,
+      "exit_code": 0,
+      "output": "Rescored 10/100 vessels\nRescored 20/100 vessels\nRescored 30/100 vessels\nRescored 40/100 vessels\nRescored 50/100 vessels\nRescored 60/100 vessels\nRescored 70/100 vessels\nRescored 80/100 vessels\nRescored 90/100 vessels\nRescored 100/100 vessels\n{\"status\": \"complete\", \"counts\": {\"observations\": 46705, \"vessels\": 100, \"candidates\": 100}, \"parity\": {\"rows_compared\": 46705, \"numeric_max_abs_diff\": {\"s_zone\": 0.0, \"s_change\": 0.0, \"s_gap\": 0.0, \"score\": 0.0}, \"nan_mask_mismatches\": {\"s_zone\": 0, \"s_change\": 0, \"s_gap\": 0, \"score\": 0}, \"numeric_exact\": {\"s_zone\": true, \"s_change\": true, \"s_gap\": true, \"score\": true}, \"state_mismatches\": 0, \"all_row_checks_passed\": true, \"candidate_time_mismatches\": 0, \"candidate_source_ordinal_mismatches\": 0, \"candidate_score_max_abs_diff\": 0.0, \"all_checks_passed\": true}, \"elapsed_seconds\": 39.96530410000014, \"process_peak_mib\": 298.1484375}\n",
+      "completed_seconds": 53.723128599998745
+    },
+    {
+      "stage": "3 / 6  생성 파일 확인  ·  이번 실행의 summary.json",
+      "command": "python results/demo_tools/inspect_result.py outputs",
+      "start_seconds": 59.72415069999988,
+      "exit_code": 0,
+      "output": "New output directory: results/demo_run\n  scored_rows.parquet       3,428,632 bytes\n  candidates.csv               56,863 bytes\n  summary.json                 10,153 bytes\n\nsummary.json\n  status: complete\n  counts: {\"observations\": 46705, \"vessels\": 100, \"candidates\": 100}\n\ntelemetry (this run, from summary.json)\n  elapsed_seconds: 39.96530410000014\n  process_peak_mib: 298.1484375\n",
+      "completed_seconds": 60.999633299999914
+    },
+    {
+      "stage": "4 / 6  재현 검증  ·  parity 블록 전체 확인",
+      "command": "python results/demo_tools/inspect_result.py parity",
+      "start_seconds": 72.00017429999934,
+      "exit_code": 0,
+      "output": "summary.json -> parity (complete block; compact nested objects)\n\n{\n  \"rows_compared\": 46705,\n  \"numeric_max_abs_diff\":\n    {\"s_zone\": 0.0, \"s_change\": 0.0, \"s_gap\": 0.0, \"score\": 0.0},\n  \"nan_mask_mismatches\":\n    {\"s_zone\": 0, \"s_change\": 0, \"s_gap\": 0, \"score\": 0},\n  \"numeric_exact\":\n    {\"s_zone\": true, \"s_change\": true, \"s_gap\": true, \"score\": true},\n  \"state_mismatches\": 0,\n  \"all_row_checks_passed\": true,\n  \"candidate_time_mismatches\": 0,\n  \"candidate_source_ordinal_mismatches\": 0,\n  \"candidate_score_max_abs_diff\": 0.0,\n  \"all_checks_passed\": true\n}\n",
+      "completed_seconds": 73.24294439999903
+    },
+    {
+      "stage": "5 / 6  후보 1척 확인  ·  종합점수 / 세 구성점수 / 과거 관측 수",
+      "command": "python results/demo_tools/inspect_result.py candidate",
+      "start_seconds": 91.2434959000002,
+      "exit_code": 0,
+      "output": "candidates.csv -> median_peak_rank sample\nVessel identifier omitted from display (privacy).\n\n  rank_by_peak              50\n  lead_label                20250201 6\n  score                     0.5542566126917833\n  s_zone                    0.0\n  s_change                  0.8256686808446103\n  s_gap                     0.8371011572307396\n  component_count           3\n  prior_observation_count   85\n  n_observations            121\n\nSelection: full-period maximum for this vessel (retrospective).\nScore = mean of finite components; not an accident probability.\nCandidate time is not confirmed accident time; timezone unconfirmed.\n",
+      "completed_seconds": 92.46846519999963
+    },
+    {
+      "stage": "6 / 6  단위 테스트  ·  python unittest 실제 실행",
+      "command": "python -m unittest discover -s tests -v",
+      "start_seconds": 112.15973069999927,
+      "exit_code": 0,
+      "output": "test_existing_output_refused_before_loading_or_memory_work (test_frozen_baseline.FrozenBaselineTests.test_existing_output_refused_before_loading_or_memory_work) ... ok\ntest_nan_mask_differences_are_detected_even_if_finite_scores_match (test_frozen_baseline.FrozenBaselineTests.test_nan_mask_differences_are_detected_even_if_finite_scores_match) ... ok\ntest_peak_tie_uses_source_ordinal_instead_of_earliest_time (test_frozen_baseline.FrozenBaselineTests.test_peak_tie_uses_source_ordinal_instead_of_earliest_time) ... ok\ntest_prefix_scores_and_history_threshold_preserve_causality (test_frozen_baseline.FrozenBaselineTests.test_prefix_scores_and_history_threshold_preserve_causality) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.029s\n\nOK\n",
+      "completed_seconds": 115.03842319999967
+    }
+  ],
+  "capture_exit_code": 0
+}

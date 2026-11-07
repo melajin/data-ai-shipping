@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-11-06T14:49:47.757737+09:00",
+  "available_mib": 3771.59375,
+  "expected_peak_mib": 512,
+  "reserve_mib": 640,
+  "estimate_basis": "7372-row CSV, small summary, three static matplotlib panels; no hourly loading",
+  "other_processes": [
+    {
+      "pid": 9940,
+      "name": "explorer.exe",
+      "rss_mib": 656.07421875
+    },
+    {
+      "pid": 23364,
+      "name": "Obsidian.exe",
+      "rss_mib": 560.0078125
+    },
+    {
+      "pid": 27636,
+      "name": "Orca.exe",
+      "rss_mib": 336.0234375
+    },
+    {
+      "pid": 28540,
+      "name": "Orca.exe",
+      "rss_mib": 301.625
+    },
+    {
+      "pid": 3352,
+      "name": "explorer.exe",
+      "rss_mib": 294.8828125
+    },
+    {
+      "pid": 5260,
+      "name": "codex.exe",
+      "rss_mib": 252.1796875
+    },
+    {
+      "pid": 27692,
+      "name": "chrome.exe",
+      "rss_mib": 239.203125
+    },
+    {
+      "pid": 26540,
+      "name": "Orca.exe",
+      "rss_mib": 236.53515625
+    }
+  ],
+  "passed": true
+}

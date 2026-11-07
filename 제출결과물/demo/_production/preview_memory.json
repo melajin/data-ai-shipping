@@ -1,0 +1,70 @@
+[
+  {
+    "stage": "before recorder setup",
+    "checked_at": "2026-11-06T11:44:05.736135+09:00",
+    "available_mib": 4129.44921875,
+    "expected_combined_peak_mib": 1024,
+    "reserve_mib": 640,
+    "estimate_basis": "Analysis prior measured 299 MiB, budget 512; FFmpeg 2 threads + Tk budget 512; 10 fps streaming, no frame accumulation",
+    "other_processes": [
+      {
+        "ProcessName": "explorer",
+        "WorkingSet64": 671756288
+      },
+      {
+        "ProcessName": "Obsidian",
+        "WorkingSet64": 628105216
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 386457600
+      },
+      {
+        "ProcessName": "claude",
+        "WorkingSet64": 353136640
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 345001984
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 327962624
+      }
+    ]
+  },
+  {
+    "stage": "immediately before capture and analysis",
+    "checked_at": "2026-11-06T11:44:07.767771+09:00",
+    "available_mib": 4110.1953125,
+    "expected_combined_peak_mib": 1024,
+    "reserve_mib": 640,
+    "estimate_basis": "Analysis prior measured 299 MiB, budget 512; FFmpeg 2 threads + Tk budget 512; 10 fps streaming, no frame accumulation",
+    "other_processes": [
+      {
+        "ProcessName": "explorer",
+        "WorkingSet64": 671768576
+      },
+      {
+        "ProcessName": "Obsidian",
+        "WorkingSet64": 628637696
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 387264512
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 354349056
+      },
+      {
+        "ProcessName": "claude",
+        "WorkingSet64": 353083392
+      },
+      {
+        "ProcessName": "Orca",
+        "WorkingSet64": 327999488
+      }
+    ]
+  }
+]

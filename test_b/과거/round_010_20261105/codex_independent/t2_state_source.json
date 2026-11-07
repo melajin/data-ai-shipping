@@ -1,0 +1,31 @@
+{
+  "status": "원천 코드 확인; 캐시 생성 당시 코드 버전 동일성은 미확인",
+  "chain": [
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_008_linkage_audit_20261105\\rescore_evaluate.py",
+      "sha256": "2444c6fa38196a8c86e955838b168ecad04b81fe24493d36bf3e4ed49a3f84ac"
+    },
+    {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_007_20261105\\s4_score_dev.py",
+      "sha256": "4c80731fa2b3b7883b622d71816b2c69240c9298c412bae1f0d1f8ac9f1d4a08"
+    },
+    {
+      "path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+      "sha256": "cca724154a4a479e445bbb3cfead6cb13b92849f364182d70abef91822f78fc8"
+    }
+  ],
+  "source_lines": {
+    "constants": "178-186",
+    "score_vessel": "436-474",
+    "own_mooring_update": "507-510"
+  },
+  "rules": {
+    "stop": "len_m<=50 AND bbox_m<=100",
+    "anchored": "stop AND (harbor_dist<=1000m OR own_mooring_dist<=1000m)",
+    "sea_stop": "stop AND harbor_dist>=2000m AND own_mooring_dist>=2000m",
+    "coast_stop": "remaining stop",
+    "moving": "not stop AND len_m>3000 AND bbox_m/len_m>=0.6",
+    "slow_turn": "remaining not-stop",
+    "own_mooring": "past night stop occupancy top3 0.005-degree cells; night=20..23,0..3; update after classifying current row"
+  }
+}

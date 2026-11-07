@@ -1,0 +1,100 @@
+{
+  "code": {
+    "extract_geometry.py": "a7a6ffed1319b8c75155df2935e11e3ab1c9f1de73f384563d5c6e99f1d1ffdb"
+  },
+  "references": {
+    "testB/final/round_007_20261106/run_round7.py": "19ad0ff9d630bccdf3195971a4919817284da331e24ad41c67c485613a2f6282",
+    "upstream_run_remeasure_20261031.py": "5579c35ba5ca204ff54281515e0907db57edb31eeaa5b45aafacec0fc75b0d0c"
+  },
+  "inputs": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001\\candidate_ledger.parquet": {
+      "sha256": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+      "bytes": 6433671
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_003_20261105\\gear_registry.csv": {
+      "sha256": "0a94249ad364500132d70521134fc493e836ec63d7d8734cc412e33c3adb73dd",
+      "bytes": 4474
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_1월 데이터.csv": {
+      "sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "bytes": 669416109
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_2월 데이터.csv": {
+      "sha256": "8eb284e7b9c374c2b679376652535eecf898e9241a668cae1d61c63a2b41b422",
+      "bytes": 635512252
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_3월 데이터.csv": {
+      "sha256": "2765008e34544590c4692c125f92ba611c548a55f7816a866fb8df1f658550c0",
+      "bytes": 987693693
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_4월 데이터.csv": {
+      "sha256": "013964713caf1cb9db2765e27f3205746748264236047f5a8cb14fc38fc9f3f1",
+      "bytes": 1113299125
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_5월 데이터.csv": {
+      "sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "bytes": 1201889964
+    },
+    "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터\\vpass_6월 데이터.csv": {
+      "sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "bytes": 1255966524
+    }
+  },
+  "outputs": {
+    "gear_distributions.json": {
+      "sha256": "5e29904f3b4e41a2ef597299858cb653808a97ee5bd4e483382ba70db0ce6d9b",
+      "bytes": 1885
+    },
+    "geometry_ledger.parquet": {
+      "sha256": "2af19410a858dbc36f7b816c00b93adc19b8b33d5042cfa5a7c81fc82f756c9f",
+      "bytes": 14508346
+    },
+    "mismatch_registry.jsonl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "runtime_receipt.json": {
+      "sha256": "1371d1894001ca4c247f6d9b1ca9cdc88940addc562d18291b84818f7e17b97b",
+      "bytes": 3740
+    }
+  },
+  "raw_hash_check_scope": "full bounded-byte SHA-256; months 1/5/6 compared to R7 expected values; months 2/3/4 are newly observed",
+  "raw_files": {
+    "1": {
+      "sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "bytes": 669416109,
+      "expected_r7_sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "observed": true
+    },
+    "2": {
+      "sha256": "8eb284e7b9c374c2b679376652535eecf898e9241a668cae1d61c63a2b41b422",
+      "bytes": 635512252,
+      "expected_r7_sha256": null,
+      "observed": true
+    },
+    "3": {
+      "sha256": "2765008e34544590c4692c125f92ba611c548a55f7816a866fb8df1f658550c0",
+      "bytes": 987693693,
+      "expected_r7_sha256": null,
+      "observed": true
+    },
+    "4": {
+      "sha256": "013964713caf1cb9db2765e27f3205746748264236047f5a8cb14fc38fc9f3f1",
+      "bytes": 1113299125,
+      "expected_r7_sha256": null,
+      "observed": true
+    },
+    "5": {
+      "sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "bytes": 1201889964,
+      "expected_r7_sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "observed": true
+    },
+    "6": {
+      "sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "bytes": 1255966524,
+      "expected_r7_sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "observed": true
+    }
+  }
+}

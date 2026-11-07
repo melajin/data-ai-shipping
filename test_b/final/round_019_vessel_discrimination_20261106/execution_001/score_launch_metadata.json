@@ -1,0 +1,59 @@
+﻿{
+    "started_at":  "2026-11-06T14:26:05.3863680+09:00",
+    "pid":  1708,
+    "available_mib":  4050.7,
+    "expected_peak_process_mib":  1024,
+    "reserve_mib":  640,
+    "process_count":  1,
+    "python":  "C:\\Users\\dlehs\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "arguments":  [
+                      "-B",
+                      "-u",
+                      "score_fleet.py"
+                  ],
+    "working_directory":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106",
+    "other_processes":  [
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  9940,
+                                "rss_mib":  654.64
+                            },
+                            {
+                                "ProcessName":  "Obsidian",
+                                "Id":  23364,
+                                "rss_mib":  548.32
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  27636,
+                                "rss_mib":  351.21
+                            },
+                            {
+                                "ProcessName":  "claude",
+                                "Id":  22884,
+                                "rss_mib":  304.65
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  28540,
+                                "rss_mib":  299.78
+                            },
+                            {
+                                "ProcessName":  "explorer",
+                                "Id":  3352,
+                                "rss_mib":  294.77
+                            },
+                            {
+                                "ProcessName":  "Orca",
+                                "Id":  26540,
+                                "rss_mib":  235.51
+                            },
+                            {
+                                "ProcessName":  "codex",
+                                "Id":  5260,
+                                "rss_mib":  234.85
+                            }
+                        ],
+    "tests":  "5 synthetic tests passed; exit code0",
+    "protocol_sha256":  "10FE34978E36774F7A63ED12C889871A2B2A0EDEEC77E9380D7F50B016645F0A"
+}

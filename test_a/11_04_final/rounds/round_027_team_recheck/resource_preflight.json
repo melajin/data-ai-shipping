@@ -1,0 +1,11 @@
+{
+  "time": "2026-11-05T16:04:25.229073+09:00",
+  "available_gib": 0.8749885559082031,
+  "expected_peak_gib": 0.35,
+  "alternative_work_completed": [
+    "source training-mask review",
+    "roster uniqueness/disjointness CSV audit",
+    "code and plan corrections"
+  ],
+  "decision": "run only if available>=1.5GiB; otherwise continue static review"
+}

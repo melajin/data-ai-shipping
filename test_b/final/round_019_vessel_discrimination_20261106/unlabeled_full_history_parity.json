@@ -1,0 +1,80 @@
+{
+  "started_at": "2026-11-06T14:28:36.475422+09:00",
+  "available_mib": 3889.13,
+  "expected_peak_process_mib": 512,
+  "reserve_mib": 640,
+  "memory_estimate_basis": "one 64K Arrow batch, one bounded partition, one full-history vessel; unchanged reference arrays loaded once",
+  "other_processes": [
+    {
+      "pid": 9940,
+      "name": "explorer.exe",
+      "rss_mib": 654.66
+    },
+    {
+      "pid": 23364,
+      "name": "Obsidian.exe",
+      "rss_mib": 564.05
+    },
+    {
+      "pid": 27636,
+      "name": "Orca.exe",
+      "rss_mib": 326.87
+    },
+    {
+      "pid": 1708,
+      "name": "python.exe",
+      "rss_mib": 309.1
+    },
+    {
+      "pid": 22884,
+      "name": "claude.exe",
+      "rss_mib": 304.37
+    },
+    {
+      "pid": 28540,
+      "name": "Orca.exe",
+      "rss_mib": 297.65
+    },
+    {
+      "pid": 3352,
+      "name": "explorer.exe",
+      "rss_mib": 294.77
+    },
+    {
+      "pid": 5260,
+      "name": "codex.exe",
+      "rss_mib": 236.38
+    },
+    {
+      "pid": 26540,
+      "name": "Orca.exe",
+      "rss_mib": 235.35
+    },
+    {
+      "pid": 3096,
+      "name": "codex.exe",
+      "rss_mib": 223.28
+    }
+  ],
+  "labels_read": false,
+  "selection_rule": "lexicographically first RFID in first deterministic hash partition",
+  "status": "passed",
+  "completed_at": "2026-11-06T14:28:44.332752+09:00",
+  "elapsed_seconds": 8.905,
+  "rfid_id": "31000657",
+  "n_rows": 2432,
+  "input_rows_scanned": 3887065,
+  "full_input_frame_exact": true,
+  "full_scored_frame_exact": true,
+  "summary_exact": true,
+  "max_absolute_score_difference": 0.0,
+  "compared_score_columns": [
+    "state",
+    "s_zone",
+    "s_change",
+    "s_gap",
+    "score"
+  ],
+  "sources_still_match_pre_run_checksums": true,
+  "observed_peak_process_mib": 355.12
+}

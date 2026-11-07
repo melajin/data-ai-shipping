@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-06T15:31:18.543018+09:00",
+  "stage": "engine_synthetic_tests_attempt02",
+  "available_mib": 4313.94921875,
+  "expected_child_peak_mib": 512,
+  "reserve_mib": 640,
+  "basis": "Repeat after Windows read-only fsync failure fixed to rb+; no child remains; same small synthetic arrays",
+  "passed": true
+}

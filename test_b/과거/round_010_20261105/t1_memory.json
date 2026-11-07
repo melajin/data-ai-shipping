@@ -1,0 +1,2671 @@
+[
+  {
+    "timestamp": "2026-11-05T14:16:12.430564",
+    "step": "T1_start_before_load",
+    "total_ram_gb": 13.809,
+    "available_ram_gb": 1.836,
+    "ram_percent": 86.7,
+    "expected_max_mb": 512,
+    "concurrent_jobs": 1,
+    "status": "PASS"
+  },
+  {
+    "timestamp": "2026-11-05T14:16:12.625660",
+    "step": "T1_after_load_before_window_calc",
+    "total_ram_gb": 13.809,
+    "available_ram_gb": 1.671,
+    "ram_percent": 87.9,
+    "expected_max_mb": 512,
+    "concurrent_jobs": 1,
+    "status": "PASS"
+  },
+  {
+    "timestamp": "2026-11-05T14:16:45.220858",
+    "step": "T1_windows_computed_before_grid_eval",
+    "total_ram_gb": 13.809,
+    "available_ram_gb": 1.686,
+    "ram_percent": 87.8,
+    "expected_max_mb": 512,
+    "concurrent_jobs": 1,
+    "status": "PASS"
+  },
+  {
+    "timestamp": "2026-11-05T14:16:48.500011",
+    "step": "T1_complete",
+    "total_ram_gb": 13.809,
+    "available_ram_gb": 1.74,
+    "ram_percent": 87.4,
+    "expected_max_mb": 512,
+    "concurrent_jobs": 1,
+    "status": "PASS"
+  },
+  {
+    "stage": "before_metadata_loading",
+    "checked_at": "2026-11-05T14:20:07.800848+09:00",
+    "available_mib": 2282.40625,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.67
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 137.99
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 408.28
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 263.55
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 481.78
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 96.84
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 138.41015625
+  },
+  {
+    "stage": "before_batch_0_conversion",
+    "checked_at": "2026-11-05T14:20:09.312227+09:00",
+    "available_mib": 2232.78125,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.67
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 192.89
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 410.09
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 251.55
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 481.79
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 98.62
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 192.88671875
+  },
+  {
+    "stage": "before_batch_1_conversion",
+    "checked_at": "2026-11-05T14:20:10.836012+09:00",
+    "available_mib": 2227.97265625,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 70.3
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 199.7
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 410.21
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 251.47
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 481.83
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 97.7
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 199.69921875
+  },
+  {
+    "stage": "before_batch_2_conversion",
+    "checked_at": "2026-11-05T14:20:12.380316+09:00",
+    "available_mib": 2236.1484375,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 70.3
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 204.33
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 410.31
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 243.56
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 481.83
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 97.74
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 204.3359375
+  },
+  {
+    "stage": "before_batch_3_conversion",
+    "checked_at": "2026-11-05T14:20:14.104776+09:00",
+    "available_mib": 2173.875,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 70.3
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 207.1
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 413.09
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 243.57
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 482.45
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 98.95
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 207.1015625
+  },
+  {
+    "stage": "before_batch_4_conversion",
+    "checked_at": "2026-11-05T14:20:15.709323+09:00",
+    "available_mib": 1979.32421875,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 70.3
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 207.62
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 410.82
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 243.57
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 482.0
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 98.98
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35048,
+        "name": "python.exe",
+        "rss_mib": 275.5
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 207.6171875
+  },
+  {
+    "stage": "before_batch_5_conversion",
+    "checked_at": "2026-11-05T14:20:17.507172+09:00",
+    "available_mib": 2218.68359375,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 70.3
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 207.03
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 413.86
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 255.59
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 482.47
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 98.98
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 207.03515625
+  },
+  {
+    "stage": "before_batch_6_conversion",
+    "checked_at": "2026-11-05T14:20:19.405030+09:00",
+    "available_mib": 2168.82421875,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.09
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 208.21
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 416.11
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 255.87
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 483.28
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 100.61
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 208.2109375
+  },
+  {
+    "stage": "before_batch_7_conversion",
+    "checked_at": "2026-11-05T14:20:21.382244+09:00",
+    "available_mib": 2179.8671875,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.09
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 207.2
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 413.51
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 254.61
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 483.86
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 99.15
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 207.2109375
+  },
+  {
+    "stage": "before_batch_8_conversion",
+    "checked_at": "2026-11-05T14:20:23.126441+09:00",
+    "available_mib": 2179.67578125,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.09
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 206.57
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 413.66
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 278.4
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 483.39
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 99.17
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 206.578125
+  },
+  {
+    "stage": "before_batch_9_conversion",
+    "checked_at": "2026-11-05T14:20:25.023877+09:00",
+    "available_mib": 2165.35546875,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.09
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 207.73
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 412.18
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 272.38
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.09
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 485.95
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 99.91
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 207.7265625
+  },
+  {
+    "stage": "before_batch_10_conversion",
+    "checked_at": "2026-11-05T14:20:26.803382+09:00",
+    "available_mib": 2166.25,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.09
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 209.88
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 412.32
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 272.04
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.11
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 482.84
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 99.83
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 209.88671875
+  },
+  {
+    "stage": "before_batch_11_conversion",
+    "checked_at": "2026-11-05T14:20:28.413517+09:00",
+    "available_mib": 2180.05078125,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.09
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 210.17
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 410.54
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 256.12
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.11
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 486.87
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 100.23
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.67
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 210.17578125
+  },
+  {
+    "stage": "before_batch_12_conversion",
+    "checked_at": "2026-11-05T14:20:30.139753+09:00",
+    "available_mib": 2143.87109375,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.09
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 206.61
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.57
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 411.35
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 262.15
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.57
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 490.44
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 100.3
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.86
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 206.6171875
+  },
+  {
+    "stage": "before_filtered_concat_sort",
+    "checked_at": "2026-11-05T14:20:31.827051+09:00",
+    "available_mib": 2155.0703125,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.05
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 205.6
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 411.32
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 262.14
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 491.82
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 101.2
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 205.6015625
+  },
+  {
+    "stage": "before_vessel_31001758_window_transform",
+    "checked_at": "2026-11-05T14:20:33.732773+09:00",
+    "available_mib": 2153.2890625,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.05
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 216.52
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 415.41
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 262.18
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 492.31
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 100.77
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 216.5234375
+  },
+  {
+    "stage": "before_vessel_31005917_window_transform",
+    "checked_at": "2026-11-05T14:20:36.092880+09:00",
+    "available_mib": 2159.67578125,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.05
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 216.94
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 414.93
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 262.17
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 489.79
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 99.39
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 216.9453125
+  },
+  {
+    "stage": "before_vessel_31005928_window_transform",
+    "checked_at": "2026-11-05T14:20:37.801340+09:00",
+    "available_mib": 2185.71875,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.05
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 217.1
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 412.38
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 248.22
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 490.37
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 99.98
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 217.10546875
+  },
+  {
+    "stage": "before_vessel_31007124_window_transform",
+    "checked_at": "2026-11-05T14:20:40.123784+09:00",
+    "available_mib": 2167.89453125,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.05
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 216.2
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 412.85
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 254.19
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 489.4
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 101.85
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 216.203125
+  },
+  {
+    "stage": "before_vessel_31007500_window_transform",
+    "checked_at": "2026-11-05T14:20:42.305271+09:00",
+    "available_mib": 2158.1015625,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.05
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 216.35
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 413.09
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 254.2
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 489.43
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 101.86
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 216.35546875
+  },
+  {
+    "stage": "before_vessel_31008085_window_transform",
+    "checked_at": "2026-11-05T14:20:44.868631+09:00",
+    "available_mib": 2154.1015625,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.05
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 216.54
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 416.88
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 254.21
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 489.46
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 101.21
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 216.546875
+  },
+  {
+    "stage": "before_vessel_31008933_window_transform",
+    "checked_at": "2026-11-05T14:20:47.305564+09:00",
+    "available_mib": 2168.87890625,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.05
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 216.75
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 416.93
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 242.21
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 489.2
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 101.21
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 216.75390625
+  },
+  {
+    "stage": "before_vessel_31009538_window_transform",
+    "checked_at": "2026-11-05T14:20:49.259853+09:00",
+    "available_mib": 2166.8515625,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.05
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 217.07
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 415.39
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 242.21
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 489.36
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 101.09
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 217.0703125
+  },
+  {
+    "stage": "before_vessel_31012971_window_transform",
+    "checked_at": "2026-11-05T14:20:51.988229+09:00",
+    "available_mib": 2142.953125,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.54
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 218.04
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 415.59
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 266.28
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 489.66
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 101.11
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 218.046875
+  },
+  {
+    "stage": "before_vessel_31013760_window_transform",
+    "checked_at": "2026-11-05T14:20:53.993367+09:00",
+    "available_mib": 2147.8671875,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.54
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 218.2
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 412.81
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 266.53
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.1
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 478.98
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 94.19
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 218.203125
+  },
+  {
+    "stage": "before_vessel_31014032_window_transform",
+    "checked_at": "2026-11-05T14:20:56.110253+09:00",
+    "available_mib": 2141.13671875,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.54
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 218.39
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 411.46
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 266.52
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.12
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 478.42
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 94.23
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 218.39453125
+  },
+  {
+    "stage": "before_vessel_31014672_window_transform",
+    "checked_at": "2026-11-05T14:20:58.022994+09:00",
+    "available_mib": 2163.41015625,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.54
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 218.52
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 413.21
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 258.52
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.15
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 478.42
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 94.19
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 218.515625
+  },
+  {
+    "stage": "before_vessel_31016197_window_transform",
+    "checked_at": "2026-11-05T14:20:59.862771+09:00",
+    "available_mib": 2144.42578125,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.54
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 218.65
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 413.17
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 256.52
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.15
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 480.12
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.01
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 94.24
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 218.65625
+  },
+  {
+    "stage": "before_vessel_31100492_window_transform",
+    "checked_at": "2026-11-05T14:21:02.344346+09:00",
+    "available_mib": 2160.7265625,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.54
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 218.92
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 416.57
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 262.54
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.12
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 481.51
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.07
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 94.45
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 218.921875
+  },
+  {
+    "stage": "before_vessel_31703108_window_transform",
+    "checked_at": "2026-11-05T14:21:04.800164+09:00",
+    "available_mib": 2182.05859375,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.54
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 219.46
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 413.66
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 262.54
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.12
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 481.28
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.07
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 90.22
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 219.40234375
+  },
+  {
+    "stage": "before_vessel_31704073_window_transform",
+    "checked_at": "2026-11-05T14:21:06.970676+09:00",
+    "available_mib": 2183.5859375,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.54
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 220.58
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 413.72
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 262.53
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.12
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 481.2
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.07
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 90.27
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 220.58203125
+  },
+  {
+    "stage": "before_vessel_31704782_window_transform",
+    "checked_at": "2026-11-05T14:21:09.449513+09:00",
+    "available_mib": 2150.984375,
+    "estimated_maximum_increment_mib": 512,
+    "reserve_mib": 1024,
+    "estimate_basis": "8 selected columns, 65536-row streaming parquet batches filtered to positive vessels; one vessel/window width at a time; event summaries only; bootstrap <=2000x100 floats",
+    "concurrent_processes": [
+      {
+        "pid": 1528,
+        "name": "Orca.exe",
+        "rss_mib": 69.54
+      },
+      {
+        "pid": 2184,
+        "name": "python.exe",
+        "rss_mib": 220.68
+      },
+      {
+        "pid": 14940,
+        "name": "node_repl.exe",
+        "rss_mib": 10.54
+      },
+      {
+        "pid": 17216,
+        "name": "Orca.exe",
+        "rss_mib": 414.26
+      },
+      {
+        "pid": 18136,
+        "name": "Orca.exe",
+        "rss_mib": 262.55
+      },
+      {
+        "pid": 19452,
+        "name": "node_repl.exe",
+        "rss_mib": 11.53
+      },
+      {
+        "pid": 19548,
+        "name": "Orca.exe",
+        "rss_mib": 47.12
+      },
+      {
+        "pid": 19824,
+        "name": "Orca.exe",
+        "rss_mib": 482.27
+      },
+      {
+        "pid": 22476,
+        "name": "Orca.exe",
+        "rss_mib": 44.07
+      },
+      {
+        "pid": 26408,
+        "name": "Orca.exe",
+        "rss_mib": 29.54
+      },
+      {
+        "pid": 27244,
+        "name": "Orca.exe",
+        "rss_mib": 90.68
+      },
+      {
+        "pid": 27864,
+        "name": "Orca.exe",
+        "rss_mib": 57.21
+      },
+      {
+        "pid": 28952,
+        "name": "node.exe",
+        "rss_mib": 31.63
+      },
+      {
+        "pid": 35416,
+        "name": "node.exe",
+        "rss_mib": 39.84
+      }
+    ],
+    "allowed": true,
+    "current_rss_mib": 220.6875
+  }
+]

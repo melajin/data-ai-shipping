@@ -1,0 +1,42 @@
+{
+  "recorded_at": "2026-11-06T14:52:06.990114+09:00",
+  "stage": "protocol and implementation preparation",
+  "available_ram_mib": 4013.0859375,
+  "planned_execution_peak_mib": 768,
+  "reserve_mib": 640,
+  "estimate_basis": "Round018 observed209MiB; max82x4344candidate hours streamed, frozen models only; no retraining",
+  "other_python_processes": [
+    {
+      "pid": 4172,
+      "rss_mib": 19.2578125
+    }
+  ],
+  "round_number_reason": "existing Round019 vessel discrimination run preserved; this task exclusively Round020",
+  "execution_not_started": true,
+  "new_hypotheses": 1,
+  "parallel_data_evaluation_by_this_team": false,
+  "agent_creation_evidence": [
+    {
+      "task": "/root/round020_design",
+      "role": "astra_decision",
+      "model_requested": "gpt-6-astra",
+      "effort_requested": "high",
+      "tool_returned_task_name": true
+    },
+    {
+      "task": "/root/round020_boundary_review",
+      "role": "sol_review",
+      "model_requested": "gpt-6.1-sol",
+      "effort_requested": "high",
+      "tool_returned_task_name": true
+    },
+    {
+      "task": "/root/round020_implementation",
+      "role": "sol_complex",
+      "model_requested": "gpt-6.1-sol",
+      "effort_requested": "max",
+      "tool_returned_task_name": true
+    }
+  ],
+  "provider_internal_model_attested": false
+}

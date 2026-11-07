@@ -1,0 +1,77 @@
+{
+  "months": {
+    "1": {
+      "rows_read": 497942,
+      "rows_written": 497942,
+      "skipped": 0,
+      "seconds": 65.3,
+      "vessels_cumulative": 5014
+    },
+    "2": {
+      "rows_read": 479290,
+      "rows_written": 479288,
+      "skipped": 2,
+      "seconds": 60.1,
+      "vessels_cumulative": 5813
+    },
+    "3": {
+      "rows_read": 657292,
+      "rows_written": 657292,
+      "skipped": 0,
+      "seconds": 91.8,
+      "vessels_cumulative": 6585
+    },
+    "4": {
+      "rows_read": 717294,
+      "rows_written": 717294,
+      "skipped": 0,
+      "seconds": 102.2,
+      "vessels_cumulative": 6989
+    },
+    "5": {
+      "rows_read": 761846,
+      "rows_written": 761846,
+      "skipped": 0,
+      "seconds": 109.8,
+      "vessels_cumulative": 7214
+    },
+    "6": {
+      "rows_read": 773405,
+      "rows_written": 773403,
+      "skipped": 2,
+      "seconds": 111.1,
+      "vessels_cumulative": 7372
+    }
+  },
+  "unparsed_examples": [
+    {
+      "month": 2,
+      "row_index": 386100,
+      "error": "wrapper"
+    },
+    {
+      "month": 2,
+      "row_index": 400310,
+      "error": "wrapper"
+    },
+    {
+      "month": 6,
+      "row_index": 127860,
+      "error": "wrapper"
+    },
+    {
+      "month": 6,
+      "row_index": 127861,
+      "error": "wrapper"
+    }
+  ],
+  "completed_at": "2026-11-06T14:07:47.146810+09:00",
+  "raw_dir": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터",
+  "total_rows_written": 3887065,
+  "total_rows_skipped": 4,
+  "vessels": 7372,
+  "elapsed_seconds": 541.4,
+  "available_mib_at_start": 4712.7,
+  "purpose": "미사고 선박 음성 표본 확보 (2026 학습 기간)",
+  "test_data_touched": false
+}

@@ -1,0 +1,19 @@
+{
+  "closed_at": "2026-11-05T15:09:41.942559+09:00",
+  "state": "comparison_and_implementation_audit_completed",
+  "report": "testB/round_010_20261105/ROUND010_비교및결과보고_20261105.md",
+  "final_report": "testB/round_010_20261105/ROUND_REPORT.md",
+  "T1": "testB/round_010_20261105/T1_결론상세보고_20261105.md",
+  "T2": "testB/round_010_20261105/T2_결론상세보고_20261105.md",
+  "candidate": "lin_raw / Tier0_1 / follow-up validation only",
+  "normal_Bonferroni": "raw p<0.05/7, adjusted p<0.05",
+  "literal_double_correction": "no metric passes; preserved as contract wording branch",
+  "raw_independent_implementation_check": {
+    "event_metric_records": 300,
+    "mismatches": 0
+  },
+  "separate_session_reviewer": false,
+  "formal_original_acceptance_all_claimed": false,
+  "new_model_or_submission": false,
+  "historical_runtime_ownership": "preexisting active_round/supervisor/workers are preserved; no liveness/ownership claim is made"
+}

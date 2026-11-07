@@ -1,0 +1,185 @@
+{
+  "status": "completed_verified_no_improvement_not_adopted",
+  "fits_started": 36,
+  "new_outer_evaluations": 1,
+  "source_rounds_read_only": [
+    "round_026",
+    "round_027_fallback_ovr"
+  ],
+  "user_steering": "팀원 결과는 참고만 하며 이름표 원본 재현은 불필요",
+  "plan_sha256": "0deade56344f290aebe1889075f650d691ddc24c34b414343c69816d229c67f2",
+  "code_sha256": "efac1dbc0434ad3a32eaa1b7160701ec5479bf8749247a206898c3d2055ab912",
+  "resource_condition": "available RAM >=1.5GiB immediately before start; stage>=1.0GiB",
+  "resume_command": "python -X utf8 11_04_final/rounds/round_027_team_recheck/run_experiment.py",
+  "review_requested": "gpt-6-luna/xhigh via collaboration.followup_task; exact runtime model not independently observed",
+  "review": "PREEXECUTION_REVIEW.json",
+  "last_available_gib": 1.4930686950683594,
+  "updated_at": "2026-11-05T07:12:31.100977+00:00",
+  "reason": "net0; macro declines; class1/2TP-3/-5; same-base class3TP-1; no OUTER-based reselection",
+  "fits_completed": 36,
+  "predeclared_comparison_procedures": 11,
+  "primary": {
+    "n": 5897,
+    "correct": 3538,
+    "micro_f1": 0.5999660844497202,
+    "macro_f1": 0.5161167058673821,
+    "tp": [
+      2547,
+      798,
+      101,
+      92
+    ],
+    "fp": [
+      1725,
+      485,
+      95,
+      54
+    ],
+    "support": [
+      2920,
+      2016,
+      835,
+      126
+    ],
+    "predicted": [
+      4272,
+      1283,
+      196,
+      146
+    ],
+    "f1": [
+      0.7082869855394883,
+      0.4837829645347075,
+      0.1959262851600388,
+      0.6764705882352942
+    ],
+    "precision": [
+      0.5962078651685393,
+      0.6219797349961029,
+      0.5153061224489796,
+      0.6301369863013698
+    ],
+    "recall": [
+      0.8722602739726028,
+      0.3958333333333333,
+      0.12095808383233533,
+      0.7301587301587301
+    ],
+    "cm": [
+      [
+        2547,
+        324,
+        39,
+        10
+      ],
+      [
+        1140,
+        798,
+        53,
+        25
+      ],
+      [
+        568,
+        147,
+        101,
+        19
+      ],
+      [
+        17,
+        14,
+        3,
+        92
+      ]
+    ]
+  },
+  "baseline": {
+    "n": 5897,
+    "correct": 3538,
+    "micro_f1": 0.5999660844497202,
+    "macro_f1": 0.5174847814344018,
+    "tp": [
+      2538,
+      801,
+      106,
+      93
+    ],
+    "fp": [
+      1713,
+      488,
+      101,
+      57
+    ],
+    "support": [
+      2920,
+      2016,
+      835,
+      126
+    ],
+    "predicted": [
+      4251,
+      1289,
+      207,
+      150
+    ],
+    "f1": [
+      0.7078510667968205,
+      0.48472012102874434,
+      0.2034548944337812,
+      0.6739130434782609
+    ],
+    "precision": [
+      0.5970359915314044,
+      0.6214119472459271,
+      0.5120772946859904,
+      0.62
+    ],
+    "recall": [
+      0.8691780821917808,
+      0.39732142857142855,
+      0.12694610778443113,
+      0.7380952380952381
+    ],
+    "cm": [
+      [
+        2538,
+        331,
+        41,
+        10
+      ],
+      [
+        1130,
+        801,
+        57,
+        28
+      ],
+      [
+        565,
+        145,
+        106,
+        19
+      ],
+      [
+        18,
+        12,
+        3,
+        93
+      ]
+    ]
+  },
+  "protection": {
+    "single_seed_reference_pass": true,
+    "historical_five_seed_reference_pass": true,
+    "selected_vs_same_baseline_tp0_tp3_no_drop": false
+  },
+  "adopted": false,
+  "resource": {
+    "successful_admission_gib": 1.5304031372070312,
+    "peak_observed_rss_gib": 0.15619277954101562,
+    "minimum_observed_available_gib": 1.3960494995117188
+  },
+  "admission_history": "attempt001RAMgatebeforeimports; attempt002completed; successful compute1",
+  "report": "ROUND_REPORT.md",
+  "verification": "verification.json",
+  "independent_result_review": "INDEPENDENT_RESULT_REVIEW.md",
+  "independent_result_review_complete": true
+}

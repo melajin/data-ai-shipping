@@ -1,0 +1,6 @@
+{
+  "started_at": "2026-11-06T14:28:01.693526+09:00",
+  "freeze_sha256": "803a3d3786a3c40ecadda328b623fdf903d8546a395cb54ed233e36a129021db",
+  "command": "python evaluate.py --run",
+  "one_shot": true
+}

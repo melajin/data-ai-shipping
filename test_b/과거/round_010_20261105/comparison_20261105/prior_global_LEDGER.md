@@ -1,0 +1,18 @@
+# Test B 라운드 원장
+
+| 라운드 | 이전 상태 | 이번 결과·상태 | 다음 검증 |
+|---|---|---|---|
+| 선행 감사 | 후보 연결 미확정 | 167/118/30, 안정 단일 1, 독립검산 43+31 완료. 탐지 성능 아님 | 추가 신원·자료 사용·정상 근거 |
+| round_001 | 후보 감사 완료, B/C 임계값 미확보 | 준비 범위 완료. 단일30건 직접신원0, 신구Test B명부0/100·새100척항적관측100/100. CSV12쌍 전체SHA동일. 자체합성14·독립합성9, 최종감사pass10/fail0/unknown2·exit0. 사고성능 미평가 | 새100척의 입력계보·고정 scorer 추론 가능성. 새Solhigh감독 인계 |
+| round_002 | 새100척의 기존점수0, 항적관측100 | 준비 완료. 새100척46,705행 원행 전수독립대조·요약100개 일치. 독립26행합성 통과. 초기감사7pass/1fail/2unknown·exit1의 stale해시 문제를 metadata-only정정, delta10pass/exit0. 실제참조/점수/A·사고성능 미생성 | 메모리를 제한한 loader 동등성·고정train참조 단계실행·가능한 탐색점수/A. 실제새Sol/high감독에 ACK/단일소유권 인계 |
+| round_003 | 새100척 행·runner 준비 검산 완료 | 실제Sol/high감독 codex_4269e9a1_ce56_4684_9e30_794fd12ed5b7 생성·필수문서 ACK msg_6cb4415e8803 수신. STATUS 단일소유권 전환, 활성화 메시지 전달 후 새감독 진행 | round_002/NEXT_ROUND.md |
+
+Round001·002의 기술 준비와 해당 변경 검산은 완료됐고, Round003은 loader 가설의 실패와 독립 원인 검산을 완료했다. 근본 목표와 사고 성능은 미완료다. 실제 새감독 생성·ACK·활성화는 각 라운드 HANDOFF_RECEIPT.json과 STATUS.json에 기록한다. 현재 감독은 다음 감독 ACK와 명시적 활성화 전까지 단독 소유권을 유지한다.
+
+| round_004 | round003 numeric 반례·index차이 독립확인 | 실제새Sol/high감독 ACK 확인. 단일소유권 이전, 명시적 활성화 수신 뒤 시작 | round_003/NEXT_ROUND.md |
+| round_004 활성화 | ACK msg_a4a6dab10faf·활성화 msg_0c84a4c3fc9d·STATUS 소유권 확인 | Run run_a4759578d2ef, 별도 실제 Luna/xhigh E/V ready. 제한 도메인 구현·독립 정적검토 시작; 실제 전체 domain unknown | 작은 fixture와 실제 multi-batch 동등성 독립검산 후 전수 domain 기술관문 |
+| round_004 결과 | Round003 numeric 반례·index차이 | 제한정수 fixture/실제16384행4batch 값·dtype·index라벨 일치. Eexit0, V최종exit2/생산gateFAIL·감사succeeded. trace누적/부분yield/빈schema·indexclass미완성. Trainfooter3887069 확인, 초안Test행수오류 보존. 실제참조/점수/A없음 | round005 bounded trace·atomic caller·빈schema/index 수정·독립재검산 뒤 새Train domain관문 |
+| round_005 인수 | Round004 제한표본 일치·생산gateFAIL | 실제Sol/high감독 codex_3420efaa_9881_48b8_b7f4_4985bdf027b2 launch/journaled, ACK msg_36301489099a 수신. STATUS 단일소유권 전환·재읽기검증, 활성화메시지 발송 예정 | round_004/NEXT_ROUND.md; 새감독은 명시적활성화 수신 후만 시작 |
+| round_005 활성화 | ACK msg_36301489099a·활성화 msg_9e2e1ac7e48e·STATUS 단일소유권 확인 | 새감독 codex_3420efaa_9881_48b8_b7f4_4985bdf027b2/Run run_6df8333350eb. bounded trace·atomic caller·빈schema/exact index 수정과 별도 Luna 정적검토 시작 | 작은 수정·독립검산 후 새 Train domain 계약 관문 |
+
+| round_007 | 사고 신원·정상 근거 부족으로 성능 미평가 | 어구(fishing_code↔어업면허 1:1)를 신원 제약으로 추가하고 캐스케이드 단일후보로 바꿔 **평가 가능 사건 1건→98건(85척)** 확보. dev 1,585척·806,853행 점수 생성(leave-self-out, peak 943MiB). 밀도지도 독립 재구성 전수 일치(불일치 0셀). 시각 규칙 14종 실측 결과 **A_peak hit≤6h 4.7%(4/85), p=0.164** — 무작위 기준선 2.6%와 구별 불가. 합집합 17.65% < 무작위 합집합 기대 19.9%. 사고 창 백분위가 무작위 창보다 +0.013~0.052뿐(규칙이 아니라 특징 문제). 선박 AUC 0.726은 관측행 수 교란(행수 단독 AUC 0.724), 짝짓기 후 0.590. 사용 가능한 임계값 작동점 없음(F1 최대 0.0103). 제출 후보 미갱신·미제출 | round_007_20261105/NEXT_ROUND_인계_20261105.md — R008-1 사고 겨냥 시간단위 특징의 선행 관문(백분위 차 +0.05) |

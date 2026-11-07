@@ -1,0 +1,117 @@
+{
+  "status": "complete",
+  "purpose": "Review packet ONLY; not a validated/improved competition submission",
+  "no_new_inference": true,
+  "no_workbook_edits": true,
+  "no_upload": true,
+  "original_files_unchanged": true,
+  "ram_preflight": {
+    "checked_at": "2026-11-06T04:56:47+0900",
+    "available_mib": 4595.328125,
+    "expected_extra_mib": 512,
+    "reserve_mib": 640,
+    "allowed": true,
+    "basis": "Read-only4column46705row baseline projection and tinyCSV/zipXML; no model inference"
+  },
+  "source_sha256": "6af13337e6bea44f5257785845867272a7d84e9df56430d73efc689c0c2b1ef2",
+  "input_sha256": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\first_results\\testB_submission_candidate.csv": "afa0bb5c2769e15c26bc598a850ddece86357e669d0d8094879777949c9e1b91",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\first_results\\candidate_A.csv": "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\first_results\\hourly_scores.parquet": "ab2230ef83aa6a3dec28fae03000294f581da6e0ee069f8210e3598a96549d14",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\first_results\\run.py": "d57a59e1e035e39367acd9ace53511267a548b95fb1236ccc539d652b05d1c1b",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\first_results\\results.json": "c5753b6dac26f6c34a4b6dd4eb6f763f88a6ed13fdc88d4722eea2d74ffced59",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\intake\\1103_v2\\inspection_001\\reference_02_제출샘플.xlsx": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c"
+  },
+  "unchanged_reference_copies": [
+    {
+      "source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\first_results\\testB_submission_candidate.csv",
+      "copy": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_012_20261106\\review_packet_001\\testB_existing_baseline_UNVERIFIED.csv",
+      "sha256": "afa0bb5c2769e15c26bc598a850ddece86357e669d0d8094879777949c9e1b91",
+      "bytes": 6158
+    },
+    {
+      "source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\first_results\\candidate_A.csv",
+      "copy": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_012_20261106\\review_packet_001\\testB_existing_candidate_lineage.csv",
+      "sha256": "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9",
+      "bytes": 10730
+    },
+    {
+      "source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\first_results\\hourly_scores.parquet",
+      "copy": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_012_20261106\\review_packet_001\\testB_existing_hourly_scores.parquet",
+      "sha256": "ab2230ef83aa6a3dec28fae03000294f581da6e0ee069f8210e3598a96549d14",
+      "bytes": 3765001
+    },
+    {
+      "source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\intake\\1103_v2\\inspection_001\\reference_02_제출샘플.xlsx",
+      "copy": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_012_20261106\\review_packet_001\\submission_template_UNCHANGED_REFERENCE.xlsx",
+      "sha256": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+      "bytes": 12645
+    }
+  ],
+  "testB_stored_rows": 46705,
+  "testB_stored_rfids": 100,
+  "lead_peak_checks": 100,
+  "reference_hour_checks": 100,
+  "nonmissing_preceding_time_slots": {
+    "시각1": 33,
+    "시각2": 38,
+    "시각3": 58
+  },
+  "template_ids_n": 100,
+  "template_unique_ids_n": 100,
+  "template_id_set_matches": true,
+  "template_id_order_matches": true,
+  "template_headers_A1_I1": [
+    "rfid_id",
+    "사고시각",
+    "이상항적 점수",
+    "시각1",
+    "시각1 이상항적 점수",
+    "시각2",
+    "시각2 이상항적 점수",
+    "",
+    "시각3 이상항적 점수"
+  ],
+  "baseline_csv_header_matches_template_verbatim": false,
+  "observed_stored_first_hour": "20250101 0",
+  "observed_stored_last_hour": "20250630 23",
+  "official_rule_conformance": null,
+  "confirmed_testB_accident_performance": null,
+  "development_cohort_separate": {
+    "rfids": 82,
+    "events": 100,
+    "tier01_events": 60,
+    "B0_all_top1": 3,
+    "B0_tier01_top1": 2
+  },
+  "outputs": {
+    "baseline_storage_checks.csv": {
+      "sha256": "a9806908cd3701778481d359564a857414d3ddd6872a1ff587612593cbcdbbcc",
+      "bytes": 3542
+    },
+    "development_B0_event_results_100events.csv": {
+      "sha256": "a040da8f8f66103089befa02f7ad2a1673d8fbe5336002ce92c93018a41e57d1",
+      "bytes": 27091
+    },
+    "development_B0_predictions_82RFIDs.csv": {
+      "sha256": "78a204c5abaa644b9104390f84806ad776bf063ad0ded45aa5140e4a6cecf191",
+      "bytes": 27258
+    },
+    "submission_template_UNCHANGED_REFERENCE.xlsx": {
+      "sha256": "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c",
+      "bytes": 12645
+    },
+    "testB_existing_baseline_UNVERIFIED.csv": {
+      "sha256": "afa0bb5c2769e15c26bc598a850ddece86357e669d0d8094879777949c9e1b91",
+      "bytes": 6158
+    },
+    "testB_existing_candidate_lineage.csv": {
+      "sha256": "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9",
+      "bytes": 10730
+    },
+    "testB_existing_hourly_scores.parquet": {
+      "sha256": "ab2230ef83aa6a3dec28fae03000294f581da6e0ee069f8210e3598a96549d14",
+      "bytes": 3765001
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "testb_realtime_config_v1",
+  "mode": "contract_replay",
+  "scoring": {
+    "enabled": false,
+    "adapter": null,
+    "threshold": null,
+    "calibration_status": "unvalidated"
+  },
+  "disabled_operations": [
+    "fleet_filter",
+    "offhours_weight",
+    "global_argmax",
+    "accident_prediction",
+    "external_delivery"
+  ],
+  "input": {
+    "timestamp_format": "iso8601_with_offset",
+    "real_time_basis_required": "confirmed",
+    "real_availability_required": "confirmed",
+    "unknown_availability_policy": "abstain",
+    "late_event_policy": "quarantine",
+    "duplicate_policy": "idempotent_conflict_quarantine"
+  },
+  "memory": {
+    "max_vessels": 10000,
+    "max_line_bytes": 65536,
+    "estimated_peak_mib": 128,
+    "reserve_mib": 640
+  },
+  "evaluation": {
+    "label_status": "provisional",
+    "official_f1_enabled": false
+  }
+}

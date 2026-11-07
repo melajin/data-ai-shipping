@@ -1,0 +1,43 @@
+{
+  "round": "round_011_20261105",
+  "user_authorization": "lin_raw feature candidate; compare time and position; formulate hypotheses, execute experiment and save Round11",
+  "root_role": "protocol, integration, execution, final interpretation and shared status",
+  "root_runtime_model_verification": "not inferred from repository config",
+  "delegation": [
+    {
+      "task": "drift_definition_review",
+      "requested_model": "gpt-6-astra",
+      "requested_effort": "high",
+      "agent_type": "astra_decision",
+      "handle": "/root/drift_definition_review",
+      "ownership": "read-only concept and design review",
+      "launch_evidence": "collaboration.spawn_agent returned task_name /root/drift_definition_review",
+      "provider_internal_execution_receipt": "unavailable"
+    },
+    {
+      "task": "round011_implementation",
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "xhigh",
+      "agent_type": "sol_module",
+      "handle": "/root/round011_implementation",
+      "ownership": ["run_experiment.py", "test_experiment.py"],
+      "launch_evidence": "collaboration.spawn_agent returned task_name /root/round011_implementation",
+      "provider_internal_execution_receipt": "unavailable"
+    },
+    {
+      "task": "round011_review",
+      "requested_model": "gpt-6.1-sol",
+      "requested_effort": "high",
+      "agent_type": "sol_review",
+      "handle": "/root/round011_review",
+      "ownership": ["audit_round011.py", "AUDIT.md", "audit.json"],
+      "launch_evidence": "collaboration.spawn_agent returned task_name /root/round011_review",
+      "provider_internal_execution_receipt": "unavailable"
+    }
+  ],
+  "memory_rule": "No concurrent real-data calculations. Check available RAM, expected512MiB peak and concurrent processes before load/transform/stats; exit75/defer if less than768MiB available; no watch/poll loops or user process termination.",
+  "validation_sequence": "fixed protocol -> module/synthetic checks -> independent code review -> parent real-data run -> sequential independent audit -> report",
+  "new_model_training": false,
+  "new_external_data_collection": false,
+  "official_submission": false
+}

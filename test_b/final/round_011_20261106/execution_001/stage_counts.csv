@@ -1,0 +1,26 @@
+category_type,stage,status,reason,row_count,rfid_count,description
+candidate_transition,s0,input,canonical_input_rows,99677,82,Total canonical hourly observations presented for s0
+candidate_transition,s0,keep,s0_admitted,99677,82,Rows meeting stage condition: finite nonnegative length/bbox and finite legacy score
+candidate_transition,s1,input,s0_ok,99677,82,Input rows admitted from s0
+candidate_transition,s1,keep,s1_admitted,96976,80,Rows meeting stage condition: s0 plus raw R10 distance available
+candidate_transition,s1,defer,raw_R10_distance_unavailable,2701,82,Stage s1 defer: raw_R10_distance_unavailable
+candidate_transition,s2,input,s1_ok,96976,80,Input rows admitted from s1
+candidate_transition,s2,keep,s2_admitted,94290,80,Rows meeting stage condition: s1 plus own past-distance distribution eligible
+candidate_transition,s2,defer,insufficient_24_past_distance_values_or_3_dates,2686,80,Stage s2 defer: insufficient_24_past_distance_values_or_3_dates
+candidate_transition,s3,input,s2_ok,94290,80,Input rows admitted from s2
+candidate_transition,s3,keep,s3_admitted,92257,79,Rows meeting stage condition: s2 plus at least five other registered same-single-gear vessels
+candidate_transition,s3,defer,fewer_than_5_other_registered_same_gear_vessels,2033,1,Stage s3 defer: fewer_than_5_other_registered_same_gear_vessels
+candidate_transition,s4,input,s3_ok,92257,79,Input rows admitted from s3
+candidate_transition,s4,keep,s4_admitted,91307,79,Rows meeting stage condition: s3 plus five other distance-history-eligible peers at query t
+candidate_transition,s4,defer,fewer_than_5_other_distance_history_eligible_peers_at_query_t,950,15,Stage s4 defer: fewer_than_5_other_distance_history_eligible_peers_at_query_t
+rfid_candidate_presence,s0,presence,vessels_with_ge_1_s0_candidate,99677,82,Number of distinct vessels with at least one s0 candidate (finite nonnegative length/bbox and finite legacy score)
+rfid_candidate_presence,s1,presence,vessels_with_ge_1_s1_candidate,96976,80,Number of distinct vessels with at least one s1 candidate (s0 plus raw R10 distance available)
+rfid_candidate_presence,s2,presence,vessels_with_ge_1_s2_candidate,94290,80,Number of distinct vessels with at least one s2 candidate (s1 plus own past-distance distribution eligible)
+rfid_candidate_presence,s3,presence,vessels_with_ge_1_s3_candidate,92257,79,Number of distinct vessels with at least one s3 candidate (s2 plus at least five other registered same-single-gear vessels)
+rfid_candidate_presence,s4,presence,vessels_with_ge_1_s4_candidate,91307,79,Number of distinct vessels with at least one s4 candidate (s3 plus five other distance-history-eligible peers at query t)
+method_actual_pool_coverage,s0,strict,strict_stage,99677,82,Method B0 actual pool assigned: s0 (fallback: strict_stage)
+method_actual_pool_coverage,s0,fallback,s2_empty_use_s0,23,2,Method S actual pool assigned: s0 (fallback: s2_empty_use_s0)
+method_actual_pool_coverage,s2,strict,strict_stage,94290,80,Method S actual pool assigned: s2 (fallback: strict_stage)
+method_actual_pool_coverage,s0,fallback,s4_empty_use_s0,23,2,Method G actual pool assigned: s0 (fallback: s4_empty_use_s0)
+method_actual_pool_coverage,s2,fallback,s4_empty_use_s2,2033,1,Method G actual pool assigned: s2 (fallback: s4_empty_use_s2)
+method_actual_pool_coverage,s4,strict,strict_stage,91307,79,Method G actual pool assigned: s4 (fallback: strict_stage)

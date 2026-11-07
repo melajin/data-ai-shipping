@@ -1,0 +1,24 @@
+{
+  "verified_at": "2026-11-06T06:36:42.855496+00:00",
+  "synthetic_tests": 17,
+  "failures": 0,
+  "errors": 0,
+  "actual_evaluation_executed": false,
+  "actual_accident_times_parsed": false,
+  "latest_test_memory_check": {
+    "checked_at": "2026-11-06T06:35:58.734086+00:00",
+    "available_mib": 3651.05078125,
+    "estimated_peak_mib": 512,
+    "reserve_mib": 640,
+    "allowed": true
+  },
+  "source_and_log_sha256": {
+    "evaluate_round021.py": "a3598b63c340b78d94b0232ee9dfb23c9421419f18767d126b1d8db3ae4d3da0",
+    "test_evaluate_round021.py": "8f2ede0dad46a8b1d384996df0e3e2ef7a9d8bb66a71d2f97a8ccf35d840d685",
+    "evaluation_synthetic_tests.log": "0bc659eb53b73f5ad6efb477a09b1ebac986d64b00f5b29db96e9d8f6241bfa3"
+  },
+  "authorized_time_bounds_utc_hour_encoding": [
+    490896,
+    495240
+  ]
+}

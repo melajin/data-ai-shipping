@@ -1,0 +1,285 @@
+{
+  "count": 88,
+  "strict_max_count": 88,
+  "class_counts": {
+    "continuous_hour": 54,
+    "gap_end_rise": 34
+  },
+  "cdf_gap_1h": 0.8991116049646196,
+  "cdf_gap_values": {
+    "1": 0.8991116049646196,
+    "2": 0.9110102268401133,
+    "6": 0.9227108949084374,
+    "12": 0.9314649380762859,
+    "24": 0.9653895295323625,
+    "48": 0.9794290424525858,
+    "168": 0.9944931209763247,
+    "720": 0.9993045841513749
+  },
+  "all_row_gap_dominant_count": 45241,
+  "gap_cdf_reference_count": 3879693,
+  "jump_cdf_reference_count": 3879693,
+  "group_stats": {
+    "continuous_hour": {
+      "count": 54,
+      "coldstart_count": 18,
+      "next_contiguous_drop_count": 38,
+      "stats": {
+        "predecessor_interval_h": {
+          "count": 54.0,
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "25%": 1.0,
+          "50%": 1.0,
+          "75%": 1.0,
+          "max": 1.0
+        },
+        "missing_hour_bins": {
+          "count": 54.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "25%": 0.0,
+          "50%": 0.0,
+          "75%": 0.0,
+          "max": 0.0
+        },
+        "centroid_separation_m": {
+          "count": 54.0,
+          "mean": 8622.57018719766,
+          "std": 7968.38524353907,
+          "min": 9.749148712967493,
+          "25%": 1523.0510718735445,
+          "50%": 5296.898070618825,
+          "75%": 14427.56965081735,
+          "max": 31912.12192927852
+        },
+        "score": {
+          "count": 54.0,
+          "mean": 0.588468602665776,
+          "std": 0.12041796166354203,
+          "min": 0.3280670016931752,
+          "25%": 0.5164596793219334,
+          "50%": 0.5766337854164162,
+          "75%": 0.6812124603253541,
+          "max": 0.9228469233797589
+        },
+        "score_increase": {
+          "count": 54.0,
+          "mean": 0.13849155389084336,
+          "std": 0.11913994683477996,
+          "min": 0.00040460675625619835,
+          "25%": 0.04376886523650224,
+          "50%": 0.11744743711369302,
+          "75%": 0.19666402880884998,
+          "max": 0.6467512250448969
+        },
+        "s_gap": {
+          "count": 54.0,
+          "mean": 0.8851275159600972,
+          "std": 0.07556458871840263,
+          "min": 0.6561340033863504,
+          "25%": 0.8429941814983815,
+          "50%": 0.9133249718469992,
+          "75%": 0.9424480880317077,
+          "max": 0.9491437853459024
+        },
+        "s_gap_increase": {
+          "count": 50.0,
+          "mean": 0.04654476784632186,
+          "std": 0.08313197865593903,
+          "min": -0.0535568149335528,
+          "25%": 0.0009029387119032506,
+          "50%": 0.02500262263019265,
+          "75%": 0.0634265391617326,
+          "max": 0.4150061615700005
+        }
+      }
+    },
+    "gap_end_rise": {
+      "count": 34,
+      "coldstart_count": 15,
+      "next_contiguous_drop_count": 28,
+      "stats": {
+        "predecessor_interval_h": {
+          "count": 34.0,
+          "mean": 252.02941176470588,
+          "std": 359.36690841855506,
+          "min": 2.0,
+          "25%": 26.25,
+          "50%": 105.0,
+          "75%": 325.0,
+          "max": 1648.0
+        },
+        "missing_hour_bins": {
+          "count": 34.0,
+          "mean": 251.02941176470588,
+          "std": 359.36690841855506,
+          "min": 1.0,
+          "25%": 25.25,
+          "50%": 104.0,
+          "75%": 324.0,
+          "max": 1647.0
+        },
+        "centroid_separation_m": {
+          "count": 34.0,
+          "mean": 14348.387349987248,
+          "std": 36533.35876668042,
+          "min": 0.42856076336209725,
+          "25%": 1072.6498360349963,
+          "50%": 2869.507523745836,
+          "75%": 9349.771604478185,
+          "max": 202637.90882476527
+        },
+        "score": {
+          "count": 34.0,
+          "mean": 0.5446051134457337,
+          "std": 0.12167905591095562,
+          "min": 0.27064693005348617,
+          "25%": 0.48595876404673655,
+          "50%": 0.5353324959457351,
+          "75%": 0.6215961144971176,
+          "max": 0.816259425052932
+        },
+        "score_increase": {
+          "count": 34.0,
+          "mean": 0.21192455378859562,
+          "std": 0.16804779288964047,
+          "min": 0.006338323676641444,
+          "25%": 0.09467963854612431,
+          "50%": 0.16532368683177828,
+          "75%": 0.26346551341669683,
+          "max": 0.7085235325664131
+        },
+        "s_gap": {
+          "count": 34.0,
+          "mean": 0.8889169649429963,
+          "std": 0.10578318431571967,
+          "min": 0.5412938601069723,
+          "25%": 0.8535464983956205,
+          "50%": 0.9228269479054142,
+          "75%": 0.9611803047302969,
+          "max": 0.9988112461475689
+        },
+        "s_gap_increase": {
+          "count": 29.0,
+          "mean": 0.14450133305517412,
+          "std": 0.11128860787744767,
+          "min": -0.020473140529418288,
+          "25%": 0.06246473625619342,
+          "50%": 0.11580516808933083,
+          "75%": 0.2173812464027436,
+          "max": 0.4219849354059715
+        }
+      }
+    }
+  },
+  "pdf_png_match_count": 88,
+  "visual_contact_sheets": [
+    "visual_review/sheet_01.jpg",
+    "visual_review/sheet_02.jpg",
+    "visual_review/sheet_03.jpg",
+    "visual_review/sheet_04.jpg",
+    "visual_review/sheet_05.jpg",
+    "visual_review/sheet_06.jpg",
+    "visual_review/sheet_07.jpg",
+    "visual_review/sheet_08.jpg",
+    "visual_review/sheet_09.jpg",
+    "visual_review/sheet_10.jpg",
+    "visual_review/sheet_11.jpg"
+  ],
+  "memory_checks": [
+    {
+      "time": "2026-11-06T10:53:04.925732+09:00",
+      "stage": "numeric audit",
+      "available_mib": 3707.3828125,
+      "estimated_peak_mib": 450,
+      "basis": "3.62MB parquet; two 31MB reference arrays; sequential 1920x2880 panel decoding and one contact sheet; two other small analysis workers",
+      "largest_processes": [
+        [
+          "explorer.exe",
+          549.8
+        ],
+        [
+          "chrome.exe",
+          444.9
+        ],
+        [
+          "Orca.exe",
+          343.8
+        ],
+        [
+          "Orca.exe",
+          337.7
+        ],
+        [
+          "Orca.exe",
+          308.1
+        ],
+        [
+          "chrome.exe",
+          279.1
+        ],
+        [
+          "ASDSvc.exe",
+          229.1
+        ],
+        [
+          "codex.exe",
+          222.6
+        ]
+      ]
+    },
+    {
+      "time": "2026-11-06T10:53:09.575145+09:00",
+      "stage": "sequential panel/PDF visual crosscheck",
+      "available_mib": 3505.7265625,
+      "estimated_peak_mib": 450,
+      "basis": "3.62MB parquet; two 31MB reference arrays; sequential 1920x2880 panel decoding and one contact sheet; two other small analysis workers",
+      "largest_processes": [
+        [
+          "explorer.exe",
+          550.0
+        ],
+        [
+          "chrome.exe",
+          444.9
+        ],
+        [
+          "Orca.exe",
+          343.4
+        ],
+        [
+          "Orca.exe",
+          337.5
+        ],
+        [
+          "Orca.exe",
+          308.4
+        ],
+        [
+          "chrome.exe",
+          279.2
+        ],
+        [
+          "python.exe",
+          228.6
+        ],
+        [
+          "ASDSvc.exe",
+          225.6
+        ]
+      ]
+    }
+  ],
+  "source_sha256": {
+    "deliverables\\testb_system_20261106\\results\\reproduction_001\\candidates.csv": "9aff8191df3abb889110aa8a825ee2a1e634f56cc0756fdd84dd64e75f10e43b",
+    "deliverables\\testb_system_20261106\\results\\reproduction_001\\scored_rows.parquet": "4e2059febfc3e8e031ba0f11848fa82ce7ca8318cbd50e3fbc85a9ab5b636b65",
+    "testB\\final\\round_014_visual_audit\\panel_index.csv": "8e1e5139ca97c64fdd0fa44f4dcff9f35a61ba33e0c63ee990cd15e10561d717",
+    "testB\\final\\round_014_visual_audit\\testb_100_panels.pdf": "bad8345faf637e31a81a27eca3d1f420e6d2e069c9c238c8070bd23b2ba534fd",
+    "deliverables\\testb_system_20261106\\src\\frozen_baseline.py": "41152a907e47ca1b3c18478c0d77d791f3a1c880f2d46fc7a982ebe66ff7c43c",
+    "deliverables\\testb_system_20261106\\references\\gap_reference.npy": "08145272419ec53837074f5602e34a9be36e5b1311952e4b0c637e64716daa9f",
+    "deliverables\\testb_system_20261106\\references\\jump_reference.npy": "a9d303efa85c06d6d3a75e622f0b76af2c64ca585228a177c4e95d8f21d87b0c"
+  }
+}

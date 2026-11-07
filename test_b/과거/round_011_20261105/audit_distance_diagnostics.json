@@ -1,0 +1,984 @@
+{
+  "memory": {
+    "checked_at_utc": "2026-11-05T08:00:29.422116+00:00",
+    "available_bytes": 3183841280,
+    "expected_peak_bytes": 268435456,
+    "required_available_bytes": 805306368,
+    "other_processes": [
+      {
+        "Id": 5828,
+        "ProcessName": "explorer",
+        "WorkingSet64": 672948224
+      },
+      {
+        "Id": 19824,
+        "ProcessName": "Orca",
+        "WorkingSet64": 526618624
+      },
+      {
+        "Id": 17216,
+        "ProcessName": "Orca",
+        "WorkingSet64": 384102400
+      },
+      {
+        "Id": 4460,
+        "ProcessName": "ctfmon",
+        "WorkingSet64": 300306432
+      },
+      {
+        "Id": 31304,
+        "ProcessName": "agy",
+        "WorkingSet64": 299917312
+      },
+      {
+        "Id": 19112,
+        "ProcessName": "codex",
+        "WorkingSet64": 253403136
+      },
+      {
+        "Id": 34028,
+        "ProcessName": "codex",
+        "WorkingSet64": 233287680
+      },
+      {
+        "Id": 11432,
+        "ProcessName": "CrossDeviceService",
+        "WorkingSet64": 212258816
+      },
+      {
+        "Id": 18136,
+        "ProcessName": "Orca",
+        "WorkingSet64": 200478720
+      },
+      {
+        "Id": 1172,
+        "ProcessName": "dwm",
+        "WorkingSet64": 199970816
+      },
+      {
+        "Id": 17128,
+        "ProcessName": "logioptionsplus_agent",
+        "WorkingSet64": 168448000
+      },
+      {
+        "Id": 17872,
+        "ProcessName": "msedge",
+        "WorkingSet64": 164253696
+      }
+    ],
+    "concurrency": "Parent must authorize sequential audit after experiment exits."
+  },
+  "cases": [
+    {
+      "rfid_id": "36101547",
+      "ts": 493666,
+      "context": "L",
+      "current_lon": 126.3803733333334,
+      "current_lat": 34.873329999999946,
+      "current_n_rows": 7,
+      "stored_refs": [
+        493642,
+        493525,
+        493500,
+        493476,
+        493427,
+        493402
+      ],
+      "old_scalar_refs": [
+        493642,
+        493525,
+        493500,
+        493475,
+        493427,
+        493402
+      ],
+      "independent_numpy_refs": [
+        493642,
+        493525,
+        493500,
+        493476,
+        493427,
+        493402
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 493476,
+            "lon": 126.38049666666669,
+            "lat": 34.873051666666676,
+            "distance_numpy_m": 32.93099382701421,
+            "distance_old_scalar_m": 32.93099382703342,
+            "distance_scalar_same_order_m": 32.93099382701421,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 2
+          },
+          {
+            "ts": 493475,
+            "lon": 126.38049666666667,
+            "lat": 34.873051666666676,
+            "distance_numpy_m": 32.93099382701421,
+            "distance_old_scalar_m": 32.93099382659048,
+            "distance_scalar_same_order_m": 32.93099382701421,
+            "n_rows": 6,
+            "n_rows_delta": 1,
+            "hour_delta": 1
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36101547",
+      "ts": 493738,
+      "context": "L",
+      "current_lon": 126.37906211240335,
+      "current_lat": 34.86036108527126,
+      "current_n_rows": 5,
+      "stored_refs": [
+        493688,
+        493664,
+        493639,
+        493525,
+        493498,
+        493473,
+        493425,
+        493400
+      ],
+      "old_scalar_refs": [
+        493687,
+        493664,
+        493639,
+        493525,
+        493498,
+        493473,
+        493425,
+        493400
+      ],
+      "independent_numpy_refs": [
+        493688,
+        493664,
+        493639,
+        493525,
+        493498,
+        493473,
+        493425,
+        493400
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 493688,
+            "lon": 126.38049666666669,
+            "lat": 34.873026666666654,
+            "distance_numpy_m": 1414.418685493516,
+            "distance_old_scalar_m": 1414.4186854940128,
+            "distance_scalar_same_order_m": 1414.418685493516,
+            "n_rows": 5,
+            "n_rows_delta": 0,
+            "hour_delta": 2
+          },
+          {
+            "ts": 493687,
+            "lon": 126.38049666666667,
+            "lat": 34.873026666666654,
+            "distance_numpy_m": 1414.418685493516,
+            "distance_old_scalar_m": 1414.418685493893,
+            "distance_scalar_same_order_m": 1414.418685493516,
+            "n_rows": 4,
+            "n_rows_delta": 1,
+            "hour_delta": 3
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36110858",
+      "ts": 494318,
+      "context": "L",
+      "current_lon": 127.12056208333334,
+      "current_lat": 34.4948325,
+      "current_n_rows": 6,
+      "stored_refs": [
+        494293,
+        494274,
+        494177,
+        494094,
+        494083,
+        493983,
+        493793,
+        493757,
+        493743,
+        493694
+      ],
+      "old_scalar_refs": [
+        494293,
+        494274,
+        494177,
+        494103,
+        494083,
+        493983,
+        493793,
+        493757,
+        493743,
+        493694
+      ],
+      "independent_numpy_refs": [
+        494293,
+        494274,
+        494177,
+        494094,
+        494083,
+        493983,
+        493793,
+        493757,
+        493743,
+        493694
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 494094,
+            "lon": 127.12133333333334,
+            "lat": 34.49,
+            "distance_numpy_m": 541.9790843363305,
+            "distance_old_scalar_m": 541.9790843364678,
+            "distance_scalar_same_order_m": 541.9790843363305,
+            "n_rows": 6,
+            "n_rows_delta": 0,
+            "hour_delta": 8
+          },
+          {
+            "ts": 494103,
+            "lon": 127.12133333333333,
+            "lat": 34.49,
+            "distance_numpy_m": 541.9790843363305,
+            "distance_old_scalar_m": 541.979084336298,
+            "distance_scalar_same_order_m": 541.9790843363305,
+            "n_rows": 5,
+            "n_rows_delta": 1,
+            "hour_delta": 1
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36110858",
+      "ts": 494634,
+      "context": "L",
+      "current_lon": 127.12133333333325,
+      "current_lat": 34.489999999999945,
+      "current_n_rows": 6,
+      "stored_refs": [
+        494584,
+        494463,
+        494439,
+        494412,
+        494338,
+        494322,
+        494294,
+        494274,
+        494177,
+        494094
+      ],
+      "old_scalar_refs": [
+        494584,
+        494463,
+        494439,
+        494412,
+        494338,
+        494322,
+        494294,
+        494274,
+        494177,
+        494103
+      ],
+      "independent_numpy_refs": [
+        494584,
+        494463,
+        494439,
+        494412,
+        494338,
+        494322,
+        494294,
+        494274,
+        494177,
+        494094
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 494094,
+            "lon": 127.12133333333334,
+            "lat": 34.49,
+            "distance_numpy_m": 9.458749202106364e-09,
+            "distance_old_scalar_m": 1.0050782262004125e-08,
+            "distance_scalar_same_order_m": 9.458749202106364e-09,
+            "n_rows": 6,
+            "n_rows_delta": 0,
+            "hour_delta": 12
+          },
+          {
+            "ts": 494103,
+            "lon": 127.12133333333333,
+            "lat": 34.49,
+            "distance_numpy_m": 9.458749202106364e-09,
+            "distance_old_scalar_m": 9.075180622986588e-09,
+            "distance_scalar_same_order_m": 9.458749202106364e-09,
+            "n_rows": 5,
+            "n_rows_delta": 1,
+            "hour_delta": 3
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36113654",
+      "ts": 492635,
+      "context": "L",
+      "current_lon": 126.9698567473118,
+      "current_lat": 34.442519516129046,
+      "current_n_rows": 7,
+      "stored_refs": [
+        492607,
+        492579,
+        492555,
+        492531,
+        492514,
+        492489,
+        492458,
+        492443,
+        492419,
+        492395
+      ],
+      "old_scalar_refs": [
+        492607,
+        492579,
+        492555,
+        492531,
+        492514,
+        492489,
+        492460,
+        492443,
+        492419,
+        492395
+      ],
+      "independent_numpy_refs": [
+        492607,
+        492579,
+        492555,
+        492531,
+        492514,
+        492489,
+        492458,
+        492443,
+        492419,
+        492395
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 492458,
+            "lon": 126.96276500000015,
+            "lat": 34.4674666666667,
+            "distance_numpy_m": 2849.188815251327,
+            "distance_old_scalar_m": 2849.1888152518804,
+            "distance_scalar_same_order_m": 2849.188815251327,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 9
+          },
+          {
+            "ts": 492460,
+            "lon": 126.96276500000012,
+            "lat": 34.467466666666695,
+            "distance_numpy_m": 2849.188815251703,
+            "distance_old_scalar_m": 2849.1888152517063,
+            "distance_scalar_same_order_m": 2849.188815251703,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 7
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36113654",
+      "ts": 492657,
+      "context": "L",
+      "current_lon": 126.97322441666662,
+      "current_lat": 34.43481402777777,
+      "current_n_rows": 7,
+      "stored_refs": [
+        492629,
+        492607,
+        492579,
+        492558,
+        492538,
+        492514,
+        492489,
+        492458,
+        492443,
+        492415
+      ],
+      "old_scalar_refs": [
+        492629,
+        492607,
+        492579,
+        492558,
+        492538,
+        492514,
+        492489,
+        492460,
+        492443,
+        492415
+      ],
+      "independent_numpy_refs": [
+        492629,
+        492607,
+        492579,
+        492558,
+        492538,
+        492514,
+        492489,
+        492458,
+        492443,
+        492415
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 492458,
+            "lon": 126.96276500000015,
+            "lat": 34.4674666666667,
+            "distance_numpy_m": 3755.339879179254,
+            "distance_old_scalar_m": 3755.339879179407,
+            "distance_scalar_same_order_m": 3755.339879179254,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 7
+          },
+          {
+            "ts": 492460,
+            "lon": 126.96276500000012,
+            "lat": 34.467466666666695,
+            "distance_numpy_m": 3755.3398791797613,
+            "distance_old_scalar_m": 3755.339879179309,
+            "distance_scalar_same_order_m": 3755.3398791797613,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 5
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36113654",
+      "ts": 493170,
+      "context": "L",
+      "current_lon": 126.9626256666665,
+      "current_lat": 34.46716477192978,
+      "current_n_rows": 7,
+      "stored_refs": [
+        493136,
+        493124,
+        493099,
+        493070,
+        493047,
+        493022,
+        493003,
+        492974,
+        492955,
+        492926
+      ],
+      "old_scalar_refs": [
+        493136,
+        493124,
+        493099,
+        493070,
+        493047,
+        493022,
+        493004,
+        492974,
+        492955,
+        492926
+      ],
+      "independent_numpy_refs": [
+        493136,
+        493124,
+        493099,
+        493070,
+        493047,
+        493022,
+        493003,
+        492974,
+        492955,
+        492926
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 493003,
+            "lon": 126.9626933333331,
+            "lat": 34.46711999999995,
+            "distance_numpy_m": 7.953992508295275,
+            "distance_old_scalar_m": 7.95399250821886,
+            "distance_scalar_same_order_m": 7.953992508295275,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 1
+          },
+          {
+            "ts": 493004,
+            "lon": 126.96269333333309,
+            "lat": 34.46711999999994,
+            "distance_numpy_m": 7.953992509623422,
+            "distance_old_scalar_m": 7.953992508191856,
+            "distance_scalar_same_order_m": 7.953992509623422,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 2
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36314887",
+      "ts": 493816,
+      "context": "L",
+      "current_lon": 125.45609666666677,
+      "current_lat": 34.737163333333285,
+      "current_n_rows": 6,
+      "stored_refs": [
+        493792,
+        493770,
+        493737,
+        493720,
+        493683,
+        493679,
+        493651,
+        493553,
+        493500,
+        493358
+      ],
+      "old_scalar_refs": [
+        493792,
+        493770,
+        493737,
+        493720,
+        493683,
+        493679,
+        493652,
+        493554,
+        493500,
+        493358
+      ],
+      "independent_numpy_refs": [
+        493792,
+        493770,
+        493737,
+        493720,
+        493683,
+        493679,
+        493651,
+        493553,
+        493500,
+        493358
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 493651,
+            "lon": 125.46304000000002,
+            "lat": 34.732263333333336,
+            "distance_numpy_m": 836.3223865713011,
+            "distance_old_scalar_m": 836.3223865718476,
+            "distance_scalar_same_order_m": 836.3223865713011,
+            "n_rows": 5,
+            "n_rows_delta": 1,
+            "hour_delta": 3
+          },
+          {
+            "ts": 493652,
+            "lon": 125.46304,
+            "lat": 34.73226333333333,
+            "distance_numpy_m": 836.3223865722226,
+            "distance_old_scalar_m": 836.3223865713774,
+            "distance_scalar_same_order_m": 836.3223865722226,
+            "n_rows": 6,
+            "n_rows_delta": 0,
+            "hour_delta": 4
+          }
+        ],
+        [
+          {
+            "ts": 493553,
+            "lon": 125.46283833333334,
+            "lat": 34.73232333333333,
+            "distance_numpy_m": 818.024384308719,
+            "distance_old_scalar_m": 818.0243843091333,
+            "distance_scalar_same_order_m": 818.024384308719,
+            "n_rows": 7,
+            "n_rows_delta": 1,
+            "hour_delta": 1
+          },
+          {
+            "ts": 493554,
+            "lon": 125.46283833333332,
+            "lat": 34.73232333333333,
+            "distance_numpy_m": 818.024384308719,
+            "distance_old_scalar_m": 818.0243843081554,
+            "distance_scalar_same_order_m": 818.024384308719,
+            "n_rows": 7,
+            "n_rows_delta": 1,
+            "hour_delta": 2
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36314887",
+      "ts": 494003,
+      "context": "L",
+      "current_lon": 125.4560733333334,
+      "current_lat": 34.737049999999975,
+      "current_n_rows": 5,
+      "stored_refs": [
+        493979,
+        493954,
+        493815,
+        493736,
+        493722,
+        493651,
+        493549,
+        493500,
+        493358
+      ],
+      "old_scalar_refs": [
+        493979,
+        493954,
+        493815,
+        493736,
+        493722,
+        493652,
+        493549,
+        493500,
+        493358
+      ],
+      "independent_numpy_refs": [
+        493979,
+        493954,
+        493815,
+        493736,
+        493722,
+        493651,
+        493549,
+        493500,
+        493358
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 493651,
+            "lon": 125.46304000000002,
+            "lat": 34.732263333333336,
+            "distance_numpy_m": 829.8024265876622,
+            "distance_old_scalar_m": 829.8024265876477,
+            "distance_scalar_same_order_m": 829.8024265876622,
+            "n_rows": 5,
+            "n_rows_delta": 0,
+            "hour_delta": 8
+          },
+          {
+            "ts": 493652,
+            "lon": 125.46304,
+            "lat": 34.73226333333333,
+            "distance_numpy_m": 829.8024265885697,
+            "distance_old_scalar_m": 829.8024265871584,
+            "distance_scalar_same_order_m": 829.8024265885697,
+            "n_rows": 6,
+            "n_rows_delta": 1,
+            "hour_delta": 9
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36316040",
+      "ts": 492328,
+      "context": "L",
+      "current_lon": 126.56038233333334,
+      "current_lat": 36.03031966666666,
+      "current_n_rows": 7,
+      "stored_refs": [
+        492289,
+        492287,
+        492257,
+        492235,
+        492209,
+        492185,
+        492126,
+        492089,
+        492071,
+        491954
+      ],
+      "old_scalar_refs": [
+        492289,
+        492287,
+        492257,
+        492235,
+        492209,
+        492185,
+        492126,
+        492089,
+        492071,
+        491955
+      ],
+      "independent_numpy_refs": [
+        492289,
+        492287,
+        492257,
+        492235,
+        492209,
+        492185,
+        492126,
+        492089,
+        492071,
+        491954
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 491954,
+            "lon": 126.56049499999986,
+            "lat": 36.03088333333334,
+            "distance_numpy_m": 63.490525933583235,
+            "distance_old_scalar_m": 63.49052593401818,
+            "distance_scalar_same_order_m": 63.490525933583235,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 10
+          },
+          {
+            "ts": 491955,
+            "lon": 126.56049499999985,
+            "lat": 36.03088333333334,
+            "distance_numpy_m": 63.490525933583235,
+            "distance_old_scalar_m": 63.49052593381426,
+            "distance_scalar_same_order_m": 63.490525933583235,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 11
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36316040",
+      "ts": 493080,
+      "context": "L",
+      "current_lon": 126.55882333333349,
+      "current_lat": 36.03132833333333,
+      "current_n_rows": 7,
+      "stored_refs": [
+        492697,
+        492694,
+        492664,
+        492641,
+        492623,
+        492593,
+        492568,
+        492536,
+        492504,
+        492502
+      ],
+      "old_scalar_refs": [
+        492698,
+        492694,
+        492664,
+        492641,
+        492623,
+        492593,
+        492568,
+        492537,
+        492504,
+        492502
+      ],
+      "independent_numpy_refs": [
+        492697,
+        492694,
+        492664,
+        492641,
+        492623,
+        492593,
+        492568,
+        492536,
+        492504,
+        492502
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 492697,
+            "lon": 126.55954999999997,
+            "lat": 36.03125166666674,
+            "distance_numpy_m": 65.89779647324785,
+            "distance_old_scalar_m": 65.89779647425735,
+            "distance_scalar_same_order_m": 65.89779647324785,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 1
+          },
+          {
+            "ts": 492698,
+            "lon": 126.55954999999996,
+            "lat": 36.03125166666674,
+            "distance_numpy_m": 65.89779647324785,
+            "distance_old_scalar_m": 65.8977964729902,
+            "distance_scalar_same_order_m": 65.89779647324785,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 2
+          }
+        ],
+        [
+          {
+            "ts": 492536,
+            "lon": 126.55929833333347,
+            "lat": 36.03085000000007,
+            "distance_numpy_m": 68.21614744911524,
+            "distance_old_scalar_m": 68.21614744956847,
+            "distance_scalar_same_order_m": 68.21614744911524,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 8
+          },
+          {
+            "ts": 492537,
+            "lon": 126.55929833333346,
+            "lat": 36.030850000000065,
+            "distance_numpy_m": 68.21614744966674,
+            "distance_old_scalar_m": 68.21614744938434,
+            "distance_scalar_same_order_m": 68.21614744966674,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 9
+          }
+        ]
+      ]
+    },
+    {
+      "rfid_id": "36316040",
+      "ts": 493092,
+      "context": "L",
+      "current_lon": 126.55395464912282,
+      "current_lat": 36.03236055555555,
+      "current_n_rows": 7,
+      "stored_refs": [
+        492697,
+        492688,
+        492653,
+        492641,
+        492617,
+        492595,
+        492568,
+        492536,
+        492504,
+        492502
+      ],
+      "old_scalar_refs": [
+        492698,
+        492688,
+        492653,
+        492641,
+        492617,
+        492595,
+        492568,
+        492537,
+        492504,
+        492502
+      ],
+      "independent_numpy_refs": [
+        492697,
+        492688,
+        492653,
+        492641,
+        492617,
+        492595,
+        492568,
+        492536,
+        492504,
+        492502
+      ],
+      "all_stored_refs_match_independent_numpy": true,
+      "different_day_choices": [
+        [
+          {
+            "ts": 492697,
+            "lon": 126.55954999999997,
+            "lat": 36.03125166666674,
+            "distance_numpy_m": 518.0357030358639,
+            "distance_old_scalar_m": 518.0357030366082,
+            "distance_scalar_same_order_m": 518.0357030358639,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 11
+          },
+          {
+            "ts": 492698,
+            "lon": 126.55954999999996,
+            "lat": 36.03125166666674,
+            "distance_numpy_m": 518.0357030358639,
+            "distance_old_scalar_m": 518.0357030353671,
+            "distance_scalar_same_order_m": 518.0357030358639,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 10
+          }
+        ],
+        [
+          {
+            "ts": 492536,
+            "lon": 126.55929833333347,
+            "lat": 36.03085000000007,
+            "distance_numpy_m": 509.0289194266001,
+            "distance_old_scalar_m": 509.02891942714297,
+            "distance_scalar_same_order_m": 509.0289194266001,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 4
+          },
+          {
+            "ts": 492537,
+            "lon": 126.55929833333346,
+            "lat": 36.030850000000065,
+            "distance_numpy_m": 509.0289194268336,
+            "distance_old_scalar_m": 509.02891942619743,
+            "distance_scalar_same_order_m": 509.0289194268336,
+            "n_rows": 7,
+            "n_rows_delta": 0,
+            "hour_delta": 3
+          }
+        ]
+      ]
+    }
+  ],
+  "eligible_pairs_compared": 2181,
+  "max_old_scalar_numpy_abs_difference_m": 2.2120332232589135e-09,
+  "max_same_order_scalar_numpy_abs_difference_m": 0,
+  "all12_match_independent_numpy": true,
+  "finding": "Original independent scalar expression converted coordinate differences before radians; experiment and corrected independent formula convert coordinates before differencing. No experiment, protocol, score, or output changed.",
+  "firstpass_receipt_sha256": "1e6cb6efb0840bb02f676089335b086f1b69359f536972a7784c73954bef49db",
+  "firstpass_auditor_script_sha256": "72f31b0ee49d71da5ebe6e4acec7b4e3e970dad9e315efeb627b027721f6beda",
+  "corrected_auditor_script_sha256": "f315482deccd1cb936e55ea6f8bfcb69ec825e81a029d0e9b5b0e9b5fb914f03"
+}

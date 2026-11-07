@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-11-05T14:21:14.813190",
+    "step": "T2_start_before_load",
+    "total_ram_gb": 13.809,
+    "available_ram_gb": 1.956,
+    "ram_percent": 85.8,
+    "expected_max_mb": 512,
+    "concurrent_jobs": 1,
+    "status": "PASS"
+  },
+  {
+    "timestamp": "2026-11-05T14:21:14.935920",
+    "step": "T2_data_loaded_before_drift_definition",
+    "total_ram_gb": 13.809,
+    "available_ram_gb": 1.796,
+    "ram_percent": 87.0,
+    "expected_max_mb": 512,
+    "concurrent_jobs": 1,
+    "status": "PASS"
+  },
+  {
+    "timestamp": "2026-11-05T14:21:15.260906",
+    "step": "T2_windows_built_before_evaluation",
+    "total_ram_gb": 13.809,
+    "available_ram_gb": 1.753,
+    "ram_percent": 87.3,
+    "expected_max_mb": 512,
+    "concurrent_jobs": 1,
+    "status": "PASS"
+  },
+  {
+    "timestamp": "2026-11-05T14:21:15.320690",
+    "step": "T2_complete",
+    "total_ram_gb": 13.809,
+    "available_ram_gb": 1.758,
+    "ram_percent": 87.3,
+    "expected_max_mb": 512,
+    "concurrent_jobs": 1,
+    "status": "PASS"
+  }
+]

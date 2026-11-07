@@ -1,0 +1,33 @@
+[
+    {
+        "value":  [
+                      {
+                          "value":  [
+                                        {
+                                            "script":  "t2_state_audit.py",
+                                            "started_at":  "2026-11-05T14:30:15.4196699+09:00",
+                                            "ended_at":  "2026-11-05T14:30:19.2752441+09:00",
+                                            "exit_code":  75,
+                                            "log_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\codex_independent\\t2_run_20261105_143015.log"
+                                        }
+                                    ],
+                          "Count":  1
+                      },
+                      {
+                          "script":  "t2_state_audit.py",
+                          "started_at":  "2026-11-05T14:32:26.8602468+09:00",
+                          "ended_at":  "2026-11-05T14:32:29.3831721+09:00",
+                          "exit_code":  75,
+                          "log_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\codex_independent\\t2_run_20261105_143226.log"
+                      }
+                  ],
+        "Count":  2
+    },
+    {
+        "script":  "t2_state_audit.py",
+        "started_at":  "2026-11-05T14:33:32.3035750+09:00",
+        "ended_at":  "2026-11-05T14:33:59.1179308+09:00",
+        "exit_code":  0,
+        "log_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\codex_independent\\t2_run_20261105_143332.log"
+    }
+]

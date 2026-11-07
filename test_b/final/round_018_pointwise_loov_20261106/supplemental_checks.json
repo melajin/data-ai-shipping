@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-06T14:27:33.403792+09:00",
+  "passed": true,
+  "checks": [
+    "single-global-class rejection",
+    "overlapping accident-window union",
+    "allowlisted path containment"
+  ],
+  "kind": "synthetic; no real data loaded"
+}

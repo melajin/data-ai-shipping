@@ -1,0 +1,123 @@
+{
+  "suite": "round_006_evaluation_and_runner_verification",
+  "timestamp_local": "2026-11-06T01:17:11+0900",
+  "overall_status": "succeeded",
+  "total_checks": 8,
+  "passed_checks": 8,
+  "elapsed_seconds": 5.130890200001886,
+  "checks": {
+    "exact_epoch_hour_conversion": {
+      "status": "passed",
+      "int_24_to_epoch": 24,
+      "ts_1970_01_02_to_epoch": 24,
+      "ts_2026_to_epoch": 495159,
+      "rejected_24ns_timestamp": true,
+      "rejected_active_nat": true,
+      "censored_close_ts_nat_allowed": true,
+      "rejected_fractional_hours": true
+    },
+    "random_hit_probabilities_exact": {
+      "status": "passed",
+      "tested_cases": [
+        {
+          "n": 4,
+          "h": 1,
+          "k": 2,
+          "prob": 0.5
+        },
+        {
+          "n": 3,
+          "h": 2,
+          "k": 1,
+          "prob": 0.6666666666666667
+        },
+        {
+          "n": 1,
+          "h": 1,
+          "k": 1,
+          "prob": 1.0
+        },
+        {
+          "n": 0,
+          "h": 0,
+          "k": 4,
+          "prob": 0.0
+        },
+        {
+          "n": 5,
+          "h": 0,
+          "k": 3,
+          "prob": 0.0
+        },
+        {
+          "n": 5,
+          "h": 5,
+          "k": 1,
+          "prob": 1.0
+        }
+      ]
+    },
+    "paired_rfid_cluster_bootstrap": {
+      "status": "passed",
+      "n_events": 4,
+      "n_rfid": 3,
+      "mean_diff": 0.25,
+      "ci95": [
+        -1.0,
+        1.0
+      ]
+    },
+    "all_vs_subgroup_cohort_random_gate": {
+      "status": "passed",
+      "rand_tier01_g": 0.02,
+      "rand_all_g": 0.41000000000000003,
+      "gate_exceeds_random_passed": true
+    },
+    "distinct_prediction_methods_and_fallbacks": {
+      "status": "passed",
+      "distinct_winners": {
+        "B0": "2026-10-31 20:00:00",
+        "S": "2026-10-31 00:00:00",
+        "G": "2026-10-31 13:00:00"
+      },
+      "fallbacks": {
+        "FB1_S": "no_self_history_candidates",
+        "FB1_G": "no_peer_history_candidates",
+        "FB2_S": "no_continuation_candidates"
+      }
+    },
+    "explicit_defer_vs_reject_stage_statuses": {
+      "status": "passed",
+      "d1_reject_count": 1,
+      "d2_defer_count": 1
+    },
+    "shared_rfid_event_predictions_and_no_pred_denominators": {
+      "status": "passed",
+      "shared_predicted_times": "[100]",
+      "unobserved_event_hits": 0,
+      "total_events_in_denominator": 3
+    },
+    "runner_preflight_and_overwrite_protection": {
+      "status": "passed",
+      "available_ram_bytes": 3836547072,
+      "total_ram_bytes": 14827769856,
+      "preflight_requirement_bytes": 1476395008,
+      "process_count": 15,
+      "overwrite_protection": "verified"
+    }
+  },
+  "spec_compliance": {
+    "epoch_hour_conversion": "verified integer hours vs hour-aligned datetimes; 24ns rejected, NaT on active prediction rejected, censored NaT preserved",
+    "method_pools_B0_S_G": "verified distinct pools and rankings without reranking",
+    "shared_cap_rule": "min(4, len(actual G pool)) verified",
+    "fallback_hierarchy": "d4 -> d3 -> d2 -> d0 -> empty verified",
+    "cohort_separation": "strictly separated all100 vs Tier01=60 random expectations verified; Tier01 gate uses Tier01 random expectation",
+    "paired_rfid_bootstrap": "4000 repetitions, seed 20261105 verified",
+    "fixed_denominators": "whole 100 / Tier01 60 preserved without dropping unobserved events",
+    "stage_spec_looping": "generic d0..d4 schema looped without hardcoded assumptions; missing observations defer",
+    "explanatory_reporting": "reported distinct runs and time spans without probability claims",
+    "frozen_predictions_persistence": "verified persistence of predictions, pool_manifest, run_registry, and ledger before positive labels parsed",
+    "runner_preflight": "768MiB extra + 640MiB reserve preflight and overwrite guard verified",
+    "probability_claims": "probability_outputs: false strictly enforced"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "requested_model": "GPT-6 Luna",
+  "requested_effort": "xhigh",
+  "checks": [
+    "repeated-coordinate part with >=3 points but <3 unique coordinates is ineligible",
+    "two-point part is retained as an ineligible geometry",
+    "closed nonzero path has D=0, D/L=0, and remains eligible",
+    "separate nearly straight parts are measured independently and never bridged",
+    "longest eligible part wins; exact path tie chooses smaller original part index",
+    "source ordinal at the month-1/month-2 boundary maps to month 2 row_index 0",
+    "ts key uses validated naive source-clock epoch-hours; no UTC/KST localization",
+    "raw RFID or source-hour mismatch raises and blocks row validation",
+    "CSV reader preserves quoted row[3] geometry; unrelated extra columns are ignored",
+    "explicit nullable Arrow schema writes null-first/valid-second exactly once and one-row output once"
+  ],
+  "check_count": 10,
+  "ram_preflight": {
+    "checked_at": "2026-11-06T02:41:51.328261+09:00",
+    "available_mib": 4113.11,
+    "expected_extra_mib": 768,
+    "reserve_mib": 640,
+    "active_python_jobs": [],
+    "concurrent_job_reserve_mib": 0,
+    "required_available_mib": 1408,
+    "allowed": true,
+    "estimate_basis": "bounded projected parquet batches, <=99,677 scalar target keys, one month of parsed records, and bounded parquet output batches; R7 observed process peak 334MiB; conservatively reserve 768MiB per active external Python job"
+  },
+  "scope": "synthetic in-memory records and temporary miniature parquet only; no production CSV/parquet, labels, extraction or scoring read"
+}

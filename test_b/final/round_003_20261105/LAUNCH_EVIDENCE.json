@@ -1,0 +1,10 @@
+{
+ "run_id":"run_a2b0e4f8b7cc",
+ "ram_checked_at":"2026-11-05T23:22:28+09:00",
+ "free_gib":4.42,
+ "planned_extra_gib":1.75,
+ "reserve_gib":0.625,
+ "jobs":"one streamed inventory, one synthetic-only repair; no concurrent real dev rerun",
+ "inventory":{"dispatch":"ctx_d9b85151783d","task":"task_08043a3d31b2","agent":"antigravity","model":"gemini-3.8-flash","effort":"high","state":"ready","mode":"terminal"},
+ "round2_repair":{"dispatch":"ctx_c0c2ed5f876f","task":"task_0ffdcea50e59","follow_up_of":"ctx_5a73dc8bd4b2","agent":"codex","inherited_requested_model":"gpt-6-luna","inherited_requested_effort":"xhigh","state":"ready"}
+}

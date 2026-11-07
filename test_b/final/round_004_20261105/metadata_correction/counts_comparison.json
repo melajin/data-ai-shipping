@@ -1,0 +1,323 @@
+{
+  "timestamp_local": "2026-11-06T00:25:09+0900",
+  "total_ledger_rows": 99677,
+  "total_stage_count_rows": 27,
+  "status_change_count": 2,
+  "status_changes": [
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage1",
+      "reason": "missing_previous",
+      "row_count": 6287,
+      "rfid_count": 82,
+      "original_status": "reject",
+      "corrected_status": "defer",
+      "status_changed": true
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage2",
+      "reason": "missing_next",
+      "row_count": 963,
+      "rfid_count": 77,
+      "original_status": "reject",
+      "corrected_status": "defer",
+      "status_changed": true
+    }
+  ],
+  "keep_counts_identical": true,
+  "keep_counts": [
+    {
+      "stage": "stage0",
+      "row_count": 99677,
+      "rfid_count": 82
+    },
+    {
+      "stage": "stage1",
+      "row_count": 7758,
+      "rfid_count": 81
+    },
+    {
+      "stage": "stage2",
+      "row_count": 4361,
+      "rfid_count": 77
+    },
+    {
+      "stage": "stage3",
+      "row_count": 4123,
+      "rfid_count": 75
+    }
+  ],
+  "full_comparison": [
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage0",
+      "reason": "canonical_input_rows",
+      "row_count": 99677,
+      "rfid_count": 82,
+      "original_status": "input",
+      "corrected_status": "input",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage0",
+      "reason": "geometry_valid_and_score_finite",
+      "row_count": 99677,
+      "rfid_count": 82,
+      "original_status": "keep",
+      "corrected_status": "keep",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage1",
+      "reason": "stage0_ok",
+      "row_count": 99677,
+      "rfid_count": 82,
+      "original_status": "input",
+      "corrected_status": "input",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage1",
+      "reason": "observed_onset_large_to_small",
+      "row_count": 7758,
+      "rfid_count": 81,
+      "original_status": "keep",
+      "corrected_status": "keep",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage1",
+      "reason": "current_not_small",
+      "row_count": 46684,
+      "rfid_count": 81,
+      "original_status": "reject",
+      "corrected_status": "reject",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage1",
+      "reason": "missing_previous",
+      "row_count": 6287,
+      "rfid_count": 82,
+      "original_status": "reject",
+      "corrected_status": "defer",
+      "status_changed": true
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage1",
+      "reason": "previous_not_large",
+      "row_count": 38948,
+      "rfid_count": 80,
+      "original_status": "reject",
+      "corrected_status": "reject",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage2",
+      "reason": "stage1_ok",
+      "row_count": 7758,
+      "rfid_count": 81,
+      "original_status": "input",
+      "corrected_status": "input",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage2",
+      "reason": "observed_persistence_at_t_plus_1",
+      "row_count": 4361,
+      "rfid_count": 77,
+      "original_status": "keep",
+      "corrected_status": "keep",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage2",
+      "reason": "missing_next",
+      "row_count": 963,
+      "rfid_count": 77,
+      "original_status": "reject",
+      "corrected_status": "defer",
+      "status_changed": true
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage2",
+      "reason": "next_not_small",
+      "row_count": 2434,
+      "rfid_count": 75,
+      "original_status": "reject",
+      "corrected_status": "reject",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage3",
+      "reason": "stage2_ok",
+      "row_count": 4361,
+      "rfid_count": 77,
+      "original_status": "input",
+      "corrected_status": "input",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage3",
+      "reason": "gear_peer_baseline_eligible",
+      "row_count": 4123,
+      "rfid_count": 75,
+      "original_status": "keep",
+      "corrected_status": "keep",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage3",
+      "reason": "insufficient_eligible_peers",
+      "row_count": 30,
+      "rfid_count": 10,
+      "original_status": "defer",
+      "corrected_status": "defer",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage3",
+      "reason": "own_insufficient_center_dates",
+      "row_count": 9,
+      "rfid_count": 7,
+      "original_status": "defer",
+      "corrected_status": "defer",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage3",
+      "reason": "own_insufficient_triples",
+      "row_count": 152,
+      "rfid_count": 60,
+      "original_status": "defer",
+      "corrected_status": "defer",
+      "status_changed": false
+    },
+    {
+      "category_type": "candidate_transition",
+      "stage": "stage3",
+      "reason": "singleton_no_peer_rule",
+      "row_count": 47,
+      "rfid_count": 1,
+      "original_status": "defer",
+      "corrected_status": "defer",
+      "status_changed": false
+    },
+    {
+      "category_type": "rfid_candidate_presence",
+      "stage": "stage0",
+      "reason": "vessels_with_ge_1_stage0_candidate",
+      "row_count": 99677,
+      "rfid_count": 82,
+      "original_status": "presence",
+      "corrected_status": "presence",
+      "status_changed": false
+    },
+    {
+      "category_type": "rfid_candidate_presence",
+      "stage": "stage1",
+      "reason": "vessels_with_ge_1_stage1_candidate",
+      "row_count": 7758,
+      "rfid_count": 81,
+      "original_status": "presence",
+      "corrected_status": "presence",
+      "status_changed": false
+    },
+    {
+      "category_type": "rfid_candidate_presence",
+      "stage": "stage2",
+      "reason": "vessels_with_ge_1_stage2_candidate",
+      "row_count": 4361,
+      "rfid_count": 77,
+      "original_status": "presence",
+      "corrected_status": "presence",
+      "status_changed": false
+    },
+    {
+      "category_type": "rfid_candidate_presence",
+      "stage": "stage3",
+      "reason": "vessels_with_ge_1_stage3_candidate",
+      "row_count": 4123,
+      "rfid_count": 75,
+      "original_status": "presence",
+      "corrected_status": "presence",
+      "status_changed": false
+    },
+    {
+      "category_type": "method_actual_pool_coverage",
+      "stage": "stage0",
+      "reason": "strict_stage",
+      "row_count": 99677,
+      "rfid_count": 82,
+      "original_status": "strict",
+      "corrected_status": "strict",
+      "status_changed": false
+    },
+    {
+      "category_type": "method_actual_pool_coverage",
+      "stage": "stage0",
+      "reason": "no_common_transitions",
+      "row_count": 1690,
+      "rfid_count": 5,
+      "original_status": "fallback",
+      "corrected_status": "fallback",
+      "status_changed": false
+    },
+    {
+      "category_type": "method_actual_pool_coverage",
+      "stage": "stage2",
+      "reason": "strict_stage",
+      "row_count": 4361,
+      "rfid_count": 77,
+      "original_status": "strict",
+      "corrected_status": "strict",
+      "status_changed": false
+    },
+    {
+      "category_type": "method_actual_pool_coverage",
+      "stage": "stage0",
+      "reason": "no_common_transitions",
+      "row_count": 1690,
+      "rfid_count": 5,
+      "original_status": "fallback",
+      "corrected_status": "fallback",
+      "status_changed": false
+    },
+    {
+      "category_type": "method_actual_pool_coverage",
+      "stage": "stage2",
+      "reason": "no_gear_eligible_candidates",
+      "row_count": 48,
+      "rfid_count": 2,
+      "original_status": "fallback",
+      "corrected_status": "fallback",
+      "status_changed": false
+    },
+    {
+      "category_type": "method_actual_pool_coverage",
+      "stage": "stage3",
+      "reason": "strict_stage",
+      "row_count": 4123,
+      "rfid_count": 75,
+      "original_status": "strict",
+      "corrected_status": "strict",
+      "status_changed": false
+    }
+  ]
+}

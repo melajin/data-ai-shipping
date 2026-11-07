@@ -1,0 +1,38 @@
+{
+  "rule": "score > vessel q90 marks high; reject when >=20% of >=5 observed other vessels are high at exact integer hour",
+  "quantile": 0.9,
+  "peer_fraction_threshold": 0.2,
+  "minimum_peers": 5,
+  "missing_peer_policy": "retain",
+  "rows": 99677,
+  "vessels": 82,
+  "excluded_rows": 10864,
+  "excluded_fraction": 0.10899204430309901,
+  "hours_with_exclusion": 559,
+  "events": [
+    {
+      "feature": "score",
+      "events": 100,
+      "evaluated": 100,
+      "missing": 0,
+      "median_error_h": 1053.5,
+      "hits_6h": 3,
+      "permutation_p": 0.005,
+      "null_median_h": 1369.5
+    },
+    {
+      "feature": "score + peer filter",
+      "events": 100,
+      "evaluated": 100,
+      "missing": 0,
+      "median_error_h": 827.0,
+      "hits_6h": 4,
+      "permutation_p": 0.0005,
+      "null_median_h": 1239.75
+    }
+  ],
+  "seed": 20261106,
+  "permutations": 2000,
+  "null": "shuffle event-level selected times against accident times, median absolute error, <= observed; shared RNG in row order",
+  "labels": "과거\\round_008_linkage_audit_20261105\\devset_positives.csv"
+}

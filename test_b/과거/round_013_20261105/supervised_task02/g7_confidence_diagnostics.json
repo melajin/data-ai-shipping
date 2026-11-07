@@ -1,0 +1,24 @@
+{
+  "7": {
+    "selected_vessels": 58,
+    "confidence_min": 1.0,
+    "confidence_median": 1.0,
+    "confidence_max": 1.0,
+    "fraction_confidence_exactly_one": 1.0,
+    "fraction_confidence_ge_0_95": 1.0,
+    "distinct_confidence_values": 1,
+    "rank_percentile_median": 0.0,
+    "warning": "rank-based confidence is not calibrated probability; selected raw minima make confidence concentrate near 1."
+  },
+  "3": {
+    "selected_vessels": 68,
+    "confidence_min": 1.0,
+    "confidence_median": 1.0,
+    "confidence_max": 1.0,
+    "fraction_confidence_exactly_one": 1.0,
+    "fraction_confidence_ge_0_95": 1.0,
+    "distinct_confidence_values": 1,
+    "rank_percentile_median": 0.0,
+    "warning": "rank-based confidence is not calibrated probability; selected raw minima make confidence concentrate near 1."
+  }
+}

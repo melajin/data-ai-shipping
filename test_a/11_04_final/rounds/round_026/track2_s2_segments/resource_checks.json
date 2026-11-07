@@ -1,0 +1,613 @@
+{
+  "checks": [
+    {
+      "timestamp_utc": "2026-11-05T04:52:11.467904+00:00",
+      "stage": "initial_test",
+      "available_mb": 2222.76,
+      "expected_peak_mb": 450.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 30244,
+          "name": "python.exe",
+          "rss_mb": 223.75,
+          "create_time": 1793854239.2032547
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T04:52:54.932052+00:00",
+      "stage": "extract_segments_start",
+      "available_mb": 1987.75,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 30244,
+          "name": "python.exe",
+          "rss_mb": 214.91,
+          "create_time": 1793854239.2032547
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T04:53:01.379498+00:00",
+      "stage": "extract_segments_complete",
+      "available_mb": 1665.26,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 30244,
+          "name": "python.exe",
+          "rss_mb": 189.77,
+          "create_time": 1793854239.2032547
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T04:57:08.327860+00:00",
+      "stage": "track2_pipeline_start",
+      "available_mb": 1975.43,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 30244,
+          "name": "python.exe",
+          "rss_mb": 233.05,
+          "create_time": 1793854239.2032547
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T04:57:10.071280+00:00",
+      "stage": "phase1_gate_4cv_start",
+      "available_mb": 1923.67,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 30244,
+          "name": "python.exe",
+          "rss_mb": 233.41,
+          "create_time": 1793854239.2032547
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T04:57:11.922150+00:00",
+      "stage": "gate_cv_fold_0_start",
+      "available_mb": 1905.15,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 30244,
+          "name": "python.exe",
+          "rss_mb": 233.43,
+          "create_time": 1793854239.2032547
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T04:57:59.536648+00:00",
+      "stage": "gate_cv0_segment_start",
+      "available_mb": 1943.41,
+      "expected_peak_mb": 300.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 30244,
+          "name": "python.exe",
+          "rss_mb": 196.37,
+          "create_time": 1793854239.2032547
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T04:58:53.757449+00:00",
+      "stage": "gate_cv0_segment_complete",
+      "available_mb": 1857.68,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 30244,
+          "name": "python.exe",
+          "rss_mb": 234.46,
+          "create_time": 1793854239.2032547
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T04:59:45.960298+00:00",
+      "stage": "gate_cv_fold_1_start",
+      "available_mb": 2112.91,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:00:32.296267+00:00",
+      "stage": "gate_cv1_segment_start",
+      "available_mb": 1691.85,
+      "expected_peak_mb": 300.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 7564,
+          "name": "python.exe",
+          "rss_mb": 439.7,
+          "create_time": 1793854796.1180272
+        },
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:01:23.607644+00:00",
+      "stage": "gate_cv1_segment_complete",
+      "available_mb": 1610.23,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 7564,
+          "name": "python.exe",
+          "rss_mb": 439.91,
+          "create_time": 1793854796.1180272
+        },
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:02:15.994541+00:00",
+      "stage": "gate_cv_fold_2_start",
+      "available_mb": 1705.26,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 7564,
+          "name": "python.exe",
+          "rss_mb": 440.6,
+          "create_time": 1793854796.1180272
+        },
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:03:01.622999+00:00",
+      "stage": "gate_cv2_segment_start",
+      "available_mb": 1677.36,
+      "expected_peak_mb": 300.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 7564,
+          "name": "python.exe",
+          "rss_mb": 440.97,
+          "create_time": 1793854796.1180272
+        },
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:03:53.584154+00:00",
+      "stage": "gate_cv2_segment_complete",
+      "available_mb": 2024.37,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.02,
+          "create_time": 1793853229.3546736
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:04:41.384459+00:00",
+      "stage": "gate_cv_fold_3_start",
+      "available_mb": 2118.43,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.02,
+          "create_time": 1793853229.3546736
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:05:27.378263+00:00",
+      "stage": "gate_cv3_segment_start",
+      "available_mb": 1666.76,
+      "expected_peak_mb": 300.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 35068,
+          "name": "python.exe",
+          "rss_mb": 444.92,
+          "create_time": 1793855081.595894
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:06:25.644296+00:00",
+      "stage": "gate_cv3_segment_complete",
+      "available_mb": 1579.24,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 35068,
+          "name": "python.exe",
+          "rss_mb": 457.32,
+          "create_time": 1793855081.595894
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:07:19.222632+00:00",
+      "stage": "phase1_gate_4cv_complete",
+      "available_mb": 1417.84,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.02,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 35068,
+          "name": "python.exe",
+          "rss_mb": 448.11,
+          "create_time": 1793855081.595894
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:07:21.054481+00:00",
+      "stage": "phase2_full_3fold_start",
+      "available_mb": 1408.31,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.02,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 35068,
+          "name": "python.exe",
+          "rss_mb": 448.46,
+          "create_time": 1793855081.595894
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:07:22.668398+00:00",
+      "stage": "outer_fold_0_start",
+      "available_mb": 1377.55,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.02,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 35068,
+          "name": "python.exe",
+          "rss_mb": 448.46,
+          "create_time": 1793855081.595894
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:08:13.122192+00:00",
+      "stage": "outer_fold0_segment_start",
+      "available_mb": 1382.26,
+      "expected_peak_mb": 300.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.02,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 35068,
+          "name": "python.exe",
+          "rss_mb": 450.78,
+          "create_time": 1793855081.595894
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:09:39.058162+00:00",
+      "stage": "outer_fold0_segment_complete",
+      "available_mb": 1792.23,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:10:35.854641+00:00",
+      "stage": "outer_fold_1_start",
+      "available_mb": 1345.68,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 25004,
+          "name": "python.exe",
+          "rss_mb": 458.21,
+          "create_time": 1793855421.7240143
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:11:26.776999+00:00",
+      "stage": "outer_fold1_segment_start",
+      "available_mb": 1357.97,
+      "expected_peak_mb": 300.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 11260,
+          "name": "python.exe",
+          "rss_mb": 88.0,
+          "create_time": 1793853229.3546736
+        },
+        {
+          "pid": 25004,
+          "name": "python.exe",
+          "rss_mb": 453.23,
+          "create_time": 1793855421.7240143
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:12:55.481118+00:00",
+      "stage": "outer_fold1_segment_complete",
+      "available_mb": 1688.08,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 25004,
+          "name": "python.exe",
+          "rss_mb": 455.71,
+          "create_time": 1793855421.7240143
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:14:02.052159+00:00",
+      "stage": "outer_fold_2_start",
+      "available_mb": 1598.0,
+      "expected_peak_mb": 350.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 25004,
+          "name": "python.exe",
+          "rss_mb": 458.91,
+          "create_time": 1793855421.7240143
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:15:09.977056+00:00",
+      "stage": "outer_fold2_segment_start",
+      "available_mb": 1820.37,
+      "expected_peak_mb": 300.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:16:43.456947+00:00",
+      "stage": "outer_fold2_segment_complete",
+      "available_mb": 1573.8,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [
+        {
+          "pid": 14664,
+          "name": "python.exe",
+          "rss_mb": 378.58,
+          "create_time": 1793855770.5277424
+        }
+      ],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:17:41.392052+00:00",
+      "stage": "phase2_full_3fold_complete",
+      "available_mb": 2181.22,
+      "expected_peak_mb": 100.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    },
+    {
+      "timestamp_utc": "2026-11-05T05:17:43.064314+00:00",
+      "stage": "track2_pipeline_finished",
+      "available_mb": 2189.91,
+      "expected_peak_mb": 50.0,
+      "minimum_free_mb": 1024.0,
+      "allowed": true,
+      "other_python_processes": [],
+      "action_on_shortfall": "stop stage before operation; do not terminate other processes"
+    }
+  ]
+}

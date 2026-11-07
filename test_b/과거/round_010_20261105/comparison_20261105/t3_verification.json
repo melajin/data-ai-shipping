@@ -1,0 +1,231 @@
+{
+  "same_operator": true,
+  "separate_session_reviewer": false,
+  "implementation_independence": true,
+  "event_summary_recomputations": [
+    {
+      "metric": "lin_raw",
+      "stratum": "ALL",
+      "aggregation": "event",
+      "n_events": 76,
+      "n_vessels": 64,
+      "delta_recomputed": -0.08900783145920814,
+      "delta_source": -0.08900783145920814,
+      "delta_abs_error": 0.0,
+      "wilcoxon_recomputed": 0.01930795281029432,
+      "wilcoxon_source": 0.01930795281029432,
+      "wilcoxon_abs_error": 0.0,
+      "sign_recomputed": 0.03695490402736831,
+      "sign_source": 0.0369549040273683,
+      "mde_recomputed": 0.12683600005414902,
+      "mde_source": 0.12683600005414905,
+      "rank_method": "normal_signed_rank_tie_corrected_no_continuity",
+      "n_abs_tie_groups": 2,
+      "cluster_bootstrap_ci95_posthoc": [
+        -0.16183704302322025,
+        -0.010719236483041582
+      ],
+      "cluster_bootstrap_note": "2000 vessel cluster resamples, event-weighted mean, Python Random seed20261105; posthoc sensitivity, not gate replacement"
+    },
+    {
+      "metric": "lin_raw",
+      "stratum": "Tier0_1",
+      "aggregation": "event",
+      "n_events": 48,
+      "n_vessels": 43,
+      "delta_recomputed": -0.15108451041291832,
+      "delta_source": -0.15108451041291832,
+      "delta_abs_error": 0.0,
+      "wilcoxon_recomputed": 0.0019280743497980836,
+      "wilcoxon_source": 0.0019280743497980836,
+      "wilcoxon_abs_error": 0.0,
+      "sign_recomputed": 0.007942726509483578,
+      "sign_source": 0.007942726509483574,
+      "mde_recomputed": 0.15063179833384788,
+      "mde_source": 0.1506317983338479,
+      "rank_method": "normal_signed_rank_tie_corrected_no_continuity",
+      "n_abs_tie_groups": 2,
+      "cluster_bootstrap_ci95_posthoc": [
+        -0.22800519196577715,
+        -0.06558020017148548
+      ],
+      "cluster_bootstrap_note": "2000 vessel cluster resamples, event-weighted mean, Python Random seed20261105; posthoc sensitivity, not gate replacement"
+    },
+    {
+      "metric": "speed_mean",
+      "stratum": "ALL",
+      "aggregation": "event",
+      "n_events": 76,
+      "n_vessels": 64,
+      "delta_recomputed": 0.03012860730922207,
+      "delta_source": 0.030128607309222073,
+      "delta_abs_error": 3.469446951953614e-18,
+      "wilcoxon_recomputed": 0.4406820825864735,
+      "wilcoxon_source": 0.44068208258647357,
+      "wilcoxon_abs_error": 5.551115123125783e-17,
+      "sign_recomputed": 0.8175538505509844,
+      "sign_source": 0.8175538505509841,
+      "mde_recomputed": 0.13998617267204408,
+      "mde_source": 0.13998617267204408,
+      "rank_method": "normal_signed_rank_tie_corrected_no_continuity",
+      "n_abs_tie_groups": 5,
+      "cluster_bootstrap_ci95_posthoc": [
+        -0.050194387257395695,
+        0.11393836634786608
+      ],
+      "cluster_bootstrap_note": "2000 vessel cluster resamples, event-weighted mean, Python Random seed20261105; posthoc sensitivity, not gate replacement"
+    },
+    {
+      "metric": "speed_mean",
+      "stratum": "Tier0_1",
+      "aggregation": "event",
+      "n_events": 48,
+      "n_vessels": 43,
+      "delta_recomputed": 0.03749864655550525,
+      "delta_source": 0.03749864655550525,
+      "delta_abs_error": 0.0,
+      "wilcoxon_recomputed": 0.4749763347864834,
+      "wilcoxon_source": 0.4749763347864834,
+      "wilcoxon_abs_error": 0.0,
+      "sign_recomputed": 0.7708669945730264,
+      "sign_source": 0.7708669945730263,
+      "mde_recomputed": 0.1674808934021205,
+      "mde_source": 0.16748089340212052,
+      "rank_method": "normal_signed_rank_tie_corrected_no_continuity",
+      "n_abs_tie_groups": 3,
+      "cluster_bootstrap_ci95_posthoc": [
+        -0.055708277172793745,
+        0.13190118785992028
+      ],
+      "cluster_bootstrap_note": "2000 vessel cluster resamples, event-weighted mean, Python Random seed20261105; posthoc sensitivity, not gate replacement"
+    },
+    {
+      "metric": "step_mean",
+      "stratum": "ALL",
+      "aggregation": "event",
+      "n_events": 75,
+      "n_vessels": 63,
+      "delta_recomputed": -0.016639850450740273,
+      "delta_source": -0.016639850450740273,
+      "delta_abs_error": 0.0,
+      "wilcoxon_recomputed": 0.6842882333219361,
+      "wilcoxon_source": 0.6842882333219361,
+      "wilcoxon_abs_error": 0.0,
+      "sign_recomputed": 0.644463913894226,
+      "sign_source": 0.6444639138942256,
+      "mde_recomputed": 0.13725058225133724,
+      "mde_source": 0.13725058225133727,
+      "rank_method": "normal_signed_rank_tie_corrected_no_continuity",
+      "n_abs_tie_groups": 3,
+      "cluster_bootstrap_ci95_posthoc": [
+        -0.09122020749945346,
+        0.06849203486056431
+      ],
+      "cluster_bootstrap_note": "2000 vessel cluster resamples, event-weighted mean, Python Random seed20261105; posthoc sensitivity, not gate replacement"
+    },
+    {
+      "metric": "step_mean",
+      "stratum": "Tier0_1",
+      "aggregation": "event",
+      "n_events": 47,
+      "n_vessels": 42,
+      "delta_recomputed": -0.04676692558978562,
+      "delta_source": -0.0467669255897856,
+      "delta_abs_error": 1.3877787807814457e-17,
+      "wilcoxon_recomputed": 0.2996915362229533,
+      "wilcoxon_source": 0.2996915362229531,
+      "wilcoxon_abs_error": 2.220446049250313e-16,
+      "sign_recomputed": 0.5600646295802107,
+      "sign_source": 0.5600646295802106,
+      "mde_recomputed": 0.16594107987122442,
+      "mde_source": 0.16594107987122445,
+      "rank_method": "normal_signed_rank_tie_corrected_no_continuity",
+      "n_abs_tie_groups": 3,
+      "cluster_bootstrap_ci95_posthoc": [
+        -0.144618197309984,
+        0.05640125865585368
+      ],
+      "cluster_bootstrap_note": "2000 vessel cluster resamples, event-weighted mean, Python Random seed20261105; posthoc sensitivity, not gate replacement"
+    }
+  ],
+  "raw_status": {
+    "status": "completed",
+    "actual_raw_metrics_rebuilt": true,
+    "n_selected_rows": 99677,
+    "n_vessels": 82,
+    "n_event_metric_records": 300,
+    "n_mismatches": 0,
+    "max_percentile_error": 0,
+    "mismatches": [],
+    "input_columns": [
+      "rfid_id_int",
+      "ts",
+      "len_m",
+      "bbox_m",
+      "cen_lon",
+      "cen_lat",
+      "state",
+      "score"
+    ],
+    "guard_centers_h": 76,
+    "min_controls": 15,
+    "hod_circular_h": 1,
+    "reuse_note": "does not import build_vessel/ctrl_mask/pct_rank or either producer; deliberately independent verifier"
+  },
+  "statistics_match": true,
+  "source_gate_audit_pending_report": false,
+  "acceptance_checks": [
+    {
+      "item": "76h guard of every accident / hod circular<=1 / exact n_rows / all controls / min15",
+      "result": "verified_for_3_metrics_primary_design",
+      "evidence": "t3_raw_recompute.json; 300 event-metric records match"
+    },
+    {
+      "item": "required full indicator/design/stratum/width coverage",
+      "result": "available_in_Codex_output",
+      "evidence": "codex_independent/t1_gate_results.json 2520 cells, t2 2160 cells"
+    },
+    {
+      "item": "zero-inflation suppression",
+      "result": "Gemini_original_failed; final_inference_corrected",
+      "evidence": "36 forbidden Gemini T1 grid cells, three T2 layers excluded"
+    },
+    {
+      "item": "binary exact McNemar as originally named",
+      "result": "not_equivalent; explicit_posthoc_1_to_M_supplement",
+      "evidence": "fractional rounding rejected; mixture distinguished; M=1 reduction fixture passed"
+    },
+    {
+      "item": "Bonferroni",
+      "result": "single_K7_candidate; literal_contract_double_correction_fails",
+      "evidence": "final_decision.json; both interpretations preserved"
+    },
+    {
+      "item": "MDE",
+      "result": "approximate_planning_values_and_unattainable_status_reported",
+      "evidence": "mde_corrections.json; detailed reports"
+    },
+    {
+      "item": "minimum 3 statistics independently implemented",
+      "result": "passed_6",
+      "evidence": "t3_event_recompute.json; stdlib Wilcoxon/sign/MDE"
+    },
+    {
+      "item": "source-provenance and captured process exits",
+      "result": "Codex_and_current_audit_captured; Gemini_T1_original_unavailable",
+      "evidence": "codex_independent/*execution.json; phase_execution.json; source collision disclosed"
+    },
+    {
+      "item": "separate-session independent reviewer",
+      "result": "not_performed",
+      "evidence": "same author, separate implementation only; original do-yourself constraint retained"
+    },
+    {
+      "item": "official accident detection performance",
+      "result": "not_evaluated",
+      "evidence": "no new model, threshold, 2025 test use or submission"
+    }
+  ],
+  "comparison_task_completed": true,
+  "all_original_formal_acceptance_conditions_claimed": false
+}

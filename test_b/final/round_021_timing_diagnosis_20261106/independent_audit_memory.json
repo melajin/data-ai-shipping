@@ -1,0 +1,154 @@
+{
+  "checked_at": "2026-11-06T15:48:55.283323+09:00",
+  "available_mib": 4453.9140625,
+  "estimated_peak_mib": 512,
+  "reserve_mib": 640,
+  "basis": "one score partition of tuples; 7372 CSV records; 82 linked hour sets; no all-fleet hourly retention or rescoring",
+  "top_processes": [
+    {
+      "pid": 9940,
+      "name": "explorer.exe",
+      "rss_mib": 653.87890625
+    },
+    {
+      "pid": 23364,
+      "name": "Obsidian.exe",
+      "rss_mib": 564.72265625
+    },
+    {
+      "pid": 27636,
+      "name": "Orca.exe",
+      "rss_mib": 339.10546875
+    },
+    {
+      "pid": 28540,
+      "name": "Orca.exe",
+      "rss_mib": 306.39453125
+    },
+    {
+      "pid": 3352,
+      "name": "explorer.exe",
+      "rss_mib": 286.5390625
+    },
+    {
+      "pid": 5260,
+      "name": "codex.exe",
+      "rss_mib": 283.13671875
+    },
+    {
+      "pid": 3096,
+      "name": "codex.exe",
+      "rss_mib": 250.46484375
+    },
+    {
+      "pid": 26540,
+      "name": "Orca.exe",
+      "rss_mib": 238.390625
+    },
+    {
+      "pid": 1992,
+      "name": "CrossDeviceService.exe",
+      "rss_mib": 212.23828125
+    },
+    {
+      "pid": 2832,
+      "name": "PhoneExperienceHost.exe",
+      "rss_mib": 186.54296875
+    },
+    {
+      "pid": 20808,
+      "name": "msedgewebview2.exe",
+      "rss_mib": 168.6171875
+    },
+    {
+      "pid": 20268,
+      "name": "msedgewebview2.exe",
+      "rss_mib": 164.69921875
+    }
+  ],
+  "python_processes": [
+    {
+      "pid": 24880,
+      "name": "python.exe",
+      "rss_mib": 22.80078125
+    }
+  ],
+  "allowed": true,
+  "before_streaming": {
+    "checked_at": "2026-11-06T15:48:57.686624+09:00",
+    "stage": "before_arrow_streaming_import",
+    "available_mib": 4378.8515625,
+    "estimated_peak_mib": 512,
+    "reserve_mib": 640,
+    "top_processes": [
+      {
+        "pid": 9940,
+        "name": "explorer.exe",
+        "rss_mib": 653.87890625
+      },
+      {
+        "pid": 23364,
+        "name": "Obsidian.exe",
+        "rss_mib": 565.2890625
+      },
+      {
+        "pid": 27636,
+        "name": "Orca.exe",
+        "rss_mib": 340.48046875
+      },
+      {
+        "pid": 28540,
+        "name": "Orca.exe",
+        "rss_mib": 306.7578125
+      },
+      {
+        "pid": 3352,
+        "name": "explorer.exe",
+        "rss_mib": 286.5390625
+      },
+      {
+        "pid": 5260,
+        "name": "codex.exe",
+        "rss_mib": 283.13671875
+      },
+      {
+        "pid": 3096,
+        "name": "codex.exe",
+        "rss_mib": 250.46484375
+      },
+      {
+        "pid": 26540,
+        "name": "Orca.exe",
+        "rss_mib": 238.390625
+      },
+      {
+        "pid": 1992,
+        "name": "CrossDeviceService.exe",
+        "rss_mib": 212.234375
+      },
+      {
+        "pid": 2832,
+        "name": "PhoneExperienceHost.exe",
+        "rss_mib": 186.54296875
+      },
+      {
+        "pid": 20808,
+        "name": "msedgewebview2.exe",
+        "rss_mib": 168.62890625
+      },
+      {
+        "pid": 20268,
+        "name": "msedgewebview2.exe",
+        "rss_mib": 164.69921875
+      }
+    ],
+    "python_processes": [
+      {
+        "pid": 24880,
+        "name": "python.exe",
+        "rss_mib": 43.49609375
+      }
+    ],
+    "allowed": true
+  }
+}

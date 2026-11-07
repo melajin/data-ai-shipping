@@ -1,0 +1,585 @@
+{
+  "events": 100,
+  "rfid_count": 82,
+  "tier01_events": 60,
+  "canonical_frame_rows": 99677,
+  "rfid_pools": {
+    "31001758": {
+      "base_count": 916,
+      "common_count": 892,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31005917": {
+      "base_count": 18,
+      "common_count": 0,
+      "fallback": true,
+      "full_kcap": 4,
+      "common_exists": false
+    },
+    "31005928": {
+      "base_count": 809,
+      "common_count": 772,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31007124": {
+      "base_count": 765,
+      "common_count": 741,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31007500": {
+      "base_count": 1431,
+      "common_count": 1407,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31008085": {
+      "base_count": 2938,
+      "common_count": 2914,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31008933": {
+      "base_count": 1313,
+      "common_count": 1270,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31009538": {
+      "base_count": 4273,
+      "common_count": 4224,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31012971": {
+      "base_count": 808,
+      "common_count": 784,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31013760": {
+      "base_count": 565,
+      "common_count": 518,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31014032": {
+      "base_count": 811,
+      "common_count": 787,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31014672": {
+      "base_count": 306,
+      "common_count": 281,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31016197": {
+      "base_count": 1183,
+      "common_count": 1159,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31100492": {
+      "base_count": 3092,
+      "common_count": 3025,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31703108": {
+      "base_count": 1442,
+      "common_count": 1375,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31704073": {
+      "base_count": 2005,
+      "common_count": 1975,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31704782": {
+      "base_count": 2279,
+      "common_count": 2255,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "31815412": {
+      "base_count": 3264,
+      "common_count": 3240,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "32300169": {
+      "base_count": 3394,
+      "common_count": 3359,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "32300202": {
+      "base_count": 777,
+      "common_count": 751,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "32300267": {
+      "base_count": 1197,
+      "common_count": 1141,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "32300334": {
+      "base_count": 3106,
+      "common_count": 3067,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "32300353": {
+      "base_count": 2851,
+      "common_count": 2785,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "32300717": {
+      "base_count": 1824,
+      "common_count": 1800,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "32301131": {
+      "base_count": 310,
+      "common_count": 282,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "33200664": {
+      "base_count": 1328,
+      "common_count": 1304,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "33200829": {
+      "base_count": 2335,
+      "common_count": 2295,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "33201019": {
+      "base_count": 523,
+      "common_count": 489,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "33201506": {
+      "base_count": 841,
+      "common_count": 809,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "34200580": {
+      "base_count": 574,
+      "common_count": 550,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "34200731": {
+      "base_count": 3059,
+      "common_count": 3035,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "34400535": {
+      "base_count": 1208,
+      "common_count": 1182,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "34400601": {
+      "base_count": 671,
+      "common_count": 638,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "35100289": {
+      "base_count": 1582,
+      "common_count": 1544,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "35200056": {
+      "base_count": 1101,
+      "common_count": 1058,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "35200311": {
+      "base_count": 2428,
+      "common_count": 2394,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "35200486": {
+      "base_count": 1756,
+      "common_count": 1732,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36000925": {
+      "base_count": 5,
+      "common_count": 0,
+      "fallback": true,
+      "full_kcap": 4,
+      "common_exists": false
+    },
+    "36001358": {
+      "base_count": 932,
+      "common_count": 884,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36001411": {
+      "base_count": 480,
+      "common_count": 432,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36001494": {
+      "base_count": 548,
+      "common_count": 524,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36003960": {
+      "base_count": 424,
+      "common_count": 378,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36004693": {
+      "base_count": 1243,
+      "common_count": 1188,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36006776": {
+      "base_count": 2614,
+      "common_count": 2590,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36007269": {
+      "base_count": 401,
+      "common_count": 373,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36007909": {
+      "base_count": 756,
+      "common_count": 732,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36008148": {
+      "base_count": 839,
+      "common_count": 815,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36008988": {
+      "base_count": 733,
+      "common_count": 685,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36010190": {
+      "base_count": 1406,
+      "common_count": 1371,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36010554": {
+      "base_count": 1092,
+      "common_count": 1068,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36011749": {
+      "base_count": 1326,
+      "common_count": 1299,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36011845": {
+      "base_count": 741,
+      "common_count": 709,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36015383": {
+      "base_count": 1711,
+      "common_count": 1667,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36015515": {
+      "base_count": 1861,
+      "common_count": 1837,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36100073": {
+      "base_count": 626,
+      "common_count": 578,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36101547": {
+      "base_count": 91,
+      "common_count": 56,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36102425": {
+      "base_count": 261,
+      "common_count": 237,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36108086": {
+      "base_count": 788,
+      "common_count": 746,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36110858": {
+      "base_count": 549,
+      "common_count": 505,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36113617": {
+      "base_count": 199,
+      "common_count": 175,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36113654": {
+      "base_count": 1479,
+      "common_count": 1453,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36115953": {
+      "base_count": 754,
+      "common_count": 725,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36200918": {
+      "base_count": 505,
+      "common_count": 481,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36212188": {
+      "base_count": 222,
+      "common_count": 196,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36212203": {
+      "base_count": 904,
+      "common_count": 880,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36301063": {
+      "base_count": 272,
+      "common_count": 230,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36301579": {
+      "base_count": 494,
+      "common_count": 470,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36301995": {
+      "base_count": 807,
+      "common_count": 776,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36304593": {
+      "base_count": 368,
+      "common_count": 342,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36304898": {
+      "base_count": 718,
+      "common_count": 682,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36307233": {
+      "base_count": 182,
+      "common_count": 158,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36307839": {
+      "base_count": 122,
+      "common_count": 98,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36311633": {
+      "base_count": 1847,
+      "common_count": 1821,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36313865": {
+      "base_count": 1316,
+      "common_count": 1292,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36314076": {
+      "base_count": 2110,
+      "common_count": 2061,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36314346": {
+      "base_count": 1856,
+      "common_count": 1819,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36314611": {
+      "base_count": 1237,
+      "common_count": 1205,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36314887": {
+      "base_count": 825,
+      "common_count": 801,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36314895": {
+      "base_count": 1651,
+      "common_count": 1579,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36315137": {
+      "base_count": 1446,
+      "common_count": 1419,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36315252": {
+      "base_count": 676,
+      "common_count": 652,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    },
+    "36316040": {
+      "base_count": 1177,
+      "common_count": 1153,
+      "fallback": false,
+      "full_kcap": 4,
+      "common_exists": true
+    }
+  },
+  "prediction_rows": 1304,
+  "event_result_rows": 800,
+  "unresolved_positive_rfid": []
+}

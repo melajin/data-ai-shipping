@@ -1,0 +1,31 @@
+category_type,stage,status,reason,row_count,rfid_count,description
+candidate_transition,d0,input,canonical_input_rows,99677,82,Total canonical hourly observations presented for d0
+candidate_transition,d0,keep,d0_admitted,99677,82,Rows meeting stage condition: valid geometry and legacy score
+candidate_transition,d1,input,d0_ok,99677,82,Input rows admitted from d0
+candidate_transition,d1,keep,d1_admitted,42242,81,Rows meeting stage condition: current observation is small
+candidate_transition,d1,reject,observed_not_small,57435,82,Stage d1 reject: observed_not_small
+candidate_transition,d2,input,d1_ok,42242,81,Input rows admitted from d1
+candidate_transition,d2,keep,d2_admitted,32268,78,Rows meeting stage condition: observed continuation
+candidate_transition,d2,defer,missing_previous_hour,2216,80,Stage d2 defer: missing_previous_hour
+candidate_transition,d2,reject,previous_hour_not_small,7758,81,Stage d2 reject: previous_hour_not_small
+candidate_transition,d3,input,d2_ok,32268,78,Input rows admitted from d2
+candidate_transition,d3,keep,d3_admitted,16558,61,Rows meeting stage condition: eligible self history
+candidate_transition,d3,defer,insufficient_self_runs,15709,78,Stage d3 defer: insufficient_self_runs
+candidate_transition,d3,defer,insufficient_self_start_dates,1,1,Stage d3 defer: insufficient_self_start_dates
+candidate_transition,d4,input,d3_ok,16558,61,Input rows admitted from d3
+candidate_transition,d4,keep,d4_admitted,13723,60,Rows meeting stage condition: eligible same-gear peer history
+candidate_transition,d4,defer,insufficient_eligible_peers,2725,17,Stage d4 defer: insufficient_eligible_peers
+candidate_transition,d4,defer,singleton_gear,110,1,Stage d4 defer: singleton_gear
+rfid_candidate_presence,d0,presence,vessels_with_ge_1_d0_candidate,99677,82,Number of distinct vessels with at least one d0 candidate (valid geometry and legacy score)
+rfid_candidate_presence,d1,presence,vessels_with_ge_1_d1_candidate,42242,81,Number of distinct vessels with at least one d1 candidate (current observation is small)
+rfid_candidate_presence,d2,presence,vessels_with_ge_1_d2_candidate,32268,78,Number of distinct vessels with at least one d2 candidate (observed continuation)
+rfid_candidate_presence,d3,presence,vessels_with_ge_1_d3_candidate,16558,61,Number of distinct vessels with at least one d3 candidate (eligible self history)
+rfid_candidate_presence,d4,presence,vessels_with_ge_1_d4_candidate,13723,60,Number of distinct vessels with at least one d4 candidate (eligible same-gear peer history)
+method_actual_pool_coverage,d0,strict,strict_stage,99677,82,Method B0 actual pool assigned: d0 (fallback: strict_stage)
+method_actual_pool_coverage,d0,fallback,no_continuation_candidates,1142,4,Method S actual pool assigned: d0 (fallback: no_continuation_candidates)
+method_actual_pool_coverage,d2,fallback,no_self_history_candidates,4383,17,Method S actual pool assigned: d2 (fallback: no_self_history_candidates)
+method_actual_pool_coverage,d3,strict,strict_stage,16558,61,Method S actual pool assigned: d3 (fallback: strict_stage)
+method_actual_pool_coverage,d0,fallback,no_peer_history_candidates,1142,4,Method G actual pool assigned: d0 (fallback: no_peer_history_candidates)
+method_actual_pool_coverage,d2,fallback,no_peer_history_candidates,4383,17,Method G actual pool assigned: d2 (fallback: no_peer_history_candidates)
+method_actual_pool_coverage,d3,fallback,no_peer_history_candidates,110,1,Method G actual pool assigned: d3 (fallback: no_peer_history_candidates)
+method_actual_pool_coverage,d4,strict,strict_stage,13723,60,Method G actual pool assigned: d4 (fallback: strict_stage)

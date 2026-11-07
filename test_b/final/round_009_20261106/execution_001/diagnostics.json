@@ -1,0 +1,598 @@
+{
+  "total_events": 100,
+  "tier01_events": 60,
+  "rfid_count": 82,
+  "canonical_ledger_rows": 99677,
+  "prediction_rows": 963,
+  "pool_manifest_rows": 246,
+  "event_result_rows": 600,
+  "coverage_rows": 100,
+  "operational_gate_passed": false,
+  "operational_gate_failures": [
+    "tier01_top1 exact count 20 * (G - B0) (0) < n (60) [diff=+0.0000]",
+    "tier01_top1 paired bootstrap 95% CI lower bound (-0.04918032786885246) <= 0.0",
+    "whole100_top1 hit delta (-1) < 0 (worsened vs B0) [diff=-0.0100]"
+  ],
+  "rule_diagnostics": {
+    "row_count": 99677,
+    "rfid_count": 82,
+    "inventory_counts": {
+      "valid_triple_n": 88036,
+      "pattern_n": 3807,
+      "per_gear": {
+        "연안복합": {
+          "vessel_n": 37,
+          "valid_triple_n": 25703,
+          "pattern_n": 1470
+        },
+        "자망": {
+          "vessel_n": 31,
+          "valid_triple_n": 42921,
+          "pattern_n": 1733
+        },
+        "통발": {
+          "vessel_n": 13,
+          "valid_triple_n": 17677,
+          "pattern_n": 564
+        },
+        "채낚기연승낚시": {
+          "vessel_n": 1,
+          "valid_triple_n": 1735,
+          "pattern_n": 40
+        }
+      },
+      "per_vessel": [
+        {
+          "rfid_id": "31001758",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 816,
+          "pattern_n": 45
+        },
+        {
+          "rfid_id": "31005917",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 12,
+          "pattern_n": 0
+        },
+        {
+          "rfid_id": "31005928",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 614,
+          "pattern_n": 0
+        },
+        {
+          "rfid_id": "31007124",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 537,
+          "pattern_n": 1
+        },
+        {
+          "rfid_id": "31007500",
+          "primary_gear": "자망",
+          "valid_triple_n": 1289,
+          "pattern_n": 14
+        },
+        {
+          "rfid_id": "31008085",
+          "primary_gear": "통발",
+          "valid_triple_n": 2825,
+          "pattern_n": 134
+        },
+        {
+          "rfid_id": "31008933",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 1248,
+          "pattern_n": 73
+        },
+        {
+          "rfid_id": "31009538",
+          "primary_gear": "자망",
+          "valid_triple_n": 4265,
+          "pattern_n": 33
+        },
+        {
+          "rfid_id": "31012971",
+          "primary_gear": "자망",
+          "valid_triple_n": 443,
+          "pattern_n": 24
+        },
+        {
+          "rfid_id": "31013760",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 443,
+          "pattern_n": 47
+        },
+        {
+          "rfid_id": "31014032",
+          "primary_gear": "자망",
+          "valid_triple_n": 703,
+          "pattern_n": 15
+        },
+        {
+          "rfid_id": "31014672",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 262,
+          "pattern_n": 12
+        },
+        {
+          "rfid_id": "31016197",
+          "primary_gear": "통발",
+          "valid_triple_n": 1066,
+          "pattern_n": 27
+        },
+        {
+          "rfid_id": "31100492",
+          "primary_gear": "통발",
+          "valid_triple_n": 2994,
+          "pattern_n": 109
+        },
+        {
+          "rfid_id": "31703108",
+          "primary_gear": "통발",
+          "valid_triple_n": 1330,
+          "pattern_n": 26
+        },
+        {
+          "rfid_id": "31704073",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 1977,
+          "pattern_n": 148
+        },
+        {
+          "rfid_id": "31704782",
+          "primary_gear": "자망",
+          "valid_triple_n": 2195,
+          "pattern_n": 87
+        },
+        {
+          "rfid_id": "31815412",
+          "primary_gear": "자망",
+          "valid_triple_n": 2959,
+          "pattern_n": 136
+        },
+        {
+          "rfid_id": "32300169",
+          "primary_gear": "자망",
+          "valid_triple_n": 3232,
+          "pattern_n": 161
+        },
+        {
+          "rfid_id": "32300202",
+          "primary_gear": "자망",
+          "valid_triple_n": 729,
+          "pattern_n": 19
+        },
+        {
+          "rfid_id": "32300267",
+          "primary_gear": "자망",
+          "valid_triple_n": 922,
+          "pattern_n": 34
+        },
+        {
+          "rfid_id": "32300334",
+          "primary_gear": "자망",
+          "valid_triple_n": 3100,
+          "pattern_n": 288
+        },
+        {
+          "rfid_id": "32300353",
+          "primary_gear": "자망",
+          "valid_triple_n": 2756,
+          "pattern_n": 253
+        },
+        {
+          "rfid_id": "32300717",
+          "primary_gear": "자망",
+          "valid_triple_n": 1754,
+          "pattern_n": 22
+        },
+        {
+          "rfid_id": "32301131",
+          "primary_gear": "통발",
+          "valid_triple_n": 201,
+          "pattern_n": 0
+        },
+        {
+          "rfid_id": "33200664",
+          "primary_gear": "자망",
+          "valid_triple_n": 1290,
+          "pattern_n": 35
+        },
+        {
+          "rfid_id": "33200829",
+          "primary_gear": "자망",
+          "valid_triple_n": 2052,
+          "pattern_n": 89
+        },
+        {
+          "rfid_id": "33201019",
+          "primary_gear": "통발",
+          "valid_triple_n": 420,
+          "pattern_n": 23
+        },
+        {
+          "rfid_id": "33201506",
+          "primary_gear": "자망",
+          "valid_triple_n": 796,
+          "pattern_n": 43
+        },
+        {
+          "rfid_id": "34200580",
+          "primary_gear": "자망",
+          "valid_triple_n": 446,
+          "pattern_n": 33
+        },
+        {
+          "rfid_id": "34200731",
+          "primary_gear": "통발",
+          "valid_triple_n": 2944,
+          "pattern_n": 32
+        },
+        {
+          "rfid_id": "34400535",
+          "primary_gear": "자망",
+          "valid_triple_n": 1089,
+          "pattern_n": 17
+        },
+        {
+          "rfid_id": "34400601",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 566,
+          "pattern_n": 33
+        },
+        {
+          "rfid_id": "35100289",
+          "primary_gear": "자망",
+          "valid_triple_n": 1398,
+          "pattern_n": 13
+        },
+        {
+          "rfid_id": "35200056",
+          "primary_gear": "자망",
+          "valid_triple_n": 978,
+          "pattern_n": 15
+        },
+        {
+          "rfid_id": "35200311",
+          "primary_gear": "자망",
+          "valid_triple_n": 2326,
+          "pattern_n": 139
+        },
+        {
+          "rfid_id": "35200486",
+          "primary_gear": "통발",
+          "valid_triple_n": 1468,
+          "pattern_n": 4
+        },
+        {
+          "rfid_id": "36000925",
+          "primary_gear": "자망",
+          "valid_triple_n": 0,
+          "pattern_n": 0
+        },
+        {
+          "rfid_id": "36001358",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 700,
+          "pattern_n": 75
+        },
+        {
+          "rfid_id": "36001411",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 335,
+          "pattern_n": 17
+        },
+        {
+          "rfid_id": "36001494",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 429,
+          "pattern_n": 0
+        },
+        {
+          "rfid_id": "36003960",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 306,
+          "pattern_n": 28
+        },
+        {
+          "rfid_id": "36004693",
+          "primary_gear": "통발",
+          "valid_triple_n": 1116,
+          "pattern_n": 89
+        },
+        {
+          "rfid_id": "36006776",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 2487,
+          "pattern_n": 96
+        },
+        {
+          "rfid_id": "36007269",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 304,
+          "pattern_n": 5
+        },
+        {
+          "rfid_id": "36007909",
+          "primary_gear": "자망",
+          "valid_triple_n": 654,
+          "pattern_n": 16
+        },
+        {
+          "rfid_id": "36008148",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 707,
+          "pattern_n": 12
+        },
+        {
+          "rfid_id": "36008988",
+          "primary_gear": "자망",
+          "valid_triple_n": 547,
+          "pattern_n": 18
+        },
+        {
+          "rfid_id": "36010190",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 1185,
+          "pattern_n": 67
+        },
+        {
+          "rfid_id": "36010554",
+          "primary_gear": "통발",
+          "valid_triple_n": 898,
+          "pattern_n": 30
+        },
+        {
+          "rfid_id": "36011749",
+          "primary_gear": "자망",
+          "valid_triple_n": 1104,
+          "pattern_n": 13
+        },
+        {
+          "rfid_id": "36011845",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 524,
+          "pattern_n": 55
+        },
+        {
+          "rfid_id": "36015383",
+          "primary_gear": "자망",
+          "valid_triple_n": 1487,
+          "pattern_n": 52
+        },
+        {
+          "rfid_id": "36015515",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 1720,
+          "pattern_n": 31
+        },
+        {
+          "rfid_id": "36100073",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 499,
+          "pattern_n": 16
+        },
+        {
+          "rfid_id": "36101547",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 57,
+          "pattern_n": 11
+        },
+        {
+          "rfid_id": "36102425",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 230,
+          "pattern_n": 12
+        },
+        {
+          "rfid_id": "36108086",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 635,
+          "pattern_n": 15
+        },
+        {
+          "rfid_id": "36110858",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 299,
+          "pattern_n": 18
+        },
+        {
+          "rfid_id": "36113617",
+          "primary_gear": "자망",
+          "valid_triple_n": 84,
+          "pattern_n": 1
+        },
+        {
+          "rfid_id": "36113654",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 1465,
+          "pattern_n": 107
+        },
+        {
+          "rfid_id": "36115953",
+          "primary_gear": "자망",
+          "valid_triple_n": 682,
+          "pattern_n": 42
+        },
+        {
+          "rfid_id": "36200918",
+          "primary_gear": "통발",
+          "valid_triple_n": 314,
+          "pattern_n": 3
+        },
+        {
+          "rfid_id": "36212188",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 139,
+          "pattern_n": 12
+        },
+        {
+          "rfid_id": "36212203",
+          "primary_gear": "통발",
+          "valid_triple_n": 359,
+          "pattern_n": 18
+        },
+        {
+          "rfid_id": "36301063",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 196,
+          "pattern_n": 13
+        },
+        {
+          "rfid_id": "36301579",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 371,
+          "pattern_n": 43
+        },
+        {
+          "rfid_id": "36301995",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 715,
+          "pattern_n": 23
+        },
+        {
+          "rfid_id": "36304593",
+          "primary_gear": "자망",
+          "valid_triple_n": 307,
+          "pattern_n": 7
+        },
+        {
+          "rfid_id": "36304898",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 406,
+          "pattern_n": 19
+        },
+        {
+          "rfid_id": "36307233",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 82,
+          "pattern_n": 10
+        },
+        {
+          "rfid_id": "36307839",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 71,
+          "pattern_n": 7
+        },
+        {
+          "rfid_id": "36311633",
+          "primary_gear": "통발",
+          "valid_triple_n": 1742,
+          "pattern_n": 69
+        },
+        {
+          "rfid_id": "36313865",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 1252,
+          "pattern_n": 34
+        },
+        {
+          "rfid_id": "36314076",
+          "primary_gear": "채낚기연승낚시",
+          "valid_triple_n": 1735,
+          "pattern_n": 40
+        },
+        {
+          "rfid_id": "36314346",
+          "primary_gear": "자망",
+          "valid_triple_n": 1665,
+          "pattern_n": 47
+        },
+        {
+          "rfid_id": "36314611",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 998,
+          "pattern_n": 90
+        },
+        {
+          "rfid_id": "36314887",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 632,
+          "pattern_n": 48
+        },
+        {
+          "rfid_id": "36314895",
+          "primary_gear": "자망",
+          "valid_triple_n": 1143,
+          "pattern_n": 28
+        },
+        {
+          "rfid_id": "36315137",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 1329,
+          "pattern_n": 118
+        },
+        {
+          "rfid_id": "36315252",
+          "primary_gear": "자망",
+          "valid_triple_n": 526,
+          "pattern_n": 39
+        },
+        {
+          "rfid_id": "36316040",
+          "primary_gear": "연안복합",
+          "valid_triple_n": 1155,
+          "pattern_n": 129
+        }
+      ],
+      "definition": "all exact contiguous geometry-valid triples; pattern mask independent of current legacy-score validity"
+    },
+    "per_gear_stage_counts": {
+      "연안복합": {
+        "s0_keep": 30226,
+        "s1_keep": 25703,
+        "s2_keep": 1470,
+        "s3_keep": 1412,
+        "s4_keep": 1401
+      },
+      "자망": {
+        "s0_keep": 47447,
+        "s1_keep": 42921,
+        "s2_keep": 1733,
+        "s3_keep": 1701,
+        "s4_keep": 1696
+      },
+      "채낚기연승낚시": {
+        "s0_keep": 2110,
+        "s1_keep": 1735,
+        "s2_keep": 40,
+        "s3_keep": 40,
+        "s4_keep": 0
+      },
+      "통발": {
+        "s0_keep": 19894,
+        "s1_keep": 17677,
+        "s2_keep": 564,
+        "s3_keep": 549,
+        "s4_keep": 537
+      }
+    },
+    "reference_history": {
+      "valid_triple_unit": "one exact (u-2,u-1,u) with finite nonnegative len_m/bbox_m at all three hours",
+      "window": "all three hours in [t-720,t); end u in [t-718,t)",
+      "endpoints_inclusive": true,
+      "pattern_counts_are_subset_of_valid_reference_triples": true,
+      "min_valid_triples": 24,
+      "min_distinct_end_dates": 3
+    },
+    "fallback_counts_by_method": {
+      "B0": {},
+      "S": {
+        "s2_empty_use_s0": 5
+      },
+      "G": {
+        "s4_empty_use_s0": 5,
+        "s4_empty_use_s2": 2
+      }
+    },
+    "G_vs_S_selected_changes": {
+      "top1_rfids_changed": 73,
+      "top4_rfids_changed": 74,
+      "denominator_rfids": 82
+    },
+    "rate_definitions": {
+      "self": "own transition rate = own_pattern_n / own_ref_n over all valid contiguous geometry triples ending u in [t-720,t); legacy score does not filter reference triples",
+      "peer": "equal-vessel midrank rarity of the own exact rational rate among eligible same-single-gear peer rates at t; rate less/equal uses integer cross-products"
+    }
+  }
+}

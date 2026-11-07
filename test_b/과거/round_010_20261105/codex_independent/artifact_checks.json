@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-05T14:38:30.888503+09:00",
+  "scope": "artifact completeness and invariant checks only; independent T3 still pending",
+  "t1_cells": 2520,
+  "t2_cells": 2160,
+  "t1_event_metric_design_rows": 21000,
+  "zero_inflation_percentile_suppression_verified": true,
+  "binary_Wilcoxon_prohibited_verified": true,
+  "zero_MDE_not_reported_verified": true,
+  "latest_T1_T2_actual_exit_codes": [
+    0,
+    0
+  ]
+}

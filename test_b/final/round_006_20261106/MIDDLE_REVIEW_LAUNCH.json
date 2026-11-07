@@ -1,0 +1,7 @@
+{
+ "checked_at":"2026-11-06T01:21:26+09:00","free_mib":3819.1,"new_static_review_estimate_mib":1024,"foreground_growth_allowance_mib":512,"reserve_mib":640,
+ "foreground_data":{"session_id":11044,"path":"execution_001","state":"running_at_launch","started_at":"2026-11-06T01:18:04+09:00"},
+ "terra":{"dispatch":"ctx_70d94f5dd0f8","task":"task_9c7701dbf510","agent":"codex","requested_inherited_model":"gpt-6.1-terra","requested_inherited_effort":"high","state":"ready"},
+ "sonnet":{"dispatch":"ctx_bfec91d2002d","task":"task_7bce5ce51c52","agent":"claude","requested_inherited_model":"claude-sonnet-5","requested_inherited_effort":"high","state":"ready"},
+ "restriction":"static review only, no dataset loads/test reruns/polling while foreground calculation runs"
+}

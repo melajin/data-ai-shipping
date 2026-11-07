@@ -1,0 +1,7 @@
+{
+ "checked_at":"2026-11-06T00:37:28+09:00","free_mib":4436,"estimated_extra_mib":2432,"reserve_mib":640,
+ "scope":"two selected-artifact reviews and one bounded saved-artifact correction, no raw source loading",
+ "correction":{"dispatch":"ctx_774af7d53e63","task":"task_af1d2994568b","agent":"codex","inherited_requested_model":"gpt-6-luna","inherited_requested_effort":"xhigh","state":"ready"},
+ "terra":{"dispatch":"ctx_b1c9c03d0d01","task":"task_688cf771ecd6","agent":"codex","inherited_requested_model":"gpt-6.1-terra","inherited_requested_effort":"high","state":"ready"},
+ "sonnet":{"dispatch":"ctx_48b976b579fa","task":"task_53ec5ee673b7","agent":"claude","inherited_requested_model":"claude-sonnet-5","inherited_requested_effort":"high","state":"ready"}
+}

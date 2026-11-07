@@ -1,0 +1,102 @@
+{
+  "status": "ready_for_future_api_reuse",
+  "spec": "API_GUARD_FIX_SPEC.md",
+  "pre_edit_source_snapshot": "implementation_fixes/duration_rules_before_guard.py",
+  "pre_edit_sha256": "60cb570c95899ef1c7054982057dce27e33347bf637f4d2c6bd932337c132dc7",
+  "pre_edit_bytes": 18922,
+  "pre_edit_sha256_matches_execution_001": true,
+  "post_edit_sha256": "963d2e5863d3d721e9ca60036eedb848944b449b925687fdd3d48495cc9d2e0b",
+  "corrections": [
+    "d0-failed current rows now have d1-d4 masks false and statuses not_applicable",
+    "geometry-valid run construction remains independent of legacy-score validity",
+    "G fallback reason now follows actual fallback pool stage: d3 no_peer_history_candidates, d2 no_self_history_candidates, d0 no_continuation_candidates or no_observations"
+  ],
+  "actual_execution_001": {
+    "status": "complete",
+    "rows": 99677,
+    "finite_legacy_scores": 99677,
+    "d0_true": 99677,
+    "subset_violations": {
+      "d1_outside_d0": 0,
+      "d2_outside_d1": 0,
+      "d3_outside_d2": 0,
+      "d4_outside_d3": 0
+    },
+    "prediction_rows": 966,
+    "source_hash_matches_preserved_pre_edit_snapshot": true,
+    "recorded_output_hashes_verified_unchanged": true,
+    "output_hashes": {
+      "predictions.csv": {
+        "expected_sha256": "5a65dc808c85bd85992b296cb97002ba457819e164b724b041331daa94ede0e3",
+        "actual_sha256": "5a65dc808c85bd85992b296cb97002ba457819e164b724b041331daa94ede0e3",
+        "matches": true
+      },
+      "pool_manifest.csv": {
+        "expected_sha256": "c2e653677df35be5093729da1d757e855d6a29c690cf7ea1c06a43cc4cac3f24",
+        "actual_sha256": "c2e653677df35be5093729da1d757e855d6a29c690cf7ea1c06a43cc4cac3f24",
+        "matches": true
+      },
+      "run_registry.csv": {
+        "expected_sha256": "4b73377aaf3c0e49493fec098bd73ee517f5083fd19452a02bc9127047b39fe7",
+        "actual_sha256": "4b73377aaf3c0e49493fec098bd73ee517f5083fd19452a02bc9127047b39fe7",
+        "matches": true
+      },
+      "candidate_ledger.parquet": {
+        "expected_sha256": "f51058b917eded1de3619278f5238f01d73cfc1f9c941ec35d8debb9a5d2f8cd",
+        "actual_sha256": "f51058b917eded1de3619278f5238f01d73cfc1f9c941ec35d8debb9a5d2f8cd",
+        "matches": true
+      },
+      "stage_counts.csv": {
+        "expected_sha256": "22078fa9dc30c7fccea23ab8e0f22b21edaf806c5f67f5497bf1d33aade75305",
+        "actual_sha256": "22078fa9dc30c7fccea23ab8e0f22b21edaf806c5f67f5497bf1d33aade75305",
+        "matches": true
+      },
+      "stage_event_coverage.csv": {
+        "expected_sha256": "ea74360e60f3d986f0296e4e65212291faba9c105b2cfe6b7f3b3477d3d6a774",
+        "actual_sha256": "ea74360e60f3d986f0296e4e65212291faba9c105b2cfe6b7f3b3477d3d6a774",
+        "matches": true
+      },
+      "event_results.csv": {
+        "expected_sha256": "1612681217cca1072c2856b4efad3d2c02340c7850d7f0a37c2807304bba82bd",
+        "actual_sha256": "1612681217cca1072c2856b4efad3d2c02340c7850d7f0a37c2807304bba82bd",
+        "matches": true
+      },
+      "metrics.json": {
+        "expected_sha256": "de920297468f0b8d35eccd83956db8767d2152dc90a9963e41c70226e6346d00",
+        "actual_sha256": "de920297468f0b8d35eccd83956db8767d2152dc90a9963e41c70226e6346d00",
+        "matches": true
+      },
+      "diagnostics.json": {
+        "expected_sha256": "173e2565f38bfd477d12f1899c63b275862c37933c024b63eab1688c10f60e6e",
+        "actual_sha256": "173e2565f38bfd477d12f1899c63b275862c37933c024b63eab1688c10f60e6e",
+        "matches": true
+      }
+    },
+    "rerun_performed": false,
+    "existing_outputs_rewritten": false
+  },
+  "fixture_checks": {
+    "status": "passed",
+    "checks": [
+      "both observed boundaries and invalid/gap censoring",
+      "strict close boundary and inclusive start-window edge",
+      "10 runs/3 dates and 5 other-vessel boundary",
+      "current observed lower bound",
+      "future append invariance of earlier scores",
+      "unknown and singleton gear fallback",
+      "distinct B0/S/G winners and shared caps",
+      "defer/reject/not_applicable stage statuses",
+      "integer-hour/datetime equivalence and source_ts_hour lineage",
+      "nanosecond-unit and unaligned timestamps rejected",
+      "NaN coordinates do not invalidate duration geometry",
+      "NaN/inf score masks defer and preserve geometry-valid reference runs",
+      "G fallback reasons follow d3/d2/d0/empty actual pools",
+      "d0-failed rows stay outside every downstream candidate mask"
+    ],
+    "input_rows": 660,
+    "interface_fixture_rows": 2,
+    "fixture_only": true,
+    "real_data_loaded": false
+  },
+  "readiness_note": "The completed run remains usable for its fixed all-finite-score input; the d0 guard does not change its masks/ranking. Corrected G fallback labels apply to future API builds; the completed execution artifacts remain immutable."
+}

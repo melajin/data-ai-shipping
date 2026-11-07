@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-05T14:29:55.703800+09:00",
+  "stage": "small_synthetic_math_check",
+  "available_mib": 1695.37890625,
+  "estimated_maximum_increment_mib": 256,
+  "reserve_mib": 1024,
+  "estimate_basis": "scientific imports plus 36-hour synthetic arrays and 8-pairing enumeration; no parquet or dev evaluation",
+  "other_experiment": "T1 deferred; no own parallel experiment",
+  "allowed": true
+}

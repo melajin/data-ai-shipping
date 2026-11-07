@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-05T16:10:36.060867+09:00",
+  "stage": "after independent metadata-order check",
+  "available_gib": 1.5275955200195312,
+  "expected_peak_gib": 0.35,
+  "launcher_overhead_gib": 0.022
+}

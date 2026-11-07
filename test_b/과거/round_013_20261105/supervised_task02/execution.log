@@ -1,0 +1,10 @@
+G6: python -B testB/round_013_20261105/g6_selection_and_confidence.py | exit 0 | 2.437 s | 2026-11-05T20:10:25+09:00 -> 2026-11-05T20:10:27+09:00
+G7: python -B testB/round_013_20261105/g7_evaluate.py | exit 0 | 1.842 s | 2026-11-05T20:10:46+09:00 -> 2026-11-05T20:10:48+09:00
+Independent audit: standard-library-only saved-result recomputation | exit 0 | 0 discrepancies
+Synthetic validation: 10/10 passed; Task01 prior synthetic: 9/9 passed (separate evidence)
+g6 first-row duplicate keys retained: 45750; reconstructed trips=3615; g4 trips=3615
+Tier0-1: w7 0/41; w3 0/46; bootstrap B=4000 seed=11052026.
+RAM pre-g6=3521.2 MiB at 2026-11-05T20:10:24.5185647+09:00; pre-g7=3483.2 MiB at 2026-11-05T20:10:44.6818817+09:00; pre-audit=3495.1 MiB at 2026-11-05T20:18:15.2759533+09:00; pre-finalization=3491.6 MiB at 2026-11-05T20:18:15.6328307+09:00.
+Protected input/contract hashes unchanged by both execution stages: True.
+Final independent audit rerun: exit 0; standard-library result agrees for selections, eligibility, event hits, baseline p0, all four bootstrap CIs, and both MDE values.
+Before final metadata check: 3568.6 MiB at 2026-11-05T20:22:19.6175929+09:00; estimated added peak 100 MiB.

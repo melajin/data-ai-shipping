@@ -1,0 +1,8 @@
+﻿{
+    "stage":  "before final manifests and report",
+    "checked_at":  "2026-11-05T20:18:15.6328307+09:00",
+    "available_ram_mib":  3491.6,
+    "total_ram_mib":  14140.9,
+    "estimated_additional_peak_mib":  100,
+    "estimate_basis":  "Small JSON/CSV reads and Markdown rendering; no parquet or bootstrap arrays; one process"
+}

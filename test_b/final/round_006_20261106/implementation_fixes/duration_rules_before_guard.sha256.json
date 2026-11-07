@@ -1,0 +1,8 @@
+{
+  "source": "duration_rules.py",
+  "pre_edit_snapshot": "implementation_fixes/duration_rules_before_guard.py",
+  "sha256": "60cb570c95899ef1c7054982057dce27e33347bf637f4d2c6bd932337c132dc7",
+  "bytes": 18922,
+  "matches_execution_001_source": true,
+  "execution_source_sha256": "60cb570c95899ef1c7054982057dce27e33347bf637f4d2c6bd932337c132dc7"
+}

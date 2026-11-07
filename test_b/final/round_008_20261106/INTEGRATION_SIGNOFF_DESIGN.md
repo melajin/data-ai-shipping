@@ -1,0 +1,5 @@
+# Root design decision before code/data execution
+
+Both actual competing reviews completed: Terra msg_efd83c8b8cfe/ctx_4b5bd78214aa, Sonnet msg_e6dae40d592a/ctx_c5cad59f7683. Sonnet explicitly accepted correction of its candidate leakage/unique-coordinate/duration mixture proposals. Both support longest informative part and pure shape histories; no blocking design issue remains. Adopt only additional diagnostic of peer tie activation, with denominator and effect on SAME pool distinguished from pool restriction. Do not change primary ranking/gates.
+
+Luna receives extraction+rules implementation, Gemini evaluator/runner implementation. Root owns contract, this reconciliation and actual data release. Both middles receive final code/results for independent review after lower workers report. This release is implementation/synthetic tests only, actual extraction and evaluation require root integration checks and immediate RAM preflight. All known missing labels/timezone/CRS remain missing. No new model or official submission.

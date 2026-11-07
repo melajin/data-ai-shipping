@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-05T15:09:43.011137+09:00",
+  "raw_event_metric_comparisons": 300,
+  "raw_mismatches": 0,
+  "independent_statistical_recomputations": 6,
+  "independent_state_rate_comparisons": [
+    {
+      "metric": "저속굴곡",
+      "stratum": "ALL",
+      "n": 76,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "저속굴곡",
+      "stratum": "Tier0_1",
+      "n": 48,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "저속굴곡",
+      "stratum": "기관손상",
+      "n": 28,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "이동",
+      "stratum": "ALL",
+      "n": 76,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "이동",
+      "stratum": "Tier0_1",
+      "n": 48,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "이동",
+      "stratum": "기관손상",
+      "n": 28,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "정박정지",
+      "stratum": "ALL",
+      "n": 76,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "정박정지",
+      "stratum": "Tier0_1",
+      "n": 48,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "정박정지",
+      "stratum": "기관손상",
+      "n": 28,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "해상정지",
+      "stratum": "ALL",
+      "n": 76,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "해상정지",
+      "stratum": "Tier0_1",
+      "n": 48,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "해상정지",
+      "stratum": "기관손상",
+      "n": 28,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "연안정지",
+      "stratum": "ALL",
+      "n": 76,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "연안정지",
+      "stratum": "Tier0_1",
+      "n": 48,
+      "independent_raw_rates_match": true
+    },
+    {
+      "metric": "연안정지",
+      "stratum": "기관손상",
+      "n": 28,
+      "independent_raw_rates_match": true
+    }
+  ],
+  "raw_selected_rows_checked_2026_no_duplicate_hours": 99677,
+  "same_operator_implementation_independence_only": true,
+  "single_Bonferroni_candidate": "lin_raw/Tier0_1",
+  "markdown_links_checked": 24,
+  "stable_output_hashes_verified": 137,
+  "historical_runtime_owner_preserved": true
+}

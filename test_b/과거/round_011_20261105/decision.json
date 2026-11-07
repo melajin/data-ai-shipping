@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-11-05T17:02:59.671693+09:00",
+  "user_decision": {
+    "lin_raw": "adopted_as_feature_candidate",
+    "source": "current user explicit instruction",
+    "is_confirmed_drift_label": false
+  },
+  "experiment_status": "completed_and_independently_audited",
+  "audit_status": "passed",
+  "hypotheses": {
+    "H1_time_location_lin_localization": "not_supported_in_fixed_design",
+    "H2_relative_activity_transport_joint_localization": "not_supported_in_fixed_design"
+  },
+  "tier01": {
+    "total_events": 60,
+    "common_evaluable_events": 35,
+    "common_evaluable_vessels": 31,
+    "no_common_candidates_near_event_all60": 34,
+    "T_lin_top1_expected": 0.006281394537189484,
+    "L_lin_top1_expected": 0.004860908656251972,
+    "TL_lin_top1_expected": 0.003975335008349542,
+    "uniform_same_candidates_top1_expected": 0.008009866294973531,
+    "TL_joint_top1_expected": 0.0
+  },
+  "no_parameter_revision_after_results": true,
+  "physical_drift_conclusion": "unknown",
+  "online_alarm_performance": "not_evaluated",
+  "next_action": "coverage,location novelty and sequence-definition review before any new experiment",
+  "report": "ROUND011_실험결과보고_20261105.md"
+}

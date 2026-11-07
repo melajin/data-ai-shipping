@@ -1,0 +1,38 @@
+{
+  "rows": 3887065,
+  "vessels": 7372,
+  "n_finite_scores": 3887065,
+  "vessels_without_finite_scores": 0,
+  "tied_max_vessels": 1,
+  "tie_center_changed_vessels": 1,
+  "gap_midpoint_changed_vessels": 3072,
+  "split_counts": {
+    "development": 3686,
+    "validation": 3686
+  },
+  "split_algorithm": "sort by SHA256(UTF8('round021-v1|'+rfid_id)), rfid_id; alternating development/validation starting rank0 development; all fleet before labels",
+  "policy_prediction_sha256": "1dcd1c78453dd9cc4f26c480e86020f6c7de7cfb6131f78fc05445f2cf0146a8",
+  "hourly_manifest_sha256": "ed9827249e989c8c856b4472b295c5337bade4d3d39c04d2131ca6c25b5fe7f4",
+  "baseline_parity": {
+    "vessels_compared": 7372,
+    "fields": [
+      "rfid_id",
+      "n_rows",
+      "peak_score",
+      "peak_ts",
+      "peak_state",
+      "median_score",
+      "p95_score",
+      "n_unique_hours",
+      "gap_total_h",
+      "activity_radius_km",
+      "n_finite_scores"
+    ],
+    "mismatch_count": 0,
+    "mismatches": [],
+    "exact_float_equality": true,
+    "source_ordinal_comparison": "unavailable: Round019 vessel_peaks.csv has no ordinal field; independent exact-max minimum source_ordinal assertions passed for every newly scored vessel"
+  },
+  "sum_of_worker_process_peak_mib": 1068.325,
+  "vessel_error_records": 0
+}

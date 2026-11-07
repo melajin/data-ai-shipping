@@ -1,0 +1,37 @@
+{
+  "events_total": 100,
+  "events_tier01": 60,
+  "rfids_total": 82,
+  "rfids_tier01": 55,
+  "ledger_rows": 99677,
+  "predictions_rows": 963,
+  "pool_manifest_rows": 246,
+  "event_result_rows": 600,
+  "stage_event_coverage_rows": 100,
+  "unresolved_positive_rfids": [],
+  "rule_diagnostics": {
+    "input_rows": 99677,
+    "rfid_count": 82,
+    "stage0_rows": 99677,
+    "stage1_rows": 7758,
+    "stage2_rows": 4361,
+    "stage3_rows": 4123,
+    "duplicate_rfid_ts": false,
+    "physical_stop_claim": false,
+    "baseline_window_hours": 720,
+    "baseline_min_triples": 24,
+    "baseline_min_center_dates": 3,
+    "min_eligible_peers": 5,
+    "shared_cap_rule": "min(4, G actual pool size)",
+    "singleton_rule": "no peer-based Stage3 eligibility; G uses documented fallback"
+  },
+  "gate_evaluation_summary": {
+    "overall_passed": false,
+    "failures": [
+      "tier01_top1_diff (-0.0167) < +0.05 requirement",
+      "tier01_top1 paired bootstrap 95% CI lower bound (-0.05357142857142857) <= 0.0",
+      "whole100_top1 difference (-0.0200) < 0.0 (worsened vs B0)",
+      "tier01_top1 hit rate (0.0167) does not exceed random expectation (0.0223)"
+    ]
+  }
+}

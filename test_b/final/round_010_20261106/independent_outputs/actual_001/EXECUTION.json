@@ -1,0 +1,65 @@
+{
+  "component": "independent_availability.py (Gemini worker)",
+  "round": "round_010_20261106",
+  "started_at": "2026-11-06T03:44:28+0900",
+  "status": "complete",
+  "ram_preflight": {
+    "checked_at": "2026-11-06T03:44:29+0900",
+    "available_bytes": 4257964032,
+    "available_mib": 4060.71,
+    "gemini_extra_mib": 512,
+    "luna_probe_mib": 768,
+    "reserve_mib": 640,
+    "total_required_mib": 1920,
+    "allowed": true,
+    "active_python_processes": [
+      {
+        "pid": 7260,
+        "name": "python.exe",
+        "rss_bytes": 86732800,
+        "rss_mib": 82.71
+      }
+    ]
+  },
+  "sources": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_010_20261106\\independent_availability.py": "7a52eab63687e5ad6c7836496e7de7c158c19130dc99da0342a55dc25f22097e",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_010_20261106\\CONTRACT.md": "b8a3372754104ec8825f313a5148acbf59900fc1631769e17c9c9fc0fda5373e",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_010_20261106\\PROTOCOL.md": "15169b9e20c11d26bb537dc5dde95441210cc40a308c475936239baba58c7ed1"
+  },
+  "inputs": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001\\candidate_ledger.parquet": {
+      "sha256": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+      "bytes": 6433671
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_003_20261105\\gear_registry.csv": {
+      "sha256": "0a94249ad364500132d70521134fc493e836ec63d7d8734cc412e33c3adb73dd",
+      "bytes": 4474
+    }
+  },
+  "outputs": {
+    "per_vessel.csv": {
+      "sha256": "82f7e07bb43aa04fc662912e3ee7662d0d08d39be16a3e96e311306f9d75685c",
+      "bytes": 3157
+    },
+    "independent_distance_cases.csv": {
+      "sha256": "4901eb87056734a78e486a86fb5efb8ca0f69081ff937a4c0739c79f9e9e8602",
+      "bytes": 874
+    },
+    "summary.json": {
+      "sha256": "43ea0edae750fb64f1f54720427f7c4a89e5b672eda3a44f0186e182037bddf3",
+      "bytes": 2498
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-06T03:44:32+0900",
+  "elapsed_seconds": 4.1534,
+  "compute_elapsed_seconds": 3.1395,
+  "peak_working_set_bytes": 131739648,
+  "counts_summary": {
+    "observed_n": 99677,
+    "valid_position_n": 99677,
+    "own_eligible_n": 96976,
+    "peer_eligible_n": 94525,
+    "cases_n": 12
+  }
+}

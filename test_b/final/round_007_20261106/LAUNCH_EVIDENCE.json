@@ -1,0 +1,6 @@
+{
+ "checked_at":"2026-11-06T01:36:35+09:00","free_mib":4544.1,"estimated_extra_mib":1920,"reserve_mib":640,
+ "scope":"one limited provided-raw-source sample/plot analysis and one tiny API guard correction",
+ "geometry_observation":{"dispatch":"ctx_44a1a49f9a42","task":"task_80ff88997dfd","agent":"antigravity","model":"gemini-3.8-flash","effort":"high","state":"ready","mode":"terminal"},
+ "r6_guard":{"dispatch":"ctx_abb80888b94a","task":"task_9a92c8d3836c","agent":"codex","inherited_requested_model":"gpt-6-luna","inherited_requested_effort":"xhigh","state":"ready"}
+}

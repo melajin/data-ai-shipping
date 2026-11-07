@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "panels": 100,
+  "index_rows": 100,
+  "pdf_pages": 101,
+  "png_dimensions": [
+    1920,
+    2880
+  ],
+  "pdf_images_pixel_identical": 101,
+  "score_file_unchanged": true,
+  "continuous_runs": 4205,
+  "run_length_median_hours": 5,
+  "source_vertex_count": 2706562,
+  "scale_bars_verified": 300,
+  "pdf_pages_rendered": [
+    1,
+    2,
+    27,
+    43,
+    101
+  ],
+  "memory_check": {
+    "time": "2026-11-06T09:23:34.230286+09:00",
+    "stage": "final verification and sequential PDF raster checks",
+    "available_mib": 3936.0,
+    "estimated_peak_mib": 650,
+    "current_process_mib": 190.9,
+    "basis": "One vessel at a time; max 3,413 hourly rows; 1920x2880 RGBA canvas ~22 MiB; raw coordinate arrays and matplotlib collections; no parallel data jobs"
+  },
+  "independent_review": {
+    "task": "/root/visual_review",
+    "role": "sol_review",
+    "model": "gpt-6.1-sol",
+    "effort": "high",
+    "evidence": "Explicit collaboration.spawn_agent configuration; read-only code review and panel_001 visual review returned no blocking issue",
+    "scope": "code and one sample image; not an independent review of every panel"
+  }
+}

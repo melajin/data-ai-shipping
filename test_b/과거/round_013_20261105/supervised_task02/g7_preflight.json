@@ -1,0 +1,8 @@
+﻿{
+    "stage":  "before supervised Task02 g7 evaluation/bootstrap",
+    "checked_at":  "2026-11-05T20:10:44.6818817+09:00",
+    "available_ram_mib":  3483.2,
+    "total_ram_mib":  14140.9,
+    "estimated_additional_peak_mib":  180,
+    "estimate_basis":  "At most 200 event rows; 4,000 replicates over \u003c100 vessel clusters, 4 analysis populations/windows and float lists well under 2 MiB; SciPy binomial functions; no parquet arrays, sequential process"
+}

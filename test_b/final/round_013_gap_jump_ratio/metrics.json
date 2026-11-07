@@ -1,0 +1,14 @@
+{
+  "feature": "gap_jump_speed_ratio_abs_log",
+  "n_events_total": 100,
+  "n_events_scored": 97,
+  "n_gap_pairs": 6205,
+  "n_eligible_gap_pairs": 5387,
+  "n_scored_vessels": 79,
+  "median_abs_error_hours": 1095.0,
+  "hit_within_6h": 1,
+  "permutation_p": 0.0115,
+  "null_median_hours": 1337.0,
+  "permutations": 2000,
+  "seed": 20261106
+}

@@ -1,0 +1,409 @@
+{
+  "source": "independent raw reconstruction",
+  "method_note": "posthoc 1:M conditional matched-set extension, not silently renamed original McNemar",
+  "McNemar_reduction_fixture": {
+    "p": 0.1796875,
+    "expected": 0.1796875,
+    "passed": true
+  },
+  "results": [
+    {
+      "n_events": 76,
+      "acc_positive_count": 61,
+      "acc_rate": 0.8026315789473685,
+      "control_rate_event_weighted": 0.8164038792374556,
+      "conditional_exact_p": 0.6451134234958446,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "저속굴곡",
+      "stratum": "ALL",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.1418408665206409,
+      "ci95_positive_rate": [
+        -0.0711832581924338,
+        0.03799313902106769
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 48,
+      "acc_positive_count": 39,
+      "acc_rate": 0.8125,
+      "control_rate_event_weighted": 0.8016352140725456,
+      "conditional_exact_p": 1.0,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "저속굴곡",
+      "stratum": "Tier0_1",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.1701027056400943,
+      "ci95_positive_rate": [
+        -0.05501171682538517,
+        0.06628026327686802
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 28,
+      "acc_positive_count": 25,
+      "acc_rate": 0.8928571428571429,
+      "control_rate_event_weighted": 0.9224874378807059,
+      "conditional_exact_p": 0.37011360387810127,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "저속굴곡",
+      "stratum": "기관손상",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.20684545854880584,
+      "ci95_positive_rate": [
+        -0.130046898678001,
+        0.04949867535825823
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 76,
+      "acc_positive_count": 13,
+      "acc_rate": 0.17105263157894737,
+      "control_rate_event_weighted": 0.19502863726973385,
+      "conditional_exact_p": 0.6044899949185324,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "이동",
+      "stratum": "ALL",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.19013457559802324,
+      "ci95_positive_rate": [
+        -0.09934618408508092,
+        0.0541429092486825
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 48,
+      "acc_positive_count": 6,
+      "acc_rate": 0.125,
+      "control_rate_event_weighted": 0.17559139943472915,
+      "conditional_exact_p": 0.3616388491581812,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "이동",
+      "stratum": "Tier0_1",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.22553507733122574,
+      "ci95_positive_rate": [
+        -0.1341801475500152,
+        0.04358317880063097
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 28,
+      "acc_positive_count": 6,
+      "acc_rate": 0.21428571428571427,
+      "control_rate_event_weighted": 0.2043204839925661,
+      "conditional_exact_p": 0.9999999999999998,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "이동",
+      "stratum": "기관손상",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.33358278029496513,
+      "ci95_positive_rate": [
+        -0.13034624380203155,
+        0.15660381454437994
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 76,
+      "acc_positive_count": 43,
+      "acc_rate": 0.5657894736842105,
+      "control_rate_event_weighted": 0.4781093936536723,
+      "conditional_exact_p": 0.03667568820705707,
+      "bonferroni_K": 6,
+      "p_bonferroni": 0.2200541292423424,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "정박정지",
+      "stratum": "ALL",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.21623639320379212,
+      "ci95_positive_rate": [
+        0.0023615994487010713,
+        0.18147099066653558
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 48,
+      "acc_positive_count": 28,
+      "acc_rate": 0.5833333333333334,
+      "control_rate_event_weighted": 0.5231284582682286,
+      "conditional_exact_p": 0.3181335602498538,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "정박정지",
+      "stratum": "Tier0_1",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.27452217251325095,
+      "ci95_positive_rate": [
+        -0.05564678520705368,
+        0.1750102471077193
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 28,
+      "acc_positive_count": 12,
+      "acc_rate": 0.42857142857142855,
+      "control_rate_event_weighted": 0.3313409694993417,
+      "conditional_exact_p": 0.20114454503337467,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "정박정지",
+      "stratum": "기관손상",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.3463217635067238,
+      "ci95_positive_rate": [
+        -0.031352732977779935,
+        0.2496135889078355
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 76,
+      "acc_positive_count": 5,
+      "acc_rate": 0.06578947368421052,
+      "control_rate_event_weighted": 0.12479739680547855,
+      "conditional_exact_p": 0.10343523899746886,
+      "bonferroni_K": 6,
+      "p_bonferroni": 0.6206114339848131,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "해상정지",
+      "stratum": "ALL",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.14207136315856445,
+      "ci95_positive_rate": [
+        -0.10451255606135149,
+        -0.011884709502540057
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 48,
+      "acc_positive_count": 5,
+      "acc_rate": 0.10416666666666667,
+      "control_rate_event_weighted": 0.12869642343935594,
+      "conditional_exact_p": 0.792163472152753,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "해상정지",
+      "stratum": "Tier0_1",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.18226006260531338,
+      "ci95_positive_rate": [
+        -0.08923565396037882,
+        0.045082796908705
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 28,
+      "acc_positive_count": 1,
+      "acc_rate": 0.03571428571428571,
+      "control_rate_event_weighted": 0.12665799577821846,
+      "conditional_exact_p": 0.18959883499836105,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "해상정지",
+      "stratum": "기관손상",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.24591741262088793,
+      "ci95_positive_rate": [
+        -0.16723995028971206,
+        -0.006873898511230726
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 76,
+      "acc_positive_count": 1,
+      "acc_rate": 0.013157894736842105,
+      "control_rate_event_weighted": 0.020173607488724103,
+      "conditional_exact_p": 1.0,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "연안정지",
+      "stratum": "ALL",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.07287603391235319,
+      "ci95_positive_rate": [
+        -0.031526297408554116,
+        0.02551660149768934
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 48,
+      "acc_positive_count": 1,
+      "acc_rate": 0.020833333333333332,
+      "control_rate_event_weighted": 0.021076254350052757,
+      "conditional_exact_p": 0.9999999999999999,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "연안정지",
+      "stratum": "Tier0_1",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.10282534068061729,
+      "ci95_positive_rate": [
+        -0.03370875107359311,
+        0.048434765736517026
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 28,
+      "acc_positive_count": 1,
+      "acc_rate": 0.03571428571428571,
+      "control_rate_event_weighted": 0.019573217425023163,
+      "conditional_exact_p": 0.46104388725167283,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "연안정지",
+      "stratum": "기관손상",
+      "evidence_source": "independent raw scan",
+      "mde80_positive_rate_approx": 0.15463170856482128,
+      "ci95_positive_rate": [
+        -0.038861965743701855,
+        0.09727164749462285
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 76,
+      "acc_positive_count": 3,
+      "acc_rate": 0.039473684210526314,
+      "control_rate_event_weighted": 0.01724642278460806,
+      "conditional_exact_p": 0.1404612726634248,
+      "bonferroni_K": 6,
+      "p_bonferroni": 0.8427676359805489,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "direct_drift",
+      "stratum": "ALL",
+      "evidence_source": "producer event counts",
+      "mde80_positive_rate_approx": 0.08737288465521117,
+      "ci95_positive_rate": [
+        -0.013310075417166781,
+        0.06417330031790779
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 48,
+      "acc_positive_count": 2,
+      "acc_rate": 0.041666666666666664,
+      "control_rate_event_weighted": 0.018753848320654687,
+      "conditional_exact_p": 0.2262327653004036,
+      "bonferroni_K": 6,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "direct_drift",
+      "stratum": "Tier0_1",
+      "evidence_source": "producer event counts",
+      "mde80_positive_rate_approx": 0.11164533372062999,
+      "ci95_positive_rate": [
+        -0.017613459720533593,
+        0.08004576840693217
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    },
+    {
+      "n_events": 28,
+      "acc_positive_count": 2,
+      "acc_rate": 0.07142857142857142,
+      "control_rate_event_weighted": 0.026085568965033567,
+      "conditional_exact_p": 0.16549220759029734,
+      "bonferroni_K": 6,
+      "p_bonferroni": 0.992953245541784,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "direct_drift",
+      "stratum": "기관손상",
+      "evidence_source": "producer event counts",
+      "mde80_positive_rate_approx": 0.18390077914209957,
+      "ci95_positive_rate": [
+        -0.02308059821143712,
+        0.14337591391157387
+      ],
+      "mde_note": "expected-discordance normal planning approximation from event counts; not exact power of this repaired conditional test"
+    }
+  ],
+  "T1_still_frac_supplement": [
+    {
+      "n_events": 76,
+      "acc_positive_count": 17,
+      "acc_rate": 0.2236842105263158,
+      "control_rate_event_weighted": 0.26061327158180847,
+      "conditional_exact_p": 0.4539666370820296,
+      "bonferroni_K": 7,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "still_frac",
+      "stratum": "ALL",
+      "mde80_positive_rate_approx": 0.21687712534673376,
+      "ci95_positive_rate": [
+        -0.11890353563238477,
+        0.04944874743829139
+      ]
+    },
+    {
+      "n_events": 48,
+      "acc_positive_count": 9,
+      "acc_rate": 0.1875,
+      "control_rate_event_weighted": 0.24558219057284497,
+      "conditional_exact_p": 0.332257930010531,
+      "bonferroni_K": 7,
+      "p_bonferroni": 1.0,
+      "method": "1_to_M_conditional_exact_matched_set_Poisson_binomial",
+      "limitations": "posthoc methodological repair; independent matched-set working assumption; repeated vessels/overlapping windows unadjusted",
+      "metric": "still_frac",
+      "stratum": "Tier0_1",
+      "mde80_positive_rate_approx": 0.2664110943420395,
+      "ci95_positive_rate": [
+        -0.1617259030349565,
+        0.05089949151063602
+      ]
+    }
+  ]
+}

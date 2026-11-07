@@ -1,0 +1,13 @@
+{
+  "version": "round5-cohort-random-fixture-v1",
+  "status": "passed",
+  "checks": [
+    "S1 ranked winner differs from stage2 candidate ordering",
+    "original per-RFID G caps 1 and 3 retained",
+    "empty stage1 falls back to stage0",
+    "all methods/budgets share the same event RFID list",
+    "top1 is rank1 and top4 hit uses same ranked list",
+    "Round2 random expectation helper gives exact 2/3 for n=3,h=1,k=2",
+    "cohort fixture hand means are all=.575 and Tier01=.3; observed .35 passes Tier01 and fails all-scope mismatch"
+  ]
+}

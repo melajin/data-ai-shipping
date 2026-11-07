@@ -1,0 +1,57 @@
+{
+  "source": "D:\\repos\\fishing-track-classification\\coach\\gpt\\rank1_experiments_20261104\\artifacts\\exp01\\fixed_split_roster.csv",
+  "checks": {
+    "0": {
+      "n": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "unique": {
+        "FIT": true,
+        "INNER": true,
+        "OUTER": true
+      },
+      "overlap": {
+        "FIT_INNER": 0,
+        "FIT_OUTER": 0,
+        "INNER_OUTER": 0
+      }
+    },
+    "1": {
+      "n": {
+        "FIT": 3144,
+        "INNER": 787,
+        "OUTER": 1966
+      },
+      "unique": {
+        "FIT": true,
+        "INNER": true,
+        "OUTER": true
+      },
+      "overlap": {
+        "FIT_INNER": 0,
+        "FIT_OUTER": 0,
+        "INNER_OUTER": 0
+      }
+    },
+    "2": {
+      "n": {
+        "FIT": 3145,
+        "INNER": 787,
+        "OUTER": 1965
+      },
+      "unique": {
+        "FIT": true,
+        "INNER": true,
+        "OUTER": true
+      },
+      "overlap": {
+        "FIT_INNER": 0,
+        "FIT_OUTER": 0,
+        "INNER_OUTER": 0
+      }
+    }
+  },
+  "limitation": "roster+source-code evidence; saved Worker A probabilities do not include IDs or fit snapshot hashes"
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "rows": 5897,
+  "candidate_metrics_checked": 11,
+  "input_hashes_checked": 34,
+  "selection_rule_recomputed": true,
+  "split_disjointness_checked": true,
+  "scope": "saved prediction arithmetic; no independent generalization or hardware test"
+}

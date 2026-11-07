@@ -1,0 +1,305 @@
+{
+  "created_at": "2026-11-06T22:23:18.070933+09:00",
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 1482,
+      "sha256": "5f07247c4c25bd4ae1cf8835e8d11c8400d2382ff30f5b4fd3d83c325dfd397c"
+    },
+    {
+      "path": "data/observations.parquet",
+      "bytes": 2005192,
+      "sha256": "5e8efbabfa3ca2e47e53c35977bb96c4a64a74b2e0ec1f774db6c630d86ec0e2"
+    },
+    {
+      "path": "data/roster.csv",
+      "bytes": 1012,
+      "sha256": "250237d223f0b1739c67859c410e22f1dfbcfcbea4208960358ae7949e2eafd2"
+    },
+    {
+      "path": "data/stored_candidates.csv",
+      "bytes": 10730,
+      "sha256": "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9"
+    },
+    {
+      "path": "data/stored_expected.parquet",
+      "bytes": 1852031,
+      "sha256": "7d60b531da008482e5be9c98a52ef730ed382c5b8b00e688a230b3d0e2fc3578"
+    },
+    {
+      "path": "figures/case_1.png",
+      "bytes": 159168,
+      "sha256": "728acc4e09f80177644fcb5b77a36d79a64c1dc9a1f57e42308aa499343a8e44"
+    },
+    {
+      "path": "figures/case_2.png",
+      "bytes": 72763,
+      "sha256": "91d86667caf02fc0448112f138311766c83db7ededf2ac41aa967180795b88ec"
+    },
+    {
+      "path": "figures/case_3.png",
+      "bytes": 44813,
+      "sha256": "259797917de4a383385c21146d8703972fff13ca1c306b49708ef2b86f51b2ac"
+    },
+    {
+      "path": "figures/score_distribution.png",
+      "bytes": 26220,
+      "sha256": "5c825d5d6658391e6d35aeef764cf56acf9106f4119626dbce0ec3432a950e88"
+    },
+    {
+      "path": "model/density.json",
+      "bytes": 1882448,
+      "sha256": "c122b827fb0b9fe480434f821162035702e34b0fc465762bdbeca0aeeadb1328"
+    },
+    {
+      "path": "model/gap_reference.npy",
+      "bytes": 31037672,
+      "sha256": "08145272419ec53837074f5602e34a9be36e5b1311952e4b0c637e64716daa9f"
+    },
+    {
+      "path": "model/harbors.json",
+      "bytes": 4020,
+      "sha256": "3c1888f9714f675110be5181dc053398f955a23c7f68989c9c223bb77ab09309"
+    },
+    {
+      "path": "model/jump_reference.npy",
+      "bytes": 31037672,
+      "sha256": "a9d303efa85c06d6d3a75e622f0b76af2c64ca585228a177c4e95d8f21d87b0c"
+    },
+    {
+      "path": "model/provenance.json",
+      "bytes": 3397,
+      "sha256": "052f39d4dc69c9a622a654885248f2509c385c2760c578f73cc98a3633e38986"
+    },
+    {
+      "path": "notebooks/build_notebook.py",
+      "bytes": 15288,
+      "sha256": "aca6710d8e1071697e5d03b133f303d4ab7ab00b1711bb0d93df40352c8084e2"
+    },
+    {
+      "path": "notebooks/TestB_이상항적_분석.ipynb",
+      "bytes": 200282,
+      "sha256": "ceb24b0716984f935f79e3255aa19c3d5d2f113d3d18df21bf9a7362f32de99d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8846,
+      "sha256": "d69068e7efcb9011a8fdafeed9c599a3c7d0454c7b39c00a5fb2fd9647a42e8b"
+    },
+    {
+      "path": "reports/build_report.py",
+      "bytes": 54721,
+      "sha256": "8bc6b5f89276d69148e1b73ae37896f42f4535fd5e8ae708ce822800dec76507"
+    },
+    {
+      "path": "reports/report_build.json",
+      "bytes": 328,
+      "sha256": "ba19964689513d69ef5082a9d6168fedb54730be233130e22439793b39c41497"
+    },
+    {
+      "path": "reports/requirements.txt",
+      "bytes": 69,
+      "sha256": "5fd074bf14c543683755a77229fffd7708978fde83a80526f9d448531fb1e073"
+    },
+    {
+      "path": "reports/TestB_종합검토보고서_20261106.md",
+      "bytes": 21260,
+      "sha256": "60d5eb01632aa8625d77debfc1cc6b3842d064b98765b5a28a06f7336193059c"
+    },
+    {
+      "path": "reports/TestB_폴더와_전체파일_상세안내서.md",
+      "bytes": 69856,
+      "sha256": "64a105216622ca0599b5d33e6f6460cf52fd2695f0817a5be71adc3be9f134b0"
+    },
+    {
+      "path": "reports/verification.json",
+      "bytes": 2936,
+      "sha256": "34f7106bfb67bcbd0e8d8fb58995cd86b88ff7345f6cd9c84ee20d51946bad2e"
+    },
+    {
+      "path": "reports/어선_이상항적_시스템_결과보고서.md",
+      "bytes": 43120,
+      "sha256": "fcfb23ea30514759bcc010ccb1c1bea861a77286c04139cb91b7a37511e16aed"
+    },
+    {
+      "path": "reports/어선_이상항적_시스템_결과보고서.pdf",
+      "bytes": 577927,
+      "sha256": "06bac0ec07e9f899e59edcac46017d02d119794a60b63cd368961177a8b22123"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 61,
+      "sha256": "c8d24da9b0e297628b777bbbe25791530c786ab28927bfb789822eea101e58ea"
+    },
+    {
+      "path": "results/demo_run/candidates.csv",
+      "bytes": 56863,
+      "sha256": "9aff8191df3abb889110aa8a825ee2a1e634f56cc0756fdd84dd64e75f10e43b"
+    },
+    {
+      "path": "results/demo_run/scored_rows.parquet",
+      "bytes": 3428632,
+      "sha256": "4e2059febfc3e8e031ba0f11848fa82ce7ca8318cbd50e3fbc85a9ab5b636b65"
+    },
+    {
+      "path": "results/demo_run/summary.json",
+      "bytes": 10153,
+      "sha256": "ab5e252a28ef77bd256ed93396a4bc54e83e5381db9812711186ba16bea7be45"
+    },
+    {
+      "path": "results/demo_tools/inspect_result.py",
+      "bytes": 2990,
+      "sha256": "ba152440419975b5efa3352e2f8aaca49e4190288f5580feb50768d2385e1ba0"
+    },
+    {
+      "path": "results/reproduction_001/candidates.csv",
+      "bytes": 56863,
+      "sha256": "9aff8191df3abb889110aa8a825ee2a1e634f56cc0756fdd84dd64e75f10e43b"
+    },
+    {
+      "path": "results/reproduction_001/scored_rows.parquet",
+      "bytes": 3428632,
+      "sha256": "4e2059febfc3e8e031ba0f11848fa82ce7ca8318cbd50e3fbc85a9ab5b636b65"
+    },
+    {
+      "path": "results/reproduction_001/summary.json",
+      "bytes": 10117,
+      "sha256": "15fda7b6134a6faec012550c622c0f62040f7105c7a2a424c0a53b4664e9b6b8"
+    },
+    {
+      "path": "scripts/run.ps1",
+      "bytes": 192,
+      "sha256": "4075e7347c80c2937b9cf95007f1ba091e47c0e2a9d843351d14a71555eb2157"
+    },
+    {
+      "path": "sources/copy_manifest.json",
+      "bytes": 3891,
+      "sha256": "0df46f1917ca3f931fca1f3dc22db7475e720eaa7f50d4a7dac8c0da75c2a41c"
+    },
+    {
+      "path": "sources/experiments/development_rescore.md",
+      "bytes": 4369,
+      "sha256": "7e5623c0f35580a62e4b0120dd99297fc3f2e7912fcd79d8456405b5702e99ef"
+    },
+    {
+      "path": "sources/experiments/drift.md",
+      "bytes": 2268,
+      "sha256": "e97de9df94c35d5bcc2e3353820dd10e08bb8900e874cb6795fe2aded127a3ef"
+    },
+    {
+      "path": "sources/experiments/fleet_notes.md",
+      "bytes": 2470,
+      "sha256": "080fb913c51e2ddf08bbaf6a2818a731329ca6adc2722213ddafad53ff477bc6"
+    },
+    {
+      "path": "sources/experiments/fleet_results.json",
+      "bytes": 1128,
+      "sha256": "63684085e8c225d518e4e469eecc568be73fda3871edb90f4c170d6e691b4688"
+    },
+    {
+      "path": "sources/experiments/gap_jump_ratio.json",
+      "bytes": 353,
+      "sha256": "83403f452136c43ecb764fe0ddcf7fe0bddb71af39840a9c3d33e5cd6c95efc3"
+    },
+    {
+      "path": "sources/experiments/gap_signal.txt",
+      "bytes": 206,
+      "sha256": "19f8569173cf40c53b7fc154d54037cd019f138536339fddc8477c70fa6dfa86"
+    },
+    {
+      "path": "sources/experiments/offhours_events.csv",
+      "bytes": 17220,
+      "sha256": "0263e3e582192a8faee6627b61474f688c990dbe00ecf7a90045ac865325cc5e"
+    },
+    {
+      "path": "sources/experiments/offhours_notes.md",
+      "bytes": 1846,
+      "sha256": "c96c283724afedb1dd821b672dbfec7196a8bac47ce29797d77a8e050ab70f7f"
+    },
+    {
+      "path": "sources/experiments/offhours_results.json",
+      "bytes": 621,
+      "sha256": "bbc388c0f3663eb3892c1f92321d7545c0738e52573a167ee95d79ec019b2286"
+    },
+    {
+      "path": "sources/experiments/testa_round029.md",
+      "bytes": 4386,
+      "sha256": "704f935dedb072789fe6e7d80f94573716d65f468df48880e683a02aad723bd2"
+    },
+    {
+      "path": "sources/experiments/testb_status.md",
+      "bytes": 7679,
+      "sha256": "00989efd152576724b957568bbb8f4e31feeb923327d03ae80f3da0c58dedd4f"
+    },
+    {
+      "path": "sources/official/recorded_organizer_answers.md",
+      "bytes": 44637,
+      "sha256": "e61e41d8740a7096955f30bf34071a58575b1315c40563ff0a659d8a8f58f187"
+    },
+    {
+      "path": "sources/official/공지-데이터 설명.png",
+      "bytes": 94715,
+      "sha256": "0e975accfbf4fa5d915caf45c1c0a73d1f40eeb0706bfa5c6cbd3ba55469bbe0"
+    },
+    {
+      "path": "sources/official/공지-문제 과제.png",
+      "bytes": 388592,
+      "sha256": "6ee2ca6f4c682995c3a237a1bcee57e5e4a4f1d3d05f54c847210fdc316ab76a"
+    },
+    {
+      "path": "sources/official/공지-문제개요.png",
+      "bytes": 195176,
+      "sha256": "ed2c2bd36461cb047e72ec44e2378a310c28ffc1f2e5a5d0aea4065fe7fc3c9f"
+    },
+    {
+      "path": "sources/official/공지-평가기준.png",
+      "bytes": 32777,
+      "sha256": "5a64f202e6f88fa0e657f4bea49a4eb9ba482c9c31b53f868ff0483fdf63a18a"
+    },
+    {
+      "path": "src/frozen_baseline.py",
+      "bytes": 8492,
+      "sha256": "1975009bb0b99c740f9c1c9ddc3e7b37cf212bfdf998b22186882b3d9dd4947c"
+    },
+    {
+      "path": "src/run_analysis.py",
+      "bytes": 18856,
+      "sha256": "086083fee14efbb2631ff6e91d76d6805bec49dcf77d0d60fc4ce0edf4b4cd1f"
+    },
+    {
+      "path": "support/config.json",
+      "bytes": 871,
+      "sha256": "e66806ff376d12ace01a9c43114316ed71e0c756111a0723f79c9f276a72c8ff"
+    },
+    {
+      "path": "support/example.jsonl",
+      "bytes": 3670,
+      "sha256": "accec65c57f0bf46a616a5feacacfe0bf009a1b5bf00dabb83c817fa44ce2528"
+    },
+    {
+      "path": "support/fishing_demo/__init__.py",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "support/fishing_demo/causal_replay.py",
+      "bytes": 21215,
+      "sha256": "9fbb3a5f0ce8f0fe41e64d92e8a76f0ede18992c8e957f83b7da1348b2687e27"
+    },
+    {
+      "path": "support/README.md",
+      "bytes": 1438,
+      "sha256": "a19ed69b1218ca8124c44e8b522af3c0ceb9321f30f154a8dff18705d1a1db42"
+    },
+    {
+      "path": "support/tests/test_causal_replay.py",
+      "bytes": 20307,
+      "sha256": "333d955db10aac72d91d47eabdbafd364fe330fdcb69c710ef06896de1fb3690"
+    },
+    {
+      "path": "tests/test_frozen_baseline.py",
+      "bytes": 2829,
+      "sha256": "793ffce4ef3a860f5e1f0233fd9982b770620453d0dd8011dc6713d5b7ec73b2"
+    }
+  ]
+}

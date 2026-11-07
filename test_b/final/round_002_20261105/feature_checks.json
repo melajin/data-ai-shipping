@@ -1,0 +1,95 @@
+{
+  "suite": "round_002_context_features_verification",
+  "timestamp_local": "2026-11-05T23:08:33+09:00",
+  "overall_status": "succeeded",
+  "total_checks": 11,
+  "passed_checks": 11,
+  "checks": {
+    "future_invariance": {
+      "status": "passed",
+      "base_rows": 40,
+      "extended_rows": 55
+    },
+    "history_720h_boundary": {
+      "status": "passed",
+      "n_at_820": 3,
+      "n_at_821": 3
+    },
+    "history_minima_24rows_3days": {
+      "status": "passed",
+      "n_history_checked": [
+        24,
+        23,
+        24
+      ],
+      "days_checked": [
+        2,
+        3,
+        3
+      ]
+    },
+    "cell_fallback_and_conditioning": {
+      "status": "passed",
+      "fallback_n_cell": 7,
+      "conditioned_n_cell": 8,
+      "C_fallback": 0.75,
+      "C_context": 0.0,
+      "U_context": 0.7241379310344828
+    },
+    "constant_ties": {
+      "status": "passed",
+      "U_tie": 0.0,
+      "C_tie": 0.0
+    },
+    "invalid_coords_and_geometries": {
+      "status": "passed",
+      "valid_history_retained": 30
+    },
+    "rfid_separation": {
+      "status": "passed",
+      "v1_rows": 32,
+      "v2_rows": 3
+    },
+    "order_and_index_preservation": {
+      "status": "passed",
+      "rows_tested": 32
+    },
+    "time_deduplication": {
+      "status": "passed",
+      "n_history_at_100": 24,
+      "n_history_at_101": 25
+    },
+    "forbidden_columns_isolation": {
+      "status": "passed"
+    },
+    "empty_frame": {
+      "status": "passed",
+      "columns_returned": [
+        "rfid_id",
+        "ts",
+        "len_m",
+        "bbox_m",
+        "cen_lon",
+        "cen_lat",
+        "n_history",
+        "history_days",
+        "history_eligible",
+        "n_cell_history",
+        "context_used",
+        "U",
+        "C"
+      ]
+    }
+  },
+  "spec_compliance": {
+    "rolling_history_window": "[t-720, t) inclusive left bound",
+    "future_invariance": "verified",
+    "history_row_minimum": "n >= 24 verified",
+    "history_days_minimum": "distinct(ts // 24) >= 3 verified",
+    "cell_size": "0.05 degree verified",
+    "cell_fallback_minimum": "n_cell < 8 fallback to U verified",
+    "constant_ties_score": "0.0 verified",
+    "forbidden_columns_isolated": "score, state, accident info never used",
+    "data_preservation": "input columns, order, and index preserved"
+  }
+}

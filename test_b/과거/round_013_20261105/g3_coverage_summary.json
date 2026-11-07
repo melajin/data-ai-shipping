@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "vessels": 82,
+    "median_voyages": 44.5,
+    "min_voyages": 2,
+    "protocol_table_voyages_lt10_n": 9,
+    "protocol_table_voyages_lt10_fraction": 0.10975609756097561,
+    "voyages_lt5_n": 5,
+    "voyages_lt5_fraction": 0.06097560975609756,
+    "raw_leave_one_out_other_ge10_eligible_n": 71,
+    "raw_leave_one_out_other_ge10_eligible_fraction": 0.8658536585365854,
+    "exactly_10_voyages_nonqualifying_n": 2
+  },
+  "2025_Test_B": {
+    "vessels": 100,
+    "median_voyages": 20.0,
+    "min_voyages": 1,
+    "protocol_table_voyages_lt10_n": 36,
+    "protocol_table_voyages_lt10_fraction": 0.36,
+    "voyages_lt5_n": 21,
+    "voyages_lt5_fraction": 0.21,
+    "raw_leave_one_out_other_ge10_eligible_n": 63,
+    "raw_leave_one_out_other_ge10_eligible_fraction": 0.63,
+    "exactly_10_voyages_nonqualifying_n": 1
+  }
+}

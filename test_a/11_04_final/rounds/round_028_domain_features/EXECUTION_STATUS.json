@@ -1,0 +1,22 @@
+{
+  "round_id": "round_028_domain_features",
+  "stage": "completed_invalid_baseline_replay_handed_to_round029",
+  "management": "current parent model gpt-6-sol (per host developer context); request observed, not changed by repository settings",
+  "worker_request": {
+    "task_name": "feature_audit",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "max",
+    "user_requested_effort": "ultra",
+    "host_supported_max_for_luna": "max",
+    "runtime_model_confirmation": "not independently exposed by spawn acknowledgement"
+  },
+  "fits_started": 8,
+  "source_rows_extracted": 3887069,
+  "development_outer_evaluations": 0,
+  "source_rounds_read_only": true,
+  "plan": "ROUND_PLAN.md",
+  "manager_gate_code": "run_fit_gate.py",
+  "result_report": "ROUND_REPORT.md",
+  "corrected_followup": "../round_029_domain_features_dtype_correction/ROUND_REPORT.md",
+  "adopted": false
+}

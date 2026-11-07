@@ -1,0 +1,7 @@
+{
+  "time": "2026-11-05T16:09:22.381970+09:00",
+  "stage": "independent static review closed and fixes completed; pre-launch RAM recheck",
+  "available_gib": 1.5134620666503906,
+  "expected_peak_gib": 0.35,
+  "minimum_entry_gib": 1.5
+}

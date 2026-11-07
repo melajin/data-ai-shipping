@@ -1,0 +1,18 @@
+{
+  "round_id": "round_029_domain_features_dtype_correction",
+  "stage": "completed_verified_fit_internal_gate_failed",
+  "fits_started": 8,
+  "fits_completed": 8,
+  "evaluation_population": "FIT3144_internal_4CV_development",
+  "development_outer_evaluations": 0,
+  "test_or_holdout_evaluations": 0,
+  "baseline_replay_exact": true,
+  "baseline_correct": 1811,
+  "candidate_correct": 1822,
+  "gate_pass": false,
+  "adopted": false,
+  "plan": "ROUND_PLAN.md",
+  "report": "ROUND_REPORT.md",
+  "prediction_verification": "saved_prediction_verification.json",
+  "source_features": "../round_028_domain_features/worker/derived_features.csv"
+}

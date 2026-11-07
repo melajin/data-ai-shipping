@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-11-05T14:42:10.802554+09:00",
+  "stage": "comparison_plan_before_raw_recompute",
+  "available_mib": 1523.73828125,
+  "expected_raw_recompute_peak_mib": 512,
+  "required_reserve_mib": 1024,
+  "raw_recompute_allowed": false,
+  "other_tasks": "no own parallel calculations; other user processes left intact"
+}

@@ -1,0 +1,115 @@
+{
+  "decision": "lin_raw is the sole follow-up candidate under single Bonferroni; operational/model promotion not established",
+  "alpha_raw": 0.0071428571428571435,
+  "alpha_adjusted": 0.05,
+  "literal_adjusted_alpha": 0.0071428571428571435,
+  "single_Bonferroni_candidates": [
+    {
+      "metric": "lin_raw",
+      "stratum": "Tier0_1",
+      "normal_single_Bonferroni_pass": true,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": true,
+        "corrected_p_below_alpha": true,
+        "ci95_excludes_zero": true,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": -0.15108451041291832,
+      "n": 48,
+      "raw_p": 0.0019280743497980836,
+      "adjusted_p": 0.013496520448586586,
+      "ci95": [
+        -0.23224960814240317,
+        -0.06599217584781739
+      ],
+      "mde": 0.1506317983338479,
+      "sign_count": 10
+    }
+  ],
+  "double_Bonferroni_candidates": [],
+  "lin_raw_K14_adjusted_p": 0.026993040897173172,
+  "lin_raw_K49_adjusted_p": 0.09447564314010609,
+  "raw_recompute_completed": true,
+  "statistics_match": true,
+  "metadata": {
+    "source_rows": 822000,
+    "source_columns": [
+      "rfid_id_int",
+      "ts",
+      "part_dt",
+      "rfid_time",
+      "source_ordinal",
+      "len_m",
+      "bbox_m",
+      "cen_lon",
+      "cen_lat",
+      "state",
+      "s_zone",
+      "s_change",
+      "s_gap",
+      "score"
+    ],
+    "loaded_columns": [
+      "rfid_id_int",
+      "ts",
+      "len_m",
+      "bbox_m",
+      "cen_lon",
+      "cen_lat",
+      "state",
+      "score"
+    ],
+    "positive_events": 100,
+    "positive_vessels": 82,
+    "selected_rows": 99677,
+    "selected_vessels": 82,
+    "cause_field": "발생유형",
+    "cause_counts": {
+      "기관손상": 34,
+      "부유물감김": 11,
+      "운항저해": 9,
+      "기타": 8,
+      "화재": 7,
+      "침수": 6,
+      "추진기손상": 5,
+      "좌초/좌주": 4,
+      "충돌": 3,
+      "표류": 3,
+      "작업 중 인명사상": 2,
+      "침몰": 2,
+      "키손상": 2,
+      "방향상실": 1,
+      "전복": 1,
+      "해양오염": 1,
+      "접촉": 1
+    },
+    "tier01_events": 60,
+    "audit_status_counts": {
+      "LINKED_CLEAN": 95,
+      "LINKED_CONFLICT": 5
+    },
+    "lin_raw_excluded_len_lt_1_rows": 8498,
+    "lin_raw_excluded_nonfinite_rows": 0,
+    "missing_vessels": [],
+    "timestamp_min": 490896,
+    "timestamp_max": 495239,
+    "review_source_sha256": "5e5ee8e8389b92c7781eeafa36e199d78f67ac656b807dd4e4b155f88b7f14b8"
+  },
+  "profile_diagnostics": {
+    "aggregation": "vessel",
+    "n_vessels": 82,
+    "q10_len_m_min": 0.0,
+    "q10_len_m_median": 10.731782218324053,
+    "q10_len_m_max": 5521.982610080464,
+    "q10_below_5m_vessels": 32,
+    "q10_equal_zero_vessels": 21,
+    "sustained_drift_rows": 1028
+  },
+  "independent_reviewer_session": false,
+  "implementation_independence_only": true,
+  "legacy_results_unchanged": true,
+  "new_model_training": false,
+  "test_2025_used": false,
+  "official_submission": false
+}

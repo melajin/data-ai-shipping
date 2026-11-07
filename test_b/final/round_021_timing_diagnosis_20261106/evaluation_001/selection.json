@@ -1,0 +1,22 @@
+{
+  "selected_policy": "B",
+  "selected_policy_name": "baseline",
+  "dev_hits": {
+    "B": 2,
+    "T": 2,
+    "G": 2
+  },
+  "development_timestamps_changed": {
+    "B": 0,
+    "T": 0,
+    "G": 1521
+  },
+  "selection_rule": "strict dev hits > B; largest dev hits, fewest changed timestamps across all dev vessels, T before G",
+  "validation_outcomes_used": false,
+  "selected_at": "2026-11-06T06:48:29.317361+00:00",
+  "protocol_sha256": "092242f52c29c828cde4604df9b3671b015a30748f8c14520b33baee008bfba2",
+  "predictions_sha256": "1dcd1c78453dd9cc4f26c480e86020f6c7de7cfb6131f78fc05445f2cf0146a8",
+  "split_sha256": "c87bf1f8ee8fdc99bbb2b9423a32bba54b5dc1928eee6ac428ec51bb46ad608c",
+  "n_dev_linked": 50,
+  "n_validation_linked": 32
+}

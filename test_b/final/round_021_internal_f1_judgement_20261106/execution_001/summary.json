@@ -1,0 +1,119 @@
+{
+  "round": "Round021",
+  "completed_at": "2026-11-06T15:33:06.729072+09:00",
+  "population": 7372,
+  "linked_vessels": 82,
+  "unlinked_comparators": 7290,
+  "events": 100,
+  "main_policy": "peak_ge_075",
+  "peak_threshold": 0.75,
+  "radius_q95_threshold_km": 81.99355308264168,
+  "official_f1": false,
+  "new_training": false,
+  "new_operational_policy_validated": false,
+  "assumption": "unlinked vessels treated as negative only for surrogate metric; not verified nonaccidents",
+  "time_contract": "integer-hour +/-6 inclusive; at most one event matched per vessel prediction",
+  "primary_time_denominator": "100 events",
+  "policies": [
+    {
+      "policy": "peak_ge_075",
+      "selected": 183,
+      "population": 7372,
+      "linked_vessels": 82,
+      "truth_events": 100,
+      "unlinked_selected": 176,
+      "withheld_for_missing_input": 0,
+      "vessel_selection": {
+        "tp": 7,
+        "fp": 176,
+        "fn": 75,
+        "precision": 0.03825136612021858,
+        "recall": 0.08536585365853659,
+        "f1": 0.052830188679245285
+      },
+      "event_time_pm6h": {
+        "tp": 0,
+        "fp": 183,
+        "fn": 100,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "collapsed_vessel_time_pm6h_secondary": {
+        "tp": 0,
+        "fp": 183,
+        "fn": 82,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    {
+      "policy": "all_valid",
+      "selected": 7372,
+      "population": 7372,
+      "linked_vessels": 82,
+      "truth_events": 100,
+      "unlinked_selected": 7290,
+      "withheld_for_missing_input": 0,
+      "vessel_selection": {
+        "tp": 82,
+        "fp": 7290,
+        "fn": 0,
+        "precision": 0.01112316874660879,
+        "recall": 1.0,
+        "f1": 0.022001609873893213
+      },
+      "event_time_pm6h": {
+        "tp": 3,
+        "fp": 7369,
+        "fn": 97,
+        "precision": 0.00040694519804666303,
+        "recall": 0.03,
+        "f1": 0.0008029978586723769
+      },
+      "collapsed_vessel_time_pm6h_secondary": {
+        "tp": 3,
+        "fp": 7369,
+        "fn": 79,
+        "precision": 0.00040694519804666303,
+        "recall": 0.036585365853658534,
+        "f1": 0.0008049369466058492
+      }
+    },
+    {
+      "policy": "radius_q95",
+      "selected": 369,
+      "population": 7372,
+      "linked_vessels": 82,
+      "truth_events": 100,
+      "unlinked_selected": 357,
+      "withheld_for_missing_input": 0,
+      "vessel_selection": {
+        "tp": 12,
+        "fp": 357,
+        "fn": 70,
+        "precision": 0.032520325203252036,
+        "recall": 0.14634146341463414,
+        "f1": 0.05321507760532151
+      },
+      "event_time_pm6h": {
+        "tp": 0,
+        "fp": 369,
+        "fn": 100,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "collapsed_vessel_time_pm6h_secondary": {
+        "tp": 0,
+        "fp": 369,
+        "fn": 82,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    }
+  ],
+  "peak_process_mib": 182.265625
+}

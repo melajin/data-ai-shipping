@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "recorded_at": "2026-11-05T16:56:32.444903+09:00",
+  "observed_by": "/root/round011_implementation",
+  "execution_origin": "worker-observed tool execution; not a parent rerun",
+  "command": "python -B -m unittest discover -s testB/round_011_20261105 -p test_experiment.py -v",
+  "exit_code": 0,
+  "tests_run": 17,
+  "failures": 0,
+  "errors": 0,
+  "unittest_elapsed_seconds": 4.576,
+  "command_wall_seconds": 5.2602696,
+  "fixed_round008_data_loaded": false,
+  "hardware_validation": false,
+  "fixture": {
+    "scanned_parquet_rows": 510,
+    "retained_target_rows": 500,
+    "target_vessels": 1,
+    "events": 2,
+    "event_rule_rows": 20,
+    "location": "TemporaryDirectory; cleaned up after test",
+    "experiment_elapsed_seconds": 3.476
+  },
+  "memory": {
+    "preflight_checked_at": "2026-11-05T16:54:12.857210+09:00",
+    "preflight_available_mib": 2973.67,
+    "total_mib": 14140.86,
+    "estimated_synthetic_peak_mib": 256,
+    "other_jobs_at_preflight": "parent and reviewer static review only; no full dataset computation",
+    "fixture_stage_available_mib_final_pass": [
+      2842.62,
+      2853.02,
+      2854.42,
+      2842.95,
+      2829.29
+    ],
+    "fixture_minimum_available_required_mib": 768,
+    "fixture_peak_envelope_mib": 512,
+    "low_memory_refusal_test": "mocked availability100bytes; real code returned75 and wrote deferred execution/memory receipts"
+  },
+  "verified": [
+    "trailing7h/future invariance",
+    "gaps and invalid centers never linked",
+    "negative/nonfinite len/bbox masks and independent A mask",
+    "coordinate range checks",
+    "low-quality exclusion",
+    "inclusive24h/720h reference endpoints",
+    "most recent10distinct epoch days",
+    "T/L/TL selection order and coverage/earlier-time tie breaks",
+    "exact floating midrank ties",
+    "nonzero joint with M=0 retained",
+    "top1 maximum ties",
+    "exact top10 without-replacement boundary probability vs independent-draw approximation",
+    "evaluable events with no near candidate retained as failure",
+    "unknown conservative contribution0",
+    "same-vessel repeated events bootstrap grouped",
+    "active-run lock preserves receipts",
+    "streamed Arrow filter and temporary end-to-end outputs with hashes"
+  ],
+  "prior_test_attempt": {
+    "tests_run": 17,
+    "failures": 2,
+    "cause": "Synthetic fixture assertion setup: coverage perturbation accidentally included current endpoint; initial six-row window floating mean was not exactly equal to seven-row means. Corrected test fixture/assertion scope; no statistical rule changed."
+  },
+  "code_sha256": {
+    "run_experiment.py": "13ef8130ba44b6d2ac4686f6e82df6728be7287f77206b97b2ce9eee98f8f33e",
+    "test_experiment.py": "f594d1a1a238878038f24be8abd37b2be6a1d3dbac1acf97f7ccae646c04e513"
+  },
+  "scripts_stable_after_final_pass": true
+}

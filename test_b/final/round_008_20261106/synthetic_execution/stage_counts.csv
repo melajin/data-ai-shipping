@@ -1,0 +1,27 @@
+category_type,stage,status,reason,row_count,rfid_count,description
+candidate_transition,s0,input,canonical_input_rows,20,3,Total canonical hourly observations presented for s0
+candidate_transition,s0,keep,s0_admitted,20,3,Rows meeting stage condition: valid geometry and finite legacy score
+candidate_transition,s1,input,s0_ok,20,3,Input rows admitted from s0
+candidate_transition,s1,keep,s1_admitted,16,2,Rows meeting stage condition: non-small observation (len>100 or bbox>100)
+candidate_transition,s1,reject,observed_small,4,1,Stage s1 reject: observed_small
+candidate_transition,s2,input,s1_ok,16,2,Input rows admitted from s1
+candidate_transition,s2,keep,s2_admitted,16,2,Rows meeting stage condition: valid informative chosen-part shape
+candidate_transition,s3,input,s2_ok,16,2,Input rows admitted from s2
+candidate_transition,s3,keep,s3_admitted,16,2,"Rows meeting stage condition: eligible self shape history (>=24 valid s2 rows, >=3 dates)"
+candidate_transition,s4,input,s3_ok,16,2,Input rows admitted from s3
+candidate_transition,s4,keep,s4_admitted,10,1,Rows meeting stage condition: eligible same-gear peer history (>=5 other vessels)
+candidate_transition,s4,defer,insufficient_peers,6,1,Stage s4 defer: insufficient_peers
+rfid_candidate_presence,s0,presence,vessels_with_ge_1_s0_candidate,20,3,Number of distinct vessels with at least one s0 candidate (valid geometry and finite legacy score)
+rfid_candidate_presence,s1,presence,vessels_with_ge_1_s1_candidate,16,2,Number of distinct vessels with at least one s1 candidate (non-small observation (len>100 or bbox>100))
+rfid_candidate_presence,s2,presence,vessels_with_ge_1_s2_candidate,16,2,Number of distinct vessels with at least one s2 candidate (valid informative chosen-part shape)
+rfid_candidate_presence,s3,presence,vessels_with_ge_1_s3_candidate,16,2,"Number of distinct vessels with at least one s3 candidate (eligible self shape history (>=24 valid s2 rows, >=3 dates))"
+rfid_candidate_presence,s4,presence,vessels_with_ge_1_s4_candidate,10,1,Number of distinct vessels with at least one s4 candidate (eligible same-gear peer history (>=5 other vessels))
+method_actual_pool_coverage,s0,fallback,no_observations,0,1,Method B0 actual pool assigned: s0 (fallback: no_observations)
+method_actual_pool_coverage,s0,strict,strict_stage,20,3,Method B0 actual pool assigned: s0 (fallback: strict_stage)
+method_actual_pool_coverage,s0,fallback,no_observations,0,1,Method S actual pool assigned: s0 (fallback: no_observations)
+method_actual_pool_coverage,s0,fallback,s3_pool_empty_fallback_to_s0,4,1,Method S actual pool assigned: s0 (fallback: s3_pool_empty_fallback_to_s0)
+method_actual_pool_coverage,s3,strict,strict_stage,16,2,Method S actual pool assigned: s3 (fallback: strict_stage)
+method_actual_pool_coverage,s0,fallback,no_observations,0,1,Method G actual pool assigned: s0 (fallback: no_observations)
+method_actual_pool_coverage,s0,fallback,s4_pool_empty_fallback_to_s0,4,1,Method G actual pool assigned: s0 (fallback: s4_pool_empty_fallback_to_s0)
+method_actual_pool_coverage,s3,fallback,s4_pool_empty_fallback_to_S,6,1,Method G actual pool assigned: s3 (fallback: s4_pool_empty_fallback_to_S)
+method_actual_pool_coverage,s4,strict,strict_stage,10,1,Method G actual pool assigned: s4 (fallback: strict_stage)

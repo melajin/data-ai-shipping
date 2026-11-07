@@ -1,0 +1,70 @@
+{
+  "run_id": "run_a2b0e4f8b7cc",
+  "round": 13,
+  "phase": "handoff_review_and_round013_design_complete",
+  "root_model": "gpt-6.1-sol (current developer runtime instruction)",
+  "middle_terra": {
+    "dispatch": "ctx_b30290b5847d",
+    "task": "task_f483e5e6120c",
+    "model": "gpt-6.1-terra",
+    "effort": "high",
+    "launch_state": "ready"
+  },
+  "middle_sonnet": {
+    "dispatch": "ctx_ef73925e6f1c",
+    "task": "task_b16860bace23",
+    "model": "claude-sonnet-5",
+    "effort": "high",
+    "launch_state": "ready"
+  },
+  "children_completed": [
+    "ctx_bc9f8a627f63",
+    "ctx_7594caa8a8ab"
+  ],
+  "fallback": "If Claude or Gemini reaches limits, transfer exact task and partial results to GPT; continue with at least one middle reviewer.",
+  "active_experiment": false,
+  "submission_improvement_achieved": false,
+  "latest_review_packet": "round_012_20261106/review_packet_001/README.md",
+  "pending_user_information": [
+    "Exact official time-error credit and matching formula, beyond user-confirmed RFID+accidenttime F1 within six hours",
+    "Confirmed accident-RFID mapping and complete nonaccident labels; absence is not a blanket internal-analysis stop"
+  ],
+  "next": "Execute stages A-D of Round013: full eligible training corpus and dedup/splits; fishery profiles and incident-adjacent continuous observations; one hourly path-length drop hypothesis; full-denominator timing/coverage evaluation. Design only completed in this turn. Preserve original artifacts and prior failures.",
+  "history": [
+    {
+      "round": 12,
+      "phase": "review_packet_complete_information_needed_for_next_supported_experiment",
+      "next": "Bothfinalchallenge reviewsDONE Terra msg_e86919c308f5/ctx_d0c963ca90b1 andSonnetmsg_f305f0f72aa6/ctx_6f0201ceb621 recommendNOunsupportedfusion. Rootround012/FINAL_DECISION qualifiesSonnet4independentslots/coreexhaustion/weak-signalcombinationimpossibility/autoreplaceID-and-rerunclaims. CURRENT_STATUS.md linksall12detailedreports+corecoverage+negativegateoutcomes;R3uniformwrapperaddedpreservingoriginalreport. review_packet_001COMPLETE: unchangedoldTestBbaselineCSV/candidate/hourlyPq+unchangedtemplateXLSX, currentdevB0preds/events separate, storagechecks100leadpeaks+existingprecedingrefs verified, alloriginalhashesunchanged.100IDsset/order matchtemplate;auxslotsfilled33/38/58 andH1headerdiff,officialconformanceUNKNOWN;storedTestByear2025Jan-Jun separatefrom2026dev82/100. NoNEWTestBinference/newXLSXauthoring/upload/models. Read-onlySpreadsheets skill appliedtozipXMLinspection/referencecopy,workbookbytesunchanged. Asyncuserquestions forofficialrule andconfirmedIDpathsUNANSWERED; thisisNOTpermissionoruserpause. Noactiveperformanceexperiment,goalNOTachieved. Onnewsource/independentbranch-selectionevidence, firstvalidatefactsandfreezeNEWversionedprotocol/labels/cohorts, preserveold100/60/artifacts;DONOTsimplyoverwriteRFIDcolumns orretroactivelyredefinefailure. Canresumeinternalproxyworkifconcreteevidencejustifiesfixedcorehypothesis;missingofficialrulesisnotblanketban. OrcaRun retainedforcontinuation,allworkerresultssettled;seeFINAL_WORKER_STATE.",
+      "pending_user_information": [
+        "Official submission slot/formula/time-window/missing-value/time-format/period source path",
+        "Confirmed accident-to-RFID mapping existence and path"
+      ]
+    }
+  ],
+  "latest_design": "round_013_20261106/PROTOCOL.md",
+  "user_scoring_clarification": {
+    "inputs": [
+      "rfid_id",
+      "accidenttime"
+    ],
+    "metric": "F1 considering time error up to six hours; exact weighting unknown",
+    "auxiliary_times_alone_are_fp": false,
+    "accident_time_on_nonaccident_vessel_is_fp": true
+  },
+  "design_review_agents": [
+    {
+      "task": "/root/handoff_stat_review",
+      "role": "sol_review",
+      "configured_model": "gpt-6.1-sol",
+      "effort": "high",
+      "status": "completed_read_only"
+    },
+    {
+      "task": "/root/handoff_design_review",
+      "role": "astra_decision",
+      "configured_model": "gpt-6-astra",
+      "effort": "high",
+      "status": "completed_read_only"
+    }
+  ]
+}

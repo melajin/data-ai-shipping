@@ -1,0 +1,31 @@
+acc_id,rfid_id,tier,conflict,acc_ts,primary_gear,is_single_code,gear_stratum,method,k,predicted_times,abs_error,hit,pool_stage,fallback_reason,actual_pool_n,cap,top4_count,top4_time_span_hours,window_observable_s0,window_observable_s1,window_observable_s2,window_observable_s3,window_observable_s4
+acc_1,rfid_1,0,,490009,연안복합,True,연안복합,B0,1,[490000],9.0,False,s0,,10,4,4,3.0,True,True,True,True,True
+acc_1,rfid_1,0,,490009,연안복합,True,연안복합,B0,4,"[490000, 490001, 490002, 490003]",6.0,True,s0,,10,4,4,3.0,True,True,True,True,True
+acc_1,rfid_1,0,,490009,연안복합,True,연안복합,S,1,[490009],0.0,True,s3,,10,4,4,3.0,True,True,True,True,True
+acc_1,rfid_1,0,,490009,연안복합,True,연안복합,S,4,"[490009, 490008, 490007, 490006]",0.0,True,s3,,10,4,4,3.0,True,True,True,True,True
+acc_1,rfid_1,0,,490009,연안복합,True,연안복합,G,1,[490009],0.0,True,s4,,10,4,4,3.0,True,True,True,True,True
+acc_1,rfid_1,0,,490009,연안복합,True,연안복합,G,4,"[490009, 490008, 490007, 490006]",0.0,True,s4,,10,4,4,3.0,True,True,True,True,True
+acc_2,rfid_1,1,,490008,연안복합,True,연안복합,B0,1,[490000],8.0,False,s0,,10,4,4,3.0,True,True,True,True,True
+acc_2,rfid_1,1,,490008,연안복합,True,연안복합,B0,4,"[490000, 490001, 490002, 490003]",5.0,True,s0,,10,4,4,3.0,True,True,True,True,True
+acc_2,rfid_1,1,,490008,연안복합,True,연안복합,S,1,[490009],1.0,True,s3,,10,4,4,3.0,True,True,True,True,True
+acc_2,rfid_1,1,,490008,연안복합,True,연안복합,S,4,"[490009, 490008, 490007, 490006]",0.0,True,s3,,10,4,4,3.0,True,True,True,True,True
+acc_2,rfid_1,1,,490008,연안복합,True,연안복합,G,1,[490009],1.0,True,s4,,10,4,4,3.0,True,True,True,True,True
+acc_2,rfid_1,1,,490008,연안복합,True,연안복합,G,4,"[490009, 490008, 490007, 490006]",0.0,True,s4,,10,4,4,3.0,True,True,True,True,True
+acc_3,rfid_2,0,,490028,자망,True,자망,B0,1,[490020],8.0,False,s0,,6,3,3,2.0,True,True,True,True,False
+acc_3,rfid_2,0,,490028,자망,True,자망,B0,4,"[490020, 490021, 490022]",6.0,True,s0,,6,3,3,2.0,True,True,True,True,False
+acc_3,rfid_2,0,,490028,자망,True,자망,S,1,[490025],3.0,True,s3,,6,3,3,2.0,True,True,True,True,False
+acc_3,rfid_2,0,,490028,자망,True,자망,S,4,"[490025, 490024, 490023]",3.0,True,s3,,6,3,3,2.0,True,True,True,True,False
+acc_3,rfid_2,0,,490028,자망,True,자망,G,1,[490025],3.0,True,s3,s4_pool_empty_fallback_to_S,6,3,3,2.0,True,True,True,True,False
+acc_3,rfid_2,0,,490028,자망,True,자망,G,4,"[490025, 490024, 490023]",3.0,True,s3,s4_pool_empty_fallback_to_S,6,3,3,2.0,True,True,True,True,False
+acc_4,rfid_3,2,,490040,통발,True,통발,B0,1,[490040],0.0,True,s0,,4,1,1,0.0,True,False,False,False,False
+acc_4,rfid_3,2,,490040,통발,True,통발,B0,4,[490040],0.0,True,s0,,4,1,1,0.0,True,False,False,False,False
+acc_4,rfid_3,2,,490040,통발,True,통발,S,1,[490040],0.0,True,s0,s3_pool_empty_fallback_to_s0,4,1,1,0.0,True,False,False,False,False
+acc_4,rfid_3,2,,490040,통발,True,통발,S,4,[490040],0.0,True,s0,s3_pool_empty_fallback_to_s0,4,1,1,0.0,True,False,False,False,False
+acc_4,rfid_3,2,,490040,통발,True,통발,G,1,[490040],0.0,True,s0,s4_pool_empty_fallback_to_s0,4,1,1,0.0,True,False,False,False,False
+acc_4,rfid_3,2,,490040,통발,True,통발,G,4,[490040],0.0,True,s0,s4_pool_empty_fallback_to_s0,4,1,1,0.0,True,False,False,False,False
+acc_5,rfid_4,3,,490060,채낚기연승낚시,True,채낚기연승낚시,B0,1,[],,False,s0,no_observations,0,0,0,0.0,False,False,False,False,False
+acc_5,rfid_4,3,,490060,채낚기연승낚시,True,채낚기연승낚시,B0,4,[],,False,s0,no_observations,0,0,0,0.0,False,False,False,False,False
+acc_5,rfid_4,3,,490060,채낚기연승낚시,True,채낚기연승낚시,S,1,[],,False,s0,no_observations,0,0,0,0.0,False,False,False,False,False
+acc_5,rfid_4,3,,490060,채낚기연승낚시,True,채낚기연승낚시,S,4,[],,False,s0,no_observations,0,0,0,0.0,False,False,False,False,False
+acc_5,rfid_4,3,,490060,채낚기연승낚시,True,채낚기연승낚시,G,1,[],,False,s0,no_observations,0,0,0,0.0,False,False,False,False,False
+acc_5,rfid_4,3,,490060,채낚기연승낚시,True,채낚기연승낚시,G,4,[],,False,s0,no_observations,0,0,0,0.0,False,False,False,False,False

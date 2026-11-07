@@ -1,0 +1,41 @@
+{
+  "evaluated_at": "2026-11-06T13:52:06.356018+09:00",
+  "hypothesis": "사고 시각 ±6h 창에 해상정지 상태가 평소보다 자주 나타난다",
+  "score_parity_vs_stored_ledger": 0.08333333333333337,
+  "cohort": {
+    "vessels": 82,
+    "rows": 99677,
+    "events": 100,
+    "events_with_observations_in_window": 100
+  },
+  "overall_state_share": {
+    "저속굴곡": 0.5807056793442821,
+    "정박정지": 0.31850878337028604,
+    "이동": 0.05891028020506235,
+    "해상정지": 0.03710986486350913,
+    "연안정지": 0.0047653922168604595
+  },
+  "accident_window": {
+    "sea_stop_present": 15,
+    "sea_stop_rate": 0.15,
+    "baseline_expected_rate_same_vessels": 0.26026879646660184,
+    "any_stop_present": 70,
+    "any_stop_rate": 0.7
+  },
+  "by_accident_type": {
+    "propulsion_loss": {
+      "events": 56,
+      "sea_stop_rate": 0.16071428571428573
+    },
+    "other": {
+      "events": 44,
+      "sea_stop_rate": 0.13636363636363635
+    }
+  },
+  "candidate_space": {
+    "all_hours_per_vessel_median": 910.0,
+    "sea_stop_hours_per_vessel_median": 19.0,
+    "sea_stop_share_overall": 0.03710986486350913
+  },
+  "training_performed": false
+}

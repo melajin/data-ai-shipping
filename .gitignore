@@ -46,3 +46,8 @@ desktop.ini
 **/historical_baseline/models/
 **/rounds/*/artifacts/models/
 **/deliverables/rounds_001_002_team_package/
+
+# 임시 작업물과 GitHub 크기 제한을 넘는 로컬 바이너리
+/tmp/
+/test_b/final/round_014_visual_audit/raw_geometry.sqlite
+/제출결과물/demo/_production/tools/imageio_ffmpeg/binaries/ffmpeg-win-x86_64-v9.0.2.exe

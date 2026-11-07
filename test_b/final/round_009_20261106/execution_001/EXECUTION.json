@@ -1,0 +1,187 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-06T03:26:21+0900",
+  "command": [
+    "testB/final/round_009_20261106/run_transition.py",
+    "--output-dir",
+    "testB/final/round_009_20261106/execution_001"
+  ],
+  "experiment": "R9 observed small-small-non-small transition",
+  "stages": {
+    "read_build_validate": {
+      "seconds": 16.008051600001636,
+      "ledger_rows": 99677,
+      "prediction_rows": 963
+    }
+  },
+  "ram_preflight": {
+    "checked_at": "2026-11-06T03:26:21+0900",
+    "available_mib": 4536.56640625,
+    "expected_extra_mib": 1280,
+    "reserve_mib": 640,
+    "basis": "Sequential99k numeric/derived frames, bounded triplet history; R8 actual424.60MiB peak, conservative1280MiB plus640reserve",
+    "allowed": true
+  },
+  "other_processes": [
+    {
+      "pid": 7960,
+      "name": "explorer.exe",
+      "rss_bytes": 780214272
+    },
+    {
+      "pid": 18876,
+      "name": "Orca.exe",
+      "rss_bytes": 512524288
+    },
+    {
+      "pid": 23268,
+      "name": "Orca.exe",
+      "rss_bytes": 385794048
+    },
+    {
+      "pid": 16048,
+      "name": "Orca.exe",
+      "rss_bytes": 300527616
+    },
+    {
+      "pid": 8764,
+      "name": "PhoneExperienceHost.exe",
+      "rss_bytes": 288518144
+    },
+    {
+      "pid": 21888,
+      "name": "Microsoft.CmdPal.UI.exe",
+      "rss_bytes": 283328512
+    },
+    {
+      "pid": 11272,
+      "name": "StartMenuExperienceHost.exe",
+      "rss_bytes": 206671872
+    },
+    {
+      "pid": 12048,
+      "name": "CrossDeviceService.exe",
+      "rss_bytes": 204886016
+    },
+    {
+      "pid": 28820,
+      "name": "codex.exe",
+      "rss_bytes": 193433600
+    },
+    {
+      "pid": 20560,
+      "name": "codex.exe",
+      "rss_bytes": 192622592
+    },
+    {
+      "pid": 16496,
+      "name": "logioptionsplus_agent.exe",
+      "rss_bytes": 191373312
+    },
+    {
+      "pid": 21120,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 178946048
+    },
+    {
+      "pid": 21156,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 177659904
+    },
+    {
+      "pid": 4008,
+      "name": "SearchHost.exe",
+      "rss_bytes": 153559040
+    },
+    {
+      "pid": 6944,
+      "name": "SnippingTool.exe",
+      "rss_bytes": 143691776
+    }
+  ],
+  "sources": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\run_transition.py": "a1d0938c23d535ee0722d8020d55088c5a069c01fd724fc3e54736ab6444d936",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\transition_rules.py": "80da231443a7c16b2e05d5b348bbfb30d9608594af92f971f37c0ffbfffd7360",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\independent_inventory.py": "055ea62db402abc1bc07672d689525b238024616265ba9006c1903e31e916ced",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\CONTRACT.md": "d91323121932b61baeb2de4db88539a9a5fc35ea70c2b02dd8b588f09729eea3",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\PROTOCOL.md": "20293cb02511b2f4f467539afbc92e5f36d42473bc63c96cc3ce584a8a9385b0",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\run_shape.py": "a71f0c014a057ee199bec5dfe36695279a9e3964d5e52f39f0549137e5fa8dcf",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\evaluate_shape.py": "a44526673ce492b1fbbbfe3df6a581c11df63ca1c68cdab17c7cf850d02cdb4d",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_002_20261105\\data_eval.py": "9d2b7882dc0e370050aa09f681e6053593f045e7f46a7edf3223faedf45817d0"
+  },
+  "inputs": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001\\candidate_ledger.parquet": {
+      "sha256": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+      "bytes": 6433671
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_003_20261105\\gear_registry.csv": {
+      "sha256": "0a94249ad364500132d70521134fc493e836ec63d7d8734cc412e33c3adb73dd",
+      "bytes": 4474
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\inventory_outputs\\per_vessel.csv": {
+      "sha256": "aa8f5e57812d08db0c4d036435038eb2b8b551f8242949b925514b4653123b57",
+      "bytes": 2279
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\inventory_outputs\\summary.json": {
+      "sha256": "d66535087aabb3bca00fc6225eb8b0be39006fd0a5a6063b0ffe0f77fa57cef2",
+      "bytes": 2561
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\round_008_linkage_audit_20261105\\devset_positives.csv": {
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "bytes": 15646
+    }
+  },
+  "inventory_concordance": {
+    "all_82_rfids_match": true,
+    "valid_triple_n": 88036,
+    "pattern_n": 3807
+  },
+  "frozen_pre_label": {
+    "at": "2026-11-06T03:26:39+0900",
+    "hashes": {
+      "predictions.csv": "a09a0af1399c01f535fd800462d70b9dd325d03edbc445dda2b37b85197c5a63",
+      "pool_manifest.csv": "3a177807ec1ce7091ed94e6350cdd10174feddb7373d6943cf8890cd541fde44"
+    }
+  },
+  "frozen_post_eval_unchanged": true,
+  "source_hashes_unchanged": true,
+  "peak_working_set_bytes": 373460992,
+  "outputs": {
+    "candidate_ledger.parquet": {
+      "sha256": "d96f86baeecafec03367d3e3e8c0a5c1c0c543d139135ff110d1b65d23417107",
+      "bytes": 7378020
+    },
+    "diagnostics.json": {
+      "sha256": "dfae7d18c0e56093abdea452456b8b3b667d978fb92f2275370ba7b0f8298693",
+      "bytes": 16173
+    },
+    "event_results.csv": {
+      "sha256": "16798f86013ca18ec51b1dd90815f119780aecdef317a32945181771aca289fb",
+      "bytes": 80871
+    },
+    "metrics.json": {
+      "sha256": "4781b393c2e3a61d36a0715ddad5eab354343fabb480db50cc6c5f4cbd22a187",
+      "bytes": 208949
+    },
+    "pool_manifest.csv": {
+      "sha256": "3a177807ec1ce7091ed94e6350cdd10174feddb7373d6943cf8890cd541fde44",
+      "bytes": 5615
+    },
+    "predictions.csv": {
+      "sha256": "a09a0af1399c01f535fd800462d70b9dd325d03edbc445dda2b37b85197c5a63",
+      "bytes": 81355
+    },
+    "stage_counts.csv": {
+      "sha256": "9532463ce4f370cc5555a03af7c9577421daf8082b9a9a79bc33a059e7a65fd5",
+      "bytes": 3328
+    },
+    "stage_event_coverage.csv": {
+      "sha256": "28880c9aa9f61b53576702e5f3411da35153adaf1cb3107372bf394f3356ad08",
+      "bytes": 18984
+    }
+  },
+  "exit_code": 0,
+  "operational_gate_passed": false,
+  "finished_at": "2026-11-06T03:26:43+0900",
+  "elapsed_seconds": 21.473387999998522
+}

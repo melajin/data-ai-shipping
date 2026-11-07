@@ -1,0 +1,9 @@
+{
+  "script": "compare_results.py",
+  "observed_initial_shell_exit_code": 1,
+  "evidence_scope": "direct tool execution before run_phase wrapper was introduced",
+  "error": "AttributeError: 'NoneType' object has no attribute 'group'",
+  "cause": "Gemini uncontrolled design key hod+-unconstrainedh had no numeric hour capture",
+  "correction": "map keys without numeric hour to hod_none rather than dereferencing missing regex match",
+  "subsequent_execution": "same comparison script completed with 532 aligned records; no data values changed to obtain success"
+}

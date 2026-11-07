@@ -1,0 +1,26 @@
+category_type,stage,status,reason,row_count,rfid_count,description
+candidate_transition,s0,input,canonical_input_rows,99677,82,Total canonical hourly observations presented for s0
+candidate_transition,s0,keep,s0_admitted,99677,82,Rows meeting stage condition: finite nonnegative base features
+candidate_transition,s1,input,s0_ok,99677,82,Input rows admitted from s0
+candidate_transition,s1,keep,s1_admitted,57435,82,Rows meeting stage condition: non-small observation
+candidate_transition,s1,reject,observed_small_branch,42242,81,Stage s1 reject: observed_small_branch
+candidate_transition,s2,input,s1_ok,57435,82,Input rows admitted from s1
+candidate_transition,s2,keep,s2_admitted,55013,82,Rows meeting stage condition: informative chosen-part shape
+candidate_transition,s2,defer,no_informative_chosen_part,2422,71,Stage s2 defer: no_informative_chosen_part
+candidate_transition,s3,input,s2_ok,55013,82,Input rows admitted from s2
+candidate_transition,s3,keep,s3_admitted,52486,80,Rows meeting stage condition: own strict-past shape history
+candidate_transition,s3,defer,insufficient_own_past_24_rows_3_dates,2527,82,Stage s3 defer: insufficient_own_past_24_rows_3_dates
+candidate_transition,s4,input,s3_ok,52486,80,Input rows admitted from s3
+candidate_transition,s4,keep,s4_admitted,50712,79,Rows meeting stage condition: same-code peer history
+candidate_transition,s4,defer,insufficient_5_other_same_code_peer_histories,1774,16,Stage s4 defer: insufficient_5_other_same_code_peer_histories
+rfid_candidate_presence,s0,presence,vessels_with_ge_1_s0_candidate,99677,82,Number of distinct vessels with at least one s0 candidate (finite nonnegative base features)
+rfid_candidate_presence,s1,presence,vessels_with_ge_1_s1_candidate,57435,82,Number of distinct vessels with at least one s1 candidate (non-small observation)
+rfid_candidate_presence,s2,presence,vessels_with_ge_1_s2_candidate,55013,82,Number of distinct vessels with at least one s2 candidate (informative chosen-part shape)
+rfid_candidate_presence,s3,presence,vessels_with_ge_1_s3_candidate,52486,80,Number of distinct vessels with at least one s3 candidate (own strict-past shape history)
+rfid_candidate_presence,s4,presence,vessels_with_ge_1_s4_candidate,50712,79,Number of distinct vessels with at least one s4 candidate (same-code peer history)
+method_actual_pool_coverage,s0,strict,strict_stage,99677,82,Method B0 actual pool assigned: s0 (fallback: strict_stage)
+method_actual_pool_coverage,s0,fallback,s3_empty_use_s0,23,2,Method S actual pool assigned: s0 (fallback: s3_empty_use_s0)
+method_actual_pool_coverage,s3,strict,strict_stage,52486,80,Method S actual pool assigned: s3 (fallback: strict_stage)
+method_actual_pool_coverage,s0,fallback,s4_empty_use_s0,23,2,Method G actual pool assigned: s0 (fallback: s4_empty_use_s0)
+method_actual_pool_coverage,s3,fallback,s4_empty_use_s3,1410,1,Method G actual pool assigned: s3 (fallback: s4_empty_use_s3)
+method_actual_pool_coverage,s4,strict,strict_stage,50712,79,Method G actual pool assigned: s4 (fallback: strict_stage)

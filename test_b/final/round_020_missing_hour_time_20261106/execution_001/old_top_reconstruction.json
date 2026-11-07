@@ -1,0 +1,830 @@
+{
+  "checked_at": "2026-11-06T15:00:14.257403+09:00",
+  "vessels": 82,
+  "absolute_logit_tolerance": 1e-10,
+  "all_passed": true,
+  "max_absolute_logit_difference": 0.0,
+  "records": [
+    {
+      "rfid_id": "31001758",
+      "pred_ts": 494354,
+      "source_ordinal": 50581395,
+      "peak_logit": 0.26820853474974116,
+      "n_rows": 916,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31005917",
+      "pred_ts": 492419,
+      "source_ordinal": 30055384,
+      "peak_logit": 0.2920523698916531,
+      "n_rows": 18,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31005928",
+      "pred_ts": 492706,
+      "source_ordinal": 30299267,
+      "peak_logit": 0.3232324972768562,
+      "n_rows": 809,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31007124",
+      "pred_ts": 492822,
+      "source_ordinal": 30415427,
+      "peak_logit": 0.2709260029906919,
+      "n_rows": 765,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31007500",
+      "pred_ts": 493373,
+      "source_ordinal": 40307860,
+      "peak_logit": 0.3770533992151416,
+      "n_rows": 1431,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31008085",
+      "pred_ts": 490896,
+      "source_ordinal": 10002831,
+      "peak_logit": 0.2873900684835857,
+      "n_rows": 2938,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31008933",
+      "pred_ts": 491864,
+      "source_ordinal": 20163309,
+      "peak_logit": 0.41097908995845306,
+      "n_rows": 1313,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31009538",
+      "pred_ts": 492209,
+      "source_ordinal": 20414089,
+      "peak_logit": 0.17068368953277024,
+      "n_rows": 4273,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31012971",
+      "pred_ts": 494214,
+      "source_ordinal": 50450340,
+      "peak_logit": 0.3909327360152224,
+      "n_rows": 808,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31013760",
+      "pred_ts": 493215,
+      "source_ordinal": 40137849,
+      "peak_logit": 0.25058720223514264,
+      "n_rows": 565,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31014032",
+      "pred_ts": 492776,
+      "source_ordinal": 30369691,
+      "peak_logit": 0.31831572199026587,
+      "n_rows": 811,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31014672",
+      "pred_ts": 493999,
+      "source_ordinal": 50195544,
+      "peak_logit": 0.3393487376628733,
+      "n_rows": 306,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31016197",
+      "pred_ts": 491862,
+      "source_ordinal": 20161317,
+      "peak_logit": 0.5538556082638763,
+      "n_rows": 1183,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31100492",
+      "pred_ts": 494513,
+      "source_ordinal": 50757154,
+      "peak_logit": 0.3759296268377673,
+      "n_rows": 3092,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31703108",
+      "pred_ts": 494508,
+      "source_ordinal": 50752421,
+      "peak_logit": 0.40585290106709265,
+      "n_rows": 1442,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31704073",
+      "pred_ts": 493500,
+      "source_ordinal": 40434017,
+      "peak_logit": 0.35970983795652606,
+      "n_rows": 2005,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31704782",
+      "pred_ts": 492802,
+      "source_ordinal": 30395560,
+      "peak_logit": 0.36617695929714816,
+      "n_rows": 2279,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "31815412",
+      "pred_ts": 490942,
+      "source_ordinal": 10013301,
+      "peak_logit": 0.19870596406520577,
+      "n_rows": 3264,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "32300169",
+      "pred_ts": 493397,
+      "source_ordinal": 40333326,
+      "peak_logit": 0.3618118789985088,
+      "n_rows": 3394,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "32300202",
+      "pred_ts": 494262,
+      "source_ordinal": 50492631,
+      "peak_logit": 0.36731927738385584,
+      "n_rows": 777,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "32300267",
+      "pred_ts": 494967,
+      "source_ordinal": 60522627,
+      "peak_logit": 0.2822436750275915,
+      "n_rows": 1197,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "32300334",
+      "pred_ts": 493020,
+      "source_ordinal": 30634839,
+      "peak_logit": 0.3322030597002368,
+      "n_rows": 3106,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "32300353",
+      "pred_ts": 492930,
+      "source_ordinal": 30529940,
+      "peak_logit": 0.34906526075431243,
+      "n_rows": 2851,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "32300717",
+      "pred_ts": 493059,
+      "source_ordinal": 40007363,
+      "peak_logit": 0.5257752876828006,
+      "n_rows": 1824,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "32301131",
+      "pred_ts": 491047,
+      "source_ordinal": 10105795,
+      "peak_logit": 0.3160572095990821,
+      "n_rows": 310,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "33200664",
+      "pred_ts": 493827,
+      "source_ordinal": 50059233,
+      "peak_logit": 0.48000583383684264,
+      "n_rows": 1328,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "33200829",
+      "pred_ts": 491332,
+      "source_ordinal": 10310197,
+      "peak_logit": 0.4859915103930561,
+      "n_rows": 2335,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "33201019",
+      "pred_ts": 492268,
+      "source_ordinal": 20451220,
+      "peak_logit": 0.2594745281375471,
+      "n_rows": 523,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "33201506",
+      "pred_ts": 493936,
+      "source_ordinal": 50127727,
+      "peak_logit": 0.481489103351244,
+      "n_rows": 841,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "34200580",
+      "pred_ts": 493253,
+      "source_ordinal": 40191615,
+      "peak_logit": 0.3456084567817589,
+      "n_rows": 574,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "34200731",
+      "pred_ts": 494621,
+      "source_ordinal": 60117393,
+      "peak_logit": 0.4026426832931607,
+      "n_rows": 3059,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "34400535",
+      "pred_ts": 493446,
+      "source_ordinal": 40380576,
+      "peak_logit": 0.43816278547184634,
+      "n_rows": 1208,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "34400601",
+      "pred_ts": 491003,
+      "source_ordinal": 10067827,
+      "peak_logit": 0.34750442337946474,
+      "n_rows": 671,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "35100289",
+      "pred_ts": 491573,
+      "source_ordinal": 10451333,
+      "peak_logit": 0.5140425462902782,
+      "n_rows": 1582,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "35200056",
+      "pred_ts": 491863,
+      "source_ordinal": 20162629,
+      "peak_logit": 0.5633122400664529,
+      "n_rows": 1101,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "35200311",
+      "pred_ts": 495221,
+      "source_ordinal": 60747087,
+      "peak_logit": 0.21019588239047823,
+      "n_rows": 2428,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "35200486",
+      "pred_ts": 491268,
+      "source_ordinal": 10246616,
+      "peak_logit": 0.4153033448856542,
+      "n_rows": 1756,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36000925",
+      "pred_ts": 494918,
+      "source_ordinal": 60465035,
+      "peak_logit": 0.189535655396208,
+      "n_rows": 5,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36001358",
+      "pred_ts": 494699,
+      "source_ordinal": 60205449,
+      "peak_logit": 0.5577157943152434,
+      "n_rows": 932,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36001411",
+      "pred_ts": 494748,
+      "source_ordinal": 60263867,
+      "peak_logit": 0.3074848858337538,
+      "n_rows": 480,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36001494",
+      "pred_ts": 493689,
+      "source_ordinal": 40629383,
+      "peak_logit": 0.466855658911413,
+      "n_rows": 548,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36003960",
+      "pred_ts": 494888,
+      "source_ordinal": 60421515,
+      "peak_logit": 0.21938991105534336,
+      "n_rows": 424,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36004693",
+      "pred_ts": 492422,
+      "source_ordinal": 30058936,
+      "peak_logit": 0.26742728659908666,
+      "n_rows": 1243,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36006776",
+      "pred_ts": 492708,
+      "source_ordinal": 30315887,
+      "peak_logit": 0.3999805335000396,
+      "n_rows": 2614,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36007269",
+      "pred_ts": 495156,
+      "source_ordinal": 60652877,
+      "peak_logit": 0.2639395722227681,
+      "n_rows": 401,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36007909",
+      "pred_ts": 493495,
+      "source_ordinal": 40428477,
+      "peak_logit": 0.42870385290454255,
+      "n_rows": 756,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36008148",
+      "pred_ts": 492973,
+      "source_ordinal": 30581847,
+      "peak_logit": 0.4303321605402681,
+      "n_rows": 839,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36008988",
+      "pred_ts": 494647,
+      "source_ordinal": 60149833,
+      "peak_logit": 0.27835886240545005,
+      "n_rows": 733,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36010190",
+      "pred_ts": 492874,
+      "source_ordinal": 30469596,
+      "peak_logit": 0.35886298619510404,
+      "n_rows": 1406,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36010554",
+      "pred_ts": 494197,
+      "source_ordinal": 50430415,
+      "peak_logit": 0.31054470945912216,
+      "n_rows": 1092,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36011749",
+      "pred_ts": 493806,
+      "source_ordinal": 50037144,
+      "peak_logit": 0.36416521789441647,
+      "n_rows": 1326,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36011845",
+      "pred_ts": 492901,
+      "source_ordinal": 30497900,
+      "peak_logit": 0.2775591612835328,
+      "n_rows": 741,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36015383",
+      "pred_ts": 493811,
+      "source_ordinal": 50044085,
+      "peak_logit": 0.3702737885158309,
+      "n_rows": 1711,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36015515",
+      "pred_ts": 492104,
+      "source_ordinal": 20343334,
+      "peak_logit": 0.32507412670818536,
+      "n_rows": 1861,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36100073",
+      "pred_ts": 490977,
+      "source_ordinal": 10044759,
+      "peak_logit": 0.43634144002546954,
+      "n_rows": 626,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36101547",
+      "pred_ts": 493667,
+      "source_ordinal": 40602983,
+      "peak_logit": 0.27999729194635337,
+      "n_rows": 91,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36102425",
+      "pred_ts": 494294,
+      "source_ordinal": 50515845,
+      "peak_logit": 0.31774903833122875,
+      "n_rows": 261,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36108086",
+      "pred_ts": 492583,
+      "source_ordinal": 30196133,
+      "peak_logit": 0.24375769880863027,
+      "n_rows": 788,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36110858",
+      "pred_ts": 490965,
+      "source_ordinal": 10023089,
+      "peak_logit": 0.3275591109784104,
+      "n_rows": 549,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36113617",
+      "pred_ts": 492850,
+      "source_ordinal": 30446801,
+      "peak_logit": 0.08715470850421558,
+      "n_rows": 199,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36113654",
+      "pred_ts": 492688,
+      "source_ordinal": 30292686,
+      "peak_logit": 0.2522926240190934,
+      "n_rows": 1479,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36115953",
+      "pred_ts": 494911,
+      "source_ordinal": 60458737,
+      "peak_logit": 0.3629631202699694,
+      "n_rows": 754,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36200918",
+      "pred_ts": 493736,
+      "source_ordinal": 40677188,
+      "peak_logit": 0.2956148093768844,
+      "n_rows": 505,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36212188",
+      "pred_ts": 492565,
+      "source_ordinal": 30177842,
+      "peak_logit": 0.27009102058436785,
+      "n_rows": 222,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36212203",
+      "pred_ts": 494147,
+      "source_ordinal": 50371496,
+      "peak_logit": 0.2846359635237601,
+      "n_rows": 904,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36301063",
+      "pred_ts": 493739,
+      "source_ordinal": 40681112,
+      "peak_logit": 0.344431681164426,
+      "n_rows": 272,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36301579",
+      "pred_ts": 493009,
+      "source_ordinal": 30611085,
+      "peak_logit": 0.26943151859352854,
+      "n_rows": 494,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36301995",
+      "pred_ts": 492969,
+      "source_ordinal": 30564544,
+      "peak_logit": 0.16897328154050995,
+      "n_rows": 807,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36304593",
+      "pred_ts": 493948,
+      "source_ordinal": 50132879,
+      "peak_logit": 0.3438716293657205,
+      "n_rows": 368,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36304898",
+      "pred_ts": 490916,
+      "source_ordinal": 10002340,
+      "peak_logit": 0.27731070952110515,
+      "n_rows": 718,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36307233",
+      "pred_ts": 491839,
+      "source_ordinal": 20136196,
+      "peak_logit": 0.17803678459902275,
+      "n_rows": 182,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36307839",
+      "pred_ts": 493637,
+      "source_ordinal": 40546386,
+      "peak_logit": 0.2806076771037632,
+      "n_rows": 122,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36311633",
+      "pred_ts": 494437,
+      "source_ordinal": 50665861,
+      "peak_logit": 0.41794503365968366,
+      "n_rows": 1847,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36313865",
+      "pred_ts": 492405,
+      "source_ordinal": 30029986,
+      "peak_logit": 0.2626891747041419,
+      "n_rows": 1316,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36314076",
+      "pred_ts": 493591,
+      "source_ordinal": 40519740,
+      "peak_logit": 0.30916408011354707,
+      "n_rows": 2110,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36314346",
+      "pred_ts": 494512,
+      "source_ordinal": 50756992,
+      "peak_logit": 0.3693806633645861,
+      "n_rows": 1856,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36314611",
+      "pred_ts": 492583,
+      "source_ordinal": 30196291,
+      "peak_logit": 0.3624679073664505,
+      "n_rows": 1237,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36314887",
+      "pred_ts": 491729,
+      "source_ordinal": 20060395,
+      "peak_logit": 0.313598260687119,
+      "n_rows": 825,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36314895",
+      "pred_ts": 493750,
+      "source_ordinal": 40668681,
+      "peak_logit": 0.18399024214212317,
+      "n_rows": 1651,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36315137",
+      "pred_ts": 492895,
+      "source_ordinal": 30491177,
+      "peak_logit": 0.3792533053821483,
+      "n_rows": 1446,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36315252",
+      "pred_ts": 493349,
+      "source_ordinal": 40281103,
+      "peak_logit": 0.353538283115224,
+      "n_rows": 676,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "rfid_id": "36316040",
+      "pred_ts": 491048,
+      "source_ordinal": 10107495,
+      "peak_logit": 0.31411503644801037,
+      "n_rows": 1177,
+      "prediction_status": "predicted",
+      "absolute_logit_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "purpose": "integrity only; no old hit metrics recomputed"
+}

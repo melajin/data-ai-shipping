@@ -1,0 +1,71 @@
+{
+  "at": "2026-11-06T15:30:53.700412+09:00",
+  "stage": "engine_synthetic_tests",
+  "available_mib": 4368.4296875,
+  "expected_child_peak_mib": 512,
+  "reserve_mib": 640,
+  "basis": "Same frozen scientific stack; small synthetic arrays;512MiB exceeds prior Round019 smoke355MiB",
+  "other_processes": [
+    {
+      "pid": 9940,
+      "name": "explorer.exe",
+      "rss_mib": 654.08
+    },
+    {
+      "pid": 23364,
+      "name": "Obsidian.exe",
+      "rss_mib": 552.69
+    },
+    {
+      "pid": 27636,
+      "name": "Orca.exe",
+      "rss_mib": 369.45
+    },
+    {
+      "pid": 28540,
+      "name": "Orca.exe",
+      "rss_mib": 315.45
+    },
+    {
+      "pid": 3352,
+      "name": "explorer.exe",
+      "rss_mib": 286.54
+    },
+    {
+      "pid": 5260,
+      "name": "codex.exe",
+      "rss_mib": 261.3
+    },
+    {
+      "pid": 3096,
+      "name": "codex.exe",
+      "rss_mib": 249.97
+    },
+    {
+      "pid": 26540,
+      "name": "Orca.exe",
+      "rss_mib": 239.47
+    },
+    {
+      "pid": 1992,
+      "name": "CrossDeviceService.exe",
+      "rss_mib": 212.25
+    },
+    {
+      "pid": 7492,
+      "name": "ASDSvc.exe",
+      "rss_mib": 192.53
+    },
+    {
+      "pid": 2832,
+      "name": "PhoneExperienceHost.exe",
+      "rss_mib": 186.08
+    },
+    {
+      "pid": 20808,
+      "name": "msedgewebview2.exe",
+      "rss_mib": 169.66
+    }
+  ],
+  "passed": true
+}

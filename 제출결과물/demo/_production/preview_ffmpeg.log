@@ -1,0 +1,41 @@
+[in#0 @ 000001d792c87dc0] Found window Test B - Live execution capture, capturing 1920x1080x32 at (0,0)
+[in#0/gdigrab @ 000001d792c87dc0] Stream #0: not enough frames to estimate rate; consider increasing probesize
+Input #0, gdigrab, from 'title=Test B - Live execution capture':
+  Duration: N/A, start: 1793933048.789347, bitrate: 663556 kb/s
+  Stream #0:0: Video: bmp, bgra, 1920x1080, 663556 kb/s, 10 fps, 1000k tbr, 1000k tbn, start 1793933048.789347
+Stream mapping:
+  Stream #0:0 -> #0:0 (bmp (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 000001d792cf1900] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001d792cf1900] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000001d792cf1900] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=2 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=10 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'D:\obsidian\claude\obsidian_export\DATA AI SHIPPING\제출결과물\demo\_production\preview.mp4':
+  Metadata:
+    encoder         : Lavf63.1.102
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080, q=2-31, 10 fps, 10240 tbn
+    Metadata:
+      encoder         : Lavc63.1.102 libx264
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.02    frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:01.53    frame=    5 fps=2.4 q=20.0 size=       0KiB time=00:00:00.20 bitrate=   1.9kbits/s speed=0.0977x elapsed=0:00:02.04    frame=   10 fps=3.9 q=20.0 size=       0KiB time=00:00:00.70 bitrate=   0.5kbits/s speed=0.272x elapsed=0:00:02.57    frame=   15 fps=4.9 q=20.0 size=       0KiB time=00:00:01.20 bitrate=   0.3kbits/s speed=0.389x elapsed=0:00:03.08    frame=   21 fps=5.8 q=20.0 size=       0KiB time=00:00:01.80 bitrate=   0.2kbits/s speed=0.501x elapsed=0:00:03.59    
+
+[q] command received. Exiting.
+
+[mp4 @ 000001d792ceea00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001d792c85700] video:22KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 5.940551%
+frame=   42 fps=9.9 q=-1.0 Lsize=      24KiB time=00:00:03.90 bitrate=  49.9kbits/s speed=0.915x elapsed=0:00:04.26    
+[libx264 @ 000001d792cf1900] frame I:1     Avg QP: 1.77  size: 12431
+[libx264 @ 000001d792cf1900] frame P:11    Avg QP:10.82  size:   646
+[libx264 @ 000001d792cf1900] frame B:30    Avg QP:12.08  size:    91
+[libx264 @ 000001d792cf1900] consecutive B-frames:  4.8%  0.0%  0.0% 95.2%
+[libx264 @ 000001d792cf1900] mb I  I16..4: 98.2%  0.0%  1.8%
+[libx264 @ 000001d792cf1900] mb P  I16..4:  0.0%  0.0%  0.0%  P16..4:  0.2%  0.0%  0.0%  0.0%  0.0%    skip:99.8%
+[libx264 @ 000001d792cf1900] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8:  0.0%  0.0%  0.0%  direct: 0.3%  skip:99.6%  L0:60.7% L1:39.3% BI: 0.0%
+[libx264 @ 000001d792cf1900] 8x8 transform intra:0.0% inter:1.2%
+[libx264 @ 000001d792cf1900] coded y,uvDC,uvAC intra: 1.5% 2.7% 2.6% inter: 0.0% 0.3% 0.0%
+[libx264 @ 000001d792cf1900] i16 v,h,dc,p: 94%  4%  1%  0%
+[libx264 @ 000001d792cf1900] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 42%  8% 33% 17%  0%  0%  0%  0%  0%
+[libx264 @ 000001d792cf1900] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 22% 30%  2%  3%  3%  2%  3%  2%
+[libx264 @ 000001d792cf1900] i8c dc,h,v,p: 90%  8%  2%  0%
+[libx264 @ 000001d792cf1900] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000001d792cf1900] kb/s:42.39

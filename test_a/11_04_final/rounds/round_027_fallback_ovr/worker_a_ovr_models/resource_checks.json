@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp_utc": "2026-11-05T05:35:47+00:00",
+    "stage": "start_data_load_and_train",
+    "available_ram_bytes": 1261293568,
+    "available_ram_mb": 1202.86,
+    "available_ram_gib": 1.175,
+    "process_rss_mb": 148.42,
+    "expected_peak_mb": 350.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:35:48+00:00",
+    "stage": "fold_0_feature_extraction",
+    "available_ram_bytes": 1063018496,
+    "available_ram_mb": 1013.77,
+    "available_ram_gib": 0.99,
+    "process_rss_mb": 359.12,
+    "expected_peak_mb": 350.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:35:54+00:00",
+    "stage": "fold_0_model_train",
+    "available_ram_bytes": 956944384,
+    "available_ram_mb": 912.61,
+    "available_ram_gib": 0.891,
+    "process_rss_mb": 367.3,
+    "expected_peak_mb": 350.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:38:12+00:00",
+    "stage": "fold_1_feature_extraction",
+    "available_ram_bytes": 1274699776,
+    "available_ram_mb": 1215.65,
+    "available_ram_gib": 1.187,
+    "process_rss_mb": 363.67,
+    "expected_peak_mb": 350.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:38:17+00:00",
+    "stage": "fold_1_model_train",
+    "available_ram_bytes": 1298112512,
+    "available_ram_mb": 1237.98,
+    "available_ram_gib": 1.209,
+    "process_rss_mb": 373.54,
+    "expected_peak_mb": 350.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:40:24+00:00",
+    "stage": "fold_2_feature_extraction",
+    "available_ram_bytes": 1605865472,
+    "available_ram_mb": 1531.47,
+    "available_ram_gib": 1.496,
+    "process_rss_mb": 363.38,
+    "expected_peak_mb": 350.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:40:29+00:00",
+    "stage": "fold_2_model_train",
+    "available_ram_bytes": 1638019072,
+    "available_ram_mb": 1562.14,
+    "available_ram_gib": 1.526,
+    "process_rss_mb": 375.75,
+    "expected_peak_mb": 350.0,
+    "passed_guard": true
+  }
+]

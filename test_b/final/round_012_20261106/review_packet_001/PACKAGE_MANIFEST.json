@@ -1,0 +1,52 @@
+﻿{
+    "created_at":  "2026-11-06T05:05:09.5444441+09:00",
+    "purpose":  "Review packet, no improvement or official submission claim",
+    "source_verification":  "VERIFICATION.json",
+    "files":  [
+                  {
+                      "name":  "baseline_storage_checks.csv",
+                      "bytes":  3542,
+                      "sha256":  "a9806908cd3701778481d359564a857414d3ddd6872a1ff587612593cbcdbbcc"
+                  },
+                  {
+                      "name":  "development_B0_event_results_100events.csv",
+                      "bytes":  27091,
+                      "sha256":  "a040da8f8f66103089befa02f7ad2a1673d8fbe5336002ce92c93018a41e57d1"
+                  },
+                  {
+                      "name":  "development_B0_predictions_82RFIDs.csv",
+                      "bytes":  27258,
+                      "sha256":  "78a204c5abaa644b9104390f84806ad776bf063ad0ded45aa5140e4a6cecf191"
+                  },
+                  {
+                      "name":  "README.md",
+                      "bytes":  3871,
+                      "sha256":  "8a8047cad79ae474dd50dc5651cea016ed73ff5aaa095193ea28b729a366bcfb"
+                  },
+                  {
+                      "name":  "submission_template_UNCHANGED_REFERENCE.xlsx",
+                      "bytes":  12645,
+                      "sha256":  "035fbced3dd46319f2506ab9b8bbb4f1756712ae3d94ecf6953d3587e056609c"
+                  },
+                  {
+                      "name":  "testB_existing_baseline_UNVERIFIED.csv",
+                      "bytes":  6158,
+                      "sha256":  "afa0bb5c2769e15c26bc598a850ddece86357e669d0d8094879777949c9e1b91"
+                  },
+                  {
+                      "name":  "testB_existing_candidate_lineage.csv",
+                      "bytes":  10730,
+                      "sha256":  "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9"
+                  },
+                  {
+                      "name":  "testB_existing_hourly_scores.parquet",
+                      "bytes":  3765001,
+                      "sha256":  "ab2230ef83aa6a3dec28fae03000294f581da6e0ee069f8210e3598a96549d14"
+                  },
+                  {
+                      "name":  "VERIFICATION.json",
+                      "bytes":  5663,
+                      "sha256":  "7db2578c65542c053b90ea5d16c3515a47305fa5b5553f5b4d140ee3d9ba6826"
+                  }
+              ]
+}

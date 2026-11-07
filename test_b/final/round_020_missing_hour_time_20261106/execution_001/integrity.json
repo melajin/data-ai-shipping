@@ -1,0 +1,140 @@
+{
+  "checked_at": "2026-11-06T15:00:14.772221+09:00",
+  "all_frozen_hashes_match": true,
+  "input_hashes_before": {
+    "testB/final/round_020_missing_hour_time_20261106/PROTOCOL.md": {
+      "sha256": "e61775482db4eb123a050da0537e26a92a060c6c5a14ad5ea5adab9b7adf346e",
+      "bytes": 13755
+    },
+    "testB/final/round_020_missing_hour_time_20261106/evaluate.py": {
+      "sha256": "e28cdc39ed12101dd2e14934065983394e9c7f6d262a43b6b552b09efdcb5d4a",
+      "bytes": 46158
+    },
+    "testB/final/round_020_missing_hour_time_20261106/test_evaluate.py": {
+      "sha256": "42ba97b5f9f969b78ea486544da47bc03cf882948a5c3b727065c425684f5e90",
+      "bytes": 10166
+    },
+    "testB/final/round_018_pointwise_loov_20261106/PROTOCOL.md": {
+      "sha256": "477de9f5abb80217f602b56fa51d7ca585c2c1a313753e811f305957e1d21de6",
+      "bytes": 8754
+    },
+    "testB/final/round_018_pointwise_loov_20261106/evaluate.py": {
+      "sha256": "dec43af60da3befa7c59607e0884a4168e9f4ccfa993eb208af16645ffc3a9db",
+      "bytes": 31160
+    },
+    "testB/final/round_018_pointwise_loov_20261106/freeze.json": {
+      "sha256": "803a3d3786a3c40ecadda328b623fdf903d8546a395cb54ed233e36a129021db",
+      "bytes": 4668
+    },
+    "testB/final/round_018_pointwise_loov_20261106/execution_001/fold_audit.jsonl": {
+      "sha256": "86e15dff494189954ecfcfd23e8cb91c786816f04e929f647c6d3ea1af16f54e",
+      "bytes": 768168
+    },
+    "testB/final/round_018_pointwise_loov_20261106/execution_001/predictions.csv": {
+      "sha256": "756d4052e686fb1e1f05e61f344225584b80a1136c10ce4a306652dd8ebe1828",
+      "bytes": 4975
+    },
+    "testB/final/round_018_pointwise_loov_20261106/execution_001/predictions_sealed.json": {
+      "sha256": "0d3362813f2d27e8f49c5d46c974c660a1fdeeeee898cb963d828592c6f7d3af",
+      "bytes": 194
+    },
+    "testB/과거/round_008_linkage_audit_20261105/devset_positives.csv": {
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "bytes": 15646
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_01.parquet": {
+      "sha256": "4dfd4dac39805874f46c701a65fb705698923d5d757a550cb75a04c31d17c871",
+      "bytes": 16564885
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_02.parquet": {
+      "sha256": "aa09e5b989de86f5911885c2926382061dd1b2afed7d2035e9de79e2a0c0c20f",
+      "bytes": 15957874
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_03.parquet": {
+      "sha256": "351fbae98054962046da0a364d12173090cc823c295910893cc9cf23789f6304",
+      "bytes": 21699918
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_04.parquet": {
+      "sha256": "75d3ac451b4d20ead7eaa0467bb6a394e014e552f05fa9282261361a08a84ba8",
+      "bytes": 23598660
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_05.parquet": {
+      "sha256": "08eb9aed48e045f7c22a5062a3c2f72278ce239e44a4f4c897bf2b208a32b8bf",
+      "bytes": 25048144
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_06.parquet": {
+      "sha256": "69090e150c4fdfb5931e6e717e834c0c01c604bfbae2de5994c6327aa11d0827",
+      "bytes": 25492577
+    }
+  },
+  "input_hashes_after": {
+    "testB/final/round_020_missing_hour_time_20261106/PROTOCOL.md": {
+      "sha256": "e61775482db4eb123a050da0537e26a92a060c6c5a14ad5ea5adab9b7adf346e",
+      "bytes": 13755
+    },
+    "testB/final/round_020_missing_hour_time_20261106/evaluate.py": {
+      "sha256": "e28cdc39ed12101dd2e14934065983394e9c7f6d262a43b6b552b09efdcb5d4a",
+      "bytes": 46158
+    },
+    "testB/final/round_020_missing_hour_time_20261106/test_evaluate.py": {
+      "sha256": "42ba97b5f9f969b78ea486544da47bc03cf882948a5c3b727065c425684f5e90",
+      "bytes": 10166
+    },
+    "testB/final/round_018_pointwise_loov_20261106/PROTOCOL.md": {
+      "sha256": "477de9f5abb80217f602b56fa51d7ca585c2c1a313753e811f305957e1d21de6",
+      "bytes": 8754
+    },
+    "testB/final/round_018_pointwise_loov_20261106/evaluate.py": {
+      "sha256": "dec43af60da3befa7c59607e0884a4168e9f4ccfa993eb208af16645ffc3a9db",
+      "bytes": 31160
+    },
+    "testB/final/round_018_pointwise_loov_20261106/freeze.json": {
+      "sha256": "803a3d3786a3c40ecadda328b623fdf903d8546a395cb54ed233e36a129021db",
+      "bytes": 4668
+    },
+    "testB/final/round_018_pointwise_loov_20261106/execution_001/fold_audit.jsonl": {
+      "sha256": "86e15dff494189954ecfcfd23e8cb91c786816f04e929f647c6d3ea1af16f54e",
+      "bytes": 768168
+    },
+    "testB/final/round_018_pointwise_loov_20261106/execution_001/predictions.csv": {
+      "sha256": "756d4052e686fb1e1f05e61f344225584b80a1136c10ce4a306652dd8ebe1828",
+      "bytes": 4975
+    },
+    "testB/final/round_018_pointwise_loov_20261106/execution_001/predictions_sealed.json": {
+      "sha256": "0d3362813f2d27e8f49c5d46c974c660a1fdeeeee898cb963d828592c6f7d3af",
+      "bytes": 194
+    },
+    "testB/과거/round_008_linkage_audit_20261105/devset_positives.csv": {
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "bytes": 15646
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_01.parquet": {
+      "sha256": "4dfd4dac39805874f46c701a65fb705698923d5d757a550cb75a04c31d17c871",
+      "bytes": 16564885
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_02.parquet": {
+      "sha256": "aa09e5b989de86f5911885c2926382061dd1b2afed7d2035e9de79e2a0c0c20f",
+      "bytes": 15957874
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_03.parquet": {
+      "sha256": "351fbae98054962046da0a364d12173090cc823c295910893cc9cf23789f6304",
+      "bytes": 21699918
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_04.parquet": {
+      "sha256": "75d3ac451b4d20ead7eaa0467bb6a394e014e552f05fa9282261361a08a84ba8",
+      "bytes": 23598660
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_05.parquet": {
+      "sha256": "08eb9aed48e045f7c22a5062a3c2f72278ce239e44a4f4c897bf2b208a32b8bf",
+      "bytes": 25048144
+    },
+    "testB/final/round_017_fleet_negatives_20261106/execution_001/hourly_06.parquet": {
+      "sha256": "69090e150c4fdfb5931e6e717e834c0c01c604bfbae2de5994c6327aa11d0827",
+      "bytes": 25492577
+    }
+  },
+  "sealed_prediction_artifacts_match": true,
+  "old_top_reconstruction_passed": true,
+  "legacy_source_and_prediction_seal_match": true,
+  "prediction_sha256": "58c3d223a41d3ab1967b27eb4a723cdabf58c6ff915ff8b360e3de11d70f4ce3"
+}

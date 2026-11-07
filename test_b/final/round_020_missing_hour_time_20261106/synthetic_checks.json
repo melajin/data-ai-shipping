@@ -1,0 +1,91 @@
+{
+  "checked_at": "2026-11-06T14:58:33.256396+09:00",
+  "kind": "synthetic code tests only; no actual-data prediction or evaluation",
+  "tests_run": 12,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "output": "test_exact_chance_and_worst_overlap_are_diagnostics (round020_synthetic_tests.EvaluationTests.test_exact_chance_and_worst_overlap_are_diagnostics) ... ok\ntest_full_grid_chance_unions_multiple_inclusive_windows (round020_synthetic_tests.EvaluationTests.test_full_grid_chance_unions_multiple_inclusive_windows) ... ok\ntest_user_screening_h3_h4_h5_and_strict_above_chance (round020_synthetic_tests.EvaluationTests.test_user_screening_h3_h4_h5_and_strict_above_chance) ... ok\ntest_feature_order_and_original_top_parity_failure (round020_synthetic_tests.ProvenanceTests.test_feature_order_and_original_top_parity_failure) ... ok\ntest_frozen_training_ids_and_parameter_shapes_cannot_leak_heldout (round020_synthetic_tests.ProvenanceTests.test_frozen_training_ids_and_parameter_shapes_cannot_leak_heldout) ... ok\ntest_memory_deferral_precedes_execution_directory_creation (round020_synthetic_tests.ProvenanceTests.test_memory_deferral_precedes_execution_directory_creation) ... ok\ntest_seal_is_verified_before_any_accident_timestamp_is_read (round020_synthetic_tests.ProvenanceTests.test_seal_is_verified_before_any_accident_timestamp_is_read) ... ok\ntest_duplicate_hours_max_and_deterministic_provenance (round020_synthetic_tests.SelectorTests.test_duplicate_hours_max_and_deterministic_provenance) ... ok\ntest_empty_and_underflow_remain_explicit_missing_evidence (round020_synthetic_tests.SelectorTests.test_empty_and_underflow_remain_explicit_missing_evidence) ... ok\ntest_missing_center_between_equal_observed_endpoints (round020_synthetic_tests.SelectorTests.test_missing_center_between_equal_observed_endpoints) ... ok\ntest_noncontiguous_ties_choose_actual_lower_median (round020_synthetic_tests.SelectorTests.test_noncontiguous_ties_choose_actual_lower_median) ... ok\ntest_stable_negative_logits_and_local_fsum_preserve_tiny_support (round020_synthetic_tests.SelectorTests.test_stable_negative_logits_and_local_fsum_preserve_tiny_support) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.169s\n\nOK\n",
+  "memory": {
+    "stage": "synthetic_checks",
+    "checked_at": "2026-11-06T14:58:33.005217+09:00",
+    "available_mib": 4521.5078125,
+    "estimated_peak_mib": 384,
+    "reserve_mib": 640,
+    "estimate_basis": "Small synthetic arrays and scientific library imports; no real inputs",
+    "own_rss_mib": 28.11328125,
+    "top_running_processes": [
+      {
+        "pid": 9940,
+        "name": "explorer.exe",
+        "rss_mib": 654.96
+      },
+      {
+        "pid": 23364,
+        "name": "Obsidian.exe",
+        "rss_mib": 557.36
+      },
+      {
+        "pid": 27636,
+        "name": "Orca.exe",
+        "rss_mib": 329.9
+      },
+      {
+        "pid": 28540,
+        "name": "Orca.exe",
+        "rss_mib": 310.91
+      },
+      {
+        "pid": 3352,
+        "name": "explorer.exe",
+        "rss_mib": 287.41
+      },
+      {
+        "pid": 5260,
+        "name": "codex.exe",
+        "rss_mib": 249.12
+      },
+      {
+        "pid": 3096,
+        "name": "codex.exe",
+        "rss_mib": 244.8
+      },
+      {
+        "pid": 26540,
+        "name": "Orca.exe",
+        "rss_mib": 236.3
+      },
+      {
+        "pid": 1992,
+        "name": "CrossDeviceService.exe",
+        "rss_mib": 213.43
+      },
+      {
+        "pid": 2832,
+        "name": "PhoneExperienceHost.exe",
+        "rss_mib": 186.54
+      },
+      {
+        "pid": 20808,
+        "name": "msedgewebview2.exe",
+        "rss_mib": 168.08
+      },
+      {
+        "pid": 20268,
+        "name": "msedgewebview2.exe",
+        "rss_mib": 164.84
+      }
+    ],
+    "python_processes": [
+      {
+        "pid": 6316,
+        "name": "python.exe",
+        "rss_mib": 27.8
+      }
+    ],
+    "allowed": true
+  },
+  "elapsed_seconds": 0.16929139999774634,
+  "code_sha256": "e28cdc39ed12101dd2e14934065983394e9c7f6d262a43b6b552b09efdcb5d4a",
+  "tests_sha256": "42ba97b5f9f969b78ea486544da47bc03cf882948a5c3b727065c425684f5e90"
+}

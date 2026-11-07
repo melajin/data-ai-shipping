@@ -1,0 +1,19 @@
+{
+  "chosen": {
+    "threshold": 0.6,
+    "accident_count": 37,
+    "abstain_count": 63,
+    "accident_score_median": 0.6835057667673038,
+    "abstain_score_median": 0.5098258370440921,
+    "comparable_label_ids": 0,
+    "label_agreement": "NA"
+  },
+  "selection": "exploratory fixed cutoff; no label optimization",
+  "input_sha256": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\\uacfc\uac70\\first_results\\candidate_A.csv": "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\\uacfc\uac70\\first_results\\testB_submission_candidate.csv": "afa0bb5c2769e15c26bc598a850ddece86357e669d0d8094879777949c9e1b91",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_012_20261106\\review_packet_001\\development_B0_predictions_82RFIDs.csv": "78a204c5abaa644b9104390f84806ad776bf063ad0ded45aa5140e4a6cecf191"
+  },
+  "run_time": "2026-11-06T06:12:46.414221+09:00",
+  "memory": "Pre-run OS check: 3888728 KiB available; stdlib CSV analysis of 100 + 328 rows, estimated peak <50 MiB; no training or large loads."
+}

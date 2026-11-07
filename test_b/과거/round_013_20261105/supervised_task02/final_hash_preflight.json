@@ -1,0 +1,50 @@
+﻿{
+    "stage":  "final_source_and_contract_hash_check",
+    "checked_at":  "2026-11-05T20:37:37.6619299+09:00",
+    "available_ram_mib":  3328.9,
+    "total_ram_mib":  14140.9,
+    "estimated_additional_peak_mib":  10,
+    "estimate_basis":  "Sequential SHA-256 streaming with a 1 MiB buffer; JSON/doc metadata reads are small; one process, no parquet decode or array allocation.",
+    "simultaneous_processes":  [
+                                   {
+                                       "ProcessName":  "Obsidian",
+                                       "Id":  28100,
+                                       "working_set_mib":  605.1
+                                   },
+                                   {
+                                       "ProcessName":  "explorer",
+                                       "Id":  7960,
+                                       "working_set_mib":  588
+                                   },
+                                   {
+                                       "ProcessName":  "Orca",
+                                       "Id":  18876,
+                                       "working_set_mib":  416.5
+                                   },
+                                   {
+                                       "ProcessName":  "Orca",
+                                       "Id":  23268,
+                                       "working_set_mib":  353
+                                   },
+                                   {
+                                       "ProcessName":  "agy",
+                                       "Id":  27412,
+                                       "working_set_mib":  295.3
+                                   },
+                                   {
+                                       "ProcessName":  "PhoneExperienceHost",
+                                       "Id":  8764,
+                                       "working_set_mib":  273.1
+                                   },
+                                   {
+                                       "ProcessName":  "Microsoft.CmdPal.UI",
+                                       "Id":  21888,
+                                       "working_set_mib":  267.9
+                                   },
+                                   {
+                                       "ProcessName":  "POWERPNT",
+                                       "Id":  15804,
+                                       "working_set_mib":  242.4
+                                   }
+                               ]
+}

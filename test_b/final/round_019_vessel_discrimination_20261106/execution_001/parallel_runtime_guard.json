@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-11-06T14:33:39.599890+09:00",
+  "original_owned_pid_exited": 1708,
+  "active_orchestrator_pid": 16436,
+  "worker_pids": [
+    1596,
+    16272,
+    22368,
+    24852
+  ],
+  "worker_count": 4,
+  "single_active_orchestrator": true,
+  "original_error_records": 0,
+  "original_checkpoint_vessels": 827,
+  "seeded_error_loss_possible_this_run": false,
+  "original_sources_immutable": true,
+  "resume_constraints": [
+    "Before relaunch ensure every previous owned orchestrator/worker process has exited",
+    "Reuse exactly4workers; changed worker count requires a new execution folder or explicit checkpoint ownership redistribution",
+    "Do not relaunch concurrent orchestrators"
+  ],
+  "memory_documentation": "512MiB aggregate budget per worker derives from observed308MiB sequential RSS and355.12MiB full-history parity peak; unchanged sf.Run still enforces stricter per-stage1GiB process-peak availability gates plus640MiB reserve in every worker. These are conservative gates, not observed1GiB worker usage.",
+  "original_checkpoint_rows": 443227,
+  "original_checkpoint_n_finite_scores": 443227,
+  "original_checkpoints_without_finite_scores": 0,
+  "original_all_checkpoint_records_finite": true,
+  "original_error_file_present": false,
+  "generic_helper_limitations": [
+    "No built-in concurrent-orchestrator lock; this execution externally checked one orchestrator and exited originalPID",
+    "Seeded original error propagation requires external zero-original-error guard; this execution validated0errors and all827seeded records finite",
+    "Resume must preserve worker_count4 and wait until all earlier owned processes end"
+  ]
+}

@@ -1,0 +1,3248 @@
+{
+  "scope": "Round013 Task02 ?6?7 only in supervised_task02; no root output/code replacement",
+  "model": {
+    "requested_model": "GPT-6 Luna xhigh, inherited task assignment",
+    "supervisor_task_instruction": "Maintain original dispatch model GPT-6 Luna xhigh",
+    "repository_agent_profile": {
+      "path": ".codex\\agents\\luna_worker.toml",
+      "sha256": "fcea4331b6c5e2fedfb10e8dc5b25470bd24f69b37a832c65aa9d9a38e344645",
+      "configured_model": "gpt-6-luna",
+      "configured_effort": "xhigh"
+    },
+    "dispatch_receipt_model_field": "Not included in the worker preamble or reply returned by the orchestration check; no receipt field was independently available in this session.",
+    "actual_runtime_model_telemetry": "Not exposed to the Python/OS process; actual runtime model is therefore not independently asserted.",
+    "environment_session_id": "5751071d-fb06-431a-8ba9-6aa17550f74c",
+    "supervisor_confirmed_initial_dispatch_receipt": {
+      "dispatchId": "ctx_5bc067f5479b",
+      "model": "gpt-6-luna",
+      "effort": "xhigh",
+      "evidence_source": "supervisor review instruction"
+    },
+    "followup_dispatch": {
+      "dispatchId": "ctx_e1f790dfe8b5",
+      "model_instruction": "Maintain the original GPT-6 Luna xhigh assignment",
+      "actual_runtime_telemetry": "not provided"
+    }
+  },
+  "runs": {
+    "g6": {
+      "command": "python -B testB/round_013_20261105/g6_selection_and_confidence.py",
+      "started_at": "2026-11-05T20:10:25+09:00",
+      "ended_at": "2026-11-05T20:10:27+09:00",
+      "elapsed_seconds": 2.437,
+      "exit_code": 0,
+      "confirmed_reproduction_command": "python -B testB/round_013_20261105/supervised_task02/g6_selection_and_confidence.py",
+      "command_metadata_correction": "Historical command retained; confirmed path includes supervised_task02; no calculation rerun."
+    },
+    "g7": {
+      "command": "python -B testB/round_013_20261105/g7_evaluate.py",
+      "started_at": "2026-11-05T20:10:46+09:00",
+      "ended_at": "2026-11-05T20:10:48+09:00",
+      "elapsed_seconds": 1.842,
+      "exit_code": 0,
+      "confirmed_reproduction_command": "python -B testB/round_013_20261105/supervised_task02/g7_evaluate.py",
+      "command_metadata_correction": "Historical command retained; confirmed path includes supervised_task02; no calculation rerun."
+    },
+    "independent_audit": {
+      "command": "python -B testB/round_013_20261105/supervised_task02/audit_round013_post.py",
+      "exit_code": 0,
+      "checks": true
+    },
+    "synthetic_validation": {
+      "command": "python -B -m unittest discover -s testB/round_013_20261105/supervised_task02 -p validate_round013_post.py -v",
+      "exit_code": 0,
+      "passed": 10,
+      "total": 10
+    }
+  },
+  "resource_checks": {
+    "before_g6": {
+      "stage": "before supervised Task02 g6 calculation",
+      "checked_at": "2026-11-05T20:10:24.5185647+09:00",
+      "available_ram_mib": 3521.2,
+      "total_ram_mib": 14140.9,
+      "estimated_additional_peak_mib": 250,
+      "estimate_basis": "65,536-row batches; only rfid_id_int and ts; <=145,427 target pairs, Python tuple/index/sort <=60 MiB and imports/buffers <=150 MiB, conservatively 250 MiB; one process"
+    },
+    "before_g7": {
+      "stage": "before supervised Task02 g7 evaluation/bootstrap",
+      "checked_at": "2026-11-05T20:10:44.6818817+09:00",
+      "available_ram_mib": 3483.2,
+      "total_ram_mib": 14140.9,
+      "estimated_additional_peak_mib": 180,
+      "estimate_basis": "At most 200 event rows; 4,000 replicates over <100 vessel clusters, 4 analysis populations/windows and float lists well under 2 MiB; SciPy binomial functions; no parquet arrays, sequential process"
+    },
+    "before_independent_audit": {
+      "stage": "before independent saved-result audit",
+      "checked_at": "2026-11-05T20:18:15.2759533+09:00",
+      "available_ram_mib": 3495.1,
+      "total_ram_mib": 14140.9,
+      "estimated_additional_peak_mib": 100,
+      "estimate_basis": "CSV/JSON inputs: 3,615 stored voyages, 200 event outcomes, 4,000x cluster indices per run; Python-standard-library-only pass; no parquet and no concurrent data calculation"
+    },
+    "before_finalization": {
+      "stage": "before final manifests and report",
+      "checked_at": "2026-11-05T20:18:15.6328307+09:00",
+      "available_ram_mib": 3491.6,
+      "total_ram_mib": 14140.9,
+      "estimated_additional_peak_mib": 100,
+      "estimate_basis": "Small JSON/CSV reads and Markdown rendering; no parquet or bootstrap arrays; one process"
+    },
+    "internal_g6": [
+      {
+        "stage": "before_g6_streamed_id_ts_and_selection",
+        "checked_at": "2026-11-05T20:10:26+09:00",
+        "available_ram_mib": 3450.9,
+        "total_ram_mib": 14140.9,
+        "estimated_additional_peak_mib": 250,
+        "peak_estimate_basis": "Arrow 65,536-row batches reading ID/ts only; at most 145,427 small input pairs (approx. 20 MiB Python tuples+hash map), sorted unique rows (approx. 20 MiB), event/voyage tables <10 MiB and imports/buffers <150 MiB; conservative 250 MiB; one process.",
+        "processes": [
+          {
+            "pid": 0,
+            "name": "System Idle Process",
+            "working_set_mib": 0.0
+          },
+          {
+            "pid": 4,
+            "name": "System",
+            "working_set_mib": 0.2
+          },
+          {
+            "pid": 236,
+            "name": "",
+            "working_set_mib": 65.7
+          },
+          {
+            "pid": 280,
+            "name": "Registry",
+            "working_set_mib": 51.2
+          },
+          {
+            "pid": 764,
+            "name": "smss.exe",
+            "working_set_mib": 1.8
+          },
+          {
+            "pid": 1016,
+            "name": "Obsidian.exe",
+            "working_set_mib": 154.6
+          },
+          {
+            "pid": 1048,
+            "name": "csrss.exe",
+            "working_set_mib": 7.1
+          },
+          {
+            "pid": 1244,
+            "name": "wininit.exe",
+            "working_set_mib": 9.0
+          },
+          {
+            "pid": 1252,
+            "name": "csrss.exe",
+            "working_set_mib": 7.7
+          },
+          {
+            "pid": 1356,
+            "name": "winlogon.exe",
+            "working_set_mib": 17.6
+          },
+          {
+            "pid": 1380,
+            "name": "services.exe",
+            "working_set_mib": 21.2
+          },
+          {
+            "pid": 1412,
+            "name": "LsaIso.exe",
+            "working_set_mib": 4.2
+          },
+          {
+            "pid": 1432,
+            "name": "lsass.exe",
+            "working_set_mib": 33.7
+          },
+          {
+            "pid": 1560,
+            "name": "svchost.exe",
+            "working_set_mib": 42.7
+          },
+          {
+            "pid": 1576,
+            "name": "fontdrvhost.exe",
+            "working_set_mib": 6.2
+          },
+          {
+            "pid": 1584,
+            "name": "fontdrvhost.exe",
+            "working_set_mib": 18.4
+          },
+          {
+            "pid": 1668,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 17.0
+          },
+          {
+            "pid": 1724,
+            "name": "svchost.exe",
+            "working_set_mib": 20.5
+          },
+          {
+            "pid": 1780,
+            "name": "Locator.exe",
+            "working_set_mib": 4.4
+          },
+          {
+            "pid": 1784,
+            "name": "svchost.exe",
+            "working_set_mib": 13.5
+          },
+          {
+            "pid": 1848,
+            "name": "WUDFCompanionHost.exe",
+            "working_set_mib": 4.4
+          },
+          {
+            "pid": 1924,
+            "name": "svchost.exe",
+            "working_set_mib": 7.0
+          },
+          {
+            "pid": 1952,
+            "name": "svchost.exe",
+            "working_set_mib": 11.2
+          },
+          {
+            "pid": 1976,
+            "name": "dwm.exe",
+            "working_set_mib": 117.2
+          },
+          {
+            "pid": 1984,
+            "name": "svchost.exe",
+            "working_set_mib": 12.1
+          },
+          {
+            "pid": 1992,
+            "name": "svchost.exe",
+            "working_set_mib": 26.5
+          },
+          {
+            "pid": 2012,
+            "name": "svchost.exe",
+            "working_set_mib": 21.5
+          },
+          {
+            "pid": 2112,
+            "name": "svchost.exe",
+            "working_set_mib": 14.4
+          },
+          {
+            "pid": 2132,
+            "name": "svchost.exe",
+            "working_set_mib": 15.5
+          },
+          {
+            "pid": 2144,
+            "name": "svchost.exe",
+            "working_set_mib": 12.1
+          },
+          {
+            "pid": 2260,
+            "name": "svchost.exe",
+            "working_set_mib": 31.8
+          },
+          {
+            "pid": 2268,
+            "name": "svchost.exe",
+            "working_set_mib": 21.1
+          },
+          {
+            "pid": 2284,
+            "name": "svchost.exe",
+            "working_set_mib": 11.0
+          },
+          {
+            "pid": 2384,
+            "name": "svchost.exe",
+            "working_set_mib": 11.9
+          },
+          {
+            "pid": 2444,
+            "name": "svchost.exe",
+            "working_set_mib": 17.9
+          },
+          {
+            "pid": 2460,
+            "name": "svchost.exe",
+            "working_set_mib": 14.1
+          },
+          {
+            "pid": 2476,
+            "name": "svchost.exe",
+            "working_set_mib": 11.2
+          },
+          {
+            "pid": 2568,
+            "name": "svchost.exe",
+            "working_set_mib": 13.6
+          },
+          {
+            "pid": 2652,
+            "name": "conhost.exe",
+            "working_set_mib": 7.4
+          },
+          {
+            "pid": 2664,
+            "name": "svchost.exe",
+            "working_set_mib": 8.2
+          },
+          {
+            "pid": 2668,
+            "name": "svchost.exe",
+            "working_set_mib": 10.3
+          },
+          {
+            "pid": 2752,
+            "name": "svchost.exe",
+            "working_set_mib": 13.8
+          },
+          {
+            "pid": 2992,
+            "name": "svchost.exe",
+            "working_set_mib": 13.8
+          },
+          {
+            "pid": 3028,
+            "name": "SearchFilterHost.exe",
+            "working_set_mib": 31.4
+          },
+          {
+            "pid": 3148,
+            "name": "svchost.exe",
+            "working_set_mib": 51.8
+          },
+          {
+            "pid": 3312,
+            "name": "atiesrxx.exe",
+            "working_set_mib": 9.1
+          },
+          {
+            "pid": 3316,
+            "name": "amdfendrsr.exe",
+            "working_set_mib": 9.8
+          },
+          {
+            "pid": 3328,
+            "name": "svchost.exe",
+            "working_set_mib": 25.8
+          },
+          {
+            "pid": 3472,
+            "name": "svchost.exe",
+            "working_set_mib": 15.9
+          },
+          {
+            "pid": 3564,
+            "name": "svchost.exe",
+            "working_set_mib": 9.1
+          },
+          {
+            "pid": 3628,
+            "name": "atieclxx.exe",
+            "working_set_mib": 23.0
+          },
+          {
+            "pid": 3692,
+            "name": "svchost.exe",
+            "working_set_mib": 10.6
+          },
+          {
+            "pid": 3704,
+            "name": "svchost.exe",
+            "working_set_mib": 7.7
+          },
+          {
+            "pid": 3756,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 13.0
+          },
+          {
+            "pid": 3792,
+            "name": "node.exe",
+            "working_set_mib": 39.8
+          },
+          {
+            "pid": 3816,
+            "name": "svchost.exe",
+            "working_set_mib": 18.0
+          },
+          {
+            "pid": 3868,
+            "name": "svchost.exe",
+            "working_set_mib": 21.7
+          },
+          {
+            "pid": 3940,
+            "name": "WUDFCompanionHost.exe",
+            "working_set_mib": 4.4
+          },
+          {
+            "pid": 3956,
+            "name": "WUDFCompanionHost.exe",
+            "working_set_mib": 4.4
+          },
+          {
+            "pid": 3984,
+            "name": "svchost.exe",
+            "working_set_mib": 17.4
+          },
+          {
+            "pid": 4008,
+            "name": "SearchHost.exe",
+            "working_set_mib": 146.7
+          },
+          {
+            "pid": 4076,
+            "name": "dasHost.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 4084,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 7.9
+          },
+          {
+            "pid": 4100,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 9.4
+          },
+          {
+            "pid": 4172,
+            "name": "svchost.exe",
+            "working_set_mib": 11.8
+          },
+          {
+            "pid": 4180,
+            "name": "svchost.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 4204,
+            "name": "svchost.exe",
+            "working_set_mib": 13.1
+          },
+          {
+            "pid": 4212,
+            "name": "svchost.exe",
+            "working_set_mib": 11.1
+          },
+          {
+            "pid": 4316,
+            "name": "WmiApSrv.exe",
+            "working_set_mib": 11.0
+          },
+          {
+            "pid": 4364,
+            "name": "svchost.exe",
+            "working_set_mib": 24.8
+          },
+          {
+            "pid": 4376,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 8.6
+          },
+          {
+            "pid": 4432,
+            "name": "svchost.exe",
+            "working_set_mib": 11.5
+          },
+          {
+            "pid": 4488,
+            "name": "ctfmon.exe",
+            "working_set_mib": 61.2
+          },
+          {
+            "pid": 4548,
+            "name": "svchost.exe",
+            "working_set_mib": 8.9
+          },
+          {
+            "pid": 4564,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 12.3
+          },
+          {
+            "pid": 4620,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 18.8
+          },
+          {
+            "pid": 4708,
+            "name": "svchost.exe",
+            "working_set_mib": 28.4
+          },
+          {
+            "pid": 4784,
+            "name": "svchost.exe",
+            "working_set_mib": 19.5
+          },
+          {
+            "pid": 4860,
+            "name": "svchost.exe",
+            "working_set_mib": 25.4
+          },
+          {
+            "pid": 4972,
+            "name": "spoolsv.exe",
+            "working_set_mib": 33.7
+          },
+          {
+            "pid": 5000,
+            "name": "svchost.exe",
+            "working_set_mib": 27.8
+          },
+          {
+            "pid": 5168,
+            "name": "dasHost.exe",
+            "working_set_mib": 8.6
+          },
+          {
+            "pid": 5208,
+            "name": "svchost.exe",
+            "working_set_mib": 10.8
+          },
+          {
+            "pid": 5244,
+            "name": "NgcIso.exe",
+            "working_set_mib": 4.3
+          },
+          {
+            "pid": 5296,
+            "name": "sihost.exe",
+            "working_set_mib": 50.6
+          },
+          {
+            "pid": 5384,
+            "name": "svchost.exe",
+            "working_set_mib": 15.7
+          },
+          {
+            "pid": 5392,
+            "name": "svchost.exe",
+            "working_set_mib": 34.6
+          },
+          {
+            "pid": 5496,
+            "name": "wlanext.exe",
+            "working_set_mib": 7.8
+          },
+          {
+            "pid": 5544,
+            "name": "svchost.exe",
+            "working_set_mib": 7.7
+          },
+          {
+            "pid": 5656,
+            "name": "svchost.exe",
+            "working_set_mib": 39.0
+          },
+          {
+            "pid": 5728,
+            "name": "taskhostw.exe",
+            "working_set_mib": 22.1
+          },
+          {
+            "pid": 5736,
+            "name": "McUpdaterModule.exe",
+            "working_set_mib": 14.3
+          },
+          {
+            "pid": 5744,
+            "name": "SSScheduler.exe",
+            "working_set_mib": 3.8
+          },
+          {
+            "pid": 5760,
+            "name": "svchost.exe",
+            "working_set_mib": 26.8
+          },
+          {
+            "pid": 5768,
+            "name": "conhost.exe",
+            "working_set_mib": 7.4
+          },
+          {
+            "pid": 5936,
+            "name": "I3GMainSvc.exe",
+            "working_set_mib": 9.4
+          },
+          {
+            "pid": 6140,
+            "name": "LenovoVantageService.exe",
+            "working_set_mib": 66.3
+          },
+          {
+            "pid": 6172,
+            "name": "TEWeb.exe",
+            "working_set_mib": 18.9
+          },
+          {
+            "pid": 6292,
+            "name": "AISControlService.exe",
+            "working_set_mib": 26.3
+          },
+          {
+            "pid": 6336,
+            "name": "AmdPpkgSvc.exe",
+            "working_set_mib": 8.2
+          },
+          {
+            "pid": 6344,
+            "name": "DAX3API.exe",
+            "working_set_mib": 24.5
+          },
+          {
+            "pid": 6352,
+            "name": "CertShare4PCLauncher.exe",
+            "working_set_mib": 15.4
+          },
+          {
+            "pid": 6372,
+            "name": "ObCrossEXService.exe",
+            "working_set_mib": 7.0
+          },
+          {
+            "pid": 6392,
+            "name": "GameInputRedistService.exe",
+            "working_set_mib": 20.7
+          },
+          {
+            "pid": 6400,
+            "name": "svchost.exe",
+            "working_set_mib": 65.4
+          },
+          {
+            "pid": 6408,
+            "name": "svchost.exe",
+            "working_set_mib": 50.1
+          },
+          {
+            "pid": 6416,
+            "name": "OfficeClickToRun.exe",
+            "working_set_mib": 73.1
+          },
+          {
+            "pid": 6444,
+            "name": "mDNSResponder.exe",
+            "working_set_mib": 9.6
+          },
+          {
+            "pid": 6476,
+            "name": "innorixem.exe",
+            "working_set_mib": 5.9
+          },
+          {
+            "pid": 6496,
+            "name": "KollusSvr.exe",
+            "working_set_mib": 10.8
+          },
+          {
+            "pid": 6512,
+            "name": "svchost.exe",
+            "working_set_mib": 15.9
+          },
+          {
+            "pid": 6528,
+            "name": "LenovoUtilityService.exe",
+            "working_set_mib": 34.5
+          },
+          {
+            "pid": 6544,
+            "name": "svchost.exe",
+            "working_set_mib": 33.1
+          },
+          {
+            "pid": 6552,
+            "name": "LNBITSSvc.exe",
+            "working_set_mib": 26.1
+          },
+          {
+            "pid": 6560,
+            "name": "MpDefenderCoreService.exe",
+            "working_set_mib": 30.4
+          },
+          {
+            "pid": 6568,
+            "name": "logioptionsplus_updater.exe",
+            "working_set_mib": 45.2
+          },
+          {
+            "pid": 6576,
+            "name": "SmartSense.exe",
+            "working_set_mib": 12.7
+          },
+          {
+            "pid": 6584,
+            "name": "ASDSvc.exe",
+            "working_set_mib": 10.4
+          },
+          {
+            "pid": 6596,
+            "name": "nossvc.exe",
+            "working_set_mib": 3.7
+          },
+          {
+            "pid": 6604,
+            "name": "svchost.exe",
+            "working_set_mib": 14.6
+          },
+          {
+            "pid": 6616,
+            "name": "TENXW_SVR.exe",
+            "working_set_mib": 9.9
+          },
+          {
+            "pid": 6632,
+            "name": "wpmsvc.exe",
+            "working_set_mib": 17.8
+          },
+          {
+            "pid": 6640,
+            "name": "TUCTLSystem.exe",
+            "working_set_mib": 13.3
+          },
+          {
+            "pid": 6648,
+            "name": "UDClientService.exe",
+            "working_set_mib": 64.9
+          },
+          {
+            "pid": 6656,
+            "name": "TEFSvrP64.exe",
+            "working_set_mib": 9.7
+          },
+          {
+            "pid": 6664,
+            "name": "svchost.exe",
+            "working_set_mib": 7.7
+          },
+          {
+            "pid": 6696,
+            "name": "XboxService.exe",
+            "working_set_mib": 13.6
+          },
+          {
+            "pid": 6704,
+            "name": "svchost.exe",
+            "working_set_mib": 26.7
+          },
+          {
+            "pid": 6720,
+            "name": "svchost.exe",
+            "working_set_mib": 10.6
+          },
+          {
+            "pid": 6744,
+            "name": "ASDSvc.exe",
+            "working_set_mib": 106.8
+          },
+          {
+            "pid": 6756,
+            "name": "innorixes.exe",
+            "working_set_mib": 28.3
+          },
+          {
+            "pid": 6812,
+            "name": "gamingservices.exe",
+            "working_set_mib": 42.9
+          },
+          {
+            "pid": 6904,
+            "name": "codex-windows-sandbox-service.exe",
+            "working_set_mib": 21.4
+          },
+          {
+            "pid": 6916,
+            "name": "svchost.exe",
+            "working_set_mib": 15.6
+          },
+          {
+            "pid": 6932,
+            "name": "AppActions.exe",
+            "working_set_mib": 47.0
+          },
+          {
+            "pid": 6944,
+            "name": "SnippingTool.exe",
+            "working_set_mib": 137.3
+          },
+          {
+            "pid": 6976,
+            "name": "gamingservicesnet.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 7016,
+            "name": "conhost.exe",
+            "working_set_mib": 7.4
+          },
+          {
+            "pid": 7368,
+            "name": "GameInputRedistService.exe",
+            "working_set_mib": 18.8
+          },
+          {
+            "pid": 7416,
+            "name": "TEFWP.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 7572,
+            "name": "SmartSenseController.exe",
+            "working_set_mib": 10.5
+          },
+          {
+            "pid": 7608,
+            "name": "svchost.exe",
+            "working_set_mib": 25.1
+          },
+          {
+            "pid": 7676,
+            "name": "conhost.exe",
+            "working_set_mib": 10.4
+          },
+          {
+            "pid": 7692,
+            "name": "Obsidian.exe",
+            "working_set_mib": 52.1
+          },
+          {
+            "pid": 7728,
+            "name": "TEWebP.exe",
+            "working_set_mib": 13.1
+          },
+          {
+            "pid": 7912,
+            "name": "OpenConsole.exe",
+            "working_set_mib": 14.6
+          },
+          {
+            "pid": 7944,
+            "name": "TEFWP64.exe",
+            "working_set_mib": 14.8
+          },
+          {
+            "pid": 7960,
+            "name": "explorer.exe",
+            "working_set_mib": 575.7
+          },
+          {
+            "pid": 8764,
+            "name": "PhoneExperienceHost.exe",
+            "working_set_mib": 271.4
+          },
+          {
+            "pid": 8792,
+            "name": "nosstarter.npe",
+            "working_set_mib": 13.5
+          },
+          {
+            "pid": 8844,
+            "name": "SearchIndexer.exe",
+            "working_set_mib": 73.6
+          },
+          {
+            "pid": 8912,
+            "name": "conhost.exe",
+            "working_set_mib": 7.2
+          },
+          {
+            "pid": 9028,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 20.9
+          },
+          {
+            "pid": 9040,
+            "name": "WmiPrvSE.exe",
+            "working_set_mib": 14.4
+          },
+          {
+            "pid": 9136,
+            "name": "LenovoVantage-(GenericMessagingAddin).exe",
+            "working_set_mib": 4.5
+          },
+          {
+            "pid": 9420,
+            "name": "XboxService.exe",
+            "working_set_mib": 17.6
+          },
+          {
+            "pid": 9428,
+            "name": "ShellHost.exe",
+            "working_set_mib": 69.6
+          },
+          {
+            "pid": 9500,
+            "name": "svchost.exe",
+            "working_set_mib": 11.8
+          },
+          {
+            "pid": 9528,
+            "name": "codex.exe",
+            "working_set_mib": 177.1
+          },
+          {
+            "pid": 9612,
+            "name": "WmiPrvSE.exe",
+            "working_set_mib": 32.1
+          },
+          {
+            "pid": 9692,
+            "name": "logi_download_assistant-2.0.1020-win64.exe",
+            "working_set_mib": 13.3
+          },
+          {
+            "pid": 9820,
+            "name": "GameInputRawInputProxy.exe",
+            "working_set_mib": 8.7
+          },
+          {
+            "pid": 9940,
+            "name": "AggregatorHost.exe",
+            "working_set_mib": 16.4
+          },
+          {
+            "pid": 10112,
+            "name": "DAX3API.exe",
+            "working_set_mib": 15.5
+          },
+          {
+            "pid": 10196,
+            "name": "unsecapp.exe",
+            "working_set_mib": 15.9
+          },
+          {
+            "pid": 10540,
+            "name": "PowerToys.AlwaysOnTop.exe",
+            "working_set_mib": 5.3
+          },
+          {
+            "pid": 10556,
+            "name": "svchost.exe",
+            "working_set_mib": 43.8
+          },
+          {
+            "pid": 10564,
+            "name": "AutoModeDetect.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 10616,
+            "name": "conhost.exe",
+            "working_set_mib": 10.3
+          },
+          {
+            "pid": 10680,
+            "name": "conhost.exe",
+            "working_set_mib": 7.2
+          },
+          {
+            "pid": 10808,
+            "name": "CrossDeviceResume.exe",
+            "working_set_mib": 66.7
+          },
+          {
+            "pid": 10824,
+            "name": "CrossEXService.exe",
+            "working_set_mib": 10.9
+          },
+          {
+            "pid": 11272,
+            "name": "StartMenuExperienceHost.exe",
+            "working_set_mib": 193.0
+          },
+          {
+            "pid": 11756,
+            "name": "WidgetBoard.exe",
+            "working_set_mib": 31.7
+          },
+          {
+            "pid": 12048,
+            "name": "CrossDeviceService.exe",
+            "working_set_mib": 187.5
+          },
+          {
+            "pid": 12092,
+            "name": "svchost.exe",
+            "working_set_mib": 6.0
+          },
+          {
+            "pid": 12160,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 43.8
+          },
+          {
+            "pid": 12168,
+            "name": "svchost.exe",
+            "working_set_mib": 17.0
+          },
+          {
+            "pid": 12216,
+            "name": "POWERPNT.EXE",
+            "working_set_mib": 257.1
+          },
+          {
+            "pid": 12264,
+            "name": "svchost.exe",
+            "working_set_mib": 11.2
+          },
+          {
+            "pid": 12348,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 97.8
+          },
+          {
+            "pid": 12460,
+            "name": "svchost.exe",
+            "working_set_mib": 29.2
+          },
+          {
+            "pid": 12472,
+            "name": "SearchFilterHost.exe",
+            "working_set_mib": 14.0
+          },
+          {
+            "pid": 12556,
+            "name": "LenovoVantage-(SettingsWidgetAddin).exe",
+            "working_set_mib": 49.7
+          },
+          {
+            "pid": 12648,
+            "name": "SAClient.exe",
+            "working_set_mib": 19.9
+          },
+          {
+            "pid": 12708,
+            "name": "PowerToys.Peek.UI.exe",
+            "working_set_mib": 15.4
+          },
+          {
+            "pid": 12940,
+            "name": "CoreTelemetryPlugin.exe",
+            "working_set_mib": 42.4
+          },
+          {
+            "pid": 12948,
+            "name": "svchost.exe",
+            "working_set_mib": 20.3
+          },
+          {
+            "pid": 13068,
+            "name": "svchost.exe",
+            "working_set_mib": 10.8
+          },
+          {
+            "pid": 13468,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 12.6
+          },
+          {
+            "pid": 13712,
+            "name": "TEWeb64.exe",
+            "working_set_mib": 13.8
+          },
+          {
+            "pid": 13728,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 131.6
+          },
+          {
+            "pid": 14064,
+            "name": "LockApp.exe",
+            "working_set_mib": 83.9
+          },
+          {
+            "pid": 14128,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 12.9
+          },
+          {
+            "pid": 14152,
+            "name": "svchost.exe",
+            "working_set_mib": 17.2
+          },
+          {
+            "pid": 14172,
+            "name": "PowerToys.exe",
+            "working_set_mib": 15.0
+          },
+          {
+            "pid": 14240,
+            "name": "svchost.exe",
+            "working_set_mib": 24.5
+          },
+          {
+            "pid": 14552,
+            "name": "node_repl.exe",
+            "working_set_mib": 10.8
+          },
+          {
+            "pid": 14636,
+            "name": "svchost.exe",
+            "working_set_mib": 26.8
+          },
+          {
+            "pid": 14768,
+            "name": "node_repl.exe",
+            "working_set_mib": 11.7
+          },
+          {
+            "pid": 14888,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 42.2
+          },
+          {
+            "pid": 14896,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 75.8
+          },
+          {
+            "pid": 15080,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 20.9
+          },
+          {
+            "pid": 15228,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 41.7
+          },
+          {
+            "pid": 15408,
+            "name": "innorixet.exe",
+            "working_set_mib": 23.5
+          },
+          {
+            "pid": 15424,
+            "name": "codex-code-mode-host.exe",
+            "working_set_mib": 19.6
+          },
+          {
+            "pid": 15640,
+            "name": "UniCRSLocalServer.exe",
+            "working_set_mib": 48.6
+          },
+          {
+            "pid": 15724,
+            "name": "WidgetService.exe",
+            "working_set_mib": 28.5
+          },
+          {
+            "pid": 15760,
+            "name": "TextInputHost.exe",
+            "working_set_mib": 103.3
+          },
+          {
+            "pid": 15772,
+            "name": "svchost.exe",
+            "working_set_mib": 17.5
+          },
+          {
+            "pid": 15800,
+            "name": "YourPhoneAppProxyHost.exe",
+            "working_set_mib": 97.7
+          },
+          {
+            "pid": 16008,
+            "name": "node.exe",
+            "working_set_mib": 31.6
+          },
+          {
+            "pid": 16048,
+            "name": "Orca.exe",
+            "working_set_mib": 250.1
+          },
+          {
+            "pid": 16352,
+            "name": "svchost.exe",
+            "working_set_mib": 8.3
+          },
+          {
+            "pid": 16372,
+            "name": "svchost.exe",
+            "working_set_mib": 21.5
+          },
+          {
+            "pid": 16396,
+            "name": "v3l4sp.exe",
+            "working_set_mib": 14.2
+          },
+          {
+            "pid": 16496,
+            "name": "logioptionsplus_agent.exe",
+            "working_set_mib": 177.5
+          },
+          {
+            "pid": 16840,
+            "name": "svchost.exe",
+            "working_set_mib": 7.6
+          },
+          {
+            "pid": 17012,
+            "name": "Orca.exe",
+            "working_set_mib": 45.7
+          },
+          {
+            "pid": 17036,
+            "name": "backgroundTaskHost.exe",
+            "working_set_mib": 12.6
+          },
+          {
+            "pid": 17172,
+            "name": "MicrosoftStartFeedProvider.exe",
+            "working_set_mib": 44.4
+          },
+          {
+            "pid": 17404,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 14.3
+          },
+          {
+            "pid": 17724,
+            "name": "node.exe",
+            "working_set_mib": 39.8
+          },
+          {
+            "pid": 17736,
+            "name": "unsecapp.exe",
+            "working_set_mib": 13.6
+          },
+          {
+            "pid": 18268,
+            "name": "StSess.exe",
+            "working_set_mib": 14.3
+          },
+          {
+            "pid": 18328,
+            "name": "logioptionsplus_appbroker.exe",
+            "working_set_mib": 18.2
+          },
+          {
+            "pid": 18360,
+            "name": "svchost.exe",
+            "working_set_mib": 41.9
+          },
+          {
+            "pid": 18708,
+            "name": "PowerToys.FancyZones.exe",
+            "working_set_mib": 9.8
+          },
+          {
+            "pid": 18820,
+            "name": "delfino.exe",
+            "working_set_mib": 27.1
+          },
+          {
+            "pid": 18832,
+            "name": "FnHotkeyCapsLKNumLK.exe",
+            "working_set_mib": 34.2
+          },
+          {
+            "pid": 18876,
+            "name": "Orca.exe",
+            "working_set_mib": 391.1
+          },
+          {
+            "pid": 18896,
+            "name": "FnHotkeyUtility.exe",
+            "working_set_mib": 60.1
+          },
+          {
+            "pid": 18956,
+            "name": "I3GProc.exe",
+            "working_set_mib": 32.4
+          },
+          {
+            "pid": 19080,
+            "name": "unsecapp.exe",
+            "working_set_mib": 12.5
+          },
+          {
+            "pid": 19144,
+            "name": "codex-code-mode-host.exe",
+            "working_set_mib": 22.4
+          },
+          {
+            "pid": 19304,
+            "name": "LenovoVantage-(VantageCoreAddin).exe",
+            "working_set_mib": 14.7
+          },
+          {
+            "pid": 19448,
+            "name": "veraport-x64.exe",
+            "working_set_mib": 25.9
+          },
+          {
+            "pid": 20240,
+            "name": "BatteryWidgetHost.exe",
+            "working_set_mib": 70.0
+          },
+          {
+            "pid": 20328,
+            "name": "StSess32.exe",
+            "working_set_mib": 6.0
+          },
+          {
+            "pid": 20392,
+            "name": "LenovoVantage-(IdeaNotebookAddin).exe",
+            "working_set_mib": 60.2
+          },
+          {
+            "pid": 20504,
+            "name": "svchost.exe",
+            "working_set_mib": 35.7
+          },
+          {
+            "pid": 20972,
+            "name": "UserSSCtrl.exe",
+            "working_set_mib": 13.2
+          },
+          {
+            "pid": 21100,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 23.6
+          },
+          {
+            "pid": 21120,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 170.6
+          },
+          {
+            "pid": 21156,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 174.7
+          },
+          {
+            "pid": 21244,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 15.5
+          },
+          {
+            "pid": 21256,
+            "name": "LenovoVantage-(LenovoServiceBridgeAddin).exe",
+            "working_set_mib": 12.6
+          },
+          {
+            "pid": 21488,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 41.9
+          },
+          {
+            "pid": 21512,
+            "name": "PowerToys.Awake.exe",
+            "working_set_mib": 16.3
+          },
+          {
+            "pid": 21600,
+            "name": "svchost.exe",
+            "working_set_mib": 10.3
+          },
+          {
+            "pid": 21864,
+            "name": "PowerToys.CropAndLock.exe",
+            "working_set_mib": 3.2
+          },
+          {
+            "pid": 21888,
+            "name": "Microsoft.CmdPal.UI.exe",
+            "working_set_mib": 267.9
+          },
+          {
+            "pid": 22196,
+            "name": "PowerToys.ColorPickerUI.exe",
+            "working_set_mib": 33.5
+          },
+          {
+            "pid": 22296,
+            "name": "codex.exe",
+            "working_set_mib": 167.6
+          },
+          {
+            "pid": 22484,
+            "name": "WindowsPackageManagerServer.exe",
+            "working_set_mib": 41.8
+          },
+          {
+            "pid": 22792,
+            "name": "svchost.exe",
+            "working_set_mib": 9.4
+          },
+          {
+            "pid": 23036,
+            "name": "conhost.exe",
+            "working_set_mib": 7.3
+          },
+          {
+            "pid": 23204,
+            "name": "Orca.exe",
+            "working_set_mib": 65.1
+          },
+          {
+            "pid": 23224,
+            "name": "CCDaemon.exe",
+            "working_set_mib": 13.2
+          },
+          {
+            "pid": 23268,
+            "name": "Orca.exe",
+            "working_set_mib": 360.8
+          },
+          {
+            "pid": 23280,
+            "name": "ArtHost.exe",
+            "working_set_mib": 6.2
+          },
+          {
+            "pid": 23296,
+            "name": "ArtHost.exe",
+            "working_set_mib": 1.5
+          },
+          {
+            "pid": 23892,
+            "name": "svchost.exe",
+            "working_set_mib": 15.9
+          },
+          {
+            "pid": 23992,
+            "name": "Orca.exe",
+            "working_set_mib": 92.8
+          },
+          {
+            "pid": 24084,
+            "name": "Orca.exe",
+            "working_set_mib": 89.6
+          },
+          {
+            "pid": 24364,
+            "name": "PowerToys.KeyboardManagerEngine.exe",
+            "working_set_mib": 2.8
+          },
+          {
+            "pid": 24708,
+            "name": "Orca.exe",
+            "working_set_mib": 89.7
+          },
+          {
+            "pid": 25308,
+            "name": "conhost.exe",
+            "working_set_mib": 7.4
+          },
+          {
+            "pid": 25424,
+            "name": "PowerToys.PowerLauncher.exe",
+            "working_set_mib": 53.3
+          },
+          {
+            "pid": 25588,
+            "name": "MessagingPlugin.exe",
+            "working_set_mib": 60.1
+          },
+          {
+            "pid": 25940,
+            "name": "SearchProtocolHost.exe",
+            "working_set_mib": 23.0
+          },
+          {
+            "pid": 26060,
+            "name": "conhost.exe",
+            "working_set_mib": 11.1
+          },
+          {
+            "pid": 26172,
+            "name": "python.exe",
+            "working_set_mib": 50.2
+          },
+          {
+            "pid": 26324,
+            "name": "Obsidian.exe",
+            "working_set_mib": 140.6
+          },
+          {
+            "pid": 26356,
+            "name": "powershell.exe",
+            "working_set_mib": 97.6
+          },
+          {
+            "pid": 26492,
+            "name": "conhost.exe",
+            "working_set_mib": 7.3
+          },
+          {
+            "pid": 26692,
+            "name": "conhost.exe",
+            "working_set_mib": 7.2
+          },
+          {
+            "pid": 26980,
+            "name": "svchost.exe",
+            "working_set_mib": 29.3
+          },
+          {
+            "pid": 27188,
+            "name": "node.exe",
+            "working_set_mib": 31.5
+          },
+          {
+            "pid": 27412,
+            "name": "agy.exe",
+            "working_set_mib": 292.6
+          },
+          {
+            "pid": 27416,
+            "name": "svchost.exe",
+            "working_set_mib": 16.9
+          },
+          {
+            "pid": 27476,
+            "name": "AppProvisioningPlugin.exe",
+            "working_set_mib": 39.9
+          },
+          {
+            "pid": 28100,
+            "name": "Obsidian.exe",
+            "working_set_mib": 604.8
+          },
+          {
+            "pid": 28416,
+            "name": "svchost.exe",
+            "working_set_mib": 34.9
+          },
+          {
+            "pid": 28632,
+            "name": "powershell.exe",
+            "working_set_mib": 87.9
+          },
+          {
+            "pid": 28824,
+            "name": "conhost.exe",
+            "working_set_mib": 7.2
+          },
+          {
+            "pid": 29208,
+            "name": "svchost.exe",
+            "working_set_mib": 23.5
+          },
+          {
+            "pid": 29264,
+            "name": "node_repl.exe",
+            "working_set_mib": 11.4
+          },
+          {
+            "pid": 29440,
+            "name": "ai.exe",
+            "working_set_mib": 44.1
+          },
+          {
+            "pid": 29644,
+            "name": "node_repl.exe",
+            "working_set_mib": 11.7
+          },
+          {
+            "pid": 29656,
+            "name": "conhost.exe",
+            "working_set_mib": 7.3
+          }
+        ]
+      }
+    ],
+    "internal_g7": [
+      {
+        "stage": "before g7 evaluation/bootstrap",
+        "checked_at": "2026-11-05T20:10:47+09:00",
+        "available_ram_mib": 3386.3,
+        "total_ram_mib": 14140.9,
+        "estimated_additional_peak_mib": 180,
+        "peak_estimate_basis": "At most 200 event rows, 4,000 bootstrap replicates x qualifying vessels, one small float per replicate (<1 MiB); SciPy already installed; sequential population/window loops; no parquet arrays.",
+        "processes": [
+          {
+            "pid": 0,
+            "name": "System Idle Process",
+            "working_set_mib": 0.0
+          },
+          {
+            "pid": 4,
+            "name": "System",
+            "working_set_mib": 0.2
+          },
+          {
+            "pid": 236,
+            "name": "",
+            "working_set_mib": 65.7
+          },
+          {
+            "pid": 280,
+            "name": "Registry",
+            "working_set_mib": 51.2
+          },
+          {
+            "pid": 764,
+            "name": "smss.exe",
+            "working_set_mib": 1.8
+          },
+          {
+            "pid": 1016,
+            "name": "Obsidian.exe",
+            "working_set_mib": 154.6
+          },
+          {
+            "pid": 1048,
+            "name": "csrss.exe",
+            "working_set_mib": 7.1
+          },
+          {
+            "pid": 1244,
+            "name": "wininit.exe",
+            "working_set_mib": 9.0
+          },
+          {
+            "pid": 1252,
+            "name": "csrss.exe",
+            "working_set_mib": 7.7
+          },
+          {
+            "pid": 1356,
+            "name": "winlogon.exe",
+            "working_set_mib": 17.6
+          },
+          {
+            "pid": 1380,
+            "name": "services.exe",
+            "working_set_mib": 21.4
+          },
+          {
+            "pid": 1412,
+            "name": "LsaIso.exe",
+            "working_set_mib": 4.2
+          },
+          {
+            "pid": 1432,
+            "name": "lsass.exe",
+            "working_set_mib": 33.7
+          },
+          {
+            "pid": 1560,
+            "name": "svchost.exe",
+            "working_set_mib": 42.7
+          },
+          {
+            "pid": 1576,
+            "name": "fontdrvhost.exe",
+            "working_set_mib": 6.2
+          },
+          {
+            "pid": 1584,
+            "name": "fontdrvhost.exe",
+            "working_set_mib": 18.4
+          },
+          {
+            "pid": 1668,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 17.0
+          },
+          {
+            "pid": 1724,
+            "name": "svchost.exe",
+            "working_set_mib": 20.5
+          },
+          {
+            "pid": 1780,
+            "name": "Locator.exe",
+            "working_set_mib": 4.4
+          },
+          {
+            "pid": 1784,
+            "name": "svchost.exe",
+            "working_set_mib": 13.5
+          },
+          {
+            "pid": 1848,
+            "name": "WUDFCompanionHost.exe",
+            "working_set_mib": 4.4
+          },
+          {
+            "pid": 1924,
+            "name": "svchost.exe",
+            "working_set_mib": 7.0
+          },
+          {
+            "pid": 1952,
+            "name": "svchost.exe",
+            "working_set_mib": 11.2
+          },
+          {
+            "pid": 1976,
+            "name": "dwm.exe",
+            "working_set_mib": 117.2
+          },
+          {
+            "pid": 1984,
+            "name": "svchost.exe",
+            "working_set_mib": 12.1
+          },
+          {
+            "pid": 1992,
+            "name": "svchost.exe",
+            "working_set_mib": 26.5
+          },
+          {
+            "pid": 2012,
+            "name": "svchost.exe",
+            "working_set_mib": 20.9
+          },
+          {
+            "pid": 2112,
+            "name": "svchost.exe",
+            "working_set_mib": 14.4
+          },
+          {
+            "pid": 2132,
+            "name": "svchost.exe",
+            "working_set_mib": 15.5
+          },
+          {
+            "pid": 2144,
+            "name": "svchost.exe",
+            "working_set_mib": 12.0
+          },
+          {
+            "pid": 2260,
+            "name": "svchost.exe",
+            "working_set_mib": 31.8
+          },
+          {
+            "pid": 2268,
+            "name": "svchost.exe",
+            "working_set_mib": 21.1
+          },
+          {
+            "pid": 2284,
+            "name": "svchost.exe",
+            "working_set_mib": 11.0
+          },
+          {
+            "pid": 2384,
+            "name": "svchost.exe",
+            "working_set_mib": 11.9
+          },
+          {
+            "pid": 2444,
+            "name": "svchost.exe",
+            "working_set_mib": 17.9
+          },
+          {
+            "pid": 2460,
+            "name": "svchost.exe",
+            "working_set_mib": 14.1
+          },
+          {
+            "pid": 2476,
+            "name": "svchost.exe",
+            "working_set_mib": 11.2
+          },
+          {
+            "pid": 2568,
+            "name": "svchost.exe",
+            "working_set_mib": 13.6
+          },
+          {
+            "pid": 2652,
+            "name": "conhost.exe",
+            "working_set_mib": 7.4
+          },
+          {
+            "pid": 2664,
+            "name": "svchost.exe",
+            "working_set_mib": 8.2
+          },
+          {
+            "pid": 2668,
+            "name": "svchost.exe",
+            "working_set_mib": 10.3
+          },
+          {
+            "pid": 2752,
+            "name": "svchost.exe",
+            "working_set_mib": 13.8
+          },
+          {
+            "pid": 2992,
+            "name": "svchost.exe",
+            "working_set_mib": 13.8
+          },
+          {
+            "pid": 3028,
+            "name": "SearchFilterHost.exe",
+            "working_set_mib": 31.4
+          },
+          {
+            "pid": 3148,
+            "name": "svchost.exe",
+            "working_set_mib": 51.8
+          },
+          {
+            "pid": 3312,
+            "name": "atiesrxx.exe",
+            "working_set_mib": 9.1
+          },
+          {
+            "pid": 3316,
+            "name": "amdfendrsr.exe",
+            "working_set_mib": 9.8
+          },
+          {
+            "pid": 3328,
+            "name": "svchost.exe",
+            "working_set_mib": 25.8
+          },
+          {
+            "pid": 3472,
+            "name": "svchost.exe",
+            "working_set_mib": 15.7
+          },
+          {
+            "pid": 3564,
+            "name": "svchost.exe",
+            "working_set_mib": 9.1
+          },
+          {
+            "pid": 3628,
+            "name": "atieclxx.exe",
+            "working_set_mib": 23.0
+          },
+          {
+            "pid": 3692,
+            "name": "svchost.exe",
+            "working_set_mib": 10.6
+          },
+          {
+            "pid": 3704,
+            "name": "svchost.exe",
+            "working_set_mib": 7.7
+          },
+          {
+            "pid": 3756,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 13.0
+          },
+          {
+            "pid": 3792,
+            "name": "node.exe",
+            "working_set_mib": 39.8
+          },
+          {
+            "pid": 3816,
+            "name": "svchost.exe",
+            "working_set_mib": 18.0
+          },
+          {
+            "pid": 3868,
+            "name": "svchost.exe",
+            "working_set_mib": 21.7
+          },
+          {
+            "pid": 3940,
+            "name": "WUDFCompanionHost.exe",
+            "working_set_mib": 4.4
+          },
+          {
+            "pid": 3956,
+            "name": "WUDFCompanionHost.exe",
+            "working_set_mib": 4.4
+          },
+          {
+            "pid": 3984,
+            "name": "svchost.exe",
+            "working_set_mib": 17.4
+          },
+          {
+            "pid": 4008,
+            "name": "SearchHost.exe",
+            "working_set_mib": 146.7
+          },
+          {
+            "pid": 4056,
+            "name": "python.exe",
+            "working_set_mib": 95.4
+          },
+          {
+            "pid": 4076,
+            "name": "dasHost.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 4084,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 7.9
+          },
+          {
+            "pid": 4100,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 9.4
+          },
+          {
+            "pid": 4172,
+            "name": "svchost.exe",
+            "working_set_mib": 11.8
+          },
+          {
+            "pid": 4180,
+            "name": "svchost.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 4204,
+            "name": "svchost.exe",
+            "working_set_mib": 13.1
+          },
+          {
+            "pid": 4212,
+            "name": "svchost.exe",
+            "working_set_mib": 11.1
+          },
+          {
+            "pid": 4316,
+            "name": "WmiApSrv.exe",
+            "working_set_mib": 11.0
+          },
+          {
+            "pid": 4364,
+            "name": "svchost.exe",
+            "working_set_mib": 24.8
+          },
+          {
+            "pid": 4376,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 8.6
+          },
+          {
+            "pid": 4432,
+            "name": "svchost.exe",
+            "working_set_mib": 11.5
+          },
+          {
+            "pid": 4488,
+            "name": "ctfmon.exe",
+            "working_set_mib": 61.2
+          },
+          {
+            "pid": 4548,
+            "name": "svchost.exe",
+            "working_set_mib": 8.9
+          },
+          {
+            "pid": 4564,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 12.3
+          },
+          {
+            "pid": 4620,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 18.8
+          },
+          {
+            "pid": 4708,
+            "name": "svchost.exe",
+            "working_set_mib": 28.4
+          },
+          {
+            "pid": 4784,
+            "name": "svchost.exe",
+            "working_set_mib": 19.6
+          },
+          {
+            "pid": 4860,
+            "name": "svchost.exe",
+            "working_set_mib": 25.4
+          },
+          {
+            "pid": 4972,
+            "name": "spoolsv.exe",
+            "working_set_mib": 33.7
+          },
+          {
+            "pid": 5000,
+            "name": "svchost.exe",
+            "working_set_mib": 27.8
+          },
+          {
+            "pid": 5168,
+            "name": "dasHost.exe",
+            "working_set_mib": 8.6
+          },
+          {
+            "pid": 5208,
+            "name": "svchost.exe",
+            "working_set_mib": 10.8
+          },
+          {
+            "pid": 5244,
+            "name": "NgcIso.exe",
+            "working_set_mib": 4.3
+          },
+          {
+            "pid": 5296,
+            "name": "sihost.exe",
+            "working_set_mib": 50.6
+          },
+          {
+            "pid": 5384,
+            "name": "svchost.exe",
+            "working_set_mib": 15.7
+          },
+          {
+            "pid": 5392,
+            "name": "svchost.exe",
+            "working_set_mib": 34.6
+          },
+          {
+            "pid": 5496,
+            "name": "wlanext.exe",
+            "working_set_mib": 7.8
+          },
+          {
+            "pid": 5544,
+            "name": "svchost.exe",
+            "working_set_mib": 7.7
+          },
+          {
+            "pid": 5656,
+            "name": "svchost.exe",
+            "working_set_mib": 39.0
+          },
+          {
+            "pid": 5728,
+            "name": "taskhostw.exe",
+            "working_set_mib": 22.1
+          },
+          {
+            "pid": 5736,
+            "name": "McUpdaterModule.exe",
+            "working_set_mib": 14.3
+          },
+          {
+            "pid": 5744,
+            "name": "SSScheduler.exe",
+            "working_set_mib": 3.8
+          },
+          {
+            "pid": 5760,
+            "name": "svchost.exe",
+            "working_set_mib": 26.7
+          },
+          {
+            "pid": 5768,
+            "name": "conhost.exe",
+            "working_set_mib": 7.4
+          },
+          {
+            "pid": 5936,
+            "name": "I3GMainSvc.exe",
+            "working_set_mib": 9.4
+          },
+          {
+            "pid": 6140,
+            "name": "LenovoVantageService.exe",
+            "working_set_mib": 66.3
+          },
+          {
+            "pid": 6172,
+            "name": "TEWeb.exe",
+            "working_set_mib": 18.9
+          },
+          {
+            "pid": 6292,
+            "name": "AISControlService.exe",
+            "working_set_mib": 26.3
+          },
+          {
+            "pid": 6336,
+            "name": "AmdPpkgSvc.exe",
+            "working_set_mib": 8.2
+          },
+          {
+            "pid": 6344,
+            "name": "DAX3API.exe",
+            "working_set_mib": 24.5
+          },
+          {
+            "pid": 6352,
+            "name": "CertShare4PCLauncher.exe",
+            "working_set_mib": 15.4
+          },
+          {
+            "pid": 6372,
+            "name": "ObCrossEXService.exe",
+            "working_set_mib": 7.0
+          },
+          {
+            "pid": 6392,
+            "name": "GameInputRedistService.exe",
+            "working_set_mib": 20.7
+          },
+          {
+            "pid": 6400,
+            "name": "svchost.exe",
+            "working_set_mib": 65.4
+          },
+          {
+            "pid": 6408,
+            "name": "svchost.exe",
+            "working_set_mib": 50.1
+          },
+          {
+            "pid": 6416,
+            "name": "OfficeClickToRun.exe",
+            "working_set_mib": 73.1
+          },
+          {
+            "pid": 6444,
+            "name": "mDNSResponder.exe",
+            "working_set_mib": 9.6
+          },
+          {
+            "pid": 6476,
+            "name": "innorixem.exe",
+            "working_set_mib": 5.9
+          },
+          {
+            "pid": 6496,
+            "name": "KollusSvr.exe",
+            "working_set_mib": 10.8
+          },
+          {
+            "pid": 6512,
+            "name": "svchost.exe",
+            "working_set_mib": 15.9
+          },
+          {
+            "pid": 6528,
+            "name": "LenovoUtilityService.exe",
+            "working_set_mib": 34.5
+          },
+          {
+            "pid": 6544,
+            "name": "svchost.exe",
+            "working_set_mib": 29.7
+          },
+          {
+            "pid": 6552,
+            "name": "LNBITSSvc.exe",
+            "working_set_mib": 24.7
+          },
+          {
+            "pid": 6560,
+            "name": "MpDefenderCoreService.exe",
+            "working_set_mib": 30.4
+          },
+          {
+            "pid": 6568,
+            "name": "logioptionsplus_updater.exe",
+            "working_set_mib": 45.2
+          },
+          {
+            "pid": 6576,
+            "name": "SmartSense.exe",
+            "working_set_mib": 12.7
+          },
+          {
+            "pid": 6584,
+            "name": "ASDSvc.exe",
+            "working_set_mib": 10.4
+          },
+          {
+            "pid": 6596,
+            "name": "nossvc.exe",
+            "working_set_mib": 3.7
+          },
+          {
+            "pid": 6604,
+            "name": "svchost.exe",
+            "working_set_mib": 14.6
+          },
+          {
+            "pid": 6616,
+            "name": "TENXW_SVR.exe",
+            "working_set_mib": 9.9
+          },
+          {
+            "pid": 6632,
+            "name": "wpmsvc.exe",
+            "working_set_mib": 17.3
+          },
+          {
+            "pid": 6640,
+            "name": "TUCTLSystem.exe",
+            "working_set_mib": 13.3
+          },
+          {
+            "pid": 6648,
+            "name": "UDClientService.exe",
+            "working_set_mib": 64.9
+          },
+          {
+            "pid": 6656,
+            "name": "TEFSvrP64.exe",
+            "working_set_mib": 9.7
+          },
+          {
+            "pid": 6664,
+            "name": "svchost.exe",
+            "working_set_mib": 7.7
+          },
+          {
+            "pid": 6696,
+            "name": "XboxService.exe",
+            "working_set_mib": 13.6
+          },
+          {
+            "pid": 6704,
+            "name": "svchost.exe",
+            "working_set_mib": 26.7
+          },
+          {
+            "pid": 6720,
+            "name": "svchost.exe",
+            "working_set_mib": 10.6
+          },
+          {
+            "pid": 6744,
+            "name": "ASDSvc.exe",
+            "working_set_mib": 107.4
+          },
+          {
+            "pid": 6756,
+            "name": "innorixes.exe",
+            "working_set_mib": 28.3
+          },
+          {
+            "pid": 6812,
+            "name": "gamingservices.exe",
+            "working_set_mib": 42.8
+          },
+          {
+            "pid": 6904,
+            "name": "codex-windows-sandbox-service.exe",
+            "working_set_mib": 21.4
+          },
+          {
+            "pid": 6916,
+            "name": "svchost.exe",
+            "working_set_mib": 15.6
+          },
+          {
+            "pid": 6932,
+            "name": "AppActions.exe",
+            "working_set_mib": 47.0
+          },
+          {
+            "pid": 6944,
+            "name": "SnippingTool.exe",
+            "working_set_mib": 137.3
+          },
+          {
+            "pid": 6976,
+            "name": "gamingservicesnet.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 7016,
+            "name": "conhost.exe",
+            "working_set_mib": 7.4
+          },
+          {
+            "pid": 7344,
+            "name": "conhost.exe",
+            "working_set_mib": 7.3
+          },
+          {
+            "pid": 7368,
+            "name": "GameInputRedistService.exe",
+            "working_set_mib": 18.8
+          },
+          {
+            "pid": 7416,
+            "name": "TEFWP.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 7572,
+            "name": "SmartSenseController.exe",
+            "working_set_mib": 10.5
+          },
+          {
+            "pid": 7608,
+            "name": "svchost.exe",
+            "working_set_mib": 25.1
+          },
+          {
+            "pid": 7676,
+            "name": "conhost.exe",
+            "working_set_mib": 10.4
+          },
+          {
+            "pid": 7692,
+            "name": "Obsidian.exe",
+            "working_set_mib": 52.1
+          },
+          {
+            "pid": 7728,
+            "name": "TEWebP.exe",
+            "working_set_mib": 13.1
+          },
+          {
+            "pid": 7912,
+            "name": "OpenConsole.exe",
+            "working_set_mib": 14.6
+          },
+          {
+            "pid": 7944,
+            "name": "TEFWP64.exe",
+            "working_set_mib": 14.8
+          },
+          {
+            "pid": 7960,
+            "name": "explorer.exe",
+            "working_set_mib": 575.7
+          },
+          {
+            "pid": 8764,
+            "name": "PhoneExperienceHost.exe",
+            "working_set_mib": 271.5
+          },
+          {
+            "pid": 8792,
+            "name": "nosstarter.npe",
+            "working_set_mib": 13.5
+          },
+          {
+            "pid": 8844,
+            "name": "SearchIndexer.exe",
+            "working_set_mib": 73.6
+          },
+          {
+            "pid": 8912,
+            "name": "conhost.exe",
+            "working_set_mib": 7.2
+          },
+          {
+            "pid": 9028,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 20.9
+          },
+          {
+            "pid": 9040,
+            "name": "WmiPrvSE.exe",
+            "working_set_mib": 14.4
+          },
+          {
+            "pid": 9136,
+            "name": "LenovoVantage-(GenericMessagingAddin).exe",
+            "working_set_mib": 4.5
+          },
+          {
+            "pid": 9420,
+            "name": "XboxService.exe",
+            "working_set_mib": 17.6
+          },
+          {
+            "pid": 9428,
+            "name": "ShellHost.exe",
+            "working_set_mib": 69.6
+          },
+          {
+            "pid": 9500,
+            "name": "svchost.exe",
+            "working_set_mib": 11.8
+          },
+          {
+            "pid": 9528,
+            "name": "codex.exe",
+            "working_set_mib": 177.4
+          },
+          {
+            "pid": 9612,
+            "name": "WmiPrvSE.exe",
+            "working_set_mib": 30.6
+          },
+          {
+            "pid": 9692,
+            "name": "logi_download_assistant-2.0.1020-win64.exe",
+            "working_set_mib": 13.3
+          },
+          {
+            "pid": 9820,
+            "name": "GameInputRawInputProxy.exe",
+            "working_set_mib": 8.7
+          },
+          {
+            "pid": 9940,
+            "name": "AggregatorHost.exe",
+            "working_set_mib": 16.4
+          },
+          {
+            "pid": 10112,
+            "name": "DAX3API.exe",
+            "working_set_mib": 15.5
+          },
+          {
+            "pid": 10196,
+            "name": "unsecapp.exe",
+            "working_set_mib": 12.3
+          },
+          {
+            "pid": 10540,
+            "name": "PowerToys.AlwaysOnTop.exe",
+            "working_set_mib": 5.3
+          },
+          {
+            "pid": 10556,
+            "name": "svchost.exe",
+            "working_set_mib": 43.8
+          },
+          {
+            "pid": 10564,
+            "name": "AutoModeDetect.exe",
+            "working_set_mib": 14.5
+          },
+          {
+            "pid": 10616,
+            "name": "conhost.exe",
+            "working_set_mib": 10.3
+          },
+          {
+            "pid": 10680,
+            "name": "conhost.exe",
+            "working_set_mib": 7.2
+          },
+          {
+            "pid": 10808,
+            "name": "CrossDeviceResume.exe",
+            "working_set_mib": 66.7
+          },
+          {
+            "pid": 10824,
+            "name": "CrossEXService.exe",
+            "working_set_mib": 10.9
+          },
+          {
+            "pid": 11272,
+            "name": "StartMenuExperienceHost.exe",
+            "working_set_mib": 192.9
+          },
+          {
+            "pid": 11756,
+            "name": "WidgetBoard.exe",
+            "working_set_mib": 31.7
+          },
+          {
+            "pid": 12048,
+            "name": "CrossDeviceService.exe",
+            "working_set_mib": 187.5
+          },
+          {
+            "pid": 12092,
+            "name": "svchost.exe",
+            "working_set_mib": 6.0
+          },
+          {
+            "pid": 12160,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 43.8
+          },
+          {
+            "pid": 12168,
+            "name": "svchost.exe",
+            "working_set_mib": 17.0
+          },
+          {
+            "pid": 12216,
+            "name": "POWERPNT.EXE",
+            "working_set_mib": 257.0
+          },
+          {
+            "pid": 12264,
+            "name": "svchost.exe",
+            "working_set_mib": 11.2
+          },
+          {
+            "pid": 12348,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 97.8
+          },
+          {
+            "pid": 12460,
+            "name": "svchost.exe",
+            "working_set_mib": 29.2
+          },
+          {
+            "pid": 12472,
+            "name": "SearchFilterHost.exe",
+            "working_set_mib": 14.0
+          },
+          {
+            "pid": 12556,
+            "name": "LenovoVantage-(SettingsWidgetAddin).exe",
+            "working_set_mib": 49.7
+          },
+          {
+            "pid": 12648,
+            "name": "SAClient.exe",
+            "working_set_mib": 19.9
+          },
+          {
+            "pid": 12708,
+            "name": "PowerToys.Peek.UI.exe",
+            "working_set_mib": 15.4
+          },
+          {
+            "pid": 12940,
+            "name": "CoreTelemetryPlugin.exe",
+            "working_set_mib": 42.4
+          },
+          {
+            "pid": 12948,
+            "name": "svchost.exe",
+            "working_set_mib": 20.3
+          },
+          {
+            "pid": 13068,
+            "name": "svchost.exe",
+            "working_set_mib": 10.8
+          },
+          {
+            "pid": 13468,
+            "name": "WUDFHost.exe",
+            "working_set_mib": 12.6
+          },
+          {
+            "pid": 13712,
+            "name": "TEWeb64.exe",
+            "working_set_mib": 13.8
+          },
+          {
+            "pid": 13728,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 131.6
+          },
+          {
+            "pid": 14064,
+            "name": "LockApp.exe",
+            "working_set_mib": 83.9
+          },
+          {
+            "pid": 14128,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 12.9
+          },
+          {
+            "pid": 14152,
+            "name": "svchost.exe",
+            "working_set_mib": 17.2
+          },
+          {
+            "pid": 14172,
+            "name": "PowerToys.exe",
+            "working_set_mib": 15.0
+          },
+          {
+            "pid": 14240,
+            "name": "svchost.exe",
+            "working_set_mib": 24.5
+          },
+          {
+            "pid": 14552,
+            "name": "node_repl.exe",
+            "working_set_mib": 10.8
+          },
+          {
+            "pid": 14636,
+            "name": "svchost.exe",
+            "working_set_mib": 26.8
+          },
+          {
+            "pid": 14768,
+            "name": "node_repl.exe",
+            "working_set_mib": 11.7
+          },
+          {
+            "pid": 14888,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 42.2
+          },
+          {
+            "pid": 14896,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 75.7
+          },
+          {
+            "pid": 15080,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 20.9
+          },
+          {
+            "pid": 15228,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 41.7
+          },
+          {
+            "pid": 15408,
+            "name": "innorixet.exe",
+            "working_set_mib": 23.5
+          },
+          {
+            "pid": 15424,
+            "name": "codex-code-mode-host.exe",
+            "working_set_mib": 19.6
+          },
+          {
+            "pid": 15640,
+            "name": "UniCRSLocalServer.exe",
+            "working_set_mib": 48.6
+          },
+          {
+            "pid": 15724,
+            "name": "WidgetService.exe",
+            "working_set_mib": 28.5
+          },
+          {
+            "pid": 15760,
+            "name": "TextInputHost.exe",
+            "working_set_mib": 103.2
+          },
+          {
+            "pid": 15772,
+            "name": "svchost.exe",
+            "working_set_mib": 17.5
+          },
+          {
+            "pid": 15800,
+            "name": "YourPhoneAppProxyHost.exe",
+            "working_set_mib": 97.7
+          },
+          {
+            "pid": 16008,
+            "name": "node.exe",
+            "working_set_mib": 31.6
+          },
+          {
+            "pid": 16048,
+            "name": "Orca.exe",
+            "working_set_mib": 251.5
+          },
+          {
+            "pid": 16352,
+            "name": "svchost.exe",
+            "working_set_mib": 8.3
+          },
+          {
+            "pid": 16372,
+            "name": "svchost.exe",
+            "working_set_mib": 21.5
+          },
+          {
+            "pid": 16396,
+            "name": "v3l4sp.exe",
+            "working_set_mib": 14.2
+          },
+          {
+            "pid": 16496,
+            "name": "logioptionsplus_agent.exe",
+            "working_set_mib": 176.8
+          },
+          {
+            "pid": 16840,
+            "name": "svchost.exe",
+            "working_set_mib": 7.6
+          },
+          {
+            "pid": 17012,
+            "name": "Orca.exe",
+            "working_set_mib": 45.8
+          },
+          {
+            "pid": 17036,
+            "name": "backgroundTaskHost.exe",
+            "working_set_mib": 12.6
+          },
+          {
+            "pid": 17172,
+            "name": "MicrosoftStartFeedProvider.exe",
+            "working_set_mib": 44.4
+          },
+          {
+            "pid": 17404,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 14.3
+          },
+          {
+            "pid": 17724,
+            "name": "node.exe",
+            "working_set_mib": 39.8
+          },
+          {
+            "pid": 17736,
+            "name": "unsecapp.exe",
+            "working_set_mib": 13.6
+          },
+          {
+            "pid": 18268,
+            "name": "StSess.exe",
+            "working_set_mib": 14.3
+          },
+          {
+            "pid": 18328,
+            "name": "logioptionsplus_appbroker.exe",
+            "working_set_mib": 18.2
+          },
+          {
+            "pid": 18360,
+            "name": "svchost.exe",
+            "working_set_mib": 41.9
+          },
+          {
+            "pid": 18708,
+            "name": "PowerToys.FancyZones.exe",
+            "working_set_mib": 9.8
+          },
+          {
+            "pid": 18820,
+            "name": "delfino.exe",
+            "working_set_mib": 27.1
+          },
+          {
+            "pid": 18832,
+            "name": "FnHotkeyCapsLKNumLK.exe",
+            "working_set_mib": 34.2
+          },
+          {
+            "pid": 18876,
+            "name": "Orca.exe",
+            "working_set_mib": 406.1
+          },
+          {
+            "pid": 18896,
+            "name": "FnHotkeyUtility.exe",
+            "working_set_mib": 60.1
+          },
+          {
+            "pid": 18956,
+            "name": "I3GProc.exe",
+            "working_set_mib": 32.4
+          },
+          {
+            "pid": 19080,
+            "name": "unsecapp.exe",
+            "working_set_mib": 12.5
+          },
+          {
+            "pid": 19144,
+            "name": "codex-code-mode-host.exe",
+            "working_set_mib": 22.5
+          },
+          {
+            "pid": 19304,
+            "name": "LenovoVantage-(VantageCoreAddin).exe",
+            "working_set_mib": 14.8
+          },
+          {
+            "pid": 19448,
+            "name": "veraport-x64.exe",
+            "working_set_mib": 25.9
+          },
+          {
+            "pid": 19620,
+            "name": "powershell.exe",
+            "working_set_mib": 97.6
+          },
+          {
+            "pid": 20240,
+            "name": "BatteryWidgetHost.exe",
+            "working_set_mib": 70.0
+          },
+          {
+            "pid": 20328,
+            "name": "StSess32.exe",
+            "working_set_mib": 6.0
+          },
+          {
+            "pid": 20392,
+            "name": "LenovoVantage-(IdeaNotebookAddin).exe",
+            "working_set_mib": 60.2
+          },
+          {
+            "pid": 20504,
+            "name": "svchost.exe",
+            "working_set_mib": 35.7
+          },
+          {
+            "pid": 20972,
+            "name": "UserSSCtrl.exe",
+            "working_set_mib": 13.2
+          },
+          {
+            "pid": 21100,
+            "name": "RuntimeBroker.exe",
+            "working_set_mib": 23.6
+          },
+          {
+            "pid": 21120,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 170.6
+          },
+          {
+            "pid": 21156,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 177.2
+          },
+          {
+            "pid": 21244,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 15.5
+          },
+          {
+            "pid": 21256,
+            "name": "LenovoVantage-(LenovoServiceBridgeAddin).exe",
+            "working_set_mib": 12.6
+          },
+          {
+            "pid": 21488,
+            "name": "msedgewebview2.exe",
+            "working_set_mib": 41.9
+          },
+          {
+            "pid": 21512,
+            "name": "PowerToys.Awake.exe",
+            "working_set_mib": 16.4
+          },
+          {
+            "pid": 21600,
+            "name": "svchost.exe",
+            "working_set_mib": 10.3
+          },
+          {
+            "pid": 21864,
+            "name": "PowerToys.CropAndLock.exe",
+            "working_set_mib": 3.2
+          },
+          {
+            "pid": 21888,
+            "name": "Microsoft.CmdPal.UI.exe",
+            "working_set_mib": 267.9
+          },
+          {
+            "pid": 22196,
+            "name": "PowerToys.ColorPickerUI.exe",
+            "working_set_mib": 33.5
+          },
+          {
+            "pid": 22296,
+            "name": "codex.exe",
+            "working_set_mib": 167.6
+          },
+          {
+            "pid": 22484,
+            "name": "WindowsPackageManagerServer.exe",
+            "working_set_mib": 41.8
+          },
+          {
+            "pid": 22792,
+            "name": "svchost.exe",
+            "working_set_mib": 9.4
+          },
+          {
+            "pid": 23204,
+            "name": "Orca.exe",
+            "working_set_mib": 65.1
+          },
+          {
+            "pid": 23224,
+            "name": "CCDaemon.exe",
+            "working_set_mib": 13.2
+          },
+          {
+            "pid": 23268,
+            "name": "Orca.exe",
+            "working_set_mib": 354.4
+          },
+          {
+            "pid": 23280,
+            "name": "ArtHost.exe",
+            "working_set_mib": 6.2
+          },
+          {
+            "pid": 23296,
+            "name": "ArtHost.exe",
+            "working_set_mib": 1.5
+          },
+          {
+            "pid": 23892,
+            "name": "svchost.exe",
+            "working_set_mib": 15.9
+          },
+          {
+            "pid": 23992,
+            "name": "Orca.exe",
+            "working_set_mib": 92.9
+          },
+          {
+            "pid": 24084,
+            "name": "Orca.exe",
+            "working_set_mib": 93.7
+          },
+          {
+            "pid": 24364,
+            "name": "PowerToys.KeyboardManagerEngine.exe",
+            "working_set_mib": 2.8
+          },
+          {
+            "pid": 24708,
+            "name": "Orca.exe",
+            "working_set_mib": 89.6
+          },
+          {
+            "pid": 25308,
+            "name": "conhost.exe",
+            "working_set_mib": 7.4
+          },
+          {
+            "pid": 25424,
+            "name": "PowerToys.PowerLauncher.exe",
+            "working_set_mib": 53.3
+          },
+          {
+            "pid": 25588,
+            "name": "MessagingPlugin.exe",
+            "working_set_mib": 60.1
+          },
+          {
+            "pid": 25940,
+            "name": "SearchProtocolHost.exe",
+            "working_set_mib": 23.0
+          },
+          {
+            "pid": 26060,
+            "name": "conhost.exe",
+            "working_set_mib": 11.1
+          },
+          {
+            "pid": 26324,
+            "name": "Obsidian.exe",
+            "working_set_mib": 140.6
+          },
+          {
+            "pid": 26492,
+            "name": "conhost.exe",
+            "working_set_mib": 7.3
+          },
+          {
+            "pid": 26692,
+            "name": "conhost.exe",
+            "working_set_mib": 7.2
+          },
+          {
+            "pid": 26980,
+            "name": "svchost.exe",
+            "working_set_mib": 29.3
+          },
+          {
+            "pid": 27188,
+            "name": "node.exe",
+            "working_set_mib": 31.5
+          },
+          {
+            "pid": 27412,
+            "name": "agy.exe",
+            "working_set_mib": 299.0
+          },
+          {
+            "pid": 27416,
+            "name": "svchost.exe",
+            "working_set_mib": 16.9
+          },
+          {
+            "pid": 27476,
+            "name": "AppProvisioningPlugin.exe",
+            "working_set_mib": 39.9
+          },
+          {
+            "pid": 28100,
+            "name": "Obsidian.exe",
+            "working_set_mib": 600.9
+          },
+          {
+            "pid": 28416,
+            "name": "svchost.exe",
+            "working_set_mib": 34.9
+          },
+          {
+            "pid": 28632,
+            "name": "powershell.exe",
+            "working_set_mib": 87.9
+          },
+          {
+            "pid": 28824,
+            "name": "conhost.exe",
+            "working_set_mib": 7.2
+          },
+          {
+            "pid": 29208,
+            "name": "svchost.exe",
+            "working_set_mib": 23.6
+          },
+          {
+            "pid": 29264,
+            "name": "node_repl.exe",
+            "working_set_mib": 11.4
+          },
+          {
+            "pid": 29440,
+            "name": "ai.exe",
+            "working_set_mib": 44.0
+          },
+          {
+            "pid": 29644,
+            "name": "node_repl.exe",
+            "working_set_mib": 11.7
+          },
+          {
+            "pid": 29656,
+            "name": "conhost.exe",
+            "working_set_mib": 7.3
+          }
+        ]
+      }
+    ],
+    "before_final_metadata": {
+      "stage": "before final metadata manifest",
+      "checked_at": "2026-11-05T20:22:19.6175929+09:00",
+      "available_ram_mib": 3568.6,
+      "total_ram_mib": 14140.9,
+      "estimated_additional_peak_mib": 100,
+      "estimate_basis": "small JSON/CSV and markdown metadata; no parquet, bootstrap arrays, or concurrent data computation",
+      "active_relevant_processes": [
+        {
+          "pid": 6904,
+          "name": "codex-windows-sandbox-service.exe",
+          "working_set_mib": 21.4
+        },
+        {
+          "pid": 23268,
+          "name": "Orca.exe",
+          "working_set_mib": 317.6
+        },
+        {
+          "pid": 17012,
+          "name": "Orca.exe",
+          "working_set_mib": 45.7
+        },
+        {
+          "pid": 16048,
+          "name": "Orca.exe",
+          "working_set_mib": 234.2
+        },
+        {
+          "pid": 23204,
+          "name": "Orca.exe",
+          "working_set_mib": 65.1
+        },
+        {
+          "pid": 24708,
+          "name": "Orca.exe",
+          "working_set_mib": 91
+        },
+        {
+          "pid": 18876,
+          "name": "Orca.exe",
+          "working_set_mib": 381.6
+        },
+        {
+          "pid": 24084,
+          "name": "Orca.exe",
+          "working_set_mib": 88.7
+        },
+        {
+          "pid": 23992,
+          "name": "Orca.exe",
+          "working_set_mib": 93.6
+        },
+        {
+          "pid": 22296,
+          "name": "codex.exe",
+          "working_set_mib": 168.6
+        },
+        {
+          "pid": 15424,
+          "name": "codex-code-mode-host.exe",
+          "working_set_mib": 19.6
+        },
+        {
+          "pid": 9528,
+          "name": "codex.exe",
+          "working_set_mib": 184.8
+        },
+        {
+          "pid": 19144,
+          "name": "codex-code-mode-host.exe",
+          "working_set_mib": 22.7
+        }
+      ],
+      "active_relevant_process_count": 13
+    },
+    "before_final_independent_audit": {
+      "stage": "before final independent audit rerun",
+      "checked_at": "2026-11-05T20:20:52.7196799+09:00",
+      "available_ram_mib": 3571,
+      "total_ram_mib": 14140.9,
+      "estimated_additional_peak_mib": 100,
+      "estimate_basis": "CSV/JSON only, 3,615 rows and 200 event outcomes, stdlib audit with 4,000 bootstrap draws; no parquet arrays",
+      "active_relevant_processes": [
+        {
+          "pid": 6904,
+          "name": "codex-windows-sandbox-service.exe",
+          "working_set_mib": 21.4
+        },
+        {
+          "pid": 23268,
+          "name": "Orca.exe",
+          "working_set_mib": 318.8
+        },
+        {
+          "pid": 17012,
+          "name": "Orca.exe",
+          "working_set_mib": 45.7
+        },
+        {
+          "pid": 16048,
+          "name": "Orca.exe",
+          "working_set_mib": 234.2
+        },
+        {
+          "pid": 23204,
+          "name": "Orca.exe",
+          "working_set_mib": 65.1
+        },
+        {
+          "pid": 24708,
+          "name": "Orca.exe",
+          "working_set_mib": 89.7
+        },
+        {
+          "pid": 18876,
+          "name": "Orca.exe",
+          "working_set_mib": 381.8
+        },
+        {
+          "pid": 24084,
+          "name": "Orca.exe",
+          "working_set_mib": 86.6
+        },
+        {
+          "pid": 23992,
+          "name": "Orca.exe",
+          "working_set_mib": 93.5
+        },
+        {
+          "pid": 22296,
+          "name": "codex.exe",
+          "working_set_mib": 168.6
+        },
+        {
+          "pid": 15424,
+          "name": "codex-code-mode-host.exe",
+          "working_set_mib": 19.6
+        },
+        {
+          "pid": 9528,
+          "name": "codex.exe",
+          "working_set_mib": 184.4
+        },
+        {
+          "pid": 19144,
+          "name": "codex-code-mode-host.exe",
+          "working_set_mib": 24.2
+        }
+      ],
+      "active_relevant_process_count": 13
+    }
+  },
+  "source_hash_checks": {
+    "g6_before_equals_after": true,
+    "g7_before_equals_after": true,
+    "protocol_and_data_preserved": true
+  },
+  "dimensions": {
+    "events": 100,
+    "Tier0_1_events": 60,
+    "vessels": 82,
+    "voyages": 3615,
+    "g6_status_rows": 164,
+    "g6_event_rows": 200,
+    "g6_selected_vessels_w3": 68,
+    "g6_selected_vessels_w7": 58,
+    "g7_metrics": 4
+  },
+  "inputs": {
+    "g4": "../g4_voyage_local_collapse.csv",
+    "g5": "../g5_confound_summary.json",
+    "labels": "../../round_008_linkage_audit_20261105/devset_positives.csv",
+    "midpoint_reconstruction": "Round008 dev and additional parquet; columns rfid_id_int, ts only, Arrow 65,536-row batches"
+  },
+  "unverified_preexisting_root_artifacts_not_used": [
+    "../summary.json",
+    "../g3_confidence.csv",
+    "../g6_selection.csv",
+    "../g7_event_evaluation.csv",
+    "../execution.log",
+    "../g3_coverage.py",
+    "../g4_local_collapse.py",
+    "../g5_hour_confound_check.py"
+  ],
+  "outputs": [
+    "g6_selection_and_confidence.py",
+    "g7_evaluate.py",
+    "validate_round013_post.py",
+    "audit_round013_post.py",
+    "g6_execution.json",
+    "g6_vessel_status.csv",
+    "g6_selection.csv",
+    "g3_confidence.csv",
+    "g6_event_results.csv",
+    "g6_selected_voyage_timing.csv",
+    "g7_execution.json",
+    "g7_event_evaluation.csv",
+    "g7_metric_summary.csv",
+    "g7_bootstrap_ci.json",
+    "g7_mde.json",
+    "g7_confidence_diagnostics.json",
+    "g7_coverage_by_window.json",
+    "summary.json",
+    "independent_audit.json",
+    "synthetic_validation.json",
+    "model_execution_evidence.json",
+    "input_output_manifest.json",
+    "execution.log",
+    "EXECUTION_NOTES.md",
+    "AUDIT.md",
+    "ROUND013_???_20261105.md"
+  ],
+  "audit_result": {
+    "all_checks_passed": true,
+    "discrepancies": 0,
+    "audit_impl": "audit_round013_post.py; Python standard library only"
+  },
+  "root_changes": {
+    "modified": "EXECUTION_NOTES.md only: repaired section heading and removed unconfirmed ZIP mention",
+    "final_report_replaced": false,
+    "code_modified_after_supervisor_response": false
+  }
+}

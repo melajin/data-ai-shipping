@@ -1,0 +1,67 @@
+{
+  "component": "independent_inventory.py (Gemini worker)",
+  "round": "round_009_20261106",
+  "started_at": "2026-11-06T03:08:38+0900",
+  "status": "completed",
+  "ram_preflight": {
+    "checked_at": "2026-11-06T03:08:38+0900",
+    "available_bytes": 4283387904,
+    "available_mib": 4084.96,
+    "gemini_inventory_mib": 512,
+    "luna_fixture_mib": 768,
+    "reserve_mib": 640,
+    "total_required_mib": 1920,
+    "allowed": true,
+    "active_python_processes": [
+      {
+        "pid": 23352,
+        "name": "python.exe",
+        "rss_bytes": 86536192,
+        "rss_mib": 82.53
+      }
+    ]
+  },
+  "sources": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\independent_inventory.py": "055ea62db402abc1bc07672d689525b238024616265ba9006c1903e31e916ced",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\CONTRACT.md": "d91323121932b61baeb2de4db88539a9a5fc35ea70c2b02dd8b588f09729eea3",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\PROTOCOL.md": "20293cb02511b2f4f467539afbc92e5f36d42473bc63c96cc3ce584a8a9385b0"
+  },
+  "inputs": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001\\candidate_ledger.parquet": {
+      "sha256": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+      "bytes": 6433671
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_003_20261105\\gear_registry.csv": {
+      "sha256": "0a94249ad364500132d70521134fc493e836ec63d7d8734cc412e33c3adb73dd",
+      "bytes": 4474
+    }
+  },
+  "outputs": {
+    "per_vessel.csv": {
+      "sha256": "aa8f5e57812d08db0c4d036435038eb2b8b551f8242949b925514b4653123b57",
+      "bytes": 2279
+    },
+    "cases.csv": {
+      "sha256": "a298e9062d8cf2a9a75c07c988da5c6d5a3e48edb9e89f4446009ed2ec11a90d",
+      "bytes": 1840
+    },
+    "summary.json": {
+      "sha256": "d66535087aabb3bca00fc6225eb8b0be39006fd0a5a6063b0ffe0f77fa57cef2",
+      "bytes": 2561
+    },
+    "execution_receipt.json": {
+      "sha256": "cc193865d8f58d6f82c4397e45b754dea46148daf353eb31b0bbea3d539da0e1",
+      "bytes": 2419
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-06T03:08:39+0900",
+  "elapsed_seconds": 1.4882,
+  "count_elapsed_seconds": 0.4545,
+  "peak_working_set_bytes": 161484800,
+  "metrics_summary": {
+    "valid_triple_n": 88036,
+    "pattern_n": 3807,
+    "unique_rfids": 82
+  }
+}

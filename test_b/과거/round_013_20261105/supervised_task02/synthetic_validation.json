@@ -1,0 +1,31 @@
+{
+  "validation_type": "Task02 synthetic tests, separate from actual-data audit",
+  "command": "python -B -m unittest discover -s testB/round_013_20261105/supervised_task02 -p validate_round013_post.py -v",
+  "exit_code": 0,
+  "tests_passed": 10,
+  "tests_total": 10,
+  "result": "passed",
+  "cases": [
+    "raw and valid history gate boundaries at 10 vs 11",
+    "minimum and exact tie selection by start and voyage number",
+    "observed-row midpoint floor(n/2)",
+    "baseline overlap including both trip endpoints and events outside the trip",
+    "midrank confidence with tied references",
+    "cluster bootstrap preserves multi-event vessel as one cluster",
+    "Bonferroni adjustment and strict rate/p-value pass boundaries",
+    "exact-binomial MDE critical count and power target",
+    "MDE zero denominator and p0 extreme cases",
+    "linear percentile interpolation"
+  ],
+  "Task01_previously_recorded_synthetic_checks": {
+    "passed": 9,
+    "total": 9,
+    "path": "../synthetic_validation.json"
+  },
+  "actual_data_independent_audit": {
+    "result": "passed",
+    "standard_library_only": true,
+    "checks": true,
+    "errors": []
+  }
+}

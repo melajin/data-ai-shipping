@@ -1,0 +1,70 @@
+{
+  "completed_at": "2026-11-06T22:23:18.056682+09:00",
+  "scope": "Test B fixed-baseline executable reproduction and Korean report",
+  "numeric_parity": {
+    "rows_compared": 46705,
+    "numeric_max_abs_diff": {
+      "s_zone": 0.0,
+      "s_change": 0.0,
+      "s_gap": 0.0,
+      "score": 0.0
+    },
+    "nan_mask_mismatches": {
+      "s_zone": 0,
+      "s_change": 0,
+      "s_gap": 0,
+      "score": 0
+    },
+    "numeric_exact": {
+      "s_zone": true,
+      "s_change": true,
+      "s_gap": true,
+      "score": true
+    },
+    "state_mismatches": 0,
+    "all_row_checks_passed": true,
+    "candidate_time_mismatches": 0,
+    "candidate_source_ordinal_mismatches": 0,
+    "candidate_score_max_abs_diff": 0.0,
+    "all_checks_passed": true
+  },
+  "baseline_focused_tests": {
+    "count": 4,
+    "exit_code": 0,
+    "source": "worker execution and independent source review"
+  },
+  "portable_causal_tests": {
+    "count": 26,
+    "exit_code": 0,
+    "source": "parent execution from package/support"
+  },
+  "pdf_visual_qa": {
+    "pages": 19,
+    "renderer": "PyMuPDF",
+    "all_pages_text_and_bounds_inspected": true,
+    "notdef_glyphs": [],
+    "max_content_bottom_pt": 786.6,
+    "page_height_pt": 841.9,
+    "note": "2026-11-06 재개정: 어조 압축(근거 반복 축소), 선박축/시각축 분리측정 §7, 라운드 업데이트 로그 §8 반영"
+  },
+  "independent_review": "no blocking issue; source functions, metrics, artifact hashes and metadata correction verified",
+  "official_f1": null,
+  "live_detection_validated": false,
+  "external_submission": false,
+  "folder_rename": {
+    "changed": {
+      "inputs/": "data/",
+      "references/": "model/",
+      "run.ps1": "scripts/run.ps1"
+    },
+    "reason": "match official submission folder names (data/model/src/scripts/notebooks/demo/figures)",
+    "reverification": "python src/run_analysis.py --output results/reproduction_002 under renamed structure; numeric parity identical to pre-rename run (all four score columns max_abs_diff 0.0); scored_rows.parquet byte-identical; reproduction_002 promoted to reproduction_001",
+    "note": "execution_config.json/execution_provenance.json were present in the prior reproduction_001 but are not produced by the current run_analysis.py; this predates the rename and is unrelated to it. summary.json carries the full execution record instead."
+  },
+  "content_addition": {
+    "what": "축 2가 막힌 이유(사고 유형과 기하 요약의 간극) 신설 — Round016 재측정 + 공백종료 34척을 근거로 사고 유형이 기하에 드러나지 않을 가능성을 논증",
+    "sources_added": "S16 (167건 사고유형 분류, round_016 재측정)",
+    "unverified_claims_excluded": "28시간 재출항, 사고시간대 무신호율 90%, 38척 정상출항 — 저장소에서 확인 못해 제외",
+    "pages": "19 -> 20"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "fixture_scope": "small synthetic rows only; no development data read",
+  "checks": {
+    "exact_24_triples_3_days": {
+      "n": 24,
+      "days": 3,
+      "eligible_stage3": true
+    },
+    "strict_prior_excludes_current_and_future_triples": {
+      "peer_count_at_100": 5,
+      "target_transitions_at_100": 0,
+      "target_transitions_at_105": 1
+    },
+    "distinct_method_winners": {
+      "B0": 95,
+      "S": 100,
+      "G": 105
+    },
+    "shared_cap": {
+      "B0": 3,
+      "S": 3,
+      "G": 3
+    },
+    "future_append_invariance": {
+      "fields": [
+        "own_baseline_triples",
+        "own_baseline_transitions",
+        "eligible_peer_count",
+        "peer_percentile",
+        "gear_priority",
+        "stage3_ok"
+      ],
+      "unchanged": true
+    },
+    "three_day_boundary": {
+      "n": 24,
+      "days": 2,
+      "reason": "insufficient_center_dates"
+    },
+    "24_triple_boundary": {
+      "n": 21,
+      "reason": "insufficient_triples"
+    },
+    "five_peer_scarcity": {
+      "eligible_peers": 4,
+      "stage3": false,
+      "G_fallback": "no_gear_eligible_candidates"
+    },
+    "singleton_fallback": {
+      "stage3": false,
+      "reason": "singleton_no_peer_rule",
+      "G_pool": "stage2"
+    },
+    "broken_gap": {
+      "stage1": false,
+      "previous_reason": "missing_observation"
+    },
+    "invalid_next_defers_stage2": {
+      "stage1": true,
+      "stage2": false,
+      "reason": "invalid_geometry"
+    },
+    "missing_next_defers_stage2": {
+      "stage1": true,
+      "stage2": false,
+      "reason": "missing_observation"
+    },
+    "no_history_fallback": {
+      "pool_stage": "stage0",
+      "pool_n": 1,
+      "cap": 1,
+      "reason": "no_common_transitions"
+    },
+    "ledger_order_and_prediction_uniqueness": true
+  }
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "original": "data/reference/competition_20261019/2026 데이터 분석대회/공지사항/공지-문제 과제.png",
+    "copy": "sources/official/공지-문제 과제.png",
+    "sha256": "6ee2ca6f4c682995c3a237a1bcee57e5e4a4f1d3d05f54c847210fdc316ab76a"
+  },
+  {
+    "original": "data/reference/competition_20261019/2026 데이터 분석대회/공지사항/공지-문제개요.png",
+    "copy": "sources/official/공지-문제개요.png",
+    "sha256": "ed2c2bd36461cb047e72ec44e2378a310c28ffc1f2e5a5d0aea4065fe7fc3c9f"
+  },
+  {
+    "original": "data/reference/competition_20261019/2026 데이터 분석대회/공지사항/공지-데이터 설명.png",
+    "copy": "sources/official/공지-데이터 설명.png",
+    "sha256": "0e975accfbf4fa5d915caf45c1c0a73d1f40eeb0706bfa5c6cbd3ba55469bbe0"
+  },
+  {
+    "original": "data/reference/competition_20261019/2026 데이터 분석대회/공지사항/공지-평가기준.png",
+    "copy": "sources/official/공지-평가기준.png",
+    "sha256": "5a64f202e6f88fa0e657f4bea49a4eb9ba482c9c31b53f868ff0483fdf63a18a"
+  },
+  {
+    "original": "26_11_5/20261105_분석종합과_TestB_실행계획.md",
+    "copy": "sources/official/recorded_organizer_answers.md",
+    "sha256": "e61e41d8740a7096955f30bf34071a58575b1315c40563ff0a659d8a8f58f187"
+  },
+  {
+    "original": "testB/final/CURRENT_STATUS.md",
+    "copy": "sources/experiments/testb_status.md",
+    "sha256": "00989efd152576724b957568bbb8f4e31feeb923327d03ae80f3da0c58dedd4f"
+  },
+  {
+    "original": "testB/final/round_013_gap_signal/result.txt",
+    "copy": "sources/experiments/gap_signal.txt",
+    "sha256": "19f8569173cf40c53b7fc154d54037cd019f138536339fddc8477c70fa6dfa86"
+  },
+  {
+    "original": "testB/final/round_013_drift/결과.md",
+    "copy": "sources/experiments/drift.md",
+    "sha256": "e97de9df94c35d5bcc2e3353820dd10e08bb8900e874cb6795fe2aded127a3ef"
+  },
+  {
+    "original": "testB/final/round_013_gap_jump_ratio/metrics.json",
+    "copy": "sources/experiments/gap_jump_ratio.json",
+    "sha256": "83403f452136c43ecb764fe0ddcf7fe0bddb71af39840a9c3d33e5cd6c95efc3"
+  },
+  {
+    "original": "testB/final/round_013_fleet_simultaneity/results.json",
+    "copy": "sources/experiments/fleet_results.json",
+    "sha256": "63684085e8c225d518e4e469eecc568be73fda3871edb90f4c170d6e691b4688"
+  },
+  {
+    "original": "testB/final/round_013_fleet_simultaneity/결과.md",
+    "copy": "sources/experiments/fleet_notes.md",
+    "sha256": "080fb913c51e2ddf08bbaf6a2818a731329ca6adc2722213ddafad53ff477bc6"
+  },
+  {
+    "original": "testB/final/round_013_offhours_weight/results.json",
+    "copy": "sources/experiments/offhours_results.json",
+    "sha256": "bbc388c0f3663eb3892c1f92321d7545c0738e52573a167ee95d79ec019b2286"
+  },
+  {
+    "original": "testB/final/round_013_offhours_weight/event_results.csv",
+    "copy": "sources/experiments/offhours_events.csv",
+    "sha256": "0263e3e582192a8faee6627b61474f688c990dbe00ecf7a90045ac865325cc5e"
+  },
+  {
+    "original": "testB/final/round_013_offhours_weight/결과.md",
+    "copy": "sources/experiments/offhours_notes.md",
+    "sha256": "c96c283724afedb1dd821b672dbfec7196a8bac47ce29797d77a8e050ab70f7f"
+  },
+  {
+    "original": "testB/final/round_013_metric_rescore/RESCORE.md",
+    "copy": "sources/experiments/development_rescore.md",
+    "sha256": "7e5623c0f35580a62e4b0120dd99297fc3f2e7912fcd79d8456405b5702e99ef"
+  },
+  {
+    "original": "11_04_final/rounds/round_029_domain_features_dtype_correction/ROUND_REPORT.md",
+    "copy": "sources/experiments/testa_round029.md",
+    "sha256": "704f935dedb072789fe6e7d80f94573716d65f468df48880e683a02aad723bd2"
+  },
+  {
+    "original": "tools/build_testb_report.py",
+    "copy": "reports/build_report.py",
+    "sha256": "718a6cf8517069579076b57bae3e95e4f89dbc8c886d20b617059f1c98fd4d6e"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "scope": "보조 스크립트의 tool trace 관측 이력; T1/T2 실제 Python 프로세스 종료는 별도 execution.json이 원본",
+  "history": [
+    {"script": "verify_synthetic.py", "observed_shell_exit_code": 0, "result": "462개 수식 비교 및 가드·동률·McNemar 열거 일치"},
+    {"script": "finalize_report.py", "attempt": "initial", "observed_shell_exit_code": 1, "error": "KeyError: 'exit_code'", "cause": "PowerShell 누적 JSON 배열에 value/Count 래퍼가 포함됨", "resolution": "원문을 *_execution_raw_nested.json에 보존하고 record_execution.py로 평탄화"},
+    {"script": "postprocess_reports.py", "attempt": "initial", "observed_shell_exit_code": 1, "printed": "postprocess deferred", "script_declared_exit_on_deferral": 75, "note": "초기 보조 스크립트 내부 종료코드는 별도 래퍼로 포착하지 않았으며 shell 관측값과 구분함"},
+    {"script": "postprocess_reports.py", "attempt": "standard_library_small_report_edit", "observed_shell_exit_code": 0, "result": "87개 MDE=0 계획값을 보완; 검정 p/효과/CI 유지"},
+    {"script": "record_execution.py", "observed_shell_exit_code": 0, "result": "원본 누적 이력 보존 및 정규화"},
+    {"script": "check_artifacts.py", "observed_shell_exit_code": 0, "result": "artifact_checks.json"},
+    {"script": "finalize_report.py", "attempt": "after_receipt_normalization", "observed_shell_exit_code": 0, "result": "종합 보고서 및 manifest 생성"}
+  ]
+}

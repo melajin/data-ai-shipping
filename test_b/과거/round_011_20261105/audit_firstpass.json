@@ -1,0 +1,1055 @@
+{
+  "status": "failed",
+  "created_at_utc": "2026-11-05T07:57:50.357124+00:00",
+  "reviewer_requested_model": "gpt-6.1-sol",
+  "reviewer_requested_effort": "high",
+  "provider_model_proof": "unavailable; role/config receipt only",
+  "memory": [
+    {
+      "checked_at_utc": "2026-11-05T07:57:38.217121+00:00",
+      "available_bytes": 3146485760,
+      "expected_peak_bytes": 268435456,
+      "required_available_bytes": 805306368,
+      "other_processes": [
+        {
+          "Id": 5828,
+          "ProcessName": "explorer",
+          "WorkingSet64": 671825920
+        },
+        {
+          "Id": 19824,
+          "ProcessName": "Orca",
+          "WorkingSet64": 532803584
+        },
+        {
+          "Id": 17216,
+          "ProcessName": "Orca",
+          "WorkingSet64": 380669952
+        },
+        {
+          "Id": 31304,
+          "ProcessName": "agy",
+          "WorkingSet64": 301469696
+        },
+        {
+          "Id": 4460,
+          "ProcessName": "ctfmon",
+          "WorkingSet64": 300306432
+        },
+        {
+          "Id": 19112,
+          "ProcessName": "codex",
+          "WorkingSet64": 252903424
+        },
+        {
+          "Id": 18136,
+          "ProcessName": "Orca",
+          "WorkingSet64": 249004032
+        },
+        {
+          "Id": 34028,
+          "ProcessName": "codex",
+          "WorkingSet64": 231682048
+        },
+        {
+          "Id": 11432,
+          "ProcessName": "CrossDeviceService",
+          "WorkingSet64": 212463616
+        },
+        {
+          "Id": 1172,
+          "ProcessName": "dwm",
+          "WorkingSet64": 199958528
+        },
+        {
+          "Id": 17128,
+          "ProcessName": "logioptionsplus_agent",
+          "WorkingSet64": 168828928
+        },
+        {
+          "Id": 17872,
+          "ProcessName": "msedge",
+          "WorkingSet64": 164270080
+        }
+      ],
+      "concurrency": "Parent must authorize sequential audit after experiment exits."
+    },
+    {
+      "checked_at_utc": "2026-11-05T07:57:48.274778+00:00",
+      "available_bytes": 3167473664,
+      "expected_peak_bytes": 268435456,
+      "required_available_bytes": 805306368,
+      "other_processes": [
+        {
+          "Id": 5828,
+          "ProcessName": "explorer",
+          "WorkingSet64": 671825920
+        },
+        {
+          "Id": 19824,
+          "ProcessName": "Orca",
+          "WorkingSet64": 532275200
+        },
+        {
+          "Id": 17216,
+          "ProcessName": "Orca",
+          "WorkingSet64": 383062016
+        },
+        {
+          "Id": 31304,
+          "ProcessName": "agy",
+          "WorkingSet64": 301486080
+        },
+        {
+          "Id": 4460,
+          "ProcessName": "ctfmon",
+          "WorkingSet64": 300306432
+        },
+        {
+          "Id": 19112,
+          "ProcessName": "codex",
+          "WorkingSet64": 252960768
+        },
+        {
+          "Id": 34028,
+          "ProcessName": "codex",
+          "WorkingSet64": 231657472
+        },
+        {
+          "Id": 11432,
+          "ProcessName": "CrossDeviceService",
+          "WorkingSet64": 212434944
+        },
+        {
+          "Id": 18136,
+          "ProcessName": "Orca",
+          "WorkingSet64": 210968576
+        },
+        {
+          "Id": 1172,
+          "ProcessName": "dwm",
+          "WorkingSet64": 199958528
+        },
+        {
+          "Id": 17128,
+          "ProcessName": "logioptionsplus_agent",
+          "WorkingSet64": 168472576
+        },
+        {
+          "Id": 17872,
+          "ProcessName": "msedge",
+          "WorkingSet64": 164270080
+        }
+      ],
+      "concurrency": "Parent must authorize sequential audit after experiment exits."
+    }
+  ],
+  "script_sha256": "72f31b0ee49d71da5ebe6e4acec7b4e3e970dad9e315efeb627b027721f6beda",
+  "protocol_sha256": "133da14c225fa4e1e1c9829a26fdeba1014bd64043b9d4ef9b71c3d91d158084",
+  "checks": {
+    "output_hash": 3,
+    "protocol_hash": 1,
+    "execution_code_hash": 1,
+    "fixed_input_event_output_identity": 1,
+    "event_metric_rows": 1,
+    "event_vessel_count": 1,
+    "vessel_contiguous": 82,
+    "reference_receipt_fields": 299031,
+    "timestamp_rendering": 99677,
+    "timestamp_unique_sorted": 82,
+    "quality_counts": 99677,
+    "raw_lin_score": 99677,
+    "common_universe": 99677,
+    "ref_distinct_latest_days_order": 299031,
+    "ref_past_range_same_vessel_quality_matching": 299031,
+    "insufficient_refs_unknown": 152241,
+    "reference_selection_sample": 3090,
+    "context_scores_midrank": 146790,
+    "event_candidate_evaluable": 1000,
+    "event_near_coverage": 1000,
+    "event_candidate_range": 1000,
+    "event_top1_top10_chance": 610,
+    "event_conservative_valid": 610,
+    "event_unknown_preserved": 390,
+    "timestamp_row_total": 1,
+    "fixed_profile_denominator": 2,
+    "summary_rule_metrics": 20,
+    "fixed_contrast_family": 1,
+    "bootstrap_repeated_vessel_exact": 4,
+    "raw_input_hash": 1,
+    "event_input_hash": 1,
+    "raw_sample_window_formula": 730
+  },
+  "failures": [
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36101547",
+        493666,
+        "L",
+        [
+          493642,
+          493525,
+          493500,
+          493476,
+          493427,
+          493402
+        ],
+        [
+          493642,
+          493525,
+          493500,
+          493475,
+          493427,
+          493402
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36101547",
+        493738,
+        "L",
+        [
+          493688,
+          493664,
+          493639,
+          493525,
+          493498,
+          493473,
+          493425,
+          493400
+        ],
+        [
+          493687,
+          493664,
+          493639,
+          493525,
+          493498,
+          493473,
+          493425,
+          493400
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36110858",
+        494318,
+        "L",
+        [
+          494293,
+          494274,
+          494177,
+          494094,
+          494083,
+          493983,
+          493793,
+          493757,
+          493743,
+          493694
+        ],
+        [
+          494293,
+          494274,
+          494177,
+          494103,
+          494083,
+          493983,
+          493793,
+          493757,
+          493743,
+          493694
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36110858",
+        494634,
+        "L",
+        [
+          494584,
+          494463,
+          494439,
+          494412,
+          494338,
+          494322,
+          494294,
+          494274,
+          494177,
+          494094
+        ],
+        [
+          494584,
+          494463,
+          494439,
+          494412,
+          494338,
+          494322,
+          494294,
+          494274,
+          494177,
+          494103
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36113654",
+        492635,
+        "L",
+        [
+          492607,
+          492579,
+          492555,
+          492531,
+          492514,
+          492489,
+          492458,
+          492443,
+          492419,
+          492395
+        ],
+        [
+          492607,
+          492579,
+          492555,
+          492531,
+          492514,
+          492489,
+          492460,
+          492443,
+          492419,
+          492395
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36113654",
+        492657,
+        "L",
+        [
+          492629,
+          492607,
+          492579,
+          492558,
+          492538,
+          492514,
+          492489,
+          492458,
+          492443,
+          492415
+        ],
+        [
+          492629,
+          492607,
+          492579,
+          492558,
+          492538,
+          492514,
+          492489,
+          492460,
+          492443,
+          492415
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36113654",
+        493170,
+        "L",
+        [
+          493136,
+          493124,
+          493099,
+          493070,
+          493047,
+          493022,
+          493003,
+          492974,
+          492955,
+          492926
+        ],
+        [
+          493136,
+          493124,
+          493099,
+          493070,
+          493047,
+          493022,
+          493004,
+          492974,
+          492955,
+          492926
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36314887",
+        493816,
+        "L",
+        [
+          493792,
+          493770,
+          493737,
+          493720,
+          493683,
+          493679,
+          493651,
+          493553,
+          493500,
+          493358
+        ],
+        [
+          493792,
+          493770,
+          493737,
+          493720,
+          493683,
+          493679,
+          493652,
+          493554,
+          493500,
+          493358
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36314887",
+        494003,
+        "L",
+        [
+          493979,
+          493954,
+          493815,
+          493736,
+          493722,
+          493651,
+          493549,
+          493500,
+          493358
+        ],
+        [
+          493979,
+          493954,
+          493815,
+          493736,
+          493722,
+          493652,
+          493549,
+          493500,
+          493358
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36316040",
+        492328,
+        "L",
+        [
+          492289,
+          492287,
+          492257,
+          492235,
+          492209,
+          492185,
+          492126,
+          492089,
+          492071,
+          491954
+        ],
+        [
+          492289,
+          492287,
+          492257,
+          492235,
+          492209,
+          492185,
+          492126,
+          492089,
+          492071,
+          491955
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36316040",
+        493080,
+        "L",
+        [
+          492697,
+          492694,
+          492664,
+          492641,
+          492623,
+          492593,
+          492568,
+          492536,
+          492504,
+          492502
+        ],
+        [
+          492698,
+          492694,
+          492664,
+          492641,
+          492623,
+          492593,
+          492568,
+          492537,
+          492504,
+          492502
+        ]
+      ]
+    },
+    {
+      "check": "reference_selection_sample",
+      "detail": [
+        "36316040",
+        493092,
+        "L",
+        [
+          492697,
+          492688,
+          492653,
+          492641,
+          492617,
+          492595,
+          492568,
+          492536,
+          492504,
+          492502
+        ],
+        [
+          492698,
+          492688,
+          492653,
+          492641,
+          492617,
+          492595,
+          492568,
+          492537,
+          492504,
+          492502
+        ]
+      ]
+    }
+  ],
+  "vessel_coverage": {
+    "31001758": {
+      "timestamps": 916,
+      "common": 256,
+      "min_ts": 491105,
+      "max_ts": 494738
+    },
+    "31005917": {
+      "timestamps": 18,
+      "common": 0,
+      "min_ts": 491434,
+      "max_ts": 494790
+    },
+    "31005928": {
+      "timestamps": 809,
+      "common": 369,
+      "min_ts": 490955,
+      "max_ts": 495133
+    },
+    "31007124": {
+      "timestamps": 765,
+      "common": 265,
+      "min_ts": 490953,
+      "max_ts": 495199
+    },
+    "31007500": {
+      "timestamps": 1431,
+      "common": 635,
+      "min_ts": 491093,
+      "max_ts": 495237
+    },
+    "31008085": {
+      "timestamps": 2938,
+      "common": 2045,
+      "min_ts": 490896,
+      "max_ts": 495135
+    },
+    "31008933": {
+      "timestamps": 1313,
+      "common": 147,
+      "min_ts": 491094,
+      "max_ts": 495239
+    },
+    "31009538": {
+      "timestamps": 4273,
+      "common": 3976,
+      "min_ts": 490896,
+      "max_ts": 495239
+    },
+    "31012971": {
+      "timestamps": 808,
+      "common": 302,
+      "min_ts": 492849,
+      "max_ts": 495225
+    },
+    "31013760": {
+      "timestamps": 565,
+      "common": 135,
+      "min_ts": 491990,
+      "max_ts": 495219
+    },
+    "31014032": {
+      "timestamps": 811,
+      "common": 36,
+      "min_ts": 492081,
+      "max_ts": 495174
+    },
+    "31014672": {
+      "timestamps": 306,
+      "common": 0,
+      "min_ts": 491506,
+      "max_ts": 495115
+    },
+    "31016197": {
+      "timestamps": 1183,
+      "common": 64,
+      "min_ts": 490973,
+      "max_ts": 495157
+    },
+    "31100492": {
+      "timestamps": 3092,
+      "common": 858,
+      "min_ts": 490896,
+      "max_ts": 495137
+    },
+    "31703108": {
+      "timestamps": 1442,
+      "common": 325,
+      "min_ts": 490972,
+      "max_ts": 495227
+    },
+    "31704073": {
+      "timestamps": 2005,
+      "common": 1681,
+      "min_ts": 490957,
+      "max_ts": 495239
+    },
+    "31704782": {
+      "timestamps": 2279,
+      "common": 1596,
+      "min_ts": 491023,
+      "max_ts": 495239
+    },
+    "31815412": {
+      "timestamps": 3264,
+      "common": 2602,
+      "min_ts": 490908,
+      "max_ts": 495239
+    },
+    "32300169": {
+      "timestamps": 3394,
+      "common": 1797,
+      "min_ts": 491678,
+      "max_ts": 495239
+    },
+    "32300202": {
+      "timestamps": 777,
+      "common": 53,
+      "min_ts": 492756,
+      "max_ts": 495211
+    },
+    "32300267": {
+      "timestamps": 1197,
+      "common": 153,
+      "min_ts": 490972,
+      "max_ts": 494970
+    },
+    "32300334": {
+      "timestamps": 3106,
+      "common": 1480,
+      "min_ts": 492106,
+      "max_ts": 495239
+    },
+    "32300353": {
+      "timestamps": 2851,
+      "common": 1750,
+      "min_ts": 490896,
+      "max_ts": 495239
+    },
+    "32300717": {
+      "timestamps": 1824,
+      "common": 1439,
+      "min_ts": 492559,
+      "max_ts": 495181
+    },
+    "32301131": {
+      "timestamps": 310,
+      "common": 0,
+      "min_ts": 490976,
+      "max_ts": 495131
+    },
+    "33200664": {
+      "timestamps": 1328,
+      "common": 362,
+      "min_ts": 493020,
+      "max_ts": 495239
+    },
+    "33200829": {
+      "timestamps": 2335,
+      "common": 667,
+      "min_ts": 490954,
+      "max_ts": 495204
+    },
+    "33201019": {
+      "timestamps": 523,
+      "common": 0,
+      "min_ts": 490907,
+      "max_ts": 495103
+    },
+    "33201506": {
+      "timestamps": 841,
+      "common": 123,
+      "min_ts": 492567,
+      "max_ts": 495204
+    },
+    "34200580": {
+      "timestamps": 574,
+      "common": 16,
+      "min_ts": 492616,
+      "max_ts": 494808
+    },
+    "34200731": {
+      "timestamps": 3059,
+      "common": 485,
+      "min_ts": 490896,
+      "max_ts": 495239
+    },
+    "34400535": {
+      "timestamps": 1208,
+      "common": 453,
+      "min_ts": 492247,
+      "max_ts": 495040
+    },
+    "34400601": {
+      "timestamps": 671,
+      "common": 91,
+      "min_ts": 490999,
+      "max_ts": 495229
+    },
+    "35100289": {
+      "timestamps": 1582,
+      "common": 685,
+      "min_ts": 490951,
+      "max_ts": 494514
+    },
+    "35200056": {
+      "timestamps": 1101,
+      "common": 41,
+      "min_ts": 490975,
+      "max_ts": 495184
+    },
+    "35200311": {
+      "timestamps": 2428,
+      "common": 1657,
+      "min_ts": 490896,
+      "max_ts": 495222
+    },
+    "35200486": {
+      "timestamps": 1756,
+      "common": 724,
+      "min_ts": 490905,
+      "max_ts": 495204
+    },
+    "36000925": {
+      "timestamps": 5,
+      "common": 0,
+      "min_ts": 490908,
+      "max_ts": 494918
+    },
+    "36001358": {
+      "timestamps": 932,
+      "common": 0,
+      "min_ts": 490896,
+      "max_ts": 495235
+    },
+    "36001411": {
+      "timestamps": 480,
+      "common": 3,
+      "min_ts": 490954,
+      "max_ts": 495107
+    },
+    "36001494": {
+      "timestamps": 548,
+      "common": 225,
+      "min_ts": 493047,
+      "max_ts": 495226
+    },
+    "36003960": {
+      "timestamps": 424,
+      "common": 4,
+      "min_ts": 490896,
+      "max_ts": 495060
+    },
+    "36004693": {
+      "timestamps": 1243,
+      "common": 657,
+      "min_ts": 490896,
+      "max_ts": 495239
+    },
+    "36006776": {
+      "timestamps": 2614,
+      "common": 1663,
+      "min_ts": 490905,
+      "max_ts": 495239
+    },
+    "36007269": {
+      "timestamps": 401,
+      "common": 97,
+      "min_ts": 492039,
+      "max_ts": 495226
+    },
+    "36007909": {
+      "timestamps": 756,
+      "common": 353,
+      "min_ts": 492786,
+      "max_ts": 494621
+    },
+    "36008148": {
+      "timestamps": 839,
+      "common": 13,
+      "min_ts": 491093,
+      "max_ts": 495159
+    },
+    "36008988": {
+      "timestamps": 733,
+      "common": 250,
+      "min_ts": 491845,
+      "max_ts": 495199
+    },
+    "36010190": {
+      "timestamps": 1406,
+      "common": 487,
+      "min_ts": 490958,
+      "max_ts": 495239
+    },
+    "36010554": {
+      "timestamps": 1092,
+      "common": 390,
+      "min_ts": 490952,
+      "max_ts": 495113
+    },
+    "36011749": {
+      "timestamps": 1326,
+      "common": 92,
+      "min_ts": 490977,
+      "max_ts": 495237
+    },
+    "36011845": {
+      "timestamps": 741,
+      "common": 29,
+      "min_ts": 490906,
+      "max_ts": 495203
+    },
+    "36015383": {
+      "timestamps": 1711,
+      "common": 0,
+      "min_ts": 490943,
+      "max_ts": 495231
+    },
+    "36015515": {
+      "timestamps": 1861,
+      "common": 1328,
+      "min_ts": 491000,
+      "max_ts": 494344
+    },
+    "36100073": {
+      "timestamps": 626,
+      "common": 0,
+      "min_ts": 490975,
+      "max_ts": 495198
+    },
+    "36101547": {
+      "timestamps": 91,
+      "common": 0,
+      "min_ts": 491506,
+      "max_ts": 495128
+    },
+    "36102425": {
+      "timestamps": 261,
+      "common": 0,
+      "min_ts": 493168,
+      "max_ts": 494678
+    },
+    "36108086": {
+      "timestamps": 788,
+      "common": 224,
+      "min_ts": 491098,
+      "max_ts": 495210
+    },
+    "36110858": {
+      "timestamps": 549,
+      "common": 1,
+      "min_ts": 490956,
+      "max_ts": 495239
+    },
+    "36113617": {
+      "timestamps": 199,
+      "common": 1,
+      "min_ts": 492757,
+      "max_ts": 495199
+    },
+    "36113654": {
+      "timestamps": 1479,
+      "common": 1138,
+      "min_ts": 491313,
+      "max_ts": 493691
+    },
+    "36115953": {
+      "timestamps": 754,
+      "common": 81,
+      "min_ts": 491218,
+      "max_ts": 495239
+    },
+    "36200918": {
+      "timestamps": 505,
+      "common": 141,
+      "min_ts": 490902,
+      "max_ts": 495212
+    },
+    "36212188": {
+      "timestamps": 222,
+      "common": 4,
+      "min_ts": 492541,
+      "max_ts": 492979
+    },
+    "36212203": {
+      "timestamps": 904,
+      "common": 203,
+      "min_ts": 492295,
+      "max_ts": 494707
+    },
+    "36301063": {
+      "timestamps": 272,
+      "common": 0,
+      "min_ts": 491698,
+      "max_ts": 494619
+    },
+    "36301579": {
+      "timestamps": 494,
+      "common": 72,
+      "min_ts": 491848,
+      "max_ts": 495228
+    },
+    "36301995": {
+      "timestamps": 807,
+      "common": 63,
+      "min_ts": 491094,
+      "max_ts": 495220
+    },
+    "36304593": {
+      "timestamps": 368,
+      "common": 91,
+      "min_ts": 492873,
+      "max_ts": 494720
+    },
+    "36304898": {
+      "timestamps": 718,
+      "common": 13,
+      "min_ts": 490897,
+      "max_ts": 494074
+    },
+    "36307233": {
+      "timestamps": 182,
+      "common": 0,
+      "min_ts": 490982,
+      "max_ts": 493812
+    },
+    "36307839": {
+      "timestamps": 122,
+      "common": 0,
+      "min_ts": 493303,
+      "max_ts": 495180
+    },
+    "36311633": {
+      "timestamps": 1847,
+      "common": 442,
+      "min_ts": 490905,
+      "max_ts": 495236
+    },
+    "36313865": {
+      "timestamps": 1316,
+      "common": 660,
+      "min_ts": 491489,
+      "max_ts": 495239
+    },
+    "36314076": {
+      "timestamps": 2110,
+      "common": 0,
+      "min_ts": 490896,
+      "max_ts": 495239
+    },
+    "36314346": {
+      "timestamps": 1856,
+      "common": 143,
+      "min_ts": 490951,
+      "max_ts": 495237
+    },
+    "36314611": {
+      "timestamps": 1237,
+      "common": 184,
+      "min_ts": 490904,
+      "max_ts": 495233
+    },
+    "36314887": {
+      "timestamps": 825,
+      "common": 15,
+      "min_ts": 490981,
+      "max_ts": 495208
+    },
+    "36314895": {
+      "timestamps": 1651,
+      "common": 1076,
+      "min_ts": 490896,
+      "max_ts": 495239
+    },
+    "36315137": {
+      "timestamps": 1446,
+      "common": 370,
+      "min_ts": 491699,
+      "max_ts": 495239
+    },
+    "36315252": {
+      "timestamps": 676,
+      "common": 130,
+      "min_ts": 492441,
+      "max_ts": 494270
+    },
+    "36316040": {
+      "timestamps": 1177,
+      "common": 376,
+      "min_ts": 490896,
+      "max_ts": 493092
+    }
+  },
+  "raw_sample_audit": {
+    "raw_rows_streamed": 822000,
+    "sampled_windows": 730,
+    "raw_rows_retained": 3722
+  },
+  "scope": "All output refs/ranges/scores/common flags/events/summary/4000 bootstrap; fixed reference-choice and raw-window samples; no implementation imports, training,2025 data,or hardware execution"
+}

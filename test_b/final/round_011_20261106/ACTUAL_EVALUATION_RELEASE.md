@@ -1,0 +1,13 @@
+# Root release — one fixed position-distance CDF comparison
+
+Luna msg_6503a93f8eff/ctx_d8ee899c6805 finishedposition_rules13syntheticchecks378rows/hash8ecee182... matchedbeforeafter;R8pureHistorySweep.cdf pinned6eb571ae,nooldtwo-tailcall. Gemini msg_d9df3716f4de/ctx_b83d20a5e4d8 independentlycomputedall82distancehistoryinventory(raw96976,self94290,peer91307) and12CDFcases,nolabels. RootinspectednewDISThistoryfields/currentstrictpast/peeratcommonqueryt/own-firstrank/DESClegacy/masksmetadata preservation; R10coordinateflagsNOTreusedasDISThistoryeligibility.
+
+Rootrun_position.pycompiled. ActualpipelinehashguardsfrozenR10c3943c95...,validated1:1numericmerge,all82rawhistorycountsand12CDF/countqueries BEFOREeventCSVparse,stagehierarchy/R10metadataimmutability. Failurepreservesfreshfolderandhalts,bothprelabelevidenceandfrozenprediction/poolsourcehasheschecked. No newdatafeaturechoices.
+
+FreshRAM2026-11-06 04:25:48+09:00available4444.3MiB,extra1280+reserve640=1920MiB,nootherPythonjobs;runnerrechecksafterstart. RootauthorizesONEactualcommandinNEWexecution_001,sourcecopiesbeforeexecution:
+
+```powershell
+python 'testB/final/round_011_20261106/run_position.py'
+```
+
+Whole100/82,Tier0160/55,sharedRFIDcaps,±6hinclusive,pairedRFID4000seed20261105,exact+5pp/CIpositive/whole-nonworse/matchedrandom fourgatesunchanged. PassingR10feasibilitydidnotestablishhitbenefit. Failurestopsthisposition-CDFfamily,no grid/tail/window/peerprioritytuning. NoTestBinference/newmodels/submission/externalcollection.

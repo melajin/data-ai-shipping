@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-06T15:23:45.552800+09:00",
+  "stage": "planning",
+  "available_mib": 4631.953125,
+  "estimated_peak_mib": 512,
+  "reserve_mib": 640,
+  "basis": "7372-row stored metrics CSV, 100-event CSV; stream32768 parquet batches for at most five explanatory cases; no fitting",
+  "python_processes": [
+    {
+      "pid": 7464,
+      "rss_mib": 19.0234375
+    }
+  ]
+}

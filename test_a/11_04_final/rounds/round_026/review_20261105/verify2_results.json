@@ -1,0 +1,136 @@
+{
+  "inner_class_counts": [
+    1170,
+    807,
+    333,
+    51
+  ],
+  "outer_class_counts": [
+    2920,
+    2016,
+    835,
+    126
+  ],
+  "alpha3_sweep": [
+    {
+      "a3": 1.0,
+      "inner_correct": 1395,
+      "inner_tp3": 33,
+      "inner_tp0": 1010,
+      "outer_correct": 3552,
+      "outer_tp3": 86,
+      "outer_tp0": 2541
+    },
+    {
+      "a3": 1.2,
+      "inner_correct": 1393,
+      "inner_tp3": 33,
+      "inner_tp0": 1010,
+      "outer_correct": 3554,
+      "outer_tp3": 89,
+      "outer_tp0": 2541
+    },
+    {
+      "a3": 1.425,
+      "inner_correct": 1395,
+      "inner_tp3": 36,
+      "inner_tp0": 1009,
+      "outer_correct": 3552,
+      "outer_tp3": 92,
+      "outer_tp0": 2541
+    },
+    {
+      "a3": 1.6,
+      "inner_correct": 1396,
+      "inner_tp3": 37,
+      "inner_tp0": 1009,
+      "outer_correct": 3549,
+      "outer_tp3": 93,
+      "outer_tp0": 2541
+    },
+    {
+      "a3": 1.8,
+      "inner_correct": 1396,
+      "inner_tp3": 38,
+      "inner_tp0": 1009,
+      "outer_correct": 3548,
+      "outer_tp3": 94,
+      "outer_tp0": 2541
+    },
+    {
+      "a3": 2.0,
+      "inner_correct": 1394,
+      "inner_tp3": 38,
+      "inner_tp0": 1008,
+      "outer_correct": 3548,
+      "outer_tp3": 96,
+      "outer_tp0": 2540
+    },
+    {
+      "a3": 2.5,
+      "inner_correct": 1394,
+      "inner_tp3": 41,
+      "inner_tp0": 1008,
+      "outer_correct": 3538,
+      "outer_tp3": 98,
+      "outer_tp0": 2537
+    },
+    {
+      "a3": 3.0,
+      "inner_correct": 1390,
+      "inner_tp3": 41,
+      "inner_tp0": 1007,
+      "outer_correct": 3532,
+      "outer_tp3": 98,
+      "outer_tp0": 2535
+    },
+    {
+      "a3": 4.0,
+      "inner_correct": 1387,
+      "inner_tp3": 41,
+      "inner_tp0": 1006,
+      "outer_correct": 3524,
+      "outer_tp3": 99,
+      "outer_tp0": 2533
+    }
+  ],
+  "inner_power": [
+    {
+      "vs": "Mix_Grand_BothTab_T1_w10",
+      "plus": 27,
+      "minus": 11,
+      "net": 16,
+      "p": 0.013852965261321515
+    },
+    {
+      "vs": "Mix_Trio_Base",
+      "plus": 33,
+      "minus": 15,
+      "net": 18,
+      "p": 0.01328328156224501
+    },
+    {
+      "vs": "Mix_Trio_BothTab",
+      "plus": 19,
+      "minus": 7,
+      "net": 12,
+      "p": 0.028959274291992188
+    }
+  ],
+  "candidate_outer_mean": 3543.6363636363635,
+  "candidate_outer_sd": 5.50796353815658,
+  "protection_floor_origin": {
+    "seed42_outer_tp": [
+      2389,
+      889,
+      108,
+      90
+    ],
+    "lgb5_outer_tp": [
+      2381,
+      908,
+      116,
+      92
+    ]
+  }
+}

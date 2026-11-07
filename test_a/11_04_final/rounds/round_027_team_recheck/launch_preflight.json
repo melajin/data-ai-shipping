@@ -1,0 +1,6 @@
+{
+  "time": "2026-11-05T16:07:24.064610+09:00",
+  "stage": "after source-manifest and model-failure logging review; immediately before launch",
+  "available_gib": 1.4598770141601562,
+  "expected_peak_gib": 0.35
+}

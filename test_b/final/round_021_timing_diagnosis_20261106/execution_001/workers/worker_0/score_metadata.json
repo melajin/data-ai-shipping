@@ -1,0 +1,464 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-06T15:32:16.696288+09:00",
+  "pid": 23696,
+  "training_performed": false,
+  "labels_read": false,
+  "score_definition_changed": false,
+  "expected_peak_process_mib": 512,
+  "reserve_mib": 640,
+  "memory_estimate_basis": "Round019 worker observed about 308-355 MiB; 512 MiB worker budget includes one 128th partition, frozen 62 MiB arrays, vessel copies and streamed score output; parent uses stdlib merge of 7372 records within 256 MiB",
+  "fixed_worker_assignments": 4,
+  "assignment_rule": "partition_index modulo 4",
+  "scorer": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+  "source_ordinal_reference_limitation": "Round019 vessel_peaks.csv stores no source_ordinal; compare all available summary fields and assert ordinal tie policy independently",
+  "last_memory_preflight": {
+    "at": "2026-11-06T15:46:12.341031+09:00",
+    "stage": "score_partition_124",
+    "available_mib": 3718.26,
+    "own_rss_mib": 253.67,
+    "estimated_process_peak_mib": 512,
+    "additional_expected_mib": 258.33,
+    "reserve_mib": 640,
+    "other_processes": [
+      {
+        "pid": 9940,
+        "name": "explorer.exe",
+        "rss_mib": 653.69
+      },
+      {
+        "pid": 23364,
+        "name": "Obsidian.exe",
+        "rss_mib": 558.21
+      },
+      {
+        "pid": 27636,
+        "name": "Orca.exe",
+        "rss_mib": 336.47
+      },
+      {
+        "pid": 28540,
+        "name": "Orca.exe",
+        "rss_mib": 305.69
+      },
+      {
+        "pid": 3352,
+        "name": "explorer.exe",
+        "rss_mib": 286.54
+      },
+      {
+        "pid": 5260,
+        "name": "codex.exe",
+        "rss_mib": 276.48
+      },
+      {
+        "pid": 30372,
+        "name": "python.exe",
+        "rss_mib": 257.93
+      },
+      {
+        "pid": 3096,
+        "name": "codex.exe",
+        "rss_mib": 250.44
+      },
+      {
+        "pid": 14268,
+        "name": "python.exe",
+        "rss_mib": 245.62
+      },
+      {
+        "pid": 18100,
+        "name": "python.exe",
+        "rss_mib": 245.31
+      },
+      {
+        "pid": 26540,
+        "name": "Orca.exe",
+        "rss_mib": 238.44
+      },
+      {
+        "pid": 1992,
+        "name": "CrossDeviceService.exe",
+        "rss_mib": 212.24
+      }
+    ],
+    "passed": true
+  },
+  "stage": "finished",
+  "worker_index": 0,
+  "partitions_completed": 32,
+  "rows_completed": 981369,
+  "vessels_completed": 1852,
+  "vessel_error_records": 0,
+  "updated_at": "2026-11-06T15:46:56.158874+09:00",
+  "elapsed_seconds": 879.463,
+  "observed_peak_process_mib": 267.152,
+  "completed_at": "2026-11-06T15:46:56.158061+09:00",
+  "partitions": [
+    {
+      "partition": 0,
+      "completed_at": "2026-11-06T15:32:57.232782+09:00",
+      "input_sha256": "c97ad78b3752dcd85f25403539850f71e15fdce1f8f72dc3d160ff8ec2b1f9dc",
+      "rows": 38484,
+      "n_vessels": 67,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_000.hourly_scores.parquet",
+      "output_sha256": "e8abc9277df671ea3cfceaaaec26300fcc7ee4d5f29b78f09f48e7364232c5b8",
+      "output_bytes": 1650095
+    },
+    {
+      "partition": 4,
+      "completed_at": "2026-11-06T15:33:11.078413+09:00",
+      "input_sha256": "d9eeeedfe03770603e86fc3527225ea4219f7324ba4cfd9e6a917021053b46db",
+      "rows": 16138,
+      "n_vessels": 47,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_004.hourly_scores.parquet",
+      "output_sha256": "48e65905baccf3dff2fe499dcca3d3402a9c385dbc50eb54ac7a366ced21890d",
+      "output_bytes": 741703
+    },
+    {
+      "partition": 8,
+      "completed_at": "2026-11-06T15:33:41.438038+09:00",
+      "input_sha256": "6a58dba09f8fae4687aa7bf82c354961b4e3f56dfef30092cb414fb319cbca62",
+      "rows": 34159,
+      "n_vessels": 54,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_008.hourly_scores.parquet",
+      "output_sha256": "39228318a6f245e357dcaf2d694e623142073f4821428fca4d947a0a51bbba26",
+      "output_bytes": 1455080
+    },
+    {
+      "partition": 12,
+      "completed_at": "2026-11-06T15:34:09.407272+09:00",
+      "input_sha256": "5ec1b92d7ab71595f83a948b47800ec10a8640c035879efada36b0b9b88dd85a",
+      "rows": 31944,
+      "n_vessels": 59,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_012.hourly_scores.parquet",
+      "output_sha256": "7603f26a8d5086af076b87e7faa40a1fd2f50007c6a1b62b24d0434b170e9203",
+      "output_bytes": 1386471
+    },
+    {
+      "partition": 16,
+      "completed_at": "2026-11-06T15:34:26.173050+09:00",
+      "input_sha256": "98ea78833b7895a9d740cf0252873419ea3be7965f1f9aab7ac7ae4b53219d1d",
+      "rows": 21052,
+      "n_vessels": 53,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_016.hourly_scores.parquet",
+      "output_sha256": "80a080da6d34049c9ca255d26d4a9940b1ab7b526e5ba5592bd493175db1b988",
+      "output_bytes": 935925
+    },
+    {
+      "partition": 20,
+      "completed_at": "2026-11-06T15:34:44.487446+09:00",
+      "input_sha256": "6f0a767491f3355b6fcb4875b135b5dfa39c2bc1d1b83811f4660eeb416aa4a1",
+      "rows": 22097,
+      "n_vessels": 53,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_020.hourly_scores.parquet",
+      "output_sha256": "a9b5739ae526c6bfd5ef786c43a1cc5ab21e341682d1c1d1e1aaeb3176ac85c3",
+      "output_bytes": 980920
+    },
+    {
+      "partition": 24,
+      "completed_at": "2026-11-06T15:35:13.155903+09:00",
+      "input_sha256": "176b252608443f22031f69fb48876db3573ed8655c1e8b31baa1b7257a7d1346",
+      "rows": 32145,
+      "n_vessels": 60,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_024.hourly_scores.parquet",
+      "output_sha256": "c4463e5015b52e99a4296fa9b228db933f5b688622548f831efa3b7b34324dbc",
+      "output_bytes": 1389874
+    },
+    {
+      "partition": 28,
+      "completed_at": "2026-11-06T15:35:43.958570+09:00",
+      "input_sha256": "6234680c5e833a6dc4c0eac5e84fb0f0e03e1ea48e54a5f2b2057fe237a20b63",
+      "rows": 35188,
+      "n_vessels": 57,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_028.hourly_scores.parquet",
+      "output_sha256": "7fcb531c6dfd7d5ea063a917cd6b9d9cf075b2bf208d284590d9556cb476f319",
+      "output_bytes": 1470519
+    },
+    {
+      "partition": 32,
+      "completed_at": "2026-11-06T15:36:05.382667+09:00",
+      "input_sha256": "a9503fe710885445a78523568e19407aa97aeeddccd7fc2188d66ac7e09ff044",
+      "rows": 25668,
+      "n_vessels": 51,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_032.hourly_scores.parquet",
+      "output_sha256": "656096cd19f04ce0d55ec9662fd22a45110b91017695f92ca87931e188b52eed",
+      "output_bytes": 1123134
+    },
+    {
+      "partition": 36,
+      "completed_at": "2026-11-06T15:36:21.206193+09:00",
+      "input_sha256": "f1247f2be27fc82e50832db01b91087570b2e951804e51ca81ea4d52d3d35952",
+      "rows": 20846,
+      "n_vessels": 43,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_036.hourly_scores.parquet",
+      "output_sha256": "d3450488244572b9997469a38c947b90b2730f824ca9ef74b0be46f01f8a1876",
+      "output_bytes": 896331
+    },
+    {
+      "partition": 40,
+      "completed_at": "2026-11-06T15:36:44.517316+09:00",
+      "input_sha256": "d32f132491f669a5de6654c09febafbca6601ccfa7305d4c5cedb73dde849069",
+      "rows": 25190,
+      "n_vessels": 51,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_040.hourly_scores.parquet",
+      "output_sha256": "b7faa27834919e0453b2c72f51606d8d047c44c7af85df3dfdd8dbc79a68eba5",
+      "output_bytes": 1100838
+    },
+    {
+      "partition": 44,
+      "completed_at": "2026-11-06T15:37:02.337863+09:00",
+      "input_sha256": "7e5211baf71c9e7b5f10f57450f9df6a8baba19269c66c277c2c2e5af21c9d01",
+      "rows": 21010,
+      "n_vessels": 47,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_044.hourly_scores.parquet",
+      "output_sha256": "692b5cf0c793d1ad28cd5499ef8fbeab8dccd87e5ac405f8512fa878680224ab",
+      "output_bytes": 920405
+    },
+    {
+      "partition": 48,
+      "completed_at": "2026-11-06T15:37:29.510783+09:00",
+      "input_sha256": "8e834758620be90bd6f80e6219ef1d3ea0e4ae9398f3249fd293e33f30ae0792",
+      "rows": 32313,
+      "n_vessels": 51,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_048.hourly_scores.parquet",
+      "output_sha256": "bbb348e41e8ab69c7c6b94087b214b562e8d77eb09eb31f65d8d58d158940c9f",
+      "output_bytes": 1369444
+    },
+    {
+      "partition": 52,
+      "completed_at": "2026-11-06T15:37:52.962021+09:00",
+      "input_sha256": "8f84fb36ed3cf729e44ddbc0dfede0f41aeaaf6ee99c3f9a5cd9c3605af295c3",
+      "rows": 29198,
+      "n_vessels": 67,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_052.hourly_scores.parquet",
+      "output_sha256": "8f36bf6134648a8fc3658d98d295d6bb1a1e429bd946af0a5c4bd561f0e2a1e4",
+      "output_bytes": 1287961
+    },
+    {
+      "partition": 56,
+      "completed_at": "2026-11-06T15:38:25.633841+09:00",
+      "input_sha256": "b82846841bc4e18ab438024632f6a961b3a0ecfa5ab2c4425ec7b27cdb913b9a",
+      "rows": 36621,
+      "n_vessels": 61,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_056.hourly_scores.parquet",
+      "output_sha256": "f38bc6cd8213735bc184fbfb553b9d4279cfce4f9e411a2ea9b0696b96193a2d",
+      "output_bytes": 1589369
+    },
+    {
+      "partition": 60,
+      "completed_at": "2026-11-06T15:38:56.208314+09:00",
+      "input_sha256": "5777df0bc195f769edf801abfe81082adb117fcc1d391544fc9656bd835c1ac3",
+      "rows": 37149,
+      "n_vessels": 62,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_060.hourly_scores.parquet",
+      "output_sha256": "b5b47c7781a0b0ea795089efd1350b899303e1b26a6555ff8a7236fe7b2f25e7",
+      "output_bytes": 1582931
+    },
+    {
+      "partition": 64,
+      "completed_at": "2026-11-06T15:39:37.194109+09:00",
+      "input_sha256": "3b043583d7c08ebbe6d99dbaeb912cbdaed0b628162c6adef8a301f6cd826bde",
+      "rows": 46221,
+      "n_vessels": 70,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_064.hourly_scores.parquet",
+      "output_sha256": "6c26a25b3e6bf86800bf973f3b9b48e64b90bf6b25d2f2bd68ac9170a991bd95",
+      "output_bytes": 1948681
+    },
+    {
+      "partition": 68,
+      "completed_at": "2026-11-06T15:40:13.591125+09:00",
+      "input_sha256": "d7efecc5d8b69f615f91b4cba366546d40d965537612a5b031152d0b0e85ca70",
+      "rows": 42044,
+      "n_vessels": 67,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_068.hourly_scores.parquet",
+      "output_sha256": "5766693f038b37e5acfe8b4a1d91c458614c63872c89f4bdd7b4467e61ec979e",
+      "output_bytes": 1772945
+    },
+    {
+      "partition": 72,
+      "completed_at": "2026-11-06T15:40:37.574122+09:00",
+      "input_sha256": "a3f6124df731806169dc4a2bc5c736efa58da9b2b1e2e2be33909d3f35d28986",
+      "rows": 29806,
+      "n_vessels": 63,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_072.hourly_scores.parquet",
+      "output_sha256": "0cd41b76733b687603dbfdbb97516d9e8865612ec1ed9b0a508c9b93406b557c",
+      "output_bytes": 1310139
+    },
+    {
+      "partition": 76,
+      "completed_at": "2026-11-06T15:40:57.966823+09:00",
+      "input_sha256": "ae74aa397b0509f31be4d972eb8fbcdcc0f56754fd0a36ca48f1f9b22cafb6bb",
+      "rows": 25315,
+      "n_vessels": 53,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_076.hourly_scores.parquet",
+      "output_sha256": "091deb521c4c8d6ed2795d90c9465e37722f7744dcfe599b6cc4bab455ec5815",
+      "output_bytes": 1092058
+    },
+    {
+      "partition": 80,
+      "completed_at": "2026-11-06T15:41:29.682645+09:00",
+      "input_sha256": "004fffb5addccc58e1ea68e44ebbe0e62b3fbdd994c8c5537798cbc70c6c0527",
+      "rows": 28742,
+      "n_vessels": 48,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_080.hourly_scores.parquet",
+      "output_sha256": "7434303eedd9ccaf427a9b1d7f9a043cfbad419f57c9eb91dcc6acd56f7a5def",
+      "output_bytes": 1231916
+    },
+    {
+      "partition": 84,
+      "completed_at": "2026-11-06T15:41:51.814030+09:00",
+      "input_sha256": "1ebd8b96cd03f386e06e6e3efc5fbcf30edbba8d734611e31484e1dbd1849442",
+      "rows": 25957,
+      "n_vessels": 57,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_084.hourly_scores.parquet",
+      "output_sha256": "85c1f9a53fa27c183758d96eaa66dddd28fc6aca3dbcbdbdf4b9e97524122ec6",
+      "output_bytes": 1136253
+    },
+    {
+      "partition": 88,
+      "completed_at": "2026-11-06T15:42:18.783204+09:00",
+      "input_sha256": "b605aecd4662c75ee86490dc3e1e6d03bd40f6559f0d07b6f212dc468354a140",
+      "rows": 33052,
+      "n_vessels": 73,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_088.hourly_scores.parquet",
+      "output_sha256": "afc8b57745935a88b120a7a8ee8ac105eb492a7f8c24664f5e452c1ae5b22b82",
+      "output_bytes": 1432335
+    },
+    {
+      "partition": 92,
+      "completed_at": "2026-11-06T15:42:48.234167+09:00",
+      "input_sha256": "43d027af42e16d15dad04399ca33f511b05afb645a95f833824115402a8a10a3",
+      "rows": 30528,
+      "n_vessels": 61,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_092.hourly_scores.parquet",
+      "output_sha256": "a4a9a0d1af534f7211bcfa49c25bb65755820a04493535d53d9417c31c7d41d1",
+      "output_bytes": 1332194
+    },
+    {
+      "partition": 96,
+      "completed_at": "2026-11-06T15:43:20.342742+09:00",
+      "input_sha256": "234b692e8f84d023c7c2fda1bcb3120e2a240fb2b28f55697a4bb142c3b6a6ee",
+      "rows": 32761,
+      "n_vessels": 56,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_096.hourly_scores.parquet",
+      "output_sha256": "44b9e33e8416a8fc3759c64a910625f8a83afb6aabee2c2a5c89af9dfceff3bb",
+      "output_bytes": 1371386
+    },
+    {
+      "partition": 100,
+      "completed_at": "2026-11-06T15:43:46.834519+09:00",
+      "input_sha256": "0bf58e0fdc8353127b210064c1eeae0f027b5527bb93bf9e0aaefbeb63b8e09d",
+      "rows": 28667,
+      "n_vessels": 54,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_100.hourly_scores.parquet",
+      "output_sha256": "df6cdb53ba78ee51ed2e4fc25f696d633edddac791b90e99d8674483c5a8658f",
+      "output_bytes": 1214738
+    },
+    {
+      "partition": 104,
+      "completed_at": "2026-11-06T15:44:03.423378+09:00",
+      "input_sha256": "f6fef2d48386e8c7a123230cb6c3ad46a90db93df64d183333cbc74f99dd94b7",
+      "rows": 19648,
+      "n_vessels": 52,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_104.hourly_scores.parquet",
+      "output_sha256": "20b6bc66532f6c91f3e4b3bd82111251f7c9ea6381ae0c2fec3d0de310ea0d20",
+      "output_bytes": 872674
+    },
+    {
+      "partition": 108,
+      "completed_at": "2026-11-06T15:44:36.888215+09:00",
+      "input_sha256": "d92ae0bb14399f01c7d69d7dd708c933054715280cff76006923a06ba7624178",
+      "rows": 33565,
+      "n_vessels": 50,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_108.hourly_scores.parquet",
+      "output_sha256": "d2a28474969591156709920bf194c293e38be299bf536f308a0103759b756332",
+      "output_bytes": 1403406
+    },
+    {
+      "partition": 112,
+      "completed_at": "2026-11-06T15:44:57.056605+09:00",
+      "input_sha256": "ca7eb01adba0c9a1073978037b944c926bede20644f8527aee93fd8e42078084",
+      "rows": 23264,
+      "n_vessels": 60,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_112.hourly_scores.parquet",
+      "output_sha256": "b61dfa5652ade62fc5915f5f14265575b17f09b0978382ad0e9237e50b4bfac6",
+      "output_bytes": 1036237
+    },
+    {
+      "partition": 116,
+      "completed_at": "2026-11-06T15:45:44.668948+09:00",
+      "input_sha256": "ef45e6c25405e9e31189ac6d63a972829cd02af3b8f6b90821bd8121881d7c51",
+      "rows": 43814,
+      "n_vessels": 65,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_116.hourly_scores.parquet",
+      "output_sha256": "9d5af68e0db15dbca5e6c0fa32ad913363c46acc13ecbcd9ac2dacddda84d17c",
+      "output_bytes": 1849512
+    },
+    {
+      "partition": 120,
+      "completed_at": "2026-11-06T15:46:11.064043+09:00",
+      "input_sha256": "9d0e14dc76a85ad19d0b7811203ecf06036b8e4473d9b31564533d94459e9765",
+      "rows": 30978,
+      "n_vessels": 67,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_120.hourly_scores.parquet",
+      "output_sha256": "6d6f1c2b413c021b383b2a092beea21232225356b3d72fd683502f5cacef83b9",
+      "output_bytes": 1378319
+    },
+    {
+      "partition": 124,
+      "completed_at": "2026-11-06T15:46:56.105455+09:00",
+      "input_sha256": "417fff7f4ce13050d752437096abb1c00341de2288de8d859ef832b523bc321b",
+      "rows": 47805,
+      "n_vessels": 73,
+      "scoring_errors": 0,
+      "output_path": "workers\\worker_0\\part_124.hourly_scores.parquet",
+      "output_sha256": "021212f1c1a66727e6fc8c62d8fe2fda71a78e5febcc3767687239b4feb509d9",
+      "output_bytes": 2033735
+    }
+  ],
+  "reference_summary": {
+    "gap": {
+      "n_ref": 3879693,
+      "p50": 1.0
+    },
+    "jump": {
+      "n_ref": 3879693,
+      "p50": 85.72352634799219
+    },
+    "harbor_count": 77
+  },
+  "freeze_sha256": "7d836a7df919ebacad4c80f83fbced83e2289628aae66228d1ac433893e7cdd7",
+  "engine_sha256": "ffd913ad90146923a78a1e7552f68fcb02b9b373661e2d1feb38b418269f0efc"
+}

@@ -1,0 +1,10 @@
+test_no_finite_scores_retained (__main__.ScoringChecks.test_no_finite_scores_retained) ... ok
+test_partial_checkpoint_tail_preserved (__main__.ScoringChecks.test_partial_checkpoint_tail_preserved) ... ok
+test_partitioned_scores_equal_direct_frozen_scores (__main__.ScoringChecks.test_partitioned_scores_equal_direct_frozen_scores) ... ok
+test_ties_internal_gaps_and_radius (__main__.ScoringChecks.test_ties_internal_gaps_and_radius) ... ok
+test_timestamp_period_rejects_outside_input (__main__.ScoringChecks.test_timestamp_period_rejects_outside_input) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 7.831s
+
+OK

@@ -1,0 +1,20 @@
+{
+  "method": "stdlib ZIP/NPY header and ID-role metadata only; no numeric imports, no X/y read",
+  "checks": [
+    {
+      "fold": 0,
+      "outer_n": 1966,
+      "source_outer_order_matches_canonical": true
+    },
+    {
+      "fold": 1,
+      "outer_n": 1966,
+      "source_outer_order_matches_canonical": true
+    },
+    {
+      "fold": 2,
+      "outer_n": 1965,
+      "source_outer_order_matches_canonical": true
+    }
+  ]
+}

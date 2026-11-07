@@ -1,0 +1,12 @@
+﻿{
+    "protocol_sha256":  "092242f52c29c828cde4604df9b3671b015a30748f8c14520b33baee008bfba2",
+    "protocol_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_021_timing_diagnosis_20261106\\PROTOCOL.md",
+    "split_algorithm":  "SHA256 UTF8 seed+rfid, sort (hash,rfid), alternating even dev/odd validation",
+    "created_at":  "2026-11-06T15:27:45.9676007+09:00",
+    "rules":  {
+                  "gap_midpoint":  "immediate previous ROW of baseline winner only; if dt\u003e1 floor midpoint else baseline",
+                  "tie_center":  "longest exactmax consecutive-hour run; earliest start tie; lower-middle observed hour",
+                  "baseline":  "max finite score then min source_ordinal stable"
+              },
+    "split_seed":  "round021-v1|"
+}

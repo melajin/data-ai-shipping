@@ -1,0 +1,42 @@
+{
+  "status": "success",
+  "elapsed_seconds": 4.72,
+  "total_segments": 319808,
+  "unique_vessels": 5897,
+  "columns": [
+    "id",
+    "date",
+    "n_active_hours",
+    "sum_n_points",
+    "stationary_ratio",
+    "max_gap_hours",
+    "ratio_night",
+    "ratio_morning",
+    "ratio_afternoon",
+    "ratio_evening",
+    "mean_sin_hour",
+    "mean_cos_hour",
+    "mean_lon",
+    "mean_lat",
+    "daily_dist_sum_km",
+    "daily_dist_mean_km",
+    "daily_dist_max_km",
+    "dist_from_home_mean_km",
+    "dist_from_home_max_km",
+    "n_unique_cells_001",
+    "dom_cell_005",
+    "span_lon",
+    "span_lat",
+    "bbox_diag_km",
+    "top_cell_ratio",
+    "month",
+    "y_vessel"
+  ],
+  "class_distribution_segments": {
+    "0": 143787,
+    "1": 116242,
+    "2": 50845,
+    "3": 8934
+  },
+  "avg_segments_per_vessel": 54.23
+}

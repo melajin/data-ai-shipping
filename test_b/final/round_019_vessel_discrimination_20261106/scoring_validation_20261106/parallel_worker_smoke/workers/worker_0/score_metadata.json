@@ -1,0 +1,97 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-06T14:31:39.369222+09:00",
+  "pid": 13988,
+  "training_performed": false,
+  "labels_read": false,
+  "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+  "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+  "score_definition_changed": false,
+  "expected_peak_process_mib": 1024,
+  "reserve_mib": 640,
+  "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+  "timestamp_contract": {
+    "unit": "epoch hours",
+    "start_inclusive": 490896,
+    "end_exclusive": 495240,
+    "period": "2026 Jan-Jun"
+  },
+  "tie_break": "score DESC, source_ordinal ASC, stable",
+  "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+  "last_memory_preflight": {
+    "at": "2026-11-06T14:31:47.465119+09:00",
+    "stage": "score_partition_003",
+    "available_mib": 3591.39,
+    "process_rss_mib": 212.11,
+    "expected_peak_process_mib": 1024,
+    "expected_additional_mib": 811.89,
+    "reserve_mib": 640,
+    "passed": true,
+    "other_processes": [
+      {
+        "pid": 9940,
+        "name": "explorer.exe",
+        "rss_mib": 654.94
+      },
+      {
+        "pid": 23364,
+        "name": "Obsidian.exe",
+        "rss_mib": 567.22
+      },
+      {
+        "pid": 27636,
+        "name": "Orca.exe",
+        "rss_mib": 363.84
+      },
+      {
+        "pid": 28540,
+        "name": "Orca.exe",
+        "rss_mib": 314.41
+      },
+      {
+        "pid": 1708,
+        "name": "python.exe",
+        "rss_mib": 306.54
+      },
+      {
+        "pid": 22884,
+        "name": "claude.exe",
+        "rss_mib": 304.66
+      },
+      {
+        "pid": 3352,
+        "name": "explorer.exe",
+        "rss_mib": 294.77
+      },
+      {
+        "pid": 5260,
+        "name": "codex.exe",
+        "rss_mib": 243.76
+      }
+    ]
+  },
+  "stage": "finished",
+  "worker_index": 0,
+  "worker_count": 1,
+  "rows": 108,
+  "vessels": 3,
+  "updated_at": "2026-11-06T14:31:47.517724+09:00",
+  "elapsed_seconds": 8.149,
+  "observed_peak_process_mib": 274.719,
+  "completed_at": "2026-11-06T14:31:47.517649+09:00",
+  "rows_completed": 108,
+  "vessels_completed": 3,
+  "resumed_vessels": 0,
+  "vessel_error_records": 0,
+  "reference_summary": {
+    "gap": {
+      "n_ref": 3879693,
+      "p50": 1.0
+    },
+    "jump": {
+      "n_ref": 3879693,
+      "p50": 85.72352634799219
+    },
+    "harbor_count": 77
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "checked_at":  "2026-11-06T01:44:27.9683886+09:00",
+    "snapshot_matches_executed_source":  true,
+    "source_snapshot_sha256":  "60cb570c95899ef1c7054982057dce27e33347bf637f4d2c6bd932337c132dc7",
+    "outputs_checked":  9,
+    "changed_original_outputs":  [
+
+                                 ],
+    "all_recorded_outputs_unchanged":  true
+}

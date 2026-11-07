@@ -1,0 +1,262 @@
+[
+  {
+    "timestamp_utc": "2026-11-05T04:46:53+00:00",
+    "stage": "explore_inventory_start",
+    "available_ram_bytes": 2313531392,
+    "available_ram_mb": 2206.36,
+    "available_ram_gib": 2.155,
+    "process_rss_mb": 30.55,
+    "expected_peak_mb": 80.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:46:54+00:00",
+    "stage": "explore_inventory_end",
+    "available_ram_bytes": 2294718464,
+    "available_ram_mb": 2188.41,
+    "available_ram_gib": 2.137,
+    "process_rss_mb": 31.92,
+    "expected_peak_mb": 80.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:47:41+00:00",
+    "stage": "verify_alignment_start",
+    "available_ram_bytes": 2373844992,
+    "available_ram_mb": 2263.88,
+    "available_ram_gib": 2.211,
+    "process_rss_mb": 30.62,
+    "expected_peak_mb": 80.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:48:51+00:00",
+    "stage": "verify_alignment_start",
+    "available_ram_bytes": 2070188032,
+    "available_ram_mb": 1974.29,
+    "available_ram_gib": 1.928,
+    "process_rss_mb": 30.41,
+    "expected_peak_mb": 80.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:48:51+00:00",
+    "stage": "verify_alignment_end",
+    "available_ram_bytes": 2053857280,
+    "available_ram_mb": 1958.71,
+    "available_ram_gib": 1.913,
+    "process_rss_mb": 46.88,
+    "expected_peak_mb": 80.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:49:38+00:00",
+    "stage": "exp3a_inventory_start",
+    "available_ram_bytes": 1947328512,
+    "available_ram_mb": 1857.12,
+    "available_ram_gib": 1.814,
+    "process_rss_mb": 31.1,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:49:38+00:00",
+    "stage": "exp3a_inventory_end",
+    "available_ram_bytes": 1954299904,
+    "available_ram_mb": 1863.77,
+    "available_ram_gib": 1.82,
+    "process_rss_mb": 46.43,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:51:05+00:00",
+    "stage": "inner_diagnostics_start",
+    "available_ram_bytes": 2225401856,
+    "available_ram_mb": 2122.31,
+    "available_ram_gib": 2.073,
+    "process_rss_mb": 31.05,
+    "expected_peak_mb": 100.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:51:06+00:00",
+    "stage": "inner_diagnostics_end",
+    "available_ram_bytes": 2190213120,
+    "available_ram_mb": 2088.75,
+    "available_ram_gib": 2.04,
+    "process_rss_mb": 45.69,
+    "expected_peak_mb": 100.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:52:11+00:00",
+    "stage": "exp3b_inner_tuning_start",
+    "available_ram_bytes": 2283405312,
+    "available_ram_mb": 2177.62,
+    "available_ram_gib": 2.127,
+    "process_rss_mb": 30.97,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:52:12+00:00",
+    "stage": "exp3b_inner_tuning_end",
+    "available_ram_bytes": 2294435840,
+    "available_ram_mb": 2188.14,
+    "available_ram_gib": 2.137,
+    "process_rss_mb": 46.25,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:53:04+00:00",
+    "stage": "detailed_inner_opt_start",
+    "available_ram_bytes": 2322358272,
+    "available_ram_mb": 2214.77,
+    "available_ram_gib": 2.163,
+    "process_rss_mb": 30.82,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:53:04+00:00",
+    "stage": "detailed_inner_opt_end",
+    "available_ram_bytes": 2262429696,
+    "available_ram_mb": 2157.62,
+    "available_ram_gib": 2.107,
+    "process_rss_mb": 46.36,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:54:17+00:00",
+    "stage": "exp3c_outer_validation_start",
+    "available_ram_bytes": 1854976000,
+    "available_ram_mb": 1769.04,
+    "available_ram_gib": 1.728,
+    "process_rss_mb": 30.71,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:54:42+00:00",
+    "stage": "exp3c_outer_validation_start",
+    "available_ram_bytes": 2192969728,
+    "available_ram_mb": 2091.38,
+    "available_ram_gib": 2.042,
+    "process_rss_mb": 30.91,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:54:47+00:00",
+    "stage": "exp3c_outer_validation_end",
+    "available_ram_bytes": 2150252544,
+    "available_ram_mb": 2050.64,
+    "available_ram_gib": 2.003,
+    "process_rss_mb": 51.21,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:55:23+00:00",
+    "stage": "strict_inner_protection_start",
+    "available_ram_bytes": 2166042624,
+    "available_ram_mb": 2065.7,
+    "available_ram_gib": 2.017,
+    "process_rss_mb": 30.58,
+    "expected_peak_mb": 100.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:55:24+00:00",
+    "stage": "strict_inner_protection_end",
+    "available_ram_bytes": 2144948224,
+    "available_ram_mb": 2045.58,
+    "available_ram_gib": 1.998,
+    "process_rss_mb": 45.81,
+    "expected_peak_mb": 100.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:56:23+00:00",
+    "stage": "final_track3_run_start",
+    "available_ram_bytes": 2172592128,
+    "available_ram_mb": 2071.95,
+    "available_ram_gib": 2.023,
+    "process_rss_mb": 30.83,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T04:56:25+00:00",
+    "stage": "final_track3_run_end",
+    "available_ram_bytes": 2111782912,
+    "available_ram_mb": 2013.95,
+    "available_ram_gib": 1.967,
+    "process_rss_mb": 52.13,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:21:01+00:00",
+    "stage": "explore_tracks_1_2_start",
+    "available_ram_bytes": 2197385216,
+    "available_ram_mb": 2095.59,
+    "available_ram_gib": 2.046,
+    "process_rss_mb": 30.11,
+    "expected_peak_mb": 100.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:21:01+00:00",
+    "stage": "explore_tracks_1_2_end",
+    "available_ram_bytes": 2187276288,
+    "available_ram_mb": 2085.95,
+    "available_ram_gib": 2.037,
+    "process_rss_mb": 31.7,
+    "expected_peak_mb": 100.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:21:59+00:00",
+    "stage": "test_grand_fusion_data_start",
+    "available_ram_bytes": 2261532672,
+    "available_ram_mb": 2156.77,
+    "available_ram_gib": 2.106,
+    "process_rss_mb": 30.22,
+    "expected_peak_mb": 100.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:21:59+00:00",
+    "stage": "test_grand_fusion_data_end",
+    "available_ram_bytes": 2246115328,
+    "available_ram_mb": 2142.06,
+    "available_ram_gib": 2.092,
+    "process_rss_mb": 41.56,
+    "expected_peak_mb": 100.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:22:45+00:00",
+    "stage": "grand_fusion_start",
+    "available_ram_bytes": 2244165632,
+    "available_ram_mb": 2140.2,
+    "available_ram_gib": 2.09,
+    "process_rss_mb": 30.57,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  },
+  {
+    "timestamp_utc": "2026-11-05T05:22:46+00:00",
+    "stage": "grand_fusion_end",
+    "available_ram_bytes": 2235035648,
+    "available_ram_mb": 2131.5,
+    "available_ram_gib": 2.082,
+    "process_rss_mb": 48.17,
+    "expected_peak_mb": 120.0,
+    "passed_guard": true
+  }
+]

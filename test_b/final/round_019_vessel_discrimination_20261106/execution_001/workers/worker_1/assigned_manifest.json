@@ -1,0 +1,227 @@
+{
+  "completed_at": "2026-11-06T14:26:21.671101+09:00",
+  "source_fingerprints": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_01.parquet": {
+      "sha256": "4dfd4dac39805874f46c701a65fb705698923d5d757a550cb75a04c31d17c871",
+      "bytes": 16564885
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_02.parquet": {
+      "sha256": "aa09e5b989de86f5911885c2926382061dd1b2afed7d2035e9de79e2a0c0c20f",
+      "bytes": 15957874
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_03.parquet": {
+      "sha256": "351fbae98054962046da0a364d12173090cc823c295910893cc9cf23789f6304",
+      "bytes": 21699918
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_04.parquet": {
+      "sha256": "75d3ac451b4d20ead7eaa0467bb6a394e014e552f05fa9282261361a08a84ba8",
+      "bytes": 23598660
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_05.parquet": {
+      "sha256": "08eb9aed48e045f7c22a5062a3c2f72278ce239e44a4f4c897bf2b208a32b8bf",
+      "bytes": 25048144
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_017_fleet_negatives_20261106\\execution_001\\hourly_06.parquet": {
+      "sha256": "69090e150c4fdfb5931e6e717e834c0c01c604bfbae2de5994c6327aa11d0827",
+      "bytes": 25492577
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py": {
+      "sha256": "41152a907e47ca1b3c18478c0d77d791f3a1c880f2d46fc7a982ebe66ff7c43c",
+      "bytes": 8296
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106\\score_fleet.py": {
+      "sha256": "711368f65e7c92fc853ae6acdad2607bd9d5adb957712f49cd5fbc8a3d3ff47b",
+      "bytes": 22699
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\density.json": {
+      "sha256": "c122b827fb0b9fe480434f821162035702e34b0fc465762bdbeca0aeeadb1328",
+      "bytes": 1882448
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\gap_reference.npy": {
+      "sha256": "08145272419ec53837074f5602e34a9be36e5b1311952e4b0c637e64716daa9f",
+      "bytes": 31037672
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\harbors.json": {
+      "sha256": "3c1888f9714f675110be5181dc053398f955a23c7f68989c9c223bb77ab09309",
+      "bytes": 4020
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\jump_reference.npy": {
+      "sha256": "a9d303efa85c06d6d3a75e622f0b76af2c64ca585228a177c4e95d8f21d87b0c",
+      "bytes": 31037672
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references\\provenance.json": {
+      "sha256": "052f39d4dc69c9a622a654885248f2509c385c2760c578f73cc98a3633e38986",
+      "bytes": 3397
+    }
+  },
+  "rows": 954193,
+  "vessels": 1870,
+  "min_ts": 490896,
+  "max_ts": 495239,
+  "invalid_centroid_rows": 0,
+  "partition_count": 128,
+  "batch_size": 65536,
+  "partition_rule": "zlib.crc32(UTF8 rfid_id) modulo 128",
+  "partitions": [
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_001.parquet",
+      "rows": 29748,
+      "sha256": "a2a991e4a64f10dc577d547191cfa7332537e94fbd11912561e51a9cb7ea4409"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_005.parquet",
+      "rows": 23068,
+      "sha256": "96c530581e3522d047180fc117ad2d6f992a6abdc8c64856316774e4f4f8b309"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_009.parquet",
+      "rows": 39702,
+      "sha256": "56e857a1f4610e86ea371c8b8ad84d49083691e4eb1da272b0950193a1522e11"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_013.parquet",
+      "rows": 25197,
+      "sha256": "c4e44d6e17daf0892b57467efc4cc4206757afdf4800b7685dfc8e482a6b7d03"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_017.parquet",
+      "rows": 26897,
+      "sha256": "352b3e36e16b12e8978b95d110aefa76f13847bca1e246d5a7140a8570b4e9e1"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_021.parquet",
+      "rows": 20867,
+      "sha256": "9e6e1e0b5f7156c3c202ac2b1ae3b4836aac55d3a317746ac4e8977c1a797643"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_025.parquet",
+      "rows": 21929,
+      "sha256": "ffddfcf4b923166a8bcc4ec4f1027e5f4325a8581b6c0c8d57f6c62e20ab66bb"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_029.parquet",
+      "rows": 23613,
+      "sha256": "8844611e967f465ea890429ad137ce8552d5e48f9be17c51b12a0b50625c3e2c"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_033.parquet",
+      "rows": 25957,
+      "sha256": "7bcdf25dfb118b859bd705a1b293cecc2f9f8fa020d44f4428aa430d297accfe"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_037.parquet",
+      "rows": 21367,
+      "sha256": "b85bf89cff32c6bdbcbb0613f5b9ec61cda22707410f7e96681518c6f45d84d4"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_041.parquet",
+      "rows": 31986,
+      "sha256": "b6201525df110357f194e06d91491fbe757a4486beccf0779f925fa84cc84c77"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_045.parquet",
+      "rows": 38133,
+      "sha256": "855a6f5853f6e7dfe255315ae88e81686ee34116abf70f899cc40d20512b861f"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_049.parquet",
+      "rows": 34134,
+      "sha256": "6103bd12c0d2a97cb7ff5603c7d0b5c89fc901df69b1abbf5e5c7bd23d6f161e"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_053.parquet",
+      "rows": 41596,
+      "sha256": "7176be28d5fa5c7372cdead7cafcd36b826d8bde29ca95be461a364baf9fcbf5"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_057.parquet",
+      "rows": 27634,
+      "sha256": "ca1d57faa8328715d5cbc819ad2084026ae9530692f61c4f692f2be9c626fb8b"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_061.parquet",
+      "rows": 31652,
+      "sha256": "d32a97671767d8161e25b05aad8c48b724820b69de4993eddd5ac4030301d1ff"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_065.parquet",
+      "rows": 32353,
+      "sha256": "840bdadb5f2a9eaba51af7147a65c5f574e9418ff7efd52a6b97c6ad90393420"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_069.parquet",
+      "rows": 30299,
+      "sha256": "44c1e1c4928fa884ea07fcce97ab63d6ec13d112add9a8af0d67416dfa46e8bd"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_073.parquet",
+      "rows": 26395,
+      "sha256": "c67a5ece2ac6500a8c19efdef736bc0c2c9890b547568092511abcc4701928e1"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_077.parquet",
+      "rows": 21263,
+      "sha256": "dd33b5890a8954977ec51305cb16b53098a6a6225203374c67506326a3823811"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_081.parquet",
+      "rows": 26864,
+      "sha256": "8639cb3fe093c36e092b7a072c9ef1b3b945f8a49a7d700d59fa8cf417f48c7d"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_085.parquet",
+      "rows": 38402,
+      "sha256": "7d45a66de7b36c25b4859ad2e8b1f94e9af2553e0c260fc2f3ba7072f78bc68b"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_089.parquet",
+      "rows": 33013,
+      "sha256": "d83eb52e114a0feb43da0ea2d5319a2f710654e81fea0e5f83e277ea71c4759f"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_093.parquet",
+      "rows": 33812,
+      "sha256": "63473bef09ddfc0be4449dbe7d611a3470fabead663025f6b9d352a3b61f1990"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_097.parquet",
+      "rows": 26749,
+      "sha256": "0d5ca5d9b25c92086c9fb97ed3f26a19cb7bd6e18ef4a3578f9fb1b16a7d5256"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_101.parquet",
+      "rows": 32947,
+      "sha256": "5d526988ce45cf6fe86dc1e5d103e4a19db750aebb98271034b3069f2ec1bc1a"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_105.parquet",
+      "rows": 35503,
+      "sha256": "7db2def0f2b55b96375debe61912ad7cfb35ffe349dab2095d8e775def858c23"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_109.parquet",
+      "rows": 32985,
+      "sha256": "5f308792cf3e08b23d0fa9876e46a82af1cc75ab580063cb1e17d4824d79808b"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_113.parquet",
+      "rows": 27839,
+      "sha256": "d04c95d84fc9b6e1091eb457a6cf46e007af115cefde3439c35bbca5de9a2fff"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_117.parquet",
+      "rows": 31693,
+      "sha256": "85fd80d659f7efe3d2b28f46d40c98a63c4160c6799db7daf7bdb9c93a60ec0c"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_121.parquet",
+      "rows": 23377,
+      "sha256": "665ea9bb022b0e4a6779eacf10a3eacff44349cc6ed874b26049f1ad3fd3c632"
+    },
+    {
+      "path": "..\\..\\staging\\attempt_20261106_142609_1708\\part_125.parquet",
+      "rows": 37219,
+      "sha256": "3d42caf126359a93b5d86c571de004d33d36c8071afcdc721da3b338b8fc6000"
+    }
+  ]
+}

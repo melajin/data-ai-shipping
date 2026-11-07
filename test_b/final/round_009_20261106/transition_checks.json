@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "requested_model": "GPT-6 Luna",
+  "requested_effort": "xhigh",
+  "check_count": 11,
+  "checks": [
+    "all-row raw valid-triple/pattern masks are score-independent, preserve input order, and retain NaN-score geometry",
+    "missing exact t-2 key defers despite observed t-1, while an observed valid non-pattern triple rejects at s2",
+    "previous geometry with NaN score is still usable by s1 and the current pattern",
+    "triple starting exactly t-720 is included; older triple and current-end triple are excluded",
+    "24 references/3 end dates pass, 23 defer, and zero pattern count over a valid denominator yields rate 0",
+    "five prior-only same-gear peers qualify at the shared query time; exact 1/36 tie and equal-vessel rarity are rationally counted",
+    "distinct B0/S/G winners confirm descending legacy and peer-rarity-first G ranking",
+    "B0/S/G fallback order is [.9,.5,.1] and one shared cap handles G pool sizes 3, 1 and 0",
+    "unknown gear and a known singleton defer at s4",
+    "appending a future observation leaves all existing raw triplets, reference metrics, peer ranks and stages unchanged",
+    "all stage masks are monotone; duplicate RFID/hour and fractional source-clock keys are rejected"
+  ],
+  "synthetic_rows": 517,
+  "raw_inventory_totals": {
+    "valid_triple_n": 402,
+    "pattern_n": 25
+  },
+  "distinct_winner_ordinals": {
+    "B0": 53,
+    "S": 49,
+    "G": 46
+  },
+  "t720_own_rate": [
+    1,
+    36
+  ],
+  "t720_peer_rarity_exact": [
+    9,
+    10
+  ],
+  "source_hashes_before": {
+    "transition_rules.py": "80da231443a7c16b2e05d5b348bbfb30d9608594af92f971f37c0ffbfffd7360",
+    "check_transition_rules.py": "5cf9e49f8c852c5582b2165021ba342e506102e45bbe67c587041a4275e21431"
+  },
+  "source_hashes_after": {
+    "transition_rules.py": "80da231443a7c16b2e05d5b348bbfb30d9608594af92f971f37c0ffbfffd7360",
+    "check_transition_rules.py": "5cf9e49f8c852c5582b2165021ba342e506102e45bbe67c587041a4275e21431"
+  },
+  "ram_preflight": {
+    "checked_at": "2026-11-06T03:24:06.630252+09:00",
+    "available_mib": 4570.98,
+    "luna_fixture_extra_mib": 768,
+    "gemini_synthetic_reserve_mib": 512,
+    "overlap_job_reserve_mib": 0,
+    "other_python_jobs": [],
+    "reserve_mib": 640,
+    "required_available_mib": 1920,
+    "allowed": true,
+    "estimate_basis": "small synthetic fixtures only; 768 MiB Luna plus fixed 512 MiB Gemini reserve plus 512 MiB per other active Python job plus 640 MiB reserve"
+  },
+  "scope": "synthetic-only in-memory fixtures; no R4/R3 inputs, raw CSV/cache, labels, event scoring or model training read"
+}

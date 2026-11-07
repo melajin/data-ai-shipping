@@ -1,0 +1,12 @@
+{
+  "run_id": "run_a2b0e4f8b7cc",
+  "ram_checked_at": "2026-11-05T22:57:36+09:00",
+  "free_gib": 4.36,
+  "estimated_extra_gib": 1.25,
+  "reserve_gib": 0.625,
+  "real_data_job_parallel": false,
+  "luna": {"dispatch":"ctx_5a73dc8bd4b2","task":"task_eae6b7e232e0","agent":"codex","model":"gpt-6-luna","effort":"xhigh","state":"ready","mode":"structured"},
+  "gemini": {"dispatch":"ctx_8322feb80663","task":"task_0229a32c3bbe","agent":"antigravity","model":"gemini-3.8-flash","effort":"high","state":"ready","mode":"terminal"},
+  "review_approval": {"terra":"msg_aebc4f83ba36","sonnet":"msg_278a19dd44f5","slot_clarification":"Top1 is rank1 of the same top4 list, not a fifth candidate"},
+  "models_are": "Orca request/receipt evidence, not independent provider certification"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "status": "fulfilled",
+    "value": {
+      "role": "luna",
+      "chunk_id": "6e050b",
+      "wall_time_seconds": 3.9230074999999998,
+      "exit_code": 0,
+      "original_token_count": 112,
+      "output": "{\"ok\":true,\"result\":{\"delivery\":\"reopened\",\"followUpOf\":\"ctx_5ed1e01120d7\",\"dispatchId\":\"ctx_d4391959c8d3\",\"taskId\":\"task_bea164be6f51\",\"runId\":\"run_a2b0e4f8b7cc\",\"state\":\"ready\",\"agent\":\"codex\",\"terminal\":\"structworker_1906f472-f746-453b-ad26-490b67f4daf1\",\"workspace\":\"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\",\"next\":\"Orca wakes you when workers report; end your turn when you're done.\"}}\n"
+    }
+  },
+  {
+    "status": "fulfilled",
+    "value": {
+      "role": "gemini",
+      "chunk_id": "b92d08",
+      "wall_time_seconds": 5.7936239,
+      "exit_code": 0,
+      "original_token_count": 110,
+      "output": "{\"ok\":true,\"result\":{\"delivery\":\"reopened\",\"followUpOf\":\"ctx_59c1e5a010b4\",\"dispatchId\":\"ctx_a5737b7ae5b9\",\"taskId\":\"task_47b43dfe0155\",\"runId\":\"run_a2b0e4f8b7cc\",\"state\":\"ready\",\"agent\":\"antigravity\",\"terminal\":\"term_00289eefc3bc605a39b1bef5e664e354\",\"workspace\":\"694309e1-3a51-45ba-b9c8-19f164cfd785::D:\\\\obsidian\\\\claude\\\\obsidian_export\\\\DATA AI SHIPPING\",\"next\":\"Orca wakes you when workers report; end your turn when you're done.\"}}\n"
+    }
+  }
+]

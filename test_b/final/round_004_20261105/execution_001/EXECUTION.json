@@ -1,0 +1,206 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-06T00:08:30+0900",
+  "root": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING",
+  "output_dir": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001",
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "command": [
+    "testB\\final\\round_004_20261105\\run_sequence.py",
+    "--output-dir",
+    "testB\\final\\round_004_20261105\\execution_001"
+  ],
+  "memory_requirement_bytes": 1476395008,
+  "estimated_extra_peak_bytes": 805306368,
+  "reserve_bytes": 671088640,
+  "stages": {
+    "data_read": {
+      "seconds": 0.7831685000019206,
+      "rows_frame": 99677,
+      "rows_gear": 82,
+      "rows_positives": 100,
+      "peak_working_set_bytes": 150978560
+    },
+    "build_rules": {
+      "seconds": 10.036784399999306,
+      "ledger_rows": 99677,
+      "stage0_candidates": 99677,
+      "stage1_candidates": 7758,
+      "stage2_candidates": 4361,
+      "stage3_candidates": 4123,
+      "prediction_rows": 963,
+      "peak_working_set_bytes": 339496960
+    },
+    "evaluate_rules": {
+      "seconds": 3.345812499999738,
+      "peak_working_set_bytes": 339496960
+    }
+  },
+  "other_processes": [
+    {
+      "pid": 7960,
+      "name": "explorer.exe",
+      "rss_bytes": 778149888
+    },
+    {
+      "pid": 18876,
+      "name": "Orca.exe",
+      "rss_bytes": 498950144
+    },
+    {
+      "pid": 23268,
+      "name": "Orca.exe",
+      "rss_bytes": 379449344
+    },
+    {
+      "pid": 12592,
+      "name": "agy.exe",
+      "rss_bytes": 302161920
+    },
+    {
+      "pid": 8764,
+      "name": "PhoneExperienceHost.exe",
+      "rss_bytes": 289542144
+    },
+    {
+      "pid": 21888,
+      "name": "Microsoft.CmdPal.UI.exe",
+      "rss_bytes": 280858624
+    },
+    {
+      "pid": 16048,
+      "name": "Orca.exe",
+      "rss_bytes": 276660224
+    },
+    {
+      "pid": 11272,
+      "name": "StartMenuExperienceHost.exe",
+      "rss_bytes": 207073280
+    },
+    {
+      "pid": 12048,
+      "name": "CrossDeviceService.exe",
+      "rss_bytes": 201068544
+    },
+    {
+      "pid": 20560,
+      "name": "codex.exe",
+      "rss_bytes": 191111168
+    },
+    {
+      "pid": 16496,
+      "name": "logioptionsplus_agent.exe",
+      "rss_bytes": 188628992
+    },
+    {
+      "pid": 21156,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 179445760
+    },
+    {
+      "pid": 21120,
+      "name": "msedgewebview2.exe",
+      "rss_bytes": 179023872
+    },
+    {
+      "pid": 4008,
+      "name": "SearchHost.exe",
+      "rss_bytes": 153821184
+    },
+    {
+      "pid": 6944,
+      "name": "SnippingTool.exe",
+      "rss_bytes": 144023552
+    }
+  ],
+  "ram_preflight": {
+    "checked_at": "2026-11-06T00:08:31+0900",
+    "available_bytes": 4312211456,
+    "total_bytes": 14827769856,
+    "allowed": true,
+    "simultaneous_dataset_jobs_authorized": false
+  },
+  "peak_working_set_bytes": 339496960,
+  "inputs": {
+    "featured_rows.parquet": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_002_20261105\\execution_002\\featured_rows.parquet",
+      "sha256": "030f0c2581c7e9df683c5f6d93a14ff462dd28e153b11c12623372a7117ee576",
+      "bytes": 6678410
+    },
+    "gear_registry.csv": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_003_20261105\\gear_registry.csv",
+      "sha256": "0a94249ad364500132d70521134fc493e836ec63d7d8734cc412e33c3adb73dd",
+      "bytes": 4474
+    },
+    "devset_positives.csv": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\round_008_linkage_audit_20261105\\devset_positives.csv",
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+      "bytes": 15646
+    }
+  },
+  "sources": {
+    "sequence_rules.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\sequence_rules.py",
+      "sha256": "0ace17eea6a569d3a827b1f398f1e5913d901edc48218d22bda66732f4c4cd22"
+    },
+    "evaluate_sequence.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\evaluate_sequence.py",
+      "sha256": "7083bb0af757cb819b0f2fa53e2db596b2c230f4df3be42358f5f8e52a48cb8c"
+    },
+    "run_sequence.py": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\run_sequence.py",
+      "sha256": "ee59771631cd0ac4847c9239224e92c715af7088f9fcf4f3953e7cc7a2e3858b"
+    },
+    "PROTOCOL.md": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\PROTOCOL.md",
+      "sha256": "e77fc94dd9f024c1538327fd24245ac69f33be3b667c78f7ae39a564748ac928"
+    },
+    "CONTRACT.md": {
+      "path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\CONTRACT.md",
+      "sha256": "7fbdc0e035878a18b35fba9b39e269dd58a43938e0d8378dc087e58c0dcce1b5"
+    }
+  },
+  "versions": {
+    "numpy": "2.2.5",
+    "pandas": "2.2.3",
+    "pyarrow": "24.0.0",
+    "psutil": "7.0.0"
+  },
+  "outputs": {
+    "predictions.csv": {
+      "sha256": "95a2e5edf680b72a0ea09f9a722674addd02505c774922404a869853ea027576",
+      "bytes": 84089
+    },
+    "pool_manifest.csv": {
+      "sha256": "f53b8026e4b79a261f224a2dfe1e9d92f4cd5727424d2ab6ff6b2cd5045276f3",
+      "bytes": 6689
+    },
+    "candidate_ledger.parquet": {
+      "sha256": "e0e1b5110bf3884f2dd8e0eb7e283bd455bf77069e994c176c4c437b3766d265",
+      "bytes": 6433671
+    },
+    "stage_counts.csv": {
+      "sha256": "e6bfa3b186711ec8b7eef5acb45ae16de9801dc15a069f0a990e8aa43811a1c5",
+      "bytes": 3493
+    },
+    "stage_event_coverage.csv": {
+      "sha256": "7074d8083d1872623459ba13be8e7907e3ee01a967cd2cd57db940270617a6f8",
+      "bytes": 16781
+    },
+    "event_results.csv": {
+      "sha256": "1e4450ce3205997e3f73972cb12408f2c74f2ecc478817cfb26a0b07e5c6dbcb",
+      "bytes": 71771
+    },
+    "metrics.json": {
+      "sha256": "6fc2ff20b34db073c2b2179d156382f01331c93b57bb45c43df6feb69bda3e01",
+      "bytes": 197650
+    },
+    "diagnostics.json": {
+      "sha256": "a1970debebf8f1246dfb28aad2f6929d7a6537a314cbc8c19b4bf6a77f9ca423",
+      "bytes": 1201
+    }
+  },
+  "exit_code": 0,
+  "finished_at": "2026-11-06T00:08:45+0900",
+  "elapsed_seconds": 15.117573799998354
+}

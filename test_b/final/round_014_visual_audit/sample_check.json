@@ -1,0 +1,95 @@
+{
+  "panels": [
+    {
+      "rfid_id": "31000245",
+      "number": 1,
+      "coordinate_source": "원본 WKT",
+      "filename": "panel_001_31000245.png",
+      "vertices": 2143,
+      "parts": 159,
+      "hourly_rows": 66,
+      "gap_count": 26,
+      "gap_markers": 106,
+      "coordinate_count_matches": true,
+      "vertex_mean_centers_match": true,
+      "peak_ties": 1,
+      "marginal_quantile_box": [
+        126.52667995,
+        126.56020113333334,
+        37.58908328333333,
+        37.666519550000004
+      ],
+      "joint_fraction_in_quantile_box": 0.9794680354643024,
+      "maps": [
+        {
+          "center_lat": 37.6280575,
+          "scale_bar_lat": 37.59302983333333,
+          "scale_bar_m": 5000,
+          "scale_bar_lon_span": 0.05661512387007406,
+          "meters_per_lon_degree_at_bar": 88315.62413382792,
+          "aspect": 1.2573258386632817,
+          "xlim": [
+            126.36517437212855,
+            126.71995062787146
+          ],
+          "ylim": [
+            37.58427291666666,
+            37.67184208333333
+          ]
+        },
+        {
+          "center_lat": 37.62780141666667,
+          "scale_bar_lat": 37.59372945933333,
+          "scale_bar_m": 5000,
+          "scale_bar_lon_span": 0.05661565388663803,
+          "meters_per_lon_degree_at_bar": 88314.79735289281,
+          "aspect": 1.2573214701474542,
+          "xlim": [
+            126.37089294429592,
+            126.71598813903742
+          ],
+          "ylim": [
+            37.58521147,
+            37.670391363333344
+          ]
+        },
+        {
+          "center_lat": 37.651763333333335,
+          "scale_bar_lat": 37.637596800000004,
+          "scale_bar_m": 2000,
+          "scale_bar_lon_span": 0.02265956931347546,
+          "meters_per_lon_degree_at_bar": 88262.93087623638,
+          "aspect": 1.2577304752065193,
+          "xlim": [
+            126.46074684161951,
+            126.60427815838048
+          ],
+          "ylim": [
+            37.63405516666667,
+            37.6694715
+          ]
+        }
+      ],
+      "line_policy": "Only consecutive vertices in each original WKT part; no cross-part or cross-hour interpolation"
+    }
+  ],
+  "failures": [],
+  "memory_checks": [
+    {
+      "time": "2026-11-06T09:17:45.503980+09:00",
+      "stage": "load scores",
+      "available_mib": 3706.8,
+      "estimated_peak_mib": 450,
+      "current_process_mib": 195.4,
+      "basis": "One vessel at a time; max 3,413 hourly rows; 1920x2880 RGBA canvas ~22 MiB; raw coordinate arrays and matplotlib collections; no parallel data jobs"
+    },
+    {
+      "time": "2026-11-06T09:17:45.658020+09:00",
+      "stage": "panel 001",
+      "available_mib": 3640.4,
+      "estimated_peak_mib": 500,
+      "current_process_mib": 249.3,
+      "basis": "One vessel at a time; max 3,413 hourly rows; 1920x2880 RGBA canvas ~22 MiB; raw coordinate arrays and matplotlib collections; no parallel data jobs"
+    }
+  ]
+}

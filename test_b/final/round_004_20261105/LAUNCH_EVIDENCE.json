@@ -1,0 +1,8 @@
+{
+ "run_id":"run_a2b0e4f8b7cc",
+ "checked_at":"2026-11-05T23:52:28+09:00",
+ "free_mib":4488.6,"estimated_extra_mib":1280,"reserve_mib":640,"parallel_data_jobs":0,
+ "luna":{"dispatch":"ctx_5ea006c1647d","task":"task_7300c2dd9000","agent":"codex","model":"gpt-6-luna","effort":"xhigh","state":"ready","mode":"structured"},
+ "gemini":{"dispatch":"ctx_24be1a2d84f1","task":"task_2f2e1db4a0dc","agent":"antigravity","model":"gemini-3.8-flash","effort":"high","state":"ready","mode":"terminal"},
+ "scope":"implementation and small synthetic checks only; actual experiment root-led after integration"
+}

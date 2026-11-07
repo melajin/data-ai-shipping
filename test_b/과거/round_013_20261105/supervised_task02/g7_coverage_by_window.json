@@ -1,0 +1,44 @@
+{
+  "7": {
+    "vessels_total": 82,
+    "vessels_by_status": {
+      "raw_history_insufficient": 11,
+      "valid_history_insufficient": 12,
+      "no_valid_voyage": 1,
+      "eligible": 58
+    },
+    "events_by_status_all": {
+      "raw_history_insufficient": 19,
+      "valid_history_insufficient": 12,
+      "no_valid_voyage": 1,
+      "eligible": 68
+    },
+    "events_by_status_tier01": {
+      "raw_history_insufficient": 11,
+      "valid_history_insufficient": 8,
+      "no_valid_voyage": 0,
+      "eligible": 41
+    }
+  },
+  "3": {
+    "vessels_total": 82,
+    "vessels_by_status": {
+      "raw_history_insufficient": 11,
+      "valid_history_insufficient": 3,
+      "no_valid_voyage": 0,
+      "eligible": 68
+    },
+    "events_by_status_all": {
+      "raw_history_insufficient": 19,
+      "valid_history_insufficient": 3,
+      "no_valid_voyage": 0,
+      "eligible": 78
+    },
+    "events_by_status_tier01": {
+      "raw_history_insufficient": 11,
+      "valid_history_insufficient": 3,
+      "no_valid_voyage": 0,
+      "eligible": 46
+    }
+  }
+}

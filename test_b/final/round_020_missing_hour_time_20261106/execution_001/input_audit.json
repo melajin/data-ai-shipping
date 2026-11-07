@@ -1,0 +1,29 @@
+{
+  "files": {
+    "hourly_01.parquet": 497942,
+    "hourly_02.parquet": 479288,
+    "hourly_03.parquet": 657292,
+    "hourly_04.parquet": 717294,
+    "hourly_05.parquet": 761846,
+    "hourly_06.parquet": 773403
+  },
+  "fleet_rows": 3887065,
+  "fleet_vessels": 7372,
+  "provided_vessels": 82,
+  "cohort_rows": 99677,
+  "retained_dataframe_mib": 9.981236457824707,
+  "retained_array_mib": 3.8023757934570312,
+  "geometry_contract_passed": true,
+  "batch_rows": 32768,
+  "time_contract": "naive integer epoch hours; no timezone conversion",
+  "model_features": [
+    "len_m",
+    "bbox_m",
+    "n_coords"
+  ],
+  "new_identity_mapping": false,
+  "regional_prior_used": false,
+  "new_training_performed": false,
+  "accident_times_read": false,
+  "noncohort_vessels_retained": false
+}

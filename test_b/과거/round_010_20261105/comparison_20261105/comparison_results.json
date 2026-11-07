@@ -1,0 +1,1338 @@
+{
+  "created_at": "2026-11-05T14:46:49.536093+09:00",
+  "scope": "post-result comparison; no blind independence claim",
+  "gemini_T1_grid_cells": 490,
+  "codex_T1_cells": 2520,
+  "codex_T2_cells": 2160,
+  "compared_records_including_duplicate_primary_width": 532,
+  "primary_numeric_comparison": [
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "ALL",
+      "metric": "lin_raw",
+      "aggregation": "event",
+      "gemini_n": 76,
+      "codex_n": 76,
+      "gemini_delta": -0.089,
+      "codex_delta": -0.08900783145920814,
+      "delta_difference_C_minus_G": -7.831459208143543e-06,
+      "delta_matches_G_rounding": true,
+      "gemini_raw_p": 0.01931,
+      "codex_raw_p": 0.01930795281029432,
+      "p_matches_G_rounding": true,
+      "gemini_ci95": [
+        -0.1609,
+        -0.02
+      ],
+      "codex_ci95": [
+        -0.15672216838638448,
+        -0.0170995236149501
+      ],
+      "gemini_mde": 0.12684,
+      "codex_mde": 0.12683600005414905,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "ALL",
+      "metric": "straight_win",
+      "aggregation": "event",
+      "gemini_n": 76,
+      "codex_n": 75,
+      "gemini_delta": 0.0039,
+      "codex_delta": 0.003935662686445522,
+      "delta_difference_C_minus_G": 3.566268644552249e-05,
+      "delta_matches_G_rounding": true,
+      "gemini_raw_p": 0.85678,
+      "codex_raw_p": 0.8567783767332856,
+      "p_matches_G_rounding": true,
+      "gemini_ci95": [
+        -0.0596,
+        0.066
+      ],
+      "codex_ci95": [
+        -0.0637797083721118,
+        0.06685315077172135
+      ],
+      "gemini_mde": 0.11652,
+      "codex_mde": 0.11808204562145296,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "ALL",
+      "metric": "speed_mean",
+      "aggregation": "event",
+      "gemini_n": 76,
+      "codex_n": 76,
+      "gemini_delta": 0.0301,
+      "codex_delta": 0.030128607309222073,
+      "delta_difference_C_minus_G": 2.8607309222074967e-05,
+      "delta_matches_G_rounding": true,
+      "gemini_raw_p": 0.44068,
+      "codex_raw_p": 0.44068208258647357,
+      "p_matches_G_rounding": true,
+      "gemini_ci95": [
+        -0.0443,
+        0.1056
+      ],
+      "codex_ci95": [
+        -0.0478190018116549,
+        0.10299848010792975
+      ],
+      "gemini_mde": 0.13999,
+      "codex_mde": 0.13998617267204408,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "ALL",
+      "metric": "step_mean",
+      "aggregation": "event",
+      "gemini_n": 75,
+      "codex_n": 75,
+      "gemini_delta": -0.0166,
+      "codex_delta": -0.016639850450740273,
+      "delta_difference_C_minus_G": -3.985045074027249e-05,
+      "delta_matches_G_rounding": true,
+      "gemini_raw_p": 0.68429,
+      "codex_raw_p": 0.6842882333219361,
+      "p_matches_G_rounding": true,
+      "gemini_ci95": [
+        -0.0915,
+        0.0576
+      ],
+      "codex_ci95": [
+        -0.09182518955520459,
+        0.05437443551162153
+      ],
+      "gemini_mde": 0.13725,
+      "codex_mde": 0.13725058225133727,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "ALL",
+      "metric": "bearing_consistency",
+      "aggregation": "event",
+      "gemini_n": 72,
+      "codex_n": 74,
+      "gemini_delta": 0.0118,
+      "codex_delta": 0.00761932269914711,
+      "delta_difference_C_minus_G": -0.004180677300852889,
+      "delta_matches_G_rounding": false,
+      "gemini_raw_p": 0.70275,
+      "codex_raw_p": 0.7669971961484222,
+      "p_matches_G_rounding": false,
+      "gemini_ci95": [
+        -0.0646,
+        0.0855
+      ],
+      "codex_ci95": [
+        -0.06326551329576052,
+        0.07854291387128474
+      ],
+      "gemini_mde": 0.13148,
+      "codex_mde": 0.128629626809064,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "ALL",
+      "metric": "turn_rate",
+      "aggregation": "event",
+      "gemini_n": 72,
+      "codex_n": 72,
+      "gemini_delta": -0.0576,
+      "codex_delta": -0.05878541784850939,
+      "delta_difference_C_minus_G": -0.0011854178485093889,
+      "delta_matches_G_rounding": false,
+      "gemini_raw_p": 0.10247,
+      "codex_raw_p": 0.09897277633632481,
+      "p_matches_G_rounding": false,
+      "gemini_ci95": [
+        -0.1247,
+        0.007
+      ],
+      "codex_ci95": [
+        -0.12605911772219067,
+        0.008790700865823765
+      ],
+      "gemini_mde": 0.12263,
+      "codex_mde": 0.12234753786880384,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "ALL",
+      "metric": "still_frac",
+      "aggregation": "event",
+      "gemini_n": 76,
+      "codex_n": 76,
+      "gemini_delta": null,
+      "codex_delta": null,
+      "delta_difference_C_minus_G": null,
+      "delta_matches_G_rounding": null,
+      "gemini_raw_p": null,
+      "codex_raw_p": null,
+      "p_matches_G_rounding": null,
+      "gemini_ci95": null,
+      "codex_ci95": null,
+      "gemini_mde": null,
+      "codex_mde": 0.21687712534673376,
+      "zero_inflation_comparison_prohibited": true,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "lin_raw",
+      "aggregation": "event",
+      "gemini_n": 48,
+      "codex_n": 48,
+      "gemini_delta": -0.1511,
+      "codex_delta": -0.15108451041291832,
+      "delta_difference_C_minus_G": 1.5489587081696232e-05,
+      "delta_matches_G_rounding": true,
+      "gemini_raw_p": 0.00193,
+      "codex_raw_p": 0.0019280743497980836,
+      "p_matches_G_rounding": true,
+      "gemini_ci95": [
+        -0.2324,
+        -0.0677
+      ],
+      "codex_ci95": [
+        -0.23224960814240317,
+        -0.06599217584781739
+      ],
+      "gemini_mde": 0.15063,
+      "codex_mde": 0.1506317983338479,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "straight_win",
+      "aggregation": "event",
+      "gemini_n": 48,
+      "codex_n": 47,
+      "gemini_delta": -0.0295,
+      "codex_delta": -0.03008454951405892,
+      "delta_difference_C_minus_G": -0.0005845495140589206,
+      "delta_matches_G_rounding": false,
+      "gemini_raw_p": 0.51917,
+      "codex_raw_p": 0.5191727608976657,
+      "p_matches_G_rounding": true,
+      "gemini_ci95": [
+        -0.1143,
+        0.0497
+      ],
+      "codex_ci95": [
+        -0.11142749051129938,
+        0.05211010653238401
+      ],
+      "gemini_mde": 0.14666,
+      "codex_mde": 0.14979604501096463,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "speed_mean",
+      "aggregation": "event",
+      "gemini_n": 48,
+      "codex_n": 48,
+      "gemini_delta": 0.0375,
+      "codex_delta": 0.03749864655550525,
+      "delta_difference_C_minus_G": -1.353444494749112e-06,
+      "delta_matches_G_rounding": true,
+      "gemini_raw_p": 0.47498,
+      "codex_raw_p": 0.4749763347864834,
+      "p_matches_G_rounding": true,
+      "gemini_ci95": [
+        -0.0534,
+        0.125
+      ],
+      "codex_ci95": [
+        -0.05571856879617272,
+        0.12892498219001297
+      ],
+      "gemini_mde": 0.16748,
+      "codex_mde": 0.16748089340212052,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "step_mean",
+      "aggregation": "event",
+      "gemini_n": 47,
+      "codex_n": 47,
+      "gemini_delta": -0.0468,
+      "codex_delta": -0.0467669255897856,
+      "delta_difference_C_minus_G": 3.3074410214398164e-05,
+      "delta_matches_G_rounding": true,
+      "gemini_raw_p": 0.29969,
+      "codex_raw_p": 0.2996915362229531,
+      "p_matches_G_rounding": true,
+      "gemini_ci95": [
+        -0.136,
+        0.0465
+      ],
+      "codex_ci95": [
+        -0.14125846420815205,
+        0.04706674602756685
+      ],
+      "gemini_mde": 0.16594,
+      "codex_mde": 0.16594107987122445,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "bearing_consistency",
+      "aggregation": "event",
+      "gemini_n": 46,
+      "codex_n": 47,
+      "gemini_delta": 0.0134,
+      "codex_delta": 0.013908182531976348,
+      "delta_difference_C_minus_G": 0.0005081825319763478,
+      "delta_matches_G_rounding": false,
+      "gemini_raw_p": 0.7555,
+      "codex_raw_p": 0.7428588256230244,
+      "p_matches_G_rounding": false,
+      "gemini_ci95": [
+        -0.0776,
+        0.107
+      ],
+      "codex_ci95": [
+        -0.08001894889854046,
+        0.09737813630203752
+      ],
+      "gemini_mde": 0.16985,
+      "codex_mde": 0.1657015687358565,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "turn_rate",
+      "aggregation": "event",
+      "gemini_n": 46,
+      "codex_n": 46,
+      "gemini_delta": -0.0329,
+      "codex_delta": -0.035499985663923,
+      "delta_difference_C_minus_G": -0.002599985663922999,
+      "delta_matches_G_rounding": false,
+      "gemini_raw_p": 0.4812,
+      "codex_raw_p": 0.46776700842133323,
+      "p_matches_G_rounding": false,
+      "gemini_ci95": [
+        -0.1175,
+        0.0488
+      ],
+      "codex_ci95": [
+        -0.11744552486191069,
+        0.043059255518917636
+      ],
+      "gemini_mde": 0.14909,
+      "codex_mde": 0.14929397489747082,
+      "zero_inflation_comparison_prohibited": false,
+      "inferential_result": true
+    },
+    {
+      "context": "10_design_grid",
+      "half_width_h": 3,
+      "design": "hod_1/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "still_frac",
+      "aggregation": "event",
+      "gemini_n": 48,
+      "codex_n": 48,
+      "gemini_delta": null,
+      "codex_delta": null,
+      "delta_difference_C_minus_G": null,
+      "delta_matches_G_rounding": null,
+      "gemini_raw_p": null,
+      "codex_raw_p": null,
+      "p_matches_G_rounding": null,
+      "gemini_ci95": null,
+      "codex_ci95": null,
+      "gemini_mde": null,
+      "codex_mde": 0.2664110943420395,
+      "zero_inflation_comparison_prohibited": true,
+      "inferential_result": true
+    }
+  ],
+  "primary_event_comparison": {
+    "lin_raw": {
+      "n_events": 100,
+      "both_acc_values_finite": 100,
+      "acc_value_disagreements_gt_1e_7": 0,
+      "acc_finite_mismatch_ids": [],
+      "percentile_disagreements_gt_1e_9": [],
+      "max_acc_abs_difference": 3.136380044566067e-14,
+      "max_percentile_abs_difference": 0.0
+    },
+    "straight_win": {
+      "n_events": 100,
+      "both_acc_values_finite": 99,
+      "acc_value_disagreements_gt_1e_7": 0,
+      "acc_finite_mismatch_ids": [
+        104
+      ],
+      "percentile_disagreements_gt_1e_9": [],
+      "max_acc_abs_difference": 8.333334022836425e-13,
+      "max_percentile_abs_difference": 0.0
+    },
+    "speed_mean": {
+      "n_events": 100,
+      "both_acc_values_finite": 100,
+      "acc_value_disagreements_gt_1e_7": 0,
+      "acc_finite_mismatch_ids": [],
+      "percentile_disagreements_gt_1e_9": [],
+      "max_acc_abs_difference": 6.093614501878619e-10,
+      "max_percentile_abs_difference": 0.0
+    },
+    "step_mean": {
+      "n_events": 100,
+      "both_acc_values_finite": 99,
+      "acc_value_disagreements_gt_1e_7": 0,
+      "acc_finite_mismatch_ids": [],
+      "percentile_disagreements_gt_1e_9": [],
+      "max_acc_abs_difference": 1.7781776051606357e-10,
+      "max_percentile_abs_difference": 0.0
+    },
+    "bearing_consistency": {
+      "n_events": 100,
+      "both_acc_values_finite": 93,
+      "acc_value_disagreements_gt_1e_7": 0,
+      "acc_finite_mismatch_ids": [
+        19,
+        48,
+        113,
+        117,
+        161
+      ],
+      "percentile_disagreements_gt_1e_9": [
+        10,
+        26,
+        34,
+        43,
+        65,
+        68,
+        77,
+        86,
+        100,
+        114,
+        123,
+        125,
+        138
+      ],
+      "max_acc_abs_difference": 2.4424906541753444e-15,
+      "max_percentile_abs_difference": 0.04166666666666674
+    },
+    "turn_rate": {
+      "n_events": 100,
+      "both_acc_values_finite": 93,
+      "acc_value_disagreements_gt_1e_7": 0,
+      "acc_finite_mismatch_ids": [],
+      "percentile_disagreements_gt_1e_9": [
+        10,
+        26,
+        34,
+        65,
+        77,
+        86,
+        100,
+        102,
+        123,
+        125,
+        138
+      ],
+      "max_acc_abs_difference": 1.2212453270876722e-13,
+      "max_percentile_abs_difference": 0.08791208791208793
+    },
+    "still_frac": {
+      "n_events": 100,
+      "both_acc_values_finite": 100,
+      "acc_value_disagreements_gt_1e_7": 0,
+      "acc_finite_mismatch_ids": [],
+      "percentile_disagreements_gt_1e_9": [],
+      "max_acc_abs_difference": 0.0,
+      "max_percentile_abs_difference": null
+    }
+  },
+  "canonical_gate": [
+    {
+      "metric": "lin_raw",
+      "stratum": "ALL",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": true,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": true,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": -0.08900783145920814,
+      "n": 76,
+      "raw_p": 0.01930795281029432,
+      "adjusted_p": 0.13515566967206025,
+      "ci95": [
+        -0.15672216838638448,
+        -0.0170995236149501
+      ],
+      "mde": 0.12683600005414905,
+      "sign_count": 10
+    },
+    {
+      "metric": "lin_raw",
+      "stratum": "Tier0_1",
+      "normal_single_Bonferroni_pass": true,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": true,
+        "corrected_p_below_alpha": true,
+        "ci95_excludes_zero": true,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": -0.15108451041291832,
+      "n": 48,
+      "raw_p": 0.0019280743497980836,
+      "adjusted_p": 0.013496520448586586,
+      "ci95": [
+        -0.23224960814240317,
+        -0.06599217584781739
+      ],
+      "mde": 0.1506317983338479,
+      "sign_count": 10
+    },
+    {
+      "metric": "straight_win",
+      "stratum": "ALL",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": 0.003935662686445522,
+      "n": 75,
+      "raw_p": 0.8567783767332856,
+      "adjusted_p": 1.0,
+      "ci95": [
+        -0.0637797083721118,
+        0.06685315077172135
+      ],
+      "mde": 0.11808204562145296,
+      "sign_count": 10
+    },
+    {
+      "metric": "straight_win",
+      "stratum": "Tier0_1",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": false
+      },
+      "delta": -0.03008454951405892,
+      "n": 47,
+      "raw_p": 0.5191727608976657,
+      "adjusted_p": 1.0,
+      "ci95": [
+        -0.11142749051129938,
+        0.05211010653238401
+      ],
+      "mde": 0.14979604501096463,
+      "sign_count": 6
+    },
+    {
+      "metric": "speed_mean",
+      "stratum": "ALL",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": 0.030128607309222073,
+      "n": 76,
+      "raw_p": 0.44068208258647357,
+      "adjusted_p": 1.0,
+      "ci95": [
+        -0.0478190018116549,
+        0.10299848010792975
+      ],
+      "mde": 0.13998617267204408,
+      "sign_count": 10
+    },
+    {
+      "metric": "speed_mean",
+      "stratum": "Tier0_1",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": 0.03749864655550525,
+      "n": 48,
+      "raw_p": 0.4749763347864834,
+      "adjusted_p": 1.0,
+      "ci95": [
+        -0.05571856879617272,
+        0.12892498219001297
+      ],
+      "mde": 0.16748089340212052,
+      "sign_count": 10
+    },
+    {
+      "metric": "step_mean",
+      "stratum": "ALL",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": false
+      },
+      "delta": -0.016639850450740273,
+      "n": 75,
+      "raw_p": 0.6842882333219361,
+      "adjusted_p": 1.0,
+      "ci95": [
+        -0.09182518955520459,
+        0.05437443551162153
+      ],
+      "mde": 0.13725058225133727,
+      "sign_count": 5
+    },
+    {
+      "metric": "step_mean",
+      "stratum": "Tier0_1",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": -0.0467669255897856,
+      "n": 47,
+      "raw_p": 0.2996915362229531,
+      "adjusted_p": 1.0,
+      "ci95": [
+        -0.14125846420815205,
+        0.04706674602756685
+      ],
+      "mde": 0.16594107987122445,
+      "sign_count": 10
+    },
+    {
+      "metric": "bearing_consistency",
+      "stratum": "ALL",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": 0.00761932269914711,
+      "n": 74,
+      "raw_p": 0.7669971961484222,
+      "adjusted_p": 1.0,
+      "ci95": [
+        -0.06326551329576052,
+        0.07854291387128474
+      ],
+      "mde": 0.128629626809064,
+      "sign_count": 8
+    },
+    {
+      "metric": "bearing_consistency",
+      "stratum": "Tier0_1",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": false
+      },
+      "delta": 0.013908182531976348,
+      "n": 47,
+      "raw_p": 0.7428588256230244,
+      "adjusted_p": 1.0,
+      "ci95": [
+        -0.08001894889854046,
+        0.09737813630203752
+      ],
+      "mde": 0.1657015687358565,
+      "sign_count": 4
+    },
+    {
+      "metric": "turn_rate",
+      "stratum": "ALL",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": true,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": -0.05878541784850939,
+      "n": 72,
+      "raw_p": 0.09897277633632481,
+      "adjusted_p": 0.6928094343542737,
+      "ci95": [
+        -0.12605911772219067,
+        0.008790700865823765
+      ],
+      "mde": 0.12234753786880384,
+      "sign_count": 10
+    },
+    {
+      "metric": "turn_rate",
+      "stratum": "Tier0_1",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": true
+      },
+      "delta": -0.035499985663923,
+      "n": 46,
+      "raw_p": 0.46776700842133323,
+      "adjusted_p": 1.0,
+      "ci95": [
+        -0.11744552486191069,
+        0.043059255518917636
+      ],
+      "mde": 0.14929397489747082,
+      "sign_count": 10
+    },
+    {
+      "metric": "still_frac",
+      "stratum": "ALL",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": false
+      },
+      "delta": null,
+      "n": 76,
+      "raw_p": 1.0,
+      "adjusted_p": 1.0,
+      "ci95": null,
+      "mde": 0.21687712534673376,
+      "sign_count": 0
+    },
+    {
+      "metric": "still_frac",
+      "stratum": "Tier0_1",
+      "normal_single_Bonferroni_pass": false,
+      "literal_double_Bonferroni_pass": false,
+      "normal_checks": {
+        "abs_delta_at_least_005": false,
+        "corrected_p_below_alpha": false,
+        "ci95_excludes_zero": false,
+        "sign_consistent_at_least_8_of_10": false
+      },
+      "delta": null,
+      "n": 48,
+      "raw_p": 1.0,
+      "adjusted_p": 1.0,
+      "ci95": null,
+      "mde": 0.2664110943420395,
+      "sign_count": 0
+    }
+  ],
+  "state_comparison": [
+    {
+      "stratum": "ALL",
+      "state": "저속굴곡",
+      "n": 76,
+      "gemini_acc_rate": 0.8026,
+      "codex_acc_rate": 0.8026315789473685,
+      "gemini_ctrl_rate": 0.8164,
+      "codex_ctrl_rate": 0.8164038792374556,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 0.75391,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.1418408665206409,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "ALL",
+      "state": "이동",
+      "n": 76,
+      "gemini_acc_rate": 0.1711,
+      "codex_acc_rate": 0.17105263157894737,
+      "gemini_ctrl_rate": 0.195,
+      "codex_ctrl_rate": 0.19502863726973385,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 1.0,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.19013457559802324,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "ALL",
+      "state": "정박정지",
+      "n": 76,
+      "gemini_acc_rate": 0.5658,
+      "codex_acc_rate": 0.5657894736842105,
+      "gemini_ctrl_rate": 0.4781,
+      "codex_ctrl_rate": 0.4781093936536724,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 0.28628,
+      "codex_p_pairing_mixture_merger": 0.6107967902831252,
+      "codex_mde_approx": 0.21623639320379212,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "ALL",
+      "state": "해상정지",
+      "n": 76,
+      "gemini_acc_rate": 0.0658,
+      "codex_acc_rate": 0.06578947368421052,
+      "gemini_ctrl_rate": 0.1248,
+      "codex_ctrl_rate": 0.12479739680547856,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 0.34375,
+      "codex_p_pairing_mixture_merger": 0.7194900983694459,
+      "codex_mde_approx": 0.14207136315856445,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "ALL",
+      "state": "연안정지",
+      "n": 76,
+      "gemini_acc_rate": 0.0132,
+      "codex_acc_rate": 0.013157894736842105,
+      "gemini_ctrl_rate": 0.0202,
+      "codex_ctrl_rate": 0.020173607488724103,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 1.0,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.07287603391235319,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "Tier0_1",
+      "state": "저속굴곡",
+      "n": 48,
+      "gemini_acc_rate": 0.8125,
+      "codex_acc_rate": 0.8125,
+      "gemini_ctrl_rate": 0.8016,
+      "codex_ctrl_rate": 0.8016352140725456,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 1.0,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.1701027056400943,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "Tier0_1",
+      "state": "이동",
+      "n": 48,
+      "gemini_acc_rate": 0.125,
+      "codex_acc_rate": 0.125,
+      "gemini_ctrl_rate": 0.1756,
+      "codex_ctrl_rate": 0.17559139943472912,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 0.75391,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.22553507733122574,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "Tier0_1",
+      "state": "정박정지",
+      "n": 48,
+      "gemini_acc_rate": 0.5833,
+      "codex_acc_rate": 0.5833333333333334,
+      "gemini_ctrl_rate": 0.5231,
+      "codex_ctrl_rate": 0.5231284582682286,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 0.42395,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.27452217251325095,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "Tier0_1",
+      "state": "해상정지",
+      "n": 48,
+      "gemini_acc_rate": 0.1042,
+      "codex_acc_rate": 0.10416666666666667,
+      "gemini_ctrl_rate": 0.1287,
+      "codex_ctrl_rate": 0.12869642343935594,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 1.0,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.18226006260531338,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "Tier0_1",
+      "state": "연안정지",
+      "n": 48,
+      "gemini_acc_rate": 0.0208,
+      "codex_acc_rate": 0.020833333333333332,
+      "gemini_ctrl_rate": 0.0211,
+      "codex_ctrl_rate": 0.021076254350052757,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 1.0,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.10282534068061729,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "기관손상",
+      "state": "저속굴곡",
+      "n": 28,
+      "gemini_acc_rate": 0.8929,
+      "codex_acc_rate": 0.8928571428571429,
+      "gemini_ctrl_rate": 0.9225,
+      "codex_ctrl_rate": 0.9224874378807059,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 1.0,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.20684545854880584,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "기관손상",
+      "state": "이동",
+      "n": 28,
+      "gemini_acc_rate": 0.2143,
+      "codex_acc_rate": 0.21428571428571427,
+      "gemini_ctrl_rate": 0.2043,
+      "codex_ctrl_rate": 0.20432048399256608,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 1.0,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.33358278029496513,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "기관손상",
+      "state": "정박정지",
+      "n": 28,
+      "gemini_acc_rate": 0.4286,
+      "codex_acc_rate": 0.42857142857142855,
+      "gemini_ctrl_rate": 0.3313,
+      "codex_ctrl_rate": 0.33134096949934166,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 0.72656,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.3463217635067238,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "기관손상",
+      "state": "해상정지",
+      "n": 28,
+      "gemini_acc_rate": 0.0357,
+      "codex_acc_rate": 0.03571428571428571,
+      "gemini_ctrl_rate": 0.1267,
+      "codex_ctrl_rate": 0.12665799577821846,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 0.625,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.24591741262088793,
+      "rates_comparable_but_p_methods_different": true
+    },
+    {
+      "stratum": "기관손상",
+      "state": "연안정지",
+      "n": 28,
+      "gemini_acc_rate": 0.0357,
+      "codex_acc_rate": 0.03571428571428571,
+      "gemini_ctrl_rate": 0.0196,
+      "codex_ctrl_rate": 0.019573217425023163,
+      "acc_rate_matches_G_rounding": true,
+      "ctrl_rate_matches_G_rounding": true,
+      "gemini_p_rounded_fractional_discordances": 1.0,
+      "codex_p_pairing_mixture_merger": 1.0,
+      "codex_mde_approx": 0.15463170856482128,
+      "rates_comparable_but_p_methods_different": true
+    }
+  ],
+  "direct_drift_comparison": [
+    {
+      "stratum": "ALL",
+      "n": 76,
+      "gemini_positive_events": 0,
+      "codex_positive_events": 3,
+      "gemini_acc_rate": 0.0,
+      "codex_acc_rate": 0.039473684210526314,
+      "gemini_ctrl_rate": 0.0151,
+      "codex_ctrl_rate": 0.01724642278460806,
+      "directly_comparable": false,
+      "reasons": [
+        "anchor definition differs",
+        "two hourly samples versus >=2h elapsed (three samples)",
+        "within-window detection versus globally sustained rows"
+      ]
+    },
+    {
+      "stratum": "Tier0_1",
+      "n": 48,
+      "gemini_positive_events": 0,
+      "codex_positive_events": 2,
+      "gemini_acc_rate": 0.0,
+      "codex_acc_rate": 0.041666666666666664,
+      "gemini_ctrl_rate": 0.0065,
+      "codex_ctrl_rate": 0.01875384832065469,
+      "directly_comparable": false,
+      "reasons": [
+        "anchor definition differs",
+        "two hourly samples versus >=2h elapsed (three samples)",
+        "within-window detection versus globally sustained rows"
+      ]
+    },
+    {
+      "stratum": "기관손상",
+      "n": 28,
+      "gemini_positive_events": 0,
+      "codex_positive_events": 2,
+      "gemini_acc_rate": 0.0,
+      "codex_acc_rate": 0.07142857142857142,
+      "gemini_ctrl_rate": 0.0213,
+      "codex_ctrl_rate": 0.026085568965033567,
+      "directly_comparable": false,
+      "reasons": [
+        "anchor definition differs",
+        "two hourly samples versus >=2h elapsed (three samples)",
+        "within-window detection versus globally sustained rows"
+      ]
+    }
+  ],
+  "gemini_forbidden_zero_inflated_percentile_cells": [
+    {
+      "design": "hod+-0h/nrows_matched",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-0h/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-0h/nrows_matched",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-0h/nrows_free",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-0h/nrows_free",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-0h/nrows_free",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-0h/nrows_free",
+      "stratum": "type_부유물감김",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-1h/nrows_matched",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-1h/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-1h/nrows_matched",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-1h/nrows_free",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-1h/nrows_free",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-1h/nrows_free",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-1h/nrows_free",
+      "stratum": "type_부유물감김",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-2h/nrows_matched",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-2h/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-2h/nrows_matched",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-2h/nrows_free",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-2h/nrows_free",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-2h/nrows_free",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-2h/nrows_free",
+      "stratum": "type_부유물감김",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-3h/nrows_matched",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-3h/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-3h/nrows_matched",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-3h/nrows_free",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-3h/nrows_free",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-3h/nrows_free",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-3h/nrows_free",
+      "stratum": "type_부유물감김",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-unconstrainedh/nrows_matched",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-unconstrainedh/nrows_matched",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-unconstrainedh/nrows_matched",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-unconstrainedh/nrows_matched",
+      "stratum": "type_부유물감김",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-unconstrainedh/nrows_free",
+      "stratum": "ALL",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-unconstrainedh/nrows_free",
+      "stratum": "Tier0_1",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-unconstrainedh/nrows_free",
+      "stratum": "type_기관손상",
+      "metric": "still_frac"
+    },
+    {
+      "design": "hod+-unconstrainedh/nrows_free",
+      "stratum": "type_부유물감김",
+      "metric": "still_frac"
+    }
+  ],
+  "gemini_T1_source_provenance": "root t1_decompose.py overwritten by Codex before separation; original Gemini source unavailable; current root t1_memory and t1_execution do not prove Gemini exit",
+  "Gemini_T2_exit_evidence": "reported as 0 in prose, no independently captured T2 execution receipt retained",
+  "input_counts": {
+    "source_rows": 822000,
+    "source_columns": [
+      "rfid_id_int",
+      "ts",
+      "part_dt",
+      "rfid_time",
+      "source_ordinal",
+      "len_m",
+      "bbox_m",
+      "cen_lon",
+      "cen_lat",
+      "state",
+      "s_zone",
+      "s_change",
+      "s_gap",
+      "score"
+    ],
+    "loaded_columns": [
+      "rfid_id_int",
+      "ts",
+      "len_m",
+      "bbox_m",
+      "cen_lon",
+      "cen_lat",
+      "state",
+      "score"
+    ],
+    "positive_events": 100,
+    "positive_vessels": 82,
+    "selected_rows": 99677,
+    "selected_vessels": 82,
+    "cause_field": "발생유형",
+    "cause_counts": {
+      "기관손상": 34,
+      "부유물감김": 11,
+      "운항저해": 9,
+      "기타": 8,
+      "화재": 7,
+      "침수": 6,
+      "추진기손상": 5,
+      "좌초/좌주": 4,
+      "충돌": 3,
+      "표류": 3,
+      "작업 중 인명사상": 2,
+      "침몰": 2,
+      "키손상": 2,
+      "방향상실": 1,
+      "전복": 1,
+      "해양오염": 1,
+      "접촉": 1
+    },
+    "tier01_events": 60,
+    "audit_status_counts": {
+      "LINKED_CLEAN": 95,
+      "LINKED_CONFLICT": 5
+    },
+    "lin_raw_excluded_len_lt_1_rows": 8498,
+    "lin_raw_excluded_nonfinite_rows": 0,
+    "missing_vessels": [],
+    "timestamp_min": 490896,
+    "timestamp_max": 495239,
+    "review_source_sha256": "5e5ee8e8389b92c7781eeafa36e199d78f67ac656b807dd4e4b155f88b7f14b8"
+  },
+  "sources": {
+    "comparison_20261105\\original_root_snapshot\\t1_gate_results.json": "09779cfaa610fc8d2d653276c633a4ea074a1a9c53fd2a0188ef39a32a7cb52e",
+    "comparison_20261105\\original_root_snapshot\\t2_state_distribution.json": "5c7ad5004a07eef90fb506f62fa3e33ec9bfa3a5ae7ad047e4f1155649ffe856",
+    "codex_independent\\t1_gate_results.json": "756dbabf231c86cd749e20c1f018e0c10d46d318fffde30444b119ff3979a559",
+    "codex_independent\\t2_state_distribution.json": "85f5012fa8218cb6203dd47c07c44a32929c60104d253c5d498a110adcaf67f5"
+  }
+}

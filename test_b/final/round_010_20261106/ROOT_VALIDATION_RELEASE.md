@@ -1,0 +1,13 @@
+# Root release: independent concordance then event availability ONLY
+
+Luna finalreport msg_f904ea32ce5f/ctx_6e4a0b5291e1:12syntheticschecks passedwithsourcehashbinding,ONEactualprobe99677rows82RFIDs,own96976peer94525,4.634sec175.94MiB. Gemini msg_8be19cf683d3/ctx_8433c01a5b6e independentlysameglobalcounts and12scalarqueries,4.153sec125.64MiB. Bothnoevents/predictions. Rowcountcopy/strictpast/neighbor/range/peerhistorycodeinspected; exactroute/port/normalstateunknown.
+
+Rootvalidate_probe.pycompiled. Itwillcheckactualcopiedkeys/centroids,all82countrowsagainstbothworkers,12distance+neighbor+historyqueries,tieidentityandstrictpastBEFOREpositiveCSVparse. Failurepreservesvalidationfolderandhalts; noforcedagreement. OnlythenfixedTier01owneligiblewindow>=50/60 andwholeanypeereligibleRFIDs>=6 availabilitygate. ThisISNOTaccidenthitperformance, no predictions or ranking created.
+
+CurrentRAM2026-11-06 03:55:53+09:00available4428.9MiB,nootherPythonjobs,expectedextra1280+reserve640;runnerrefreshesbeforeimports/read. AuthorizedONEnewroot_validation_001:
+
+```powershell
+python 'testB/final/round_010_20261106/validate_probe.py'
+```
+
+Sources/inputhashes andunchangedledger verifyfrozenbeforelabels. Outputsareavailabilityonly;passingpermitsnextfixedscoringdesign,notautomaticnewmodel/TestB/submission orsuccessclaim. Do notadjust50/60,6RFIDs,720h or24/3afterresult.

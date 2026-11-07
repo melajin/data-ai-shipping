@@ -1,0 +1,8 @@
+﻿{
+    "stage":  "before independent saved-result audit",
+    "checked_at":  "2026-11-05T20:18:15.2759533+09:00",
+    "available_ram_mib":  3495.1,
+    "total_ram_mib":  14140.9,
+    "estimated_additional_peak_mib":  100,
+    "estimate_basis":  "CSV/JSON inputs: 3,615 stored voyages, 200 event outcomes, 4,000x cluster indices per run; Python-standard-library-only pass; no parquet and no concurrent data calculation"
+}

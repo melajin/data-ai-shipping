@@ -1,0 +1,10 @@
+{
+ "checked_at":"2026-11-05T23:41:24+09:00",
+ "free_mib":4454.3,
+ "estimate_extra_mib":1792,
+ "reserve_mib":640,
+ "other_data_jobs":0,
+ "terra":{"dispatch":"ctx_f9103077ca1d","task":"task_89609ffca1d1","agent":"codex","state":"ready","inherited_requested_model":"gpt-6.1-terra","inherited_requested_effort":"high"},
+ "sonnet":{"dispatch":"ctx_0a3e1bdc588a","task":"task_e7cc549c1285","agent":"claude","state":"ready","inherited_requested_model":"claude-sonnet-5","inherited_requested_effort":"high"},
+ "inputs":["round2/execution_002","round3 gear/behavior inventory","REPORT_QUALIFICATIONS.md"]
+}

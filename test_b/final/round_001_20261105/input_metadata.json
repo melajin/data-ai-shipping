@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-11-05T13:45:13.610805+00:00",
+  "metadata_only": true,
+  "files": [
+    {
+      "path": "testB/과거/round_008_linkage_audit_20261105/dev_hourly_scores.parquet",
+      "bytes": 51584418,
+      "sha256": "44e960c100fcb29806711b42045bd4ae1a37f542ffd639eff0aff7b1f2b1c5b4",
+      "rows": 822000,
+      "row_groups": 1,
+      "schema": "rfid_id_int: int64\nts: int64\npart_dt: string\nrfid_time: int16\nsource_ordinal: int64\nlen_m: double\nbbox_m: double\ncen_lon: double\ncen_lat: double\nstate: string\ns_zone: double\ns_change: double\ns_gap: double\nscore: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1683",
+      "total_row_group_bytes": 57678223
+    },
+    {
+      "path": "testB/과거/round_008_linkage_audit_20261105/additional_hourly_scores.parquet",
+      "bytes": 3373601,
+      "sha256": "31a80050d15930fb21b000fb8627a9941a8e11f412f601d0600716962bcf81be",
+      "rows": 45750,
+      "row_groups": 1,
+      "schema": "rfid_id_int: int64\nts: int64\npart_dt: string\nrfid_time: int16\nsource_ordinal: int64\nlen_m: double\nbbox_m: double\ncen_lon: double\ncen_lat: double\nstate: string\ns_zone: double\ns_change: double\ns_gap: double\nscore: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 1683",
+      "total_row_group_bytes": 3582817
+    },
+    {
+      "path": "testB/과거/round_008_linkage_audit_20261105/devset_positives.csv",
+      "bytes": 15646,
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1"
+    },
+    {
+      "path": "testB/과거/first_results/hourly_scores.parquet",
+      "bytes": 3765001,
+      "sha256": "ab2230ef83aa6a3dec28fae03000294f581da6e0ee069f8210e3598a96549d14",
+      "rows": 46705,
+      "row_groups": 1,
+      "schema": "row_index: int64\npart_dt: int32\nrfid_id: string\nrfid_time: int16\nkey_valid: bool\nwkt_valid: bool\nn_coords: int32\nlen_m: double\nbbox_m: double\ncen_lon: double\ncen_lat: double\nsource_month: int8\nsource_file: string\nsource_ordinal: int64\nts: int64\nstate: string\ns_zone: double\ns_change: double\ns_gap: double\nscore: double\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 2370",
+      "total_row_group_bytes": 4107411
+    }
+  ]
+}

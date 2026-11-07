@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-06T14:26:06.788964+09:00",
+  "kind": "synthetic code checks, not actual-data performance",
+  "checks": [
+    "multi-event inclusive union",
+    "source ordinal and ts tie",
+    "h=9/10 significance boundary",
+    "Poisson-binomial",
+    "train-only transform and weights",
+    "heldout exclusion guard",
+    "optimizer toy"
+  ],
+  "passed": true
+}

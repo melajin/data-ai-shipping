@@ -1,0 +1,21 @@
+{
+  "total_events": 5,
+  "tier01_events": 3,
+  "rfid_count": 4,
+  "canonical_ledger_rows": 20,
+  "prediction_rows": 24,
+  "pool_manifest_rows": 12,
+  "event_result_rows": 30,
+  "coverage_rows": 5,
+  "operational_gate_passed": true,
+  "operational_gate_failures": [],
+  "rule_diagnostics": {
+    "candidate_counts": {
+      "s0": 20,
+      "s1": 16,
+      "s2": 16,
+      "s3": 16,
+      "s4": 10
+    }
+  }
+}

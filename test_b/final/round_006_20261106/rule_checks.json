@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "checks": [
+    "both observed boundaries and invalid/gap censoring",
+    "strict close boundary and inclusive start-window edge",
+    "10 runs/3 dates and 5 other-vessel boundary",
+    "current observed lower bound",
+    "future append invariance of earlier scores",
+    "unknown and singleton gear fallback",
+    "distinct B0/S/G winners and shared caps",
+    "defer/reject/not_applicable stage statuses",
+    "integer-hour/datetime equivalence and source_ts_hour lineage",
+    "nanosecond-unit and unaligned timestamps rejected",
+    "NaN coordinates do not invalidate duration geometry",
+    "NaN/inf score masks defer and preserve geometry-valid reference runs",
+    "G fallback reasons follow d3/d2/d0/empty actual pools",
+    "d0-failed rows stay outside every downstream candidate mask"
+  ],
+  "input_rows": 660,
+  "interface_fixture_rows": 2,
+  "fixture_only": true,
+  "real_data_loaded": false
+}

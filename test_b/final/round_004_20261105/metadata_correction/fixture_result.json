@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "verified_cases": [
+    {
+      "stage": "stage1",
+      "reason": "missing_previous",
+      "expected_status": "defer",
+      "actual_status": "defer",
+      "row_count": 1,
+      "status": "passed"
+    },
+    {
+      "stage": "stage1",
+      "reason": "invalid_previous",
+      "expected_status": "defer",
+      "actual_status": "defer",
+      "row_count": 1,
+      "status": "passed"
+    },
+    {
+      "stage": "stage1",
+      "reason": "previous_not_large",
+      "expected_status": "reject",
+      "actual_status": "reject",
+      "row_count": 1,
+      "status": "passed"
+    },
+    {
+      "stage": "stage1",
+      "reason": "current_not_small",
+      "expected_status": "reject",
+      "actual_status": "reject",
+      "row_count": 1,
+      "status": "passed"
+    },
+    {
+      "stage": "stage2",
+      "reason": "missing_next",
+      "expected_status": "defer",
+      "actual_status": "defer",
+      "row_count": 1,
+      "status": "passed"
+    },
+    {
+      "stage": "stage2",
+      "reason": "invalid_next",
+      "expected_status": "defer",
+      "actual_status": "defer",
+      "row_count": 1,
+      "status": "passed"
+    },
+    {
+      "stage": "stage2",
+      "reason": "next_not_small",
+      "expected_status": "reject",
+      "actual_status": "reject",
+      "row_count": 1,
+      "status": "passed"
+    }
+  ],
+  "keep_counts": {
+    "stage0_keep": 8,
+    "stage1_keep": 4,
+    "stage2_keep": 1
+  }
+}

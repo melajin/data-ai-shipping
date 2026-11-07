@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-11-05T16:48:23.322093+09:00",
+  "method": "streamed512KiB SHA256 read-only",
+  "files": [
+    {
+      "path": "testB/round_008_linkage_audit_20261105/dev_hourly_scores.parquet",
+      "bytes": 51584418,
+      "sha256": "44e960c100fcb29806711b42045bd4ae1a37f542ffd639eff0aff7b1f2b1c5b4"
+    },
+    {
+      "path": "testB/round_008_linkage_audit_20261105/devset_positives.csv",
+      "bytes": 15646,
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1"
+    },
+    {
+      "path": "testB/round_010_20261105/ROUND_REPORT.md",
+      "bytes": 3288,
+      "sha256": "51dd0dca7b7f94dbb24ca92d774d979fa46882439899ee5de7a6ee9137863a3a"
+    },
+    {
+      "path": "testB/round_010_20261105/critical_review_20261105/CRITICAL_REVIEW_ROUND010_20261105.md",
+      "bytes": 8443,
+      "sha256": "cb3ac42f44157c94dae9a1f1bf2134eb80296e2de47bccc43da6727f3db1318a"
+    },
+    {
+      "path": "testB/round_011_20261105/PROTOCOL.md",
+      "bytes": 9390,
+      "sha256": "133da14c225fa4e1e1c9829a26fdeba1014bd64043b9d4ef9b71c3d91d158084"
+    }
+  ]
+}

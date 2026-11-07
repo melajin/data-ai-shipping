@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "created_at": "2026-11-05T14:21:15.317174",
+    "n_positive_events": 100,
+    "n_positive_vessels": 82,
+    "guard_h": 72,
+    "min_control_windows": 15
+  },
+  "state_provenance": {
+    "source_code_path": "D:\\repos\\fishing-track-classification\\code\\tools\\run_008_testB_20261101.py",
+    "calling_script_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_007_20261105\\s4_score_dev.py",
+    "function_name": "score_vessel / classify_state",
+    "threshold_parameters": {
+      "STOP_LEN_M": 50.0,
+      "STOP_BBOX_M": 100.0,
+      "HARBOR_NEAR_M": 1000.0,
+      "MOORING_NEAR_M": 1000.0,
+      "SEA_STOP_FAR_M": 2000.0,
+      "MOVE_LEN_M": 3000.0,
+      "MOVE_STRAIGHT": 0.6
+    },
+    "classification_rule_logic": "1. 정지 조건 판정: stop = (len_m <= 50.0) & (bbox_m <= 100.0)\n2. stop == True 일 때:\n   - near = (harbor_dist <= 1000m) or (mooring_dist <= 1000m)\n   - far = (harbor_dist >= 2000m) and (mooring_dist >= 2000m)\n   - near 이면 '정박정지', far 이면 '해상정지', 그 외는 '연안정지'\n3. stop == False (이동 중) 일 때:\n   - straight_proxy = bbox_m / max(len_m, 1.0)\n   - (len_m > 3000m) and (straight_proxy >= 0.6) 이면 '이동'\n   - 그 외 모든 이동(저속, 곡선, 선회, 표류)은 전부 '저속굴곡'",
+    "flaw_mechanism": "해상정지(drifting at sea)로 분류되려면 1시간 동안 len_m <= 50m 및 bbox_m <= 100m 를 동시에 만족해야 함. 그러나 실제 해상에서 기관고장 등으로 표류하는 어선은 조류·바람·파도에 의해 시간당 수백~수천 미터(0.2~1.5 kts = 370~2800 m/h) 밀려나므로 len_m > 50m 가 됨. 따라서 실제 표류 선박은 stop=False 가 되어 기계적으로 '저속굴곡'으로 분류되며, '해상정지'는 GPS 지터 수준의 초저속(<=50m/h) 정지 상태가 외해에서 발생하는 극소수 예외에만 찍힘."
+  },
+  "state_distribution_and_drift_audit": {
+    "ALL": {
+      "n_total": 100,
+      "n_eligible": 76,
+      "n_excluded_lt15": 24,
+      "states_mcnemar": {
+        "저속굴곡": {
+          "n": 76,
+          "acc_rate": 0.8026,
+          "ctrl_mean_rate": 0.8164,
+          "rate_diff": -0.0138,
+          "discordant_b10_acc_only": 4.27,
+          "discordant_b01_ctrl_only": 5.32,
+          "mcnemar_exact_p": 0.75391
+        },
+        "이동": {
+          "n": 76,
+          "acc_rate": 0.1711,
+          "ctrl_mean_rate": 0.195,
+          "rate_diff": -0.024,
+          "discordant_b10_acc_only": 7.71,
+          "discordant_b01_ctrl_only": 9.53,
+          "mcnemar_exact_p": 1.0
+        },
+        "정박정지": {
+          "n": 76,
+          "acc_rate": 0.5658,
+          "ctrl_mean_rate": 0.4781,
+          "rate_diff": 0.0877,
+          "discordant_b10_acc_only": 14.48,
+          "discordant_b01_ctrl_only": 7.82,
+          "mcnemar_exact_p": 0.28628
+        },
+        "해상정지": {
+          "n": 76,
+          "acc_rate": 0.0658,
+          "ctrl_mean_rate": 0.1248,
+          "rate_diff": -0.059,
+          "discordant_b10_acc_only": 2.57,
+          "discordant_b01_ctrl_only": 7.06,
+          "mcnemar_exact_p": 0.34375
+        },
+        "연안정지": {
+          "n": 76,
+          "acc_rate": 0.0132,
+          "ctrl_mean_rate": 0.0202,
+          "rate_diff": -0.007,
+          "discordant_b10_acc_only": 1.0,
+          "discordant_b01_ctrl_only": 1.53,
+          "mcnemar_exact_p": 1.0
+        }
+      },
+      "direct_drift_eval": {
+        "has_drift_2h_mcnemar": {
+          "n": 76,
+          "acc_rate": 0.0,
+          "ctrl_mean_rate": 0.0151,
+          "rate_diff": -0.0151,
+          "discordant_b10_acc_only": 0.0,
+          "discordant_b01_ctrl_only": 1.15,
+          "mcnemar_exact_p": 1.0
+        },
+        "drift_hours_count_percentile": {
+          "n": 76,
+          "delta": -0.0133,
+          "wilcoxon_p": 0.00036,
+          "ci95": [
+            -0.0288,
+            0.0051
+          ],
+          "mde_alpha05": 0.02474,
+          "acc_zero_ratio": 0.9737,
+          "zero_inflated_gt50pct": true,
+          "note": "사고창 0 비율이 97%로 극단적 영 과다이므로 McNemar가 유효한 주 검정임"
+        }
+      }
+    },
+    "Tier0_1": {
+      "n_total": 60,
+      "n_eligible": 48,
+      "n_excluded_lt15": 12,
+      "states_mcnemar": {
+        "저속굴곡": {
+          "n": 48,
+          "acc_rate": 0.8125,
+          "ctrl_mean_rate": 0.8016,
+          "rate_diff": 0.0109,
+          "discordant_b10_acc_only": 3.01,
+          "discordant_b01_ctrl_only": 2.49,
+          "mcnemar_exact_p": 1.0
+        },
+        "이동": {
+          "n": 48,
+          "acc_rate": 0.125,
+          "ctrl_mean_rate": 0.1756,
+          "rate_diff": -0.0506,
+          "discordant_b10_acc_only": 3.62,
+          "discordant_b01_ctrl_only": 6.05,
+          "mcnemar_exact_p": 0.75391
+        },
+        "정박정지": {
+          "n": 48,
+          "acc_rate": 0.5833,
+          "ctrl_mean_rate": 0.5231,
+          "rate_diff": 0.0602,
+          "discordant_b10_acc_only": 8.61,
+          "discordant_b01_ctrl_only": 5.72,
+          "mcnemar_exact_p": 0.42395
+        },
+        "해상정지": {
+          "n": 48,
+          "acc_rate": 0.1042,
+          "ctrl_mean_rate": 0.1287,
+          "rate_diff": -0.0245,
+          "discordant_b10_acc_only": 2.57,
+          "discordant_b01_ctrl_only": 3.75,
+          "mcnemar_exact_p": 1.0
+        },
+        "연안정지": {
+          "n": 48,
+          "acc_rate": 0.0208,
+          "ctrl_mean_rate": 0.0211,
+          "rate_diff": -0.0002,
+          "discordant_b10_acc_only": 1.0,
+          "discordant_b01_ctrl_only": 1.01,
+          "mcnemar_exact_p": 1.0
+        }
+      },
+      "direct_drift_eval": {
+        "has_drift_2h_mcnemar": {
+          "n": 48,
+          "acc_rate": 0.0,
+          "ctrl_mean_rate": 0.0065,
+          "rate_diff": -0.0065,
+          "discordant_b10_acc_only": 0.0,
+          "discordant_b01_ctrl_only": 0.31,
+          "mcnemar_exact_p": 1.0
+        },
+        "drift_hours_count_percentile": {
+          "n": 48,
+          "delta": -0.0041,
+          "wilcoxon_p": 0.00485,
+          "ci95": [
+            -0.0207,
+            0.0185
+          ],
+          "mde_alpha05": 0.02936,
+          "acc_zero_ratio": 0.9792,
+          "zero_inflated_gt50pct": true,
+          "note": "사고창 0 비율이 97%로 극단적 영 과다이므로 McNemar가 유효한 주 검정임"
+        }
+      }
+    },
+    "기관손상_linked_34": {
+      "n_total": 34,
+      "n_eligible": 28,
+      "n_excluded_lt15": 6,
+      "states_mcnemar": {
+        "저속굴곡": {
+          "n": 28,
+          "acc_rate": 0.8929,
+          "ctrl_mean_rate": 0.9225,
+          "rate_diff": -0.0296,
+          "discordant_b10_acc_only": 0.97,
+          "discordant_b01_ctrl_only": 1.8,
+          "mcnemar_exact_p": 1.0
+        },
+        "이동": {
+          "n": 28,
+          "acc_rate": 0.2143,
+          "ctrl_mean_rate": 0.2043,
+          "rate_diff": 0.01,
+          "discordant_b10_acc_only": 3.74,
+          "discordant_b01_ctrl_only": 3.46,
+          "mcnemar_exact_p": 1.0
+        },
+        "정박정지": {
+          "n": 28,
+          "acc_rate": 0.4286,
+          "ctrl_mean_rate": 0.3313,
+          "rate_diff": 0.0972,
+          "discordant_b10_acc_only": 5.24,
+          "discordant_b01_ctrl_only": 2.52,
+          "mcnemar_exact_p": 0.72656
+        },
+        "해상정지": {
+          "n": 28,
+          "acc_rate": 0.0357,
+          "ctrl_mean_rate": 0.1267,
+          "rate_diff": -0.0909,
+          "discordant_b10_acc_only": 0.68,
+          "discordant_b01_ctrl_only": 3.23,
+          "mcnemar_exact_p": 0.625
+        },
+        "연안정지": {
+          "n": 28,
+          "acc_rate": 0.0357,
+          "ctrl_mean_rate": 0.0196,
+          "rate_diff": 0.0161,
+          "discordant_b10_acc_only": 1.0,
+          "discordant_b01_ctrl_only": 0.55,
+          "mcnemar_exact_p": 1.0
+        }
+      },
+      "direct_drift_eval": {
+        "has_drift_2h_mcnemar": {
+          "n": 28,
+          "acc_rate": 0.0,
+          "ctrl_mean_rate": 0.0213,
+          "rate_diff": -0.0213,
+          "discordant_b10_acc_only": 0.0,
+          "discordant_b01_ctrl_only": 0.6,
+          "mcnemar_exact_p": 1.0
+        },
+        "drift_hours_count_percentile": {
+          "n": 28,
+          "delta": -0.0208,
+          "wilcoxon_p": 0.01565,
+          "ci95": [
+            -0.0475,
+            0.0111
+          ],
+          "mde_alpha05": 0.04059,
+          "acc_zero_ratio": 0.9643,
+          "zero_inflated_gt50pct": true,
+          "note": "사고창 0 비율이 97%로 극단적 영 과다이므로 McNemar가 유효한 주 검정임"
+        }
+      }
+    }
+  },
+  "judgment": {
+    "question": "state 분류기가 표류를 놓치는가, 아니면 표류 자체가 항적에 없는가?",
+    "answer": "둘 다 실재하며 상호 연결되어 있다. (1) state 분류기의 규칙 결함: state는 len_m <= 50m 및 bbox_m <= 100m 를 '정지'의 필수 전제로 요구한다. 그러나 해상 표류 선박은 조류와 바람에 의해 시간당 300~2,500m를 이동하므로 정지 조건을 절대로 만족할 수 없으며, 기계적으로 '저속굴곡'으로 오분류된다(사고창 80.3%가 저속굴곡, 해상정지는 6.6%에 불과). (2) 10백분위 기반 표류 정의의 물리적 결함: 선박의 10백분위 속력은 대부분 계류·정박 중의 GPS 지터(< 5 m/h) 수준이다. 외해에서 2시간 이상 지속되는 < 5m 초저속은 해양 물리 환경상 성립하지 않으므로(사고창 발생률 0.0%), 이 정의로는 표류를 포착할 수 없다. (3) 결론: 사고 선박의 이상 행동은 '극단적 저속 정지'가 아니라 T1에서 입증된 '정상 조업 대비 좁은 공간 내 회전·맴돎(lin_raw 음수 신호)'으로 나타난다.",
+    "engine_damage_status": {
+      "total_population_167": 58,
+      "linked_clean_in_dev": 32,
+      "linked_conflict_in_dev": 2,
+      "total_linked_in_dev": 34,
+      "unlinked_competition": 11,
+      "unlinked_out_of_cascade": 11,
+      "unlinked_gear_mismatch": 2,
+      "total_unlinked": 24,
+      "eligible_for_within_vessel_controls": 28,
+      "excluded_due_to_lt15_controls": 6
+    }
+  }
+}

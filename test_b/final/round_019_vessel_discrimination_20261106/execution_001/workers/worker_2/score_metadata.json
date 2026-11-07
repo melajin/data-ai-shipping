@@ -1,0 +1,97 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-06T14:32:22.614599+09:00",
+  "pid": 16272,
+  "training_performed": false,
+  "labels_read": false,
+  "scorer_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\src\\frozen_baseline.py",
+  "references_path": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\deliverables\\testb_system_20261106\\references",
+  "score_definition_changed": false,
+  "expected_peak_process_mib": 1024,
+  "reserve_mib": 640,
+  "memory_estimate_basis": "64K Arrow batches, 128 disk partitions, one pandas partition and one vessel at a time; 62 MiB frozen normalizer arrays plus sorting/copies; conservative 1 GiB process peak",
+  "timestamp_contract": {
+    "unit": "epoch hours",
+    "start_inclusive": 490896,
+    "end_exclusive": 495240,
+    "period": "2026 Jan-Jun"
+  },
+  "tie_break": "score DESC, source_ordinal ASC, stable",
+  "centroid_radius_interpretation": "max distance from median summary centroid; not actual GPS, heading, or speed",
+  "last_memory_preflight": {
+    "at": "2026-11-06T14:45:12.143074+09:00",
+    "stage": "score_partition_032",
+    "available_mib": 3162.84,
+    "process_rss_mib": 227.94,
+    "expected_peak_process_mib": 1024,
+    "expected_additional_mib": 796.06,
+    "reserve_mib": 640,
+    "passed": true,
+    "other_processes": [
+      {
+        "pid": 9940,
+        "name": "explorer.exe",
+        "rss_mib": 656.07
+      },
+      {
+        "pid": 23364,
+        "name": "Obsidian.exe",
+        "rss_mib": 555.28
+      },
+      {
+        "pid": 27636,
+        "name": "Orca.exe",
+        "rss_mib": 328.86
+      },
+      {
+        "pid": 28540,
+        "name": "Orca.exe",
+        "rss_mib": 301.23
+      },
+      {
+        "pid": 3352,
+        "name": "explorer.exe",
+        "rss_mib": 294.86
+      },
+      {
+        "pid": 5260,
+        "name": "codex.exe",
+        "rss_mib": 252.86
+      },
+      {
+        "pid": 27692,
+        "name": "chrome.exe",
+        "rss_mib": 242.58
+      },
+      {
+        "pid": 24852,
+        "name": "python.exe",
+        "rss_mib": 239.02
+      }
+    ]
+  },
+  "stage": "finished",
+  "worker_index": 2,
+  "worker_count": 4,
+  "rows": 933701,
+  "vessels": 1796,
+  "updated_at": "2026-11-06T14:45:29.640835+09:00",
+  "elapsed_seconds": 787.026,
+  "observed_peak_process_mib": 278.523,
+  "vessels_completed": 1796,
+  "rows_completed": 933701,
+  "completed_at": "2026-11-06T14:45:29.640364+09:00",
+  "resumed_vessels": 191,
+  "vessel_error_records": 0,
+  "reference_summary": {
+    "gap": {
+      "n_ref": 3879693,
+      "p50": 1.0
+    },
+    "jump": {
+      "n_ref": 3879693,
+      "p50": 85.72352634799219
+    },
+    "harbor_count": 77
+  }
+}

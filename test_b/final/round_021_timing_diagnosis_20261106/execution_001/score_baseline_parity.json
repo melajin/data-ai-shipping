@@ -1,0 +1,20 @@
+{
+  "vessels_compared": 7372,
+  "fields": [
+    "rfid_id",
+    "n_rows",
+    "peak_score",
+    "peak_ts",
+    "peak_state",
+    "median_score",
+    "p95_score",
+    "n_unique_hours",
+    "gap_total_h",
+    "activity_radius_km",
+    "n_finite_scores"
+  ],
+  "mismatch_count": 0,
+  "mismatches": [],
+  "exact_float_equality": true,
+  "source_ordinal_comparison": "unavailable: Round019 vessel_peaks.csv has no ordinal field; independent exact-max minimum source_ordinal assertions passed for every newly scored vessel"
+}

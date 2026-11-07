@@ -1,0 +1,22 @@
+Validation timestamp UTC: 2026-11-06T05:32:25.042057+00:00
+AST parsing: evaluate.py and test_evaluate.py OK
+PROTOCOL SHA256: 10fe34978e36774f7a63ed12c889871a2b2a0edeec77e9380d7f50b016645f0a
+Command: python -B -m unittest -v test_evaluate.py
+Actual fleet evaluation: NOT RUN
+Exit code: 0
+
+test_auc_ties_constant_perfect_and_direction (test_evaluate.EvaluationTests.test_auc_ties_constant_perfect_and_direction) ... ok
+test_completed_scorer_artifact_hash_rejects_tampering_and_missing_hash (test_evaluate.EvaluationTests.test_completed_scorer_artifact_hash_rejects_tampering_and_missing_hash) ... ok
+test_conditional_auc_differs_from_pooled_auc (test_evaluate.EvaluationTests.test_conditional_auc_differs_from_pooled_auc) ... ok
+test_constant_matched_permutation_is_one_with_ties (test_evaluate.EvaluationTests.test_constant_matched_permutation_is_one_with_ties) ... ok
+test_f1_identities_and_no_selection (test_evaluate.EvaluationTests.test_f1_identities_and_no_selection) ... ok
+test_fixed_thresholds_finite_quantiles_and_explicit_baselines (test_evaluate.EvaluationTests.test_fixed_thresholds_finite_quantiles_and_explicit_baselines) ... ok
+test_holm_five_candidate_family (test_evaluate.EvaluationTests.test_holm_five_candidate_family) ... ok
+test_matched_equal_set_weight_and_finite_subset (test_evaluate.EvaluationTests.test_matched_equal_set_weight_and_finite_subset) ... ok
+test_matching_caliper_no_reuse_maxfive_and_id_ties (test_evaluate.EvaluationTests.test_matching_caliper_no_reuse_maxfive_and_id_ties) ... ok
+test_rank_frequency_bootstrap_agrees_with_pairwise_resampling (test_evaluate.EvaluationTests.test_rank_frequency_bootstrap_agrees_with_pairwise_resampling) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.060s
+
+OK

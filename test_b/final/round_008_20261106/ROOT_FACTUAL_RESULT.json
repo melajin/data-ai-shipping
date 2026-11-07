@@ -1,0 +1,321 @@
+﻿{
+    "denominators":  {
+                         "all":  {
+                                     "events":  100,
+                                     "unique_rfids":  82,
+                                     "B0_top1":  {
+                                                     "events":  100,
+                                                     "hits":  3,
+                                                     "hit_rate":  0.03
+                                                 },
+                                     "B0_top4":  {
+                                                     "events":  100,
+                                                     "hits":  7,
+                                                     "hit_rate":  0.07
+                                                 },
+                                     "S_top1":  {
+                                                    "events":  100,
+                                                    "hits":  1,
+                                                    "hit_rate":  0.01
+                                                },
+                                     "S_top4":  {
+                                                    "events":  100,
+                                                    "hits":  5,
+                                                    "hit_rate":  0.05
+                                                },
+                                     "G_top1":  {
+                                                    "events":  100,
+                                                    "hits":  1,
+                                                    "hit_rate":  0.01
+                                                },
+                                     "G_top4":  {
+                                                    "events":  100,
+                                                    "hits":  4,
+                                                    "hit_rate":  0.04
+                                                }
+                                 },
+                         "tier01":  {
+                                        "events":  60,
+                                        "unique_rfids":  55,
+                                        "B0_top1":  {
+                                                        "events":  60,
+                                                        "hits":  2,
+                                                        "hit_rate":  0.03333333333333333
+                                                    },
+                                        "B0_top4":  {
+                                                        "events":  60,
+                                                        "hits":  5,
+                                                        "hit_rate":  0.08333333333333333
+                                                    },
+                                        "S_top1":  {
+                                                       "events":  60,
+                                                       "hits":  0,
+                                                       "hit_rate":  0.0
+                                                   },
+                                        "S_top4":  {
+                                                       "events":  60,
+                                                       "hits":  2,
+                                                       "hit_rate":  0.03333333333333333
+                                                   },
+                                        "G_top1":  {
+                                                       "events":  60,
+                                                       "hits":  0,
+                                                       "hit_rate":  0.0
+                                                   },
+                                        "G_top4":  {
+                                                       "events":  60,
+                                                       "hits":  2,
+                                                       "hit_rate":  0.03333333333333333
+                                                   }
+                                    },
+                         "gear_strata":  {
+                                             "연안복합":  {
+                                                          "events":  39,
+                                                          "tier01_events":  29,
+                                                          "unique_rfids":  37,
+                                                          "B0_top1":  {
+                                                                          "events":  39,
+                                                                          "hits":  2,
+                                                                          "hit_rate":  0.05128205128205128
+                                                                      },
+                                                          "B0_top4":  {
+                                                                          "events":  39,
+                                                                          "hits":  5,
+                                                                          "hit_rate":  0.1282051282051282
+                                                                      },
+                                                          "S_top1":  {
+                                                                         "events":  39,
+                                                                         "hits":  0,
+                                                                         "hit_rate":  0.0
+                                                                     },
+                                                          "S_top4":  {
+                                                                         "events":  39,
+                                                                         "hits":  2,
+                                                                         "hit_rate":  0.05128205128205128
+                                                                     },
+                                                          "G_top1":  {
+                                                                         "events":  39,
+                                                                         "hits":  0,
+                                                                         "hit_rate":  0.0
+                                                                     },
+                                                          "G_top4":  {
+                                                                         "events":  39,
+                                                                         "hits":  1,
+                                                                         "hit_rate":  0.02564102564102564
+                                                                     }
+                                                      },
+                                             "자망":  {
+                                                        "events":  39,
+                                                        "tier01_events":  21,
+                                                        "unique_rfids":  31,
+                                                        "B0_top1":  {
+                                                                        "events":  39,
+                                                                        "hits":  1,
+                                                                        "hit_rate":  0.02564102564102564
+                                                                    },
+                                                        "B0_top4":  {
+                                                                        "events":  39,
+                                                                        "hits":  2,
+                                                                        "hit_rate":  0.05128205128205128
+                                                                    },
+                                                        "S_top1":  {
+                                                                       "events":  39,
+                                                                       "hits":  1,
+                                                                       "hit_rate":  0.02564102564102564
+                                                                   },
+                                                        "S_top4":  {
+                                                                       "events":  39,
+                                                                       "hits":  3,
+                                                                       "hit_rate":  0.07692307692307693
+                                                                   },
+                                                        "G_top1":  {
+                                                                       "events":  39,
+                                                                       "hits":  1,
+                                                                       "hit_rate":  0.02564102564102564
+                                                                   },
+                                                        "G_top4":  {
+                                                                       "events":  39,
+                                                                       "hits":  3,
+                                                                       "hit_rate":  0.07692307692307693
+                                                                   }
+                                                    },
+                                             "채낚기연승낚시":  {
+                                                             "events":  1,
+                                                             "tier01_events":  0,
+                                                             "unique_rfids":  1,
+                                                             "B0_top1":  {
+                                                                             "events":  1,
+                                                                             "hits":  0,
+                                                                             "hit_rate":  0.0
+                                                                         },
+                                                             "B0_top4":  {
+                                                                             "events":  1,
+                                                                             "hits":  0,
+                                                                             "hit_rate":  0.0
+                                                                         },
+                                                             "S_top1":  {
+                                                                            "events":  1,
+                                                                            "hits":  0,
+                                                                            "hit_rate":  0.0
+                                                                        },
+                                                             "S_top4":  {
+                                                                            "events":  1,
+                                                                            "hits":  0,
+                                                                            "hit_rate":  0.0
+                                                                        },
+                                                             "G_top1":  {
+                                                                            "events":  1,
+                                                                            "hits":  0,
+                                                                            "hit_rate":  0.0
+                                                                        },
+                                                             "G_top4":  {
+                                                                            "events":  1,
+                                                                            "hits":  0,
+                                                                            "hit_rate":  0.0
+                                                                        }
+                                                         },
+                                             "통발":  {
+                                                        "events":  21,
+                                                        "tier01_events":  10,
+                                                        "unique_rfids":  13,
+                                                        "B0_top1":  {
+                                                                        "events":  21,
+                                                                        "hits":  0,
+                                                                        "hit_rate":  0.0
+                                                                    },
+                                                        "B0_top4":  {
+                                                                        "events":  21,
+                                                                        "hits":  0,
+                                                                        "hit_rate":  0.0
+                                                                    },
+                                                        "S_top1":  {
+                                                                       "events":  21,
+                                                                       "hits":  0,
+                                                                       "hit_rate":  0.0
+                                                                   },
+                                                        "S_top4":  {
+                                                                       "events":  21,
+                                                                       "hits":  0,
+                                                                       "hit_rate":  0.0
+                                                                   },
+                                                        "G_top1":  {
+                                                                       "events":  21,
+                                                                       "hits":  0,
+                                                                       "hit_rate":  0.0
+                                                                   },
+                                                        "G_top4":  {
+                                                                       "events":  21,
+                                                                       "hits":  0,
+                                                                       "hit_rate":  0.0
+                                                                   }
+                                                    }
+                                         }
+                     },
+    "random_summary":  [
+                           {
+                               "cohort":  "all",
+                               "method":  "B0",
+                               "top1_expected":  0.018605327372615218,
+                               "top4_expected":  0.06054623542441554
+                           },
+                           {
+                               "cohort":  "all",
+                               "method":  "S",
+                               "top1_expected":  0.017677056813890642,
+                               "top4_expected":  0.056563749653438286
+                           },
+                           {
+                               "cohort":  "all",
+                               "method":  "G",
+                               "top1_expected":  0.017718324570411444,
+                               "top4_expected":  0.05672151309216047
+                           },
+                           {
+                               "cohort":  "tier01",
+                               "method":  "B0",
+                               "top1_expected":  0.02499714788059583,
+                               "top4_expected":  0.077301501935034
+                           },
+                           {
+                               "cohort":  "tier01",
+                               "method":  "S",
+                               "top1_expected":  0.02220956893750932,
+                               "top4_expected":  0.06681356276466986
+                           },
+                           {
+                               "cohort":  "tier01",
+                               "method":  "G",
+                               "top1_expected":  0.022264117859603465,
+                               "top4_expected":  0.06702051820651436
+                           }
+                       ],
+    "gate":  {
+                 "tier01_top1_diff_g_vs_b0":  {
+                                                  "target":  "\u003e= +0.05 (+5.0 percentage points, exact count 20 * (G_hits - B0_hits) \u003e= n)",
+                                                  "threshold":  0.05,
+                                                  "observed":  -0.03333333333333333,
+                                                  "observed_hits_g":  0,
+                                                  "observed_hits_b0":  2,
+                                                  "observed_n":  60,
+                                                  "passed":  false
+                                              },
+                 "tier01_top1_ci95_lower_positive":  {
+                                                         "target":  "\u003e 0.0 (paired cluster bootstrap 95% CI lower bound)",
+                                                         "threshold":  0.0,
+                                                         "observed_ci95":  [
+                                                                               -0.08620689655172414,
+                                                                               0.0
+                                                                           ],
+                                                         "observed_lower":  -0.08620689655172414,
+                                                         "passed":  false
+                                                     },
+                 "whole100_non_worsening":  {
+                                                "target":  "\u003e= 0.0 (all100 top1 difference G vs B0, exact count G_hits \u003e= B0_hits)",
+                                                "threshold":  0.0,
+                                                "observed":  -0.02,
+                                                "observed_hits_g":  1,
+                                                "observed_hits_b0":  3,
+                                                "observed_n":  100,
+                                                "passed":  false
+                                            },
+                 "tier01_top1_exceeds_random":  {
+                                                    "target":  "Tier01 G top1 hit rate \u003e Tier01 G actual-pool random expectation",
+                                                    "observed_hit_rate":  0.0,
+                                                    "observed_random_expectation":  0.022264117859603465,
+                                                    "passed":  false
+                                                },
+                 "overall_passed":  false,
+                 "gate_failures":  [
+                                       "tier01_top1 exact count 20 * (G - B0) (-40) \u003c n (60) [diff=-0.0333]",
+                                       "tier01_top1 paired bootstrap 95% CI lower bound (-0.08620689655172414) \u003c= 0.0",
+                                       "whole100_top1 hit delta (-2) \u003c 0 (worsened vs B0) [diff=-0.0200]",
+                                       "tier01_top1 hit rate (0.0000) does not exceed Tier01 random expectation (0.0223)"
+                                   ]
+             },
+    "execution":  {
+                      "status":  "complete",
+                      "frozen_verification":  {
+                                                  "predictions_hash_unchanged":  true,
+                                                  "pool_manifest_hash_unchanged":  true,
+                                                  "pre_pred_sha256":  "fd19f3422f8ebcf9227c0515bd8087e4c83291365fb0621befc5355a473cb5ac",
+                                                  "post_pred_sha256":  "fd19f3422f8ebcf9227c0515bd8087e4c83291365fb0621befc5355a473cb5ac",
+                                                  "pre_manifest_sha256":  "b49cd9758d21f8c966caa0b338c68ef46c01f4d5c2d7aa186d6fa8eeb52f8e8c",
+                                                  "post_manifest_sha256":  "b49cd9758d21f8c966caa0b338c68ef46c01f4d5c2d7aa186d6fa8eeb52f8e8c",
+                                                  "verified_at":  "2026-11-06T02:48:51+0900"
+                                              },
+                      "elapsed_seconds":  26.839384599999903,
+                      "peak_working_set_bytes":  445227008
+                  },
+    "metrics_top_level_keys":  [
+                                   "status",
+                                   "description",
+                                   "methods",
+                                   "budgets",
+                                   "tolerance_hours_inclusive",
+                                   "operational_gate",
+                                   "denominators",
+                                   "random_expectations",
+                                   "rfid_cluster_bootstrap",
+                                   "rule_diagnostics"
+                               ]
+}

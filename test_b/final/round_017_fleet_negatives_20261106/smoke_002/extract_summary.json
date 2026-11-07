@@ -1,0 +1,32 @@
+{
+  "months": {
+    "2": {
+      "rows_read": 479290,
+      "rows_written": 479288,
+      "skipped": 2,
+      "seconds": 60.8,
+      "vessels_cumulative": 5208
+    }
+  },
+  "unparsed_examples": [
+    {
+      "month": 2,
+      "row_index": 386100,
+      "error": "wrapper"
+    },
+    {
+      "month": 2,
+      "row_index": 400310,
+      "error": "wrapper"
+    }
+  ],
+  "completed_at": "2026-11-06T13:58:24.699220+09:00",
+  "raw_dir": "F:\\문제 데이터_수정_1027\\vpass_26년(1월_6월) 데이터\\vpass_1월_6월 데이터",
+  "total_rows_written": 479288,
+  "total_rows_skipped": 2,
+  "vessels": 5208,
+  "elapsed_seconds": 61.0,
+  "available_mib_at_start": 4766.0,
+  "purpose": "미사고 선박 음성 표본 확보 (2026 학습 기간)",
+  "test_data_touched": false
+}

@@ -1,0 +1,86 @@
+{
+  "round": 3,
+  "round_title": "Descriptive Gear and Behavior Inventory",
+  "timestamp": "2026-11-05 23:30:25+0900",
+  "agent": "Gemini 3.8 Flash (High)",
+  "hardware_environment": {
+    "os": "win32",
+    "total_ram_gb": 13.81,
+    "peak_memory_used_mib": 46.33,
+    "runtime_seconds": 12.2
+  },
+  "gear_distribution_82_rfids": {
+    "연안복합": 37,
+    "자망": 31,
+    "통발": 13,
+    "채낚기연승낚시": 1,
+    "mixed_vessels": 0,
+    "missing_vessels": 0,
+    "total_vessels": 82
+  },
+  "canonical_data": {
+    "total_canonical_rows": 99677,
+    "rfid_count": 82,
+    "dedup_rule": "drop exact duplicates, sort by [rfid_id, ts, source_ordinal], drop hourly dup keep first (min-source_ordinal)"
+  },
+  "behavior_metrics_summary": {
+    "total_small_path_observations": 42242,
+    "overall_small_path_percentage": 42.38,
+    "vessel_balanced_pct_small_path_mean": 42.57,
+    "vessel_balanced_pct_small_path_median": 40.39,
+    "vessel_balanced_repeated_cell_occupancy_mean": 0.9804,
+    "vessel_balanced_repeated_cell_occupancy_median": 0.998
+  },
+  "unavailable_inputs": {
+    "route_following": "unavailable (GPS points / geometry sequences missing in hourly score frame)",
+    "within_part_straightness": "unavailable (GPS points / sub-hourly trajectories missing in hourly frame)",
+    "official_harbor_boundaries": "unavailable (not supplied; repeated cells represent repeated 0.05-deg area occupancy only, never harbor)",
+    "operational_behavior_labels": "unavailable (ground truth for anchoring, waiting, towing, hauling not present in dataset)"
+  },
+  "deterministic_cases": [
+    {
+      "gear_label": "연안복합",
+      "chosen_rfid": "31001758",
+      "total_observations": 916,
+      "run_length_hours": 15,
+      "run_start_ts": 491282,
+      "run_end_ts": 491296,
+      "has_prior_adjacent": true,
+      "has_post_adjacent": true,
+      "departure_type": "CONDITION_CHANGE"
+    },
+    {
+      "gear_label": "자망",
+      "chosen_rfid": "31007500",
+      "total_observations": 1431,
+      "run_length_hours": 13,
+      "run_start_ts": 491103,
+      "run_end_ts": 491115,
+      "has_prior_adjacent": true,
+      "has_post_adjacent": true,
+      "departure_type": "GAP_BREAK"
+    },
+    {
+      "gear_label": "채낚기연승낚시",
+      "chosen_rfid": "36314076",
+      "total_observations": 2110,
+      "run_length_hours": 52,
+      "run_start_ts": 490896,
+      "run_end_ts": 490947,
+      "has_prior_adjacent": false,
+      "has_post_adjacent": true,
+      "departure_type": "CONDITION_CHANGE"
+    },
+    {
+      "gear_label": "통발",
+      "chosen_rfid": "31008085",
+      "total_observations": 2938,
+      "run_length_hours": 8,
+      "run_start_ts": 490896,
+      "run_end_ts": 490903,
+      "has_prior_adjacent": false,
+      "has_post_adjacent": true,
+      "departure_type": "GAP_BREAK"
+    }
+  ]
+}

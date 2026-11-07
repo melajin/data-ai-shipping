@@ -1,0 +1,28 @@
+category_type,stage,status,reason,row_count,rfid_count,description
+candidate_transition,stage0,input,canonical_input_rows,99677,82,Total canonical hourly observations presented for Stage 0
+candidate_transition,stage0,keep,geometry_valid_and_score_finite,99677,82,Rows with finite non-negative length/bbox and finite legacy score
+candidate_transition,stage1,input,stage0_ok,99677,82,Input rows admitted from Stage 0
+candidate_transition,stage1,keep,observed_onset_large_to_small,7758,81,"Exact observed t-1 geometry valid and NOT small, current small (<=100m)"
+candidate_transition,stage1,reject,current_not_small,46684,81,Stage 1 rejection: current_not_small
+candidate_transition,stage1,reject,missing_previous,6287,82,Stage 1 rejection: missing_previous
+candidate_transition,stage1,reject,previous_not_large,38948,80,Stage 1 rejection: previous_not_large
+candidate_transition,stage2,input,stage1_ok,7758,81,Input rows admitted from Stage 1
+candidate_transition,stage2,keep,observed_persistence_at_t_plus_1,4361,77,Exact observed t+1 geometry valid and small (<=100m)
+candidate_transition,stage2,reject,missing_next,963,77,Stage 2 rejection: missing_next
+candidate_transition,stage2,reject,next_not_small,2434,75,Stage 2 rejection: next_not_small
+candidate_transition,stage3,input,stage2_ok,4361,77,Common Stage 2 transition candidates evaluated for peer gear comparison
+candidate_transition,stage3,keep,gear_peer_baseline_eligible,4123,75,"Own >=24 triples/3 days, single-code gear, and >=5 eligible peers with known rates"
+candidate_transition,stage3,defer,insufficient_eligible_peers,30,10,Stage 3 deferral (not confirmed normal): insufficient_eligible_peers
+candidate_transition,stage3,defer,own_insufficient_center_dates,9,7,Stage 3 deferral (not confirmed normal): own_insufficient_center_dates
+candidate_transition,stage3,defer,own_insufficient_triples,152,60,Stage 3 deferral (not confirmed normal): own_insufficient_triples
+candidate_transition,stage3,defer,singleton_no_peer_rule,47,1,Stage 3 deferral (not confirmed normal): singleton_no_peer_rule
+rfid_candidate_presence,stage0,presence,vessels_with_ge_1_stage0_candidate,99677,82,Number of distinct vessels with at least one stage0 candidate
+rfid_candidate_presence,stage1,presence,vessels_with_ge_1_stage1_candidate,7758,81,Number of distinct vessels with at least one stage1 candidate
+rfid_candidate_presence,stage2,presence,vessels_with_ge_1_stage2_candidate,4361,77,Number of distinct vessels with at least one stage2 candidate
+rfid_candidate_presence,stage3,presence,vessels_with_ge_1_stage3_candidate,4123,75,Number of distinct vessels with at least one stage3 candidate
+method_actual_pool_coverage,stage0,strict,strict_stage,99677,82,Method B0 actual pool assigned: stage0 (fallback: strict_stage)
+method_actual_pool_coverage,stage0,fallback,no_common_transitions,1690,5,Method S actual pool assigned: stage0 (fallback: no_common_transitions)
+method_actual_pool_coverage,stage2,strict,strict_stage,4361,77,Method S actual pool assigned: stage2 (fallback: strict_stage)
+method_actual_pool_coverage,stage0,fallback,no_common_transitions,1690,5,Method G actual pool assigned: stage0 (fallback: no_common_transitions)
+method_actual_pool_coverage,stage2,fallback,no_gear_eligible_candidates,48,2,Method G actual pool assigned: stage2 (fallback: no_gear_eligible_candidates)
+method_actual_pool_coverage,stage3,strict,strict_stage,4123,75,Method G actual pool assigned: stage3 (fallback: strict_stage)

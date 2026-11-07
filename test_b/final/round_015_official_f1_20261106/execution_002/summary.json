@@ -1,0 +1,279 @@
+{
+  "evaluated_at": "2026-11-06T13:37:41.089294+09:00",
+  "rule": {
+    "metric": "시간오차를 고려한 F1",
+    "tolerance_hours": 6.0,
+    "tolerance_basis": "주최 측 답변 '6시간 넘어가면서부터는 0점 처리'",
+    "blank_policy": "미사고 판단 선박은 예측 칸 전체 공란",
+    "prediction_rule": "B0 고정 기준선 — 선박별 종합점수 최대 시각, 동점은 최소 source_ordinal",
+    "out_of_window_handling": "허용창을 넘은 예측은 FP로 집계하고 해당 사고는 FN으로 집계",
+    "unconfirmed": [
+      "공식 TP/FP/FN 수식",
+      "조기·지연 추정의 비대칭 감점 여부",
+      "정확히 6시간일 때의 처리",
+      "시각1~3의 정성평가 반영 방식"
+    ]
+  },
+  "cohort": {
+    "vessels": 82,
+    "accident_events": 100,
+    "multi_accident_vessels": 18,
+    "scored_hours": 99677,
+    "ts_range": [
+      490896,
+      495239
+    ],
+    "true_negative_vessels": 0,
+    "cohort_caveat": "이 집단은 전부 사고 연결 선박이다. 미사고 선박이 없으므로 오경보로 생기는 FP가 측정되지 않고 정밀도는 상한값이다. 선박-사고 연결 자체도 시공간 조건으로 만든 잠정 대응이다."
+  },
+  "headline": {
+    "unit": "선박 (제출 양식의 1행 = 1척)",
+    "threshold": 0.0,
+    "description": "전 선박에 예측을 제출하는 경우",
+    "precision": 0.036585365853658534,
+    "recall": 0.036585365853658534,
+    "f1": 0.036585365853658534,
+    "tp": 3,
+    "fp": 79,
+    "fn": 79
+  },
+  "by_threshold_vessel_unit": [
+    {
+      "threshold": 0.0,
+      "flagged": 82,
+      "blank": 0,
+      "tp": 3,
+      "fp": 79,
+      "fn": 79,
+      "precision": 0.036585365853658534,
+      "recall": 0.036585365853658534,
+      "f1": 0.036585365853658534,
+      "graded_f1": 0.018292682926829267,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.5,
+      "flagged": 81,
+      "blank": 1,
+      "tp": 3,
+      "fp": 78,
+      "fn": 79,
+      "precision": 0.037037037037037035,
+      "recall": 0.036585365853658534,
+      "f1": 0.03680981595092024,
+      "graded_f1": 0.01840490797546012,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.55,
+      "flagged": 69,
+      "blank": 13,
+      "tp": 2,
+      "fp": 67,
+      "fn": 80,
+      "precision": 0.028985507246376812,
+      "recall": 0.024390243902439025,
+      "f1": 0.026490066225165566,
+      "graded_f1": 0.015452538631346581,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.6,
+      "flagged": 44,
+      "blank": 38,
+      "tp": 1,
+      "fp": 43,
+      "fn": 81,
+      "precision": 0.022727272727272728,
+      "recall": 0.012195121951219513,
+      "f1": 0.015873015873015872,
+      "graded_f1": 0.005291005291005292,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.65,
+      "flagged": 27,
+      "blank": 55,
+      "tp": 0,
+      "fp": 27,
+      "fn": 82,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "graded_f1": 0.0,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.7,
+      "flagged": 16,
+      "blank": 66,
+      "tp": 0,
+      "fp": 16,
+      "fn": 82,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "graded_f1": 0.0,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    }
+  ],
+  "by_threshold_tier01": [
+    {
+      "threshold": 0.0,
+      "flagged": 49,
+      "blank": 0,
+      "tp": 2,
+      "fp": 47,
+      "fn": 47,
+      "precision": 0.04081632653061224,
+      "recall": 0.04081632653061224,
+      "f1": 0.04081632653061224,
+      "graded_f1": 0.01360544217687075,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.5,
+      "flagged": 48,
+      "blank": 1,
+      "tp": 2,
+      "fp": 46,
+      "fn": 47,
+      "precision": 0.041666666666666664,
+      "recall": 0.04081632653061224,
+      "f1": 0.041237113402061855,
+      "graded_f1": 0.013745704467353953,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.55,
+      "flagged": 40,
+      "blank": 9,
+      "tp": 1,
+      "fp": 39,
+      "fn": 48,
+      "precision": 0.025,
+      "recall": 0.02040816326530612,
+      "f1": 0.022471910112359546,
+      "graded_f1": 0.007490636704119851,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.6,
+      "flagged": 25,
+      "blank": 24,
+      "tp": 1,
+      "fp": 24,
+      "fn": 48,
+      "precision": 0.04,
+      "recall": 0.02040816326530612,
+      "f1": 0.02702702702702702,
+      "graded_f1": 0.009009009009009009,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.65,
+      "flagged": 12,
+      "blank": 37,
+      "tp": 0,
+      "fp": 12,
+      "fn": 49,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "graded_f1": 0.0,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    },
+    {
+      "threshold": 0.7,
+      "flagged": 10,
+      "blank": 39,
+      "tp": 0,
+      "fp": 10,
+      "fn": 49,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "graded_f1": 0.0,
+      "graded_note": "허용창 내 예측에 1-|오차|/6 가중. 공식 수식 미확인 상태의 민감도 참고값"
+    }
+  ],
+  "tier01_vessels": 49,
+  "error_distribution_hours": {
+    "min": 1.0,
+    "p25": 283.75,
+    "median": 912.5,
+    "p75": 1939.5,
+    "max": 4253.0,
+    "within_6h": 3,
+    "within_24h": 3,
+    "within_72h": 9
+  },
+  "projection_to_100_vessel_cohort": {
+    "accident_vessels_10": {
+      "cohort": 100,
+      "assumed_accident_vessels": 10,
+      "assumed_non_accident_vessels": 90,
+      "measured_flag_rate": 1.0,
+      "measured_hit_rate": 0.036585365853658534,
+      "projected_tp": 0.36585365853658536,
+      "projected_fp": 99.6341463414634,
+      "projected_fn": 9.634146341463415,
+      "projected_fp_from_non_accident": 90.0,
+      "projected_precision": 0.0036585365853658543,
+      "projected_recall": 0.036585365853658534,
+      "projected_f1": 0.0066518847006651885,
+      "assumption": "미사고 선박도 사고 선박과 같은 비율로 예측을 제출한다고 가정. 실제 미사고 선박 수와 그 점수 분포는 확인되지 않았다."
+    },
+    "accident_vessels_20": {
+      "cohort": 100,
+      "assumed_accident_vessels": 20,
+      "assumed_non_accident_vessels": 80,
+      "measured_flag_rate": 1.0,
+      "measured_hit_rate": 0.036585365853658534,
+      "projected_tp": 0.7317073170731707,
+      "projected_fp": 99.26829268292683,
+      "projected_fn": 19.26829268292683,
+      "projected_fp_from_non_accident": 80.0,
+      "projected_precision": 0.007317073170731707,
+      "projected_recall": 0.036585365853658534,
+      "projected_f1": 0.012195121951219511,
+      "assumption": "미사고 선박도 사고 선박과 같은 비율로 예측을 제출한다고 가정. 실제 미사고 선박 수와 그 점수 분포는 확인되지 않았다."
+    },
+    "accident_vessels_40": {
+      "cohort": 100,
+      "assumed_accident_vessels": 40,
+      "assumed_non_accident_vessels": 60,
+      "measured_flag_rate": 1.0,
+      "measured_hit_rate": 0.036585365853658534,
+      "projected_tp": 1.4634146341463414,
+      "projected_fp": 98.53658536585365,
+      "projected_fn": 38.53658536585366,
+      "projected_fp_from_non_accident": 60.0,
+      "projected_precision": 0.014634146341463414,
+      "projected_recall": 0.036585365853658534,
+      "projected_f1": 0.020905923344947733,
+      "assumption": "미사고 선박도 사고 선박과 같은 비율로 예측을 제출한다고 가정. 실제 미사고 선박 수와 그 점수 분포는 확인되지 않았다."
+    },
+    "accident_vessels_82": {
+      "cohort": 100,
+      "assumed_accident_vessels": 82,
+      "assumed_non_accident_vessels": 18,
+      "measured_flag_rate": 1.0,
+      "measured_hit_rate": 0.036585365853658534,
+      "projected_tp": 3.0,
+      "projected_fp": 97.0,
+      "projected_fn": 79.0,
+      "projected_fp_from_non_accident": 18.0,
+      "projected_precision": 0.03,
+      "projected_recall": 0.036585365853658534,
+      "projected_f1": 0.03296703296703296,
+      "assumption": "미사고 선박도 사고 선박과 같은 비율로 예측을 제출한다고 가정. 실제 미사고 선박 수와 그 점수 분포는 확인되지 않았다."
+    }
+  },
+  "inputs": {
+    "testB\\final\\round_008_20261106\\execution_001\\candidate_ledger.parquet": "603cc59e3906eb55837ed5a1b0af4def1807e521d4052bbc51ebd38820973b4c",
+    "testB\\과거\\round_008_linkage_audit_20261105\\devset_positives.csv": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1"
+  },
+  "training_performed": false,
+  "test_data_used_for_fitting": false
+}

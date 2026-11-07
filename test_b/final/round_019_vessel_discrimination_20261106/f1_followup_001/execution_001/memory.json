@@ -1,0 +1,49 @@
+{
+  "at": "2026-11-06T14:59:08.679273+09:00",
+  "available_mib": 4547.421875,
+  "expected_peak_mib": 128,
+  "reserve_mib": 640,
+  "basis": "stdlib CSV only, 504 aggregate rows; no hourly inputs/scoring/training",
+  "other_processes": [
+    {
+      "pid": 9940,
+      "name": "explorer.exe",
+      "rss_mib": 654.9453125
+    },
+    {
+      "pid": 23364,
+      "name": "Obsidian.exe",
+      "rss_mib": 557.46875
+    },
+    {
+      "pid": 27636,
+      "name": "Orca.exe",
+      "rss_mib": 330.27734375
+    },
+    {
+      "pid": 28540,
+      "name": "Orca.exe",
+      "rss_mib": 300.7265625
+    },
+    {
+      "pid": 3352,
+      "name": "explorer.exe",
+      "rss_mib": 287.4140625
+    },
+    {
+      "pid": 5260,
+      "name": "codex.exe",
+      "rss_mib": 249.51171875
+    },
+    {
+      "pid": 3096,
+      "name": "codex.exe",
+      "rss_mib": 246.2109375
+    },
+    {
+      "pid": 26540,
+      "name": "Orca.exe",
+      "rss_mib": 236.30078125
+    }
+  ]
+}

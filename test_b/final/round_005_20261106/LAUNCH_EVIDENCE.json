@@ -1,0 +1,6 @@
+{
+ "checked_at":"2026-11-06T00:21:31+09:00","free_mib":3988.3,"estimated_extra_mib":1792,"reserve_mib":640,
+ "scope":"two bounded saved-artifact analyses with own fresh preflight; no raw-source loading or model training",
+ "luna":{"dispatch":"ctx_76ec5c361eee","task":"task_7bcd98fd0547","agent":"codex","model":"gpt-6-luna","effort":"xhigh","state":"ready","mode":"structured"},
+ "metadata_correction":{"dispatch":"ctx_015370c5beb7","task":"task_bfa375d58a14","agent":"antigravity","inherited_requested_model":"gemini-3.8-flash","inherited_requested_effort":"high","state":"ready"}
+}

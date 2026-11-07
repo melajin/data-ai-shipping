@@ -1,0 +1,16 @@
+{
+  "input_rows": 145427,
+  "timestamp": {
+    "nonfinite": 0,
+    "negative": 0,
+    "noninteger": 0
+  },
+  "len_m": {
+    "nonfinite": 0,
+    "negative": 0
+  },
+  "bbox_m": {
+    "nonfinite": 0,
+    "negative": 0
+  }
+}

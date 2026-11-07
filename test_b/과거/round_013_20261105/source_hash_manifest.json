@@ -1,0 +1,103 @@
+{
+  "before": {
+    "testB\\round_008_linkage_audit_20261105\\dev_hourly_scores.parquet": {
+      "bytes": 51584418,
+      "sha256": "44e960c100fcb29806711b42045bd4ae1a37f542ffd639eff0aff7b1f2b1c5b4"
+    },
+    "testB\\round_008_linkage_audit_20261105\\additional_hourly_scores.parquet": {
+      "bytes": 3373601,
+      "sha256": "31a80050d15930fb21b000fb8627a9941a8e11f412f601d0600716962bcf81be"
+    },
+    "testB\\first_results\\hourly_scores.parquet": {
+      "bytes": 3765001,
+      "sha256": "ab2230ef83aa6a3dec28fae03000294f581da6e0ee069f8210e3598a96549d14"
+    },
+    "testB\\round_008_linkage_audit_20261105\\devset_positives.csv": {
+      "bytes": 15646,
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1"
+    },
+    "AGENTS.md": {
+      "bytes": 5134,
+      "sha256": "e8a6fcc73d695b5ea8bbd3c6e8a8da1f62093c2c40d921a12d24d377d04ac356"
+    },
+    ".codex\\agents\\luna_worker.toml": {
+      "bytes": 561,
+      "sha256": "fcea4331b6c5e2fedfb10e8dc5b25470bd24f69b37a832c65aa9d9a38e344645"
+    },
+    "testB\\round_012_20261105\\g_gate_v2.py": {
+      "bytes": 7701,
+      "sha256": "ee1c90953458e30dc155bb06690d8baf01c87d5325a9e9f608bbce48ca60f6a9"
+    },
+    "testB\\round_011_20261105\\PROTOCOL.md": {
+      "bytes": 9390,
+      "sha256": "133da14c225fa4e1e1c9829a26fdeba1014bd64043b9d4ef9b71c3d91d158084"
+    },
+    "testB\\round_013_20261105\\PROTOCOL.md": {
+      "bytes": 13186,
+      "sha256": "096df27963509e1402e0e7b8194615cba7bcb2cca6a29e7fc9affb68eaf7b566"
+    },
+    "testB\\round_013_20261105\\SUPERVISOR_TASK_01.md": {
+      "bytes": 5633,
+      "sha256": "8533fc7b53b6747785d50a40a70104980ba20ddae2c048ec566b43867315f5dd"
+    },
+    "testB\\round_013_20261105\\run_round013.py": {
+      "bytes": 28653,
+      "sha256": "443d20d80e484b1cc5591fa31e630f933779ca2d9761f55f1589555a1ff59d3c"
+    },
+    "testB\\round_013_20261105\\validate_round013.py": {
+      "bytes": 4173,
+      "sha256": "ed883d66021c92f0ae5e6347d17f3d28f8d6b5bd63ddc8b35fc021cbf2d35b97"
+    }
+  },
+  "after": {
+    "testB\\round_008_linkage_audit_20261105\\dev_hourly_scores.parquet": {
+      "bytes": 51584418,
+      "sha256": "44e960c100fcb29806711b42045bd4ae1a37f542ffd639eff0aff7b1f2b1c5b4"
+    },
+    "testB\\round_008_linkage_audit_20261105\\additional_hourly_scores.parquet": {
+      "bytes": 3373601,
+      "sha256": "31a80050d15930fb21b000fb8627a9941a8e11f412f601d0600716962bcf81be"
+    },
+    "testB\\first_results\\hourly_scores.parquet": {
+      "bytes": 3765001,
+      "sha256": "ab2230ef83aa6a3dec28fae03000294f581da6e0ee069f8210e3598a96549d14"
+    },
+    "testB\\round_008_linkage_audit_20261105\\devset_positives.csv": {
+      "bytes": 15646,
+      "sha256": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1"
+    },
+    "AGENTS.md": {
+      "bytes": 5134,
+      "sha256": "e8a6fcc73d695b5ea8bbd3c6e8a8da1f62093c2c40d921a12d24d377d04ac356"
+    },
+    ".codex\\agents\\luna_worker.toml": {
+      "bytes": 561,
+      "sha256": "fcea4331b6c5e2fedfb10e8dc5b25470bd24f69b37a832c65aa9d9a38e344645"
+    },
+    "testB\\round_012_20261105\\g_gate_v2.py": {
+      "bytes": 7701,
+      "sha256": "ee1c90953458e30dc155bb06690d8baf01c87d5325a9e9f608bbce48ca60f6a9"
+    },
+    "testB\\round_011_20261105\\PROTOCOL.md": {
+      "bytes": 9390,
+      "sha256": "133da14c225fa4e1e1c9829a26fdeba1014bd64043b9d4ef9b71c3d91d158084"
+    },
+    "testB\\round_013_20261105\\PROTOCOL.md": {
+      "bytes": 13186,
+      "sha256": "096df27963509e1402e0e7b8194615cba7bcb2cca6a29e7fc9affb68eaf7b566"
+    },
+    "testB\\round_013_20261105\\SUPERVISOR_TASK_01.md": {
+      "bytes": 5633,
+      "sha256": "8533fc7b53b6747785d50a40a70104980ba20ddae2c048ec566b43867315f5dd"
+    },
+    "testB\\round_013_20261105\\run_round013.py": {
+      "bytes": 28653,
+      "sha256": "443d20d80e484b1cc5591fa31e630f933779ca2d9761f55f1589555a1ff59d3c"
+    },
+    "testB\\round_013_20261105\\validate_round013.py": {
+      "bytes": 4173,
+      "sha256": "ed883d66021c92f0ae5e6347d17f3d28f8d6b5bd63ddc8b35fc021cbf2d35b97"
+    }
+  },
+  "unchanged": true
+}

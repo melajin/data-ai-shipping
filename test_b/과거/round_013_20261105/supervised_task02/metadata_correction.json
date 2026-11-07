@@ -1,0 +1,19 @@
+{
+  "purpose": "Preserve historical execution strings and provide confirmed reproduction paths.",
+  "historical_commands_preserved": {
+    "g6": "python -B testB/round_013_20261105/g6_selection_and_confidence.py",
+    "g7": "python -B testB/round_013_20261105/g7_evaluate.py"
+  },
+  "confirmed_reproduction_commands": {
+    "g6": "python -B testB/round_013_20261105/supervised_task02/g6_selection_and_confidence.py",
+    "g7": "python -B testB/round_013_20261105/supervised_task02/g7_evaluate.py"
+  },
+  "code_future_command_strings_updated": true,
+  "calculation_rerun": false,
+  "correction_scope": [
+    "command strings",
+    "report code fence and path spelling",
+    "AUDIT input column spelling",
+    "review/plan metadata"
+  ]
+}

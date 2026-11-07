@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-11-06T02:01:00.660667+09:00",
+  "task_id": "task_152a1f9be172",
+  "dispatch_id": "ctx_bdbf56e0e9f6",
+  "scope": "Strict factual rectification of Round 7 observations without unverified narrative or physical operation claims",
+  "records_count": 22,
+  "selection_counts": {
+    "group_A": 10,
+    "group_B": 12,
+    "gear_counts": {
+      "통발": 6,
+      "채낚기연승낚시": 6,
+      "자망": 5,
+      "연안복합": 5
+    }
+  },
+  "parts_metrics": {
+    "total_parts": 101,
+    "parts_per_row_min": 1,
+    "parts_per_row_max": 9,
+    "parts_per_row_distribution": {
+      "1": 5,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 1,
+      "6": 3,
+      "7": 2,
+      "8": 4,
+      "9": 1
+    },
+    "dl_ratio_min": 0.0701847628135018,
+    "dl_ratio_max": 1.0,
+    "dl_ratio_median": 0.9342582078877046,
+    "dl_ratio_mean": 0.7998590338849924,
+    "two_point_parts_count": 11,
+    "two_point_tautology_confirmed": true,
+    "ge_three_points_parts_count": 90,
+    "ge_three_points_dl_min": 0.0701847628135018,
+    "ge_three_points_dl_max": 1.0,
+    "parts_with_duplicate_coordinates_count": 52
+  },
+  "cache_reconstruction_validation": {
+    "all_passed": true,
+    "tolerances": {
+      "len_m": 0.0001,
+      "bbox_m": 0.0001,
+      "cen_lon": 1e-07,
+      "cen_lat": 1e-07
+    },
+    "discrepancies_count": 0,
+    "qualification": "Exact reproduction verified for the 22 selected records only; does NOT constitute a global proof of all cache contents or physical measurement correctness"
+  },
+  "source_ordinal_mapping": {
+    "formula": "source_ordinal = monthly_offset + row_index",
+    "offsets": {
+      "1": 0,
+      "2": 497942,
+      "3": 977232,
+      "4": 1634524,
+      "5": 2351818,
+      "6": 3113664
+    },
+    "all_ordinals_verified": true
+  },
+  "raw_csv_audits": {
+    "1": {
+      "bytes": 669416109,
+      "full_sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "expected_sha256": "800afffb3f107d02ee132645c76f7efe902d3189aab83d60b031d4dc195f1176",
+      "hash_match": true,
+      "stream_scope": "streamed csv rows through reader up to row_index 149,857; full byte-stream sha256 verified",
+      "max_row_index": 149856
+    },
+    "5": {
+      "bytes": 1201889964,
+      "full_sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "expected_sha256": "b4eafc1494e8dc4aa4f72c6bf6d40efa63f29b2599ceafb2ca2eeb14ad960709",
+      "hash_match": true,
+      "stream_scope": "streamed csv rows through reader up to row_index 741,125; full byte-stream sha256 verified",
+      "max_row_index": 741124
+    },
+    "6": {
+      "bytes": 1255966524,
+      "full_sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "expected_sha256": "4976ed8540aa0a57c7b01a97369a36a9122923fa11e0e1654e5866502a7b3a0a",
+      "hash_match": true,
+      "stream_scope": "streamed csv rows through reader up to row_index 355,140; full byte-stream sha256 verified",
+      "max_row_index": 355139
+    }
+  },
+  "measured_resources": {
+    "runtime_seconds": 27.04,
+    "preflight_available_mib": 4121.35,
+    "preflight_threshold_mib": 1408,
+    "actual_peak_rss_mib": 334.06
+  },
+  "plot_files_on_disk": [
+    "case_A1_rfid_31001758_연안복합.png",
+    "case_A2_rfid_31007500_자망.png",
+    "case_A3_rfid_31008085_통발.png",
+    "case_A4_rfid_36314076_채낚기연승낚시.png",
+    "case_B1_acc_13_rfid_36115953_자망.png",
+    "case_B2_acc_14_rfid_36007269_연안복합.png",
+    "case_B3_acc_26_rfid_31100492_통발.png",
+    "case_B4_acc_31_rfid_36314076_채낚기연승낚시.png"
+  ]
+}

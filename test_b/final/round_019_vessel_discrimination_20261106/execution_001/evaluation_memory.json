@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-11-06T05:47:40.522850+00:00",
+  "available_mib": 3801.7734375,
+  "total_mib": 14140.86328125,
+  "top_processes": [
+    {
+      "pid": 9940,
+      "name": "explorer.exe",
+      "rss_mib": 656.0625
+    },
+    {
+      "pid": 23364,
+      "name": "Obsidian.exe",
+      "rss_mib": 566.75
+    },
+    {
+      "pid": 27636,
+      "name": "Orca.exe",
+      "rss_mib": 323.296875
+    },
+    {
+      "pid": 28540,
+      "name": "Orca.exe",
+      "rss_mib": 307.7734375
+    },
+    {
+      "pid": 3352,
+      "name": "explorer.exe",
+      "rss_mib": 294.86328125
+    },
+    {
+      "pid": 5260,
+      "name": "codex.exe",
+      "rss_mib": 253.3046875
+    },
+    {
+      "pid": 3096,
+      "name": "codex.exe",
+      "rss_mib": 240.13671875
+    },
+    {
+      "pid": 27692,
+      "name": "chrome.exe",
+      "rss_mib": 239.15234375
+    }
+  ],
+  "source": "psutil.virtual_memory/process_iter",
+  "stage": "before_evaluation",
+  "estimated_peak_mib": 512,
+  "reserve_mib": 640,
+  "estimate_basis": "7372 vessel rows; six sequential metrics; raw bootstrap uses one rank-frequency vector per replicate; matched arrays <=9999x82; no fleet-hour rows or 5000x7290 resampling matrix loaded",
+  "sufficient": true
+}

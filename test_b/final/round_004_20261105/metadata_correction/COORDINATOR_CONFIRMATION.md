@@ -1,0 +1,5 @@
+# 총괄 확인
+
+작업자 msg_05cf5595db58의정정결과를받았다. source_before_evaluator.py의실제SHA256을다시계산해execution_001의evaluate_sequence.py입력소스해시와일치함을확인했다:7083bb0af757cb819b0f2fa53e2db596b2c230f4df3be42358f5f8e52a48cb8c.
+
+counts_comparison.json은missing_previous6287행과missing_next963행의status만reject→defer로변경됐고각stagekeep수99677/7758/4361/4123은같다고기록한다. 원실행의predictions/event_results/metrics는덮어쓰지않았다.보고서의관측부족은이정정표를따라해석한다. 새수치모델이나적중률재설계가아니다.

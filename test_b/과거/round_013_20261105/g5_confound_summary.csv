@@ -1,0 +1,3 @@
+﻿window_size_w,n_valid_all,n_acc,n_ctrl,rho_all,rho_pval_all,ks_stat_all,ks_pval_raw_all,ks_pval_bonf_all,confound_detected,recommended_branch,rho_t01,ks_stat_t01,ks_pval_raw_t01,acc_day_pct,ctrl_day_pct,fisher_p
+7,2386,86,2300,0.06394,0.0017785146791386068,0.11485,0.20704978014543163,0.41409956029086326,False,NO_CONFOUND (proceed with all other voyages without diurnal restriction),0.08438,0.09641,0.6205255562379428,70.93,69.3,0.8123029018293715
+3,3138,93,3045,0.05193,0.0036137844167073853,0.07429,0.6728248553064886,1.0,False,NO_CONFOUND (proceed with all other voyages without diurnal restriction),0.09481,0.07539,0.8453685064321507,72.04,75.57,0.46284629748969947

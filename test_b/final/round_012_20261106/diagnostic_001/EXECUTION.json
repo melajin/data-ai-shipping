@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "analysis": "Descriptive unchanged-label strata and retrospective overlap ONLY",
+  "new_predictions": false,
+  "new_labels": false,
+  "performance_improvement_claim": false,
+  "ram_preflight": {
+    "checked_at": "2026-11-06T04:42:08+0900",
+    "available_mib": 4595.04296875,
+    "expected_extra_mib": 512,
+    "reserve_mib": 640,
+    "allowed": true,
+    "basis": "Small saved event tables and100-row metadata only; no parquet or raw data load"
+  },
+  "input_sha256": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\round_008_linkage_audit_20261105\\devset_positives.csv": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_004_20261105\\execution_001\\event_results.csv": "1e4450ce3205997e3f73972cb12408f2c74f2ecc478817cfb26a0b07e5c6dbcb",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_005_20261106\\execution_002\\event_results.csv": "ffd3064872842ae4a5c04c9250b1bb96d80f9ad67c341c58417a5fda0752f98a",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_006_20261106\\execution_001\\event_results.csv": "1612681217cca1072c2856b4efad3d2c02340c7850d7f0a37c2807304bba82bd",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_008_20261106\\execution_001\\event_results.csv": "fd2b247c91172d06005c925e2edbb660ef57518b4392316e2e018af7d4b8daef",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_009_20261106\\execution_001\\event_results.csv": "16798f86013ca18ec51b1dd90815f119780aecdef317a32945181771aca289fb",
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_011_20261106\\execution_001\\event_results.csv": "81822c115bddba826be474c71c820033b98506694a9254555272709e65cb24c2"
+  },
+  "source_sha256": "67fd6f86d95921b65861a8c37959a6f4d2c33ba1b7e0b1886550446a68d944d6",
+  "rows_metadata": 100,
+  "rfids": 82,
+  "tier01_events": 60,
+  "elapsed_seconds": 0.2814107000012882,
+  "outputs": {
+    "retrospective_overlap.json": {
+      "sha256": "0480fa61a37a4e59cb2788185f8a56bba8ac9f631b718013a2b40369de10f088",
+      "bytes": 8809
+    },
+    "strata_counts.csv": {
+      "sha256": "87c416647e00efb097b2182364fe158efd14bab0905bb0e8fd8bfb4d2a63564e",
+      "bytes": 39226
+    },
+    "unchanged_event_results_with_metadata.csv": {
+      "sha256": "7ddd31ab28b64ddb4419e62469e370db3754411ea6564cf0034d10ae91459e9b",
+      "bytes": 262598
+    }
+  }
+}

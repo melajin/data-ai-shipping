@@ -1,0 +1,9 @@
+﻿[
+    {
+        "script":  "t1_decompose.py",
+        "started_at":  "2026-11-05T14:20:04.5889907+09:00",
+        "ended_at":  "2026-11-05T14:21:11.8037998+09:00",
+        "exit_code":  -1,
+        "log_path":  "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_010_20261105\\t1_run_20261105_142004.log"
+    }
+]

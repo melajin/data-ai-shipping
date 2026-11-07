@@ -1,0 +1,26 @@
+{
+  "schema_version": "testb_frozen_package_v1",
+  "mode": "frozen_baseline_reproduction",
+  "training_enabled": false,
+  "threshold": null,
+  "external_delivery_enabled": false,
+  "output_kind": "review_evidence_only",
+  "memory": {
+    "expected_peak_mib": 512,
+    "reserve_mib": 640
+  },
+  "selection": "maximum score then minimum original source_ordinal",
+  "artifacts": {
+    "data/observations.parquet": "5e8efbabfa3ca2e47e53c35977bb96c4a64a74b2e0ec1f774db6c630d86ec0e2",
+    "data/roster.csv": "250237d223f0b1739c67859c410e22f1dfbcfcbea4208960358ae7949e2eafd2",
+    "data/stored_candidates.csv": "2e3bff1b0056651cd73e8fd2852029a4bd8516c0b83b38b09f8d85dffb1b74f9",
+    "data/stored_expected.parquet": "7d60b531da008482e5be9c98a52ef730ed382c5b8b00e688a230b3d0e2fc3578",
+    "model/density.json": "c122b827fb0b9fe480434f821162035702e34b0fc465762bdbeca0aeeadb1328",
+    "model/gap_reference.npy": "08145272419ec53837074f5602e34a9be36e5b1311952e4b0c637e64716daa9f",
+    "model/harbors.json": "3c1888f9714f675110be5181dc053398f955a23c7f68989c9c223bb77ab09309",
+    "model/jump_reference.npy": "a9d303efa85c06d6d3a75e622f0b76af2c64ca585228a177c4e95d8f21d87b0c",
+    "model/provenance.json": "052f39d4dc69c9a622a654885248f2509c385c2760c578f73cc98a3633e38986",
+    "src/frozen_baseline.py": "1975009bb0b99c740f9c1c9ddc3e7b37cf212bfdf998b22186882b3d9dd4947c",
+    "src/run_analysis.py": "086083fee14efbb2631ff6e91d76d6805bec49dcf77d0d60fc4ce0edf4b4cd1f"
+  }
+}

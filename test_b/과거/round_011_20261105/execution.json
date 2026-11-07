@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-05T16:55:14.842558+09:00",
+  "pid": 6200,
+  "command": [
+    "testB/round_011_20261105/run_experiment.py"
+  ],
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy_version": "2.2.5",
+  "protocol": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_011_20261105\\PROTOCOL.md",
+  "inputs": {
+    "parquet": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_008_linkage_audit_20261105\\dev_hourly_scores.parquet",
+    "events": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\round_008_linkage_audit_20261105\\devset_positives.csv"
+  },
+  "estimated_peak_bytes": 536870912,
+  "minimum_available_bytes": 805306368,
+  "protocol_sha256": "133da14c225fa4e1e1c9829a26fdeba1014bd64043b9d4ef9b71c3d91d158084",
+  "code_sha256": {
+    "run_experiment.py": "13ef8130ba44b6d2ac4686f6e82df6728be7287f77206b97b2ce9eee98f8f33e",
+    "test_experiment.py": "f594d1a1a238878038f24be8abd37b2be6a1d3dbac1acf97f7ccae646c04e513"
+  },
+  "input_sha256": {
+    "parquet": "44e960c100fcb29806711b42045bd4ae1a37f542ffd639eff0aff7b1f2b1c5b4",
+    "events": "87ee98a91765ff4482ccbb0692d40f05686ff9579c8741a79998027fa29aa2e1"
+  },
+  "input_counts": {
+    "events": 100,
+    "vessels": 82,
+    "tier01_events": 60
+  },
+  "pyarrow_version": "24.0.0",
+  "input_profile": {
+    "parquet_rows": 822000,
+    "scanned_rows": 822000,
+    "retained_rows": 99677,
+    "compact_bytes": 4784496,
+    "batch_size": 8192,
+    "use_threads": false,
+    "selected_columns": [
+      "rfid_id_int",
+      "ts",
+      "len_m",
+      "bbox_m",
+      "cen_lon",
+      "cen_lat"
+    ]
+  },
+  "outputs": {
+    "timestamp_scores.csv": {
+      "sha256": "343989906a18b4cc566f94407af3047d2f1e3db0cd11a69abe8cea7d82252cb1",
+      "bytes": 46418241
+    },
+    "event_metrics.csv": {
+      "sha256": "2e5c4c792dfa4951ea522cb675f38b88d70b7ec10354520f347451ae565700ce",
+      "bytes": 155511
+    },
+    "summary.json": {
+      "sha256": "ffd7c991f5caa855d77e600f343fbc9c368e343cdc8cef3de3a12aa4e5f559d8",
+      "bytes": 231580
+    }
+  },
+  "finished_at": "2026-11-05T16:57:03.479197+09:00",
+  "elapsed_seconds": 108.4950625999918,
+  "exit_code": 0,
+  "partial_outputs_are_results": false
+}

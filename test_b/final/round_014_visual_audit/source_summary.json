@@ -1,0 +1,101 @@
+{
+  "coordinate_source": "원본 WKT",
+  "raw_directory": "F:\\문제 데이터_수정_1103_v2\\테스트셋 및 결과제출 샘플\\테스트셋",
+  "score_source": "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\과거\\first_results\\hourly_scores.parquet",
+  "search_drives": [
+    "C:",
+    "D:",
+    "E:",
+    "F:"
+  ],
+  "search_note": "rg --files --hidden --no-ignore vpass filename search; inaccessible OS directories excluded by filesystem permissions",
+  "selected_reason": "2025 Test CSVs; match all score keys and source ordinals; do not use 2026 reference CSVs",
+  "sources": [
+    {
+      "path": "F:\\문제 데이터_수정_1103_v2\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_1월 데이터.csv",
+      "size_bytes": 1032427516,
+      "mtime_ns": 1793876248000000000,
+      "expected_rows": 6258,
+      "matched_rows": 6258,
+      "all_rows_for_100_ships": 6258,
+      "unmatched_score_rows": 0,
+      "ordinal_mismatches": 0,
+      "duplicate_keys": 0,
+      "source_ordinal_offset": 0,
+      "total_csv_rows": 592013
+    },
+    {
+      "path": "F:\\문제 데이터_수정_1103_v2\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_2월 데이터.csv",
+      "size_bytes": 795028305,
+      "mtime_ns": 1793876256000000000,
+      "expected_rows": 5387,
+      "matched_rows": 5387,
+      "all_rows_for_100_ships": 5387,
+      "unmatched_score_rows": 0,
+      "ordinal_mismatches": 0,
+      "duplicate_keys": 0,
+      "source_ordinal_offset": 592013,
+      "total_csv_rows": 442715
+    },
+    {
+      "path": "F:\\문제 데이터_수정_1103_v2\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_3월 데이터.csv",
+      "size_bytes": 1115652054,
+      "mtime_ns": 1793876266000000000,
+      "expected_rows": 6625,
+      "matched_rows": 6625,
+      "all_rows_for_100_ships": 6625,
+      "unmatched_score_rows": 0,
+      "ordinal_mismatches": 0,
+      "duplicate_keys": 0,
+      "source_ordinal_offset": 1034728,
+      "total_csv_rows": 624514
+    },
+    {
+      "path": "F:\\문제 데이터_수정_1103_v2\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_4월 데이터.csv",
+      "size_bytes": 1339299305,
+      "mtime_ns": 1793876278000000000,
+      "expected_rows": 7907,
+      "matched_rows": 7907,
+      "all_rows_for_100_ships": 7907,
+      "unmatched_score_rows": 0,
+      "ordinal_mismatches": 0,
+      "duplicate_keys": 0,
+      "source_ordinal_offset": 1659242,
+      "total_csv_rows": 755491
+    },
+    {
+      "path": "F:\\문제 데이터_수정_1103_v2\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_5월 데이터.csv",
+      "size_bytes": 1581199983,
+      "mtime_ns": 1793876292000000000,
+      "expected_rows": 10099,
+      "matched_rows": 10099,
+      "all_rows_for_100_ships": 10099,
+      "unmatched_score_rows": 0,
+      "ordinal_mismatches": 0,
+      "duplicate_keys": 0,
+      "source_ordinal_offset": 2414733,
+      "total_csv_rows": 888878
+    },
+    {
+      "path": "F:\\문제 데이터_수정_1103_v2\\테스트셋 및 결과제출 샘플\\테스트셋\\vpass_6월 데이터.csv",
+      "size_bytes": 1621873318,
+      "mtime_ns": 1793876308000000000,
+      "expected_rows": 10429,
+      "matched_rows": 10429,
+      "all_rows_for_100_ships": 10429,
+      "unmatched_score_rows": 0,
+      "ordinal_mismatches": 0,
+      "duplicate_keys": 0,
+      "source_ordinal_offset": 3303611,
+      "total_csv_rows": 908778
+    }
+  ],
+  "memory_check": {
+    "time": "2026-11-06T09:15:00.719757+09:00",
+    "stage": "raw extraction",
+    "available_mib": 3698.0,
+    "estimated_peak_mib": 350,
+    "basis": "CSV one record at a time; 46,705 score keys; SQLite cache 8 MiB; no parallel rendering"
+  },
+  "elapsed_seconds": 115.25
+}

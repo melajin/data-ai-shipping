@@ -1,0 +1,50 @@
+{
+  "w7_Tier0-1": {
+    "defined": true,
+    "cluster_count": 39,
+    "replicates_requested": 4000,
+    "replicates_used": 4000,
+    "seed": 11052026,
+    "ci_level": 0.975,
+    "lower": 0.0,
+    "upper": 0.0,
+    "degenerate_fraction": 1.0,
+    "bootstrap_order": "w=7 then w=3; Tier0-1 then ALL, one Random(SEED) stream"
+  },
+  "w7_ALL": {
+    "defined": true,
+    "cluster_count": 58,
+    "replicates_requested": 4000,
+    "replicates_used": 4000,
+    "seed": 11052026,
+    "ci_level": 0.975,
+    "lower": 0.0,
+    "upper": 0.0,
+    "degenerate_fraction": 1.0,
+    "bootstrap_order": "w=7 then w=3; Tier0-1 then ALL, one Random(SEED) stream"
+  },
+  "w3_Tier0-1": {
+    "defined": true,
+    "cluster_count": 44,
+    "replicates_requested": 4000,
+    "replicates_used": 4000,
+    "seed": 11052026,
+    "ci_level": 0.975,
+    "lower": 0.0,
+    "upper": 0.0,
+    "degenerate_fraction": 1.0,
+    "bootstrap_order": "w=7 then w=3; Tier0-1 then ALL, one Random(SEED) stream"
+  },
+  "w3_ALL": {
+    "defined": true,
+    "cluster_count": 68,
+    "replicates_requested": 4000,
+    "replicates_used": 4000,
+    "seed": 11052026,
+    "ci_level": 0.975,
+    "lower": 0.0,
+    "upper": 0.0,
+    "degenerate_fraction": 1.0,
+    "bootstrap_order": "w=7 then w=3; Tier0-1 then ALL, one Random(SEED) stream"
+  }
+}

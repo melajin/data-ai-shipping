@@ -1,0 +1,38 @@
+{
+  "completed_at": "2026-11-06T14:24:52.931403+09:00",
+  "source_fingerprints": {
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106\\scoring_validation_20261106\\synthetic_1.parquet": {
+      "sha256": "21d418003b7366b07c528ad2a72c4b6d4069db6f870cf3d20a5a84d9b0c913ca",
+      "bytes": 6119
+    },
+    "D:\\obsidian\\claude\\obsidian_export\\DATA AI SHIPPING\\testB\\final\\round_019_vessel_discrimination_20261106\\scoring_validation_20261106\\synthetic_2.parquet": {
+      "sha256": "f2b511b45cff14348274a2604097d15b9c2e3d3b2526a9cce1d2db93483788c0",
+      "bytes": 6122
+    }
+  },
+  "rows": 108,
+  "vessels": 3,
+  "min_ts": 490896,
+  "max_ts": 490936,
+  "invalid_centroid_rows": 0,
+  "partition_count": 128,
+  "batch_size": 65536,
+  "partition_rule": "zlib.crc32(UTF8 rfid_id) modulo 128",
+  "partitions": [
+    {
+      "path": "..\\..\\..\\synthetic_pipeline\\staging\\attempt_20261106_142452_22880\\part_065.parquet",
+      "rows": 36,
+      "sha256": "b7e078324b14d6fe4db13712c6e32754d2106f1a0f4ac0928c3bc93afb58ef50"
+    },
+    {
+      "path": "..\\..\\..\\synthetic_pipeline\\staging\\attempt_20261106_142452_22880\\part_087.parquet",
+      "rows": 36,
+      "sha256": "f439820d637cfced87329e77495a357502db38e1149ef115ce28bbd372b3f654"
+    },
+    {
+      "path": "..\\..\\..\\synthetic_pipeline\\staging\\attempt_20261106_142452_22880\\part_109.parquet",
+      "rows": 36,
+      "sha256": "38b437cde93d937f81bf31649e59d8e4df1af5bdec317ec27af750e3e014a161"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+﻿[
+    {
+        "Id":  5828,
+        "ProcessName":  "explorer",
+        "RSS_MiB":  687
+    },
+    {
+        "Id":  13336,
+        "ProcessName":  "chrome",
+        "RSS_MiB":  653.6
+    },
+    {
+        "Id":  19824,
+        "ProcessName":  "Orca",
+        "RSS_MiB":  534.3
+    },
+    {
+        "Id":  17216,
+        "ProcessName":  "Orca",
+        "RSS_MiB":  371.6
+    },
+    {
+        "Id":  34000,
+        "ProcessName":  "agy",
+        "RSS_MiB":  359.9
+    },
+    {
+        "Id":  18136,
+        "ProcessName":  "Orca",
+        "RSS_MiB":  320.4
+    },
+    {
+        "Id":  9152,
+        "ProcessName":  "chrome",
+        "RSS_MiB":  311.6
+    },
+    {
+        "Id":  8,
+        "ProcessName":  "claude",
+        "RSS_MiB":  307.3
+    },
+    {
+        "Id":  33284,
+        "ProcessName":  "agy",
+        "RSS_MiB":  282.4
+    },
+    {
+        "Id":  4460,
+        "ProcessName":  "ctfmon",
+        "RSS_MiB":  229.1
+    },
+    {
+        "Id":  1172,
+        "ProcessName":  "dwm",
+        "RSS_MiB":  219.4
+    },
+    {
+        "Id":  11432,
+        "ProcessName":  "CrossDeviceService",
+        "RSS_MiB":  188.3
+    }
+]

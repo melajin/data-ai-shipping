@@ -1,0 +1,13 @@
+{
+  "kind": "FEASIBILITY ONLY, not accident performance",
+  "tier01_own_eligible_events": 53,
+  "tier01_denominator": 60,
+  "required_tier01_own_events": 50,
+  "rfids_with_any_peer_eligible": 79,
+  "required_peer_rfids": 6,
+  "passed": true,
+  "all_own_eligible_events": 92,
+  "all_peer_eligible_events": 91,
+  "tier01_peer_eligible_events": 53,
+  "does_not_establish_hit_improvement": true
+}
