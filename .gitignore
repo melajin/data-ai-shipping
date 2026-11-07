@@ -30,8 +30,8 @@
 
 # 4. 원격 저장소 보호를 위한 비대상 거대 폴더 (수 GB 규모)
 outputs/
-26_11_2/
-29-30일 모델 심층 분석/
+test_a/history/26_11_2/
+test_a/history/29-30일 모델 심층 분석/
 data/raw/*
 !data/raw/.gitkeep
 
@@ -39,3 +39,10 @@ data/raw/*
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# 6. 중복 대용량 실험 산출물 (이미 기록된 사본은 history에 남고, 앞으로의 재생성만 제외)
+**/rounds/*/tmp/
+**/manager/snapshot_s1_gate/
+**/historical_baseline/models/
+**/rounds/*/artifacts/models/
+**/deliverables/rounds_001_002_team_package/
