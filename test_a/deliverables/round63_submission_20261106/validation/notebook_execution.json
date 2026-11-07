@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "notebooks": [
+    {
+      "notebook": "01_과제1_추론과평가.ipynb",
+      "code_cells": 7,
+      "executed_code_cells": 7,
+      "errors": []
+    },
+    {
+      "notebook": "02_과제1_학습재현.ipynb",
+      "code_cells": 6,
+      "executed_code_cells": 6,
+      "errors": []
+    }
+  ],
+  "optional_retraining_executed": false
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "all_query_boats": 2949,
+  "changed_predictions": 0,
+  "REPORT_micro_f1": 0.6122033898305085,
+  "TUNE_micro_f1": 0.601763907734057,
+  "normalized_probability_sums": true,
+  "deployed_tasks": 14,
+  "training_performed": false,
+  "maximum_log_score_difference": 6.887263275245914e-07
+}

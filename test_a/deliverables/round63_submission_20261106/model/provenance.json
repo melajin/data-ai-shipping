@@ -1,0 +1,14 @@
+{
+  "round": 63,
+  "selected_epoch": 1,
+  "selected_updates": 2,
+  "actual_updates": 4,
+  "trainable_original_parameters": 8578048,
+  "new_gate_parameters": 2101248,
+  "body_gamma": 1.0,
+  "relation_beta": 0.0,
+  "primary_REPORT_micro_f1": 0.6122033898305085,
+  "original_checkpoint_sha256": "ccce830d467d5084dcca9fe9706a4a8d58de28eeac797404cb2c475634b21318",
+  "fixed_context_boats": 4423,
+  "context_expanded_after_evaluation": false
+}

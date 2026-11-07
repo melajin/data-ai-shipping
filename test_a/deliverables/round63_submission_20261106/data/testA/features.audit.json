@@ -1,0 +1,23 @@
+{
+  "input_rows_scanned": 4212389,
+  "target_rows": 22733,
+  "invalid_target_metadata": 0,
+  "missing_geometry_rows": 0,
+  "boats": 100,
+  "features": 337,
+  "label_columns_read": false,
+  "provided_target_bundle_only": true,
+  "elapsed_seconds": 58.26983110001311,
+  "state_details": {
+    "rows": 22733,
+    "valid_geometry_rows": 22733,
+    "adjacent_hour_pairs": 20880,
+    "max_ordinal_hour_gap_in_used_pairs": 1,
+    "histograms_normalized": true
+  },
+  "csv_rounding": {
+    "basic": 8,
+    "layout": 9,
+    "state": 9
+  }
+}

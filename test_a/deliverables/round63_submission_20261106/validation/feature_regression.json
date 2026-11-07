@@ -1,0 +1,9 @@
+{
+  "boats": 4,
+  "features": 337,
+  "same_column_order": true,
+  "all_float32_values_exact": true,
+  "different_cells": 0,
+  "maximum_absolute_difference": 0.0,
+  "different_columns": []
+}

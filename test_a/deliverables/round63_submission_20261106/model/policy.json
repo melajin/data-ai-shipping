@@ -1,0 +1,18 @@
+{
+  "alpha": 0.5,
+  "weights": [
+    1.0,
+    1.0,
+    1.0,
+    0.8
+  ],
+  "state_beta": 0.5,
+  "relation_beta": 0.0,
+  "body_gamma": 1.0,
+  "query_batch_size": 1000,
+  "probability": "softmax(final_log_score),chosen_class",
+  "normalization_order": [
+    "none",
+    "power"
+  ]
+}

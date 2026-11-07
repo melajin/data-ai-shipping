@@ -1,0 +1,21 @@
+{
+  "source_functions": {
+    "build_inputs.py": [
+      "row_features"
+    ],
+    "build_global_geometry.py": [
+      "geom_features"
+    ],
+    "build_state_inputs.py": [
+      "state_codes",
+      "adjacent_pairs",
+      "extract"
+    ]
+  },
+  "source_sha256": {
+    "build_inputs.py": "cf9b1bee6b777b4efe28df1ec1bee498c1a9497b1af9367de041a6266591ad46",
+    "build_global_geometry.py": "ef8f7b112038177e7c5429bb9de86d72f15fbcbcc9652f68708059b3695545c8",
+    "build_state_inputs.py": "b0cd399bee72afd630476d2a6526230687a682eb19a6cda12170b3baac65db27"
+  },
+  "vendor_change": "Ensemble normalization groups preserve requested order;no other numerical changes"
+}

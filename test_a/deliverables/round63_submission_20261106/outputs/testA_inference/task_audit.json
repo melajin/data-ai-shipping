@@ -1,0 +1,114 @@
+[
+  {
+    "task": "compact_head",
+    "seed": 20262015,
+    "context_boats": 4423,
+    "query_boats": 100,
+    "features": 150,
+    "seconds": 7.709570200066082
+  },
+  {
+    "task": "compact_pair_0_1",
+    "seed": 20262206,
+    "context_boats": 3702,
+    "query_boats": 100,
+    "features": 150,
+    "seconds": 4.678020799998194
+  },
+  {
+    "task": "compact_pair_0_2",
+    "seed": 20262207,
+    "context_boats": 2816,
+    "query_boats": 100,
+    "features": 150,
+    "seconds": 4.059199700015597
+  },
+  {
+    "task": "compact_pair_0_3",
+    "seed": 20262208,
+    "context_boats": 2285,
+    "query_boats": 100,
+    "features": 150,
+    "seconds": 3.7974263000069186
+  },
+  {
+    "task": "compact_pair_1_2",
+    "seed": 20262217,
+    "context_boats": 2138,
+    "query_boats": 100,
+    "features": 150,
+    "seconds": 3.476053799968213
+  },
+  {
+    "task": "compact_pair_1_3",
+    "seed": 20262218,
+    "context_boats": 1607,
+    "query_boats": 100,
+    "features": 150,
+    "seconds": 2.9838020999450237
+  },
+  {
+    "task": "compact_pair_2_3",
+    "seed": 20262228,
+    "context_boats": 721,
+    "query_boats": 100,
+    "features": 150,
+    "seconds": 2.2104542000452057
+  },
+  {
+    "task": "state_head",
+    "seed": 20262015,
+    "context_boats": 4423,
+    "query_boats": 100,
+    "features": 337,
+    "seconds": 9.069466299959458
+  },
+  {
+    "task": "state_pair_0_1",
+    "seed": 20262206,
+    "context_boats": 3702,
+    "query_boats": 100,
+    "features": 337,
+    "seconds": 8.23839539999608
+  },
+  {
+    "task": "state_pair_0_2",
+    "seed": 20262207,
+    "context_boats": 2816,
+    "query_boats": 100,
+    "features": 337,
+    "seconds": 7.845811000093818
+  },
+  {
+    "task": "state_pair_0_3",
+    "seed": 20262208,
+    "context_boats": 2285,
+    "query_boats": 100,
+    "features": 337,
+    "seconds": 7.090562499943189
+  },
+  {
+    "task": "state_pair_1_2",
+    "seed": 20262217,
+    "context_boats": 2138,
+    "query_boats": 100,
+    "features": 337,
+    "seconds": 6.743202700046822
+  },
+  {
+    "task": "state_pair_1_3",
+    "seed": 20262218,
+    "context_boats": 1607,
+    "query_boats": 100,
+    "features": 337,
+    "seconds": 5.8207691999850795
+  },
+  {
+    "task": "state_pair_2_3",
+    "seed": 20262228,
+    "context_boats": 721,
+    "query_boats": 100,
+    "features": 337,
+    "seconds": 4.711165599990636
+  }
+]

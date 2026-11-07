@@ -1,0 +1,15 @@
+{
+  "private_records_scan_hits": 0,
+  "unchanged_numerical_assets": 25,
+  "workbook": {
+    "workbook_valid": true,
+    "testA_boats": 100,
+    "testB_boats": 100,
+    "testB_pending": false,
+    "final_submission_ready": true
+  },
+  "AI_usage_disclosure_retained": true,
+  "technical_code_and_data_retained": true,
+  "portable_integrated_export_all_cells_equal": true,
+  "expanded_private_text_scan_hits": 0
+}

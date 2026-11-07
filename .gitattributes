@@ -1,0 +1,2 @@
+# Preserve hashes of the supplied submission package across Git checkouts.
+/test_a/deliverables/round63_submission_20261106/** -text

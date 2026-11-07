@@ -28,4 +28,6 @@
 
 이동된 이전 실험의 스크립트와 문서에 옛 절대경로 또는 상대경로가 남아 있을 수 있으며, 전체 실행 호환성은 아직 검증하지 않았다. 실데이터와 대용량 자료 중 Git에서 제외된 항목이 있어 이 저장소만으로 모든 실험이 재현된다고 가정할 수 없다.
 
+제출 자료는 [Test A Round63 안내](test_a/deliverables/README.md)와 [Test B 실행 패키지](test_b/deliverables/testb_system_20261106/README.md)에서 확인한다. Test A의 대형 가중치 두 개는 원본 ZIP에서 별도로 복원해야 한다.
+
 로컬 임시 작업물과 GitHub 파일 크기 제한을 넘는 `raw_geometry.sqlite`, FFmpeg 실행 파일은 저장소에 포함하지 않는다. 기존 Git 제외 규칙에 해당하는 원자료와 산출물도 별도로 필요할 수 있다.

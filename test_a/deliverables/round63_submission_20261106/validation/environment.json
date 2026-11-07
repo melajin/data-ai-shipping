@@ -1,0 +1,26 @@
+{
+  "python": "3.12.14",
+  "os": "Windows-10-10.0.19045-SP0",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.7.2",
+    "shapely": "2.2.0",
+    "pyproj": "3.8.0",
+    "einops": "0.8.2",
+    "huggingface-hub": "0.36.2",
+    "psutil": "7.2.2",
+    "tqdm": "4.70.1",
+    "transformers": "4.57.6",
+    "safetensors": "0.8.0",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.11.2"
+  },
+  "cuda_runtime": "12.4",
+  "GPU": "NVIDIA GeForce RTX3060Ti",
+  "GPU_memory_MB": 8192,
+  "NVIDIA_driver": "610.88",
+  "TabICL_vendored_source": "2.2.0;normalization grouping request order preserved"
+}
